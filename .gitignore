@@ -1,41 +1,22 @@
-# Compiled Lua sources
-luac.out
+# Logs
+logs
+*.log
+npm-debug.log*
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
-# Precompiled Headers
-*.gch
-*.pch
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+# Dependency directories
+node_modules/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+# Optional npm cache directory
+.npm
