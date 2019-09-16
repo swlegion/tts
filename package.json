@@ -1,0 +1,19 @@
+{
+  "name": "tts",
+  "scripts": {
+    "test": "echo \"Testing!\" && node scripts/test.js",
+    "read": "node ./scripts/sync.js read",
+    "write": "node ./scripts/sync.js write"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/swlegion/tts/issues"
+  },
+  "homepage": "https://github.com/swlegion/tts",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "temp-dir": "^2.0.0",
+    "tree-sync": "^2.0.0",
+    "upath": "^1.2.0"
+  }
+}
