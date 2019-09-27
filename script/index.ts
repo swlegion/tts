@@ -69,14 +69,43 @@ function normalize(name: string): string {
 }
 
 /**
+ * Returns whether the provided script is valuable to retain on disk.
+ *
+ * @param name 
+ */
+function isValuableLuaScript(script: string): boolean {
+  // Ignore empty script.
+  if (script === "") {
+    return false;
+  }
+
+  const lines = script.split('\n');
+
+  // Ignore scripts that just set positions/rotations/tint.
+  //
+  // We can always tweak this.
+  if (lines.length < 50) {
+    if (lines[0].startsWith('position =') || lines[0].startsWith('battlefieldTint =')) {
+      return false;
+    }
+  }
+  
+  // OK.
+  return true;
+}
+
+/**
  * Writes a LuaScript to disk.
  *
  * @param object 
  * @param output 
  */
 function writeLua(object: TTSMod | TTSObject, output: string, name?: string): void {
+  if (name && name.trim() === "") {
+    name = null;
+  }
   if (!name) {
-    if ('Nickname' in object && object.Nickname !== "") {
+    if ('Nickname' in object && object.Nickname.trim().length > 0) {
       name = object.Nickname;
     } else if ('Name' in object) {
       name = object.Name;
@@ -94,7 +123,8 @@ function writeLua(object: TTSMod | TTSObject, output: string, name?: string): vo
     file = `${file}.${object.GUID}`;
   }
   file = `${file}.lua`;
-  if (object.LuaScript !== '') {
+  const script = object.LuaScript;
+  if (isValuableLuaScript(script)) {
     fs.mkdirpSync(path.dirname(file));
     fs.writeFileSync(file, object.LuaScript);
   }
