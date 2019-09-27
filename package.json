@@ -1,7 +1,8 @@
 {
   "name": "tts",
   "scripts": {
-    "start": "nodemon --watch script/index.ts --exec npx ts-node script/index.ts develop mod/StarWarsLegion.json mod/src"
+    "embed": "npx ts-node script/index.ts embed mod/src mod/StarWarsLegion.json",
+    "extract": "nodemon --watch script/index.ts --exec npx ts-node script/index.ts extract mod/StarWarsLegion.json mod/src"
   },
   "license": "MIT",
   "bugs": {

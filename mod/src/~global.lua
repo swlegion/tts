@@ -1,3 +1,4 @@
+-- Example of adding a comment.
 function onLoad()
 
     timerCounter = 1

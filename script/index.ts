@@ -24,8 +24,8 @@ import sanitize from 'sanitize-filename';
   );
   
   program
-    .command('develop <source> <destination>')
-    .description('Extracts and Embeds LUA scripts')
+    .command('extract <source> <destination>')
+    .description('Extracts LUA scripts')
     .action((source: string, destination: string) => {
       if (!fs.existsSync(source)) {
         console.error(chalk.red(`Could not find a file at ${source}.`));
@@ -40,7 +40,30 @@ import sanitize from 'sanitize-filename';
         encoding: 'UTF-8',
       }));
 
-      writeLua(parsed, path.join('mod', 'src'), '~GLOBAL');
+      extractLua(parsed, path.join('mod', 'src'), '~GLOBAL');
+    });
+  
+  program
+    .command('embed <source> <destination>')
+    .description('Embeds LUA scripts')
+    .action((source: string, destination: string) => {
+      if (!fs.existsSync(source)) {
+        console.error(chalk.red(`Could not find a directory at ${source}.`));
+        process.exit(1);
+      }
+      if (!fs.existsSync(destination)) {
+        console.error(chalk.red(`Could not find a file at ${source}.`));
+        process.exit(1);
+      }
+
+      console.log(`Loading ${destination}...`);
+      const parsed = loadMod(fs.readFileSync(destination, {
+        encoding: 'UTF-8',
+      }));
+
+      embedLua(parsed, path.join('mod', 'src'), '~GLOBAL');
+
+      fs.writeFileSync(destination, JSON.stringify(parsed, null, 2));
     });
 
   program
@@ -62,10 +85,41 @@ function loadMod(contents: string): TTSMod {
  * 
  * @param name
  */
-function normalize(name: string): string {
+function normalizeName(name: string): string {
   name = name.toLowerCase().trim();
   name = name.replace(' ', '_');
   return sanitize(name);
+}
+
+/**
+ * Attempts to find the "best" name for an object.
+ * 
+ * @param name 
+ * @param object 
+ */
+function findBestName(name: string | undefined, object: TTSMod | TTSObject) : string {
+  if (name && name.trim().length > 0) {
+    return name;
+  }
+  if ('Nickname' in object) {
+    return object.Nickname || object.Name;
+  }
+  throw `Could not determine name!\n\n${JSON.stringify(object)}`;
+}
+
+/**
+ * Finds the path for an object to be serialized/deserialized from disk.
+ * 
+ * @param source
+ * @param name 
+ * @param object 
+ */
+function findFilePath(source: string, name: string, object: TTSMod | TTSObject) : string {
+  let file = path.join(source, name);
+  if ('GUID' in object) {
+    file = `${file}.${object.GUID}`;
+  }
+  return `${file}.lua`;
 }
 
 /**
@@ -100,29 +154,9 @@ function isValuableLuaScript(script: string): boolean {
  * @param object 
  * @param output 
  */
-function writeLua(object: TTSMod | TTSObject, output: string, name?: string): void {
-  if (name && name.trim() === "") {
-    name = null;
-  }
-  if (!name) {
-    if ('Nickname' in object && object.Nickname.trim().length > 0) {
-      name = object.Nickname;
-    } else if ('Name' in object) {
-      name = object.Name;
-    }
-  }
-  if (!name || !output) {
-    console.warn(
-      chalk.yellow(`Could not parse Lua: name=${name}, output=${output}`)
-    );
-    return;
-  }
-  name = normalize(name);
-  let file = path.join(output, name);
-  if ('GUID' in object) {
-    file = `${file}.${object.GUID}`;
-  }
-  file = `${file}.lua`;
+function extractLua(object: TTSMod | TTSObject, output: string, name?: string): void {
+  name = normalizeName(findBestName(name, object));
+  const file = findFilePath(output, name, object);
   const script = object.LuaScript;
   if (isValuableLuaScript(script)) {
     fs.mkdirpSync(path.dirname(file));
@@ -130,13 +164,39 @@ function writeLua(object: TTSMod | TTSObject, output: string, name?: string): vo
   }
   if ('ObjectStates' in object && object.ObjectStates.length > 0) {
     for (const child of object.ObjectStates) {
-      writeLua(child, output);
+      extractLua(child, output);
     }
   }
   if ('ContainedObjects' in object && object.ContainedObjects.length > 0) {
     const newDir = path.join(output, `${name}.${object.GUID}`);
     for (const child of object.ContainedObjects) {
-      writeLua(child, newDir);
+      extractLua(child, newDir);
+    }
+  }
+}
+
+/**
+ * Embeds LuaScript into memory.
+ * 
+ * @param object 
+ * @param input 
+ * @param name 
+ */
+function embedLua(object: TTSMod | TTSObject, input: string, name?: string): void {
+  name = normalizeName(findBestName(name, object));
+  const file = findFilePath(input, name, object);
+  if (fs.existsSync(file)) {
+    object.LuaScript = fs.readFileSync(file, {encoding: 'UTF-8'});
+  }
+  if ('ObjectStates' in object && object.ObjectStates.length > 0) {
+    for (const child of object.ObjectStates) {
+      embedLua(child, input);
+    }
+  }
+  if ('ContainedObjects' in object && object.ContainedObjects.length > 0) {
+    const newDir = path.join(input, `${name}.${object.GUID}`);
+    for (const child of object.ContainedObjects) {
+      embedLua(child, newDir);
     }
   }
 }
