@@ -86,9 +86,7 @@ function loadMod(contents: string): TTSMod {
  * @param name
  */
 function normalizeName(name: string): string {
-  name = name.toLowerCase().trim();
-  name = name.replace(' ', '_');
-  return sanitize(name);
+  return sanitize(name.toLowerCase()).trim().replace(/ /g, '_');
 }
 
 /**
@@ -101,8 +99,11 @@ function findBestName(name: string | undefined, object: TTSMod | TTSObject) : st
   if (name && name.trim().length > 0) {
     return name;
   }
-  if ('Nickname' in object) {
-    return object.Nickname || object.Name;
+  if ('Nickname' in object && object.Nickname.trim().length > 0) {
+    return object.Nickname;
+  }
+  if ('Name' in object) {
+    return object.Name;
   }
   throw `Could not determine name!\n\n${JSON.stringify(object)}`;
 }
@@ -115,11 +116,9 @@ function findBestName(name: string | undefined, object: TTSMod | TTSObject) : st
  * @param object 
  */
 function findFilePath(source: string, name: string, object: TTSMod | TTSObject) : string {
-  let file = path.join(source, name);
-  if ('GUID' in object) {
-    file = `${file}.${object.GUID}`;
-  }
-  return `${file}.lua`;
+  let base = 'GUID' in object ? `${name}.${object.GUID}.lua` : `${name}.lua`;
+  let file = path.join(source, base);
+  return file;
 }
 
 /**
