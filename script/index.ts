@@ -172,6 +172,13 @@ function extractLua(object: TTSMod | TTSObject, output: string, name?: string): 
       extractLua(child, newDir);
     }
   }
+  if ('States' in object) {
+    const newDir = path.join(output, `${name}.${object.GUID}`);
+    for (const state of Object.keys(object.States)) {
+      const child = object.States[state];
+      extractLua(child, newDir, `~state.${state}`);
+    }
+  }
 }
 
 /**
@@ -196,6 +203,13 @@ function embedLua(object: TTSMod | TTSObject, input: string, name?: string): voi
     const newDir = path.join(input, `${name}.${object.GUID}`);
     for (const child of object.ContainedObjects) {
       embedLua(child, newDir);
+    }
+  }
+  if ('States' in object) {
+    const newDir = path.join(input, `${name}.${object.GUID}`);
+    for (const state of Object.keys(object.States)) {
+      const child = object.States[state];
+      embedLua(child, newDir, `~state.${state}`);
     }
   }
 }
@@ -244,4 +258,9 @@ interface TTSObject extends TTSBase {
    * Unique ID of the object.
    */
   GUID: string;
+
+  /**
+   * Alternative states for this object.
+   */
+  States: {[index: string] : TTSObject} | undefined;
 }
