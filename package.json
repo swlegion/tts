@@ -1,5 +1,5 @@
 {
-  "name": "tts",
+  "name": "swlegion-tts-mod",
   "scripts": {
     "embed": "npx ts-node script/index.ts embed mod/src mod/StarWarsLegion.json",
     "extract": "npx ts-node script/index.ts extract mod/StarWarsLegion.json mod/src"
