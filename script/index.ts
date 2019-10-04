@@ -159,7 +159,7 @@ function extractLua(object: TTSMod | TTSObject, output: string, name?: string): 
   const script = object.LuaScript;
   if (isValuableLuaScript(script)) {
     fs.mkdirpSync(path.dirname(file));
-    fs.writeFileSync(file, object.LuaScript);
+    fs.writeFileSync(file, object.LuaScript + '\n');
   }
   if ('ObjectStates' in object && object.ObjectStates.length > 0) {
     for (const child of object.ObjectStates) {
