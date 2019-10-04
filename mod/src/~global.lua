@@ -1,4 +1,3 @@
--- Example of adding a comment.
 function onLoad()
 
     timerCounter = 1
@@ -284,7 +283,7 @@ function onLoad()
     unitInfo.lukeSkywalker.buttonHeight = 2
 
     unitInfo.lukeSkywalkerJediKnight = {}
-    unitInfo.lukeSkywalkerJediKnight.commandType = "rebelCommander"
+    unitInfo.lukeSkywalkerJediKnight.commandType = "rebelOperative"
     unitInfo.lukeSkywalkerJediKnight.baseSize = "small"
     unitInfo.lukeSkywalkerJediKnight.fixedMove = false
     unitInfo.lukeSkywalkerJediKnight.selectedSpeed = 2
@@ -421,7 +420,7 @@ function onLoad()
     unitInfo.darthVader.buttonHeight = 2
 
     unitInfo.darthVaderTheEmperorsApprentice = {}
-    unitInfo.darthVaderTheEmperorsApprentice.commandType = "imperialCommander"
+    unitInfo.darthVaderTheEmperorsApprentice.commandType = "imperialOperative"
     unitInfo.darthVaderTheEmperorsApprentice.baseSize = "small"
     unitInfo.darthVaderTheEmperorsApprentice.fixedMove = false
     unitInfo.darthVaderTheEmperorsApprentice.selectedSpeed = 1
@@ -1006,7 +1005,7 @@ function onLoad()
     }
     listBuilder.commandCards.cloneCaptainRex = {
         varName = "cloneCaptainRex",
-        cards = {"Ambush","Push","We're Not Programmed"}
+        cards = {"Ambush","Push","Were Not Programmed"}
     }
     listBuilder.commandCards.republicR2d2 = {
         varName = "republicR2d2",
@@ -1138,6 +1137,7 @@ function onLoad()
     templateMenu.republic = {}
     templateMenu.republic.commander = {}
     templateMenu.republic.commander[1] = {name = "Obi-Wan Kenobi", varName = "obiWanKenobi"}
+    templateMenu.republic.commander[2] = {name = "Clone Captain Rex", varName = "cloneCaptainRex"}
 
     templateMenu.republic.operative = {}
     templateMenu.republic.operative[1] = {name = "R2-D2", varName = "republicR2d2"}
@@ -1145,6 +1145,7 @@ function onLoad()
 
     templateMenu.republic.corps = {}
     templateMenu.republic.corps[1] = {name = "Phase I Clone Troopers", varName = "phaseICloneTroopers"}
+    templateMenu.republic.corps[2] = {name = "Phase II Clone Troopers", varName = "phaseIICloneTroopers"}
 
     templateMenu.republic.specialForces = {}
 
@@ -1292,7 +1293,7 @@ function onLoad()
         name = "Sabine Wren"
     }
     miniInfo.r2d2 = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/777357228032306192/E7DDA6B4FCCB2C85722BA50265C96AE9EA51B959/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806966/EFBA4A71BFE748A2868C14B82DA3A7B0D559874A/",
         collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
         red = "http://cloud-3.steamusercontent.com/ugc/777357228032306302/F5CA6FC54A8625E261F123D73792DE36D74E1686/",
         blue = "http://cloud-3.steamusercontent.com/ugc/777357228032306302/F5CA6FC54A8625E261F123D73792DE36D74E1686/",
@@ -1300,7 +1301,7 @@ function onLoad()
         name = "R2-D2"
     }
     miniInfo.c3po = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/777357228032306399/8530691B34D0BF766896BE751ED9BC010D8293D5/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456807069/DE7E32B39455DB5111769436FD0C5BFDA3841268/",
         collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
         red = "http://cloud-3.steamusercontent.com/ugc/777357228032306506/D60CB8A1159723917EF1831D4042318A67458A7A/",
         blue = "http://cloud-3.steamusercontent.com/ugc/777357228032306506/D60CB8A1159723917EF1831D4042318A67458A7A/",
@@ -2346,6 +2347,14 @@ function onLoad()
         scale = {1,1,1},
         name = "Obi-Wan Kenobi"
     }
+    miniInfo.cloneCaptainRex = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806720/869654FC3B0590BFFF2E1845C3CFA9169838EBF9/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/776232727456806858/52327997163A5113DF9E11B85F9DA8B6B970012C/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456806858/52327997163A5113DF9E11B85F9DA8B6B970012C/",
+        scale = {1,1,1},
+        name = "Obi-Wan Kenobi"
+    }
     miniInfo.phaseICloneTrooperLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873393043/33A6FEA07374DAC8EBB6CDD463B6C761DC765D03/",
         collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
@@ -2402,7 +2411,54 @@ function onLoad()
         scale = {1,1,1},
         name = "DC-15 Phase I Clone Trooper"
     }
-
+    miniInfo.phaseIICloneTrooperLeader = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456805632/5EFC453DA5756A419155D7A2564F30D078A16998/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        scale = {1,1,1},
+        name = "Phase I Clone Trooper Leader"
+    }
+    miniInfo.phaseIICloneTrooper1 = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806277/B6E8E97A784420BE0BA72D4DDD8288A4BF3943D3/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        scale = {1,1,1},
+        name = "Phase I Clone Trooper"
+    }
+    miniInfo.phaseIICloneTrooper2 = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806431/B4EA83469C800B6B5B0506EE6E6ABE30D00D80DB/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        scale = {1,1,1},
+        name = "Phase I Clone Trooper"
+    }
+    miniInfo.phaseIICloneTrooper3 = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456953028/A36587741C54DCDDAAFE60A0D253077D9DDE575D/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        scale = {1,1,1},
+        name = "Phase I Clone Trooper"
+    }
+    miniInfo.phaseIICloneTrooper4 = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806596/C3FFC651464D351B03E7EC77F3E341DFFF4F7ABF/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        scale = {1,1,1},
+        name = "Phase I Clone Trooper"
+    }
+    miniInfo.z6PhaseIITrooper = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873393876/DEDAF52B0D07E0F2A2BCB54DE9A56E4FA437A3E4/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        scale = {1,1,1},
+        name = "Z-6 Phase I Clone Trooper"
+    }
     miniInfo.barcSpeeder = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873394399/018F8CC63E0D90F58AADA6328DF1709D4D1DF796/",
         collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
@@ -2701,6 +2757,9 @@ function onLoad()
     cardInfo.upgradeMenu.republic.phaseICloneTroopersSpecialist = {
         cardInfo.upgradeCards.z6PhaseITrooper,
         cardInfo.upgradeCards.dc15PhaseITrooper
+    }
+    cardInfo.upgradeMenu.republic.phaseIICloneTroopersTrooper = {
+        cardInfo.upgradeCards.phaseIICloneTrooper
     }
     cardInfo.upgradeMenu.republic.barcSpeederCrew = {
         cardInfo.upgradeCards.barcTwinLaserGunner,
@@ -3124,6 +3183,22 @@ function onLoad()
         fullName = "Obi-Wan Kenobi",
         rank = "Commander"
     }
+    cardInfo.unitCards.cloneCaptainRex = {
+        guid = "3dggj74f",
+        ptCost = 90 , availableUpgrades = {
+            cardInfo.upgradeMenu.republic.leadership,
+            cardInfo.upgradeMenu.republic.tactics,
+            cardInfo.upgradeMenu.republic.tech,
+            cardInfo.upgradeMenu.republic.tech,
+            cardInfo.upgradeMenu.republic.grenade
+        },
+        miniInfo = {
+            miniInfo.cloneCaptainRex
+        },
+        tokenName = "Republic Commander Command Token",
+        fullName = "Clone Captain Rex",
+        rank = "Commander"
+    }
     cardInfo.unitCards.republicR2d2 = {
         guid = "e18gg61",
         ptCost = 35,
@@ -3163,6 +3238,25 @@ function onLoad()
         },
         tokenName = "Republic Corps Command Token",
         fullName = "Phase I Clone Troopers",
+        rank = "Corps"
+    }
+    cardInfo.unitCards.phaseIICloneTroopers = {
+        guid = "244g4de",
+        ptCost = 60,
+        availableUpgrades = {
+            cardInfo.upgradeMenu.republic.phaseIICloneTroopersTrooper,
+            cardInfo.upgradeMenu.republic.tactics,
+            cardInfo.upgradeMenu.republic.tech,
+            cardInfo.upgradeMenu.republic.grenade
+        },
+        miniInfo = {
+            miniInfo.phaseIICloneTrooperLeader,
+            miniInfo.phaseIICloneTrooper1,
+            miniInfo.phaseIICloneTrooper2,
+            miniInfo.phaseIICloneTrooper3
+        },
+        tokenName = "Republic Corps Command Token",
+        fullName = "Phase II Clone Troopers",
         rank = "Corps"
     }
     cardInfo.unitCards.barcSpeeder = {
@@ -3221,9 +3315,9 @@ function onLoad()
         miniInfo = {
             miniInfo.lukeSkywalkerJediKnight
         },
-        tokenName = "Rebel Commander Command Token",
+        tokenName = "Rebel Operative Command Token",
         fullName = "Luke Skywalker Jedi Knight",
-        rank = "Commander"
+        rank = "Operative"
     }
     cardInfo.unitCards.leiaOrgana = {
         guid = "3dggcd70f",
@@ -3569,9 +3663,9 @@ function onLoad()
             cardInfo.upgradeMenu.imperial.tactics
         },
         miniInfo = {miniInfo.darthVaderTheEmperorsApprentice},
-        tokenName = "Imperial Commander Command Token",
+        tokenName = "Imperial Operative Command Token",
         fullName = "Darth Vader The Emperors Apprentice",
-        rank = "Commander"
+        rank = "Operative"
     }
     cardInfo.unitCards.generalVeers = {
         guid = "e12cg61",
