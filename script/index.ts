@@ -63,7 +63,8 @@ import sanitize from 'sanitize-filename';
 
       embedLua(parsed, path.join('mod', 'src'), '~GLOBAL');
 
-      fs.writeFileSync(destination, JSON.stringify(parsed, null, 2));
+      const json = JSON.stringify(parsed, null, 2);
+      fs.writeFileSync(destination, normalizeNewline(json));
     });
 
   program
@@ -87,6 +88,15 @@ function loadMod(contents: string): TTSMod {
  */
 function normalizeName(name: string): string {
   return sanitize(name.toLowerCase()).trim().replace(/ /g, '_');
+}
+
+/**
+ * Normalizes \r\n into \n.
+ * 
+ * @param value
+ */
+function normalizeNewline(value: string): string {
+  return value.replace(/\r\n/g, '\n');
 }
 
 /**
@@ -158,8 +168,10 @@ function extractLua(object: TTSMod | TTSObject, output: string, name?: string): 
   const file = findFilePath(output, name, object);
   const script = object.LuaScript;
   if (isValuableLuaScript(script)) {
+    // Normalize CRLF:
+
     fs.mkdirpSync(path.dirname(file));
-    fs.writeFileSync(file, object.LuaScript + '\n');
+    fs.writeFileSync(file, normalizeNewline(script) + '\n');
   }
   if ('ObjectStates' in object && object.ObjectStates.length > 0) {
     for (const child of object.ObjectStates) {
