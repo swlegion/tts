@@ -16,7 +16,5 @@
           ]
       }
   },
-  "include": [
-      "script/index.ts"
-  ]
+  "include": ["script/*"]
 }
