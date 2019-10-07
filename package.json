@@ -16,17 +16,20 @@
     "@types/mkdirp": "^0.5.2",
     "@types/node": "^12.7.8",
     "@types/sanitize-filename": "^1.6.3",
+    "@types/xml-formatter": "^1.1.0",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
     "commander": "^3.0.2",
     "detect-newline": "^3.0.0",
     "figlet": "^1.2.4",
     "fs-extra": "^8.1.0",
+    "lua-fmt": "^2.6.0",
     "mkdirp": "^0.5.1",
     "nodemon": "^1.19.2",
     "path": "^0.12.7",
     "sanitize-filename": "^1.6.3",
     "ts-node": "^8.4.1",
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.3",
+    "xml-formatter": "^1.1.0"
   }
 }
