@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 24.25805,
+    "posY": 1.18114376,
+    "posZ": -0.008066796,
+    "rotX": 0.000803344534,
+    "rotY": 239.984329,
+    "rotZ": 0.00138453639,
+    "scaleX": 1.69999957,
+    "scaleY": 1.69999957,
+    "scaleZ": 1.69999957
+  },
+  "Nickname": "Tree [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992163837,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858683374/D05EB6AD78201CBE4FA7FC64F64A0BE1668183D5/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858682702/5C9FC0061C6A76F55D517D928E02F7F6167904C5/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858671775/45073EC247E98F8562BA7C4F6295C33B4D2A4258/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "f1e520"
+}

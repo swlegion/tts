@@ -1,0 +1,5 @@
+Trooper: Impassable
+Ground Vehicle: Difficult
+Repulsor: Difficult
+
+Provides cover for AT-RT and speeder bikes. AT-RT can shoot over the top.

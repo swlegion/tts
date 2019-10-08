@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -4.37940454,
+    "posY": 1.4329505,
+    "posZ": -8.58551,
+    "rotX": -4.007275e-8,
+    "rotY": 90.00002,
+    "rotZ": -0.001607088,
+    "scaleX": 1.2,
+    "scaleY": 1,
+    "scaleZ": 1.2
+  },
+  "Nickname": "Guard Tower (Building) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/950714872633930181/12FD516D719E70D0894DD2555C38CAE0EA3802D9/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/950715191003551806/C562FAFB4C8049AF2FF9A798201B24DEDA4D1F18/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/950714872633930584/EA1D8A842AC3604B1341097E8E5176818618266C/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "f84982"
+}

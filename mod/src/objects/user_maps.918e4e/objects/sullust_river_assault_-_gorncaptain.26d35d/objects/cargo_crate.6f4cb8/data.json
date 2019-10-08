@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -2.14571571,
+    "posY": -0.393282771,
+    "posZ": 2.24720955,
+    "rotX": 310.3105,
+    "rotY": 45.0014343,
+    "rotZ": 322.341553,
+    "scaleX": 1.19999981,
+    "scaleY": 1.19999981,
+    "scaleZ": 1.19999981
+  },
+  "Nickname": "Cargo Crate",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542866356/5E4885FE0560DC376FFC7C1411092E0236436ABA/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542867256/F1654D39814397BEB69F64F304D418531458D264/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "6f4cb8"
+}

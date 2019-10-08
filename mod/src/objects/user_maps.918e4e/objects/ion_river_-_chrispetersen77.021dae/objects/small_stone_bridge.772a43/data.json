@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -15.186101,
+    "posY": -0.0389490165,
+    "posZ": -1.96029818,
+    "rotX": 358.6435,
+    "rotY": 89.6777649,
+    "rotZ": 358.1689,
+    "scaleX": 0.450000435,
+    "scaleY": 0.450000435,
+    "scaleZ": 0.450000435
+  },
+  "Nickname": "Small Stone Bridge",
+  "ColorDiffuse": {
+    "r": 0.5,
+    "g": 0.5,
+    "b": 0.5
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121094/40AF9CE218140C92982B0CB3B8B76FE804CC9B2D/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121202/90E0E7CEB7CE9D3B08BDC4D01950AFC5E7D92895/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121094/40AF9CE218140C92982B0CB3B8B76FE804CC9B2D/",
+    "Convex": false,
+    "MaterialIndex": 1,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "772a43"
+}

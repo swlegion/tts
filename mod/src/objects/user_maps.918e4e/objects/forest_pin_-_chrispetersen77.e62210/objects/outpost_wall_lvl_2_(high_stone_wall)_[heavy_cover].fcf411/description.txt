@@ -1,0 +1,9 @@
+Trooper: Wall - Impassable, Ledges - Open
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Height: 2
+
+Right Click > State > 1 to activate different levels!
+
+Special thanks to www.imperialterrain.com

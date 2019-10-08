@@ -1,0 +1,5 @@
+Cover Type: Light
+
+Trooper: Difficult
+Ground Vehicle: Open
+Repulsor: Open

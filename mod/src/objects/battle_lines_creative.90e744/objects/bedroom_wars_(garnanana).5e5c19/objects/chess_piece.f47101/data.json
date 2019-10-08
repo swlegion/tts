@@ -1,0 +1,32 @@
+{
+  "Name": "Chess_Queen",
+  "Transform": {
+    "posX": 13.4328575,
+    "posY": 2.00833941,
+    "posZ": 4.578395,
+    "rotX": 0.290337235,
+    "rotY": 32.4293938,
+    "rotZ": 270.000061,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "chess piece",
+  "ColorDiffuse": {
+    "r": 0,
+    "g": 0,
+    "b": 0
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": 1,
+  "GUID": "f47101"
+}

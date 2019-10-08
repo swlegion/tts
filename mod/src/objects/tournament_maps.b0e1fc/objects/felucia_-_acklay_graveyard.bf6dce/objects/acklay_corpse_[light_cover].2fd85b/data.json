@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 10.8347883,
+    "posY": 1.44895053,
+    "posZ": -0.581989646,
+    "rotX": -0.000304000219,
+    "rotY": 215.158371,
+    "rotZ": -0.000113363611,
+    "scaleX": 1.43357,
+    "scaleY": 0.9000001,
+    "scaleZ": 1.84066427
+  },
+  "Nickname": "Acklay Corpse [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.8797909,
+    "g": 0.6514132,
+    "b": 0.8199777
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542465659/30348E08551EAA3E8D5164E0D2931B3EB72DCEC1/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542470239/CFB22A69010911784880172594A7106CBC1F8DF1/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542467139/4036C31123FF00D2459B3ED1E57CD8141ACFAC8D/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "2fd85b"
+}

@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 9.239618,
+    "posY": 8.903467,
+    "posZ": -0.560361,
+    "rotX": 358.897156,
+    "rotY": 29.9455547,
+    "rotZ": 1.00636506,
+    "scaleX": 0.575000346,
+    "scaleY": 0.575000346,
+    "scaleZ": 0.575000346
+  },
+  "Nickname": "Forgotten Sith Lord",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921424127594192193/7FC77894B70C0A42EC9EA014CC0B7115F2A99B51/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921424127594330164/7D8F54F8529C79AAE1B5DFC0F619219327C447BC/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921424127594192193/7FC77894B70C0A42EC9EA014CC0B7115F2A99B51/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "296d91"
+}

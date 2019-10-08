@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 3.68479919,
+    "posY": 1.42721522,
+    "posZ": -7.976333,
+    "rotX": 0.00161261682,
+    "rotY": 194.966934,
+    "rotZ": 0.000443941244,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Trash Pile",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858617254/4F61282A94ABE4F960AD3649D0D9A26EB32B28B0/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858617854/8C8C53113B4711BC4181D32AA0B354778C46E4F2/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858618391/9AFA49334F7632BE2F99F0FE8DE1EACC80F7CA53/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "50b833"
+}

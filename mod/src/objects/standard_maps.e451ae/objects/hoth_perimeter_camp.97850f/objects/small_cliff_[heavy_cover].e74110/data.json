@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -8.162127,
+    "posY": 1.3772651,
+    "posZ": -6.34516859,
+    "rotX": -0.00160478614,
+    "rotY": 0.008488342,
+    "rotZ": -6.524827e-7,
+    "scaleX": 0.901905656,
+    "scaleY": 1.29390347,
+    "scaleZ": 0.986880362
+  },
+  "Nickname": "Small Cliff [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780864149133/068D29B589638862A51858F78D0D4E7A540C9A60/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780859024364/02E852804746E0C6165F73BB04506773F9A44809/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858835205/B5E9F9B6B67565625027EF6A6F9EFE8E623BE61E/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "e74110"
+}

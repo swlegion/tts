@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": -33.0897064,
+    "posY": 2.06579256,
+    "posZ": 12.0878983,
+    "rotX": 18.622261,
+    "rotY": 0.02273638,
+    "rotZ": 0.0135098072,
+    "scaleX": 0.22,
+    "scaleY": 0.250000417,
+    "scaleZ": 0.223784
+  },
+  "Nickname": "White Attack Dice Blue",
+  "ColorDiffuse": {
+    "r": 0.9647892,
+    "g": 0.9647892,
+    "b": 0.9647892
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/267231170580138054/83B9C07DD90D4FA8F3DE016617A6BF0BC935D9FF/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "da4a19"
+}

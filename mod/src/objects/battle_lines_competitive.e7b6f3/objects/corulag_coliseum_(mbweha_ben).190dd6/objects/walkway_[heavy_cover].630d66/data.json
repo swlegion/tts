@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 12.53788,
+    "posY": 4.82731867,
+    "posZ": 4.524191,
+    "rotX": 0.00124112,
+    "rotY": 135.000381,
+    "rotZ": 359.484955,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Walkway [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.7177701,
+    "g": 0.711701632,
+    "b": 0.704014838
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542422535/63CA5D46C329FD66F43F96C6BD5D4C2F80D45E01/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542424190/A0E6CC847CE3AE738C7A0F3F52ED8898B526B6F8/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542423071/5176A22ADB4DEAC131083FD85A1E3AE284BAE11E/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "630d66"
+}

@@ -1,0 +1,13 @@
+Heavy Cover:
+Minis Size 6 and below
+
+Sides, Comms Dish:
+Trooper - Impassable
+G.Vehicle - impassable
+Repulsor - Impassable
+Minis with size > 6 treat this as difficult terrain
+
+Body Roof:
+All - Open
+
+Height: 1

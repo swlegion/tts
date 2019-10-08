@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 28.52009,
+    "posY": -4.09250927,
+    "posZ": 8.716901,
+    "rotX": 334.713226,
+    "rotY": 299.8741,
+    "rotZ": 0.0016165569,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Crashed Vehicle [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.129411578,
+    "g": 0.129411578,
+    "b": 0.129411578
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2432383702022379293/513102D0AF5B7C81CA62B49C02BC9599F73E2752/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/931553779122575268/68BF9FE41CDCD77BE4C678F35A7C505495FD8E94/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/2432383702022379293/513102D0AF5B7C81CA62B49C02BC9599F73E2752/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "d91d31"
+}

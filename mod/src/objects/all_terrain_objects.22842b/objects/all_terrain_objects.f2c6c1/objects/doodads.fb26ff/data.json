@@ -1,0 +1,33 @@
+{
+  "Name": "Bag",
+  "Transform": {
+    "posX": 51.6100845,
+    "posY": 2.82427931,
+    "posZ": 34.865696,
+    "rotX": 359.4373,
+    "rotY": 0.0457347557,
+    "rotZ": 358.817,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Doodads",
+  "ColorDiffuse": {
+    "r": 0.7058823,
+    "g": 0.366520882,
+    "b": 0
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "GUID": "fb26ff"
+}

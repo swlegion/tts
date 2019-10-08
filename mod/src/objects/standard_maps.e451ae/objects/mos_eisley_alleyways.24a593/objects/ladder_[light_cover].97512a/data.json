@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 17.8960533,
+    "posY": 1.7786355,
+    "posZ": 13.4016018,
+    "rotX": -0.00156492065,
+    "rotY": 359.991364,
+    "rotZ": 4.39112425,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Ladder [Light Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780857982362/37C8833A488DCF7C4529B0B51E33E361DC3F98A5/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780857982608/5EF6EC50C5BC28D300D4B59344DA5CB777F67B0A/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780857983040/66CB036A3125BCD08FF5887FC1D20F9A5E5058A4/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "97512a"
+}

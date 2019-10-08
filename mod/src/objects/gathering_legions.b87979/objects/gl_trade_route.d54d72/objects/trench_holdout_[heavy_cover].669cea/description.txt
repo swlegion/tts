@@ -1,0 +1,12 @@
+Heavy Cover:
+Troopers
+
+This Trench holdout counts as a different terrain from the Trench for the purpose of determining if the terrain is ignored for cover during an attack. 
+
+Walls:
+Trooper - Difficult
+G. Vehicle - Open
+Repulsor - Open
+
+Floor
+All - Open

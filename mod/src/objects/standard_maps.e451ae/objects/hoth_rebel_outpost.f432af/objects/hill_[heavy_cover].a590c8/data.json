@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -22.5114479,
+    "posY": 4.00950336,
+    "posZ": -5.94380569,
+    "rotX": 359.843719,
+    "rotY": 212.022919,
+    "rotZ": 359.8548,
+    "scaleX": 0.7249674,
+    "scaleY": 1.01389766,
+    "scaleZ": 0.7152244
+  },
+  "Nickname": "Hill [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780864149133/068D29B589638862A51858F78D0D4E7A540C9A60/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780859024364/02E852804746E0C6165F73BB04506773F9A44809/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858835205/B5E9F9B6B67565625027EF6A6F9EFE8E623BE61E/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "a590c8"
+}

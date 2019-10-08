@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 53.5802536,
+    "posY": 1.373796,
+    "posZ": 3.60917735,
+    "rotX": -0.00160498475,
+    "rotY": 0.00000470250643,
+    "rotZ": -1.12708875e-7,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "BATTLEFIELD",
+  "ColorDiffuse": {
+    "r": 0.9233995,
+    "g": 0.9233995,
+    "b": 0.9233995
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780859015647/B98B08E01F9F286630AE190B71A63A3BDD6F3E42/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780859039905/A6FCEA3A2EF13E2CAEBE33310E2614C47513CBEF/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780859015647/B98B08E01F9F286630AE190B71A63A3BDD6F3E42/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "526772"
+}

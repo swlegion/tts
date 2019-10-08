@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -1.29220128,
+    "posY": 1.44304919,
+    "posZ": 13.9501858,
+    "rotX": -0.00161530089,
+    "rotY": 344.980927,
+    "rotZ": 0.0004251035,
+    "scaleX": 0.7500003,
+    "scaleY": 0.7500003,
+    "scaleZ": 0.7500003
+  },
+  "Nickname": "Lava Mound (Blast Hole) [Light Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542465659/30348E08551EAA3E8D5164E0D2931B3EB72DCEC1/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542468274/D98D7C685AF68524FD683264F9A57C049E220C93/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542467139/4036C31123FF00D2459B3ED1E57CD8141ACFAC8D/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "4fc355"
+}

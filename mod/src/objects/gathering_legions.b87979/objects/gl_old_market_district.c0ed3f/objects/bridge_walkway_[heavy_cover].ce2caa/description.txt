@@ -1,0 +1,10 @@
+Heavy Cover:
+All except AT-ST, T-47
+
+Height: 1
+
+Ground Vehicles may use a climb or clamber action to cross this terrain piece. AT-RT may move under this terrain piece as a difficult move.
+
+Right-Click and switch states to access different levels
+
+Special Thanks: corvusgamesterrain.com

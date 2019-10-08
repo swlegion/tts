@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 17.4414825,
+    "posY": 1.644871,
+    "posZ": 12.2306252,
+    "rotX": -0.00294649135,
+    "rotY": 315.039368,
+    "rotZ": 0.0007668513,
+    "scaleX": 1.29999971,
+    "scaleY": 1.29999971,
+    "scaleZ": 1.29999971
+  },
+  "Nickname": "Landing Platform",
+  "ColorDiffuse": {
+    "r": 0.740554154,
+    "g": 0.740554154,
+    "b": 0.740554154
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546189348/087639CF25D766513CA0EB9A803B5E09B654F3C7/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546189469/6CE544DF3C005E7C09ED215A637FC6822570DC57/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546189602/39B0FF2FD3E9FE365CBE6E0FAC8F95A89FF4C9A5/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "8ae7cb"
+}

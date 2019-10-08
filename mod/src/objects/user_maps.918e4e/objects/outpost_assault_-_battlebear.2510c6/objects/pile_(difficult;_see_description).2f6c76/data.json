@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 17.3016014,
+    "posY": 1.51556122,
+    "posZ": 12.1633511,
+    "rotX": 358.292664,
+    "rotY": 344.978,
+    "rotZ": 359.710175,
+    "scaleX": 0.7999998,
+    "scaleY": 0.7999998,
+    "scaleZ": 0.7999998
+  },
+  "Nickname": "Pile (Difficult; see description)",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/927052513931799273/8908646FB10FCF5132B841C847EBC7DB6A1E1F0C/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/927052513931962587/9D1E70C2DFE67E7FB69E8EBB7D9FF55A26893F22/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/927052513931799273/8908646FB10FCF5132B841C847EBC7DB6A1E1F0C/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "2f6c76"
+}

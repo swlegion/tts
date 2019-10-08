@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 31.1308479,
+    "posY": 1.51929915,
+    "posZ": -8.624556,
+    "rotX": 0.0000821434442,
+    "rotY": 90.01276,
+    "rotZ": 0.000312227523,
+    "scaleX": 2,
+    "scaleY": 1,
+    "scaleZ": 2
+  },
+  "Nickname": "Bait and Switch",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 500,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "5": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/957475029107060913/3855E94688DC91613E44D1206751716F1FEAF094/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/957475029107006215/52432501747A5C2BC055B0BD9CFD2E930AEE6E68/",
+      "NumWidth": 5,
+      "NumHeight": 4,
+      "BackIsHidden": true,
+      "UniqueBack": false
+    }
+  },
+  "GUID": "e0840b"
+}

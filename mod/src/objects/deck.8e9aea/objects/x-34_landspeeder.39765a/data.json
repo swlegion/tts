@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 43.6976357,
+    "posY": 1.173236,
+    "posZ": -10.4375782,
+    "rotX": 0.00065956515,
+    "rotY": 270.021759,
+    "rotZ": 0.00044996498,
+    "scaleX": 0.227068469,
+    "scaleY": 1,
+    "scaleZ": 0.227068469
+  },
+  "Nickname": "X-34 Landspeeder",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 34304,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "289": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786359682702689535/221A6E105383D27E1D19BC4D918D50D7ADB7F7CF/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/927086512532403887/F3618C3BE280F1AFC4323E6EFB386D7D29276257/",
+      "NumWidth": 5,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "39765a"
+}

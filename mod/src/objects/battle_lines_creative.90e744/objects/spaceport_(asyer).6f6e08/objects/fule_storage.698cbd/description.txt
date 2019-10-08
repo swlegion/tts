@@ -1,0 +1,5 @@
+Tanks: height 2
+Heavy Cover
+
+Platform: 
+light cover

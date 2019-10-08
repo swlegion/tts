@@ -1,0 +1,17 @@
+Cover Type: Heavy
+
+Deep Crater
+
+Trooper: Difficult
+Ground Vehicle: Difficult
+Repulsor: Open
+
+Obscures LOS
+
+Bomber
+
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Difficult
+
+Obscures LOS

@@ -1,0 +1,15 @@
+Heavy Cover:
+Mini size 2 and below
+
+Sides:
+All - Impassable
+Minis with size > 2 treat this as difficult terrain
+
+Roof:
+All - Open
+
+Height: 1
+
+Units can clamber up the ladder without rolling for falling damage
+
+Special Thanks: www.imperialterrain.com

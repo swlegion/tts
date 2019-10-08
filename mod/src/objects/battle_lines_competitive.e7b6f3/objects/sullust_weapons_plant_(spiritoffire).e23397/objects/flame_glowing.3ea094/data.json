@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": -17.76655,
+    "posY": 5.79102945,
+    "posZ": -11.0862007,
+    "rotX": -0.00168706465,
+    "rotY": 359.973755,
+    "rotZ": -0.00000246027935,
+    "scaleX": 0.9749986,
+    "scaleY": 0.9749986,
+    "scaleZ": 0.9749986
+  },
+  "Nickname": "Flame Glowing",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": false,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/993513208355169062/B2D57713BFFD619F77490690B49B2A9A990CDF9C/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 2
+  },
+  "GUID": "3ea094"
+}

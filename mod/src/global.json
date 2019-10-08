@@ -1,0 +1,214 @@
+{
+  "SaveName": "STAR WARS LEGION",
+  "GameMode": "STAR WARS LEGION",
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Date": "10/4/2019 12:01:34 PM",
+  "Table": "Table_None",
+  "Sky": "Sky_Museum",
+  "Note": "\nMINI SIZES\n-----------\nSmall Base Troopers: 1\n1.4 FD Laser Cannon: 1\nE-Web Heavy Blaster: 1\nDroidekas: 1\nTauntuan Riders 1.25\nBARC Speeder 1.25\nAT-RT: 1.5\nX-34 Landspeeder: 1.5\n74-Z Speeder Bikes: 1.5\nTX-225 GAVw Occupier: 1.5\nTX-130 Saber-Class Fighter Tank 1.5\nAAT Trade Federation Battle Tank: 2\n\nT-47 Airspeeder: 4\nAT-ST: 5\n----------\nSW Legion by tieren \n30 Sep 2019 Version 2.9.4\nwww.patreon.com/tieren\nwww.paypal.me/terrancetan\nTo find games, join SWLegion Discord:\nhttps://discordapp.com/invite/UGP9N2v\n\n\nhttps://discordapp.com/invite/UGP9N2v",
+  "Rules": "",
+  "CustomUIAssets": [
+    {
+      "Name": "PalpatinePoster",
+      "URL": "http://cloud-3.steamusercontent.com/ugc/966480765117276391/DDA8500A1694EF1EAA32998DCAB2D53098FBE040/"
+    },
+    {
+      "Name": "navyPoster",
+      "URL": "http://cloud-3.steamusercontent.com/ugc/966480765117276646/EAB073D513A94F6947D9004F4FB98D7D9B22E416/"
+    },
+    {
+      "Name": "ObiWanPoster",
+      "URL": "http://cloud-3.steamusercontent.com/ugc/966480765118137024/1AB7F81D20820D74D9B1BFE48F5865D152956296/"
+    },
+    {
+      "Name": "rangeRuler",
+      "URL": "http://cloud-3.steamusercontent.com/ugc/966480765118137238/1157F7217EB80F31A92427567B377F857576DAE9/"
+    }
+  ],
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 6,
+    "ySize": 6,
+    "PosOffset": {
+      "x": 2,
+      "y": 1,
+      "z": 0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.5139988,
+    "LightColor": {
+      "r": 1,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 2.26825333,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1,
+    "LutIndex": 0,
+    "LutContribution": 1,
+    "LutURL": ""
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0,
+    "HandTransforms": [
+      {
+        "Color": "Red",
+        "Transform": {
+          "posX": 7.07114267,
+          "posY": 2.39104676,
+          "posZ": -40.6290321,
+          "rotX": 0,
+          "rotY": 0.0832998753,
+          "rotZ": 0,
+          "scaleX": 25.5422382,
+          "scaleY": 2.85982347,
+          "scaleZ": 4.222222
+        }
+      },
+      {
+        "Color": "Blue",
+        "Transform": {
+          "posX": 6.803023,
+          "posY": 2.64514518,
+          "posZ": 40.166,
+          "rotX": 0,
+          "rotY": 179.8,
+          "rotZ": 0,
+          "scaleX": 26.5740261,
+          "scaleY": 3.21678519,
+          "scaleZ": 4.824173
+        }
+      }
+    ]
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
+  "DecalPallet": [],
+  "TabStates": {
+    "11": {
+      "title": "Black",
+      "body": "",
+      "color": "Black",
+      "visibleColor": {
+        "r": 0.25,
+        "g": 0.25,
+        "b": 0.25
+      },
+      "id": 11
+    },
+    "13": {
+      "title": "Changelog",
+      "body": "Modded by tieren\n\nCard, token and unofficial rules are from the following people:\nJD: https://www.patreon.com/theJDfiles\nGryffinDuVerd: https://www.reddit.com/r/SWlegion/comments/73uvaj/sw_legion_demoplaytest_toolkit/\nEternal3lade papercraft: https://www.reddit.com/r/SWlegion/comments/6vtlyb/star_wars_legion_papercraft_models_complete/\nModels from Nickschumann's Imperial Assault models\n3D Terrain from ShotbyScott: https://www.thingiverse.com/shotbyscott\n3D Terrain from Imperial Terrain\nwww.imperialterrain.com\n\nCHANGELOG\n\n12 Oct 2017:\n        Added scripting for movement templates.\n        Uploaded custom bases\n        Added 90 degree limit for movement templates\n        Optimized models and textures\n        Added Color for Speeder Bike Model\n\n13 Oct 2017\n        Added new map: Endor Moon Station!\n\n17 Oct 2017\nBrand New controller system:\n        Players can now control their units via the control system from the respective unit command tokens\n        \n        Press the green button on the command tokens to access Action options.\n                - Move action spawns movement templates which can change speed.\n                - Height button increases the height of the template to allow you to go over elevated terrain\n                - Unit leaders in squads will spawn a range radius for cohesion\n        Next button allows you to change unit selection if more than one eligible units are available.\n        Bases will be highlighted red on unit selection\n        Aim, Dodge and Overwatch buttons takes the corresponding token and sets it down\n        Atk Button allows you to spawn range rulers and draw corresponding D8 Die for attack.\n        End button to end turn.\n\n        Movement templates now have snap points at the end of the template to allow units to move precisely to the end.\n\n\n19 Oct 2017\n        Bugfixes\n        Combined Models and bases, changed scale of units to be slightly smaller\n        Mini bases will change color depending on map\n        Added end turn options to automate token return\n        Added 3D versions of tokens made by GryffinDuVerd link: https://www.thingiverse.com/thing:2564588\n        Modified Endor Moon Base Map\n\n20 Oct 2017\n        Bug Fixes\n        Added Add Suppression button to Attack options in game controller\n\n31 Oct 2017\n        Redid Movement Templates\n        Imported New T-47 Airspeeder and AT-ST Models\n        Reimported sharpened Cards\n\n1 Nov 2017\n        Added auto spawn dice Trays when rolling attack or defence die\n\n10 Nov 2017\n        Add Army Spawner System\n        Added Color Side System. Players can play same factions against each other now.\n        Updated Command Tokens Colors\n        New Stormtrooper Leader Model\n        New Map: Lars Moisture Farm. Perfect for intro games\n\n18 Nov 2017\n        Bugfixes\n\n19 Nov 2017\n        New Tokens uploaded\n\n22 Nov 2017\n        Timer Bugfixes\n\n27 Nov 2017\n        New Die Roller\n        New Tatooine terrain by www.imperialterrain.com\n\n3 Dec 2017\n        New terrain in Mos Eisley Map by www.imperialterrain.com\n\n6 Dec 2017\n        Added rider for AT-RT\n\n19 Dec 2017\n        New Map: Rebel Hoth base\n        Added Reverse movement on Vehicles\n\n29 Dec 2017\n        Added Squad Numbers for duplicate units\n        Added Mod load counter\n\n20 Jan  2018\n        Added General Veers Cards and Models\n        Added Snowtroopers Cards and Models\n        Added Squad Numbers on Unit Cards\n        Added High Res Vehicle Damage Tokens\n        Fixed Movement Template Bugs\n        Unit Leaders now spawn with unit upgrades in its description.\n\n31 Jan 2018\n        Added Fleet Troopers Cards and Models\n        Added Leia Organa Cards and Models\n        Updated some cards with higher quality pictures from FFG website\n\n3 Jan 2018\n        Added New Rebel Troopers Models with custom poses\n        Added New Stormtroopers Models with custom Poses\n\n7 Feb\n        Bug Fixes\n\n8 Feb\n        Added New 74-Z Speeder Bike Models\n        Bug Fixes\n\n10 Feb\n        Added New AT-RT Models\n\n17 Feb\n        Changed Range Ruler to measure from base instead of center. \n        Uploaded Learn to Play Rules\n\n        Renamed Overwatch tokens to Standby Tokens. Standby Tokens are now removed at end of round with Remove Tokens button\n\n27 Feb\n        Resized Bases to correct sizes.\n\n        New Models for Luke, Vader, Fleet Troopers and Snowtroopers\n\n        Uploaded Official Learn to Play Rules\n        Uploaded Rules Reference\n\n13 March\n        New Army Listbuilder\n        Added Save Army to Data Disk functionality\n        Added Load Army from Data Disk functionality\n        Updated Army list Builder Menu with new skin\n        Army List Builder Menu now supports up to 7 upgrades per unit\n\n18 March\n        New Map System\n        New Pre-made Maps Mos Eisley and Hoth Fortress\n        New Custom Maps sytem\n        New Custom Maps Volcano and Beach\n\n        New Save Map functionality. Create your own maps from Custom Maps and save it to data disk\n        New Load map functionality. Save ur maps to data cartridges and load it with the map loader\n\n25 March\n        New Setup system\n        Spawns tokens based on objective or condition\n        Spawns map overlay\n        Fixed veers points\n        Added priority supplies setupcards\n\n27 March\n        New Guided Setup function\n        - Helps players setup a tournament or standard game\n\n        New player color switch function\n\n        New Define Battlefield function\n        - Automatically draws battlefield cards\n\n        Tokens now highlight a mini instead of tinting a mini. Doesn't screw up custom color tints now. \n\n        Added Spawn range ruler function to tokens outside of the attack menu\n\n5 April\n\tDo starter game spawner. \n\tremove range rulers. script. \n\tdelete everything in die roller\n\tPut in new deployment cards\n\tAuto debug\n\tGame options set up\n\tDebug button.  - wrong scale map loading. Do slow loading?\n\tChange cohesion and range ruler collider. \n\tAdd option to remove stuck cohesion/range/movement templates. \n\tfix scarif\n\tsullust map\n\tadd lock physics note\n\tFinish hoth and sullust map\n\tremove the center map rock\n\tleaders keep tint when reload\n\tFix walls descriptions\n\tFix wall model\n\n10 april\nfix demote bug\ndebug conditions spawn.\nScreen cards debug \ndebug define battlefield\nchange cohesion ruler color\ndebug switch color stuff. \ncards number\ndefine battlefield bug.\n\n16 April\n- Bugfixes\n- Activating your unit now highlights each mini Green\n- Using the range ruler will now highlight all enemy units in distinct colors\n\n6 May\nNew Token System\n- New token tray\n- Shuffle/stack/split functionality\n- Added Special forces tokens\n- Recolored and Rearranged Token buttons\n\nCompetitive Placement Maps\n- Spawns quarter board worth of terrain.\n- Available in guided setup and under map options\n\nNew Units and Cards\n- Added all spoiled Han Solo, Rebel Troopers, Veers and Snowtroopers cards and models.\n- Snowtroopers are now the correct 48 points\n\nTweaked Data Disks\n- Now compatible with new special forces units.\n- Please remake your data disks\n\nNew Turn Counter\n\n10 May\nTweaked Movement Templates\n- Removed Snap points at end of movement templates.\n- Added an Execute Full Move and Return to Start Position button on move menus in the Command Tokens.\n- Resized move templates to be super accurate now.\n\n1 July\nNew Attack Button Function\n- Attack and range Command token function adds Range display over enemy units\n\n- Attack button creates attack mode which draws attack lines to enemy models. \n\n- Attack mode spawns buttons which adds suppression, wound and ion tokens\n\n14 JULY\nNew Palpatine and Imperial Royal Guards Added!\n\n23 July \nNew Map: Tarkin Town\n\n\n2 August\nAdded Deck Builder!\n- Customize your Battle Deck and Command Hand when list building.\n- Correctly spawns command cards if more than 2 Commander or Operatives\n\nAdded Immobilize Tokens\n\nAdded 10 more List Builder templates\n\nAdded Define Battlefield from Battle Deck function\n\nTable will not disappear anymore. EVER. (I hope)\n\nBug Fixes\n\nAdded Camera Shortcuts\nShift + 1: Red Player Die Roller\nShift + 2: Red Player Battlefield\nShift + 3: Blue Player Die Roller\nShift + 4: Blue Player Battlefield\n\n7 August\nAdded New units and their upgrades!\n- Imperial Officer\n- Rebel Officer\n- Chewbacca\n- Wookie Warriors\n- Rebel Sniper and Saboteur\n\nAdded Proton Charge tokens\n- Flip the token to change color\n\n8 August\nAdded New Map Coruscant Slums\n\n6 September\nAdded new tourney maps:\nMimban Trenches\nKachirho Beach\nBespin Gardens\n\nMoved Coruscant and Tarkin Town map to Tourney map\n\nAdded disco lights to Couscant map\n\nUpdated Terrain Descriptions for Tourney Maps\nAdded Command Token Bag\n- You can pull command tokens from the bag if you accidentally delete your token\n\nAdded Boba 3 pip Command card\n\nChange Chewbacca points from 80 to 110\n\nFixed Bugs\n\n10 Oct\nNew Invader League Tournament maps\n- Bespin Plaza\n- Mimban Camp Forward\n- Coruscant Port\n- Lothal City\n- Kashyyyk Jungle\n\n\n13 Nov\nNew Invader League Map\n- Jedha Town Square\n\n29 Nov\nAdded cards:\nFragmentation Grenade\nRecon Intel\nGive in to your Anger Command card\n\nUpdated:\nKey Positions\nRapid Reinforcements\n\n29 Dec\nKrennic, Death Troopers, Jyn and Pathfinders models and cards added\n\n22 Jan\nadded new custom texture map function\n\n31 Jan\nNew Imperial and Rebel Specialist cards and models added!\n\nX-34 Landspeeder Model and Cards added.\n\nImperial Tank coming soon!\n\n8 Feb\nBossk and Sabine models and cards added!\n\nRest of Jyn command cards added",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 13
+    }
+  },
+  "CameraStates": [
+    null,
+    {
+      "Position": {
+        "x": 32.5023041,
+        "y": -2.5,
+        "z": -1.29965365
+      },
+      "Rotation": {
+        "x": 56.2535,
+        "y": 357.8342,
+        "z": 0
+      },
+      "Distance": 45.89782,
+      "Zoomed": false
+    },
+    {
+      "Position": {
+        "x": 32.5023041,
+        "y": -2.5,
+        "z": -1.29965365
+      },
+      "Rotation": {
+        "x": 56.2535,
+        "y": 357.8342,
+        "z": 0
+      },
+      "Distance": 45.89782,
+      "Zoomed": false
+    },
+    {
+      "Position": {
+        "x": -33.50356,
+        "y": -2.5,
+        "z": 1.95005286
+      },
+      "Rotation": {
+        "x": 54.92067,
+        "y": 179.906036,
+        "z": 0
+      },
+      "Distance": 26.5668869,
+      "Zoomed": false
+    },
+    {
+      "Position": {
+        "x": 6.556724,
+        "y": -2.5,
+        "z": 2.42827439
+      },
+      "Rotation": {
+        "x": 54.504158,
+        "y": 180.072632,
+        "z": 0
+      },
+      "Distance": 38.09851,
+      "Zoomed": false
+    },
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "VersionNumber": "v12.1.6"
+}

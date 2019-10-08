@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 38.2059555,
+    "posY": 1.45004,
+    "posZ": 1.96833456,
+    "rotX": 0.000045812285,
+    "rotY": 292.828125,
+    "rotZ": -0.0003198931,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Factory Entrance [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.831010461,
+    "g": 0.809914649,
+    "b": 0.80639863
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/920331113102194957/E363252AAB5999E79F19F0CB5268F1477555DB2F/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/920331113102195081/5D0139B8F74FBF9AB8B8745C421CB4E394CC722D/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/920331113102194957/E363252AAB5999E79F19F0CB5268F1477555DB2F/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "5c6dcc"
+}

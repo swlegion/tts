@@ -1,0 +1,13 @@
+Trooper: Open
+Ground Vehicle: Impassable (Open for AT-RT)
+Repulsor: Impassable
+
+Height: 1
+
+AT-RTs treat this as open terrain.
+
+AT-STs treat this as difficult terrain.
+
+Right click > State > 2 to access top of Loading Door.
+
+Special Thanks: www.imperialterrain.com

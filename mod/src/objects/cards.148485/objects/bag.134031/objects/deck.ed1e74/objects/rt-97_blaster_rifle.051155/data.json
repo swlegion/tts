@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 41.3365746,
+    "posY": 1.17462337,
+    "posZ": 5.85619,
+    "rotX": -0.0020206687,
+    "rotY": 270.004822,
+    "rotZ": 358.908447,
+    "scaleX": 0.6907125,
+    "scaleY": 1,
+    "scaleZ": 0.6907125
+  },
+  "Nickname": "RT-97 Blaster Rifle",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 29907,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "299": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786359682702686927/D70C7493832C16A06BAF912821E20D88DB78E6AB/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/786359682702686927/D70C7493832C16A06BAF912821E20D88DB78E6AB/",
+      "NumWidth": 6,
+      "NumHeight": 2,
+      "BackIsHidden": true,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "051155"
+}

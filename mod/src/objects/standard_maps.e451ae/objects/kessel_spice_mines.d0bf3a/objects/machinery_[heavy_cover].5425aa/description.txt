@@ -1,0 +1,6 @@
+Heavy Cover:
+Non-Creature Troopers
+
+Trooper: Difficult
+G. Vehicle: Open
+Repulsor: Open

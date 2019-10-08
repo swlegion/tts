@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": -45.07,
+    "posY": 2.93502736,
+    "posZ": 5.9,
+    "rotX": -7.64815e-8,
+    "rotY": 90,
+    "rotZ": 180,
+    "scaleX": 1.6,
+    "scaleY": 1,
+    "scaleZ": 1.6
+  },
+  "Nickname": "Troop Call",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 900,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "9": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/957475029107075772/49D97A934E4BAEE9B8D651A506FA163F456B1BB0/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/957475029107006215/52432501747A5C2BC055B0BD9CFD2E930AEE6E68/",
+      "NumWidth": 5,
+      "NumHeight": 4,
+      "BackIsHidden": true,
+      "UniqueBack": false
+    }
+  },
+  "GUID": "4ac922"
+}

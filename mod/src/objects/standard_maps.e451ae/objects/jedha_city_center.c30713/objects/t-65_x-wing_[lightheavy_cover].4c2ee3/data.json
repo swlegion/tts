@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -22.484127,
+    "posY": 1.43517244,
+    "posZ": 4.16037035,
+    "rotX": -0.00114339369,
+    "rotY": 135.429459,
+    "rotZ": 0.00112708553,
+    "scaleX": 0.6280346,
+    "scaleY": 0.520515442,
+    "scaleZ": 0.9959158
+  },
+  "Nickname": "T-65 X-Wing [Light/Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.833800554,
+    "g": 0.833800554,
+    "b": 0.833800554
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542754362/7AAD7B25F1A8C2CDBD05B3444E42CA0801A35BD7/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542756958/ED2976F2E02F484636591969A1FF9DA08909238C/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542757721/3FE644D3A16A20B2B605F50693A6D6E2CBBCB742/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "4c2ee3"
+}

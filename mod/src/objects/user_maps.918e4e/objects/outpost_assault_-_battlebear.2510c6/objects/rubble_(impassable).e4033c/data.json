@@ -1,0 +1,30 @@
+{
+  "Name": "Tileset_Rock",
+  "Transform": {
+    "posX": 12.9473219,
+    "posY": 2.60319185,
+    "posZ": -0.229344338,
+    "rotX": 0.00160420721,
+    "rotY": 179.955612,
+    "rotZ": -0.000009892462,
+    "scaleX": 1.80000067,
+    "scaleY": 1.80000067,
+    "scaleZ": 1.80000067
+  },
+  "Nickname": "Rubble (Impassable)",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 0.9960783,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "GUID": "e4033c"
+}

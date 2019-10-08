@@ -1,0 +1,22 @@
+Heavy Cover:
+Mini size 7 and below
+
+Sides:
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Minis with size > 7 treat this as difficult terrain
+
+Roof:
+All - Difficult
+
+Balcony:
+All - Open
+
+Height: 2
+Balcony Height: 1
+
+Minis can clamber up the ladder without rolling for falling damage
+
+Special Thanks: corvusgamesterrain.com

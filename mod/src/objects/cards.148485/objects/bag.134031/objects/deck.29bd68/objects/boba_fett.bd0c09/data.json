@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 20.9052982,
+    "posY": 1.18065476,
+    "posZ": 19.0573044,
+    "rotX": 0.0000208067231,
+    "rotY": 180.011536,
+    "rotZ": 0.000135601877,
+    "scaleX": 0.227068469,
+    "scaleY": 1,
+    "scaleZ": 0.227068469
+  },
+  "Nickname": "Boba Fett",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 30208,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "287": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786359682702689371/FE903392D23B9F331E16589D286B45790027995B/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/785232635608506395/EDFC338C9A232DEBCE57D652B7DBC38F27774A77/",
+      "NumWidth": 5,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "bd0c09"
+}

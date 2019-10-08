@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 28.6215172,
+    "posY": 1.4419378,
+    "posZ": 15.71656,
+    "rotX": 0.00162805885,
+    "rotY": 180.00029,
+    "rotZ": -0.00001633295,
+    "scaleX": 1.99999928,
+    "scaleY": 1.99999928,
+    "scaleZ": 1.99999928
+  },
+  "Nickname": "Short Desert Wall [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "https://gist.githubusercontent.com/nashjaee/1dd4657643079c5fe4410c169c452c45/raw/133d719e27011b958e5873f466cdae4ce62e44b2/short_long_curve.txt",
+    "DiffuseURL": "https://www.dropbox.com/s/rtdlpenu65l37b9/tatooine_generic.jpg?raw=1",
+    "NormalURL": "",
+    "ColliderURL": "https://gist.githubusercontent.com/nashjaee/1dd4657643079c5fe4410c169c452c45/raw/133d719e27011b958e5873f466cdae4ce62e44b2/short_long_curve.txt",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "93ce86"
+}

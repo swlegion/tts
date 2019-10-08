@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -20.30186,
+    "posY": 1.11148345,
+    "posZ": -7.18604,
+    "rotX": 349.950928,
+    "rotY": 219.919342,
+    "rotZ": 3.58777857,
+    "scaleX": 0.9961783,
+    "scaleY": 1,
+    "scaleZ": 1.00000417
+  },
+  "Nickname": "Crashed T-47 [Heavy Cover](Area Terrain)",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "https://gist.githubusercontent.com/nashjaee/090f2b23439273d3b05e12aedd71aefa/raw/9fdb85791de7bbd8b101f0c68eb8ab65b1d0d1f9/t47_terrain_model.txt",
+    "DiffuseURL": "https://i.imgur.com/MYUSlBZ.jpg",
+    "NormalURL": "",
+    "ColliderURL": "https://gist.githubusercontent.com/nashjaee/6ede0eba4f8d22bec4503a95112f1aa9/raw/50882a611e2fb6967eb6a6656b121906604df71b/t47_terrain_collider.txt",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "7fb803"
+}

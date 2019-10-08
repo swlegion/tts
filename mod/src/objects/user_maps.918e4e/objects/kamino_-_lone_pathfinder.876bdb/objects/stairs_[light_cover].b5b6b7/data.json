@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 30.2900772,
+    "posY": 1.707029,
+    "posZ": 11.4599972,
+    "rotX": 0.06343146,
+    "rotY": 359.914246,
+    "rotZ": 5.6890173,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Stairs [Light Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": false,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780857931346/ECD7B4881B374431E7482B38BFDF673BB3B32A65/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780857930136/92CBC72A161FE8543C328F977F85E9EBBD49D8FA/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780857928379/15FAD204B4C0EBA0047AEB73AB444C9CC62A17B3/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "b5b6b7"
+}

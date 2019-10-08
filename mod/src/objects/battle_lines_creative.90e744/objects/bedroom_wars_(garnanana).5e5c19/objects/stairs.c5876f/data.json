@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": -16.6850567,
+    "posY": 1.44755936,
+    "posZ": 9.352826,
+    "rotX": -0.00007553897,
+    "rotY": 269.995056,
+    "rotZ": -0.00030609715,
+    "scaleX": 1.0999999,
+    "scaleY": 1.0999999,
+    "scaleZ": 1.0999999
+  },
+  "Nickname": "STAIRS",
+  "ColorDiffuse": {
+    "r": 0.9559999,
+    "g": 0.391999066,
+    "b": 0.112999074
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/993513208355171880/32D013080F763D97816DB808DF758C8C212ED18D/",
+    "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/993513208355170501/D68C4A4427BE2C22EFD4B0C8FB024BF19D821921/",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "c5876f"
+}

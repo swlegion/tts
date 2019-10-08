@@ -1,0 +1,13 @@
+Heavy Cover:
+All, except for AT-RT being fired upon from same or higher height
+
+Walkway:
+Troopers, AT-RTs, 74-Zs - Open
+All Else - Impassable
+
+Special Climb/Clamber:
+Climbing units may climb down without access to a strut by rolling white dice as if clambering, or clamber down by rolling red dice instead of white.
+
+Hold LMB+RMB to place minis underneath walkway.
+
+Height: 1

@@ -1,0 +1,9 @@
+Heavy Cover:
+Minis Size 9 and below
+
+Sides
+Trooper - Impassable
+Ground Vehicle - Impassable
+Repulsor - Impassable
+
+Height: 2

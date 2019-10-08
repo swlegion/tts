@@ -1,0 +1,13 @@
+Trooper: Open
+Ground Vehicle: Open
+Repulsor: Open
+
+Height: 1
+
+This is not area terrain
+
+Right Click > State > 1 to activate different levels!
+
+Only minis with bases that can fit within width of walkway can be placed on it
+
+Special thanks to www.youtube.com/tabletopoddity

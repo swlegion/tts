@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 8.008356,
+    "posY": 1.428345,
+    "posZ": 9.04192352,
+    "rotX": 0.000605829235,
+    "rotY": 89.99442,
+    "rotZ": -0.00262220437,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Small Park (Area Terrain) [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.447735071,
+    "g": 0.447735071,
+    "b": 0.447735071
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542564424/9FC66E31B79B8153120709104B273638AE48EBF0/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542566377/16DFAB37337CEF01C945C4480FCD0DE4D4CCA70E/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542567040/DB96E17562D4DF5AAF085C7A4A4633D60C504A8C/",
+    "Convex": false,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "423121"
+}

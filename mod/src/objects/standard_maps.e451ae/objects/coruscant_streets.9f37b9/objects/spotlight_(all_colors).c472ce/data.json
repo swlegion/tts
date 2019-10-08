@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 19.6320324,
+    "posY": 5.899584,
+    "posZ": -14.0204077,
+    "rotX": -0.00166717311,
+    "rotY": 0.0158844627,
+    "rotZ": -0.000004304911,
+    "scaleX": 0.008646832,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Spotlight (all colors)",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/955215719513199115/2FAF8E677EE0C2DD14661E8BF678FD74740DA4DB/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 6
+  },
+  "GUID": "c472ce"
+}

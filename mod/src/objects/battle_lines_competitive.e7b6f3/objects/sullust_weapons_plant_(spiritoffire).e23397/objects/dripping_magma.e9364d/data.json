@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 45.8636246,
+    "posY": -0.09438816,
+    "posZ": -0.1398499,
+    "rotX": 0.00166700594,
+    "rotY": 180.003281,
+    "rotZ": 0.00000154553391,
+    "scaleX": 10.2500172,
+    "scaleY": 10.2500172,
+    "scaleZ": 10.2500172
+  },
+  "Nickname": "Dripping Magma",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": false,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/993513208355169228/517F3625489E7A80F31469D45AD4850D574063B7/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 2
+  },
+  "GUID": "e9364d"
+}

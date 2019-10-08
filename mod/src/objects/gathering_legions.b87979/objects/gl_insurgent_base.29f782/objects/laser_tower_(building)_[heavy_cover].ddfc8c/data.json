@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 34.6026573,
+    "posY": 4.253731,
+    "posZ": -10.1738853,
+    "rotX": 0.000803667,
+    "rotY": 60.0326576,
+    "rotZ": 0.00138243928,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Laser Tower (Building) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.7980591,
+    "g": 0.7980591,
+    "b": 0.7980591
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546356288/EB43D394024C1EB7FD69FD3D849CEC3FDC025330/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546356454/B807F3980A59A14262CC18F56C9B871C61E5DE22/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546356599/1BAFDE0CF11052070D98FA4456652A140B508D2A/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "ddfc8c"
+}

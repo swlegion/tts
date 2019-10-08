@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -7.741592,
+    "posY": 2.04748654,
+    "posZ": 2.231807,
+    "rotX": 0.0006903761,
+    "rotY": 225.1185,
+    "rotZ": 0.00172184641,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Broken Gonk Droid",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/90478669042790699/9443003C922F6B119CCF377A262546785323903F/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/90478669042790984/E4EE49BA4083A37F73B0F84A653B2397676A9835/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "8ccb97"
+}

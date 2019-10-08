@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 24.1159286,
+    "posY": -0.881396651,
+    "posZ": -21.0328255,
+    "rotX": 0.00154106144,
+    "rotY": 344.993347,
+    "rotZ": 15.22135,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Flooded Ruins (Light Cover)",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.9921741,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/925923919090976574/231F0EC62893883E1C0C1736AAD4BD86577A69B6/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925923919090978988/1B78D85E27538105E83F67F68B13B36012777958/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/925923919090978436/AF601673C7AF67D2185D4DFBE07FC81EF9713494/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "118a93"
+}

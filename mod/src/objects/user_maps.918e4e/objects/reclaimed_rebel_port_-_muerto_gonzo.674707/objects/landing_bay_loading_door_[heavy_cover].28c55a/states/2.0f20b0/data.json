@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 25.089119,
+    "posY": 1.44517624,
+    "posZ": -0.4285854,
+    "rotX": -0.00177105668,
+    "rotY": 0.334185272,
+    "rotZ": -0.00020736974,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Landing Bay Loading Door [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.63,
+    "g": 0.68,
+    "b": 0.7
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546190513/71CCB9F68D1ECBC9273FA105D7DC6D9EDE3D96C0/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546190629/B5ACDF845BE9202B1176FF884D6331DA189C6E01/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546190741/8AF178C1085D6CA43A84773848AD82AA6334A5C3/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "0f20b0"
+}

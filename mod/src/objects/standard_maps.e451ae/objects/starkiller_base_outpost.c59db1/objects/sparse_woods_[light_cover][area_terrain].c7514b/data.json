@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -16.4601326,
+    "posY": 4.585604,
+    "posZ": -7.990179,
+    "rotX": 1.02011526,
+    "rotY": 103.3385,
+    "rotZ": 1.225745,
+    "scaleX": 0.375,
+    "scaleY": 0.375,
+    "scaleZ": 0.375
+  },
+  "Nickname": "Sparse Woods [Light Cover][Area Terrain]",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992160261,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/920331435132689629/BDC9FD95EDE4066F78F82E4A1110DD2DAAF1AFB0/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/920331435132689762/843E0604CB13D98BB2EF1D1F74EEDAF0C002CBFB/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/920331435132692423/117614089917DC89745FA7841B00962B5D3F314D/",
+    "Convex": false,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "c7514b"
+}

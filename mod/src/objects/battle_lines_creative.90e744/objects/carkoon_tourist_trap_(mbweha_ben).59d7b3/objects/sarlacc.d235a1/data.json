@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -2.05116,
+    "posY": 0.471648932,
+    "posZ": -2.42758131,
+    "rotX": 0.001576497,
+    "rotY": 168.824936,
+    "rotZ": -0.0003111808,
+    "scaleX": 2,
+    "scaleY": 1.5,
+    "scaleZ": 2
+  },
+  "Nickname": "Sarlacc",
+  "ColorDiffuse": {
+    "r": 0.857142866,
+    "g": 0.7971508,
+    "b": 0.7063216
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/999141806431455577/47F9BE341575A4B2935F9A4D275C7DEAF7737938/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/999141806431455674/3EBDA64C2FFD25709CC0F7277FC2C34967BFF81C/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/999141806431455768/F0730F33740B4EB13B894DB6B5EEF78FA5DF426C/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "d235a1"
+}

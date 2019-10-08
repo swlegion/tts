@@ -1,0 +1,31 @@
+{
+  "Name": "Chip_50",
+  "Transform": {
+    "posX": 38.24998,
+    "posY": 1.85399234,
+    "posZ": 5.51582861,
+    "rotX": 0.00115302135,
+    "rotY": 75.04193,
+    "rotZ": 7.763281,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "chip",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "GUID": "2f24ef"
+}

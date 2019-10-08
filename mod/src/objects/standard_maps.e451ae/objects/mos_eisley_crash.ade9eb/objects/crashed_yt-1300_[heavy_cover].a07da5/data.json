@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 22.6221581,
+    "posY": -10.7168341,
+    "posZ": 0.566324,
+    "rotX": 357.8617,
+    "rotY": 65.77378,
+    "rotZ": 355.37207,
+    "scaleX": 2.01999927,
+    "scaleY": 2.01999927,
+    "scaleZ": 2.01999927
+  },
+  "Nickname": "Crashed YT-1300 [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.900928259,
+    "g": 0.900928259,
+    "b": 0.900928259
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542610257/DAE2C8D1697783A945B818B901B511F60A650425/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858756670/5957273516335704C76674D69D31451F216D3A95/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542610257/DAE2C8D1697783A945B818B901B511F60A650425/",
+    "Convex": false,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "a07da5"
+}

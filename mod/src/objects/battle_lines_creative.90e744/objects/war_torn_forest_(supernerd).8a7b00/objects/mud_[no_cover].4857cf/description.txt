@@ -1,0 +1,10 @@
+Mud:
+Trooper - Difficult
+G. Vehicle - Difficult
+Repulsor - Open
+
+Defending Trooper units may consider this terrain piece as light cover. If they choose to do so and have fewer supression tokens than their courage value, the attacker may add the supressive keyword to the attack pool.
+
+Troopers only get cover if they are in base contact with this terrain and the line between th
+
+Does not obscure LOS

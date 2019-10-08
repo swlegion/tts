@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 37.90664,
+    "posY": 1.44202864,
+    "posZ": 15.0423193,
+    "rotX": 0.007674157,
+    "rotY": 59.98945,
+    "rotZ": 0.00488626771,
+    "scaleX": 0.8750001,
+    "scaleY": 0.8750001,
+    "scaleZ": 0.8750001
+  },
+  "Nickname": "Lava River [No Cover]",
+  "ColorDiffuse": {
+    "r": 0.808798552,
+    "g": 0.808798552,
+    "b": 0.808798552
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858791799/423587A34B0C670F85CA4132EA9BA2F208F898A8/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858782119/3CEBB0F57CE5C4275DB77D024D2032FD32D8843B/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858791471/3F512CE00A1ED579254364821935A57F0EBF6CD8/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "aa0b04"
+}

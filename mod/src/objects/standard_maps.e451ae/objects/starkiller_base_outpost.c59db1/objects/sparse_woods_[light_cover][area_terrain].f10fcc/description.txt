@@ -1,0 +1,13 @@
+Heavy Cover:
+Minis Size 4 and below
+
+Sides:
+All - Impassable
+Minis size > 4 treat this as difficult terrain
+
+Roof:
+Trooper: Difficult
+G. Vehicle: Difficult
+Repulsor: Impassable
+
+Height: 3

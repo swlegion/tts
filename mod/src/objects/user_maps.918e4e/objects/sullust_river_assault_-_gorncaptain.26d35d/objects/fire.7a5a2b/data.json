@@ -1,0 +1,37 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": -22.314045,
+    "posY": 0.861122,
+    "posZ": 4.83426762,
+    "rotX": -0.00269167824,
+    "rotY": 359.9839,
+    "rotZ": 351.0231,
+    "scaleX": 4.849999,
+    "scaleY": 4.849999,
+    "scaleZ": 4.849999
+  },
+  "Nickname": "Fire",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/923679899551958619/396850B85ABBA8FBEA7A8F23A14A43074C9A887E/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "7a5a2b"
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -24.5370388,
+    "posY": 3.85526347,
+    "posZ": -4.055464,
+    "rotX": -0.000268084928,
+    "rotY": 276.411743,
+    "rotZ": 19.6615772,
+    "scaleX": 0.8000002,
+    "scaleY": 0.8000002,
+    "scaleZ": 0.8000002
+  },
+  "Nickname": "Doritos (height 2)",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.9921668,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/993513208355173709/AA91B42943889961DE0CC5F3F649BABB7A65B2E1/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/993513208355173887/637C1F331B4025A77B5EF49401BDDAC14A7D0CF4/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "8b0a61"
+}

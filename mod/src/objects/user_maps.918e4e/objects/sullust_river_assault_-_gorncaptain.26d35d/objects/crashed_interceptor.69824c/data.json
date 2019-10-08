@@ -1,0 +1,50 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -22.5303078,
+    "posY": -3.62067246,
+    "posZ": 15.7883635,
+    "rotX": 343.604065,
+    "rotY": 276.325562,
+    "rotZ": 63.8853836,
+    "scaleX": 3.30435157,
+    "scaleY": 3.32499838,
+    "scaleZ": 3.32499838
+  },
+  "Nickname": "Crashed Interceptor",
+  "ColorDiffuse": {
+    "r": 0.249997944,
+    "g": 0.249997944,
+    "b": 0.249997944
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/923679899551959371/BD640718BFFAC3E4B5DF6C1B0220FB5A87E5B13C/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/923679899551959456/0210AA11B9677EE1E971C4BAC04CCE9A07CB3FD9/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/923679899551958310/41D4D10265D8B4B9FC1B0C640F9F8D94C816CE89/",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 1,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 0.8745098,
+        "g": 0.8117647,
+        "b": 0.745098054
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 3,
+      "FresnelStrength": 0.1
+    },
+    "CastShadows": true
+  },
+  "GUID": "69824c"
+}

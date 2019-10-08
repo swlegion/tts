@@ -1,0 +1,6 @@
+After a non-repulsor unit performs a move, if it as range 1 and in line of sight of this condition token, roll a red defense die. On a BLOCK result the condition token detonates; on a SURGE result it detonates twice before being removed.
+
+Attack profile:
+Range 1 | RED, BLACK attack die
+Offensive Surge
+BLAST, IMPACT 1

@@ -1,0 +1,12 @@
+Heavy Cover:
+All except AT-ST and T-47
+
+Sides:
+All - Impassable
+
+Roof/Ramp:
+All - Open
+
+Height: 1
+
+Special Thanks: www.imperialterrain.com

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -14.087554,
+    "posY": 1.53920841,
+    "posZ": 10.5052662,
+    "rotX": 0.000223390787,
+    "rotY": 330.005737,
+    "rotZ": -0.000225096272,
+    "scaleX": 0.3250011,
+    "scaleY": 0.3250011,
+    "scaleZ": 0.3250011
+  },
+  "Nickname": "Autographed Picture",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/993513208355172436/D6F293A99CC82014E88235B071639C668A411D29/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/993513208355172583/A7A25730FC615F1196E58D2BA5A9F21508651257/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 2,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "263b52"
+}

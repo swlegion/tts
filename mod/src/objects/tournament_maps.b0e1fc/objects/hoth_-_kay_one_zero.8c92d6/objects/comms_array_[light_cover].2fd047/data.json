@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -5.147212,
+    "posY": 0.9429309,
+    "posZ": 14.2708588,
+    "rotX": -0.00113730424,
+    "rotY": 315.025,
+    "rotZ": 0.0011543507,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Comms Array [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.857674,
+    "g": 0.923306048,
+    "b": 0.9634145
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546357378/EF45DE36D9238FE2D76F66F34D120FDB1AF20DCF/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546357512/D37AD8A7B05DA682F1AA251163A2E02C50906AE5/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546357378/EF45DE36D9238FE2D76F66F34D120FDB1AF20DCF/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "2fd047"
+}

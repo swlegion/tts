@@ -1,0 +1,43 @@
+{
+  "Name": "Custom_Model_Infinite_Bag",
+  "Transform": {
+    "posX": -41.3224678,
+    "posY": 0.941328764,
+    "posZ": -6.074284,
+    "rotX": -3.618533e-7,
+    "rotY": 270.0019,
+    "rotZ": 0.00160508242,
+    "scaleX": 2.14999914,
+    "scaleY": 2.14999914,
+    "scaleZ": 2.14999914
+  },
+  "Nickname": "Aim Tokens",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442508/5CF014A3E962C6116B3B910C8BE44FE1C8FCA1D2/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442626/A2574B5726D1DE612FF4F2464A2315C7C85759D1/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 7,
+    "CastShadows": true
+  },
+  "GUID": "beca0f"
+}

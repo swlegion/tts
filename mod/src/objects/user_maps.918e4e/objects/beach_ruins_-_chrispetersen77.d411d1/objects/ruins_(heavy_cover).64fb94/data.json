@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 9.097103,
+    "posY": 3.01186347,
+    "posZ": -0.383150578,
+    "rotX": 359.95575,
+    "rotY": 345.08075,
+    "rotZ": 8.684004,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Ruins (Heavy Cover)",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.9921741,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/925923919090990041/70632585DC226A6C0D75F81A2EF6A9F92FD3C3EF/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925923919090978988/1B78D85E27538105E83F67F68B13B36012777958/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/925923919090984315/69B753FA7C1069E82E7A5DBC517DD0CE74CD21DB/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "64fb94"
+}

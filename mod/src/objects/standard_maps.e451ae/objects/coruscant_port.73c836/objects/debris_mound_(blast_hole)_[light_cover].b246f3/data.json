@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 28.2134113,
+    "posY": 1.44239211,
+    "posZ": 15.3720093,
+    "rotX": 0.001451458,
+    "rotY": 149.986832,
+    "rotZ": -0.000827834767,
+    "scaleX": 0.7000003,
+    "scaleY": 0.7000003,
+    "scaleZ": 0.7000003
+  },
+  "Nickname": "Debris Mound (Blast Hole) [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.478431284,
+    "g": 0.5581453,
+    "b": 0.7137255
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542465659/30348E08551EAA3E8D5164E0D2931B3EB72DCEC1/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542470239/CFB22A69010911784880172594A7106CBC1F8DF1/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542467139/4036C31123FF00D2459B3ED1E57CD8141ACFAC8D/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "b246f3"
+}

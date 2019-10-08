@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 59.989933,
+    "posY": 1.92565489,
+    "posZ": -0.3794301,
+    "rotX": 0.0000032773296,
+    "rotY": 180,
+    "rotZ": 180,
+    "scaleX": 0.227068469,
+    "scaleY": 1,
+    "scaleZ": 0.227068469
+  },
+  "Nickname": "DF-90 Mortar Trooper",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 34104,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "296": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786359682702689238/736133C6442836F76813DF54ABE792E9477544F0/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/786359682702689238/736133C6442836F76813DF54ABE792E9477544F0/",
+      "NumWidth": 3,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "6a2d4d"
+}

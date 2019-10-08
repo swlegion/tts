@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 39.47393,
+    "posY": 1.02087975,
+    "posZ": -3.57265186,
+    "rotX": 0.0176614821,
+    "rotY": 270.5071,
+    "rotZ": 0.06902063,
+    "scaleX": 0.227068469,
+    "scaleY": 1,
+    "scaleZ": 0.227068469
+  },
+  "Nickname": "Fleet Troopers Alt Art",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 34204,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "287": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786359682702689371/FE903392D23B9F331E16589D286B45790027995B/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/785232635608506395/EDFC338C9A232DEBCE57D652B7DBC38F27774A77/",
+      "NumWidth": 5,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "56fdbc"
+}

@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 13.2521105,
+    "posY": 1.45313025,
+    "posZ": -8.159274,
+    "rotX": -0.00112939859,
+    "rotY": 45.1814766,
+    "rotZ": -0.00113846886,
+    "scaleX": 3.14999819,
+    "scaleY": 3.14999819,
+    "scaleZ": 3.14999819
+  },
+  "Nickname": "Fallen Trunk [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.9921631,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858983331/8B58A71610FBD635B4900FD91BA3E8A05AFB14A7/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858983602/7774355AA162F6E9BBF9BE7C5CF2D4D9B2B4131B/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858982494/8A471C37E31A3F4C9AC35D759D4141E60928D03D/",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 0.8745098,
+        "g": 0.8117647,
+        "b": 0.745098054
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "2def55"
+}

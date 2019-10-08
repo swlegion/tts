@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -25.4028015,
+    "posY": 1.44770145,
+    "posZ": -14.9005194,
+    "rotX": -0.00030469487,
+    "rotY": 180.0081,
+    "rotZ": 0.00007818232,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Battlefield Editor",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/931553682910195776/0B15B2810ABEBE5429E4A24852D96BAC2DC28BF7/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/931553682910196611/6DAC39957B0991B113F6E69A60090B9B45FDD3DC/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540537100371/0B15B2810ABEBE5429E4A24852D96BAC2DC28BF7/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "75f45e"
+}

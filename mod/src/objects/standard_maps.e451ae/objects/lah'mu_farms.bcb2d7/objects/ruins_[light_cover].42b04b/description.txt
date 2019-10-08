@@ -1,0 +1,15 @@
+Light Cover:
+Mini size 3 and below
+
+Sides:
+All - Impassable
+
+Windows and Low wall:
+Troopers - Difficult
+
+Doorway:
+Troopers Open
+
+Height: 1
+
+Special Thanks: Sith Vicious

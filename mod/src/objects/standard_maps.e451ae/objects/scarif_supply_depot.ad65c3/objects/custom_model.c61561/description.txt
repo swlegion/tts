@@ -1,0 +1,12 @@
+Light Cover (Area Terrain): Minis Size 1.5 and below
+
+Jungle:
+Troopers - Open
+G. Vehicles - Impassable
+Repulsor - Impassable
+
+Height: 1
+
+Minis get cover as long the imaginary line between the attacker and defender crosses this terrain, and this terrain blocks LOS of the defender.
+
+Trees do have collision enabled.

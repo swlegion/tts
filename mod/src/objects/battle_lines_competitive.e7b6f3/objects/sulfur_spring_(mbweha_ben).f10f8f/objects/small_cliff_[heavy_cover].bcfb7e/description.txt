@@ -1,0 +1,10 @@
+Heavy Cover:
+All but AT-ST & T-47
+
+Sides:
+All - Impassable
+
+Plateau:
+All - Open
+
+Height: 1

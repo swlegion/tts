@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 8.200087,
+    "posY": 1.44756842,
+    "posZ": -0.045243293,
+    "rotX": 0.000403244776,
+    "rotY": 15.0122919,
+    "rotZ": 0.0000241400739,
+    "scaleX": 2.28693151,
+    "scaleY": 4.57386446,
+    "scaleZ": 1.18920445
+  },
+  "Nickname": "Arch",
+  "ColorDiffuse": {
+    "r": 0.2191318,
+    "g": 0.2633057,
+    "b": 0.9181184
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/993513208355171233/555E8F924DF4B3988CE517ABCB02AFB562CF9D2F/",
+    "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/993513208355170501/D68C4A4427BE2C22EFD4B0C8FB024BF19D821921/",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "dc39a6"
+}

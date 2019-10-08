@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -5.883327,
+    "posY": 0.1044949,
+    "posZ": -7.240303,
+    "rotX": 355.5404,
+    "rotY": 135.779572,
+    "rotZ": 349.4361,
+    "scaleX": 0.750000238,
+    "scaleY": 0.750000238,
+    "scaleZ": 0.750000238
+  },
+  "Nickname": "Destroyed LAAT Gunship [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542593596/438183F810EA457A2792A2DE9F0D419C5C3B7C5D/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858716507/0D8A363559CCA6C401CD99E30C12AEFF07D894FC/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858724701/48886E8AC98425ECD51EA00FAE0DDC42644757AA/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "6b3dff"
+}

@@ -1,0 +1,31 @@
+{
+  "Name": "BlockTriangle",
+  "Transform": {
+    "posX": 59.9617958,
+    "posY": 1.00647581,
+    "posZ": -1.49760258,
+    "rotX": -0.00000108637357,
+    "rotY": 0.00498296134,
+    "rotZ": -0.0001477992,
+    "scaleX": 0.250000417,
+    "scaleY": 0.250000417,
+    "scaleZ": 0.250000417
+  },
+  "Nickname": "Deck Builder",
+  "ColorDiffuse": {
+    "r": 0.00539905,
+    "g": 0.772058845,
+    "b": 0
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "GUID": "082f27"
+}

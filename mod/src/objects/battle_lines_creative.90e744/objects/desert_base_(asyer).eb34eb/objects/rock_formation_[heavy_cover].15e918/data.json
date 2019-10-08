@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 25.6164,
+    "posY": 1.43760228,
+    "posZ": 12.0708075,
+    "rotX": 359.976776,
+    "rotY": 224.982925,
+    "rotZ": 359.980774,
+    "scaleX": 1.0999999,
+    "scaleY": 1.0999999,
+    "scaleZ": 1.0999999
+  },
+  "Nickname": "Rock Formation [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.9019608,
+    "g": 0.928127766,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780859005379/F7C6ED4E6B005B139BDCC30294CC597598FB0EB1/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858998082/23872B0D4763A4A224F0BAB1995AE975557FAEAF/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780859005017/1E7B8DF6BB6CF43EB397D3AFA89E4A41518AB1BB/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "15e918"
+}

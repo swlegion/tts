@@ -1,0 +1,14 @@
+Heavy Cover:
+All but AT-ST & T-47
+
+Sides, from Main Board:
+All - Impassable
+
+Sides, from Sand:
+Troopers - Difficult
+Vehicles - Open
+
+Plateau & Slope:
+All - Open
+
+Height: 1

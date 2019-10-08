@@ -1,0 +1,7 @@
+Heavy Cover:
+All except T-47, AT-ST
+
+Rock:
+All - Impassable
+
+Height: 1

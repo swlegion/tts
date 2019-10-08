@@ -1,0 +1,8 @@
+Cover Type: Light
+
+Trooper: Difficult
+Ground Vehicle: Open
+Repulsor: Open
+
+Provides Cover only to Troopers
+Does not obscure LOS

@@ -1,0 +1,37 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": -23.1142559,
+    "posY": 3.79397178,
+    "posZ": 0.313408434,
+    "rotX": 0.0445139259,
+    "rotY": 0.000054179065,
+    "rotZ": 359.971741,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 0,
+    "b": 0
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/924802174592913830/3EF7AFBEB749B166360E4967602AA0C7EA06630F/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "eb15a9"
+}

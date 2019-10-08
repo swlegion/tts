@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -33.782692,
+    "posY": 0.9604946,
+    "posZ": 7.39744949,
+    "rotX": -0.005261261,
+    "rotY": 90.01069,
+    "rotZ": 0.000514699845,
+    "scaleX": 1.74999952,
+    "scaleY": 2.65904832,
+    "scaleZ": 1.74999952
+  },
+  "Nickname": "Blue Die Roller",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314440128/9E5E7E0F1170FA132E9D5CB1BE6CFB007FF4E172/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314446934/E510C75E78DB3C4115BE01E772B9F471B5F51975/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786359883314440128/9E5E7E0F1170FA132E9D5CB1BE6CFB007FF4E172/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0.0358068645
+    },
+    "CastShadows": true
+  },
+  "GUID": "1daecb"
+}

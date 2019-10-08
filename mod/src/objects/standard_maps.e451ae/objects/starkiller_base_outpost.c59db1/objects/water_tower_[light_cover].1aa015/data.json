@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -4.05023336,
+    "posY": 1.4476217,
+    "posZ": -5.950015,
+    "rotX": -0.000294757658,
+    "rotY": 225.01358,
+    "rotZ": -0.00015973972,
+    "scaleX": 0.325000584,
+    "scaleY": 0.325000584,
+    "scaleZ": 0.325000584
+  },
+  "Nickname": "Water Tower [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.5028257,
+    "g": 0.547035456,
+    "b": 0.597560942
+  },
+  "Locked": true,
+  "Grid": false,
+  "Snap": false,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": false,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780857812039/76972A40A298DAFC8FEB8FCD1E2C65D29705807F/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/266100825028463075/8F65E159E5B044D3C3094ADA11BBE3663CE05CE9/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780857898471/6B8081C0A71DB09A3EC5E9F4937BDACCF8BECB47/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "1aa015"
+}

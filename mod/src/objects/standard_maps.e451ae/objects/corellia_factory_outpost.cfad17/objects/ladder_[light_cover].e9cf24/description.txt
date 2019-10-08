@@ -1,0 +1,6 @@
+Light Cover:
+Non-Creature Troopers
+
+Troopers can clamber up the ladder without rolling for falling damage
+
+Special thanks to www.youtube.com/tabletopoddity

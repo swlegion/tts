@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": 10.05457,
+    "posY": 1.43868518,
+    "posZ": 0.627387762,
+    "rotX": 359.984,
+    "rotY": 105.119156,
+    "rotZ": 0.07519807,
+    "scaleX": 11.3423271,
+    "scaleY": 1,
+    "scaleZ": 10.2008553
+  },
+  "Nickname": "River (Shallow Water) [No Cover]",
+  "ColorDiffuse": {
+    "r": 0.6453429,
+    "g": 0.7962584,
+    "b": 0.987804949
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "http://cloud-3.steamusercontent.com/ugc/785234780858761875/20CEE36E425A36606C84F505B917EE1A9B906049/",
+    "ImageSecondaryURL": "",
+    "WidthScale": 0,
+    "CustomToken": {
+      "Thickness": 0.2,
+      "MergeDistancePixels": 15,
+      "Stackable": false
+    }
+  },
+  "GUID": "6924b5"
+}

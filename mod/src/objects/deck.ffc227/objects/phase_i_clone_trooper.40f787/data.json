@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": -19.5568027,
+    "posY": 1.17827725,
+    "posZ": 5.844206,
+    "rotX": -0.004956745,
+    "rotY": 180.001663,
+    "rotZ": 0.0147951255,
+    "scaleX": 0.181600809,
+    "scaleY": 1,
+    "scaleZ": 0.181600809
+  },
+  "Nickname": "Phase I Clone Trooper",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 33909,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "339": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785234780871838773/89B3703DF571DA7E93FB1107BED8384721A0B630/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/785234780871782972/4F10B1D3DA31947E55A5CCB8DA4C4E309EC095AD/",
+      "NumWidth": 8,
+      "NumHeight": 2,
+      "BackIsHidden": true,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "40f787"
+}

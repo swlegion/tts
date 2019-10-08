@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -41.20492,
+    "posY": 1.14064276,
+    "posZ": -12.5948782,
+    "rotX": 5.23798782e-8,
+    "rotY": 240.01915,
+    "rotZ": 2.4502496e-8,
+    "scaleX": 0.750000238,
+    "scaleY": 0.750000238,
+    "scaleZ": 0.750000238
+  },
+  "Nickname": "Ion Token",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442992/DD893F407D50F2D029305A2F181989F90E3FA46A/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314443114/1C858EEC4B7A2247AA506EC699FF65D7C72E5484/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "2580ea"
+}

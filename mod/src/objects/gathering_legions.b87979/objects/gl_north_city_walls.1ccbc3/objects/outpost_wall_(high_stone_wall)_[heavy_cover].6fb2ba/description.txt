@@ -1,0 +1,8 @@
+Trooper: Wall - Impassable, Ledges - Open
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Front Wall Height: 2
+Platform Height: 2
+
+Special thanks to www.imperialterrain.com

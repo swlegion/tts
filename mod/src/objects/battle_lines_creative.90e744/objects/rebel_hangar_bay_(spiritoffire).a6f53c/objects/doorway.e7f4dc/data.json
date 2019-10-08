@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 3.89588261,
+    "posY": 2.30003858,
+    "posZ": -15.0149918,
+    "rotX": 0.0012559226,
+    "rotY": 90.0110855,
+    "rotZ": -0.00108261569,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Doorway",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/851592766469594963/C45A6D2B86F384DB291395617A8AE4329E490FA8/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 2,
+    "TypeIndex": 1,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "e7f4dc"
+}

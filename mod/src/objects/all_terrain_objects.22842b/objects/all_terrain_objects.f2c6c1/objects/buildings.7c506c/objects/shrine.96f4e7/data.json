@@ -1,0 +1,33 @@
+{
+  "Name": "Bag",
+  "Transform": {
+    "posX": 38.13525,
+    "posY": 2.815569,
+    "posZ": 19.55504,
+    "rotX": 1.670342,
+    "rotY": -0.003382645,
+    "rotZ": 359.608551,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Shrine",
+  "ColorDiffuse": {
+    "r": 0.7058823,
+    "g": 0.366520882,
+    "b": 0
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "GUID": "96f4e7"
+}

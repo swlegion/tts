@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -0.08034746,
+    "posY": 1.44998443,
+    "posZ": -6.238685,
+    "rotX": 0.000315322861,
+    "rotY": 359.9902,
+    "rotZ": -0.00008315969,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Terminal [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.383606166,
+    "g": 0.383606166,
+    "b": 0.383606166
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/90478669043042075/FBCBEB26F9A2630029366DF4A7F4BBC45F706BDD/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/90478669043042812/B2FA8ABDD00DF0074D3FD89E48A9103A0A4B1863/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "01cd61"
+}

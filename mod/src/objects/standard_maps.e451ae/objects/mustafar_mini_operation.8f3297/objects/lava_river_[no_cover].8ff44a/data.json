@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": 13.1209364,
+    "posY": 1.37139416,
+    "posZ": 7.637841,
+    "rotX": 0.001451163,
+    "rotY": 149.991577,
+    "rotZ": -0.0008261033,
+    "scaleX": 4.9,
+    "scaleY": 1,
+    "scaleZ": 4.78
+  },
+  "Nickname": "Lava River [No Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "http://cloud-3.steamusercontent.com/ugc/785234780858811065/A79505EC7280786C4E809038B0C827461B44CCC6/",
+    "ImageSecondaryURL": "",
+    "WidthScale": 0,
+    "CustomToken": {
+      "Thickness": 0.2,
+      "MergeDistancePixels": 15,
+      "Stackable": false
+    }
+  },
+  "GUID": "8ff44a"
+}

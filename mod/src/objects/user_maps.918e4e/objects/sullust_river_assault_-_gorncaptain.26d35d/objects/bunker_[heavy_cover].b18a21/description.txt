@@ -1,0 +1,7 @@
+Sides
+All: Impassable
+
+Roof
+All: Open
+
+Height: 1

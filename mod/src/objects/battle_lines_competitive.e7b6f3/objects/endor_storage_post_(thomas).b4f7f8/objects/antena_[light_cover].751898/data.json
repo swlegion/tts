@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 30.4863529,
+    "posY": -0.4,
+    "posZ": -6.31227732,
+    "rotX": 0.00350436731,
+    "rotY": 165.034454,
+    "rotZ": 357.69516,
+    "scaleX": 0.6250003,
+    "scaleY": 0.6250003,
+    "scaleZ": 0.6250003
+  },
+  "Nickname": "Antena [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.9361389,
+    "g": 0.978713,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546357378/EF45DE36D9238FE2D76F66F34D120FDB1AF20DCF/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546357512/D37AD8A7B05DA682F1AA251163A2E02C50906AE5/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546357378/EF45DE36D9238FE2D76F66F34D120FDB1AF20DCF/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "751898"
+}

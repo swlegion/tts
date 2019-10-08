@@ -1,0 +1,33 @@
+{
+  "Name": "Bag",
+  "Transform": {
+    "posX": 51.4512367,
+    "posY": 2.800667,
+    "posZ": 36.0202332,
+    "rotX": 1.47318137,
+    "rotY": 359.99054,
+    "rotZ": 359.883728,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Floors",
+  "ColorDiffuse": {
+    "r": 0.7058823,
+    "g": 0.366520882,
+    "b": 0
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "GUID": "aa061c"
+}

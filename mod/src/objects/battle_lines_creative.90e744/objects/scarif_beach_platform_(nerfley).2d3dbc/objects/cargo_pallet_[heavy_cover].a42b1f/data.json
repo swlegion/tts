@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -10.0592079,
+    "posY": 4.157509,
+    "posZ": -0.0964598656,
+    "rotX": -0.00145858433,
+    "rotY": 359.990173,
+    "rotZ": 0.00179136847,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Cargo Pallet [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542828699/2CE5437BAF7960D8E76D0A664182637B7ADE8C7D/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542822457/CC3F0DC02DD35143BD5DAF27A694D9EC1BA6A98A/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542823541/5F7BBC41E9FB517BE41C845282B3A731EB050150/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "a42b1f"
+}

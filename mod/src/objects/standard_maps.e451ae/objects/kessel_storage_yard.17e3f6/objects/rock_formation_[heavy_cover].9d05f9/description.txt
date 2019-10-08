@@ -1,0 +1,10 @@
+Heavy Cover:
+Mini Size 7 and below
+
+Sides:
+All - Impassable
+
+Minis with size > 7 treat this as difficult terrain
+
+Center 2 spires: Height: 2
+Outer 2 spires: Height 1

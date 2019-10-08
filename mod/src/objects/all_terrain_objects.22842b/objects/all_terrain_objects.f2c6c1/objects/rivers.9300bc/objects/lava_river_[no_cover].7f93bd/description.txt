@@ -1,0 +1,11 @@
+No Cover:
+All
+
+Lava River:
+Troopers - Difficult
+G. Vehicle - Difficult
+Repulsor - Open
+
+Non-Repulsor units that enter, cross or leave this terrain must roll one white defence die per mini in the unit. For each block result, the unit suffers one wound (Clamber).
+
+Non-Repulsor units may instead spend 2 actions to move over this terrain safely.

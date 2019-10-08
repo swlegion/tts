@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 54.66121,
+    "posY": 0.94133395,
+    "posZ": -5.681341,
+    "rotX": -0.00168068393,
+    "rotY": 0.0156174144,
+    "rotZ": -0.0004405914,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "RETURN TOKENS",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314440383/C192AB240F529A10B55CA1295BA0DA48FE820204/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314440488/C6E649EDB775ECE9EC2DE253FE0E6E33CE523EA0/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786359883314440619/FE3DF075B749009DAD730028F4511DA602D1DD2D/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "3a5f7f"
+}

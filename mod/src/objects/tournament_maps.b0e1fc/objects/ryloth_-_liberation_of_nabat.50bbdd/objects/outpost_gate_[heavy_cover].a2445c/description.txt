@@ -1,0 +1,7 @@
+Heavy Cover:
+Mini size 3 and below
+
+Wall:
+Sides - Impassable
+
+Height: 1

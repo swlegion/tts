@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 40.3478127,
+    "posY": 1.02075,
+    "posZ": 4.89365673,
+    "rotX": -0.00001569987,
+    "rotY": 179.968719,
+    "rotZ": -0.0000031846248,
+    "scaleX": 0.367304444,
+    "scaleY": 1,
+    "scaleZ": 0.367304444
+  },
+  "Nickname": "Merciless Munitions",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 28443,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "284": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785232635608488823/00B5DFCD489D65A28E0AA0E93FD160AFD3C096A0/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+      "NumWidth": 10,
+      "NumHeight": 5,
+      "BackIsHidden": true,
+      "UniqueBack": false
+    }
+  },
+  "GUID": "34e349"
+}

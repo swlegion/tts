@@ -1,0 +1,15 @@
+Heavy Cover:
+Mini size 4 and below
+
+Sides:
+All - Impassable
+Minis with size > 4 treat this as difficult terrain
+
+Roof:
+All - Open
+
+Height: 2
+
+Small-base trooper units with their leader in base contact with the ladder gain Scale.
+
+Special Thanks: www.imperialterrain.com

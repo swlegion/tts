@@ -1,0 +1,9 @@
+Heavy Cover:
+All
+
+Tree:
+All - Impassable
+
+Height: Infinite
+
+Special Thanks: www.imperialterrain.com

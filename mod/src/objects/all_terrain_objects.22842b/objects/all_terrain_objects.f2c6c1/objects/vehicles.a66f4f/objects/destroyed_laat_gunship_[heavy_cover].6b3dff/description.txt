@@ -1,0 +1,17 @@
+Heavy Cover:
+Minis Size 6 and below
+
+Sides:
+Trooper - Impassable
+G.Vehicle - impassable
+Repulsor - Impassable
+Minis with size > 6 treat this as difficult terrain
+
+Roof and Wing Slope:
+All - Difficult
+
+Height: 1
+
+Units may move up the wing slopes without climbing/clambering.
+
+Height: 1

@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -6.193384,
+    "posY": 1.44898224,
+    "posZ": -0.651824951,
+    "rotX": 0.000104825325,
+    "rotY": 299.98642,
+    "rotZ": -0.0003350072,
+    "scaleX": 0.9000001,
+    "scaleY": 0.9000001,
+    "scaleZ": 0.9000001
+  },
+  "Nickname": "Blast Crater [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.597560942,
+    "g": 0.299450666,
+    "b": 0.1988388
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "https://gist.githubusercontent.com/nashjaee/4cd8db9491c9f804b679a0c07d995a47/raw/d6e211548521cd3c386e2d29e11a8e13945c4115/sand_mound_model.txt",
+    "DiffuseURL": "https://i.imgur.com/xJTsMo6.jpghttps://i.imgur.com/xJTsMo6.jpg",
+    "NormalURL": "",
+    "ColliderURL": "https://gist.githubusercontent.com/nashjaee/8a3c5c11d816ad853a5485e63dffff48/raw/09c0ea0fdb74453156070ab594aa2f9b26af3cef/sand_mound_collider.txt",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "3b4e81"
+}

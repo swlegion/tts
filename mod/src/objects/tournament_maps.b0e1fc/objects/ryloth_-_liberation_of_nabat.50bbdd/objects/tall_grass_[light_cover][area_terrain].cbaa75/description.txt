@@ -1,0 +1,9 @@
+Light Cover (Area Terrain):
+Minis Size 1 and below (excluding TX-225)
+
+Tall Grass:
+All - Open
+
+Minis only get cover if they are fully within this terrain.
+
+Does not obscure LOS

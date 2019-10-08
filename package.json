@@ -2,7 +2,7 @@
   "name": "swlegion-tts-mod",
   "scripts": {
     "embed": "npx ts-node script/index.ts embed mod/src mod/StarWarsLegion.json",
-    "extract": "npx ts-node script/index.ts extract mod/StarWarsLegion.json mod/src"
+    "extract": "npx ts-node script/extractor.ts extract mod/StarWarsLegion.json mod/src"
   },
   "license": "MIT",
   "bugs": {
@@ -23,7 +23,6 @@
     "detect-newline": "^3.0.0",
     "figlet": "^1.2.4",
     "fs-extra": "^8.1.0",
-    "lua-fmt": "^2.6.0",
     "mkdirp": "^0.5.1",
     "nodemon": "^1.19.2",
     "path": "^0.12.7",

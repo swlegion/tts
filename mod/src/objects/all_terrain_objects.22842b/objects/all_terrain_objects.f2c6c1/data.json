@@ -1,0 +1,33 @@
+{
+  "Name": "Bag",
+  "Transform": {
+    "posX": 57.2234726,
+    "posY": 2.82770514,
+    "posZ": 25.257637,
+    "rotX": 359.828979,
+    "rotY": 359.9204,
+    "rotZ": 0.0298307277,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "All Terrain Objects",
+  "ColorDiffuse": {
+    "r": 0.677877247,
+    "g": 0.677877247,
+    "b": 0.677877247
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "GUID": "f2c6c1"
+}

@@ -1,0 +1,11 @@
+Light Cover (Area Terrain):
+Minis size 1 or lower
+
+Mound:
+Trooper - Difficult
+G. Vehicle - Open
+Repulsor - Open
+
+Non-creature troopers gain cover as long as any part of their base overlaps this terrain.
+
+Does not obscure LOS

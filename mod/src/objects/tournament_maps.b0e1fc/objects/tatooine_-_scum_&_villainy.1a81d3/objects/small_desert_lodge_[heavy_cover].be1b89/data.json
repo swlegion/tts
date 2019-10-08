@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 4.59,
+    "posY": 1.441201,
+    "posZ": -14.94,
+    "rotX": -9.44028557e-7,
+    "rotY": 89.97842,
+    "rotZ": -0.00160650746,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Small Desert Lodge [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "https://gist.githubusercontent.com/nashjaee/1724038bcd1af36165d9c2b831aa1986/raw/a75963b487ef88b438f688b68bef314545da2fe8/tat_small_lodge.txt",
+    "DiffuseURL": "https://www.dropbox.com/s/vkw5xgi965vook5/small_lodge.jpg?raw=1",
+    "NormalURL": "",
+    "ColliderURL": "https://gist.githubusercontent.com/nashjaee/1724038bcd1af36165d9c2b831aa1986/raw/a75963b487ef88b438f688b68bef314545da2fe8/tat_small_lodge.txt",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "be1b89"
+}

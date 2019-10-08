@@ -1,0 +1,14 @@
+Heavy Cover:
+Mini size 5 and below
+
+Sides:
+All - Impassable
+
+Roof:
+All - Open
+
+Height: 2
+
+Small-base trooper units with their leader in base contact with a ladder gain Scale.
+
+Special Thanks: www.imperialterrain.com

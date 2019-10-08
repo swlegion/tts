@@ -1,0 +1,19 @@
+Light Cover - Struts + Floor:
+Heavy Cover - Barricade:
+
+Cover for Non-Creature Troopers to Only
+
+Struts:
+All: Impassable
+
+Minis with size > 6.5 treat this as difficult terrain
+
+Platform:
+All - Open
+
+Lvl 1 Height: 1
+Lvl 2 Height: 2
+
+Right-Click and switch states to access different levels
+
+Special thanks to www.youtube.com/tabletopoddity

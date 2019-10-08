@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": -45.070076,
+    "posY": 2.990647,
+    "posZ": 5.90005732,
+    "rotX": 0.007200917,
+    "rotY": 89.99977,
+    "rotZ": 179.989761,
+    "scaleX": 1.6,
+    "scaleY": 1,
+    "scaleZ": 1.6
+  },
+  "Nickname": "Ring of Invisibility",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 715,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "7": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/957475029107064237/8E9964B239417DD806DB84E79AC79428BDBA6A81/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/957475029107006215/52432501747A5C2BC055B0BD9CFD2E930AEE6E68/",
+      "NumWidth": 5,
+      "NumHeight": 4,
+      "BackIsHidden": true,
+      "UniqueBack": false
+    }
+  },
+  "GUID": "572c12"
+}

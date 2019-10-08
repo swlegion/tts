@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 15.5971422,
+    "posY": 4.72502756,
+    "posZ": -8.414127,
+    "rotX": 68.3419342,
+    "rotY": 269.903931,
+    "rotZ": 179.982147,
+    "scaleX": 0.80000037,
+    "scaleY": 0.80000037,
+    "scaleZ": 0.80000037
+  },
+  "Nickname": "Blast Shield [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.831160247,
+    "g": 0.831160247,
+    "b": 0.831160247
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/785234780864410607/7744554880BC7420DE85A2ED1DA4864BF638AA1B/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "45bcf4"
+}

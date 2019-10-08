@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 37.5305138,
+    "posY": 1.17700016,
+    "posZ": -3.60653734,
+    "rotX": -2.68962083e-7,
+    "rotY": 180,
+    "rotZ": 1.86606655e-7,
+    "scaleX": 0.367304444,
+    "scaleY": 1,
+    "scaleZ": 0.367304444
+  },
+  "Nickname": "I am a Jedi",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 35603,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "356": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/777357228032283328/7A9CCE68A0303FEBBABB1312DF2A9E7A75F2DB6C/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+      "NumWidth": 3,
+      "NumHeight": 2,
+      "BackIsHidden": true,
+      "UniqueBack": false
+    }
+  },
+  "GUID": "692fe7"
+}

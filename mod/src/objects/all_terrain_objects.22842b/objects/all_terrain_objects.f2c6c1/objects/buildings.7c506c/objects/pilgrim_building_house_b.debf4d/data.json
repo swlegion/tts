@@ -1,0 +1,33 @@
+{
+  "Name": "Bag",
+  "Transform": {
+    "posX": 52.9678,
+    "posY": 1.37751544,
+    "posZ": 4.830108,
+    "rotX": 1.56746239e-7,
+    "rotY": -0.000126458574,
+    "rotZ": -0.00000118060927,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Pilgrim Building House B",
+  "ColorDiffuse": {
+    "r": 0.7058823,
+    "g": 0.366520882,
+    "b": 0
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "GUID": "debf4d"
+}

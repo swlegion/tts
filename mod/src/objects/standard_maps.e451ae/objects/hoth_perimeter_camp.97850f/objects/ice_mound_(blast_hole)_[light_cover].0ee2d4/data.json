@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 33.68391,
+    "posY": 1.45295238,
+    "posZ": -2.837195,
+    "rotX": -0.001605875,
+    "rotY": 0.014253933,
+    "rotZ": -9.10925962e-7,
+    "scaleX": 1.63022721,
+    "scaleY": 2.89260221,
+    "scaleZ": 1.565309
+  },
+  "Nickname": "Ice Mound (Blast Hole) [Light Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542776615/79C694D26DED90B4A594B062EF0E409BCB692D96/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542774107/47A975D9CCD7853D9CA6939854953ED601D7B7E2/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542777210/473EFF86250797241A8DE85718135E3713DCA3D6/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "0ee2d4"
+}

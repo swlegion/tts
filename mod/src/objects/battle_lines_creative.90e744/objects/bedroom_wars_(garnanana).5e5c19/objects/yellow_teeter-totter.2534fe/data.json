@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 9.233185,
+    "posY": 3.86337447,
+    "posZ": 9.951696,
+    "rotX": 359.992554,
+    "rotY": 149.894241,
+    "rotZ": 160.380478,
+    "scaleX": 3.25,
+    "scaleY": 0.25,
+    "scaleZ": 1
+  },
+  "Nickname": "Yellow teeter-totter",
+  "ColorDiffuse": {
+    "r": 0.905,
+    "g": 0.898,
+    "b": 0.171999067
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/993513208355171598/2325B00043ADA6307152A8F6BC45491D119A1EF0/",
+    "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/993513208355170501/D68C4A4427BE2C22EFD4B0C8FB024BF19D821921/",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "2534fe"
+}

@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 0.342802465,
+    "posY": 1.44139814,
+    "posZ": -2.99170065,
+    "rotX": 0.00145168987,
+    "rotY": 149.92749,
+    "rotZ": -0.000828925637,
+    "scaleX": 1.29870856,
+    "scaleY": 1.18064523,
+    "scaleZ": 1.18064523
+  },
+  "Nickname": "Pipe Segment [Heavy/Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.34843117,
+    "g": 0.347824156,
+    "b": 0.347824156
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862231312005851/8EDBCEC5152AA515EBAF0DD3E6F02A051F4FD587/",
+    "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "7afd40"
+}

@@ -1,0 +1,11 @@
+All: Impassable
+
+Treat each vertical strut as a separate piece of terrain.
+
+Climbing units may climb/clamber up/down from the outside edges of the struts.
+
+Hold LMB+RMB to place minis underneath platform.
+
+Height: 1
+
+Special thanks to www.youtube.com/tabletopoddity

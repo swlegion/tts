@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -5.105923,
+    "posY": 1.55710661,
+    "posZ": -4.712389,
+    "rotX": -0.00144305592,
+    "rotY": 29.9486065,
+    "rotZ": -0.000842720852,
+    "scaleX": 1.38658941,
+    "scaleY": 0.5708854,
+    "scaleZ": 1.38658941
+  },
+  "Nickname": "Rubble Mound [Light Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": false,
+  "Snap": false,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": false,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/920331435132689142/4228CAA17E91863D898F54C84452FFA97EB85829/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/920331435132689264/B3E7A5B0B0FC602AF363ED94455C3EF4520C0F81/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/920331435132689142/4228CAA17E91863D898F54C84452FFA97EB85829/",
+    "Convex": false,
+    "MaterialIndex": 1,
+    "TypeIndex": 1,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 3,
+      "FresnelStrength": 0.1
+    },
+    "CastShadows": true
+  },
+  "GUID": "d1ed32"
+}

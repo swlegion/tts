@@ -1,0 +1,13 @@
+Light Cover (Area Terrain):
+Mini Size 1.25 and below
+Light Cover:
+Minis size 1 and below (excluding TX-225)
+
+Crater:
+Trooper - Difficult
+G. Vehicle - Open
+Repulsor - Open
+
+Troopers only get cover if they are fully within this terrain.
+
+Does not obscure LOS

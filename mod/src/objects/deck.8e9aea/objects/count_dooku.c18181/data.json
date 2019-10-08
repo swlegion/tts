@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": -9.777876,
+    "posY": 1.19130266,
+    "posZ": 12.292923,
+    "rotX": -0.0026605858,
+    "rotY": 180.000549,
+    "rotZ": 180.1068,
+    "scaleX": 0.227068469,
+    "scaleY": 1,
+    "scaleZ": 0.227068469
+  },
+  "Nickname": "Count Dooku",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 33607,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "336": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785234780871826675/AB913C0C0C60F8D420397BD7D7B8A780724EBEE5/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/785234780871826675/AB913C0C0C60F8D420397BD7D7B8A780724EBEE5/",
+      "NumWidth": 4,
+      "NumHeight": 4,
+      "BackIsHidden": true,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "c18181"
+}

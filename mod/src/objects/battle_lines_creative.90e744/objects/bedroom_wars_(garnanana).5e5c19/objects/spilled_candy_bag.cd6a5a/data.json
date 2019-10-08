@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 19.86686,
+    "posY": 1.49146485,
+    "posZ": -12.6928339,
+    "rotX": 0.00100948068,
+    "rotY": 224.982437,
+    "rotZ": 357.002472,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "spilled candy bag",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.9921656,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/993513208355172156/2FD0C9B8F24A412A1CB0852066A3B66891DA10BD/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/993513208355172254/1D4F4FB131BE3C970EF276BFA8C62AF18B18FA68/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/993513208355172156/2FD0C9B8F24A412A1CB0852066A3B66891DA10BD/",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "cd6a5a"
+}

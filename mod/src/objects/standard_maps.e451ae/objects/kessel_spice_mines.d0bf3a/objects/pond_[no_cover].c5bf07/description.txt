@@ -1,0 +1,7 @@
+No Cover:
+All
+
+Pond:
+Troopers - Impassable
+G. Vehicle - Difficult
+Repulsor - Open

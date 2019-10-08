@@ -1,0 +1,14 @@
+Heavy Cover:
+All
+
+Sides:
+All - Impassable
+
+Roof:
+All - Open
+
+Height: 2
+
+Ladders can be clambered without rolling for falling damage
+
+Special Thanks: www.imperialterrain.com

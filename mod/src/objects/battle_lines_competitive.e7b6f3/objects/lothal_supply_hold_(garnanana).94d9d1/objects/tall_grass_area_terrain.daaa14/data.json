@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 8.348958,
+    "posY": 1.3176676,
+    "posZ": -13.6350813,
+    "rotX": 357.514252,
+    "rotY": 164.970322,
+    "rotZ": 359.319733,
+    "scaleX": 0.8749998,
+    "scaleY": 0.8749998,
+    "scaleZ": 0.8749998
+  },
+  "Nickname": "Tall Grass area terrain",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992160261,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/993513208355168877/0CACD418AB3BF5C3375B12FE7778398AF7961641/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/930430984634318193/0431407B618A940CD4B9AAE2CE5CE9577C1A8B74/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/965346181997160377/AE54F488BCAF3EDA6CA63CEA98C4081429A2738F/",
+    "Convex": false,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 0.8745098,
+        "g": 0.8117647,
+        "b": 0.745098054
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 3,
+      "FresnelStrength": 0.1
+    },
+    "CastShadows": true
+  },
+  "GUID": "daaa14"
+}

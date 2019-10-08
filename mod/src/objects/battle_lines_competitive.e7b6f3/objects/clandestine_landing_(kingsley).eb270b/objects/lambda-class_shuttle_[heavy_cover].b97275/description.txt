@@ -1,0 +1,14 @@
+Heavy Cover:
+All
+
+Sides, Wings:
+All - Impassable
+
+Body Roof:
+All - Open
+
+Wings Height: 3
+Body, Cockpit Height: 1
+
+You
+Yl

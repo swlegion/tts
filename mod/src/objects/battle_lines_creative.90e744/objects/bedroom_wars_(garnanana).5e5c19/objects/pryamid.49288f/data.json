@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 41.7285423,
+    "posY": 1.44751823,
+    "posZ": 0.76997304,
+    "rotX": -0.00007805894,
+    "rotY": 270.012,
+    "rotZ": -0.0003182773,
+    "scaleX": 2.249999,
+    "scaleY": 2.249999,
+    "scaleZ": 2.249999
+  },
+  "Nickname": "Pryamid",
+  "ColorDiffuse": {
+    "r": 0.128999174,
+    "g": 0.694,
+    "b": 0.606999934
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/993513208355170399/81EE5B1A630186782FD46ABCC08C1B3CEA12E12F/",
+    "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/993513208355170501/D68C4A4427BE2C22EFD4B0C8FB024BF19D821921/",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "49288f"
+}

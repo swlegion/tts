@@ -1,0 +1,7 @@
+Light Cover:
+Mini Size 2 and below
+
+Sides:
+Trooper: Impassable
+G. Vehicle: Difficult
+Repulsor: Impassable

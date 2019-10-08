@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 2.88699055,
+    "posY": 1.35015965,
+    "posZ": -5.24983168,
+    "rotX": 0.00113383355,
+    "rotY": 134.991226,
+    "rotZ": -0.00113873312,
+    "scaleX": 1,
+    "scaleY": 0.5,
+    "scaleZ": 1
+  },
+  "Nickname": "Trench Holdout [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.765,
+    "g": 0.796166658,
+    "b": 0.85
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "https://gist.githubusercontent.com/nashjaee/39efab0cd1f7f06bebe96234166a7e5f/raw/bf1cb1943f287af6cc925fe89f676022393b1ca6/trench_holdout_model.txt",
+    "DiffuseURL": "https://i.imgur.com/yKymdqE.jpghttps://i.imgur.com/yKymdqE.jpg",
+    "NormalURL": "",
+    "ColliderURL": "https://gist.githubusercontent.com/nashjaee/8c5f8ebf273cda3396cb02b9189172ef/raw/e7f08cbe51a4bde8feb2b0bb477fbdb123758462/trench_holdout_collider.txt",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "4e4c95"
+}

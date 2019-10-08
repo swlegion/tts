@@ -1,0 +1,12 @@
+Heavy Cover:
+Minis Size 22 and below
+
+Sides and Wings:
+All - Impassable
+
+Roof:
+All - Open
+
+Height: 4
+
+Troopers may climb/clamber onto the cockpit and body of the shuttle. Both are considered height 1.

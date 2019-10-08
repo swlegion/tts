@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -3.35174274,
+    "posY": 2.5271244,
+    "posZ": 13.42436,
+    "rotX": 359.423767,
+    "rotY": 314.604736,
+    "rotZ": 359.715546,
+    "scaleX": 1.19999981,
+    "scaleY": 1.19999981,
+    "scaleZ": 1.19999981
+  },
+  "Nickname": "Cargo Crates [Light Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542864090/4FD723285CC44A9067ADE9259B3EFC111F85417D/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542864771/5369CAE13DD813A31CD4FA50CACED0A76EA365C8/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "eadf1e"
+}

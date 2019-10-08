@@ -1,0 +1,9 @@
+Light Cover (Area Terrain):
+All
+
+Sparse Woods:
+Trooper - Open
+Ground Vehicle - Open
+Repulsor - Open
+
+Height: 2

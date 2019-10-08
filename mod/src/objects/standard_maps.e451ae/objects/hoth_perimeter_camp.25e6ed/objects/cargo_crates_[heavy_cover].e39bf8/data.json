@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 12.1625395,
+    "posY": -1.46062112,
+    "posZ": -6.494648,
+    "rotX": 0.00138312869,
+    "rotY": 210.020676,
+    "rotZ": 0.000798683031,
+    "scaleX": 1.19999981,
+    "scaleY": 1.19999981,
+    "scaleZ": 1.19999981
+  },
+  "Nickname": "Cargo Crates [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.6672473,
+    "g": 0.814450264,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542866356/5E4885FE0560DC376FFC7C1411092E0236436ABA/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542867256/F1654D39814397BEB69F64F304D418531458D264/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "e39bf8"
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 3.051341,
+    "posY": 4.016546,
+    "posZ": -7.54406261,
+    "rotX": -0.0008035779,
+    "rotY": 119.993324,
+    "rotZ": 0.00139042607,
+    "scaleX": 3.16024184,
+    "scaleY": 1.18656373,
+    "scaleZ": 1.81786847
+  },
+  "Nickname": "Outpost Wall [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542860959/6F605A1BDB22EE619C6B2E2E8FE5C20BD942F82A/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542862958/F123CBB8FCF10999EB400495D200C974E6EC1B4B/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "4bbcc1"
+}

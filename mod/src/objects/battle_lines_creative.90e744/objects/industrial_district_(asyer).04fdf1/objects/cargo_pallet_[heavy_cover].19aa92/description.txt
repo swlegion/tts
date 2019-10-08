@@ -1,0 +1,11 @@
+Heavy Cover:
+Troopers, 74z Speeder Bike, AT-RT
+
+Crates:
+Trooper - Difficult
+G. Vehicle - Open
+Repulsor - Open
+
+Only Crates provide Cover, obscure LOS and hinder Movement, Pallets on the ground have no effect
+
+Special Thanks: www.imperialterrain.com

@@ -1,0 +1,13 @@
+Light Cover:
+Non-Creature Troopers
+
+Struts:
+All: Impassable
+
+Open water:
+Repulsor can go over, but not stop over water
+All others: Impassible
+
+Height: 1
+
+Special thanks to www.youtube.com/tabletopoddity

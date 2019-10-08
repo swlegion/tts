@@ -1,0 +1,14 @@
+Cliff
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Plateu and Slope
+Trooper: Open
+Ground Vehicle: Open
+Repulsor: Open
+
+Height: 1
+
+This is NOT area terrain.
+Minis only gain cover if they are 50% obscured by the Cliff

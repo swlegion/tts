@@ -1,0 +1,10 @@
+Light Cover:
+Troopers, 74Z Speeder Bikes, AT-RT
+
+Sides:
+All - Impassable
+
+Roof:
+All - Open
+
+Height: 1

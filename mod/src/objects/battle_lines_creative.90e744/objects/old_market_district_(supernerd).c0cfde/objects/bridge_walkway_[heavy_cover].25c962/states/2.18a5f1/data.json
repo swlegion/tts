@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 16.0867672,
+    "posY": 1.43490541,
+    "posZ": -2.51631021,
+    "rotX": 0.00161266339,
+    "rotY": 359.987671,
+    "rotZ": 8.95428855e-7,
+    "scaleX": 1.1500001,
+    "scaleY": 1.1500001,
+    "scaleZ": 1.1500001
+  },
+  "Nickname": "Bridge Walkway [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.85945785,
+    "g": 0.8994404,
+    "b": 0.921249
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/966480765117279505/8182E3A340062698877307FC66C2163E1D34711C/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/966480765117279616/140B35288D45796C52B1449B7DD58EE1AC1B91D3/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/966480765117279727/C693DD4FB5A2EC49E03B961EFC5DCA673D453332/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "18a5f1"
+}

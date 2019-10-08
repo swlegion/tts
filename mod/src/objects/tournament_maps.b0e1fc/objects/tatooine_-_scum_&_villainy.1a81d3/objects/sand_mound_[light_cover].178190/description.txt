@@ -1,0 +1,11 @@
+Light Cover:
+Non-Creature Troopers
+
+Mound:
+Trooper - Difficult
+G. Vehicle - Open
+Repulsor - Open
+
+Troopers only get cover if they are fully within this terrain.
+
+Does not obscure LOS

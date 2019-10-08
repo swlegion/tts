@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 59.9454575,
+    "posY": 6.438234,
+    "posZ": -16.14595,
+    "rotX": 0.00002000234,
+    "rotY": 270.0001,
+    "rotZ": -0.00001380276,
+    "scaleX": 0.227068469,
+    "scaleY": 1,
+    "scaleZ": 0.227068469
+  },
+  "Nickname": "TX-225 GAVw Occupier",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 27501,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "275": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/999144021179705603/AF120FDDD9B59F54144F5B9BA579A57B422D376C/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/949599512594267095/A8607BBC4291901696AED3B102CCBB3B76806327/",
+      "NumWidth": 2,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "9b5217"
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -15.9567614,
+    "posY": 4.611042,
+    "posZ": 3.03087544,
+    "rotX": 0.00125125865,
+    "rotY": 90.0206146,
+    "rotZ": 0.3033992,
+    "scaleX": 1.15,
+    "scaleY": 1.15,
+    "scaleZ": 1.15
+  },
+  "Nickname": "Staging Zone Building (lvl 2) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.819607854,
+    "g": 0.858823538,
+    "b": 0.8784314
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546358181/719E7C1510DB3D1745DDD8CD48D73FBD893E5544/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546358282/D0477DAFC0E9A74D642350C881C010D25C43B163/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546358386/A80FB68904B85C114F63B8F812FF5E3836825970/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "2c0fa0"
+}

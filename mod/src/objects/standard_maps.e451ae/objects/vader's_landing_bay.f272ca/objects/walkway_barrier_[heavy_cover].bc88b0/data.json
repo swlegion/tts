@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 14.7881613,
+    "posY": 4.65451527,
+    "posZ": 4.999377,
+    "rotX": -0.001568449,
+    "rotY": 0.0157626383,
+    "rotZ": 0.000590861,
+    "scaleX": 0.99999696,
+    "scaleY": 1,
+    "scaleZ": 1.14797735
+  },
+  "Nickname": "Walkway Barrier [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/924802058713319112/D256662B1B162D58B55180411F19842263A13FE9/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780857982608/5EF6EC50C5BC28D300D4B59344DA5CB777F67B0A/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "bc88b0"
+}

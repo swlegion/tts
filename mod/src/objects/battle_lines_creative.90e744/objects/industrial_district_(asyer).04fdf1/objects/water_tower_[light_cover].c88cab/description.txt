@@ -1,0 +1,9 @@
+Light Cover (Area Terrain):
+All
+
+Roof:
+Troopers - Open
+G. Vehicle - Impassable
+Repulsor - Impassable
+
+Height: 3

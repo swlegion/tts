@@ -1,0 +1,9 @@
+Heavy Cover:
+All
+
+Sides:
+All - Impassable
+
+Height:
+1 (low plateau)
+2 (high plateau)

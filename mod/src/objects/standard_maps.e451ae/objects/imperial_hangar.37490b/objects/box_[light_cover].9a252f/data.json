@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 38.0501976,
+    "posY": 3.39754224,
+    "posZ": -2.485351,
+    "rotX": 0.000233630781,
+    "rotY": 329.986755,
+    "rotZ": 179.999756,
+    "scaleX": 0.65,
+    "scaleY": 0.65,
+    "scaleZ": 0.65
+  },
+  "Nickname": "Box [Light Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787482161151594904/9D3EAC7F745997D3B0228A04345F1F402F9E1D52/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787482161151595017/A145D2063B8AEF077C57BA3A7A5DD7C89C9A4969/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "9a252f"
+}

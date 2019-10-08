@@ -1,0 +1,19 @@
+Heavy Cover:
+All
+
+Height: 2
+Balcony Height: 1
+
+Sides: 
+All - Impassable
+
+Roof:
+Troop - Difficult
+G. Vehicle - Difficult
+Repulsor - Open
+
+Minis can clamber up the ladder without rolling for falling damage
+
+Right-Click and switch states to access different levels
+
+Special Thanks: corvusgamesterrain.com

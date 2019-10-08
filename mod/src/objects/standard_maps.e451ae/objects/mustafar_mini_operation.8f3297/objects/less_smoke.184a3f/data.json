@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 21.6384544,
+    "posY": -3.26179743,
+    "posZ": -1.71107972,
+    "rotX": -0.00161037548,
+    "rotY": -0.0001373573,
+    "rotZ": -0.000008166271,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Less Smoke",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 0,
+    "b": 0
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/923679899551958464/7AB6C7556D83A749E0F726ECBDA3ABF26FD23B10/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "184a3f"
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 40.5847969,
+    "posY": 1.10828984,
+    "posZ": -7.248745,
+    "rotX": 0.00116565556,
+    "rotY": 224.984421,
+    "rotZ": 0.00119038811,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Bespin Wall (High Stone Wall) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.770688057,
+    "g": 0.770688057,
+    "b": 0.770688057
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542509494/8CA403F2ACD4BF21A2A42AD20809239A4A0C60BF/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542512367/A135AE67A134B208B4CDCE933933321CCF268E93/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542510211/56D1446C9E6D70569EDDF96A7505F86007EC566C/",
+    "Convex": false,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "494270"
+}

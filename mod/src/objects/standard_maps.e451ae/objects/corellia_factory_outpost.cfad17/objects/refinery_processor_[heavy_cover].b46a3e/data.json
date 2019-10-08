@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -5.44519424,
+    "posY": 1.5224874,
+    "posZ": -12.7098579,
+    "rotX": 0.030127801,
+    "rotY": 135.019211,
+    "rotZ": -0.00117414235,
+    "scaleX": 3.34999752,
+    "scaleY": 3.34999752,
+    "scaleZ": 3.34999752
+  },
+  "Nickname": "Refinery Processor [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992160261,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/502526366068043820/4DC9152D160870CA3FE7484997E608144720D960/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/502526366068044329/34C4A2F3263ABC0B3664D4D1FB8D5A1B95E8B9C9/",
+    "NormalURL": "http://cloud-3.steamusercontent.com/ugc/502526366068054027/8E17614459374A732CF39FDC780EB690C400055A/",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/502526366068043820/4DC9152D160870CA3FE7484997E608144720D960/",
+    "Convex": false,
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0.05,
+      "SpecularSharpness": 7,
+      "FresnelStrength": 0.4
+    },
+    "CastShadows": true
+  },
+  "GUID": "b46a3e"
+}

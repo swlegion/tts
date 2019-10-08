@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 1.89053261,
+    "posY": 3.02261472,
+    "posZ": -30.0316963,
+    "rotX": 359.972443,
+    "rotY": 0.02850822,
+    "rotZ": 0.08422803,
+    "scaleX": 0.400000334,
+    "scaleY": 0.400000334,
+    "scaleZ": 0.400000334
+  },
+  "Nickname": "Топливные Трубы",
+  "ColorDiffuse": {
+    "r": 0.9098039,
+    "g": 0.9098039,
+    "b": 0.9098039
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/929311994734220899/D95CB1989330A09DA9E760F8AF8EEBC6E673C304/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/929311994734220973/D9F5886D37A0CC78DF682E88B6572D8E4DD249AA/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/929311994734221049/2FF091DA6E13F0FF8160BEDECEDA0EEF68CFE881/",
+    "Convex": true,
+    "MaterialIndex": 2,
+    "TypeIndex": 1,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 0.7372549,
+        "g": 0.7372549,
+        "b": 0.7372549
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "ba7298"
+}

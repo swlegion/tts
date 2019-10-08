@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 18.9289513,
+    "posY": 3.08321214,
+    "posZ": 8.682051,
+    "rotX": -0.000284023,
+    "rotY": 224.9064,
+    "rotZ": -0.000163281889,
+    "scaleX": 0.8500001,
+    "scaleY": 0.8500001,
+    "scaleZ": 0.8500001
+  },
+  "Nickname": "Chimney Vent [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862231309887714/9C191D9285A1E051120325C70B7BD09BB89E1EEA/",
+    "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "c25b90"
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": 22.8421364,
+    "posY": 2.142346,
+    "posZ": 2.85718966,
+    "rotX": 42.8528557,
+    "rotY": 237.442215,
+    "rotZ": 78.63787,
+    "scaleX": 0.397718847,
+    "scaleY": 1,
+    "scaleZ": 0.397718847
+  },
+  "Nickname": "",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": false,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": false,
+  "Sticky": false,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "http://cloud-3.steamusercontent.com/ugc/785234780858811065/A79505EC7280786C4E809038B0C827461B44CCC6/",
+    "ImageSecondaryURL": "",
+    "WidthScale": 0,
+    "CustomToken": {
+      "Thickness": 0.2,
+      "MergeDistancePixels": 15,
+      "Stackable": false
+    }
+  },
+  "GUID": "402690"
+}

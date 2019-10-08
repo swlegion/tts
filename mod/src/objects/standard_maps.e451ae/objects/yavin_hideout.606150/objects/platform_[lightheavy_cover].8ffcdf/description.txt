@@ -1,0 +1,15 @@
+Barriers - Heavy Cover
+Struts and Platform - Light Cover
+
+Platform
+All: Open
+
+Struts
+All: Impassable
+
+Lvl 2 Height: 1
+Lvl 3 Height: 2
+
+Right Click > State to activate different levels!
+
+Special thanks to www.youtube.com/tabletopoddity

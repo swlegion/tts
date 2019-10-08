@@ -1,0 +1,43 @@
+{
+  "Name": "Custom_Model_Infinite_Bag",
+  "Transform": {
+    "posX": 57.7122765,
+    "posY": 1.01466179,
+    "posZ": 20.5656357,
+    "rotX": 0.00000100913394,
+    "rotY": 270.001038,
+    "rotZ": 180,
+    "scaleX": 1.74999952,
+    "scaleY": 1.74999952,
+    "scaleZ": 1.74999952
+  },
+  "Nickname": "Rebel Command Tokens",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314446623/2CB59936B5D3A430C6C4F065A471CAF11F6D4ADD/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 7,
+    "CastShadows": true
+  },
+  "GUID": "c5f484"
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 29.5212917,
+    "posY": 1.70156348,
+    "posZ": -9.96467,
+    "rotX": -0.00008510617,
+    "rotY": 269.98584,
+    "rotZ": -0.0003138774,
+    "scaleX": 2.848424,
+    "scaleY": 8.414696,
+    "scaleZ": 3.96219039
+  },
+  "Nickname": "Snow Drift [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.4512195,
+    "g": 0.4512195,
+    "b": 0.4512195
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858617254/4F61282A94ABE4F960AD3649D0D9A26EB32B28B0/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858626622/E060A5178B1433A0F081A0F2EB2005CA88552E58/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858618391/9AFA49334F7632BE2F99F0FE8DE1EACC80F7CA53/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "43b4dd"
+}

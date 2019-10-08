@@ -1,0 +1,3 @@
+Trooper: Wall - Open
+Ground Vehicle: Open
+Repulsor: Open

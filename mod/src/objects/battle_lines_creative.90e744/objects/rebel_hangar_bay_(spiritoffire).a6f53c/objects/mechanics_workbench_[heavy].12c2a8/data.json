@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 25.3260059,
+    "posY": 2.869217,
+    "posZ": 8.971377,
+    "rotX": 0.0006251109,
+    "rotY": 179.980713,
+    "rotZ": 0.0008827501,
+    "scaleX": 1.74044037,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Mechanics Workbench [Heavy]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/90478291036976322/820FD9212EA89A37F74EF210B5A0F84E21AD6F00/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "12c2a8"
+}

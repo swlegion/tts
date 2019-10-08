@@ -1,0 +1,15 @@
+Heavy Cover:
+Minis Size 6 and below
+
+Sides:
+All - Impassable
+Minis size > 4 treat this as difficult terrain
+
+Roof:
+Troopers - Difficult
+G. Vehicles - Difficult (trees impassable)
+Repulsor - Impassable
+
+Height: 1
+
+Cliff is considered Height 1 for the purposes of Jump

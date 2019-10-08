@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 42.4923172,
+    "posY": 1.69264913,
+    "posZ": 0.24101758,
+    "rotX": 0.000009106824,
+    "rotY": 270.001282,
+    "rotZ": -0.0000410131761,
+    "scaleX": 0.6907125,
+    "scaleY": 1,
+    "scaleZ": 0.6907125
+  },
+  "Nickname": "Personal Combat Shield",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 31203,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "312": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/993513208355167634/E1C12FDD3F7ED2749564B51CCB05436681581ADC/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/993513208355167634/E1C12FDD3F7ED2749564B51CCB05436681581ADC/",
+      "NumWidth": 4,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "768f40"
+}

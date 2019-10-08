@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 18.1799736,
+    "posY": 1.442346,
+    "posZ": -10.2519379,
+    "rotX": -0.00160027854,
+    "rotY": 180.017166,
+    "rotZ": -0.000004382596,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Trench Holdout [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.765,
+    "g": 0.796166658,
+    "b": 0.85
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542407497/FD17F574DDF3978C19D70A2D9AE4F8D8174CBBA1/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542405451/30419C76CD344D992E4AB70981DFDBBD3E992984/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542398534/1A062FE63B9BF2B8DE8FE7231047EF002F846A70/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "6e150b"
+}

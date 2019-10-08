@@ -1,0 +1,6 @@
+Mud:
+Trooper - Difficult
+G. Vehicle - Difficult
+Repulsor - Open
+
+Does not obscure LOS

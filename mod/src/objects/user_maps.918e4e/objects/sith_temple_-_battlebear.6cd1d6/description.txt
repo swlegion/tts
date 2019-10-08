@@ -1,0 +1,1 @@
+Right click, and save object. Open the Star Wars Legion mod, go to saved objects, place in the map loader and load.

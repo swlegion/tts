@@ -1,0 +1,10 @@
+Heavy Cover (Area Terrain):
+Mini Size 1.25 and Below
+
+Trooper: Difficult
+G. Vehicle: Open
+Repulsor: Open
+
+Height: 1
+
+Minis get cover as long the imaginary line between the attacker and defender crosses this terrain, and this terrain blocks LOS of the defender.

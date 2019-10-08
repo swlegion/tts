@@ -1,0 +1,54 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 19.6363659,
+    "posY": 4.46702433,
+    "posZ": 8.07049751,
+    "rotX": 27.6686382,
+    "rotY": 196.8612,
+    "rotZ": 12.3059387,
+    "scaleX": 0.7250002,
+    "scaleY": 0.7250002,
+    "scaleZ": 0.7250002
+  },
+  "Nickname": "Decaying LAAT Gunship [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": false,
+  "Snap": false,
+  "IgnoreFoW": false,
+  "Autoraise": false,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542593596/438183F810EA457A2792A2DE9F0D419C5C3B7C5D/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858716507/0D8A363559CCA6C401CD99E30C12AEFF07D894FC/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858724701/48886E8AC98425ECD51EA00FAE0DDC42644757AA/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "PhysicsMaterial": {
+    "StaticFriction": 1,
+    "DynamicFriction": 0.7,
+    "Bounciness": 0,
+    "FrictionCombine": 0,
+    "BounceCombine": 0
+  },
+  "Rigidbody": {
+    "Mass": 0,
+    "Drag": 0.1,
+    "AngularDrag": 0.1,
+    "UseGravity": true
+  },
+  "GUID": "6b3dff"
+}

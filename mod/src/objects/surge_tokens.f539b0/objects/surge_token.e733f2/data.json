@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -43.5370445,
+    "posY": 1.1192013,
+    "posZ": -7.50679731,
+    "rotX": 0.000162106342,
+    "rotY": 0.0000102449849,
+    "rotZ": -0.000210659782,
+    "scaleX": 0.650000334,
+    "scaleY": 0.650000334,
+    "scaleZ": 0.650000334
+  },
+  "Nickname": "Surge Token",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785236717874060749/314173062C289E83F826F78FC7FD0FF0D2E6E418/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785236717874060915/75B609A561604CAF66D7BD2868211D40F18B74E3/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "e733f2"
+}

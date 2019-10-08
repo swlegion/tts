@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 40.0015678,
+    "posY": 1.08406687,
+    "posZ": 16.5961,
+    "rotX": -0.004087728,
+    "rotY": 180.0202,
+    "rotZ": -0.0007923688,
+    "scaleX": 1.99999976,
+    "scaleY": 1.99999976,
+    "scaleZ": 1.99999976
+  },
+  "Nickname": "Fuel Storage Cell [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992160261,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/502526366064221973/9DC045BE3D583F346902562A6FC35681E9C33E00/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/502526366064222376/CACADDED6431C9012619ABD4D214CE14FB589357/",
+    "NormalURL": "http://cloud-3.steamusercontent.com/ugc/502526366064222739/530291864CBBDDFFFF00E376748B7FBF91F27FC6/",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/502526366064221973/9DC045BE3D583F346902562A6FC35681E9C33E00/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0.1,
+      "SpecularSharpness": 3.7,
+      "FresnelStrength": 0.07222222
+    },
+    "CastShadows": true
+  },
+  "GUID": "8bb750"
+}

@@ -1,0 +1,10 @@
+Cover Type:
+Wings and Body - Heavy Cover
+Laser Cannons - Light Cover
+Sand Mounds - No Cover
+
+Trooper: Difficult
+Ground Vehicle: Difficult
+Repulsor: Open
+
+Height: 0

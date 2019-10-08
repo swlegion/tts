@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 34.28839,
+    "posY": 1.41572261,
+    "posZ": -5.45282,
+    "rotX": 0.000009737105,
+    "rotY": 89.98511,
+    "rotZ": -0.00167131389,
+    "scaleX": 1.22499919,
+    "scaleY": 1.22499919,
+    "scaleZ": 1.22499919
+  },
+  "Nickname": "Turbolaser Tower",
+  "ColorDiffuse": {
+    "r": 0.388501,
+    "g": 0.388501,
+    "b": 0.388501
+  },
+  "Locked": true,
+  "Grid": false,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/923679899551959017/5AFD5A6CA8598B82A84CADBCFD29658214E1BEC7/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/923679899551959125/85038C0B1E4D53567EF1BCFD973C25A146121A11/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/923679899551959223/AA802C0A05B5C310DDDF1626300DAA046AF188D9/",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "011d68"
+}

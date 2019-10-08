@@ -1,0 +1,49 @@
+{
+  "Name": "Deck",
+  "Transform": {
+    "posX": 51.8898926,
+    "posY": 3.087307,
+    "posZ": 21.0743256,
+    "rotX": 0.00000594441235,
+    "rotY": 270.0087,
+    "rotZ": 0.00000292357,
+    "scaleX": 0.78615427,
+    "scaleY": 1,
+    "scaleZ": 0.78615427
+  },
+  "Nickname": "",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": false,
+  "SidewaysCard": false,
+  "DeckIDs": [
+    32004,
+    32000,
+    32001,
+    32003,
+    32002
+  ],
+  "CustomDeck": {
+    "320": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786360308354562620/0C2ECE396486AE15BBDB92293BD7AFBFBEE3E7DB/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/786360308354562872/AF68672CC3B5A0A27A37FA0C02FD87F2210FAB86/",
+      "NumWidth": 3,
+      "NumHeight": 2,
+      "BackIsHidden": true,
+      "UniqueBack": false
+    }
+  },
+  "GUID": "7bf959"
+}

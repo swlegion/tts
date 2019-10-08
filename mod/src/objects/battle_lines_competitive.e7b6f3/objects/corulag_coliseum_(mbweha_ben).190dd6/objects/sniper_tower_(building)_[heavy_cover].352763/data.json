@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -25.74,
+    "posY": 4.56117725,
+    "posZ": -13.59,
+    "rotX": 0.001679481,
+    "rotY": 179.991547,
+    "rotZ": 0.0000363003419,
+    "scaleX": 1.2,
+    "scaleY": 1,
+    "scaleZ": 1.2
+  },
+  "Nickname": "Sniper Tower (Building) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/950714872633930673/791057706000F05ACCD84986CD21CE2F478DA246/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/950715191003551632/C1A02C087B1154FA4C0027A40E694551D5119856/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/950714872633930864/2138924A34C70D7C382B3AA76B0E820F1B1322C5/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "352763"
+}

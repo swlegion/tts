@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": -15.4518089,
+    "posY": 1.44766963,
+    "posZ": -11.65951,
+    "rotX": 0.00007977317,
+    "rotY": 90.00572,
+    "rotZ": 0.000305754569,
+    "scaleX": 0.7647696,
+    "scaleY": 1,
+    "scaleZ": 0.6545792
+  },
+  "Nickname": "Large Cargo Container [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.5568628,
+    "g": 0.6509804,
+    "b": 0.709803939
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/787481265490687911/4F63706EACA1F36582BB5C4128CCA6FB314BFB1A/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "9c152b"
+}

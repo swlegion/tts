@@ -1,0 +1,13 @@
+Heavy Cover:
+Mini size 8 and below
+
+Sides:
+All - Impassable
+Minis with size > 8 treat this as difficult terrain
+
+Roof:
+All - Open
+
+Height: 2
+
+Special Thanks: www.imperialterrain.com

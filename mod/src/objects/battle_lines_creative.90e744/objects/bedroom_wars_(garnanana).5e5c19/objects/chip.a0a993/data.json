@@ -1,0 +1,34 @@
+{
+  "Name": "ChipStack",
+  "Transform": {
+    "posX": 39.3923,
+    "posY": 1.51500642,
+    "posZ": 3.78922439,
+    "rotX": 0.00009674369,
+    "rotY": 90.29392,
+    "rotZ": 0.000313564378,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "chip",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": 10,
+  "Number": 5,
+  "GUID": "a0a993"
+}

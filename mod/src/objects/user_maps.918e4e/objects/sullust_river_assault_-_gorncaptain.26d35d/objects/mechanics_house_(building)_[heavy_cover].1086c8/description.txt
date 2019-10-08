@@ -1,0 +1,9 @@
+Sides
+Impassable for all
+
+Roof
+Open for all
+
+Height: 2
+
+Special Thanks: www.imperialterrain.com

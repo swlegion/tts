@@ -1,0 +1,31 @@
+{
+  "Name": "Notecard",
+  "Transform": {
+    "posX": -1.00332224,
+    "posY": 1.01903689,
+    "posZ": -13.0469875,
+    "rotX": -0.00000482147061,
+    "rotY": 0.00727009447,
+    "rotZ": -0.00000132946332,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "29 Sep Update",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "GUID": "9f8598"
+}

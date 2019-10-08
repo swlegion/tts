@@ -1,0 +1,55 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -35.1134644,
+    "posY": 0.940982461,
+    "posZ": -18.4442234,
+    "rotX": 0.00160361489,
+    "rotY": 179.988144,
+    "rotZ": -0.00000304186869,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314444328/1BC71E255E0FBB830C5703749BA70E39D1146487/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314444560/9841FEC8983B9BF41DD84E293633567EB56EB676/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "abb909",
+  "AttachedSnapPoints": [
+    {
+      "Position": {
+        "x": -0.00689519243,
+        "y": 0.283769041,
+        "z": -0.00722904364
+      },
+      "Rotation": {
+        "x": -0.00160615158,
+        "y": 0.00110649061,
+        "z": -0.00000243439058
+      }
+    }
+  ]
+}

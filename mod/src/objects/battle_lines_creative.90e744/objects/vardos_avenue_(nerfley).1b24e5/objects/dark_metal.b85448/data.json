@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 43.05491,
+    "posY": 3.42,
+    "posZ": -5.64414454,
+    "rotX": -0.00167343719,
+    "rotY": 359.982269,
+    "rotZ": -0.000011384117,
+    "scaleX": 8.619924,
+    "scaleY": 0.0324109755,
+    "scaleZ": 6.209383
+  },
+  "Nickname": "Dark Metal",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.9921643,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/993512944591403366/50EFDD020F055D174ADB45CC46E3907966D3F8D8/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/993512944591403454/B16526E0F26AA1209DDC4F2CC9F8CCACE25E1210/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "b85448"
+}

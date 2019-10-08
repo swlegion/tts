@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 17.0817566,
+    "posY": 1.49860382,
+    "posZ": 9.087148,
+    "rotX": 0.00677361665,
+    "rotY": 135.0875,
+    "rotZ": 0.00225867983,
+    "scaleX": 1.2,
+    "scaleY": 1.2,
+    "scaleZ": 0.9164012
+  },
+  "Nickname": "Wall [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.32137385,
+    "g": 0.329935938,
+    "b": 0.339721143
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/866235466927268895/FA3CA6C7E1F3D5D8DBA114672086A7DC05DACC8A/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/866235466927268750/B06769290127CC7FA38AFA3B3306B2FE44939196/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/866235466927268895/FA3CA6C7E1F3D5D8DBA114672086A7DC05DACC8A/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "563d19"
+}

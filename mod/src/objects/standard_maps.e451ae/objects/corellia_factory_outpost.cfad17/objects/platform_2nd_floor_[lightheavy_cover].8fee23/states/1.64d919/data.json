@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 8.07577,
+    "posY": 1.45256758,
+    "posZ": -12.2930183,
+    "rotX": -0.00117213163,
+    "rotY": 45.00539,
+    "rotZ": -0.00118494628,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Platform 3rd Floor [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.8745098,
+    "g": 0.8745098,
+    "b": 0.8745098
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/920331113102194770/A56BAD724B410B579DD36E9681C4A26538E3FB1C/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780857961488/1CA1F243AF929A1C1879D3F8EC5FF81A4C1C0105/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780857976903/54873828067A0E650E0689D0F285909C51537107/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "64d919"
+}

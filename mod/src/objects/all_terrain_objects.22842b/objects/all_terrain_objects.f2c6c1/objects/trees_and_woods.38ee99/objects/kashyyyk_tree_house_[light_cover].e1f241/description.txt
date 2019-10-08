@@ -1,0 +1,12 @@
+Light Cover:
+All
+
+Sides:
+All - Impassable
+
+Platforms:
+Trooper - Open
+G. Vehicle - Impassable
+Repulsor - Impassable
+
+Troopers can climb onto platforms. Platforms up to and including the red platform are considered height 1. Higher platforms are considered height 2.

@@ -1,0 +1,54 @@
+{
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": -6.79714775,
+    "posY": 1.45,
+    "posZ": -5.34228,
+    "rotX": -5.00258e-9,
+    "rotY": 165.029984,
+    "rotZ": 180.182,
+    "scaleX": 4.402483,
+    "scaleY": 1,
+    "scaleZ": 4.402483
+  },
+  "Nickname": "Sulfur Spring [no cover]",
+  "ColorDiffuse": {
+    "r": 0.3448497,
+    "g": 0.406045139,
+    "b": 0.452961922
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "http://cloud-3.steamusercontent.com/ugc/993512944591405825/CB7E6D03D8601BFE39176D1DBB7176AE44409F94/",
+    "ImageSecondaryURL": "",
+    "WidthScale": 0,
+    "CustomToken": {
+      "Thickness": 0.1,
+      "MergeDistancePixels": 25,
+      "Stackable": false
+    }
+  },
+  "PhysicsMaterial": {
+    "StaticFriction": 1,
+    "DynamicFriction": 1,
+    "Bounciness": 0,
+    "FrictionCombine": 0,
+    "BounceCombine": 0
+  },
+  "Rigidbody": {
+    "Mass": 2.332855,
+    "Drag": 1,
+    "AngularDrag": 1,
+    "UseGravity": true
+  },
+  "GUID": "47bc44"
+}

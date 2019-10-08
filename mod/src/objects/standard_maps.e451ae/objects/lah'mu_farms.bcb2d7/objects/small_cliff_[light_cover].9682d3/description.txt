@@ -1,0 +1,11 @@
+Light Cover:
+Minis Size 4 and below
+
+Sides:
+All - Impassable
+Minis size > 4 treat this as difficult terrain
+
+Roof and Slope:
+All - Open
+
+Height: 1

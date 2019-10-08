@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 39.1058121,
+    "posY": 1.45401239,
+    "posZ": -14.7874174,
+    "rotX": 6.282928e-7,
+    "rotY": 90.01122,
+    "rotZ": 0.0016075226,
+    "scaleX": 1.05,
+    "scaleY": 1.05,
+    "scaleZ": 1.05
+  },
+  "Nickname": "Mechanics House [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 0.9497847,
+    "b": 0.914634
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780857787939/BBC3ACD4BAD62FDB8524A000ED94A0A499C378EC/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780857789120/E37EF1A94A5B2396007500D7CA9787BBB794DC1B/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780857792332/0F3840A2FE61B0138D91F97CF55ABD7C2AB52446/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "2b1666"
+}

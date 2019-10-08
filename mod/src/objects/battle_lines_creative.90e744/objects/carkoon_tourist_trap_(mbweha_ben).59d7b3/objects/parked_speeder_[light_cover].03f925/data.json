@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 23.3238831,
+    "posY": 1.23858619,
+    "posZ": 10.7363405,
+    "rotX": 359.98996,
+    "rotY": 134.983688,
+    "rotZ": -0.00114259194,
+    "scaleX": 0.8750003,
+    "scaleY": 0.8750003,
+    "scaleZ": 0.8750003
+  },
+  "Nickname": "Parked Speeder [light cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/999141806431455345/95C8FBADC33B65CFB9EBD510DCD04FB60ABDB1A3/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/999141806431455444/1F28E930C5CB59200F5EBF11E2158E4B8EBF87EE/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/999141806431455345/95C8FBADC33B65CFB9EBD510DCD04FB60ABDB1A3/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 4,
+    "CastShadows": true
+  },
+  "GUID": "03f925"
+}

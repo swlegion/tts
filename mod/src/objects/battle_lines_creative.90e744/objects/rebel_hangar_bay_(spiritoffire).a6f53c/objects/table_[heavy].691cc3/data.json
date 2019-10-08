@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 12.7006607,
+    "posY": 2.04877043,
+    "posZ": -7.87155628,
+    "rotX": 0.0011342318,
+    "rotY": 134.9428,
+    "rotZ": -0.001136335,
+    "scaleX": 1,
+    "scaleY": 1.75469279,
+    "scaleZ": 1
+  },
+  "Nickname": "Table [Heavy]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/90478291042319896/8AEA42882CA55E54EEEF6FAB45C5C8DBF1EB5FDA/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "691cc3"
+}

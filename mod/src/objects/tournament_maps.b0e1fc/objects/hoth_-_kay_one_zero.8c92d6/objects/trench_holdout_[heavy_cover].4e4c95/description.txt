@@ -1,0 +1,18 @@
+Heavy Cover:
+Minis size 1 or lower (excluding TX-225)
+
+Walls:
+Trooper - Difficult
+G. Vehicle - Open
+Repulsor - Open
+
+Floor:
+All - Open
+
+Non-creature troopers gain cover as long as they are fully within this terrain.
+
+Does not obscure LOS
+
+Troopers in trenches may be displaced.
+
+This terrain piece counts as an individual piece of terrain for determining cover.

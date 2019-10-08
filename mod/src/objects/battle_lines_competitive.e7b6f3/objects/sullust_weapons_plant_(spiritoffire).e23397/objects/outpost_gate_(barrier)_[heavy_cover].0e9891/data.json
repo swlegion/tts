@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 43.6984177,
+    "posY": 1.3121419,
+    "posZ": -13.6491766,
+    "rotX": -0.00145257951,
+    "rotY": 0.009116346,
+    "rotZ": 0.009198744,
+    "scaleX": 1.44999969,
+    "scaleY": 1.44999969,
+    "scaleZ": 1.44999969
+  },
+  "Nickname": "Outpost Gate (Barrier) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.360783666,
+    "g": 0.360783666,
+    "b": 0.360783666
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540545452392/5D16B83B1C92C46F1B955DAE086010C7FAC12543/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540545452493/AFFFD2ACB12C3969E4DAB0499DE07046AFD5897C/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540545452630/B51B8030FE08B550CF92B5EB8A85F56F9D173A12/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "0e9891"
+}

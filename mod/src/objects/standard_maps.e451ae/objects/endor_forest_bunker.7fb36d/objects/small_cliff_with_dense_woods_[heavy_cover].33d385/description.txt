@@ -1,0 +1,15 @@
+Heavy Cover:
+All except T-47, AT-ST
+
+Sides:
+All - Difficult
+
+Roof:
+Troopers - Difficult
+G. Vehicle - Difficult
+Repulsor - Impassable
+
+Slope:
+All - Open
+
+Height: 0

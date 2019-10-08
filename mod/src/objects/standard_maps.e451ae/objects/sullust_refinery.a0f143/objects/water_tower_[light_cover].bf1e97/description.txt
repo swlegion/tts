@@ -1,0 +1,5 @@
+Trooper: Open
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Height: 2

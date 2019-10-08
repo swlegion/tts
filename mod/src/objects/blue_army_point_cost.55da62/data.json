@@ -1,0 +1,34 @@
+{
+  "Name": "Counter",
+  "Transform": {
+    "posX": -34.6741943,
+    "posY": 1.10118651,
+    "posZ": 22.4373322,
+    "rotX": 0.001605439,
+    "rotY": 180.010666,
+    "rotZ": 0.00000172575267,
+    "scaleX": 0.5500004,
+    "scaleY": 0.5500004,
+    "scaleZ": 0.5500004
+  },
+  "Nickname": "Blue Army Point Cost",
+  "ColorDiffuse": {
+    "r": 0,
+    "g": 0.6033046,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "Counter": {
+    "value": 0
+  },
+  "GUID": "55da62"
+}

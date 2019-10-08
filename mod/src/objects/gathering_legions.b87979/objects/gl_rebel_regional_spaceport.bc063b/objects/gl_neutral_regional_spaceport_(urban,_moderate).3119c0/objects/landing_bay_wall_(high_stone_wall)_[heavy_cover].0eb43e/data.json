@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -18.4818077,
+    "posY": 1.44648278,
+    "posZ": -12.5869427,
+    "rotX": 0.00005690105,
+    "rotY": 269.998657,
+    "rotZ": 0.0003660856,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Landing Bay Wall (High Stone Wall) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.81,
+    "g": 0.81,
+    "b": 0.81
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546191284/7B9C74EAD7CF585C6683C830F04341AFD9121D1A/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546191426/810AD32FB5584CB1A769194A854E8182BCD00C3C/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546191549/952ECC6F2CC530AD59964DA55483EA2A3C406130/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "0eb43e"
+}

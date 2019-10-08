@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 2.10492873,
+    "posY": 1.36167407,
+    "posZ": 4.68375158,
+    "rotX": -0.00170927239,
+    "rotY": 0.0225019939,
+    "rotZ": -0.00020008604,
+    "scaleX": 1,
+    "scaleY": 0.925676,
+    "scaleZ": 1
+  },
+  "Nickname": "Doorway [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.61,
+    "g": 0.61,
+    "b": 0.61
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546189705/DB725B9776BC66A36F32711B35048FCC568DFFAE/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546189891/498EC8597BCEE7E675F194047681C2846211F886/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546190008/ECC489FCA00BC23FE5F3A9D289A165D8D0F902CB/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "0a6ef5"
+}

@@ -1,0 +1,49 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 10.1643658,
+    "posY": 2.24678,
+    "posZ": 1.09522593,
+    "rotX": 1.0009079,
+    "rotY": 299.9007,
+    "rotZ": 0.8076638,
+    "scaleX": 0.8750001,
+    "scaleY": 0.8750001,
+    "scaleZ": 0.8750001
+  },
+  "Nickname": "Sith Temple",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992160261,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/924802174592917422/2AE7B9037B59FAF5FD2A86943D8E80C5FB611CCD/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/924802174592917510/BEC5A1FFE4BBCEE73A863BEB039F0B884072A2D5/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/924802174592917422/2AE7B9037B59FAF5FD2A86943D8E80C5FB611CCD/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "07f2ae",
+  "AttachedSnapPoints": [
+    {
+      "Position": {
+        "x": -3.11870146,
+        "y": 2.788503,
+        "z": 4.82720041
+      }
+    }
+  ]
+}

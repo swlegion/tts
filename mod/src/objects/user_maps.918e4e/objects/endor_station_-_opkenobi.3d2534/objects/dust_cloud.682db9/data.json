@@ -1,0 +1,37 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 6.80461073,
+    "posY": -1.36115837,
+    "posZ": -0.6858597,
+    "rotX": -0.0015932055,
+    "rotY": 0.179336682,
+    "rotZ": -0.000006709351,
+    "scaleX": 8.886749,
+    "scaleY": 12.60003,
+    "scaleZ": 4.45998
+  },
+  "Nickname": "Dust Cloud",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/871872486673845662/F7C85881C99E12BD9E453493BE981AF6AB9362F3/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "682db9"
+}

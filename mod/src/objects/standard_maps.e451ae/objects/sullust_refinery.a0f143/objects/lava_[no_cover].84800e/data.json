@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -10.2046337,
+    "posY": 1.45151281,
+    "posZ": -14.87609,
+    "rotX": 359.716461,
+    "rotY": 134.832932,
+    "rotZ": 359.591827,
+    "scaleX": 0.786930144,
+    "scaleY": 0.63,
+    "scaleZ": 0.640296042
+  },
+  "Nickname": "Lava [No Cover]",
+  "ColorDiffuse": {
+    "r": 0.808798552,
+    "g": 0.808798552,
+    "b": 0.808798552
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858800202/77A592BEBDD717E2187532A5A07A1B82DC57C92D/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858782119/3CEBB0F57CE5C4275DB77D024D2032FD32D8843B/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858800202/77A592BEBDD717E2187532A5A07A1B82DC57C92D/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "84800e"
+}

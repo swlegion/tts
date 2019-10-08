@@ -1,0 +1,9 @@
+Light Cover:
+Mini Size 1.5 and below
+
+Acklay & Mound:
+Troopers - DIfficult
+G. Vehicles: - Open
+Repulsor: Open
+
+Legs do not have collision, minis may sit inside them.

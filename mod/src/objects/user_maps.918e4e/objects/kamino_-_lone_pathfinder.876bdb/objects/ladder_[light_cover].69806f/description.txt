@@ -1,0 +1,14 @@
+Light Cover:
+Non-Creature Troopers
+
+Struts:
+All: Impassable
+
+Minis with size > 3 treat this as difficult terrain
+
+Platform:
+All - Open
+
+Height: 1
+
+Special thanks to www.youtube.com/tabletopoddity

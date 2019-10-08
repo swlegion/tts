@@ -1,0 +1,50 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 32.34796,
+    "posY": -5.07309246,
+    "posZ": 9.926526,
+    "rotX": 7.2198267,
+    "rotY": 280.876648,
+    "rotZ": 71.88229,
+    "scaleX": 3.374998,
+    "scaleY": 3.374998,
+    "scaleZ": 3.374998
+  },
+  "Nickname": "Crashed TIE Bomber",
+  "ColorDiffuse": {
+    "r": 0.2499997,
+    "g": 0.2499997,
+    "b": 0.2499997
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/923679899551957779/D0AF97C6FB819220CF0E0E93137371E52B77E2DC/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/923679899551957992/93CD2C311AC3D43C5CAF561A6C589390B019F717/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/923679899551958310/41D4D10265D8B4B9FC1B0C640F9F8D94C816CE89/",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 1,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 0.8745098,
+        "g": 0.8117647,
+        "b": 0.745098054
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 3,
+      "FresnelStrength": 0.1
+    },
+    "CastShadows": true
+  },
+  "GUID": "5742ee"
+}

@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 9.590099,
+    "posY": 1.447514,
+    "posZ": 10.1433067,
+    "rotX": 0.000250425772,
+    "rotY": 329.902466,
+    "rotZ": -0.000230387523,
+    "scaleX": 1.14999986,
+    "scaleY": 1.14999986,
+    "scaleZ": 1.14999986
+  },
+  "Nickname": "brown Teeter totter base",
+  "ColorDiffuse": {
+    "r": 0.442999035,
+    "g": 0.230999023,
+    "b": 0.08999922
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/993513208355172862/AB595F32E20C2D9E187BC6C8A785630325B3667A/",
+    "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/993513208355170501/D68C4A4427BE2C22EFD4B0C8FB024BF19D821921/",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "f3aba6"
+}

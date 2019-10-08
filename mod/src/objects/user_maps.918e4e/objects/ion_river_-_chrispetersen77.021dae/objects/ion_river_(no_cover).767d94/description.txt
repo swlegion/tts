@@ -1,0 +1,7 @@
+Trooper= Impassable
+Ground Vehicle= Difficult Terrain
+Repulser Vehicle= Open
+
+Height= 0
+
+Vehicles that move through this terrain gain 1 ion token.

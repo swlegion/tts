@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 41.15887,
+    "posY": 4.217224,
+    "posZ": 0.266322881,
+    "rotX": 1.43354154,
+    "rotY": 265.461426,
+    "rotZ": 93.87316,
+    "scaleX": 0.499999672,
+    "scaleY": 0.499999672,
+    "scaleZ": 0.499999672
+  },
+  "Nickname": "Red Light Spheres 2\"-20\"",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": false,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/999141806431456368/1E914967B4F4599C14141E062769D083865B220B/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 10
+  },
+  "GUID": "d4bba1"
+}

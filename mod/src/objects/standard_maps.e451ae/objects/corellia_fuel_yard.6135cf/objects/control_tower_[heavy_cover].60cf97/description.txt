@@ -1,0 +1,19 @@
+Heavy Cover:
+All
+
+Sides
+Trooper - Impassable
+Ground Vehicle - Impassable
+Repulsor - Impassable
+
+Ledge:
+Trooper - Open
+
+Roof:
+All - Open
+
+Right-Click and switch states to access different levels
+
+Height: 3
+
+Special Thanks: www.imperialterrain.com

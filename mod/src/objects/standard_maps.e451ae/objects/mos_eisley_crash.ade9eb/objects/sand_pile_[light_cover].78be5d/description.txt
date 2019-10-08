@@ -1,0 +1,6 @@
+Trooper: Difficult
+Ground Vehicle: Difficult
+Repulsor: Open
+
+Provides Cover only to Troopers
+Does not obscure LOS

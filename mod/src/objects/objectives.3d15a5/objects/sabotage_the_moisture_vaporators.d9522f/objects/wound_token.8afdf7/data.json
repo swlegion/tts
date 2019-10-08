@@ -1,0 +1,43 @@
+{
+  "Name": "Custom_Model_Stack",
+  "Transform": {
+    "posX": 42.9519768,
+    "posY": 1.52530956,
+    "posZ": -9.943628,
+    "rotX": -7.701889e-8,
+    "rotY": 270.011658,
+    "rotZ": 0.001609563,
+    "scaleX": 0.9249999,
+    "scaleY": 0.9249999,
+    "scaleZ": 0.9249999
+  },
+  "Nickname": "Wound Token",
+  "ColorDiffuse": {
+    "r": 0.7529412,
+    "g": 0.7529412,
+    "b": 0.7529412
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "Number": 2,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314443832/CC490842F0159459C8D5C252BE7225E9D2581951/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314443935/0F8A37E8CD128D5644B391E4EFEC50656D558FF7/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 5,
+    "CastShadows": true
+  },
+  "GUID": "8afdf7"
+}

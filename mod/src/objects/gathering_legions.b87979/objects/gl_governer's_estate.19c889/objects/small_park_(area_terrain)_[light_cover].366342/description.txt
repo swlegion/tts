@@ -1,0 +1,15 @@
+Sides:
+All: Difficult
+
+Green Top:
+Trooper: Open
+G. Vehicles: Difficult
+Repulsor: Difficult
+
+Height to top of tree: 2
+
+Minis don’t need to climb/clamber to enter this terrain. However, all minis are slowed by speed 1. Troopers moving within the park treat the park as open terrain.
+
+Area Terrain
+
+Special Thanks: www.danwulfgames.com

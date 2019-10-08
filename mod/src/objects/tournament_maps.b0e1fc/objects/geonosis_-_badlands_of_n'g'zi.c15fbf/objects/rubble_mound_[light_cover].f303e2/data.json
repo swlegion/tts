@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": -21.5206966,
+    "posY": 1.69322836,
+    "posZ": 12.4467068,
+    "rotX": 354.051056,
+    "rotY": 59.7877,
+    "rotZ": 1.24964046,
+    "scaleX": 0.92564106,
+    "scaleY": 1,
+    "scaleZ": 0.92564106
+  },
+  "Nickname": "Rubble Mound [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.6986062,
+    "g": 0.4549814,
+    "b": 0.397985965
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://www.dropbox.com/s/d61jptcthjui75q/B69_Rubble3_JVG.png?dl=1",
+    "ImageSecondaryURL": "",
+    "WidthScale": 0,
+    "CustomToken": {
+      "Thickness": 0.1,
+      "MergeDistancePixels": 15,
+      "Stackable": false
+    }
+  },
+  "GUID": "f303e2"
+}

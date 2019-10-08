@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -8.337333,
+    "posY": 2.03092456,
+    "posZ": 3.951446,
+    "rotX": -0.000238102119,
+    "rotY": 344.9952,
+    "rotZ": -0.00007039969,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Hover Sled [Light]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/90478669043416029/135870F2FEC261BA1904A36F3CCC38AB9E4AFD65/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/90478669043416210/3460D498711429185D1113C3CF44DDDCF7162BFF/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "26ec89"
+}

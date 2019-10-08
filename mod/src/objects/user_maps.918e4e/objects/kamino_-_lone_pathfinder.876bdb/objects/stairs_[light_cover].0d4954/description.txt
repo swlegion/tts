@@ -1,0 +1,14 @@
+Light Cover:
+Mini Size 4 and below
+
+Sides:
+All: Impassable
+
+Minis with size > 4 treat this as difficult terrain
+
+Steps:
+All: Open
+
+Height: 1
+
+Special thanks to www.youtube.com/tabletopoddity

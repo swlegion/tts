@@ -1,0 +1,10 @@
+Heavy Cover:
+All but AT-ST & T-47
+
+Crates:
+Trooper - Impassable
+AT-RT - Difficult
+Other G. Vehicle - Open
+Repulsor - Open
+
+Special Thanks: www.imperialterrain.com

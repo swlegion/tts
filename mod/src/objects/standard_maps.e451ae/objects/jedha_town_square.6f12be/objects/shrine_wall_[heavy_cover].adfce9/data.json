@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 15.9934235,
+    "posY": 1.43536127,
+    "posZ": 2.38801336,
+    "rotX": -0.00113841542,
+    "rotY": 225.012848,
+    "rotZ": -0.0011299235,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Shrine Wall [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.8575512,
+    "g": 0.8575512,
+    "b": 0.8575512
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/966480765117278168/76FBD2C27BA9C7509B0964652C46B87259D3C54F/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/966480765117278248/1D1EF9B0733844B96C1C66E699B300155B93B37D/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/966480765117278338/91055C9D761AD4EC3C931B9742D0F7C32F1CC1CB/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "adfce9"
+}

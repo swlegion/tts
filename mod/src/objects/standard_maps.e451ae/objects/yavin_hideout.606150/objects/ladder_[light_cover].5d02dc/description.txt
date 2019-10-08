@@ -1,0 +1,9 @@
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Height: 1
+
+Troopers can clamber up to the platform without rolling for falling damage.
+
+Special thanks to www.youtube.com/tabletopoddity

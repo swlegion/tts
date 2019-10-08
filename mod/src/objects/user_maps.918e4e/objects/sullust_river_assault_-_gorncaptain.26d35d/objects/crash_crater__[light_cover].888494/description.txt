@@ -1,0 +1,9 @@
+Cover Type: Light
+
+Trooper: Difficult
+Ground Vehicle: Difficult
+Repulsor: Open
+
+Provides Cover only to Troopers. Troopers gain cover as long as any part of their base overlaps this terrain.
+
+Does not obscure LOS

@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 10.0255518,
+    "posY": 3.0328486,
+    "posZ": 40.17725,
+    "rotX": 0.00000148967342,
+    "rotY": -5.26849533e-7,
+    "rotZ": 0.0000104390265,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Push",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 28408,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "284": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785232635608488823/00B5DFCD489D65A28E0AA0E93FD160AFD3C096A0/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+      "NumWidth": 10,
+      "NumHeight": 5,
+      "BackIsHidden": true,
+      "UniqueBack": false
+    }
+  },
+  "GUID": "165ef3"
+}

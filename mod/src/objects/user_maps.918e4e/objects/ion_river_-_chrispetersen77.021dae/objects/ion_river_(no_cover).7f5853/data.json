@@ -1,0 +1,50 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -16.5745411,
+    "posY": 1.53727341,
+    "posZ": -3.41150451,
+    "rotX": 0.06437577,
+    "rotY": 120.095535,
+    "rotZ": 178.066742,
+    "scaleX": 0.250000417,
+    "scaleY": 0.250000417,
+    "scaleZ": 0.250000417
+  },
+  "Nickname": "Ion River (No Cover)",
+  "ColorDiffuse": {
+    "r": 0.865853667,
+    "g": 0.955118358,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/863991952344886182/0E43520557BAB9DDF41DCF2438E54E7B2CDA2D0C/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/863991952344889037/9F8945AB1B12B61D93663F09471CA80002D53741/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/863991952344886182/0E43520557BAB9DDF41DCF2438E54E7B2CDA2D0C/",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 7,
+      "FresnelStrength": 0.4
+    },
+    "CastShadows": true
+  },
+  "GUID": "7f5853"
+}

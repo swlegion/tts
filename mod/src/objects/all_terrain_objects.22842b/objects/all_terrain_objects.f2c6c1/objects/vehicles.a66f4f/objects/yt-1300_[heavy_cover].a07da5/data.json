@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 63.22648,
+    "posY": -8.365505,
+    "posZ": -37.0423851,
+    "rotX": 355.5012,
+    "rotY": 359.841949,
+    "rotZ": 1.8899225,
+    "scaleX": 2.469999,
+    "scaleY": 2.469999,
+    "scaleZ": 2.469999
+  },
+  "Nickname": "YT-1300 [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.900928259,
+    "g": 0.900928259,
+    "b": 0.900928259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542610257/DAE2C8D1697783A945B818B901B511F60A650425/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858756670/5957273516335704C76674D69D31451F216D3A95/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542610257/DAE2C8D1697783A945B818B901B511F60A650425/",
+    "Convex": false,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "a07da5"
+}

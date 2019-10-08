@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 58.7610664,
+    "posY": 1.04284883,
+    "posZ": -32.42316,
+    "rotX": 0.00000567397137,
+    "rotY": 270.015869,
+    "rotZ": 0.00002618423,
+    "scaleX": 0.227068469,
+    "scaleY": 1,
+    "scaleZ": 0.227068469
+  },
+  "Nickname": "C-3PO",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 35201,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "352": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/777357228032268731/DE936B7C9539716FC1D7F8B85FAB44AFE8BC7283/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/777357228032268731/DE936B7C9539716FC1D7F8B85FAB44AFE8BC7283/",
+      "NumWidth": 2,
+      "NumHeight": 2,
+      "BackIsHidden": true,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "a0f354"
+}

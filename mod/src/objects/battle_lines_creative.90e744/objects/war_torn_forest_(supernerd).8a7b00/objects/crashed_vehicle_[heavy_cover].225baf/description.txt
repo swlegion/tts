@@ -1,0 +1,4 @@
+Vehicle:
+Trooper - Difficult
+G. Vehicle - Difficult
+Repulsor - Open

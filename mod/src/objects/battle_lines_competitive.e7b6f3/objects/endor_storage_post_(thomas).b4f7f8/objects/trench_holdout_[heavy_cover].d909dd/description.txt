@@ -1,0 +1,9 @@
+Heavy Cover:
+Troopers 
+
+Height 1
+
+Walls:  Impassable
+
+Floor
+All - Open

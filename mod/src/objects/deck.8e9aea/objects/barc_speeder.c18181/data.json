@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": -9.81815052,
+    "posY": 1.30386293,
+    "posZ": 12.3669291,
+    "rotX": -0.000104346916,
+    "rotY": 180.005951,
+    "rotZ": 183.163116,
+    "scaleX": 0.227068469,
+    "scaleY": 1,
+    "scaleZ": 0.227068469
+  },
+  "Nickname": "BARC Speeder",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 33602,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "336": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785234780871826675/AB913C0C0C60F8D420397BD7D7B8A780724EBEE5/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/785234780871826675/AB913C0C0C60F8D420397BD7D7B8A780724EBEE5/",
+      "NumWidth": 4,
+      "NumHeight": 4,
+      "BackIsHidden": true,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "c18181"
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 7.611284,
+    "posY": 1.44245028,
+    "posZ": 0.0764763,
+    "rotX": -0.0004227565,
+    "rotY": 74.97766,
+    "rotZ": -0.0016157605,
+    "scaleX": 0.625000358,
+    "scaleY": 0.625000358,
+    "scaleZ": 0.625000358
+  },
+  "Nickname": "Sand Mound (Blast Hole) [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.7176471,
+    "g": 0.7546899,
+    "b": 0.8235294
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542465659/30348E08551EAA3E8D5164E0D2931B3EB72DCEC1/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542470239/CFB22A69010911784880172594A7106CBC1F8DF1/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542467139/4036C31123FF00D2459B3ED1E57CD8141ACFAC8D/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "0876c3"
+}

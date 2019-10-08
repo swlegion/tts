@@ -1,0 +1,10 @@
+Trooper: Open
+Ground Vehicle: Open
+Repulsor: Open
+
+Sides
+Trooper: Difficult
+
+This is NOT area terrain.
+
+Minis only gain cover if they are 50% obscured by the bridge

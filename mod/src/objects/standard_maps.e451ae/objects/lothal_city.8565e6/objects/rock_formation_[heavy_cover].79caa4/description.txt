@@ -1,0 +1,7 @@
+Heavy Cover:
+All
+
+Sides:
+All - Impassable
+
+Height: 1

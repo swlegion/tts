@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 28.824192,
+    "posY": 3.89691257,
+    "posZ": 7.630198,
+    "rotX": 23.8688927,
+    "rotY": 240.3581,
+    "rotZ": 7.69661427,
+    "scaleX": 1.22499967,
+    "scaleY": 1.22499967,
+    "scaleZ": 1.22499967
+  },
+  "Nickname": "Monument Base",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992162764,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/924802174592916783/80E85FE9EE424D2D827197385BA47743AE10E075/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/924802174592916877/D67551109AD5FC154EAC90BBFFEFA97806CF55B8/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/924802174592916783/80E85FE9EE424D2D827197385BA47743AE10E075/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "ca9d5f"
+}

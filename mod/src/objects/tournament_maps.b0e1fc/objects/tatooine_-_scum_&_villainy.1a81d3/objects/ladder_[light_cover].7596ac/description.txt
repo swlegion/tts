@@ -1,0 +1,9 @@
+Light Cover:
+Small-base Minis.
+
+Struts:
+All: Impassable
+
+Small-base trooper units with their leader in base contact with a ladder gain Scale
+
+Special thanks to www.youtube.com/tabletopoddity 

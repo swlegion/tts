@@ -1,0 +1,15 @@
+Heavy Cover:
+Mini size 3 and below
+
+Sides:
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Minis with size > 3 treat this as difficult terrain
+
+Roof:
+All - Open
+Height: 1
+
+Special Thanks to https://www.etsy.com/shop/LowCountryCraft 

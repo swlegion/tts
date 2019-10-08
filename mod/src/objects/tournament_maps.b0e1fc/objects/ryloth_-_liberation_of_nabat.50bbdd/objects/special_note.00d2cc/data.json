@@ -1,0 +1,31 @@
+{
+  "Name": "Notecard",
+  "Transform": {
+    "posX": 35.82183,
+    "posY": 1.591306,
+    "posZ": -12.5726271,
+    "rotX": 2.20797014,
+    "rotY": 359.9915,
+    "rotZ": -0.00000320224376,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Special Note",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "GUID": "00d2cc"
+}

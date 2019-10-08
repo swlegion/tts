@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 42.6684265,
+    "posY": 1.16894591,
+    "posZ": 0.956135631,
+    "rotX": 0.00248316443,
+    "rotY": 179.971,
+    "rotZ": 0.000385946973,
+    "scaleX": 0.367304444,
+    "scaleY": 1,
+    "scaleZ": 0.367304444
+  },
+  "Nickname": "Assault Alt Art",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 28411,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "284": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785232635608488823/00B5DFCD489D65A28E0AA0E93FD160AFD3C096A0/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+      "NumWidth": 10,
+      "NumHeight": 5,
+      "BackIsHidden": true,
+      "UniqueBack": false
+    }
+  },
+  "GUID": "f2444c"
+}

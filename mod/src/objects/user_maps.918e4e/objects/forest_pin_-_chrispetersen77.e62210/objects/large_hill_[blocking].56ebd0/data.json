@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 30.3512268,
+    "posY": 1.39218652,
+    "posZ": -6.965775,
+    "rotX": -0.0016264366,
+    "rotY": 180.0459,
+    "rotZ": -0.00000698803342,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Large Hill [Blocking]",
+  "ColorDiffuse": {
+    "r": 0.752517939,
+    "g": 0.752517939,
+    "b": 0.752517939
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858833882/80991443324FBAFACC7B2876166C4B63C6A4FA5A/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858839780/67ED44F13AB37829981C35F17BA1B743FBD15087/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858835205/B5E9F9B6B67565625027EF6A6F9EFE8E623BE61E/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "56ebd0"
+}

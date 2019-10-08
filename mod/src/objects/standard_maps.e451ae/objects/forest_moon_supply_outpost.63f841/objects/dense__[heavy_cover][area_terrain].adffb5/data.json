@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 5.65403938,
+    "posY": 1.451179,
+    "posZ": -2.39920163,
+    "rotX": 0.0212806128,
+    "rotY": 120.000008,
+    "rotZ": 359.929474,
+    "scaleX": 0.6750003,
+    "scaleY": 0.6750003,
+    "scaleZ": 0.6750003
+  },
+  "Nickname": "Dense  [Heavy Cover][Area Terrain]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858963948/80710CD9864BAE79FE3DA82649BAF9B934A9A2DB/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858963605/7A1F2232BE6FB4E618BF099DDC73447644C0FE16/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858945363/D3EEC34C89449348C7E70F3FF7D87AB841D6E3D7/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "adffb5"
+}

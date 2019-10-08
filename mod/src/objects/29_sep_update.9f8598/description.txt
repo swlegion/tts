@@ -1,0 +1,8 @@
+Added Clone Captain Rex
+Added Phase II Clone Troopers
+
+Adjusted R2D2 and C3PO Mini size
+
+Added Invader League S4 Maps
+Changed Operative Vader and Luke command token to Operative
+Fixed Rex Command Card

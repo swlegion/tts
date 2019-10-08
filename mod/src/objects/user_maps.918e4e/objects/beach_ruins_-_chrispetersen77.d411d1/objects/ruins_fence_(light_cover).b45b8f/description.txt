@@ -1,0 +1,5 @@
+Troopers- Difficult Terrain
+Ground Vehicles- Difficult Terrain
+Repulser Vehicles- Open
+
+Height 1

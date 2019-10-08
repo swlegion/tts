@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -8.886173,
+    "posY": 1.44347608,
+    "posZ": 12.3493462,
+    "rotX": 0.0193895139,
+    "rotY": 44.9986649,
+    "rotZ": 0.207506135,
+    "scaleX": 0.625,
+    "scaleY": 0.625,
+    "scaleZ": 0.625
+  },
+  "Nickname": "Sith Rock",
+  "ColorDiffuse": {
+    "r": 0.9808362,
+    "g": 0.87672174,
+    "b": 0.726228952
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/924802174592912507/B2A19C343A6E62C307DA9D7414F677FF12341DC0/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/924802174592914096/E75BEFF3DEAD0C4E1C2EBB1B4D89BE2FD1C73534/",
+    "NormalURL": "http://cloud-3.steamusercontent.com/ugc/924802174592912731/B767565F288D5825252AE2932A3A5E3DA4C8CCDB/",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/924802174592912507/B2A19C343A6E62C307DA9D7414F677FF12341DC0/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "1b4e0a"
+}

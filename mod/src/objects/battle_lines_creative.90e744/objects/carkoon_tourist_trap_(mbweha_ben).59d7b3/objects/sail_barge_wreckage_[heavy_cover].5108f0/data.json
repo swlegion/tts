@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -11.16829,
+    "posY": -5.326528,
+    "posZ": -9.63085,
+    "rotX": 297.940765,
+    "rotY": 120.003349,
+    "rotZ": -0.00314134732,
+    "scaleX": 5,
+    "scaleY": 5,
+    "scaleZ": 5
+  },
+  "Nickname": "Sail Barge Wreckage [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/999141806431455858/987E37BAC5154CEE7F452FFEE90AAA2D2BCD19C4/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/999141806431455995/75DCDD17A90FCD4D744F977FBA1AE4ABF11C4AB6/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/999141806431456146/CBFB77C42510BF53F48E3692094675839CD2F511/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 4,
+    "CastShadows": true
+  },
+  "GUID": "5108f0"
+}

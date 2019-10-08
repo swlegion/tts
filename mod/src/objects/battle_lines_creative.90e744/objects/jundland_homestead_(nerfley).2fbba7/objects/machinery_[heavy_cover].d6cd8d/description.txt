@@ -1,0 +1,6 @@
+Heavy Cover:
+Troopers
+
+Trooper: Impassable
+Ground Vehicle: Difficult
+Repulsor: Open

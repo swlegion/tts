@@ -1,0 +1,7 @@
+For quick loading of army lists:
+
+Right Click me and Save Object.
+
+Go to Menu > Objects > Saved Objects > select this Data Disk to load.
+
+Insert Data Disk into Army Loader Mount and Click Load Army to instantly load your army list!

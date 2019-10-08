@@ -1,0 +1,5 @@
+Trooper: Wall - Impassable, Ledges - Open
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Height: 2

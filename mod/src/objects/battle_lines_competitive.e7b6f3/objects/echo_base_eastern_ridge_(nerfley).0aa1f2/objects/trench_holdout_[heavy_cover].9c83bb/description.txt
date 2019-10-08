@@ -1,0 +1,17 @@
+Heavy Cover:
+Troopers
+
+Walls:
+Trooper - Difficult
+G. Vehicle - Open
+Repulsor - Open
+
+Floor:
+All - Open
+
+Troopers in trenches may be displaced by vehicles.
+
+Walkers (AT-RT, AT-ST) may not end their movement with the center of their base overhanging the trench.
+
+This terrain piece counts as an individual piece of terrain for the purposes of determining if cover is applied.
+All - Ope

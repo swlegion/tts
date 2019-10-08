@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 28.0750256,
+    "posY": -3.927374,
+    "posZ": 2.507324,
+    "rotX": -0.000162648619,
+    "rotY": 134.999878,
+    "rotZ": 0.000281969929,
+    "scaleX": 2.199999,
+    "scaleY": 2.199999,
+    "scaleZ": 2.199999
+  },
+  "Nickname": "TIE Fighter [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787482161151594281/0C8E0874A67198A45EE8AF0BE9E0329ABB8A8859/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787482161151594462/4C6AB300622163D7861584FE38E350EF6B844766/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/787482161151594281/0C8E0874A67198A45EE8AF0BE9E0329ABB8A8859/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "4bb1c6"
+}

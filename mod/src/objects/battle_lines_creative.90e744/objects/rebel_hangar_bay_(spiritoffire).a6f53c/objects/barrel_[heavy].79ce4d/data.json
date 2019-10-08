@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -7.888163,
+    "posY": 2.25718856,
+    "posZ": 4.06139565,
+    "rotX": -0.000245982781,
+    "rotY": 344.993652,
+    "rotZ": -0.0000644615939,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Barrel [Heavy]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/90478669042786302/42BE03D24FFBC297C7D2969956E76B8E285E1108/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/90478669042786501/4282D0EEC7D4BC16B0AFE83D8929CB299A3DEECC/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/90478669042786302/42BE03D24FFBC297C7D2969956E76B8E285E1108/",
+    "Convex": false,
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "79ce4d"
+}

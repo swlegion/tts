@@ -1,0 +1,7 @@
+Heavy Cover:
+Minis Size 6 and below
+
+Impassable for all
+Minis size <2 can fit under right wing
+
+Height: 2

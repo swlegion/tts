@@ -1,0 +1,10 @@
+Heavy Cover:
+Minis Size 13 and below
+
+Water Tower:
+Non-Creature Trooper - Open
+Others - Impassable
+
+Troopers can move through and into the Water Tower
+
+Height: 3

@@ -1,0 +1,14 @@
+Heavy Cover:
+All except AT-ST, T-47
+
+Sides:
+All - Impassable
+
+Roof/Ramp:
+All - Open
+
+Ladders can be clambered up without rolling for falling damage
+
+Height: 1
+
+Special Thanks: www.imperialterrain.com

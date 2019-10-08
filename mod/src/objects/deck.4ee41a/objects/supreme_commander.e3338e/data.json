@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": -1.44757307,
+    "posY": 1.16136742,
+    "posZ": 11.2017145,
+    "rotX": -0.0035401166,
+    "rotY": 179.998016,
+    "rotZ": -0.00516962353,
+    "scaleX": 0.367304444,
+    "scaleY": 1,
+    "scaleZ": 0.367304444
+  },
+  "Nickname": "Supreme Commander",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 33001,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "330": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785234780871782972/4F10B1D3DA31947E55A5CCB8DA4C4E309EC095AD/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+      "NumWidth": 6,
+      "NumHeight": 2,
+      "BackIsHidden": true,
+      "UniqueBack": false
+    }
+  },
+  "GUID": "e3338e"
+}

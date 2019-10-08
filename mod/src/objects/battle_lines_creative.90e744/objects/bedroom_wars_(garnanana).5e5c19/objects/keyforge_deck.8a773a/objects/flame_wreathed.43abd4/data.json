@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 30.7091618,
+    "posY": 1.86986709,
+    "posZ": -4.955562,
+    "rotX": 0.698002458,
+    "rotY": 55.4812546,
+    "rotZ": 359.96405,
+    "scaleX": 2,
+    "scaleY": 1,
+    "scaleZ": 2
+  },
+  "Nickname": "Flame Wreathed",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 317,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "3": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/957475029107035798/5721B42E43DA37E21E6B4C01C1B698FB0D5033AB/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/957475029107006215/52432501747A5C2BC055B0BD9CFD2E930AEE6E68/",
+      "NumWidth": 5,
+      "NumHeight": 4,
+      "BackIsHidden": true,
+      "UniqueBack": false
+    }
+  },
+  "GUID": "43abd4"
+}

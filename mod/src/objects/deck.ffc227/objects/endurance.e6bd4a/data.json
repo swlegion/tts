@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 42.2256737,
+    "posY": 1.16896975,
+    "posZ": 3.63090253,
+    "rotX": 0.00182699435,
+    "rotY": 270.0018,
+    "rotZ": 0.004610854,
+    "scaleX": 0.181600809,
+    "scaleY": 1,
+    "scaleZ": 0.181600809
+  },
+  "Nickname": "Endurance",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 34401,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "264": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/993513208355166713/3113A7C24A586E21448EA0982D8F9570BD679009/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/993513208355166713/3113A7C24A586E21448EA0982D8F9570BD679009/",
+      "NumWidth": 4,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": false
+    }
+  },
+  "GUID": "e6bd4a"
+}

@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": -16.1941586,
+    "posY": 1.44740772,
+    "posZ": 15.4205217,
+    "rotX": 0.0003133585,
+    "rotY": 29.9879017,
+    "rotZ": 0.00008589743,
+    "scaleX": 0.6250003,
+    "scaleY": 0.6250003,
+    "scaleZ": 0.6250003
+  },
+  "Nickname": "Large Crate [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.7499592,
+    "g": 0.9953813,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/927052513931798332/0885E6DEB099682BD2BC4C71D9665D664A856BA8/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "8f3718"
+}

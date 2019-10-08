@@ -1,0 +1,7 @@
+Cover Type: Heavy
+
+Height 1 for the short crate, height 2 for the taller stack of crates.
+
+Trooper: Difficult
+Ground Vehicle: Difficult
+Repulsor: Open

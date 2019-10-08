@@ -1,0 +1,14 @@
+Heavy Cover:
+All, except for AT-RT being fired upon from same or higher height.
+
+Platform:
+All - Open
+
+Special Climb/Clamber:
+*See other platforms.
+
+Hold LMB+RMB to place minis underneath platform.
+
+During setup, objectives placed in the center of the map are placed on top of the platform, not below.
+
+Height: 1

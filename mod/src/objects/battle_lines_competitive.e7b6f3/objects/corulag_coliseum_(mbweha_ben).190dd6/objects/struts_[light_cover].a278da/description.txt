@@ -1,0 +1,11 @@
+Light Cover:
+All
+
+Struts
+All: Impassable
+
+Treat each strut as a separate piece of terrain
+
+Height: 1
+
+Special thanks to www.youtube.com/tabletopoddity

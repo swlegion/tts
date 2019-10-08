@@ -1,0 +1,9 @@
+Heavy Cover:
+Troopers
+
+Crates:
+Trooper - Difficult
+G. Vehicle - Open
+Repulsor - Open
+
+Troopers must climb/clamber to scale the barricade when entering or exiting the trench.

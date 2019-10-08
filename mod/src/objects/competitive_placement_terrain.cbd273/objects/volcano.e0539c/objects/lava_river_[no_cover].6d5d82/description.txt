@@ -1,0 +1,8 @@
+River:
+Troopers - Difficult
+G. Vehicle - Difficult
+Repulsor - Impassable
+
+Non-Repulsor units that enter, cross or leave this terrain roll one White Defence Die per mini; on a Block result the unit suffers one wound.
+
+Non-Repulsor units may instead spend 2 actions to move over this terrain without rolling for damage.

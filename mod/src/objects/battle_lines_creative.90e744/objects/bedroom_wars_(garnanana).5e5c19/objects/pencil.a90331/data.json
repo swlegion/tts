@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -15.8611317,
+    "posY": 2.85795879,
+    "posZ": 2.53538728,
+    "rotX": 358.81842,
+    "rotY": 49.8216972,
+    "rotZ": 324.692627,
+    "scaleX": 0.625,
+    "scaleY": 0.625,
+    "scaleZ": 0.625
+  },
+  "Nickname": "Pencil",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/993513208355174220/FA57575A5E4DECF3F040766705DDD12934CC091F/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/993513208355174320/F99B7E5434BD2A3E5EA7579AB34FEBE80C6701D3/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "a90331"
+}

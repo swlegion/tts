@@ -1,0 +1,11 @@
+Building
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Roof
+Trooper: Open
+Ground Vehicle: Open
+Repulsor: Open
+
+Height: 1

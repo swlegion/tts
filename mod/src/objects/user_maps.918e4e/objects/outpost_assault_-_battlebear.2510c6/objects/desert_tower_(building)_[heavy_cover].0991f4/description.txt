@@ -1,0 +1,9 @@
+Cover Type: Heavy
+
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Roof Ledge is Open terrain for Troopers
+
+Height: 2

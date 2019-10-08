@@ -1,0 +1,10 @@
+Trooper: Wall - Impassable, Catwalk - Open
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Wall Height: 2
+Catwalk Height: 1
+
+Right Click > State to activate different levels!
+
+Special thanks to www.imperialterrain.com

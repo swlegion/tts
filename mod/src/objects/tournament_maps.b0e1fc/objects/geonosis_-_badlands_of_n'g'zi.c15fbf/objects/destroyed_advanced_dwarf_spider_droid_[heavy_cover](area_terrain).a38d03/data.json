@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": 20.8313465,
+    "posY": 1.55313265,
+    "posZ": -3.49718666,
+    "rotX": -0.001324803,
+    "rotY": 73.85116,
+    "rotZ": 0.00615903642,
+    "scaleX": 0.92564106,
+    "scaleY": 1,
+    "scaleZ": 0.92564106
+  },
+  "Nickname": "Destroyed Advanced Dwarf Spider Droid [Heavy Cover](Area Terrain)",
+  "ColorDiffuse": {
+    "r": 0.6986062,
+    "g": 0.4549814,
+    "b": 0.397985965
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://www.dropbox.com/s/d61jptcthjui75q/B69_Rubble3_JVG.png?dl=1",
+    "ImageSecondaryURL": "",
+    "WidthScale": 0,
+    "CustomToken": {
+      "Thickness": 0.1,
+      "MergeDistancePixels": 15,
+      "Stackable": false
+    }
+  },
+  "GUID": "a38d03"
+}

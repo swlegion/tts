@@ -1,0 +1,10 @@
+Light Cover:
+Non-creature troopers
+
+Sides:
+All - Open
+
+Roof and Slope:
+All - Open
+
+Height 0

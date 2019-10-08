@@ -1,0 +1,7 @@
+Trooper: Impassible
+Ground Vehicle: Impassible
+Repulsor: Impassible
+
+Height: 1
+
+Special thanks to www.youtube.com/tabletopoddity

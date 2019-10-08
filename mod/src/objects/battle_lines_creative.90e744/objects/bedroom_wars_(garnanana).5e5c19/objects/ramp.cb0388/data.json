@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 12.1014614,
+    "posY": 2.565509,
+    "posZ": 16.680088,
+    "rotX": 0.000311839569,
+    "rotY": 0.02560824,
+    "rotZ": 206.564957,
+    "scaleX": 1.24999976,
+    "scaleY": 1.24999976,
+    "scaleZ": 1.24999976
+  },
+  "Nickname": "ramp",
+  "ColorDiffuse": {
+    "r": 0.627,
+    "g": 0.124999486,
+    "b": 0.941
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/993513208355173029/ECCB9F820F684DDFF34CA87F5BA7BB29561C8CA1/",
+    "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/993513208355170501/D68C4A4427BE2C22EFD4B0C8FB024BF19D821921/",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "cb0388"
+}

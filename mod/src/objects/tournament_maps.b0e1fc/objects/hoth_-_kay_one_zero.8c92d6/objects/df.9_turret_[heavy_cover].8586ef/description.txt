@@ -1,0 +1,12 @@
+Heavy Cover:
+Minis size 2 or lower
+
+Sides:
+All - Impassable
+
+Roof:
+All - Open
+
+Height: 1
+
+Special Thanks: www.imperialterrain.com

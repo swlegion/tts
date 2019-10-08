@@ -1,0 +1,54 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 4.902766,
+    "posY": 4.61323547,
+    "posZ": 8.760061,
+    "rotX": 0.0008036278,
+    "rotY": 90.0002441,
+    "rotZ": 359.732971,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Comms Building [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.9361389,
+    "g": 0.978713,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546356782/8195EFC424B95DCA39BD1B08C334254797DB678D/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546356900/4491861CB02437B780521280B086BD4CC4E29585/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546357201/EBEE0E44093DFD5FEEF4F7B5F49172F7E34071BD/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "PhysicsMaterial": {
+    "StaticFriction": 1,
+    "DynamicFriction": 0.7,
+    "Bounciness": 0,
+    "FrictionCombine": 0,
+    "BounceCombine": 0
+  },
+  "Rigidbody": {
+    "Mass": 1,
+    "Drag": 0.1,
+    "AngularDrag": 0.1,
+    "UseGravity": true
+  },
+  "GUID": "c7a441"
+}

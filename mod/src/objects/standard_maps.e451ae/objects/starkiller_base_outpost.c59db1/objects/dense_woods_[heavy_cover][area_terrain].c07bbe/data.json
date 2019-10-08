@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 29.1602917,
+    "posY": 1.80527687,
+    "posZ": 6.035584,
+    "rotX": 0.0029139996,
+    "rotY": 29.991415,
+    "rotZ": 359.884583,
+    "scaleX": 0.375,
+    "scaleY": 0.375,
+    "scaleZ": 0.375
+  },
+  "Nickname": "Dense Woods [Heavy Cover][Area Terrain]",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992160261,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/920331435132691984/D842A4892E5196116DD470164A68C42F0B78F5C2/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/920331435132689762/843E0604CB13D98BB2EF1D1F74EEDAF0C002CBFB/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/920331435132692146/A949CD55C16F7326B855EF78A7053E42C2C86518/",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "c07bbe"
+}

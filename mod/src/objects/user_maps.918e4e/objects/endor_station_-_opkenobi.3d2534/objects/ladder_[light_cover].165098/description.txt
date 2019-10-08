@@ -1,0 +1,5 @@
+Trooper: Difficult
+Ground Vehicle: Open
+Repulsor: Open
+
+Troopers Clambering to the top of the Cliff do not roll for falling damage.

@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 30.9048977,
+    "posY": 1.87924409,
+    "posZ": -0.8667469,
+    "rotX": 0.017392,
+    "rotY": 15.02936,
+    "rotZ": 0.003853095,
+    "scaleX": 2,
+    "scaleY": 1,
+    "scaleZ": 2
+  },
+  "Nickname": "Hand of Dis",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 109,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "1": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/957475029107030372/32CB503C8612AC406FA8B36E2062D7B5E4EFF6B1/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/957475029107006215/52432501747A5C2BC055B0BD9CFD2E930AEE6E68/",
+      "NumWidth": 5,
+      "NumHeight": 4,
+      "BackIsHidden": true,
+      "UniqueBack": false
+    }
+  },
+  "GUID": "36f083"
+}

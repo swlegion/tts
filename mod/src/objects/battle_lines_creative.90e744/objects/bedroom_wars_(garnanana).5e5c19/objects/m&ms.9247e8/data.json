@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 20.2474937,
+    "posY": 1.74798977,
+    "posZ": -9.003489,
+    "rotX": 332.733032,
+    "rotY": 43.5152855,
+    "rotZ": 11.8733139,
+    "scaleX": 0.875,
+    "scaleY": 0.875,
+    "scaleZ": 0.875
+  },
+  "Nickname": "M&Ms",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992165864,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/993513208355170009/1E83C1F0CFC14606BE287E0028D877F377F4D468/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/993513208355170309/31A991D877C0AF4FB980499E3D5B8A9B8C86DCAA/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "9247e8"
+}

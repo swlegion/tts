@@ -1,0 +1,43 @@
+{
+  "Name": "Custom_Model_Infinite_Bag",
+  "Transform": {
+    "posX": -43.58208,
+    "posY": 0.9404843,
+    "posZ": -10.7486391,
+    "rotX": 0.000003882288,
+    "rotY": 135,
+    "rotZ": -0.0000163426284,
+    "scaleX": 1.84999943,
+    "scaleY": 1.84999943,
+    "scaleZ": 1.84999943
+  },
+  "Nickname": "Standby Tokens",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441910/ED14AA37D66E5E75EA5D6790A50546B1FC105DAC/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442019/EF36C682BC69BB9239DC15B0C52EE6FFACEE19C0/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 7,
+    "CastShadows": true
+  },
+  "GUID": "f103c2"
+}

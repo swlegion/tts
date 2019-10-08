@@ -1,0 +1,12 @@
+Heavy Cover:
+All
+
+Sides:
+All - Impassable
+
+Roof:
+All - Impassable
+
+Height: 2
+
+Special Thanks: www.imperialterrain.com

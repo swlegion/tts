@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 12.1931171,
+    "posY": -6.77511024,
+    "posZ": 21.1001568,
+    "rotX": -0.0002984068,
+    "rotY": 178.7793,
+    "rotZ": 0.00059753703,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Control Tower [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/920331113102195916/4E031F28EA3B0E9E7A9FD02093A31D7660E75CD6/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/920331113102196038/63BAA775B4335CCF21C6CE5080EB9FC345C2F39B/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/920331435132687920/538EFE2BF6A33612B0BD5B7A0B0473320B411A42/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "0cbe1a"
+}

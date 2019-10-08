@@ -1,0 +1,12 @@
+Heavy Cover:
+All except AT-ST
+
+Sides:
+All - Impassable
+
+Roof:
+All - Open
+
+Height: 1
+
+Special Thanks: corvusgamesterrain.com

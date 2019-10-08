@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 32.4432373,
+    "posY": 1.44750345,
+    "posZ": 6.08080769,
+    "rotX": -0.00000111032523,
+    "rotY": 105.006554,
+    "rotZ": 0.000332347932,
+    "scaleX": 1.055907,
+    "scaleY": 1.04954648,
+    "scaleZ": 1.04954648
+  },
+  "Nickname": "Sand Barricades [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 0.7439022,
+    "b": 0.924903631
+  },
+  "Locked": true,
+  "Grid": false,
+  "Snap": false,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": false,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/920331435132688528/A666ED668EBE4CE92239C849AC33FA6268201EE7/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/920331435132688137/C98DEAEA6FB0F4758F16BB9698ED67BDACB3D040/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/920331435132688745/6756DB1DA28553218412AE6F325080297EC3E911/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "ad77d0"
+}

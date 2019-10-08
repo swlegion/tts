@@ -1,0 +1,37 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 3.71686339,
+    "posY": 4.37531567,
+    "posZ": 4.70311546,
+    "rotX": 0.102768973,
+    "rotY": 150.0179,
+    "rotZ": 1.02804136,
+    "scaleX": 0.4250004,
+    "scaleY": 0.4250004,
+    "scaleZ": 0.4250004
+  },
+  "Nickname": "Storage Crate [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.8,
+    "g": 0.8,
+    "b": 0.8
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/927052513931798332/0885E6DEB099682BD2BC4C71D9665D664A856BA8/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "f31f41"
+}

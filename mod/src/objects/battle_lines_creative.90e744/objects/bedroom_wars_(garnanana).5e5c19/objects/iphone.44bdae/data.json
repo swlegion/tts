@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -23.5092316,
+    "posY": 1.67822254,
+    "posZ": 12.4620056,
+    "rotX": 0.0000153679266,
+    "rotY": 103.969391,
+    "rotZ": 90.0003357,
+    "scaleX": 2.5,
+    "scaleY": 2,
+    "scaleZ": 2
+  },
+  "Nickname": "Iphone",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/993513208355171021/2B38B95F76EB05510B9084F4A270E2B01EC6911C/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/993513208355171124/6CDA3ADCBE7E2E215BEBD8CB784FC4017279BCAB/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "44bdae"
+}

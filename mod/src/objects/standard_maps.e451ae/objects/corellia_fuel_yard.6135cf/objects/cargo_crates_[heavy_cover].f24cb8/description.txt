@@ -1,0 +1,9 @@
+Heavy Cover:
+Non-Creature Troopers
+
+Barricade:
+Trooper: Difficult
+G. Vehicle: Open
+Repulsor: Open
+
+Special Thanks: imperialterrain.com

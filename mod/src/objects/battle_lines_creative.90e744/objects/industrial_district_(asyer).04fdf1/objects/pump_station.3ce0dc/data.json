@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": -3.748778,
+    "posY": 1.39522374,
+    "posZ": -11.932044,
+    "rotX": 0.00000885883946,
+    "rotY": 90.01183,
+    "rotZ": -0.00167174486,
+    "scaleX": 2.59999776,
+    "scaleY": 2.59999776,
+    "scaleZ": 2.59999776
+  },
+  "Nickname": "Pump Station",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862503075025615/89055ABDE7ECC9EC2224C8F52ACB0E12344219FE/",
+    "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "3ce0dc"
+}

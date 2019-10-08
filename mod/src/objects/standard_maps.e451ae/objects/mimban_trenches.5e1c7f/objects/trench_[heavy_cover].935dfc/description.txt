@@ -1,0 +1,12 @@
+Heavy Cover:
+Troopers except 1.4 FD Laser Cannon Team
+
+This Trench counts as a different terrain from the Trench Holdout for the purpose of determining if the terrain is ignored for cover during an attack. 
+
+Walls:
+Trooper - Difficult
+G. Vehicle - Open
+Repulsor - Open
+
+Floor
+All - Open

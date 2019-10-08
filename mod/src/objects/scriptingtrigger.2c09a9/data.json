@@ -1,0 +1,32 @@
+{
+  "Name": "ScriptingTrigger",
+  "Transform": {
+    "posX": 8.033237,
+    "posY": 3.10909247,
+    "posZ": -33.6313248,
+    "rotX": 0,
+    "rotY": 359.8334,
+    "rotZ": 0,
+    "scaleX": 72,
+    "scaleY": 5,
+    "scaleZ": 30.6627483
+  },
+  "Nickname": "",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1,
+    "a": 0.509803951
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "GUID": "2c09a9"
+}

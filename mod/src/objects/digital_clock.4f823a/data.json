@@ -1,0 +1,36 @@
+{
+  "Name": "Digital_Clock",
+  "Transform": {
+    "posX": 62.2451668,
+    "posY": 0.949036956,
+    "posZ": -11.4484711,
+    "rotX": -0.00000231010745,
+    "rotY": 89.97666,
+    "rotZ": 5.293321e-7,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "",
+  "ColorDiffuse": {
+    "r": 0,
+    "g": 0.3112404,
+    "b": 0.5372549
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "Clock": {
+    "ClockState": 1,
+    "SecondsPassed": 900,
+    "Paused": true
+  },
+  "GUID": "4f823a"
+}

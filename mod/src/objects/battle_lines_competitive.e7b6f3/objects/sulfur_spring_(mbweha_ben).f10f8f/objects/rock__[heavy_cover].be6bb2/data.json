@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 40.99589,
+    "posY": 3.20978951,
+    "posZ": 10.3486576,
+    "rotX": 358.6778,
+    "rotY": 210.015381,
+    "rotZ": 1.08776152,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Rock  [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992160857,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858991717/7752B8B026E0C06D7EF50CD4BBE62C151EAFB077/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858991957/09F6813045E368746D643B0CA3897B2011478EB0/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858991717/7752B8B026E0C06D7EF50CD4BBE62C151EAFB077/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "be6bb2"
+}

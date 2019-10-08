@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 10.36417,
+    "posY": 1.43784666,
+    "posZ": 2.35215664,
+    "rotX": -0.00114277145,
+    "rotY": 225.0158,
+    "rotZ": -0.00111503,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Trench [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.7607843,
+    "g": 0.796078444,
+    "b": 0.847058833
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542415859/7A359305605AF59C5CCD81E69C4E6905B55D2795/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542419572/C613BCAAB82C5FBBB29F245E5E54866EBCFC7817/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542420902/6665353A18B9C36B520041FEFD41D1DABAB90556/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "00547a"
+}

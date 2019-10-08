@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -17.0288754,
+    "posY": 1.463048,
+    "posZ": -8.2400465,
+    "rotX": 0.000205148739,
+    "rotY": 322.807,
+    "rotZ": -0.0002543671,
+    "scaleX": 1.77499914,
+    "scaleY": 1.77499914,
+    "scaleZ": 1.77499914
+  },
+  "Nickname": "Chem Silo [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.7176471,
+    "g": 0.854901969,
+    "b": 0.8509437
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": false,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/920331113102195690/C1E494CCD15A1A93A541A43CBD984D763A2275A5/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/920331113102195801/F0156D2235FE8F099623012884530B0395D934D3/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/920331113102195690/C1E494CCD15A1A93A541A43CBD984D763A2275A5/",
+    "Convex": false,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "ce7da4"
+}

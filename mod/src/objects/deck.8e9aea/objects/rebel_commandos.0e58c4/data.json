@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 44.0775681,
+    "posY": 1.1806612,
+    "posZ": -10.5390253,
+    "rotX": 0.0005553131,
+    "rotY": 270.01886,
+    "rotZ": -0.005631881,
+    "scaleX": 0.227068469,
+    "scaleY": 1,
+    "scaleZ": 0.227068469
+  },
+  "Nickname": "Rebel Commandos",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 30403,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "288": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786359682702689696/997CDBB5F42A4A215F87B78B918E01891C1EB4DB/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/786359682702689831/F26CF919C4C5DF0705CDC5640E281AC970A57057/",
+      "NumWidth": 5,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "0e58c4"
+}

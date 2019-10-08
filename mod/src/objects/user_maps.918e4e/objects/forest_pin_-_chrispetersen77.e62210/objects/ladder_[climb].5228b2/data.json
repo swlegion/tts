@@ -1,0 +1,37 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 15.5296621,
+    "posY": 3.38944912,
+    "posZ": -12.5595922,
+    "rotX": 332.2036,
+    "rotY": 345.2149,
+    "rotZ": 0.0117986072,
+    "scaleX": 0.55,
+    "scaleY": 0.45,
+    "scaleZ": 0.35
+  },
+  "Nickname": "Ladder [Climb]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/863982759143745728/FA8BD82836F06E4E4A83804D359E648DA2DD1ED7/",
+    "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/863982759143740748/5A88C9B562AB2DB8F433B0A3F94359BA73F2DE0E/",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "5228b2"
+}

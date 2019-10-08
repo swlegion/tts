@@ -1,0 +1,4 @@
+Heavy cover
+Height 1 
+Impassable all
+Top Impassable

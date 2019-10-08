@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -41.1472855,
+    "posY": 1.11480021,
+    "posZ": -9.238696,
+    "rotX": 6.971494e-7,
+    "rotY": 180.015823,
+    "rotZ": 6.167425e-7,
+    "scaleX": 0.650000334,
+    "scaleY": 0.650000334,
+    "scaleZ": 0.650000334
+  },
+  "Nickname": "Dodge Token",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442740/91C08C293B53CCF3D104B0472B60ECF7BF4B613E/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442875/553BAF41BE032BCE7282C4DECB180B5410AC7226/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "e733f2"
+}

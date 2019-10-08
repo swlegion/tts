@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 23.0751038,
+    "posY": 1.44925249,
+    "posZ": 3.246894,
+    "rotX": -0.0016122479,
+    "rotY": 15.01552,
+    "rotZ": -0.00044526,
+    "scaleX": 2.44999862,
+    "scaleY": 2.44999862,
+    "scaleZ": 2.44999862
+  },
+  "Nickname": "Lambda-Class Shuttle [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.5308688,
+    "g": 0.5308688,
+    "b": 0.5308688
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858699415/6B42662BB8E2DBEA725918A805FD1DAAC7979F6F/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858699655/C0A884132F0445B8EEBCDC70585F4CAD0931A050/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858699953/E7D020B8587FC262288A2655F018C754D7EEADA7/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "b97275"
+}

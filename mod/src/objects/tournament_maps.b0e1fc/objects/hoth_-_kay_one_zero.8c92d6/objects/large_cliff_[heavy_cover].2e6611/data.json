@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 17.3970089,
+    "posY": 1.38178682,
+    "posZ": -6.593301,
+    "rotX": 0.000839537068,
+    "rotY": 121.576538,
+    "rotZ": -0.00136756047,
+    "scaleX": 0.99998,
+    "scaleY": 1.202263,
+    "scaleZ": 1.07547557
+  },
+  "Nickname": "Large Cliff [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.9320557,
+    "g": 0.9320557,
+    "b": 0.9320557
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "https://gist.githubusercontent.com/nashjaee/825e8ae122baeb3894ad8a6d7e5265f9/raw/8651a0274bf4ec7d6f7ec79d5f4a42091d87c3ee/snow_hill_model.txt",
+    "DiffuseURL": "https://i.imgur.com/ovrB1Bw.jpghttps://i.imgur.com/ovrB1Bw.jpg",
+    "NormalURL": "",
+    "ColliderURL": "https://gist.githubusercontent.com/nashjaee/825e8ae122baeb3894ad8a6d7e5265f9/raw/8651a0274bf4ec7d6f7ec79d5f4a42091d87c3ee/snow_hill_model.txt",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "2e6611"
+}

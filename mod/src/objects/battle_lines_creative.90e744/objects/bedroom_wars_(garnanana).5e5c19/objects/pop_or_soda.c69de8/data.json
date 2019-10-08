@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -0.0873226747,
+    "posY": 3.491433,
+    "posZ": 13.3646612,
+    "rotX": -0.00008497438,
+    "rotY": 269.992,
+    "rotZ": -3.256888e-12,
+    "scaleX": 1.4000001,
+    "scaleY": 1.4000001,
+    "scaleZ": 1.4000001
+  },
+  "Nickname": "Pop or soda",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.9921668,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/993513208355171688/82C28992755E995E02B8C7FC7BF2B93F1083DB33/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/993513208355171790/BEEC1285EEF083C40D4E8F45D05FCF829D76CC99/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "c69de8"
+}

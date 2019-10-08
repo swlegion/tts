@@ -1,0 +1,50 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -13.5888977,
+    "posY": 3.50866652,
+    "posZ": -1.50125968,
+    "rotX": 10.844655,
+    "rotY": 27.6707172,
+    "rotZ": 8.577422,
+    "scaleX": 0.900000751,
+    "scaleY": 0.900000751,
+    "scaleZ": 0.900000751
+  },
+  "Nickname": "Broken Monument Base",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.9921631,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/924802174592914701/F1E340532D1DEB3FC4675B20DEAD70983BF2267A/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/924802174592914802/E5A0C90B8457755E11AF31700335BAC44077030C/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 0.8745098,
+        "g": 0.8117647,
+        "b": 0.745098054
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "0d7ac4"
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 5.421761,
+    "posY": 1.44184923,
+    "posZ": 13.3580837,
+    "rotX": -0.0000826284449,
+    "rotY": 270.00528,
+    "rotZ": -0.0003148596,
+    "scaleX": 0.8333315,
+    "scaleY": 1.33333325,
+    "scaleZ": 0.8333315
+  },
+  "Nickname": "Redwood Tree [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.6000381,
+    "g": 0.6000381,
+    "b": 0.6000381
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858955187/C05F76E938041A518E0AAD4E11FB68A55B69A573/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858955432/DA629DB23D2BC9B207325CC9E7EF0A7B482A4CBD/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858955713/BEC1561B09C790765655464192959E03246B9813/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "dfa22e"
+}

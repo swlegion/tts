@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 14.7840757,
+    "posY": 2.42500043,
+    "posZ": -28.6819363,
+    "rotX": 0.07054214,
+    "rotY": 89.94927,
+    "rotZ": 0.107929491,
+    "scaleX": 1.055907,
+    "scaleY": 1.04954648,
+    "scaleZ": 1.04954648
+  },
+  "Nickname": "Баррикады",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992160261,
+    "b": 0.9999998
+  },
+  "Locked": false,
+  "Grid": false,
+  "Snap": false,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": false,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/920331435132688528/A666ED668EBE4CE92239C849AC33FA6268201EE7/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/920331435132688137/C98DEAEA6FB0F4758F16BB9698ED67BDACB3D040/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/920331435132688745/6756DB1DA28553218412AE6F325080297EC3E911/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "29388b"
+}

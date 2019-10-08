@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 27.217453,
+    "posY": 2.34285331,
+    "posZ": -14.0089359,
+    "rotX": 359.969635,
+    "rotY": 359.77533,
+    "rotZ": 359.945831,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Footlocker",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/90478669043262307/A8618E7BA1AAAA92D5E1D77A80035D43B0CB76A7/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/90478669043262597/B2A04113D387B1273CBE31B50355386A8B307E17/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "8dc21e"
+}

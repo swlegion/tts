@@ -1,0 +1,54 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 18.354681,
+    "posY": 1.428973,
+    "posZ": 0.238423109,
+    "rotX": -0.001580967,
+    "rotY": 0.00618388224,
+    "rotZ": -0.0000275394741,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Bespin Office [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.662959933,
+    "g": 0.662959933,
+    "b": 0.662959933
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542542039/78DF5107C1280E9215788B04821CD38ED0F43764/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542542519/BBF5911D7E03B5EE3DCEF90C6EA786F4FB5D36DC/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542542039/78DF5107C1280E9215788B04821CD38ED0F43764/",
+    "Convex": false,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "PhysicsMaterial": {
+    "StaticFriction": 0.6,
+    "DynamicFriction": 0.6,
+    "Bounciness": 0,
+    "FrictionCombine": 0,
+    "BounceCombine": 0
+  },
+  "Rigidbody": {
+    "Mass": 1,
+    "Drag": 0.1,
+    "AngularDrag": 0.1,
+    "UseGravity": true
+  },
+  "GUID": "491491"
+}

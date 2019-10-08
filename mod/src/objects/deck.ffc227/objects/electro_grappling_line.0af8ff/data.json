@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 41.460144,
+    "posY": 1.02078319,
+    "posZ": 5.83666325,
+    "rotX": 0.0000220893089,
+    "rotY": 269.979065,
+    "rotZ": 0.009109725,
+    "scaleX": 0.181600809,
+    "scaleY": 1,
+    "scaleZ": 0.181600809
+  },
+  "Nickname": "Electro Grappling Line",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 34500,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "283": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785232635608583473/125DF5236EAD1D7298D7A75CA38B21C42AE53FD6/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/785232635608583473/125DF5236EAD1D7298D7A75CA38B21C42AE53FD6/",
+      "NumWidth": 2,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": false
+    }
+  },
+  "GUID": "0af8ff"
+}

@@ -1,0 +1,11 @@
+Light Cover:
+All but AT-ST & T-47
+
+Log:
+All - Impassable
+
+LMB+RMB to place underneath. Only models that fit beneath may move under.
+
+Non-emplacement troopers w/ leader in base contact with log may move from one end of the log to the other by using 2 movements, or by using 1 movement & rolling white dice as if clambering.
+
+Units with Unhindered may move across using 1 movement & not roll dice.

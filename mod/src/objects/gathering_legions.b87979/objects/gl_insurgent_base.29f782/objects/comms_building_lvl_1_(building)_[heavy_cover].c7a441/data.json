@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -19.623415,
+    "posY": 1.39086807,
+    "posZ": 9.012503,
+    "rotX": -0.00159686257,
+    "rotY": 179.982925,
+    "rotZ": -0.00000242882879,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Comms Building lvl 1 (Building) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.9361389,
+    "g": 0.978713,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546356782/8195EFC424B95DCA39BD1B08C334254797DB678D/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546356900/4491861CB02437B780521280B086BD4CC4E29585/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546357201/EBEE0E44093DFD5FEEF4F7B5F49172F7E34071BD/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "c7a441"
+}

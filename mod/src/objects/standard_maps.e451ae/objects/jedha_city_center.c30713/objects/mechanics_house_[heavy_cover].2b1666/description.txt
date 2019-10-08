@@ -1,0 +1,14 @@
+Heavy Cover:
+Minis Size 7 and below
+
+Sides
+Trooper - Impassable
+Ground Vehicle - Impassable
+Repulsor - Impassable
+
+Top:
+All - Open
+
+Height: 1
+
+Special Thanks: www.imperialterrain.com

@@ -1,0 +1,13 @@
+Heavy Cover:
+Mini size 6 and below
+
+Sides:
+All - Impassable
+Minis with size > 6 treat this as difficult terrain
+
+Roof/Ramp:
+All - Open
+
+Height: 1
+
+Special Thanks: www.imperialterrain.com

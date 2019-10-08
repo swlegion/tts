@@ -1,0 +1,9 @@
+Cover Type: Heavy
+
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Roof is Open terrain for all
+
+Height: 2

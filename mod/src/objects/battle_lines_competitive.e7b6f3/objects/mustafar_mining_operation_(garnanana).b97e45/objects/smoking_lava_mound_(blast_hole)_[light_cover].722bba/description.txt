@@ -1,0 +1,9 @@
+Light Cover (Area Terrain):
+Troopers
+
+Mound:
+Trooper - Difficult
+G. Vehicle - Open
+Repulsor - Open
+
+Troopers obscured by the smoke recieve cover. 

@@ -1,0 +1,9 @@
+Cover Type:
+Wings and Body - Heavy Cover
+Laser Cannons - Light Cover
+
+Trooper: Difficult
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Height: 1

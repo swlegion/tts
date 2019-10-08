@@ -1,0 +1,10 @@
+Heavy Cover:
+All except AT-ST
+
+Sides:
+All - Impassable
+
+Roof/Ramp:
+All - Open
+
+Height: 1

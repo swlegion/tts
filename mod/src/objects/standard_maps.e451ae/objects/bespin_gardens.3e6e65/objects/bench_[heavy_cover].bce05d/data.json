@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -1.99412715,
+    "posY": 1.441408,
+    "posZ": -4.33110142,
+    "rotX": 359.9942,
+    "rotY": 314.997162,
+    "rotZ": 0.00198409776,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Bench [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.947776,
+    "g": 0.947776,
+    "b": 0.947776
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542477347/F64D1A2BD4C03F55E0A348ADA3F7183820D5F51C/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542478300/E8F7DCB6D359B8AA863814B8F17189A5990D7419/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542477347/F64D1A2BD4C03F55E0A348ADA3F7183820D5F51C/",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "bce05d"
+}

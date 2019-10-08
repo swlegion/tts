@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 12.5972414,
+    "posY": 2.05461216,
+    "posZ": -9.374871,
+    "rotX": 0.00158993283,
+    "rotY": 180.015167,
+    "rotZ": -0.0000193865671,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Chair [Light]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/90478669043020803/AD23A714F5F2DD55CCC456484689BED32B93F0B0/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/90478669043021009/2853F22DD6B467BED53B23FDBC78B22764D384F5/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "cafc26"
+}

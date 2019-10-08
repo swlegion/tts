@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 14.01,
+    "posY": 1.44118166,
+    "posZ": -7.18,
+    "rotX": 0.00140547229,
+    "rotY": 210,
+    "rotZ": 0.000774148,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Medium Desert House [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "https://gist.githubusercontent.com/nashjaee/c16261972363a0bcb9f59a763fc0f771/raw/0cf50b5b1c66b4d4969bc7b37f4f92bfc6074059/tat_medium_house_2.txt",
+    "DiffuseURL": "https://www.dropbox.com/s/qsq43ti5qlhq7dx/medium_house_2.jpg?raw=1",
+    "NormalURL": "",
+    "ColliderURL": "https://gist.githubusercontent.com/nashjaee/c16261972363a0bcb9f59a763fc0f771/raw/0cf50b5b1c66b4d4969bc7b37f4f92bfc6074059/tat_medium_house_2.txt",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "1db7df"
+}

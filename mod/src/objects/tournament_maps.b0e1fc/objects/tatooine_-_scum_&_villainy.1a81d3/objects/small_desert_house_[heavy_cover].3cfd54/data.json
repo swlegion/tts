@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 11.822772,
+    "posY": 1.444383,
+    "posZ": 15.2971306,
+    "rotX": -0.00165980391,
+    "rotY": 180,
+    "rotZ": 0.0002994755,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Small Desert House [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "https://gist.githubusercontent.com/nashjaee/ca9fd90e500b9407bd90c69484b2573b/raw/2d401c49841c1b3f32e776fb32f594a09d0f5b91/tat_small_house_2.txt",
+    "DiffuseURL": "https://www.dropbox.com/s/t05k9nedv8uim24/small_house_2.jpg?raw=1",
+    "NormalURL": "",
+    "ColliderURL": "https://gist.githubusercontent.com/nashjaee/ca9fd90e500b9407bd90c69484b2573b/raw/2d401c49841c1b3f32e776fb32f594a09d0f5b91/tat_small_house_2.txt",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "3cfd54"
+}

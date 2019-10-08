@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 6.921229,
+    "posY": 1.12714255,
+    "posZ": -0.9179397,
+    "rotX": 358.3145,
+    "rotY": 109.46521,
+    "rotZ": 79.61324,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Outpost Gate",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540545452392/5D16B83B1C92C46F1B955DAE086010C7FAC12543/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540545452493/AFFFD2ACB12C3969E4DAB0499DE07046AFD5897C/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540545452630/B51B8030FE08B550CF92B5EB8A85F56F9D173A12/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "a60034"
+}

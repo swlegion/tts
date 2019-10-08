@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 6.729802,
+    "posY": 2.34295273,
+    "posZ": -10.1896143,
+    "rotX": -0.00102085376,
+    "rotY": 179.9872,
+    "rotZ": -0.000711875444,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Terminal",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/90478669043042075/FBCBEB26F9A2630029366DF4A7F4BBC45F706BDD/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/90478669043042812/B2FA8ABDD00DF0074D3FD89E48A9103A0A4B1863/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "01cd61"
+}

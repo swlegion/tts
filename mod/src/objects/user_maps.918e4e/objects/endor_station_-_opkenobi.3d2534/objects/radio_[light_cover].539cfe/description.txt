@@ -1,0 +1,7 @@
+Cover Type: Light
+
+Trooper: Difficult
+Ground Vehicle: Difficult
+Repulsor: Open
+
+Can provide cover to AT-RT and Speeder Bikes

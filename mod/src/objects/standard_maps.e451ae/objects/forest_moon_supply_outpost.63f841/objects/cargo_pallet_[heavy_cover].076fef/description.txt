@@ -1,0 +1,12 @@
+Heavy Cover:
+Mini Size 2 and below
+
+Trooper: Impassable
+G. Vehicle: Impassable
+
+Minis size > 2 treat this as difficult terrain
+
+Repulsor: Open
+
+
+Special Thanks: imperialterrain.com

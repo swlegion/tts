@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 18.5218735,
+    "posY": 2.9802866,
+    "posZ": 37.652916,
+    "rotX": 359.51474,
+    "rotY": 210.0057,
+    "rotZ": 358.8437,
+    "scaleX": 1.84999931,
+    "scaleY": 1.84999931,
+    "scaleZ": 1.84999931
+  },
+  "Nickname": "Ruins [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.9055694,
+    "g": 0.9055694,
+    "b": 0.9055694
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1000268739968672857/8B7966BC51FF14B75CBB47B90FF30466073154A1/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1000268739968687054/C43E5482107506A8B9DB50B907CEC00CEE726FD7/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1000268739968673230/819BA23CE658EF18195231827781DC3303B3D62C/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "b0a37d"
+}

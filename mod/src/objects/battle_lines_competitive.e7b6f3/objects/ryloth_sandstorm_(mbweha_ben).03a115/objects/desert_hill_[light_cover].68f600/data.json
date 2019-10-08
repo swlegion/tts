@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 8.411752,
+    "posY": 1.093043,
+    "posZ": 13.4429455,
+    "rotX": -0.000155493544,
+    "rotY": 90,
+    "rotZ": 0,
+    "scaleX": 0.7,
+    "scaleY": 1.5,
+    "scaleZ": 0.9
+  },
+  "Nickname": "Desert Hill [light cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/933802305633439291/72CF57451B477F13B2F03305D57213BCACEF30ED/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/999141806431454540/47095122A5052B930FD703E7195450EEEDFA5762/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/933802305633439733/80560857B95FAD89471B19EF9B5F0FE7B358E313/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 4,
+    "CastShadows": true
+  },
+  "GUID": "68f600"
+}

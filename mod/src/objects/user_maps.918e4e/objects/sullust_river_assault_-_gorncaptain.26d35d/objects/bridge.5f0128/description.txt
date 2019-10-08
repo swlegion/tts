@@ -1,0 +1,3 @@
+Trooper: Open
+Ground Vehicle: Open
+Repulsor: Open

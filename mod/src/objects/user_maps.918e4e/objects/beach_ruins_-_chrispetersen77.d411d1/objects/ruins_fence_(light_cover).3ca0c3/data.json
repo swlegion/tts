@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 1.72067285,
+    "posY": 1.20089674,
+    "posZ": -5.27829552,
+    "rotX": 0.0015441539,
+    "rotY": 344.997559,
+    "rotZ": -0.000414721173,
+    "scaleX": 3,
+    "scaleY": 3,
+    "scaleZ": 3
+  },
+  "Nickname": "Ruins Fence (Light Cover)",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992160261,
+    "b": 0.9999998
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/923676470468120931/7EC99D70BA17FCB319253304F45150EBCDF01829/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/923676470468120725/F373A2D8D3F5339546EE9775109573A055D96A34/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "3ca0c3"
+}

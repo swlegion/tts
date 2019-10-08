@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -2.356611,
+    "posY": 1.41481352,
+    "posZ": 10.62636,
+    "rotX": 0.000685868145,
+    "rotY": 239.990875,
+    "rotZ": 0.00143415062,
+    "scaleX": 2.42499924,
+    "scaleY": 2.42499924,
+    "scaleZ": 2.42499924
+  },
+  "Nickname": "Cliff, Main Body (Completely Impassable)",
+  "ColorDiffuse": {
+    "r": 0.9390243,
+    "g": 0.889056265,
+    "b": 0.829417
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/924802174592912507/B2A19C343A6E62C307DA9D7414F677FF12341DC0/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/927052513931962587/9D1E70C2DFE67E7FB69E8EBB7D9FF55A26893F22/",
+    "NormalURL": "http://cloud-3.steamusercontent.com/ugc/924802174592912731/B767565F288D5825252AE2932A3A5E3DA4C8CCDB/",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/924802174592912596/BD5F7318830E1DCA92CFB6A39197A2176105B7D5/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "c85474"
+}

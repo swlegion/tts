@@ -1,0 +1,12 @@
+Heavy Cover:
+All
+
+Sides:
+All - Impassable
+
+Roof and Wing Slope:
+All - Open
+
+Minis can move up the wing slopes without climbing.
+
+Height: 1

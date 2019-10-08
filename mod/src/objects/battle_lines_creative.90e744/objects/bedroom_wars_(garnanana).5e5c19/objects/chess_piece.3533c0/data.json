@@ -1,0 +1,32 @@
+{
+  "Name": "Chess_Rook",
+  "Transform": {
+    "posX": 3.46869922,
+    "posY": 1.95727658,
+    "posZ": -2.73061156,
+    "rotX": 9.083024,
+    "rotY": 63.2169037,
+    "rotZ": 270.000244,
+    "scaleX": 0.925000131,
+    "scaleY": 0.925000131,
+    "scaleZ": 0.925000131
+  },
+  "Nickname": "chess piece",
+  "ColorDiffuse": {
+    "r": 0,
+    "g": 0,
+    "b": 0
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": 1,
+  "GUID": "3533c0"
+}

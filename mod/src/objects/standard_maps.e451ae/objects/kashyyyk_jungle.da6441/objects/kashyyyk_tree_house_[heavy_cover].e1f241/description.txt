@@ -1,0 +1,15 @@
+Heavy Cover:
+All
+
+Sides:
+All - Impassable
+
+Platforms:
+Trooper: Open
+G. Vehicle: Impassable
+Repulsor: Impassable
+
+Height: 3
+
+Troopers can climb onto platforms. Platforms until the platform with the red ledge is height 1.
+Platforms after that platform is height 2

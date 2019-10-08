@@ -1,0 +1,53 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 7.58896255,
+    "posY": 1.166248,
+    "posZ": -0.629443467,
+    "rotX": -0.00167120132,
+    "rotY": 0.0209103972,
+    "rotZ": -0.0000103747452,
+    "scaleX": 1.79999948,
+    "scaleY": 1.79999948,
+    "scaleZ": 1.79999948
+  },
+  "Nickname": "Lava River [No Cover]",
+  "ColorDiffuse": {
+    "r": 0.808798552,
+    "g": 0.808798552,
+    "b": 0.808798552
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858782564/0B5E9646A78114273884FA2BA07C050A58E27FA2/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858782119/3CEBB0F57CE5C4275DB77D024D2032FD32D8843B/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858781791/2011729F8BA601BA8459861A3FCC5CC6EAEF6105/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "PhysicsMaterial": {
+    "StaticFriction": 0.6,
+    "DynamicFriction": 0.6,
+    "Bounciness": 0,
+    "FrictionCombine": 0,
+    "BounceCombine": 0
+  },
+  "Rigidbody": {
+    "Mass": 1.2,
+    "Drag": 0.1,
+    "AngularDrag": 0.1,
+    "UseGravity": true
+  },
+  "GUID": "8a4c25"
+}

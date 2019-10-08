@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -1.92269242,
+    "posY": 2.04254031,
+    "posZ": -5.8480134,
+    "rotX": -0.0011387571,
+    "rotY": 90.14586,
+    "rotZ": -0.00212859479,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Comm Panel [Light]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/90478669043030467/2166D488BB4D050E1A78F258E733D4A184774329/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/90478669043030725/B412939304792805D12FDE4615D0090249BE0C3A/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "a044ea"
+}

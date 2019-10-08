@@ -1,0 +1,17 @@
+Wings and Body (Heavy):
+Minis Size 3 and below
+
+Laser Cannons (Light):
+Non-Creature Troopers
+
+Sides:
+Trooper: Impassable
+G.Vehicle: impassable
+Repulsor - Impassable
+
+Minis with size > 3 treat this as difficult terrain
+
+Roof and Slope:
+All - Open
+
+Height: 1

@@ -1,0 +1,82 @@
+{
+  "Name": "Die_6_Rounded",
+  "Transform": {
+    "posX": -19.9778576,
+    "posY": 1.79763877,
+    "posZ": -4.89986372,
+    "rotX": 0.000329268136,
+    "rotY": 0.00317664375,
+    "rotZ": -0.00007881115,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Die",
+  "ColorDiffuse": {
+    "r": 0.0588639081,
+    "g": 0.0541051775,
+    "b": 0.0541051775
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": 0,
+  "GUID": "375393",
+  "RotationValues": [
+    {
+      "Value": 1,
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "Value": 2,
+      "Rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "Value": 3,
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 90
+      }
+    },
+    {
+      "Value": 4,
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": -90
+      }
+    },
+    {
+      "Value": 5,
+      "Rotation": {
+        "x": -90,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "Value": 6,
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": -180
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Infantry: Difficult
+Ground Vehicle: Impassible
+Repulsor: Open
+
+Can be crossed without suffering lava wounds

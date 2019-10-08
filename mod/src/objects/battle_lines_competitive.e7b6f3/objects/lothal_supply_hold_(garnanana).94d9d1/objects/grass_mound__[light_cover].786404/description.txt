@@ -1,0 +1,10 @@
+Light Cover (Area Terrain):
+Troopers except 1.4 FD Laser Cannon Team
+
+Mound:
+Trooper - Open
+G. Vehicle - Open
+Repulsor - Open
+
+
+Troopers recieve cover if line crosses the dark mound beneath the grass. 

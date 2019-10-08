@@ -1,0 +1,9 @@
+Light Cover:
+All
+
+Tree:
+All - Impassable
+
+Height: 3
+
+Special Thanks: www.imperialterrain.com

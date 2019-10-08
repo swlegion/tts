@@ -1,0 +1,37 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 1.9749738,
+    "posY": 1.34258413,
+    "posZ": -0.5167764,
+    "rotX": -0.00166872237,
+    "rotY": 0.8288445,
+    "rotZ": -0.0000372713439,
+    "scaleX": 5,
+    "scaleY": 1.5,
+    "scaleZ": 5
+  },
+  "Nickname": "Orange Smoke",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/923679899551958931/C8B6A13BEE68B398367312B622BDB427C2951900/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 6
+  },
+  "GUID": "8a69af"
+}

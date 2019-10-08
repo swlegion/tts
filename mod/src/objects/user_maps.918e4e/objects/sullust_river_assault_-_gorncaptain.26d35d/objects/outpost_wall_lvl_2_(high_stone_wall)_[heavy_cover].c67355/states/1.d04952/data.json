@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 12.7165594,
+    "posY": 1.11397147,
+    "posZ": -4.837278,
+    "rotX": 0.96531415,
+    "rotY": 33.9971581,
+    "rotZ": 358.318848,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Outpost Wall Lvl 1 (High Stone Wall) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546189005/6BA05494E29AE2107927C5B66A40D74552961B9E/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546189218/0E12DBA91BFF79AFB9B95ED8A1490327B38FC043/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546188786/D490EF6380E7F884A4E05A127A3FBFAB9E7EA983/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "d04952"
+}

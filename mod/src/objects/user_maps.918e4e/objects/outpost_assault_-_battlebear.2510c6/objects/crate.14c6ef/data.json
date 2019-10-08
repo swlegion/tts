@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -8.099019,
+    "posY": 1.43502569,
+    "posZ": -12.4951248,
+    "rotX": -0.00001523838,
+    "rotY": 89.9942551,
+    "rotZ": -0.001585048,
+    "scaleX": 0.575000644,
+    "scaleY": 0.575000644,
+    "scaleZ": 0.575000644
+  },
+  "Nickname": "Crate",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": false,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/866242507558372893/2F5F226A94AF22DA95182A1BA45337B4A2B35DFF/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/866242507558373029/6B41EBE3382420EF6C8B99FDC5DC5326C4B11760/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/866242507558373135/F8A90B1523FFCEFFA46228E7E5D027446337F783/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "14c6ef"
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 14.0093012,
+    "posY": 1.4347024,
+    "posZ": -0.03363027,
+    "rotX": 0.0000122534548,
+    "rotY": 89.994194,
+    "rotZ": -0.00167105871,
+    "scaleX": 0.825000167,
+    "scaleY": 0.825000167,
+    "scaleZ": 0.825000167
+  },
+  "Nickname": "Holo Ad [Light Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/966480765117281287/FE6D969EB9014EEE02916154A775469B2A381F31/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/966480765117281369/B0612E36DEB816FDBD752AC0358BB7DD9BAA77C5/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/966480765118137573/D03094B2A9211D19A8BD811A3B6C5558A57B43BD/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "e0ad57"
+}

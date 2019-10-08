@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 85.69196,
+    "posY": 1.33736122,
+    "posZ": 53.1766624,
+    "rotX": -0.000905530236,
+    "rotY": 254.990051,
+    "rotZ": -0.0004643619,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Bespin Wall [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.770688057,
+    "g": 0.770688057,
+    "b": 0.770688057
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542509494/8CA403F2ACD4BF21A2A42AD20809239A4A0C60BF/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542512367/A135AE67A134B208B4CDCE933933321CCF268E93/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/999141806431456715/F960A1E10B062BA38B2F795E0AB427D66834ABC3/",
+    "Convex": false,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "9f69c8"
+}

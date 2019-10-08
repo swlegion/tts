@@ -1,0 +1,30 @@
+{
+  "Name": "Notecard",
+  "Transform": {
+    "posX": 19.646841,
+    "posY": 1.51038289,
+    "posZ": -13.75631,
+    "rotX": 0.00159506151,
+    "rotY": 0.0134821823,
+    "rotZ": -1.04996737e-7,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Scarif Map Notes",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "GUID": "67adad"
+}

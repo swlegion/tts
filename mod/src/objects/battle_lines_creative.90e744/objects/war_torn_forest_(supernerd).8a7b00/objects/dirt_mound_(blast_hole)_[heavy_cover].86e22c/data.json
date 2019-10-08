@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 8.058841,
+    "posY": 1.44406736,
+    "posZ": 0.0103905825,
+    "rotX": 0.00161243987,
+    "rotY": 194.9797,
+    "rotZ": 0.0004420379,
+    "scaleX": 1.674999,
+    "scaleY": 1.674999,
+    "scaleZ": 1.674999
+  },
+  "Nickname": "Dirt Mound (Blast Hole) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.3989544,
+    "g": 0.3989544,
+    "b": 0.3989544
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542465659/30348E08551EAA3E8D5164E0D2931B3EB72DCEC1/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542470239/CFB22A69010911784880172594A7106CBC1F8DF1/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542467139/4036C31123FF00D2459B3ED1E57CD8141ACFAC8D/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "86e22c"
+}

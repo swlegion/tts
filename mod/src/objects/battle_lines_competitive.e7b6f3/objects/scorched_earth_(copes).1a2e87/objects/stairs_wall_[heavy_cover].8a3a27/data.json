@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 28.9211063,
+    "posY": 1.44581747,
+    "posZ": -12.6316814,
+    "rotX": 0.000156049209,
+    "rotY": 315.035583,
+    "rotZ": -0.000290036667,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Stairs Wall [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.239215642,
+    "g": 0.239215642,
+    "b": 0.239215642
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/966480765117279050/137F452B20413561B3CCCFD776B881D287E56DF3/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/966480765117279248/64FAF541D5AACD8A05094FD318107BE45D2AB3B8/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/966480765117279359/38939A46738377AB27F31EBD401684035E0BC83E/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "8a3a27"
+}

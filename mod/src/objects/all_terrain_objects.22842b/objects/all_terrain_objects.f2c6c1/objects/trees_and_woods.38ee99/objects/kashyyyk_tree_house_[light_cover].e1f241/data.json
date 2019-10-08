@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 50.6755829,
+    "posY": 2.36362982,
+    "posZ": -19.3113461,
+    "rotX": -0.00190728472,
+    "rotY": 179.987228,
+    "rotZ": 359.9851,
+    "scaleX": 0.650000334,
+    "scaleY": 0.650000334,
+    "scaleZ": 0.650000334
+  },
+  "Nickname": "Kashyyyk Tree House [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.9972916,
+    "g": 1,
+    "b": 0.996981561
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546358610/680B61C96D3E32F7D4AE81F0EC6D0BE354625EFA/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546358739/7BEBCB946CB7828FC44D2FDF42CC9DD7245772AA/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546358876/CF314CA24D42F043950541A27D761A86E9B9C129/",
+    "Convex": false,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 0.8745098,
+        "g": 0.8117647,
+        "b": 0.745098054
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 3,
+      "FresnelStrength": 0.1
+    },
+    "CastShadows": true
+  },
+  "GUID": "e1f241"
+}

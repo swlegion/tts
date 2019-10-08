@@ -1,0 +1,4 @@
+
+Trooper: Difficult
+Ground Vehicle: Open
+Repulsor: Open

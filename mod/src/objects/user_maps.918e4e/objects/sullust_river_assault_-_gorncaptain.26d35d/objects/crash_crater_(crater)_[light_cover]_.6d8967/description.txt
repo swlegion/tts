@@ -1,0 +1,17 @@
+Crater:
+Cover Type: Light
+Trooper: Difficult
+Ground Vehicle: Difficult
+Repulsor: Open
+
+Provides Cover only to Troopers. 
+
+Does not obscure LOS
+
+Interceptor: 
+
+Infantry: Impassable
+Vehicle: Impassable
+Repulsor: Difficult
+
+Obscures LOS

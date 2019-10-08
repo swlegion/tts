@@ -1,0 +1,10 @@
+Heavy Cover:
+Troopers, 74Z Speeder Bikes, AT-RT, Emplacements
+
+Sides:
+All - Impassable
+
+Roof:
+All - Open
+
+Height: 1

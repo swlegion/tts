@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -5.01621342,
+    "posY": 1.44545114,
+    "posZ": -1.37065434,
+    "rotX": 0.000314014673,
+    "rotY": 0.008401868,
+    "rotZ": -0.00008526204,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Desk [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.5647059,
+    "g": 0.5647059,
+    "b": 0.5647059
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787482161151595125/53BA24484FF76D6D92D77D15EBB4716E12029956/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/90478669043078532/0BF466A11E20766BFA47838E486D065C865F5795/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542430072/AA329530B252DDE7329AC70F9A98502F7875400C/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "352dfa"
+}

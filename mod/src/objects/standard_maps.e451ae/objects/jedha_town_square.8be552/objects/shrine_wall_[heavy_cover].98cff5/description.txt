@@ -1,0 +1,14 @@
+Heavy Cover:
+All except AT-ST
+
+Sides:
+All - Impassable
+
+Roof and Brazier:
+Troops - Open
+G.Vehichle - Impassable
+Repulsor - Impassable
+
+Height: 1
+
+Special Thanks: corvusgamesterrain.com

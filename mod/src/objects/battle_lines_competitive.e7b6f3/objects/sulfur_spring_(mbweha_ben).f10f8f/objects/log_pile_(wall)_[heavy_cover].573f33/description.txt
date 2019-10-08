@@ -1,0 +1,11 @@
+Heavy Cover:
+All but AT-ST & T-47
+
+Log Pile:
+Trooper - Impassable
+G. Vehicle - Difficult
+Repulsor - Open
+
+All six logs count as a single piece of terrain.
+
+Height: 1

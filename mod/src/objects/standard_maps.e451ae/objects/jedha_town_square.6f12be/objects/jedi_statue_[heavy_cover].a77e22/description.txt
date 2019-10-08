@@ -1,0 +1,7 @@
+Heavy Cover:
+All
+
+Statue:
+All - Impassable
+
+Height: 2

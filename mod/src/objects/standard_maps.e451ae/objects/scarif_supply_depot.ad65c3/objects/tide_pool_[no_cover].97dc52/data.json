@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": -20.1059723,
+    "posY": 1.5005337,
+    "posZ": 2.71022081,
+    "rotX": 0.1646674,
+    "rotY": 14.9876242,
+    "rotZ": 180.044067,
+    "scaleX": 2.64970088,
+    "scaleY": 1,
+    "scaleZ": 2.508556
+  },
+  "Nickname": "Tide Pool [No Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "http://cloud-3.steamusercontent.com/ugc/785232635608486582/89384062041C0CCD6757A4A3CAFCD8E948E8268E/",
+    "ImageSecondaryURL": "",
+    "WidthScale": 0,
+    "CustomToken": {
+      "Thickness": 0.1,
+      "MergeDistancePixels": 25,
+      "Stackable": false
+    }
+  },
+  "GUID": "97dc52"
+}

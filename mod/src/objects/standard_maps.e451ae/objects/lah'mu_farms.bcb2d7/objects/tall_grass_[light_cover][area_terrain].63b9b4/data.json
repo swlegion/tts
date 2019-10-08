@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -6.808379,
+    "posY": 1.45146918,
+    "posZ": 14.4335384,
+    "rotX": 0.07963921,
+    "rotY": 329.980957,
+    "rotZ": 359.982483,
+    "scaleX": 0.8585069,
+    "scaleY": 1,
+    "scaleZ": 0.940664232
+  },
+  "Nickname": "Tall Grass [Light Cover][Area Terrain]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542621946/F2FCD4CD9FD97EE020C328EEF39B5A75C1604546/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/999143472992569906/E21B8FB3D4AE55DC3AB9D8CD8D1F83D72649D129/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542626980/ACBD7B95053F17B53B637E41F50076E361F8B3EF/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "63b9b4"
+}

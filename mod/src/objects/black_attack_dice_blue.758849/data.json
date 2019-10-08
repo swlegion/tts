@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": -34.1844559,
+    "posY": 2.05895615,
+    "posZ": 12.1107807,
+    "rotX": 18.6240177,
+    "rotY": 0.0414183661,
+    "rotZ": 0.0243431721,
+    "scaleX": 0.22,
+    "scaleY": 0.250000417,
+    "scaleZ": 0.22
+  },
+  "Nickname": "Black Attack Dice Blue",
+  "ColorDiffuse": {
+    "r": 0.116003715,
+    "g": 0.133594453,
+    "b": 0.136525333
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/267231170580138054/83B9C07DD90D4FA8F3DE016617A6BF0BC935D9FF/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "758849"
+}

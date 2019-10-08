@@ -1,0 +1,13 @@
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Height: 1
+
+Doorway is open terrain for troopers.
+
+Troopers (and AT-RTs) can spend 2 actions to clamber over to the otherside.
+
+AT-STs treat this as difficult terrain.
+
+Special Thanks: www.imperialterrain.com

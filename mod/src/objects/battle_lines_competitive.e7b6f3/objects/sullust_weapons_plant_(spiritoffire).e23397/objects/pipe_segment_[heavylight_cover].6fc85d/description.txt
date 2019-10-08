@@ -1,0 +1,4 @@
+Heavy cover pipe
+Light Cover Supports
+Height 2
+Impassable all except troopers underneath

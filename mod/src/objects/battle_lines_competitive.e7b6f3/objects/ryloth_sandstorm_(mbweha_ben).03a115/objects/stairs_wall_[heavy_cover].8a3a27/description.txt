@@ -1,0 +1,13 @@
+Heavy Cover:
+All but AT-ST & T-47
+
+Sides:
+All - Impassable
+
+Stairs:
+Troopers - Open
+Vehicles - Impassable
+
+Height: 1
+
+Special Thanks: corvusgamesterrain.com

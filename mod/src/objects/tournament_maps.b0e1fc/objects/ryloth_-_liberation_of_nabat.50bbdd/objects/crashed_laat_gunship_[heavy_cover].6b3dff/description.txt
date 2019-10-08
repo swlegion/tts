@@ -1,0 +1,16 @@
+Heavy Cover:
+Minis Size 6 and below
+
+Body:
+All - Impassable
+
+Wings:
+Trooper - Difficult
+G. Vehicle - Difficult (Walkers treat as Open)
+Repulsor - Open
+
+Height: 1
+
+Units may move up the wing slopes without climbing/clambering.
+
+Height: 1

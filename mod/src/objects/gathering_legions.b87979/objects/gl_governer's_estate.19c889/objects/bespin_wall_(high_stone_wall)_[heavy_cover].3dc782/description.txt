@@ -1,0 +1,14 @@
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Height: 1
+
+Troopers cannot end movement on top of walls. Troopers (and AT-RTs) can spend 2 actions to clamber over to the otherside.
+Troopers roll 1 white defence die per mini for falling damage.
+
+AT-STs treat this as difficult terrain.
+
+Lock this for proper colliders
+
+Special Thanks: www.danwulfgames.com

@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 11.5335283,
+    "posY": 5.19824553,
+    "posZ": -2.91199327,
+    "rotX": 0.8095467,
+    "rotY": 209.996262,
+    "rotZ": 358.99942,
+    "scaleX": 0.850000143,
+    "scaleY": 0.850000143,
+    "scaleZ": 0.850000143
+  },
+  "Nickname": "Destroyed Settlement (Difficult)",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992160261,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/924802174592915590/5EFFEA8A9B52828CC12145FAF56D8E1E6F5ED3F4/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/924802174592915687/1FBFE42D2A29A59DC39A0F7FCF1631F8F3550312/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/924802174592915590/5EFFEA8A9B52828CC12145FAF56D8E1E6F5ED3F4/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "050b0f"
+}

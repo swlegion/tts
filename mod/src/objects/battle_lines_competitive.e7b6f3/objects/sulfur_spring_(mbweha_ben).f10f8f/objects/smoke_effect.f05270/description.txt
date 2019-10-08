@@ -1,0 +1,1 @@
+If the 5 smoke effects are not loading correctly, they can be turned off by right clicking the "multi-colored smoke" objects and switched to looping effect 2.

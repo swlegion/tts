@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 11.314889,
+    "posY": 6.01866341,
+    "posZ": 2.71653533,
+    "rotX": 358.616669,
+    "rotY": 239.191422,
+    "rotZ": 179.9914,
+    "scaleX": 0.8199999,
+    "scaleY": 0.8199999,
+    "scaleZ": 0.8199999
+  },
+  "Nickname": "Ladder",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/867365840802587641/B85D76C5A994DEFFC1E29F07CA4B37FE4263D44A/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/866242507558372471/A894F4E899EFADD3812BE94542639A726B060C6B/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 2,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "04624b"
+}

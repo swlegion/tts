@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 39.7121773,
+    "posY": 1.25599849,
+    "posZ": -3.64502478,
+    "rotX": 0.118550591,
+    "rotY": 269.465942,
+    "rotZ": 0.100410372,
+    "scaleX": 0.227068469,
+    "scaleY": 1,
+    "scaleZ": 0.227068469
+  },
+  "Nickname": "Snowtroopers Alt Art",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 30201,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "287": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786359682702689371/FE903392D23B9F331E16589D286B45790027995B/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/785232635608506395/EDFC338C9A232DEBCE57D652B7DBC38F27774A77/",
+      "NumWidth": 5,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "0663a2"
+}

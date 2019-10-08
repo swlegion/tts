@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 40.0143852,
+    "posY": 1.02073133,
+    "posZ": 7.15578556,
+    "rotX": 0.00182904291,
+    "rotY": 270.001648,
+    "rotZ": -0.00146149111,
+    "scaleX": 0.6907125,
+    "scaleY": 1,
+    "scaleZ": 0.6907125
+  },
+  "Nickname": "A-300 Rifle Gunner",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 31601,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "316": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/993513208355167163/36915FCD5508AD9E66F76A8E3D55676284B1501B/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/993513208355167163/36915FCD5508AD9E66F76A8E3D55676284B1501B/",
+      "NumWidth": 4,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "587d21"
+}

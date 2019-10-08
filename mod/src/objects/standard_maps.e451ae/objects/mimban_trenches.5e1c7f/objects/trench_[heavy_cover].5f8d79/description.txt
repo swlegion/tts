@@ -1,0 +1,10 @@
+Heavy Cover:
+Troopers except 1.4 FD Laser Cannon Team
+
+Walls:
+Trooper - Difficult
+G. Vehicle - Open
+Repulsor - Open
+
+Floor
+All - Open

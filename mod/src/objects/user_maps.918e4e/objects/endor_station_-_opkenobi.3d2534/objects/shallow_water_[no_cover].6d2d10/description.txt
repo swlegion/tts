@@ -1,0 +1,5 @@
+Trooper: Difficult
+Ground Vehicle: Difficult
+Repulsor: Open
+
+Does not obscure LOS

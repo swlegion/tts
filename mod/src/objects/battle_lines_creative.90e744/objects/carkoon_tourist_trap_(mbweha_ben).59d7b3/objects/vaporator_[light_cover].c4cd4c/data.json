@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 42.5201225,
+    "posY": 1.47897911,
+    "posZ": 16.6249123,
+    "rotX": 0.0002469979,
+    "rotY": 240.006836,
+    "rotZ": 0.00280365814,
+    "scaleX": 1.20000029,
+    "scaleY": 1.20000029,
+    "scaleZ": 1.20000029
+  },
+  "Nickname": "Vaporator [light cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/999141806431454722/2EAF9286F2B26AE6E433FB42B105C7F425002BD5/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/999141806431454981/528C865DD66552E0F18A5226FCB07CC4737130A3/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/999141806431454722/2EAF9286F2B26AE6E433FB42B105C7F425002BD5/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "c4cd4c"
+}

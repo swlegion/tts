@@ -1,0 +1,33 @@
+{
+  "Name": "Tablet",
+  "Transform": {
+    "posX": 35.80896,
+    "posY": 8.231164,
+    "posZ": 0.0770572051,
+    "rotX": 84.49341,
+    "rotY": 90.19255,
+    "rotZ": 90.51185,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "Tablet": {
+    "PageURL": "https://www.google.com/"
+  },
+  "GUID": "816584"
+}

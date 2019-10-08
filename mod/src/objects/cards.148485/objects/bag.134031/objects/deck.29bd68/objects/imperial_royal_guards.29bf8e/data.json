@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 43.8723831,
+    "posY": 1.20002949,
+    "posZ": -9.541073,
+    "rotX": 0.000212041443,
+    "rotY": 270.007233,
+    "rotZ": 0.00432419637,
+    "scaleX": 0.227068469,
+    "scaleY": 1,
+    "scaleZ": 0.227068469
+  },
+  "Nickname": "Imperial Royal Guards",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 30405,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "288": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786359682702689696/997CDBB5F42A4A215F87B78B918E01891C1EB4DB/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/786359682702689831/F26CF919C4C5DF0705CDC5640E281AC970A57057/",
+      "NumWidth": 5,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "29bf8e"
+}

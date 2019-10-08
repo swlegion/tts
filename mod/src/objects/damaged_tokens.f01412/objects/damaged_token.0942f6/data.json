@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -41.8868,
+    "posY": 1.08421123,
+    "posZ": 15.3222771,
+    "rotX": 1.13087374e-7,
+    "rotY": 359.9872,
+    "rotZ": -8.1925684e-8,
+    "scaleX": 1.69999921,
+    "scaleY": 1.69999921,
+    "scaleZ": 1.69999921
+  },
+  "Nickname": "Damaged Token",
+  "ColorDiffuse": {
+    "r": 0.827451,
+    "g": 0.827451,
+    "b": 0.827451
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442142/E2BBDA84DFF104080284F15909B71C8F125DA50F/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442381/27F7A3A2E3687E52F3576BF9A1E1A12CFD0267FD/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 5,
+    "CastShadows": true
+  },
+  "GUID": "0942f6"
+}

@@ -1,0 +1,10 @@
+Heavy Cover:
+All
+
+Sides:
+All - Impassable
+
+Roof/Ramp:
+All - Open
+
+Height: 1

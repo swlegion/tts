@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -33.7003326,
+    "posY": 0.9604963,
+    "posZ": -7.383377,
+    "rotX": -0.00571967149,
+    "rotY": 269.9757,
+    "rotZ": 0.00241163466,
+    "scaleX": 1.74999952,
+    "scaleY": 2.65904832,
+    "scaleZ": 1.74999952
+  },
+  "Nickname": "Red Die Roller",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314440128/9E5E7E0F1170FA132E9D5CB1BE6CFB007FF4E172/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314440243/3306C189EBFAA2886B570B404984AE8D5AEEE901/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786359883314440128/9E5E7E0F1170FA132E9D5CB1BE6CFB007FF4E172/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0.0358068645
+    },
+    "CastShadows": true
+  },
+  "GUID": "9e1533"
+}

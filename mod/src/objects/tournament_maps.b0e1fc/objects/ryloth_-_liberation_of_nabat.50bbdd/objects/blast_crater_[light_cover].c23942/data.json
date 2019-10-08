@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -9.839189,
+    "posY": 1.44298649,
+    "posZ": -7.638106,
+    "rotX": -0.001302902,
+    "rotY": 144.245758,
+    "rotZ": 0.0009385087,
+    "scaleX": 0.825000167,
+    "scaleY": 0.825000167,
+    "scaleZ": 0.825000167
+  },
+  "Nickname": "Blast Crater [Light Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 0.915331,
+    "b": 0.858884931
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542465659/30348E08551EAA3E8D5164E0D2931B3EB72DCEC1/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542470239/CFB22A69010911784880172594A7106CBC1F8DF1/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542467139/4036C31123FF00D2459B3ED1E57CD8141ACFAC8D/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "c23942"
+}

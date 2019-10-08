@@ -1,0 +1,43 @@
+{
+  "Name": "Custom_Model_Bag",
+  "Transform": {
+    "posX": 57.72328,
+    "posY": 1.142455,
+    "posZ": 23.5812664,
+    "rotX": 0.00013213772,
+    "rotY": -0.000269800483,
+    "rotZ": 359.993,
+    "scaleX": 1.69999957,
+    "scaleY": 1.69999957,
+    "scaleZ": 1.69999957
+  },
+  "Nickname": "Blue Command Tokens",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314446728/D84677D2392728794EE10B473413B9590D0F41D4/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 6,
+    "CastShadows": true
+  },
+  "GUID": "941d48"
+}

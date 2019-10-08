@@ -1,0 +1,14 @@
+Heavy Cover:
+Body - Minis size 3 and below
+Wing - Minis size 6 and below
+
+Sides:
+Trooper - Difficult
+G.Vehicle - Difficult
+Repulsor - Open
+Minis with size > 4 treat this as open terrain
+
+Roof:
+All - Open
+
+Height: 1

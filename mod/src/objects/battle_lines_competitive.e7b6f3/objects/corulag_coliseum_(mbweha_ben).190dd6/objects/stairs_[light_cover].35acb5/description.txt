@@ -1,0 +1,18 @@
+Light Cover:
+On stairs - Troopers & 74-Zs
+Everywhere else - All
+
+Stairs:
+Troopers, AT-RTs, & 74-Zs - Open
+All Else - Impassable
+
+Railings:
+Trooper - Difficult
+G. Vehicle - Difficult
+Repulsor - Open
+
+Hold LMB+RMB to place minis underneath.
+
+Height: 1
+
+Special thanks to www.youtube.com/tabletopoddity

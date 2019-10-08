@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 39.6183434,
+    "posY": 2.04862261,
+    "posZ": -12.7913189,
+    "rotX": 0.001729403,
+    "rotY": 179.991638,
+    "rotZ": 0.0000367707944,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Desk",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/90478669043079346/B762079794E36619B4269E431E7EAED028ADB67A/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/90478669043078532/0BF466A11E20766BFA47838E486D065C865F5795/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "1b6c31"
+}

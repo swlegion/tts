@@ -1,0 +1,16 @@
+Heavy Cover:
+Mini size 6 and below
+
+Wall:
+All - Impassable
+
+Ledges:
+Trooper - Open
+Others - Impassable
+
+Height: 2
+Ledge Height: 1
+
+Right-Click and switch states to access different levels
+
+Special thanks to www.imperialterrain.com

@@ -1,0 +1,5 @@
+Trooper: Difficult
+Ground Vehicle: Difficult
+Repulsor: Open
+
+Non-Repulsor units that enter, cross or leave this terrain roll one White Defence Die per mini; on a Block result the unit suffers one wound.

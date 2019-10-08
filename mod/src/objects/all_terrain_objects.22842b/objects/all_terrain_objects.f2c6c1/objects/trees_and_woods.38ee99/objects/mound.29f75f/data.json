@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 39.5760345,
+    "posY": 3.05576658,
+    "posZ": 17.2939835,
+    "rotX": -0.00185698108,
+    "rotY": 300.0059,
+    "rotZ": 0.008743394,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Mound",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/780734585255482064/9CA69CBC21ACD9A22F9A7C32C45C02D98253674E/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858976044/D7F78E8DBEDD11DFDAF5B61785BD91DA338B1A69/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858976409/AFC73194BAA68DC58A529C37119BE4A916AF98DF/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "29f75f"
+}

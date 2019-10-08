@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -8.938574,
+    "posY": 6.83048534,
+    "posZ": -2.15857577,
+    "rotX": 0.06392066,
+    "rotY": 60.0053558,
+    "rotZ": -0.00116449792,
+    "scaleX": 1,
+    "scaleY": 0.68,
+    "scaleZ": 0.68
+  },
+  "Nickname": "Barricade [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.86,
+    "g": 0.86,
+    "b": 0.86
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780864397132/F696994B2A4CE38EA3D5928C17543CB11630C072/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780864397441/FB125C7BA68294FFA5108616258AD415CB55A2EB/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542376261/8F52637D9F9E3658CB5AA37E0EEED44500AA9BB5/",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "8f0035"
+}

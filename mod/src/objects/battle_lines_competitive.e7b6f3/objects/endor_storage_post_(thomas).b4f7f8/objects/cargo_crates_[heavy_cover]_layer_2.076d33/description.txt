@@ -1,0 +1,9 @@
+Heavy Cover:
+Troopers
+
+Crates:
+Trooper - Impassable
+G. Vehicle - Impassable
+Repulsor - Open
+
+Special Thanks: www.imperialterrain.com

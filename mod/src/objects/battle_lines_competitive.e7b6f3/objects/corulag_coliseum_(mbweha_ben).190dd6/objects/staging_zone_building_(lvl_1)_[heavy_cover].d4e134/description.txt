@@ -1,0 +1,15 @@
+Heavy Cover:
+All
+
+Sides:
+All - Impassable
+
+Roof/Ramp:
+AT-ST - Impassable
+All Else - Open
+
+Only minis with bases that can fit within width of ramp may be placed on it
+
+Height: 1
+
+Special Thanks: www.imperialterrain.com

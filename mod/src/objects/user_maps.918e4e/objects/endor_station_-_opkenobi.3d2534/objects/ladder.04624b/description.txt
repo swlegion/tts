@@ -1,0 +1,5 @@
+Trooper: Difficult
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Troopers Clambering to the top do not roll for falling damage.

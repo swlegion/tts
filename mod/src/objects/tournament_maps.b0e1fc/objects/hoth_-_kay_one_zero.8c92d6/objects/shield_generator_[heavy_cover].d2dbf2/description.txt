@@ -1,0 +1,14 @@
+Heavy Cover:
+Mini Size 3.5 or lower
+
+Disks:
+All - Impassable
+
+Non-repulsor minis with size > 3.5 treat this as difficult terrain
+
+Connectors:
+Troopers - Difficult
+G. Vehicle - Open
+Repulsor - Open
+
+Height: 1

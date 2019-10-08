@@ -1,0 +1,7 @@
+No Cover:
+All
+
+Spring:
+Troopers - Impassable
+G. Vehicles - Impassable
+Repulsor - Open

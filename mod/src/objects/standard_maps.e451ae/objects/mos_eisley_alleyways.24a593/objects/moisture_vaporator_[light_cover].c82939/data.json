@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 19.4913483,
+    "posY": 1.42955971,
+    "posZ": 6.45488453,
+    "rotX": -0.0008007583,
+    "rotY": 300.021423,
+    "rotZ": 0.00138605549,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Moisture Vaporator [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.81,
+    "g": 0.81,
+    "b": 0.81
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858650890/E974F7F12BA33FEA0C4BF337030EFF56CCBB514A/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858650511/08D51CCB13292CF2E492005D554C67D0E73D8C99/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858650104/AD0178E34E1F2C945356C32E192C285D819162DE/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "c82939"
+}

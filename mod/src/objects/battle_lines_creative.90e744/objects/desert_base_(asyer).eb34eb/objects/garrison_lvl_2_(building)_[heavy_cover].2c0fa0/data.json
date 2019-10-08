@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 24.9355354,
+    "posY": 1.43904448,
+    "posZ": -10.2612162,
+    "rotX": -0.00000140603765,
+    "rotY": 269.9911,
+    "rotZ": -0.00160790619,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Garrison lvl 2 (Building) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.819607854,
+    "g": 0.858823538,
+    "b": 0.8784314
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546358181/719E7C1510DB3D1745DDD8CD48D73FBD893E5544/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546358282/D0477DAFC0E9A74D642350C881C010D25C43B163/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546358386/A80FB68904B85C114F63B8F812FF5E3836825970/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "2c0fa0"
+}

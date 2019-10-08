@@ -1,0 +1,12 @@
+Heavy Cover (Area Terrain):
+All
+
+Trees:
+Troopers - Difficult
+G. Vehicle - Difficult
+Repulsor - Impassable
+
+Height: 3
+
+Area Terrain:
+When determining whether an object is obscured by cover, if the imaginary line from attacker to defender crosses any part of the area tserrain base, it is considered obscured. As long as a mini is touching the base, the mini recieves Cover

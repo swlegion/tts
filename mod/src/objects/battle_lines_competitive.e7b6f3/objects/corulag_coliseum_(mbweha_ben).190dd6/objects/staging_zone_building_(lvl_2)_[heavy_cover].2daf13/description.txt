@@ -1,0 +1,15 @@
+Heavy Cover:
+All
+
+Sides:
+All - Impassable
+
+Roof:
+AT-ST - Impassable
+All Else - Open
+
+Climbing units can clamber up/down the ladder without rolling for damage.
+
+Height: 2
+
+Special Thanks: www.imperialterrain.com

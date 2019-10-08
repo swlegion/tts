@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 2.84456825,
+    "posY": 3.30908275,
+    "posZ": -30.703474,
+    "rotX": 0.0271472409,
+    "rotY": 164.9983,
+    "rotZ": -0.00244745542,
+    "scaleX": 0.274999976,
+    "scaleY": 0.274999976,
+    "scaleZ": 0.274999976
+  },
+  "Nickname": "Руины",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/856108193884814138/2069C39271A640312D85AD8733E298FCCAA47655/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/856108193884814406/B59685E501CF7B26E6DB1711CBBA65C15359A059/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/856108193884814138/2069C39271A640312D85AD8733E298FCCAA47655/",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 7,
+      "FresnelStrength": 0.4
+    },
+    "CastShadows": true
+  },
+  "GUID": "b568c6"
+}

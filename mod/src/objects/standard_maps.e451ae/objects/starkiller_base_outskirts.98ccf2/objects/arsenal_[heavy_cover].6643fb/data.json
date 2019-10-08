@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -21.8541756,
+    "posY": 1.4387275,
+    "posZ": 10.3874111,
+    "rotX": -0.0002762785,
+    "rotY": 225.0176,
+    "rotZ": -0.000161810385,
+    "scaleX": 0.652031064,
+    "scaleY": 0.5050712,
+    "scaleZ": 0.652031064
+  },
+  "Nickname": "Arsenal [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.5971938,
+    "g": 0.6637405,
+    "b": 0.697013855
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542616875/295565F1FFCDA7887759FF01A50070DC4698E6F4/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542618044/D7662F19513182568F8E4416CA9211E38544AFD5/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542616875/295565F1FFCDA7887759FF01A50070DC4698E6F4/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "6643fb"
+}

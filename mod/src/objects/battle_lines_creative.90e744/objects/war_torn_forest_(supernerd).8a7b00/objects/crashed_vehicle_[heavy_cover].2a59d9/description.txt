@@ -1,0 +1,5 @@
+Vehicle:
+All - Difficult
+
+Bottom:
+All - Impassable

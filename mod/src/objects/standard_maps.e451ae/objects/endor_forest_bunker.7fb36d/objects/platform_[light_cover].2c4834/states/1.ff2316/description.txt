@@ -1,0 +1,11 @@
+Platform
+All: Open
+
+Struts
+All: Impassable
+
+Height: 1
+
+Right Click > State > 2 to activate different levels!
+
+Special thanks to www.youtube.com/tabletopoddity

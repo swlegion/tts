@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 17.3586426,
+    "posY": 1.32000983,
+    "posZ": -7.23429632,
+    "rotX": 0.00113965047,
+    "rotY": 315.020081,
+    "rotZ": -0.001136444,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Platform [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.8768374,
+    "g": 0.8768374,
+    "b": 0.8768374
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780857961018/CE3D6EAF19CD2CBD1BBB278AD8F5361BF471E088/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780857961488/1CA1F243AF929A1C1879D3F8EC5FF81A4C1C0105/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780857962047/E80A2F3F0F15E46609122CBD59E58C71DB4600FD/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "2c4834"
+}

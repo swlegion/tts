@@ -1,0 +1,14 @@
+Heavy Cover:
+All
+
+Sides:
+All - Impassable
+
+Roof:
+Troopers - Open
+G. Vehicle - Impassable
+Repulsor - Impassable
+
+Height: 2
+
+Special Thanks: www.imperialterrain.com

@@ -1,0 +1,5 @@
+Trooper: Open
+Ground Vehicle: Open
+Repulsor: Open
+
+Special thanks to www.youtube.com/tabletopoddity

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 0.9779768,
+    "posY": 1.43810177,
+    "posZ": 11.6636009,
+    "rotX": 0.0175401084,
+    "rotY": 119.736374,
+    "rotZ": 0.001394224,
+    "scaleX": 1.24999976,
+    "scaleY": 1.24999976,
+    "scaleZ": 1.24999976
+  },
+  "Nickname": "Urban Dwelling (Building) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780857873717/D1EBFC74D2D2BCD9859AB010116353ED221CF547/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780857873812/183330EDC2F8F2224BCAD0F57A6C1202E549E361/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780857873915/F5B6120A6D56312061B6DD7BB89967A0C280B153/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "b209f4"
+}

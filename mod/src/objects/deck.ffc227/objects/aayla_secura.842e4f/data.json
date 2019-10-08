@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": -19.45476,
+    "posY": 1.22530079,
+    "posZ": 6.20093775,
+    "rotX": 357.4101,
+    "rotY": 179.995636,
+    "rotZ": 0.00007647184,
+    "scaleX": 0.181600809,
+    "scaleY": 1,
+    "scaleZ": 0.181600809
+  },
+  "Nickname": "Aayla Secura",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 33914,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "339": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785234780871838773/89B3703DF571DA7E93FB1107BED8384721A0B630/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/785234780871782972/4F10B1D3DA31947E55A5CCB8DA4C4E309EC095AD/",
+      "NumWidth": 8,
+      "NumHeight": 2,
+      "BackIsHidden": true,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "842e4f"
+}

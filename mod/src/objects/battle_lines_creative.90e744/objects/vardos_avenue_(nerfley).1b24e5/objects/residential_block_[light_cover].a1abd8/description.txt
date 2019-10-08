@@ -1,0 +1,16 @@
+Light Cover:
+Troopers
+
+Sides:
+All - Impassable
+
+Roof/Ramp:
+All - Open
+
+Ladders can be clambered up without rolling for falling damage.
+
+This terreain does not count for removing suppression on Hostile Environment.
+
+Height: 1
+
+Special Thanks: www.imperialterrain.com

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 31.9589462,
+    "posY": 4.308175,
+    "posZ": -4.265489,
+    "rotX": 356.498383,
+    "rotY": 290.230072,
+    "rotZ": 0.3678394,
+    "scaleX": 1.01999986,
+    "scaleY": 1.01999986,
+    "scaleZ": 1.01999986
+  },
+  "Nickname": "Shield Generator (Building) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.590592265,
+    "g": 0.590592265,
+    "b": 0.590592265
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780857872924/A2CA8EBD57EBC6EA78EC1E2C82D5321793C7E00D/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780857873117/3D49DB11D004A6BE9C8D751A6DFBCF9680374D4D/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780857873272/8B07476F39EFD9ADB2006D9A8AB9C7D1DADEB5D6/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "d2dbf2"
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -0.323070467,
+    "posY": 1.46386111,
+    "posZ": 9.596608,
+    "rotX": 0.017242711,
+    "rotY": 179.995224,
+    "rotZ": 359.9821,
+    "scaleX": 1.29999971,
+    "scaleY": 1.29999971,
+    "scaleZ": 1.29999971
+  },
+  "Nickname": "Shack (Building) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780857825231/B9C11252D1A923AF7E8C2F8E639FBBD9BAA9FD87/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780857825391/E54DD7144A59E7F8B7F1849BE7659726DBC50FC0/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780857825591/6F5E2AFADBE563B568B7595270EC6962C43DDAE4/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "26bffa"
+}

@@ -1,0 +1,43 @@
+{
+  "Name": "Custom_Model_Infinite_Bag",
+  "Transform": {
+    "posX": -41.35725,
+    "posY": 0.949036956,
+    "posZ": 9.166985,
+    "rotX": 0.00002016583,
+    "rotY": 90.0010452,
+    "rotZ": -0.00000461467562,
+    "scaleX": 2.17499876,
+    "scaleY": 2.17499876,
+    "scaleZ": 2.17499876
+  },
+  "Nickname": "Wound Tokens",
+  "ColorDiffuse": {
+    "r": 0.7865309,
+    "g": 0.7865309,
+    "b": 0.7865309
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314443832/CC490842F0159459C8D5C252BE7225E9D2581951/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314443935/0F8A37E8CD128D5644B391E4EFEC50656D558FF7/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 7,
+    "CastShadows": true
+  },
+  "GUID": "276535"
+}

@@ -1,0 +1,7 @@
+Heavy Cover:
+Mini size 5 and below
+
+Sides:
+All - Impassable
+
+Height: 3

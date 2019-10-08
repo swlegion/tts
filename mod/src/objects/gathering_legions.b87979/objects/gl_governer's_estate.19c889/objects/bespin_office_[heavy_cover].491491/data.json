@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -23.4656,
+    "posY": 1.42886,
+    "posZ": -3.79651427,
+    "rotX": 0.00002482593,
+    "rotY": 270.008331,
+    "rotZ": 0.00158092729,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Bespin Office [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.80662024,
+    "g": 0.74994123,
+    "b": 0.636583567
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542542039/78DF5107C1280E9215788B04821CD38ED0F43764/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542542519/BBF5911D7E03B5EE3DCEF90C6EA786F4FB5D36DC/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542542039/78DF5107C1280E9215788B04821CD38ED0F43764/",
+    "Convex": false,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "491491"
+}

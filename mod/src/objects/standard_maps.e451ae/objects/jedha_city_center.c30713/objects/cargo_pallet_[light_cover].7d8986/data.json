@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 38.0417023,
+    "posY": 1.45249891,
+    "posZ": 1.36011636,
+    "rotX": -0.000801817,
+    "rotY": 119.994843,
+    "rotZ": 0.00139025063,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Cargo Pallet [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.921602845,
+    "g": 0.8474251,
+    "b": 0.7979732
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542828699/2CE5437BAF7960D8E76D0A664182637B7ADE8C7D/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542822457/CC3F0DC02DD35143BD5DAF27A694D9EC1BA6A98A/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542823541/5F7BBC41E9FB517BE41C845282B3A731EB050150/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "7d8986"
+}

@@ -1,0 +1,15 @@
+Heavy Cover:
+Troopers, 74Z Speeder Bikes, AT-RT
+
+Sides:
+All - Impassable
+
+Roof:
+All - (See Dense Woods)
+
+Slope:
+All - Open
+
+Height: 1
+
+All three cliff pieces, not including the woods, are considered the same piece of terrain.

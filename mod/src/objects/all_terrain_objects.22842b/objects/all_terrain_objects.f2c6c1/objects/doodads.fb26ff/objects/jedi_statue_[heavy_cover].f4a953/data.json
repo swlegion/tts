@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 38.3354568,
+    "posY": 3.02410316,
+    "posZ": 10.2152615,
+    "rotX": 359.991364,
+    "rotY": 225.00592,
+    "rotZ": 0.0266677681,
+    "scaleX": 1.34999979,
+    "scaleY": 1.34999979,
+    "scaleZ": 1.34999979
+  },
+  "Nickname": "Jedi Statue [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.833630264,
+    "g": 0.8750976,
+    "b": 0.897716165
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/966480765118137672/251399E104970C39357CB066AFCE0169AC24DBA5/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/966480765118137767/956FB286AA3EB93B089696776C732EF463C887B8/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/966480765118137672/251399E104970C39357CB066AFCE0169AC24DBA5/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "f4a953"
+}

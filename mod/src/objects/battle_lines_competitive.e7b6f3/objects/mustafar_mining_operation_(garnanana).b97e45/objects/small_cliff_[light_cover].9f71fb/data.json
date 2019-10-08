@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 16.9531937,
+    "posY": 1.41365278,
+    "posZ": -8.21001148,
+    "rotX": 0.2154109,
+    "rotY": 285.000031,
+    "rotZ": 0.137590036,
+    "scaleX": 0.8750001,
+    "scaleY": 0.8,
+    "scaleZ": 0.92
+  },
+  "Nickname": "Small Cliff [Light Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858833882/80991443324FBAFACC7B2876166C4B63C6A4FA5A/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858845951/FC3F6B910D6EB8421854DADD4F40128CDB0B0BB5/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858835205/B5E9F9B6B67565625027EF6A6F9EFE8E623BE61E/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "9f71fb"
+}

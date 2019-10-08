@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -40.91877,
+    "posY": 1.14063489,
+    "posZ": -15.9281921,
+    "rotX": 0.000903910142,
+    "rotY": 240.017914,
+    "rotZ": 0.0000938835656,
+    "scaleX": 0.750000238,
+    "scaleY": 0.750000238,
+    "scaleZ": 0.750000238
+  },
+  "Nickname": "Poison Token",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442992/DD893F407D50F2D029305A2F181989F90E3FA46A/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785236717874061462/2C7252E4C3030E3640741560C7C24E55950EF332/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "2580ea"
+}

@@ -12,7 +12,7 @@
       "paths": {
           "*": [
               "node_modules/*",
-              "script/types/*"
+              "script/*"
           ]
       }
   },

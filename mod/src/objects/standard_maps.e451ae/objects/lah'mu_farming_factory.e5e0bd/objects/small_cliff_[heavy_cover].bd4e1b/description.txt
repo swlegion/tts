@@ -1,0 +1,11 @@
+Heavy Cover:
+Minis Size 1.5 and below
+
+Sides:
+All - Impassable
+Minis size > 1.5 treat this as difficult terrain
+
+Roof:
+All - Open
+
+Height: 1

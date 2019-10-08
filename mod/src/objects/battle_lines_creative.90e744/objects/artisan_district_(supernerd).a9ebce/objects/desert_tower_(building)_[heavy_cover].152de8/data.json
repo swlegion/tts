@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 2.01837778,
+    "posY": 1.43637085,
+    "posZ": 0.836284161,
+    "rotX": 0.0000014187525,
+    "rotY": 270.0165,
+    "rotZ": -0.00160558161,
+    "scaleX": 1.74999952,
+    "scaleY": 1.74999952,
+    "scaleZ": 1.74999952
+  },
+  "Nickname": "Desert Tower (Building) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.77,
+    "g": 0.77,
+    "b": 0.77
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540545451316/AC608171A4492A326C203BC2DE1FD984BCDBDA11/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540545451538/8837292D41057985EFEE256C0BD5F84941465153/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540545451698/4621904ED4EFA7E5C8F00B4E0F184379F5625651/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "152de8"
+}

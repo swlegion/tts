@@ -1,0 +1,7 @@
+Trooper: Disks - Impassable, Connecting Bar - Difficult
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Height: 1
+
+Troopers can between disks. They treat the bar in between as difficult Terrain

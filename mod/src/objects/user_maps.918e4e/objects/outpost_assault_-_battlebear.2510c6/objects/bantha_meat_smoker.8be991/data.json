@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -23.521986,
+    "posY": 3.73438454,
+    "posZ": -2.297275,
+    "rotX": 0.00169382861,
+    "rotY": 120.531532,
+    "rotZ": 0.0524986237,
+    "scaleX": 0.6750007,
+    "scaleY": 0.6750007,
+    "scaleZ": 0.6750007
+  },
+  "Nickname": "Bantha Meat Smoker",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/924802174592913215/7664EC72495281059668194DB67A58D688840548/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858641461/C9AF0BB3B31CECCE2240F8A30B3EC290E56EB176/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/924802174592913355/D24B0AADD9C21D3D34DD1FB0A1414E855B9DFD1F/",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "8be991"
+}

@@ -1,0 +1,4 @@
+Height 1
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable

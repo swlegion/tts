@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 42.5221252,
+    "posY": 0.9974895,
+    "posZ": 11.1031084,
+    "rotX": 0.689054847,
+    "rotY": 268.851959,
+    "rotZ": 0.5625683,
+    "scaleX": 0.181600809,
+    "scaleY": 1,
+    "scaleZ": 0.181600809
+  },
+  "Nickname": "Integrated Comms Antenna",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 35501,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "355": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/777357228032300321/F46EED1E34127C47D63FAEDFC6FBED314BCFD2CE/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/777357228032300321/F46EED1E34127C47D63FAEDFC6FBED314BCFD2CE/",
+      "NumWidth": 2,
+      "NumHeight": 2,
+      "BackIsHidden": true,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "2ebffc"
+}

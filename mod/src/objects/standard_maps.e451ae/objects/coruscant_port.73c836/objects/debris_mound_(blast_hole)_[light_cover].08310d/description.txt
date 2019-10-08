@@ -1,0 +1,11 @@
+Light Cover (Area Terrain):
+Troopers except 1.4 FD Laser Cannon Team
+
+Mound:
+Trooper - Difficult
+G. Vehicle - Open
+Repulsor - Open
+
+Minis get cover as long any part of their base overlaps this terrain.
+
+Does not obscure LOS

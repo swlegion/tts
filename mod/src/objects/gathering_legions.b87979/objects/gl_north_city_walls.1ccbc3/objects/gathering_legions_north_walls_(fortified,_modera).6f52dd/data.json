@@ -1,0 +1,31 @@
+{
+  "Name": "Notecard",
+  "Transform": {
+    "posX": -4.50999165,
+    "posY": 1.51162219,
+    "posZ": -4.40151262,
+    "rotX": 0.001604054,
+    "rotY": 359.991882,
+    "rotZ": 5.413007e-7,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Gathering Legions: North Walls (Fortified, Modera)",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "GUID": "6f52dd"
+}

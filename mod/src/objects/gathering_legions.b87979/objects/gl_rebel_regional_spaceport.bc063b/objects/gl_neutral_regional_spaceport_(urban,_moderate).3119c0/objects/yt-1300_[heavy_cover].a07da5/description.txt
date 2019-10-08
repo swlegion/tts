@@ -1,0 +1,10 @@
+Heavy Cover:
+Troopers, 74Z Speeder Bike, AT-RT
+
+Sides, Comms Dish:
+All - Impassable
+
+Body Roof:
+All - Open
+
+Wings Height: 1

@@ -1,0 +1,15 @@
+Heavy Cover:
+All
+
+Sides:
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Roof:
+All - Open
+
+Height: 3
+Ledge Height: 2
+
+Special Thanks to https://www.etsy.com/shop/LowCountryCraftShop 

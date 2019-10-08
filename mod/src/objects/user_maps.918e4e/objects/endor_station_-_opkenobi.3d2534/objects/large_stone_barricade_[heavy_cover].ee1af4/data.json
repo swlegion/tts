@@ -1,0 +1,50 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 7.716809,
+    "posY": 7.04373,
+    "posZ": -1.233963,
+    "rotX": 359.023,
+    "rotY": 240.0033,
+    "rotZ": 0.160917848,
+    "scaleX": 0.549999952,
+    "scaleY": 0.549999952,
+    "scaleZ": 0.549999952
+  },
+  "Nickname": "Large Stone Barricade [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992161334,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2432383534096906193/D3B9BE2B40B1BCFA16D2C776335873533142FAF3/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/2432383534096906299/DCB55A45B3A718BAA29802654C988770B8C5021B/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 7,
+      "FresnelStrength": 0.4
+    },
+    "CastShadows": true
+  },
+  "GUID": "ee1af4"
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 16.4394264,
+    "posY": 1.47747481,
+    "posZ": -9.69852,
+    "rotX": 359.95932,
+    "rotY": 173.870331,
+    "rotZ": 0.0255287364,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Crate Pile",
+  "ColorDiffuse": {
+    "r": 0.353656977,
+    "g": 0.341950476,
+    "b": 0.341950476
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/90478827544458791/C6F50D37A23BB24FF7BFDCEA2E03A6A6E1AEC077/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/90478827544455678/AC4F431E4DBCCDFF4A96C644036EA6E5C700F413/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/90478827544458791/C6F50D37A23BB24FF7BFDCEA2E03A6A6E1AEC077/",
+    "Convex": false,
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "976557"
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 25.9668865,
+    "posY": 2.3366766,
+    "posZ": -13.6882133,
+    "rotX": 0.210957125,
+    "rotY": 179.883072,
+    "rotZ": 359.654846,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Lockers [Heavy]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/90478669043437513/C8B6F2AEF6AB2F45A2324E8B24DF4B5444BBF32E/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/90478669043437671/F9648BC42F7EBAFBE8195D7EB2A86B224F727F8B/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "5da917"
+}

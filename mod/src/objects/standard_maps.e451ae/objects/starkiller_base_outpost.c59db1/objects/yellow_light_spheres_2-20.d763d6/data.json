@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": 22.1424389,
+    "posY": 1.65758812,
+    "posZ": -3.998196,
+    "rotX": 334.816956,
+    "rotY": 330.007263,
+    "rotZ": 179.972809,
+    "scaleX": 0.1,
+    "scaleY": 0.1,
+    "scaleZ": 0.1
+  },
+  "Nickname": "Yellow Light Spheres 2\"-20\"",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/963116666702612000/D2EDFE1A528B36A7EBBC59B35772D04542F981FA/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 8
+  },
+  "GUID": "d763d6"
+}

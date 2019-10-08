@@ -1,0 +1,9 @@
+Cover Type: Heavy
+
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Height: 1
+
+Special thanks: www.imperialterrain.com

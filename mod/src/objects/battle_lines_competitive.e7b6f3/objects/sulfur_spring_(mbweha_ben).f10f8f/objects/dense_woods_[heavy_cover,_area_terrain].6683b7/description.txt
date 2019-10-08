@@ -1,0 +1,9 @@
+Heavy Cover (Area Terrain):
+All
+
+Trees:
+Troopers - Difficult
+G. Vehicle - Difficult
+Repulsor - Impassable
+
+Height: 2

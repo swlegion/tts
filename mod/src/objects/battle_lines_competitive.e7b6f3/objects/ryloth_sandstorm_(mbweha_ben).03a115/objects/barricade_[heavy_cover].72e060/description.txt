@@ -1,0 +1,7 @@
+Heavy Cover:
+Troopers
+
+Movement:
+Troopers - Difficult
+G. Vehicle - Open
+Repulsor - Open

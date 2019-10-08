@@ -1,0 +1,3 @@
+Objective Tokens do not obscure LOS or provide cover
+
+Right Click > State to change to different objective token models

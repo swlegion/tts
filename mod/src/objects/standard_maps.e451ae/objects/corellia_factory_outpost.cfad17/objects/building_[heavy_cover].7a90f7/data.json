@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -17.988102,
+    "posY": 1.74114239,
+    "posZ": 10.4767265,
+    "rotX": 0.00120386633,
+    "rotY": 135.001068,
+    "rotZ": -0.00121194543,
+    "scaleX": 0.950000048,
+    "scaleY": 0.950000048,
+    "scaleZ": 0.950000048
+  },
+  "Nickname": "Building [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.695583463,
+    "g": 0.695583463,
+    "b": 0.695583463
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/84845043866284962/DF44FB2D51C20D0FFDF068827643AAFDC6127177/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/84845043866287383/8F824D756CE2D8A0FD0E0129F3EEED21A29717F9/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/84845043866284962/DF44FB2D51C20D0FFDF068827643AAFDC6127177/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "7a90f7"
+}

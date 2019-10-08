@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 23.1407242,
+    "posY": 1.02075028,
+    "posZ": 2.31663918,
+    "rotX": -0.00000464362256,
+    "rotY": 269.985443,
+    "rotZ": -0.00000115540627,
+    "scaleX": 0.181600809,
+    "scaleY": 1,
+    "scaleZ": 0.181600809
+  },
+  "Nickname": "DLT-19 Stormtrooper",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 32632,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "309": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786360308354565157/E2A6646404C77BDF365957AE9047363A68640620/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/786360308354565398/70744480E86B96A11A4321AC1B0CDEE67C45FAF1/",
+      "NumWidth": 10,
+      "NumHeight": 7,
+      "BackIsHidden": true,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "b7dd28"
+}

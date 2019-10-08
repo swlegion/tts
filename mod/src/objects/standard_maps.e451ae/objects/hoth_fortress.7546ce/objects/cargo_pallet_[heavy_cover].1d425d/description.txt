@@ -1,0 +1,9 @@
+Cover Type: Heavy
+
+Trooper: Difficult
+Ground Vehicle: Difficult
+Repulsor: Open
+
+Only Crates provide Cover, obscure LOS and hinder Movement, Pallets on the ground have no effect
+
+Crates provide cover to AT-RT and Speeder Bikes

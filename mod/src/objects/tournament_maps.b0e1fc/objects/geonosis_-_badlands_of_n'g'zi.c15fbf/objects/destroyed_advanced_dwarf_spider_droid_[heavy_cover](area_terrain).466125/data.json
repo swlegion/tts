@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 22.7908421,
+    "posY": -1.86076689,
+    "posZ": -4.032716,
+    "rotX": 2.94338322,
+    "rotY": 102.006393,
+    "rotZ": 328.66275,
+    "scaleX": 3,
+    "scaleY": 3,
+    "scaleZ": 3
+  },
+  "Nickname": "Destroyed Advanced Dwarf Spider Droid [Heavy Cover](Area Terrain)",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/969858026283571281/F2359F847B4DFF3757D2AE27D90480A062890466/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/969858026283571356/2E74A89F1E80B0645764DC1B94BF4ADC2940AAAC/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/969858026283571281/F2359F847B4DFF3757D2AE27D90480A062890466/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "466125"
+}

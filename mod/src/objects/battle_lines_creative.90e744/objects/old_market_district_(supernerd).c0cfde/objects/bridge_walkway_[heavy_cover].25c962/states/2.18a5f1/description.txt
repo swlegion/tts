@@ -1,0 +1,14 @@
+Heavy Cover:
+All except AT-ST, T-47
+
+Sides:
+All - Impassable
+
+Roof:
+All - Open
+
+Height: 1
+
+Right-Click and switch states to access different levels
+
+Special Thanks: corvusgamesterrain.com

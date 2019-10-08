@@ -1,0 +1,9 @@
+
+Light Cover: All
+
+Trooper: Difficult terrain
+G.Vehicle: Impassable
+Repulsor - Impassable
+Creature Toopers -Impassable
+
+Height: 1

@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -44.2212372,
+    "posY": 1.08421123,
+    "posZ": 8.07918549,
+    "rotX": -0.0000137044835,
+    "rotY": 359.948669,
+    "rotZ": -0.000109419205,
+    "scaleX": 1.69999945,
+    "scaleY": 1.69999945,
+    "scaleZ": 1.69999945
+  },
+  "Nickname": "Panic Token",
+  "ColorDiffuse": {
+    "r": 0.827451,
+    "g": 0.827451,
+    "b": 0.827451
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442142/E2BBDA84DFF104080284F15909B71C8F125DA50F/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314444049/7A5C1C3F824FDE5C14596782B4DCC628F9846334/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 5,
+    "CastShadows": true
+  },
+  "GUID": "f89492"
+}

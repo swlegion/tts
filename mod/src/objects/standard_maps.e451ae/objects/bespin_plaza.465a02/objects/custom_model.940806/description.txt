@@ -1,0 +1,8 @@
+Heavy Cover:
+All except T-47, AT-ST
+
+All: Impassable
+
+Height: 1
+
+Special Thanks: www.danwulfgames.com

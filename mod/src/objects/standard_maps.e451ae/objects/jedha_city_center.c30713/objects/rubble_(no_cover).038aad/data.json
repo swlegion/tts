@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": 20.2203,
+    "posY": 1.49193728,
+    "posZ": -15.6062984,
+    "rotX": 0.000415652175,
+    "rotY": 285.0164,
+    "rotZ": -0.00154564,
+    "scaleX": 0.92564106,
+    "scaleY": 1,
+    "scaleZ": 0.92564106
+  },
+  "Nickname": "Rubble (No Cover)",
+  "ColorDiffuse": {
+    "r": 0.7439022,
+    "g": 0.7159886,
+    "b": 0.6985424
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "http://cloud-3.steamusercontent.com/ugc/785232635608488116/2D537B00E3786E57D71CB4989A27B5AE592A1D14/",
+    "ImageSecondaryURL": "",
+    "WidthScale": 0,
+    "CustomToken": {
+      "Thickness": 0.1,
+      "MergeDistancePixels": 15,
+      "Stackable": false
+    }
+  },
+  "GUID": "038aad"
+}

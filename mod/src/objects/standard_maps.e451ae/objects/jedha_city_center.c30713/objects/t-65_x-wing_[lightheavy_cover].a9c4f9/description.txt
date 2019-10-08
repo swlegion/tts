@@ -1,0 +1,12 @@
+Wings and Body (Heavy):
+Minis Size 3 and below
+
+Laser Cannons (Light):
+Non-Creature Troopers
+
+T-65 X-Wing:
+Trooper: Difficult
+G.Vehicle: Difficult
+Repulsor - Open
+
+Units size >3 treat this as open terrain

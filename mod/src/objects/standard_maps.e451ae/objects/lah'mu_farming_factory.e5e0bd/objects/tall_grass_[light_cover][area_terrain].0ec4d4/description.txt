@@ -1,0 +1,7 @@
+Light Cover (Area Terrain):
+Non-Creature Troopers, Minis Size 1.5 and below
+
+Tall Grass:
+All - Open
+
+Minis get cover as long the imaginary line between the attacker and defender crosses this terrain, and this terrain blocks LOS of the defender.

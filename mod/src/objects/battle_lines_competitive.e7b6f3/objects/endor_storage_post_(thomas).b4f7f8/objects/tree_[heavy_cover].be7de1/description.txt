@@ -1,0 +1,7 @@
+Heavy Cover:
+All
+
+Tree:
+All - Impassable
+
+Height: 2

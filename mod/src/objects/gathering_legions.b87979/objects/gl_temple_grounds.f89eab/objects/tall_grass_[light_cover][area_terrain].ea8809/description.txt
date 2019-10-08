@@ -1,0 +1,9 @@
+Light Cover (Area Terrain):
+Troopers
+
+Tall Grass:
+All - Open
+
+Minis get cover as long any part of their base overlaps this terrain.
+
+This terrain obscure LOS

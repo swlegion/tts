@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 23.0005817,
+    "posY": 2.345265,
+    "posZ": -8.874977,
+    "rotX": 359.834381,
+    "rotY": 269.993744,
+    "rotZ": 0.00182795047,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Executive Desk [Heavy]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/90478669043253093/4DDCE53078804F387F94B78B614CC931CE91CBE6/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/90478669043253351/9689997B5A2096E730804ECDC7391D35F2089407/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "17afe6"
+}

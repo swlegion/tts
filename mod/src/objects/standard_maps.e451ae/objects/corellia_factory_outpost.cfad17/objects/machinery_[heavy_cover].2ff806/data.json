@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 34.0851479,
+    "posY": 1.44184542,
+    "posZ": 12.5252295,
+    "rotX": -0.00118223228,
+    "rotY": 315.0119,
+    "rotZ": 0.00116806943,
+    "scaleX": 0.2500003,
+    "scaleY": 0.2500003,
+    "scaleZ": 0.2500003
+  },
+  "Nickname": "Machinery [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/929311994734190772/2BE7295429621B8899CC723565F7F115A7F06845/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/929311994734190853/BF6F4A1C74F4D3DD9302846D3EA36A5005C73815/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/929311994734190942/042F730822BD60E35B9D77CED185A61CBBBB36EF/",
+    "Convex": true,
+    "MaterialIndex": 2,
+    "TypeIndex": 1,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 0.7372549,
+        "g": 0.7372549,
+        "b": 0.7372549
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "2ff806"
+}

@@ -1,0 +1,11 @@
+Fuel Tanks - Heavy Cover
+Rails and Platform - Light Cover
+
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Platform:
+All: Open
+
+Fuel Tanks: Height 2

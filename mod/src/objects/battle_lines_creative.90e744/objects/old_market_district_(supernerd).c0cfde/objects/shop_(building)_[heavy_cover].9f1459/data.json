@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 26.533247,
+    "posY": 1.45815277,
+    "posZ": -10.7016792,
+    "rotX": 0.018304823,
+    "rotY": 14.9784613,
+    "rotZ": 359.9843,
+    "scaleX": 1.39999974,
+    "scaleY": 1.39999974,
+    "scaleZ": 1.39999974
+  },
+  "Nickname": "Shop (Building) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 0.381533116,
+    "b": 0.8022739
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780857825231/B9C11252D1A923AF7E8C2F8E639FBBD9BAA9FD87/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780857825391/E54DD7144A59E7F8B7F1849BE7659726DBC50FC0/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780857825591/6F5E2AFADBE563B568B7595270EC6962C43DDAE4/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "9f1459"
+}

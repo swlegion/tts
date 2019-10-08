@@ -1,0 +1,11 @@
+Cover Type: Heavy
+
+Sides:
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Top is Open terrain for All.
+AT-ST treats the sides of the falcon as Open Terrain.
+
+Height: 1

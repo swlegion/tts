@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -6.45952463,
+    "posY": 1.43139529,
+    "posZ": -6.88527441,
+    "rotX": 0.00139870029,
+    "rotY": 330.002747,
+    "rotZ": -0.00080203457,
+    "scaleX": 0.7601541,
+    "scaleY": 0.5888248,
+    "scaleZ": 0.7601541
+  },
+  "Nickname": "Generator (Building) [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.9494774,
+    "g": 0.852455,
+    "b": 0.6831608
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542616875/295565F1FFCDA7887759FF01A50070DC4698E6F4/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542618044/D7662F19513182568F8E4416CA9211E38544AFD5/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542616875/295565F1FFCDA7887759FF01A50070DC4698E6F4/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "6643fb"
+}

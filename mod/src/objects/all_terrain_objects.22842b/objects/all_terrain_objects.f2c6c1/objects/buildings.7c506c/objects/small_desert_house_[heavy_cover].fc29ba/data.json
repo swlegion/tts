@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 40.134716,
+    "posY": 2.99604487,
+    "posZ": 29.8533936,
+    "rotX": 0.26980564,
+    "rotY": 179.9955,
+    "rotZ": 0.241008237,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Small Desert House [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.81,
+    "g": 0.81,
+    "b": 0.81
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780857796473/C76FE24DD8D64DF9454B0D68C118CDCC69E77E91/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780857799243/D234CF8D53A6E009976AB07E8469FBF661864BDD/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "fc29ba"
+}

@@ -1,0 +1,13 @@
+Trooper: Open
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Height: 1
+
+AT-RTs can spend 2 actions to clamber over to the otherside but cannot end movement on top of archway
+
+AT-STs treat this as difficult terrain.
+
+Right click > State > 2 to access top of archway.
+
+Special Thanks: www.imperialterrain.com

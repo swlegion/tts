@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -4.466131,
+    "posY": 0.5390227,
+    "posZ": 1.290081,
+    "rotX": -0.0009373447,
+    "rotY": 315.015564,
+    "rotZ": 0.00133738713,
+    "scaleX": 1.61127269,
+    "scaleY": 1.30036557,
+    "scaleZ": 1.51646185
+  },
+  "Nickname": "Balcony [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.9254902,
+    "g": 0.8392157,
+    "b": 0.7176471
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/966480765117280921/B5E5AF8FC0D416DC69A956EA63AE73B5005B6A22/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/966480765117281007/491DC5F81C1B25E23871340A8EEDB2719680F791/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/966480765117281117/9AB0382C8065CDF462603572B76D2CB31C0F287F/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "5e0423"
+}

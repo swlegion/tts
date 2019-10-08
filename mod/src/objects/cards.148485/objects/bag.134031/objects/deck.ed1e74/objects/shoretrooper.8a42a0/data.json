@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 41.4888954,
+    "posY": 1.238617,
+    "posZ": 5.84418869,
+    "rotX": -0.003463723,
+    "rotY": 270.018433,
+    "rotZ": 359.975281,
+    "scaleX": 0.6907125,
+    "scaleY": 1,
+    "scaleZ": 0.6907125
+  },
+  "Nickname": "Shoretrooper",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 29902,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "299": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786359682702686927/D70C7493832C16A06BAF912821E20D88DB78E6AB/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/786359682702686927/D70C7493832C16A06BAF912821E20D88DB78E6AB/",
+      "NumWidth": 6,
+      "NumHeight": 2,
+      "BackIsHidden": true,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "8a42a0"
+}

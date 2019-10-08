@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 37.3077049,
+    "posY": 1.44560122,
+    "posZ": -7.425932,
+    "rotX": 0.0003237715,
+    "rotY": 14.9979534,
+    "rotZ": -8.37857272e-7,
+    "scaleX": 0.7955451,
+    "scaleY": 0.9171029,
+    "scaleZ": 1.02592409
+  },
+  "Nickname": "Barricade [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.695121944,
+    "g": 0.6480654,
+    "b": 0.633360147
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "https://gist.githubusercontent.com/nashjaee/849ec6905a7613c0e656db6e364f8148/raw/48a785f51bbc29ee603725bff2c9ca240f64728e/barricade_model.txt",
+    "DiffuseURL": "https://i.imgur.com/PF3rjzI.jpghttps://i.imgur.com/PF3rjzI.jpg",
+    "NormalURL": "",
+    "ColliderURL": "https://gist.githubusercontent.com/nashjaee/849ec6905a7613c0e656db6e364f8148/raw/48a785f51bbc29ee603725bff2c9ca240f64728e/barricade_model.txt",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "5ef13d"
+}

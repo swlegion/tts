@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -2.274528,
+    "posY": 1.44672847,
+    "posZ": -6.54726648,
+    "rotX": 0.000226662465,
+    "rotY": 59.9999428,
+    "rotZ": 0.000230201666,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "",
+  "ColorDiffuse": {
+    "r": 0.506968,
+    "g": 0.447388768,
+    "b": 0.320607781
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "https://gist.githubusercontent.com/nashjaee/0a586c02749c8c9999bf4bfbe77e385b/raw/78b8b91c4a97bbceb364e2c7a4728fc12802b1d5/felucia_plant_2.txt",
+    "DiffuseURL": "https://i.imgur.com/U36Uy5Z.jpg",
+    "NormalURL": "",
+    "ColliderURL": "https://gist.githubusercontent.com/nashjaee/7fe42e36ad4939ab29e5a1d680ef4edb/raw/60b0f6de706f8d5739ce838fff58cc8d0b7fa111/felucia_plant_2_collider.txt",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "b5469f"
+}

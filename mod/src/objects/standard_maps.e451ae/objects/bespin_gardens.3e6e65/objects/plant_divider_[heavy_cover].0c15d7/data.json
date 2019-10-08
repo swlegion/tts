@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 10.9255323,
+    "posY": 1.44163716,
+    "posZ": 2.68250585,
+    "rotX": 0.00113189919,
+    "rotY": 134.990112,
+    "rotZ": -0.00113618164,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Plant Divider [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.859307,
+    "g": 0.859307,
+    "b": 0.859307
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542479777/1506BA36B2C10B99B5998DDE43B3D6B9367E572C/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542481957/F74A67DD93CE47FAF7AC5ADF3226FC4D7D008785/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542482867/B757CF641C4E299FA71E4C7843D8B8B5F65CE1B2/",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "0c15d7"
+}

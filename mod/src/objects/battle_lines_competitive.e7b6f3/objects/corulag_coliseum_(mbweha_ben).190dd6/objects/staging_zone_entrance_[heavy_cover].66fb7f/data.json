@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -24.85919,
+    "posY": 1.43524432,
+    "posZ": 10.3730412,
+    "rotX": 0.000009930538,
+    "rotY": 89.99996,
+    "rotZ": -0.0016711487,
+    "scaleX": 1.21000016,
+    "scaleY": 1.21000016,
+    "scaleZ": 1.21000016
+  },
+  "Nickname": "Staging Zone Entrance [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542598409/7A38876C25EB4D0293B46B3F804EA3A5D5F83C86/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542600019/46ABBF5334D1E3BB461BD82F8245102879990B16/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542600950/DC58336A1D5222B46BB1A5381BEDC624EF7A5A5A/",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "66fb7f"
+}

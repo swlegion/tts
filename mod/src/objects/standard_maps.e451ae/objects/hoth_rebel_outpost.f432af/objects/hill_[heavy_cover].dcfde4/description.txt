@@ -1,0 +1,11 @@
+Cliff:
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Slope and Plateu
+Trooper: Open
+Ground Vehicle: Open
+Repulsor: Open
+
+Height: 1

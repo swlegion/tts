@@ -1,0 +1,3 @@
+Does not block shooting
+Difficult terrain(Trooper)
+Impassable Vehicles

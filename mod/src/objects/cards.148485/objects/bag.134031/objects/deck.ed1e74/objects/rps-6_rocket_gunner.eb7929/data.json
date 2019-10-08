@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 39.95966,
+    "posY": 1.16899538,
+    "posZ": 7.2103076,
+    "rotX": 0.00347412331,
+    "rotY": 269.999725,
+    "rotZ": 359.983978,
+    "scaleX": 0.6907125,
+    "scaleY": 1,
+    "scaleZ": 0.6907125
+  },
+  "Nickname": "RPS-6 Rocket Gunner",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 31600,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "316": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/993513208355167163/36915FCD5508AD9E66F76A8E3D55676284B1501B/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/993513208355167163/36915FCD5508AD9E66F76A8E3D55676284B1501B/",
+      "NumWidth": 4,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "eb7929"
+}

@@ -1,0 +1,50 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -8.410464,
+    "posY": 1.44151926,
+    "posZ": -1.57372081,
+    "rotX": 0.00120572164,
+    "rotY": 149.983688,
+    "rotZ": -0.000835341343,
+    "scaleX": 0.375000328,
+    "scaleY": 0.375000328,
+    "scaleZ": 0.375000328
+  },
+  "Nickname": "Tower [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2432383534096904607/5589BE7325C3532AC570B67047DE0F9DB5D9F26B/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/2432383534096904751/4CF848494DBFB5963B91B80EE490F46A3F0B26D0/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/2432383534096905089/1447161B49539373EC45CF33C334BEA37AC3EFF1/",
+    "Convex": true,
+    "MaterialIndex": 2,
+    "TypeIndex": 1,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 0.7372549,
+        "g": 0.7372549,
+        "b": 0.7372549
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 2,
+      "FresnelStrength": 0
+    },
+    "CastShadows": true
+  },
+  "GUID": "d5e269"
+}

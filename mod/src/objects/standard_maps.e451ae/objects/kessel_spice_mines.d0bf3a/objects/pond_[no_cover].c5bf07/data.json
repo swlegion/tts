@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": 9.413761,
+    "posY": 1.49753368,
+    "posZ": 6.67208529,
+    "rotX": 0.000162396391,
+    "rotY": 75.01383,
+    "rotZ": 0.000279156637,
+    "scaleX": 1.93392575,
+    "scaleY": 1,
+    "scaleZ": 1.93392575
+  },
+  "Nickname": "Pond [No Cover]",
+  "ColorDiffuse": {
+    "r": 0.7546521,
+    "g": 0.8499837,
+    "b": 0.71757865
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "http://cloud-3.steamusercontent.com/ugc/920331113102195373/B52B886B61A18C5F4E2ED8353066B0A4D96F7DE8/",
+    "ImageSecondaryURL": "",
+    "WidthScale": 0,
+    "CustomToken": {
+      "Thickness": 0.1,
+      "MergeDistancePixels": 16.9001942,
+      "Stackable": false
+    }
+  },
+  "GUID": "c5bf07"
+}

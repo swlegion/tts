@@ -1,0 +1,63 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 13.479291,
+    "posY": 6.967875,
+    "posZ": -3.360101,
+    "rotX": 0.0944922641,
+    "rotY": 149.9858,
+    "rotZ": 0.9424544,
+    "scaleX": 0.475,
+    "scaleY": 0.475,
+    "scaleZ": 0.475
+  },
+  "Nickname": "Sandbags (Light Cover)",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.9921623,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2432383534096906481/43ED0B625D1DF1E93754BBCE2B807BE65F3E3A3D/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/2432383534096906589/AAE6FB94F26234E33825495781E974CBB52875C3/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/2432383534096906672/4B3D3158C9194C5A103A4DE37DC3FF0C0E44DED6/",
+    "Convex": false,
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0,
+      "SpecularSharpness": 7,
+      "FresnelStrength": 0.4
+    },
+    "CastShadows": true
+  },
+  "PhysicsMaterial": {
+    "StaticFriction": 0.4,
+    "DynamicFriction": 0.4,
+    "Bounciness": 0,
+    "FrictionCombine": 0,
+    "BounceCombine": 0
+  },
+  "Rigidbody": {
+    "Mass": 0.875,
+    "Drag": 0.1,
+    "AngularDrag": 0.1,
+    "UseGravity": true
+  },
+  "GUID": "3c3bef"
+}

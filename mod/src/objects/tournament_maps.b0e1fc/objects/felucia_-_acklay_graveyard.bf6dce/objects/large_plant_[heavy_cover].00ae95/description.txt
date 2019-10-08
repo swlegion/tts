@@ -1,0 +1,10 @@
+Heavy Cover:
+Minis Size 3 and below
+
+Sides: 
+All-Impassable
+
+Top: 
+All-Open
+
+Height 1

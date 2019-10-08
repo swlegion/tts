@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 31.3651257,
+    "posY": 0.6292932,
+    "posZ": -10.0582438,
+    "rotX": -0.00180891331,
+    "rotY": 30.0029526,
+    "rotZ": -0.000712129346,
+    "scaleX": 1.19999981,
+    "scaleY": 1.19999981,
+    "scaleZ": 1.19999981
+  },
+  "Nickname": "Lambda class shuttle",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/924802174592913637/A76B0F2CDC60D84AC366CB24909DCDCF5C886A2C/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/924802174592913725/C0A884132F0445B8EEBCDC70585F4CAD0931A050/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/924802174592913637/A76B0F2CDC60D84AC366CB24909DCDCF5C886A2C/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "764516"
+}

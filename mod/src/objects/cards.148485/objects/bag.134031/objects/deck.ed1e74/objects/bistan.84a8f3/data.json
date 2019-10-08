@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 42.56447,
+    "posY": 1.02039731,
+    "posZ": 3.63832736,
+    "rotX": 359.917236,
+    "rotY": 270.390137,
+    "rotZ": 0.183101177,
+    "scaleX": 0.6907125,
+    "scaleY": 1,
+    "scaleZ": 0.6907125
+  },
+  "Nickname": "Bistan",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 27401,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "274": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/999144021179705013/5C39087B39638D1E6FC7531DD129D34BF25D5A02/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676739352844643/E902284A0D1A01F935B0008046FC8CF9AE4F395C/",
+      "NumWidth": 2,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": false
+    }
+  },
+  "GUID": "84a8f3"
+}

@@ -1,0 +1,18 @@
+Heavy Cover:
+Mini size 3.5 and below
+
+Sides:
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Minis with size > 3.5 treat this as difficult terrain
+
+Balcony:
+All - Open
+
+Height: 1
+
+Right-Click and switch states to access different levels
+
+Special Thanks: corvusgamesterrain.com

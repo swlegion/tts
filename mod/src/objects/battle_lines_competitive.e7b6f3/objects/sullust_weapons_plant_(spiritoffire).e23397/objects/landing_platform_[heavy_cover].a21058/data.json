@@ -1,0 +1,54 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 19.31052,
+    "posY": 4.2807045,
+    "posZ": 0.226277187,
+    "rotX": 0.05284877,
+    "rotY": 0.0323740058,
+    "rotZ": 0.00249135564,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Landing Platform [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.364705175,
+    "g": 0.364705175,
+    "b": 0.364705175
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546189348/087639CF25D766513CA0EB9A803B5E09B654F3C7/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546189469/6CE544DF3C005E7C09ED215A637FC6822570DC57/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546189602/39B0FF2FD3E9FE365CBE6E0FAC8F95A89FF4C9A5/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "PhysicsMaterial": {
+    "StaticFriction": 0.6,
+    "DynamicFriction": 0.6,
+    "Bounciness": 0,
+    "FrictionCombine": 0,
+    "BounceCombine": 0
+  },
+  "Rigidbody": {
+    "Mass": 1,
+    "Drag": 0.1,
+    "AngularDrag": 0.1,
+    "UseGravity": true
+  },
+  "GUID": "a21058"
+}

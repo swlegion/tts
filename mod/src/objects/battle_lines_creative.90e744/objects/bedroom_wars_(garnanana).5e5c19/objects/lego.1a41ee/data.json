@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": -24.0890846,
+    "posY": 1.44760537,
+    "posZ": 2.32138062,
+    "rotX": -0.0000782960851,
+    "rotY": 269.993469,
+    "rotZ": -0.000312509248,
+    "scaleX": 0.99,
+    "scaleY": 0.99,
+    "scaleZ": 0.99
+  },
+  "Nickname": "Lego",
+  "ColorDiffuse": {
+    "r": 0.104373731,
+    "g": 0.357142448,
+    "b": 0.09270757
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/993513208355173442/78A52E4C7A2E086581BCD9FDCBB32FEA167651FB/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "1a41ee"
+}

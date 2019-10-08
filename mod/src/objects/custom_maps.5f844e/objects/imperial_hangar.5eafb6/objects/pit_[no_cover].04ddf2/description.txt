@@ -1,0 +1,12 @@
+No Cover:
+All
+
+Sides:
+All - Open
+
+Pit:
+Trooper - Impassable
+G. Vehicle - Impassable
+Repulsor - Open
+
+Does not obscure LOS

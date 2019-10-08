@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -11.3705072,
+    "posY": 1.47036624,
+    "posZ": -2.38081622,
+    "rotX": 0.0007910373,
+    "rotY": 60.1816025,
+    "rotZ": 0.00139198964,
+    "scaleX": 1.51,
+    "scaleY": 1.51,
+    "scaleZ": 1.51
+  },
+  "Nickname": "Bunker - Elevated Terrain",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/867365711992033781/B1C251F0A8C01C3CA78357FC4DC271C5BD2FF7F9/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/866242507558372471/A894F4E899EFADD3812BE94542639A726B060C6B/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542600950/DC58336A1D5222B46BB1A5381BEDC624EF7A5A5A/",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "38e6bb"
+}

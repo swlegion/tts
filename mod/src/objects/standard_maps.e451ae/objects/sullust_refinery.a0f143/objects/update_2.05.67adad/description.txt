@@ -1,0 +1,4 @@
+To put your minis on different levels of the walkway, right click on the walkway, then click "State" and select the corresponding number.
+
+Make sure that Physics is set to Locked.
+Go to Menu -> Configuration -> Physics -> Locked

@@ -1,0 +1,43 @@
+{
+  "Name": "Custom_Model_Infinite_Bag",
+  "Transform": {
+    "posX": -41.1922455,
+    "posY": 0.949036658,
+    "posZ": -12.3288393,
+    "rotX": 0.0000134240763,
+    "rotY": 209.999954,
+    "rotZ": -0.0000204830812,
+    "scaleX": 1.89999938,
+    "scaleY": 1.89999938,
+    "scaleZ": 1.89999938
+  },
+  "Nickname": "Ion Tokens",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442992/DD893F407D50F2D029305A2F181989F90E3FA46A/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314443114/1C858EEC4B7A2247AA506EC699FF65D7C72E5484/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 7,
+    "CastShadows": true
+  },
+  "GUID": "799a75"
+}

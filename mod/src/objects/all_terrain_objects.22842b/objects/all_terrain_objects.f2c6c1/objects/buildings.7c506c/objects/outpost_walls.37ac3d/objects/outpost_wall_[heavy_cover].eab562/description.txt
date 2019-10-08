@@ -1,0 +1,12 @@
+Heavy Cover:
+Mini size 6 and below
+
+Wall:
+All - Impassable
+
+Ledges:
+Trooper - Open
+Others - Impassable
+
+Height: 2
+Ledge Height: 1

@@ -1,0 +1,38 @@
+{
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": -12.6544075,
+    "posY": 1.45406437,
+    "posZ": -0.23880209,
+    "rotX": -0.00147990044,
+    "rotY": 329.975281,
+    "rotZ": 0.0008059508,
+    "scaleX": 0.40978986,
+    "scaleY": 0.796050847,
+    "scaleZ": 0.8461497
+  },
+  "Nickname": "Bridge [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.5,
+    "g": 0.5,
+    "b": 0.5
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/785234780864410607/7744554880BC7420DE85A2ED1DA4864BF638AA1B/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  },
+  "GUID": "7533e7"
+}

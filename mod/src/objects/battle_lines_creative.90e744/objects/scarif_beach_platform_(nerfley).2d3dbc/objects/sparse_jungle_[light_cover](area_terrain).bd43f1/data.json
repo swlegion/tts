@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 31.8344059,
+    "posY": 4.362528,
+    "posZ": 1.76752281,
+    "rotX": 0.0380800776,
+    "rotY": 166.0538,
+    "rotZ": -0.00448260643,
+    "scaleX": 0.9888956,
+    "scaleY": 0.5901052,
+    "scaleZ": 0.7277083
+  },
+  "Nickname": "Sparse Jungle [Light Cover](Area Terrain)",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542621946/F2FCD4CD9FD97EE020C328EEF39B5A75C1604546/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542625908/696B403660ADD2D2F56A91400EFC61F696F0D085/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542626980/ACBD7B95053F17B53B637E41F50076E361F8B3EF/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "bd43f1"
+}

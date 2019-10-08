@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 15.4593124,
+    "posY": 1.43,
+    "posZ": 10.9839325,
+    "rotX": 359.8852,
+    "rotY": 45.0063362,
+    "rotZ": -0.0050152163,
+    "scaleX": 0.86,
+    "scaleY": 1.21583331,
+    "scaleZ": 0.930599749
+  },
+  "Nickname": "Small Cliff w/ Jungle [Heavy Cover][Area Terrain]",
+  "ColorDiffuse": {
+    "r": 0.895388663,
+    "g": 0.895388663,
+    "b": 0.895388663
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": true,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858830582/8BB35CD708C45CBDC9275CDDA82F73389508DFF0/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858839780/67ED44F13AB37829981C35F17BA1B743FBD15087/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858830582/8BB35CD708C45CBDC9275CDDA82F73389508DFF0/",
+    "Convex": false,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "01e114"
+}

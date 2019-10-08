@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 53.4680557,
+    "posY": 1.384652,
+    "posZ": -12.7576017,
+    "rotX": 5.002586e-7,
+    "rotY": 179.999741,
+    "rotZ": 2.5652605e-7,
+    "scaleX": 1.21000016,
+    "scaleY": 1.21000016,
+    "scaleZ": 1.21000016
+  },
+  "Nickname": "Bunker [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542598409/7A38876C25EB4D0293B46B3F804EA3A5D5F83C86/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542600019/46ABBF5334D1E3BB461BD82F8245102879990B16/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542600950/DC58336A1D5222B46BB1A5381BEDC624EF7A5A5A/",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "b18a21"
+}

@@ -1,0 +1,7 @@
+Light Cover:
+Non-Creature Troopers
+
+Struts:
+All: Impassable
+
+Non-Creature Troopers can clamber without rolling for falling damage

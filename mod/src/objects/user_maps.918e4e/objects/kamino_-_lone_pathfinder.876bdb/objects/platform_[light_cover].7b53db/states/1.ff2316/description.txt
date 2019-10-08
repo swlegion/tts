@@ -1,0 +1,16 @@
+Light Cover:
+Non-Creature Troopers
+
+Struts:
+All: Impassable
+
+Minis with size > 3 treat this as difficult terrain
+
+Platform:
+All - Open
+
+Height: 1
+
+Right-Click and switch states to access different levels
+
+Special thanks to www.youtube.com/tabletopoddity

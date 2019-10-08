@@ -1,0 +1,43 @@
+{
+  "Name": "Card",
+  "Transform": {
+    "posX": 41.73938,
+    "posY": 2.00176978,
+    "posZ": 5.25371552,
+    "rotX": 0.000005332727,
+    "rotY": 270,
+    "rotZ": -0.00000249612549,
+    "scaleX": 0.181600809,
+    "scaleY": 1,
+    "scaleZ": 0.181600809
+  },
+  "Nickname": "Strict Orders",
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": true,
+  "CardID": 31703,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "317": {
+      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/951848302305474131/2F3FE712B3405BA622622E31E924553F6E4F95F4/",
+      "BackURL": "http://cloud-3.steamusercontent.com/ugc/951848302305474131/2F3FE712B3405BA622622E31E924553F6E4F95F4/",
+      "NumWidth": 2,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": true
+    }
+  },
+  "GUID": "f3c1bf"
+}

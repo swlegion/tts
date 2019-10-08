@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -23.66202,
+    "posY": 1.43575287,
+    "posZ": -2.71406174,
+    "rotX": -0.0004228304,
+    "rotY": 75.01211,
+    "rotZ": -0.0016183788,
+    "scaleX": 1.24999988,
+    "scaleY": 1.24999988,
+    "scaleZ": 1.24999988
+  },
+  "Nickname": "Mud [No Cover]",
+  "ColorDiffuse": {
+    "r": 0.7176471,
+    "g": 0.7529412,
+    "b": 0.8235294
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542754362/7AAD7B25F1A8C2CDBD05B3444E42CA0801A35BD7/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542756958/ED2976F2E02F484636591969A1FF9DA08909238C/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542757721/3FE644D3A16A20B2B605F50693A6D6E2CBBCB742/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "a77575"
+}

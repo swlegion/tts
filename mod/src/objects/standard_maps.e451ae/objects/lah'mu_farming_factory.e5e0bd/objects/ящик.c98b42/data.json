@@ -1,0 +1,51 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -17.0660667,
+    "posY": 1.4034524,
+    "posZ": 12.213851,
+    "rotX": -0.000317167433,
+    "rotY": 180.010223,
+    "rotZ": 0.0000807633,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Ящик",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992160261,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/502526366065245451/F664D7049EE36B94AE02C97FB705AD4872DC04E1/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/502526366065246579/FC165962015416BA8F5D7B9B849CC819CB818785/",
+    "NormalURL": "http://cloud-3.steamusercontent.com/ugc/502526366065246920/A5B7D90D38B8837254CF2DAABD1ED58DF79BEBF3/",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/502526366065245451/F664D7049EE36B94AE02C97FB705AD4872DC04E1/",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "SpecularIntensity": 0.1,
+      "SpecularSharpness": 7,
+      "FresnelStrength": 0.4
+    },
+    "CastShadows": true
+  },
+  "GUID": "c98b42"
+}

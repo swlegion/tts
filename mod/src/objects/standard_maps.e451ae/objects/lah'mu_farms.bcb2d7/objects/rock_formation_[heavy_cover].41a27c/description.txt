@@ -1,0 +1,10 @@
+Light Cover:
+Minis Size 3 and below
+
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Minis with size > 3 treat this as difficult terrain
+
+Height: 1

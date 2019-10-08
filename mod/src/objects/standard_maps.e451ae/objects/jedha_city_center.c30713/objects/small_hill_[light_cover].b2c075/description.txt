@@ -1,0 +1,12 @@
+Light Cover:
+Non-creature troopers
+
+Sides:
+Troopers - Difficult
+G. Vehicles - Open
+Repulsor - Open
+
+Roof and Slope:
+All - Open
+
+Height 0

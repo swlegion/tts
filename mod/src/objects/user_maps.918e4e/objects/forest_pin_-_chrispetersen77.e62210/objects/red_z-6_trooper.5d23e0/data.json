@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 33.5359421,
+    "posY": 1.44157708,
+    "posZ": -2.789393,
+    "rotX": 0.000807845,
+    "rotY": 59.9993248,
+    "rotZ": 0.00139326381,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Red Z-6 Trooper",
+  "ColorDiffuse": {
+    "r": 0.2784312,
+    "g": 0.333333164,
+    "b": 0.235293925
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": false,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/931553682908980509/1F48FA301357905B28DA35A03658DFA39154DBFE/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/931553682908980828/22D1A1ACC79493FE82165CC95A5E23170A4FBC5B/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540537100371/0B15B2810ABEBE5429E4A24852D96BAC2DC28BF7/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "5d23e0"
+}

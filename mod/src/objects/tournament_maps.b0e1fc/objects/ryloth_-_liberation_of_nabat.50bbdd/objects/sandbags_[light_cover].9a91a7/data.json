@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 3.02618074,
+    "posY": 1.44161677,
+    "posZ": -4.205207,
+    "rotX": -0.00102295645,
+    "rotY": 129.584076,
+    "rotZ": 0.0012489903,
+    "scaleX": 1.055907,
+    "scaleY": 1.04954648,
+    "scaleZ": 1.04954648
+  },
+  "Nickname": "Sandbags [Light Cover]",
+  "ColorDiffuse": {
+    "r": 0.9999998,
+    "g": 0.992160261,
+    "b": 0.9999998
+  },
+  "Locked": true,
+  "Grid": false,
+  "Snap": false,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": false,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/920331435132688528/A666ED668EBE4CE92239C849AC33FA6268201EE7/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/920331435132688137/C98DEAEA6FB0F4758F16BB9698ED67BDACB3D040/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/920331435132688745/6756DB1DA28553218412AE6F325080297EC3E911/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 1,
+    "CastShadows": true
+  },
+  "GUID": "9a91a7"
+}

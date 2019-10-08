@@ -1,0 +1,40 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -23.7295589,
+    "posY": 1.446243,
+    "posZ": -2.37578773,
+    "rotX": 359.948822,
+    "rotY": 225.004486,
+    "rotZ": 359.988525,
+    "scaleX": 0.75,
+    "scaleY": 0.75,
+    "scaleZ": 0.75
+  },
+  "Nickname": "Hill",
+  "ColorDiffuse": {
+    "r": 1,
+    "g": 1,
+    "b": 1
+  },
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/924802174592912302/70B3EA69ABC7122EA6A653BECBA831D077B97782/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/927052513931962587/9D1E70C2DFE67E7FB69E8EBB7D9FF55A26893F22/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/924802174592912302/70B3EA69ABC7122EA6A653BECBA831D077B97782/",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "abc4b7"
+}

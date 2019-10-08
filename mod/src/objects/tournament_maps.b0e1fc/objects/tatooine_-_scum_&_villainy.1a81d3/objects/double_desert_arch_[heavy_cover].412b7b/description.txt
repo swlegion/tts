@@ -1,0 +1,14 @@
+Heavy Cover:
+Minis Size 3 and below
+
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Arches are open for minis on medium or smaller bases (Mk II Blaster base), excluding creature troopers.
+
+Minis with size > 3 treat this as difficult terrain
+
+Height: 1
+
+Special Thanks to https://www.etsy.com/shop/LowCountryCraftShop 

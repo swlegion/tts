@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -44.15589,
+    "posY": 1.08396626,
+    "posZ": 13.7192144,
+    "rotX": -9.06957141e-8,
+    "rotY": 359.97345,
+    "rotZ": 1.57991646e-8,
+    "scaleX": 1.74999917,
+    "scaleY": 1.74999917,
+    "scaleZ": 1.74999917
+  },
+  "Nickname": "Weapon Destroyed Token",
+  "ColorDiffuse": {
+    "r": 0.827451,
+    "g": 0.827451,
+    "b": 0.827451
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442142/E2BBDA84DFF104080284F15909B71C8F125DA50F/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314443730/B474A9A42C93151761AFE01AB45DBE5CABA1F451/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 3,
+    "TypeIndex": 5,
+    "CastShadows": true
+  },
+  "GUID": "f38bf1"
+}

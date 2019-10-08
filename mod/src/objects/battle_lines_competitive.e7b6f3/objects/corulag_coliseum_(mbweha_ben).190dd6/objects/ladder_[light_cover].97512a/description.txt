@@ -1,0 +1,9 @@
+Trooper: Impassable
+Ground Vehicle: Impassable
+Repulsor: Impassable
+
+Height: 1
+
+Climbing units can clamber up/down the ladder without rolling for damage.
+
+Special thanks to www.youtube.com/tabletopoddity

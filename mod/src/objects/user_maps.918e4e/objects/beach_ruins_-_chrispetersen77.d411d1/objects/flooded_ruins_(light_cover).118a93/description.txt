@@ -1,0 +1,5 @@
+Troopers- Impassable
+Ground Vehicles- Impassable
+Repulser Vehicles- Impassable
+
+Height 1

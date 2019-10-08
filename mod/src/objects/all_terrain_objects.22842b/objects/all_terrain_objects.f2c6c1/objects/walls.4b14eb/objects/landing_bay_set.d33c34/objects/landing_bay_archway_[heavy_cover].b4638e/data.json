@@ -1,0 +1,41 @@
+{
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 45.2626572,
+    "posY": 1.316692,
+    "posZ": 0.530692458,
+    "rotX": 0.08208763,
+    "rotY": 180.001068,
+    "rotZ": 0.03254383,
+    "scaleX": 1,
+    "scaleY": 1,
+    "scaleZ": 1
+  },
+  "Nickname": "Landing Bay Archway [Heavy Cover]",
+  "ColorDiffuse": {
+    "r": 0.83,
+    "g": 0.92,
+    "b": 0.92
+  },
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540546190104/855BF67B705B962579C4A39ACAB4FE330CF00ED8/",
+    "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540546190218/7B22A8B540AF832D8C731D5C3911E740D0882E4C/",
+    "NormalURL": "",
+    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540546469992/390A26E33A64535B5D1F7CF2AA165840D7B3269C/",
+    "Convex": true,
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "CastShadows": true
+  },
+  "GUID": "b4638e"
+}

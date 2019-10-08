@@ -1,0 +1,9 @@
+Sides
+Impassable for all
+
+Top of Cockpit and body
+Open for all
+
+Cockpit and Body Height: 1
+Wings Height: 2
+Height is measured from Landing bay. Add +1 Height if measuring from ground level.

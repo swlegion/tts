@@ -1,0 +1,12 @@
+Heavy Cover:
+All except T-47, AT-ST
+
+Sides:
+All - Impassable
+
+Roof:
+All - Open
+
+Height: 1
+
+Special Thanks: www.danwulfgames.com
