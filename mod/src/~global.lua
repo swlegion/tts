@@ -176,6 +176,7 @@ function onLoad()
     standbyBagGUID = "f103c2"
     surgeBagGUID = "f539b0"
     suppressionBagGUID = "a25e12"
+    smokeBagGUID = "d03507"
     ionBagGUID = "799a75"
     woundBagGUID = "276535"
 
@@ -328,7 +329,7 @@ function onLoad()
     unitInfo.chewbacca.buttonHeight = 2
 
     unitInfo.c3po = {}
-    unitInfo.c3po.commandType = "rebelOperative"
+    unitInfo.c3po.commandType = nil
     unitInfo.c3po.baseSize = "small"
     unitInfo.c3po.fixedMove = false
     unitInfo.c3po.selectedSpeed = 1
@@ -343,11 +344,11 @@ function onLoad()
     unitInfo.r2d2.fixedMove = false
     unitInfo.r2d2.selectedSpeed = 1
     unitInfo.r2d2.fixedArc = false
-    unitInfo.r2d2.squadStatus = false
+    unitInfo.r2d2.squadStatus = true
     unitInfo.r2d2.buttonHeight = 2
 
     unitInfo.republicC3po = {}
-    unitInfo.republicC3po.commandType = "republicOperative"
+    unitInfo.republicC3po.commandType = nil
     unitInfo.republicC3po.baseSize = "small"
     unitInfo.republicC3po.fixedMove = false
     unitInfo.republicC3po.selectedSpeed = 1
@@ -362,7 +363,7 @@ function onLoad()
     unitInfo.republicR2d2.fixedMove = false
     unitInfo.republicR2d2.selectedSpeed = 1
     unitInfo.republicR2d2.fixedArc = false
-    unitInfo.republicR2d2.squadStatus = false
+    unitInfo.republicR2d2.squadStatus = true
     unitInfo.republicR2d2.buttonHeight = 2
 
     unitInfo.sabineWren = {}
@@ -3216,9 +3217,9 @@ function onLoad()
         availableUpgrades = {
         },
         miniInfo = {miniInfo.c3po},
-        tokenName = "Republic Operative Command Token",
+        tokenName = "",
         fullName = "C-3PO",
-        rank = "Operative",
+        rank = "Counterpart",
         noToken = true
     }
     cardInfo.unitCards.phaseICloneTroopers = {
@@ -3419,9 +3420,9 @@ function onLoad()
         availableUpgrades = {
         },
         miniInfo = {miniInfo.c3po},
-        tokenName = "Rebel Operative Command Token",
+        tokenName = "",
         fullName = "C-3PO",
-        rank = "Operative",
+        rank = "Counterpart",
         noToken = true
     }
     cardInfo.unitCards.rebelTrooper = {
