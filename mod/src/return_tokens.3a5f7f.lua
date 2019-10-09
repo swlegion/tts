@@ -7,6 +7,7 @@ function onLoad(save_state)
     dodgeBag = getObjectFromGUID(Global.getVar("dodgeBagGUID"))
     standbyBag = getObjectFromGUID(Global.getVar("standbyBagGUID"))
     surgeBag = getObjectFromGUID(Global.getVar("surgeBagGUID"))
+    smokeBag = getObjectFromGUID(Global.getVar("smokeBagGUID"))
     ionBag = getObjectFromGUID(Global.getVar("ionBagGUID"))
     suppressionBag = getObjectFromGUID(Global.getVar("suppressionBagGUID"))
     unitInfo = Global.getTable("unitInfo")
@@ -28,11 +29,12 @@ function returnTokens()
     assetButton.AssetBundle.playTriggerEffect(0)
 
 
-    local allObjects = nil
     local allObjects = battlefieldZone.getObjects()
     local aimNumber = 1
     local dodgeNumber = 1
     local standbyNumber = 1
+    local surgeNumber = 1
+    local smokeNumber = 1
     local commandNumber = 1
 
 
@@ -43,9 +45,11 @@ function returnTokens()
             elseif obj.getName() == "Dodge Token" then
                 dodgeNumber = returnToken(dodgeBag,obj,dodgeNumber)
             elseif obj.getName() == "Standby Token" then
-                dodgeNumber = returnToken(standbyBag,obj,standbyNumber)
+                standbyNumber = returnToken(standbyBag,obj,standbyNumber)
             elseif obj.getName() == "Surge Token" then
-                dodgeNumber = returnToken(surgeBag,obj,standbyNumber)
+                surgeNumber = returnToken(surgeBag,obj,surgeNumber)
+            elseif obj.getName() == "Smoke Token" then
+                smokeNumber = returnToken(smokeBag,obj,smokeNumber)
 
             elseif obj.getVar("isAToken") == true then
 
