@@ -224,12 +224,9 @@ end
 
 ------------------------------------------------- STANDBY ------------------------------------------------------------
 function initialize()
-
     activated = false
-    --getEligibleUnit()
-
+    getEligibleUnit()
     createStandbyButtons()
-
 end
 
 function createStandbyButtons()
