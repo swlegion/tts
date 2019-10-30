@@ -478,7 +478,7 @@ function onLoad()
     unitInfo.bossk.commandType = "imperialOperative"
     unitInfo.bossk.baseSize = "small"
     unitInfo.bossk.fixedMove = false
-    unitInfo.bossk.selectedSpeed = 3
+    unitInfo.bossk.selectedSpeed = 2
     unitInfo.bossk.fixedArc = false
     unitInfo.bossk.squadStatus = false
     unitInfo.bossk.buttonHeight = 2
