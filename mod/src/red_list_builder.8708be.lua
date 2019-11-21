@@ -347,6 +347,7 @@ function spawnArmy(loadListData)
                 if cardInfo.upgradeCards[upgrade.varName].miniInfo != nil then
                     if cardInfo.upgradeCards[upgrade.varName].miniInfo.leader == true then
                         upgradeLeader = true
+
                     end
                 end
             end
@@ -358,6 +359,7 @@ function spawnArmy(loadListData)
 
                 if m == 1 and upgradeLeader == true and data.altModelInfo != nil then
                     passedData = data.altModelInfo
+
                 else
                     passedData = data
                 end
@@ -909,3 +911,4 @@ function refreshTimer()
     timerCounter = timerCounter + 1
     Global.setVar("timerCounter", timerCounter)
 end
+
