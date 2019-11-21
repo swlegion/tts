@@ -89,9 +89,7 @@ function dropCoroutine()
     while self.getVelocity().y != 0 do
         coroutine.yield(0)
     end
-    if moveState == true then
-        spawnCohesionRuler()
-    end
+    spawnCohesionRuler()
     return 1
 end
 

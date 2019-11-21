@@ -17,10 +17,6 @@ function onLoad(save_state)
     })
 end
 
-function onDestroy()
-    clearRangeRuler()
-end
-
 function toggleRangeRuler()
     if rangeOn then
         clearRangeRuler()
