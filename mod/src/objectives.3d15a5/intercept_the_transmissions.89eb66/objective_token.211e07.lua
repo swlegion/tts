@@ -16,6 +16,10 @@ function onLoad(save_state)
     })
 end
 
+function onDestroy()
+    clearRangeRuler()
+end
+
 function toggleRangeRuler()
     if rangeOn then
         clearRangeRuler()
@@ -61,4 +65,5 @@ function spawnRangeRuler()
     luaScript = "targetGUID = '"..self.getGUID().."'\nfunction onFixedUpdate()\nif targetGUID != nil then\ntargetObj = getObjectFromGUID(targetGUID)\nself.setPosition(targetObj.getPosition())\nself.setRotation(targetObj.getRotation())\nend\nend"
     rangeRuler.setLuaScript(luaScript)
 end
+
 

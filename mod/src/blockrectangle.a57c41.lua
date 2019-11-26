@@ -224,9 +224,12 @@ end
 
 ------------------------------------------------- STANDBY ------------------------------------------------------------
 function initialize()
+
     activated = false
-    getEligibleUnit()
+    --getEligibleUnit()
+
     createStandbyButtons()
+
 end
 
 function createStandbyButtons()
@@ -454,8 +457,6 @@ function nextUnit()
 
                 highlightUnit(selectedUnitObj.getTable("miniGUIDs"),{0,1,0})
                 highlightCard(getObjectFromGUID(selectedUnitObj.getVar("cardGUID")))
-                getSelectedUnitObjVariables()
-                setTemplateVariables()
                 out = true
             end
         end
@@ -1382,3 +1383,4 @@ function refreshTimer()
     timerCounter = timerCounter + 1
     Global.setVar("timerCounter", timerCounter)
 end
+

@@ -13,3 +13,4 @@ function buttonPress()
     self.AssetBundle.playTriggerEffect(0) --triggers animation/sound
     dieRoller.call("rollDie")
 end
+
