@@ -913,3 +913,4 @@ function refreshTimer()
     Global.setVar("timerCounter", timerCounter)
 end
 
+

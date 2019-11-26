@@ -291,3 +291,4 @@ function correctStringLength(measuredString)
     end
 end
 
+
