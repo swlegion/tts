@@ -57,3 +57,5 @@ function checkDeck()
         broadcastToAll("No Battlefield Deck. Insert Battlefield Deck to Blue Player Deck Mount to Define Battlefield",{1,1,1})
     end
 end
+
+

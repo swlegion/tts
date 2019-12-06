@@ -12,3 +12,5 @@ function onDestroy()
 
     newTable.setPosition(self.getPosition())
 end
+
+
