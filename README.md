@@ -21,3 +21,9 @@ the continued development of the mod.
 2. Resources used by the mod are hosted on community accessible services
 3. Mod is developed and distributed from the hosted services by the community
 4. A Wiki is provided with tutorials, how-to contribute, and more
+
+[1]: http://berserk-games.com/tabletop-simulator/	
+[2]: https://www.fantasyflightgames.com/en/products/star-wars-legion/	
+[3]: https://steamcommunity.com/sharedfiles/filedetails/?id=1159576143	
+[4]: https://github.com/swlegion/tts/wiki	
+[5]: https://www.patreon.com/tieren
