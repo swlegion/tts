@@ -981,7 +981,7 @@ function onLoad()
     }
     listBuilder.commandCards.r2d2 = {
         varName = "r2d2",
-        cards = {"Blast Off!", "Push", "Assault"}
+        cards = {"Blast Off!", "Impromptu Immolation", "Smoke Screen"}
     }
     listBuilder.commandCards.c3po = {
         varName = "c3po",
