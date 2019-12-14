@@ -2202,10 +2202,10 @@ function onLoad()
         leader = true
     }
     miniInfo.dlt19DTrooper = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/999144021179640024/44B7ECC02D8366F7B36358297EC908DF853F6A2D/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/770610077943650040/CDB9EFD9CB36DE0EB5AB78B22F2B334BDB1E6DFE/",
         collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
-        red = "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/",
+        red = "http://cloud-3.steamusercontent.com/ugc/770610077942938053/6187B2D6848EC35010DE6C3EEBB5DF6125D02D45/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/770610077942938053/6187B2D6848EC35010DE6C3EEBB5DF6125D02D45/",
         scale = {1,1,1},
         name = "DLT-19D Trooper"
     }
@@ -4526,6 +4526,3 @@ function readCallback(req)
         end
     end
 end
-
-
-
