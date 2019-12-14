@@ -2095,18 +2095,18 @@ function onLoad()
         name = "Scout Trooper"
     }
     miniInfo.dlt19xSniper = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/950714557093540011/2B022A8CE1BC7DBF59011A5DF503F590549ADB68/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/770610077943667377/92306C3BFB675310563691C3C582BF5B9FC9ACD4/",
         collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
-        red = "http://cloud-3.steamusercontent.com/ugc/950714557093540121/4801D28173F40744AF6DEE698E9A9523C6C55E5F/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/950714557093540121/4801D28173F40744AF6DEE698E9A9523C6C55E5F/",
+        red = "http://cloud-3.steamusercontent.com/ugc/770610077943667167/66F3188269E49FE5DAD649E771D799F2593263FF/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/770610077943667167/66F3188269E49FE5DAD649E771D799F2593263FF/",
         scale = {1,1,1},
         name = "DLT-19x Sniper"
     }
     miniInfo.dlt19xSniperLeader = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/950714557093540011/2B022A8CE1BC7DBF59011A5DF503F590549ADB68/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/770610077943667377/92306C3BFB675310563691C3C582BF5B9FC9ACD4/",
         collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
-        red = "http://cloud-3.steamusercontent.com/ugc/950714557093540121/4801D28173F40744AF6DEE698E9A9523C6C55E5F/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/950714557093540121/4801D28173F40744AF6DEE698E9A9523C6C55E5F/",
+        red = "http://cloud-3.steamusercontent.com/ugc/770610077943667167/66F3188269E49FE5DAD649E771D799F2593263FF/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/770610077943667167/66F3188269E49FE5DAD649E771D799F2593263FF/",
         scale = {1,1,1},
         name = "DLT-19x Sniper",
         leader = true
@@ -2250,10 +2250,10 @@ function onLoad()
         name = "AT-ST"
     }
     miniInfo.tx225 = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/963116666702885311/3A0E9E0D8580544E62D1FD1223A0B48484F1B011/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/770610077943664603/48F725F2C3EAAF7514813A42EE084CE2E7382909/",
         collider = "http://cloud-3.steamusercontent.com/ugc/963116666702885485/70F17B3327115A379D06F81C6F47F76470D7B826/",
-        red = "http://cloud-3.steamusercontent.com/ugc/999143816035492932/675DF233BD5B8BD58097F0205F2D984D04D9D16C/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/999143816035492932/675DF233BD5B8BD58097F0205F2D984D04D9D16C/",
+        red = "http://cloud-3.steamusercontent.com/ugc/770610077942978328/35E12FB664BC3AE0A7AFCCAFF306AFC7481CE4D3/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/770610077942978328/35E12FB664BC3AE0A7AFCCAFF306AFC7481CE4D3/",
         scale = {1,1,1},
         name = "TX-225 GAVw Occupier"
     }
