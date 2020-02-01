@@ -2805,10 +2805,17 @@ function onLoad()
     cardInfo.upgradeCards.tSeriesTacticalDroidPilot = {name =  "T-Series Tactical Droid Pilot", guid = "458gb7", ptCost = 5,varName="tSeriesTacticalDroidPilot"}
 
     cardInfo.upgradeCards.veteranClonePilot = {
-      name =  "Veteran Clone Pilot",
+      name = "Veteran Clone Pilot",
       guid = "22742b",
       ptCost = 7,
       varName = "veteranClonePilot"
+    }
+
+    cardInfo.upgradeCards.lokDurd = {
+      name = "Lok Durd",
+      guid = "",
+      ptCost = 9,
+      varName = "lokDurd"
     }
     -- leadership
     cardInfo.upgradeCards.commandingPresence = {name =  "Commanding Presence", guid = "a30fg", ptCost = 5,varName="commandingPresence"}
@@ -2866,7 +2873,8 @@ function onLoad()
         cardInfo.upgradeCards.linkedTargetingArray
     }
     cardInfo.upgradeMenu.separatist.pilot = {
-        cardInfo.upgradeCards.tSeriesTacticalDroidPilot
+        cardInfo.upgradeCards.tSeriesTacticalDroidPilot,
+        cardInfo.upgradeCards.lokDurd
     }
     cardInfo.upgradeMenu.separatist.leadership = {
         cardInfo.upgradeCards.commandingPresence,
@@ -2908,6 +2916,10 @@ function onLoad()
 
     cardInfo.upgradeMenu.separatist.b2SuperBattleDroidSpecialist = {
       cardInfo.upgradeCards.b2ACMTrooper
+    }
+
+    cardInfo.upgradeMenu.separatist.ordnance = {
+      cardInfo.upgradeCards.armorPiercingShells
     }
 
     -- REPUBLIC
@@ -3390,6 +3402,8 @@ function onLoad()
         ptCost = 170,
         availableUpgrades = {
           cardInfo.upgradeMenu.separatist.pilot,
+          cardInfo.upgradeMenu.separatist.ordnance,
+          cardInfo.upgradeMenu.separatist.ordnance,
           cardInfo.upgradeMenu.separatist.emplacementVehicleComms
         },
         miniInfo = {
