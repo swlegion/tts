@@ -2689,6 +2689,13 @@ function onLoad()
       varName = "tx130beamcannonturret"
     }
 
+    cardInfo.upgradeCards.tx130twinlaserturret = {
+      name = 'TX-130 Twin Laser Turret',
+      guid = "c0f10d",
+      ptCost = 14,
+      varName = "tx130twinlaserturret"
+    }
+
     -- CREW
     cardInfo.upgradeCards.a300RifleGunner = {name =  "A-300 Rifle Gunner", guid = "ag0ggg", ptCost = 9,varName="a300RifleGunner"}
     cardInfo.upgradeCards.rps6RocketGunner = {name = 'RPS-6 Rocket Gunner', guid = "a3ggasfgfg", ptCost = 36,varName="rps6RocketGunner"}
@@ -2813,10 +2820,18 @@ function onLoad()
 
     cardInfo.upgradeCards.lokDurd = {
       name = "Lok Durd",
-      guid = "",
+      guid = "45de89",
       ptCost = 9,
       varName = "lokDurd"
     }
+
+    cardInfo.upgradeCards.ploKoon = {
+      name = "Plo Koon",
+      guid = "de56ab",
+      ptCost = 9,
+      varName = "ploKoon"
+    }
+
     -- leadership
     cardInfo.upgradeCards.commandingPresence = {name =  "Commanding Presence", guid = "a30fg", ptCost = 5,varName="commandingPresence"}
     cardInfo.upgradeCards.esteemedLeader = {name = "Esteemed Leader", guid = "ag30fg", ptCost = 5,varName="esteemedLeader"}
@@ -2949,7 +2964,8 @@ function onLoad()
 
     cardInfo.upgradeMenu.republic.tx130Pilot = {
       cardInfo.upgradeCards.aaylaSecura,
-      cardInfo.upgradeCards.veteranClonePilot
+      cardInfo.upgradeCards.veteranClonePilot,
+      cardInfo.upgradeCards.ploKoon
     }
     cardInfo.upgradeMenu.republic.leadership = {
         cardInfo.upgradeCards.commandingPresence,
@@ -3007,7 +3023,8 @@ function onLoad()
     }
 
     cardInfo.upgradeMenu.republic.tx130Hardpoint = {
-      cardInfo.upgradeCards.tx130beamcannonturret
+      cardInfo.upgradeCards.tx130beamcannonturret,
+      cardInfo.upgradeCards.tx130twinlaserturret
     }
 
     cardInfo.upgradeMenu.republic.ordnance = {
