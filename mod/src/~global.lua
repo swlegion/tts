@@ -1010,7 +1010,7 @@ function onLoad()
     }
     listBuilder.commandCards.republicR2d2 = {
         varName = "republicR2d2",
-        cards = {"Blast Off!", "Push", "Assault"}
+        cards = {"Blast Off!", "Impromptu Immolation", "Smoke Screen"}
     }
     listBuilder.commandCards.republicC3po = {
         varName = "republicC3po",
