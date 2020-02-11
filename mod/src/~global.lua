@@ -70,14 +70,6 @@ function onLoad()
     templateInfo.fontColor = {{0,0,0},{1,1,1},{1,1,1}}
     templateInfo.buttonHeight = {750,1400,2000}
 
-    templateInfo.cohesionRadius = {}
-    templateInfo.cohesionRadius.small = 4.594485
-    templateInfo.cohesionRadius.medium = 5.95275
-    templateInfo.cohesionRadius.big = 7.133865
-    templateInfo.cohesionRadius.huge = 8.905515
-    templateInfo.cohesionRadius.long = 8.905515
-    templateInfo.cohesionRadius.epic = 8.905515
-
     templateInfo.modelTemplateAGUID = "1f03c9"
     templateInfo.modelTemplateBGUID = "a486ae"
 
@@ -158,13 +150,47 @@ function onLoad()
     templateInfo.moveTemplate[3].longCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854760805/D65DED99C49D606A540D8BFAC4740E2FF55C9ACD/"
     templateInfo.moveTemplate[3].colorTint = {1,0.2,0.2}
 
-    templateInfo.baseRadius = {}
-    templateInfo.baseRadius.small = 1.06299
-    templateInfo.baseRadius.medium = 1.9685
-    templateInfo.baseRadius.big = 2.75591
-    templateInfo.baseRadius.huge = 3.93701
-    templateInfo.baseRadius.long = 3.93701
-    templateInfo.baseRadius.epic = 3.93701
+    templateInfo.baseRadius = {
+      -- Troopers
+      small = 1.06299,
+
+      -- Tauntauns, Droidekas, Speeder Bikes, Mortars
+      medium = 1.9685,
+
+      -- AT-RTs, eWebs
+      big = 2.75591,
+    
+      -- Landspeeder, AT-ST
+      huge = 3.93701,
+
+      -- Occupier Tank
+      long = 3.93701,
+
+      -- AAT, Saber Tank
+      epic = 5.867,
+    }
+
+    templateInfo.cohesionRadius = {
+      -- Troopers
+      small = 4.594485,
+
+      -- Tauntauns, Droidekas, Speeder Bikes, Mortars
+      medium = 5.95275,
+
+      -- AT-RTs, eWebs
+      big = 7.133865,
+
+      -- These are obviously incorrect, but currently cohesion does not matter for any of these units.
+      
+      -- Landspeeder, AT-ST
+      huge = 8.905515,
+
+      -- Occupier Tank
+      long = 8.905515,
+
+       -- AAT, Saber Tank
+      epic = 8.905515
+    }
 
     templateInfo.attackLineMesh = "http://cloud-3.steamusercontent.com/ugc/785234780861452902/76204298AA245698319FD2EA590160AFFE1B488C/"
 
@@ -1010,7 +1036,7 @@ function onLoad()
     }
     listBuilder.commandCards.republicR2d2 = {
         varName = "republicR2d2",
-        cards = {"Blast Off!", "Push", "Assault"}
+        cards = {"Blast Off!", "Impromptu Immolation", "Smoke Screen"}
     }
     listBuilder.commandCards.republicC3po = {
         varName = "republicC3po",
@@ -2594,7 +2620,15 @@ function onLoad()
         red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
         blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
         scale = {1,1,1},
-        name = "Z-6 Phase II Clone Trooper"
+        name = "Z-6 Phase II Trooper"
+    }
+    miniInfo.mortarPhaseIITrooper = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/775118071080760009/33226FCCF4EADF6281591F38CC3F6DBBF7036812/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/775118071080760988/3EE188D6DB407DF3B33D2697F0BF3E003F7DA281/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/775118071080760988/3EE188D6DB407DF3B33D2697F0BF3E003F7DA281/",
+        scale = {1,1,1},
+        name = "Phase II Mortar Trooper"
     }
     miniInfo.barcSpeeder = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873394399/018F8CC63E0D90F58AADA6328DF1709D4D1DF796/",
@@ -2625,6 +2659,20 @@ function onLoad()
       guid = "7b9c0e",
       ptCost = 10,
       varName = "armorPiercingShells"
+    }
+
+    cardInfo.upgradeCards.highEnergyShells = {
+      name = "High-Energy Shells",
+      guid = "5a9ecf",
+      ptCost = 8,
+      varName = "highEnergyShells"
+    }
+
+    cardInfo.upgradeCards.bunkerBusterShells = {
+      name = '"Bunker Buster" Shells',
+      guid = "c58a78",
+      ptCost = 12,
+      varName = "bunkerBusterShells"
     }
 
     -- force
@@ -2727,11 +2775,16 @@ function onLoad()
 
     cardInfo.upgradeCards.b2ACMTrooper = {
       name = "B2-ACM Trooper",
-      guid = "d8egkiy6gg5a",
       ptCost = 26,
-      miniGUID = "1dgjfgguk6",
       miniInfo = miniInfo.b2ACMTrooper,
       varName = "b2ACMTrooper"
+    }
+
+    cardInfo.upgradeCards.b2HATrooper = {
+      name = "B2-HA Trooper",
+      ptCost = 26,
+      miniInfo = miniInfo.b2HATrooper,
+      varName = "b2HATrooper"
     }
 
     cardInfo.upgradeCards.dp23PhaseITrooper = {name = "DP-23 Phase I Trooper", guid = "d90tug5a", ptCost = 27, miniGUID = "j7816", miniInfo = miniInfo.dp23PhaseITrooper,varName="dp23PhaseITrooper"}
@@ -2750,6 +2803,13 @@ function onLoad()
       miniGUID = "81cbcb",
       miniInfo = miniInfo.z6PhaseIITrooper,
       varName = "z6PhaseIITrooper"
+    }
+
+    cardInfo.upgradeCards.mortarPhaseIITrooper = {
+      name = "Phase II Mortar Trooper",
+      ptCost = 25,
+      miniInfo = miniInfo.mortarPhaseIITrooper,
+      varName = "mortarPhaseIITrooper"
     }
 
     cardInfo.upgradeCards.pao = {name = "Pao", guid = "d8e9ggd5a", ptCost = 22, miniGUID = "gadfr", miniInfo = miniInfo.pao,varName="pao"}
@@ -2804,12 +2864,25 @@ function onLoad()
     -- Pilot
     cardInfo.upgradeCards.wedgeAntilles = {name =  "Wedge Antilles", guid = "d7d8gb7", ptCost = 5,varName="wedgeAntilles"}
     cardInfo.upgradeCards.generalWeiss = {name =  "General Weiss", guid = "d7dg8gb7", ptCost = 10,varName="generalWeiss"}
-    cardInfo.upgradeCards.firstSergeantArbmarb = {name =  "First Sergeant Arbmarb", guid = "dg7d8gb7", ptCost = 5,varName="firstSergeantArbmarb"}
+    cardInfo.upgradeCards.firstSergeantArbmab = {name =  "First Sergeant Arbmab", guid = "dg7d8gb7", ptCost = 5,varName="firstSergeantArbmab"}
     cardInfo.upgradeCards.ryderAzadi = {name =  "Ryder Azadi", guid = "d7gdgg8gb7", ptCost = 5,varName="ryderAzadi"}
     cardInfo.upgradeCards.imperialHammersEliteArmorPilot = {name =  "Imperial Hammers Elite Armor Pilot", guid = "d7g8gb7", ptCost = 10,varName="imperialHammersEliteArmorPilot"}
     cardInfo.upgradeCards.outerRimSpeederJockey = {name =  "Outer Rim Speeder Jockey", guid = "dgfg8gb7", ptCost = 10,varName="outerRimSpeederJockey"}
-    cardInfo.upgradeCards.aaylaSecura = {name =  "Aayla Secura", guid = "d48gb7", ptCost = 5,varName="aaylaSecura"}
-    cardInfo.upgradeCards.tSeriesTacticalDroidPilot = {name =  "T-Series Tactical Droid Pilot", guid = "458gb7", ptCost = 5,varName="tSeriesTacticalDroidPilot"}
+    cardInfo.upgradeCards.aaylaSecura = {name =  "Aayla Secura", guid = "74e0a7", ptCost = 5,varName="aaylaSecura"}
+
+    cardInfo.upgradeCards.tSeriesTacticalDroidPilot = {
+      name =  "T-Series Tactical Droid Pilot",
+      guid = "8293f6",
+      ptCost = 5,
+      varName="tSeriesTacticalDroidPilot"
+    }
+
+    cardInfo.upgradeCards.oomSeriesDroidPilot = {
+      name =  "OOM-Series Droid Pilot",
+      guid = "8293f6",
+      ptCost = 5,
+      varName="oomSeriesDroidPilot"
+    }  
 
     cardInfo.upgradeCards.veteranClonePilot = {
       name = "Veteran Clone Pilot",
@@ -2854,7 +2927,7 @@ function onLoad()
     cardInfo.upgradeCards.theDarksaber = {name = "The Darksaber", guid = "aghgfg3ggg0fg", ptCost = 25, varName = "theDarksaber"}
     cardInfo.upgradeCards.dt57Annihilator = {name = 'DT-57 "Annihilator"', guid = "agggg0fg", ptCost = 12, varName = "dt57Annihilator"}
 
-    cardInfo.upgradeCards.rt97BlasterRifle = {name = "RT-97 Blaster Rifle", guid = "agg3gg0fg", ptCost = 15, varName = "rt97BlasterRifle"}
+    cardInfo.upgradeCards.rt97cBlasterRifle = {name = "RT-97C Blaster Rifle", guid = "agg3gg0fg", ptCost = 15, varName = "rt97cBlasterRifle"}
     cardInfo.upgradeCards.cr24FlameRifle = {name = "CR-24 Flame Rifle", guid = "aggfggg0fg", ptCost = 20, varName = "cr24FlameRifle"}
     cardInfo.upgradeCards.t21BlasterRifle = {name = "T-21 Blaster Rifle", guid = "aggrggg0fg", ptCost = 10, varName = "t21BlasterRifle"}
 
@@ -2889,7 +2962,8 @@ function onLoad()
     }
     cardInfo.upgradeMenu.separatist.pilot = {
         cardInfo.upgradeCards.tSeriesTacticalDroidPilot,
-        cardInfo.upgradeCards.lokDurd
+        cardInfo.upgradeCards.lokDurd,
+        cardInfo.upgradeCards.oomSeriesDroidPilot
     }
     cardInfo.upgradeMenu.separatist.leadership = {
         cardInfo.upgradeCards.commandingPresence,
@@ -2930,11 +3004,14 @@ function onLoad()
     }
 
     cardInfo.upgradeMenu.separatist.b2SuperBattleDroidSpecialist = {
-      cardInfo.upgradeCards.b2ACMTrooper
+      cardInfo.upgradeCards.b2ACMTrooper,
+      cardInfo.upgradeCards.b2HATrooper
     }
 
     cardInfo.upgradeMenu.separatist.ordnance = {
-      cardInfo.upgradeCards.armorPiercingShells
+      cardInfo.upgradeCards.highEnergyShells,
+      cardInfo.upgradeCards.armorPiercingShells,
+      cardInfo.upgradeCards.bunkerBusterShells
     }
 
     -- REPUBLIC
@@ -2999,7 +3076,8 @@ function onLoad()
     }
 
     cardInfo.upgradeMenu.republic.phaseIICloneTrooperSpecialist = {
-      cardInfo.upgradeCards.z6PhaseIITrooper
+      cardInfo.upgradeCards.z6PhaseIITrooper,
+      cardInfo.upgradeCards.mortarPhaseIITrooper
     }
 
     cardInfo.upgradeMenu.republic.barcSpeederCrew = {
@@ -3028,7 +3106,9 @@ function onLoad()
     }
 
     cardInfo.upgradeMenu.republic.ordnance = {
-      cardInfo.upgradeCards.armorPiercingShells
+      cardInfo.upgradeCards.highEnergyShells,
+      cardInfo.upgradeCards.armorPiercingShells,
+      cardInfo.upgradeCards.bunkerBusterShells
     }
 
     -- rebel
@@ -3291,7 +3371,7 @@ function onLoad()
     }
     cardInfo.upgradeMenu.imperial.groundPilot = {
         cardInfo.upgradeCards.generalWeiss,
-        cardInfo.upgradeCards.firstSergeantArbmarb,
+        cardInfo.upgradeCards.firstSergeantArbmab,
         cardInfo.upgradeCards.imperialHammersEliteArmorPilot
     }
     cardInfo.upgradeMenu.imperial.atstHardpoint = {
@@ -3318,7 +3398,7 @@ function onLoad()
     }
 
     cardInfo.upgradeMenu.imperial.dewbackRiderSideArm = {
-        cardInfo.upgradeCards.rt97BlasterRifle,
+        cardInfo.upgradeCards.rt97cBlasterRifle,
         cardInfo.upgradeCards.cr24FlameRifle,
         cardInfo.upgradeCards.t21BlasterRifle
     }
