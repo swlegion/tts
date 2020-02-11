@@ -70,14 +70,6 @@ function onLoad()
     templateInfo.fontColor = {{0,0,0},{1,1,1},{1,1,1}}
     templateInfo.buttonHeight = {750,1400,2000}
 
-    templateInfo.cohesionRadius = {}
-    templateInfo.cohesionRadius.small = 4.594485
-    templateInfo.cohesionRadius.medium = 5.95275
-    templateInfo.cohesionRadius.big = 7.133865
-    templateInfo.cohesionRadius.huge = 8.905515
-    templateInfo.cohesionRadius.long = 8.905515
-    templateInfo.cohesionRadius.epic = 8.905515
-
     templateInfo.modelTemplateAGUID = "1f03c9"
     templateInfo.modelTemplateBGUID = "a486ae"
 
@@ -158,13 +150,47 @@ function onLoad()
     templateInfo.moveTemplate[3].longCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854760805/D65DED99C49D606A540D8BFAC4740E2FF55C9ACD/"
     templateInfo.moveTemplate[3].colorTint = {1,0.2,0.2}
 
-    templateInfo.baseRadius = {}
-    templateInfo.baseRadius.small = 1.06299
-    templateInfo.baseRadius.medium = 1.9685
-    templateInfo.baseRadius.big = 2.75591
-    templateInfo.baseRadius.huge = 3.93701
-    templateInfo.baseRadius.long = 3.93701
-    templateInfo.baseRadius.epic = 3.93701
+    templateInfo.baseRadius = {
+      -- Troopers
+      small = 1.06299,
+
+      -- Tauntauns, Droidekas, Speeder Bikes, Mortars
+      medium = 1.9685,
+
+      -- AT-RTs, eWebs
+      big = 2.75591,
+    
+      -- Landspeeder, AT-ST
+      huge = 3.93701,
+
+      -- Occupier Tank
+      long = 3.93701,
+
+      -- AAT, Saber Tank
+      epic = 5.90551
+    }
+
+    templateInfo.cohesionRadius = {
+      -- Troopers
+      small = 4.594485,
+
+      -- Tauntauns, Droidekas, Speeder Bikes, Mortars
+      medium = 5.95275,
+
+      -- AT-RTs, eWebs
+      big = 7.133865,
+
+      -- These are obviously incorrect, but currently cohesion does not matter for any of these units.
+      
+      -- Landspeeder, AT-ST
+      huge = 8.905515,
+
+      -- Occupier Tank
+      long = 8.905515,
+
+       -- AAT, Saber Tank
+      epic = 8.905515
+    }
 
     templateInfo.attackLineMesh = "http://cloud-3.steamusercontent.com/ugc/785234780861452902/76204298AA245698319FD2EA590160AFFE1B488C/"
 
@@ -3080,7 +3106,9 @@ function onLoad()
     }
 
     cardInfo.upgradeMenu.republic.ordnance = {
-      cardInfo.upgradeCards.armorPiercingShells
+      cardInfo.upgradeCards.highEnergyShells,
+      cardInfo.upgradeCards.armorPiercingShells,
+      cardInfo.upgradeCards.bunkerBusterShells
     }
 
     -- rebel
