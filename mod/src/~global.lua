@@ -167,7 +167,7 @@ function onLoad()
       long = 3.93701,
 
       -- AAT, Saber Tank
-      epic = 5.90551
+      epic = 5.867,
     }
 
     templateInfo.cohesionRadius = {
