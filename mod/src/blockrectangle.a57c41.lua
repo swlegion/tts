@@ -1137,15 +1137,25 @@ function createAttackButton(leaderObj)
     leaderObj.createButton(data)
 end
 
+function isMiniOnTable(mini, allUnits)
+    for _, check in pairs(allUnits) do
+      if check == mini then
+        return true
+      end
+    end
+    return false
+  end
+
 function createRangeButton(leaderObj)
     local selectedUnitObjUnitName = selectedUnitObj.getVar("unitName")
+    local allUnitsOnTable = battlefieldZone.getObjects()
     local enemyLeaderUnitName = leaderObj.getVar("unitName")
     local enemyMinis = leaderObj.getTable("miniGUIDs")
     local lowestDistance = 99
     for k, guidEntry in pairs(enemyMinis) do
         local obj = getObjectFromGUID(guidEntry)
 
-        if obj != nil then
+        if obj != nil and isMiniOnTable(obj, allUnitsOnTable) then
             distance = getDistance(selectedUnitObj, obj)
             if distance < lowestDistance then
                 lowestDistance = distance
