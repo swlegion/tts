@@ -2833,8 +2833,6 @@ function onLoad()
     cardInfo.upgradeCards.dlt19xSniperLeader = {name = "DLT-19x Sniper", guid = "d8e9ggggg6gg5a", ptCost = 28, miniGUID = "1dggggggg1e16", miniInfo = miniInfo.dlt19xSniperLeader,varName="dlt19xSniperLeader"}
     cardInfo.upgradeCards.sonicChargeSaboteur = {name = "Sonic Charge Saboteur", guid = "d8eggg9gggg6gg5a", ptCost = 26, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.sonicChargeSaboteur,varName="sonicChargeSaboteur"}
 
-    cardInfo.upgradeCards.b2HATrooper = {name = "B2-HA Trooper", guid = "d8lug5a", ptCost = 32, miniGUID = "1dgmh6e16", miniInfo = miniInfo.b2HATrooper,varName="b2HATrooper"}
-
     cardInfo.upgradeCards.b2ACMTrooper = {
       name = "B2-ACM Trooper",
       ptCost = 26,
@@ -2844,7 +2842,7 @@ function onLoad()
 
     cardInfo.upgradeCards.b2HATrooper = {
       name = "B2-HA Trooper",
-      ptCost = 26,
+      ptCost = 32,
       miniInfo = miniInfo.b2HATrooper,
       varName = "b2HATrooper"
     }
@@ -2942,7 +2940,7 @@ function onLoad()
     cardInfo.upgradeCards.oomSeriesDroidPilot = {
       name =  "OOM-Series Droid Pilot",
       guid = "8293f6",
-      ptCost = 5,
+      ptCost = 7,
       varName="oomSeriesDroidPilot"
     }  
 
