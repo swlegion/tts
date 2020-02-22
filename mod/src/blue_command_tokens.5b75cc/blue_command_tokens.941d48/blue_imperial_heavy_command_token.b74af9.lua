@@ -1228,7 +1228,7 @@ function spawnRangeRuler()
             })
             frontArc.setCustomObject({
                 type = 0,
-                mesh = "http://cloud-3.steamusercontent.com/ugc/999144021179526640/5DBA9C27E7656BB5863144D00E4B9B8F8F5E2A70/",
+                mesh = "http://cloud-3.steamusercontent.com/ugc/770611292008692712/70F8B26BCD51CE4C069E7E3933ED01AC53E76E82/",
                 collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
                 material = 1,
             })
@@ -1289,5 +1289,4 @@ function refreshTimer()
     timerCounter = timerCounter + 1
     Global.setVar("timerCounter", timerCounter)
 end
-
 
