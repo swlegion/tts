@@ -1283,13 +1283,22 @@ function onLoad()
         {-1.87, 0.28, -6.85}
     }
 
+    -- q = horizontal offset? c = vertical offset?
     templateMenu.upgradeCardPos = {}
+    -- Top Right
     templateMenu.upgradeCardPos[1] = {q = 146.451578117502, c = 2.2437691503361}
+    -- Center Left
     templateMenu.upgradeCardPos[2] = {q = -37.790038154384, c = 2.3663051367058}
+    -- Center Middle
     templateMenu.upgradeCardPos[3] = {q = -90, c = 1.45}
+    -- Center Right
     templateMenu.upgradeCardPos[4] = {q = -142.209961845616, c = 2.3663051367058}
+    -- Bottom Left
     templateMenu.upgradeCardPos[5] = {q = -65.897765498839, c = 4.5792248252297}
+    -- Bottom Middle
     templateMenu.upgradeCardPos[6] = {q = -90, c = 4.18}
+    -- Bottom Right
+    templateMenu.upgradeCardPos[7] = {q = -114, c = 4.5792248252297}
 
     -- mini info
     miniInfo = {}
