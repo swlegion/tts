@@ -345,6 +345,15 @@ function onLoad()
     unitInfo.jynErso.squadStatus = false
     unitInfo.jynErso.buttonHeight = 2
 
+    unitInfo.cassianAndor = {}
+    unitInfo.cassianAndor.commandType = "rebelCommander"
+    unitInfo.cassianAndor.baseSize = "small"
+    unitInfo.cassianAndor.fixedMove = false
+    unitInfo.cassianAndor.selectedSpeed = 2
+    unitInfo.cassianAndor.fixedArc = false
+    unitInfo.cassianAndor.squadStatus = false
+    unitInfo.cassianAndor.buttonHeight = 2
+
     unitInfo.chewbacca = {}
     unitInfo.chewbacca.commandType = "rebelOperative"
     unitInfo.chewbacca.baseSize = "small"
@@ -481,6 +490,15 @@ function onLoad()
     unitInfo.directorOrsonKrennic.fixedArc = false
     unitInfo.directorOrsonKrennic.squadStatus = false
     unitInfo.directorOrsonKrennic.buttonHeight = 2
+
+    unitInfo.idenVersio = {}
+    unitInfo.idenVersio.commandType = "imperialCommander"
+    unitInfo.idenVersio.baseSize = "small"
+    unitInfo.idenVersio.fixedMove = false
+    unitInfo.idenVersio.selectedSpeed = 2
+    unitInfo.idenVersio.fixedArc = false
+    unitInfo.idenVersio.squadStatus = true
+    unitInfo.idenVersio.buttonHeight = 2
 
     unitInfo.imperialOfficer = {}
     unitInfo.imperialOfficer.commandType = "imperialCommander"
@@ -965,6 +983,11 @@ function onLoad()
         varName = "directorOrsonKrennic",
         cards = {"Voracious Ambition", "Deploy the Garrison", "Annihilation Looms"}
     }
+    listBuilder.commandCards.idenVersio = {
+        varName = "idenVersio",
+        -- (2) and (3) are placeholders.
+        cards = {"Pulse Scan", "Push", "Assault"}
+    }
     listBuilder.commandCards.bobaFett = {
         varName = "bobaFett",
         cards = {"Whipcord Launcher", "ZX Flame Projector", "Z-6 Jetpack Rocket"}
@@ -996,6 +1019,11 @@ function onLoad()
     listBuilder.commandCards.jynErso = {
         varName = "jynErso",
         cards = {"Rebellious","Trust Goes Both Ways","Complete the Mission"}
+    }
+    listBuilder.commandCards.cassianAndor = {
+        varName = "cassianAndor",
+        -- (2) and (3) are placeholders.
+        cards = {"Crack Shot","Push","Assault"}
     }
     listBuilder.commandCards.chewbacca = {
         varName = "chewbacca",
@@ -1077,7 +1105,8 @@ function onLoad()
     templateMenu.rebel.commander[2] = {name = "Leia Organa", varName = "leiaOrgana"}
     templateMenu.rebel.commander[3] = {name = "Han Solo", varName = "hanSolo"}
     templateMenu.rebel.commander[4] = {name = "Jyn Erso", varName = "jynErso"}
-    templateMenu.rebel.commander[5] = {name = "Rebel Officer", varName = "rebelOfficer"}
+    templateMenu.rebel.commander[5] = {name = "Cassian Andor", varName = "cassianAndor"}
+    templateMenu.rebel.commander[6] = {name = "Rebel Officer", varName = "rebelOfficer"}
 
     templateMenu.rebel.operative = {}
     templateMenu.rebel.operative[1] = {name = "Chewbacca", varName = "chewbacca"}
@@ -1114,7 +1143,8 @@ function onLoad()
     templateMenu.imperial.commander[2] = {name = "General Veers", varName = "generalVeers"}
     templateMenu.imperial.commander[3] = {name = "Emperor Palpatine", varName = "emperorPalpatine"}
     templateMenu.imperial.commander[4] = {name = "Director Orson Krennic", varName = "directorOrsonKrennic"}
-    templateMenu.imperial.commander[5] = {name = "Imperial Officer", varName = "imperialOfficer"}
+    templateMenu.imperial.commander[5] = {name = "Iden Versio", varName = "idenVersio"}
+    templateMenu.imperial.commander[6] = {name = "Imperial Officer", varName = "imperialOfficer"}
 
     templateMenu.imperial.operative = {}
     templateMenu.imperial.operative[1] = {name = "Boba Fett", varName = "bobaFett"}
@@ -1253,13 +1283,22 @@ function onLoad()
         {-1.87, 0.28, -6.85}
     }
 
+    -- q = horizontal offset? c = vertical offset?
     templateMenu.upgradeCardPos = {}
+    -- Top Right
     templateMenu.upgradeCardPos[1] = {q = 146.451578117502, c = 2.2437691503361}
+    -- Center Left
     templateMenu.upgradeCardPos[2] = {q = -37.790038154384, c = 2.3663051367058}
+    -- Center Middle
     templateMenu.upgradeCardPos[3] = {q = -90, c = 1.45}
+    -- Center Right
     templateMenu.upgradeCardPos[4] = {q = -142.209961845616, c = 2.3663051367058}
+    -- Bottom Left
     templateMenu.upgradeCardPos[5] = {q = -65.897765498839, c = 4.5792248252297}
+    -- Bottom Middle
     templateMenu.upgradeCardPos[6] = {q = -90, c = 4.18}
+    -- Bottom Right
+    templateMenu.upgradeCardPos[7] = {q = -114, c = 4.5792248252297}
 
     -- mini info
     miniInfo = {}
@@ -1302,6 +1341,22 @@ function onLoad()
         blue = "http://cloud-3.steamusercontent.com/ugc/951848302305475871/06400240648CC39F933BE504C74DA9BEF4D006C4/",
         scale = {1,1,1},
         name = "Jyn Erso"
+    }
+    miniInfo.cassianAndor = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/770611701143205265/B5BDF28A1405EBFE950154285BDCBD431E7ED315/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/770611701143191344/5CAA4F0CE9A3FBE89A81560221ADCDDB5A801CC3/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/770611701143191344/5CAA4F0CE9A3FBE89A81560221ADCDDB5A801CC3/",
+        scale = {1,1,1},
+        name = "Cassian Andor"
+    }
+    miniInfo.k2so = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/770611701143471540/5818CA3919EAE4E8BFCB7546C7631967198B477C/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/770611701143471855/26BE70BB475D8B61122C8954CCA2EC79C1ED4C25/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/770611701143471855/26BE70BB475D8B61122C8954CCA2EC79C1ED4C25/",
+        scale = {1,1,1},
+        name = "K-2SO"
     }
     miniInfo.chewbacca = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540540669973/90DD9EA44756CCF9B2473302DC644F3AEEED07B4/",
@@ -1824,6 +1879,22 @@ function onLoad()
         blue = "http://cloud-3.steamusercontent.com/ugc/951848302305476130/772EEBD3EC49A7271C1C7647F817C51ED23DE3B2/",
         scale = {1,1,1},
         name = "Director Orson Krennic"
+    }
+    miniInfo.idenVersio = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/770611889398692382/63D1D0F91E0C7AA6CE37B7F46A7DF09CA39DF35A/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/770611889400014191/9442AAB074AB2204C7A5CD8843037C71CFC44540/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/770611889400014191/9442AAB074AB2204C7A5CD8843037C71CFC44540/",
+        scale = {1,1,1},
+        name = "Iden Versio"
+    }
+    miniInfo.id10 = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/770611889400000194/74F909AF497552774941DF9F065DD3994B9C265D/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/770611889399999868/37F150131345FF1F47592A96239395A583AAE5EA/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/770611889399999868/37F150131345FF1F47592A96239395A583AAE5EA/",
+        scale = {1,1,1},
+        name = "ID10"
     }
     miniInfo.imperialOfficer = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541565898/F06AB6731446249164D34ACA208E4FAE70C6FE00/",
@@ -2771,8 +2842,6 @@ function onLoad()
     cardInfo.upgradeCards.dlt19xSniperLeader = {name = "DLT-19x Sniper", guid = "d8e9ggggg6gg5a", ptCost = 28, miniGUID = "1dggggggg1e16", miniInfo = miniInfo.dlt19xSniperLeader,varName="dlt19xSniperLeader"}
     cardInfo.upgradeCards.sonicChargeSaboteur = {name = "Sonic Charge Saboteur", guid = "d8eggg9gggg6gg5a", ptCost = 26, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.sonicChargeSaboteur,varName="sonicChargeSaboteur"}
 
-    cardInfo.upgradeCards.b2HATrooper = {name = "B2-HA Trooper", guid = "d8lug5a", ptCost = 32, miniGUID = "1dgmh6e16", miniInfo = miniInfo.b2HATrooper,varName="b2HATrooper"}
-
     cardInfo.upgradeCards.b2ACMTrooper = {
       name = "B2-ACM Trooper",
       ptCost = 26,
@@ -2782,7 +2851,7 @@ function onLoad()
 
     cardInfo.upgradeCards.b2HATrooper = {
       name = "B2-HA Trooper",
-      ptCost = 26,
+      ptCost = 32,
       miniInfo = miniInfo.b2HATrooper,
       varName = "b2HATrooper"
     }
@@ -2880,7 +2949,7 @@ function onLoad()
     cardInfo.upgradeCards.oomSeriesDroidPilot = {
       name =  "OOM-Series Droid Pilot",
       guid = "8293f6",
-      ptCost = 5,
+      ptCost = 7,
       varName="oomSeriesDroidPilot"
     }  
 
@@ -2923,6 +2992,8 @@ function onLoad()
     -- sidearm
     cardInfo.upgradeCards.a300 = {name = "A-300", guid = "ag3gg0fg", ptCost = 0, varName = "a300"}
     cardInfo.upgradeCards.a180 = {name = "A-180", guid = "aggfg0fg", ptCost = 0, varName = "a180"}
+    cardInfo.upgradeCards.a280CFESniperConfig = {name = "A-280-CFE Sniper Config", ptCost = 10, varName = "a280CFESniperConfig"}
+    cardInfo.upgradeCards.idensDLT20ARifle = {name = "Iden's DLT-20A Rifle", ptCost = 15, varName = "idensDLT20ARifle"}
     cardInfo.upgradeCards.e11D = {name = "E-11D", guid = "aggrgg0fg", ptCost = 8, varName = "e11D"}
     cardInfo.upgradeCards.theDarksaber = {name = "The Darksaber", guid = "aghgfg3ggg0fg", ptCost = 25, varName = "theDarksaber"}
     cardInfo.upgradeCards.dt57Annihilator = {name = 'DT-57 "Annihilator"', guid = "agggg0fg", ptCost = 12, varName = "dt57Annihilator"}
@@ -3255,6 +3326,9 @@ function onLoad()
     cardInfo.upgradeMenu.rebel.jynErsoSideArm = {
         cardInfo.upgradeCards.a180
     }
+    cardInfo.upgradeMenu.rebel.cassianAndorSideArm = {
+        cardInfo.upgradeCards.a280CFESniperConfig
+    }
 
     cardInfo.upgradeMenu.rebel.sabineWrenSideArm = {
         cardInfo.upgradeCards.theDarksaber
@@ -3373,6 +3447,9 @@ function onLoad()
         cardInfo.upgradeCards.generalWeiss,
         cardInfo.upgradeCards.firstSergeantArbmab,
         cardInfo.upgradeCards.imperialHammersEliteArmorPilot
+    }
+    cardInfo.upgradeMenu.imperial.idenVersioSideArm = {
+        cardInfo.upgradeCards.idensDLT20ARifle
     }
     cardInfo.upgradeMenu.imperial.atstHardpoint = {
         cardInfo.upgradeCards.atstMortarLauncher,
@@ -3709,6 +3786,21 @@ function onLoad()
         },
         tokenName = "Rebel Commander Command Token",
         fullName = "Jyn Erso",
+        rank = "Commander"
+    }
+    cardInfo.unitCards.cassianAndor = {
+        ptCost = 90 , 
+        availableUpgrades = {
+            cardInfo.upgradeMenu.rebel.tactics,
+            cardInfo.upgradeMenu.rebel.tactics,
+            cardInfo.upgradeMenu.rebel.tech,
+            cardInfo.upgradeMenu.rebel.cassianAndorSideArm
+        },
+        miniInfo = {
+            miniInfo.cassianAndor
+        },
+        tokenName = "Rebel Commander Command Token",
+        fullName = "Cassian Andor",
         rank = "Commander"
     }
     cardInfo.unitCards.rebelOfficer = {
@@ -4056,6 +4148,19 @@ function onLoad()
         miniInfo = {miniInfo.directorOrsonKrennic},
         tokenName = "Imperial Commander Command Token",
         fullName = "Director Orson Krennic",
+        rank = "Commander"
+    }
+    cardInfo.unitCards.idenVersio = {
+        ptCost = 100,
+        availableUpgrades = {
+            cardInfo.upgradeMenu.imperial.tactics,
+            cardInfo.upgradeMenu.imperial.tactics,
+            cardInfo.upgradeMenu.imperial.tech,
+            cardInfo.upgradeMenu.imperial.idenVersioSideArm
+        },
+        miniInfo = {miniInfo.idenVersio},
+        tokenName = "Imperial Commander Command Token",
+        fullName = "Iden Versio",
         rank = "Commander"
     }
     cardInfo.unitCards.imperialOfficer = {
@@ -4698,3 +4803,4 @@ function readCallback(req)
         end
     end
 end
+
