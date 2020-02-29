@@ -165,7 +165,7 @@ end
 
 function spawnMini(colorSide, miniSpawnPos, miniSpawnRot, miniData)
     local funcSpawnedMini
-    if miniData.type and miniData.type == "asset" then
+    if miniData.type and miniData.type == "assetbundle" then
       funcSpawnedMini = spawnObject({
           type           = "Custom_AssetBundle",
           position       = miniSpawnPos,

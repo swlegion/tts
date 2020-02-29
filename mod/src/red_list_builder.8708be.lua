@@ -165,8 +165,7 @@ end
 
 function spawnMini(colorSide, miniSpawnPos, miniSpawnRot, miniData)
     local funcSpawnedMini
-    if miniData.type and miniData.type == "asset" then
-      print("there is type data!")
+    if miniData.type and miniData.type == "assetbundle" then
       funcSpawnedMini = spawnObject({
           type           = "Custom_AssetBundle",
           position       = miniSpawnPos,
@@ -180,7 +179,6 @@ function spawnMini(colorSide, miniSpawnPos, miniSpawnRot, miniData)
           material = 3
       })
     else
-      print("there is NO type data!")
       funcSpawnedMini = spawnObject({
           type           = "Custom_Model",
           position       = miniSpawnPos,

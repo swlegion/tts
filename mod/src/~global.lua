@@ -698,6 +698,15 @@ function onLoad()
     unitInfo.bxCommandoDroids.squadStatus = true
     unitInfo.bxCommandoDroids.buttonHeight = 2
 
+    unitInfo.bxCommandoDroidsStrikeTeam = {}
+    unitInfo.bxCommandoDroidsStrikeTeam.commandType = "separatistSpecialForces"
+    unitInfo.bxCommandoDroidsStrikeTeam.baseSize = "small"
+    unitInfo.bxCommandoDroidsStrikeTeam.fixedMove = false
+    unitInfo.bxCommandoDroidsStrikeTeam.selectedSpeed = 2
+    unitInfo.bxCommandoDroidsStrikeTeam.fixedArc = false
+    unitInfo.bxCommandoDroidsStrikeTeam.squadStatus = true
+    unitInfo.bxCommandoDroidsStrikeTeam.buttonHeight = 2
+
     unitInfo.droidekas = {}
     unitInfo.droidekas.commandType = "separatistSupport"
     unitInfo.droidekas.baseSize = "medium"
@@ -752,6 +761,24 @@ function onLoad()
     unitInfo.phaseIICloneTroopers.fixedArc = false
     unitInfo.phaseIICloneTroopers.squadStatus = true
     unitInfo.phaseIICloneTroopers.buttonHeight = 2
+
+    unitInfo.arcTroopers = {}
+    unitInfo.arcTroopers.commandType = "republicSpecialForces"
+    unitInfo.arcTroopers.baseSize = "small"
+    unitInfo.arcTroopers.fixedMove = false
+    unitInfo.arcTroopers.selectedSpeed = 2
+    unitInfo.arcTroopers.fixedArc = false
+    unitInfo.arcTroopers.squadStatus = true
+    unitInfo.arcTroopers.buttonHeight = 2
+
+    unitInfo.arcTroopersStrikeTeam = {}
+    unitInfo.arcTroopersStrikeTeam.commandType = "republicSpecialForces"
+    unitInfo.arcTroopersStrikeTeam.baseSize = "small"
+    unitInfo.arcTroopersStrikeTeam.fixedMove = false
+    unitInfo.arcTroopersStrikeTeam.selectedSpeed = 2
+    unitInfo.arcTroopersStrikeTeam.fixedArc = false
+    unitInfo.arcTroopersStrikeTeam.squadStatus = true
+    unitInfo.arcTroopersStrikeTeam.buttonHeight = 2
 
     unitInfo.barcSpeeder = {}
     unitInfo.barcSpeeder.commandType = "republicSupport"
@@ -1194,6 +1221,7 @@ function onLoad()
 
     templateMenu.separatist.specialForces = {}
     templateMenu.separatist.specialForces[1] = {name = "BX Commando Droids", varName = "bxCommandoDroids"}
+    templateMenu.separatist.specialForces[2] = {name = "BX Commando Droids Strike Team", varName = "bxCommandoDroidsStrikeTeam"}
 
     templateMenu.separatist.support = {}
     templateMenu.separatist.support[1] = {name = "Droidekas", varName = "droidekas"}
@@ -1215,6 +1243,8 @@ function onLoad()
     templateMenu.republic.corps[2] = {name = "Phase II Clone Troopers", varName = "phaseIICloneTroopers"}
 
     templateMenu.republic.specialForces = {}
+    templateMenu.republic.specialForces[1] = {name = "ARC Troopers", varName = "arcTroopers"}
+    templateMenu.republic.specialForces[2] = {name = "ARC Troopers Strike Team", varName = "arcTroopersStrikeTeam"}
 
     templateMenu.republic.support = {}
     templateMenu.republic.support[1] = {name = "BARC Speeder", varName = "barcSpeeder"}
@@ -2522,16 +2552,49 @@ function onLoad()
         scale = {1,1,1},
         name = "B2-ACM Trooper"
     }
+
+    local bxDroidMaterials = "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
     miniInfo.bxCommandoDroidLeader = {
-        type = "asset",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/772868968001523059/5AF86D9DA6501AD47D88969C0CBE102DB3D3E7F0/",
-        assetbundle_secondary = "",
-        mesh = "http://cloud-3.steamusercontent.com/ugc/775105953849586118/94F967F21EA7E390A200C4BDA5581D07DBB37AC2/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
-        red = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200343625397/794BB64E12EAE05677A947AA239C9427DA42E6B9/",
+        assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid Leader"
+    }
+    miniInfo.bxCommandoDroid1 = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/772869147448003959/2759D7C018FF74BB42DFACB35EDF63CF886CF7A9/",
+        assetbundle_secondary = bxDroidMaterials,
+        scale = {1,1,1},
+        name = "BX Commando Droid"
+    }
+    miniInfo.bxCommandoDroid2 = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/772869147448200879/45CBE522591E4C309A0081BDAAD2FE5AFA7CA288/",
+        assetbundle_secondary = bxDroidMaterials,
+        scale = {1,1,1},
+        name = "BX Commando Droid"
+    }
+    miniInfo.bxCommandoDroid3 = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200343559181/CE785E82220DD6CF5A2192DC14D271754EC53BB3/",
+        assetbundle_secondary = bxDroidMaterials,
+        scale = {1,1,1},
+        name = "BX Commando Droid"
+    }
+    miniInfo.bxCommandoDroidSniper = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/772869147450171187/560575083BD2EF9E76BE7D7FBBE800BF90C56791/",
+        assetbundle_secondary = bxDroidMaterials,
+        scale = {1,1,1},
+        name = "BX Commando Droid Sniper"
+    }
+    miniInfo.bxCommandoDroidSaboteur = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/772869147450247142/B4744762DF24FF57B1C7A41F753248D8D13B54F4/",
+        assetbundle_secondary = bxDroidMaterials,
+        scale = {1,1,1},
+        name = "BX Commando Droid Saboteur"
     }
     miniInfo.droidekaLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785235151812759044/95037BEC00715812E918EC16919526DADE6F523F/",
@@ -2722,6 +2785,57 @@ function onLoad()
         scale = {1,1,1},
         name = "Phase II Mortar Trooper"
     }
+
+    local arcMaterials = "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
+    miniInfo.arcTrooperLeader = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200348527130/6E9DC1AFED6DA5065A02CADF3B888A2E9D151B93/",
+        assetbundle_secondary = arcMaterials,
+        scale = {1,1,1},
+        name = "ARC Trooper Leader"
+    }
+    miniInfo.arcTrooper1 = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200348525616/368CF25329C7D45C5B166AC3DB55DB9F20CCA3D9/",
+        assetbundle_secondary = arcMaterials,
+        scale = {1,1,1},
+        name = "ARC Trooper"
+    }
+    miniInfo.arcTrooper2 = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995528924831478/0032DBBC5023F49637D7D6EC5540AAE941DA1E0A/",
+        assetbundle_secondary = arcMaterials,
+        scale = {1,1,1},
+        name = "ARC Trooper"
+    }
+    miniInfo.arcTrooper3 = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995528924831700/4B03D05035EF48BDA95C5AD5865AAAEAA4983536/",
+        assetbundle_secondary = arcMaterials,
+        scale = {1,1,1},
+        name = "ARC Trooper"
+    }
+    miniInfo.arcTrooperDC15x = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995528924832002/9ADEFCC86900264474D84DECA46B3448A7AEBB91//",
+        assetbundle_secondary = arcMaterials,
+        scale = {1,1,1},
+        name = "DC15x ARC Trooper"
+    }
+    miniInfo.echo = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200348526703/D7DBD3C6C32065D575868B311F1A04B4186062AE/",
+        assetbundle_secondary = arcMaterials,
+        scale = {1,1,1},
+        name = "Echo"
+    }
+    miniInfo.fives = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200348526933/4C93A4696742087E33688294E32478AA0048E8AF/",
+        assetbundle_secondary = arcMaterials,
+        scale = {1,1,1},
+        name = "Fives"
+    }
     miniInfo.barcSpeeder = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873394399/018F8CC63E0D90F58AADA6328DF1709D4D1DF796/",
         collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
@@ -2877,6 +2991,20 @@ function onLoad()
       varName = "b2HATrooper"
     }
 
+    cardInfo.upgradeCards.bxCommandoDroidSniper = {
+      name = "BX-Series Droid Sniper",
+      ptCost = 30,
+      miniInfo = miniInfo.bxCommandoDroidSniper,
+      varName = "bxCommandoDroidSniper"
+    }
+
+    cardInfo.upgradeCards.bxCommandoDroidSaboteur = {
+      name = "BX-Series Droid Saboteur",
+      ptCost = 100,
+      miniInfo = miniInfo.bxCommandoDroidSaboteur,
+      varName = "bxCommandoDroidSaboteur"
+    }
+
     cardInfo.upgradeCards.dp23PhaseITrooper = {name = "DP-23 Phase I Trooper", guid = "d90tug5a", ptCost = 27, miniGUID = "j7816", miniInfo = miniInfo.dp23PhaseITrooper,varName="dp23PhaseITrooper"}
     cardInfo.upgradeCards.rps6PhaseITrooper = {name = "RPS-6 Phase I Trooper", guid = "d8h7jgg5a", ptCost = 26, miniGUID = "1jguk6", miniInfo = miniInfo.rps6PhaseITrooper,varName="rps6PhaseITrooper"}
     cardInfo.upgradeCards.e5sB1Trooper = {name = "E-5s B1 Trooper", guid = "dygr5a", ptCost = 20, miniGUID = "19pe16", miniInfo = miniInfo.e5sB1Trooper,varName="e5sB1Trooper"}
@@ -2900,6 +3028,27 @@ function onLoad()
       ptCost = 25,
       miniInfo = miniInfo.mortarPhaseIITrooper,
       varName = "mortarPhaseIITrooper"
+    }
+
+    cardInfo.upgradeCards.arcTrooperDC15x = {
+      name = "DC15x ARC Trooper",
+      ptCost = 31,
+      miniInfo = miniInfo.arcTrooperDC15x,
+      varName = "arcTrooperDC15x"
+    }
+
+    cardInfo.upgradeCards.echo = {
+      name = "Echo",
+      ptCost = 99,
+      miniInfo = miniInfo.echo,
+      varName = "echo"
+    }
+
+    cardInfo.upgradeCards.fives = {
+      name = "Fives",
+      ptCost = 99,
+      miniInfo = miniInfo.fives,
+      varName = "fives"
     }
 
     cardInfo.upgradeCards.pao = {name = "Pao", guid = "d8e9ggd5a", ptCost = 22, miniGUID = "gadfr", miniInfo = miniInfo.pao,varName="pao"}
@@ -3052,6 +3201,12 @@ function onLoad()
         cardInfo.upgradeCards.commsRelay,
         cardInfo.upgradeCards.linkedTargetingArray
     }
+    cardInfo.upgradeMenu.separatist.grenade = {
+        cardInfo.upgradeCards.concussionGrenades,
+        cardInfo.upgradeCards.impactGrenades,
+        cardInfo.upgradeCards.fragmentationGrenades,
+        cardInfo.upgradeCards.smokeGrenades
+    }
     cardInfo.upgradeMenu.separatist.pilot = {
         cardInfo.upgradeCards.tSeriesTacticalDroidPilot,
         cardInfo.upgradeCards.lokDurd,
@@ -3098,6 +3253,11 @@ function onLoad()
     cardInfo.upgradeMenu.separatist.b2SuperBattleDroidSpecialist = {
       cardInfo.upgradeCards.b2ACMTrooper,
       cardInfo.upgradeCards.b2HATrooper
+    }
+
+    cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialist = {
+      cardInfo.upgradeCards.bxCommandoDroidSniper,
+      cardInfo.upgradeCards.bxCommandoDroidSaboteur
     }
 
     cardInfo.upgradeMenu.separatist.ordnance = {
@@ -3161,7 +3321,9 @@ function onLoad()
         cardInfo.upgradeCards.z6PhaseITrooper,
         cardInfo.upgradeCards.dc15PhaseITrooper,
         cardInfo.upgradeCards.dp23PhaseITrooper,
-        cardInfo.upgradeCards.rps6PhaseITrooper
+        cardInfo.upgradeCards.rps6PhaseITrooper,
+        cardInfo.upgradeCards.echo,
+        cardInfo.upgradeCards.fives
     }
     cardInfo.upgradeMenu.republic.phaseIICloneTroopersTrooper = {
         cardInfo.upgradeCards.phaseIICloneTrooper
@@ -3169,7 +3331,15 @@ function onLoad()
 
     cardInfo.upgradeMenu.republic.phaseIICloneTrooperSpecialist = {
       cardInfo.upgradeCards.z6PhaseIITrooper,
-      cardInfo.upgradeCards.mortarPhaseIITrooper
+      cardInfo.upgradeCards.mortarPhaseIITrooper,
+      cardInfo.upgradeCards.echo,
+      cardInfo.upgradeCards.fives
+    }
+
+    cardInfo.upgradeMenu.republic.arcTroopersSpecialist = {
+      cardInfo.upgradeCards.arcTrooperDC15x,
+      cardInfo.upgradeCards.echo,
+      cardInfo.upgradeCards.fives
     }
 
     cardInfo.upgradeMenu.republic.barcSpeederCrew = {
@@ -3580,19 +3750,37 @@ function onLoad()
     }
     cardInfo.unitCards.bxCommandoDroids = {
         guid = "2h6de",
-        ptCost = 48,
+        ptCost = 68,
         availableUpgrades = {
-          cardInfo.upgradeMenu.separatist.b2SuperBattleDroidSpecialist,
-          cardInfo.upgradeMenu.separatist.b2SuperBattleDroidTrooper,
-          cardInfo.upgradeMenu.separatist.comms
+          cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialist,
+          cardInfo.upgradeMenu.separatist.tactics,
+          cardInfo.upgradeMenu.separatist.comms,
+          cardInfo.upgradeMenu.separatist.grenade
         },
         miniInfo = {
             miniInfo.bxCommandoDroidLeader,
-            miniInfo.b2SuperBattleDroid1,
-            miniInfo.b2SuperBattleDroid2
+            miniInfo.bxCommandoDroid1,
+            miniInfo.bxCommandoDroid2,
+            miniInfo.bxCommandoDroid3
         },
         tokenName = "Separatist Special Forces Command Token",
         fullName = "BX Commando Droids",
+        rank = "Special Forces"
+    }
+    cardInfo.unitCards.bxCommandoDroidsStrikeTeam = {
+        guid = "2h6de",
+        ptCost = 100,
+        availableUpgrades = {
+          cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialist,
+          cardInfo.upgradeMenu.separatist.tactics,
+          cardInfo.upgradeMenu.separatist.comms,
+          cardInfo.upgradeMenu.separatist.grenade
+        },
+        miniInfo = {
+            miniInfo.bxCommandoDroidLeader
+        },
+        tokenName = "Separatist Special Forces Command Token",
+        fullName = "BX Commando Droids Strike Team",
         rank = "Special Forces"
     }
     cardInfo.unitCards.droidekas = {
@@ -3720,6 +3908,45 @@ function onLoad()
         tokenName = "Republic Corps Command Token",
         fullName = "Phase II Clone Troopers",
         rank = "Corps"
+    }
+    cardInfo.unitCards.arcTroopers = {
+        guid = "244g4de",
+        ptCost = 72,
+        availableUpgrades = {
+          cardInfo.upgradeMenu.republic.arcTroopersSpecialist,
+          cardInfo.upgradeMenu.republic.tactics,
+          cardInfo.upgradeMenu.republic.comms,
+          cardInfo.upgradeMenu.republic.tech,
+          cardInfo.upgradeMenu.republic.tech,
+          cardInfo.upgradeMenu.republic.grenade
+        },
+        miniInfo = {
+            miniInfo.arcTrooperLeader,
+            miniInfo.arcTrooper1,
+            miniInfo.arcTrooper2,
+            miniInfo.arcTrooper3
+        },
+        tokenName = "Republic Special Forces Command Token",
+        fullName = "ARC Troopers",
+        rank = "Special Forces"
+    }
+    cardInfo.unitCards.arcTroopersStrikeTeam = {
+        guid = "244g4de",
+        ptCost = 21,
+        availableUpgrades = {
+          cardInfo.upgradeMenu.republic.arcTroopersSpecialist,
+          cardInfo.upgradeMenu.republic.tactics,
+          cardInfo.upgradeMenu.republic.comms,
+          cardInfo.upgradeMenu.republic.tech,
+          cardInfo.upgradeMenu.republic.tech,
+          cardInfo.upgradeMenu.republic.grenade
+        },
+        miniInfo = {
+            miniInfo.arcTrooperLeader
+        },
+        tokenName = "Republic Special Forces Command Token",
+        fullName = "ARC Troopers Strike Team",
+        rank = "Special Forces"
     }
     cardInfo.unitCards.barcSpeeder = {
         guid = "2g424de",
