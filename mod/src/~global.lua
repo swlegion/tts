@@ -159,7 +159,7 @@ function onLoad()
 
       -- AT-RTs, eWebs
       big = 2.75591,
-    
+
       -- Landspeeder, AT-ST
       huge = 3.93701,
 
@@ -181,7 +181,7 @@ function onLoad()
       big = 7.133865,
 
       -- These are obviously incorrect, but currently cohesion does not matter for any of these units.
-      
+
       -- Landspeeder, AT-ST
       huge = 8.905515,
 
@@ -689,6 +689,15 @@ function onLoad()
     unitInfo.b2SuperBattleDroids.squadStatus = true
     unitInfo.b2SuperBattleDroids.buttonHeight = 2
 
+    unitInfo.bxCommandoDroids = {}
+    unitInfo.bxCommandoDroids.commandType = "separatistSpecialForces"
+    unitInfo.bxCommandoDroids.baseSize = "small"
+    unitInfo.bxCommandoDroids.fixedMove = false
+    unitInfo.bxCommandoDroids.selectedSpeed = 2
+    unitInfo.bxCommandoDroids.fixedArc = false
+    unitInfo.bxCommandoDroids.squadStatus = true
+    unitInfo.bxCommandoDroids.buttonHeight = 2
+
     unitInfo.droidekas = {}
     unitInfo.droidekas.commandType = "separatistSupport"
     unitInfo.droidekas.baseSize = "medium"
@@ -1184,6 +1193,7 @@ function onLoad()
     templateMenu.separatist.corps[2] = {name = "B2 Super Battle Droids", varName = "b2SuperBattleDroids"}
 
     templateMenu.separatist.specialForces = {}
+    templateMenu.separatist.specialForces[1] = {name = "BX Commando Droids", varName = "bxCommandoDroids"}
 
     templateMenu.separatist.support = {}
     templateMenu.separatist.support[1] = {name = "Droidekas", varName = "droidekas"}
@@ -2512,6 +2522,17 @@ function onLoad()
         scale = {1,1,1},
         name = "B2-ACM Trooper"
     }
+    miniInfo.bxCommandoDroidLeader = {
+        type = "asset",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/772868968001523059/5AF86D9DA6501AD47D88969C0CBE102DB3D3E7F0/",
+        assetbundle_secondary = "",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/775105953849586118/94F967F21EA7E390A200C4BDA5581D07DBB37AC2/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
+        scale = {1,1,1},
+        name = "BX Commando Droid Leader"
+    }
     miniInfo.droidekaLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785235151812759044/95037BEC00715812E918EC16919526DADE6F523F/",
         collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
@@ -2951,7 +2972,7 @@ function onLoad()
       guid = "8293f6",
       ptCost = 7,
       varName="oomSeriesDroidPilot"
-    }  
+    }
 
     cardInfo.upgradeCards.veteranClonePilot = {
       name = "Veteran Clone Pilot",
@@ -3557,6 +3578,23 @@ function onLoad()
         fullName = "B2 Super Battle Droids",
         rank = "Corps"
     }
+    cardInfo.unitCards.bxCommandoDroids = {
+        guid = "2h6de",
+        ptCost = 48,
+        availableUpgrades = {
+          cardInfo.upgradeMenu.separatist.b2SuperBattleDroidSpecialist,
+          cardInfo.upgradeMenu.separatist.b2SuperBattleDroidTrooper,
+          cardInfo.upgradeMenu.separatist.comms
+        },
+        miniInfo = {
+            miniInfo.bxCommandoDroidLeader,
+            miniInfo.b2SuperBattleDroid1,
+            miniInfo.b2SuperBattleDroid2
+        },
+        tokenName = "Separatist Special Forces Command Token",
+        fullName = "BX Commando Droids",
+        rank = "Special Forces"
+    }
     cardInfo.unitCards.droidekas = {
         guid = "2g4de",
         ptCost = 100,
@@ -3789,7 +3827,7 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.cassianAndor = {
-        ptCost = 90 , 
+        ptCost = 90 ,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.tactics,
             cardInfo.upgradeMenu.rebel.tactics,
@@ -4803,4 +4841,3 @@ function readCallback(req)
         end
     end
 end
-
