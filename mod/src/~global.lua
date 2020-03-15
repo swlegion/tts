@@ -985,7 +985,7 @@ function onLoad()
     }
     listBuilder.commandCards.idenVersio = {
         varName = "idenVersio",
-        cards = {"Pulse Scan", "Concussion Blast", "Tactical Strike"}
+        cards = {"Pulse Scan", "Concussive Blast", "Tactical Strike"},
         cards2 = {"Ambush", "Incapacitate", "Assault"}
     }
     listBuilder.commandCards.bobaFett = {
@@ -1022,7 +1022,7 @@ function onLoad()
     }
     listBuilder.commandCards.cassianAndor = {
         varName = "cassianAndor",
-        cards = {"Crack Shot","Last Stand","Volunteer Mission"}
+        cards = {"Crack Shot","Last Stand","Volunteer Mission"},
         cards2 = {"Ambush", "Push", "Sacrifice"}
     }
     listBuilder.commandCards.chewbacca = {
