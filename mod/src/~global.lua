@@ -985,8 +985,8 @@ function onLoad()
     }
     listBuilder.commandCards.idenVersio = {
         varName = "idenVersio",
-        -- (2) and (3) are placeholders.
-        cards = {"Pulse Scan", "Push", "Assault"}
+        cards = {"Pulse Scan", "Concussion Blast", "Tactical Strike"}
+        cards2 = {"Ambush", "Incapacitate", "Assault"}
     }
     listBuilder.commandCards.bobaFett = {
         varName = "bobaFett",
@@ -1022,8 +1022,8 @@ function onLoad()
     }
     listBuilder.commandCards.cassianAndor = {
         varName = "cassianAndor",
-        -- (2) and (3) are placeholders.
-        cards = {"Crack Shot","Push","Assault"}
+        cards = {"Crack Shot","Last Stand","Volunteer Mission"}
+        cards2 = {"Ambush", "Push", "Sacrifice"}
     }
     listBuilder.commandCards.chewbacca = {
         varName = "chewbacca",
@@ -2994,6 +2994,7 @@ function onLoad()
     cardInfo.upgradeCards.a180 = {name = "A-180", guid = "aggfg0fg", ptCost = 0, varName = "a180"}
     cardInfo.upgradeCards.a280CFESniperConfig = {name = "A-280-CFE Sniper Config", ptCost = 10, varName = "a280CFESniperConfig"}
     cardInfo.upgradeCards.idensDLT20ARifle = {name = "Iden's DLT-20A Rifle", ptCost = 15, varName = "idensDLT20ARifle"}
+    cardInfo.upgradeCards.idensTL50Repeater = {name = "Iden's TL-50 Repeater", ptCost = 15, varName = "idensTL50Repeater"}
     cardInfo.upgradeCards.e11D = {name = "E-11D", guid = "aggrgg0fg", ptCost = 8, varName = "e11D"}
     cardInfo.upgradeCards.theDarksaber = {name = "The Darksaber", guid = "aghgfg3ggg0fg", ptCost = 25, varName = "theDarksaber"}
     cardInfo.upgradeCards.dt57Annihilator = {name = 'DT-57 "Annihilator"', guid = "agggg0fg", ptCost = 12, varName = "dt57Annihilator"}
@@ -3449,7 +3450,8 @@ function onLoad()
         cardInfo.upgradeCards.imperialHammersEliteArmorPilot
     }
     cardInfo.upgradeMenu.imperial.idenVersioSideArm = {
-        cardInfo.upgradeCards.idensDLT20ARifle
+        cardInfo.upgradeCards.idensDLT20ARifle,
+        cardInfo.upgradeCards.idensTL50Repeater
     }
     cardInfo.upgradeMenu.imperial.atstHardpoint = {
         cardInfo.upgradeCards.atstMortarLauncher,
