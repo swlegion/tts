@@ -4208,7 +4208,7 @@ function onLoad()
         },
         miniInfo = {miniInfo.id10},
         tokenName = nil,
-        fullName = "ID10",
+        fullName = "Iden's ID10 Seeker Droid",
         rank = "Counterpart",
         noToken = true
     }
