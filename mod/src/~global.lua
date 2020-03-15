@@ -373,6 +373,15 @@ function onLoad()
     unitInfo.c3po.buttonHeight = 2
     unitInfo.c3po.noToken = true
 
+    unitInfo.k2so = {}
+    unitInfo.k2so.commandType = "rebelOperative"
+    unitInfo.k2so.baseSize = "small"
+    unitInfo.k2so.fixedMove = false
+    unitInfo.k2so.selectedSpeed = 2
+    unitInfo.k2so.fixedArc = false
+    unitInfo.k2so.squadStatus = false
+    unitInfo.k2so.buttonHeight = 2
+
     unitInfo.r2d2 = {}
     unitInfo.r2d2.commandType = "rebelOperative"
     unitInfo.r2d2.baseSize = "small"
@@ -499,6 +508,16 @@ function onLoad()
     unitInfo.idenVersio.fixedArc = false
     unitInfo.idenVersio.squadStatus = true
     unitInfo.idenVersio.buttonHeight = 2
+
+    unitInfo.id10 = {}
+    unitInfo.id10.commandType = nil
+    unitInfo.id10.baseSize = "small"
+    unitInfo.id10.fixedMove = false
+    unitInfo.id10.selectedSpeed = 1
+    unitInfo.id10.fixedArc = false
+    unitInfo.id10.squadStatus = false
+    unitInfo.id10.buttonHeight = 2
+    unitInfo.id10.noToken = true
 
     unitInfo.imperialOfficer = {}
     unitInfo.imperialOfficer.commandType = "imperialCommander"
@@ -1114,6 +1133,7 @@ function onLoad()
     templateMenu.rebel.operative[3] = {name = "Luke Skywalker", varName = "lukeSkywalkerJediKnight"}
     templateMenu.rebel.operative[4] = {name = "R2-D2", varName = "r2d2"}
     templateMenu.rebel.operative[5] = {name = "C-3PO", varName = "c3po"}
+    templateMenu.rebel.operative[6] = {name = "K-2SO", varName = "k2so"}
 
     templateMenu.rebel.corps = {}
     templateMenu.rebel.corps[1] = {name = "Rebel Troopers", varName = "rebelTrooper"}
@@ -1150,6 +1170,7 @@ function onLoad()
     templateMenu.imperial.operative[1] = {name = "Boba Fett", varName = "bobaFett"}
     templateMenu.imperial.operative[2] = {name = "Bossk", varName = "bossk"}
     templateMenu.imperial.operative[3] = {name = "Darth Vader", varName = "darthVaderTheEmperorsApprentice"}
+    templateMenu.imperial.operative[4] = {name = "ID10 (Iden Versio)", varName = "id10"}
 
     templateMenu.imperial.corps = {}
     templateMenu.imperial.corps[1] = {name = "Stormtroopers", varName = "stormtrooper"}
@@ -2992,6 +3013,7 @@ function onLoad()
     -- sidearm
     cardInfo.upgradeCards.a300 = {name = "A-300", guid = "ag3gg0fg", ptCost = 0, varName = "a300"}
     cardInfo.upgradeCards.a180 = {name = "A-180", guid = "aggfg0fg", ptCost = 0, varName = "a180"}
+    cardInfo.upgradeCards.jynsSE14 = {name = "Jyn's SE-14 Blaster", ptCost = 10, varName = "a180"}
     cardInfo.upgradeCards.a280CFESniperConfig = {name = "A-280-CFE Sniper Config", ptCost = 10, varName = "a280CFESniperConfig"}
     cardInfo.upgradeCards.idensDLT20ARifle = {name = "Iden's DLT-20A Rifle", ptCost = 15, varName = "idensDLT20ARifle"}
     cardInfo.upgradeCards.idensTL50Repeater = {name = "Iden's TL-50 Repeater", ptCost = 15, varName = "idensTL50Repeater"}
@@ -3325,12 +3347,15 @@ function onLoad()
         cardInfo.upgradeCards.bowcasterWookiee
     }
     cardInfo.upgradeMenu.rebel.jynErsoSideArm = {
-        cardInfo.upgradeCards.a180
+        cardInfo.upgradeCards.a180,
+        cardInfo.upgradeCards.jynsSE14
     }
     cardInfo.upgradeMenu.rebel.cassianAndorSideArm = {
         cardInfo.upgradeCards.a280CFESniperConfig
     }
-
+    cardInfo.upgradeMenu.rebel.k2soSideArm = {
+        cardInfo.upgradeCards.jysnSE14
+    }
     cardInfo.upgradeMenu.rebel.sabineWrenSideArm = {
         cardInfo.upgradeCards.theDarksaber
     }
@@ -3805,6 +3830,17 @@ function onLoad()
         fullName = "Cassian Andor",
         rank = "Commander"
     }
+    cardInfo.unitCards.k2so = {
+        ptCost = 70,
+        availableUpgrades = {
+            cardInfo.upgradeMenu.rebel.comms,
+            cardInfo.upgradeMenu.rebel.k2soSideArm
+        },
+        miniInfo = {miniInfo.k2so},
+        tokenName = "Rebel Operative Command Token",
+        fullName = "K-2SO",
+        rank = "Operative",
+    }
     cardInfo.unitCards.rebelOfficer = {
         guid = "3dggcg7g0f",
         ptCost = 50 , availableUpgrades = {
@@ -4164,6 +4200,17 @@ function onLoad()
         tokenName = "Imperial Commander Command Token",
         fullName = "Iden Versio",
         rank = "Commander"
+    }
+    cardInfo.unitCards.id10 = {
+        ptCost = 15,
+        availableUpgrades = {
+            cardInfo.upgradeMenu.imperial.comms
+        },
+        miniInfo = {miniInfo.id10},
+        tokenName = nil,
+        fullName = "ID10",
+        rank = "Counterpart",
+        noToken = true
     }
     cardInfo.unitCards.imperialOfficer = {
         guid = "e1g2cggg61",
