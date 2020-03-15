@@ -3354,7 +3354,7 @@ function onLoad()
         cardInfo.upgradeCards.a280CFESniperConfig
     }
     cardInfo.upgradeMenu.rebel.k2soSideArm = {
-        cardInfo.upgradeCards.jysnSE14
+        cardInfo.upgradeCards.jynsSE14
     }
     cardInfo.upgradeMenu.rebel.sabineWrenSideArm = {
         cardInfo.upgradeCards.theDarksaber
