@@ -1364,7 +1364,7 @@ function onLoad()
         name = "Jyn Erso"
     }
     miniInfo.cassianAndor = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/770611701143205265/B5BDF28A1405EBFE950154285BDCBD431E7ED315/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/773996263556990389/C38E9CAD7E5BA5496E1A211CA799E9ACBAC51D00/",
         collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
         red = "http://cloud-3.steamusercontent.com/ugc/770611701143191344/5CAA4F0CE9A3FBE89A81560221ADCDDB5A801CC3/",
         blue = "http://cloud-3.steamusercontent.com/ugc/770611701143191344/5CAA4F0CE9A3FBE89A81560221ADCDDB5A801CC3/",
@@ -1372,7 +1372,7 @@ function onLoad()
         name = "Cassian Andor"
     }
     miniInfo.k2so = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/770611701143471540/5818CA3919EAE4E8BFCB7546C7631967198B477C/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/773996263557000439/C9EA2A27264C73E42C016FE26E665CBB75F8E7DE/",
         collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
         red = "http://cloud-3.steamusercontent.com/ugc/770611701143471855/26BE70BB475D8B61122C8954CCA2EC79C1ED4C25/",
         blue = "http://cloud-3.steamusercontent.com/ugc/770611701143471855/26BE70BB475D8B61122C8954CCA2EC79C1ED4C25/",
@@ -1902,7 +1902,7 @@ function onLoad()
         name = "Director Orson Krennic"
     }
     miniInfo.idenVersio = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/770611889398692382/63D1D0F91E0C7AA6CE37B7F46A7DF09CA39DF35A/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/773996263557021593/68887AFFBF8F1A2472A80F6514CD617A54A1D705/",
         collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
         red = "http://cloud-3.steamusercontent.com/ugc/770611889400014191/9442AAB074AB2204C7A5CD8843037C71CFC44540/",
         blue = "http://cloud-3.steamusercontent.com/ugc/770611889400014191/9442AAB074AB2204C7A5CD8843037C71CFC44540/",
@@ -1910,7 +1910,7 @@ function onLoad()
         name = "Iden Versio"
     }
     miniInfo.id10 = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/770611889400000194/74F909AF497552774941DF9F065DD3994B9C265D/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/773996263557020821/1E2319EBFD85D7748450F40689A1315696052EFC/",
         collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
         red = "http://cloud-3.steamusercontent.com/ugc/770611889399999868/37F150131345FF1F47592A96239395A583AAE5EA/",
         blue = "http://cloud-3.steamusercontent.com/ugc/770611889399999868/37F150131345FF1F47592A96239395A583AAE5EA/",
