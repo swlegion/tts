@@ -1005,10 +1005,8 @@ function onLoad()
     listBuilder.commandCards.idenVersio = {
         varName = "idenVersio",
         cards = {"Pulse Scan", "Concussive Blast", "Tactical Strike"},
-    }
-    listBuilder.commandCards.id10 = {
-        varName = "id10",
-        cards = {"Ambush", "Incapacitate", "Assault"}
+        -- Here, versus .id10, because .id10 is a "noToken" and doesn't check cards.
+        cards2 = {"Ambush", "Incapacitate", "Assault"}
     }
     listBuilder.commandCards.bobaFett = {
         varName = "bobaFett",
