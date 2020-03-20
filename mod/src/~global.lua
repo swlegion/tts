@@ -2845,7 +2845,7 @@ function onLoad()
         assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995528924832002/9ADEFCC86900264474D84DECA46B3448A7AEBB91//",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
-        name = "DC15x ARC Trooper"
+        name = "DC-15x ARC Trooper"
     }
     miniInfo.echo = {
         type = "assetbundle",
@@ -2927,12 +2927,14 @@ function onLoad()
     cardInfo.upgradeCards.personalCombatShield = {name = "Personal Combat Shield", guid = "bgg5gdgb9f", ptCost = 10,varName="personalCombatShield"}
     cardInfo.upgradeCards.electroGrapplingLine = {name = "Electro Grappling Line", guid = "bggg5gdgb9f", ptCost = 5,varName="electroGrapplingLine"}
     cardInfo.upgradeCards.electrobinoculars = {name = "Electrobinoculars", guid = "bgggg5gdgb9f", ptCost = 8,varName="electrobinoculars"}
+    cardInfo.upgradeCards.jt12Jetpacks = {name = "JT-12 Jetpacks", guid = "bgggg5gdgb9f", ptCost = 10,varName="jt12Jetpacks"}
 
     -- grenade
     cardInfo.upgradeCards.concussionGrenades = {name = "Concussion Grenades", guid = "2089d0", ptCost = 5,varName="concussionGrenades"}
     cardInfo.upgradeCards.impactGrenades = {name = "Impact Grenades", guid = "2g089d0", ptCost = 5,varName="impactGrenades"}
     cardInfo.upgradeCards.fragmentationGrenades = {name = "Fragmentation Grenades", guid = "2g089gd0", ptCost = 5,varName="fragmentationGrenades"}
     cardInfo.upgradeCards.smokeGrenades = {name = "Smoke Grenades", guid = "2g0g89gd0", ptCost = 6,varName="smokeGrenades"}
+    cardInfo.upgradeCards.empDroidPoppers = {name = "EMP Droid Poppers", guid = "2g0g89gd0", ptCost = 3,varName="empDroidPoppers"}
 
     -- comms
     cardInfo.upgradeCards.commsJammer = {name =  "Comms Jammer", guid = "10f887", ptCost = 5,varName="commsJammer"}
@@ -3056,7 +3058,7 @@ function onLoad()
     }
 
     cardInfo.upgradeCards.arcTrooperDC15x = {
-      name = "DC15x ARC Trooper",
+      name = "DC-15x ARC Trooper",
       ptCost = 31,
       miniInfo = miniInfo.arcTrooperDC15x,
       varName = "arcTrooperDC15x"
@@ -3194,6 +3196,8 @@ function onLoad()
     cardInfo.upgradeCards.e11D = {name = "E-11D", guid = "aggrgg0fg", ptCost = 8, varName = "e11D"}
     cardInfo.upgradeCards.theDarksaber = {name = "The Darksaber", guid = "aghgfg3ggg0fg", ptCost = 25, varName = "theDarksaber"}
     cardInfo.upgradeCards.dt57Annihilator = {name = 'DT-57 "Annihilator"', guid = "agggg0fg", ptCost = 12, varName = "dt57Annihilator"}
+    cardInfo.upgradeCards.vibroswords = {name = 'Vibroswords', guid = "agggg0fg", ptCost = 6, varName = "vibroswords"}
+    cardInfo.upgradeCards.deflectorShields = {name = 'Deflector Shields', guid = "agggg0fg", ptCost = 18, varName = "deflectorShields"}
 
     cardInfo.upgradeCards.rt97cBlasterRifle = {name = "RT-97C Blaster Rifle", guid = "agg3gg0fg", ptCost = 15, varName = "rt97cBlasterRifle"}
     cardInfo.upgradeCards.cr24FlameRifle = {name = "CR-24 Flame Rifle", guid = "aggfggg0fg", ptCost = 20, varName = "cr24FlameRifle"}
@@ -3232,7 +3236,8 @@ function onLoad()
         cardInfo.upgradeCards.concussionGrenades,
         cardInfo.upgradeCards.impactGrenades,
         cardInfo.upgradeCards.fragmentationGrenades,
-        cardInfo.upgradeCards.smokeGrenades
+        cardInfo.upgradeCards.smokeGrenades,
+        cardInfo.upgradeCards.empDroidPoppers
     }
     cardInfo.upgradeMenu.separatist.pilot = {
         cardInfo.upgradeCards.tSeriesTacticalDroidPilot,
@@ -3284,7 +3289,12 @@ function onLoad()
 
     cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialist = {
       cardInfo.upgradeCards.bxCommandoDroidSniper,
-      cardInfo.upgradeCards.bxCommandoDroidSaboteur
+      -- cardInfo.upgradeCards.bxCommandoDroidSaboteur
+    }
+
+    cardInfo.upgradeMenu.separatist.bxCommandoDroidSideArm = {
+      cardInfo.upgradeCards.vibroswords,
+      cardInfo.upgradeCards.deflectorShields
     }
 
     cardInfo.upgradeMenu.separatist.ordnance = {
@@ -3365,8 +3375,8 @@ function onLoad()
 
     cardInfo.upgradeMenu.republic.arcTroopersSpecialist = {
       cardInfo.upgradeCards.arcTrooperDC15x,
-      cardInfo.upgradeCards.echo,
-      cardInfo.upgradeCards.fives
+      -- cardInfo.upgradeCards.echo,
+      -- cardInfo.upgradeCards.fives
     }
 
     cardInfo.upgradeMenu.republic.barcSpeederCrew = {
@@ -3378,7 +3388,8 @@ function onLoad()
         cardInfo.upgradeCards.concussionGrenades,
         cardInfo.upgradeCards.impactGrenades,
         cardInfo.upgradeCards.fragmentationGrenades,
-        cardInfo.upgradeCards.smokeGrenades
+        cardInfo.upgradeCards.smokeGrenades,
+        cardInfo.upgradeCards.empDroidPoppers
     }
     cardInfo.upgradeMenu.republic.tech = {
         cardInfo.upgradeCards.targetingScopes,
@@ -3387,6 +3398,24 @@ function onLoad()
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
         cardInfo.upgradeCards.electrobinoculars
+    }
+    cardInfo.upgradeMenu.republic.rexTech = {
+        cardInfo.upgradeCards.targetingScopes,
+        cardInfo.upgradeCards.grapplingHooks,
+        cardInfo.upgradeCards.environmentalGear,
+        cardInfo.upgradeCards.emergencyStims,
+        cardInfo.upgradeCards.reconIntel,
+        cardInfo.upgradeCards.electrobinoculars,
+        cardInfo.upgradeCards.jt12Jetpacks
+    }
+    cardInfo.upgradeMenu.republic.arcTech = {
+        cardInfo.upgradeCards.targetingScopes,
+        cardInfo.upgradeCards.grapplingHooks,
+        cardInfo.upgradeCards.environmentalGear,
+        cardInfo.upgradeCards.emergencyStims,
+        cardInfo.upgradeCards.reconIntel,
+        cardInfo.upgradeCards.electrobinoculars,
+        cardInfo.upgradeCards.jt12Jetpacks
     }
 
     cardInfo.upgradeMenu.republic.tx130Hardpoint = {
@@ -3432,7 +3461,8 @@ function onLoad()
         cardInfo.upgradeCards.concussionGrenades,
         cardInfo.upgradeCards.impactGrenades,
         cardInfo.upgradeCards.fragmentationGrenades,
-        cardInfo.upgradeCards.smokeGrenades
+        cardInfo.upgradeCards.smokeGrenades,
+        cardInfo.upgradeCards.empDroidPoppers
     }
     cardInfo.upgradeMenu.rebel.comms = {
         cardInfo.upgradeCards.commsJammer,
@@ -3586,7 +3616,8 @@ function onLoad()
         cardInfo.upgradeCards.concussionGrenades,
         cardInfo.upgradeCards.impactGrenades,
         cardInfo.upgradeCards.fragmentationGrenades,
-        cardInfo.upgradeCards.smokeGrenades
+        cardInfo.upgradeCards.smokeGrenades,
+        cardInfo.upgradeCards.empDroidPoppers
     }
     cardInfo.upgradeMenu.imperial.comms = {
         cardInfo.upgradeCards.commsJammer,
@@ -3785,6 +3816,7 @@ function onLoad()
         availableUpgrades = {
           cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialist,
           cardInfo.upgradeMenu.separatist.tactics,
+          cardInfo.upgradeMenu.separatist.bxCommandoDroidSideArm,
           cardInfo.upgradeMenu.separatist.comms,
           cardInfo.upgradeMenu.separatist.grenade
         },
@@ -3804,6 +3836,7 @@ function onLoad()
         availableUpgrades = {
           cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialist,
           cardInfo.upgradeMenu.separatist.tactics,
+          cardInfo.upgradeMenu.separatist.bxCommandoDroidSideArm,
           cardInfo.upgradeMenu.separatist.comms,
           cardInfo.upgradeMenu.separatist.grenade
         },
@@ -3866,8 +3899,8 @@ function onLoad()
         ptCost = 90 , availableUpgrades = {
             cardInfo.upgradeMenu.republic.leadership,
             cardInfo.upgradeMenu.republic.tactics,
-            cardInfo.upgradeMenu.republic.tech,
-            cardInfo.upgradeMenu.republic.tech,
+            cardInfo.upgradeMenu.republic.rexTech,
+            cardInfo.upgradeMenu.republic.rexTech,
             cardInfo.upgradeMenu.republic.grenade
         },
         miniInfo = {
@@ -3947,8 +3980,8 @@ function onLoad()
           cardInfo.upgradeMenu.republic.arcTroopersSpecialist,
           cardInfo.upgradeMenu.republic.tactics,
           cardInfo.upgradeMenu.republic.comms,
-          cardInfo.upgradeMenu.republic.tech,
-          cardInfo.upgradeMenu.republic.tech,
+          cardInfo.upgradeMenu.republic.arcTech,
+          cardInfo.upgradeMenu.republic.arcTech,
           cardInfo.upgradeMenu.republic.grenade
         },
         miniInfo = {
@@ -3968,8 +4001,8 @@ function onLoad()
           cardInfo.upgradeMenu.republic.arcTroopersSpecialist,
           cardInfo.upgradeMenu.republic.tactics,
           cardInfo.upgradeMenu.republic.comms,
-          cardInfo.upgradeMenu.republic.tech,
-          cardInfo.upgradeMenu.republic.tech,
+          cardInfo.upgradeMenu.republic.arcTech,
+          cardInfo.upgradeMenu.republic.arcTech,
           cardInfo.upgradeMenu.republic.grenade
         },
         miniInfo = {
