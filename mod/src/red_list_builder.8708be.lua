@@ -164,22 +164,38 @@ function spawnUnitIDToken(idSpawnPos, idSpawnRot,idNumber)
 end
 
 function spawnMini(colorSide, miniSpawnPos, miniSpawnRot, miniData)
-        local funcSpawnedMini = spawnObject({
-            type           = "Custom_Model",
-            position       = miniSpawnPos,
-            rotation       = miniSpawnRot,
-            scale          = miniSpawnScale
-        })
-        funcSpawnedMini.setCustomObject({
-            mesh = miniData.mesh,
-            collider = miniData.collider,
-            diffuse = miniData[colorSide],
-            type = 1,
-            material = 3
-        })
-        funcSpawnedMini.setColorTint(gameData.getTable("battlefieldTint"))
+    local funcSpawnedMini
+    if miniData.type and miniData.type == "assetbundle" then
+      funcSpawnedMini = spawnObject({
+          type           = "Custom_AssetBundle",
+          position       = miniSpawnPos,
+          rotation       = miniSpawnRot,
+          scale          = miniSpawnScale
+      })
+      funcSpawnedMini.setCustomObject({
+          assetbundle = miniData.assetbundle,
+          assetbundle_secondary = miniData.assetbundle_secondary,
+          type = 1,
+          material = 3
+      })
+    else
+      funcSpawnedMini = spawnObject({
+          type           = "Custom_Model",
+          position       = miniSpawnPos,
+          rotation       = miniSpawnRot,
+          scale          = miniSpawnScale
+      })
+      funcSpawnedMini.setCustomObject({
+          mesh = miniData.mesh,
+          collider = miniData.collider,
+          diffuse = miniData[colorSide],
+          type = 1,
+          material = 3
+      })
+    end
 
-        return funcSpawnedMini
+    funcSpawnedMini.setColorTint(gameData.getTable("battlefieldTint"))
+    return funcSpawnedMini
 end
 
 function initializeMini(pMiniTable)
@@ -909,6 +925,3 @@ function refreshTimer()
     timerCounter = timerCounter + 1
     Global.setVar("timerCounter", timerCounter)
 end
-
-
-
