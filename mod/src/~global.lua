@@ -2863,6 +2863,14 @@ function onLoad()
         scale = {1,1,1},
         name = "DC-15x ARC Trooper"
     }
+    miniInfo.arcTrooperDC15xLeader = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995528924832002/9ADEFCC86900264474D84DECA46B3448A7AEBB91//",
+        assetbundle_secondary = arcMaterials,
+        scale = {1,1,1},
+        name = "DC-15x ARC Trooper",
+        leader = true
+    }
     miniInfo.echo = {
         type = "assetbundle",
         assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200348526703/D7DBD3C6C32065D575868B311F1A04B4186062AE/",
@@ -2870,12 +2878,28 @@ function onLoad()
         scale = {1,1,1},
         name = "Echo"
     }
+    miniInfo.echoLeader = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200348526703/D7DBD3C6C32065D575868B311F1A04B4186062AE/",
+        assetbundle_secondary = arcMaterials,
+        scale = {1,1,1},
+        name = "Echo",
+        leader = true
+    }
     miniInfo.fives = {
         type = "assetbundle",
         assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200348526933/4C93A4696742087E33688294E32478AA0048E8AF/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "Fives"
+    }
+    miniInfo.fivesLeader = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200348526933/4C93A4696742087E33688294E32478AA0048E8AF/",
+        assetbundle_secondary = arcMaterials,
+        scale = {1,1,1},
+        name = "Fives",
+        leader = true
     }
     miniInfo.barcSpeeder = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873394399/018F8CC63E0D90F58AADA6328DF1709D4D1DF796/",
@@ -3065,26 +3089,14 @@ function onLoad()
       varName = "mortarPhaseIITrooper"
     }
 
-    cardInfo.upgradeCards.arcTrooperDC15x = {
-      name = "DC-15x ARC Trooper",
-      ptCost = 31,
-      miniInfo = miniInfo.arcTrooperDC15x,
-      varName = "arcTrooperDC15x"
-    }
+    cardInfo.upgradeCards.arcTrooperDC15x = { name = "DC-15x ARC Trooper", ptCost = 31, miniInfo = miniInfo.arcTrooperDC15x, varName = "arcTrooperDC15x" }
+    cardInfo.upgradeCards.arcTrooperDC15xLeader = { name = "DC-15x ARC Trooper", ptCost = 31, miniInfo = miniInfo.arcTrooperDC15xLeader, varName = "arcTrooperDC15xLeader" }
 
-    cardInfo.upgradeCards.echo = {
-      name = "Echo",
-      ptCost = 99,
-      miniInfo = miniInfo.echo,
-      varName = "echo"
-    }
+    cardInfo.upgradeCards.echo = { name = "Echo", ptCost = 99, miniInfo = miniInfo.echo, varName = "echo" }
+    cardInfo.upgradeCards.echoLeader = { name = "Echo", ptCost = 99, miniInfo = miniInfo.echoLeader, varName = "echoLeader" }
 
-    cardInfo.upgradeCards.fives = {
-      name = "Fives",
-      ptCost = 99,
-      miniInfo = miniInfo.fives,
-      varName = "fives"
-    }
+    cardInfo.upgradeCards.fives = { name = "Fives", ptCost = 99, miniInfo = miniInfo.fives, varName = "fives" }
+    cardInfo.upgradeCards.fivesLeader = { name = "Fives", ptCost = 99, miniInfo = miniInfo.fivesLeader, varName = "fivesLeader" }
 
     cardInfo.upgradeCards.pao = {name = "Pao", guid = "d8e9ggd5a", ptCost = 22, miniGUID = "gadfr", miniInfo = miniInfo.pao,varName="pao"}
     cardInfo.upgradeCards.bistan = {name = "Bistan", guid = "dgfsgd5a", ptCost = 32, miniGUID = "ggfr", miniInfo = miniInfo.bistan,varName="bistan"}
@@ -3390,6 +3402,12 @@ function onLoad()
       cardInfo.upgradeCards.arcTrooperDC15x,
       -- cardInfo.upgradeCards.echo,
       -- cardInfo.upgradeCards.fives
+    }
+
+    cardInfo.upgradeMenu.republic.arcTroopersSpecialistLeader = {
+      cardInfo.upgradeCards.arcTrooperDC15xLeader,
+      -- cardInfo.upgradeCards.echoLeader,
+      -- cardInfo.upgradeCards.fiveLeaders
     }
 
     cardInfo.upgradeMenu.republic.barcSpeederCrew = {
@@ -4011,7 +4029,7 @@ function onLoad()
         guid = "244g4de",
         ptCost = 21,
         availableUpgrades = {
-          cardInfo.upgradeMenu.republic.arcTroopersSpecialist,
+          cardInfo.upgradeMenu.republic.arcTroopersSpecialistLeader,
           cardInfo.upgradeMenu.republic.tactics,
           cardInfo.upgradeMenu.republic.comms,
           cardInfo.upgradeMenu.republic.arcTech,
@@ -4019,7 +4037,7 @@ function onLoad()
           cardInfo.upgradeMenu.republic.grenade
         },
         miniInfo = {
-            miniInfo.arcTrooperLeader
+            miniInfo.arcTrooper1
         },
         tokenName = "Republic Special Forces Command Token",
         fullName = "ARC Troopers Strike Team",
