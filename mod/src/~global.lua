@@ -3189,10 +3189,10 @@ function onLoad()
     -- sidearm
     cardInfo.upgradeCards.a300 = {name = "A-300", guid = "ag3gg0fg", ptCost = 0, varName = "a300"}
     cardInfo.upgradeCards.a180 = {name = "A-180", guid = "aggfg0fg", ptCost = 0, varName = "a180"}
-    cardInfo.upgradeCards.jynsSE14 = {name = "Jyn's SE-14 Blaster", ptCost = 10, varName = "a180"}
+    cardInfo.upgradeCards.jynsSE14 = {name = "Jyns SE-14 Blaster", ptCost = 10, varName = "jynsSE14"}
     cardInfo.upgradeCards.a280CFESniperConfig = {name = "A-280-CFE Sniper Config", ptCost = 10, varName = "a280CFESniperConfig"}
-    cardInfo.upgradeCards.idensDLT20ARifle = {name = "Iden's DLT-20A Rifle", ptCost = 15, varName = "idensDLT20ARifle"}
-    cardInfo.upgradeCards.idensTL50Repeater = {name = "Iden's TL-50 Repeater", ptCost = 15, varName = "idensTL50Repeater"}
+    cardInfo.upgradeCards.idensDLT20ARifle = {name = "Idens DLT-20A Rifle", ptCost = 15, varName = "idensDLT20ARifle"}
+    cardInfo.upgradeCards.idensTL50Repeater = {name = "Idens TL-50 Repeater", ptCost = 15, varName = "idensTL50Repeater"}
     cardInfo.upgradeCards.e11D = {name = "E-11D", guid = "aggrgg0fg", ptCost = 8, varName = "e11D"}
     cardInfo.upgradeCards.theDarksaber = {name = "The Darksaber", guid = "aghgfg3ggg0fg", ptCost = 25, varName = "theDarksaber"}
     cardInfo.upgradeCards.dt57Annihilator = {name = 'DT-57 "Annihilator"', guid = "agggg0fg", ptCost = 12, varName = "dt57Annihilator"}
