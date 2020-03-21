@@ -3832,7 +3832,7 @@ function onLoad()
     }
     cardInfo.unitCards.bxCommandoDroidsStrikeTeam = {
         guid = "2h6de",
-        ptCost = 100,
+        ptCost = 22,
         availableUpgrades = {
           cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialist,
           cardInfo.upgradeMenu.separatist.tactics,
