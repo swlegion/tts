@@ -2581,45 +2581,61 @@ function onLoad()
     local bxDroidMaterials = "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
     miniInfo.bxCommandoDroidLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200343625397/794BB64E12EAE05677A947AA239C9427DA42E6B9/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458223304/7326FD79D12145FC469CF03129C85FEE54C779E3/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid Leader"
     }
     miniInfo.bxCommandoDroid1 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/772869147448003959/2759D7C018FF74BB42DFACB35EDF63CF886CF7A9/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458222260/A09D06A410B15CBBC84AA3370A4B7D5A72988631/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid"
     }
     miniInfo.bxCommandoDroid2 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/772869147448200879/45CBE522591E4C309A0081BDAAD2FE5AFA7CA288/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458222573/D45453C3FF8D0DB7F0BCAAAD43FD6119BCDCE348/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid"
     }
     miniInfo.bxCommandoDroid3 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200343559181/CE785E82220DD6CF5A2192DC14D271754EC53BB3/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458222901/DA5D5894B853BAF9AC5751B4BF447104809B6815/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid"
     }
     miniInfo.bxCommandoDroidSniper = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/772869147450171187/560575083BD2EF9E76BE7D7FBBE800BF90C56791/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458224242/3051E6833933AB71E307BD680B61FC941B759F2F/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid Sniper"
     }
+    miniInfo.bxCommandoDroidSniperLeader = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458224242/3051E6833933AB71E307BD680B61FC941B759F2F/",
+        assetbundle_secondary = bxDroidMaterials,
+        scale = {1,1,1},
+        name = "BX Commando Droid Sniper",
+        leader = true
+    }
     miniInfo.bxCommandoDroidSaboteur = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/772869147450247142/B4744762DF24FF57B1C7A41F753248D8D13B54F4/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458223814/30BEBCAF40626B33286D49A9019126846E2C10F6/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid Saboteur"
+    }
+    miniInfo.bxCommandoDroidSaboteurLeader = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458223814/30BEBCAF40626B33286D49A9019126846E2C10F6/",
+        assetbundle_secondary = bxDroidMaterials,
+        scale = {1,1,1},
+        name = "BX Commando Droid Saboteur",
+        leader = true
     }
     miniInfo.droidekaLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785235151812759044/95037BEC00715812E918EC16919526DADE6F523F/",
@@ -2814,52 +2830,76 @@ function onLoad()
     local arcMaterials = "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
     miniInfo.arcTrooperLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200348527130/6E9DC1AFED6DA5065A02CADF3B888A2E9D151B93/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458201558/7ACAAC795FA4E9F633B4F27B57B88E94972B5C38/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "ARC Trooper Leader"
     }
     miniInfo.arcTrooper1 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200348525616/368CF25329C7D45C5B166AC3DB55DB9F20CCA3D9/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458198820/1A215B4F1D04D540C7A7FDD39E67C4762C1C1F2C/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "ARC Trooper"
     }
     miniInfo.arcTrooper2 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995528924831478/0032DBBC5023F49637D7D6EC5540AAE941DA1E0A/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458199107/55263324F6AF3D84514A9B303F485645D2DA0EFA/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "ARC Trooper"
     }
     miniInfo.arcTrooper3 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995528924831700/4B03D05035EF48BDA95C5AD5865AAAEAA4983536/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458199385/7AEBCE9D5A2D006885D1B017E29BE1A80560D682/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "ARC Trooper"
     }
     miniInfo.arcTrooperDC15x = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995528924832002/9ADEFCC86900264474D84DECA46B3448A7AEBB91//",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458199878/B15BAFEFF5562FEAA35B5820D1A1A89AA6EECCBE/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "DC-15x ARC Trooper"
     }
+    miniInfo.arcTrooperDC15xLeader = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458199878/B15BAFEFF5562FEAA35B5820D1A1A89AA6EECCBE/",
+        assetbundle_secondary = arcMaterials,
+        scale = {1,1,1},
+        name = "DC-15x ARC Trooper",
+        leader = true
+    }
     miniInfo.echo = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200348526703/D7DBD3C6C32065D575868B311F1A04B4186062AE/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458200162/E55BBA8A57D2917D65EF5E674B7720C6AA3E691D/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "Echo"
     }
+    miniInfo.echoLeader = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458200162/E55BBA8A57D2917D65EF5E674B7720C6AA3E691D/",
+        assetbundle_secondary = arcMaterials,
+        scale = {1,1,1},
+        name = "Echo",
+        leader = true
+    }
     miniInfo.fives = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/773995200348526933/4C93A4696742087E33688294E32478AA0048E8AF/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458200740/50B08207CC80DEDAC7B79960E62DC7D3404C11A0/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "Fives"
+    }
+    miniInfo.fivesLeader = {
+        type = "assetbundle",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458200740/50B08207CC80DEDAC7B79960E62DC7D3404C11A0/",
+        assetbundle_secondary = arcMaterials,
+        scale = {1,1,1},
+        name = "Fives",
+        leader = true
     }
     miniInfo.barcSpeeder = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873394399/018F8CC63E0D90F58AADA6328DF1709D4D1DF796/",
@@ -3018,19 +3058,11 @@ function onLoad()
       varName = "b2HATrooper"
     }
 
-    cardInfo.upgradeCards.bxCommandoDroidSniper = {
-      name = "BX-Series Droid Sniper",
-      ptCost = 30,
-      miniInfo = miniInfo.bxCommandoDroidSniper,
-      varName = "bxCommandoDroidSniper"
-    }
+    cardInfo.upgradeCards.bxCommandoDroidSniper = { name = "BX-Series Droid Sniper", ptCost = 30, miniInfo = miniInfo.bxCommandoDroidSniper, varName = "bxCommandoDroidSniper" }
+    cardInfo.upgradeCards.bxCommandoDroidSniperLeader = { name = "BX-Series Droid Sniper", ptCost = 30, miniInfo = miniInfo.bxCommandoDroidSniperLeader, varName = "bxCommandoDroidSniperLeader" }
 
-    cardInfo.upgradeCards.bxCommandoDroidSaboteur = {
-      name = "BX-Series Droid Saboteur",
-      ptCost = 100,
-      miniInfo = miniInfo.bxCommandoDroidSaboteur,
-      varName = "bxCommandoDroidSaboteur"
-    }
+    cardInfo.upgradeCards.bxCommandoDroidSaboteur = { name = "BX-Series Droid Saboteur", ptCost = 100, miniInfo = miniInfo.bxCommandoDroidSaboteur, varName = "bxCommandoDroidSaboteur" }
+    cardInfo.upgradeCards.bxCommandoDroidSaboteurLeader = { name = "BX-Series Droid Saboteur", ptCost = 100, miniInfo = miniInfo.bxCommandoDroidSaboteurLeader, varName = "bxCommandoDroidSaboteurLeader" }
 
     cardInfo.upgradeCards.dp23PhaseITrooper = {name = "DP-23 Phase I Trooper", guid = "d90tug5a", ptCost = 27, miniGUID = "j7816", miniInfo = miniInfo.dp23PhaseITrooper,varName="dp23PhaseITrooper"}
     cardInfo.upgradeCards.rps6PhaseITrooper = {name = "RPS-6 Phase I Trooper", guid = "d8h7jgg5a", ptCost = 26, miniGUID = "1jguk6", miniInfo = miniInfo.rps6PhaseITrooper,varName="rps6PhaseITrooper"}
@@ -3057,26 +3089,14 @@ function onLoad()
       varName = "mortarPhaseIITrooper"
     }
 
-    cardInfo.upgradeCards.arcTrooperDC15x = {
-      name = "DC-15x ARC Trooper",
-      ptCost = 31,
-      miniInfo = miniInfo.arcTrooperDC15x,
-      varName = "arcTrooperDC15x"
-    }
+    cardInfo.upgradeCards.arcTrooperDC15x = { name = "DC-15x ARC Trooper", ptCost = 31, miniInfo = miniInfo.arcTrooperDC15x, varName = "arcTrooperDC15x" }
+    cardInfo.upgradeCards.arcTrooperDC15xLeader = { name = "DC-15x ARC Trooper", ptCost = 31, miniInfo = miniInfo.arcTrooperDC15xLeader, varName = "arcTrooperDC15xLeader" }
 
-    cardInfo.upgradeCards.echo = {
-      name = "Echo",
-      ptCost = 99,
-      miniInfo = miniInfo.echo,
-      varName = "echo"
-    }
+    cardInfo.upgradeCards.echo = { name = "Echo", ptCost = 99, miniInfo = miniInfo.echo, varName = "echo" }
+    cardInfo.upgradeCards.echoLeader = { name = "Echo", ptCost = 99, miniInfo = miniInfo.echoLeader, varName = "echoLeader" }
 
-    cardInfo.upgradeCards.fives = {
-      name = "Fives",
-      ptCost = 99,
-      miniInfo = miniInfo.fives,
-      varName = "fives"
-    }
+    cardInfo.upgradeCards.fives = { name = "Fives", ptCost = 99, miniInfo = miniInfo.fives, varName = "fives" }
+    cardInfo.upgradeCards.fivesLeader = { name = "Fives", ptCost = 99, miniInfo = miniInfo.fivesLeader, varName = "fivesLeader" }
 
     cardInfo.upgradeCards.pao = {name = "Pao", guid = "d8e9ggd5a", ptCost = 22, miniGUID = "gadfr", miniInfo = miniInfo.pao,varName="pao"}
     cardInfo.upgradeCards.bistan = {name = "Bistan", guid = "dgfsgd5a", ptCost = 32, miniGUID = "ggfr", miniInfo = miniInfo.bistan,varName="bistan"}
@@ -3189,10 +3209,10 @@ function onLoad()
     -- sidearm
     cardInfo.upgradeCards.a300 = {name = "A-300", guid = "ag3gg0fg", ptCost = 0, varName = "a300"}
     cardInfo.upgradeCards.a180 = {name = "A-180", guid = "aggfg0fg", ptCost = 0, varName = "a180"}
-    cardInfo.upgradeCards.jynsSE14 = {name = "Jyn's SE-14 Blaster", ptCost = 10, varName = "a180"}
+    cardInfo.upgradeCards.jynsSE14 = {name = "Jyns SE-14 Blaster", ptCost = 10, varName = "jynsSE14"}
     cardInfo.upgradeCards.a280CFESniperConfig = {name = "A-280-CFE Sniper Config", ptCost = 10, varName = "a280CFESniperConfig"}
-    cardInfo.upgradeCards.idensDLT20ARifle = {name = "Iden's DLT-20A Rifle", ptCost = 15, varName = "idensDLT20ARifle"}
-    cardInfo.upgradeCards.idensTL50Repeater = {name = "Iden's TL-50 Repeater", ptCost = 15, varName = "idensTL50Repeater"}
+    cardInfo.upgradeCards.idensDLT20ARifle = {name = "Idens DLT-20A Rifle", ptCost = 15, varName = "idensDLT20ARifle"}
+    cardInfo.upgradeCards.idensTL50Repeater = {name = "Idens TL-50 Repeater", ptCost = 15, varName = "idensTL50Repeater"}
     cardInfo.upgradeCards.e11D = {name = "E-11D", guid = "aggrgg0fg", ptCost = 8, varName = "e11D"}
     cardInfo.upgradeCards.theDarksaber = {name = "The Darksaber", guid = "aghgfg3ggg0fg", ptCost = 25, varName = "theDarksaber"}
     cardInfo.upgradeCards.dt57Annihilator = {name = 'DT-57 "Annihilator"', guid = "agggg0fg", ptCost = 12, varName = "dt57Annihilator"}
@@ -3292,6 +3312,11 @@ function onLoad()
       -- cardInfo.upgradeCards.bxCommandoDroidSaboteur
     }
 
+    cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialistLeader = {
+      cardInfo.upgradeCards.bxCommandoDroidSniperLeader,
+      -- cardInfo.upgradeCards.bxCommandoDroidSaboteurLeader
+    }
+
     cardInfo.upgradeMenu.separatist.bxCommandoDroidSideArm = {
       cardInfo.upgradeCards.vibroswords,
       cardInfo.upgradeCards.deflectorShields
@@ -3377,6 +3402,12 @@ function onLoad()
       cardInfo.upgradeCards.arcTrooperDC15x,
       -- cardInfo.upgradeCards.echo,
       -- cardInfo.upgradeCards.fives
+    }
+
+    cardInfo.upgradeMenu.republic.arcTroopersSpecialistLeader = {
+      cardInfo.upgradeCards.arcTrooperDC15xLeader,
+      -- cardInfo.upgradeCards.echoLeader,
+      -- cardInfo.upgradeCards.fiveLeaders
     }
 
     cardInfo.upgradeMenu.republic.barcSpeederCrew = {
@@ -3832,16 +3863,16 @@ function onLoad()
     }
     cardInfo.unitCards.bxCommandoDroidsStrikeTeam = {
         guid = "2h6de",
-        ptCost = 100,
+        ptCost = 22,
         availableUpgrades = {
-          cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialist,
+          cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialistLeader,
           cardInfo.upgradeMenu.separatist.tactics,
           cardInfo.upgradeMenu.separatist.bxCommandoDroidSideArm,
           cardInfo.upgradeMenu.separatist.comms,
           cardInfo.upgradeMenu.separatist.grenade
         },
         miniInfo = {
-            miniInfo.bxCommandoDroidLeader
+            miniInfo.bxCommandoDroid1
         },
         tokenName = "Separatist Special Forces Command Token",
         fullName = "BX Commando Droids Strike Team",
@@ -3998,7 +4029,7 @@ function onLoad()
         guid = "244g4de",
         ptCost = 21,
         availableUpgrades = {
-          cardInfo.upgradeMenu.republic.arcTroopersSpecialist,
+          cardInfo.upgradeMenu.republic.arcTroopersSpecialistLeader,
           cardInfo.upgradeMenu.republic.tactics,
           cardInfo.upgradeMenu.republic.comms,
           cardInfo.upgradeMenu.republic.arcTech,
@@ -4006,7 +4037,7 @@ function onLoad()
           cardInfo.upgradeMenu.republic.grenade
         },
         miniInfo = {
-            miniInfo.arcTrooperLeader
+            miniInfo.arcTrooper1
         },
         tokenName = "Republic Special Forces Command Token",
         fullName = "ARC Troopers Strike Team",
