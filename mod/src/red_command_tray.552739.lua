@@ -44,9 +44,12 @@ function onLoad(save_state)
 end
 
 function splitTokens()
+    print('Split is temporary disabled due to a TTS update/bug. Do this manually instead.')
+    do return end
+
     splitButton.AssetBundle.playTriggerEffect(0)
 
-    local commandStackObjs = commandStack.getObjects()
+    local commandStackObjs = commandStack.getChildren()
     local commandStackPos = commandStack.getPosition()
     if #commandStackObjs != 0 then
         for i, obj in pairs(commandStackObjs) do
@@ -133,7 +136,10 @@ end
 function shuffleTokens()
     shuffleButton.AssetBundle.playTriggerEffect(0)
     commandStack.call("updateStack")
-    if #commandStack.getObjects() > 0 then
+
+    -- TEMPORARY: As of 2020-04-20 update, this always is false otherwise.
+    -- if #commandStack.getChildren() > 0 then
+    if true then
         commandStack.shuffle()
         if Player[strColor].seated then
             broadcastToColor("Shuffling Command Stack", strColor, {1,1,1})

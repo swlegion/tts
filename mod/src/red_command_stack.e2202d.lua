@@ -9,7 +9,7 @@ function onObjectLeaveContainer(container, leave_object)
 end
 
 function updateStack()
-    local tokenObjs = self.getObjects()
+    local tokenObjs = self.getChildren()
     if #tokenObjs == 0 then
         self.setColorTint({65/255,88/255,114/255})
         self.setScale({1,1,1})
