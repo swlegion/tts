@@ -835,7 +835,7 @@ function clearZone()
 
     local commandStack = getObjectFromGUID(commandTokenTrayData[colorSide].stack)
 
-    local commandStackObjs = commandStack.getObjects()
+    local commandStackObjs = commandStack.getChildren()
 
     for _, obj in pairs(commandStackObjs) do
         local drawnObj = commandStack.takeObject()
