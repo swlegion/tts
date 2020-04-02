@@ -2581,42 +2581,42 @@ function onLoad()
     local bxDroidMaterials = "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
     miniInfo.bxCommandoDroidLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458223304/7326FD79D12145FC469CF03129C85FEE54C779E3/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758259154/A6272C1CF4F1E5961FFD85ADC024E067C6C427A0/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid Leader"
     }
     miniInfo.bxCommandoDroid1 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458222260/A09D06A410B15CBBC84AA3370A4B7D5A72988631/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758257810/4273A2D9A9EA3D565EB3BB1D87A2CE8EB2DBB22D/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid"
     }
     miniInfo.bxCommandoDroid2 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458222573/D45453C3FF8D0DB7F0BCAAAD43FD6119BCDCE348/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758258184/71BE21CE34069E627147C71D8DBFB324AEB7D576/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid"
     }
     miniInfo.bxCommandoDroid3 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458222901/DA5D5894B853BAF9AC5751B4BF447104809B6815/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758258648/3E6E39EDA72822A111FBE80DCE282A37BD466EDF/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid"
     }
     miniInfo.bxCommandoDroidSniper = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458224242/3051E6833933AB71E307BD680B61FC941B759F2F/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758260057/FE59B7D5834C33F69065831735F4CEB4CF68D56C/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid Sniper"
     }
     miniInfo.bxCommandoDroidSniperLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458224242/3051E6833933AB71E307BD680B61FC941B759F2F/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758260057/FE59B7D5834C33F69065831735F4CEB4CF68D56C/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid Sniper",
@@ -2624,14 +2624,14 @@ function onLoad()
     }
     miniInfo.bxCommandoDroidSaboteur = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458223814/30BEBCAF40626B33286D49A9019126846E2C10F6/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758259582/C881DC8FFFF3A951A936AD4B8B24F7D8A85FD227/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid Saboteur"
     }
     miniInfo.bxCommandoDroidSaboteurLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458223814/30BEBCAF40626B33286D49A9019126846E2C10F6/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758259582/C881DC8FFFF3A951A936AD4B8B24F7D8A85FD227/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid Saboteur",
@@ -2830,42 +2830,42 @@ function onLoad()
     local arcMaterials = "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
     miniInfo.arcTrooperLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458201558/7ACAAC795FA4E9F633B4F27B57B88E94972B5C38/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758255676/F51F732336CFEF3DCF549C2B396CD201FECE6A4B/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "ARC Trooper Leader"
     }
     miniInfo.arcTrooper1 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458198820/1A215B4F1D04D540C7A7FDD39E67C4762C1C1F2C/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758250704/44C3CBE1CF01B35A1D4E9E9C589C1AF596FF9715/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "ARC Trooper"
     }
     miniInfo.arcTrooper2 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458199107/55263324F6AF3D84514A9B303F485645D2DA0EFA/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758251310/DB9A35458D2BFA23AEFD18FBCB349E18FB57196A/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "ARC Trooper"
     }
     miniInfo.arcTrooper3 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458199385/7AEBCE9D5A2D006885D1B017E29BE1A80560D682/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758253003/4A59D047267EF4FF0C9823C0686FEB7945CD5040/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "ARC Trooper"
     }
     miniInfo.arcTrooperDC15x = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458199878/B15BAFEFF5562FEAA35B5820D1A1A89AA6EECCBE/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758253393/D7F58DD6828D9D9FC1E6A8B77C84832C092F3EEA/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "DC-15x ARC Trooper"
     }
     miniInfo.arcTrooperDC15xLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458199878/B15BAFEFF5562FEAA35B5820D1A1A89AA6EECCBE/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758253393/D7F58DD6828D9D9FC1E6A8B77C84832C092F3EEA/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "DC-15x ARC Trooper",
@@ -2873,14 +2873,14 @@ function onLoad()
     }
     miniInfo.echo = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458200162/E55BBA8A57D2917D65EF5E674B7720C6AA3E691D/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758254916/88DEFA91B90D77B2473BBA201CC6BEC7E8484065/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "Echo"
     }
     miniInfo.echoLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458200162/E55BBA8A57D2917D65EF5E674B7720C6AA3E691D/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758254916/88DEFA91B90D77B2473BBA201CC6BEC7E8484065/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "Echo",
@@ -2888,14 +2888,14 @@ function onLoad()
     }
     miniInfo.fives = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458200740/50B08207CC80DEDAC7B79960E62DC7D3404C11A0/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758255317/A459938DB02F8AF877DE9C433B612C27A9DCEA54/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "Fives"
     }
     miniInfo.fivesLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248565458200740/50B08207CC80DEDAC7B79960E62DC7D3404C11A0/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758255317/A459938DB02F8AF877DE9C433B612C27A9DCEA54/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "Fives",
@@ -4541,7 +4541,7 @@ function onLoad()
         },
         miniInfo = {miniInfo.id10},
         tokenName = nil,
-        fullName = "Iden's ID10 Seeker Droid",
+        fullName = "Idens ID10 Seeker Droid",
         rank = "Counterpart",
         noToken = true
     }
