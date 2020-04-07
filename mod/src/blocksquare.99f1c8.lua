@@ -5,6 +5,7 @@ function onLoad()
         local timerCounter = Global.getVar("timerCounter")
         timerCounter = timerCounter + 1
         Global.setVar("timerCounter", timerCounter)
+        silhouetteModelGUID = Global.getVar("silhouetteModelGUID")
 
         Timer.create({
             identifier     = "ModelMini".. math.random().. timerCounter.. self.getGUID(),
@@ -59,7 +60,8 @@ function setUp()
         unitIDButtonPos = unitInfo.unitCountPos[unitData.baseSize]
 
         resetUnitButtons()
-
+        addSilhouetteButton()
+        silhouette = nil
     end
 end
 
@@ -70,6 +72,42 @@ function resetUnitButtons()
     self.createButton(data)
 end
 
+function addSilhouetteButton()
+  local buttonPos = {0, -0.1, 0}
+  local silhouetteButtonData = {
+    click_function = "toggleSilhouette",
+    function_owner = self,
+    label = "Sil",
+    position = buttonPos,
+    scale = {0.5, 0.5, 0.5},
+    rotation = {0, 0, 180},
+    width = 600,
+    height = 500,
+    font_size = 300,
+    color = {0, 0, 1, 1},
+    font_color = {1, 1, 1, 1}
+  }
+  self.createButton(silhouetteButtonData)
+end
+
+function toggleSilhouette()
+  local pastePosition = self.getPosition()
+  -- if silhouette exists
+  if silhouette then
+    -- destroy it
+    silhouette.destruct()
+    -- set silhouette to nil
+    silhouette = nil
+  else
+    -- if it doesn't exists
+    -- copy the original
+    copy({getObjectFromGUID(silhouetteModelGUID)})
+    -- paste and set silhouette to the new object
+    silhouette = paste({position = pastePosition})[1]
+    silhouette.interactable = false
+    silhouette.setLock(false)
+  end
+end
 
 function onDropped(player_color)
     checkVelocity()
@@ -121,6 +159,3 @@ function clearCohesionRuler()
         destroyObject(cohesionRuler)
     end
 end
-
-
-

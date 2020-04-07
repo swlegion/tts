@@ -7,6 +7,7 @@ function onLoad()
     battlefieldZoneGUID = "cbc575" -- real
     conditionsZoneGUID = "c49089" -- conditions
     competitiveTerrainZoneGUID = "92b9be"
+    silhouetteModelGUID = "62fab4"
 
     zonesGUIDs = {}
     zonesGUIDs.battlefield = battlefieldZoneGUID
