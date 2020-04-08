@@ -690,6 +690,15 @@ function onLoad()
     unitInfo.countDooku.squadStatus = false
     unitInfo.countDooku.buttonHeight = 2
 
+    unitInfo.cadBane = {}
+    unitInfo.cadBane.commandType = "separatistOperative"
+    unitInfo.cadBane.baseSize = "small"
+    unitInfo.cadBane.fixedMove = false
+    unitInfo.cadBane.selectedSpeed = 2
+    unitInfo.cadBane.fixedArc = false
+    unitInfo.cadBane.squadStatus = false
+    unitInfo.cadBane.buttonHeight = 2
+
     unitInfo.b1BattleDroids = {}
     unitInfo.b1BattleDroids.commandType = "separatistCore"
     unitInfo.b1BattleDroids.baseSize = "small"
@@ -735,6 +744,15 @@ function onLoad()
     unitInfo.droidekas.squadStatus = true
     unitInfo.droidekas.buttonHeight = 2.2
 
+    unitInfo.STAP = {}
+    unitInfo.STAP.commandType = "separatistSupport"
+    unitInfo.STAP.baseSize = "medium"
+    unitInfo.STAP.fixedMove = true
+    unitInfo.STAP.selectedSpeed = 3
+    unitInfo.STAP.fixedArc = true
+    unitInfo.STAP.squadStatus = true
+    unitInfo.STAP.buttonHeight = 3
+
     unitInfo.aatTank = {}
     unitInfo.aatTank.commandType = "separatistHeavy"
     unitInfo.aatTank.baseSize = "epic"
@@ -762,6 +780,15 @@ function onLoad()
     unitInfo.cloneCaptainRex.fixedArc = false
     unitInfo.cloneCaptainRex.squadStatus = false
     unitInfo.cloneCaptainRex.buttonHeight = 2
+
+    unitInfo.padme = {}
+    unitInfo.padme.commandType = "republicOperative"
+    unitInfo.padme.baseSize = "small"
+    unitInfo.padme.fixedMove = false
+    unitInfo.padme.selectedSpeed = 2
+    unitInfo.padme.fixedArc = false
+    unitInfo.padme.squadStatus = false
+    unitInfo.padme.buttonHeight = 2
 
     unitInfo.phaseICloneTroopers = {}
     unitInfo.phaseICloneTroopers.commandType = "republicCore"
@@ -807,6 +834,15 @@ function onLoad()
     unitInfo.barcSpeeder.fixedArc = true
     unitInfo.barcSpeeder.squadStatus = false
     unitInfo.barcSpeeder.buttonHeight = 3
+
+    unitInfo.republicATRT = {}
+    unitInfo.republicATRT.commandType = "republicSupport"
+    unitInfo.republicATRT.baseSize = "big"
+    unitInfo.republicATRT.fixedMove = true
+    unitInfo.republicATRT.selectedSpeed = 2
+    unitInfo.republicATRT.fixedArc = true
+    unitInfo.republicATRT.squadStatus = false
+    unitInfo.republicATRT.buttonHeight = 3.3
 
     unitInfo.saberTank = {}
     unitInfo.saberTank.commandType = "republicHeavy"
@@ -1112,6 +1148,10 @@ function onLoad()
         varName = "countDooku",
         cards = {"Fear, Suprise, Intimidation","Double the Fall","You Disappoint Me"}
     }
+    listBuilder.commandCards.cadBane = {
+        varName = "cadBane",
+        cards = {"Ambush","Im In Control","Assault"}
+    }
     -- REPUBLIC
     listBuilder.commandCards.obiWanKenobi = {
         varName = "obiWanKenobi",
@@ -1128,6 +1168,10 @@ function onLoad()
     listBuilder.commandCards.republicC3po = {
         varName = "republicC3po",
         cards = {"Ambush", "Push", "Assault"}
+    }
+    listBuilder.commandCards.padme = {
+        varName = "padme",
+        cards = {"Our Fate Is In Your Hands", "Push", "Diplomatic Cover"}
     }
 
     -- NEUTRAL
@@ -1239,6 +1283,7 @@ function onLoad()
     templateMenu.separatist.commander[2] = {name = "Count Dooku", varName = "countDooku"}
 
     templateMenu.separatist.operative = {}
+    templateMenu.separatist.operative[1] = {name = "Cad Bane", varName = "cadBane"}
 
     templateMenu.separatist.corps = {}
     templateMenu.separatist.corps[1] = {name = "B1 Battle Droids", varName = "b1BattleDroids"}
@@ -1250,6 +1295,7 @@ function onLoad()
 
     templateMenu.separatist.support = {}
     templateMenu.separatist.support[1] = {name = "Droidekas", varName = "droidekas"}
+    templateMenu.separatist.support[2] = {name = "STAP Riders", varName = "STAP"}
 
     templateMenu.separatist.heavy = {}
     templateMenu.separatist.heavy[1] = {name = "AAT Trade Federation Battle Tank", varName = "aatTank"}
@@ -1262,6 +1308,7 @@ function onLoad()
     templateMenu.republic.operative = {}
     templateMenu.republic.operative[1] = {name = "R2-D2", varName = "republicR2d2"}
     templateMenu.republic.operative[2] = {name = "C-3PO", varName = "republicC3po"}
+    templateMenu.republic.operative[3] = {name = "Padme Amidala", varName = "padme"}
 
     templateMenu.republic.corps = {}
     templateMenu.republic.corps[1] = {name = "Phase I Clone Troopers", varName = "phaseICloneTroopers"}
@@ -1273,6 +1320,7 @@ function onLoad()
 
     templateMenu.republic.support = {}
     templateMenu.republic.support[1] = {name = "BARC Speeder", varName = "barcSpeeder"}
+    templateMenu.republic.support[2] = {name = "Republic AT-RT", varName = "republicATRT"}
 
     templateMenu.republic.heavy = {}
     templateMenu.republic.heavy[1] = {name = "TX-130 Saber-Class Fighter Tank", varName = "saberTank"}
@@ -2436,6 +2484,14 @@ function onLoad()
         scale = {1,1,1},
         name = "Count Dooku"
     }
+    miniInfo.cadBane = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1003681674396400482/F8900CFC9EF2309C9F54AE33AE5444B2B09DB1CD/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/1003681674396400696/907F4310FEA7A7CD89EE64A1AF3A8CC77897CCAC/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1003681674396400696/907F4310FEA7A7CD89EE64A1AF3A8CC77897CCAC/",
+        scale = {1,1,1},
+        name = "Cad Bane"
+    }
 
     miniInfo.b1BattleDroid1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780869167061/48F42C02EDD970E6DE8E59B8601EF3E7F11C1742/",
@@ -2653,6 +2709,22 @@ function onLoad()
         scale = {1,1,1},
         name = "Droideka"
     }
+    miniInfo.STAPLeader = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1003681674396285422/B2205A5D8B8CC1718D0C9B507BC3E33BCA815567/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        red = "http://cloud-3.steamusercontent.com/ugc/1003681674396285744/5725FD4B443FFC2C6ADD751A4094D4B65944C098/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1003681674396285744/5725FD4B443FFC2C6ADD751A4094D4B65944C098/",
+        scale = {1,1,1},
+        name = "STAP Rider Leader"
+    }
+    miniInfo.STAP1 = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1003681674396285422/B2205A5D8B8CC1718D0C9B507BC3E33BCA815567/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        red = "http://cloud-3.steamusercontent.com/ugc/1003681674396285948/9C496D83F828E242C3C7CC18613FA83AD57BCF93/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1003681674396285948/9C496D83F828E242C3C7CC18613FA83AD57BCF93/",
+        scale = {1,1,1},
+        name = "STAP Rider"
+    }
     miniInfo.aatTank = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785235151813166538/2F32058DDD51C131547B66A3927041BDACDD9E72/",
         collider = "http://cloud-3.steamusercontent.com/ugc/785235151813181413/7151B328CAFD5AA2F36C3731A1C3B0A00714FC88/",
@@ -2678,6 +2750,14 @@ function onLoad()
         blue = "http://cloud-3.steamusercontent.com/ugc/776232727456806858/52327997163A5113DF9E11B85F9DA8B6B970012C/",
         scale = {1,1,1},
         name = "Clone Captain Rex"
+    }
+    miniInfo.padme = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1003681674396399543/F485B2E6C10CBC01661E393966F014E5A5DE8BF9/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        red = "http://cloud-3.steamusercontent.com/ugc/1003681674396399785/16C4492225E9C885997F59A86B4C1C67050F4197/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1003681674396399785/16C4492225E9C885997F59A86B4C1C67050F4197/",
+        scale = {1,1,1},
+        name = "Padme Amidala"
     }
 
     miniInfo.phaseICloneTrooper1 = {
@@ -2909,6 +2989,14 @@ function onLoad()
         scale = {1,1,1},
         name = "BARC Speeder"
     }
+    miniInfo.republicATRT = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1002556126520812865/51DA6EC33B5B7DC2274B97867C4E68F302AF5AE5/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        red = "http://cloud-3.steamusercontent.com/ugc/1003681674396366135/D383D40E0AA3F75A159827B6938D2A93C75BC54B/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1003681674396366135/D383D40E0AA3F75A159827B6938D2A93C75BC54B/",
+        scale = {1,1,1},
+        name = "Republic AT-RT"
+    }
 
     miniInfo.saberTank = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873392482/BC01571E47E96306C31FABABE3EA971814E00C96/",
@@ -2983,6 +3071,7 @@ function onLoad()
     cardInfo.upgradeCards.commsRelay = {name =  "Comms Relay", guid = "48g9g490", ptCost = 5,varName="commsRelay"}
     cardInfo.upgradeCards.linkedTargetingArray = {name =  "Linked Targeting Array", guid = "4g8g9g490", ptCost = 5,varName="linkedTargetingArray"}
     cardInfo.upgradeCards.integratedCommsAntenna = {name =  "Integrated Comms Antenna", guid = "4gg3g490", ptCost = 3,varName="integratedCommsAntenna"}
+    cardInfo.upgradeCards.commandControlArray = {name =  "Command Control Array", guid = "4gg3g490", ptCost = 2,varName="commandControlArray"}
 
     -- generators
     cardInfo.upgradeCards.barrageGenerator = {name =  "Barrage Generator", guid = "1g0f887", ptCost = 7,varName="barrageGenerator"}
@@ -3218,6 +3307,8 @@ function onLoad()
     cardInfo.upgradeCards.dt57Annihilator = {name = 'DT-57 "Annihilator"', guid = "agggg0fg", ptCost = 12, varName = "dt57Annihilator"}
     cardInfo.upgradeCards.vibroswords = {name = 'Vibroswords', guid = "agggg0fg", ptCost = 6, varName = "vibroswords"}
     cardInfo.upgradeCards.deflectorShields = {name = 'Deflector Shields', guid = "agggg0fg", ptCost = 18, varName = "deflectorShields"}
+    cardInfo.upgradeCards.electroGauntlets = {name = 'Electro Gauntlets', guid = "agggg0fg", ptCost = 10, varName = "electroGauntlets"}
+    cardInfo.upgradeCards.lootedE5Blaster = {name = 'Looted E-5 Blaster', guid = "agggg0fg", ptCost = 5, varName = "lootedE5Blaster"}
 
     cardInfo.upgradeCards.rt97cBlasterRifle = {name = "RT-97C Blaster Rifle", guid = "agg3gg0fg", ptCost = 15, varName = "rt97cBlasterRifle"}
     cardInfo.upgradeCards.cr24FlameRifle = {name = "CR-24 Flame Rifle", guid = "aggfggg0fg", ptCost = 20, varName = "cr24FlameRifle"}
@@ -3250,7 +3341,8 @@ function onLoad()
         cardInfo.upgradeCards.longRangeComlink,
         cardInfo.upgradeCards.hqUplink,
         cardInfo.upgradeCards.commsRelay,
-        cardInfo.upgradeCards.linkedTargetingArray
+        cardInfo.upgradeCards.linkedTargetingArray,
+        cardInfo.upgradeCards.commandControlArray
     }
     cardInfo.upgradeMenu.separatist.grenade = {
         cardInfo.upgradeCards.concussionGrenades,
@@ -3282,6 +3374,9 @@ function onLoad()
     cardInfo.upgradeMenu.separatist.generalGrievousSideArm = {
         cardInfo.upgradeCards.dt57Annihilator
     }
+    cardInfo.upgradeMenu.separatist.cadBaneSideArm = {
+        cardInfo.upgradeCards.electroGauntlets
+    }
     cardInfo.upgradeMenu.separatist.b1BattleDroidsTrooper = {
         cardInfo.upgradeCards.b1BattleDroid,
         cardInfo.upgradeCards.oomSeriesBattleDroid,
@@ -3294,6 +3389,14 @@ function onLoad()
         cardInfo.upgradeCards.radiationCannonB1Trooper
     }
 
+    cardInfo.upgradeMenu.separatist.tech = {
+        cardInfo.upgradeCards.targetingScopes,
+        cardInfo.upgradeCards.grapplingHooks,
+        cardInfo.upgradeCards.environmentalGear,
+        cardInfo.upgradeCards.emergencyStims,
+        cardInfo.upgradeCards.reconIntel,
+        cardInfo.upgradeCards.electrobinoculars
+    }
     cardInfo.upgradeMenu.separatist.b1Tech = {
         cardInfo.upgradeCards.electrobinoculars
     }
@@ -3350,7 +3453,8 @@ function onLoad()
         cardInfo.upgradeCards.longRangeComlink,
         cardInfo.upgradeCards.hqUplink,
         cardInfo.upgradeCards.commsRelay,
-        cardInfo.upgradeCards.linkedTargetingArray
+        cardInfo.upgradeCards.linkedTargetingArray,
+        cardInfo.upgradeCards.commandControlArray
     }
 
     cardInfo.upgradeMenu.republic.tx130Pilot = {
@@ -3372,6 +3476,9 @@ function onLoad()
         cardInfo.upgradeCards.endurance,
         cardInfo.upgradeCards.overwatch,
         cardInfo.upgradeCards.offensivePush
+    }
+    cardInfo.upgradeMenu.republic.padmeSideArm = {
+        cardInfo.upgradeCards.lootedE5Blaster
     }
 
     cardInfo.upgradeMenu.republic.phaseICloneTroopersTrooper = {
@@ -3449,6 +3556,12 @@ function onLoad()
         cardInfo.upgradeCards.jt12Jetpacks
     }
 
+    cardInfo.upgradeMenu.republic.republicATRTHardPoint = {
+        cardInfo.upgradeCards.rotaryBlaster,
+        cardInfo.upgradeCards.laserCannon,
+        cardInfo.upgradeCards.flamethrower
+    }
+
     cardInfo.upgradeMenu.republic.tx130Hardpoint = {
       cardInfo.upgradeCards.tx130beamcannonturret,
       cardInfo.upgradeCards.tx130twinlaserturret
@@ -3506,7 +3619,8 @@ function onLoad()
         cardInfo.upgradeCards.longRangeComlink,
         cardInfo.upgradeCards.hqUplink,
         cardInfo.upgradeCards.commsRelay,
-        cardInfo.upgradeCards.linkedTargetingArray
+        cardInfo.upgradeCards.linkedTargetingArray,
+        cardInfo.upgradeCards.commandControlArray
     }
     cardInfo.upgradeMenu.rebel.atrtHardPoint = {
         cardInfo.upgradeCards.rotaryBlaster,
@@ -3661,7 +3775,8 @@ function onLoad()
         cardInfo.upgradeCards.longRangeComlink,
         cardInfo.upgradeCards.hqUplink,
         cardInfo.upgradeCards.commsRelay,
-        cardInfo.upgradeCards.linkedTargetingArray
+        cardInfo.upgradeCards.linkedTargetingArray,
+        cardInfo.upgradeCards.commandControlArray
     }
     cardInfo.upgradeMenu.imperial.stormtrooperSpecialist = {
         cardInfo.upgradeCards.hh12Stormtrooper,
@@ -3802,6 +3917,22 @@ function onLoad()
         fullName = "Count Dooku",
         rank = "Commander"
     }
+    cardInfo.unitCards.cadBane = {
+        guid = "3dh54f",
+        ptCost = 125 , availableUpgrades = {
+            cardInfo.upgradeMenu.separatist.tactics,
+            cardInfo.upgradeMenu.separatist.comms,
+            cardInfo.upgradeMenu.separatist.tech,
+            cardInfo.upgradeMenu.separatist.cadBaneSideArm,
+            cardInfo.upgradeMenu.separatist.grenade
+        },
+        miniInfo = {
+            miniInfo.cadBane
+        },
+        tokenName = "Separatist Operative Command Token",
+        fullName = "Cad Bane",
+        rank = "Operative"
+    }
     cardInfo.unitCards.b1BattleDroids = {
         guid = "24de",
         ptCost = 36,
@@ -3892,6 +4023,20 @@ function onLoad()
         fullName = "Droidekas",
         rank = "Support"
     }
+    cardInfo.unitCards.STAP = {
+        guid = "2g4de",
+        ptCost = 73,
+        availableUpgrades = {
+          cardInfo.upgradeMenu.separatist.emplacementVehicleComms
+        },
+        miniInfo = {
+            miniInfo.STAPLeader,
+            miniInfo.STAP1
+        },
+        tokenName = "Separatist Support Command Token",
+        fullName = "STAP Riders",
+        rank = "Support"
+    }
     cardInfo.unitCards.aatTank = {
         guid = "2g4r4de",
         ptCost = 170,
@@ -3962,6 +4107,20 @@ function onLoad()
         fullName = "C-3PO",
         rank = "Counterpart",
         noToken = true
+    }
+    cardInfo.unitCards.padme = {
+        guid = "e18gg61",
+        ptCost = 90,
+        availableUpgrades = {
+          cardInfo.upgradeMenu.republic.leadership,
+          cardInfo.upgradeMenu.republic.tactics,
+          cardInfo.upgradeMenu.republic.tech,
+          cardInfo.upgradeMenu.republic.padmeSideArm
+        },
+        miniInfo = {miniInfo.padme},
+        tokenName = "Republic Operative Command Token",
+        fullName = "Padme Amidala",
+        rank = "Operative"
     }
     cardInfo.unitCards.phaseICloneTroopers = {
         guid = "2443de",
@@ -4055,6 +4214,18 @@ function onLoad()
         },
         tokenName = "Republic Support Command Token",
         fullName = "BARC Speeder",
+        rank = "Support"
+    }
+    cardInfo.unitCards.republicATRT = {
+        guid = "5b8d1a",
+        ptCost = 65,
+        availableUpgrades = {
+            cardInfo.upgradeMenu.republic.republicATRTHardPoint,
+            cardInfo.upgradeMenu.republic.emplacementVehicleComms
+        },
+        miniInfo = {miniInfo.republicATRT},
+        tokenName = "Republic Support Command Token",
+        fullName = "Republic AT-RT",
         rank = "Support"
     }
     cardInfo.unitCards.saberTank = {
