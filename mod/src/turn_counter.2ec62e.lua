@@ -28,8 +28,3 @@ function checkState()
         self.createButton(data)
     end
 end
-
-
-
-
-

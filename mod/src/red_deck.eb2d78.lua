@@ -57,8 +57,3 @@ function checkDeck()
         broadcastToAll("No Battlefield Deck. Insert Battlefield Deck to Define Battlefield",{1,1,1})
     end
 end
-
-
-
-
-

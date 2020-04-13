@@ -143,8 +143,3 @@ function stopObject()
     self.setVelocity({0,0,0})
     self.setAngularVelocity({0,0,0})
 end
-
-
-
-
-
