@@ -16,5 +16,3 @@ function buttonPress()
     dieRoller.call("spawnBlackAttackDice")
 end
 
-
-

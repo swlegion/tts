@@ -26,6 +26,7 @@ function onLoad(save_state)
 
     resetCommandCards()
 
+    -- Default selections. Can be changed by the user!
     battlefieldCardSelection = {}
     battlefieldCardSelection.objective = {"Key Positions", "Breakthrough", "Intercept the Transmissions", "Recover the Supplies"}
     battlefieldCardSelection.deployment = {"Battle Lines", "The Long March", "Disarray", "Major Offensive"}
@@ -290,6 +291,4 @@ function correctStringLength(measuredString)
         return 160
     end
 end
-
-
 

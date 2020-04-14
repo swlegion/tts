@@ -122,5 +122,3 @@ function clearCohesionRuler()
     end
 end
 
-
-

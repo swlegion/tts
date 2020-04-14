@@ -5107,6 +5107,21 @@ function onLoad()
         name = "Sabotage the Moisture Vaporators",
         tokens = true
     }
+    setUpCards.objective.payload = {
+        varName = "payload",
+        name = "Payload",
+        tokens = true
+    }
+    setUpCards.objective.bombingRun = {
+        varName = "bombingRun",
+        name = "Bombing Run",
+        tokens = true
+    }
+    setUpCards.objective.hostageExchange = {
+        varName = "hostageExchange",
+        name = "Hostage Exchange",
+        tokens = true
+    }
 
     setUpCards.deployment = {}
     setUpCards.deployment.battleLines = {
@@ -5128,6 +5143,18 @@ function onLoad()
     setUpCards.deployment.advancedPositions = {
         varName = "advancedPositions",
         name = "Advanced Positions"
+    }
+    setUpCards.deployment.rollOut = {
+        varName = "rollOut",
+        name = "Roll Out"
+    }
+    setUpCards.deployment.dangerClose = {
+        varName = "dangerClose",
+        name = "Danger Close"
+    }
+    setUpCards.deployment.hemmedIn = {
+        varName = "hemmedIn",
+        name = "Hemmed In"
     }
 
     setUpCards.conditions = {}
@@ -5154,6 +5181,21 @@ function onLoad()
     setUpCards.conditions.mineField = {
         varName = "mineField",
         name = "Minefield",
+        tokens = true
+    }
+    setUpCards.conditions.warWeary = {
+        varName = "warWeary",
+        name = "War Weary",
+        tokens = false
+    }
+    setUpCards.conditions.fortifiedPositions = {
+        varName = "fortifiedPositions",
+        name = "Fortified Positions",
+        tokens = true
+    }
+    setUpCards.conditions.supplyDrop = {
+        varName = "supplyDrop",
+        name = "Supply Drop",
         tokens = true
     }
 
@@ -5356,3 +5398,4 @@ function readCallback(req)
         end
     end
 end
+

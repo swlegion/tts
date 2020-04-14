@@ -253,6 +253,7 @@ function mapMenu()
     menuEntries[5] = {functionName = "flipMap", label = "Flip Map", tooltip = "Flip the map to the other side", buttonTint = {0,0.913,1}}
     menuEntries[6] = {functionName = "customMapMenu", label = "Custom Maps", tooltip = "Create a Custom Map", buttonTint = {0,0.913,1}}
     menuEntries[7] = {functionName = "clearZones", label = "Clear Map", tooltip = "Clears everything from current Battlefield area", buttonTint = {0,0.913,1}}
+    menuEntries[8] = {functionName = "saveConditions", label = "Save Battlefield Tokens", tooltip = "Saves Objects from the Objective/Deployment/Conditions", buttonTint = {0,0.913,1}}
     createMenu(menuEntries, 1)
 end
 
@@ -1410,8 +1411,7 @@ function clearCompetitiveTerrain()
     end
 end
 
-
-function saveMap()
+function prepareToSave()
     -- delete cartridgeObjs
     local mountObjs = mountZone.getObjects()
 
@@ -1437,25 +1437,22 @@ function saveMap()
 
     local cartridgeScript = "battlefieldTint = {r = " .. battlefieldTint.r .. ", g = " .. battlefieldTint.g .. ", b = " .. battlefieldTint.b .. "}"
     dataCartridge.setLuaScript(cartridgeScript)
+end
 
-    -- save obj
+function saveConditions()
+    prepareToSave()
+
+    local zoneBox = getObjectFromGUID(zonesGUIDs.conditions)
+    local zoneObjs = zoneBox.getObjects()
+    logObj(zoneObjs)
+end
+
+function saveMap()
+    prepareToSave()
 
     local zoneBox = getObjectFromGUID(zonesGUIDs.battlefield)
     local zoneObjs = zoneBox.getObjects()
-
     logObj(zoneObjs)
-
-    --local zoneBox = getObjectFromGUID(zonesGUIDs.red)
-    --local zoneObjs = zoneBox.getObjects()
-
-    --logObj(zoneObjs)
-
-    --local zoneBox = getObjectFromGUID(zonesGUIDs.blue)
-    --local zoneObjs = zoneBox.getObjects()
-
-    --logObj(zoneObjs)
-
-
 end
 
 function logObj(selectedObjs)
@@ -1720,6 +1717,4 @@ function refreshTimer()
     timerCounter = timerCounter + 1
     Global.setVar("timerCounter", timerCounter)
 end
-
-
 

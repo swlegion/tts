@@ -29,5 +29,3 @@ function checkState()
     end
 end
 
-
-
