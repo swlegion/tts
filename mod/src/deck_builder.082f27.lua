@@ -291,3 +291,4 @@ function correctStringLength(measuredString)
         return 160
     end
 end
+
