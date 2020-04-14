@@ -51,5 +51,3 @@ function removeSuppression()
     end
 end
 
-
-

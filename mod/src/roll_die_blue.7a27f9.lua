@@ -14,5 +14,3 @@ function buttonPress()
     dieRoller.call("rollDie")
 end
 
-
-

@@ -58,5 +58,3 @@ function checkDeck()
     end
 end
 
-
-
