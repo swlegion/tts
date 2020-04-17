@@ -1150,7 +1150,7 @@ function onLoad()
     }
     listBuilder.commandCards.cadBane = {
         varName = "cadBane",
-        cards = {"Ambush","Im In Control","I Make The Rules Now"}
+        cards = {"Ambush","Im In Control","Assault"}
     }
     -- REPUBLIC
     listBuilder.commandCards.obiWanKenobi = {
@@ -5398,4 +5398,3 @@ function readCallback(req)
         end
     end
 end
-

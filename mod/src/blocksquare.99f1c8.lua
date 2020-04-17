@@ -24,7 +24,7 @@ function setUp()
     unitInfo = Global.getTable("unitInfo")
 
     moveState = false
-
+    silhouetteState = false
 
 
     if unitName != nil and colorSide != nil then
@@ -68,8 +68,83 @@ function resetUnitButtons()
     data = {click_function = "clearCohesionRuler", function_owner = self, label = unitID, position = unitIDButtonPos , scale = {0.5, 0.5, 0.5}, width = 1, height = 1, font_size = 300, color = {0.7573, 0.7573, 0.7573, 0.01}, font_color = {1, 1, 1, 100}}
 
     self.createButton(data)
+    addSilhouetteButton()
 end
 
+function addSilhouetteButton()
+  local gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
+  local btnTint = gameData.getTable("battlefieldTint")
+  btnData = {
+    click_function = "toggleSilhouettes",
+    function_owner = self,
+    label = "SIL",
+    tooltip = "Toggle silhouettes on this unit",
+    position = {0,0.25,0.6},
+    width = 230,
+    height = 180,
+    font_size = 100,
+    color= {btnTint["r"], btnTint["g"], btnTint["b"], 0.7},
+    font_color= {1, 1, 1, 100}
+  }
+  self.createButton(btnData)
+end
+
+function toggleSilhouettes()
+  if silhouetteState then
+    clearSilhouette()
+  else
+    showSilhouette()
+  end
+end
+
+-- Loops through all minis in the unit
+-- Removes all attachments and destroys the first one
+-- The silhouette should be the only attachment, so this should be safe to do
+function clearSilhouette()
+  for k, guid in pairs(miniGUIDs) do
+    local obj = getObjectFromGUID(guid)
+    local silToDestroy = obj.removeAttachments()[1]
+    silToDestroy.destruct()
+  end
+  silhouetteState = false
+end
+
+-- Loops through all minis in the unit
+-- Spawns a silhouette at the pos and rot of each one
+-- and attaches them using the new attachment feature
+function showSilhouette()
+  for k, guid in pairs(miniGUIDs) do
+    local obj = getObjectFromGUID(guid)
+    local pos = obj.getPosition()
+    local rot = obj.getRotation()
+    local newSilhouette = spawnSilhouette(pos, rot)
+    obj.addAttachment(newSilhouette)
+  end
+  silhouetteState = true
+end
+
+function spawnSilhouette(pos, rot)
+  local silhouetteData = {
+    mesh = "http://cloud-3.steamusercontent.com/ugc/1002556771691273590/F435C238FB9E1E49963B2AA00E09DF9C711DA4A0/",
+    diffuse = "http://cloud-3.steamusercontent.com/ugc/1003681898505462981/13937CB26573918BDCBDE2A13CCDEF3C966172D7/",
+    collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/"
+  }
+  local silhouette = spawnObject({
+    type = "Custom_Model",
+    position = pos,
+    rotation = rot,
+    scale = {1,1,1}
+  })
+  silhouette.setCustomObject({
+      mesh = silhouetteData.mesh,
+      collider = silhouetteData.collider,
+      type = 1,
+      material = 3
+  })
+  silhouette.setColorTint({121/255,194/255,205/255,100/255})
+
+  return silhouette
+end
 
 function onDropped(player_color)
     checkVelocity()
@@ -121,4 +196,3 @@ function clearCohesionRuler()
         destroyObject(cohesionRuler)
     end
 end
-
