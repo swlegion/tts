@@ -68,7 +68,9 @@ function resetUnitButtons()
     data = {click_function = "clearCohesionRuler", function_owner = self, label = unitID, position = unitIDButtonPos , scale = {0.5, 0.5, 0.5}, width = 1, height = 1, font_size = 300, color = {0.7573, 0.7573, 0.7573, 0.01}, font_color = {1, 1, 1, 100}}
 
     self.createButton(data)
-    addSilhouetteButton()
+    if unitData.baseSize == "small" then
+      addSilhouetteButton()
+    end
 end
 
 function addSilhouetteButton()
