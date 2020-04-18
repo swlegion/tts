@@ -105,8 +105,12 @@ end
 function clearSilhouette()
   for k, guid in pairs(miniGUIDs) do
     local obj = getObjectFromGUID(guid)
-    local silToDestroy = obj.removeAttachments()[1]
-    silToDestroy.destruct()
+
+    -- Guard against players who delete their minis!
+    if obj then
+      local silToDestroy = obj.removeAttachments()[1]
+      silToDestroy.destruct()
+    end
   end
   silhouetteState = false
 end
@@ -117,10 +121,15 @@ end
 function showSilhouette()
   for k, guid in pairs(miniGUIDs) do
     local obj = getObjectFromGUID(guid)
-    local pos = obj.getPosition()
-    local rot = obj.getRotation()
-    local newSilhouette = spawnSilhouette(pos, rot)
-    obj.addAttachment(newSilhouette)
+
+    -- Guard against players who delete their minis!
+    if obj then
+      local pos = obj.getPosition()
+      local rot = obj.getRotation()
+      local newSilhouette = spawnSilhouette(pos, rot)
+
+      obj.addAttachment(newSilhouette)
+    end
   end
   silhouetteState = true
 end
