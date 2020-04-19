@@ -68,7 +68,9 @@ function resetUnitButtons()
     data = {click_function = "clearCohesionRuler", function_owner = self, label = unitID, position = unitIDButtonPos , scale = {0.5, 0.5, 0.5}, width = 1, height = 1, font_size = 300, color = {0.7573, 0.7573, 0.7573, 0.01}, font_color = {1, 1, 1, 100}}
 
     self.createButton(data)
-    addSilhouetteButton()
+    if unitData.baseSize == "small" then
+      addSilhouetteButton()
+    end
 end
 
 function addSilhouetteButton()
@@ -103,8 +105,12 @@ end
 function clearSilhouette()
   for k, guid in pairs(miniGUIDs) do
     local obj = getObjectFromGUID(guid)
-    local silToDestroy = obj.removeAttachments()[1]
-    silToDestroy.destruct()
+
+    -- Guard against players who delete their minis!
+    if obj then
+      local silToDestroy = obj.removeAttachments()[1]
+      silToDestroy.destruct()
+    end
   end
   silhouetteState = false
 end
@@ -115,10 +121,15 @@ end
 function showSilhouette()
   for k, guid in pairs(miniGUIDs) do
     local obj = getObjectFromGUID(guid)
-    local pos = obj.getPosition()
-    local rot = obj.getRotation()
-    local newSilhouette = spawnSilhouette(pos, rot)
-    obj.addAttachment(newSilhouette)
+
+    -- Guard against players who delete their minis!
+    if obj then
+      local pos = obj.getPosition()
+      local rot = obj.getRotation()
+      local newSilhouette = spawnSilhouette(pos, rot)
+
+      obj.addAttachment(newSilhouette)
+    end
   end
   silhouetteState = true
 end

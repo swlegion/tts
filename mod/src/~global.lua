@@ -3491,8 +3491,8 @@ function onLoad()
         cardInfo.upgradeCards.dc15PhaseITrooper,
         cardInfo.upgradeCards.dp23PhaseITrooper,
         cardInfo.upgradeCards.rps6PhaseITrooper,
-        cardInfo.upgradeCards.echo,
-        cardInfo.upgradeCards.fives
+        -- cardInfo.upgradeCards.echo,
+        -- cardInfo.upgradeCards.fives
     }
     cardInfo.upgradeMenu.republic.phaseIICloneTroopersTrooper = {
         cardInfo.upgradeCards.phaseIICloneTrooper
@@ -3501,8 +3501,8 @@ function onLoad()
     cardInfo.upgradeMenu.republic.phaseIICloneTrooperSpecialist = {
       cardInfo.upgradeCards.z6PhaseIITrooper,
       cardInfo.upgradeCards.mortarPhaseIITrooper,
-      cardInfo.upgradeCards.echo,
-      cardInfo.upgradeCards.fives
+      -- cardInfo.upgradeCards.echo,
+      -- cardInfo.upgradeCards.fives
     }
 
     cardInfo.upgradeMenu.republic.arcTroopersSpecialist = {
