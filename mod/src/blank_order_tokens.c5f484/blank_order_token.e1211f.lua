@@ -158,3 +158,4 @@ function is_player_permitted(color)
         return false
     end
 end
+
