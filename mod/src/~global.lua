@@ -15,6 +15,11 @@ function onLoad()
     zonesGUIDs.red = "2c09a9"
     zonesGUIDs.blue = "818608"
 
+    clockGUIDs = {}
+    clockGUIDs.blue = "4f823a"
+    clockGUIDs.red = "6ce1bb"
+    initChessClocks(clockGUIDs)
+
     battlefieldTable = "653dd0"
 
     templateInfo = {}
@@ -5398,4 +5403,69 @@ function readCallback(req)
             WebRequest.put('https://tierenswlegion.firebaseio.com/modLoadCount.json', tostring(currNum+1), self, 'dummy')
         end
     end
+end
+
+-- Initialize red and blue clocks at 01:30:00
+function initChessClocks(guids)
+  for k, v in pairs(guids) do
+    getObjectFromGUID(v).Clock.setValue(5400)
+  end
+end
+
+-- Event handler for all scripting button presses
+-- 1 = toggle chess clocks
+-- 2 = pause all chess clocks
+function onScriptingButtonUp(index, color)
+  local clocks = {
+    Blue = getObjectFromGUID(clockGUIDs.blue).Clock,
+    Red = getObjectFromGUID(clockGUIDs.red).Clock
+  }
+  if index == 1 then
+    toggleChessClocks(color, clocks)
+  elseif index == 2 then
+    pauseAllChessClocks(clocks)
+  end
+end
+
+-- Toggles the active clock between Red and Blue
+-- If neither clock is currently active, activates Blue
+function toggleChessClocks(color, clocks)
+  if not clocks[color] then
+    broadcastToAll('Only players can use chess clocks')
+    return
+  end
+  -- Returns the name of the player currently on the clock
+  -- if steam_name is not available, returns player color
+  local function getClockPlayerName()
+    if clocks.Blue.paused then
+      return Player.Red.steam_name or "Red"
+    else
+      return Player.Blue.steam_name or "Blue"
+    end
+  end
+  -- Returns the player color currently on the clock
+  local function getClockPlayerColor()
+    return clocks.Blue.paused and "Red" or "Blue"
+  end
+
+  if clocks.Blue.paused and clocks.Red.paused then
+    clocks.Blue.pauseStart()
+  else
+    clocks.Blue.pauseStart()
+    clocks.Red.pauseStart()
+  end
+
+  local fontColors = {
+    Red = {1,0,0},
+    Blue = {0,0,1}
+  }
+  broadcastToAll ("*** " .. getClockPlayerName() .. " is now on the clock ***", fontColors[getClockPlayerColor()])
+end
+
+-- Calls pauseStart() for each clock that is not already paused
+function pauseAllChessClocks(clocks)
+  for k, v in pairs(clocks) do
+    if not v.paused then v.pauseStart() end
+  end
+  broadcastToAll('All chess clocks paused')
 end
