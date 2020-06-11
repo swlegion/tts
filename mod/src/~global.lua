@@ -1150,7 +1150,7 @@ function onLoad()
     }
     listBuilder.commandCards.cadBane = {
         varName = "cadBane",
-        cards = {"Ambush","Im In Control","Assault"}
+        cards = {"Im Your Worst Nightmare","Im In Control","I Make The Rules Now"}
     }
     -- REPUBLIC
     listBuilder.commandCards.obiWanKenobi = {
