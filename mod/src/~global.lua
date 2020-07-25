@@ -3056,6 +3056,7 @@ function onLoad()
     cardInfo.upgradeCards.electroGrapplingLine = {name = "Electro Grappling Line", guid = "bggg5gdgb9f", ptCost = 5,varName="electroGrapplingLine"}
     cardInfo.upgradeCards.electrobinoculars = {name = "Electrobinoculars", guid = "bgggg5gdgb9f", ptCost = 8,varName="electrobinoculars"}
     cardInfo.upgradeCards.jt12Jetpacks = {name = "JT-12 Jetpacks", guid = "bgggg5gdgb9f", ptCost = 10,varName="jt12Jetpacks"}
+    cardInfo.upgradeCards.ascensionCables = {name = "Ascension Cables", guid = "bgggg5gdgb9f", ptCost = 4,varName="ascensionCables"}
 
     -- grenade
     cardInfo.upgradeCards.concussionGrenades = {name = "Concussion Grenades", guid = "2089d0", ptCost = 5,varName="concussionGrenades"}
@@ -3181,11 +3182,11 @@ function onLoad()
     cardInfo.upgradeCards.arcTrooperDC15x = { name = "DC-15x ARC Trooper", ptCost = 31, miniInfo = miniInfo.arcTrooperDC15x, varName = "arcTrooperDC15x" }
     cardInfo.upgradeCards.arcTrooperDC15xLeader = { name = "DC-15x ARC Trooper", ptCost = 31, miniInfo = miniInfo.arcTrooperDC15xLeader, varName = "arcTrooperDC15xLeader" }
 
-    cardInfo.upgradeCards.echo = { name = "Echo", ptCost = 99, miniInfo = miniInfo.echo, varName = "echo" }
-    cardInfo.upgradeCards.echoLeader = { name = "Echo", ptCost = 99, miniInfo = miniInfo.echoLeader, varName = "echoLeader" }
+    cardInfo.upgradeCards.echo = { name = "Echo", ptCost = 40, miniInfo = miniInfo.echoLeader, varName = "echo" }
+    -- cardInfo.upgradeCards.echoLeader = { name = "Echo", ptCost = 40, miniInfo = miniInfo.echoLeader, varName = "echoLeader" }
 
-    cardInfo.upgradeCards.fives = { name = "Fives", ptCost = 99, miniInfo = miniInfo.fives, varName = "fives" }
-    cardInfo.upgradeCards.fivesLeader = { name = "Fives", ptCost = 99, miniInfo = miniInfo.fivesLeader, varName = "fivesLeader" }
+    cardInfo.upgradeCards.fives = { name = "Fives", ptCost = 36, miniInfo = miniInfo.fivesLeader, varName = "fives" }
+    -- cardInfo.upgradeCards.fivesLeader = { name = "Fives", ptCost = 36, miniInfo = miniInfo.fivesLeader, varName = "fivesLeader" }
 
     cardInfo.upgradeCards.pao = {name = "Pao", guid = "d8e9ggd5a", ptCost = 22, miniGUID = "gadfr", miniInfo = miniInfo.pao,varName="pao"}
     cardInfo.upgradeCards.bistan = {name = "Bistan", guid = "dgfsgd5a", ptCost = 32, miniGUID = "ggfr", miniInfo = miniInfo.bistan,varName="bistan"}
@@ -3294,6 +3295,7 @@ function onLoad()
     cardInfo.upgradeCards.endurance = {name = "Endurance", guid = "agg3gggg0fg", ptCost = 6, varName = "endurance"}
     cardInfo.upgradeCards.overwatch = {name = "Overwatch", guid = "agg3ggfdfg", ptCost = 4, varName = "overwatch"}
     cardInfo.upgradeCards.offensivePush = {name = "Offensive Push", guid = "ag7kfdfg", ptCost = 4, varName = "offensivePush"}
+    cardInfo.upgradeCards.situationalAwareness = {name = "Situational Awareness", guid = "ag7kfdfg", ptCost = 2, varName = "situationalAwareness"}
 
     -- sidearm
     cardInfo.upgradeCards.a300 = {name = "A-300", guid = "ag3gg0fg", ptCost = 0, varName = "a300"}
@@ -3369,7 +3371,8 @@ function onLoad()
         cardInfo.upgradeCards.tenacity,
         cardInfo.upgradeCards.endurance,
         cardInfo.upgradeCards.overwatch,
-        cardInfo.upgradeCards.offensivePush
+        cardInfo.upgradeCards.offensivePush,
+        cardInfo.upgradeCards.situationalAwareness
     }
     cardInfo.upgradeMenu.separatist.generalGrievousSideArm = {
         cardInfo.upgradeCards.dt57Annihilator
@@ -3395,7 +3398,8 @@ function onLoad()
         cardInfo.upgradeCards.environmentalGear,
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
-        cardInfo.upgradeCards.electrobinoculars
+        cardInfo.upgradeCards.electrobinoculars,
+        cardInfo.upgradeCards.ascensionCables
     }
     cardInfo.upgradeMenu.separatist.b1Tech = {
         cardInfo.upgradeCards.electrobinoculars
@@ -3475,7 +3479,8 @@ function onLoad()
         cardInfo.upgradeCards.tenacity,
         cardInfo.upgradeCards.endurance,
         cardInfo.upgradeCards.overwatch,
-        cardInfo.upgradeCards.offensivePush
+        cardInfo.upgradeCards.offensivePush,
+        cardInfo.upgradeCards.situationalAwareness
     }
     cardInfo.upgradeMenu.republic.padmeSideArm = {
         cardInfo.upgradeCards.lootedE5Blaster
@@ -3535,7 +3540,8 @@ function onLoad()
         cardInfo.upgradeCards.environmentalGear,
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
-        cardInfo.upgradeCards.electrobinoculars
+        cardInfo.upgradeCards.electrobinoculars,
+        cardInfo.upgradeCards.ascensionCables
     }
     cardInfo.upgradeMenu.republic.rexTech = {
         cardInfo.upgradeCards.targetingScopes,
@@ -3544,7 +3550,9 @@ function onLoad()
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
         cardInfo.upgradeCards.electrobinoculars,
-        cardInfo.upgradeCards.jt12Jetpacks
+        cardInfo.upgradeCards.jt12Jetpacks,
+        cardInfo.upgradeCards.ascensionCables
+
     }
     cardInfo.upgradeMenu.republic.arcTech = {
         cardInfo.upgradeCards.targetingScopes,
@@ -3553,7 +3561,9 @@ function onLoad()
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
         cardInfo.upgradeCards.electrobinoculars,
-        cardInfo.upgradeCards.jt12Jetpacks
+        cardInfo.upgradeCards.jt12Jetpacks,
+        cardInfo.upgradeCards.ascensionCables
+
     }
 
     cardInfo.upgradeMenu.republic.republicATRTHardPoint = {
@@ -3590,7 +3600,8 @@ function onLoad()
         cardInfo.upgradeCards.environmentalGear,
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
-        cardInfo.upgradeCards.electrobinoculars
+        cardInfo.upgradeCards.electrobinoculars,
+        cardInfo.upgradeCards.ascensionCables
     }
     cardInfo.upgradeMenu.rebel.sabineWrenTech = {
         cardInfo.upgradeCards.targetingScopes,
@@ -3599,7 +3610,9 @@ function onLoad()
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
         cardInfo.upgradeCards.personalCombatShield,
-        cardInfo.upgradeCards.electroGrapplingLine
+        cardInfo.upgradeCards.electroGrapplingLine,
+        cardInfo.upgradeCards.ascensionCables
+
     }
     cardInfo.upgradeMenu.rebel.grenade = {
         cardInfo.upgradeCards.concussionGrenades,
@@ -3667,7 +3680,8 @@ function onLoad()
         cardInfo.upgradeCards.tenacity,
         cardInfo.upgradeCards.endurance,
         cardInfo.upgradeCards.overwatch,
-        cardInfo.upgradeCards.offensivePush
+        cardInfo.upgradeCards.offensivePush,
+        cardInfo.upgradeCards.situationalAwareness
     }
     cardInfo.upgradeMenu.rebel.rebelTrooperTrooper = {
         cardInfo.upgradeCards.rebelTrooper,
@@ -3755,7 +3769,8 @@ function onLoad()
         cardInfo.upgradeCards.environmentalGear,
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
-        cardInfo.upgradeCards.electrobinoculars
+        cardInfo.upgradeCards.electrobinoculars,
+        cardInfo.upgradeCards.ascensionCables
     }
     cardInfo.upgradeMenu.imperial.grenade = {
         cardInfo.upgradeCards.concussionGrenades,
@@ -3839,7 +3854,8 @@ function onLoad()
         cardInfo.upgradeCards.tenacity,
         cardInfo.upgradeCards.endurance,
         cardInfo.upgradeCards.overwatch,
-        cardInfo.upgradeCards.offensivePush
+        cardInfo.upgradeCards.offensivePush,
+        cardInfo.upgradeCards.situationalAwareness
     }
     cardInfo.upgradeMenu.imperial.groundPilot = {
         cardInfo.upgradeCards.generalWeiss,
