@@ -15,6 +15,11 @@ function onLoad()
     zonesGUIDs.red = "2c09a9"
     zonesGUIDs.blue = "818608"
 
+    clockGUIDs = {}
+    clockGUIDs.blue = "4f823a"
+    clockGUIDs.red = "6ce1bb"
+    initChessClocks(clockGUIDs)
+
     battlefieldTable = "653dd0"
 
     templateInfo = {}
@@ -1150,7 +1155,7 @@ function onLoad()
     }
     listBuilder.commandCards.cadBane = {
         varName = "cadBane",
-        cards = {"Ambush","Im In Control","Assault"}
+        cards = {"Im Your Worst Nightmare","Im In Control","I Make The Rules Now"}
     }
     -- REPUBLIC
     listBuilder.commandCards.obiWanKenobi = {
@@ -1414,10 +1419,19 @@ function onLoad()
     templateMenu.upgradeCardPos[7] = {q = -114, c = 4.5792248252297}
 
     -- mini info
+    local _BASE_COLLIDERS = {
+      small = "http://cloud-3.steamusercontent.com/ugc/1009315641457429932/1534D6C1AA4F3D5BDA469241B8F0319BE560E7ED/",
+      medium = "http://cloud-3.steamusercontent.com/ugc/1009315641457670521/DAD6653F422046BD6BC4360FE18C96927D5F4C44/",
+      large = "http://cloud-3.steamusercontent.com/ugc/1009315641457670155/6727179496A9F397E953AAA3268C6CC6444598DF/",
+      huge = "http://cloud-3.steamusercontent.com/ugc/1009315641457669798/3B337900892D839BDBC3EBF2A5CC9EC87DDBFED1/",
+      epic = "http://cloud-3.steamusercontent.com/ugc/1009315641457669292/A7F6F75580BF1DFAA23E621875A761FB8B9EF2BC/",
+      long = "http://cloud-3.steamusercontent.com/ugc/963116666702885485/70F17B3327115A379D06F81C6F47F76470D7B826/"
+    }
+
     miniInfo = {}
     miniInfo.lukeSkywalker = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540537100371/0B15B2810ABEBE5429E4A24852D96BAC2DC28BF7/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540537079134/11A17263AD81DC9D4271B7C6BD809B69141DCB61/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540537079134/11A17263AD81DC9D4271B7C6BD809B69141DCB61/",
         scale = {1,1,1},
@@ -1425,7 +1439,7 @@ function onLoad()
     }
     miniInfo.lukeSkywalkerJediKnight = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/777357228030156264/12F93F60CC26F1FDC2B577D4014787B7CAFBF9A1/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/777357228030156398/F811CAE962A0BFE369544C0A96C251F5BF198B3A/",
         blue = "http://cloud-3.steamusercontent.com/ugc/777357228030156398/F811CAE962A0BFE369544C0A96C251F5BF198B3A/",
         scale = {1,1,1},
@@ -1433,7 +1447,7 @@ function onLoad()
     }
     miniInfo.leiaOrgana = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540537137572/2AC01B05AF1576F49C3156EDB614E2C1804C2A42/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540537137853/F8E5FE7B221E9115B36E22C14E5707B7CFA6CFC3/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540537137853/F8E5FE7B221E9115B36E22C14E5707B7CFA6CFC3/",
         scale = {1,1,1},
@@ -1441,7 +1455,7 @@ function onLoad()
     }
     miniInfo.hanSolo = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540540669649/C440F429AB1182944D329D0C16C3402DB731CA87/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540540669835/B4E395AA781518EAC4FBFFCB27BAA646201F411C/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540540669835/B4E395AA781518EAC4FBFFCB27BAA646201F411C/",
         scale = {1,1,1},
@@ -1449,7 +1463,7 @@ function onLoad()
     }
     miniInfo.jynErso = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/951848302305475778/55B558E631655D0430BAF76E71C93899AAECA7A1/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/951848302305475871/06400240648CC39F933BE504C74DA9BEF4D006C4/",
         blue = "http://cloud-3.steamusercontent.com/ugc/951848302305475871/06400240648CC39F933BE504C74DA9BEF4D006C4/",
         scale = {1,1,1},
@@ -1457,7 +1471,7 @@ function onLoad()
     }
     miniInfo.cassianAndor = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/773996263556990389/C38E9CAD7E5BA5496E1A211CA799E9ACBAC51D00/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/770611701143191344/5CAA4F0CE9A3FBE89A81560221ADCDDB5A801CC3/",
         blue = "http://cloud-3.steamusercontent.com/ugc/770611701143191344/5CAA4F0CE9A3FBE89A81560221ADCDDB5A801CC3/",
         scale = {1,1,1},
@@ -1465,7 +1479,7 @@ function onLoad()
     }
     miniInfo.k2so = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/773996263557000439/C9EA2A27264C73E42C016FE26E665CBB75F8E7DE/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/770611701143471855/26BE70BB475D8B61122C8954CCA2EC79C1ED4C25/",
         blue = "http://cloud-3.steamusercontent.com/ugc/770611701143471855/26BE70BB475D8B61122C8954CCA2EC79C1ED4C25/",
         scale = {1,1,1},
@@ -1473,7 +1487,7 @@ function onLoad()
     }
     miniInfo.chewbacca = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540540669973/90DD9EA44756CCF9B2473302DC644F3AEEED07B4/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540540670117/5AA04499FC8CC467864F9F335601E6335C03326D/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540540670117/5AA04499FC8CC467864F9F335601E6335C03326D/",
         scale = {1,1,1},
@@ -1481,7 +1495,7 @@ function onLoad()
     }
     miniInfo.sabineWren = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/948474323838790939/3E9EB4AAF653CD476FF3D90EA82072EDC2D4AC66/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/948474323838791034/38CDAF985C2DC983942183E1DFD3ACBC33D8E40E/",
         blue = "http://cloud-3.steamusercontent.com/ugc/948474323838791034/38CDAF985C2DC983942183E1DFD3ACBC33D8E40E/",
         scale = {1,1,1},
@@ -1489,7 +1503,7 @@ function onLoad()
     }
     miniInfo.r2d2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806966/EFBA4A71BFE748A2868C14B82DA3A7B0D559874A/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/777357228032306302/F5CA6FC54A8625E261F123D73792DE36D74E1686/",
         blue = "http://cloud-3.steamusercontent.com/ugc/777357228032306302/F5CA6FC54A8625E261F123D73792DE36D74E1686/",
         scale = {1,1,1},
@@ -1497,7 +1511,7 @@ function onLoad()
     }
     miniInfo.c3po = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456807069/DE7E32B39455DB5111769436FD0C5BFDA3841268/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/777357228032306506/D60CB8A1159723917EF1831D4042318A67458A7A/",
         blue = "http://cloud-3.steamusercontent.com/ugc/777357228032306506/D60CB8A1159723917EF1831D4042318A67458A7A/",
         scale = {1,1,1},
@@ -1505,7 +1519,7 @@ function onLoad()
     }
     miniInfo.rebelOfficer = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780862726770/62FECAB3FED284E098751CC3BBC70C4CFF828A58/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780862727097/DE589901F66E4079D82BA2C819672F622A5D7240/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780862727097/DE589901F66E4079D82BA2C819672F622A5D7240/",
         scale = {1,1,1},
@@ -1513,7 +1527,7 @@ function onLoad()
     }
     miniInfo.rebelOfficerLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780862726770/62FECAB3FED284E098751CC3BBC70C4CFF828A58/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780862727097/DE589901F66E4079D82BA2C819672F622A5D7240/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780862727097/DE589901F66E4079D82BA2C819672F622A5D7240/",
         scale = {1,1,1},
@@ -1523,7 +1537,7 @@ function onLoad()
 
     miniInfo.rebelTrooper1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780862752262/41BD6AB8B17AB7449226A3D80EF186EB8ABA3952/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/",
         scale = {1,1,1},
@@ -1531,7 +1545,7 @@ function onLoad()
     }
     miniInfo.rebelTrooper2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780862764799/98CBD8B4DD0C08CFA01A8E6C8B5A70A137804EAB/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/",
         scale = {1,1,1},
@@ -1539,7 +1553,7 @@ function onLoad()
     }
     miniInfo.rebelTrooper3 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780862755846/CD522BCA5D6E918E13A3FF593D7212FF4B0E79CA/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/",
         scale = {1,1,1},
@@ -1547,7 +1561,7 @@ function onLoad()
     }
     miniInfo.rebelTrooper4 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780862761532/2FB3D83FC2BD077F4ADE619382382B9A59CD0ABE/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/",
         scale = {1,1,1},
@@ -1555,7 +1569,7 @@ function onLoad()
     }
     miniInfo.rebelTrooperLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780862746147/3F3A21962C4AC0DA0445024688BF580A144D3825/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540540670236/6257E7A3CE86803490A8A0FAC7F81C281D700F52/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540540670236/6257E7A3CE86803490A8A0FAC7F81C281D700F52/",
         scale = {1,1,1},
@@ -1564,7 +1578,7 @@ function onLoad()
     }
     miniInfo.z6Trooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780862734756/1F48FA301357905B28DA35A03658DFA39154DBFE/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780862736228/22D1A1ACC79493FE82165CC95A5E23170A4FBC5B/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780862736228/22D1A1ACC79493FE82165CC95A5E23170A4FBC5B/",
         scale = {1,1,1},
@@ -1572,7 +1586,7 @@ function onLoad()
     }
     miniInfo.mpl57IonTrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540540670338/28625FDF1F56EF08F0DB236C4ECFF67A54083B2B/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/",
         scale = {1,1,1},
@@ -1580,7 +1594,7 @@ function onLoad()
     }
     miniInfo.fleetTroopers1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540540670667/CB316B23D59F28C5EF22E94A43280D49DFFDD6AC/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/",
         scale = {1,1,1},
@@ -1588,7 +1602,7 @@ function onLoad()
     }
     miniInfo.fleetTroopers2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540540671182/A605D9D0DB356DC71473F5C9DF27DE1CADB4F320/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540540671278/9B94D359A61113F72EEB0435D70A1291431D737A/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540540671278/9B94D359A61113F72EEB0435D70A1291431D737A/",
         scale = {1,1,1},
@@ -1596,7 +1610,7 @@ function onLoad()
     }
     miniInfo.fleetTroopers3 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540540670978/0642E99CB4E8CABA1AA10389F2387A1C70D9322D/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/",
         scale = {1,1,1},
@@ -1604,7 +1618,7 @@ function onLoad()
     }
     miniInfo.fleetTroopers4 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540540670863/20FE73C6E9F8468BD468C820C88EAB9F697EC33E/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/",
         scale = {1,1,1},
@@ -1612,7 +1626,7 @@ function onLoad()
     }
     miniInfo.fleetTroopersLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540540670464/96FB3825C890968C09B07A2E0E227886D2CC768C/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540540670556/9B759F6F1A8B7C11AE5F2908208CBA9EF99ECE2C/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540540670556/9B759F6F1A8B7C11AE5F2908208CBA9EF99ECE2C/",
         scale = {1,1,1},
@@ -1621,7 +1635,7 @@ function onLoad()
     }
     miniInfo.scatterGunTrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540540671094/4A4BCE6286ACB413B661F827BB00B920617F3E91/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/",
         scale = {1,1,1},
@@ -1629,7 +1643,7 @@ function onLoad()
     }
     miniInfo.mpl57BarrageTrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540540671382/63267B140C2A619525B99FD943DF2421F75B9130/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540540671503/D8BCEE815B07EA7074085CF1F43AF8041DEC8981/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540540671503/D8BCEE815B07EA7074085CF1F43AF8041DEC8981/",
         scale = {1,1,1},
@@ -1637,7 +1651,7 @@ function onLoad()
     }
     miniInfo.medicalDroid21B = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/949599512594268997/6248E4CAF3E978154106E7095E6984DCE6677CCA/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/949599512594282950/7A9A3E5518394273A507A64CCF7425A2E7EFC29B/",
         blue = "http://cloud-3.steamusercontent.com/ugc/949599512594282950/7A9A3E5518394273A507A64CCF7425A2E7EFC29B/",
         scale = {1,1,1},
@@ -1645,7 +1659,7 @@ function onLoad()
     }
     miniInfo.rebelCommsTechnician = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/949599512594474909/F8F049D7F88171ADBA83AF3EAF819495053C2873/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/949599512594268734/CF3C536F7B068020A99C5E3EE11CA9C54438E250/",
         blue = "http://cloud-3.steamusercontent.com/ugc/949599512594268734/CF3C536F7B068020A99C5E3EE11CA9C54438E250/",
         scale = {1,1,1},
@@ -1653,7 +1667,7 @@ function onLoad()
     }
     miniInfo.r5AstromechDroid = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/949599512594428341/4AC5A309D701979A4B3E94725BC1E8745C598BCE/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/949599512594267684/F84F03E4A52F50EF5255A464FF85083CF4FB3D26/",
         blue = "http://cloud-3.steamusercontent.com/ugc/949599512594267684/F84F03E4A52F50EF5255A464FF85083CF4FB3D26/",
         scale = {1,1,1},
@@ -1661,7 +1675,7 @@ function onLoad()
     }
     miniInfo.rebelTrooperSpecialist = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/766102173464719285/839B79B3594F31585EB38763EDF43AD32E46F37F/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/766102173464692456/FD09533718942CE5B08526B2CD1A00D5D38CB734/",
         blue = "http://cloud-3.steamusercontent.com/ugc/766102173464692456/FD09533718942CE5B08526B2CD1A00D5D38CB734/",
         scale = {1,1,1},
@@ -1669,7 +1683,7 @@ function onLoad()
     }
     miniInfo.sx21Trooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/766102173464725382/9DADA91B7A5BE8DEEC1BDE838B3140A350D661A4/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/766102173464726852/2ABBCC6938695708489FB87C27C6B7481A1D294A/",
         blue = "http://cloud-3.steamusercontent.com/ugc/766102173464726852/2ABBCC6938695708489FB87C27C6B7481A1D294A/",
         scale = {1,1,1},
@@ -1677,7 +1691,7 @@ function onLoad()
     }
     miniInfo.dlt20ATrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/766102173464888456/63604C016242E6F545F139BC46515E0A894EC6B2/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/766102173464889098/17A7BE90F158B80F88518F92EA4D211F16E14003/",
         blue = "http://cloud-3.steamusercontent.com/ugc/766102173464889098/17A7BE90F158B80F88518F92EA4D211F16E14003/",
         scale = {1,1,1},
@@ -1685,7 +1699,7 @@ function onLoad()
     }
     miniInfo.rebelTrooperCaptain = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/766102173464670173/ECC18FB91315A55181F38A6899122E005460C688/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/766102173464683373/FE0A29CF1A46E7F97FEAE0C9FD665AB192A8D9A8/",
         blue = "http://cloud-3.steamusercontent.com/ugc/766102173464683373/FE0A29CF1A46E7F97FEAE0C9FD665AB192A8D9A8/",
         scale = {1,1,1},
@@ -1694,7 +1708,7 @@ function onLoad()
     }
     miniInfo.rebelVeteransLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/788608699499192015/F194EFE217778158ED30DFD40EFC1F70BEC01772/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/",
         blue = "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/",
         scale = {1,1,1},
@@ -1703,7 +1717,7 @@ function onLoad()
     }
     miniInfo.rebelVeterans1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/788608699499192232/D15615AF2A0F4F4887E9BD3DFFA141C8ACCCEC78/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/",
         blue = "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/",
         scale = {1,1,1},
@@ -1711,7 +1725,7 @@ function onLoad()
     }
     miniInfo.rebelVeterans2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/788608699499192402/4D1858AA566FEEE91774E40B10C233AAD8C381D5/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/",
         blue = "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/",
         scale = {1,1,1},
@@ -1719,7 +1733,7 @@ function onLoad()
     }
     miniInfo.rebelVeterans3 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/788608699499192498/BF583EA43B457E816CDE323C172B2F4558B7A8BD/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/",
         blue = "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/",
         scale = {1,1,1},
@@ -1727,7 +1741,7 @@ function onLoad()
     }
     miniInfo.rebelVeterans4 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/788608699499192589/466305BFF474DBAB11F58FA13B3F4ACC9BB7127C/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/",
         blue = "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/",
         scale = {1,1,1},
@@ -1735,7 +1749,7 @@ function onLoad()
     }
     miniInfo.cm093Trooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/786359682702687947/DCC60167A78C152DDAE932E699D7C70C5629008B/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/",
         blue = "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/",
         scale = {1,1,1},
@@ -1743,7 +1757,7 @@ function onLoad()
     }
     miniInfo.markIIMediumBlasterTrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/786359682702688462/6B35D0B4E18CB7D0081825BEDC6E6C4AE45AA329/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        collider = _BASE_COLLIDERS.medium,
         red = "http://cloud-3.steamusercontent.com/ugc/786359682702688570/1827E8E24FE65F309AF936EF35D07CC2149CD95E/",
         blue = "http://cloud-3.steamusercontent.com/ugc/786359682702688570/1827E8E24FE65F309AF936EF35D07CC2149CD95E/",
         scale = {1,1,1},
@@ -1751,7 +1765,7 @@ function onLoad()
     }
     miniInfo.rebelCommandosLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541173156/D637683F992DD0C4488252BE266EEEA1F26006B0/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541172655/B10522A40482843AF69A3F321BD091B0ECF52C6B/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541172655/B10522A40482843AF69A3F321BD091B0ECF52C6B/",
         scale = {1,1,1},
@@ -1759,7 +1773,7 @@ function onLoad()
     }
     miniInfo.rebelCommandos1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541172497/B3E1593143504101920CC6419BE7C2EAEF52993F/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541188141/6E23E29BB42963B94A0B7DFE01C4C49D776D9657/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541188141/6E23E29BB42963B94A0B7DFE01C4C49D776D9657/",
         scale = {1,1,1},
@@ -1767,7 +1781,7 @@ function onLoad()
     }
     miniInfo.rebelCommandos2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541173253/155BAA01BA51A8EB524DD434A3C512D8C0B3A04B/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541172655/B10522A40482843AF69A3F321BD091B0ECF52C6B/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541172655/B10522A40482843AF69A3F321BD091B0ECF52C6B/",
         scale = {1,1,1},
@@ -1775,7 +1789,7 @@ function onLoad()
     }
     miniInfo.rebelCommandos3 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541173354/3483C6FB73C66481BC6CCC398BAB8E796F7EC076/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541188141/6E23E29BB42963B94A0B7DFE01C4C49D776D9657/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541188141/6E23E29BB42963B94A0B7DFE01C4C49D776D9657/",
         scale = {1,1,1},
@@ -1783,7 +1797,7 @@ function onLoad()
     }
     miniInfo.rebelCommandos4 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541173710/DAD1A2BE9F1D9C74C10D975D5AD5FDA05566C100/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541172655/B10522A40482843AF69A3F321BD091B0ECF52C6B/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541172655/B10522A40482843AF69A3F321BD091B0ECF52C6B/",
         scale = {1,1,1},
@@ -1791,7 +1805,7 @@ function onLoad()
     }
     miniInfo.dh447Sniper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780862776611/B8222AA4A3B680E969DC106C8A281D11845994EB/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780862776974/21649563BC0CB84E12C0B249C720919F528596D3/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780862776974/21649563BC0CB84E12C0B249C720919F528596D3/",
         scale = {1,1,1},
@@ -1799,7 +1813,7 @@ function onLoad()
     }
     miniInfo.dh447SniperLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780862776611/B8222AA4A3B680E969DC106C8A281D11845994EB/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780862776974/21649563BC0CB84E12C0B249C720919F528596D3/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780862776974/21649563BC0CB84E12C0B249C720919F528596D3/",
         scale = {1,1,1},
@@ -1808,7 +1822,7 @@ function onLoad()
     }
     miniInfo.protonChargeSaboteur = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541173465/8193FD1F0862270CD23BA9243679840BE6324DC6/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541173570/3C100E92F0DEDEF117D3A0392D3271951BC90DD0/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541173570/3C100E92F0DEDEF117D3A0392D3271951BC90DD0/",
         scale = {1,1,1},
@@ -1816,7 +1830,7 @@ function onLoad()
     }
     miniInfo.protonChargeSaboteurLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541173465/8193FD1F0862270CD23BA9243679840BE6324DC6/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541173570/3C100E92F0DEDEF117D3A0392D3271951BC90DD0/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541173570/3C100E92F0DEDEF117D3A0392D3271951BC90DD0/",
         scale = {1,1,1},
@@ -1825,7 +1839,7 @@ function onLoad()
     }
     miniInfo.wookieeWarriorsLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541173937/5179F4315AD6B0839454E1934E794A7F006C7813/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541174467/18352D89A219B89F6C869D89B9EDE22822F7F950/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541174467/18352D89A219B89F6C869D89B9EDE22822F7F950/",
         scale = {1,1,1},
@@ -1833,7 +1847,7 @@ function onLoad()
     }
     miniInfo.wookieeWarriors1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541174158/677BF72C323CFF2314C174393AFA361C398C5519/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541174034/90C4A124BB82CCE0B5E38E13860ED49BB9A4973B/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541174034/90C4A124BB82CCE0B5E38E13860ED49BB9A4973B/",
         scale = {1,1,1},
@@ -1841,7 +1855,7 @@ function onLoad()
     }
     miniInfo.wookieeWarriors2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541174304/9053CDD2798CEA905F8486498D0104B6ACA2F078/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541174467/18352D89A219B89F6C869D89B9EDE22822F7F950/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541174467/18352D89A219B89F6C869D89B9EDE22822F7F950/",
         scale = {1,1,1},
@@ -1849,7 +1863,7 @@ function onLoad()
     }
     miniInfo.bowcasterWookiee = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541174665/9E1AA98159F76E271185345E9D347D7453C05D4B/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541174034/90C4A124BB82CCE0B5E38E13860ED49BB9A4973B/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541174034/90C4A124BB82CCE0B5E38E13860ED49BB9A4973B/",
         scale = {1,1,1},
@@ -1857,7 +1871,7 @@ function onLoad()
     }
     miniInfo.rebelPathfindersLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/951848302305475193/3C613417B99B185BBAEC7A4C66AAE10E8FD6F8D5/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/951848302305475310/FF2A55C2559DA2CA2108EE6D7E5605774EF1B04D/",
         blue = "http://cloud-3.steamusercontent.com/ugc/951848302305475310/FF2A55C2559DA2CA2108EE6D7E5605774EF1B04D/",
         scale = {1,1,1},
@@ -1865,7 +1879,7 @@ function onLoad()
     }
     miniInfo.rebelPathfinders1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/951848302305475558/EE0863D9DE3C9D35C486B7273E1D555BB1F09566/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/951848302305475310/FF2A55C2559DA2CA2108EE6D7E5605774EF1B04D/",
         blue = "http://cloud-3.steamusercontent.com/ugc/951848302305475310/FF2A55C2559DA2CA2108EE6D7E5605774EF1B04D/",
         scale = {1,1,1},
@@ -1873,7 +1887,7 @@ function onLoad()
     }
     miniInfo.rebelPathfinders2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/951848302305475456/26BF332D69FD5B08D677EBDB91948820E03690DB/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/951848302305475310/FF2A55C2559DA2CA2108EE6D7E5605774EF1B04D/",
         blue = "http://cloud-3.steamusercontent.com/ugc/951848302305475310/FF2A55C2559DA2CA2108EE6D7E5605774EF1B04D/",
         scale = {1,1,1},
@@ -1881,7 +1895,7 @@ function onLoad()
     }
     miniInfo.rebelPathfinders3 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/951848302305475667/B5CC42E1CAB9059DEE4B1237222CF0FE3BB6B838/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/951848302305475310/FF2A55C2559DA2CA2108EE6D7E5605774EF1B04D/",
         blue = "http://cloud-3.steamusercontent.com/ugc/951848302305475310/FF2A55C2559DA2CA2108EE6D7E5605774EF1B04D/",
         scale = {1,1,1},
@@ -1889,7 +1903,7 @@ function onLoad()
     }
     miniInfo.pao = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/993513208355174746/6F5A50CE6D4E23C6278AE868FD359A49E1C80179/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/993513208355174858/CCC2B3862F1FEB611B03317594F6F0E761750C70/",
         blue = "http://cloud-3.steamusercontent.com/ugc/993513208355174858/CCC2B3862F1FEB611B03317594F6F0E761750C70/",
         scale = {1,1,1},
@@ -1898,7 +1912,7 @@ function onLoad()
     }
     miniInfo.bistan = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/993513208355174951/467D917BF6BCABCC9F6DD17F5DEDB43A11DEA9A7/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/993513208355175183/AD143EC79EC2BA3E7B93B114CC8AFEAAD322D806/",
         blue = "http://cloud-3.steamusercontent.com/ugc/993513208355175183/AD143EC79EC2BA3E7B93B114CC8AFEAAD322D806/",
         scale = {1,1,1},
@@ -1906,7 +1920,7 @@ function onLoad()
     }
     miniInfo.atrt = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541266463/014ECD21C93F864E1C1DFD104A365DFC555EBAF8/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        collider = _BASE_COLLIDERS.large,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541267239/D9891291A896CC024383C024B20C5ACF87EC8A18/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541267239/D9891291A896CC024383C024B20C5ACF87EC8A18/",
         scale = {1,1,1},
@@ -1914,7 +1928,7 @@ function onLoad()
     }
     miniInfo.tauntaunRidersLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/788608699499191489/E91DEB380842511B21284A125A505B6C71D18474/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        collider = _BASE_COLLIDERS.medium,
         red = "http://cloud-3.steamusercontent.com/ugc/788608699499191676/8E19A176FF0B3D2923F8F3D6DEA80D389F77CB27/",
         blue = "http://cloud-3.steamusercontent.com/ugc/788608699499191676/8E19A176FF0B3D2923F8F3D6DEA80D389F77CB27/",
         scale = {1,1,1},
@@ -1922,7 +1936,7 @@ function onLoad()
     }
     miniInfo.tauntaunRiders1= {
         mesh = "http://cloud-3.steamusercontent.com/ugc/788608699499191881/3DBB7DF0943F0D25484DE34581411825BA566F8A/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        collider = _BASE_COLLIDERS.medium,
         red = "http://cloud-3.steamusercontent.com/ugc/788608699499191676/8E19A176FF0B3D2923F8F3D6DEA80D389F77CB27/",
         blue = "http://cloud-3.steamusercontent.com/ugc/788608699499191676/8E19A176FF0B3D2923F8F3D6DEA80D389F77CB27/",
         scale = {1,1,1},
@@ -1930,7 +1944,7 @@ function onLoad()
     }
     miniInfo.fdLaserCannonTeam = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541267781/BE163E2112B28E8C7C5E536B037D3115103F9642/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540541270022/6A40D7E3F7ACD02D54C370A8C299AE69142F72D8/",
+        collider = _BASE_COLLIDERS.huge,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541269701/797EACA86E0FB799D16DC8FE907A70C4B976C5EE/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541269701/797EACA86E0FB799D16DC8FE907A70C4B976C5EE/",
         scale = {1,1,1},
@@ -1938,7 +1952,7 @@ function onLoad()
     }
     miniInfo.airSpeeder = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/999141806429331055/047818ABA85804B98787BC67BEF12D24EC8F8ADB/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540541270022/6A40D7E3F7ACD02D54C370A8C299AE69142F72D8/",
+        collider = _BASE_COLLIDERS.huge,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541315963/DD72FAD5F49D303A83A4463B0D3796E3A8FD5BE8/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541315963/DD72FAD5F49D303A83A4463B0D3796E3A8FD5BE8/",
         scale = {1,1,1},
@@ -1946,7 +1960,7 @@ function onLoad()
     }
     miniInfo.x34Landspeeder = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/949599512594267188/9FA2B8A42C94B6E3683F1B753CEBA14FC3258592/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540541270022/6A40D7E3F7ACD02D54C370A8C299AE69142F72D8/",
+        collider = _BASE_COLLIDERS.huge,
         red = "http://cloud-3.steamusercontent.com/ugc/949599512594267308/582E5F56A65FE6CD486BCBABB510CAE4B4DF6C8C/",
         blue = "http://cloud-3.steamusercontent.com/ugc/949599512594267308/582E5F56A65FE6CD486BCBABB510CAE4B4DF6C8C/",
         scale = {1,1,1},
@@ -1955,7 +1969,7 @@ function onLoad()
 
     miniInfo.darthVader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541323740/BF58AB674CB7D638333F1B04A7C9A5B9D7DBF0E4/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541324289/B37D84D512722740E8310629C3E7BFC45AF0FBC9/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541324289/B37D84D512722740E8310629C3E7BFC45AF0FBC9/",
         scale = {1,1,1},
@@ -1963,7 +1977,7 @@ function onLoad()
     }
     miniInfo.darthVaderTheEmperorsApprentice = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/777357228030156593/FEBA127ECDF2917EA8F8066BBB10BADA7D365D3E/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541324289/B37D84D512722740E8310629C3E7BFC45AF0FBC9//",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541324289/B37D84D512722740E8310629C3E7BFC45AF0FBC9/",
         scale = {1,1,1},
@@ -1971,7 +1985,7 @@ function onLoad()
     }
     miniInfo.generalVeers = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541565411/F5F84397A9353DAD3D913F34E49812C1C895DA65/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541565593/F948637FEE70F52681A5A3C49C0E00EF25471AC1/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541565593/F948637FEE70F52681A5A3C49C0E00EF25471AC1/",
         scale = {1,1,1},
@@ -1979,7 +1993,7 @@ function onLoad()
     }
     miniInfo.emperorPalpatine = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541565714/71E1936EB657F4BC1074EB740BC9AA0531A130AC/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541565804/0EB3EBFD318678DBE5B7C83B39A31DC8AB3376B6/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541565804/0EB3EBFD318678DBE5B7C83B39A31DC8AB3376B6/",
         scale = {1,1,1},
@@ -1987,7 +2001,7 @@ function onLoad()
     }
     miniInfo.directorOrsonKrennic = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/951848302305476013/77069645EC03E0F1C1DB10C2CE7EA85917E45404/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/951848302305476130/772EEBD3EC49A7271C1C7647F817C51ED23DE3B2/",
         blue = "http://cloud-3.steamusercontent.com/ugc/951848302305476130/772EEBD3EC49A7271C1C7647F817C51ED23DE3B2/",
         scale = {1,1,1},
@@ -1995,7 +2009,7 @@ function onLoad()
     }
     miniInfo.idenVersio = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/773996263557021593/68887AFFBF8F1A2472A80F6514CD617A54A1D705/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/770611889400014191/9442AAB074AB2204C7A5CD8843037C71CFC44540/",
         blue = "http://cloud-3.steamusercontent.com/ugc/770611889400014191/9442AAB074AB2204C7A5CD8843037C71CFC44540/",
         scale = {1,1,1},
@@ -2003,7 +2017,7 @@ function onLoad()
     }
     miniInfo.id10 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/773996263557020821/1E2319EBFD85D7748450F40689A1315696052EFC/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/770611889399999868/37F150131345FF1F47592A96239395A583AAE5EA/",
         blue = "http://cloud-3.steamusercontent.com/ugc/770611889399999868/37F150131345FF1F47592A96239395A583AAE5EA/",
         scale = {1,1,1},
@@ -2011,7 +2025,7 @@ function onLoad()
     }
     miniInfo.imperialOfficer = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541565898/F06AB6731446249164D34ACA208E4FAE70C6FE00/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541566011/A7A84EBF79DA5E1D5BCE71E863FC16EC40937F6F/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541566011/A7A84EBF79DA5E1D5BCE71E863FC16EC40937F6F/",
         scale = {1,1,1},
@@ -2019,7 +2033,7 @@ function onLoad()
     }
     miniInfo.imperialOfficerLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541565898/F06AB6731446249164D34ACA208E4FAE70C6FE00/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541566011/A7A84EBF79DA5E1D5BCE71E863FC16EC40937F6F/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541566011/A7A84EBF79DA5E1D5BCE71E863FC16EC40937F6F/",
         scale = {1,1,1},
@@ -2028,7 +2042,7 @@ function onLoad()
     }
     miniInfo.bobaFett = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541667697/9BC2C54E14EA265620F3D96553274503245D1681/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541669466/60DFE8F3EC756ECE7E5729D3261EF37CACA587C6/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541669466/60DFE8F3EC756ECE7E5729D3261EF37CACA587C6/",
         scale = {1,1,1},
@@ -2036,7 +2050,7 @@ function onLoad()
     }
     miniInfo.bossk = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/948474323838791181/6B9D77B77DF8FD7AFA19342AD687F0E15A2E21B7/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/948474323838791276/ABFCDD8C71D484E6B6050080BB80B79D0DE93178/",
         blue = "http://cloud-3.steamusercontent.com/ugc/948474323838791276/ABFCDD8C71D484E6B6050080BB80B79D0DE93178/",
         scale = {1,1,1},
@@ -2045,7 +2059,7 @@ function onLoad()
 
     miniInfo.stormtrooper1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541711529/FF076CE02269A8505CB8EFC06749196FFD446391/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/",
         scale = {1,1,1},
@@ -2053,7 +2067,7 @@ function onLoad()
     }
     miniInfo.stormtrooper2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541711653/C170DF086178164DC66188071D15E9EB36C9A742/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/",
         scale = {1,1,1},
@@ -2061,7 +2075,7 @@ function onLoad()
     }
     miniInfo.stormtrooper3 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541711874/7E06BF6E8E18DD05BBBF10343614B47B8BEE9948/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/",
         scale = {1,1,1},
@@ -2069,7 +2083,7 @@ function onLoad()
     }
     miniInfo.stormtrooper4 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541711777/1E415A2A18F2269B0C63E1C2901E5192DCCFE8CB/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/",
         scale = {1,1,1},
@@ -2077,7 +2091,7 @@ function onLoad()
     }
     miniInfo.stormtrooperLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541711094/1DF94C3CDF022814179AFBA6D7521E6196760949/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/",
         scale = {1,1,1},
@@ -2086,7 +2100,7 @@ function onLoad()
     }
     miniInfo.stormtrooperSpecialist = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/766102173464686810/87075FBAEFB7A45C107FEDD41E26ACF148C2592D/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/",
         scale = {1,1,1},
@@ -2094,7 +2108,7 @@ function onLoad()
     }
     miniInfo.rt97CStormtrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/766101851242660925/33331F4DA2AE832C568A49BD24B65D4C1462AF27/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/766101851242654975/755ABA199B9C3BEEA1F33AF58FD05D378A67C97F/",
         blue = "http://cloud-3.steamusercontent.com/ugc/766101851242654975/755ABA199B9C3BEEA1F33AF58FD05D378A67C97F/",
         scale = {1,1,1},
@@ -2102,7 +2116,7 @@ function onLoad()
     }
     miniInfo.t21Stormtrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/766101851242554815/68F112DE9EC465DA003ECBD26DE129ADD34CD558/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/",
         scale = {1,1,1},
@@ -2110,7 +2124,7 @@ function onLoad()
     }
     miniInfo.stormtrooperCaptain = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/766101851242555871/B1A38B82950DD8864591296C730D82E0D66BC985/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/766102173464650963/1A63FC0E22280AA3B95488A298270874B7B6CDD2/",
         blue = "http://cloud-3.steamusercontent.com/ugc/766102173464650963/1A63FC0E22280AA3B95488A298270874B7B6CDD2/",
         scale = {1,1,1},
@@ -2120,7 +2134,7 @@ function onLoad()
 
     miniInfo.snowtrooper1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541801837/D52F333945BF667A37E06611977C36186CEFC7B6/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541801215/595165C57A67BF2BD505BE6F0DF8F11AD4EA55D2/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541801215/595165C57A67BF2BD505BE6F0DF8F11AD4EA55D2/",
         scale = {1,1,1},
@@ -2128,7 +2142,7 @@ function onLoad()
     }
     miniInfo.snowtrooper2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541801500/728C586E21D0A4EBD8DE54EEF4E097EFEEECE871/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541801215/595165C57A67BF2BD505BE6F0DF8F11AD4EA55D2/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541801215/595165C57A67BF2BD505BE6F0DF8F11AD4EA55D2/",
         scale = {1,1,1},
@@ -2136,7 +2150,7 @@ function onLoad()
     }
     miniInfo.snowtrooper3 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541801363/743D9E272367ABB1F6296D5EFB6010637C58D5E4/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541801215/595165C57A67BF2BD505BE6F0DF8F11AD4EA55D2/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541801215/595165C57A67BF2BD505BE6F0DF8F11AD4EA55D2/",
         scale = {1,1,1},
@@ -2144,7 +2158,7 @@ function onLoad()
     }
     miniInfo.snowtrooper4 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541801717/EDEA1301FC55A6970D5FBCF0A9F10456E4C2EE40/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541801215/595165C57A67BF2BD505BE6F0DF8F11AD4EA55D2/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541801215/595165C57A67BF2BD505BE6F0DF8F11AD4EA55D2/",
         scale = {1,1,1},
@@ -2152,7 +2166,7 @@ function onLoad()
     }
     miniInfo.snowtrooperLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541801027/2A5DEE9952A0179FC8448FFA52819B387124ACD7/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541801215/595165C57A67BF2BD505BE6F0DF8F11AD4EA55D2/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541801215/595165C57A67BF2BD505BE6F0DF8F11AD4EA55D2/",
         scale = {1,1,1},
@@ -2161,7 +2175,7 @@ function onLoad()
     }
     miniInfo.dlt19Stormtrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/766101851242465584/D38BBF10F76882CFF4189AB478E9F0691A22298F/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/766101851242466181/BEF69EF45F1CCEF50CDF7B5CC6E1FE6BDC556310/",
         blue = "http://cloud-3.steamusercontent.com/ugc/766101851242466181/BEF69EF45F1CCEF50CDF7B5CC6E1FE6BDC556310/",
         scale = {1,1,1},
@@ -2169,7 +2183,7 @@ function onLoad()
     }
     miniInfo.t7IonSnowtrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541802160/69A03779E6B67F6F547C2FBD70ACDFC39281387D/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541802252/037749C730FACCA3361B041BCB3C68E7E19DCDF8/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541802252/037749C730FACCA3361B041BCB3C68E7E19DCDF8/",
         scale = {1,1,1},
@@ -2177,7 +2191,7 @@ function onLoad()
     }
     miniInfo.flametrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541801931/BDE907EBE0BFC0DC4180C76AFEA3F8667013FF3B/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541802054/044AD0961CD1485A61AC3B6CB3669FD8AA5A0FEB/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541802054/044AD0961CD1485A61AC3B6CB3669FD8AA5A0FEB/",
         scale = {1,1,1},
@@ -2185,7 +2199,7 @@ function onLoad()
     }
     miniInfo.hh12Stormtrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541711981/5D8FB39102FEE64DF1802AA71B66666B4E03717F/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541712102/C37F3281C89F697024FF1F343B06FB5AC828EA10/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541712102/C37F3281C89F697024FF1F343B06FB5AC828EA10/",
         scale = {1,1,1},
@@ -2193,7 +2207,7 @@ function onLoad()
     }
     miniInfo.fx9MedicalDroid = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/949599512594268065/7B4874981CECB7BB80D5BC54F60F1939B9A9DAB1/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/949599512594268174/00246DE6DCE285206330C43B8049B19FFDF5BB41/",
         blue = "http://cloud-3.steamusercontent.com/ugc/949599512594268174/00246DE6DCE285206330C43B8049B19FFDF5BB41/",
         scale = {1,1,1},
@@ -2201,7 +2215,7 @@ function onLoad()
     }
     miniInfo.imperialCommsTechnician = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/949599512594268417/62CC1D5BCBD1EE294C72781B03AB972B3ED5AD12/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/949599512594268526/CA2596C0B2D7DF68D794B2A7880F34B5459F1206/",
         blue = "http://cloud-3.steamusercontent.com/ugc/949599512594268526/CA2596C0B2D7DF68D794B2A7880F34B5459F1206/",
         scale = {1,1,1},
@@ -2209,7 +2223,7 @@ function onLoad()
     }
     miniInfo.r4AstromechDroid = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/949599512594492173/DDA1CC3AEEC3D5ADB3B04F35125EE8A6FB7EB93A/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/949599512594267919/F44B2C3C810757626C7A4A61DAA7F2BC2BEECFC6/",
         blue = "http://cloud-3.steamusercontent.com/ugc/949599512594267919/F44B2C3C810757626C7A4A61DAA7F2BC2BEECFC6/",
         scale = {1,1,1},
@@ -2217,7 +2231,7 @@ function onLoad()
     }
     miniInfo.shoretroopersLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/786359682702688359/642C317FE5C91E4DCC908FEA02A7ED4000B06A9F/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/786359682702687694/C12AAE8B7F487BE4C1545E253AB3C026E0426AA1/",
         blue = "http://cloud-3.steamusercontent.com/ugc/786359682702687694/C12AAE8B7F487BE4C1545E253AB3C026E0426AA1/",
         scale = {1,1,1},
@@ -2226,7 +2240,7 @@ function onLoad()
     }
     miniInfo.shoretroopers1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/786359682702687570/0D2A602282BAACDCE665EF9D1D65CEA413944083/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/786359682702687694/C12AAE8B7F487BE4C1545E253AB3C026E0426AA1/",
         blue = "http://cloud-3.steamusercontent.com/ugc/786359682702687694/C12AAE8B7F487BE4C1545E253AB3C026E0426AA1/",
         scale = {1,1,1},
@@ -2234,7 +2248,7 @@ function onLoad()
     }
     miniInfo.shoretroopers2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/786359682702688133/C8D721D29D711045A27EEC3868D4B7A111C86F20/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/786359682702687694/C12AAE8B7F487BE4C1545E253AB3C026E0426AA1/",
         blue = "http://cloud-3.steamusercontent.com/ugc/786359682702687694/C12AAE8B7F487BE4C1545E253AB3C026E0426AA1/",
         scale = {1,1,1},
@@ -2242,7 +2256,7 @@ function onLoad()
     }
     miniInfo.shoretroopers3 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/786359682702687282/B02342FDEEE7DDE82DF96EB434B1D033B0A4C899/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/786359682702687694/C12AAE8B7F487BE4C1545E253AB3C026E0426AA1/",
         blue = "http://cloud-3.steamusercontent.com/ugc/786359682702687694/C12AAE8B7F487BE4C1545E253AB3C026E0426AA1/",
         scale = {1,1,1},
@@ -2250,7 +2264,7 @@ function onLoad()
     }
     miniInfo.shoretroopers4 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/786359682702688256/B266465186713632AE14D6B4B473AB4E94814685/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/786359682702687694/C12AAE8B7F487BE4C1545E253AB3C026E0426AA1/",
         blue = "http://cloud-3.steamusercontent.com/ugc/786359682702687694/C12AAE8B7F487BE4C1545E253AB3C026E0426AA1/",
         scale = {1,1,1},
@@ -2258,7 +2272,7 @@ function onLoad()
     }
     miniInfo.t21BTrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/786359682702687816/8C17AF1D2344B7E8B1C8D34A0F2228E9ADC2FFAA/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/786359682702687407/D5B685EA41E9C664F2D16381474B5F08DF9CFAE5/",
         blue = "http://cloud-3.steamusercontent.com/ugc/786359682702687407/D5B685EA41E9C664F2D16381474B5F08DF9CFAE5/",
         scale = {1,1,1},
@@ -2266,7 +2280,7 @@ function onLoad()
     }
     miniInfo.df90MortarTrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/786359682702688709/1EB7C549A90465F116EF307643FEA1D572CE1008/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.medium,
         red = "http://cloud-3.steamusercontent.com/ugc/786359682702688820/94F2B4954FD378EA9E5544E37B80B8556812F2F2/",
         blue = "http://cloud-3.steamusercontent.com/ugc/786359682702688820/94F2B4954FD378EA9E5544E37B80B8556812F2F2/",
         scale = {1,1,1},
@@ -2274,7 +2288,7 @@ function onLoad()
     }
     miniInfo.scoutTroopersLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541911155/36E8C01A67E5E7A4188FC619261E0BAB0DF438C1/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/950714557093539603/6584D58DCD3135C901F302599C304E2D7044AD4B/",
         blue = "http://cloud-3.steamusercontent.com/ugc/950714557093539603/6584D58DCD3135C901F302599C304E2D7044AD4B/",
         scale = {1,1,1},
@@ -2282,7 +2296,7 @@ function onLoad()
     }
     miniInfo.scoutTroopers1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541911406/C33160A2888F0CE53C9712B1872478E038F9B0EA/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/950714557093539603/6584D58DCD3135C901F302599C304E2D7044AD4B/",
         blue = "http://cloud-3.steamusercontent.com/ugc/950714557093539603/6584D58DCD3135C901F302599C304E2D7044AD4B/",
         scale = {1,1,1},
@@ -2290,7 +2304,7 @@ function onLoad()
     }
     miniInfo.scoutTroopers2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541911585/324AE8DA9D33C07E2FE620FC4B49E2C190F39F5A/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/950714557093539603/6584D58DCD3135C901F302599C304E2D7044AD4B/",
         blue = "http://cloud-3.steamusercontent.com/ugc/950714557093539603/6584D58DCD3135C901F302599C304E2D7044AD4B/",
         scale = {1,1,1},
@@ -2298,7 +2312,7 @@ function onLoad()
     }
     miniInfo.scoutTroopers3 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541911689/42647324CBDBF25155498DF1FFDDDC2EC04FB5EC/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/950714557093539603/6584D58DCD3135C901F302599C304E2D7044AD4B/",
         blue = "http://cloud-3.steamusercontent.com/ugc/950714557093539603/6584D58DCD3135C901F302599C304E2D7044AD4B/",
         scale = {1,1,1},
@@ -2306,7 +2320,7 @@ function onLoad()
     }
     miniInfo.dlt19xSniper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/770610077943667377/92306C3BFB675310563691C3C582BF5B9FC9ACD4/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/770610077943667167/66F3188269E49FE5DAD649E771D799F2593263FF/",
         blue = "http://cloud-3.steamusercontent.com/ugc/770610077943667167/66F3188269E49FE5DAD649E771D799F2593263FF/",
         scale = {1,1,1},
@@ -2314,7 +2328,7 @@ function onLoad()
     }
     miniInfo.dlt19xSniperLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/770610077943667377/92306C3BFB675310563691C3C582BF5B9FC9ACD4/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/770610077943667167/66F3188269E49FE5DAD649E771D799F2593263FF/",
         blue = "http://cloud-3.steamusercontent.com/ugc/770610077943667167/66F3188269E49FE5DAD649E771D799F2593263FF/",
         scale = {1,1,1},
@@ -2323,7 +2337,7 @@ function onLoad()
     }
     miniInfo.sonicChargeSaboteur = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/950714557093539716/6A0D63306F505A074395AFA61EB990280DB8995D/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/950714557093539899/FF7A535E91BF79D4C3E0D55E874C1ACEB6FBF434/",
         blue = "http://cloud-3.steamusercontent.com/ugc/950714557093539899/FF7A535E91BF79D4C3E0D55E874C1ACEB6FBF434/",
         scale = {1,1,1},
@@ -2331,7 +2345,7 @@ function onLoad()
     }
     miniInfo.sonicChargeSaboteurLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/950714557093539716/6A0D63306F505A074395AFA61EB990280DB8995D/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/950714557093539899/FF7A535E91BF79D4C3E0D55E874C1ACEB6FBF434/",
         blue = "http://cloud-3.steamusercontent.com/ugc/950714557093539899/FF7A535E91BF79D4C3E0D55E874C1ACEB6FBF434/",
         scale = {1,1,1},
@@ -2340,7 +2354,7 @@ function onLoad()
     }
     miniInfo.imperialRoyalGuardsLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541911959/D583DF28D96DBDF2F1FE9FB6AAB25809774C46EF/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/",
         scale = {1,1,1},
@@ -2348,7 +2362,7 @@ function onLoad()
     }
     miniInfo.imperialRoyalGuards1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541912172/73A36C525BC98DD1F4EC7953943FE5F660B0E9D8/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/",
         scale = {1,1,1},
@@ -2356,7 +2370,7 @@ function onLoad()
     }
     miniInfo.imperialRoyalGuards2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541912365/CB3109223BD5A017AA159066A3B17002B8892047/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/",
         scale = {1,1,1},
@@ -2364,7 +2378,7 @@ function onLoad()
     }
     miniInfo.electrostaffGuard = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541912278/DC9D78CD5742236F9F272AC1F8AA1D59D07CF5A9/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/",
         scale = {1,1,1},
@@ -2372,7 +2386,7 @@ function onLoad()
     }
     miniInfo.imperialDeathTroopersLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/951848302305474570/777B8146B150032E3D733D17110BE5887D1AB991/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/",
         blue = "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/",
         scale = {1,1,1},
@@ -2380,7 +2394,7 @@ function onLoad()
     }
     miniInfo.imperialDeathTroopers1= {
         mesh = "http://cloud-3.steamusercontent.com/ugc/951848302305474824/49EFFD221EF1EBD3F3365B6B73B9A4A5C6E6A075/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/",
         blue = "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/",
         scale = {1,1,1},
@@ -2388,7 +2402,7 @@ function onLoad()
     }
     miniInfo.imperialDeathTroopers2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/951848302305474956/BB78111128E91BB2DB22F2990AFB438B9EA5FC0E/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/",
         blue = "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/",
         scale = {1,1,1},
@@ -2396,7 +2410,7 @@ function onLoad()
     }
     miniInfo.imperialDeathTroopers3 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/951848302305475069/81803116C6F5F9B133D2D0CC39E2A2CA6043E9DB/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/",
         blue = "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/",
         scale = {1,1,1},
@@ -2404,7 +2418,7 @@ function onLoad()
     }
     miniInfo.dtf16 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/993513208355174615/DD0DA9DFDBCA621CF297C9A9EB2356279A733158/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/",
         blue = "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/",
         scale = {1,1,1},
@@ -2413,7 +2427,7 @@ function onLoad()
     }
     miniInfo.dlt19DTrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/770610077943650040/CDB9EFD9CB36DE0EB5AB78B22F2B334BDB1E6DFE/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/770610077942938053/6187B2D6848EC35010DE6C3EEBB5DF6125D02D45/",
         blue = "http://cloud-3.steamusercontent.com/ugc/770610077942938053/6187B2D6848EC35010DE6C3EEBB5DF6125D02D45/",
         scale = {1,1,1},
@@ -2421,7 +2435,7 @@ function onLoad()
     }
     miniInfo.speederBikeLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540542045928/74630975D4992CA09BDDD88460874FB9E4095FC9/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        collider = _BASE_COLLIDERS.medium,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540542045645/AF0264339BB7E1D09E74AF920E2FB693C3CA1592/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540542045645/AF0264339BB7E1D09E74AF920E2FB693C3CA1592/",
         scale = {1,1,1},
@@ -2429,7 +2443,7 @@ function onLoad()
     }
     miniInfo.speederBike = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540542045506/0E2EC344AA0AD37699FFEFD4E1BA86A4FD4CD48B/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        collider = _BASE_COLLIDERS.medium,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540542045645/AF0264339BB7E1D09E74AF920E2FB693C3CA1592/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540542045645/AF0264339BB7E1D09E74AF920E2FB693C3CA1592/",
         scale = {1,1,1},
@@ -2437,7 +2451,7 @@ function onLoad()
     }
     miniInfo.eWebHeavyBlasterTeam = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540542046063/4018BD67779A3F2ACCFA92C35306880C2FC60188/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        collider = _BASE_COLLIDERS.large,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540542046257/D259CAB86BBC7A60FB09149229F33508C8DF4CE8/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540542046257/D259CAB86BBC7A60FB09149229F33508C8DF4CE8/",
         scale = {1,1,1},
@@ -2445,7 +2459,7 @@ function onLoad()
     }
     miniInfo.dewbackRider = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/786359682702688959/0FCB94B52F0C2DF6E3F296AB6980CEC158E3E496/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        collider = _BASE_COLLIDERS.large,
         red = "http://cloud-3.steamusercontent.com/ugc/786359682702689114/727755B3BE824994C869F1C869D8B5A07A3CD284/",
         blue = "http://cloud-3.steamusercontent.com/ugc/786359682702689114/727755B3BE824994C869F1C869D8B5A07A3CD284/",
         scale = {1,1,1},
@@ -2453,7 +2467,7 @@ function onLoad()
     }
     miniInfo.atst = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/999141806429351360/24C098E7B3D1708CDCFB9AEA4B2C445EF2DBAEE0/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540541270022/6A40D7E3F7ACD02D54C370A8C299AE69142F72D8/",
+        collider = _BASE_COLLIDERS.huge,
         red = "http://cloud-3.steamusercontent.com/ugc/785234540542046425/F18B487C68529B4C8FF37C88F96A3CCA3D0E24BD/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234540542046609/68BF9FE41CDCD77BE4C678F35A7C505495FD8E94/",
         scale = {1,1,1},
@@ -2461,7 +2475,7 @@ function onLoad()
     }
     miniInfo.tx225 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/770610077943664603/48F725F2C3EAAF7514813A42EE084CE2E7382909/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/963116666702885485/70F17B3327115A379D06F81C6F47F76470D7B826/",
+        collider = _BASE_COLLIDERS.long,
         red = "http://cloud-3.steamusercontent.com/ugc/770610077942978328/35E12FB664BC3AE0A7AFCCAFF306AFC7481CE4D3/",
         blue = "http://cloud-3.steamusercontent.com/ugc/770610077942978328/35E12FB664BC3AE0A7AFCCAFF306AFC7481CE4D3/",
         scale = {1,1,1},
@@ -2470,7 +2484,7 @@ function onLoad()
     -- SEPARATIST
     miniInfo.generalGrievous = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780869167436/AAA2C61A17BB43F2673AF16D30BD0478B9AAAD2A/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780869167571/EF86CBDA5F361282AD077D61FA81ABF0FEE061A0/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780869167571/EF86CBDA5F361282AD077D61FA81ABF0FEE061A0/",
         scale = {1,1,1},
@@ -2478,7 +2492,7 @@ function onLoad()
     }
     miniInfo.countDooku = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/775105953849586543/25BD09F275C593DB6C794359A9C50F3188F4D804/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/775105953849586640/B0512CC73C982F94EB5FEAE1661CF4438DAD8879/",
         blue = "http://cloud-3.steamusercontent.com/ugc/775105953849586640/B0512CC73C982F94EB5FEAE1661CF4438DAD8879/",
         scale = {1,1,1},
@@ -2486,7 +2500,7 @@ function onLoad()
     }
     miniInfo.cadBane = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/1003681674396400482/F8900CFC9EF2309C9F54AE33AE5444B2B09DB1CD/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/1003681674396400696/907F4310FEA7A7CD89EE64A1AF3A8CC77897CCAC/",
         blue = "http://cloud-3.steamusercontent.com/ugc/1003681674396400696/907F4310FEA7A7CD89EE64A1AF3A8CC77897CCAC/",
         scale = {1,1,1},
@@ -2495,7 +2509,7 @@ function onLoad()
 
     miniInfo.b1BattleDroid1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780869167061/48F42C02EDD970E6DE8E59B8601EF3E7F11C1742/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/",
         scale = {1,1,1},
@@ -2504,7 +2518,7 @@ function onLoad()
     miniInfo.b1BattleDroid2 = miniInfo.b1BattleDroid1
     miniInfo.b1BattleDroid3 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780869167318/DBC7863706A08B96020D3BFBE7A0C2C5689B7B08/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/",
         scale = {1,1,1},
@@ -2512,7 +2526,7 @@ function onLoad()
     }
     miniInfo.b1BattleDroid4 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780869166660/36AF6887F11FC70FF6AB75D0434EA79952C9E882/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/",
         scale = {1,1,1},
@@ -2520,7 +2534,7 @@ function onLoad()
     }
     miniInfo.b1BattleDroid5 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780869167194/9ADFFD9AD608CBE3E9F6F61AB416E699A4156109/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/",
         scale = {1,1,1},
@@ -2528,7 +2542,7 @@ function onLoad()
     }
     miniInfo.b1BattleDroidLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780869166347/AA861F86A0B74CF335533E425A6CBACB99395A09/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780869166529/263C2AB95B1743539EC2CBDE40B0A14B1F5E5693/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780869166529/263C2AB95B1743539EC2CBDE40B0A14B1F5E5693/",
         scale = {1,1,1},
@@ -2538,7 +2552,7 @@ function onLoad()
     miniInfo.b1BattleDroid6 = miniInfo.b1BattleDroid3
     miniInfo.e5CB1Trooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780871782781/4DCE4780DE1CCDFB2996C28200A26C3B0696DD5A/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780871782881/ADC1DBC3987C84AF486F9CD0E19A0455F4C33291/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780871782881/ADC1DBC3987C84AF486F9CD0E19A0455F4C33291/",
         scale = {1,1,1},
@@ -2546,7 +2560,7 @@ function onLoad()
     }
     miniInfo.e60RB1Trooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780871782500/34D317CFE0BE32E4FFFB84567822CDF7AC4D4C98/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785234780871782620/9A9EA2B54691F42EA6D34762D33D523A836201B2/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785234780871782620/9A9EA2B54691F42EA6D34762D33D523A836201B2/",
         scale = {1,1,1},
@@ -2554,7 +2568,7 @@ function onLoad()
     }
     miniInfo.b1SecurityDroid = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/766102173467517125/1BEF7A7795DF3F6DB91B84C1C82D8FBB24BF574B/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/766102173467517405/DC3A7F38CF3839B7C5F2FCCE85745041094ADA81/",
         blue = "http://cloud-3.steamusercontent.com/ugc/766102173467517405/DC3A7F38CF3839B7C5F2FCCE85745041094ADA81/",
         scale = {1,1,1},
@@ -2562,7 +2576,7 @@ function onLoad()
     }
     miniInfo.e5sB1Trooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/766102422959434489/60F05B7FC8544DFC640CB33DA55F19EB5F2CB55A/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/766102422959428835/10D3F8862BDECE8C0D7A874CC000F25CD6232168/",
         blue = "http://cloud-3.steamusercontent.com/ugc/766102422959428835/10D3F8862BDECE8C0D7A874CC000F25CD6232168/",
         scale = {1,1,1},
@@ -2570,7 +2584,7 @@ function onLoad()
     }
     miniInfo.oomSeriesBattleDroid = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/767228764785018348/F0B0C50757F4043A6C9B8746A73F8EC4342CA7DA/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/767228764785012711/4DF65424F7D5400F0DC8A4DE7A028B373143CE6E/",
         blue = "http://cloud-3.steamusercontent.com/ugc/767228764785012711/4DF65424F7D5400F0DC8A4DE7A028B373143CE6E/",
         scale = {1,1,1},
@@ -2579,7 +2593,7 @@ function onLoad()
     }
     miniInfo.radiationCannonB1Trooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/767228764785008444/482C29486FD00312B2C7848D26A82793BCDF7D7F/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/767228764784997566/39300970854603B1F1539C46D70CC21280E278FF/",
         blue = "http://cloud-3.steamusercontent.com/ugc/767228764784997566/39300970854603B1F1539C46D70CC21280E278FF/",
         scale = {1,1,1},
@@ -2587,7 +2601,7 @@ function onLoad()
     }
     miniInfo.b2SuperBattleDroidLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/775105953849586118/94F967F21EA7E390A200C4BDA5581D07DBB37AC2/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
         blue = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
         scale = {1,1,1},
@@ -2595,7 +2609,7 @@ function onLoad()
     }
     miniInfo.b2SuperBattleDroid1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/775105953849586430/E5941CF7A3631E6D4A28832AE489A4340C96B0B9/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
         blue = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
         scale = {1,1,1},
@@ -2603,7 +2617,7 @@ function onLoad()
     }
     miniInfo.b2SuperBattleDroid2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/775105953849586226/9326AD8D3EC80CC53F4BF2D156014978DCD715D9/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
         blue = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
         scale = {1,1,1},
@@ -2611,7 +2625,7 @@ function onLoad()
     }
     miniInfo.b2SuperBattleDroid3 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/775105953849586324/B5D59E535AFA2BF99FCA3C584E28FA500ADB89BD/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
         blue = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
         scale = {1,1,1},
@@ -2619,7 +2633,7 @@ function onLoad()
     }
     miniInfo.b2HATrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/775105953849585631/7FF051E2079AB28A4FB77CCC739BCEB42F4CCFAA/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
         blue = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
         scale = {1,1,1},
@@ -2627,7 +2641,7 @@ function onLoad()
     }
     miniInfo.b2ACMTrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/775105953849585917/4D4047069796D1E0567BE9ABD836984FDF12E80E/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
         blue = "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/",
         scale = {1,1,1},
@@ -2637,42 +2651,42 @@ function onLoad()
     local bxDroidMaterials = "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
     miniInfo.bxCommandoDroidLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758259154/A6272C1CF4F1E5961FFD85ADC024E067C6C427A0/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457847081/F7D4E8D3EC85BAEEB5C1B5B913B7F484CC28FC10/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid Leader"
     }
     miniInfo.bxCommandoDroid1 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758257810/4273A2D9A9EA3D565EB3BB1D87A2CE8EB2DBB22D/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457845802/AE70766EAA85C875B023FB980A5A5CEEFB98B1D9/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid"
     }
     miniInfo.bxCommandoDroid2 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758258184/71BE21CE34069E627147C71D8DBFB324AEB7D576/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457846188/D7F348E890430AA319DDDFA513D99DC2783ECF91/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid"
     }
     miniInfo.bxCommandoDroid3 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758258648/3E6E39EDA72822A111FBE80DCE282A37BD466EDF/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457846574/F169D9E2E45B73D1E21B17E32D3B4B4D9AACB196/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid"
     }
     miniInfo.bxCommandoDroidSniper = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758260057/FE59B7D5834C33F69065831735F4CEB4CF68D56C/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457847963/0EA6BE014DA494689FF32F9570C6A73CD88F1894/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid Sniper"
     }
     miniInfo.bxCommandoDroidSniperLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758260057/FE59B7D5834C33F69065831735F4CEB4CF68D56C/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457847963/0EA6BE014DA494689FF32F9570C6A73CD88F1894/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid Sniper",
@@ -2680,14 +2694,14 @@ function onLoad()
     }
     miniInfo.bxCommandoDroidSaboteur = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758259582/C881DC8FFFF3A951A936AD4B8B24F7D8A85FD227/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457847567/079157D001A1520085C6A30620750817C6C01BFF/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid Saboteur"
     }
     miniInfo.bxCommandoDroidSaboteurLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758259582/C881DC8FFFF3A951A936AD4B8B24F7D8A85FD227/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457847567/079157D001A1520085C6A30620750817C6C01BFF/",
         assetbundle_secondary = bxDroidMaterials,
         scale = {1,1,1},
         name = "BX Commando Droid Saboteur",
@@ -2695,7 +2709,7 @@ function onLoad()
     }
     miniInfo.droidekaLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785235151812759044/95037BEC00715812E918EC16919526DADE6F523F/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        collider = _BASE_COLLIDERS.medium,
         red = "http://cloud-3.steamusercontent.com/ugc/785235151812759497/47C2BFAE32E13C07FE68522008085B8C1F2EFDBD/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785235151812759497/47C2BFAE32E13C07FE68522008085B8C1F2EFDBD/",
         scale = {1,1,1},
@@ -2703,7 +2717,7 @@ function onLoad()
     }
     miniInfo.droideka1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785235151812759044/95037BEC00715812E918EC16919526DADE6F523F/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        collider = _BASE_COLLIDERS.medium,
         red = "http://cloud-3.steamusercontent.com/ugc/785235151812759310/88CC976372EF6B912EF2A761563F5632595C2295/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785235151812759310/88CC976372EF6B912EF2A761563F5632595C2295/",
         scale = {1,1,1},
@@ -2711,7 +2725,7 @@ function onLoad()
     }
     miniInfo.STAPLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/1003681674396285422/B2205A5D8B8CC1718D0C9B507BC3E33BCA815567/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        collider = _BASE_COLLIDERS.medium,
         red = "http://cloud-3.steamusercontent.com/ugc/1003681674396285744/5725FD4B443FFC2C6ADD751A4094D4B65944C098/",
         blue = "http://cloud-3.steamusercontent.com/ugc/1003681674396285744/5725FD4B443FFC2C6ADD751A4094D4B65944C098/",
         scale = {1,1,1},
@@ -2719,7 +2733,7 @@ function onLoad()
     }
     miniInfo.STAP1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/1003681674396285422/B2205A5D8B8CC1718D0C9B507BC3E33BCA815567/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        collider = _BASE_COLLIDERS.medium,
         red = "http://cloud-3.steamusercontent.com/ugc/1003681674396285948/9C496D83F828E242C3C7CC18613FA83AD57BCF93/",
         blue = "http://cloud-3.steamusercontent.com/ugc/1003681674396285948/9C496D83F828E242C3C7CC18613FA83AD57BCF93/",
         scale = {1,1,1},
@@ -2727,7 +2741,7 @@ function onLoad()
     }
     miniInfo.aatTank = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785235151813166538/2F32058DDD51C131547B66A3927041BDACDD9E72/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785235151813181413/7151B328CAFD5AA2F36C3731A1C3B0A00714FC88/",
+        collider = _BASE_COLLIDERS.epic,
         red = "http://cloud-3.steamusercontent.com/ugc/785235151813166725/2751E83472B0B6BD0559F5E77FAA3D62A0E17BB1/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785235151813166725/2751E83472B0B6BD0559F5E77FAA3D62A0E17BB1/",
         scale = {1,1,1},
@@ -2737,7 +2751,7 @@ function onLoad()
     -- REPUBLIC
     miniInfo.obiWanKenobi = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873394134/94407058FBA842AD0FDCC0BBB8AB613EA9A739C2/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785236717873394267/272C1C9A8C15C36DC5C10DD62D5EFCEF9BFF4496/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785236717873394267/272C1C9A8C15C36DC5C10DD62D5EFCEF9BFF4496/",
         scale = {1,1,1},
@@ -2745,7 +2759,7 @@ function onLoad()
     }
     miniInfo.cloneCaptainRex = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806720/869654FC3B0590BFFF2E1845C3CFA9169838EBF9/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/776232727456806858/52327997163A5113DF9E11B85F9DA8B6B970012C/",
         blue = "http://cloud-3.steamusercontent.com/ugc/776232727456806858/52327997163A5113DF9E11B85F9DA8B6B970012C/",
         scale = {1,1,1},
@@ -2753,7 +2767,7 @@ function onLoad()
     }
     miniInfo.padme = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/1003681674396399543/F485B2E6C10CBC01661E393966F014E5A5DE8BF9/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/1003681674396399785/16C4492225E9C885997F59A86B4C1C67050F4197/",
         blue = "http://cloud-3.steamusercontent.com/ugc/1003681674396399785/16C4492225E9C885997F59A86B4C1C67050F4197/",
         scale = {1,1,1},
@@ -2762,7 +2776,7 @@ function onLoad()
 
     miniInfo.phaseICloneTrooper1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873393589/6AF627688F36D2049C1307BCB67A755FB27D51C5/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         scale = {1,1,1},
@@ -2770,7 +2784,7 @@ function onLoad()
     }
     miniInfo.phaseICloneTrooper2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873393727/8C4030EF9FEEB32E048567DC2EC38A1985E7C8C0/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         scale = {1,1,1},
@@ -2778,7 +2792,7 @@ function onLoad()
     }
     miniInfo.phaseICloneTrooper3 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873457225/6382F0EA6E2DB0BC65921C3F4E5C97A84B422187/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         scale = {1,1,1},
@@ -2786,7 +2800,7 @@ function onLoad()
     }
     miniInfo.phaseICloneTrooper4 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873394019/F7EDA9D80C35FADA3C000A88C8105823172123B8/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         scale = {1,1,1},
@@ -2794,7 +2808,7 @@ function onLoad()
     }
     miniInfo.phaseICloneTrooperLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873393043/33A6FEA07374DAC8EBB6CDD463B6C761DC765D03/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         scale = {1,1,1},
@@ -2803,7 +2817,7 @@ function onLoad()
     }
     miniInfo.z6PhaseITrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873393876/DEDAF52B0D07E0F2A2BCB54DE9A56E4FA437A3E4/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         scale = {1,1,1},
@@ -2811,7 +2825,7 @@ function onLoad()
     }
     miniInfo.dc15PhaseITrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873393393/915E79CA7D72B0DA950656C69F104A7BB586C0E0/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         scale = {1,1,1},
@@ -2819,7 +2833,7 @@ function onLoad()
     }
     miniInfo.phaseICloneSpecialist = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/767228764785643001/070425BBB2F0D33E71693679EEB72FEF790FE2F6/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/",
         scale = {1,1,1},
@@ -2827,7 +2841,7 @@ function onLoad()
     }
     miniInfo.phaseICloneCaptain = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/767228764785646423/F890985F1B31042E0BC10996930089A3A22BE5C5/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/767228764785647603/8F9ADBD1429C1AF247858C877548E15E5996F4A9/",
         blue = "http://cloud-3.steamusercontent.com/ugc/767228764785647603/8F9ADBD1429C1AF247858C877548E15E5996F4A9/",
         scale = {1,1,1},
@@ -2836,7 +2850,7 @@ function onLoad()
     }
     miniInfo.rps6PhaseITrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/767228764785603568/BB31C6873BD81E6B5B6F6D41B907DA95421063F0/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/767228764785565294/2AA6ABC62F52DCD30C56D5DED210C35E7B4FD526/",
         blue = "http://cloud-3.steamusercontent.com/ugc/767228764785565294/2AA6ABC62F52DCD30C56D5DED210C35E7B4FD526/",
         scale = {1,1,1},
@@ -2844,7 +2858,7 @@ function onLoad()
     }
     miniInfo.dp23PhaseITrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/767228764785625549/5461468E09D086E4CF7E835AE69D6F4226690518/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/767228764785620873/E3B1226B0836CF579F16C490896D5E2DE95C31F5/",
         blue = "http://cloud-3.steamusercontent.com/ugc/767228764785620873/E3B1226B0836CF579F16C490896D5E2DE95C31F5/",
         scale = {1,1,1},
@@ -2852,7 +2866,7 @@ function onLoad()
     }
     miniInfo.phaseIICloneTrooperLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456805632/5EFC453DA5756A419155D7A2564F30D078A16998/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
         blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
         scale = {1,1,1},
@@ -2860,7 +2874,7 @@ function onLoad()
     }
     miniInfo.phaseIICloneTrooper1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806277/B6E8E97A784420BE0BA72D4DDD8288A4BF3943D3/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
         blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
         scale = {1,1,1},
@@ -2868,7 +2882,7 @@ function onLoad()
     }
     miniInfo.phaseIICloneTrooper2 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806431/B4EA83469C800B6B5B0506EE6E6ABE30D00D80DB/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
         blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
         scale = {1,1,1},
@@ -2876,7 +2890,7 @@ function onLoad()
     }
     miniInfo.phaseIICloneTrooper3 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456953028/A36587741C54DCDDAAFE60A0D253077D9DDE575D/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
         blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
         scale = {1,1,1},
@@ -2884,7 +2898,7 @@ function onLoad()
     }
     miniInfo.phaseIICloneTrooper4 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806596/C3FFC651464D351B03E7EC77F3E341DFFF4F7ABF/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
         blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
         scale = {1,1,1},
@@ -2892,7 +2906,7 @@ function onLoad()
     }
     miniInfo.z6PhaseIITrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873393876/DEDAF52B0D07E0F2A2BCB54DE9A56E4FA437A3E4/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
         blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
         scale = {1,1,1},
@@ -2900,7 +2914,7 @@ function onLoad()
     }
     miniInfo.mortarPhaseIITrooper = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/775118071080760009/33226FCCF4EADF6281591F38CC3F6DBBF7036812/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+        collider = _BASE_COLLIDERS.small,
         red = "http://cloud-3.steamusercontent.com/ugc/775118071080760988/3EE188D6DB407DF3B33D2697F0BF3E003F7DA281/",
         blue = "http://cloud-3.steamusercontent.com/ugc/775118071080760988/3EE188D6DB407DF3B33D2697F0BF3E003F7DA281/",
         scale = {1,1,1},
@@ -2910,42 +2924,43 @@ function onLoad()
     local arcMaterials = "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
     miniInfo.arcTrooperLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758255676/F51F732336CFEF3DCF549C2B396CD201FECE6A4B/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457802621/01F605D855048F823A0ECA6C46D2A62B56C04124/",
+        -- assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758255676/F51F732336CFEF3DCF549C2B396CD201FECE6A4B/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "ARC Trooper Leader"
     }
     miniInfo.arcTrooper1 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758250704/44C3CBE1CF01B35A1D4E9E9C589C1AF596FF9715/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457799750/AE83DC038BA8AAF48678D07E1F9734D4A9944C1D/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "ARC Trooper"
     }
     miniInfo.arcTrooper2 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758251310/DB9A35458D2BFA23AEFD18FBCB349E18FB57196A/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457800134/88E2FEC812AD5E7B7570836120992252AC758BF8/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "ARC Trooper"
     }
     miniInfo.arcTrooper3 = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758253003/4A59D047267EF4FF0C9823C0686FEB7945CD5040/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457800538/06BBAAAAC7FB68DAA9351F12008475068A96BFFB/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "ARC Trooper"
     }
     miniInfo.arcTrooperDC15x = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758253393/D7F58DD6828D9D9FC1E6A8B77C84832C092F3EEA/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457800878/34EC84D7ECD99E073417866A9BEC4288E00F5359/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "DC-15x ARC Trooper"
     }
     miniInfo.arcTrooperDC15xLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758253393/D7F58DD6828D9D9FC1E6A8B77C84832C092F3EEA/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457800878/34EC84D7ECD99E073417866A9BEC4288E00F5359/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "DC-15x ARC Trooper",
@@ -2953,14 +2968,14 @@ function onLoad()
     }
     miniInfo.echo = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758254916/88DEFA91B90D77B2473BBA201CC6BEC7E8484065/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457801321/CED1CD80F307683E79B9A4ED87CECAED7C070EBF/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "Echo"
     }
     miniInfo.echoLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758254916/88DEFA91B90D77B2473BBA201CC6BEC7E8484065/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457801321/CED1CD80F307683E79B9A4ED87CECAED7C070EBF/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "Echo",
@@ -2968,14 +2983,14 @@ function onLoad()
     }
     miniInfo.fives = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758255317/A459938DB02F8AF877DE9C433B612C27A9DCEA54/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457802221/506D704E232C1BFD85F063A24EBF24C5914C2C40/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "Fives"
     }
     miniInfo.fivesLeader = {
         type = "assetbundle",
-        assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758255317/A459938DB02F8AF877DE9C433B612C27A9DCEA54/",
+        assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457802221/506D704E232C1BFD85F063A24EBF24C5914C2C40/",
         assetbundle_secondary = arcMaterials,
         scale = {1,1,1},
         name = "Fives",
@@ -2983,7 +2998,7 @@ function onLoad()
     }
     miniInfo.barcSpeeder = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873394399/018F8CC63E0D90F58AADA6328DF1709D4D1DF796/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        collider = _BASE_COLLIDERS.large,
         red = "http://cloud-3.steamusercontent.com/ugc/785236717873394534/3E2F0490BA5D1024741F5806A4921D0E0E79EA9F/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785236717873394534/3E2F0490BA5D1024741F5806A4921D0E0E79EA9F/",
         scale = {1,1,1},
@@ -2991,7 +3006,7 @@ function onLoad()
     }
     miniInfo.republicATRT = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/1002556126520812865/51DA6EC33B5B7DC2274B97867C4E68F302AF5AE5/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+        collider = _BASE_COLLIDERS.large,
         red = "http://cloud-3.steamusercontent.com/ugc/1003681674396366135/D383D40E0AA3F75A159827B6938D2A93C75BC54B/",
         blue = "http://cloud-3.steamusercontent.com/ugc/1003681674396366135/D383D40E0AA3F75A159827B6938D2A93C75BC54B/",
         scale = {1,1,1},
@@ -3000,7 +3015,7 @@ function onLoad()
 
     miniInfo.saberTank = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873392482/BC01571E47E96306C31FABABE3EA971814E00C96/",
-        collider = "http://cloud-3.steamusercontent.com/ugc/785235151813181413/7151B328CAFD5AA2F36C3731A1C3B0A00714FC88/",
+        collider = _BASE_COLLIDERS.epic,
         red = "http://cloud-3.steamusercontent.com/ugc/785236717873392638/CE1C3404249840D5F7F9499D1427E83530ACEB19/",
         blue = "http://cloud-3.steamusercontent.com/ugc/785236717873392638/CE1C3404249840D5F7F9499D1427E83530ACEB19/",
         scale = {1,1,1},
@@ -5415,3 +5430,69 @@ function readCallback(req)
         end
     end
 end
+
+-- Initialize red and blue clocks at 01:30:00
+function initChessClocks(guids)
+  for k, v in pairs(guids) do
+    getObjectFromGUID(v).Clock.setValue(5400)
+  end
+end
+
+-- Event handler for all scripting button presses
+-- 1 = toggle chess clocks
+-- 2 = pause all chess clocks
+function onScriptingButtonUp(index, color)
+  local clocks = {
+    Blue = getObjectFromGUID(clockGUIDs.blue).Clock,
+    Red = getObjectFromGUID(clockGUIDs.red).Clock
+  }
+  if index == 1 then
+    toggleChessClocks(color, clocks)
+  elseif index == 2 then
+    pauseAllChessClocks(clocks)
+  end
+end
+
+-- Toggles the active clock between Red and Blue
+-- If neither clock is currently active, activates Blue
+function toggleChessClocks(color, clocks)
+  if not clocks[color] then
+    broadcastToAll('Only players can use chess clocks')
+    return
+  end
+  -- Returns the name of the player currently on the clock
+  -- if steam_name is not available, returns player color
+  local function getClockPlayerName()
+    if clocks.Blue.paused then
+      return Player.Red.steam_name or "Red"
+    else
+      return Player.Blue.steam_name or "Blue"
+    end
+  end
+  -- Returns the player color currently on the clock
+  local function getClockPlayerColor()
+    return clocks.Blue.paused and "Red" or "Blue"
+  end
+
+  if clocks.Blue.paused and clocks.Red.paused then
+    clocks.Blue.pauseStart()
+  else
+    clocks.Blue.pauseStart()
+    clocks.Red.pauseStart()
+  end
+
+  local fontColors = {
+    Red = {1,0,0},
+    Blue = {0,0,1}
+  }
+  broadcastToAll ("*** " .. getClockPlayerName() .. " is now on the clock ***", fontColors[getClockPlayerColor()])
+end
+
+-- Calls pauseStart() for each clock that is not already paused
+function pauseAllChessClocks(clocks)
+  for k, v in pairs(clocks) do
+    if not v.paused then v.pauseStart() end
+  end
+  broadcastToAll('All chess clocks paused')
+end
+
