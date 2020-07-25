@@ -3151,8 +3151,8 @@ function onLoad()
     cardInfo.upgradeCards.bxCommandoDroidSniper = { name = "BX-Series Droid Sniper", ptCost = 30, miniInfo = miniInfo.bxCommandoDroidSniper, varName = "bxCommandoDroidSniper" }
     cardInfo.upgradeCards.bxCommandoDroidSniperLeader = { name = "BX-Series Droid Sniper", ptCost = 30, miniInfo = miniInfo.bxCommandoDroidSniperLeader, varName = "bxCommandoDroidSniperLeader" }
 
-    cardInfo.upgradeCards.bxCommandoDroidSaboteur = { name = "BX-Series Droid Saboteur", ptCost = 100, miniInfo = miniInfo.bxCommandoDroidSaboteur, varName = "bxCommandoDroidSaboteur" }
-    cardInfo.upgradeCards.bxCommandoDroidSaboteurLeader = { name = "BX-Series Droid Saboteur", ptCost = 100, miniInfo = miniInfo.bxCommandoDroidSaboteurLeader, varName = "bxCommandoDroidSaboteurLeader" }
+    cardInfo.upgradeCards.bxCommandoDroidSaboteur = { name = "BX-Series Droid Saboteur", ptCost = 28, miniInfo = miniInfo.bxCommandoDroidSaboteur, varName = "bxCommandoDroidSaboteur" }
+    cardInfo.upgradeCards.bxCommandoDroidSaboteurLeader = { name = "BX-Series Droid Saboteur", ptCost = 28, miniInfo = miniInfo.bxCommandoDroidSaboteurLeader, varName = "bxCommandoDroidSaboteurLeader" }
 
     cardInfo.upgradeCards.dp23PhaseITrooper = {name = "DP-23 Phase I Trooper", guid = "d90tug5a", ptCost = 27, miniGUID = "j7816", miniInfo = miniInfo.dp23PhaseITrooper,varName="dp23PhaseITrooper"}
     cardInfo.upgradeCards.rps6PhaseITrooper = {name = "RPS-6 Phase I Trooper", guid = "d8h7jgg5a", ptCost = 26, miniGUID = "1jguk6", miniInfo = miniInfo.rps6PhaseITrooper,varName="rps6PhaseITrooper"}
@@ -3416,12 +3416,12 @@ function onLoad()
 
     cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialist = {
       cardInfo.upgradeCards.bxCommandoDroidSniper,
-      -- cardInfo.upgradeCards.bxCommandoDroidSaboteur
+      cardInfo.upgradeCards.bxCommandoDroidSaboteur
     }
 
     cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialistLeader = {
       cardInfo.upgradeCards.bxCommandoDroidSniperLeader,
-      -- cardInfo.upgradeCards.bxCommandoDroidSaboteurLeader
+      cardInfo.upgradeCards.bxCommandoDroidSaboteurLeader
     }
 
     cardInfo.upgradeMenu.separatist.bxCommandoDroidSideArm = {
@@ -3518,8 +3518,8 @@ function onLoad()
 
     cardInfo.upgradeMenu.republic.arcTroopersSpecialistLeader = {
       cardInfo.upgradeCards.arcTrooperDC15xLeader,
-      -- cardInfo.upgradeCards.echoLeader,
-      -- cardInfo.upgradeCards.fiveLeaders
+      -- cardInfo.upgradeCards.echo,
+      -- cardInfo.upgradeCards.five
     }
 
     cardInfo.upgradeMenu.republic.barcSpeederCrew = {
@@ -4010,7 +4010,7 @@ function onLoad()
     }
     cardInfo.unitCards.bxCommandoDroidsStrikeTeam = {
         guid = "2h6de",
-        ptCost = 22,
+        ptCost = 20,
         availableUpgrades = {
           cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialistLeader,
           cardInfo.upgradeMenu.separatist.tactics,
