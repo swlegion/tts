@@ -1176,7 +1176,7 @@ function onLoad()
     }
     listBuilder.commandCards.padme = {
         varName = "padme",
-        cards = {"Our Fate Is In Your Hands", "Push", "Diplomatic Cover"}
+        cards = {"Our Fate Is In Your Hands", "Aggressive Negotiations", "Diplomatic Cover"}
     }
 
     -- NEUTRAL
