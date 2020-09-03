@@ -1196,6 +1196,12 @@ function onLoad()
         varName = "neutralRebel",
         cards = {"Sabotaged Communications", "Turning the Tide", "Covering Fire"}
     }
+    listBuilder.commandCards.neutralCis = {
+        varName = "Mechanized Incursion", "Push", "Assault"
+    }
+    listBuilder.commandCards.neutralGar = {
+        varName = "Synchronized Offensive", "Push", "Assault"
+    }
 
     templateMenu = {}
 
@@ -3310,6 +3316,7 @@ function onLoad()
     cardInfo.upgradeCards.endurance = {name = "Endurance", guid = "agg3gggg0fg", ptCost = 6, varName = "endurance"}
     cardInfo.upgradeCards.overwatch = {name = "Overwatch", guid = "agg3ggfdfg", ptCost = 4, varName = "overwatch"}
     cardInfo.upgradeCards.offensivePush = {name = "Offensive Push", guid = "ag7kfdfg", ptCost = 4, varName = "offensivePush"}
+    cardInfo.upgradeCards.offensiveStance = {name = "Offensive Stance", ptCost = 5, varName = "offensiveStance"}
 
     -- sidearm
     cardInfo.upgradeCards.a300 = {name = "A-300", guid = "ag3gg0fg", ptCost = 0, varName = "a300"}
