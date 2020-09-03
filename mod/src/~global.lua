@@ -1198,11 +1198,11 @@ function onLoad()
     }
     listBuilder.commandCards.neutralCis = {
         varName = "neutralCis",
-        cards = "Mechanized Incursion", "Push", "Assault"
+        cards = {"Mechanized Incursion", "Push", "Assault"}
     }
     listBuilder.commandCards.neutralGar = {
         varName = "neutralGar",
-        cards = "Synchronized Offensive", "Push", "Assault"
+        cards = {"Synchronized Offensive", "Push", "Assault"}
     }
 
     templateMenu = {}
