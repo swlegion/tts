@@ -1197,10 +1197,12 @@ function onLoad()
         cards = {"Sabotaged Communications", "Turning the Tide", "Covering Fire"}
     }
     listBuilder.commandCards.neutralCis = {
-        varName = "Mechanized Incursion", "Push", "Assault"
+        varName = "neutralCis",
+        cards = "Mechanized Incursion", "Push", "Assault"
     }
     listBuilder.commandCards.neutralGar = {
-        varName = "Synchronized Offensive", "Push", "Assault"
+        varName = "neutralGar",
+        cards = "Synchronized Offensive", "Push", "Assault"
     }
 
     templateMenu = {}
