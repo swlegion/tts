@@ -3071,6 +3071,7 @@ function onLoad()
     cardInfo.upgradeCards.electroGrapplingLine = {name = "Electro Grappling Line", guid = "bggg5gdgb9f", ptCost = 5,varName="electroGrapplingLine"}
     cardInfo.upgradeCards.electrobinoculars = {name = "Electrobinoculars", guid = "bgggg5gdgb9f", ptCost = 8,varName="electrobinoculars"}
     cardInfo.upgradeCards.jt12Jetpacks = {name = "JT-12 Jetpacks", guid = "bgggg5gdgb9f", ptCost = 10,varName="jt12Jetpacks"}
+    cardInfo.upgradeCards.portableScanner = {name = "Portable Scanner", ptCost = 6, varName="portableScanner"}
 
     -- grenade
     cardInfo.upgradeCards.concussionGrenades = {name = "Concussion Grenades", guid = "2089d0", ptCost = 5,varName="concussionGrenades"}
@@ -3410,10 +3411,12 @@ function onLoad()
         cardInfo.upgradeCards.environmentalGear,
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
-        cardInfo.upgradeCards.electrobinoculars
+        cardInfo.upgradeCards.electrobinoculars,
+        cardInfo.upgradeCards.portableScanner
     }
     cardInfo.upgradeMenu.separatist.b1Tech = {
-        cardInfo.upgradeCards.electrobinoculars
+        cardInfo.upgradeCards.electrobinoculars,
+        cardInfo.upgradeCards.portableScanner
     }
 
     cardInfo.upgradeMenu.separatist.b2SuperBattleDroidTrooper = {
@@ -3550,7 +3553,8 @@ function onLoad()
         cardInfo.upgradeCards.environmentalGear,
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
-        cardInfo.upgradeCards.electrobinoculars
+        cardInfo.upgradeCards.electrobinoculars,
+        cardInfo.upgradeCards.portableScanner
     }
     cardInfo.upgradeMenu.republic.rexTech = {
         cardInfo.upgradeCards.targetingScopes,
@@ -3559,7 +3563,8 @@ function onLoad()
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
         cardInfo.upgradeCards.electrobinoculars,
-        cardInfo.upgradeCards.jt12Jetpacks
+        cardInfo.upgradeCards.jt12Jetpacks,
+        cardInfo.upgradeCards.portableScanner
     }
     cardInfo.upgradeMenu.republic.arcTech = {
         cardInfo.upgradeCards.targetingScopes,
@@ -3568,7 +3573,8 @@ function onLoad()
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
         cardInfo.upgradeCards.electrobinoculars,
-        cardInfo.upgradeCards.jt12Jetpacks
+        cardInfo.upgradeCards.jt12Jetpacks,
+        cardInfo.upgradeCards.portableScanner
     }
 
     cardInfo.upgradeMenu.republic.republicATRTHardPoint = {
@@ -3605,7 +3611,8 @@ function onLoad()
         cardInfo.upgradeCards.environmentalGear,
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
-        cardInfo.upgradeCards.electrobinoculars
+        cardInfo.upgradeCards.electrobinoculars,
+        cardInfo.upgradeCards.portableScanner
     }
     cardInfo.upgradeMenu.rebel.sabineWrenTech = {
         cardInfo.upgradeCards.targetingScopes,
@@ -3770,7 +3777,8 @@ function onLoad()
         cardInfo.upgradeCards.environmentalGear,
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
-        cardInfo.upgradeCards.electrobinoculars
+        cardInfo.upgradeCards.electrobinoculars,
+        cardInfo.upgradeCards.portableScanner
     }
     cardInfo.upgradeMenu.imperial.grenade = {
         cardInfo.upgradeCards.concussionGrenades,
