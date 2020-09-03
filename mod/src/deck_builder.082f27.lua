@@ -26,6 +26,8 @@ function onLoad(save_state)
         addCommander("neutralCis")
     elseif selectedFaction == "republic" then
         addCommander("neutralGar")
+    else
+        print("Unrecognized faction", selectedFaction)
     end
 
     resetCommandCards()
