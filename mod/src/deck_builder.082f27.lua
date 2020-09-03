@@ -22,6 +22,10 @@ function onLoad(save_state)
         addCommander("neutralImperial")
     elseif selectedFaction == "rebel" then
         addCommander("neutralRebel")
+    elseif selectedFaction == "separatist" then
+        addCommander("neutralCis")
+    elseif selectedFaction == "republic" then
+        addCommander("neutralGar")
     end
 
     resetCommandCards()
