@@ -3392,7 +3392,8 @@ function onLoad()
         cardInfo.upgradeCards.tenacity,
         cardInfo.upgradeCards.endurance,
         cardInfo.upgradeCards.overwatch,
-        cardInfo.upgradeCards.offensivePush
+        cardInfo.upgradeCards.offensivePush,
+        cardInfo.upgradeCards.offensiveStance
     }
     cardInfo.upgradeMenu.separatist.generalGrievousSideArm = {
         cardInfo.upgradeCards.dt57Annihilator
@@ -3500,7 +3501,8 @@ function onLoad()
         cardInfo.upgradeCards.tenacity,
         cardInfo.upgradeCards.endurance,
         cardInfo.upgradeCards.overwatch,
-        cardInfo.upgradeCards.offensivePush
+        cardInfo.upgradeCards.offensivePush,
+        cardInfo.upgradeCards.offensiveStance
     }
     cardInfo.upgradeMenu.republic.padmeSideArm = {
         cardInfo.upgradeCards.lootedE5Blaster
@@ -3696,7 +3698,8 @@ function onLoad()
         cardInfo.upgradeCards.tenacity,
         cardInfo.upgradeCards.endurance,
         cardInfo.upgradeCards.overwatch,
-        cardInfo.upgradeCards.offensivePush
+        cardInfo.upgradeCards.offensivePush,
+        cardInfo.upgradeCards.offensiveStance
     }
     cardInfo.upgradeMenu.rebel.rebelTrooperTrooper = {
         cardInfo.upgradeCards.rebelTrooper,
@@ -3869,7 +3872,8 @@ function onLoad()
         cardInfo.upgradeCards.tenacity,
         cardInfo.upgradeCards.endurance,
         cardInfo.upgradeCards.overwatch,
-        cardInfo.upgradeCards.offensivePush
+        cardInfo.upgradeCards.offensivePush,
+        cardInfo.upgradeCards.offensiveStance
     }
     cardInfo.upgradeMenu.imperial.groundPilot = {
         cardInfo.upgradeCards.generalWeiss,
