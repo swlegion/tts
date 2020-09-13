@@ -1196,6 +1196,14 @@ function onLoad()
         varName = "neutralRebel",
         cards = {"Sabotaged Communications", "Turning the Tide", "Covering Fire"}
     }
+    listBuilder.commandCards.neutralSeparatist = {
+        varName = "neutralSeparatist",
+        cards = {"Mechanized Incursion", "Push", "Assault"}
+    }
+    listBuilder.commandCards.neutralRepublic = {
+        varName = "neutralSeparatist",
+        cards = {"Synchronized Offensive", "Push", "Assault"}
+    }
 
     templateMenu = {}
 
@@ -3072,6 +3080,7 @@ function onLoad()
     cardInfo.upgradeCards.electrobinoculars = {name = "Electrobinoculars", guid = "bgggg5gdgb9f", ptCost = 8,varName="electrobinoculars"}
     cardInfo.upgradeCards.jt12Jetpacks = {name = "JT-12 Jetpacks", guid = "bgggg5gdgb9f", ptCost = 10,varName="jt12Jetpacks"}
     cardInfo.upgradeCards.ascensionCables = {name = "Ascension Cables", guid = "bgggg5gdgb9f", ptCost = 4,varName="ascensionCables"}
+    cardInfo.upgradeCards.portableScanner = {name = "Portable Scanner", ptCost = 6,varName="portableScanner"}
 
     -- grenade
     cardInfo.upgradeCards.concussionGrenades = {name = "Concussion Grenades", guid = "2089d0", ptCost = 5,varName="concussionGrenades"}
@@ -3311,6 +3320,7 @@ function onLoad()
     cardInfo.upgradeCards.overwatch = {name = "Overwatch", guid = "agg3ggfdfg", ptCost = 4, varName = "overwatch"}
     cardInfo.upgradeCards.offensivePush = {name = "Offensive Push", guid = "ag7kfdfg", ptCost = 4, varName = "offensivePush"}
     cardInfo.upgradeCards.situationalAwareness = {name = "Situational Awareness", guid = "ag7kfdfg", ptCost = 2, varName = "situationalAwareness"}
+    cardInfo.upgradeCards.offensiveStance = {name = "Offensive Stance", ptCost = 5, varName = "offensiveStance"}
 
     -- sidearm
     cardInfo.upgradeCards.a300 = {name = "A-300", guid = "ag3gg0fg", ptCost = 0, varName = "a300"}
@@ -3387,7 +3397,8 @@ function onLoad()
         cardInfo.upgradeCards.endurance,
         cardInfo.upgradeCards.overwatch,
         cardInfo.upgradeCards.offensivePush,
-        cardInfo.upgradeCards.situationalAwareness
+        cardInfo.upgradeCards.situationalAwareness,
+        cardInfo.upgradeCards.offensiveStance
     }
     cardInfo.upgradeMenu.separatist.generalGrievousSideArm = {
         cardInfo.upgradeCards.dt57Annihilator
@@ -3414,10 +3425,12 @@ function onLoad()
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
         cardInfo.upgradeCards.electrobinoculars,
-        cardInfo.upgradeCards.ascensionCables
+        cardInfo.upgradeCards.ascensionCables,
+        cardInfo.upgradeCards.portableScanner
     }
     cardInfo.upgradeMenu.separatist.b1Tech = {
-        cardInfo.upgradeCards.electrobinoculars
+        cardInfo.upgradeCards.electrobinoculars,
+        cardInfo.upgradeCards.portableScanner
     }
 
     cardInfo.upgradeMenu.separatist.b2SuperBattleDroidTrooper = {
@@ -3495,7 +3508,8 @@ function onLoad()
         cardInfo.upgradeCards.endurance,
         cardInfo.upgradeCards.overwatch,
         cardInfo.upgradeCards.offensivePush,
-        cardInfo.upgradeCards.situationalAwareness
+        cardInfo.upgradeCards.situationalAwareness,
+        cardInfo.upgradeCards.offensiveStance
     }
     cardInfo.upgradeMenu.republic.padmeSideArm = {
         cardInfo.upgradeCards.lootedE5Blaster
@@ -3556,7 +3570,8 @@ function onLoad()
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
         cardInfo.upgradeCards.electrobinoculars,
-        cardInfo.upgradeCards.ascensionCables
+        cardInfo.upgradeCards.ascensionCables,
+        cardInfo.upgradeCards.portableScanner
     }
     cardInfo.upgradeMenu.republic.rexTech = {
         cardInfo.upgradeCards.targetingScopes,
@@ -3566,7 +3581,8 @@ function onLoad()
         cardInfo.upgradeCards.reconIntel,
         cardInfo.upgradeCards.electrobinoculars,
         cardInfo.upgradeCards.jt12Jetpacks,
-        cardInfo.upgradeCards.ascensionCables
+        cardInfo.upgradeCards.ascensionCables,
+        cardInfo.upgradeCards.portableScanner
 
     }
     cardInfo.upgradeMenu.republic.arcTech = {
@@ -3577,7 +3593,8 @@ function onLoad()
         cardInfo.upgradeCards.reconIntel,
         cardInfo.upgradeCards.electrobinoculars,
         cardInfo.upgradeCards.jt12Jetpacks,
-        cardInfo.upgradeCards.ascensionCables
+        cardInfo.upgradeCards.ascensionCables,
+        cardInfo.upgradeCards.portableScanner
 
     }
 
@@ -3616,7 +3633,8 @@ function onLoad()
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
         cardInfo.upgradeCards.electrobinoculars,
-        cardInfo.upgradeCards.ascensionCables
+        cardInfo.upgradeCards.ascensionCables,
+        cardInfo.upgradeCards.portableScanner
     }
     cardInfo.upgradeMenu.rebel.sabineWrenTech = {
         cardInfo.upgradeCards.targetingScopes,
@@ -3696,7 +3714,8 @@ function onLoad()
         cardInfo.upgradeCards.endurance,
         cardInfo.upgradeCards.overwatch,
         cardInfo.upgradeCards.offensivePush,
-        cardInfo.upgradeCards.situationalAwareness
+        cardInfo.upgradeCards.situationalAwareness,
+        cardInfo.upgradeCards.offensiveStance
     }
     cardInfo.upgradeMenu.rebel.rebelTrooperTrooper = {
         cardInfo.upgradeCards.rebelTrooper,
@@ -3785,7 +3804,8 @@ function onLoad()
         cardInfo.upgradeCards.emergencyStims,
         cardInfo.upgradeCards.reconIntel,
         cardInfo.upgradeCards.electrobinoculars,
-        cardInfo.upgradeCards.ascensionCables
+        cardInfo.upgradeCards.ascensionCables,
+        cardInfo.upgradeCards.portableScanner
     }
     cardInfo.upgradeMenu.imperial.grenade = {
         cardInfo.upgradeCards.concussionGrenades,
@@ -3870,7 +3890,8 @@ function onLoad()
         cardInfo.upgradeCards.endurance,
         cardInfo.upgradeCards.overwatch,
         cardInfo.upgradeCards.offensivePush,
-        cardInfo.upgradeCards.situationalAwareness
+        cardInfo.upgradeCards.situationalAwareness,
+        cardInfo.upgradeCards.offensiveStance
     }
     cardInfo.upgradeMenu.imperial.groundPilot = {
         cardInfo.upgradeCards.generalWeiss,
@@ -5495,4 +5516,5 @@ function pauseAllChessClocks(clocks)
   end
   broadcastToAll('All chess clocks paused')
 end
+
 

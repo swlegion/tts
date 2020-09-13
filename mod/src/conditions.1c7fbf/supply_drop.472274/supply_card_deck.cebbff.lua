@@ -10,3 +10,4 @@ function onLoad()
   self.shuffle()
   self.shuffle()
 end
+
