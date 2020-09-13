@@ -22,6 +22,10 @@ function onLoad(save_state)
         addCommander("neutralImperial")
     elseif selectedFaction == "rebel" then
         addCommander("neutralRebel")
+    elseif selectedFaction == "separatist" then
+        addCommander("neutralSeparatist")
+    elseif selectedFaction == "republic" then
+        addCommander("neutralRepublic")
     end
 
     resetCommandCards()
@@ -291,4 +295,5 @@ function correctStringLength(measuredString)
         return 160
     end
 end
+
 
