@@ -278,6 +278,24 @@ function onLoad()
     unitInfo.wookieeWarriors.squadStatus = true
     unitInfo.wookieeWarriors.buttonHeight = 2
 
+    unitInfo.mandalorianResistance = {}
+    unitInfo.mandalorianResistance.commandType = "rebelSpecialForces"
+    unitInfo.mandalorianResistance.baseSize = "small"
+    unitInfo.mandalorianResistance.fixedMove = false
+    unitInfo.mandalorianResistance.selectedSpeed = 2
+    unitInfo.mandalorianResistance.fixedArc = false
+    unitInfo.mandalorianResistance.squadStatus = true
+    unitInfo.mandalorianResistance.buttonHeight = 2
+
+    unitInfo.clanWren = {}
+    unitInfo.clanWren.commandType = "rebelSpecialForces"
+    unitInfo.clanWren.baseSize = "small"
+    unitInfo.clanWren.fixedMove = false
+    unitInfo.clanWren.selectedSpeed = 2
+    unitInfo.clanWren.fixedArc = false
+    unitInfo.clanWren.squadStatus = true
+    unitInfo.clanWren.buttonHeight = 2
+
     unitInfo.fleetTroopers = {}
     unitInfo.fleetTroopers.commandType = "rebelCore"
     unitInfo.fleetTroopers.baseSize = "small"
@@ -622,6 +640,24 @@ function onLoad()
     unitInfo.imperialRoyalGuards.fixedArc = false
     unitInfo.imperialRoyalGuards.squadStatus = true
     unitInfo.imperialRoyalGuards.buttonHeight = 2
+
+    unitInfo.isf = {}
+    unitInfo.isf.commandType = "imperialSpecialForces"
+    unitInfo.isf.baseSize = "small"
+    unitInfo.isf.fixedMove = false
+    unitInfo.isf.selectedSpeed = 2
+    unitInfo.isf.fixedArc = false
+    unitInfo.isf.squadStatus = true
+    unitInfo.isf.buttonHeight = 2
+
+    unitInfo.infernoSquad = {}
+    unitInfo.infernoSquad.commandType = "imperialSpecialForces"
+    unitInfo.infernoSquad.baseSize = "small"
+    unitInfo.infernoSquad.fixedMove = false
+    unitInfo.infernoSquad.selectedSpeed = 2
+    unitInfo.infernoSquad.fixedArc = false
+    unitInfo.infernoSquad.squadStatus = true
+    unitInfo.infernoSquad.buttonHeight = 2
 
     unitInfo.speederBike = {}
     unitInfo.speederBike.commandType = "imperialSupport"
@@ -1235,6 +1271,8 @@ function onLoad()
     templateMenu.rebel.specialForces[2] = {name = "Rebel Commandos Strike Team", varName = "rebelCommandosStrikeTeam"}
     templateMenu.rebel.specialForces[3] = {name = "Wookiee Warriors", varName = "wookieeWarriors"}
     templateMenu.rebel.specialForces[4] = {name = "Rebel Pathfinders", varName = "rebelPathfinders"}
+    templateMenu.rebel.specialForces[5] = {name = "Mandalorian Resistance", varName = "mandalorianResistance"}
+    templateMenu.rebel.specialForces[6] = {name = "Clan Wren", varName = "clanWren"}
 
     templateMenu.rebel.support = {}
     templateMenu.rebel.support[1] = {name = "AT-RT", varName = "atrt"}
@@ -1272,6 +1310,8 @@ function onLoad()
     templateMenu.imperial.specialForces[2] = {name = "Scout Troopers Strike Team", varName = "scoutTroopersStrikeTeam"}
     templateMenu.imperial.specialForces[3] = {name = "Imperial Royal Guards", varName = "imperialRoyalGuards"}
     templateMenu.imperial.specialForces[4] = {name = "Imperial Death Troopers", varName = "imperialDeathTroopers"}
+    templateMenu.imperial.specialForces[5] = {name = "Imperial Special Forces", varName = "isf"}
+    templateMenu.imperial.specialForces[6] = {name = "Inferno Squad", varName = "infernoSquad"}
 
     templateMenu.imperial.support = {}
     templateMenu.imperial.support[1] = {name = "74-Z Speeder Bikes", varName = "speederBike"}
@@ -2433,6 +2473,59 @@ function onLoad()
         scale = {1,1,1},
         name = "DLT-19D Trooper"
     }
+
+    local isfMaterials = "http://cloud-3.steamusercontent.com/ugc/1618437692581055066/FEF97C7F318DD7CB768264A729F7BD46FE1A358D/"
+    miniInfo.isfLeader = {
+      type = "assetbundle",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618437692581075759/884CDC0BDD6744F4225A6BDF06CE0FADB6F69DE6/",
+      assetbundle_secondary = isfMaterials,
+      scale = {1,1,1},
+      name = "Imperial Special Forces Leader"
+    }
+    miniInfo.isf1 = {
+      type = "assetbundle",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618437692581054501/70139CA92F90B008FA674561F127682819A8D898/",
+      assetbundle_secondary = isfMaterials,
+      scale = {1,1,1},
+      name = "Imperial Special Forces"
+    }
+    miniInfo.isf2 = {
+      type = "assetbundle",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618437692581058110/7FAFAD8AFDFC8FA24EF3EB4845EE3843CE1D75E4/",
+      assetbundle_secondary = isfMaterials,
+      scale = {1,1,1},
+      name = "Imperial Special Forces"
+    }
+    miniInfo.isf3 = {
+      type = "assetbundle",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618437692581074173/5AAEBC5FAAF5905C87E149D1599C78BA6C212C75/",
+      assetbundle_secondary = isfMaterials,
+      scale = {1,1,1},
+      name = "Imperial Special Forces"
+    }
+    miniInfo.isfT21 = {
+      type = "assetbundle",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618437692581076096/49C60B4E506CC4D3C90BE3A27FECB7E8BB0B8DF1/",
+      assetbundle_secondary = isfMaterials,
+      scale = {1,1,1},
+      name = "T-21 Special Forces Trooper"
+    }
+    miniInfo.delMeeko = {
+      type = "assetbundle",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618437692581074585/1C74BEB92DC42D3585BFC1185A77DE14EC3249CA/",
+      assetbundle_secondary = isfMaterials,
+      scale = {1,1,1},
+      name = "Del Meeko"
+    }
+    miniInfo.gideonHask = {
+      type = "assetbundle",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618437692581075349/6265F81E1BAA090FFA813270A8E3126CF8AD6CC5/",
+      assetbundle_secondary = isfMaterials,
+      scale = {1,1,1},
+      name = "Gideon Hask",
+      leader = true
+    }
+
     miniInfo.speederBikeLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540542045928/74630975D4992CA09BDDD88460874FB9E4095FC9/",
         collider = _BASE_COLLIDERS.medium,
@@ -3148,6 +3241,9 @@ function onLoad()
     cardInfo.upgradeCards.sonicChargeSaboteurLeader = {name = "Sonic Charge Saboteur", guid = "d8egg9gggg6gg5a", ptCost = 26, miniGUID = "1dggggggg1e16", miniInfo = miniInfo.sonicChargeSaboteurLeader,varName="sonicChargeSaboteurLeader"}
     cardInfo.upgradeCards.dlt19xSniperLeader = {name = "DLT-19x Sniper", guid = "d8e9ggggg6gg5a", ptCost = 28, miniGUID = "1dggggggg1e16", miniInfo = miniInfo.dlt19xSniperLeader,varName="dlt19xSniperLeader"}
     cardInfo.upgradeCards.sonicChargeSaboteur = {name = "Sonic Charge Saboteur", guid = "d8eggg9gggg6gg5a", ptCost = 26, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.sonicChargeSaboteur,varName="sonicChargeSaboteur"}
+    cardInfo.upgradeCards.isfT21 = {name = "T-21 Special Forces Trooper", guid = "d8eggg9gggg6gg5a", ptCost = 29, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.isfT21,varName="isfT21"}
+    cardInfo.upgradeCards.delMeeko = {name = "Del Meeko", guid = "d8eggg9gggg6gg5a", ptCost = 38, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.delMeeko,varName="delMeeko"}
+    cardInfo.upgradeCards.gideonHask = {name = "Gideon Hask", guid = "d8eggg9gggg6gg5a", ptCost = 38, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.gideonHask,varName="gideonHask"}
 
     cardInfo.upgradeCards.b2ACMTrooper = {
       name = "B2-ACM Trooper",
@@ -3812,7 +3908,9 @@ function onLoad()
         cardInfo.upgradeCards.hh12Stormtrooper,
         cardInfo.upgradeCards.dlt19Stormtrooper,
         cardInfo.upgradeCards.rt97CStormtrooper,
-        cardInfo.upgradeCards.t21Stormtrooper
+        cardInfo.upgradeCards.t21Stormtrooper,
+        cardInfo.upgradeCards.delMeeko,
+        cardInfo.upgradeCards.gideonHask
     }
 
     cardInfo.upgradeMenu.imperial.stormtrooperTrooper = {
@@ -3826,10 +3924,14 @@ function onLoad()
     }
     cardInfo.upgradeMenu.imperial.snowtrooperSpecialist = {
         cardInfo.upgradeCards.t7IonSnowtrooper,
-        cardInfo.upgradeCards.flametrooper
+        cardInfo.upgradeCards.flametrooper,
+        cardInfo.upgradeCards.delMeeko,
+        cardInfo.upgradeCards.gideonHask
     }
     cardInfo.upgradeMenu.imperial.shoretroopersSpecialist = {
-        cardInfo.upgradeCards.t21BTrooper
+        cardInfo.upgradeCards.t21BTrooper,
+        cardInfo.upgradeCards.delMeeko,
+        cardInfo.upgradeCards.gideonHask
     }
     cardInfo.upgradeMenu.imperial.shoretroopersTrooper = {
         cardInfo.upgradeCards.shoretrooper,
@@ -3848,6 +3950,15 @@ function onLoad()
     }
     cardInfo.upgradeMenu.imperial.imperialRoyalGuardsSpecialist = {
         cardInfo.upgradeCards.electrostaffGuard
+    }
+    cardInfo.upgradeMenu.imperial.isfSpecialist = {
+      cardInfo.upgradeCards.isfT21,
+      cardInfo.upgradeCards.delMeeko,
+      cardInfo.upgradeCards.gideonHask
+    }
+    cardInfo.upgradeMenu.imperial.infernoSquadSpecialist = {
+      cardInfo.upgradeCards.delMeeko,
+      cardInfo.upgradeCards.gideonHask
     }
     cardInfo.upgradeMenu.imperial.snowtrooperTrooper = {
         cardInfo.upgradeCards.snowtrooper,
@@ -4932,6 +5043,46 @@ function onLoad()
         tokenName = "Imperial Special Forces Command Token",
         fullName = "Imperial Death Troopers",
         rank = "Special Forces"
+    }
+    cardInfo.unitCards.isf = {
+      guid = "2gh97g2ggggde",
+      ptCost = 68,
+      availableUpgrades = {
+        cardInfo.upgradeMenu.imperial.isfSpecialist,
+        cardInfo.upgradeMenu.imperial.tactics,
+        cardInfo.upgradeMenu.imperial.tactics,
+        cardInfo.upgradeMenu.imperial.comms,
+        cardInfo.upgradeMenu.imperial.tech,
+        cardInfo.upgradeMenu.imperial.grenade
+      },
+      miniInfo = {
+        miniInfo.isfLeader,
+        miniInfo.isf1,
+        miniInfo.isf2,
+        miniInfo.isf3
+      },
+      tokenName = "Imperial Special Forces Command Token",
+      fullName = "Imperial Special Forces",
+      rank = "Special Forces"
+    }
+    cardInfo.unitCards.infernoSquad = {
+      guid = "2gh97g2ggggde",
+      ptCost = 34,
+      availableUpgrades = {
+        cardInfo.upgradeMenu.imperial.infernoSquadSpecialist,
+        cardInfo.upgradeMenu.imperial.infernoSquadSpecialist,
+        cardInfo.upgradeMenu.imperial.tactics,
+        cardInfo.upgradeMenu.imperial.tactics,
+        cardInfo.upgradeMenu.imperial.comms,
+        cardInfo.upgradeMenu.imperial.tech,
+        cardInfo.upgradeMenu.imperial.grenade
+      },
+      miniInfo = {
+        miniInfo.isf1,
+      },
+      tokenName = "Imperial Special Forces Command Token",
+      fullName = "Inferno Squad",
+      rank = "Special Forces"
     }
     cardInfo.unitCards.speederBike = {
         guid = "b87e92",
