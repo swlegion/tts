@@ -1958,6 +1958,65 @@ function onLoad()
         scale = {1,1,1},
         name = "Bistan"
     }
+
+    miniInfo.mandalorianResistanceLeader = {
+      mesh = "http://cloud-3.steamusercontent.com/ugc/1021696350886421665/441B37D17213CA1B82174A8988ED23AA2D59336E/",
+      collider = _BASE_COLLIDERS.small,
+      red = "http://cloud-3.steamusercontent.com/ugc/1021696350886421832/BBE3592A7496E444E116271913178A8ED41F5323/",
+      blue = "http://cloud-3.steamusercontent.com/ugc/1021696350886421832/BBE3592A7496E444E116271913178A8ED41F5323/",
+      scale = {1,1,1},
+      name = "Mandalorian Resistance Leader"
+    }
+    miniInfo.mandalorianResistance1 = {
+      mesh = "http://cloud-3.steamusercontent.com/ugc/1021696515357880094/FFFBDA79DE3B6192926EFCDFC257708C2A360562/",
+      collider = _BASE_COLLIDERS.small,
+      red = "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/",
+      blue = "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/",
+      scale = {1,1,1},
+      name = "Mandalorian Resistance"
+    }
+    miniInfo.mandalorianResistance2 = {
+      mesh = "http://cloud-3.steamusercontent.com/ugc/1021696350886396178/07FB37CA0A11552BEF96C3DCA10AF232C65AF7B6/",
+      collider = _BASE_COLLIDERS.small,
+      red = "http://cloud-3.steamusercontent.com/ugc/1021696350886396372/35E5047903DC30F882B40719809ECF90DBC65A5A/",
+      blue = "http://cloud-3.steamusercontent.com/ugc/1021696350886396372/35E5047903DC30F882B40719809ECF90DBC65A5A/",
+      scale = {1,1,1},
+      name = "Mandalorian Resistance"
+    }
+    miniInfo.mandalorianResistance3 = {
+      mesh = "http://cloud-3.steamusercontent.com/ugc/1021696515357880886/06542D3BD6F03DC43D9E675680F86F2964B210F9/",
+      collider = _BASE_COLLIDERS.small,
+      red = "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/",
+      blue = "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/",
+      scale = {1,1,1},
+      name = "Mandalorian Resistance"
+    }
+    miniInfo.beskadDuelist = {
+      mesh = "http://cloud-3.steamusercontent.com/ugc/1021696515357841451/50164A1C84E6D119BC45BDD31C8209ED7D9A0F29/",
+      collider = _BASE_COLLIDERS.small,
+      red = "http://cloud-3.steamusercontent.com/ugc/1021696515357841757/1DC29C81D9DFCB2FB7D8A3B2EA2F2ABD3F416396/",
+      blue = "http://cloud-3.steamusercontent.com/ugc/1021696515357841757/1DC29C81D9DFCB2FB7D8A3B2EA2F2ABD3F416396/",
+      scale = {1,1,1},
+      name = "Beskad Duelist"
+    }
+    miniInfo.ursaWren = {
+      mesh = "http://cloud-3.steamusercontent.com/ugc/1021696515357881561/B365369415AE0FB6A96E69817D76D9BAD1366038/",
+      collider = _BASE_COLLIDERS.small,
+      red = "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/",
+      blue = "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/",
+      scale = {1,1,1},
+      name = "Ursa Wren",
+      leader = true
+    }
+    miniInfo.tristanWren = {
+      mesh = "http://cloud-3.steamusercontent.com/ugc/1021696350886429750/5D62ADB1200B1AD16A0349AF87E757F40E720115/",
+      collider = _BASE_COLLIDERS.small,
+      red = "http://cloud-3.steamusercontent.com/ugc/1021696350886427771/60D6CA1D97D822A2222E4FAF614931265B7B0AF2/",
+      blue = "http://cloud-3.steamusercontent.com/ugc/1021696350886427771/60D6CA1D97D822A2222E4FAF614931265B7B0AF2/",
+      scale = {1,1,1},
+      name = "Tristan Wren"
+    }
+
     miniInfo.atrt = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541266463/014ECD21C93F864E1C1DFD104A365DFC555EBAF8/",
         collider = _BASE_COLLIDERS.large,
@@ -3244,6 +3303,9 @@ function onLoad()
     cardInfo.upgradeCards.isfT21 = {name = "T-21 Special Forces Trooper", guid = "d8eggg9gggg6gg5a", ptCost = 29, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.isfT21,varName="isfT21"}
     cardInfo.upgradeCards.delMeeko = {name = "Del Meeko", guid = "d8eggg9gggg6gg5a", ptCost = 38, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.delMeeko,varName="delMeeko"}
     cardInfo.upgradeCards.gideonHask = {name = "Gideon Hask", guid = "d8eggg9gggg6gg5a", ptCost = 38, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.gideonHask,varName="gideonHask"}
+    cardInfo.upgradeCards.beskadDuelist = {name = "Beskad Duelist", guid = "d8eggg9gggg6gg5a", ptCost = 28, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.beskadDuelist,varName="beskadDuelist"}
+    cardInfo.upgradeCards.ursaWren = {name = "Ursa Wren", guid = "d8eggg9gggg6gg5a", ptCost = 38, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.ursaWren,varName="ursaWren"}
+    cardInfo.upgradeCards.tristanWren = {name = "Tristan Wren", guid = "d8eggg9gggg6gg5a", ptCost = 38, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.tristanWren,varName="tristanWren"}
 
     cardInfo.upgradeCards.b2ACMTrooper = {
       name = "B2-ACM Trooper",
@@ -3422,6 +3484,7 @@ function onLoad()
     cardInfo.upgradeCards.deflectorShields = {name = 'Deflector Shields', guid = "agggg0fg", ptCost = 18, varName = "deflectorShields"}
     cardInfo.upgradeCards.electroGauntlets = {name = 'Electro Gauntlets', guid = "agggg0fg", ptCost = 10, varName = "electroGauntlets"}
     cardInfo.upgradeCards.lootedE5Blaster = {name = 'Looted E-5 Blaster', guid = "agggg0fg", ptCost = 5, varName = "lootedE5Blaster"}
+    cardInfo.upgradeCards.jetpackRockets = {name = 'Jetpack Rockets', guid = "agggg0fg", ptCost = 8, varName = "jetpackRockets"}
 
     cardInfo.upgradeCards.rt97cBlasterRifle = {name = "RT-97C Blaster Rifle", guid = "agg3gg0fg", ptCost = 15, varName = "rt97cBlasterRifle"}
     cardInfo.upgradeCards.cr24FlameRifle = {name = "CR-24 Flame Rifle", guid = "aggfggg0fg", ptCost = 20, varName = "cr24FlameRifle"}
@@ -3840,6 +3903,18 @@ function onLoad()
     }
     cardInfo.upgradeMenu.rebel.wookieeWarriorsSpecialist = {
         cardInfo.upgradeCards.bowcasterWookiee
+    }
+    cardInfo.upgradeMenu.rebel.mandalorianResistanceSpecialist = {
+      cardInfo.upgradeCards.beskadDuelist,
+      cardInfo.upgradeCards.ursaWren,
+      cardInfo.upgradeCards.tristanWren
+    }
+    cardInfo.upgradeMenu.rebel.clanWrenSpecialist = {
+      cardInfo.upgradeCards.ursaWren,
+      cardInfo.upgradeCards.tristanWren
+    }
+    cardInfo.upgradeMenu.rebel.mandalorianResistanceSideArm = {
+      cardInfo.upgradeCards.jetpackRockets
     }
     cardInfo.upgradeMenu.rebel.jynErsoSideArm = {
         cardInfo.upgradeCards.a180,
@@ -4701,6 +4776,45 @@ function onLoad()
         tokenName = "Rebel Special Forces Command Token",
         fullName = "Rebel Pathfinders",
         rank = "Special Forces"
+    }
+    cardInfo.unitCards.mandalorianResistance = {
+      guid = "2hg9g72gggggde",
+      ptCost = 72,
+      availableUpgrades = {
+        cardInfo.upgradeMenu.rebel.mandalorianResistanceSpecialist,
+        cardInfo.upgradeMenu.rebel.tactics,
+        cardInfo.upgradeMenu.rebel.comms,
+        cardInfo.upgradeMenu.rebel.tech,
+        cardInfo.upgradeMenu.rebel.mandalorianResistanceSideArm,
+        cardInfo.upgradeMenu.rebel.grenade
+      },
+      miniInfo = {
+          miniInfo.mandalorianResistanceLeader,
+          miniInfo.mandalorianResistance1,
+          miniInfo.mandalorianResistance2
+      },
+      tokenName = "Rebel Special Forces Command Token",
+      fullName = "Mandalorian Resistance",
+      rank = "Special Forces"
+    }
+    cardInfo.unitCards.clanWren = {
+      guid = "2hg9g72gggggde",
+      ptCost = 34,
+      availableUpgrades = {
+        cardInfo.upgradeMenu.rebel.clanWrenSpecialist,
+        cardInfo.upgradeMenu.rebel.clanWrenSpecialist,
+        cardInfo.upgradeMenu.rebel.tactics,
+        cardInfo.upgradeMenu.rebel.comms,
+        cardInfo.upgradeMenu.rebel.tech,
+        cardInfo.upgradeMenu.rebel.mandalorianResistanceSideArm,
+        cardInfo.upgradeMenu.rebel.grenade
+      },
+      miniInfo = {
+          miniInfo.mandalorianResistance3
+      },
+      tokenName = "Rebel Special Forces Command Token",
+      fullName = "Clan Wren",
+      rank = "Special Forces"
     }
     cardInfo.unitCards.atrt = {
         guid = "5365a3",
