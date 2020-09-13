@@ -282,7 +282,7 @@ function onLoad()
     unitInfo.mandalorianResistance.commandType = "rebelSpecialForces"
     unitInfo.mandalorianResistance.baseSize = "small"
     unitInfo.mandalorianResistance.fixedMove = false
-    unitInfo.mandalorianResistance.selectedSpeed = 2
+    unitInfo.mandalorianResistance.selectedSpeed = 3
     unitInfo.mandalorianResistance.fixedArc = false
     unitInfo.mandalorianResistance.squadStatus = true
     unitInfo.mandalorianResistance.buttonHeight = 2
@@ -291,7 +291,7 @@ function onLoad()
     unitInfo.clanWren.commandType = "rebelSpecialForces"
     unitInfo.clanWren.baseSize = "small"
     unitInfo.clanWren.fixedMove = false
-    unitInfo.clanWren.selectedSpeed = 2
+    unitInfo.clanWren.selectedSpeed = 3
     unitInfo.clanWren.fixedArc = false
     unitInfo.clanWren.squadStatus = true
     unitInfo.clanWren.buttonHeight = 2
@@ -1991,13 +1991,13 @@ function onLoad()
       scale = {1,1,1},
       name = "Mandalorian Resistance"
     }
-    miniInfo.mandalorianResistance3 = {
+    miniInfo.clanWren1 = {
       mesh = "http://cloud-3.steamusercontent.com/ugc/1021696515357880886/06542D3BD6F03DC43D9E675680F86F2964B210F9/",
       collider = _BASE_COLLIDERS.small,
       red = "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/",
       blue = "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/",
       scale = {1,1,1},
-      name = "Mandalorian Resistance"
+      name = "Clan Wren"
     }
     miniInfo.beskadDuelist = {
       mesh = "http://cloud-3.steamusercontent.com/ugc/1021696515357841451/50164A1C84E6D119BC45BDD31C8209ED7D9A0F29/",
@@ -4831,7 +4831,7 @@ function onLoad()
         cardInfo.upgradeMenu.rebel.grenade
       },
       miniInfo = {
-          miniInfo.mandalorianResistance3
+          miniInfo.clanWren1
       },
       tokenName = "Rebel Special Forces Command Token",
       fullName = "Clan Wren",
