@@ -2541,38 +2541,45 @@ function onLoad()
         name = "DLT-19D Trooper"
     }
 
-    local isfMaterials = "http://cloud-3.steamusercontent.com/ugc/1618437692581055066/FEF97C7F318DD7CB768264A729F7BD46FE1A358D/"
+    local isfMaterials = "http://cloud-3.steamusercontent.com/ugc/1618438238123043414/B7E9660E470DC070545782406C29F1E1356A5685/"
     miniInfo.isfLeader = {
       type = "assetbundle",
-      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618437692581075759/884CDC0BDD6744F4225A6BDF06CE0FADB6F69DE6/",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618438238122999812/779C9D69CA440F970DD0B7C6394A812732F9C588/",
       assetbundle_secondary = isfMaterials,
       scale = {1,1,1},
       name = "Imperial Special Forces Leader"
     }
+    miniInfo.isfInferno = {
+      type = "assetbundle",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618438238122999341/C1AEEE50112F060BA8E5CAFBC16F417A0EF7C3C0/",
+      assetbundle_secondary = isfMaterials,
+      scale = {1,1,1},
+      name = "Inferno Squad"
+    }
     miniInfo.isf1 = {
       type = "assetbundle",
-      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618437692581054501/70139CA92F90B008FA674561F127682819A8D898/",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618438238122996093/C79160007FD884C2B8737DCA888D61C955073141/",
       assetbundle_secondary = isfMaterials,
       scale = {1,1,1},
       name = "Imperial Special Forces"
     }
     miniInfo.isf2 = {
       type = "assetbundle",
-      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618437692581058110/7FAFAD8AFDFC8FA24EF3EB4845EE3843CE1D75E4/",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618438238122996656/AAD706C50446522C98259A20C03E757C4F7B98B1/",
       assetbundle_secondary = isfMaterials,
       scale = {1,1,1},
       name = "Imperial Special Forces"
     }
     miniInfo.isf3 = {
       type = "assetbundle",
-      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618437692581074173/5AAEBC5FAAF5905C87E149D1599C78BA6C212C75/",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618438238122997115/F100B28E5DBF4A56FB22D3410270BEE4EF344FEF/",
       assetbundle_secondary = isfMaterials,
       scale = {1,1,1},
       name = "Imperial Special Forces"
     }
     miniInfo.isfT21 = {
       type = "assetbundle",
-      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618437692581076096/49C60B4E506CC4D3C90BE3A27FECB7E8BB0B8DF1/",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618438238123000906/C64EAD02CA22F8BFB59320925DAD7D89BA1E7AD6/",
       assetbundle_secondary = isfMaterials,
       scale = {1,1,1},
       name = "T-21 Special Forces Trooper"
@@ -5213,7 +5220,7 @@ function onLoad()
         cardInfo.upgradeMenu.imperial.grenade
       },
       miniInfo = {
-        miniInfo.isf1,
+        miniInfo.isfInferno,
       },
       tokenName = "Imperial Special Forces Command Token",
       fullName = "Inferno Squad",
