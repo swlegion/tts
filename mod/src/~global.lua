@@ -740,6 +740,15 @@ function onLoad()
     unitInfo.cadBane.squadStatus = false
     unitInfo.cadBane.buttonHeight = 2
 
+    unitInfo.maul = {}
+    unitInfo.maul.commandType = "separatistOperative"
+    unitInfo.maul.baseSize = "small"
+    unitInfo.maul.fixedMove = false
+    unitInfo.maul.selectedSpeed = 2
+    unitInfo.maul.fixedArc = false
+    unitInfo.maul.squadStatus = false
+    unitInfo.maul.buttonHeight = 2
+
     unitInfo.b1BattleDroids = {}
     unitInfo.b1BattleDroids.commandType = "separatistCore"
     unitInfo.b1BattleDroids.baseSize = "small"
@@ -821,6 +830,15 @@ function onLoad()
     unitInfo.cloneCaptainRex.fixedArc = false
     unitInfo.cloneCaptainRex.squadStatus = false
     unitInfo.cloneCaptainRex.buttonHeight = 2
+
+    unitInfo.anakinSkywalker = {}
+    unitInfo.anakinSkywalker.commandType = "republicCommander"
+    unitInfo.anakinSkywalker.baseSize = "small"
+    unitInfo.anakinSkywalker.fixedMove = false
+    unitInfo.anakinSkywalker.selectedSpeed = 2
+    unitInfo.anakinSkywalker.fixedArc = false
+    unitInfo.anakinSkywalker.squadStatus = false
+    unitInfo.anakinSkywalker.buttonHeight = 2
 
     unitInfo.padme = {}
     unitInfo.padme.commandType = "republicOperative"
@@ -1193,6 +1211,10 @@ function onLoad()
         varName = "cadBane",
         cards = {"Im Your Worst Nightmare","Im In Control","I Make The Rules Now"}
     }
+    listBuilder.commandCards.maul = {
+      varName = "maul",
+      cards = {"Duel of the Fates","The Phantom Menace","At Last"}
+  }
     -- REPUBLIC
     listBuilder.commandCards.obiWanKenobi = {
         varName = "obiWanKenobi",
@@ -1202,6 +1224,10 @@ function onLoad()
         varName = "cloneCaptainRex",
         cards = {"Call Me Captain","Take That, Clankers!","Were Not Programmed"}
     }
+    listBuilder.commandCards.anakinSkywalker = {
+      varName = "anakinSkywalker",
+      cards = {"This is Where the Fun Begins","You Underestimate My Power","Hero of the Clone Wars"}
+  }
     listBuilder.commandCards.republicR2d2 = {
         varName = "republicR2d2",
         cards = {"Blast Off!", "Impromptu Immolation", "Smoke Screen"}
@@ -1337,6 +1363,7 @@ function onLoad()
 
     templateMenu.separatist.operative = {}
     templateMenu.separatist.operative[1] = {name = "Cad Bane", varName = "cadBane"}
+    templateMenu.separatist.operative[2] = {name = "Maul", varName = "maul"}
 
     templateMenu.separatist.corps = {}
     templateMenu.separatist.corps[1] = {name = "B1 Battle Droids", varName = "b1BattleDroids"}
@@ -1357,6 +1384,7 @@ function onLoad()
     templateMenu.republic.commander = {}
     templateMenu.republic.commander[1] = {name = "Obi-Wan Kenobi", varName = "obiWanKenobi"}
     templateMenu.republic.commander[2] = {name = "Clone Captain Rex", varName = "cloneCaptainRex"}
+    templateMenu.republic.commander[3] = {name = "Anakin Skywalker", varName = "anakinSkywalker"}
 
     templateMenu.republic.operative = {}
     templateMenu.republic.operative[1] = {name = "R2-D2", varName = "republicR2d2"}
@@ -2673,6 +2701,14 @@ function onLoad()
         scale = {1,1,1},
         name = "Cad Bane"
     }
+    miniInfo.maul = {
+      mesh = "http://cloud-3.steamusercontent.com/ugc/1647717402898544477/AC748B04B4363679177B27F514758C308A2A7E49/",
+      collider = _BASE_COLLIDERS.small,
+      red = "http://cloud-3.steamusercontent.com/ugc/1647717402898544863/C61437A96B0AB9BC3C226475A87C9BB248D2CA2A/",
+      blue = "http://cloud-3.steamusercontent.com/ugc/1647717402898544863/C61437A96B0AB9BC3C226475A87C9BB248D2CA2A/",
+      scale = {1,1,1},
+      name = "Maul"
+  }
 
     miniInfo.b1BattleDroid1 = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234780869167061/48F42C02EDD970E6DE8E59B8601EF3E7F11C1742/",
@@ -2932,6 +2968,14 @@ function onLoad()
         scale = {1,1,1},
         name = "Clone Captain Rex"
     }
+    miniInfo.anakinSkywalker = {
+      mesh = "http://cloud-3.steamusercontent.com/ugc/1647717402898546429/B304222EB644FD345A672FA36A7C4F5DF5152C49/",
+      collider = _BASE_COLLIDERS.small,
+      red = "http://cloud-3.steamusercontent.com/ugc/1647717402898546712/394E72447FF020F1D95846D07120EE63FCD0435B/",
+      blue = "http://cloud-3.steamusercontent.com/ugc/1647717402898546712/394E72447FF020F1D95846D07120EE63FCD0435B/",
+      scale = {1,1,1},
+      name = "Anakin Skywalker"
+  }
     miniInfo.padme = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/1003681674396399543/F485B2E6C10CBC01661E393966F014E5A5DE8BF9/",
         collider = _BASE_COLLIDERS.small,
@@ -4178,6 +4222,22 @@ function onLoad()
         fullName = "Cad Bane",
         rank = "Operative"
     }
+    cardInfo.unitCards.maul = {
+        guid = "3dh54f",
+        ptCost = 160,
+        availableUpgrades = {
+            cardInfo.upgradeMenu.separatist.force,
+            cardInfo.upgradeMenu.separatist.force,
+            cardInfo.upgradeMenu.separatist.tactics,
+            cardInfo.upgradeMenu.separatist.tactics
+        },
+        miniInfo = {
+            miniInfo.maul
+        },
+        tokenName = "Separatist Operative Command Token",
+        fullName = "Maul",
+        rank = "Operative"
+    }
     cardInfo.unitCards.b1BattleDroids = {
         guid = "24de",
         ptCost = 36,
@@ -4329,6 +4389,21 @@ function onLoad()
         },
         tokenName = "Republic Commander Command Token",
         fullName = "Clone Captain Rex",
+        rank = "Commander"
+    }
+    cardInfo.unitCards.anakinSkywalker = {
+        guid = "3dggj74f",
+        ptCost = 160 , availableUpgrades = {
+            cardInfo.upgradeMenu.republic.force,
+            cardInfo.upgradeMenu.republic.force,
+            cardInfo.upgradeMenu.republic.tactics,
+            cardInfo.upgradeMenu.republic.tactics
+        },
+        miniInfo = {
+            miniInfo.anakinSkywalker
+        },
+        tokenName = "Republic Commander Command Token",
+        fullName = "Anakin Skywalker",
         rank = "Commander"
     }
     cardInfo.unitCards.republicR2d2 = {
@@ -5788,3 +5863,4 @@ function pauseAllChessClocks(clocks)
   end
   broadcastToAll('All chess clocks paused')
 end
+
