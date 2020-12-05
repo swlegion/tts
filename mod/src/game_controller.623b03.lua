@@ -6,18 +6,11 @@ function onLoad(save_state)
     gameController = Global.getTable("gameController")
     mountZone = getObjectFromGUID(gameController.mountZoneGUID)
     battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
-    competitiveTerrainZone = getObjectFromGUID(Global.getVar("competitiveTerrainZoneGUID"))
     battlefieldTable = getObjectFromGUID(Global.getVar("battlefieldTable"))
-    standardMapsCartridge = getObjectFromGUID(gameController.standardMapsGUID)
-    battleLinesCompetitiveMapsCartridge = getObjectFromGUID(gameController.battleLinesCompetitiveMapsGUID)
-    battleLinesCreativeMapsCartridge = getObjectFromGUID(gameController.battleLinesCreativeMapsGUID)
     customMapsCartridge = getObjectFromGUID(gameController.customMapsGUID)
-    competitiveTerrainCartridge = getObjectFromGUID(gameController.competitiveTerrainCartridgeGUID)
     deploymentOverlays = getObjectFromGUID(gameController.deploymentOverlaysGUID)
-    tournamentMapsCartridge = getObjectFromGUID(gameController.tournamentMapsGUID)
     learningGameCartridge = getObjectFromGUID(gameController.learningGameCartridgeGUID)
-    userMapsCartridge = getObjectFromGUID(gameController.userMapsGUID)
-    gatheringLegionsMapsCartridge = getObjectFromGUID(gameController.gatheringLegionsMapsGUID)
+
     listBuilder = Global.getTable("listBuilder")
     redZone = getObjectFromGUID(listBuilder.redZoneGUID)
     blueZone = getObjectFromGUID(listBuilder.blueZoneGUID)
@@ -84,12 +77,11 @@ end
 function mainMenu()
     timerScreen = false
 
-    printToScreen("STAR WARS LEGION TTS MOD\n by Tieren\n\nSelect an option below to start", 80, 3)
+    printToScreen("STAR WARS LEGION TTS MOD\n by SWL Dev Foundation\n\nSelect an option below to start", 80, 3)
 
     clearAllButtons()
     local menuEntries = {}
     menuEntries[1] = {functionName = "learningGameMenu", label = "Learning Game", tooltip = "Play a Learning Game", buttonTint = {0,0.913,1}}
-    --menuEntries[2] = {functionName = "setUpMenu", label = "Guided Setup", tooltip = "Guided Setup of a Legion game", buttonTint = {0,0.913,1}}
     menuEntries[2] = {functionName = "mapMenu", label = "Maps", tooltip = "Map Menu", buttonTint = {0,0.913,1}}
     menuEntries[3] = {functionName = "gameOptionsMenu", label = "Set Up", tooltip = "Set Up options menu", buttonTint = {0,0.913,1}}
 
@@ -129,8 +121,6 @@ function reset()
     clearSetUpCards("all")
     mainMenu()
 end
-
-
 
 function debug()
     local battlefieldObjs = battlefieldZone.getObjects()
@@ -229,10 +219,9 @@ function gameOptionsMenu()
     clearAllButtons()
     changeBackButton("mainMenu", "Go back to Main Menu")
     local menuEntries = {}
-    menuEntries[1] = {functionName = "switchPlayerColor", label = "Switch Player Colors", tooltip = "Switch Player Colors", buttonTint = {0,0.913,1}}
-    menuEntries[2] = {functionName = "flipMap", label = "Flip Map", tooltip = "Flip the map to the other side", buttonTint = {0,0.913,1}}
-    menuEntries[3] = {functionName = "defineBattlefieldMenuBlue", label = "Blue Player: Define Battlefield", tooltip = "Spawn Battlefield Objective, Deployment and Condition cards from Blue Deck", buttonTint = {0,0.913,1}}
-    menuEntries[4] = {functionName = "debug", label = "Debug Objects", tooltip = "Corrects terrain that is spawned incorrectly or removes stuck rulers or movement templates", buttonTint = {0,0.913,1}}
+    menuEntries[1] = {functionName = "flipMap", label = "Flip Map", tooltip = "Flip the map to the other side", buttonTint = {0,0.913,1}}
+    menuEntries[2] = {functionName = "defineBattlefieldMenuBlue", label = "Blue Player: Define Battlefield", tooltip = "Spawn Battlefield Objective, Deployment and Condition cards from Blue Deck", buttonTint = {0,0.913,1}}
+    menuEntries[3] = {functionName = "debug", label = "Debug Objects", tooltip = "Corrects terrain that is spawned incorrectly or removes stuck rulers or movement templates", buttonTint = {0,0.913,1}}
     --menuEntries[5] = {functionName = "defineBattlefieldMenu", label = "Define Battlefield from all cards", tooltip = "Spawn Battlefield Objective, Deployment and Condition cards from every available card", buttonTint = {0,0.913,1}}
     createMenu(menuEntries, 1)
 end
@@ -246,14 +235,13 @@ function mapMenu()
     callBackMapMenu = "mapMenu"
 
     local menuEntries = {}
-    menuEntries[1] = {functionName = "premadeMapsMenu", label = "Pre-made Maps", tooltip = "Spawn a Pre-made Map", buttonTint = {0,0.913,1}}
-    menuEntries[2] = {functionName = "competitiveTerrainMapMenu", label = "Competitive Terrain Map", tooltip = "Create a Competitive Terrain Map", buttonTint = {0,0.913,1}}
-    menuEntries[3] = {functionName = "loadMap", label = "Load Map", tooltip = "Load Map from Data Cartridge", buttonTint = {0,0.913,1}}
-    menuEntries[4] = {functionName = "saveMap", label = "Save Map", tooltip = "Save Map to a Data Cartridge", buttonTint = {0,0.913,1}}
-    menuEntries[5] = {functionName = "flipMap", label = "Flip Map", tooltip = "Flip the map to the other side", buttonTint = {0,0.913,1}}
-    menuEntries[6] = {functionName = "customMapMenu", label = "Custom Maps", tooltip = "Create a Custom Map", buttonTint = {0,0.913,1}}
-    menuEntries[7] = {functionName = "clearZones", label = "Clear Map", tooltip = "Clears everything from current Battlefield area", buttonTint = {0,0.913,1}}
-    menuEntries[8] = {functionName = "saveConditions", label = "Save Battlefield Tokens", tooltip = "Saves Objects from the Objective/Deployment/Conditions", buttonTint = {0,0.913,1}}
+    menuEntries[1] = {functionName = "featuredMapsMenu", label = "Featured Maps", tooltip = "List and download pre-made maps", buttonTint = {0,0.913,1}}
+    menuEntries[2] = {functionName = "loadMap", label = "Load Map", tooltip = "Load Map from Data Cartridge", buttonTint = {0,0.913,1}}
+    menuEntries[3] = {functionName = "saveMap", label = "Save Map", tooltip = "Save Map to a Data Cartridge", buttonTint = {0,0.913,1}}
+    menuEntries[4] = {functionName = "flipMap", label = "Flip Map", tooltip = "Flip the map to the other side", buttonTint = {0,0.913,1}}
+    menuEntries[5] = {functionName = "customMapMenu", label = "Custom Maps", tooltip = "Create a Custom Map", buttonTint = {0,0.913,1}}
+    menuEntries[6] = {functionName = "clearZones", label = "Clear Map", tooltip = "Clears everything from current Battlefield area", buttonTint = {0,0.913,1}}
+    menuEntries[7] = {functionName = "saveConditions", label = "Save Battlefield Tokens", tooltip = "Saves Objects from the Objective/Deployment/Conditions", buttonTint = {0,0.913,1}}
     createMenu(menuEntries, 1)
 end
 
@@ -264,93 +252,23 @@ function deploymentMenu()
     createMapMenu(deploymentOverlays)
 end
 
-function premadeMapsMenu(callBackMapMenu)
-    printToScreen("PREMADE MAPS", 80, 3)
-    if callBackMapMenu == "mapMenu" or callBackMapMenu == nil then
-        clearAllButtons()
-        changeBackButton("mapMenu", "Go back to Maps Menu")
-        callBackSelection = "mapMenu"
-    else
-        callBackSelection = callBackMapMenu
+function featuredMapsMenu()
+  printToScreen("FEATURED MAPS\n\nThese are maps featured by the community.\n\nSee https://go.swlegion.dev/maps for details.", 80, 3)
+  changeBackButton("mapMenu", "Go back to Maps Menu")
+  local url = "https://raw.githubusercontent.com/swlegion/tts-map-catalog/main/maps.json"
+  WebRequest.get(url, function(data)
+    local items = JSON.decode(data.text)
+    local menu = {}
+    for _, entry in pairs(items) do
+      table.insert(menu, {
+        label = entry['name'],
+        tooltip = 'Download map',
+        url = entry['url'],
+        buttonTint = {0,0.913,1}
+      })
     end
-
-    local menuEntries = {}
-    menuEntries[1] = {functionName = "standardMapsMenu", label = "Standard Maps", tooltip = "Choose a standard map", buttonTint = {0,0.913,1}}
-    menuEntries[2] = {functionName = "tournamentMapsMenu", label = "Tournament Maps", tooltip = "Choose a tournament Map", buttonTint = {0,0.913,1}}
-    menuEntries[3] = {functionName = "randomTournamentMapsMenu", label = "Random Tournament Map", tooltip = "Spawn a random tournament map", buttonTint = {0,0.913,1}}
-    menuEntries[4] = {functionName = "gatheringLegionsMapsMenu", label = "Gathering Legions Maps", tooltip = "Choose a Gathering Legions map", buttonTint = {0,0.913,1}}
-    menuEntries[5] = {functionName = "battleLinesMapsMenu", label = "Battle Lines Maps", tooltip = "Choose a Battle lines map", buttonTint = {0,0.913,1}}
-    menuEntries[6] = {functionName = "userMapsMenu", label = "User Made Maps", tooltip = "Choose an user submitted map", buttonTint = {0,0.913,1}}
-    createMenu(menuEntries, 1)
-end
-
-function standardMapsMenu()
-    printToScreen("STANDARD MAPS", 80, 3)
-    clearAllButtons()
-
-    changeBackButton("premadeMapsMenu", "Go back to Pre-made Maps Menu")
-    createMapMenu(standardMapsCartridge, callBackSelection)
-end
-
-function userMapsMenu()
-    printToScreen("USER SUBMITTED MAPS\n\nChoose a user made map from below\n\nIf you would like to submit your map, pm \nTieren on Steam.\nOr, submit the map to your own workshop!", 70, 3)
-
-    clearAllButtons()
-
-    changeBackButton("premadeMapsMenu", "Go back to Pre-made Maps Menu")
-    createMapMenu(userMapsCartridge, callBackSelection)
-end
-
-function gatheringLegionsMapsMenu()
-    printToScreen("GATHERING LEGIONS MAPS\n\nChoose a user made map from below\n\nIf you would like to submit your map, pm \nTieren on Steam.\nOr, submit the map to your own workshop!", 70, 3)
-
-    clearAllButtons()
-
-    changeBackButton("premadeMapsMenu", "Go back to Pre-made Maps Menu")
-    createMapMenu(gatheringLegionsMapsCartridge, callBackSelection)
-end
-
-function battleLinesMapsMenu()
-    changeBackButton("premadeMapsMenu", "Go back to Pre-made Maps Menu")
-
-    local menuEntries = {}
-    menuEntries[1] = {functionName = "battleLinesCompetitiveMapsMenu", label = "Competitive Maps", tooltip = "Choose a competitive map", buttonTint = {0,0.913,1}}
-    menuEntries[2] = {functionName = "battleLinesCreativeMapsMenu", label = "Creative Maps", tooltip = "Choose a Creative Map", buttonTint = {0,0.913,1}}
-    createMenu(menuEntries, 1)
-end
-
-function battleLinesCompetitiveMapsMenu()
-    printToScreen("BATTLE LINES MAPS\n\nChoose a user made map from below\n\nIf you would like to submit your map, pm \nTieren on Steam.\nOr, submit the map to your own workshop!", 70, 3)
-
-    clearAllButtons()
-
-    changeBackButton("battleLinesMapsMenu", "Go back to Battle Lines Maps Menu")
-    createMapMenu(battleLinesCompetitiveMapsCartridge, callBackSelection)
-end
-
-function battleLinesCreativeMapsMenu()
-    printToScreen("BATTLE LINES MAPS\n\nChoose a user made map from below\n\nIf you would like to submit your map, pm \nTieren on Steam.\nOr, submit the map to your own workshop!", 70, 3)
-
-    clearAllButtons()
-
-    changeBackButton("battleLinesMapsMenu", "Go back to Battle Lines Maps Menu")
-    createMapMenu(battleLinesCreativeMapsCartridge, callBackSelection)
-end
-
-function tournamentMapsMenu()
-    printToScreen("INVADER LEAGUE TOURNAMENT MAPS", 80, 3)
-    clearAllButtons()
-
-    changeBackButton("premadeMapsMenu", "Go back to Pre-made Maps Menu")
-    createMapMenu(tournamentMapsCartridge, callBackSelection)
-end
-
-function randomTournamentMapsMenu()
-  tournamentMapsCartridge.shuffle()
-  local tournamentMapObjs = tournamentMapsCartridge.getObjects()
-
-    -- Bag or Deck returns {{string name, string description, string guid, int index, string lua_script, string lust_script_state}, ...}
-  spawnPremadeMap(tournamentMapObjs[1].name, tournamentMapsCartridge, "mainMenu")
+    createMenu(menu, 1)
+  end)
 end
 
 function createMapMenu(selectedCartridge, mapMenuCallback)
@@ -390,183 +308,7 @@ function customMapMenu()
 
 end
 
-function competitiveTerrainMapMenu()
-    clearAllButtons()
-    changeBackButton("mapMenu", "Go back to Maps Menu")
-
-    createMapMenu(competitiveTerrainCartridge, "mapMenu")
-end
-
 -- SETUP Menu
-function setUpMenu()
-    clearAllButtons()
-    local menuEntries = {}
-    menuEntries[1] = {functionName = "tournamentSetUp", label = "Tournament Game", tooltip = "Guided setup for a Tournament game", buttonTint = {0,0.913,1}}
-    menuEntries[2] = {functionName = "standardSetUp", label = "Standard Game", tooltip = "Guided setup for a Standard game", buttonTint = {0,0.913,1}}
-
-    createMenu(menuEntries, 1)
-    changeBackButton("mainMenu", "Go back to Main Menu")
-
-    printToScreen("Choose Game Type", 80, 3)
-end
-
-function tournamentSetUp()
-    gameMode = "tournament"
-    setUp1AEstablishBattlefieldMenu()
-end
-function standardSetUp()
-    gameMode = "standard"
-    setUp1AEstablishBattlefieldMenu()
-end
-
-function setUp1AEstablishBattlefieldMenu()
-    clearAllButtons()
-    local menuEntries = {}
-    menuEntries[5] = {functionName = "setUp1BEstablishBattlefieldMenu", label = "NEXT", tooltip = "Next", buttonTint = {0,0.913,1}}
-
-    createMenu(menuEntries, 1)
-    changeBackButton("setUpMenu", "Go back to game type selection")
-
-    if gameMode == "tournament" then
-        printToScreen("1A. ESTABLISH BATTLEFIELD AND GATHER COMPONENTS.\n\n\nBoth Players insert Army Data Disk and load their armies.\n\nUI Menu > Objects > Saved Objects > Your Army list\nInsert disk into disk mount and select 'Load Army'", 60, 2)
-    elseif gameMode == "standard" then
-        printToScreen("1A. ESTABLISH BATTLEFIELD AND GATHER COMPONENTS.\n\n\nBoth Players insert Army Data Disk and load their armies.\nUI Menu > Objects > Saved Objects > Your Army list\nInsert disk into disk mount and select 'Load Army'\n\nOR\n\nPlayers create their army lists and Spawn Minis\nSelect 'Create Army' then 'Spawn Minis'", 60, 2)
-    end
-end
-
-function setUp1BEstablishBattlefieldMenu()
-    clearAllButtons()
-    local menuEntries = {}
-    menuEntries[5] = {functionName = "setUp1CMapType", label = "NEXT", tooltip = "Next", buttonTint = {0,0.913,1}}
-
-    createMenu(menuEntries, 1)
-    changeBackButton("setUp1AEstablishBattlefieldMenu", "Go back to Step 1A")
-
-    if gameMode == "tournament" then
-        printToScreen("1B. ESTABLISH BATTLEFIELD AND GATHER COMPONENTS.\n\n\nBoth Players make sure opponent's lists are legal.\n\nIf an opponent list is illegal, the opponent recieves an\nimmediate Match Loss with 0 Victory Points while the\nother player recieves a Match Win with 1 Victory Point.\nIf both players agree, a player with an illegal list can\nremake his list.\n\nLegal Force Chart:\nCommander: 1-2\nCorp: 3-6\nSpecial Forces: No current legal units\nSupport: 0-3\nHeavy: 0-2", 60, 2)
-    elseif gameMode == "standard" then
-        setUp1CMapType()
-    end
-end
-
-function setUp1CMapType()
-    clearAllButtons()
-    local menuEntries = {}
-
-
-    if gameMode == "tournament" then
-        setUp1CMapTypeCompetitive()
-    elseif gameMode == "standard" then
-        menuEntries[1] = {functionName = "setUp1CMapTypePremade", label = "Premade Map", tooltip = "Next", buttonTint = {0,0.913,1}}
-        menuEntries[2] = {functionName = "setUp1CMapTypeCompetitive", label = "Competitive Placement", tooltip = "Next", buttonTint = {0,0.913,1}}
-
-        createMenu(menuEntries, 1)
-        changeBackButton("setUp1AEstablishBattlefieldMenu", "Go back to Step 1A")
-
-        printToScreen("CHOOSE MAP TYPE", 60, 2)
-    end
-end
-
-function setUp1CMapTypePremade()
-    mapType = "premade"
-    setUp3APlaceTerrain()
-end
-
-function setUp1CMapTypeCompetitive()
-    mapType = "competitive"
-    setUp1DMapTypeBoard()
-end
-
-function setUp1DMapTypeBoard()
-    clearAllButtons()
-    changeBackButton("setUp1AEstablishBattlefieldMenu", "Go back to Step 1C")
-    printToScreen("Choose Custom Map Board", 60, 2)
-    if gameMode == "standard" then
-        createMapMenu(competitiveTerrainCartridge, "setUp2ADeclareTerrain", true)
-    else
-        competitiveTerrainCartridge.shuffle()
-        local availableCompetitiveMaps = competitiveTerrainCartridge.getObjects()
-
-        spawnPremadeMap(availableCompetitiveMaps[1].name, competitiveTerrainCartridge, "setUp2ADeclareTerrain", true)
-
-    end
-
-
-end
-
-function setUp2ADeclareTerrain()
-
-    clearAllButtons()
-    local menuEntries = {}
-    menuEntries[5] = {functionName = "setUp3APlaceTerrain", label = "NEXT", tooltip = "Next", buttonTint = {0,0.913,1}}
-
-    createMenu(menuEntries, 1)
-    changeBackButton("setUp1AEstablishBattlefieldMenu", "Go back to Step 1C")
-
-    if gameMode == "tournament" and mapType == "premade" then
-        printToScreen("1B. ESTABLISH BATTLEFIELD AND GATHER COMPONENTS.\n\n\nBoth Players make sure opponent's lists are legal.\n\nIf an opponent list is illegal, the opponent recieves an\nimmediate Match Loss with 0 Victory Points while the\nother player recieves a Match Win with 1 Victory Point.\nIf both players agree, a player with an illegal list can\nremake his list.\n\nLegal Force Chart:\nCommander: 1-2\nCorp: 3-6\nSpecial Forces: No current legal units\nSupport: 0-3\nHeavy: 0-2", 60, 2)
-    elseif gameMode == "standard" and mapType == "competitive" then
-        printToScreen("2A. DECLARE TERRAIN\n\nBoth players mutually agree on each terrain cover and\nmovement restrictions.\n\nAll terrain cover and movement info are in their model's\ndescriptions.\nMouse over terrain and hold to see descriptions.", 60, 2)
-    elseif gameMode == "tournament" and mapType == "competitive" then
-        printToScreen("2A. DECLARE TERRAIN\n\nBoth players mutually agree on each terrain cover and\nmovement restrictions.\n\nAll terrain cover and movement info are in their model's\ndescriptions.\nMouse over terrain and hold to see descriptions.", 60, 2)
-    end
-end
-
-function setUp3APlaceTerrain()
-    clearAllButtons()
-
-    if mapType == "premade" and gameMode == "tournament" then
-        changeBackButton("setUp1CMapType", "Go back to Step 1C")
-        createMapMenu(tournamentMapsCartridge,"setUp3BPlaceTerrain")
-
-        printToScreen("3A. PLACE TERRAIN.\n\n\nSelect map assigned to players in brackets", 60, 2)
-    elseif mapType == "premade" and gameMode == "standard" then
-        changeBackButton("setUp1CMapType", "Go back to Step 1C")
-        premadeMapsMenu("setUp3BPlaceTerrain")
-        printToScreen("3A. PLACE TERRAIN.\n\n\nSelect one of the premade maps to play on", 60, 2)
-    elseif mapType == "competitive" and gameMode == "standard" then
-        unlockBoard()
-
-        changeBackButton("setUp2ADeclareTerrain", "Go back to Step 2A")
-        local menuEntries = {}
-        menuEntries[1] = {functionName = "lockBoard", label = "Lock Board", tooltip = "Lock all terrain pieces on board", buttonTint = {0,0.913,1}}
-        menuEntries[2] = {functionName = "unlockBoard", label = "Unlock Board", tooltip = "Unlock all terrain pieces on board", buttonTint = {0,0.913,1}}
-        menuEntries[5] = {functionName = "setUp3BPlaceTerrain", label = "NEXT", tooltip = "Next", buttonTint = {0,0.913,1}}
-
-        createMenu(menuEntries, 1)
-
-        printToScreen("3A. PLACE TERRAIN.\n\n\n 1.Both Players players set aside an even number of\nterrain pieces that cover a quarter of the battlefield\n\n2.Starting with the player with lowest points, players\ntake turn placing terrain range 1 away from each other.\nIf terrain cannot be placed beyond range 1, then terrain\ncan be placed anywhere.", 60, 2)
-    elseif mapType == "competitive" and gameMode == "tournament" then
-        unlockBoard()
-
-        changeBackButton("setUp2ADeclareTerrain", "Go back to Step 2A")
-        local menuEntries = {}
-        menuEntries[1] = {functionName = "lockBoard", label = "Lock Board", tooltip = "Lock all terrain pieces on board", buttonTint = {0,0.913,1}}
-        menuEntries[2] = {functionName = "unlockBoard", label = "Unlock Board", tooltip = "Unlock all terrain pieces on board", buttonTint = {0,0.913,1}}
-        menuEntries[5] = {functionName = "setUp3BPlaceTerrain", label = "NEXT", tooltip = "Next", buttonTint = {0,0.913,1}}
-
-        createMenu(menuEntries, 1)
-
-        printToScreen("3A. PLACE TERRAIN.\n\n\n 1.Both Players players set aside an even number of\nterrain pieces that cover a quarter of the battlefield\n\n2.Starting with the player with lowest points, players\ntake turn placing terrain range 1 away from each other.\nIf terrain cannot be placed beyond range 1, then terrain\ncan be placed anywhere.", 60, 2)
-    end
-end
-
-function setUp3BPlaceTerrain()
-
-    if mapType == "premade" then
-        clearAllButtons()
-        local menuEntries = {}
-        menuEntries[5] = {functionName = "setUp4ASelectPlayerColorAndSides", label = "NEXT", tooltip = "Next", buttonTint = {0,0.913,1}}
-
-        createMenu(menuEntries, 1)
-        changeBackButton("setUp3APlaceTerrain", "Go back to Step 3A")
-
-        printToScreen("3B. DECLARE TERRAIN\n\nBoth players mutually agree on each terrain cover and\nmovement restrictions.\n\nAll terrain cover and movement info are in their model's\ndescriptions.\nMouse over terrain and hold to see descriptions.", 60, 2)
-    elseif mapType == "competitive" then
-        lockBoard()
-        setUp4ASelectPlayerColorAndSides()
-    end
-end
 
 function lockBoard()
     local allObjs = battlefieldZone.getObjects()
@@ -585,37 +327,6 @@ function unlockBoard()
         end
 
     end
-end
-
-function setUp4ASelectPlayerColorAndSides()
-    clearAllButtons()
-    local menuEntries = {}
-    menuEntries[1] = {functionName = "switchPlayerColor", label = "Switch Player Colors", tooltip = "Switch Player Colors", buttonTint = {0,0.913,1}}
-    menuEntries[5] = {functionName = "setUp4BSelectPlayerColorAndSides", label = "NEXT", tooltip = "NEXT", buttonTint = {0,0.913,1}}
-
-    createMenu(menuEntries, 1)
-    changeBackButton("setUp3APlaceTerrain", "Go back to Step 3A")
-
-    printToScreen("4A. SELECT PLAYER COLOR AND SIDES\n\nPlayer with lowest point total chooses to be Blue or Red\nPlayer.\n\nIf both players have the same point total, roll a red\ndefence die and call block or miss\n\nSelect 'Switch Player Color' to change player colors", 60, 2)
-end
-
-function setUp4BSelectPlayerColorAndSides()
-    clearSetUpCards("all")
-    clearAllButtons()
-    local menuEntries = {}
-    menuEntries[1] = {functionName = "flipMap", label = "Flip Map", tooltip = "Flip Map", buttonTint = {0,0.913,1}}
-    menuEntries[5] = {functionName = "setUp5ARevealBattleCards", label = "NEXT", tooltip = "NEXT", buttonTint = {0,0.913,1}}
-
-    createMenu(menuEntries, 1)
-    changeBackButton("setUp4ASelectPlayerColorAndSides", "Go back to Step 4A")
-
-    printToScreen("4B. SELECT PLAYER COLOR AND SIDES\n\nBlue Player selects map orientation.\n\nSelect 'Flip Map' to rotate map.", 60, 2)
-end
-
-function setUp5ARevealBattleCards()
-    revealBattleCards()
-
-    setUp6ADefineBattlefield()
 end
 
 function setBattleCardPos()
@@ -781,28 +492,11 @@ function clearSetUpCards(clearedCards)
 
 end
 
-function setUp6ADefineBattlefield()
-    clearAllButtons()
-    local menuEntries = {}
-
-    menuEntries[5] = {functionName = "setUp6BDefineBattlefield", label = "NEXT", tooltip = "NEXT", buttonTint = {0,0.913,1}}
-
-    createMenu(menuEntries, 1)
-    changeBackButton("setUp4BSelectPlayerColorAndSides", "Go back to Step 4B")
-
-    printToScreen("6. DEFINE BATTLEFIELD\nStarting with Blue player, players eliminate left most card.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", 60, 2)
-end
-
 function defineBattlefield()
     clearSetUpCards("eliminate")
     insertSetUpCard("objective")
     insertSetUpCard("deployment")
     insertSetUpCard("conditions")
-end
-
-function setUp6BDefineBattlefield()
-    defineBattlefield()
-    setUp7AResolveObjectiveConditions()
 end
 
 function insertSetUpCard(cardType)
@@ -814,36 +508,6 @@ function insertSetUpCard(cardType)
     finalCard.setPosition(finalPos)
     finalCard.setRotation(mount.getRotation())
     finalCard.clearButtons()
-end
-
-function setUp7AResolveObjectiveConditions()
-    clearAllButtons()
-    setUpController.call("clearDeploymentBoundary")
-    local menuEntries = {}
-
-    menuEntries[5] = {functionName = "setUp8DeployUnits", label = "NEXT", tooltip = "NEXT", buttonTint = {0,0.913,1}}
-
-    createMenu(menuEntries, 1)
-    changeBackButton("setUp4BSelectPlayerColorAndSides", "Go back to Step 5A")
-
-    printToScreen("7. Resolve Objective and Condition Cards\n\n Resolve setup instructions on Objective and Condition Cards", 60, 2)
-    spawnObjectiveConditionsDelay()
-
-
-end
-
-function setUp8DeployUnits()
-    clearAllButtons()
-    local menuEntries = {}
-
-    menuEntries[5] = {functionName = "finishSetUp", label = "START GAME", tooltip = "START GAME", buttonTint = {0.7,0,0}}
-
-    createMenu(menuEntries, 1)
-    changeBackButton("setUp7AResolveObjectiveConditions", "Go back to Step 7A")
-
-    printToScreen("8. Deploy Units\n\n Resolve setup instructions on Deployment Cards\n\nThen, starting with the Blue Player, Players take turns\ndeploying units in the deployment zone", 60, 2)
-
-    setUpController.call("checkCardCall", {"deployment"})
 end
 
 function finishSetUp()
@@ -965,332 +629,6 @@ function debugSpawnSetupCard(spawnedSetupCard)
     spawnedSetupCard[1].setRotation({55.91, 270.00, 0.00})
 end
 
-function switchPlayerColor()
-    Player.Red.changeColor("Purple")
-    Player.Blue.changeColor("Red")
-
-    local timerCounter = Global.getVar("timerCounter")
-    timerCounter = timerCounter + 1
-    Global.setVar("timerCounter", timerCounter)
-
-    Timer.create({
-        identifier     = "switchColorDelay"..timerCounter,
-        function_name  = "switchColorDelay",
-        function_owner = self,
-        delay          = 0.1
-    })
-
-
-    -- flip stuff in player player area
-
-    local redZoneObjs = redZone.getObjects()
-    local blueZoneObjs = blueZone.getObjects()
-
-    for i, obj in pairs(redZoneObjs) do
-        if obj != battlefieldTable then
-            flipObjPos(obj)
-            flipObjColor(obj)
-        end
-    end
-    for i, obj in pairs(blueZoneObjs) do
-        if obj != battlefieldTable then
-            flipObjPos(obj)
-            flipObjColor(obj)
-        end
-    end
-
-    -- change tokens and Minis
-    local allObjs = battlefieldZone.getObjects()
-    for i, obj in pairs(allObjs) do
-        if obj != battlefieldTable then
-            flipObjColor(obj)
-        end
-    end
-
-    local blueTrayZone = getObjectFromGUID(commandTokenTrayData.blue.trayZoneGUID)
-    local redTrayZone = getObjectFromGUID(commandTokenTrayData.red.trayZoneGUID)
-    local blueCommandObjs = blueTrayZone.getObjects()
-    local redCommandObjs = redTrayZone.getObjects()
-
-    for i, obj in pairs(blueCommandObjs) do
-        if obj.getVar("isAToken") then
-            -- flip obj color and pos
-            flipCommandTokenPos(obj, i)
-            spawnNewCommandToken(obj,obj.getPosition(),obj.getRotation())
-            destroyObject(obj)
-        end
-    end
-    for i, obj in pairs(redCommandObjs) do
-        if obj.getVar("isAToken") then
-            -- flip obj color and pos
-            flipCommandTokenPos(obj, i)
-            spawnNewCommandToken(obj,obj.getPosition(),obj.getRotation())
-            destroyObject(obj)
-        end
-    end
-
-
-    -- red
-    local redDeckObjs = redDeckZone.getObjects()
-    local gotDeck = false
-    for i, obj in pairs(redDeckObjs) do
-        if obj != redDeckMount then
-            redDeckObj = obj
-            gotDeck = true
-        end
-    end
-
-    if gotDeck == true then
-        local deckPos = blueDeckMount.getPosition()
-        deckPos.y = deckPos.y + 1
-        redDeckObj.setPosition(deckPos)
-        --redDeckObj.setRotation(blueDeckMount.getRotation())
-    end
-
-    -- blueZone
-
-    local blueDeckObjs = blueDeckZone.getObjects()
-    local gotDeck = false
-    for i, obj in pairs(blueDeckObjs) do
-        if obj != blueDeckMount then
-            blueDeckObj = obj
-            gotDeck = true
-        end
-    end
-
-    if gotDeck == true then
-        local deckPos = redDeckMount.getPosition()
-        deckPos.y = deckPos.y + 1
-        blueDeckObj.setPosition(deckPos)
-        --redDeckObj.setRotation(blueDeckMount.getRotation())
-    end
-end
-
-
-function flipCommandTokenPos(obj, index)
-    local selectedColor = obj.getVar("colorSide")
-    if selectedColor == "red" then
-        selectedColor = "blue"
-    else
-        selectedColor = "red"
-    end
-
-    local commandType = obj.getVar("commandType")
-    local commandTray = getObjectFromGUID(commandTokenTrayData[selectedColor][commandType])
-    local pos = commandTray.getPosition()
-    pos.y = pos.y + 0.5 +(0.2 * index)
-    local rot = commandTray.getRotation()
-    --rot.y = rot.y
-
-    obj.setPosition(pos)
-    obj.setRotation(rot)
-end
-
-function spawnMini(spawnPos, spawnRot, passedColor, passedTint, passedName)
-
-    data = cardInfo.unitCards[passedName].miniInfo[1]
-
-    local spawnedMini = spawnObject({
-        type           = "Custom_Model",
-        position       = spawnPos,
-        rotation       = spawnRot,
-        scale          = data.scale
-    })
-    spawnedMini.setCustomObject({
-        mesh = data.mesh,
-        collider = data.collider,
-        diffuse = data[passedColor],
-        type = 1,
-        material = 3
-
-    })
-    spawnedMini.setColorTint(passedTint)
-
-    local strColor = passedColor
-    strColor = strColor:gsub("^%l", string.upper)
-
-    spawnedMini.setName(strColor.. " ".. data.name)
-
-    return spawnedMini
-end
-
-function initializeMini(pMiniTable)
-    --print(pColorSide, pUpgrades, pMiniObjs, pUnitCardObj, pVarName)
-
-
-    local strColor = pMiniTable.colorSide
-    strColor = strColor:gsub("^%l", string.upper)
-
-    for i, objEntry in pairs(pMiniTable.miniObjs) do
-        -- init mini script
-        local selectedMiniScript = ""
-
-        -- SET NAME
-        objEntry.obj.setName(strColor.. " "..objEntry.name)
-        selectedMiniScript = selectedMiniScript .. "colorSide = '"..pMiniTable.colorSide.."'\nminiName = '"..objEntry.name.."'\n"
-
-
-        if i == 1 then
-            -- DESCRIPTION
-            local description = ""
-
-            for p, upgradeName in pairs(pMiniTable.upgrades) do
-                description = description .. upgradeName .. "\n"
-            end
-            objEntry.obj.setDescription(description)
-
-            -- miniGUIDs
-            local miniGUIDsScript = "miniGUIDs = {}\n"
-            for n, objEntry in pairs(pMiniTable.miniObjs) do
-                miniGUIDsScript = miniGUIDsScript .. "miniGUIDs["..n.."] = '" .. objEntry.obj.getGUID() .. "'\n"
-            end
-            selectedMiniScript = selectedMiniScript .. miniGUIDsScript.."cardGUID = '"..pMiniTable.unitCardObj.getGUID().."'\nunitName = '"..pMiniTable.varName.."'\nunitID = "..pMiniTable.unitID.."\n"..listBuilder.modelMiniScript
-        else
-            objEntry.obj.use_snap_points = false
-        end
-        -- SET SCRIPT
-        objEntry.obj.setLuaScript(selectedMiniScript)
-    end
-
-end
-
-function flipObjColor(fObj)
-    if fObj.getVar("isAMini") != nil then
-
-        local spawnMiniTable = {}
-
-        if fObj.getVar("colorSide") == "red" then
-            spawnMiniTable.colorSide = "blue"
-        else
-            spawnMiniTable.colorSide = "red"
-        end
-        spawnMiniTable.upgrades = {fObj.getDescription()}
-
-        spawnMiniTable.unitCardObj = getObjectFromGUID(fObj.getVar("cardGUID"))
-
-        spawnMiniTable.varName = fObj.getVar("unitName")
-
-        spawnMiniTable.unitID = fObj.getVar("unitID")
-
-        local leaderMini = spawnMini(fObj.getPosition(),fObj.getRotation(), spawnMiniTable.colorSide, fObj.getColorTint(), spawnMiniTable.varName)
-
-        spawnMiniTable.miniObjs = {}
-        for i, miniGUID in pairs(fObj.getTable("miniGUIDs")) do
-
-            local guidObj = getObjectFromGUID(miniGUID)
-            local objName = guidObj.getVar("miniName")
-            spawnMiniTable.miniObjs[i] = {}
-            if i == 1 then
-                spawnMiniTable.miniObjs[i].obj = leaderMini
-            else
-                spawnMiniTable.miniObjs[i].obj = guidObj
-            end
-
-            spawnMiniTable.miniObjs[i].name = objName
-        end
-
-        refreshTimer()
-        Timer.create({
-            identifier     = "initMinis"..timerCounter,
-            function_name  = "initializeMini",
-            function_owner = self,
-            parameters     = spawnMiniTable,
-            delay          = 2
-        })
-
-        destroyObject(fObj)
-
-    elseif fObj.getVar("isAToken") != nil then
-        spawnNewCommandToken(fObj,fObj.getPosition(), fObj.getRotation())
-
-        destroyObject(fObj)
-    end
-end
-
-function setUpDelay(setObjTable)
-    setObjTable.obj.setVar("unitName", setObjTable.unitName)
-    setObjTable.obj.setVar("colorSide", setObjTable.colorSide)
-    setObjTable.obj.setVar("unitCount", setObjTable.unitCount)
-    setObjTable.obj.setVar("cardGUID", setObjTable.cardGUID)
-end
-
-function spawnNewCommandToken(oldObj,spawnPos,spawnRot)
-    ---
-    if oldObj.getVar("colorSide") == "red" then
-        newTokenColor = "blue"
-    else
-        newTokenColor = "red"
-    end
-
-    local commandType = oldObj.getVar("commandType")
-
-    local tokenObj = spawnObject({
-        type           = "Custom_Model",
-        position       = spawnPos,
-        rotation       = spawnRot,
-        scale          = {1,1,1}
-    })
-    tokenObj.setCustomObject({
-        mesh = commandTokenData.mesh,
-        collider = commandTokenData.mesh,
-        diffuse = commandTokenData[newTokenColor][commandType].diffuse,
-        type = 0,
-        material = 3
-    })
-
-    tokenObj.setPosition(spawnPos)
-    tokenObj.setRotation(spawnRot)
-
-    local strColor = newTokenColor
-
-    strColor = strColor:gsub("^%l", string.upper)
-
-    tokenObj.setName(strColor .. " " .. cardInfo.unitCards[oldObj.getVar("unitName")].tokenName)
-
-    local luaScript = "unitName = '"..oldObj.getVar("unitName").."'\ncommandType = '"..commandType.."'\ncolorSide = '"..newTokenColor.."'\n"..listBuilder.tokenScript
-    tokenObj.setLuaScript(luaScript)
-
-end
-
-function reloadToken(tokenTable)
-    if tokenTable[1] != nil then
-        tokenTable[1].reload()
-    end
-
-end
-
-function flipObjPos(pObj)
-    local objPos = pObj.getPosition()
-    local newPos = objPos
-    local objRot = pObj.getRotation()
-    objRot.y = objRot.y+180
-    newPos.x = 8-(objPos.x - 8)
-    newPos.z = -objPos.z
-
-    pObj.setPosition(newPos)
-    pObj.setRotation(objRot)
-end
-
-function switchColorDelay()
-    Player.Purple.changeColor("Blue")
-end
-
-function flipMap()
-    --Get a list of any objects which are inside of the zone.
-    local allObjs = battlefieldZone.getObjects()
-
-    --Check if the table we made is empty due to the zone being empty
-    if #allObjs == 0 then
-    else
-        for _, obj in ipairs(allObjs) do
-            -- flip obj
-            if obj != battlefieldTable then
-                flipObjPos(obj)
-            end
-        end
-    end
-end
-
 function spawnPremadeMap(selectedMap,selectedCartridgeObj, mapMenuCallback, clearZone)
     if mapMenuCallback != nil then
         self.call(mapMenuCallback)
@@ -1324,15 +662,11 @@ function spawnPremadeMap(selectedMap,selectedCartridgeObj, mapMenuCallback, clea
         guid           = selectedGUID
     })
 
-
-
     -- delete clone
     destroyObject(selectedCartridgeObjClone)
-
 end
 
 function spawnFromCartridgeDelay(spawnFromCartridgeObj)
-
     spawnFromCartridgeObj.setLock(true)
 
     local timerCounter = Global.getVar("timerCounter")
@@ -1346,12 +680,7 @@ function spawnFromCartridgeDelay(spawnFromCartridgeObj)
         parameters     = {spawnFromCartridgeObj},
         delay          = 0.5
     })
-
-
-
 end
-
-
 
 function spawnPremadeMapFromCartridge(selectedPremadeMapCartridgeTable)
     local selectedPremadeMapCartridge = selectedPremadeMapCartridgeTable[1]
@@ -1359,8 +688,6 @@ function spawnPremadeMapFromCartridge(selectedPremadeMapCartridgeTable)
 
     destroyObject(selectedPremadeMapCartridge)
 end
-
-
 
 function spawnMapFromCartridge(selectedCartridge)
     changeBattlefieldTint(selectedCartridge.getTable("battlefieldTint"))
@@ -1380,7 +707,6 @@ end
 
 function clearZones()
     clearMap()
-    clearCompetitiveTerrain()
 end
 
 function clearMap()
@@ -1397,16 +723,6 @@ function clearMap()
             if object != battlefieldTable then
                 destroyObject(object)
             end
-        end
-    end
-end
-
-function clearCompetitiveTerrain()
-    local objsInZone = competitiveTerrainZone.getObjects()
-
-    if #objsInZone != 0 then
-        for _, obj in ipairs(objsInZone) do
-            destroyObject(obj)
         end
     end
 end
@@ -1559,20 +875,6 @@ end
 function dud()
 end
 
-function translatePos(originPos, originRot, distance, angle)
-    local pos = originPos
-    local rot = originRot
-
-    local a = distance * math.cos(math.rad(angle + rot.y))
-    local b = distance * math.sin(math.rad(angle + rot.y))
-
-    pos.x = pos.x - b
-    pos.z = pos.z - a
-
-    return pos
-end
-
-
 function clearAllButtons(exception)
     for _, optionObjEntry in pairs(optionObjs) do
         optionObjEntry.clearButtons()
@@ -1607,7 +909,7 @@ function createOptionButton(optionNumber, optionClickFunction, optionLabel, opti
 
     _G["gameControllerOptionFunction"..optionNumber] = function()
         optionButtons["gameControllerOption"..optionNumber.."Button"].AssetBundle.playTriggerEffect(0)
-        _G[optionClickFunction]()
+        _G[optionClickFunction](optionNumber)
     end
     local stringLength = string.len(optionLabel)
 
@@ -1665,6 +967,34 @@ function changePrevButton(optionClickFunction, optionToolTip)
     prevButton.setColorTint({0.7,0.7,0})
 end
 
+optionUrls = {}
+
+function downloadMap(mapIndex)
+  local url = optionUrls[mapIndex]
+  printToScreen("DOWNLOADING MAP...")
+  WebRequest.get(url, function(data)
+    -- TTS deletes the download handler after Wait.time, so copy the text.
+    local text = data.text
+    printToScreen("UNPACKING MAP...\n\nThis may take several seconds...")
+    Wait.time(function()
+      local json = JSON.decode(text)
+      if not json.ObjectStates then
+        printToAll("Failed to decode map.")
+        return
+      end
+      spawnObjectJSON({
+        json = JSON.encode(json.ObjectStates[1]),
+        position = dataDiskMount.getPosition(),
+        callback_function = function(disk)
+          spawnMapFromCartridge(disk)
+          disk.destroyObject()
+          mainMenu()
+        end
+      })
+    end, 0.5)
+  end)
+end
+
 function createMenu(optionTable, selectedIndex)
     clearAllButtons(backButton)
 
@@ -1682,7 +1012,13 @@ function createMenu(optionTable, selectedIndex)
 
     for oI=0,4,1 do
         if optionTable[selectedIndex+oI] != nil then
-            createOptionButton(oI+1, optionTable[selectedIndex+oI].functionName, optionTable[selectedIndex+oI].label, optionTable[selectedIndex+oI].tooltip, optionTable[selectedIndex+oI].buttonTint)
+            local entry = optionTable[selectedIndex+oI]
+            if entry.url != nil then
+              optionUrls[selectedIndex+oI] = entry.url
+              createOptionButton(oI+1, "downloadMap", entry.label,entry.tooltip, entry.buttonTint)
+            else
+              createOptionButton(oI+1, entry.functionName, entry.label,entry.tooltip, entry.buttonTint)
+            end
         end
     end
 end
@@ -1690,10 +1026,7 @@ end
 
 
 function changeBattlefieldTint(tint)
-
     enterTintData(gameData, "battlefieldTint", tint)
-
-
 
     local allUnits = getAllObjects()
     for _,unit in pairs(allUnits) do
@@ -1717,5 +1050,4 @@ function refreshTimer()
     timerCounter = timerCounter + 1
     Global.setVar("timerCounter", timerCounter)
 end
-
 
