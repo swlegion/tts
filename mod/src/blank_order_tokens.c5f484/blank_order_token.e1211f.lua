@@ -277,3 +277,4 @@ function is_player_permitted(color)
     end
 end
 
+

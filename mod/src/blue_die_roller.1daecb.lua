@@ -275,5 +275,3 @@ function clearButtonDisplay(buttonGUID,diceColor)
     buttonObj.clearButtons()
     buttonObj.createButton(data)
 end
-
-

@@ -729,5 +729,3 @@ function dealCommandCard(selectionCard)
 
     destroyObject(commandCards)
 end
-
-

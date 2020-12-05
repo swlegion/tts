@@ -9,15 +9,11 @@ function onLoad(save_state)
     competitiveTerrainZone = getObjectFromGUID(Global.getVar("competitiveTerrainZoneGUID"))
     battlefieldTable = getObjectFromGUID(Global.getVar("battlefieldTable"))
     standardMapsCartridge = getObjectFromGUID(gameController.standardMapsGUID)
-    battleLinesCompetitiveMapsCartridge = getObjectFromGUID(gameController.battleLinesCompetitiveMapsGUID)
-    battleLinesCreativeMapsCartridge = getObjectFromGUID(gameController.battleLinesCreativeMapsGUID)
     customMapsCartridge = getObjectFromGUID(gameController.customMapsGUID)
     competitiveTerrainCartridge = getObjectFromGUID(gameController.competitiveTerrainCartridgeGUID)
     deploymentOverlays = getObjectFromGUID(gameController.deploymentOverlaysGUID)
     tournamentMapsCartridge = getObjectFromGUID(gameController.tournamentMapsGUID)
     learningGameCartridge = getObjectFromGUID(gameController.learningGameCartridgeGUID)
-    userMapsCartridge = getObjectFromGUID(gameController.userMapsGUID)
-    gatheringLegionsMapsCartridge = getObjectFromGUID(gameController.gatheringLegionsMapsGUID)
     listBuilder = Global.getTable("listBuilder")
     redZone = getObjectFromGUID(listBuilder.redZoneGUID)
     blueZone = getObjectFromGUID(listBuilder.blueZoneGUID)
@@ -278,9 +274,6 @@ function premadeMapsMenu(callBackMapMenu)
     menuEntries[1] = {functionName = "standardMapsMenu", label = "Standard Maps", tooltip = "Choose a standard map", buttonTint = {0,0.913,1}}
     menuEntries[2] = {functionName = "tournamentMapsMenu", label = "Tournament Maps", tooltip = "Choose a tournament Map", buttonTint = {0,0.913,1}}
     menuEntries[3] = {functionName = "randomTournamentMapsMenu", label = "Random Tournament Map", tooltip = "Spawn a random tournament map", buttonTint = {0,0.913,1}}
-    menuEntries[4] = {functionName = "gatheringLegionsMapsMenu", label = "Gathering Legions Maps", tooltip = "Choose a Gathering Legions map", buttonTint = {0,0.913,1}}
-    menuEntries[5] = {functionName = "battleLinesMapsMenu", label = "Battle Lines Maps", tooltip = "Choose a Battle lines map", buttonTint = {0,0.913,1}}
-    menuEntries[6] = {functionName = "userMapsMenu", label = "User Made Maps", tooltip = "Choose an user submitted map", buttonTint = {0,0.913,1}}
     createMenu(menuEntries, 1)
 end
 
@@ -290,51 +283,6 @@ function standardMapsMenu()
 
     changeBackButton("premadeMapsMenu", "Go back to Pre-made Maps Menu")
     createMapMenu(standardMapsCartridge, callBackSelection)
-end
-
-function userMapsMenu()
-    printToScreen("USER SUBMITTED MAPS\n\nChoose a user made map from below\n\nIf you would like to submit your map, pm \nTieren on Steam.\nOr, submit the map to your own workshop!", 70, 3)
-
-    clearAllButtons()
-
-    changeBackButton("premadeMapsMenu", "Go back to Pre-made Maps Menu")
-    createMapMenu(userMapsCartridge, callBackSelection)
-end
-
-function gatheringLegionsMapsMenu()
-    printToScreen("GATHERING LEGIONS MAPS\n\nChoose a user made map from below\n\nIf you would like to submit your map, pm \nTieren on Steam.\nOr, submit the map to your own workshop!", 70, 3)
-
-    clearAllButtons()
-
-    changeBackButton("premadeMapsMenu", "Go back to Pre-made Maps Menu")
-    createMapMenu(gatheringLegionsMapsCartridge, callBackSelection)
-end
-
-function battleLinesMapsMenu()
-    changeBackButton("premadeMapsMenu", "Go back to Pre-made Maps Menu")
-
-    local menuEntries = {}
-    menuEntries[1] = {functionName = "battleLinesCompetitiveMapsMenu", label = "Competitive Maps", tooltip = "Choose a competitive map", buttonTint = {0,0.913,1}}
-    menuEntries[2] = {functionName = "battleLinesCreativeMapsMenu", label = "Creative Maps", tooltip = "Choose a Creative Map", buttonTint = {0,0.913,1}}
-    createMenu(menuEntries, 1)
-end
-
-function battleLinesCompetitiveMapsMenu()
-    printToScreen("BATTLE LINES MAPS\n\nChoose a user made map from below\n\nIf you would like to submit your map, pm \nTieren on Steam.\nOr, submit the map to your own workshop!", 70, 3)
-
-    clearAllButtons()
-
-    changeBackButton("battleLinesMapsMenu", "Go back to Battle Lines Maps Menu")
-    createMapMenu(battleLinesCompetitiveMapsCartridge, callBackSelection)
-end
-
-function battleLinesCreativeMapsMenu()
-    printToScreen("BATTLE LINES MAPS\n\nChoose a user made map from below\n\nIf you would like to submit your map, pm \nTieren on Steam.\nOr, submit the map to your own workshop!", 70, 3)
-
-    clearAllButtons()
-
-    changeBackButton("battleLinesMapsMenu", "Go back to Battle Lines Maps Menu")
-    createMapMenu(battleLinesCreativeMapsCartridge, callBackSelection)
 end
 
 function tournamentMapsMenu()
@@ -1717,5 +1665,4 @@ function refreshTimer()
     timerCounter = timerCounter + 1
     Global.setVar("timerCounter", timerCounter)
 end
-
 
