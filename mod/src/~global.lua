@@ -3271,6 +3271,7 @@ function onLoad()
     cardInfo.upgradeCards.fear = {name = "Fear", guid = "d1rg2be1", ptCost = 3,varName="fear"}
     cardInfo.upgradeCards.forceGuidance = {name = "Force Guidance", guid = "d1g2ggbe1", ptCost = 10,varName="forceGuidance"}
     cardInfo.upgradeCards.hope = {name = "Hope", guid = "d1g2ggggbe1", ptCost = 3,varName="hope"}
+    cardInfo.upgradeCards.forceBarrier = {name = "Force Barrier", ptCost = 10, varName = "forceBarrier"}
 
     -- tech
     cardInfo.upgradeCards.targetingScopes = {name = "Targeting Scopes", guid = "d03bcc", ptCost = 4,varName="targetingScopes"}
@@ -3564,7 +3565,8 @@ function onLoad()
         cardInfo.upgradeCards.battleMeditation,
         cardInfo.upgradeCards.anger,
         cardInfo.upgradeCards.fear,
-        cardInfo.upgradeCards.forceGuidance
+        cardInfo.upgradeCards.forceGuidance,
+        cardInfo.upgradeCards.forceBarrier
     }
     cardInfo.upgradeMenu.separatist.comms = {
         cardInfo.upgradeCards.commsJammer,
@@ -3682,7 +3684,8 @@ function onLoad()
         cardInfo.upgradeCards.jediMindTrick,
         cardInfo.upgradeCards.battleMeditation,
         cardInfo.upgradeCards.forceGuidance,
-        cardInfo.upgradeCards.hope
+        cardInfo.upgradeCards.hope,
+        cardInfo.upgradeCards.forceBarrier
     }
     cardInfo.upgradeMenu.republic.comms = {
         cardInfo.upgradeCards.commsJammer,
@@ -3834,7 +3837,8 @@ function onLoad()
         cardInfo.upgradeCards.jediMindTrick,
         cardInfo.upgradeCards.battleMeditation,
         cardInfo.upgradeCards.forceGuidance,
-        cardInfo.upgradeCards.hope
+        cardInfo.upgradeCards.hope,
+        cardInfo.upgradeCards.forceBarrier
     }
     cardInfo.upgradeMenu.rebel.tech = {
         cardInfo.upgradeCards.targetingScopes,
@@ -4017,7 +4021,8 @@ function onLoad()
         cardInfo.upgradeCards.battleMeditation,
         cardInfo.upgradeCards.anger,
         cardInfo.upgradeCards.fear,
-        cardInfo.upgradeCards.forceGuidance
+        cardInfo.upgradeCards.forceGuidance,
+        cardInfo.upgradeCards.forceBarrier
     }
     cardInfo.upgradeMenu.imperial.tech = {
         cardInfo.upgradeCards.targetingScopes,
