@@ -546,7 +546,7 @@ function onLoad()
     unitInfo.imperialOfficer.commandType = "imperialCommander"
     unitInfo.imperialOfficer.baseSize = "small"
     unitInfo.imperialOfficer.fixedMove = false
-    unitInfo.imperialOfficer.selectedSpeed = 1
+    unitInfo.imperialOfficer.selectedSpeed = 2
     unitInfo.imperialOfficer.fixedArc = false
     unitInfo.imperialOfficer.squadStatus = false
     unitInfo.imperialOfficer.buttonHeight = 2
