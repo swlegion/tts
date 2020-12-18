@@ -177,10 +177,10 @@ function onLoad()
 
     templateInfo.cohesionRadius = {
       -- Troopers
-      small = 4.594485,
+      small = 4.494485,
 
       -- Tauntauns, Droidekas, Speeder Bikes, Mortars
-      medium = 5.95275,
+      medium = 5.45275,
 
       -- AT-RTs, eWebs
       big = 7.133865,
