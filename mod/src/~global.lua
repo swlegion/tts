@@ -1213,7 +1213,7 @@ function onLoad()
     }
     listBuilder.commandCards.maul = {
       varName = "maul",
-      cards = {"Duel of the Fates","The Phantom Menace","At Last"}
+      cards = {"Duel Of The Fates","The Phantom Menace","At Last"}
   }
     -- REPUBLIC
     listBuilder.commandCards.obiWanKenobi = {
@@ -1226,7 +1226,7 @@ function onLoad()
     }
     listBuilder.commandCards.anakinSkywalker = {
       varName = "anakinSkywalker",
-      cards = {"This is Where the Fun Begins","You Underestimate My Power","Hero of the Clone Wars"}
+      cards = {"This Is Where The Fun Begins","You Underestimate My Power","Hero Of The Clone Wars"}
   }
     listBuilder.commandCards.republicR2d2 = {
         varName = "republicR2d2",
@@ -3547,7 +3547,7 @@ function onLoad()
     cardInfo.upgradeCards.electroGauntlets = {name = 'Electro Gauntlets', guid = "agggg0fg", ptCost = 10, varName = "electroGauntlets"}
     cardInfo.upgradeCards.lootedE5Blaster = {name = 'Looted E-5 Blaster', guid = "agggg0fg", ptCost = 5, varName = "lootedE5Blaster"}
     cardInfo.upgradeCards.jetpackRockets = {name = 'Jetpack Rockets', guid = "agggg0fg", ptCost = 8, varName = "jetpackRockets"}
-
+    cardInfo.upgradeCards.anakinFlaw = {name = 'Not A Story The Jedi Would Tell', guid = "6b9d27", ptCost = 0, varName = "anakinFlaw"}
     cardInfo.upgradeCards.rt97cBlasterRifle = {name = "RT-97C Blaster Rifle", guid = "agg3gg0fg", ptCost = 10, varName = "rt97cBlasterRifle"}
     cardInfo.upgradeCards.cr24FlameRifle = {name = "CR-24 Flame Rifle", guid = "aggfggg0fg", ptCost = 15, varName = "cr24FlameRifle"}
     cardInfo.upgradeCards.t21BlasterRifle = {name = "T-21 Blaster Rifle", guid = "aggrggg0fg", ptCost = 5, varName = "t21BlasterRifle"}
@@ -3727,7 +3727,9 @@ function onLoad()
     cardInfo.upgradeMenu.republic.padmeSideArm = {
         cardInfo.upgradeCards.lootedE5Blaster
     }
-
+    cardInfo.upgradeMenu.republic.anakinFlawCard = {
+        cardInfo.upgradeCards.anakinFlaw
+    }
     cardInfo.upgradeMenu.republic.phaseICloneTroopersTrooper = {
         cardInfo.upgradeCards.phaseICloneTrooper,
         cardInfo.upgradeCards.phaseICloneSpecialist,
@@ -4402,7 +4404,8 @@ function onLoad()
             cardInfo.upgradeMenu.republic.force,
             cardInfo.upgradeMenu.republic.force,
             cardInfo.upgradeMenu.republic.tactics,
-            cardInfo.upgradeMenu.republic.tactics
+            cardInfo.upgradeMenu.republic.tactics,
+            cardInfo.upgradeMenu.republic.anakinFlawCard
         },
         miniInfo = {
             miniInfo.anakinSkywalker
