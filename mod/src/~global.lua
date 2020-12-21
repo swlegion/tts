@@ -767,6 +767,15 @@ function onLoad()
     unitInfo.b2SuperBattleDroids.squadStatus = true
     unitInfo.b2SuperBattleDroids.buttonHeight = 2
 
+    unitInfo.drk1SithProbeDroids = {}
+    unitInfo.drk1SithProbeDroids.commandType = "separatistSpecialForces"
+    unitInfo.drk1SithProbeDroids.baseSize = "small"
+    unitInfo.drk1SithProbeDroids.fixedMove = false
+    unitInfo.drk1SithProbeDroids.selectedSpeed = 2
+    unitInfo.drk1SithProbeDroids.fixedArc = false
+    unitInfo.drk1SithProbeDroids.squadStatus = true
+    unitInfo.drk1SithProbeDroids.buttonHeight = 2
+
     unitInfo.bxCommandoDroids = {}
     unitInfo.bxCommandoDroids.commandType = "separatistSpecialForces"
     unitInfo.bxCommandoDroids.baseSize = "small"
@@ -1372,6 +1381,7 @@ function onLoad()
     templateMenu.separatist.specialForces = {}
     templateMenu.separatist.specialForces[1] = {name = "BX Commando Droids", varName = "bxCommandoDroids"}
     templateMenu.separatist.specialForces[2] = {name = "BX Commando Droids Strike Team", varName = "bxCommandoDroidsStrikeTeam"}
+    templateMenu.separatist.specialForces[3] = {name = "DRK-1 Sith Probe Droids", varName = "drk1SithProbeDroids"}
 
     templateMenu.separatist.support = {}
     templateMenu.separatist.support[1] = {name = "Droidekas", varName = "droidekas"}
@@ -2850,7 +2860,40 @@ function onLoad()
         scale = {1,1,1},
         name = "B2-ACM Trooper"
     }
-
+    miniInfo.tSeriesTacticalDroid = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1022821664192681738/6062182D66F6F043E4DCF98FCD592CBD7ECDFF18/",
+        collider = _BASE_COLLIDERS.small,
+        red = "http://cloud-3.steamusercontent.com/ugc/1022821664192681931/11AB7637C0B8C60CB2E4BDC90F006B887A69DAF0/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1022821664192681931/11AB7637C0B8C60CB2E4BDC90F006B887A69DAF0/",
+        scale = {1,1,1},
+        name = "T-Series Tactical Droid",
+        leader = true
+    }
+    miniInfo.drk1SithProbeDroidLeader = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1693877203566022298/DF3FC1CF550C49A2C2340F5291798615E1978116/",
+        collider = _BASE_COLLIDERS.small,
+        red = "http://cloud-3.steamusercontent.com/ugc/1693877203566022493/549FA81DA79A87D9134AF78B2D39417113C1C71C/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1693877203566022493/549FA81DA79A87D9134AF78B2D39417113C1C71C/",
+        scale = {1,1,1},
+        name = "DRK-1 Sith Probe Droid Leader",
+        leader = true
+    }
+    miniInfo.drk1SithProbeDroid1 = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1693877203566022298/DF3FC1CF550C49A2C2340F5291798615E1978116/",
+        collider = _BASE_COLLIDERS.small,
+        red = "http://cloud-3.steamusercontent.com/ugc/1693877203566022493/549FA81DA79A87D9134AF78B2D39417113C1C71C/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1693877203566022493/549FA81DA79A87D9134AF78B2D39417113C1C71C/",
+        scale = {1,1,1},
+        name = "DRK-1 Sith Probe Droid"
+    }
+    miniInfo.drk1SithProbeDroid2 = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1693877203566022298/DF3FC1CF550C49A2C2340F5291798615E1978116/",
+        collider = _BASE_COLLIDERS.small,
+        red = "http://cloud-3.steamusercontent.com/ugc/1693877203566022493/549FA81DA79A87D9134AF78B2D39417113C1C71C/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1693877203566022493/549FA81DA79A87D9134AF78B2D39417113C1C71C/",
+        scale = {1,1,1},
+        name = "DRK-1 Sith Probe Droid"
+    }
     local bxDroidMaterials = "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
     miniInfo.bxCommandoDroidLeader = {
         type = "assetbundle",
@@ -3461,6 +3504,7 @@ function onLoad()
     cardInfo.upgradeCards.phaseIICloneTrooper = {name =  "Phase II Clone Trooper", guid = "2gg3g5g8e9", ptCost = 13, miniInfo = miniInfo.phaseIICloneTrooper4,varName="phaseIICloneTrooper"}
     cardInfo.upgradeCards.phaseICloneTrooper = {name =  "Phase I Clone Trooper", guid = "235g8e9", ptCost = 10, miniInfo = miniInfo.phaseICloneTrooper4,varName="phaseICloneTrooper"}
     cardInfo.upgradeCards.b1BattleDroid = {name =  "B1 Battle Droid", guid = "2g45gg5g8e9", ptCost = 5, miniInfo = miniInfo.b1BattleDroid6,varName="b1BattleDroid"}
+    cardInfo.upgradeCards.tSeriesTacticalDroid = {name =  "T-Series Tactical Droid", guid = "b25510", ptCost = 18, miniInfo = miniInfo.tSeriesTacticalDroid,varName="tSeriesTacticalDroid"}
 
     cardInfo.upgradeCards.phaseICloneSpecialist = {name = "Phase I Clone Specialist", guid = "d9h0tug5a", ptCost = 14, miniGUID = "j78156", miniInfo = miniInfo.phaseICloneSpecialist,varName="phaseICloneSpecialist"}
     cardInfo.upgradeCards.phaseICloneCaptain = {name = "Phase I Clone Captain", guid = "d8h7jhgg5a", ptCost = 14, miniGUID = "1jgukg6", miniInfo = miniInfo.phaseICloneCaptain,varName="phaseICloneCaptain"}
@@ -3621,7 +3665,8 @@ function onLoad()
     cardInfo.upgradeMenu.separatist.b1BattleDroidsTrooper = {
         cardInfo.upgradeCards.b1BattleDroid,
         cardInfo.upgradeCards.oomSeriesBattleDroid,
-        cardInfo.upgradeCards.b1SecurityDroid
+        cardInfo.upgradeCards.b1SecurityDroid,
+        cardInfo.upgradeCards.tSeriesTacticalDroid
     }
     cardInfo.upgradeMenu.separatist.b1BattleDroidsSpecialist = {
         cardInfo.upgradeCards.e60RB1Trooper,
@@ -3646,7 +3691,8 @@ function onLoad()
     }
 
     cardInfo.upgradeMenu.separatist.b2SuperBattleDroidTrooper = {
-      cardInfo.upgradeCards.b2SuperBattleDroid
+      cardInfo.upgradeCards.b2SuperBattleDroid,
+      cardInfo.upgradeCards.tSeriesTacticalDroid
     }
 
     cardInfo.upgradeMenu.separatist.b2SuperBattleDroidSpecialist = {
@@ -4319,6 +4365,21 @@ function onLoad()
         },
         tokenName = "Separatist Special Forces Command Token",
         fullName = "BX Commando Droids Strike Team",
+        rank = "Special Forces"
+    }
+    cardInfo.unitCards.drk1SithProbeDroids = {
+        guid = "495ff9",
+        ptCost = 35,
+        availableUpgrades = {
+          cardInfo.upgradeMenu.separatist.comms
+        },
+        miniInfo = {
+            miniInfo.drk1SithProbeDroidLeader,
+            miniInfo.drk1SithProbeDroid1,
+            miniInfo.drk1SithProbeDroid2
+        },
+        tokenName = "Separatist Special Forces Command Token",
+        fullName = "DRK-1 Sith Probe Droids",
         rank = "Special Forces"
     }
     cardInfo.unitCards.droidekas = {
