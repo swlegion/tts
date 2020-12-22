@@ -3565,6 +3565,7 @@ function onLoad()
     cardInfo.upgradeCards.improvisedOrders = {name = "Improvised Orders", guid = "agg30fg", ptCost = 5,varName="improvisedOrders"}
     cardInfo.upgradeCards.strictOrders = {name = "Strict Orders", guid = "agg3g0fg", ptCost = 5,varName="strictOrders"}
     cardInfo.upgradeCards.aggressiveTactics = {name = "Aggressive Tactics", guid = "gressivetr", ptCost = 15,varName = "aggressiveTactics"}
+    cardInfo.upgradeCards.inspiringPresence = {name = "Inspiring Presence", guid = "gressivetr", ptCost = 5,varName = "inspiringPresence"}
 
     -- tactics
     cardInfo.upgradeCards.duckAndCover = {name = "Duck and Cover", guid = "ag3g0fg", ptCost = 4, varName = "duckAndCover"}
@@ -3575,6 +3576,7 @@ function onLoad()
     cardInfo.upgradeCards.offensivePush = {name = "Offensive Push", guid = "ag7kfdfg", ptCost = 4, varName = "offensivePush"}
     cardInfo.upgradeCards.situationalAwareness = {name = "Situational Awareness", guid = "ag7kfdfg", ptCost = 2, varName = "situationalAwareness"}
     cardInfo.upgradeCards.offensiveStance = {name = "Offensive Stance", ptCost = 5, varName = "offensiveStance"}
+    cardInfo.upgradeCards.seizeTheInitiative = {name = "Seize The Initiative", ptCost = 5, varName = "seizeTheInitiative"}
 
     -- sidearm
     cardInfo.upgradeCards.a300 = {name = "A-300", guid = "ag3gg0fg", ptCost = 0, varName = "a300"}
@@ -3644,7 +3646,8 @@ function onLoad()
         cardInfo.upgradeCards.esteemedLeader,
         cardInfo.upgradeCards.improvisedOrders,
         cardInfo.upgradeCards.strictOrders,
-        cardInfo.upgradeCards.aggressiveTactics
+        cardInfo.upgradeCards.aggressiveTactics,
+        cardInfo.upgradeCards.inspiringPresence
     }
     cardInfo.upgradeMenu.separatist.tactics = {
         cardInfo.upgradeCards.duckAndCover,
@@ -3654,7 +3657,8 @@ function onLoad()
         cardInfo.upgradeCards.overwatch,
         cardInfo.upgradeCards.offensivePush,
         cardInfo.upgradeCards.situationalAwareness,
-        cardInfo.upgradeCards.offensiveStance
+        cardInfo.upgradeCards.offensiveStance,
+        cardInfo.upgradeCards.seizeTheInitiative
     }
     cardInfo.upgradeMenu.separatist.generalGrievousSideArm = {
         cardInfo.upgradeCards.dt57Annihilator
@@ -3758,7 +3762,8 @@ function onLoad()
         cardInfo.upgradeCards.esteemedLeader,
         cardInfo.upgradeCards.improvisedOrders,
         cardInfo.upgradeCards.strictOrders,
-        cardInfo.upgradeCards.aggressiveTactics
+        cardInfo.upgradeCards.aggressiveTactics,
+        cardInfo.upgradeCards.inspiringPresence
     }
     cardInfo.upgradeMenu.republic.tactics = {
         cardInfo.upgradeCards.duckAndCover,
@@ -3768,7 +3773,8 @@ function onLoad()
         cardInfo.upgradeCards.overwatch,
         cardInfo.upgradeCards.offensivePush,
         cardInfo.upgradeCards.situationalAwareness,
-        cardInfo.upgradeCards.offensiveStance
+        cardInfo.upgradeCards.offensiveStance,
+        cardInfo.upgradeCards.seizeTheInitiative
     }
     cardInfo.upgradeMenu.republic.padmeSideArm = {
         cardInfo.upgradeCards.lootedE5Blaster
@@ -3977,7 +3983,8 @@ function onLoad()
         cardInfo.upgradeCards.overwatch,
         cardInfo.upgradeCards.offensivePush,
         cardInfo.upgradeCards.situationalAwareness,
-        cardInfo.upgradeCards.offensiveStance
+        cardInfo.upgradeCards.offensiveStance,
+        cardInfo.upgradeCards.seizeTheInitiative
     }
     cardInfo.upgradeMenu.rebel.rebelTrooperTrooper = {
         cardInfo.upgradeCards.rebelTrooper,
@@ -4009,7 +4016,8 @@ function onLoad()
         cardInfo.upgradeCards.esteemedLeader,
         cardInfo.upgradeCards.improvisedOrders,
         cardInfo.upgradeCards.strictOrders,
-        cardInfo.upgradeCards.aggressiveTactics
+        cardInfo.upgradeCards.aggressiveTactics,
+        cardInfo.upgradeCards.inspiringPresence
     }
     cardInfo.upgradeMenu.rebel.generator = {
         cardInfo.upgradeCards.barrageGenerator,
@@ -4171,7 +4179,8 @@ function onLoad()
         cardInfo.upgradeCards.esteemedLeader,
         cardInfo.upgradeCards.improvisedOrders,
         cardInfo.upgradeCards.strictOrders,
-        cardInfo.upgradeCards.aggressiveTactics
+        cardInfo.upgradeCards.aggressiveTactics,
+        cardInfo.upgradeCards.inspiringPresence
     }
     cardInfo.upgradeMenu.imperial.tactics = {
         cardInfo.upgradeCards.duckAndCover,
@@ -4181,7 +4190,8 @@ function onLoad()
         cardInfo.upgradeCards.overwatch,
         cardInfo.upgradeCards.offensivePush,
         cardInfo.upgradeCards.situationalAwareness,
-        cardInfo.upgradeCards.offensiveStance
+        cardInfo.upgradeCards.offensiveStance,
+        cardInfo.upgradeCards.seizeTheInitiative
     }
     cardInfo.upgradeMenu.imperial.groundPilot = {
         cardInfo.upgradeCards.generalWeiss,
