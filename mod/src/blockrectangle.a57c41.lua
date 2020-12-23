@@ -457,6 +457,8 @@ function nextUnit()
 
                 highlightUnit(selectedUnitObj.getTable("miniGUIDs"),{0,1,0})
                 highlightCard(getObjectFromGUID(selectedUnitObj.getVar("cardGUID")))
+                getSelectedUnitObjVariables()
+                setTemplateVariables()
                 out = true
             end
         end
