@@ -132,6 +132,19 @@ function findFilePath(source: string, name: string, object: TTSMod | TTSObject) 
 }
 
 /**
+ * Finds the path for an object UI to be serialized/deserialized from disk.
+ * 
+ * @param source
+ * @param name 
+ * @param object 
+ */
+function findXMLFilePath(source: string, name: string, object: TTSMod | TTSObject) : string {
+  let base = 'GUID' in object ? `${name}.${object.GUID}.xml` : `${name}.xml`;
+  let file = path.join(source, base);
+  return file;
+}
+
+/**
  * Returns whether the provided script is valuable to retain on disk.
  *
  * @param name 
@@ -166,12 +179,15 @@ function isValuableLuaScript(script: string): boolean {
 function extractLua(object: TTSMod | TTSObject, output: string, name?: string): void {
   name = normalizeName(findBestName(name, object));
   const file = findFilePath(output, name, object);
+  const xmlFile = findXMLFilePath(output, name, object);
   const script = object.LuaScript;
+  const xmlUI = object.XmlUI;
   if (isValuableLuaScript(script)) {
     // Normalize CRLF:
 
     fs.mkdirpSync(path.dirname(file));
     fs.writeFileSync(file, normalizeNewline(script) + '\n');
+    if(xmlUI) { fs.writeFileSync(xmlFile, normalizeNewline(xmlUI) + '\n') }
   }
   if ('ObjectStates' in object && object.ObjectStates.length > 0) {
     for (const child of object.ObjectStates) {
@@ -203,8 +219,12 @@ function extractLua(object: TTSMod | TTSObject, output: string, name?: string): 
 function embedLua(object: TTSMod | TTSObject, input: string, name?: string): void {
   name = normalizeName(findBestName(name, object));
   const file = findFilePath(input, name, object);
+  const xmlFile = findXMLFilePath(input, name, object);
   if (fs.existsSync(file)) {
     object.LuaScript = fs.readFileSync(file, {encoding: 'UTF-8'});
+  }
+  if (fs.existsSync(xmlFile)) {
+    object.XmlUI = fs.readFileSync(xmlFile, {encoding: 'UTF-8'});
   }
   if ('ObjectStates' in object && object.ObjectStates.length > 0) {
     for (const child of object.ObjectStates) {
@@ -231,6 +251,7 @@ interface TTSBase {
    * Contains a `.ttslua` script for this entity.
    */
   LuaScript: string;
+  XmlUI: string;
 }
 
 interface TTSMod extends TTSBase {
