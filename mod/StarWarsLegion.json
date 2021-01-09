@@ -1,7 +1,7 @@
 {
   "SaveName": "STAR WARS LEGION",
   "GameMode": "STAR WARS LEGION",
-  "Date": "1/9/2021 3:06:48 PM",
+  "Date": "1/9/2021 3:08:16 PM",
   "Gravity": 0.5,
   "PlayArea": 0.5,
   "GameType": "",
@@ -89,9 +89,9 @@
           "rotX": 0.0,
           "rotY": 179.8,
           "rotZ": 0.0,
-          "scaleX": 26.7436333,
+          "scaleX": 26.7438335,
           "scaleY": 3.21678519,
-          "scaleZ": 4.851571
+          "scaleZ": 4.851612
         }
       }
     ]
@@ -86480,7 +86480,7 @@
         "scaleZ": 1.0
       },
       "Nickname": "3.0.0 - Beta",
-      "Description": "Generic Imperial Officer now defaults to speed 2.\n\nMovement tool spawns with the correct speed when cycling between different unit types (i.e. Shores/Mortars).",
+      "Description": "Generic Imperial Officer now defaults to speed 2.\n\nMovement tool spawns with the correct speed when cycling between different unit types (i.e. Shores/Mortars).\n\nAdded the Clone Wars-era specialists packs (T-Series/Clone Commander, etc).",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 1.0,
