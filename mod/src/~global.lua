@@ -749,6 +749,15 @@ function onLoad()
     unitInfo.maul.squadStatus = false
     unitInfo.maul.buttonHeight = 2
 
+    unitInfo.tSeriesTacticalDroid = {}
+    unitInfo.tSeriesTacticalDroid.commandType = "separatistCommander"
+    unitInfo.tSeriesTacticalDroid.baseSize = "small"
+    unitInfo.tSeriesTacticalDroid.fixedMove = false
+    unitInfo.tSeriesTacticalDroid.selectedSpeed = 2
+    unitInfo.tSeriesTacticalDroid.fixedArc = false
+    unitInfo.tSeriesTacticalDroid.squadStatus = false
+    unitInfo.tSeriesTacticalDroid.buttonHeight = 2
+
     unitInfo.b1BattleDroids = {}
     unitInfo.b1BattleDroids.commandType = "separatistCore"
     unitInfo.b1BattleDroids.baseSize = "small"
@@ -857,6 +866,15 @@ function onLoad()
     unitInfo.padme.fixedArc = false
     unitInfo.padme.squadStatus = false
     unitInfo.padme.buttonHeight = 2
+
+    unitInfo.cloneCommander = {}
+    unitInfo.cloneCommander.commandType = "republicCommander"
+    unitInfo.cloneCommander.baseSize = "small"
+    unitInfo.cloneCommander.fixedMove = false
+    unitInfo.cloneCommander.selectedSpeed = 2
+    unitInfo.cloneCommander.fixedArc = false
+    unitInfo.cloneCommander.squadStatus = false
+    unitInfo.cloneCommander.buttonHeight = 2
 
     unitInfo.phaseICloneTroopers = {}
     unitInfo.phaseICloneTroopers.commandType = "republicCore"
@@ -1223,7 +1241,10 @@ function onLoad()
     listBuilder.commandCards.maul = {
       varName = "maul",
       cards = {"Duel Of The Fates","The Phantom Menace","At Last"}
-  }
+    }
+    listBuilder.commandCards.tSeriesTacticalDroid = {
+    varName = "tSeriesTacticalDroid"
+    }
     -- REPUBLIC
     listBuilder.commandCards.obiWanKenobi = {
         varName = "obiWanKenobi",
@@ -1249,7 +1270,9 @@ function onLoad()
         varName = "padme",
         cards = {"Our Fate Is In Your Hands", "Aggressive Negotiations", "Diplomatic Cover"}
     }
-
+    listBuilder.commandCards.cloneCommander = {
+        varName = "cloneCommander"
+    }
     -- NEUTRAL
     listBuilder.commandCards.neutral = {
         varName = "neutral",
@@ -1269,11 +1292,11 @@ function onLoad()
     }
     listBuilder.commandCards.neutralSeparatist = {
         varName = "neutralSeparatist",
-        cards = {"Mechanized Incursion", "Push", "Assault"}
+        cards = {"Mechanized Incursion", "Orbital Strike", "Roger, Roger"}
     }
     listBuilder.commandCards.neutralRepublic = {
         varName = "neutralSeparatist",
-        cards = {"Synchronized Offensive", "Push", "Assault"}
+        cards = {"Synchronized Offensive", "Air Support", "Attack Of The Clones"}
     }
 
     templateMenu = {}
@@ -1369,6 +1392,7 @@ function onLoad()
     templateMenu.separatist.commander = {}
     templateMenu.separatist.commander[1] = {name = "General Grievous", varName = "generalGrievous"}
     templateMenu.separatist.commander[2] = {name = "Count Dooku", varName = "countDooku"}
+    templateMenu.separatist.commander[3] = {name = "T-Series Tactical Droid", varName = "tSeriesTacticalDroid"}
 
     templateMenu.separatist.operative = {}
     templateMenu.separatist.operative[1] = {name = "Cad Bane", varName = "cadBane"}
@@ -1395,6 +1419,7 @@ function onLoad()
     templateMenu.republic.commander[1] = {name = "Obi-Wan Kenobi", varName = "obiWanKenobi"}
     templateMenu.republic.commander[2] = {name = "Clone Captain Rex", varName = "cloneCaptainRex"}
     templateMenu.republic.commander[3] = {name = "Anakin Skywalker", varName = "anakinSkywalker"}
+    templateMenu.republic.commander[4] = {name = "Clone Commander", varName = "cloneCommander"}
 
     templateMenu.republic.operative = {}
     templateMenu.republic.operative[1] = {name = "R2-D2", varName = "republicR2d2"}
@@ -2866,8 +2891,40 @@ function onLoad()
         red = "http://cloud-3.steamusercontent.com/ugc/1022821664192681931/11AB7637C0B8C60CB2E4BDC90F006B887A69DAF0/",
         blue = "http://cloud-3.steamusercontent.com/ugc/1022821664192681931/11AB7637C0B8C60CB2E4BDC90F006B887A69DAF0/",
         scale = {1,1,1},
+        name = "T-Series Tactical Droid"
+    }
+    miniInfo.tSeriesTacticalDroidLeader = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1683750364035003801/6062182D66F6F043E4DCF98FCD592CBD7ECDFF18/",
+        collider = _BASE_COLLIDERS.small,
+        red = "http://cloud-3.steamusercontent.com/ugc/1683750364035004142/11AB7637C0B8C60CB2E4BDC90F006B887A69DAF0/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1683750364035004142/11AB7637C0B8C60CB2E4BDC90F006B887A69DAF0/",
+        scale = {1,1,1},
         name = "T-Series Tactical Droid",
         leader = true
+    }
+    miniInfo.evSeriesMedicalDroid = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1683750364035000354/6248E4CAF3E978154106E7095E6984DCE6677CCA/",
+        collider = _BASE_COLLIDERS.small,
+        red = "http://cloud-3.steamusercontent.com/ugc/1683750364035001447/E6B6EC2DDAE8CEA46A1384161E789D76F8F296BA/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1683750364035001447/E6B6EC2DDAE8CEA46A1384161E789D76F8F296BA/",
+        scale = {1,1,1},
+        name = "EV-Series Medical Droid"
+    }
+    miniInfo.pkSeriesWorkerDroid = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1683750364035005605/95FAACF9FF4F9B6AB1921E3FD8C896DC631069BF/",
+        collider = _BASE_COLLIDERS.small,
+        red = "http://cloud-3.steamusercontent.com/ugc/1683750364035006060/711173DA172C4BC50686BBBC9C0D8BA1764D3175/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1683750364035006060/711173DA172C4BC50686BBBC9C0D8BA1764D3175/",
+        scale = {1,1,1},
+        name = "PK-Series Worker Droid"
+    }
+    miniInfo.viperReconDroid = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1683750364034959851/4D7F0531A10AEA9421878B1535604FDF1EBAE8D1/",
+        collider = _BASE_COLLIDERS.small,
+        red = "http://cloud-3.steamusercontent.com/ugc/1683750364034974176/209AEB14BF56D899CB9220BDB0BAB98CE2BA90D4/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1683750364034974176/209AEB14BF56D899CB9220BDB0BAB98CE2BA90D4/",
+        scale = {1,1,1},
+        name = "Viper Recon Droid"
     }
     miniInfo.drk1SithProbeDroidLeader = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/1693877203566022298/DF3FC1CF550C49A2C2340F5291798615E1978116/",
@@ -3018,7 +3075,24 @@ function onLoad()
       blue = "http://cloud-3.steamusercontent.com/ugc/1647717402898546712/394E72447FF020F1D95846D07120EE63FCD0435B/",
       scale = {1,1,1},
       name = "Anakin Skywalker"
-  }
+    }
+    miniInfo.cloneCommander = {
+    mesh = "http://cloud-3.steamusercontent.com/ugc/1683750364035126931/4EAB6085C2D2D6C176B3C9847E2F1F228CEFE7BB/",
+    collider = _BASE_COLLIDERS.small,
+    red = "http://cloud-3.steamusercontent.com/ugc/1683750364035127510/89D5E03C721391A7CBC7930180396F3B14E5273F/",
+    blue = "http://cloud-3.steamusercontent.com/ugc/1683750364035127510/89D5E03C721391A7CBC7930180396F3B14E5273F/",
+    scale = {1,1,1},
+    name = "Clone Commander"
+    }
+    miniInfo.cloneCommanderLeader = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1683750364035126931/4EAB6085C2D2D6C176B3C9847E2F1F228CEFE7BB/",
+        collider = _BASE_COLLIDERS.small,
+        red = "http://cloud-3.steamusercontent.com/ugc/1683750364035127510/89D5E03C721391A7CBC7930180396F3B14E5273F/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1683750364035127510/89D5E03C721391A7CBC7930180396F3B14E5273F/",
+        scale = {1,1,1},
+        name = "Clone Commander",
+        leader = true
+        }
     miniInfo.padme = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/1003681674396399543/F485B2E6C10CBC01661E393966F014E5A5DE8BF9/",
         collider = _BASE_COLLIDERS.small,
@@ -3173,6 +3247,30 @@ function onLoad()
         blue = "http://cloud-3.steamusercontent.com/ugc/775118071080760988/3EE188D6DB407DF3B33D2697F0BF3E003F7DA281/",
         scale = {1,1,1},
         name = "Phase II Mortar Trooper"
+    }
+    miniInfo.cloneCommsTechnician = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1683750364035131182/F5BA58F09282727EFB8E38BA478970E44B983EED/",
+        collider = _BASE_COLLIDERS.small,
+        red = "http://cloud-3.steamusercontent.com/ugc/1683750364035131690/ED66D23D4467396F6858928E9FEE1DABB4F9B446/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1683750364035131690/ED66D23D4467396F6858928E9FEE1DABB4F9B446/",
+        scale = {1,1,1},
+        name = "Clone Comms Technician"
+    }
+    miniInfo.cloneEngineer = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1683750364035133539/7AD5C8B323760EFE19570C8F8D0DDA994973F03B/",
+        collider = _BASE_COLLIDERS.small,
+        red = "http://cloud-3.steamusercontent.com/ugc/1683750364035133984/DF3D2C9C54EBD45F87B48DCE203019FDD5FAECD2/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1683750364035133984/DF3D2C9C54EBD45F87B48DCE203019FDD5FAECD2/",
+        scale = {1,1,1},
+        name = "Clone Engineer"
+    }
+    miniInfo.cloneMedic = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1683750364035135224/49D60D4EE5794A206AF8F604A68F58979CFEBC42/",
+        collider = _BASE_COLLIDERS.small,
+        red = "http://cloud-3.steamusercontent.com/ugc/1683750364035135810/BD84B4C5CAA84DDA6302739AD749CD29B1C39669/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1683750364035135810/BD84B4C5CAA84DDA6302739AD749CD29B1C39669/",
+        scale = {1,1,1},
+        name = "Clone Medic"
     }
 
     local arcMaterials = "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
@@ -3465,6 +3563,11 @@ function onLoad()
     cardInfo.upgradeCards.fives = { name = "Fives", ptCost = 36, miniInfo = miniInfo.fivesLeader, varName = "fives" }
     -- cardInfo.upgradeCards.fivesLeader = { name = "Fives", ptCost = 36, miniInfo = miniInfo.fivesLeader, varName = "fivesLeader" }
 
+    cardInfo.upgradeCards.cloneCommander = {name = "Clone Commander", guid = "d8e9ggd5a", ptCost = 20, miniGUID = "gadfr", miniInfo = miniInfo.cloneCommanderLeader,varName="cloneCommander"}
+    cardInfo.upgradeCards.cloneCommsTechnician = {name = "Clone Comms Technician", guid = "d8e9ggd5a", ptCost = 12, miniGUID = "gadfr", miniInfo = miniInfo.cloneCommsTechnician,varName="cloneCommsTechnician"}
+    cardInfo.upgradeCards.cloneEngineer = {name = "Clone Engineer", guid = "d8e9ggd5a", ptCost = 18, miniGUID = "gadfr", miniInfo = miniInfo.cloneEngineer,varName="cloneEngineer"}
+    cardInfo.upgradeCards.cloneMedic = {name = "Clone Medic", guid = "d8e9ggd5a", ptCost = 20, miniGUID = "gadfr", miniInfo = miniInfo.cloneMedic,varName="cloneMedic"}
+
     cardInfo.upgradeCards.pao = {name = "Pao", guid = "d8e9ggd5a", ptCost = 22, miniGUID = "gadfr", miniInfo = miniInfo.pao,varName="pao"}
     cardInfo.upgradeCards.bistan = {name = "Bistan", guid = "dgfsgd5a", ptCost = 32, miniGUID = "ggfr", miniInfo = miniInfo.bistan,varName="bistan"}
 
@@ -3504,7 +3607,10 @@ function onLoad()
     cardInfo.upgradeCards.phaseIICloneTrooper = {name =  "Phase II Clone Trooper", guid = "2gg3g5g8e9", ptCost = 13, miniInfo = miniInfo.phaseIICloneTrooper4,varName="phaseIICloneTrooper"}
     cardInfo.upgradeCards.phaseICloneTrooper = {name =  "Phase I Clone Trooper", guid = "235g8e9", ptCost = 10, miniInfo = miniInfo.phaseICloneTrooper4,varName="phaseICloneTrooper"}
     cardInfo.upgradeCards.b1BattleDroid = {name =  "B1 Battle Droid", guid = "2g45gg5g8e9", ptCost = 5, miniInfo = miniInfo.b1BattleDroid6,varName="b1BattleDroid"}
-    cardInfo.upgradeCards.tSeriesTacticalDroid = {name =  "T-Series Tactical Droid", guid = "b25510", ptCost = 18, miniInfo = miniInfo.tSeriesTacticalDroid,varName="tSeriesTacticalDroid"}
+    cardInfo.upgradeCards.tSeriesTacticalDroid = {name =  "T-Series Tactical Droid", guid = "b25510", ptCost = 18, miniInfo = miniInfo.tSeriesTacticalDroidLeader,varName="tSeriesTacticalDroid"}
+    cardInfo.upgradeCards.evSeriesMedicalDroid = {name =  "EV-Series Medical Droid", guid = "b25510", ptCost = 14, miniInfo = miniInfo.evSeriesMedicalDroid,varName="evSeriesMedicalDroid"}
+    cardInfo.upgradeCards.pkSeriesWorkerDroid = {name =  "PK-Series Worker Droid", guid = "b25510", ptCost = 12, miniInfo = miniInfo.pkSeriesWorkerDroid,varName="pkSeriesWorkerDroid"}
+    cardInfo.upgradeCards.viperReconDroid = {name =  "Viper Recon Droid", guid = "b25510", ptCost = 8, miniInfo = miniInfo.viperReconDroid,varName="viperReconDroid"}
 
     cardInfo.upgradeCards.phaseICloneSpecialist = {name = "Phase I Clone Specialist", guid = "d9h0tug5a", ptCost = 14, miniGUID = "j78156", miniInfo = miniInfo.phaseICloneSpecialist,varName="phaseICloneSpecialist"}
     cardInfo.upgradeCards.phaseICloneCaptain = {name = "Phase I Clone Captain", guid = "d8h7jhgg5a", ptCost = 14, miniGUID = "1jgukg6", miniInfo = miniInfo.phaseICloneCaptain,varName="phaseICloneCaptain"}
@@ -3566,6 +3672,7 @@ function onLoad()
     cardInfo.upgradeCards.strictOrders = {name = "Strict Orders", guid = "agg3g0fg", ptCost = 5,varName="strictOrders"}
     cardInfo.upgradeCards.aggressiveTactics = {name = "Aggressive Tactics", guid = "gressivetr", ptCost = 15,varName = "aggressiveTactics"}
     cardInfo.upgradeCards.inspiringPresence = {name = "Inspiring Presence", guid = "gressivetr", ptCost = 5,varName = "inspiringPresence"}
+    cardInfo.upgradeCards.vigilance = {name = "Vigilance", guid = "gressivetr", ptCost = 5,varName = "vigilance"}
 
     -- tactics
     cardInfo.upgradeCards.duckAndCover = {name = "Duck and Cover", guid = "ag3g0fg", ptCost = 4, varName = "duckAndCover"}
@@ -3647,7 +3754,8 @@ function onLoad()
         cardInfo.upgradeCards.improvisedOrders,
         cardInfo.upgradeCards.strictOrders,
         cardInfo.upgradeCards.aggressiveTactics,
-        cardInfo.upgradeCards.inspiringPresence
+        cardInfo.upgradeCards.inspiringPresence,
+        cardInfo.upgradeCards.vigilance
     }
     cardInfo.upgradeMenu.separatist.tactics = {
         cardInfo.upgradeCards.duckAndCover,
@@ -3670,7 +3778,10 @@ function onLoad()
         cardInfo.upgradeCards.b1BattleDroid,
         cardInfo.upgradeCards.oomSeriesBattleDroid,
         cardInfo.upgradeCards.b1SecurityDroid,
-        cardInfo.upgradeCards.tSeriesTacticalDroid
+        cardInfo.upgradeCards.tSeriesTacticalDroid,
+        cardInfo.upgradeCards.evSeriesMedicalDroid,
+        cardInfo.upgradeCards.pkSeriesWorkerDroid,
+        cardInfo.upgradeCards.viperReconDroid
     }
     cardInfo.upgradeMenu.separatist.b1BattleDroidsSpecialist = {
         cardInfo.upgradeCards.e60RB1Trooper,
@@ -3696,7 +3807,10 @@ function onLoad()
 
     cardInfo.upgradeMenu.separatist.b2SuperBattleDroidTrooper = {
       cardInfo.upgradeCards.b2SuperBattleDroid,
-      cardInfo.upgradeCards.tSeriesTacticalDroid
+      cardInfo.upgradeCards.tSeriesTacticalDroid,
+      cardInfo.upgradeCards.evSeriesMedicalDroid,
+      cardInfo.upgradeCards.pkSeriesWorkerDroid,
+      cardInfo.upgradeCards.viperReconDroid
     }
 
     cardInfo.upgradeMenu.separatist.b2SuperBattleDroidSpecialist = {
@@ -3763,7 +3877,8 @@ function onLoad()
         cardInfo.upgradeCards.improvisedOrders,
         cardInfo.upgradeCards.strictOrders,
         cardInfo.upgradeCards.aggressiveTactics,
-        cardInfo.upgradeCards.inspiringPresence
+        cardInfo.upgradeCards.inspiringPresence,
+        cardInfo.upgradeCards.vigilance
     }
     cardInfo.upgradeMenu.republic.tactics = {
         cardInfo.upgradeCards.duckAndCover,
@@ -3785,7 +3900,11 @@ function onLoad()
     cardInfo.upgradeMenu.republic.phaseICloneTroopersTrooper = {
         cardInfo.upgradeCards.phaseICloneTrooper,
         cardInfo.upgradeCards.phaseICloneSpecialist,
-        cardInfo.upgradeCards.phaseICloneCaptain
+        cardInfo.upgradeCards.phaseICloneCaptain,
+        cardInfo.upgradeCards.cloneCommander,
+        cardInfo.upgradeCards.cloneCommsTechnician,
+        cardInfo.upgradeCards.cloneEngineer,
+        cardInfo.upgradeCards.cloneMedic
     }
     cardInfo.upgradeMenu.republic.phaseICloneTroopersSpecialist = {
         cardInfo.upgradeCards.z6PhaseITrooper,
@@ -3796,7 +3915,11 @@ function onLoad()
         cardInfo.upgradeCards.fives
     }
     cardInfo.upgradeMenu.republic.phaseIICloneTroopersTrooper = {
-        cardInfo.upgradeCards.phaseIICloneTrooper
+        cardInfo.upgradeCards.phaseIICloneTrooper,
+        cardInfo.upgradeCards.cloneCommander,
+        cardInfo.upgradeCards.cloneCommsTechnician,
+        cardInfo.upgradeCards.cloneEngineer,
+        cardInfo.upgradeCards.cloneMedic
     }
 
     cardInfo.upgradeMenu.republic.phaseIICloneTrooperSpecialist = {
@@ -4017,7 +4140,8 @@ function onLoad()
         cardInfo.upgradeCards.improvisedOrders,
         cardInfo.upgradeCards.strictOrders,
         cardInfo.upgradeCards.aggressiveTactics,
-        cardInfo.upgradeCards.inspiringPresence
+        cardInfo.upgradeCards.inspiringPresence,
+        cardInfo.upgradeCards.vigilance
     }
     cardInfo.upgradeMenu.rebel.generator = {
         cardInfo.upgradeCards.barrageGenerator,
@@ -4180,7 +4304,8 @@ function onLoad()
         cardInfo.upgradeCards.improvisedOrders,
         cardInfo.upgradeCards.strictOrders,
         cardInfo.upgradeCards.aggressiveTactics,
-        cardInfo.upgradeCards.inspiringPresence
+        cardInfo.upgradeCards.inspiringPresence,
+        cardInfo.upgradeCards.vigilance
     }
     cardInfo.upgradeMenu.imperial.tactics = {
         cardInfo.upgradeCards.duckAndCover,
@@ -4267,6 +4392,20 @@ function onLoad()
         },
         tokenName = "Separatist Commander Command Token",
         fullName = "Count Dooku",
+        rank = "Commander"
+    }
+    cardInfo.unitCards.tSeriesTacticalDroid = {
+        guid = "3dh54f",
+        ptCost = 55 , availableUpgrades = {
+            cardInfo.upgradeMenu.separatist.leadership,
+            cardInfo.upgradeMenu.separatist.comms,
+            cardInfo.upgradeMenu.separatist.tech
+        },
+        miniInfo = {
+            miniInfo.tSeriesTacticalDroid
+        },
+        tokenName = "Separatist Commander Command Token",
+        fullName = "T-Series Tactical Droid",
         rank = "Commander"
     }
     cardInfo.unitCards.cadBane = {
@@ -4483,6 +4622,20 @@ function onLoad()
         },
         tokenName = "Republic Commander Command Token",
         fullName = "Anakin Skywalker",
+        rank = "Commander"
+    }
+    cardInfo.unitCards.cloneCommander = {
+        guid = "3dggj74f",
+        ptCost = 55 , availableUpgrades = {
+            cardInfo.upgradeMenu.republic.leadership,
+            cardInfo.upgradeMenu.republic.tactics,
+            cardInfo.upgradeMenu.republic.tech
+        },
+        miniInfo = {
+            miniInfo.cloneCommander
+        },
+        tokenName = "Republic Commander Command Token",
+        fullName = "Clone Commander",
         rank = "Commander"
     }
     cardInfo.unitCards.republicR2d2 = {
