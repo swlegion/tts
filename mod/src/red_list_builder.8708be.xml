@@ -1,0 +1,9 @@
+<Panel position="450 -460 -10">
+  <VerticalLayout width="300" height="200" childForceExpandHeight="false">
+    <Button onClick="toggleListImporterUI" preferredHeight="50" fontSize="30" color="#cccccc">Import From Builder</Button>
+    <VerticalLayout id="listImporterUI" active="false">
+      <InputField id="listToImport" onEndEdit="importFromText" fontSize="20" minHeight="100" prefferedHeight="100" placeholder="paste your list here..."></InputField>
+      <!-- <Button onClick="clickImportFromText" fontSize="30" preferredHeight="50" color="#cccccc">Import</Button> -->
+    </VerticalLayout>
+  </VerticalLayout>
+</Panel>
