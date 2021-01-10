@@ -943,7 +943,7 @@ function toggleListImporterUI()
 end
 
 function importFromText(nothing, text)
-  print('importing from text ... doesn\'t work yet')
+  print('importing from text (EXPRIMENTAL)...')
   print(text)
   loadArmyFromJSON(text)
 end
