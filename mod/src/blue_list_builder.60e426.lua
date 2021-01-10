@@ -151,6 +151,13 @@ function loadArmy()
     end
 end
 
+function loadArmyFromJSON(jsonData)
+  clearZone()
+  local listData = JSON.decode(jsonData)
+  -- print(listData)
+  spawnArmy(listData)
+end
+
 function spawnUnitIDToken(idSpawnPos, idSpawnRot,idNumber)
     idSpawnRot.y = idSpawnRot.y +180
     idToken = unitIDTokenBag.takeObject({
@@ -927,4 +934,19 @@ function refreshTimer()
     timerCounter = Global.getVar("timerCounter")
     timerCounter = timerCounter + 1
     Global.setVar("timerCounter", timerCounter)
+end
+
+function toggleListImporterUI()
+  local uiStatus = self.UI.getAttribute('listImporterUI', 'active')
+  local newStatus = true
+  if uiStatus == 'True' then
+    newStatus = false
+  end
+  self.UI.setAttribute('listImporterUI', 'active', newStatus)
+end
+
+function importFromText(nothing, text)
+  print('importing from text (EXPERIMENTAL)...')
+  print(text)
+  loadArmyFromJSON(text)
 end
