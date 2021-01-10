@@ -123,12 +123,10 @@ end
 
 function debug()
     local battlefieldObjs = battlefieldZone.getObjects()
-    local competitiveObjs = competitiveTerrainZone.getObjects()
     local redObjs = redZone.getObjects()
     local blueObjs = blueZone.getObjects()
     removeLockedRulers()
     reloadObj(battlefieldObjs)
-    reloadObj(competitiveObjs)
     reloadObj(redObjs)
     reloadObj(blueObjs)
 end
