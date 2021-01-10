@@ -9,7 +9,6 @@ function onLoad(save_state)
     battlefieldTable = getObjectFromGUID(Global.getVar("battlefieldTable"))
     customMapsCartridge = getObjectFromGUID(gameController.customMapsGUID)
     deploymentOverlays = getObjectFromGUID(gameController.deploymentOverlaysGUID)
-    learningGameCartridge = getObjectFromGUID(gameController.learningGameCartridgeGUID)
 
     listBuilder = Global.getTable("listBuilder")
     redZone = getObjectFromGUID(listBuilder.redZoneGUID)
@@ -155,23 +154,10 @@ function removeLockedRulers()
 end
 
 function learningGameMenu()
-    clearPlayerZones()
-    clearZones()
-    learningGameCartridgeClone = learningGameCartridge.clone({position = {0,-20,0}})
+  printToScreen("The Learning Game has been removed as part\nof this mod due to size constraints.\n\nSubscribe to\nhttps://go.swlegion.dev/map-archive\nfor cartridge access.", 80, 3)
 
-    spawnFromCartridgeDelay(learningGameCartridgeClone)
-
-    local timerCounter = Global.getVar("timerCounter")
-    timerCounter = timerCounter + 1
-    Global.setVar("timerCounter", timerCounter)
-
-    Timer.create({
-        identifier     = "standbyTokens"..timerCounter,
-        function_name  = "standbyTokens",
-        function_owner = self,
-        delay          = 5
-    })
-
+  clearAllButtons()
+  changeBackButton("mainMenu", "Go back to Main Menu")
 end
 
 function standbyTokens()
@@ -219,10 +205,36 @@ function gameOptionsMenu()
     clearAllButtons()
     changeBackButton("mainMenu", "Go back to Main Menu")
     local menuEntries = {}
-    menuEntries[1] = {functionName = "flipMap", label = "Flip Map", tooltip = "Flip the map to the other side", buttonTint = {0,0.913,1}}
-    menuEntries[2] = {functionName = "defineBattlefieldMenuBlue", label = "Blue Player: Define Battlefield", tooltip = "Spawn Battlefield Objective, Deployment and Condition cards from Blue Deck", buttonTint = {0,0.913,1}}
-    menuEntries[3] = {functionName = "debug", label = "Debug Objects", tooltip = "Corrects terrain that is spawned incorrectly or removes stuck rulers or movement templates", buttonTint = {0,0.913,1}}
-    --menuEntries[5] = {functionName = "defineBattlefieldMenu", label = "Define Battlefield from all cards", tooltip = "Spawn Battlefield Objective, Deployment and Condition cards from every available card", buttonTint = {0,0.913,1}}
+    menuEntries[1] = {
+      functionName = "flipMap",
+      label = "Flip Map",
+      tooltip = "Flip the map to the other side",
+      buttonTint = {0,0.913,1}
+    }
+    menuEntries[2] = {
+      functionName = "defineBattlefieldMenuBlue",
+      label = "Blue Player: Define Battlefield",
+      tooltip = "Spawn Battlefield Objective, Deployment and Condition cards from Blue Deck",
+      buttonTint = {0,0.913,1}
+    }
+    menuEntries[3] = {
+      functionName = "debug",
+      label = "Debug Objects",
+      tooltip = "Corrects terrain that is spawned incorrectly or removes stuck rulers or movement templates",
+      buttonTint = {0,0.913,1}
+    }
+    menuEntries[4] = {
+      functionName = "spawnCardDecks",
+      label = "Spawn Card Decks",
+      tooltip = "Spawn Unit/Upgrade/Command cards for manual use",
+      buttonTint = {0,0.913,1}
+    }
+    menuEntries[5] = {
+      functionName = "enableExperimentalFeatures",
+      label = "Enable Experiments",
+      tooltip = "Enables experimental unsupported features",
+      buttonTint = {0,0.913,1}
+    }
     createMenu(menuEntries, 1)
 end
 
@@ -255,7 +267,21 @@ end
 function featuredMapsMenu()
   printToScreen("FEATURED MAPS\n\nThese are maps featured by the community.\n\nSee https://go.swlegion.dev/maps for details.", 80, 3)
   changeBackButton("mapMenu", "Go back to Maps Menu")
-  local url = "https://raw.githubusercontent.com/swlegion/tts-map-catalog/main/maps.json"
+  local menuEntries = {
+    {
+      label = "Competitive",
+      tooltip = "View Competitive Maps",
+      functionName = "featuredCompetitiveMenu",
+      buttonTint = {0,0.913,1},
+    }
+  }
+  createMenu(menuEntries, 1)
+end
+
+function featuredCompetitiveMenu()
+  printToScreen("FEATURED MAPS\n\nThese are maps featured by the community.\n\nSee https://go.swlegion.dev/maps for details.", 80, 3)
+  changeBackButton("featuredMapsMenu", "Go back to featured maps")
+  local url = "https://raw.githubusercontent.com/swlegion/tts/master/contrib/maps/competitive.json"
   WebRequest.get(url, function(data)
     local items = JSON.decode(data.text)
     local menu = {}
@@ -309,6 +335,37 @@ function customMapMenu()
 end
 
 -- SETUP Menu
+
+function spawnCardDecks()
+  -- {52.43, 1.03, 32.53}
+  local cardInfo = Global.getTable('cardInfo')
+  local unitCards = getObjectFromGUID(cardInfo.unitCardsGUID)
+  local upgrades = getObjectFromGUID(cardInfo.upgradeCardsGUID)
+  local commands = getObjectFromGUID(Global.getTable('listBuilder').commandCardsGUID)
+  local battlefield = getObjectFromGUID(Global.getTable('gameController').battlefieldCardsGUID)
+  local cardScale = {0.83, 1, 0.83}
+  unitCards = unitCards.clone({
+    position     = {52.43, 1.03, 32.53},
+  })
+  upgrades = upgrades.clone({
+    position     = {52.43, 1.84, 29.23},
+  })
+  commands = commands.clone({
+    position     = {52.43, 1.42, 26.84}
+  })
+  battlefield = battlefield.clone({
+    position     = {52.43, 1.42, 23}
+  })
+  unitCards.setScale(cardScale)
+  unitCards.setLock(false)
+  upgrades.setScale(cardScale)
+  upgrades.setLock(false)
+  commands.setScale(cardScale)
+  commands.setRotation({0.00, 270.00, 0.00})
+  commands.setLock(false)
+  battlefield.setScale(cardScale)
+  battlefield.setLock(false)
+end
 
 function lockBoard()
     local allObjs = battlefieldZone.getObjects()
@@ -627,6 +684,38 @@ end
 
 function debugSpawnSetupCard(spawnedSetupCard)
     spawnedSetupCard[1].setRotation({55.91, 270.00, 0.00})
+end
+
+function flipObjPos(pObj)
+    local objPos = pObj.getPosition()
+    local newPos = objPos
+    local objRot = pObj.getRotation()
+    objRot.y = objRot.y+180
+    newPos.x = 8-(objPos.x - 8)
+    newPos.z = -objPos.z
+
+    pObj.setPosition(newPos)
+    pObj.setRotation(objRot)
+end
+
+function switchColorDelay()
+    Player.Purple.changeColor("Blue")
+end
+
+function flipMap()
+    --Get a list of any objects which are inside of the zone.
+    local allObjs = battlefieldZone.getObjects()
+
+    --Check if the table we made is empty due to the zone being empty
+    if #allObjs == 0 then
+    else
+        for _, obj in ipairs(allObjs) do
+            -- flip obj
+            if obj != battlefieldTable then
+                flipObjPos(obj)
+            end
+        end
+    end
 end
 
 function spawnPremadeMap(selectedMap,selectedCartridgeObj, mapMenuCallback, clearZone)
@@ -972,6 +1061,10 @@ optionUrls = {}
 function downloadMap(mapIndex)
   local url = optionUrls[mapIndex]
   printToScreen("DOWNLOADING MAP...")
+  downloadMapByUrl(url)
+end
+
+function downloadMapByUrl(url)
   WebRequest.get(url, function(data)
     -- TTS deletes the download handler after Wait.time, so copy the text.
     local text = data.text
@@ -1050,3 +1143,12 @@ function refreshTimer()
     timerCounter = timerCounter + 1
     Global.setVar("timerCounter", timerCounter)
 end
+
+function enableExperimentalFeatures()
+    printToAll("Enabled Experiments! Do not file bug reports or requests about these features.")
+    local blueListBuilder = getObjectFromGUID("60e426")
+    local redListBuilder = getObjectFromGUID("8708be")
+    blueListBuilder.UI.show("mainPanel")
+    redListBuilder.UI.show("mainPanel")
+end
+

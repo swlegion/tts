@@ -1,4 +1,4 @@
-<Panel position="450 -460 -10" active="false">
+<Panel position="450 -460 -10" active="false" id="mainPanel">
   <VerticalLayout width="300" height="200" childForceExpandHeight="false">
     <Button onClick="toggleListImporterUI" preferredHeight="90" fontSize="30" color="#cccccc"><Text fontSize="25">Import <i>(Experimental)</i></Text></Button>
     <VerticalLayout id="listImporterUI" active="false">

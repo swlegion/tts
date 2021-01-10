@@ -6095,4 +6095,3 @@ function pauseAllChessClocks(clocks)
   end
   broadcastToAll('All chess clocks paused')
 end
-
