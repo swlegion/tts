@@ -26,6 +26,8 @@ function setUp()
     unitInfo = Global.getTable("unitInfo")
     unitIDTokenBag = getObjectFromGUID(Global.getVar("unitIDTokenBagGUID"))
     unitCard = nil
+    unitCardPage = 0
+    unitCardRank = nil
     upgradeCardIndex = {}
     upgradeCardInstance = {}
     listText = ""
@@ -62,10 +64,10 @@ function mainMenu()
     for _,upgradeCard in pairs(upgradeCardInstance) do
         destroyObject(upgradeCard)
     end
-    upgradeCardInstance = nil
     upgradeCardInstance = {}
-    upgradeCardIndex = nil
     upgradeCardIndex = {}
+    unitCardPage = 0
+    unitCardRank = nil
     selectedUnit = nil
 
     upgradeSelectionIndex = {}
@@ -141,14 +143,60 @@ function createDudMenuButton(pos)
         font_color     = {0, 0, 0, 100},
         tooltip        = ""
     })
+end
 
+function createNextUnitButton()
+  self.createButton({
+      click_function = "nextUnits",
+      function_owner = self,
+      label          = "►",
+      position       = {-0.30, 0.28, 2.48-(6*0.35)},
+      width          = 270,
+      height         = 190,
+      font_size      = 80,
+      rotation       = {0,180,0},
+      color          = {1,0,0},
+      font_color     = {1,1,1},
+      tooltip        = "View next page of unit cards"
+  })
+end
+
+function nextUnits()
+  unitCardPage = unitCardPage + 1
+  unitSubMenu(unitCardRank)
+end
+
+function createPrevUnitButton()
+  self.createButton({
+      click_function = "prevUnits",
+      function_owner = self,
+      label          = "◄",
+      position       = {2.13, 0.28, 2.48-(6*0.35)},
+      width          = 270,
+      height         = 190,
+      font_size      = 80,
+      rotation       = {0,180,0},
+      color          = {1,0,0},
+      font_color     = {1,1,1},
+      tooltip        = "View previous page of unit cards"
+  })
+end
+
+function prevUnits()
+  unitCardPage = unitCardPage - 1
+  unitSubMenu(unitCardRank)
 end
 
 function unitSubMenu(selectedRank)
     self.clearButtons()
     updateBackButton("mainMenu", "X", 0.01, "Go back to main menu")
+    unitCardRank = selectedRank
 
-    for i=1, 6, 1 do
+    local unitCount = #templateMenu[selectedArmyFaction][selectedRank]
+    local startIndex = unitCardPage * 6 + 1
+    local endIndex = (unitCardPage + 1) * 6
+
+    for i=startIndex, endIndex, startIndex do
 
         if templateMenu[selectedArmyFaction][selectedRank][i] != nil then
             local entry = templateMenu[selectedArmyFaction][selectedRank][i]
@@ -158,12 +206,13 @@ function unitSubMenu(selectedRank)
             _G["subMenu"..timerCounter] = function() spawnUnitCard(entry.varName) end
 
             local fontSize = correctStringLength(entry.name)
+            local relativeIndex = i - (unitCardPage * 6)
 
             self.createButton({
                 click_function = "subMenu"..timerCounter,
                 function_owner = self,
                 label          = entry.name,
-                position       = {0.93, 0.28, 2.48-(i*0.35)},
+                position       = {0.93, 0.28, 2.48-(relativeIndex*0.35)},
                 width          = 1010,
                 height         = 190,
                 font_size      = fontSize,
@@ -175,6 +224,13 @@ function unitSubMenu(selectedRank)
         else
             createDudMenuButton({0.93, 0.28, 2.48-(i*0.35)})
         end
+    end
+
+    if endIndex < unitCount then
+      createNextUnitButton()
+    end
+    if startIndex > 1 then
+      createPrevUnitButton()
     end
 
     upgradeMenu()
@@ -729,3 +785,4 @@ function dealCommandCard(selectionCard)
 
     destroyObject(commandCards)
 end
+

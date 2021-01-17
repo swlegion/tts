@@ -1317,6 +1317,7 @@ function onLoad()
     templateMenu.rebel.commander[4] = {name = "Jyn Erso", varName = "jynErso"}
     templateMenu.rebel.commander[5] = {name = "Cassian Andor", varName = "cassianAndor"}
     templateMenu.rebel.commander[6] = {name = "Rebel Officer", varName = "rebelOfficer"}
+    templateMenu.rebel.commander[7] = {name = "Lando Calrissian", varName = "landoCalrissian"}
 
     templateMenu.rebel.operative = {}
     templateMenu.rebel.operative[1] = {name = "Chewbacca", varName = "chewbacca"}
@@ -3382,132 +3383,127 @@ function onLoad()
     --[[ Ordnance --]]
     cardInfo.upgradeCards.armorPiercingShells = {
       name = "Armor-Piercing Shells",
-      guid = "7b9c0e",
       ptCost = 10,
       varName = "armorPiercingShells"
     }
 
     cardInfo.upgradeCards.highEnergyShells = {
       name = "High-Energy Shells",
-      guid = "5a9ecf",
       ptCost = 8,
       varName = "highEnergyShells"
     }
 
     cardInfo.upgradeCards.bunkerBusterShells = {
       name = '"Bunker Buster" Shells',
-      guid = "c58a78",
       ptCost = 12,
       varName = "bunkerBusterShells"
     }
 
     -- force
-    cardInfo.upgradeCards.forcePush = {name = "Force Push", guid = "eaa6d3", ptCost = 10,varName="forcePush"}
-    cardInfo.upgradeCards.forceReflexes = {name = "Force Reflexes", guid = "d69042", ptCost = 5,varName="forceReflexes"}
-    cardInfo.upgradeCards.saberThrow = {name = "Saber Throw", guid = "c3bf77", ptCost = 5,varName="saberThrow"}
-    cardInfo.upgradeCards.jediMindTrick = {name = "Jedi Mind Trick", guid = "ae1865", ptCost = 5,varName="jediMindTrick"}
-    cardInfo.upgradeCards.battleMeditation = {name = "Battle Meditation", guid = "62dbea", ptCost = 5,varName="battleMeditation"}
-    cardInfo.upgradeCards.forceChoke = {name = "Force Choke", guid = "d12be1", ptCost = 5,varName="forceChoke"}
-    cardInfo.upgradeCards.anger = {name = "Anger", guid = "d1g2be1", ptCost = 5,varName="anger"}
-    cardInfo.upgradeCards.fear = {name = "Fear", guid = "d1rg2be1", ptCost = 3,varName="fear"}
-    cardInfo.upgradeCards.forceGuidance = {name = "Force Guidance", guid = "d1g2ggbe1", ptCost = 5,varName="forceGuidance"}
-    cardInfo.upgradeCards.hope = {name = "Hope", guid = "d1g2ggggbe1", ptCost = 3,varName="hope"}
+    cardInfo.upgradeCards.forcePush = {name = "Force Push", ptCost = 10,varName="forcePush"}
+    cardInfo.upgradeCards.forceReflexes = {name = "Force Reflexes", ptCost = 5,varName="forceReflexes"}
+    cardInfo.upgradeCards.saberThrow = {name = "Saber Throw", ptCost = 5,varName="saberThrow"}
+    cardInfo.upgradeCards.jediMindTrick = {name = "Jedi Mind Trick", ptCost = 5,varName="jediMindTrick"}
+    cardInfo.upgradeCards.battleMeditation = {name = "Battle Meditation", ptCost = 5,varName="battleMeditation"}
+    cardInfo.upgradeCards.forceChoke = {name = "Force Choke", ptCost = 5,varName="forceChoke"}
+    cardInfo.upgradeCards.anger = {name = "Anger", ptCost = 5,varName="anger"}
+    cardInfo.upgradeCards.fear = {name = "Fear", ptCost = 3,varName="fear"}
+    cardInfo.upgradeCards.forceGuidance = {name = "Force Guidance", ptCost = 5,varName="forceGuidance"}
+    cardInfo.upgradeCards.hope = {name = "Hope", ptCost = 3,varName="hope"}
     cardInfo.upgradeCards.forceBarrier = {name = "Force Barrier", ptCost = 10, varName = "forceBarrier"}
 
     -- tech
-    cardInfo.upgradeCards.targetingScopes = {name = "Targeting Scopes", guid = "d03bcc", ptCost = 4,varName="targetingScopes"}
-    cardInfo.upgradeCards.grapplingHooks = {name = "Grappling Hooks", guid = "b5db9f", ptCost = 1,varName="grapplingHooks"}
-    cardInfo.upgradeCards.environmentalGear = {name = "Environmental Gear", guid = "bg5db9f", ptCost = 2,varName="environmentalGear"}
-    cardInfo.upgradeCards.emergencyStims = {name = "Emergency Stims", guid = "bgg5db9f", ptCost = 10,varName="emergencyStims"}
-    cardInfo.upgradeCards.reconIntel = {name = "Recon Intel", guid = "bgg5gdb9f", ptCost = 2,varName="reconIntel"}
-    cardInfo.upgradeCards.personalCombatShield = {name = "Personal Combat Shield", guid = "bgg5gdgb9f", ptCost = 5,varName="personalCombatShield"}
-    cardInfo.upgradeCards.electroGrapplingLine = {name = "Electro Grappling Line", guid = "bggg5gdgb9f", ptCost = 5,varName="electroGrapplingLine"}
-    cardInfo.upgradeCards.electrobinoculars = {name = "Electrobinoculars", guid = "bgggg5gdgb9f", ptCost = 8,varName="electrobinoculars"}
-    cardInfo.upgradeCards.jt12Jetpacks = {name = "JT-12 Jetpacks", guid = "bgggg5gdgb9f", ptCost = 10,varName="jt12Jetpacks"}
-    cardInfo.upgradeCards.ascensionCables = {name = "Ascension Cables", guid = "bgggg5gdgb9f", ptCost = 4,varName="ascensionCables"}
+    cardInfo.upgradeCards.targetingScopes = {name = "Targeting Scopes", ptCost = 4,varName="targetingScopes"}
+    cardInfo.upgradeCards.grapplingHooks = {name = "Grappling Hooks", ptCost = 1,varName="grapplingHooks"}
+    cardInfo.upgradeCards.environmentalGear = {name = "Environmental Gear", ptCost = 2,varName="environmentalGear"}
+    cardInfo.upgradeCards.emergencyStims = {name = "Emergency Stims", ptCost = 10,varName="emergencyStims"}
+    cardInfo.upgradeCards.reconIntel = {name = "Recon Intel", ptCost = 2,varName="reconIntel"}
+    cardInfo.upgradeCards.personalCombatShield = {name = "Personal Combat Shield", ptCost = 5,varName="personalCombatShield"}
+    cardInfo.upgradeCards.electroGrapplingLine = {name = "Electro Grappling Line", ptCost = 5,varName="electroGrapplingLine"}
+    cardInfo.upgradeCards.electrobinoculars = {name = "Electrobinoculars", ptCost = 8,varName="electrobinoculars"}
+    cardInfo.upgradeCards.jt12Jetpacks = {name = "JT-12 Jetpacks", ptCost = 10,varName="jt12Jetpacks"}
+    cardInfo.upgradeCards.ascensionCables = {name = "Ascension Cables", ptCost = 4,varName="ascensionCables"}
     cardInfo.upgradeCards.portableScanner = {name = "Portable Scanner", ptCost = 6,varName="portableScanner"}
 
     -- grenade
-    cardInfo.upgradeCards.concussionGrenades = {name = "Concussion Grenades", guid = "2089d0", ptCost = 3,varName="concussionGrenades"}
-    cardInfo.upgradeCards.impactGrenades = {name = "Impact Grenades", guid = "2g089d0", ptCost = 3,varName="impactGrenades"}
-    cardInfo.upgradeCards.fragmentationGrenades = {name = "Fragmentation Grenades", guid = "2g089gd0", ptCost = 5,varName="fragmentationGrenades"}
-    cardInfo.upgradeCards.smokeGrenades = {name = "Smoke Grenades", guid = "2g0g89gd0", ptCost = 2,varName="smokeGrenades"}
-    cardInfo.upgradeCards.empDroidPoppers = {name = "EMP Droid Poppers", guid = "2g0g89gd0", ptCost = 3,varName="empDroidPoppers"}
+    cardInfo.upgradeCards.concussionGrenades = {name = "Concussion Grenades", ptCost = 3,varName="concussionGrenades"}
+    cardInfo.upgradeCards.impactGrenades = {name = "Impact Grenades", ptCost = 3,varName="impactGrenades"}
+    cardInfo.upgradeCards.fragmentationGrenades = {name = "Fragmentation Grenades", ptCost = 5,varName="fragmentationGrenades"}
+    cardInfo.upgradeCards.smokeGrenades = {name = "Smoke Grenades", ptCost = 2,varName="smokeGrenades"}
+    cardInfo.upgradeCards.empDroidPoppers = {name = "EMP Droid Poppers", ptCost = 3,varName="empDroidPoppers"}
 
     -- comms
-    cardInfo.upgradeCards.commsJammer = {name =  "Comms Jammer", guid = "10f887", ptCost = 5,varName="commsJammer"}
-    cardInfo.upgradeCards.longRangeComlink = {name =  "Long-Range Comlink", guid = "489490", ptCost = 5,varName="longRangeComlink"}
-    cardInfo.upgradeCards.hqUplink = {name =  "HQ Uplink", guid = "48g9490", ptCost = 10,varName="hqUplink"}
-    cardInfo.upgradeCards.commsRelay = {name =  "Comms Relay", guid = "48g9g490", ptCost = 5,varName="commsRelay"}
-    cardInfo.upgradeCards.linkedTargetingArray = {name =  "Linked Targeting Array", guid = "4g8g9g490", ptCost = 5,varName="linkedTargetingArray"}
-    cardInfo.upgradeCards.integratedCommsAntenna = {name =  "Integrated Comms Antenna", guid = "4gg3g490", ptCost = 3,varName="integratedCommsAntenna"}
-    cardInfo.upgradeCards.commandControlArray = {name =  "Command Control Array", guid = "4gg3g490", ptCost = 2,varName="commandControlArray"}
+    cardInfo.upgradeCards.commsJammer = {name =  "Comms Jammer", ptCost = 5,varName="commsJammer"}
+    cardInfo.upgradeCards.longRangeComlink = {name =  "Long-Range Comlink", ptCost = 5,varName="longRangeComlink"}
+    cardInfo.upgradeCards.hqUplink = {name =  "HQ Uplink", ptCost = 10,varName="hqUplink"}
+    cardInfo.upgradeCards.commsRelay = {name =  "Comms Relay", ptCost = 5,varName="commsRelay"}
+    cardInfo.upgradeCards.linkedTargetingArray = {name =  "Linked Targeting Array", ptCost = 5,varName="linkedTargetingArray"}
+    cardInfo.upgradeCards.integratedCommsAntenna = {name =  "Integrated Comms Antenna", ptCost = 3,varName="integratedCommsAntenna"}
+    cardInfo.upgradeCards.commandControlArray = {name =  "Command Control Array", ptCost = 2,varName="commandControlArray"}
 
     -- generators
-    cardInfo.upgradeCards.barrageGenerator = {name =  "Barrage Generator", guid = "1g0f887", ptCost = 3,varName="barrageGenerator"}
-    cardInfo.upgradeCards.overchargedGenerator = {name =  "Overcharged Generator", guid = "489g490", ptCost = 3,varName="overchargedGenerator"}
+    cardInfo.upgradeCards.barrageGenerator = {name =  "Barrage Generator", ptCost = 3,varName="barrageGenerator"}
+    cardInfo.upgradeCards.overchargedGenerator = {name =  "Overcharged Generator", ptCost = 3,varName="overchargedGenerator"}
 
     -- hardpoint
-    cardInfo.upgradeCards.rotaryBlaster = {name =  "AT-RT Rotary Blaster", guid = "a48d05", ptCost = 20,varName="rotaryBlaster"}
-    cardInfo.upgradeCards.laserCannon = {name =  "AT-RT Laser Cannon", guid = "731f40", ptCost = 10,varName="laserCannon"}
-    cardInfo.upgradeCards.flamethrower = {name =  "AT-RT Flamethrower", guid = "a30f08", ptCost = 20,varName="flamethrower"}
-    cardInfo.upgradeCards.ax108GroundBuzzer = {name = 'Ax-108 "Ground Buzzer"', guid = "a30f5408", ptCost = 10,varName="ax108GroundBuzzer"}
-    cardInfo.upgradeCards.powerHarpoon = {name =  "Mo/Dk Power Harpoon", guid = "a30fgr084", ptCost = 0,varName="powerHarpoon"}
-    cardInfo.upgradeCards.atstMortarLauncher = {name =  "AT-ST Mortar Launcher", guid = "a30fv084", ptCost = 10,varName="atstMortarLauncher"}
-    cardInfo.upgradeCards.twinLightBlasterCannon = {name =  "88 Twin Light Blaster Cannon", guid = "a3f0f084", ptCost = 20,varName="twinLightBlasterCannon"}
-    cardInfo.upgradeCards.dw3ConcussionGrenadeLauncher = {name =  "DW-3 Concussion Grenade Launcher", guid = "a30gf084", ptCost = 15,varName="dw3ConcussionGrenadeLauncher"}
+    cardInfo.upgradeCards.rotaryBlaster = {name =  "AT-RT Rotary Blaster", ptCost = 20,varName="rotaryBlaster"}
+    cardInfo.upgradeCards.laserCannon = {name =  "AT-RT Laser Cannon", ptCost = 10,varName="laserCannon"}
+    cardInfo.upgradeCards.flamethrower = {name =  "AT-RT Flamethrower", ptCost = 20,varName="flamethrower"}
+    cardInfo.upgradeCards.ax108GroundBuzzer = {name = 'Ax-108 "Ground Buzzer"', ptCost = 10,varName="ax108GroundBuzzer"}
+    cardInfo.upgradeCards.powerHarpoon = {name =  "Mo/Dk Power Harpoon", ptCost = 0,varName="powerHarpoon"}
+    cardInfo.upgradeCards.atstMortarLauncher = {name =  "AT-ST Mortar Launcher", ptCost = 10,varName="atstMortarLauncher"}
+    cardInfo.upgradeCards.twinLightBlasterCannon = {name =  "88 Twin Light Blaster Cannon", ptCost = 20,varName="twinLightBlasterCannon"}
+    cardInfo.upgradeCards.dw3ConcussionGrenadeLauncher = {name =  "DW-3 Concussion Grenade Launcher", ptCost = 15,varName="dw3ConcussionGrenadeLauncher"}
 
-    cardInfo.upgradeCards.m45IonBlaster = {name =  "M-45 Ion Blaster", guid = "ag05", ptCost = 31,varName="m45IonBlaster"}
-    cardInfo.upgradeCards.markIIMediumBlaster = {name =  "Mark II Medium Blaster", guid = "731g0", ptCost = 26,varName="markIIMediumBlaster"}
-    cardInfo.upgradeCards.rt97CRiflePintle = {name =  "RT-97C Rifle Pintle", guid = "ag08", ptCost = 14,varName="rt97CRiflePintle"}
-    cardInfo.upgradeCards.dlt19RiflePintle = {name = 'DLT-19 Rifle Pintle', guid = "a3gg", ptCost = 18,varName="dlt19RiflePintle"}
+    cardInfo.upgradeCards.m45IonBlaster = {name =  "M-45 Ion Blaster", ptCost = 31,varName="m45IonBlaster"}
+    cardInfo.upgradeCards.markIIMediumBlaster = {name =  "Mark II Medium Blaster", ptCost = 26,varName="markIIMediumBlaster"}
+    cardInfo.upgradeCards.rt97CRiflePintle = {name =  "RT-97C Rifle Pintle", ptCost = 14,varName="rt97CRiflePintle"}
+    cardInfo.upgradeCards.dlt19RiflePintle = {name = 'DLT-19 Rifle Pintle', ptCost = 18,varName="dlt19RiflePintle"}
 
     cardInfo.upgradeCards.tx130beamcannonturret = {
       name = 'TX-130 Beam Cannon Turret',
-      guid = "c0f10c",
       ptCost = 30,
       varName = "tx130beamcannonturret"
     }
 
     cardInfo.upgradeCards.tx130twinlaserturret = {
       name = 'TX-130 Twin Laser Turret',
-      guid = "c0f10d",
       ptCost = 14,
       varName = "tx130twinlaserturret"
     }
 
     -- CREW
-    cardInfo.upgradeCards.a300RifleGunner = {name =  "A-300 Rifle Gunner", guid = "ag0ggg", ptCost = 9,varName="a300RifleGunner"}
-    cardInfo.upgradeCards.rps6RocketGunner = {name = 'RPS-6 Rocket Gunner', guid = "a3ggasfgfg", ptCost = 31,varName="rps6RocketGunner"}
-    cardInfo.upgradeCards.barcRPS6Gunner = {name = 'BARC RPS-6 Gunner', guid = "a3ggasgfgfg", ptCost = 21,varName="barcRPS6Gunner"}
-    cardInfo.upgradeCards.barcTwinLaserGunner = {name = 'BARC Twin Laser Gunner', guid = "a3gggasfgfg", ptCost = 15,varName="barcTwinLaserGunner"}
-    cardInfo.upgradeCards.barcIonGunner = {name = 'BARC Ion Gunner', guid = "a3ggagsfgfg", ptCost = 22,varName="barcIonGunner"}
+    cardInfo.upgradeCards.a300RifleGunner = {name =  "A-300 Rifle Gunner", ptCost = 9,varName="a300RifleGunner"}
+    cardInfo.upgradeCards.rps6RocketGunner = {name = 'RPS-6 Rocket Gunner', ptCost = 31,varName="rps6RocketGunner"}
+    cardInfo.upgradeCards.barcRPS6Gunner = {name = 'BARC RPS-6 Gunner', ptCost = 21,varName="barcRPS6Gunner"}
+    cardInfo.upgradeCards.barcTwinLaserGunner = {name = 'BARC Twin Laser Gunner', ptCost = 15,varName="barcTwinLaserGunner"}
+    cardInfo.upgradeCards.barcIonGunner = {name = 'BARC Ion Gunner', ptCost = 22,varName="barcIonGunner"}
 
     -- heavy
-    cardInfo.upgradeCards.z6Trooper = {name = "Z-6 Trooper", guid = "6d0dc1", ptCost = 20, miniGUID = "81cbcb", miniInfo = miniInfo.z6Trooper,varName="z6Trooper"}
-    cardInfo.upgradeCards.hh12Stormtrooper = {name = "HH-12 Stormtrooper", guid = "f811e0", ptCost = 20, miniGUID = "896f11", miniInfo = miniInfo.hh12Stormtrooper,varName="hh12Stormtrooper"}
-    cardInfo.upgradeCards.mpl57IonTrooper = {name = "MPL-57 Ion Trooper", guid = "158270", ptCost = 22, miniInfo = miniInfo.mpl57IonTrooper,varName="mpl57IonTrooper"}
-    cardInfo.upgradeCards.dlt19Stormtrooper = {name = "DLT-19 Stormtrooper", guid = "d8965a", ptCost = 22, miniGUID = "1d1re16", miniInfo = miniInfo.dlt19Stormtrooper,varName="dlt19Stormtrooper"}
-    cardInfo.upgradeCards.t7IonSnowtrooper = {name = "T-7 Ion Snowtrooper", guid = "d896g5a", ptCost = 20, miniGUID = "1dg1fe16", miniInfo = miniInfo.t7IonSnowtrooper,varName="t7IonSnowtrooper"}
-    cardInfo.upgradeCards.flametrooper = {name = "Flametrooper", guid = "d896gg5a", ptCost = 20, miniGUID = "1dg1fge16", miniInfo = miniInfo.flametrooper, varName="flametrooper"}
-    cardInfo.upgradeCards.scatterGunTrooper = {name = "Scatter Gun Trooper", guid = "d8e9g6g5a", ptCost = 23, miniGUID = "1dgg1e16", miniInfo = miniInfo.scatterGunTrooper,varName="scatterGunTrooper"}
-    cardInfo.upgradeCards.mpl57BarrageTrooper = {name = "MPL-57 Barrage Trooper", guid = "d8e9gg6g5a", ptCost = 22, miniGUID = "1dggg1e16", miniInfo = miniInfo.mpl57BarrageTrooper,varName="mpl57BarrageTrooper"}
-    cardInfo.upgradeCards.electrostaffGuard = {name = "Electrostaff Guard", guid = "d8e9gg6gg5a", ptCost = 25, miniGUID = "1dgggg1e16", miniInfo = miniInfo.electrostaffGuard,varName="electrostaffGuard"}
-    cardInfo.upgradeCards.dh447Sniper = {name = "DH-447 Sniper", guid = "d8e9ggg6gg5a", ptCost = 28, miniGUID = "1dggggg1e16", miniInfo = miniInfo.dh447Sniper,varName="dh447Sniper"}
-    cardInfo.upgradeCards.protonChargeSaboteur = {name = "Proton Charge Saboteur", guid = "d8e9gggg6gg5a", ptCost = 26, miniGUID = "1dgggggg1e16", miniInfo = miniInfo.protonChargeSaboteur,varName="protonChargeSaboteur"}
-    cardInfo.upgradeCards.bowcasterWookiee = {name = "Bowcaster Wookiee", guid = "d8e9ggggg6gg5a", ptCost = 31, miniGUID = "1dggggggg1e16", miniInfo = miniInfo.bowcasterWookiee,varName="bowcasterWookiee"}
-    cardInfo.upgradeCards.dh447SniperLeader = {name = "DH-447 Sniper", guid = "d8e9ggg6gg5a", ptCost = 28, miniGUID = "1dggggg1e16", miniInfo = miniInfo.dh447SniperLeader,varName="dh447SniperLeader"}
-    cardInfo.upgradeCards.protonChargeSaboteurLeader = {name = "Proton Charge Saboteur", guid = "d8e9gggg6gg5a", ptCost = 26, miniGUID = "1dgggggg1e16", miniInfo = miniInfo.protonChargeSaboteurLeader,varName="protonChargeSaboteurLeader"}
-    cardInfo.upgradeCards.dlt19xSniper = {name = "DLT-19x Sniper", guid = "d8e9gggg6gg5a", ptCost = 28, miniGUID = "1dgggggg1e16", miniInfo = miniInfo.dlt19xSniper,varName="dlt19xSniper"}
-    cardInfo.upgradeCards.sonicChargeSaboteurLeader = {name = "Sonic Charge Saboteur", guid = "d8egg9gggg6gg5a", ptCost = 26, miniGUID = "1dggggggg1e16", miniInfo = miniInfo.sonicChargeSaboteurLeader,varName="sonicChargeSaboteurLeader"}
-    cardInfo.upgradeCards.dlt19xSniperLeader = {name = "DLT-19x Sniper", guid = "d8e9ggggg6gg5a", ptCost = 28, miniGUID = "1dggggggg1e16", miniInfo = miniInfo.dlt19xSniperLeader,varName="dlt19xSniperLeader"}
-    cardInfo.upgradeCards.sonicChargeSaboteur = {name = "Sonic Charge Saboteur", guid = "d8eggg9gggg6gg5a", ptCost = 26, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.sonicChargeSaboteur,varName="sonicChargeSaboteur"}
-    cardInfo.upgradeCards.isfT21 = {name = "T-21 Special Forces Trooper", guid = "d8eggg9gggg6gg5a", ptCost = 29, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.isfT21,varName="isfT21"}
-    cardInfo.upgradeCards.delMeeko = {name = "Del Meeko", guid = "d8eggg9gggg6gg5a", ptCost = 38, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.delMeeko,varName="delMeeko"}
-    cardInfo.upgradeCards.gideonHask = {name = "Gideon Hask", guid = "d8eggg9gggg6gg5a", ptCost = 38, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.gideonHask,varName="gideonHask"}
-    cardInfo.upgradeCards.beskadDuelist = {name = "Beskad Duelist", guid = "d8eggg9gggg6gg5a", ptCost = 28, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.beskadDuelist,varName="beskadDuelist"}
-    cardInfo.upgradeCards.ursaWren = {name = "Ursa Wren", guid = "d8eggg9gggg6gg5a", ptCost = 38, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.ursaWren,varName="ursaWren"}
-    cardInfo.upgradeCards.tristanWren = {name = "Tristan Wren", guid = "d8eggg9gggg6gg5a", ptCost = 38, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.tristanWren,varName="tristanWren"}
+    cardInfo.upgradeCards.z6Trooper = {name = "Z-6 Trooper", ptCost = 20, miniGUID = "81cbcb", miniInfo = miniInfo.z6Trooper,varName="z6Trooper"}
+    cardInfo.upgradeCards.hh12Stormtrooper = {name = "HH-12 Stormtrooper", ptCost = 20, miniGUID = "896f11", miniInfo = miniInfo.hh12Stormtrooper,varName="hh12Stormtrooper"}
+    cardInfo.upgradeCards.mpl57IonTrooper = {name = "MPL-57 Ion Trooper", ptCost = 22, miniInfo = miniInfo.mpl57IonTrooper,varName="mpl57IonTrooper"}
+    cardInfo.upgradeCards.dlt19Stormtrooper = {name = "DLT-19 Stormtrooper", ptCost = 22, miniGUID = "1d1re16", miniInfo = miniInfo.dlt19Stormtrooper,varName="dlt19Stormtrooper"}
+    cardInfo.upgradeCards.t7IonSnowtrooper = {name = "T-7 Ion Snowtrooper", ptCost = 20, miniGUID = "1dg1fe16", miniInfo = miniInfo.t7IonSnowtrooper,varName="t7IonSnowtrooper"}
+    cardInfo.upgradeCards.flametrooper = {name = "Flametrooper", ptCost = 20, miniGUID = "1dg1fge16", miniInfo = miniInfo.flametrooper, varName="flametrooper"}
+    cardInfo.upgradeCards.scatterGunTrooper = {name = "Scatter Gun Trooper", ptCost = 23, miniGUID = "1dgg1e16", miniInfo = miniInfo.scatterGunTrooper,varName="scatterGunTrooper"}
+    cardInfo.upgradeCards.mpl57BarrageTrooper = {name = "MPL-57 Barrage Trooper", ptCost = 22, miniGUID = "1dggg1e16", miniInfo = miniInfo.mpl57BarrageTrooper,varName="mpl57BarrageTrooper"}
+    cardInfo.upgradeCards.electrostaffGuard = {name = "Electrostaff Guard", ptCost = 25, miniGUID = "1dgggg1e16", miniInfo = miniInfo.electrostaffGuard,varName="electrostaffGuard"}
+    cardInfo.upgradeCards.dh447Sniper = {name = "DH-447 Sniper", ptCost = 28, miniGUID = "1dggggg1e16", miniInfo = miniInfo.dh447Sniper,varName="dh447Sniper"}
+    cardInfo.upgradeCards.protonChargeSaboteur = {name = "Proton Charge Saboteur", ptCost = 26, miniGUID = "1dgggggg1e16", miniInfo = miniInfo.protonChargeSaboteur,varName="protonChargeSaboteur"}
+    cardInfo.upgradeCards.bowcasterWookiee = {name = "Bowcaster Wookiee", ptCost = 31, miniGUID = "1dggggggg1e16", miniInfo = miniInfo.bowcasterWookiee,varName="bowcasterWookiee"}
+    cardInfo.upgradeCards.dh447SniperLeader = {name = "DH-447 Sniper", ptCost = 28, miniGUID = "1dggggg1e16", miniInfo = miniInfo.dh447SniperLeader,varName="dh447SniperLeader"}
+    cardInfo.upgradeCards.protonChargeSaboteurLeader = {name = "Proton Charge Saboteur", ptCost = 26, miniGUID = "1dgggggg1e16", miniInfo = miniInfo.protonChargeSaboteurLeader,varName="protonChargeSaboteurLeader"}
+    cardInfo.upgradeCards.dlt19xSniper = {name = "DLT-19x Sniper", ptCost = 28, miniGUID = "1dgggggg1e16", miniInfo = miniInfo.dlt19xSniper,varName="dlt19xSniper"}
+    cardInfo.upgradeCards.sonicChargeSaboteurLeader = {name = "Sonic Charge Saboteur", ptCost = 26, miniGUID = "1dggggggg1e16", miniInfo = miniInfo.sonicChargeSaboteurLeader,varName="sonicChargeSaboteurLeader"}
+    cardInfo.upgradeCards.dlt19xSniperLeader = {name = "DLT-19x Sniper", ptCost = 28, miniGUID = "1dggggggg1e16", miniInfo = miniInfo.dlt19xSniperLeader,varName="dlt19xSniperLeader"}
+    cardInfo.upgradeCards.sonicChargeSaboteur = {name = "Sonic Charge Saboteur", ptCost = 26, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.sonicChargeSaboteur,varName="sonicChargeSaboteur"}
+    cardInfo.upgradeCards.isfT21 = {name = "T-21 Special Forces Trooper", ptCost = 29, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.isfT21,varName="isfT21"}
+    cardInfo.upgradeCards.delMeeko = {name = "Del Meeko", ptCost = 38, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.delMeeko,varName="delMeeko"}
+    cardInfo.upgradeCards.gideonHask = {name = "Gideon Hask", ptCost = 38, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.gideonHask,varName="gideonHask"}
+    cardInfo.upgradeCards.beskadDuelist = {name = "Beskad Duelist", ptCost = 28, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.beskadDuelist,varName="beskadDuelist"}
+    cardInfo.upgradeCards.ursaWren = {name = "Ursa Wren", ptCost = 38, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.ursaWren,varName="ursaWren"}
+    cardInfo.upgradeCards.tristanWren = {name = "Tristan Wren", ptCost = 38, miniGUID = "1dgggggggg1e16", miniInfo = miniInfo.tristanWren,varName="tristanWren"}
 
     cardInfo.upgradeCards.b2ACMTrooper = {
       name = "B2-ACM Trooper",
@@ -3529,18 +3525,17 @@ function onLoad()
     cardInfo.upgradeCards.bxCommandoDroidSaboteur = { name = "BX-Series Droid Saboteur", ptCost = 28, miniInfo = miniInfo.bxCommandoDroidSaboteur, varName = "bxCommandoDroidSaboteur" }
     cardInfo.upgradeCards.bxCommandoDroidSaboteurLeader = { name = "BX-Series Droid Saboteur", ptCost = 28, miniInfo = miniInfo.bxCommandoDroidSaboteurLeader, varName = "bxCommandoDroidSaboteurLeader" }
 
-    cardInfo.upgradeCards.dp23PhaseITrooper = {name = "DP-23 Phase I Trooper", guid = "d90tug5a", ptCost = 23, miniGUID = "j7816", miniInfo = miniInfo.dp23PhaseITrooper,varName="dp23PhaseITrooper"}
-    cardInfo.upgradeCards.rps6PhaseITrooper = {name = "RPS-6 Phase I Trooper", guid = "d8h7jgg5a", ptCost = 21, miniGUID = "1jguk6", miniInfo = miniInfo.rps6PhaseITrooper,varName="rps6PhaseITrooper"}
-    cardInfo.upgradeCards.e5sB1Trooper = {name = "E-5s B1 Trooper", guid = "dygr5a", ptCost = 20, miniGUID = "19pe16", miniInfo = miniInfo.e5sB1Trooper,varName="e5sB1Trooper"}
-    cardInfo.upgradeCards.radiationCannonB1Trooper = {name = "Radiation Cannon B1 Trooper", guid = "dh6h5gg5a", ptCost = 22, miniGUID = "1ugguk6", miniInfo = miniInfo.radiationCannonB1Trooper,varName="radiationCannonB1Trooper"}
-    cardInfo.upgradeCards.rt97CStormtrooper = {name = "RT-97C Stormtrooper", guid = "d8lg5a", ptCost = 26, miniGUID = "1dgmg16", miniInfo = miniInfo.rt97CStormtrooper,varName="rt97CStormtrooper"}
-    cardInfo.upgradeCards.t21Stormtrooper = {name = "T-21 Stormtrooper", guid = "d8eg6iy6hgg5a", ptCost = 24, miniGUID = "1dgjfghuk6", miniInfo = miniInfo.t21Stormtrooper,varName="t21Stormtrooper"}
-    cardInfo.upgradeCards.sx21Trooper = {name = "SX-21 Trooper", guid = "d8lug5a", ptCost = 17, miniGUID = "1dgmh6e16", miniInfo = miniInfo.sx21Trooper,varName="sx21Trooper"}
-    cardInfo.upgradeCards.dlt20ATrooper = {name = "DLT-20A Trooper", guid = "d6y6h5a", ptCost = 26, miniGUID = "1hguk6", miniInfo = miniInfo.dlt20ATrooper,varName="dlt20ATrooper"}
+    cardInfo.upgradeCards.dp23PhaseITrooper = {name = "DP-23 Phase I Trooper", ptCost = 23, miniGUID = "j7816", miniInfo = miniInfo.dp23PhaseITrooper,varName="dp23PhaseITrooper"}
+    cardInfo.upgradeCards.rps6PhaseITrooper = {name = "RPS-6 Phase I Trooper", ptCost = 21, miniGUID = "1jguk6", miniInfo = miniInfo.rps6PhaseITrooper,varName="rps6PhaseITrooper"}
+    cardInfo.upgradeCards.e5sB1Trooper = {name = "E-5s B1 Trooper", ptCost = 20, miniGUID = "19pe16", miniInfo = miniInfo.e5sB1Trooper,varName="e5sB1Trooper"}
+    cardInfo.upgradeCards.radiationCannonB1Trooper = {name = "Radiation Cannon B1 Trooper", ptCost = 22, miniGUID = "1ugguk6", miniInfo = miniInfo.radiationCannonB1Trooper,varName="radiationCannonB1Trooper"}
+    cardInfo.upgradeCards.rt97CStormtrooper = {name = "RT-97C Stormtrooper", ptCost = 26, miniGUID = "1dgmg16", miniInfo = miniInfo.rt97CStormtrooper,varName="rt97CStormtrooper"}
+    cardInfo.upgradeCards.t21Stormtrooper = {name = "T-21 Stormtrooper", ptCost = 24, miniGUID = "1dgjfghuk6", miniInfo = miniInfo.t21Stormtrooper,varName="t21Stormtrooper"}
+    cardInfo.upgradeCards.sx21Trooper = {name = "SX-21 Trooper", ptCost = 17, miniGUID = "1dgmh6e16", miniInfo = miniInfo.sx21Trooper,varName="sx21Trooper"}
+    cardInfo.upgradeCards.dlt20ATrooper = {name = "DLT-20A Trooper", ptCost = 26, miniGUID = "1hguk6", miniInfo = miniInfo.dlt20ATrooper,varName="dlt20ATrooper"}
 
     cardInfo.upgradeCards.z6PhaseIITrooper = {
       name = "Z-6 Phase II Trooper",
-      guid = "1405d5",
       ptCost = 27,
       miniGUID = "81cbcb",
       miniInfo = miniInfo.z6PhaseIITrooper,
@@ -3563,147 +3558,142 @@ function onLoad()
     cardInfo.upgradeCards.fives = { name = "Fives", ptCost = 36, miniInfo = miniInfo.fivesLeader, varName = "fives" }
     -- cardInfo.upgradeCards.fivesLeader = { name = "Fives", ptCost = 36, miniInfo = miniInfo.fivesLeader, varName = "fivesLeader" }
 
-    cardInfo.upgradeCards.cloneCommander = {name = "Clone Commander", guid = "d8e9ggd5a", ptCost = 20, miniGUID = "gadfr", miniInfo = miniInfo.cloneCommanderLeader,varName="cloneCommander"}
-    cardInfo.upgradeCards.cloneCommsTechnician = {name = "Clone Comms Technician", guid = "d8e9ggd5a", ptCost = 12, miniGUID = "gadfr", miniInfo = miniInfo.cloneCommsTechnician,varName="cloneCommsTechnician"}
-    cardInfo.upgradeCards.cloneEngineer = {name = "Clone Engineer", guid = "d8e9ggd5a", ptCost = 18, miniGUID = "gadfr", miniInfo = miniInfo.cloneEngineer,varName="cloneEngineer"}
-    cardInfo.upgradeCards.cloneMedic = {name = "Clone Medic", guid = "d8e9ggd5a", ptCost = 20, miniGUID = "gadfr", miniInfo = miniInfo.cloneMedic,varName="cloneMedic"}
+    cardInfo.upgradeCards.cloneCommander = {name = "Clone Commander", ptCost = 20, miniGUID = "gadfr", miniInfo = miniInfo.cloneCommanderLeader,varName="cloneCommander"}
+    cardInfo.upgradeCards.cloneCommsTechnician = {name = "Clone Comms Technician", ptCost = 12, miniGUID = "gadfr", miniInfo = miniInfo.cloneCommsTechnician,varName="cloneCommsTechnician"}
+    cardInfo.upgradeCards.cloneEngineer = {name = "Clone Engineer", ptCost = 18, miniGUID = "gadfr", miniInfo = miniInfo.cloneEngineer,varName="cloneEngineer"}
+    cardInfo.upgradeCards.cloneMedic = {name = "Clone Medic", ptCost = 20, miniGUID = "gadfr", miniInfo = miniInfo.cloneMedic,varName="cloneMedic"}
 
-    cardInfo.upgradeCards.pao = {name = "Pao", guid = "d8e9ggd5a", ptCost = 22, miniGUID = "gadfr", miniInfo = miniInfo.pao,varName="pao"}
-    cardInfo.upgradeCards.bistan = {name = "Bistan", guid = "dgfsgd5a", ptCost = 32, miniGUID = "ggfr", miniInfo = miniInfo.bistan,varName="bistan"}
+    cardInfo.upgradeCards.pao = {name = "Pao", ptCost = 22, miniGUID = "gadfr", miniInfo = miniInfo.pao,varName="pao"}
+    cardInfo.upgradeCards.bistan = {name = "Bistan", ptCost = 32, miniGUID = "ggfr", miniInfo = miniInfo.bistan,varName="bistan"}
 
-    cardInfo.upgradeCards.dtf16 = {name = "DT-F16", guid = "dghff5a", ptCost = 22, miniGUID = "gghgfgfar", miniInfo = miniInfo.dtf16,varName="dtf16"}
-    cardInfo.upgradeCards.dlt19DTrooper = {name = "DLT-19D Trooper", guid = "dghgff5a", ptCost = 34, miniGUID = "gghggfgfar", miniInfo = miniInfo.dlt19DTrooper,varName="dlt19DTrooper"}
+    cardInfo.upgradeCards.dtf16 = {name = "DT-F16", ptCost = 22, miniGUID = "gghgfgfar", miniInfo = miniInfo.dtf16,varName="dtf16"}
+    cardInfo.upgradeCards.dlt19DTrooper = {name = "DLT-19D Trooper", ptCost = 34, miniGUID = "gghggfgfar", miniInfo = miniInfo.dlt19DTrooper,varName="dlt19DTrooper"}
 
-    cardInfo.upgradeCards.cm093Trooper = {name = "CM-0/93 Trooper", guid = "dgghff5a", ptCost = 26, miniGUID = "gghggfgfar", miniInfo = miniInfo.cm093Trooper,varName="cm093Trooper"}
-    cardInfo.upgradeCards.t21BTrooper = {name = "T-21B Trooper", guid = "dggghff5a", ptCost = 35, miniGUID = "gggghggfgfar", miniInfo = miniInfo.t21BTrooper,varName="t21BTrooper"}
+    cardInfo.upgradeCards.cm093Trooper = {name = "CM-0/93 Trooper", ptCost = 26, miniGUID = "gghggfgfar", miniInfo = miniInfo.cm093Trooper,varName="cm093Trooper"}
+    cardInfo.upgradeCards.t21BTrooper = {name = "T-21B Trooper", ptCost = 35, miniGUID = "gggghggfgfar", miniInfo = miniInfo.t21BTrooper,varName="t21BTrooper"}
 
-    cardInfo.upgradeCards.z6PhaseITrooper = {name = "Z-6 Phase I Trooper", guid = "dhgf5a", ptCost = 23, miniGUID = "gghtvgfgfar", miniInfo = miniInfo.z6PhaseITrooper,varName="z6PhaseITrooper"}
-    cardInfo.upgradeCards.dc15PhaseITrooper  = {name = "DC-15 Phase I Trooper", guid = "d3hff5a", ptCost = 27, miniGUID = "g42r", miniInfo = miniInfo.dc15PhaseITrooper, varName="dc15PhaseITrooper"}
-    cardInfo.upgradeCards.e60RB1Trooper = {name = "E-60R B1 Trooper", guid = "4f5a", ptCost = 20, miniGUID = "4fgfar", miniInfo = miniInfo.e60RB1Trooper,varName="e60RB1Trooper"}
-    cardInfo.upgradeCards.e5CB1Trooper = {name = "E-5C B1 Trooper", guid = "d4hff5a", ptCost = 18, miniGUID = "g4gfar", miniInfo = miniInfo.e5CB1Trooper,varName="e5CB1Trooper"}
+    cardInfo.upgradeCards.z6PhaseITrooper = {name = "Z-6 Phase I Trooper", ptCost = 23, miniGUID = "gghtvgfgfar", miniInfo = miniInfo.z6PhaseITrooper,varName="z6PhaseITrooper"}
+    cardInfo.upgradeCards.dc15PhaseITrooper  = {name = "DC-15 Phase I Trooper", ptCost = 27, miniGUID = "g42r", miniInfo = miniInfo.dc15PhaseITrooper, varName="dc15PhaseITrooper"}
+    cardInfo.upgradeCards.e60RB1Trooper = {name = "E-60R B1 Trooper", ptCost = 20, miniGUID = "4fgfar", miniInfo = miniInfo.e60RB1Trooper,varName="e60RB1Trooper"}
+    cardInfo.upgradeCards.e5CB1Trooper = {name = "E-5C B1 Trooper", ptCost = 18, miniGUID = "g4gfar", miniInfo = miniInfo.e5CB1Trooper,varName="e5CB1Trooper"}
 
 
     -- trooper
-    cardInfo.upgradeCards.rebelTrooper = {name =  "Rebel Trooper", guid = "2048e9", ptCost = 7, miniInfo = miniInfo.rebelTrooper4,varName="rebelTrooper"}
-    cardInfo.upgradeCards.fleetTrooper = {name =  "Fleet Trooper", guid = "20g48e9", ptCost = 7, miniInfo = miniInfo.fleetTroopers4,varName="fleetTrooper"}
-    cardInfo.upgradeCards.stormtrooper = {name =  "Stormtrooper", guid = "d7d8b7", ptCost = 8, miniInfo = miniInfo.stormtrooper4,varName="stormtrooper"}
-    cardInfo.upgradeCards.snowtrooper = {name =  "Snowtrooper", guid = "d7dg8gb7", ptCost = 8, miniInfo = miniInfo.snowtrooper4,varName="snowtrooper"}
-    cardInfo.upgradeCards.rebelOfficer = {name = "Rebel Officer", guid = "d8e9gggggg6gg5a", ptCost = 16, miniGUID = "1dggggggg1e16", miniInfo = miniInfo.rebelOfficerLeader,varName="rebelOfficer"}
-    cardInfo.upgradeCards.imperialOfficer = {name = "Imperial Officer", guid = "d8e9ggggggg6gg5a", ptCost = 17, miniGUID = "1dggggggggg1e16", miniInfo = miniInfo.imperialOfficerLeader,varName="imperialOfficer"}
+    cardInfo.upgradeCards.rebelTrooper = {name =  "Rebel Trooper", ptCost = 7, miniInfo = miniInfo.rebelTrooper4,varName="rebelTrooper"}
+    cardInfo.upgradeCards.fleetTrooper = {name =  "Fleet Trooper", ptCost = 7, miniInfo = miniInfo.fleetTroopers4,varName="fleetTrooper"}
+    cardInfo.upgradeCards.stormtrooper = {name =  "Stormtrooper", ptCost = 8, miniInfo = miniInfo.stormtrooper4,varName="stormtrooper"}
+    cardInfo.upgradeCards.snowtrooper = {name =  "Snowtrooper", ptCost = 8, miniInfo = miniInfo.snowtrooper4,varName="snowtrooper"}
+    cardInfo.upgradeCards.rebelOfficer = {name = "Rebel Officer", ptCost = 16, miniGUID = "1dggggggg1e16", miniInfo = miniInfo.rebelOfficerLeader,varName="rebelOfficer"}
+    cardInfo.upgradeCards.imperialOfficer = {name = "Imperial Officer", ptCost = 17, miniGUID = "1dggggggggg1e16", miniInfo = miniInfo.imperialOfficerLeader,varName="imperialOfficer"}
 
-    cardInfo.upgradeCards.medicalDroid21B = {name =  "2-1B Medical Droid", guid = "20458e9", ptCost = 18, miniInfo = miniInfo.medicalDroid21B,varName="medicalDroid21B"}
-    cardInfo.upgradeCards.r4AstromechDroid = {name =  "R4 Astromech Droid", guid = "20g458e9", ptCost = 9, miniInfo = miniInfo.r4AstromechDroid,varName="r4AstromechDroid"}
+    cardInfo.upgradeCards.medicalDroid21B = {name =  "2-1B Medical Droid", ptCost = 18, miniInfo = miniInfo.medicalDroid21B,varName="medicalDroid21B"}
+    cardInfo.upgradeCards.r4AstromechDroid = {name =  "R4 Astromech Droid", ptCost = 9, miniInfo = miniInfo.r4AstromechDroid,varName="r4AstromechDroid"}
 
-    cardInfo.upgradeCards.r5AstromechDroid = {name =  "R5 Astromech Droid", guid = "20458ge9", ptCost = 8, miniInfo = miniInfo.r5AstromechDroid,varName="r5AstromechDroid"}
-    cardInfo.upgradeCards.fx9MedicalDroid = {name =  "FX-9 Medical Droid", guid = "2g045g8e9", ptCost = 19, miniInfo = miniInfo.fx9MedicalDroid,varName="fx9MedicalDroid"}
+    cardInfo.upgradeCards.r5AstromechDroid = {name =  "R5 Astromech Droid", ptCost = 8, miniInfo = miniInfo.r5AstromechDroid,varName="r5AstromechDroid"}
+    cardInfo.upgradeCards.fx9MedicalDroid = {name =  "FX-9 Medical Droid", ptCost = 19, miniInfo = miniInfo.fx9MedicalDroid,varName="fx9MedicalDroid"}
 
-    cardInfo.upgradeCards.imperialCommsTechnician = {name =  "Imperial Comms Technician", guid = "2g0g45g8e9", ptCost = 10, miniInfo = miniInfo.imperialCommsTechnician,varName="imperialCommsTechnician"}
-    cardInfo.upgradeCards.rebelCommsTechnician = {name =  "Rebel Comms Technician", guid = "2gg0g4g5g8e9", ptCost = 9, miniInfo = miniInfo.rebelCommsTechnician,varName="rebelCommsTechnician"}
+    cardInfo.upgradeCards.imperialCommsTechnician = {name =  "Imperial Comms Technician", ptCost = 10, miniInfo = miniInfo.imperialCommsTechnician,varName="imperialCommsTechnician"}
+    cardInfo.upgradeCards.rebelCommsTechnician = {name =  "Rebel Comms Technician", ptCost = 9, miniInfo = miniInfo.rebelCommsTechnician,varName="rebelCommsTechnician"}
 
-    cardInfo.upgradeCards.rebelVeteran = {name =  "Rebel Veteran", guid = "2gg0gg4g5g8e9", ptCost = 12, miniInfo = miniInfo.rebelVeterans4,varName="rebelVeteran"}
-    cardInfo.upgradeCards.shoretrooper = {name =  "Shoretrooper", guid = "2gg0gg4gg5g8e9", ptCost = 13, miniInfo = miniInfo.shoretroopers4,varName="shoretrooper"}
+    cardInfo.upgradeCards.rebelVeteran = {name =  "Rebel Veteran", ptCost = 12, miniInfo = miniInfo.rebelVeterans4,varName="rebelVeteran"}
+    cardInfo.upgradeCards.shoretrooper = {name =  "Shoretrooper", ptCost = 13, miniInfo = miniInfo.shoretroopers4,varName="shoretrooper"}
 
-    cardInfo.upgradeCards.b2SuperBattleDroid = {name =  "B2 Super Battle Droid", guid = "2440gg4g5g8e9", ptCost = 13, miniInfo = miniInfo.b2SuperBattleDroid3,varName="b2SuperBattleDroid"}
-    cardInfo.upgradeCards.phaseIICloneTrooper = {name =  "Phase II Clone Trooper", guid = "2gg3g5g8e9", ptCost = 13, miniInfo = miniInfo.phaseIICloneTrooper4,varName="phaseIICloneTrooper"}
-    cardInfo.upgradeCards.phaseICloneTrooper = {name =  "Phase I Clone Trooper", guid = "235g8e9", ptCost = 10, miniInfo = miniInfo.phaseICloneTrooper4,varName="phaseICloneTrooper"}
-    cardInfo.upgradeCards.b1BattleDroid = {name =  "B1 Battle Droid", guid = "2g45gg5g8e9", ptCost = 5, miniInfo = miniInfo.b1BattleDroid6,varName="b1BattleDroid"}
-    cardInfo.upgradeCards.tSeriesTacticalDroid = {name =  "T-Series Tactical Droid", guid = "b25510", ptCost = 18, miniInfo = miniInfo.tSeriesTacticalDroidLeader,varName="tSeriesTacticalDroid"}
-    cardInfo.upgradeCards.evSeriesMedicalDroid = {name =  "EV-Series Medical Droid", guid = "b25510", ptCost = 14, miniInfo = miniInfo.evSeriesMedicalDroid,varName="evSeriesMedicalDroid"}
-    cardInfo.upgradeCards.pkSeriesWorkerDroid = {name =  "PK-Series Worker Droid", guid = "b25510", ptCost = 12, miniInfo = miniInfo.pkSeriesWorkerDroid,varName="pkSeriesWorkerDroid"}
-    cardInfo.upgradeCards.viperReconDroid = {name =  "Viper Recon Droid", guid = "b25510", ptCost = 8, miniInfo = miniInfo.viperReconDroid,varName="viperReconDroid"}
+    cardInfo.upgradeCards.b2SuperBattleDroid = {name =  "B2 Super Battle Droid", ptCost = 13, miniInfo = miniInfo.b2SuperBattleDroid3,varName="b2SuperBattleDroid"}
+    cardInfo.upgradeCards.phaseIICloneTrooper = {name =  "Phase II Clone Trooper", ptCost = 13, miniInfo = miniInfo.phaseIICloneTrooper4,varName="phaseIICloneTrooper"}
+    cardInfo.upgradeCards.phaseICloneTrooper = {name =  "Phase I Clone Trooper", ptCost = 10, miniInfo = miniInfo.phaseICloneTrooper4,varName="phaseICloneTrooper"}
+    cardInfo.upgradeCards.b1BattleDroid = {name =  "B1 Battle Droid", ptCost = 5, miniInfo = miniInfo.b1BattleDroid6,varName="b1BattleDroid"}
+    cardInfo.upgradeCards.tSeriesTacticalDroid = {name =  "T-Series Tactical Droid", ptCost = 18, miniInfo = miniInfo.tSeriesTacticalDroidLeader,varName="tSeriesTacticalDroid"}
+    cardInfo.upgradeCards.evSeriesMedicalDroid = {name =  "EV-Series Medical Droid", ptCost = 14, miniInfo = miniInfo.evSeriesMedicalDroid,varName="evSeriesMedicalDroid"}
+    cardInfo.upgradeCards.pkSeriesWorkerDroid = {name =  "PK-Series Worker Droid", ptCost = 12, miniInfo = miniInfo.pkSeriesWorkerDroid,varName="pkSeriesWorkerDroid"}
+    cardInfo.upgradeCards.viperReconDroid = {name =  "Viper Recon Droid", ptCost = 8, miniInfo = miniInfo.viperReconDroid,varName="viperReconDroid"}
 
-    cardInfo.upgradeCards.phaseICloneSpecialist = {name = "Phase I Clone Specialist", guid = "d9h0tug5a", ptCost = 14, miniGUID = "j78156", miniInfo = miniInfo.phaseICloneSpecialist,varName="phaseICloneSpecialist"}
-    cardInfo.upgradeCards.phaseICloneCaptain = {name = "Phase I Clone Captain", guid = "d8h7jhgg5a", ptCost = 14, miniGUID = "1jgukg6", miniInfo = miniInfo.phaseICloneCaptain,varName="phaseICloneCaptain"}
-    cardInfo.upgradeCards.oomSeriesBattleDroid = {name = "OOM-Series Battle Droid", guid = "dyggr5a", ptCost = 9, miniGUID = "19peh16", miniInfo = miniInfo.oomSeriesBattleDroid,varName="oomSeriesBattleDroid"}
-    cardInfo.upgradeCards.b1SecurityDroid = {name = "B1 Security Droid", guid = "dh6h5ggg5a", ptCost = 7, miniGUID = "1uhgguk6", miniInfo = miniInfo.b1SecurityDroid,varName="b1SecurityDroid"}
-    cardInfo.upgradeCards.stormtrooperCaptain = {name = "Stormtrooper Captain", guid = "d8ljg5a", ptCost = 12, miniGUID = "1dg5mg16", miniInfo = miniInfo.stormtrooperCaptain,varName="stormtrooperCaptain"}
-    cardInfo.upgradeCards.stormtrooperSpecialist = {name = "Stormtrooper Specialist", guid = "d8eg6iyg6hgg5a", ptCost = 12, miniGUID = "1dgjjfghuk6", miniInfo = miniInfo.stormtrooperSpecialist,varName="stormtrooperSpecialist"}
-    cardInfo.upgradeCards.rebelTrooperSpecialist = {name = "Rebel Trooper Specialist", guid = "d8lhug5a", ptCost = 12, miniGUID = "1dgmgh6e16", miniInfo = miniInfo.rebelTrooperSpecialist,varName="rebelTrooperSpecialist"}
-    cardInfo.upgradeCards.rebelTrooperCaptain = {name = "Rebel Trooper Captain", guid = "d6y6hf5a", ptCost = 11, miniGUID = "1hhguk6", miniInfo = miniInfo.rebelTrooperCaptain,varName="rebelTrooperCaptain"}
+    cardInfo.upgradeCards.phaseICloneSpecialist = {name = "Phase I Clone Specialist", ptCost = 14, miniGUID = "j78156", miniInfo = miniInfo.phaseICloneSpecialist,varName="phaseICloneSpecialist"}
+    cardInfo.upgradeCards.phaseICloneCaptain = {name = "Phase I Clone Captain", ptCost = 14, miniGUID = "1jgukg6", miniInfo = miniInfo.phaseICloneCaptain,varName="phaseICloneCaptain"}
+    cardInfo.upgradeCards.oomSeriesBattleDroid = {name = "OOM-Series Battle Droid", ptCost = 9, miniGUID = "19peh16", miniInfo = miniInfo.oomSeriesBattleDroid,varName="oomSeriesBattleDroid"}
+    cardInfo.upgradeCards.b1SecurityDroid = {name = "B1 Security Droid", ptCost = 7, miniGUID = "1uhgguk6", miniInfo = miniInfo.b1SecurityDroid,varName="b1SecurityDroid"}
+    cardInfo.upgradeCards.stormtrooperCaptain = {name = "Stormtrooper Captain", ptCost = 12, miniGUID = "1dg5mg16", miniInfo = miniInfo.stormtrooperCaptain,varName="stormtrooperCaptain"}
+    cardInfo.upgradeCards.stormtrooperSpecialist = {name = "Stormtrooper Specialist", ptCost = 12, miniGUID = "1dgjjfghuk6", miniInfo = miniInfo.stormtrooperSpecialist,varName="stormtrooperSpecialist"}
+    cardInfo.upgradeCards.rebelTrooperSpecialist = {name = "Rebel Trooper Specialist", ptCost = 12, miniGUID = "1dgmgh6e16", miniInfo = miniInfo.rebelTrooperSpecialist,varName="rebelTrooperSpecialist"}
+    cardInfo.upgradeCards.rebelTrooperCaptain = {name = "Rebel Trooper Captain", ptCost = 11, miniGUID = "1hhguk6", miniInfo = miniInfo.rebelTrooperCaptain,varName="rebelTrooperCaptain"}
 
     -- Pilot
-    cardInfo.upgradeCards.wedgeAntilles = {name =  "Wedge Antilles", guid = "d7d8gb7", ptCost = 1,varName="wedgeAntilles"}
-    cardInfo.upgradeCards.generalWeiss = {name =  "General Weiss", guid = "d7dg8gb7", ptCost = 1,varName="generalWeiss"}
-    cardInfo.upgradeCards.firstSergeantArbmab = {name =  "First Sergeant Arbmab", guid = "dg7d8gb7", ptCost = 5,varName="firstSergeantArbmab"}
-    cardInfo.upgradeCards.ryderAzadi = {name =  "Ryder Azadi", guid = "d7gdgg8gb7", ptCost = 5,varName="ryderAzadi"}
-    cardInfo.upgradeCards.imperialHammersEliteArmorPilot = {name =  "Imperial Hammers Elite Armor Pilot", guid = "d7g8gb7", ptCost = 10,varName="imperialHammersEliteArmorPilot"}
-    cardInfo.upgradeCards.outerRimSpeederJockey = {name =  "Outer Rim Speeder Jockey", guid = "dgfg8gb7", ptCost = 10,varName="outerRimSpeederJockey"}
-    cardInfo.upgradeCards.aaylaSecura = {name =  "Aayla Secura", guid = "74e0a7", ptCost = 5,varName="aaylaSecura"}
+    cardInfo.upgradeCards.wedgeAntilles = {name =  "Wedge Antilles", ptCost = 1,varName="wedgeAntilles"}
+    cardInfo.upgradeCards.generalWeiss = {name =  "General Weiss", ptCost = 1,varName="generalWeiss"}
+    cardInfo.upgradeCards.firstSergeantArbmab = {name =  "First Sergeant Arbmab", ptCost = 5,varName="firstSergeantArbmab"}
+    cardInfo.upgradeCards.ryderAzadi = {name =  "Ryder Azadi", ptCost = 5,varName="ryderAzadi"}
+    cardInfo.upgradeCards.imperialHammersEliteArmorPilot = {name =  "Imperial Hammers Elite Armor Pilot", ptCost = 10,varName="imperialHammersEliteArmorPilot"}
+    cardInfo.upgradeCards.outerRimSpeederJockey = {name =  "Outer Rim Speeder Jockey", ptCost = 10,varName="outerRimSpeederJockey"}
+    cardInfo.upgradeCards.aaylaSecura = {name =  "Aayla Secura", ptCost = 5,varName="aaylaSecura"}
 
     cardInfo.upgradeCards.tSeriesTacticalDroidPilot = {
       name =  "T-Series Tactical Droid Pilot",
-      guid = "8293f6",
       ptCost = 5,
       varName="tSeriesTacticalDroidPilot"
     }
 
     cardInfo.upgradeCards.oomSeriesDroidPilot = {
       name =  "OOM-Series Droid Pilot",
-      guid = "8293f6",
       ptCost = 7,
       varName="oomSeriesDroidPilot"
     }
 
     cardInfo.upgradeCards.veteranClonePilot = {
       name = "Veteran Clone Pilot",
-      guid = "22742b",
       ptCost = 7,
       varName = "veteranClonePilot"
     }
 
     cardInfo.upgradeCards.lokDurd = {
       name = "Lok Durd",
-      guid = "45de89",
       ptCost = 9,
       varName = "lokDurd"
     }
 
     cardInfo.upgradeCards.ploKoon = {
       name = "Plo Koon",
-      guid = "de56ab",
       ptCost = 9,
       varName = "ploKoon"
     }
 
     -- leadership
-    cardInfo.upgradeCards.commandingPresence = {name =  "Commanding Presence", guid = "a30fg", ptCost = 5,varName="commandingPresence"}
-    cardInfo.upgradeCards.esteemedLeader = {name = "Esteemed Leader", guid = "ag30fg", ptCost = 5,varName="esteemedLeader"}
-    cardInfo.upgradeCards.improvisedOrders = {name = "Improvised Orders", guid = "agg30fg", ptCost = 5,varName="improvisedOrders"}
-    cardInfo.upgradeCards.strictOrders = {name = "Strict Orders", guid = "agg3g0fg", ptCost = 5,varName="strictOrders"}
-    cardInfo.upgradeCards.aggressiveTactics = {name = "Aggressive Tactics", guid = "gressivetr", ptCost = 15,varName = "aggressiveTactics"}
-    cardInfo.upgradeCards.inspiringPresence = {name = "Inspiring Presence", guid = "gressivetr", ptCost = 5,varName = "inspiringPresence"}
-    cardInfo.upgradeCards.vigilance = {name = "Vigilance", guid = "gressivetr", ptCost = 5,varName = "vigilance"}
+    cardInfo.upgradeCards.commandingPresence = {name =  "Commanding Presence", ptCost = 5,varName="commandingPresence"}
+    cardInfo.upgradeCards.esteemedLeader = {name = "Esteemed Leader", ptCost = 5,varName="esteemedLeader"}
+    cardInfo.upgradeCards.improvisedOrders = {name = "Improvised Orders", ptCost = 5,varName="improvisedOrders"}
+    cardInfo.upgradeCards.strictOrders = {name = "Strict Orders", ptCost = 5,varName="strictOrders"}
+    cardInfo.upgradeCards.aggressiveTactics = {name = "Aggressive Tactics", ptCost = 15,varName = "aggressiveTactics"}
+    cardInfo.upgradeCards.inspiringPresence = {name = "Inspiring Presence", ptCost = 5,varName = "inspiringPresence"}
+    cardInfo.upgradeCards.vigilance = {name = "Vigilance", ptCost = 5,varName = "vigilance"}
 
     -- tactics
-    cardInfo.upgradeCards.duckAndCover = {name = "Duck and Cover", guid = "ag3g0fg", ptCost = 4, varName = "duckAndCover"}
-    cardInfo.upgradeCards.hunter = {name = "Hunter", guid = "ag3gg0fg", ptCost = 6, varName = "hunter"}
-    cardInfo.upgradeCards.tenacity = {name = "Tenacity", guid = "agg3gg0fg", ptCost = 4, varName = "tenacity"}
-    cardInfo.upgradeCards.endurance = {name = "Endurance", guid = "agg3gggg0fg", ptCost = 6, varName = "endurance"}
-    cardInfo.upgradeCards.overwatch = {name = "Overwatch", guid = "agg3ggfdfg", ptCost = 4, varName = "overwatch"}
-    cardInfo.upgradeCards.offensivePush = {name = "Offensive Push", guid = "ag7kfdfg", ptCost = 4, varName = "offensivePush"}
-    cardInfo.upgradeCards.situationalAwareness = {name = "Situational Awareness", guid = "ag7kfdfg", ptCost = 2, varName = "situationalAwareness"}
+    cardInfo.upgradeCards.duckAndCover = {name = "Duck and Cover", ptCost = 4, varName = "duckAndCover"}
+    cardInfo.upgradeCards.hunter = {name = "Hunter", ptCost = 6, varName = "hunter"}
+    cardInfo.upgradeCards.tenacity = {name = "Tenacity", ptCost = 4, varName = "tenacity"}
+    cardInfo.upgradeCards.endurance = {name = "Endurance", ptCost = 6, varName = "endurance"}
+    cardInfo.upgradeCards.overwatch = {name = "Overwatch", ptCost = 4, varName = "overwatch"}
+    cardInfo.upgradeCards.offensivePush = {name = "Offensive Push", ptCost = 4, varName = "offensivePush"}
+    cardInfo.upgradeCards.situationalAwareness = {name = "Situational Awareness", ptCost = 2, varName = "situationalAwareness"}
     cardInfo.upgradeCards.offensiveStance = {name = "Offensive Stance", ptCost = 5, varName = "offensiveStance"}
     cardInfo.upgradeCards.seizeTheInitiative = {name = "Seize The Initiative", ptCost = 5, varName = "seizeTheInitiative"}
 
     -- sidearm
-    cardInfo.upgradeCards.a300 = {name = "A-300", guid = "ag3gg0fg", ptCost = 0, varName = "a300"}
-    cardInfo.upgradeCards.a180 = {name = "A-180", guid = "aggfg0fg", ptCost = 0, varName = "a180"}
+    cardInfo.upgradeCards.a300 = {name = "A-300", ptCost = 0, varName = "a300"}
+    cardInfo.upgradeCards.a180 = {name = "A-180", ptCost = 0, varName = "a180"}
     cardInfo.upgradeCards.jynsSE14 = {name = "Jyns SE-14 Blaster", ptCost = 10, varName = "jynsSE14"}
     cardInfo.upgradeCards.a280CFESniperConfig = {name = "A-280-CFE Sniper Config", ptCost = 10, varName = "a280CFESniperConfig"}
     cardInfo.upgradeCards.idensDLT20ARifle = {name = "Idens DLT-20A Rifle", ptCost = 15, varName = "idensDLT20ARifle"}
     cardInfo.upgradeCards.idensTL50Repeater = {name = "Idens TL-50 Repeater", ptCost = 15, varName = "idensTL50Repeater"}
-    cardInfo.upgradeCards.e11D = {name = "E-11D", guid = "aggrgg0fg", ptCost = 8, varName = "e11D"}
-    cardInfo.upgradeCards.theDarksaber = {name = "The Darksaber", guid = "aghgfg3ggg0fg", ptCost = 25, varName = "theDarksaber"}
-    cardInfo.upgradeCards.dt57Annihilator = {name = 'DT-57 "Annihilator"', guid = "agggg0fg", ptCost = 12, varName = "dt57Annihilator"}
-    cardInfo.upgradeCards.vibroswords = {name = 'Vibroswords', guid = "agggg0fg", ptCost = 6, varName = "vibroswords"}
-    cardInfo.upgradeCards.deflectorShields = {name = 'Deflector Shields', guid = "agggg0fg", ptCost = 18, varName = "deflectorShields"}
-    cardInfo.upgradeCards.electroGauntlets = {name = 'Electro Gauntlets', guid = "agggg0fg", ptCost = 10, varName = "electroGauntlets"}
-    cardInfo.upgradeCards.lootedE5Blaster = {name = 'Looted E-5 Blaster', guid = "agggg0fg", ptCost = 5, varName = "lootedE5Blaster"}
-    cardInfo.upgradeCards.jetpackRockets = {name = 'Jetpack Rockets', guid = "agggg0fg", ptCost = 8, varName = "jetpackRockets"}
-    cardInfo.upgradeCards.anakinFlaw = {name = 'Not A Story The Jedi Would Tell', guid = "6b9d27", ptCost = 0, varName = "anakinFlaw"}
-    cardInfo.upgradeCards.rt97cBlasterRifle = {name = "RT-97C Blaster Rifle", guid = "agg3gg0fg", ptCost = 10, varName = "rt97cBlasterRifle"}
-    cardInfo.upgradeCards.cr24FlameRifle = {name = "CR-24 Flame Rifle", guid = "aggfggg0fg", ptCost = 15, varName = "cr24FlameRifle"}
-    cardInfo.upgradeCards.t21BlasterRifle = {name = "T-21 Blaster Rifle", guid = "aggrggg0fg", ptCost = 5, varName = "t21BlasterRifle"}
+    cardInfo.upgradeCards.e11D = {name = "E-11D", ptCost = 8, varName = "e11D"}
+    cardInfo.upgradeCards.theDarksaber = {name = "The Darksaber", ptCost = 25, varName = "theDarksaber"}
+    cardInfo.upgradeCards.dt57Annihilator = {name = 'DT-57 "Annihilator"', ptCost = 12, varName = "dt57Annihilator"}
+    cardInfo.upgradeCards.vibroswords = {name = 'Vibroswords', ptCost = 6, varName = "vibroswords"}
+    cardInfo.upgradeCards.deflectorShields = {name = 'Deflector Shields', ptCost = 18, varName = "deflectorShields"}
+    cardInfo.upgradeCards.electroGauntlets = {name = 'Electro Gauntlets', ptCost = 10, varName = "electroGauntlets"}
+    cardInfo.upgradeCards.lootedE5Blaster = {name = 'Looted E-5 Blaster', ptCost = 5, varName = "lootedE5Blaster"}
+    cardInfo.upgradeCards.jetpackRockets = {name = 'Jetpack Rockets', ptCost = 8, varName = "jetpackRockets"}
+    cardInfo.upgradeCards.anakinFlaw = {name = 'Not A Story The Jedi Would Tell', ptCost = 0, varName = "anakinFlaw"}
+    cardInfo.upgradeCards.rt97cBlasterRifle = {name = "RT-97C Blaster Rifle", ptCost = 10, varName = "rt97cBlasterRifle"}
+    cardInfo.upgradeCards.cr24FlameRifle = {name = "CR-24 Flame Rifle", ptCost = 15, varName = "cr24FlameRifle"}
+    cardInfo.upgradeCards.t21BlasterRifle = {name = "T-21 Blaster Rifle", ptCost = 5, varName = "t21BlasterRifle"}
 
 
       -- upgradeMenu
@@ -4365,7 +4355,6 @@ function onLoad()
     cardInfo.unitCards = {}
     -- Separatist
     cardInfo.unitCards.generalGrievous = {
-        guid = "3dgg4f",
         ptCost = 170 , availableUpgrades = {
             cardInfo.upgradeMenu.separatist.leadership,
             cardInfo.upgradeMenu.separatist.leadership,
@@ -4380,7 +4369,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.countDooku = {
-        guid = "3dh54f",
         ptCost = 200 , availableUpgrades = {
             cardInfo.upgradeMenu.separatist.force,
             cardInfo.upgradeMenu.separatist.force,
@@ -4395,7 +4383,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.tSeriesTacticalDroid = {
-        guid = "3dh54f",
         ptCost = 55 , availableUpgrades = {
             cardInfo.upgradeMenu.separatist.leadership,
             cardInfo.upgradeMenu.separatist.comms,
@@ -4409,7 +4396,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.cadBane = {
-        guid = "3dh54f",
         ptCost = 125 , availableUpgrades = {
             cardInfo.upgradeMenu.separatist.tactics,
             cardInfo.upgradeMenu.separatist.comms,
@@ -4425,7 +4411,6 @@ function onLoad()
         rank = "Operative"
     }
     cardInfo.unitCards.maul = {
-        guid = "3dh54f",
         ptCost = 160,
         availableUpgrades = {
             cardInfo.upgradeMenu.separatist.force,
@@ -4441,7 +4426,6 @@ function onLoad()
         rank = "Operative"
     }
     cardInfo.unitCards.b1BattleDroids = {
-        guid = "24de",
         ptCost = 36,
         availableUpgrades = {
           cardInfo.upgradeMenu.separatist.b1BattleDroidsTrooper,
@@ -4463,7 +4447,6 @@ function onLoad()
     }
 
     cardInfo.unitCards.b2SuperBattleDroids = {
-        guid = "2h6de",
         ptCost = 45,
         availableUpgrades = {
           cardInfo.upgradeMenu.separatist.b2SuperBattleDroidSpecialist,
@@ -4480,7 +4463,6 @@ function onLoad()
         rank = "Corps"
     }
     cardInfo.unitCards.bxCommandoDroids = {
-        guid = "2h6de",
         ptCost = 68,
         availableUpgrades = {
           cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialist,
@@ -4500,7 +4482,6 @@ function onLoad()
         rank = "Special Forces"
     }
     cardInfo.unitCards.bxCommandoDroidsStrikeTeam = {
-        guid = "2h6de",
         ptCost = 20,
         availableUpgrades = {
           cardInfo.upgradeMenu.separatist.bxCommandoDroidSpecialistLeader,
@@ -4517,7 +4498,6 @@ function onLoad()
         rank = "Special Forces"
     }
     cardInfo.unitCards.drk1SithProbeDroids = {
-        guid = "495ff9",
         ptCost = 35,
         availableUpgrades = {
           cardInfo.upgradeMenu.separatist.comms
@@ -4532,7 +4512,6 @@ function onLoad()
         rank = "Special Forces"
     }
     cardInfo.unitCards.droidekas = {
-        guid = "2g4de",
         ptCost = 80,
         availableUpgrades = {
           cardInfo.upgradeMenu.separatist.emplacementVehicleComms
@@ -4546,7 +4525,6 @@ function onLoad()
         rank = "Support"
     }
     cardInfo.unitCards.STAP = {
-        guid = "2g4de",
         ptCost = 73,
         availableUpgrades = {
           cardInfo.upgradeMenu.separatist.emplacementVehicleComms
@@ -4560,7 +4538,6 @@ function onLoad()
         rank = "Support"
     }
     cardInfo.unitCards.aatTank = {
-        guid = "2g4r4de",
         ptCost = 170,
         availableUpgrades = {
           cardInfo.upgradeMenu.separatist.pilot,
@@ -4578,7 +4555,6 @@ function onLoad()
 
     -- republic
     cardInfo.unitCards.obiWanKenobi = {
-        guid = "3dgggg4f",
         ptCost = 170 , availableUpgrades = {
             cardInfo.upgradeMenu.republic.force,
             cardInfo.upgradeMenu.republic.force,
@@ -4593,7 +4569,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.cloneCaptainRex = {
-        guid = "3dggj74f",
         ptCost = 90 , availableUpgrades = {
             cardInfo.upgradeMenu.republic.leadership,
             cardInfo.upgradeMenu.republic.tactics,
@@ -4609,7 +4584,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.anakinSkywalker = {
-        guid = "3dggj74f",
         ptCost = 160 , availableUpgrades = {
             cardInfo.upgradeMenu.republic.force,
             cardInfo.upgradeMenu.republic.force,
@@ -4625,7 +4599,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.cloneCommander = {
-        guid = "3dggj74f",
         ptCost = 55 , availableUpgrades = {
             cardInfo.upgradeMenu.republic.leadership,
             cardInfo.upgradeMenu.republic.tactics,
@@ -4639,7 +4612,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.republicR2d2 = {
-        guid = "e18gg61",
         ptCost = 45,
         availableUpgrades = {
             cardInfo.upgradeMenu.separatist.comms
@@ -4650,7 +4622,6 @@ function onLoad()
         rank = "Operative"
     }
     cardInfo.unitCards.republicC3po = {
-        guid = "e18l9g61",
         ptCost = 15,
         availableUpgrades = {
         },
@@ -4661,7 +4632,6 @@ function onLoad()
         noToken = true
     }
     cardInfo.unitCards.padme = {
-        guid = "e18gg61",
         ptCost = 90,
         availableUpgrades = {
           cardInfo.upgradeMenu.republic.leadership,
@@ -4675,7 +4645,6 @@ function onLoad()
         rank = "Operative"
     }
     cardInfo.unitCards.phaseICloneTroopers = {
-        guid = "2443de",
         ptCost = 52,
         availableUpgrades = {
             cardInfo.upgradeMenu.republic.phaseICloneTroopersTrooper,
@@ -4683,6 +4652,7 @@ function onLoad()
             cardInfo.upgradeMenu.republic.tech,
             cardInfo.upgradeMenu.republic.tech,
             cardInfo.upgradeMenu.republic.tactics,
+            cardInfo.upgradeMenu.republic.comms,
             cardInfo.upgradeMenu.republic.grenade
         },
         miniInfo = {
@@ -4696,13 +4666,13 @@ function onLoad()
         rank = "Corps"
     }
     cardInfo.unitCards.phaseIICloneTroopers = {
-        guid = "244g4de",
         ptCost = 62,
         availableUpgrades = {
           cardInfo.upgradeMenu.republic.phaseIICloneTrooperSpecialist,
           cardInfo.upgradeMenu.republic.phaseIICloneTroopersTrooper,
           cardInfo.upgradeMenu.republic.tactics,
           cardInfo.upgradeMenu.republic.tech,
+          cardInfo.upgradeMenu.republic.comms,
           cardInfo.upgradeMenu.republic.grenade
         },
         miniInfo = {
@@ -4716,7 +4686,6 @@ function onLoad()
         rank = "Corps"
     }
     cardInfo.unitCards.arcTroopers = {
-        guid = "244g4de",
         ptCost = 78,
         availableUpgrades = {
           cardInfo.upgradeMenu.republic.arcTroopersSpecialist,
@@ -4737,7 +4706,6 @@ function onLoad()
         rank = "Special Forces"
     }
     cardInfo.unitCards.arcTroopersStrikeTeam = {
-        guid = "244g4de",
         ptCost = 27,
         availableUpgrades = {
           cardInfo.upgradeMenu.republic.arcTroopersSpecialistLeader,
@@ -4755,7 +4723,6 @@ function onLoad()
         rank = "Special Forces"
     }
     cardInfo.unitCards.barcSpeeder = {
-        guid = "2g424de",
         ptCost = 60,
         availableUpgrades = {
           cardInfo.upgradeMenu.separatist.emplacementVehicleComms,
@@ -4769,7 +4736,6 @@ function onLoad()
         rank = "Support"
     }
     cardInfo.unitCards.republicATRT = {
-        guid = "5b8d1a",
         ptCost = 65,
         availableUpgrades = {
             cardInfo.upgradeMenu.republic.republicATRTHardPoint,
@@ -4781,7 +4747,6 @@ function onLoad()
         rank = "Support"
     }
     cardInfo.unitCards.saberTank = {
-        guid = "2g4r4de",
         ptCost = 170,
         availableUpgrades = {
           cardInfo.upgradeMenu.republic.tx130Pilot,
@@ -4800,7 +4765,6 @@ function onLoad()
 
     -- REBEL
     cardInfo.unitCards.lukeSkywalker = {
-        guid = "3dc70f",
         ptCost = 160 , availableUpgrades = {
             cardInfo.upgradeMenu.rebel.force,
             cardInfo.upgradeMenu.rebel.force,
@@ -4814,7 +4778,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.lukeSkywalkerJediKnight = {
-        guid = "3dc7405f",
         ptCost = 195 , availableUpgrades = {
             cardInfo.upgradeMenu.rebel.force,
             cardInfo.upgradeMenu.rebel.force,
@@ -4829,7 +4792,6 @@ function onLoad()
         rank = "Operative"
     }
     cardInfo.unitCards.leiaOrgana = {
-        guid = "3dggcd70f",
         ptCost = 90 , availableUpgrades = {
             cardInfo.upgradeMenu.rebel.leadership,
             cardInfo.upgradeMenu.rebel.leadership,
@@ -4843,7 +4805,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.hanSolo = {
-        guid = "3dggc7g0f",
         ptCost = 100 , availableUpgrades = {
             cardInfo.upgradeMenu.rebel.leadership,
             cardInfo.upgradeMenu.rebel.tactics,
@@ -4857,7 +4818,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.jynErso = {
-        guid = "3dggcggg7g0f",
         ptCost = 100 , availableUpgrades = {
             cardInfo.upgradeMenu.rebel.leadership,
             cardInfo.upgradeMenu.rebel.tactics,
@@ -4898,7 +4858,6 @@ function onLoad()
         rank = "Operative",
     }
     cardInfo.unitCards.rebelOfficer = {
-        guid = "3dggcg7g0f",
         ptCost = 45 , availableUpgrades = {
             cardInfo.upgradeMenu.rebel.leadership,
             cardInfo.upgradeMenu.rebel.tech
@@ -4911,7 +4870,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.chewbacca = {
-        guid = "e12cgg8777g61",
         ptCost = 90,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.tactics,
@@ -4924,7 +4882,6 @@ function onLoad()
         rank = "Operative"
     }
     cardInfo.unitCards.sabineWren = {
-        guid = "e12cgg75gg61",
         ptCost = 125,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.tactics,
@@ -4938,7 +4895,6 @@ function onLoad()
         rank = "Operative"
     }
     cardInfo.unitCards.r2d2 = {
-        guid = "e18gg61",
         ptCost = 45,
         availableUpgrades = {
             cardInfo.upgradeMenu.separatist.comms
@@ -4949,7 +4905,6 @@ function onLoad()
         rank = "Operative"
     }
     cardInfo.unitCards.c3po = {
-        guid = "e186g4g61",
         ptCost = 15,
         availableUpgrades = {
         },
@@ -4960,7 +4915,6 @@ function onLoad()
         noToken = true
     }
     cardInfo.unitCards.rebelTrooper = {
-        guid = "2972de",
         ptCost = 40,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.rebelTrooperTrooper,
@@ -4982,7 +4936,6 @@ function onLoad()
         rank = "Corps"
     }
     cardInfo.unitCards.fleetTroopers = {
-        guid = "2972gde",
         ptCost = 40,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.fleetTroopersTrooper,
@@ -5002,7 +4955,6 @@ function onLoad()
         rank = "Corps"
     }
     cardInfo.unitCards.rebelVeterans = {
-        guid = "2g972de",
         ptCost = 48,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.rebelVeteransTrooper,
@@ -5023,7 +4975,6 @@ function onLoad()
         rank = "Corps"
     }
     cardInfo.unitCards.markIIMediumBlasterTrooper = {
-        guid = "2g9gg72de",
         ptCost = 38,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.emplacementVehicleComms
@@ -5036,7 +4987,6 @@ function onLoad()
         rank = "Corps"
     }
     cardInfo.unitCards.rebelCommandos = {
-        guid = "2g97g2ggde",
         ptCost = 50,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.tactics,
@@ -5056,7 +5006,6 @@ function onLoad()
         rank = "Special Forces"
     }
     cardInfo.unitCards.rebelCommandosStrikeTeam = {
-        guid = "2g972ggggde",
         ptCost = 20,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.tactics,
@@ -5073,7 +5022,6 @@ function onLoad()
         rank = "Special Forces"
     }
     cardInfo.unitCards.wookieeWarriors = {
-        guid = "2hg9g72ggde",
         ptCost = 69,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.wookieeWarriorsSpecialist,
@@ -5092,7 +5040,6 @@ function onLoad()
         rank = "Special Forces"
     }
     cardInfo.unitCards.rebelPathfinders = {
-        guid = "2hg9g72gggggde",
         ptCost = 58,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.tactics,
@@ -5113,7 +5060,6 @@ function onLoad()
         rank = "Special Forces"
     }
     cardInfo.unitCards.mandalorianResistance = {
-      guid = "2hg9g72gggggde",
       ptCost = 72,
       availableUpgrades = {
         cardInfo.upgradeMenu.rebel.mandalorianResistanceSpecialist,
@@ -5133,7 +5079,6 @@ function onLoad()
       rank = "Special Forces"
     }
     cardInfo.unitCards.clanWren = {
-      guid = "2hg9g72gggggde",
       ptCost = 34,
       availableUpgrades = {
         cardInfo.upgradeMenu.rebel.clanWrenSpecialist,
@@ -5152,7 +5097,6 @@ function onLoad()
       rank = "Special Forces"
     }
     cardInfo.unitCards.atrt = {
-        guid = "5365a3",
         ptCost = 55,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.atrtHardPoint,
@@ -5164,7 +5108,6 @@ function onLoad()
         rank = "Support"
     }
     cardInfo.unitCards.fdLaserCannonTeam = {
-        guid = "536gg5a3",
         ptCost = 70,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.emplacementVehicleComms,
@@ -5176,7 +5119,6 @@ function onLoad()
         rank = "Support"
     }
     cardInfo.unitCards.tauntaunRiders = {
-        guid = "5365ga3",
         ptCost = 95,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.tactics,
@@ -5188,7 +5130,6 @@ function onLoad()
         rank = "Support"
     }
     cardInfo.unitCards.airSpeeder = {
-        guid = "9ee47a",
         ptCost = 130,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.repulsorPilot,
@@ -5201,7 +5142,6 @@ function onLoad()
         rank = "Heavy"
     }
     cardInfo.unitCards.x34Landspeeder = {
-        guid = "9eegg47a",
         ptCost = 60,
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.repulsorPilot,
@@ -5218,7 +5158,6 @@ function onLoad()
 
     -- IMPERIAL
     cardInfo.unitCards.darthVader = {
-        guid = "e12c61",
         ptCost = 175,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.force,
@@ -5231,7 +5170,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.darthVaderTheEmperorsApprentice = {
-        guid = "e124g4c61",
         ptCost = 155,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.force,
@@ -5244,7 +5182,6 @@ function onLoad()
         rank = "Operative"
     }
     cardInfo.unitCards.generalVeers = {
-        guid = "e12cg61",
         ptCost = 80,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.leadership,
@@ -5257,7 +5194,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.emperorPalpatine = {
-        guid = "e1g2cg61",
         ptCost = 200,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.force,
@@ -5271,7 +5207,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.directorOrsonKrennic = {
-        guid = "e1g2cgg61",
         ptCost = 90,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.leadership,
@@ -5308,7 +5243,6 @@ function onLoad()
         noToken = true
     }
     cardInfo.unitCards.imperialOfficer = {
-        guid = "e1g2cggg61",
         ptCost = 45,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.leadership,
@@ -5320,7 +5254,6 @@ function onLoad()
         rank = "Commander"
     }
     cardInfo.unitCards.bobaFett = {
-        guid = "e12cgg61",
         ptCost = 125,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.tactics,
@@ -5334,7 +5267,6 @@ function onLoad()
         rank = "Operative"
     }
     cardInfo.unitCards.bossk = {
-        guid = "e12gcgg6g1",
         ptCost = 115,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.tactics,
@@ -5347,7 +5279,6 @@ function onLoad()
         rank = "Operative"
     }
     cardInfo.unitCards.stormtrooper = {
-        guid = "6b166a",
         ptCost = 44,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.stormtrooperTrooper,
@@ -5366,7 +5297,6 @@ function onLoad()
         rank = "Corps"
     }
     cardInfo.unitCards.snowtrooper = {
-        guid = "6b16g6a",
         ptCost = 44,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.snowtrooperTrooper,
@@ -5383,7 +5313,6 @@ function onLoad()
         rank = "Corps"
     }
     cardInfo.unitCards.shoretroopers = {
-        guid = "6b1gg6g6a",
         ptCost = 52,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.shoretroopersTrooper,
@@ -5404,7 +5333,6 @@ function onLoad()
         rank = "Corps"
     }
     cardInfo.unitCards.df90MortarTrooper = {
-        guid = "6b1ggg6g6a",
         ptCost = 38,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.emplacementVehicleComms
@@ -5417,7 +5345,6 @@ function onLoad()
         rank = "Corps"
     }
     cardInfo.unitCards.scoutTroopers = {
-        guid = "2ghh972ggde",
         ptCost = 48,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.tactics,
@@ -5437,7 +5364,6 @@ function onLoad()
         rank = "Special Forces"
     }
     cardInfo.unitCards.scoutTroopersStrikeTeam = {
-        guid = "2gh9g72gggde",
         ptCost = 20,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.tactics,
@@ -5454,7 +5380,6 @@ function onLoad()
         rank = "Special Forces"
     }
     cardInfo.unitCards.imperialRoyalGuards = {
-        guid = "2gh97g2gggde",
         ptCost = 75,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.imperialRoyalGuardsSpecialist,
@@ -5473,7 +5398,6 @@ function onLoad()
         rank = "Special Forces"
     }
     cardInfo.unitCards.imperialDeathTroopers = {
-        guid = "2gh97g2ggggde",
         ptCost = 76,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.tactics,
@@ -5494,7 +5418,6 @@ function onLoad()
         rank = "Special Forces"
     }
     cardInfo.unitCards.isf = {
-      guid = "2gh97g2ggggde",
       ptCost = 68,
       availableUpgrades = {
         cardInfo.upgradeMenu.imperial.isfSpecialist,
@@ -5515,7 +5438,6 @@ function onLoad()
       rank = "Special Forces"
     }
     cardInfo.unitCards.infernoSquad = {
-      guid = "2gh97g2ggggde",
       ptCost = 34,
       availableUpgrades = {
         cardInfo.upgradeMenu.imperial.infernoSquadSpecialist,
@@ -5534,7 +5456,6 @@ function onLoad()
       rank = "Special Forces"
     }
     cardInfo.unitCards.speederBike = {
-        guid = "b87e92",
         ptCost = 75,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.emplacementVehicleComms
@@ -5547,7 +5468,6 @@ function onLoad()
         rank = "Support"
     }
     cardInfo.unitCards.eWebHeavyBlasterTeam = {
-        guid = "bg87e9g2",
         ptCost = 55,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.emplacementVehicleComms,
@@ -5561,7 +5481,6 @@ function onLoad()
         rank = "Support"
     }
     cardInfo.unitCards.dewbackRider = {
-        guid = "bg87e9gg2",
         ptCost = 75,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.tactics,
@@ -5576,7 +5495,6 @@ function onLoad()
         rank = "Support"
     }
     cardInfo.unitCards.atst = {
-        guid = "12b447",
         ptCost = 160,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.groundPilot,
@@ -5594,7 +5512,6 @@ function onLoad()
         rank = "Heavy"
     }
     cardInfo.unitCards.tx225 = {
-        guid = "12b4gg47",
         ptCost = 145,
         availableUpgrades = {
             cardInfo.upgradeMenu.imperial.groundPilot,

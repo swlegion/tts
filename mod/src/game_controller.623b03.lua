@@ -1149,4 +1149,3 @@ function enableExperimentalFeatures()
     blueListBuilder.UI.show("mainPanel")
     redListBuilder.UI.show("mainPanel")
 end
-
