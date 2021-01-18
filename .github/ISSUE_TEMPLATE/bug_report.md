@@ -7,6 +7,9 @@ assignees: ''
 
 ---
 
+> NOTE: We will close all bugs related to the point costs in the list builder:
+> https://github.com/swlegion/tts/wiki/FAQ#i-am-able-to-create-a-list-that-is-not-legal
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
