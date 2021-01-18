@@ -1,0 +1,4 @@
+{
+  "language": "en",
+  "ignorePaths": ["contrib/**", "*.json", ".vscode/*.json"]
+}
