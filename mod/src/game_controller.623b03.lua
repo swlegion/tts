@@ -265,12 +265,19 @@ end
 function featuredMapsMenu()
   printToScreen("FEATURED MAPS\n\nThese are maps featured by the community.\n\nSee https://go.swlegion.dev/maps for details.", 80, 3)
   changeBackButton("mapMenu", "Go back to Maps Menu")
+  local buttonTint = {0,0.913,1}
   local menuEntries = {
     {
       label = "Competitive",
       tooltip = "View Competitive Maps",
       functionName = "featuredCompetitiveMenu",
-      buttonTint = {0,0.913,1},
+      buttonTint = buttonTint,
+    },
+    {
+      label = "Skirmish",
+      tooltip = "View Skirmish (3x3) Maps",
+      functionName = "featuredSkirmisMenu",
+      buttonTint = buttonTint,
     }
   }
   createMenu(menuEntries, 1)
@@ -280,6 +287,25 @@ function featuredCompetitiveMenu()
   printToScreen("FEATURED MAPS\n\nThese are maps featured by the community.\n\nSee https://go.swlegion.dev/maps for details.", 80, 3)
   changeBackButton("featuredMapsMenu", "Go back to featured maps")
   local url = "https://raw.githubusercontent.com/swlegion/tts/master/contrib/maps/competitive.json"
+  WebRequest.get(url, function(data)
+    local items = JSON.decode(data.text)
+    local menu = {}
+    for _, entry in pairs(items) do
+      table.insert(menu, {
+        label = entry['name'],
+        tooltip = 'Download map',
+        url = entry['url'],
+        buttonTint = {0,0.913,1}
+      })
+    end
+    createMenu(menu, 1)
+  end)
+end
+
+function featuredSkirmisMenu()
+  printToScreen("FEATURED MAPS\n\nThese are maps featured by the community.\n\nSee https://go.swlegion.dev/maps for details.\n\nFull support for Skirmish is currently limited:\nhttps://go.swlegion.dev/skirmish.", 80, 3)
+  changeBackButton("featuredMapsMenu", "Go back to featured maps")
+  local url = "https://raw.githubusercontent.com/swlegion/tts/master/contrib/maps/skirmish.json"
   WebRequest.get(url, function(data)
     local items = JSON.decode(data.text)
     local menu = {}
