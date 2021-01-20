@@ -220,6 +220,7 @@ function onLoad()
 
     unitIDTokenBagGUID = "21550f"
 
+    Wait.time(initHotkeys, 1)
 
     -- unitInfo
     unitInfo = {}
@@ -5955,26 +5956,59 @@ function initChessClocks(guids)
   end
 end
 
--- Event handler for all scripting button presses
--- 1 = toggle chess clocks
--- 2 = pause all chess clocks
-function onScriptingButtonUp(index, color)
-  local clocks = {
+-- Builds all mod-specific hotkeys. Players can customize key bindings via in-game menus
+-- addHotkey is preferred over onScriptingButton[Up|Down] due to customizability by players
+function initHotkeys()
+  initTokenHotkeys()
+  initChessClockHotkeys()
+end
+
+function initTokenHotkeys()
+  globalBagGUIDs = {
+    Aim = aimBagGUID,
+    Dodge = dodgeBagGUID,
+    Standby = standbyBagGUID,
+    Surge = surgeBagGUID,
+    Suppression = suppressionBagGUID,
+    Smoke = smokeBagGUID,
+    Ion = ionBagGUID,
+    Wound = woundBagGUID,
+    -- add more key,value pairs in here once Global has more bagGUID vars added
+  }
+
+  for hotkeyName,bagGUID in pairs (globalBagGUIDs) do
+    addHotkey(
+      "Deliver "..hotkeyName.." to Cursor",
+      function(playerColor, hoverObject, cursorPosition)
+        -- local bagGUID = Global.getVar(varName)
+        if bagGUID then
+          local bag = getObjectFromGUID(bagGUID)
+          if bag ~= nil then
+            bag.takeObject({
+              position = cursorPosition + Vector({0,1,0}),
+              smooth = false, -- remove this if you want to keep the animation
+            })
+          end
+        end
+      end
+    )
+  end
+end
+
+function initChessClockHotkeys()
+  clocks = {
     Blue = getObjectFromGUID(clockGUIDs.blue).Clock,
     Red = getObjectFromGUID(clockGUIDs.red).Clock
   }
-  if index == 1 then
-    toggleChessClocks(color, clocks)
-  elseif index == 2 then
-    pauseAllChessClocks(clocks)
-  end
+  addHotkey("Toggle Chess Clocks", toggleChessClocks)
+  addHotkey("Pause All Chess Clocks", pauseAllChessClocks)
 end
 
 -- Toggles the active clock between Red and Blue
 -- If neither clock is currently active, activates Blue
-function toggleChessClocks(color, clocks)
-  if not clocks[color] then
-    broadcastToAll('Only players can use chess clocks')
+function toggleChessClocks(playerColor, hoveredObject, worldPosition, keyDownUp)
+  if not clocks[playerColor] then
+    broadcastToAll('Only players can toggle chess clocks')
     return
   end
   -- Returns the name of the player currently on the clock
@@ -6006,7 +6040,7 @@ function toggleChessClocks(color, clocks)
 end
 
 -- Calls pauseStart() for each clock that is not already paused
-function pauseAllChessClocks(clocks)
+function pauseAllChessClocks(playerColor, hoveredObject, worldPosition, keyDownUp)
   for k, v in pairs(clocks) do
     if not v.paused then v.pauseStart() end
   end
