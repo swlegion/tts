@@ -3193,59 +3193,60 @@ function onLoad()
         scale = {1,1,1},
         name = "DP-23 Phase I Trooper"
     }
+    local phaseIITexture = "http://cloud-3.steamusercontent.com/ugc/1028455893321728189/3FB4241F32F35813B6A934FCD3030D3F3D5B7090/"
     miniInfo.phaseIICloneTrooperLeader = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456805632/5EFC453DA5756A419155D7A2564F30D078A16998/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1028455893321070793/294DC7F7A6BE9E31AB2823745854EF8C31D3281A/",
         collider = _BASE_COLLIDERS.small,
-        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        red = phaseIITexture,
+        blue = phaseIITexture,
         scale = {1,1,1},
         name = "Phase II Clone Trooper Leader"
     }
     miniInfo.phaseIICloneTrooper1 = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806277/B6E8E97A784420BE0BA72D4DDD8288A4BF3943D3/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1028455893321407636/9315381415E55B835F091392658CBFDED02249F3/",
         collider = _BASE_COLLIDERS.small,
-        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        red = phaseIITexture,
+        blue = phaseIITexture,
         scale = {1,1,1},
         name = "Phase II Clone Trooper"
     }
     miniInfo.phaseIICloneTrooper2 = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806431/B4EA83469C800B6B5B0506EE6E6ABE30D00D80DB/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1028455893321577529/3034903B0501BE08E398BCC7F0D735B308DA9377/",
         collider = _BASE_COLLIDERS.small,
-        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        red = phaseIITexture,
+        blue = phaseIITexture,
         scale = {1,1,1},
         name = "Phase II Clone Trooper"
     }
     miniInfo.phaseIICloneTrooper3 = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456953028/A36587741C54DCDDAAFE60A0D253077D9DDE575D/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1028455893321405998/BF99DA12AC60F2548F73F5D0D001419BFBFA5CB1/",
         collider = _BASE_COLLIDERS.small,
-        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        red = phaseIITexture,
+        blue = phaseIITexture,
         scale = {1,1,1},
         name = "Phase II Clone Trooper"
     }
     miniInfo.phaseIICloneTrooper4 = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806596/C3FFC651464D351B03E7EC77F3E341DFFF4F7ABF/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1028455893321406830/59DC907FEFEF65FBAF245A3B31A4251026FC93AA/",
         collider = _BASE_COLLIDERS.small,
-        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        red = phaseIITexture,
+        blue = phaseIITexture,
         scale = {1,1,1},
         name = "Phase II Clone Trooper"
     }
     miniInfo.z6PhaseIITrooper = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873393876/DEDAF52B0D07E0F2A2BCB54DE9A56E4FA437A3E4/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1028455893321579074/D5F10426146B81D46F02B027B9C4CC875FA6DA00/",
         collider = _BASE_COLLIDERS.small,
-        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        red = phaseIITexture,
+        blue = phaseIITexture,
         scale = {1,1,1},
         name = "Z-6 Phase II Trooper"
     }
     miniInfo.mortarPhaseIITrooper = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/775118071080760009/33226FCCF4EADF6281591F38CC3F6DBBF7036812/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1028455893321578281/CBFA560559FE81326342AD0B65D2349447F882EB/",
         collider = _BASE_COLLIDERS.small,
-        red = "http://cloud-3.steamusercontent.com/ugc/775118071080760988/3EE188D6DB407DF3B33D2697F0BF3E003F7DA281/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/775118071080760988/3EE188D6DB407DF3B33D2697F0BF3E003F7DA281/",
+        red = phaseIITexture,
+        blue = phaseIITexture,
         scale = {1,1,1},
         name = "Phase II Mortar Trooper"
     }
