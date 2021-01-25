@@ -377,6 +377,15 @@ function onLoad()
     unitInfo.cassianAndor.squadStatus = false
     unitInfo.cassianAndor.buttonHeight = 2
 
+    unitInfo.landoCalrissian = {}
+    unitInfo.landoCalrissian.commandType = "rebelCommander"
+    unitInfo.landoCalrissian.baseSize = "small"
+    unitInfo.landoCalrissian.fixedMove = false
+    unitInfo.landoCalrissian.selectedSpeed = 2
+    unitInfo.landoCalrissian.fixedArc = false
+    unitInfo.landoCalrissian.squadStatus = false
+    unitInfo.landoCalrissian.buttonHeight = 2
+
     unitInfo.chewbacca = {}
     unitInfo.chewbacca.commandType = "rebelOperative"
     unitInfo.chewbacca.baseSize = "small"
@@ -550,6 +559,15 @@ function onLoad()
     unitInfo.imperialOfficer.fixedArc = false
     unitInfo.imperialOfficer.squadStatus = false
     unitInfo.imperialOfficer.buttonHeight = 2
+
+    unitInfo.agentKallus = {}
+    unitInfo.agentKallus.commandType = "imperialCommander"
+    unitInfo.agentKallus.baseSize = "small"
+    unitInfo.agentKallus.fixedMove = false
+    unitInfo.agentKallus.selectedSpeed = 2
+    unitInfo.agentKallus.fixedArc = false
+    unitInfo.agentKallus.squadStatus = false
+    unitInfo.agentKallus.buttonHeight = 2
 
     unitInfo.bobaFett = {}
     unitInfo.bobaFett.commandType = "imperialOperative"
@@ -1166,6 +1184,10 @@ function onLoad()
         -- Here, versus .id10, because .id10 is a "noToken" and doesn't check cards.
         cards2 = {"Ambush", "Incapacitate", "Assault"}
     }
+    listBuilder.commandCards.agentKallus = {
+        varName = "agentKallus",
+        cards = {"Face Me!", "Push", "Assault"}
+    }
     listBuilder.commandCards.bobaFett = {
         varName = "bobaFett",
         cards = {"Whipcord Launcher", "ZX Flame Projector", "Z-6 Jetpack Rocket"}
@@ -1224,6 +1246,10 @@ function onLoad()
     }
     listBuilder.commandCards.rebelOfficer = {
         varName = "rebelOfficer"
+    }
+    listBuilder.commandCards.landoCalrissian = {
+        varName = "landoCalrissian",
+        cards = {"Ambush", "Ace Up His Sleeve", "Assault"}
     }
     -- SEPARATIST
     listBuilder.commandCards.generalGrievous = {
@@ -1359,6 +1385,7 @@ function onLoad()
     templateMenu.imperial.commander[4] = {name = "Director Orson Krennic", varName = "directorOrsonKrennic"}
     templateMenu.imperial.commander[5] = {name = "Iden Versio", varName = "idenVersio"}
     templateMenu.imperial.commander[6] = {name = "Imperial Officer", varName = "imperialOfficer"}
+    templateMenu.imperial.commander[7] = {name = "Agent Kallus", varName = "agentKallus"}
 
     templateMenu.imperial.operative = {}
     templateMenu.imperial.operative[1] = {name = "Boba Fett", varName = "bobaFett"}
@@ -1588,6 +1615,14 @@ function onLoad()
         blue = "http://cloud-3.steamusercontent.com/ugc/770611701143191344/5CAA4F0CE9A3FBE89A81560221ADCDDB5A801CC3/",
         scale = {1,1,1},
         name = "Cassian Andor"
+    }
+    miniInfo.landoCalrissian = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1666859827674318376/E0A03ACDC6D2F607B8CC0C406AE196A9DB5347B7/",
+        collider = _BASE_COLLIDERS.small,
+        red = "http://cloud-3.steamusercontent.com/ugc/1666859827674318640/6674121C184DF4BBD67EAB0DAA75F6B41A93669A/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1666859827674318640/6674121C184DF4BBD67EAB0DAA75F6B41A93669A/",
+        scale = {1,1,1},
+        name = "Lando Calrissian"
     }
     miniInfo.k2so = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/773996263557000439/C9EA2A27264C73E42C016FE26E665CBB75F8E7DE/",
@@ -2193,6 +2228,14 @@ function onLoad()
         blue = "http://cloud-3.steamusercontent.com/ugc/770611889399999868/37F150131345FF1F47592A96239395A583AAE5EA/",
         scale = {1,1,1},
         name = "ID10"
+    }
+    miniInfo.agentKallus = {
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1666859827673303054/77A1D7624FA565991825B19513DBE6B70BD4F93C/",
+        collider = _BASE_COLLIDERS.small,
+        red = "http://cloud-3.steamusercontent.com/ugc/1666859827673291479/CA1D69C65D0F6FD2AE838BFFA3FD85A48CCBFB6C/",
+        blue = "http://cloud-3.steamusercontent.com/ugc/1666859827673291479/CA1D69C65D0F6FD2AE838BFFA3FD85A48CCBFB6C/",
+        scale = {1,1,1},
+        name = "Agent Kallus"
     }
     miniInfo.imperialOfficer = {
         mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541565898/F06AB6731446249164D34ACA208E4FAE70C6FE00/",
@@ -3564,7 +3607,7 @@ function onLoad()
     cardInfo.upgradeCards.cloneMedic = {name = "Clone Medic", ptCost = 20, miniGUID = "gadfr", miniInfo = miniInfo.cloneMedic,varName="cloneMedic"}
 
     cardInfo.upgradeCards.pao = {name = "Pao", ptCost = 22, miniGUID = "gadfr", miniInfo = miniInfo.pao,varName="pao"}
-    cardInfo.upgradeCards.bistan = {name = "Bistan", ptCost = 32, miniGUID = "ggfr", miniInfo = miniInfo.bistan,varName="bistan"}
+    cardInfo.upgradeCards.bistan = {name = "Bistan", ptCost = 28, miniGUID = "ggfr", miniInfo = miniInfo.bistan,varName="bistan"}
 
     cardInfo.upgradeCards.dtf16 = {name = "DT-F16", ptCost = 22, miniGUID = "gghgfgfar", miniInfo = miniInfo.dtf16,varName="dtf16"}
     cardInfo.upgradeCards.dlt19DTrooper = {name = "DLT-19D Trooper", ptCost = 34, miniGUID = "gghggfgfar", miniInfo = miniInfo.dlt19DTrooper,varName="dlt19DTrooper"}
@@ -3683,7 +3726,7 @@ function onLoad()
     cardInfo.upgradeCards.idensDLT20ARifle = {name = "Idens DLT-20A Rifle", ptCost = 15, varName = "idensDLT20ARifle"}
     cardInfo.upgradeCards.idensTL50Repeater = {name = "Idens TL-50 Repeater", ptCost = 15, varName = "idensTL50Repeater"}
     cardInfo.upgradeCards.e11D = {name = "E-11D", ptCost = 8, varName = "e11D"}
-    cardInfo.upgradeCards.theDarksaber = {name = "The Darksaber", ptCost = 25, varName = "theDarksaber"}
+    cardInfo.upgradeCards.theDarksaber = {name = "The Darksaber", ptCost = 15, varName = "theDarksaber"}
     cardInfo.upgradeCards.dt57Annihilator = {name = 'DT-57 "Annihilator"', ptCost = 12, varName = "dt57Annihilator"}
     cardInfo.upgradeCards.vibroswords = {name = 'Vibroswords', ptCost = 6, varName = "vibroswords"}
     cardInfo.upgradeCards.deflectorShields = {name = 'Deflector Shields', ptCost = 18, varName = "deflectorShields"}
@@ -3694,7 +3737,7 @@ function onLoad()
     cardInfo.upgradeCards.rt97cBlasterRifle = {name = "RT-97C Blaster Rifle", ptCost = 10, varName = "rt97cBlasterRifle"}
     cardInfo.upgradeCards.cr24FlameRifle = {name = "CR-24 Flame Rifle", ptCost = 15, varName = "cr24FlameRifle"}
     cardInfo.upgradeCards.t21BlasterRifle = {name = "T-21 Blaster Rifle", ptCost = 5, varName = "t21BlasterRifle"}
-
+    cardInfo.upgradeCards.j19BoRifleBlasterStaff = {name = 'J-19 Bo-rifle Blaster/Staff"', ptCost = 25, varName = "j19BoRifleBlasterStaff"}
 
       -- upgradeMenu
     cardInfo.upgradeMenu = {}
@@ -3839,7 +3882,10 @@ function onLoad()
         cardInfo.upgradeCards.battleMeditation,
         cardInfo.upgradeCards.forceGuidance,
         cardInfo.upgradeCards.hope,
-        cardInfo.upgradeCards.forceBarrier
+        cardInfo.upgradeCards.forceBarrier,
+        cardInfo.upgradeCards.forceChoke,
+        cardInfo.upgradeCards.anger,
+        cardInfo.upgradeCards.fear
     }
     cardInfo.upgradeMenu.republic.comms = {
         cardInfo.upgradeCards.commsJammer,
@@ -4345,7 +4391,9 @@ function onLoad()
         cardInfo.upgradeCards.cr24FlameRifle,
         cardInfo.upgradeCards.t21BlasterRifle
     }
-
+    cardInfo.upgradeMenu.imperial.agentKallusSideArm = {
+        cardInfo.upgradeCards.j19BoRifleBlasterStaff
+    }
 
     -- unitCard GUID
     cardInfo.unitCardsGUID = "8e9aea"
@@ -4846,6 +4894,20 @@ function onLoad()
         fullName = "Cassian Andor",
         rank = "Commander"
     }
+    cardInfo.unitCards.landoCalrissian = {
+        ptCost = 105 ,
+        availableUpgrades = {
+            cardInfo.upgradeMenu.rebel.leadership,
+            cardInfo.upgradeMenu.rebel.tactics,
+            cardInfo.upgradeMenu.rebel.tech
+        },
+        miniInfo = {
+            miniInfo.landoCalrissian
+        },
+        tokenName = "Rebel Commander Command Token",
+        fullName = "Lando Calrissian",
+        rank = "Commander"
+    }
     cardInfo.unitCards.k2so = {
         ptCost = 70,
         availableUpgrades = {
@@ -5241,6 +5303,21 @@ function onLoad()
         fullName = "Idens ID10 Seeker Droid",
         rank = "Counterpart",
         noToken = true
+    }
+    cardInfo.unitCards.agentKallus = {
+        ptCost = 90 ,
+        availableUpgrades = {
+            cardInfo.upgradeMenu.imperial.leadership,
+            cardInfo.upgradeMenu.imperial.tactics,
+            cardInfo.upgradeMenu.imperial.tech,
+            cardInfo.upgradeMenu.imperial.agentKallusSideArm
+        },
+        miniInfo = {
+            miniInfo.agentKallus
+        },
+        tokenName = "Imperial Commander Command Token",
+        fullName = "Agent Kallus",
+        rank = "Commander"
     }
     cardInfo.unitCards.imperialOfficer = {
         ptCost = 45,
