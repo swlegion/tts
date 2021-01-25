@@ -3737,7 +3737,7 @@ function onLoad()
     cardInfo.upgradeCards.rt97cBlasterRifle = {name = "RT-97C Blaster Rifle", ptCost = 10, varName = "rt97cBlasterRifle"}
     cardInfo.upgradeCards.cr24FlameRifle = {name = "CR-24 Flame Rifle", ptCost = 15, varName = "cr24FlameRifle"}
     cardInfo.upgradeCards.t21BlasterRifle = {name = "T-21 Blaster Rifle", ptCost = 5, varName = "t21BlasterRifle"}
-    cardInfo.upgradeCards.j19BoRifleBlasterStaff = {name = 'J-19 Bo-rifle Blaster/Staff"', ptCost = 25, varName = "j19BoRifleBlasterStaff"}
+    cardInfo.upgradeCards.j19BoRifleBlasterStaff = {name = 'J-19 Bo-rifle Blaster/Staff', ptCost = 25, varName = "j19BoRifleBlasterStaff"}
 
       -- upgradeMenu
     cardInfo.upgradeMenu = {}
