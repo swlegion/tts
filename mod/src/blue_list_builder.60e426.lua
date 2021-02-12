@@ -948,4 +948,3 @@ function importFromText(nothing, text)
   print(text)
   loadArmyFromJSON(text)
 end
-
