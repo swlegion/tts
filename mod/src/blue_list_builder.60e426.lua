@@ -177,7 +177,6 @@ function spawnMini(colorSide, miniSpawnPos, miniSpawnRot, miniData)
           type           = "Custom_AssetBundle",
           position       = miniSpawnPos,
           rotation       = miniSpawnRot,
-          scale          = miniSpawnScale
       })
       funcSpawnedMini.setCustomObject({
           assetbundle = miniData.assetbundle,
@@ -190,7 +189,6 @@ function spawnMini(colorSide, miniSpawnPos, miniSpawnRot, miniData)
           type           = "Custom_Model",
           position       = miniSpawnPos,
           rotation       = miniSpawnRot,
-          scale          = miniSpawnScale
       })
       funcSpawnedMini.setCustomObject({
           mesh = miniData.mesh,

@@ -48,21 +48,6 @@ function onLoad()
 
 end
 
-
-function waitToStandby(waitTime)
-    local timerCounter = Global.getVar("timerCounter")
-    timerCounter = timerCounter + 1
-    Global.setVar("timerCounter", timerCounter)
-
-    Timer.create({
-        identifier = "timerStandby"..timerCounter,
-        function_name = "standby",
-        function_owner = self,
-        delay = waitTime
-    })
-
-end
-
 --
 function setTemplateVariables()
     unitData.aStart = templateInfo.aStart[unitData.baseSize][unitData.selectedSpeed]
@@ -195,33 +180,6 @@ function getSelectedUnitObjVariables()
     end
 end
 
-
-
-------------------------------------------------- ON ENTER/LEAVE BATTLEFIELD ------------------------------------------------------------
-
-function onObjectEnterScriptingZone(zone, enter_object)
-
-    if self.getName() != " " then
-        if enter_object != nil and zone == battlefieldZone and enter_object.getTable("unitData") != nil then
-            if enter_object.getTable("unitData").commandType == unitData.tokenCommandType and enter_object.getVar("colorSide") == colorSide then
-                waitToStandby(0.1)
-            end
-        end
-    end
-
-end
-
-function onObjectLeaveScriptingZone(zone, leave_object)
-    if self.getName() != " " then
-        if leave_object != nil and zone == battlefieldZone and leave_object.getTable("unitData") != nil then
-            if leave_object.getTable("unitData").commandType == unitData.tokenCommandType and leave_object.getVar("colorSide") == colorSide then
-                waitToStandby(0.1)
-            end
-        end
-    end
-end
-
-
 ------------------------------------------------- STANDBY ------------------------------------------------------------
 function initialize()
 
@@ -257,7 +215,6 @@ function createStandbyButtons()
 end
 
 function standby()
-
     activated = false
     self.clearButtons()
     clearTemplates()
@@ -1395,3 +1352,4 @@ function refreshTimer()
     timerCounter = timerCounter + 1
     Global.setVar("timerCounter", timerCounter)
 end
+
