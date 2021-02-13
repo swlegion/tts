@@ -1,7 +1,7 @@
 {
   "Save": {
-    "SaveName": "STAR WARS LEGION",
-    "GameMode": "STAR WARS LEGION",
+    "SaveName": "Star Wars Legion",
+    "GameMode": "Star Wars Legion",
     "Date": "2/11/2021 4:47:52 PM",
     "VersionNumber": "v13.0.5",
     "GameType": "",
@@ -170,9 +170,9 @@
       null
     ],
     "DecalPallet": [],
-    "LuaScript": "#include ./STAR WARS LEGION.lua",
+    "LuaScript": "#include ./Star Wars Legion.lua",
     "LuaScriptState": "{\"globalData\":{\"battlefieldTint\":{\"b\":0.258823529411765,\"g\":0.258823529411765,\"r\":0.258823529411765},\"hostName\":\"tieren\"}}",
-    "XmlUI": "#include ./STAR WARS LEGION.xml",
+    "XmlUI": "#include ./Star Wars Legion.xml",
     "CustomUIAssets": [
       {
         "Name": "PalpatinePoster",
