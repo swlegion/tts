@@ -3,12 +3,12 @@
     "GUID": "b20553",
     "Name": "Custom_Model",
     "Transform": {
-      "posX": 41.2904778,
-      "posY": 0.941932142,
-      "posZ": 15.4580355,
-      "rotX": -0.0000108605491,
-      "rotY": 89.9867249,
-      "rotZ": -0.00160328753,
+      "posX": 47.5776978,
+      "posY": 0.941978037,
+      "posZ": 17.0986,
+      "rotX": 0.00140531245,
+      "rotY": 149.985886,
+      "rotZ": -0.0008079432,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -19,7 +19,7 @@
     "ColorDiffuse": {
       "r": 0.7294118,
       "g": 0.5921568,
-      "b": 0.4588232
+      "b": 0.458823264
     },
     "LayoutGroupSortIndex": 0,
     "Locked": false,
@@ -48,4 +48,6 @@
     "XmlUI": ""
   },
   "StatesPaths": {}
+}
+{}
 }
