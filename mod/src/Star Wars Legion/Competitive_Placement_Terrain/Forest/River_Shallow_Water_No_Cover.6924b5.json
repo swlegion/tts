@@ -1,0 +1,53 @@
+{
+  "Object": {
+    "GUID": "6924b5",
+    "Name": "Custom_Token",
+    "Transform": {
+      "posX": 78.69558,
+      "posY": 2.64916229,
+      "posZ": 0.1507116,
+      "rotX": 358.680969,
+      "rotY": 150.852432,
+      "rotZ": 357.432465,
+      "scaleX": 5.05075932,
+      "scaleY": 1,
+      "scaleZ": 5.05075932
+    },
+    "Nickname": "River (Shallow Water) [No Cover]",
+    "Description": "No Cover:\nAll\n\nRiver:\nTroopers - Difficult\nG. Vehicle - Difficult\nRepulsor - Impassable",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/785234780858761875/20CEE36E425A36606C84F505B917EE1A9B906049/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.2,
+        "MergeDistancePixels": 15,
+        "StandUp": false,
+        "Stackable": false
+      }
+    },
+    "LuaScript": "#include ./River_Shallow_Water_No_Cover.6924b5.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

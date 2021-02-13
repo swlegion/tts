@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "6818b0",
+    "Name": "Card",
+    "Transform": {
+      "posX": 96.19307,
+      "posY": 2.045672,
+      "posZ": -21.5605316,
+      "rotX": 0.000008930188,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "Shoretrooper",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 37007,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "370": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/773993114089672696/71BF713F022FA26AEB92339A6EDD68A88F8CCBF2/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/773993114089672696/71BF713F022FA26AEB92339A6EDD68A88F8CCBF2/",
+        "NumWidth": 6,
+        "NumHeight": 4,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

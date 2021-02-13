@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "3c1b44",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 27.7407913,
+      "posY": 1.44170737,
+      "posZ": -7.45986843,
+      "rotX": -0.001603725,
+      "rotY": 179.972031,
+      "rotZ": 0.000001113692,
+      "scaleX": 1.5,
+      "scaleY": 1.4999907,
+      "scaleZ": 1.50000012
+    },
+    "Nickname": "Small Shop [Heavy Cover]",
+    "Description": "Heavy Cover:\nMini size 3 and below\n\nSides:\nAll - Impassable\nMinis with size > 3 treat this as difficult terrain\n\nRoof:\nAll - Open\n\nHeight: 1\n\nSmall-base trooper units with the leader in base contact with the ladder gain Scale.\n\nSpecial Thanks: www.imperialterrain.com",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.83449465,
+      "g": 0.83449465,
+      "b": 0.83449465
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": true,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://gist.githubusercontent.com/nashjaee/5e004addd952d045cfac73aba67fac82/raw/6bf8f12fe77f4650298a69829acf44a814ffc388/building11_model.txt",
+      "DiffuseURL": "https://i.imgur.com/LZqtS2L.jpg",
+      "NormalURL": "",
+      "ColliderURL": "https://gist.githubusercontent.com/nashjaee/8693bff713adc58b47126301a4b8c3d0/raw/4bf7471eeec1ff51ee3e32c9a33fdd0e3df0223f/building11_collider.txt",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Small_Shop_Heavy_Cover.3c1b44.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "10483c",
+    "Name": "Custom_Assetbundle",
+    "Transform": {
+      "posX": 54.1482162,
+      "posY": 1.1744957,
+      "posZ": 14.5424576,
+      "rotX": -0.00230111252,
+      "rotY": 269.972778,
+      "rotZ": 0.003670276,
+      "scaleX": 0.22,
+      "scaleY": 0.250000417,
+      "scaleZ": 0.22
+    },
+    "Nickname": "Setup Objective Button",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0.913,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/267231170580138054/83B9C07DD90D4FA8F3DE016617A6BF0BC935D9FF/",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 0,
+      "TypeIndex": 0,
+      "LoopingEffectIndex": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

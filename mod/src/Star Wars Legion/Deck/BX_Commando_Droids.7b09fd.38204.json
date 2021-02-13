@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "7b09fd",
+    "Name": "Card",
+    "Transform": {
+      "posX": 53.2152748,
+      "posY": 2.233575,
+      "posZ": -14.8340654,
+      "rotX": -0.00000389428442,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 0.227068469,
+      "scaleY": 1,
+      "scaleZ": 0.227068469
+    },
+    "Nickname": "BX Commando Droids",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 38204,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "382": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775122858930997637/1DD6C80C739D5AA7B4EF821BF7A44ADBCBC972F7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/775122858930997637/1DD6C80C739D5AA7B4EF821BF7A44ADBCBC972F7/",
+        "NumWidth": 3,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

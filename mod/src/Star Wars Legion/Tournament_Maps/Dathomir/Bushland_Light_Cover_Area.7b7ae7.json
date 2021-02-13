@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "7b7ae7",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -10.4647837,
+      "posY": 0.776423454,
+      "posZ": 0.503045738,
+      "rotX": -0.00138934213,
+      "rotY": 209.983521,
+      "rotZ": -0.000809442543,
+      "scaleX": 0.350000083,
+      "scaleY": 0.350000083,
+      "scaleZ": 0.350000083
+    },
+    "Nickname": "Bushland [Light Cover Area]",
+    "Description": "Light Cover Area:\nminis size 1.25 and below\n\nTroopers - Difficult\nG Vehicles - open\nRepulsor- Open\n",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.6784314,
+      "g": 0.610588253,
+      "b": 0.5427451
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://www.dropbox.com/s/tr4aiv1z46j3jk1/WargameHill_Confron_Square.obj?dl=1",
+      "DiffuseURL": "http://img01.deviantart.net/602c/i/2011/313/9/3/seamless_dirt_ground_texture_by_hhh316-d4fon0w.jpg",
+      "NormalURL": "",
+      "ColliderURL": "https://www.dropbox.com/s/tr4aiv1z46j3jk1/WargameHill_Confron_Square.obj?dl=1",
+      "Convex": false,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Bushland_Light_Cover_Area.7b7ae7.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

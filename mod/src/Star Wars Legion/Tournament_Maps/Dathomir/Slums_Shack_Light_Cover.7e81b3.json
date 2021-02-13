@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "7e81b3",
+    "Name": "Custom_Assetbundle",
+    "Transform": {
+      "posX": -22.9427,
+      "posY": 1.53623331,
+      "posZ": 1.48804176,
+      "rotX": 359.510742,
+      "rotY": 173.480927,
+      "rotZ": 359.722778,
+      "scaleX": 1.29999983,
+      "scaleY": 1.29999983,
+      "scaleZ": 1.29999983
+    },
+    "Nickname": "Slums Shack [Light Cover]",
+    "Description": "Light Cover:\nMinis Size 4 and below\n\nSides\nTrooper - Impassable\nGround Vehicle - Impassable\nRepulsor - Impassable\n\nMinis with size > 3.5 treat this as difficult terrain\n\nTop:\nAll - Open\n\nHeight: 1",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.8,
+      "g": 0.8,
+      "b": 0.8
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/961977062859859296/181C04F2413EE7E1E8803061C3C51CF4B4E5B381/",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 0,
+      "TypeIndex": 0,
+      "LoopingEffectIndex": 0
+    },
+    "LuaScript": "#include ./Slums_Shack_Light_Cover.7e81b3.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

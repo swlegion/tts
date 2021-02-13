@@ -1,0 +1,51 @@
+{
+  "Object": {
+    "GUID": "141d1f",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 71.64904,
+      "posY": 2.251258,
+      "posZ": -4.639517,
+      "rotX": 0.00113718037,
+      "rotY": 134.97728,
+      "rotZ": -0.00113393425,
+      "scaleX": 0.9000001,
+      "scaleY": 0.9000001,
+      "scaleZ": 0.9000001
+    },
+    "Nickname": "Sand Mound (Blast Hole) [Light Cover]",
+    "Description": "Light Cover (Area Terrain):\nTroopers\n\nMound:\nTrooper - Difficult\nG. Vehicle - Open\nRepulsor - Open\n\nProvides Cover only to Troopers. Troopers gain cover as long as any part of their base overlaps this terrain.\n\nDoes not obscure LOS",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542465659/30348E08551EAA3E8D5164E0D2931B3EB72DCEC1/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542470239/CFB22A69010911784880172594A7106CBC1F8DF1/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542467139/4036C31123FF00D2459B3ED1E57CD8141ACFAC8D/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Sand_Mound_Blast_Hole_Light_Cover.141d1f.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

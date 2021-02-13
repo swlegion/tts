@@ -1,0 +1,50 @@
+{
+  "Object": {
+    "GUID": "cb7389",
+    "Name": "Custom_Assetbundle",
+    "Transform": {
+      "posX": 20.4551849,
+      "posY": 6.331467,
+      "posZ": -16.0423927,
+      "rotX": 359.479065,
+      "rotY": 82.73882,
+      "rotZ": 151.028915,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Green Light Spheres 2\"-20\"",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "http://infinitebucket.com/tts/scenesystem/light-green.unity3d",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "LoopingEffectIndex": 6
+    },
+    "LuaScript": "#include ./Green_Light_Spheres_2_-20.cb7389.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "0f1916",
+    "Name": "Card",
+    "Transform": {
+      "posX": 41.40494,
+      "posY": 1.18398392,
+      "posZ": 5.84917068,
+      "rotX": 0.00511223637,
+      "rotY": 269.9879,
+      "rotZ": 0.68746084,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "RT-97C Rifle Pintle",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 27601,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "276": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/920331435132897828/1B0A780CBBBCF14BDE587F44FA65250313B33C88/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/920331435132897828/1B0A780CBBBCF14BDE587F44FA65250313B33C88/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

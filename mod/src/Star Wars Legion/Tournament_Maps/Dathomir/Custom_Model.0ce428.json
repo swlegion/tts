@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "0ce428",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 10.2448378,
+      "posY": 1.77098107,
+      "posZ": -0.571463466,
+      "rotX": 0.00156325137,
+      "rotY": 347.179138,
+      "rotZ": -0.00035669934,
+      "scaleX": 0.9250001,
+      "scaleY": 0.9250001,
+      "scaleZ": 0.9250001
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.9999998,
+      "g": 0.992163837,
+      "b": 0.9999998
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://paste.ee/r/ZDC7m",
+      "DiffuseURL": "http://i.imgur.com/KxqZldz.jpg",
+      "NormalURL": "",
+      "ColliderURL": "https://paste.ee/r/GHS7j",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Custom_Model.0ce428.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

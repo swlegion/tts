@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "9a57ce",
+    "Name": "Custom_Model_Stack",
+    "Transform": {
+      "posX": 38.91155,
+      "posY": 1.519201,
+      "posZ": -9.548155,
+      "rotX": 9.894165e-7,
+      "rotY": 270.0084,
+      "rotZ": 0.00160281057,
+      "scaleX": 0.9249999,
+      "scaleY": 0.9249999,
+      "scaleZ": 0.9249999
+    },
+    "Nickname": "Wound Token",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.7529412,
+      "g": 0.7529412,
+      "b": 0.7529412
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Number": 2,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314443832/CC490842F0159459C8D5C252BE7225E9D2581951/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314443935/0F8A37E8CD128D5644B391E4EFEC50656D558FF7/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 5,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Wound_Token.9a57ce.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

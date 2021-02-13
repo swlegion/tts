@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "21550f",
+    "Name": "Custom_Model_Infinite_Bag",
+    "Transform": {
+      "posX": 57.7231674,
+      "posY": 0.933421969,
+      "posZ": 16.97074,
+      "rotX": 7.81705239e-7,
+      "rotY": 270.008545,
+      "rotZ": 0.00160712365,
+      "scaleX": 1.84999943,
+      "scaleY": 1.84999943,
+      "scaleZ": 1.84999943
+    },
+    "Nickname": "Unit ID Token",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441910/ED14AA37D66E5E75EA5D6790A50546B1FC105DAC/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314444206/36C849E4F341F2BC6FAB66742D76FF8A38AB86AD/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 7,
+      "CastShadows": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Unit_ID_Token.ba5504.json"
+  ]
+}

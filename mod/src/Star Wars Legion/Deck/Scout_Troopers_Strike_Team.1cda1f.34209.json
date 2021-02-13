@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "1cda1f",
+    "Name": "Card",
+    "Transform": {
+      "posX": 20.9147129,
+      "posY": 1.209526,
+      "posZ": 18.9931374,
+      "rotX": 359.984467,
+      "rotY": 179.982941,
+      "rotZ": -0.00227813236,
+      "scaleX": 0.227068469,
+      "scaleY": 1,
+      "scaleZ": 0.227068469
+    },
+    "Nickname": "Scout Troopers Strike Team",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 34209,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "287": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786359682702689371/FE903392D23B9F331E16589D286B45790027995B/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/785232635608506395/EDFC338C9A232DEBCE57D652B7DBC38F27774A77/",
+        "NumWidth": 5,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

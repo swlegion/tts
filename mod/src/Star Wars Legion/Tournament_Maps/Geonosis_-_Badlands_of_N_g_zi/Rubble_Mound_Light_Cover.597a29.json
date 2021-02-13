@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "597a29",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 25.59419,
+      "posY": 1.43792415,
+      "posZ": 8.126988,
+      "rotX": 359.9209,
+      "rotY": 22.6623211,
+      "rotZ": 0.06751407,
+      "scaleX": 1.31070864,
+      "scaleY": 0.184423283,
+      "scaleZ": 0.9290032
+    },
+    "Nickname": "Rubble Mound [Light Cover]",
+    "Description": "Light Cover (Area Terrain):\nMini Size 1.25 and below\n\nTrooper: Difficult\nG. Vehicle: Open\nRepulsor: Open\n\nHeight: 1\n\nMinis get cover as long the imaginary line between the attacker and defender crosses this terrain, and this terrain blocks LOS of the defender.",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.6498258,
+      "g": 0.323511273,
+      "b": 0.216230065
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/780734585255482064/9CA69CBC21ACD9A22F9A7C32C45C02D98253674E/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858976044/D7F78E8DBEDD11DFDAF5B61785BD91DA338B1A69/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858945363/D3EEC34C89449348C7E70F3FF7D87AB841D6E3D7/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Rubble_Mound_Light_Cover.597a29.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

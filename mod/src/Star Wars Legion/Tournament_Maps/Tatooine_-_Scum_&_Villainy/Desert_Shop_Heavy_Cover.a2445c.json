@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "a2445c",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -13.05744,
+      "posY": 1.63745272,
+      "posZ": -6.584216,
+      "rotX": -0.000749876548,
+      "rotY": 30.0053558,
+      "rotZ": 0.00632969476,
+      "scaleX": 1,
+      "scaleY": 0.707656,
+      "scaleZ": 0.5128522
+    },
+    "Nickname": "Desert Shop [Heavy Cover]",
+    "Description": "Heavy Cover:\nMini size 3 and below\n\nSides:\nTrooper: Impassable\nGround Vehicle: Impassable\nRepulsor: Impassable\n\nMinis with size > 3 treat this as difficult terrain\n\nRoof:\nAll - Open\n\nHeight: 1",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540545452392/5D16B83B1C92C46F1B955DAE086010C7FAC12543/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540545452493/AFFFD2ACB12C3969E4DAB0499DE07046AFD5897C/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540545452630/B51B8030FE08B550CF92B5EB8A85F56F9D173A12/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Desert_Shop_Heavy_Cover.a2445c.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

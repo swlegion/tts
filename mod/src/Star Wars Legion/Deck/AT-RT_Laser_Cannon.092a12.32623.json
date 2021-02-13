@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "092a12",
+    "Name": "Card",
+    "Transform": {
+      "posX": 28.5542011,
+      "posY": 1.02075028,
+      "posZ": 2.072154,
+      "rotX": -0.0000119718125,
+      "rotY": 269.985443,
+      "rotZ": 0.00000126919178,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "AT-RT Laser Cannon",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 32623,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "309": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786360308354565157/E2A6646404C77BDF365957AE9047363A68640620/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/786360308354565398/70744480E86B96A11A4321AC1B0CDEE67C45FAF1/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": true,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

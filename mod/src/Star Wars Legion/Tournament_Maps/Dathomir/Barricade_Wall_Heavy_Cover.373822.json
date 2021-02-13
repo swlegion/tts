@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "373822",
+    "Name": "Custom_Assetbundle",
+    "Transform": {
+      "posX": 14.6330919,
+      "posY": 1.4665848,
+      "posZ": 3.38857126,
+      "rotX": 1.68906081,
+      "rotY": 315.001,
+      "rotZ": 359.6485,
+      "scaleX": 1.15,
+      "scaleY": 1.15,
+      "scaleZ": 1.15
+    },
+    "Nickname": "Barricade Wall [Heavy Cover]",
+    "Description": "(This blocks los Through it)",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.8,
+      "g": 0.8,
+      "b": 0.8
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/961977062859860946/201D3804D8366CFEA5FBA7F6A795889B93C3C870/",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 0,
+      "TypeIndex": 0,
+      "LoopingEffectIndex": 0
+    },
+    "LuaScript": "#include ./Barricade_Wall_Heavy_Cover.373822.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

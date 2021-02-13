@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "7edd6a",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -5.93564272,
+      "posY": 1.392352,
+      "posZ": 12.7822638,
+      "rotX": -0.00152540894,
+      "rotY": 341.8555,
+      "rotZ": 0.000500172551,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1.075837
+    },
+    "Nickname": "Small Cliff [Heavy Cover]",
+    "Description": "Heavy Cover:\nMinis size 2 or lower\n\nSides:\nAll - Impassable\n\nRoof:\nAll - Open\n\nHeight: 1",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://gist.githubusercontent.com/nashjaee/825e8ae122baeb3894ad8a6d7e5265f9/raw/8651a0274bf4ec7d6f7ec79d5f4a42091d87c3ee/snow_hill_model.txt",
+      "DiffuseURL": "https://i.imgur.com/ovrB1Bw.jpghttps://i.imgur.com/ovrB1Bw.jpg",
+      "NormalURL": "",
+      "ColliderURL": "https://gist.githubusercontent.com/nashjaee/825e8ae122baeb3894ad8a6d7e5265f9/raw/8651a0274bf4ec7d6f7ec79d5f4a42091d87c3ee/snow_hill_model.txt",
+      "Convex": false,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Small_Cliff_Heavy_Cover.7edd6a.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

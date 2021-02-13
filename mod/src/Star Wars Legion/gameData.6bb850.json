@@ -1,0 +1,42 @@
+{
+  "Object": {
+    "GUID": "6bb850",
+    "Name": "BlockSquare",
+    "Transform": {
+      "posX": 57.4712257,
+      "posY": 1.19136477,
+      "posZ": -4.801035,
+      "rotX": -0.00161462091,
+      "rotY": 0.00004593167,
+      "rotZ": 0.000005330358,
+      "scaleX": 0.5000005,
+      "scaleY": 0.5000005,
+      "scaleZ": 0.5000005
+    },
+    "Nickname": "gameData",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.9264706,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "LuaScript": "#include ./gameData.6bb850.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "412b7b",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -18.4686317,
+      "posY": 1.44155622,
+      "posZ": 0.8912717,
+      "rotX": 0.004543509,
+      "rotY": 120.009529,
+      "rotZ": -0.00117223838,
+      "scaleX": 1.99999928,
+      "scaleY": 1.99999928,
+      "scaleZ": 1.99999928
+    },
+    "Nickname": "Double Desert Arch [Heavy Cover]",
+    "Description": "Heavy Cover:\nMinis Size 3 and below\n\nTrooper: Impassable\nGround Vehicle: Impassable\nRepulsor: Impassable\n\nArches are open for minis on medium or smaller bases (Mk II Blaster base), excluding creature troopers.\n\nMinis with size > 3 treat this as difficult terrain\n\nHeight: 1\n\nSpecial Thanks to https://www.etsy.com/shop/LowCountryCraftShop ",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://gist.githubusercontent.com/nashjaee/669805574c4b9f7b04e785509a928033/raw/0c48b07b3101513396567a27960f733c20ab61ac/double_arch.txt",
+      "DiffuseURL": "https://www.dropbox.com/s/rtdlpenu65l37b9/tatooine_generic.jpg?raw=1",
+      "NormalURL": "",
+      "ColliderURL": "https://gist.githubusercontent.com/nashjaee/669805574c4b9f7b04e785509a928033/raw/0c48b07b3101513396567a27960f733c20ab61ac/double_arch.txt",
+      "Convex": false,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Double_Desert_Arch_Heavy_Cover.412b7b.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

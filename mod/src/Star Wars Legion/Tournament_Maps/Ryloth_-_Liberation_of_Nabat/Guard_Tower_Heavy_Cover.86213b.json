@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "86213b",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 15.6309948,
+      "posY": 1.43344676,
+      "posZ": -9.113926,
+      "rotX": -0.000392133865,
+      "rotY": 254.9843,
+      "rotZ": -0.00154528057,
+      "scaleX": 1.2,
+      "scaleY": 1,
+      "scaleZ": 1.2
+    },
+    "Nickname": "Guard Tower [Heavy Cover]",
+    "Description": "Heavy Cover:\nMini size 5 and below\n\nSides:\nAll - Impassable\n\nRoof:\nAll - Open\n\nHeight: 2\n\nSmall-base trooper units with their leader in base contact with a ladder gain Scale.\n\nSpecial Thanks: www.imperialterrain.com",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/950714872633930181/12FD516D719E70D0894DD2555C38CAE0EA3802D9/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/950715191003551806/C562FAFB4C8049AF2FF9A798201B24DEDA4D1F18/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/950714872633930584/EA1D8A842AC3604B1341097E8E5176818618266C/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Guard_Tower_Heavy_Cover.86213b.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

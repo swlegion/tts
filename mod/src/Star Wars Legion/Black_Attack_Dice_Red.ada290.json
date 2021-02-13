@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "ada290",
+    "Name": "Custom_Assetbundle",
+    "Transform": {
+      "posX": -33.298336,
+      "posY": 2.058995,
+      "posZ": -12.0941076,
+      "rotX": 18.6265469,
+      "rotY": 180.042328,
+      "rotZ": 0.03294989,
+      "scaleX": 0.22,
+      "scaleY": 0.250000417,
+      "scaleZ": 0.22
+    },
+    "Nickname": "Black Attack Dice Red",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.115995549,
+      "g": 0.1335867,
+      "b": 0.136517584
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/267231170580138054/83B9C07DD90D4FA8F3DE016617A6BF0BC935D9FF/",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 0,
+      "TypeIndex": 0,
+      "LoopingEffectIndex": 0
+    },
+    "LuaScript": "#include ./Black_Attack_Dice_Red.ada290.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    // Emits d.ts definition files along with compiled JS.
+    "declaration": true,
+
+    // Enables interopability between CommonJS and ES Modules.
+    //
+    // This does not effect the code that is emitted, but rather allows
+    // typechecking of packages that use an older module format.
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es6",
-    "noImplicitAny": true,
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "outDir": "dist",
-    "baseUrl": "."
-  }
+
+    // Require checked-in TypeScript code to pass a higher bar/be consistent.
+    "strict": true,
+
+    "module": "CommonJS"
+  },
+
+  "exclude": ["node_modules"]
 }

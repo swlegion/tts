@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "a13293",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 6.737204,
+      "posY": 1.44903529,
+      "posZ": 14.6566153,
+      "rotX": -0.000323972228,
+      "rotY": 194.9935,
+      "rotZ": -0.0000012311981,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Blast Crater [Light Cover]",
+    "Description": "Light Cover:\nMinis size 1 and below (excluding TX-225)\n\nCrater:\nTrooper - Difficult\nG. Vehicle - Open\nRepulsor - Open\n\nTroopers only get cover if they are fully within this terrain.\n\nDoes not obscure LOS",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.677700341,
+      "g": 0.283619016,
+      "b": 0.206615
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://gist.githubusercontent.com/nashjaee/8353f629e1d7e1d213fbe564be21de8e/raw/b20462e946ced3eee4f8260d3b28565e397d800b/gistfile1.txt",
+      "DiffuseURL": "https://i.imgur.com/M7wiIIi.jpg",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542467139/4036C31123FF00D2459B3ED1E57CD8141ACFAC8D/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Blast_Crater_Light_Cover.a13293.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

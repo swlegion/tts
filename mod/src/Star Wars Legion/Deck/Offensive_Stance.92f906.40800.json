@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "92f906",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 73.40441,
+      "posY": 1.984732,
+      "posZ": -20.378891,
+      "rotX": -0.00002070059,
+      "rotY": 180,
+      "rotZ": -0.00000687440252,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "Offensive Stance",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 40800,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "408": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1646592601245299148/46BE9F7B998422618386A1CF7CE6C97F2A6C34A8/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1646592601245299634/66213A0A5E57406C99A8F4DDE2E38BE4D8D02078/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

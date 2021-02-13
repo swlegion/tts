@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "313feb",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -4.65,
+      "posY": 1.44106972,
+      "posZ": -5.85,
+      "rotX": 0.0007705048,
+      "rotY": 300,
+      "rotZ": -0.00144675944,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Medium Desert House [Heavy Cover]",
+    "Description": "Heavy Cover:\nMini size 3 and below\n\nSides:\nTrooper: Impassable\nGround Vehicle: Impassable\nRepulsor: Impassable\n\nMinis with size > 3 treat this as difficult terrain\n\nRoof:\nAll - Open\n\nHeight: 1\n\nSpecial Thanks to https://www.etsy.com/shop/LowCountryCraftShop ",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://gist.githubusercontent.com/nashjaee/4c26247df7714072af9707c52c32a095/raw/3cf1204ec97d97f21b27de644f73e2ae6af29f9a/tat_medium_3.txt",
+      "DiffuseURL": "https://www.dropbox.com/s/6dv3zim10qstual/medium_3.jpg?raw=1",
+      "NormalURL": "",
+      "ColliderURL": "https://gist.githubusercontent.com/nashjaee/4c26247df7714072af9707c52c32a095/raw/3cf1204ec97d97f21b27de644f73e2ae6af29f9a/tat_medium_3.txt",
+      "Convex": false,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Medium_Desert_House_Heavy_Cover.313feb.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

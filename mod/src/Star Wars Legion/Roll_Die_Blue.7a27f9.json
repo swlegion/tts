@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "7a27f9",
+    "Name": "Custom_Assetbundle",
+    "Transform": {
+      "posX": -36.68517,
+      "posY": 1.91449034,
+      "posZ": 12.5675926,
+      "rotX": 18.6132946,
+      "rotY": 0.02969858,
+      "rotZ": 0.0137280114,
+      "scaleX": 0.300000429,
+      "scaleY": 0.300000429,
+      "scaleZ": 0.300000429
+    },
+    "Nickname": "Roll Die Blue",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0.958389342,
+      "b": 0.14909336
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/267231170580138054/83B9C07DD90D4FA8F3DE016617A6BF0BC935D9FF/",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 0,
+      "TypeIndex": 0,
+      "LoopingEffectIndex": 0
+    },
+    "LuaScript": "#include ./Roll_Die_Blue.7a27f9.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

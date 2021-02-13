@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "204ebb",
+    "Name": "Card",
+    "Transform": {
+      "posX": 55.1901321,
+      "posY": 8.407136,
+      "posZ": -14.4908438,
+      "rotX": -0.000006265735,
+      "rotY": 179.966339,
+      "rotZ": 180,
+      "scaleX": 0.227068469,
+      "scaleY": 1,
+      "scaleZ": 0.227068469
+    },
+    "Nickname": "1.4 FD Laser Cannon Team",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 37402,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "374": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/771742395407142209/D818C462ABA083797D2EAE687048D954E5288C74/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/771742395407142209/D818C462ABA083797D2EAE687048D954E5288C74/",
+        "NumWidth": 3,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

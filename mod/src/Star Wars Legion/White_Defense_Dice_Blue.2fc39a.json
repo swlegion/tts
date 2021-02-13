@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "2fc39a",
+    "Name": "Custom_Assetbundle",
+    "Transform": {
+      "posX": -33.59612,
+      "posY": 1.68939412,
+      "posZ": 13.2073765,
+      "rotX": 18.6219883,
+      "rotY": 0.0423702672,
+      "rotZ": 0.0264520645,
+      "scaleX": 0.22,
+      "scaleY": 0.250000417,
+      "scaleZ": 0.22
+    },
+    "Nickname": "White Defense Dice Blue",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.9728332,
+      "g": 0.9728332,
+      "b": 0.9728332
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/267231170580138054/83B9C07DD90D4FA8F3DE016617A6BF0BC935D9FF/",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 0,
+      "TypeIndex": 0,
+      "LoopingEffectIndex": 0
+    },
+    "LuaScript": "#include ./White_Defense_Dice_Blue.2fc39a.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

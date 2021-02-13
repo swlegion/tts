@@ -1,0 +1,42 @@
+{
+  "Object": {
+    "GUID": "00d2cc",
+    "Name": "Notecard",
+    "Transform": {
+      "posX": 35.82183,
+      "posY": 1.591306,
+      "posZ": -12.5726271,
+      "rotX": 2.20797014,
+      "rotY": 359.9915,
+      "rotZ": -0.00000320224376,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Special Note",
+    "Description": "\nThese two buldings here were graciously provided by Dave from Imperial Terrain.\n\nIf you like what you see, check him out at www.imperialterrain.com",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "LuaScript": "#include ./Special_Note.00d2cc.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

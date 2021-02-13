@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "1d1287",
+    "Name": "Custom_Token",
+    "Transform": {
+      "posX": -24.56017,
+      "posY": 1.57040226,
+      "posZ": 10.5916748,
+      "rotX": 0.00018789091,
+      "rotY": 90.00483,
+      "rotZ": 0.000396508549,
+      "scaleX": 0.92564106,
+      "scaleY": 1,
+      "scaleZ": 0.92564106
+    },
+    "Nickname": "Rubble Mound [Light Cover]",
+    "Description": "Light Cover (Area Terrain):\nMini Size 1.25 and below\n\nTrooper: Difficult\nG. Vehicle: Open\nRepulsor: Open\n\nHeight: 1\n\nMinis get cover as long the imaginary line between the attacker and defender crosses this terrain, and this terrain blocks LOS of the defender.",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.6986062,
+      "g": 0.4549814,
+      "b": 0.397985965
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "https://www.dropbox.com/s/d61jptcthjui75q/B69_Rubble3_JVG.png?dl=1",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.1,
+        "MergeDistancePixels": 15,
+        "StandUp": false,
+        "Stackable": false
+      }
+    },
+    "LuaScript": "#include ./Rubble_Mound_Light_Cover.1d1287.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

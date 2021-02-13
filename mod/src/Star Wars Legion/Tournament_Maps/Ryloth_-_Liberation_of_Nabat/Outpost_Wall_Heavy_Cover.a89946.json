@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "a89946",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 12.2584829,
+      "posY": 4.396503,
+      "posZ": 8.292262,
+      "rotX": -0.0008035779,
+      "rotY": 119.993324,
+      "rotZ": 0.00139042607,
+      "scaleX": 3.16024184,
+      "scaleY": 1.18656373,
+      "scaleZ": 1.81786847
+    },
+    "Nickname": "Outpost Wall [Heavy Cover]",
+    "Description": "Heavy Cover:\nMini size 6 and below\n\nWall:\nAll - Impassable\n\nLedges:\nTrooper - Open\nOthers - Impassable\n\nHeight: 2\nLedge Height: 1",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542860959/6F605A1BDB22EE619C6B2E2E8FE5C20BD942F82A/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542862958/F123CBB8FCF10999EB400495D200C974E6EC1B4B/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Outpost_Wall_Heavy_Cover.a89946.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

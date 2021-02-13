@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "0d59c5",
+    "Name": "Card",
+    "Transform": {
+      "posX": 42.2056732,
+      "posY": 1.02074754,
+      "posZ": 3.70801568,
+      "rotX": 0.00008452331,
+      "rotY": 270.000641,
+      "rotZ": 0.000293964025,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "Overwatch",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 34404,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "264": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/993513208355166713/3113A7C24A586E21448EA0982D8F9570BD679009/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/993513208355166713/3113A7C24A586E21448EA0982D8F9570BD679009/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

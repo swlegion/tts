@@ -1,0 +1,47 @@
+{
+  "Object": {
+    "GUID": "e26c25",
+    "Name": "Digital_Clock",
+    "Transform": {
+      "posX": 62.30955,
+      "posY": 0.9490366,
+      "posZ": -17.77128,
+      "rotX": 0.0000223610477,
+      "rotY": 90.0192,
+      "rotZ": -0.000008631865,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "Clock": {
+      "Mode": 0,
+      "SecondsPassed": 0,
+      "Paused": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

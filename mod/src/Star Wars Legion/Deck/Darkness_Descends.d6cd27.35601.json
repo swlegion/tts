@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "d6cd27",
+    "Name": "Card",
+    "Transform": {
+      "posX": 34.8268967,
+      "posY": 1.1770004,
+      "posZ": -3.24860048,
+      "rotX": -3.07767152e-7,
+      "rotY": 180,
+      "rotZ": 5.424928e-7,
+      "scaleX": 0.367304444,
+      "scaleY": 1,
+      "scaleZ": 0.367304444
+    },
+    "Nickname": "Darkness Descends",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 35601,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "356": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/777357228032283328/7A9CCE68A0303FEBBABB1312DF2A9E7A75F2DB6C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

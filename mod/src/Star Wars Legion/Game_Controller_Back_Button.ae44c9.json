@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "ae44c9",
+    "Name": "Custom_Assetbundle",
+    "Transform": {
+      "posX": 55.2137527,
+      "posY": 1.17248368,
+      "posZ": 0.5798749,
+      "rotX": 359.9897,
+      "rotY": 270.015747,
+      "rotZ": 358.650543,
+      "scaleX": 0.293305963,
+      "scaleY": 0.250000417,
+      "scaleZ": 0.2179451
+    },
+    "Nickname": "Game Controller Back Button",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/267231170580138054/83B9C07DD90D4FA8F3DE016617A6BF0BC935D9FF/",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 0,
+      "TypeIndex": 0,
+      "LoopingEffectIndex": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

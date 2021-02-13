@@ -1,0 +1,83 @@
+{
+  "Object": {
+    "GUID": "910a01",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 56.7657051,
+      "posY": 3.03356552,
+      "posZ": 32.27801,
+      "rotX": 0.6039614,
+      "rotY": 179.933289,
+      "rotZ": 174.588135,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      38600,
+      38601,
+      38602,
+      38603,
+      38604,
+      38605,
+      38606,
+      38607,
+      38608,
+      38609,
+      38610,
+      38611
+    ],
+    "CustomDeck": {
+      "386": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1019444410441399196/6253D6E763CC92053F288A4923C8ACB617A7CDEE/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1019444410441399920/B3BE2D27399737F8417636F32CE5932638B69959/",
+        "NumWidth": 4,
+        "NumHeight": 3,
+        "BackIsHidden": true,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Clear_Conditions.1d91b2.38600.json",
+    "Dawn.b70b03.38601.json",
+    "Improvised_Defenses.dfb012.38602.json",
+    "War_Weary.35f733.38603.json",
+    "Battle_Lines.03e2c5.38604.json",
+    "Faceoff.65f296.38605.json",
+    "Flanking_Positions.9ae2fb.38606.json",
+    "Meeting_Engagement.f463ae.38607.json",
+    "Breach.fc9a48.38608.json",
+    "Control.b08c4c.38609.json",
+    "Elimination.d1983f.38610.json",
+    "Pivotal_Positions.fc1600.38611.json"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "cfaf3b",
+    "Name": "Card",
+    "Transform": {
+      "posX": 46.64196,
+      "posY": 2.04567146,
+      "posZ": -10.7271776,
+      "rotX": 0.00000260791512,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "BX-Series Droid Sniper",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 38301,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "383": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775122858930999599/CE19BC76F8708FCC58B1CC40F72B4DFF7A8460C5/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/775122858930999599/CE19BC76F8708FCC58B1CC40F72B4DFF7A8460C5/",
+        "NumWidth": 2,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

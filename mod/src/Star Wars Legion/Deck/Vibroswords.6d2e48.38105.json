@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "6d2e48",
+    "Name": "Card",
+    "Transform": {
+      "posX": 61.3636055,
+      "posY": 3.89877868,
+      "posZ": -14.6446877,
+      "rotX": 0.000005859694,
+      "rotY": 179.999878,
+      "rotZ": 180,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "Vibroswords",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 38105,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "381": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/776248408890722280/7442FA80FCB33B2ECAD25988BD320DD359F9AE9C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248408890722280/7442FA80FCB33B2ECAD25988BD320DD359F9AE9C/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,51 @@
+{
+  "Object": {
+    "GUID": "e9311d",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 77.8842545,
+      "posY": 2,
+      "posZ": -0.007578924,
+      "rotX": 1.945274e-7,
+      "rotY": 90.00854,
+      "rotZ": -0.00160507427,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "BATTLEFIELD",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780866414753/95132A365E9EFF004D484B46873C11309C7B34F1/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780866421143/B9C6000738751CC7A253D4A81B8265A1CEEC891E/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780866414753/95132A365E9EFF004D484B46873C11309C7B34F1/",
+      "Convex": true,
+      "MaterialIndex": 1,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./BATTLEFIELD.e9311d.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

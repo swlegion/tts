@@ -1,0 +1,51 @@
+{
+  "Object": {
+    "GUID": "69536b",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 85.84876,
+      "posY": 2.24306,
+      "posZ": -5.55410147,
+      "rotX": 0.000414649054,
+      "rotY": 255.013275,
+      "rotZ": 0.00155109586,
+      "scaleX": 0.999997854,
+      "scaleY": 1.6,
+      "scaleZ": 0.999997854
+    },
+    "Nickname": "Redwood Tree [Heavy Cover]",
+    "Description": "Heavy Cover:\nAll\n\nTree:\nAll - Impassable\n\nHeight: 3\n\nSpecial Thanks: www.imperialterrain.com",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858955187/C05F76E938041A518E0AAD4E11FB68A55B69A573/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858955432/DA629DB23D2BC9B207325CC9E7EF0A7B482A4CBD/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858955713/BEC1561B09C790765655464192959E03246B9813/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Redwood_Tree_Heavy_Cover.69536b.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

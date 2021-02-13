@@ -1,0 +1,48 @@
+{
+  "Object": {
+    "GUID": "774f05",
+    "Name": "Infinite_Bag",
+    "Transform": {
+      "posX": 57.8741455,
+      "posY": 0.9320359,
+      "posZ": 23.4916916,
+      "rotX": 0.0000107659171,
+      "rotY": -2.442773e-7,
+      "rotZ": 0.0000112927819,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "All Flaw Cards",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.945098,
+      "g": 0.9372549,
+      "b": 0.443136245
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Flaw_Cards.ac2520.json"
+  ]
+}

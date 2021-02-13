@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "85bca1",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 49.038372,
+      "posY": 0.948201537,
+      "posZ": 17.3115463,
+      "rotX": -0.00005758234,
+      "rotY": 270.0381,
+      "rotZ": -0.0000169386167,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Bomb Cart",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.442572325,
+      "g": 0.692480564,
+      "b": 0.980836332
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1002556529493751157/9D26DC64BAAB57A2EC4CCB04016AFEC660256685/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1002556529493751537/4CC48BB4450924701366C8EDED262930F423E4AB/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/",
+      "Convex": true,
+      "MaterialIndex": 0,
+      "TypeIndex": 1,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Bomb_Cart.85bca1.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

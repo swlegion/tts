@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "669296",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 38.628727,
+      "posY": 3.083331,
+      "posZ": 3.673666,
+      "rotX": -0.00121731579,
+      "rotY": 220.900635,
+      "rotZ": -0.00105148193,
+      "scaleX": 2.89999723,
+      "scaleY": 2.89999723,
+      "scaleZ": 2.89999723
+    },
+    "Nickname": "Witch Tree [Heavy Cover]",
+    "Description": "Heavy Cover:\nMinis Size 5 and below\n\nSides:\nAll - Impassable\n\nHeight 4\n\n",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.9999998,
+      "g": 0.992160261,
+      "b": 0.9999998
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://paste.ee/r/aJGt3",
+      "DiffuseURL": "http://i.imgur.com/agmLaYF.jpg",
+      "NormalURL": "",
+      "ColliderURL": "https://paste.ee/r/jG96y",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Witch_Tree_Heavy_Cover.669296.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

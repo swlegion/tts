@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "3de011",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 40.292038,
+      "posY": 1.01451731,
+      "posZ": 0.443526447,
+      "rotX": 359.8828,
+      "rotY": 134.266571,
+      "rotZ": 0.02115844,
+      "scaleX": 0.86,
+      "scaleY": 1.21583331,
+      "scaleZ": 0.930599749
+    },
+    "Nickname": "Small Cliff [Heavy Cover]",
+    "Description": "Heavy Cover:\nMinis Size 4 and below\n\nSides:\nAll - Impassable\nMinis size > 4 treat this as difficult terrain\n\nRoof:\nAll - Open\n\nHeight: 1",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.60452956,
+      "g": 0.353615,
+      "b": 0.3191144
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": true,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858830582/8BB35CD708C45CBDC9275CDDA82F73389508DFF0/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858824706/1151156BCE256721497CF1DBF5B9874179C596CC/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858830582/8BB35CD708C45CBDC9275CDDA82F73389508DFF0/",
+      "Convex": false,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Small_Cliff_Heavy_Cover.3de011.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

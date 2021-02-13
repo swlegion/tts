@@ -1,0 +1,51 @@
+{
+  "Object": {
+    "GUID": "9f71fb",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 73.3080444,
+      "posY": 2.20384121,
+      "posZ": -13.052599,
+      "rotX": -0.00139138557,
+      "rotY": 29.9997921,
+      "rotZ": -0.0008024995,
+      "scaleX": 0.9250001,
+      "scaleY": 0.9250001,
+      "scaleZ": 0.9250001
+    },
+    "Nickname": "Small Cliff [Heavy Cover]",
+    "Description": "Heavy Cover:\nTroopers, 74Z Speeder Bikes, AT-RT\n\nSides:\nAll - Impassable\n\nRoof:\nAll - Open\n\nHeight: 1",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858833882/80991443324FBAFACC7B2876166C4B63C6A4FA5A/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858845951/FC3F6B910D6EB8421854DADD4F40128CDB0B0BB5/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858835205/B5E9F9B6B67565625027EF6A6F9EFE8E623BE61E/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Small_Cliff_Heavy_Cover.9f71fb.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

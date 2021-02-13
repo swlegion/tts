@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "d81a06",
+    "Name": "Custom_Assetbundle",
+    "Transform": {
+      "posX": 49.1934662,
+      "posY": 1.16696882,
+      "posZ": -2.49681616,
+      "rotX": -0.003075667,
+      "rotY": 270.024536,
+      "rotZ": 0.00114284246,
+      "scaleX": 0.23,
+      "scaleY": 0.250000417,
+      "scaleZ": 0.23
+    },
+    "Nickname": "Game Controller Next Button",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/267231170580138054/83B9C07DD90D4FA8F3DE016617A6BF0BC935D9FF/",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 0,
+      "TypeIndex": 0,
+      "LoopingEffectIndex": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

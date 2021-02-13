@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "008d5b",
+    "Name": "Custom_Assetbundle",
+    "Transform": {
+      "posX": 7.96974754,
+      "posY": 1.01017213,
+      "posZ": 0.0174259,
+      "rotX": -0.000314158242,
+      "rotY": 180.001633,
+      "rotZ": 180.000076,
+      "scaleX": 8.754953,
+      "scaleY": 2.94999838,
+      "scaleZ": 4.240166
+    },
+    "Nickname": "Dust",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5254902,
+      "g": 0.293576866,
+      "b": 0.203920275
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "http://infinitebucket.com/tts/scenesystem/dust.unity3d",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "LoopingEffectIndex": 0
+    },
+    "LuaScript": "#include ./Dust.008d5b.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

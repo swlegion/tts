@@ -1,0 +1,42 @@
+{
+  "Object": {
+    "GUID": "6f3be4",
+    "Name": "Notecard",
+    "Transform": {
+      "posX": -30.6530418,
+      "posY": 1.53881049,
+      "posZ": -24.1645145,
+      "rotX": 357.660553,
+      "rotY": 0.06646359,
+      "rotZ": 358.107758,
+      "scaleX": 2.199999,
+      "scaleY": 2.199999,
+      "scaleZ": 2.199999
+    },
+    "Nickname": "This is the [b]BETA[/b] mod. Do not use for tournaments.",
+    "Description": "Historically, we've updated the beta mod less periodically, and it's been used for online tournaments. \n\n- The beta mod will be [b]UNSTABLE[/b] for tournament play; we intend to make lots of changes, and that will cause lots of bugs.\n\n- Tournaments should [b]ONLY[/b] use the stable mod: https://go.swlegion.dev/stable/",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

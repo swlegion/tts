@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "b79236",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -17.5117035,
+      "posY": 1.44611907,
+      "posZ": 14.9852362,
+      "rotX": 3.24959274e-7,
+      "rotY": 269.99707,
+      "rotZ": 0.001605146,
+      "scaleX": 1.1302706,
+      "scaleY": 1.42945993,
+      "scaleZ": 1.1302706
+    },
+    "Nickname": "Blast Crater [Light Cover](Area Terrain)",
+    "Description": "Light Cover (Area Terrain):\nMinis size 1 or lower\n\nMound:\nTrooper - Difficult\nG. Vehicle - Open\nRepulsor - Open\n\nNon-creature troopers gain cover as long as any part of their base overlaps this terrain.\n\nDoes not obscure LOS",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": true,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://gist.githubusercontent.com/nashjaee/d862462c01e0a01e86e1dc568b142edb/raw/b36e44fa58fc589caeff348c2e0a17b7f20d1d2f/blast_crater_snow_model.txt",
+      "DiffuseURL": "https://i.imgur.com/3fDONjZ.jpghttps://i.imgur.com/3fDONjZ.jpg",
+      "NormalURL": "",
+      "ColliderURL": "https://gist.githubusercontent.com/nashjaee/b80698e12cc26ccb33b23d6ccd9d9cfc/raw/2a7b95b35807e5e262f2989ba14d255e5ca8b485/blast_crater_snow_collider.txt",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Blast_Crater_Light_Cover_Area_Terrain.b79236.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "b2775e",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 11.9297009,
+      "posY": 1.44329381,
+      "posZ": 4.721885,
+      "rotX": 0.0513981767,
+      "rotY": 29.97978,
+      "rotZ": 359.988739,
+      "scaleX": 1.0999999,
+      "scaleY": 1.0999999,
+      "scaleZ": 1.0999999
+    },
+    "Nickname": "Rock Formation [Heavy Cover]",
+    "Description": "Heavy Cover:\nMini Size 7 and below\n\nSides:\nAll - Impassable\n\nMinis with size > 5 treat this as difficult terrain\n\nHeight: 2",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.670588255,
+      "g": 0.399998665,
+      "b": 0.352939844
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://gist.githubusercontent.com/nashjaee/0ae48450370150c2c00027895b8e82ba/raw/a1a792c26c857ffd87aba6787c33a932fed0946c/rock_formation_2_model.txt",
+      "DiffuseURL": "https://i.imgur.com/NqvTeah.jpghttps://i.imgur.com/NqvTeah.jpg",
+      "NormalURL": "",
+      "ColliderURL": "https://gist.githubusercontent.com/nashjaee/b9048effba06e7d8baaaacb0594c885b/raw/b71c618b6498c858ae3c55da102c1eaee6c3709e/rock_formation_2_collider.txt",
+      "Convex": false,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Rock_Formation_Heavy_Cover.b2775e.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

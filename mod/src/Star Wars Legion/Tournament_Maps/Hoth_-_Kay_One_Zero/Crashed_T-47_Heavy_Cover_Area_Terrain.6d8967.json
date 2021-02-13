@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "6d8967",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -21.0816364,
+      "posY": 1.30998409,
+      "posZ": -8.226068,
+      "rotX": -0.00000416586772,
+      "rotY": 128.295853,
+      "rotZ": -0.00001239666,
+      "scaleX": 1.43331826,
+      "scaleY": 0.5047617,
+      "scaleZ": 0.809818
+    },
+    "Nickname": "Crashed T-47 [Heavy Cover](Area Terrain)",
+    "Description": "Heavy Cover (Area Terrain):\nMini Size 1.25 and Below\n\nTrooper: Difficult\nG. Vehicle: Open\nRepulsor: Open\n\nHeight: 1\n\nMinis get cover as long the imaginary line between the attacker and defender crosses this terrain, and this terrain blocks LOS of the defender.",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542465659/30348E08551EAA3E8D5164E0D2931B3EB72DCEC1/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542468274/D98D7C685AF68524FD683264F9A57C049E220C93/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542467139/4036C31123FF00D2459B3ED1E57CD8141ACFAC8D/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Crashed_T-47_Heavy_Cover_Area_Terrain.6d8967.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

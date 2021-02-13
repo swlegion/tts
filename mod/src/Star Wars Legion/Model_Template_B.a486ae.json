@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "a486ae",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 57.13294,
+      "posY": 0.970841646,
+      "posZ": 0.276962042,
+      "rotX": -3.756896e-7,
+      "rotY": 179.98996,
+      "rotZ": 4.386775e-7,
+      "scaleX": 0.25,
+      "scaleY": 0.25,
+      "scaleZ": 0.25
+    },
+    "Nickname": "Model Template B",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.09987702,
+      "g": 0.09987702,
+      "b": 0.09987702
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780862641789/1D790BBBE50BAFFD7485B80AF34AC6E9AB7107FA/",
+      "DiffuseURL": "",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780862641789/1D790BBBE50BAFFD7485B80AF34AC6E9AB7107FA/",
+      "Convex": true,
+      "MaterialIndex": 1,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Model_Template_B.a486ae.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "Rigidbody": {
+      "Mass": 1,
+      "Drag": 1000,
+      "AngularDrag": 1000,
+      "UseGravity": false
+    },
+    "AttachedSnapPoints": [
+      {
+        "Position": {
+          "x": 0.0306912418,
+          "y": -0.333720267,
+          "z": -4.59154129
+        },
+        "Rotation": {
+          "x": -0.00000149958771,
+          "y": -0.00288254535,
+          "z": -9.335895e-7
+        },
+        "Tags": []
+      }
+    ]
+  },
+  "StatesPaths": {}
+}

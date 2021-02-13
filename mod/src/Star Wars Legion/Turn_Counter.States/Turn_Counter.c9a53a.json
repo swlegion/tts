@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "c9a53a",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 49.54264,
+      "posY": 1.01278687,
+      "posZ": 4.081627,
+      "rotX": -1.42049984e-7,
+      "rotY": 270.020325,
+      "rotZ": 0.000003846959,
+      "scaleX": 1.7,
+      "scaleY": 1.7,
+      "scaleZ": 1.7
+    },
+    "Nickname": "Turn Counter",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780864161820/919595CCEDED5DFBACB4D70DBE9F81B6B42DC66A/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Turn_Counter.c9a53a.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

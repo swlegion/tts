@@ -1,0 +1,51 @@
+{
+  "Object": {
+    "GUID": "e54b21",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 71.84384,
+      "posY": 2.440737,
+      "posZ": 12.0740156,
+      "rotX": 359.8833,
+      "rotY": 14.580987,
+      "rotZ": 4.85152626,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Sparse Woods [Light Cover]",
+    "Description": "Trooper: Open\nGround Vehicle: Open\nRepulsor: Open\n\nArea Terrain:\nWhen determining whether an object is obscured by cover, if the imaginary line from attacker to defender crosses any part of the area terrain base, it is considered obscured. As long as a mini is touching the base, the mini recieves Cover",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780858963948/80710CD9864BAE79FE3DA82649BAF9B934A9A2DB/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858963605/7A1F2232BE6FB4E618BF099DDC73447644C0FE16/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858945363/D3EEC34C89449348C7E70F3FF7D87AB841D6E3D7/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Sparse_Woods_Light_Cover.e54b21.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

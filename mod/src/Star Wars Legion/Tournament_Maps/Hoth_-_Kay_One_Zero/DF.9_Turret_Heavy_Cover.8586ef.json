@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "8586ef",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -16.79712,
+      "posY": 1.43013263,
+      "posZ": 4.30386734,
+      "rotX": -0.00139103632,
+      "rotY": 330.0234,
+      "rotZ": 0.0008017042,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "DF.9 Turret [Heavy Cover]",
+    "Description": "Heavy Cover:\nMinis size 2 or lower\n\nSides:\nAll - Impassable\n\nRoof:\nAll - Open\n\nHeight: 1\n\nSpecial Thanks: www.imperialterrain.com",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.76,
+      "g": 0.776666641,
+      "b": 0.8
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": false,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://gist.githubusercontent.com/nashjaee/5eff5ea708b7584a11ad13116d4005dd/raw/d022ce79fb128ab23a96c6270f335ddec8471c81/df9_turret_model.txt",
+      "DiffuseURL": "https://i.imgur.com/yUDOqjx.jpghttps://i.imgur.com/yUDOqjx.jpg",
+      "NormalURL": "",
+      "ColliderURL": "https://gist.githubusercontent.com/nashjaee/bc700a382644a6827c28a7faa5d924fc/raw/a0327f9d38f5cef2ba469a935227e082a403acb3/df9_turret_collider.txt",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./DF.9_Turret_Heavy_Cover.8586ef.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

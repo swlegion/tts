@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "5efb6f",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 53.1759262,
+      "posY": 2.33888745,
+      "posZ": 13.0163126,
+      "rotX": -0.000009335291,
+      "rotY": 180,
+      "rotZ": 0.00000887829447,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "Force Barrier",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 40900,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "409": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1646592601245312039/D5AF04CE899ED4A8D569918DB965AC7B1ED725D1/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1646592601245312039/D5AF04CE899ED4A8D569918DB965AC7B1ED725D1/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

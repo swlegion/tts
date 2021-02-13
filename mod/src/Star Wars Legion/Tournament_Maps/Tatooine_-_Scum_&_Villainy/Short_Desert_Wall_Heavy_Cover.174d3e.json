@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "174d3e",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -22.667717,
+      "posY": 1.44172037,
+      "posZ": 7.93714333,
+      "rotX": 0.000837490254,
+      "rotY": 119.983925,
+      "rotZ": -0.00138846843,
+      "scaleX": 1.99999928,
+      "scaleY": 1.99999928,
+      "scaleZ": 1.99999928
+    },
+    "Nickname": "Short Desert Wall [Heavy Cover]",
+    "Description": "Heavy Cover:\nMini Size 1 and below\n\nSides:\nTrooper: Difficult\nG. Vehicle: Open\nRepulsor: Open\n\nSpecial Thanks to https://www.etsy.com/shop/LowCountryCraftShop ",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://gist.githubusercontent.com/nashjaee/b5f868e1a32dd277e804ba5243140395/raw/094ee931f3514d97f4ca7f1ff4c812333fbc297a/short_straight.txt",
+      "DiffuseURL": "https://www.dropbox.com/s/rtdlpenu65l37b9/tatooine_generic.jpg?raw=1",
+      "NormalURL": "",
+      "ColliderURL": "https://gist.githubusercontent.com/nashjaee/b5f868e1a32dd277e804ba5243140395/raw/094ee931f3514d97f4ca7f1ff4c812333fbc297a/short_straight.txt",
+      "Convex": false,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Short_Desert_Wall_Heavy_Cover.174d3e.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

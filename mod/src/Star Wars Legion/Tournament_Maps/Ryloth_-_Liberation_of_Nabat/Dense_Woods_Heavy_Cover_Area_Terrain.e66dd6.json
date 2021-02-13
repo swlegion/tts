@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "e66dd6",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -27.0068073,
+      "posY": 1.55457056,
+      "posZ": 12.6151466,
+      "rotX": 0.008661329,
+      "rotY": 345.0221,
+      "rotZ": 359.9834,
+      "scaleX": 1.15000057,
+      "scaleY": 1.38991976,
+      "scaleZ": 1.15000045
+    },
+    "Nickname": "Dense Woods [Heavy Cover](Area Terrain)",
+    "Description": "Heavy Cover (Area Terrain):\nMini Size 6 and Below\n\nTrooper: Difficult\nG. Vehicle: Impassable\nRepulsor: Impassable\n\nHeight: 1\n\nMinis get cover as long the imaginary line between the attacker and defender crosses this terrain, and this terrain blocks LOS of the defender.",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0.99608,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://paste.ee/r/GETuG",
+      "DiffuseURL": "http://i.imgur.com/zIcMBDh.png",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858618391/9AFA49334F7632BE2F99F0FE8DE1EACC80F7CA53/",
+      "Convex": false,
+      "MaterialIndex": 1,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 0.8745098,
+          "g": 0.8117647,
+          "b": 0.745098054
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Dense_Woods_Heavy_Cover_Area_Terrain.e66dd6.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

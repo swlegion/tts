@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "94e8f0",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -6.68332958,
+      "posY": -1.46050549,
+      "posZ": -2.30993366,
+      "rotX": -0.000804059149,
+      "rotY": 300.0122,
+      "rotZ": 0.00138996041,
+      "scaleX": 1.19999981,
+      "scaleY": 1.19999981,
+      "scaleZ": 1.19999981
+    },
+    "Nickname": "Cargo Crates [Light Cover]",
+    "Description": "Light Cover:\nMini Size 1 and below\n\nTrooper: Difficult\nG. Vehicle: Open\nRepulsor: Open\n\nSpecial Thanks: imperialterrain.com",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.8972126,
+      "g": 0.620545864,
+      "b": 0.620545864
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542866356/5E4885FE0560DC376FFC7C1411092E0236436ABA/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542867256/F1654D39814397BEB69F64F304D418531458D264/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Cargo_Crates_Light_Cover.94e8f0.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

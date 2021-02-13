@@ -1,0 +1,67 @@
+{
+  "Object": {
+    "GUID": "a44dcb",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 53.5849953,
+      "posY": 0.9415994,
+      "posZ": 3.58668017,
+      "rotX": 9.692499e-7,
+      "rotY": 89.99385,
+      "rotZ": -0.00160259882,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "DATA DISK MOUNT",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780862667883/6666FA9718DA3346465D00973B86A7E28A65F3C0/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780862668140/A6AA626AA16F24D0415C6EE3EA9F3D931BD12B55/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780862668744/AA49AED49CB17A88CE3CEE83F3259C18F91C6A6B/",
+      "Convex": true,
+      "MaterialIndex": 1,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "AttachedSnapPoints": [
+      {
+        "Position": {
+          "x": -0.022506753,
+          "y": 0.27294302,
+          "z": -0.004737657
+        },
+        "Rotation": {
+          "x": 0.0016045816,
+          "y": 0.000240667971,
+          "z": -8.07034e-7
+        },
+        "Tags": []
+      }
+    ]
+  },
+  "StatesPaths": {}
+}

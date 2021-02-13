@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "ec6d9c",
+    "Name": "Card",
+    "Transform": {
+      "posX": 20.5872269,
+      "posY": 1.17324531,
+      "posZ": 18.72273,
+      "rotX": 0.00007664661,
+      "rotY": 180.0115,
+      "rotZ": 0.00009089079,
+      "scaleX": 0.227068469,
+      "scaleY": 1,
+      "scaleZ": 0.227068469
+    },
+    "Nickname": "Stormtroopers",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 28506,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "285": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785232635608488957/DCBD6D808C52809A4475406FF613B4D0645755E3/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/785232635608489085/2E705415F84CAB4FF3D48030C7A0664BB4F00EBB/",
+        "NumWidth": 5,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

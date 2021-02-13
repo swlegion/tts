@@ -1,0 +1,51 @@
+{
+  "Object": {
+    "GUID": "0991f4",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 81.45603,
+      "posY": 2.24667525,
+      "posZ": -14.5482693,
+      "rotX": 0.0011345339,
+      "rotY": 225.000076,
+      "rotZ": 0.001134457,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Tower (Building) [Heavy Cover]",
+    "Description": "Heavy Cover:\nAll\n\nSides:\nAll - Impassable\n\nRoof:\nTroopers - Open\nG. Vehicle - Impassable\nRepulsor - Impassable\n\nHeight: 2\n\nSpecial Thanks: www.imperialterrain.com",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.737872839,
+      "g": 0.737872839,
+      "b": 0.737872839
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540545451316/AC608171A4492A326C203BC2DE1FD984BCDBDA11/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540545451812/70184BDC28E20890F7C4284781F7570B16C4ABA5/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540545451698/4621904ED4EFA7E5C8F00B4E0F184379F5625651/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Tower_Building_Heavy_Cover.0991f4.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "74cee0",
+    "Name": "Card",
+    "Transform": {
+      "posX": 43.1547928,
+      "posY": 8.407136,
+      "posZ": 0.5075407,
+      "rotX": -0.00000550042159,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 0.227068469,
+      "scaleY": 1,
+      "scaleZ": 0.227068469
+    },
+    "Nickname": "Iden Versio",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 37400,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "374": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/771742395407142209/D818C462ABA083797D2EAE687048D954E5288C74/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/771742395407142209/D818C462ABA083797D2EAE687048D954E5288C74/",
+        "NumWidth": 3,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

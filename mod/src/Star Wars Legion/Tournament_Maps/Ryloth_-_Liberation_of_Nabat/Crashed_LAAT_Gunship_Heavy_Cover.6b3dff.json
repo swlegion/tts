@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "6b3dff",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -13.3614025,
+      "posY": -3.26154828,
+      "posZ": 5.72759438,
+      "rotX": 31.8817253,
+      "rotY": 137.7292,
+      "rotZ": 343.9674,
+      "scaleX": 0.7250002,
+      "scaleY": 0.7250002,
+      "scaleZ": 0.7250002
+    },
+    "Nickname": "Crashed LAAT Gunship [Heavy Cover]",
+    "Description": "Heavy Cover:\nMinis Size 6 and below\n\nBody:\nAll - Impassable\n\nWings:\nTrooper - Difficult\nG. Vehicle - Difficult (Walkers treat as Open)\nRepulsor - Open\n\nHeight: 1\n\nUnits may move up the wing slopes without climbing/clambering.\n\nHeight: 1",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542593596/438183F810EA457A2792A2DE9F0D419C5C3B7C5D/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858716507/0D8A363559CCA6C401CD99E30C12AEFF07D894FC/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858724701/48886E8AC98425ECD51EA00FAE0DDC42644757AA/",
+      "Convex": false,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Crashed_LAAT_Gunship_Heavy_Cover.6b3dff.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

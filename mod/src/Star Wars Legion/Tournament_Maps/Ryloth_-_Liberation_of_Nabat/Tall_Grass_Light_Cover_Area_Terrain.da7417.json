@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "da7417",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -9.568957,
+      "posY": 1.44601321,
+      "posZ": 0.995497465,
+      "rotX": 0.0572005324,
+      "rotY": 90.0138855,
+      "rotZ": 0.0015897922,
+      "scaleX": 1.1340704,
+      "scaleY": 0.5,
+      "scaleZ": 0.8985474
+    },
+    "Nickname": "Tall Grass [Light Cover][Area Terrain]",
+    "Description": "Light Cover (Area Terrain):\nNon-Creature Troopers, Minis Size 1.5 and below\n\nTall Grass:\nAll - Open\n\nMinis only get cover if they are fully within this terrain.\n\nDoes not obscure LOS",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": true,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542621946/F2FCD4CD9FD97EE020C328EEF39B5A75C1604546/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542625908/696B403660ADD2D2F56A91400EFC61F696F0D085/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542626980/ACBD7B95053F17B53B637E41F50076E361F8B3EF/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Tall_Grass_Light_Cover_Area_Terrain.da7417.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

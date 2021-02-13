@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "2629fd",
+    "Name": "Card",
+    "Transform": {
+      "posX": 57.8726768,
+      "posY": 2.7262032,
+      "posZ": -2.20257449,
+      "rotX": 0.000008812211,
+      "rotY": 270.0017,
+      "rotZ": 0.000009617802,
+      "scaleX": 0.1727097,
+      "scaleY": 1,
+      "scaleZ": 0.1727097
+    },
+    "Nickname": "Minefield",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 32204,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "307": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785234780864105506/C25CC992198776A0C941BB10D1B7CCB675B24966/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/786360308354563381/FF7DF081311A20CC396CAC9391D85EB1FBCA44E1/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

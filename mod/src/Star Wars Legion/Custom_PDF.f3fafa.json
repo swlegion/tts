@@ -1,0 +1,48 @@
+{
+  "Object": {
+    "GUID": "f3fafa",
+    "Name": "Custom_PDF",
+    "Transform": {
+      "posX": 54.37716,
+      "posY": 0.9490396,
+      "posZ": -19.0437183,
+      "rotX": 0.00000105334084,
+      "rotY": 270.0058,
+      "rotZ": -6.762114e-9,
+      "scaleX": 1.99723673,
+      "scaleY": 1,
+      "scaleZ": 1.99723673
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.6500202,
+      "g": 0.6500202,
+      "b": 0.6500202
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomPDF": {
+      "PDFUrl": "https://images-cdn.fantasyflightgames.com/filer_public/22/05/22054e23-522f-463a-9249-ac19147a9ddd/swl_rules_reference_201_compressed.pdf?fbclid=IwAR0jeUq-h_AxfZfNXjhB3X6vJz2xBeM6WliPm8J_SvE4s6zfB4hNHUr-nMI",
+      "PDFPassword": "",
+      "PDFPage": 0,
+      "PDFPageOffset": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

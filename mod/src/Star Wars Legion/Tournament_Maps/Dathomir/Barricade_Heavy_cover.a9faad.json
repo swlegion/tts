@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "a9faad",
+    "Name": "Custom_Assetbundle",
+    "Transform": {
+      "posX": 23.52336,
+      "posY": 0.8732082,
+      "posZ": 9.814132,
+      "rotX": 3.500716,
+      "rotY": 314.883545,
+      "rotZ": 359.763184,
+      "scaleX": 0.8750001,
+      "scaleY": 0.8750001,
+      "scaleZ": 0.8750001
+    },
+    "Nickname": "Barricade [Heavy cover]",
+    "Description": "Treat this as a offical barricade ",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.8,
+      "g": 0.8,
+      "b": 0.8
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/961977062859860946/201D3804D8366CFEA5FBA7F6A795889B93C3C870/",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 0,
+      "TypeIndex": 0,
+      "LoopingEffectIndex": 0
+    },
+    "LuaScript": "#include ./Barricade_Heavy_cover.a9faad.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

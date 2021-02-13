@@ -1,0 +1,51 @@
+{
+  "Object": {
+    "GUID": "5bc0fd",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 77.7842941,
+      "posY": 2.811781,
+      "posZ": -17.1364212,
+      "rotX": 0.00161937962,
+      "rotY": 179.988434,
+      "rotZ": -0.00000107707274,
+      "scaleX": 1.19999981,
+      "scaleY": 1.19999981,
+      "scaleZ": 1.19999981
+    },
+    "Nickname": "Cargo Crates [Heavy Cover]",
+    "Description": "Heavy Cover:\nTroopers\n\nCrates:\nTrooper - Difficult\nG. Vehicle - Open\nRepulsor - Open\n\nSpecial Thanks: www.imperialterrain.com",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542868366/7453AE31568D0854F7D8037777F927998ABBDF98/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542868898/14812371280BFF33FA66C30B204E3FA405D27875/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542882490/1B0E80D65DB60FACB3B9DB569DBB101D015DD0C2/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Cargo_Crates_Heavy_Cover.5bc0fd.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

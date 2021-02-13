@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "c9f9d0",
+    "Name": "Custom_Model_Bag",
+    "Transform": {
+      "posX": -38.5355377,
+      "posY": 1.22417128,
+      "posZ": 18.5214577,
+      "rotX": 0.00175188773,
+      "rotY": 179.985764,
+      "rotZ": 0.0000122997872,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "BLUE Command Stack",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.254900366,
+      "g": 0.345096439,
+      "b": 0.4470588
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Number": 0,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314445226/CE917AD43910DCEE7E2793A3108E7FE4BEBB1515/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314445543/D5A7CE82A57642D98161C26396EF700AF0AAADB1/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786359883314445226/CE917AD43910DCEE7E2793A3108E7FE4BEBB1515/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 6,
+      "CastShadows": true
+    },
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./BLUE_Command_Stack.c9f9d0.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

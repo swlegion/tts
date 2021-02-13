@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "7ce5ad",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 30.783947,
+      "posY": 1.44184625,
+      "posZ": -12.3796234,
+      "rotX": 0.00000250618837,
+      "rotY": 90.00154,
+      "rotZ": 0.00160390325,
+      "scaleX": 0.88,
+      "scaleY": 0.875,
+      "scaleZ": 0.875
+    },
+    "Nickname": "Sandbags [Light Cover]",
+    "Description": "Light Cover:\nMini Size 1 and below, TX-225, X-34.\n\nTrooper: Difficult\nG. Vehicle: Open\nRepulsor: Open",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": false,
+    "Snap": false,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": false,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/920331435132688028/CD2CE1857BF50794B6095EF915DB538C5A1B66FE/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/920331435132688137/C98DEAEA6FB0F4758F16BB9698ED67BDACB3D040/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/920331435132688375/F23F4255FDB46E08BE1B0A24D3592506B4B6435A/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 1,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Sandbags_Light_Cover.7ce5ad.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

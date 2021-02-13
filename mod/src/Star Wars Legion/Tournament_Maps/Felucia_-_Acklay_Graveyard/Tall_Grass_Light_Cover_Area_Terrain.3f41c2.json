@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "3f41c2",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -15.89569,
+      "posY": 1.44387388,
+      "posZ": -8.559315,
+      "rotX": 0.07579734,
+      "rotY": 300.01355,
+      "rotZ": -0.000416581839,
+      "scaleX": 1,
+      "scaleY": 0.6975999,
+      "scaleZ": 1.00000763
+    },
+    "Nickname": "Tall Grass [Light Cover](Area Terrain)",
+    "Description": "Light Cover (Area Terrain):\nMini Size 1 and below (Excluding TX-225)\n\nTall Grass:\nAll - Open\n\nMinis get cover as long the imaginary line between the attacker and defender crosses this terrain, and this terrain blocks LOS of the defender.",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.9564459,
+      "g": 0.7081698,
+      "b": 0.7081698
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://gist.githubusercontent.com/nashjaee/a3d00a114fa8780047e74befb4a20847/raw/70fb18ba5d93aced71b5191c15dad5b69fc53633/grass.obj",
+      "DiffuseURL": "https://i.imgur.com/wTqx8Hw.png",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542626980/ACBD7B95053F17B53B637E41F50076E361F8B3EF/",
+      "Convex": true,
+      "MaterialIndex": 0,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0.4
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Tall_Grass_Light_Cover_Area_Terrain.3f41c2.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

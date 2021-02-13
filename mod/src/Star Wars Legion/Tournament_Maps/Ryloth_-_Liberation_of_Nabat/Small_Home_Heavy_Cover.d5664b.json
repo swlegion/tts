@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "d5664b",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 41.0481644,
+      "posY": 1.43999863,
+      "posZ": -6.917636,
+      "rotX": 0.00113150792,
+      "rotY": 45.19509,
+      "rotZ": 0.0011388798,
+      "scaleX": 1.59999955,
+      "scaleY": 1.59999955,
+      "scaleZ": 1.59999955
+    },
+    "Nickname": "Small Home [Heavy Cover]",
+    "Description": "Heavy Cover:\nMini size 3 and below\n\nSides:\nAll - Impassable\nMinis with size > 3 treat this as difficult terrain\n\nRoof:\nAll - Open\n\nHeight: 1\n\nSmall-base trooper units with the leader in base contact with the ladder gain Scale.\n\nSpecial Thanks: www.imperialterrain.com",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.817073166,
+      "g": 0.817073166,
+      "b": 0.817073166
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://gist.githubusercontent.com/nashjaee/acaf8cf7ba6c6c8d0ee1ca55f7e462ea/raw/1993acfa99e7238a2f2a7b9d0a998c1d1fcd72f2/building7_model.txt",
+      "DiffuseURL": "https://i.imgur.com/VPHGos3.jpg",
+      "NormalURL": "",
+      "ColliderURL": "https://gist.githubusercontent.com/nashjaee/41a47288e181b8c3f89a5197e0e70c7f/raw/d4147ec63400b97816dce808aa6d26f69d5654eb/building7_collider.txt",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Small_Home_Heavy_Cover.d5664b.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

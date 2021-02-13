@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "dabdf2",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -19.625412,
+      "posY": 1.44134545,
+      "posZ": -5.487352,
+      "rotX": -0.0008033063,
+      "rotY": 300.024628,
+      "rotZ": 0.00139014551,
+      "scaleX": 1.99999928,
+      "scaleY": 1.99999928,
+      "scaleZ": 1.99999928
+    },
+    "Nickname": " Tall Desert Wall [Heavy Cover]",
+    "Description": "Heavy Cover:\nMinis Size 3 and below\n\nTrooper: Impassable\nGround Vehicle: Impassable\nRepulsor: Impassable\n\nMinis with size > 3 treat this as difficult terrain\n\nHeight: 1\n\nRefer to RRG on rule regarding overhang rules and clambering over fences\n\nSpecial Thanks to https://www.etsy.com/shop/LowCountryCraftShop ",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://gist.githubusercontent.com/nashjaee/e42f6c8204c6f15a4287cc37667f580b/raw/4ad498090fa0d76e124b102fed2a3e77bca38653/tall_long_curve.txt",
+      "DiffuseURL": "https://www.dropbox.com/s/rtdlpenu65l37b9/tatooine_generic.jpg?raw=1",
+      "NormalURL": "",
+      "ColliderURL": "https://gist.githubusercontent.com/nashjaee/e42f6c8204c6f15a4287cc37667f580b/raw/4ad498090fa0d76e124b102fed2a3e77bca38653/tall_long_curve.txt",
+      "Convex": false,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Tall_Desert_Wall_Heavy_Cover.dabdf2.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

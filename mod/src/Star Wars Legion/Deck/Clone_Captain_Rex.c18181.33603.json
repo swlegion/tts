@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "c18181",
+    "Name": "Card",
+    "Transform": {
+      "posX": -9.729055,
+      "posY": 1.25723445,
+      "posZ": 12.2996178,
+      "rotX": -0.000639614766,
+      "rotY": 180.009933,
+      "rotZ": 182.4344,
+      "scaleX": 0.227068469,
+      "scaleY": 1,
+      "scaleZ": 0.227068469
+    },
+    "Nickname": "Clone Captain Rex",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 33603,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "336": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785234780871826675/AB913C0C0C60F8D420397BD7D7B8A780724EBEE5/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/785234780871826675/AB913C0C0C60F8D420397BD7D7B8A780724EBEE5/",
+        "NumWidth": 4,
+        "NumHeight": 4,
+        "BackIsHidden": true,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

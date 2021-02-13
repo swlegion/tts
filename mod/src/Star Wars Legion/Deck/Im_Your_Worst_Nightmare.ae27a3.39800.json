@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "ae27a3",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 60.83702,
+      "posY": 1.8164705,
+      "posZ": -3.954976,
+      "rotX": -0.00120530743,
+      "rotY": 179.999954,
+      "rotZ": 1.99320781,
+      "scaleX": 0.367304444,
+      "scaleY": 1,
+      "scaleZ": 0.367304444
+    },
+    "Nickname": "Im Your Worst Nightmare",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 39800,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "398": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1055478574360951050/632FD21684E2F6428A3BF3979A09D248E7753BA8/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1002556126521104152/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

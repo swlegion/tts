@@ -1,0 +1,51 @@
+{
+  "Object": {
+    "GUID": "1af4d0",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 45.6321831,
+      "posY": 0.9419057,
+      "posZ": 14.5166388,
+      "rotX": 0.000007333939,
+      "rotY": 89.9867249,
+      "rotZ": -0.00160450174,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Objective Token",
+    "Description": "Objective Tokens do not obscure LOS or provide cover\n\nRight Click > State to change to different objective token models",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.7294118,
+      "g": 0.5921568,
+      "b": 0.4588232
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542327734/BE7C0C7FFDCF9E81F113787A4E794BA23124BDD2/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542327868/C2222945F183D3DA1B90A9083D7B86924AB61EE2/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540537100371/0B15B2810ABEBE5429E4A24852D96BAC2DC28BF7/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 1,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Objective_Token.1af4d0.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

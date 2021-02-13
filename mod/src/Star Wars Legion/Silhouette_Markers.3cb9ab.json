@@ -1,0 +1,59 @@
+{
+  "Object": {
+    "GUID": "3cb9ab",
+    "Name": "Custom_Model_Infinite_Bag",
+    "Transform": {
+      "posX": -41.3806267,
+      "posY": 0.949036539,
+      "posZ": -19.483923,
+      "rotX": 0.0000175642235,
+      "rotY": 359.983643,
+      "rotZ": 0.0000579360458,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Silhouette Markers",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.471527278,
+      "g": 0.7585914,
+      "b": 0.8031359,
+      "a": 0.392156869
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1003681898505457610/F60D118CC9A8E27D351A003FE2F37CDAD58CB762/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1003681898505462981/13937CB26573918BDCBDE2A13CCDEF3C966172D7/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+      "Convex": true,
+      "MaterialIndex": 0,
+      "TypeIndex": 7,
+      "CastShadows": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Silhouette_with_base.2ca458.json"
+  ]
+}

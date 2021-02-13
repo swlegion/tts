@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "b209f4",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -2.16374922,
+      "posY": 1.43915236,
+      "posZ": -5.300211,
+      "rotX": 0.0198514275,
+      "rotY": 225.019928,
+      "rotZ": 359.977875,
+      "scaleX": 1.24999976,
+      "scaleY": 1.24999976,
+      "scaleZ": 1.24999976
+    },
+    "Nickname": "Urban Dwelling (Building) [Heavy Cover]",
+    "Description": "Heavy Cover:\nMinis Size 4 and below\n\nSides\nTrooper - Impassable\nGround Vehicle - Impassable\nRepulsor - Impassable\n\nMinis with size > 3.5 treat this as difficult terrain\n\nTop:\nAll - Open\n\nHeight: 1",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780857873717/D1EBFC74D2D2BCD9859AB010116353ED221CF547/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780857873812/183330EDC2F8F2224BCAD0F57A6C1202E549E361/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780857873915/F5B6120A6D56312061B6DD7BB89967A0C280B153/",
+      "Convex": false,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Urban_Dwelling_Building_Heavy_Cover.b209f4.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

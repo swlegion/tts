@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "42b04b",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 39.1158333,
+      "posY": 1.45001268,
+      "posZ": 3.529391,
+      "rotX": -0.00008256565,
+      "rotY": 270.005768,
+      "rotZ": -0.000313419238,
+      "scaleX": 1.84999931,
+      "scaleY": 1.84999931,
+      "scaleZ": 1.84999931
+    },
+    "Nickname": "Ruins [Heavy Cover]",
+    "Description": "Light Cover:\nMini size 3 and below\n\nSides:\nAll - Impassable\n\nWindows and Low wall:\nTroopers - Difficult\n\nDoorway:\nTroopers Open\n\nHeight: 1\n\nSpecial Thanks: Sith Vicious",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.763634264,
+      "g": 0.6558323,
+      "b": 0.831010461
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1000268739968672857/8B7966BC51FF14B75CBB47B90FF30466073154A1/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1000268739968673057/991355B7E84FFFF5467EF227BADC46FBDBFE09B5/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1000268739968673230/819BA23CE658EF18195231827781DC3303B3D62C/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Ruins_Heavy_Cover.42b04b.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

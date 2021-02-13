@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "895d94",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 1.36306715,
+      "posY": 1.39654291,
+      "posZ": -6.99039841,
+      "rotX": -0.00155040622,
+      "rotY": 195.019135,
+      "rotZ": -0.000415678485,
+      "scaleX": 0.8259605,
+      "scaleY": 0.912034,
+      "scaleZ": 0.927333534
+    },
+    "Nickname": "Small Cliff [Heavy Cover]",
+    "Description": "Heavy Cover:\nMinis Size 4 and below\n\nSides:\nAll - Impassable\nMinis size > 4 treat this as difficult terrain\n\nRoof and Slope:\nAll - Open\n\nHeight: 1",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.6784314,
+      "g": 0.6117647,
+      "b": 0.545097947
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780864149133/068D29B589638862A51858F78D0D4E7A540C9A60/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780858824706/1151156BCE256721497CF1DBF5B9874179C596CC/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234780858835205/B5E9F9B6B67565625027EF6A6F9EFE8E623BE61E/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Small_Cliff_Heavy_Cover.895d94.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

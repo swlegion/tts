@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "670dbe",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 52.6575775,
+      "posY": 0.9413349,
+      "posZ": -5.669143,
+      "rotX": -0.00166803587,
+      "rotY": 0.007755279,
+      "rotZ": -0.000386262138,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "REMOVE SUPPRESSION",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314440383/C192AB240F529A10B55CA1295BA0DA48FE820204/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314440717/D027C2D697651C4E6338B07ECCA0EA0F7F597271/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786359883314440619/FE3DF075B749009DAD730028F4511DA602D1DD2D/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./REMOVE_SUPPRESSION.670dbe.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
