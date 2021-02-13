@@ -19,7 +19,7 @@ require('make-promises-safe');
       break;
     case 'develop':
       console.info(`Compiling "${positional[2]}" -> "${positional[1]}"...`);
-      await compileSaveFile(positional[1], positional[1]);
+      await compileSaveFile(positional[2], positional[1]);
       const symLink = await createSymlink();
       console.info(`Created "${symLink}" -> "${positional[1]}"`);
       break;
