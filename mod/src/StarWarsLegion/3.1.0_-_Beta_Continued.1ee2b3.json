@@ -1,20 +1,20 @@
 {
   "Object": {
-    "GUID": "c282f8",
+    "GUID": "1ee2b3",
     "Name": "Notecard",
     "Transform": {
-      "posX": 2.55531716,
-      "posY": 1.01903617,
-      "posZ": 3.80804,
-      "rotX": 3.20736035e-7,
-      "rotY": -0.00000245304341,
-      "rotZ": 7.40421569e-7,
+      "posX": 9.876021,
+      "posY": 1.01903677,
+      "posZ": 3.82905674,
+      "rotX": -4.08278453e-7,
+      "rotY": 359.988739,
+      "rotZ": 0.00000184060752,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
     },
-    "Nickname": "3.1.0 - Beta",
-    "Description": "Added Featured > Skirmish maps. See https://go.swlegion.dev/skirmish for details.\n\nFixed a bug where in the latest version of TTS miniatures no longer spawned from the list builders.\n\nFixed a bug where a unit deactivated when it was moved or picked up.",
+    "Nickname": "3.1.0 - Beta (Continued)",
+    "Description": "Updated the Phase II Clone Trooper models.\n\nSome cleanup of duplicate tables, cards, and unused map resources.\n\nAdded scriptable hotkeys for delivering tokens and toggling the range bands for a unit leader. See OPTIONS > GAME KEYS.",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 1,

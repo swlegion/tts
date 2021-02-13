@@ -2,7 +2,7 @@
   "Save": {
     "SaveName": "StarWarsLegion",
     "GameMode": "Star Wars: Legion",
-    "Date": "2/11/2021 4:47:52 PM",
+    "Date": "2/13/2021 12:18:01 PM",
     "VersionNumber": "v13.0.5",
     "GameType": "",
     "GameComplexity": "",
@@ -244,7 +244,6 @@
     "Custom_Model.de5eb8.json",
     "Custom_Model.44c5b4.json",
     "Game_Controller_Back_Button.ae44c9.json",
-    "Data_Cartridge.38fcd0.json",
     "ScriptingTrigger.45d15b.json",
     "Custom_Model.a4448e.json",
     "Game_Controller_Option_4_Button.6cfaf1.json",
@@ -254,7 +253,6 @@
     "Custom_Maps.5f844e.json",
     "Game_Controller_Previous_Button.f563ce.json",
     "Game_Controller_Next_Button.d81a06.json",
-    "Tournament_Maps.b0e1fc.json",
     "Deployment.208a88.json",
     "Custom_Model.971605.json",
     "Custom_Model.931a06.json",
@@ -277,7 +275,6 @@
     "ScriptingTrigger.39b5f1.json",
     "Deck.3494a8.json",
     "ScriptingTrigger.92b9be.json",
-    "Competitive_Placement_Terrain.cbd273.json",
     "RED_COMMAND_TRAY.552739.json",
     "Custom_Assetbundle.4d88f4.json",
     "Custom_Assetbundle.5881eb.json",
@@ -380,10 +377,10 @@
     "All_Flaw_Cards.774f05.json",
     "Observation_Tokens.aac68d.json",
     "Incognito_Tokens.c4364f.json",
-    "Deck.910a3f.json",
     "TABLE.3a3ed9.json",
     "This_is_the_b_BETA_b_mod._Do_not_use_for_tournaments..6f3be4.json",
     "This_is_the_b_BETA_b_mod._Do_not_use_for_tournaments..eecff6.json",
-    "3.1.0_-_Beta.c282f8.json"
+    "3.1.0_-_Beta.c282f8.json",
+    "3.1.0_-_Beta_Continued.1ee2b3.json"
   ]
 }
