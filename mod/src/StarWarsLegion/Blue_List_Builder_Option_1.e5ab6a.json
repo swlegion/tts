@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "e5ab6a",
+    "Name": "Custom_Assetbundle",
+    "Transform": {
+      "posX": -35.18004,
+      "posY": 1.16757524,
+      "posZ": 23.5688953,
+      "rotX": 0.0059542344,
+      "rotY": 0.009175691,
+      "rotZ": 0.004923402,
+      "scaleX": 0.22,
+      "scaleY": 0.250000417,
+      "scaleZ": 0.22
+    },
+    "Nickname": "Blue List Builder Option 1",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0.913,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/267231170580138054/83B9C07DD90D4FA8F3DE016617A6BF0BC935D9FF/",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 0,
+      "TypeIndex": 0,
+      "LoopingEffectIndex": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

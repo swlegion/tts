@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "04ddf2",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 27.497406,
+      "posY": 1.52547193,
+      "posZ": 1.92333221,
+      "rotX": 0.000313204975,
+      "rotY": 359.987244,
+      "rotZ": -0.0000826804244,
+      "scaleX": 0.7000003,
+      "scaleY": 0.7000003,
+      "scaleZ": 0.7000003
+    },
+    "Nickname": "Pit [No Cover]",
+    "Description": "No Cover:\nAll\n\nSides:\nAll - Open\n\nPit:\nTrooper - Impassable\nG. Vehicle - Impassable\nRepulsor - Open\n\nDoes not obscure LOS",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5032066,
+      "g": 0.5290279,
+      "b": 0.5674805
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/789733065298188721/8A545233188CE5E9A5C82DABEEA346B669D3BF26/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/789733065298188827/F5F84FFC1B04F54935483829792D86F0BE38A0F9/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Pit_No_Cover.04ddf2.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

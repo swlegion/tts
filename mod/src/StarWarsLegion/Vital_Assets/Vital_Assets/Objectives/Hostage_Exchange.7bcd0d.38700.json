@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "7bcd0d",
+    "Name": "Card",
+    "Transform": {
+      "posX": 7.39134264,
+      "posY": 1.02357292,
+      "posZ": 23.2498589,
+      "rotX": 3.88739124e-7,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Hostage Exchange",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 38700,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "387": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1002555926636548437/DD845E6FEDC2E49A848887E1B6E05D3CC5C6C4C9/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/786360308354563159/BDB495B60FFED8707BD013502C2F03D3F047B63E/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

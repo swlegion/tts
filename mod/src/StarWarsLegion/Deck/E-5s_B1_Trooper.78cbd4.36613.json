@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "78cbd4",
+    "Name": "Card",
+    "Transform": {
+      "posX": 54.24688,
+      "posY": 1.39914465,
+      "posZ": 8.112636,
+      "rotX": 0.00001563381,
+      "rotY": 179.999969,
+      "rotZ": -0.0000226796856,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "E-5s B1 Trooper",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 36613,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "366": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767228764785781343/74B79D4C36D3007C44B39D3DAE855FA3A7BE406F/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767228764785781343/74B79D4C36D3007C44B39D3DAE855FA3A7BE406F/",
+        "NumWidth": 8,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "2c2cc0",
+    "Name": "Card",
+    "Transform": {
+      "posX": 42.0332947,
+      "posY": 2.04284883,
+      "posZ": -11.763937,
+      "rotX": 0.000013527243,
+      "rotY": 179.968719,
+      "rotZ": -0.0000197321569,
+      "scaleX": 0.367304444,
+      "scaleY": 1,
+      "scaleZ": 0.367304444
+    },
+    "Nickname": "Double the Fall",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 37305,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "373": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/773993114089646925/0AE033C7A506AA79911CBFE667571285BA59CA2A/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

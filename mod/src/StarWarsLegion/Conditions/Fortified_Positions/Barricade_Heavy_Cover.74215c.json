@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "74215c",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 49.09841,
+      "posY": 0.9470672,
+      "posZ": 9.435712,
+      "rotX": -0.00000181782389,
+      "rotY": 269.987976,
+      "rotZ": -0.0000189045422,
+      "scaleX": 0.7955451,
+      "scaleY": 0.9171029,
+      "scaleZ": 1.02592409
+    },
+    "Nickname": "Barricade [Heavy Cover]",
+    "Description": "Heavy Cover:\nMini Size 1 and below\n\nSides:\nTrooper: Difficult\nG. Vehicle: Open\nRepulsor: Open\n\nCenter:\nAll - Open\n\nSpecial Thanks: imperialterrain.com",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.826339543,
+      "g": 0.8529096,
+      "b": 0.8832754
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542429589/F10F499F8D061EFA2C4C696641235D706E4C0974/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542379040/149A4BEBD1F20D82737DB21773B93C52BC30DF78/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542430072/AA329530B252DDE7329AC70F9A98502F7875400C/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Barricade_Heavy_Cover.74215c.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

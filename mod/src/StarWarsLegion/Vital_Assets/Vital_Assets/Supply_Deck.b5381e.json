@@ -1,0 +1,91 @@
+{
+  "Object": {
+    "GUID": "b5381e",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 53.8683167,
+      "posY": 3.138617,
+      "posZ": 35.0556526,
+      "rotX": 0.656710267,
+      "rotY": 179.999573,
+      "rotZ": 179.913361,
+      "scaleX": 0.83,
+      "scaleY": 1,
+      "scaleZ": 0.8
+    },
+    "Nickname": "Supply Deck",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      38805,
+      38802,
+      38807,
+      38806,
+      38802,
+      38809,
+      38803,
+      38808,
+      38808,
+      38804,
+      38804,
+      38805,
+      38809,
+      38806,
+      38803,
+      38807
+    ],
+    "CustomDeck": {
+      "388": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1002555926636585759/9FFD3628224198EEC403A88F9BC54E5FA6C8A370/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1002555926636586067/E0018B8A3034BEA5F625560CD9CA58126E268152/",
+        "NumWidth": 3,
+        "NumHeight": 4,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Grapnel-Harpoon.2e8dd7.38805.json",
+    "Bacta_Capsules.12a8ba.38802.json",
+    "Targeting_Rangefinder.100fd1.38807.json",
+    "Precision_Scopes.251791.38806.json",
+    "Bacta_Capsules.12a8ba.38802.json",
+    "Field_Scannner.befa08.38809.json",
+    "Arc_Welder.9dd81f.38803.json",
+    "Holoprojector.391f1c.38808.json",
+    "Holoprojector.391f1c.38808.json",
+    "Camoflauge.0be693.38804.json",
+    "Camoflauge.0be693.38804.json",
+    "Grapnel-Harpoon.2e8dd7.38805.json",
+    "Field_Scannner.befa08.38809.json",
+    "Precision_Scopes.251791.38806.json",
+    "Arc_Welder.9dd81f.38803.json",
+    "Targeting_Rangefinder.100fd1.38807.json"
+  ]
+}

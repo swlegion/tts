@@ -1,0 +1,65 @@
+{
+  "Object": {
+    "GUID": "ce8e43",
+    "Name": "Custom_Model_Bag",
+    "Transform": {
+      "posX": 59.6376228,
+      "posY": 2.03261352,
+      "posZ": -31.7925014,
+      "rotX": 0.00000345352555,
+      "rotY": 89.99167,
+      "rotZ": 0.000002177695,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Fortified Positions",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780862656636/53487DF81A11090FF7BA1C6E7FA26D96E80D9D8E/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780862657065/EEBB10C312C8359898DD55209EE958396A8F4CAE/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 6,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Fortified_Positions.ce8e43.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Barricade_Heavy_Cover.74215c.json",
+    "Barricade_Heavy_Cover.508072.json",
+    "Barricade_Heavy_Cover.22f243.json",
+    "Barricade_Heavy_Cover.bea686.json",
+    "Barricade_Heavy_Cover.2f05fe.json",
+    "Barricade_Heavy_Cover.65eb65.json",
+    "Barricade_Heavy_Cover.fff765.json",
+    "Barricade_Heavy_Cover.84ed47.json"
+  ]
+}

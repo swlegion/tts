@@ -1,0 +1,45 @@
+{
+  "Object": {
+    "GUID": "5c7de3",
+    "Name": "Counter",
+    "Transform": {
+      "posX": -32.9699631,
+      "posY": 1.10005152,
+      "posZ": -22.5150566,
+      "rotX": 0.0136288386,
+      "rotY": 0.0138943437,
+      "rotZ": 0.000432310015,
+      "scaleX": 0.5500004,
+      "scaleY": 0.5500004,
+      "scaleZ": 0.5500004
+    },
+    "Nickname": "Red Army Point Cost",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "Counter": {
+      "value": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "f8a425",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -41.00788,
+      "posY": 1.16699553,
+      "posZ": -16.18098,
+      "rotX": -0.00000117442221,
+      "rotY": 240.020981,
+      "rotZ": 0.00000772867,
+      "scaleX": 0.750000238,
+      "scaleY": 0.750000238,
+      "scaleZ": 0.750000238
+    },
+    "Nickname": "Poison Token",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442992/DD893F407D50F2D029305A2F181989F90E3FA46A/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785236717874061462/2C7252E4C3030E3640741560C7C24E55950EF332/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 5,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

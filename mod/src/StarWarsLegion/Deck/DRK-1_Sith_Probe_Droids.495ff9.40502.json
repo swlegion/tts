@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "495ff9",
+    "Name": "Card",
+    "Transform": {
+      "posX": 30.1441174,
+      "posY": 2.023605,
+      "posZ": -30.57461,
+      "rotX": -0.00000487816033,
+      "rotY": 270.00293,
+      "rotZ": 180,
+      "scaleX": 0.227068469,
+      "scaleY": 1,
+      "scaleZ": 0.227068469
+    },
+    "Nickname": "DRK-1 Sith Probe Droids",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 40502,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "405": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1646592601245238035/B8BF1466B4C4F7699BA1B20E7D2A84711310F8A3/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1646592601245238035/B8BF1466B4C4F7699BA1B20E7D2A84711310F8A3/",
+        "NumWidth": 2,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

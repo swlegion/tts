@@ -1,0 +1,64 @@
+{
+  "Object": {
+    "GUID": "472274",
+    "Name": "Custom_Model_Bag",
+    "Transform": {
+      "posX": 48.89212,
+      "posY": 2.14158988,
+      "posZ": -23.6563416,
+      "rotX": -0.000002437379,
+      "rotY": 89.99167,
+      "rotZ": -0.00001549078,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Supply Drop",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780862656636/53487DF81A11090FF7BA1C6E7FA26D96E80D9D8E/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780862657065/EEBB10C312C8359898DD55209EE958396A8F4CAE/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 6,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Supply_Drop.472274.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Condition_Token_4.dfb09f.json",
+    "Condition_Token_6.c08906.json",
+    "Condition_Token_5.b0bd20.json",
+    "Condition_Token_3.147177.json",
+    "Condition_Token_1.e76fe1.json",
+    "Condition_Token_2.c65c35.json",
+    "Supply_Card_Deck.cebbff.json"
+  ]
+}

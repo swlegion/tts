@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "0b525b",
+    "Name": "Card",
+    "Transform": {
+      "posX": 66.81259,
+      "posY": 1.9847399,
+      "posZ": -16.3827324,
+      "rotX": 0.00000187221883,
+      "rotY": 180.013824,
+      "rotZ": -0.000004812401,
+      "scaleX": 0.367304444,
+      "scaleY": 1,
+      "scaleZ": 0.367304444
+    },
+    "Nickname": "Duel Of The Fates",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 41101,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "411": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1669112083189882673/2A0E07ED3106557B54A38694349C9A41988A4EFB/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

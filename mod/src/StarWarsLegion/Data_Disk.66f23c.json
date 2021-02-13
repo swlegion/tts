@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "66f23c",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 56.9174156,
+      "posY": 1.56295228,
+      "posZ": -1.39685488,
+      "rotX": 353.667023,
+      "rotY": 0.0156370569,
+      "rotZ": 179.977859,
+      "scaleX": 0.250000417,
+      "scaleY": 0.250000417,
+      "scaleZ": 0.250000417
+    },
+    "Nickname": "Data Disk",
+    "Description": "For quick loading of army lists:\n\nRight Click me and Save Object.\n\nGo to Menu > Objects > Saved Objects > select this Data Disk to load.\n\nInsert Data Disk into Army Loader Mount and Click Load Army to instantly load your army list!",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780862652963/3D489626E9A3E45C9CDEC20A5626EE3732B4173C/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780862653186/7A58CBD9F613D90F6C2B7BC0B82E64614DB2A65C/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "6741ef",
+    "Name": "Card",
+    "Transform": {
+      "posX": 86.12859,
+      "posY": 2.045672,
+      "posZ": -25.3001041,
+      "rotX": -0.00000400588533,
+      "rotY": 180.024612,
+      "rotZ": 180,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "CR-24 Flame Rifle",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 37011,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "370": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/773993114089672696/71BF713F022FA26AEB92339A6EDD68A88F8CCBF2/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/773993114089672696/71BF713F022FA26AEB92339A6EDD68A88F8CCBF2/",
+        "NumWidth": 6,
+        "NumHeight": 4,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

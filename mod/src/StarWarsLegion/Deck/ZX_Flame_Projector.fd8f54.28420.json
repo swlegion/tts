@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "fd8f54",
+    "Name": "Card",
+    "Transform": {
+      "posX": 41.15479,
+      "posY": 1.02075028,
+      "posZ": 7.67725468,
+      "rotX": -0.000002819239,
+      "rotY": 179.971222,
+      "rotZ": 0.0000224173,
+      "scaleX": 0.367304444,
+      "scaleY": 1,
+      "scaleZ": 0.367304444
+    },
+    "Nickname": "ZX Flame Projector",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 28420,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "284": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785232635608488823/00B5DFCD489D65A28E0AA0E93FD160AFD3C096A0/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+        "NumWidth": 10,
+        "NumHeight": 5,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

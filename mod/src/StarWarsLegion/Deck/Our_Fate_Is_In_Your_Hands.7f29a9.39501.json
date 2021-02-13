@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "7f29a9",
+    "Name": "Card",
+    "Transform": {
+      "posX": 69.06341,
+      "posY": 1.71358049,
+      "posZ": -16.2605419,
+      "rotX": 0.00000539120128,
+      "rotY": 180.022934,
+      "rotZ": -0.000007336693,
+      "scaleX": 0.367304444,
+      "scaleY": 1,
+      "scaleZ": 0.367304444
+    },
+    "Nickname": "Our Fate Is In Your Hands",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 39501,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "395": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1002556126521110077/21FC8658467A8E21811F7974FA48E6C183F64542/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1002556126521104152/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+        "NumWidth": 2,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

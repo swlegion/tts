@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "c55b84",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 53.2776146,
+      "posY": 1.901483,
+      "posZ": -15.5618076,
+      "rotX": 1.59466822e-7,
+      "rotY": 180,
+      "rotZ": 0.0000206940622,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "Looted E-5 Blaster",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 39300,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "393": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1002556126520922072/0634354719313FCE1FA8FB1FC8645D6C4332116A/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1002556126520922072/0634354719313FCE1FA8FB1FC8645D6C4332116A/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

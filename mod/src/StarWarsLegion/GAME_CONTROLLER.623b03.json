@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "623b03",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 55.2244644,
+      "posY": 0.94145906,
+      "posZ": -1.42382157,
+      "rotX": 0.0000031442778,
+      "rotY": 90.00088,
+      "rotZ": -0.00160578522,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "GAME CONTROLLER",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441144/EDAA04D8A056819B65CEDA236559045E235193EC/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780862648292/75769189AF6176C1E0A9BEDC028D10922FA36337/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 1,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./GAME_CONTROLLER.623b03.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

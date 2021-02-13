@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "fd52bf",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -41.4494133,
+      "posY": 1.08232558,
+      "posZ": -16.01154,
+      "rotX": 0.002985441,
+      "rotY": 0.02278893,
+      "rotZ": 0.000350444549,
+      "scaleX": 1.2,
+      "scaleY": 1.2,
+      "scaleZ": 1.2
+    },
+    "Nickname": "Commander Token",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314443431/097A439FFEDF419BAA723FB00918F6A8188D390D/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314443535/51A0B4A9A3A230825DFAB81B6AA97ED36C85E420/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

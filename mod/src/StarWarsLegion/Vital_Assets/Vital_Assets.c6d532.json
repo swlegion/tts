@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "c6d532",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 49.9489555,
+      "posY": 2.838274,
+      "posZ": 35.7276649,
+      "rotX": 358.872437,
+      "rotY": 0.0235807,
+      "rotZ": 359.415833,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Vital Assets",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.7058823,
+      "g": 0.366520882,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Objectives.482200.json",
+    "Conditions.b5ead5.json",
+    "Deployments.554189.json",
+    "Supply_Deck.b5381e.json",
+    "Hostages.397d3e.json"
+  ]
+}

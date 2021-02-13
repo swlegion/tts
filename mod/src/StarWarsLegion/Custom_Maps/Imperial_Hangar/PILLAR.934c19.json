@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "934c19",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 37.4571381,
+      "posY": 1.43721414,
+      "posZ": -17.7196732,
+      "rotX": -0.0000839077547,
+      "rotY": 270.027222,
+      "rotZ": -0.0003150144,
+      "scaleX": 0.335351467,
+      "scaleY": 0.4750004,
+      "scaleZ": 0.4750004
+    },
+    "Nickname": "PILLAR",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.438064873,
+      "g": 0.493472278,
+      "b": 0.5858167
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/789733065298188507/30AFD4C22E71551A395175344F4FF6CFB9BDD596/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/789733065298188620/0EFB98C91D949336161155546BDC32EAB13E057B/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/789733065298188401/7F00D03923D21440D8C17F6341C239FEA19010EF/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./PILLAR.934c19.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

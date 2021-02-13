@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "f5065d",
+    "Name": "Card",
+    "Transform": {
+      "posX": 51.3960838,
+      "posY": 8.407136,
+      "posZ": -26.649704,
+      "rotX": -0.00000419122671,
+      "rotY": 179.993149,
+      "rotZ": 180,
+      "scaleX": 0.227068469,
+      "scaleY": 1,
+      "scaleZ": 0.227068469
+    },
+    "Nickname": "Darth Vader The Emperors Apprentice",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 37409,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "374": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/771742395407142209/D818C462ABA083797D2EAE687048D954E5288C74/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/771742395407142209/D818C462ABA083797D2EAE687048D954E5288C74/",
+        "NumWidth": 3,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

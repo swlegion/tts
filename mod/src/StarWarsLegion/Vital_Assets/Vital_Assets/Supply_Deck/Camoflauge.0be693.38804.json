@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "0be693",
+    "Name": "Card",
+    "Transform": {
+      "posX": 31.4529629,
+      "posY": 1.02074981,
+      "posZ": 18.0632763,
+      "rotX": -2.43305323e-7,
+      "rotY": 180,
+      "rotZ": -2.51900047e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Camoflauge",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 38804,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "388": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1002555926636585759/9FFD3628224198EEC403A88F9BC54E5FA6C8A370/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1002555926636586067/E0018B8A3034BEA5F625560CD9CA58126E268152/",
+        "NumWidth": 3,
+        "NumHeight": 4,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

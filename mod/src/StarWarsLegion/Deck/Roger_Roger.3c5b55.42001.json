@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "3c5b55",
+    "Name": "Card",
+    "Transform": {
+      "posX": 48.312767,
+      "posY": 1.9847399,
+      "posZ": -15.5406647,
+      "rotX": 5.965965e-7,
+      "rotY": 180,
+      "rotZ": 0.00000370916587,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Roger, Roger",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 42001,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "420": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1662358406933337663/FE4411AE09CEE8EDBBAC1855C49924FDDEB56F49/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1002556126521104152/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+        "NumWidth": 2,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

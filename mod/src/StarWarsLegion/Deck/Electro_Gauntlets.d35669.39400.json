@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "d35669",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 53.34019,
+      "posY": 1.9014833,
+      "posZ": -15.5039129,
+      "rotX": -0.00000716132763,
+      "rotY": 179.990189,
+      "rotZ": -0.00000878132,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "Electro Gauntlets",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 39400,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "394": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1002556126520921780/5CE90C01E08DE4D74B79C7EF4909B1835729D27D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1002556126520921780/5CE90C01E08DE4D74B79C7EF4909B1835729D27D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

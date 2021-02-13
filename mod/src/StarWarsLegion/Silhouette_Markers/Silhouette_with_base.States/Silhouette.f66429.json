@@ -1,0 +1,53 @@
+{
+  "Object": {
+    "GUID": "f66429",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -16.7513,
+      "posY": 0.9490368,
+      "posZ": -21.011446,
+      "rotX": -0.000003358749,
+      "rotY": 359.9903,
+      "rotZ": -0.0000119145025,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Silhouette",
+    "Description": "Place me on top of existing minis to check their LOS",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.471527338,
+      "g": 0.7585914,
+      "b": 0.8031359,
+      "a": 0.392156869
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1003681898505457098/962BED032738C4448CCD4B737E82876715459FE8/",
+      "DiffuseURL": "",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/",
+      "Convex": true,
+      "MaterialIndex": 0,
+      "TypeIndex": 1,
+      "CastShadows": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

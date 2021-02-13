@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "4a352e",
+    "Name": "Custom_Model_Infinite_Bag",
+    "Transform": {
+      "posX": -41.3747864,
+      "posY": 0.9412428,
+      "posZ": -9.14668751,
+      "rotX": -0.00139117113,
+      "rotY": 329.999969,
+      "rotZ": 0.0008054264,
+      "scaleX": 1.69999957,
+      "scaleY": 1.69999957,
+      "scaleZ": 1.69999957
+    },
+    "Nickname": "Dodge Tokens",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442740/91C08C293B53CCF3D104B0472B60ECF7BF4B613E/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442875/553BAF41BE032BCE7282C4DECB180B5410AC7226/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 7,
+      "CastShadows": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Dodge_Token.fbf519.json"
+  ]
+}

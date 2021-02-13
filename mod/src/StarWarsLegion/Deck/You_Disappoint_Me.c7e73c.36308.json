@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "c7e73c",
+    "Name": "Card",
+    "Transform": {
+      "posX": 39.1140976,
+      "posY": 1.042849,
+      "posZ": 12.5177584,
+      "rotX": -0.00000529752151,
+      "rotY": 180,
+      "rotZ": 0.0000227406545,
+      "scaleX": 0.367304444,
+      "scaleY": 1,
+      "scaleZ": 0.367304444
+    },
+    "Nickname": "You Disappoint Me",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 36308,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "363": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767228385215131866/7138501B7BBC43CB204B196F13639A5DFCD06BCF/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+        "NumWidth": 6,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

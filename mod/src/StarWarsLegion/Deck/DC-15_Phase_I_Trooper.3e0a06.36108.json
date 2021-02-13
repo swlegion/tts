@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "3e0a06",
+    "Name": "Card",
+    "Transform": {
+      "posX": 44.43231,
+      "posY": 1.17058337,
+      "posZ": 3.73673487,
+      "rotX": -0.000199906077,
+      "rotY": 269.982269,
+      "rotZ": 0.000282790075,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "DC-15 Phase I Trooper",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 36108,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "361": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785234780871838773/89B3703DF571DA7E93FB1107BED8384721A0B630/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/785234780871838773/89B3703DF571DA7E93FB1107BED8384721A0B630/",
+        "NumWidth": 8,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

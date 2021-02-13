@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "a6dba7",
+    "Name": "Card",
+    "Transform": {
+      "posX": 24.8784962,
+      "posY": 1.169113,
+      "posZ": 7.2381444,
+      "rotX": 0.005736137,
+      "rotY": 179.999329,
+      "rotZ": 0.00967711,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "Veteran Clone Pilot",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 36806,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "368": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/790880921930123538/91CBD6D4F1F3F4309DB7CA458AFB53969CB22CAF/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/790880921930122915/26FB6C7BCB6BCD80F7B73A29921CEE3628CEE8FB/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

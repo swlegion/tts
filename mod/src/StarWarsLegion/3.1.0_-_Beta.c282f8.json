@@ -1,0 +1,42 @@
+{
+  "Object": {
+    "GUID": "c282f8",
+    "Name": "Notecard",
+    "Transform": {
+      "posX": 2.55531716,
+      "posY": 1.01903617,
+      "posZ": 3.80804,
+      "rotX": 3.20736035e-7,
+      "rotY": -0.00000245304341,
+      "rotZ": 7.40421569e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "3.1.0 - Beta",
+    "Description": "Added Featured > Skirmish maps. See https://go.swlegion.dev/skirmish for details.\n\nFixed a bug where in the latest version of TTS miniatures no longer spawned from the list builders.\n\nFixed a bug where a unit deactivated when it was moved or picked up.",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

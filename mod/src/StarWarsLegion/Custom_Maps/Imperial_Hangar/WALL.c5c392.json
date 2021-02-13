@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "c5c392",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 27.1701164,
+      "posY": 1.43000937,
+      "posZ": 18.0406876,
+      "rotX": -0.000122623664,
+      "rotY": 89.9917755,
+      "rotZ": 0.0059106457,
+      "scaleX": 0.6000003,
+      "scaleY": 0.6000003,
+      "scaleZ": 0.6000003
+    },
+    "Nickname": "WALL",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.438064933,
+      "g": 0.493472278,
+      "b": 0.5858167
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/789733065298188107/B35B368F9EAD7C960B5BE01B0F6F546FB2EC8761/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/789733065298188298/AD298F0075442980407FB431B0316199D85E2C86/",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/789733065298188401/7F00D03923D21440D8C17F6341C239FEA19010EF/",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./WALL.c5c392.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

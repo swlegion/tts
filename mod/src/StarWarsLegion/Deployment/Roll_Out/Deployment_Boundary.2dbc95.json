@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "2dbc95",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -4,
+      "posY": 1.45,
+      "posZ": 12,
+      "rotX": 1.04220417e-10,
+      "rotY": 269.999634,
+      "rotZ": 0,
+      "scaleX": 12,
+      "scaleY": 2,
+      "scaleZ": 1
+    },
+    "Nickname": "Deployment Boundary",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0.266666383,
+      "b": 0.431372255
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542286866/1AEB80295FC3BE5EF33FAFF32927352772A55DE1/",
+      "DiffuseURL": "",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785234540542288781/D3A0CDFB9B97A281559CAA50151C3BBC4F6CE908/",
+      "Convex": true,
+      "MaterialIndex": 0,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Deployment_Boundary.2dbc95.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

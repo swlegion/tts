@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "327a3f",
+    "Name": "Card",
+    "Transform": {
+      "posX": 50.1940231,
+      "posY": 2.2335403,
+      "posZ": -14.1643,
+      "rotX": -0.00000710580025,
+      "rotY": 90.0040054,
+      "rotZ": 180,
+      "scaleX": 0.227068469,
+      "scaleY": 1,
+      "scaleZ": 0.227068469
+    },
+    "Nickname": "Padme Amidala",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 38205,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "382": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775122858930997637/1DD6C80C739D5AA7B4EF821BF7A44ADBCBC972F7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/775122858930997637/1DD6C80C739D5AA7B4EF821BF7A44ADBCBC972F7/",
+        "NumWidth": 3,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

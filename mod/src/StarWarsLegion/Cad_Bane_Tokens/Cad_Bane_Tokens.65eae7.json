@@ -1,0 +1,50 @@
+{
+  "Object": {
+    "GUID": "65eae7",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 23.0956421,
+      "posY": 2.860636,
+      "posZ": -20.948843,
+      "rotX": 359.763672,
+      "rotY": -0.00398126058,
+      "rotZ": 0.5410079,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Cad Bane Tokens",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.7058823,
+      "g": 0.366520882,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Bane_Token.cd46b5.json",
+    "Bane_Token.50bf7f.json",
+    "Bane_Token.d616e2.json"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "2ccad5",
+    "Name": "Card",
+    "Transform": {
+      "posX": 55.16299,
+      "posY": 1.39914465,
+      "posZ": 6.66294956,
+      "rotX": 0.000022372793,
+      "rotY": 180,
+      "rotZ": 6.35826268e-7,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "T-21 Stormtrooper",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 36605,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "366": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767228764785781343/74B79D4C36D3007C44B39D3DAE855FA3A7BE406F/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767228764785781343/74B79D4C36D3007C44B39D3DAE855FA3A7BE406F/",
+        "NumWidth": 8,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

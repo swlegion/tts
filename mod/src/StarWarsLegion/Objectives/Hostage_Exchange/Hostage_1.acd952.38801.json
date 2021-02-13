@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "acd952",
+    "Name": "Card",
+    "Transform": {
+      "posX": 49.2170372,
+      "posY": 1.02074981,
+      "posZ": 17.34755,
+      "rotX": -0.00000143277828,
+      "rotY": 269.9917,
+      "rotZ": -0.0000139276272,
+      "scaleX": 0.83,
+      "scaleY": 1,
+      "scaleZ": 0.8
+    },
+    "Nickname": "Hostage (1)",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 38801,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "388": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1002555926636585759/9FFD3628224198EEC403A88F9BC54E5FA6C8A370/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1002555926636586067/E0018B8A3034BEA5F625560CD9CA58126E268152/",
+        "NumWidth": 3,
+        "NumHeight": 4,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "#include ./Hostage_1.acd952.38801.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

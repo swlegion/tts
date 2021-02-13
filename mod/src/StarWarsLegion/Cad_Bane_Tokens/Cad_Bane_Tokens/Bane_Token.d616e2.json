@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "d616e2",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 13.5563259,
+      "posY": 3.03015447,
+      "posZ": -20.4795685,
+      "rotX": -3.9634628e-7,
+      "rotY": 90,
+      "rotZ": 0.00000112809846,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Bane Token",
+    "Description": "Flip to reveal",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1055478574362319474/84ACA1633B9C944D709B8770A251A629FF05ACBA/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Bane_Token.d616e2.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

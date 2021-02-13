@@ -1,0 +1,44 @@
+{
+  "Object": {
+    "GUID": "3f03a2",
+    "Name": "HandTrigger",
+    "Transform": {
+      "posX": 6.803023,
+      "posY": 2.64514518,
+      "posZ": 40.166,
+      "rotX": 0,
+      "rotY": 179.8,
+      "rotZ": 0,
+      "scaleX": 26.74604,
+      "scaleY": 3.21678519,
+      "scaleZ": 4.852062
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117999978,
+      "g": 0.53,
+      "b": 1,
+      "a": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": false,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "FogColor": "Blue",
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

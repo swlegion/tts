@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "812478",
+    "Name": "Card",
+    "Transform": {
+      "posX": 40.11004,
+      "posY": 1.02075016,
+      "posZ": 6.12562275,
+      "rotX": 0.00000428103476,
+      "rotY": 179.971283,
+      "rotZ": 0.000002651306,
+      "scaleX": 0.367304444,
+      "scaleY": 1,
+      "scaleZ": 0.367304444
+    },
+    "Nickname": "And Now... You Will Die",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 28425,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "284": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785232635608488823/00B5DFCD489D65A28E0AA0E93FD160AFD3C096A0/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+        "NumWidth": 10,
+        "NumHeight": 5,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
