@@ -10,23 +10,32 @@
   },
   "homepage": "https://github.com/swlegion/tts",
   "devDependencies": {
-    "@types/clear": "^0.1.0",
-    "@types/figlet": "^1.2.0",
-    "@types/fs-extra": "^8.0.0",
+    "@matanlurey/tts-editor": "github:matanlurey/tts-editor#dist",
+    "@matanlurey/tts-expander": "github:matanlurey/tts-expander#dist",
+    "@matanlurey/tts-runner": "github:matanlurey/tts-runner#dist",
+    "@matanlurey/tts-save-files": "github:matanlurey/tts-save-format",
+    "@types/clear": "^0.1.1",
+    "@types/figlet": "^1.2.1",
+    "@types/fs-extra": "^8.1.1",
     "@types/mkdirp": "^0.5.2",
-    "@types/node": "^12.7.8",
+    "@types/node": "^12.20.0",
     "@types/sanitize-filename": "^1.6.3",
+    "@types/shelljs": "^0.8.8",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
     "commander": "^3.0.2",
-    "detect-newline": "^3.0.0",
-    "figlet": "^1.2.4",
+    "detect-newline": "^3.1.0",
+    "figlet": "^1.5.0",
     "fs-extra": "^8.1.0",
-    "mkdirp": "^0.5.1",
-    "nodemon": "^1.19.2",
+    "mkdirp": "^0.5.5",
+    "nodemon": "^1.19.4",
     "path": "^0.12.7",
     "sanitize-filename": "^1.6.3",
-    "ts-node": "^8.4.1",
-    "typescript": "^3.6.3"
+    "shelljs": "^0.8.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.9"
+  },
+  "dependencies": {
+    "make-promises-safe": "^5.1.0"
   }
 }

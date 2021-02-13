@@ -1,9 +1,18 @@
 {
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-      "ecmaVersion": 2017
+    "extraFileExtensions": [".json"],
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
-
   "env": {
-      "es6": true
-  }
+    "node": true
+  },
+  "extends": [
+    "plugin:json/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "plugins": ["import", "prettier", "@typescript-eslint"]
 }
