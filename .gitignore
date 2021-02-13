@@ -1,22 +1,2 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
-
-# Dependency directories
+dist/
 node_modules/
-
-# Optional npm cache directory
-.npm
