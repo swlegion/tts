@@ -1,9 +1,9 @@
 {
   "name": "swlegion-tts-mod",
   "scripts": {
-    "compile": "npx ts-node tool/main.ts compile mod/src dist/StarWarsLegion.json",
+    "compile": "npx ts-node tool/main.ts compile mod/StarWarsLegion.json dist/StarWarsLegion.json",
     "extract": "npx ts-node tool/main.ts extract dist/StarWarsLegion.json mod/src",
-    "start": "npx ts-node tool/main.ts develop mod/src dist/StarWarsLegion.json"
+    "start": "npx ts-node tool/main.ts develop mod/StarWarsLegion.json dist/StarWarsLegion.json"
   },
   "license": "MIT",
   "bugs": {

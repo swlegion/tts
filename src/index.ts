@@ -44,8 +44,10 @@ export async function compileSaveFile(
     await fs.remove(outputDir);
     await fs.mkdirp(outputDir);
   }
+  console.info(`Reading "${source}"...`);
   const splitter = new expander.SplitIO();
   const saveFile = await splitter.readAndCollapse(source);
+  console.info(`Writing "${output}"...`);
   await fs.writeJson(output, saveFile);
   console.info(`Wrote "${output}"...`);
 }
