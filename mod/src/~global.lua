@@ -220,6 +220,7 @@ function onLoad()
 
     unitIDTokenBagGUID = "21550f"
 
+    Wait.time(initHotkeys, 1)
 
     -- unitInfo
     unitInfo = {}
@@ -3236,59 +3237,60 @@ function onLoad()
         scale = {1,1,1},
         name = "DP-23 Phase I Trooper"
     }
+    local phaseIITexture = "http://cloud-3.steamusercontent.com/ugc/1028455893321728189/3FB4241F32F35813B6A934FCD3030D3F3D5B7090/"
     miniInfo.phaseIICloneTrooperLeader = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456805632/5EFC453DA5756A419155D7A2564F30D078A16998/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1028455893321070793/294DC7F7A6BE9E31AB2823745854EF8C31D3281A/",
         collider = _BASE_COLLIDERS.small,
-        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        red = phaseIITexture,
+        blue = phaseIITexture,
         scale = {1,1,1},
         name = "Phase II Clone Trooper Leader"
     }
     miniInfo.phaseIICloneTrooper1 = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806277/B6E8E97A784420BE0BA72D4DDD8288A4BF3943D3/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1028455893321407636/9315381415E55B835F091392658CBFDED02249F3/",
         collider = _BASE_COLLIDERS.small,
-        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        red = phaseIITexture,
+        blue = phaseIITexture,
         scale = {1,1,1},
         name = "Phase II Clone Trooper"
     }
     miniInfo.phaseIICloneTrooper2 = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806431/B4EA83469C800B6B5B0506EE6E6ABE30D00D80DB/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1028455893321577529/3034903B0501BE08E398BCC7F0D735B308DA9377/",
         collider = _BASE_COLLIDERS.small,
-        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        red = phaseIITexture,
+        blue = phaseIITexture,
         scale = {1,1,1},
         name = "Phase II Clone Trooper"
     }
     miniInfo.phaseIICloneTrooper3 = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456953028/A36587741C54DCDDAAFE60A0D253077D9DDE575D/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1028455893321405998/BF99DA12AC60F2548F73F5D0D001419BFBFA5CB1/",
         collider = _BASE_COLLIDERS.small,
-        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        red = phaseIITexture,
+        blue = phaseIITexture,
         scale = {1,1,1},
         name = "Phase II Clone Trooper"
     }
     miniInfo.phaseIICloneTrooper4 = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/776232727456806596/C3FFC651464D351B03E7EC77F3E341DFFF4F7ABF/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1028455893321406830/59DC907FEFEF65FBAF245A3B31A4251026FC93AA/",
         collider = _BASE_COLLIDERS.small,
-        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        red = phaseIITexture,
+        blue = phaseIITexture,
         scale = {1,1,1},
         name = "Phase II Clone Trooper"
     }
     miniInfo.z6PhaseIITrooper = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/785236717873393876/DEDAF52B0D07E0F2A2BCB54DE9A56E4FA437A3E4/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1028455893321579074/D5F10426146B81D46F02B027B9C4CC875FA6DA00/",
         collider = _BASE_COLLIDERS.small,
-        red = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/776232727456805854/9E21DEB2F2D99016C5AC6EAC2AD6303A1EA0680E/",
+        red = phaseIITexture,
+        blue = phaseIITexture,
         scale = {1,1,1},
         name = "Z-6 Phase II Trooper"
     }
     miniInfo.mortarPhaseIITrooper = {
-        mesh = "http://cloud-3.steamusercontent.com/ugc/775118071080760009/33226FCCF4EADF6281591F38CC3F6DBBF7036812/",
+        mesh = "http://cloud-3.steamusercontent.com/ugc/1028455893321578281/CBFA560559FE81326342AD0B65D2349447F882EB/",
         collider = _BASE_COLLIDERS.small,
-        red = "http://cloud-3.steamusercontent.com/ugc/775118071080760988/3EE188D6DB407DF3B33D2697F0BF3E003F7DA281/",
-        blue = "http://cloud-3.steamusercontent.com/ugc/775118071080760988/3EE188D6DB407DF3B33D2697F0BF3E003F7DA281/",
+        red = phaseIITexture,
+        blue = phaseIITexture,
         scale = {1,1,1},
         name = "Phase II Mortar Trooper"
     }
@@ -6032,26 +6034,254 @@ function initChessClocks(guids)
   end
 end
 
--- Event handler for all scripting button presses
--- 1 = toggle chess clocks
--- 2 = pause all chess clocks
-function onScriptingButtonUp(index, color)
-  local clocks = {
+-- Builds all mod-specific hotkeys. Players can customize key bindings via in-game menus
+-- addHotkey is preferred over onScriptingButton[Up|Down] due to customizability by players
+function initHotkeys()
+  initRangebandHotkeys()
+  initTokenHotkeys()
+  initChessClockHotkeys()
+end
+
+-- Rangeband Hotkeys --
+function initRangebandHotkeys()
+  addHotkey(
+    "Show Range On Hovered Model",
+    function (playerColor, hoverObject, cursorPosition)
+      showRangeOnHoveredModel(hoverObject)
+    end
+  )
+end
+
+function showRangeOnHoveredModel(hoverObject)
+  if hoverObject then
+    if hoverObject.interactable then
+      unitData = {}
+      if selectedUnitObj == hoverObject then
+        clearRangeRulers()
+        selectedUnitObj = nil
+        return
+      end
+      newUnitData = hoverObject.getTable("unitData")
+      if not newUnitData then return end
+      selectedUnitObj = hoverObject
+      unitData.baseSize = newUnitData.baseSize
+      unitData.fixedMove = newUnitData.fixedMove
+      unitData.strafeMove = newUnitData.strafeMove
+      unitData.selectedSpeed = newUnitData.selectedSpeed
+      unitData.fixedArc = newUnitData.fixedArc
+      unitData.squadStatus = newUnitData.squadStatus
+
+      unitData.aStart = templateInfo.aStart[unitData.baseSize][unitData.selectedSpeed]
+      unitData.bStart = templateInfo.bStart[unitData.baseSize][unitData.selectedSpeed]
+
+      unitData.templateMesh = templateInfo.templateMesh[unitData.selectedSpeed]
+      unitData.templateBallCollider = templateInfo.templateBallCollider
+      unitData.tint = templateInfo.tint[unitData.selectedSpeed]
+      unitData.buttonPosition = templateInfo.buttonPosition[unitData.selectedSpeed]
+      unitData.buttonColor = templateInfo.buttonColor[unitData.selectedSpeed]
+      unitData.fontColor = templateInfo.fontColor[unitData.selectedSpeed]
+      unitData.buttonHeight = templateInfo.buttonHeight[unitData.selectedSpeed]
+    end
+  end
+  clearRangeRulers()
+  spawnRangeRuler()
+end
+
+-- Refactor this to work with the refactored spawnRangeRuler()
+function clearRangeRulers()
+  --log(1)
+  if rangeRuler ~= nil then
+    for i = 1,5,1 do
+      if rangeRuler[i] ~= nil then destroyObject(rangeRuler[i]) end
+    end
+    rangeRuler = nil
+  end
+  --log(2)
+  if frontArc ~= nil then destroyObject(frontArc) end
+  --log(3)
+  if backArc ~= nil then destroyObject(backArc) end
+  --log(4)
+  noRulers = true
+end
+
+-- Refactor this to accept an object as a parameter
+-- Spawn range rulers on that object
+function spawnRangeRuler()
+
+  if selectedUnitObj == nil then return end
+  basePos = selectedUnitObj.getPosition()
+  baseRot = selectedUnitObj.getRotation()
+
+  rangeRuler = {}
+
+  baseAddition = {}
+  baseAddition.small = 1.06299 / 2
+  baseAddition.medium = 1.9685 / 2
+  baseAddition.big = 2.75591 / 2
+  baseAddition.huge = 3.93701 / 2
+  baseAddition.long = 3.525856871366164 / 2
+  baseAddition.epic = 5.90551 / 2
+
+  longMesh = {}
+  longMesh[1] = "http://cloud-3.steamusercontent.com/ugc/785234780861489665/6C93696005D62FDD38A344398E06D9AD8753141C/"
+  longMesh[2] = "http://cloud-3.steamusercontent.com/ugc/785234780861491012/E6A15521D46FD2CE19CE547612DC2050DC916603/"
+  longMesh[3] = "http://cloud-3.steamusercontent.com/ugc/785234780861491929/4AD760438DD5333AD61144E3256533ACC85E08E4/"
+  longMesh[4] = "http://cloud-3.steamusercontent.com/ugc/785234780861492649/CFB2183925F6DF41E80A0B2BBB59EB6908DFB103/"
+  longMesh[5] = "http://cloud-3.steamusercontent.com/ugc/785234780861492649/CFB2183925F6DF41E80A0B2BBB59EB6908DFB103/"
+  for i = 1, 5, 1 do
+
+    if unitData.baseSize ~= "long" then
+      rangeRuler[i] = spawnObject({
+        type = "Custom_Model",
+        position = basePos,
+        rotation = {0, baseRot.y, 0},
+        scale = {i * 6 + baseAddition[unitData.baseSize], 3, i * 6 + baseAddition[unitData.baseSize]}
+      })
+      rangeRuler[i].setCustomObject({
+        type = 0,
+        mesh = "http://cloud-3.steamusercontent.com/ugc/785234780862835239/0858A62DF9F9E7DCB49B641E4938111697E4F3D4/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
+        material = 1,
+      })
+    else
+      rangeRuler[i] = spawnObject({
+        type = "Custom_Model",
+        position = basePos,
+        rotation = {0, baseRot.y, 0},
+        scale = {1,4,1}
+      })
+      rangeRuler[i].setCustomObject({
+        type = 0,
+        mesh = longMesh[i],
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
+        material = 1,
+      })
+    end
+
+    rangeRuler[i].setLock(true)
+    rangeRuler[i].setName("Range Ruler")
+    luaScript = "targetGUID = '"..selectedUnitObj.getGUID().."'\nfunction onFixedUpdate()\nif targetGUID ~= nil then\ntargetObj = getObjectFromGUID(targetGUID)\nself.setPosition(targetObj.getPosition())\nself.setRotation({0,targetObj.getRotation().y,0})\nend\nend"
+    rangeRuler[i].setLuaScript(luaScript)
+  end
+
+  rangeRuler[1].setColorTint({0.7, 0.7, 0.7})
+  rangeRuler[2].setColorTint({0.1, 0.1, 0.1})
+  rangeRuler[3].setColorTint({0.6, 0, 0})
+  rangeRuler[4].setColorTint({209/255, 143/255, 30/255})
+  rangeRuler[5].setColorTint({231/255, 229/255, 44/255})
+
+
+  fixedArcScale = (5 * 6) + baseAddition[unitData.baseSize]
+  if unitData.fixedArc then
+    if unitData.baseSize ~= "long" then
+      frontArc = spawnObject({
+        type = "Custom_Model",
+        position = basePos,
+        rotation = {0, baseRot.y - 45, 0},
+        scale = {fixedArcScale, 3, fixedArcScale}
+      })
+      frontArc.setCustomObject({
+        type = 0,
+        mesh = "http://cloud-3.steamusercontent.com/ugc/785234780861496438/BBC5E1730F64EBC971AA582ABF23E3E00246795D/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
+        material = 1,
+      })
+
+      backArc = spawnObject({
+        type = "Custom_Model",
+        position = basePos,
+        rotation = {0, baseRot.y - 45 + 180, 0},
+        scale = {fixedArcScale, 3, fixedArcScale}
+      })
+      backArc.setCustomObject({
+        type = 0,
+        mesh = "http://cloud-3.steamusercontent.com/ugc/785234780861496438/BBC5E1730F64EBC971AA582ABF23E3E00246795D/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
+        material = 1,
+      })
+      backArc.setLock(true)
+      backArc.setColorTint({0.1, 0.1, 0.1})
+      backArc.setName("Range Ruler")
+      luaScript = "targetGUID = '"..selectedUnitObj.getGUID().."'\nfunction onFixedUpdate()\nif targetGUID ~= nil then\ntargetObj = getObjectFromGUID(targetGUID)\nself.setPosition(targetObj.getPosition())\nself.setRotation({0,targetObj.getRotation().y+135,0})\nend\nend"
+      backArc.setLuaScript(luaScript)
+
+      luaScript = "targetGUID = '"..selectedUnitObj.getGUID().."'\nfunction onFixedUpdate()\nif targetGUID ~= nil then\ntargetObj = getObjectFromGUID(targetGUID)\nself.setPosition(targetObj.getPosition())\nself.setRotation({0,targetObj.getRotation().y-45,0})\nend\nend"
+      frontArc.setLuaScript(luaScript)
+    else
+      frontArc = spawnObject({
+        type = "Custom_Model",
+        position = basePos,
+        rotation = {0, baseRot.y, 0},
+        scale = {1,4,1}
+      })
+      frontArc.setCustomObject({
+        type = 0,
+        mesh = "http://cloud-3.steamusercontent.com/ugc/770611292008692712/70F8B26BCD51CE4C069E7E3933ED01AC53E76E82/",
+        collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
+        material = 1,
+      })
+      luaScript = "targetGUID = '"..selectedUnitObj.getGUID().."'\nfunction onFixedUpdate()\nif targetGUID ~= nil then\ntargetObj = getObjectFromGUID(targetGUID)\nself.setPosition(targetObj.getPosition())\nself.setRotation({0,targetObj.getRotation().y,0})\nend\nend"
+      frontArc.setLuaScript(luaScript)
+    end
+    frontArc.setLock(true)
+    frontArc.setColorTint({0.1, 0.1, 0.1})
+    frontArc.setName("Range Ruler")
+
+
+  end
+  noRulers = false
+end
+-- END Rangeband Hotkeys --
+
+-- Token Hotkeys --
+function initTokenHotkeys()
+  globalBagGUIDs = {
+    Aim = aimBagGUID,
+    Dodge = dodgeBagGUID,
+    Standby = standbyBagGUID,
+    Surge = surgeBagGUID,
+    Suppression = suppressionBagGUID,
+    Smoke = smokeBagGUID,
+    Ion = ionBagGUID,
+    Wound = woundBagGUID,
+    -- add more key,value pairs in here once Global has more bagGUID vars added
+  }
+
+  for hotkeyName,bagGUID in pairs (globalBagGUIDs) do
+    addHotkey(
+      "Deliver "..hotkeyName.." to Cursor",
+      function(playerColor, hoverObject, cursorPosition)
+        -- local bagGUID = Global.getVar(varName)
+        if bagGUID then
+          local bag = getObjectFromGUID(bagGUID)
+          if bag ~= nil then
+            bag.takeObject({
+              position = cursorPosition + Vector({0,1,0}),
+              smooth = false, -- remove this if you want to keep the animation
+            })
+          end
+        end
+      end
+    )
+  end
+end
+-- END Token Hotkeys --
+
+-- Chessclock Hotkeys --
+function initChessClockHotkeys()
+  clocks = {
     Blue = getObjectFromGUID(clockGUIDs.blue).Clock,
     Red = getObjectFromGUID(clockGUIDs.red).Clock
   }
-  if index == 1 then
-    toggleChessClocks(color, clocks)
-  elseif index == 2 then
-    pauseAllChessClocks(clocks)
-  end
+  addHotkey("Toggle Chess Clocks", toggleChessClocks)
+  addHotkey("Pause All Chess Clocks", pauseAllChessClocks)
 end
 
 -- Toggles the active clock between Red and Blue
 -- If neither clock is currently active, activates Blue
-function toggleChessClocks(color, clocks)
-  if not clocks[color] then
-    broadcastToAll('Only players can use chess clocks')
+function toggleChessClocks(playerColor, hoveredObject, worldPosition, keyDownUp)
+  if not clocks[playerColor] then
+    broadcastToAll('Only players can toggle chess clocks')
     return
   end
   -- Returns the name of the player currently on the clock
@@ -6083,9 +6313,10 @@ function toggleChessClocks(color, clocks)
 end
 
 -- Calls pauseStart() for each clock that is not already paused
-function pauseAllChessClocks(clocks)
+function pauseAllChessClocks(playerColor, hoveredObject, worldPosition, keyDownUp)
   for k, v in pairs(clocks) do
     if not v.paused then v.pauseStart() end
   end
   broadcastToAll('All chess clocks paused')
 end
+-- END Chessclock Hotkeys --
