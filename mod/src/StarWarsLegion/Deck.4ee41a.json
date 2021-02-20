@@ -133,7 +133,11 @@
       42000,
       42003,
       42002,
-      42001
+      42001,
+      43300,
+      43302,
+      43304,
+      43303
     ],
     "CustomDeck": {
       "284": {
@@ -230,6 +234,15 @@
         "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1662358406933337663/FE4411AE09CEE8EDBBAC1855C49924FDDEB56F49/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1002556126521104152/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
         "NumWidth": 2,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "433": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1776078094156403922/BE6417434C2C981C6356C97F30A65DB2ED10BB4C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+        "NumWidth": 3,
         "NumHeight": 2,
         "BackIsHidden": true,
         "UniqueBack": false,
@@ -340,6 +353,10 @@
     "Orbital_Strike.ab8306.42000.json",
     "Air_Support.af6f0d.42003.json",
     "Attack_Of_The_Clones.1c4254.42002.json",
-    "Roger_Roger.3c5b55.42001.json"
+    "Roger_Roger.3c5b55.42001.json",
+    "All_In.936175.43300.json",
+    "Idiots_Array.d14480.43302.json",
+    "Ruthless_Tactics.49672f.43304.json",
+    "ISB_Investigation.4de94f.43303.json"
   ]
 }

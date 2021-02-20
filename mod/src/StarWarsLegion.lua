@@ -1187,7 +1187,7 @@ function onLoad()
     }
     listBuilder.commandCards.agentKallus = {
         varName = "agentKallus",
-        cards = {"Face Me!", "Push", "Assault"}
+        cards = {"Face Me!", "ISB Investigation", "Ruthless Tactics"}
     }
     listBuilder.commandCards.bobaFett = {
         varName = "bobaFett",
@@ -1250,7 +1250,7 @@ function onLoad()
     }
     listBuilder.commandCards.landoCalrissian = {
         varName = "landoCalrissian",
-        cards = {"Ambush", "Ace Up His Sleeve", "Assault"}
+        cards = {"Idiots Array", "Ace Up His Sleeve", "All In"}
     }
     -- SEPARATIST
     listBuilder.commandCards.generalGrievous = {
@@ -3740,6 +3740,8 @@ function onLoad()
     cardInfo.upgradeCards.cr24FlameRifle = {name = "CR-24 Flame Rifle", ptCost = 15, varName = "cr24FlameRifle"}
     cardInfo.upgradeCards.t21BlasterRifle = {name = "T-21 Blaster Rifle", ptCost = 5, varName = "t21BlasterRifle"}
     cardInfo.upgradeCards.j19BoRifleBlasterStaff = {name = 'J-19 Bo-rifle Blaster/Staff', ptCost = 25, varName = "j19BoRifleBlasterStaff"}
+    cardInfo.upgradeCards.agentKallusFlaw = {name = 'Developing Sympathies', ptCost = 0, varName = "agentKallusFlaw"}
+    cardInfo.upgradeCards.landoFlaw = {name = 'Ive Altered The Deal', ptCost = 0, varName = "landoFlaw"}
 
       -- upgradeMenu
     cardInfo.upgradeMenu = {}
@@ -4228,6 +4230,9 @@ function onLoad()
         cardInfo.upgradeCards.a300RifleGunner,
         cardInfo.upgradeCards.rps6RocketGunner
     }
+    cardInfo.upgradeMenu.rebel.landoFlawCard = {
+        cardInfo.upgradeCards.landoFlaw
+    }
     -- imperial
 
     cardInfo.upgradeMenu.imperial = {}
@@ -4395,6 +4400,9 @@ function onLoad()
     }
     cardInfo.upgradeMenu.imperial.agentKallusSideArm = {
         cardInfo.upgradeCards.j19BoRifleBlasterStaff
+    }
+    cardInfo.upgradeMenu.imperial.agentKallusFlawCard = {
+        cardInfo.upgradeCards.agentKallusFlaw
     }
 
     -- unitCard GUID
@@ -4901,7 +4909,8 @@ function onLoad()
         availableUpgrades = {
             cardInfo.upgradeMenu.rebel.leadership,
             cardInfo.upgradeMenu.rebel.tactics,
-            cardInfo.upgradeMenu.rebel.tech
+            cardInfo.upgradeMenu.rebel.tech,
+            cardInfo.upgradeMenu.rebel.landoFlawCard
         },
         miniInfo = {
             miniInfo.landoCalrissian
@@ -5312,7 +5321,8 @@ function onLoad()
             cardInfo.upgradeMenu.imperial.leadership,
             cardInfo.upgradeMenu.imperial.tactics,
             cardInfo.upgradeMenu.imperial.tech,
-            cardInfo.upgradeMenu.imperial.agentKallusSideArm
+            cardInfo.upgradeMenu.imperial.agentKallusSideArm,
+            cardInfo.upgradeMenu.imperial.agentKallusFlawCard
         },
         miniInfo = {
             miniInfo.agentKallus

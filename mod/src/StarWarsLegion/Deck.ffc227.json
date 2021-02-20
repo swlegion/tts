@@ -224,7 +224,9 @@
       41607,
       41606,
       43200,
-      41605
+      41605,
+      43301,
+      43305
     ],
     "CustomDeck": {
       "269": {
@@ -514,6 +516,15 @@
         "BackIsHidden": true,
         "UniqueBack": false,
         "Type": 0
+      },
+      "433": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1776078094156403922/BE6417434C2C981C6356C97F30A65DB2ED10BB4C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
       }
     },
     "LuaScript": "",
@@ -711,6 +722,8 @@
     "Viper_Recon_Droid.05a957.41607.json",
     "PK-Series_Worker_Droid.2326ae.41606.json",
     "J-19_Bo-rifle_Blaster_Staff.eb2f97.43200.json",
-    "EV-Series_Medical_Droid.cb47c5.41605.json"
+    "EV-Series_Medical_Droid.cb47c5.41605.json",
+    "Ive_Altered_The_Deal.804c11.43301.json",
+    "Developing_Sympathies.78339b.43305.json"
   ]
 }
