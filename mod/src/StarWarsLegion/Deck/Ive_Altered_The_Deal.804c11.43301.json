@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "ab8306",
+    "GUID": "804c11",
     "Name": "Card",
     "Transform": {
-      "posX": 50.55052,
-      "posY": 2.16983223,
-      "posZ": -14.4123554,
-      "rotX": -0.000005861635,
-      "rotY": 180,
-      "rotZ": 0.00000483180429,
-      "scaleX": 0.367304444,
+      "posX": 60.1146774,
+      "posY": 4.24794245,
+      "posZ": -17.608242,
+      "rotX": -0.000139573371,
+      "rotY": 180.0022,
+      "rotZ": 358.968842,
+      "scaleX": 1,
       "scaleY": 1,
-      "scaleZ": 0.367304444
+      "scaleZ": 1
     },
-    "Nickname": "Orbital Strike",
+    "Nickname": "Ive Altered The Deal",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -34,13 +34,13 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 42000,
+    "CardID": 43301,
     "SidewaysCard": false,
     "CustomDeck": {
-      "420": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1662358406933337663/FE4411AE09CEE8EDBBAC1855C49924FDDEB56F49/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1002556126521104152/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
-        "NumWidth": 2,
+      "433": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1776078094156403922/BE6417434C2C981C6356C97F30A65DB2ED10BB4C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+        "NumWidth": 3,
         "NumHeight": 2,
         "BackIsHidden": true,
         "UniqueBack": false,
