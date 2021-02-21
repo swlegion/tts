@@ -303,7 +303,7 @@ end
 function spawnArmy(loadListData)
     if loadListData.battlefieldDeck != nil then
         -- deal command Cards
-        for i=1,7,1 do
+        for i=1,#loadListData.commandCards,1 do
             dealCommandCard(loadListData.commandCards[i])
         end
 
