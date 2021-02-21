@@ -2,7 +2,7 @@
   "Save": {
     "SaveName": "StarWarsLegion",
     "GameMode": "Star Wars: Legion",
-    "Date": "2/19/2021 10:09:36 PM",
+    "Date": "2/21/2021 12:27:54 PM",
     "VersionNumber": "v13.0.5",
     "GameType": "",
     "GameComplexity": "",
@@ -11,7 +11,7 @@
     "PlayArea": 0.5,
     "Table": "Table_None",
     "Sky": "Sky_Museum",
-    "Note": "MINI SIZES\n-----------\nSmall Base Troopers: 1\n1.4 FD Laser Cannon: 1\nE-Web Heavy Blaster: 1\nDroidekas: 1\nTauntuan Riders 1.25\nBARC Speeder 1.25\nAT-RT: 1.5\nX-34 Landspeeder: 1.5\n74-Z Speeder Bikes, STAPs: 1.5\nTX-225 GAVw Occupier: 1.5\nTX-130 Saber-Class Fighter Tank 1.5\nAAT Trade Federation Battle Tank: 2\nT-47 Airspeeder: 4\nAT-ST: 5\n----------\nv3.1.0-Beta\n\nby SWLegion Dev Foundation (https://go.swlegion.dev/mod)\n\nTo find games, join SWLegion Discord:\nhttps://discordapp.com/invite/UGP9N2v",
+    "Note": "MINI SIZES\n-----------\nSmall Base Troopers: 1\n1.4 FD Laser Cannon: 1\nE-Web Heavy Blaster: 1\nDroidekas: 1\nTauntuan Riders 1.25\nBARC Speeder 1.25\nAT-RT: 1.5\nX-34 Landspeeder: 1.5\n74-Z Speeder Bikes, STAPs: 1.5\nTX-225 GAVw Occupier: 1.5\nTX-130 Saber-Class Fighter Tank 1.5\nAAT Trade Federation Battle Tank: 2\nT-47 Airspeeder: 4\nAT-ST: 5\n----------\nv3.2.0-Beta\n\nby SWLegion Dev Foundation (https://go.swlegion.dev/mod)\n\nTo find games, join SWLegion Discord:\nhttps://discordapp.com/invite/UGP9N2v",
     "Rules": "",
     "Grid": {
       "Type": 0,
@@ -374,13 +374,11 @@
     "Blank_Order_Tokens.c5f484.json",
     "Operative_Marker_Tokens.125746.json",
     "Cad_Bane_Tokens.e4bee8.json",
-    "All_Flaw_Cards.774f05.json",
     "Observation_Tokens.aac68d.json",
     "Incognito_Tokens.c4364f.json",
     "TABLE.3a3ed9.json",
     "This_is_the_b_BETA_b_mod._Do_not_use_for_tournaments..6f3be4.json",
     "This_is_the_b_BETA_b_mod._Do_not_use_for_tournaments..eecff6.json",
-    "3.1.0_-_Beta.c282f8.json",
-    "3.1.0_-_Beta_Continued.1ee2b3.json"
+    "3.2.0_-_Beta.c282f8.json"
   ]
 }

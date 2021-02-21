@@ -302,10 +302,13 @@ end
 
 function spawnArmy(loadListData)
     if loadListData.battlefieldDeck != nil then
-        -- deal command Cards
-        for i=1,7,1 do
-            dealCommandCard(loadListData.commandCards[i])
-        end
+      -- deal command Cards
+      for _ , c in ipairs(loadListData.commandCards) do
+          dealCommandCard(c, false)
+      end
+      for _ , c in ipairs(loadListData.contingencies) do
+          dealCommandCard(c, true)
+      end
 
         -- create battlefield deck
         cloneBattlefieldCards()
@@ -567,12 +570,7 @@ function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
 
 end
 
-
-function dealCommandCard(selectionCard)
-    -- Uppercase color
-    strColor = colorSide
-    strColor = strColor:gsub("^%l", string.upper)
-
+function dealCommandCard(selectionCard, isContingency)
     originalCommandCards = getObjectFromGUID(listBuilder.commandCardsGUID)
     commandCards = originalCommandCards.clone({ position = {0,-30,0} })
     commandCardsTable = commandCards.getObjects()
@@ -580,22 +578,37 @@ function dealCommandCard(selectionCard)
 
     for i, entry in pairs(commandCardsTable) do
         if entry.nickname == selectionCard then
-
-            takenCard = commandCards.takeObject({
+            local matchCard = commandCards.takeObject({
                 position       = listBuilder.handPos[colorSide].pos ,
                 index          = entry.index
             })
 
-            takenCard.setRotation(listBuilder.handPos[colorSide].rot)
-            --takenCard.deal(1, "Red", 1)
-            -- takenCard.deal(1, strColor)
+            if isContingency then
+              local cardData = matchCard.getData()
+              for index, table in pairs(cardData.CustomDeck) do
+                local CustomDeck = {}
+                table.BackURL = "http://cloud-3.steamusercontent.com/ugc/1753560235958347056/F845CB170FEF761DC7025AA3EEAE731F018C0E73/"
+                CustomDeck[index] = table
+                cardData.CustomDeck = CustomDeck
+                break
+              end
+              destroyObject(matchCard)
+              matchCard = spawnObjectData({
+                data        = cardData,
+                position    = listBuilder.handPos[colorSide].pos,
+                scale       = {1, 1, 1},
+                rotation    = listBuilder.handPos[colorSide].rot,
+              })
+              matchCard.highlightOn({0, 1, 1})
+            else
+              matchCard.setRotation(listBuilder.handPos[colorSide].rot)
+            end
             break
         end
     end
 
     destroyObject(commandCards)
 end
-
 
 function loadArmyMenu()
     clearAllButtons()
@@ -608,6 +621,7 @@ function getListData()
     if templateObjs[1][1] != nil then
         listData = {}
         listData.commandCards = {}
+        listData.contingencies = {}
         listData.units = {}
 
         commandCardsNumber = 0
@@ -636,8 +650,8 @@ function getListData()
         listData.armyFaction = selectedArmyFactionText
 
         -- set command Cards
-
         listData.commandCards = deckBuilderObj.getTable("commandCardSelection")
+        listData.contingencies = deckBuilderObj.getTable("contingencyCardSelection")
 
         table.insert(listData.commandCards, "Standing Orders")
 
@@ -676,13 +690,21 @@ function saveArmy()
     listData = getListData()
 
     if listData != nil then
-        -- parse list
+      -- parse list
 
-        luaString = "function onload()\nlistData = {}\nlistData.pts = "..totalPts.."\nlistData.armyFaction = '" .. listData.armyFaction .."'\nlistData.commandCards = {}\n"
-        -- COMMAND CARDS
-        for j=1,7,1 do
-            luaString = luaString .. "listData.commandCards[" .. j ..  "] = '"..listData.commandCards[j].."'\n"
-        end
+      luaString = "function onload()\nlistData = {}\nlistData.pts = "..totalPts.."\nlistData.armyFaction = '" .. listData.armyFaction .."'\n"
+
+      -- COMMAND CARDS and CONTINGENCIES
+      local commandCardsBuffer = {}
+      local contingencyCardsBuffer = {}
+      for _, c in ipairs(listData.commandCards) do
+        table.insert(commandCardsBuffer, "'" .. c .. "'")
+      end
+      luaString = luaString .. "listData.commandCards = {"..table.concat(commandCardsBuffer, ", ").."}\n"
+      for _, c in ipairs(listData.contingencies) do
+        table.insert(contingencyCardsBuffer, "'" .. c .. "'")
+      end
+      luaString = luaString .. "listData.contingencies = {"..table.concat(contingencyCardsBuffer, ", ").."}\n"
 
         -- UNITS
         luaString = luaString .. "listData.units = {}\n"
