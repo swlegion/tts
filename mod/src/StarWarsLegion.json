@@ -2,7 +2,7 @@
   "Save": {
     "SaveName": "StarWarsLegion",
     "GameMode": "Star Wars: Legion",
-    "Date": "2/21/2021 12:27:54 PM",
+    "Date": "2/27/2021 5:34:30 PM",
     "VersionNumber": "v13.0.5",
     "GameType": "",
     "GameComplexity": "",
@@ -379,6 +379,8 @@
     "TABLE.3a3ed9.json",
     "This_is_the_b_BETA_b_mod._Do_not_use_for_tournaments..6f3be4.json",
     "This_is_the_b_BETA_b_mod._Do_not_use_for_tournaments..eecff6.json",
-    "3.2.0_-_Beta.c282f8.json"
+    "3.2.0_-_Beta.c282f8.json",
+    "3.2.0_-_Beta_Continued.c64983.json",
+    "Saved_Map.38fcd0.json"
   ]
 }

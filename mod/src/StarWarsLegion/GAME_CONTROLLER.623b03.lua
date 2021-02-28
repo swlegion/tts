@@ -803,6 +803,7 @@ function spawnPremadeMapFromCartridge(selectedPremadeMapCartridgeTable)
 end
 
 function spawnMapFromCartridge(selectedCartridge)
+    clearZones()
     changeBattlefieldTint(selectedCartridge.getTable("battlefieldTint"))
 
     local cartridgeObjs = selectedCartridge.getObjects()

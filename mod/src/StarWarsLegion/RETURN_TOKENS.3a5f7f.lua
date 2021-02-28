@@ -10,6 +10,7 @@ function onLoad(save_state)
     smokeBag = getObjectFromGUID(Global.getVar("smokeBagGUID"))
     ionBag = getObjectFromGUID(Global.getVar("ionBagGUID"))
     suppressionBag = getObjectFromGUID(Global.getVar("suppressionBagGUID"))
+    observationBag = getObjectFromGUID(Global.getVar("observationBagGUID"))
     unitInfo = Global.getTable("unitInfo")
     commandTokenTrayData = Global.getTable("commandTokenTrayData")
 
@@ -25,9 +26,7 @@ end
 
 
 function returnTokens()
-
     assetButton.AssetBundle.playTriggerEffect(0)
-
 
     local allObjects = battlefieldZone.getObjects()
     local aimNumber = 1
@@ -36,7 +35,7 @@ function returnTokens()
     local surgeNumber = 1
     local smokeNumber = 1
     local commandNumber = 1
-
+    local observationNumber = 1
 
     if allObjects != nil then
         for i, obj in pairs(allObjects) do
@@ -50,6 +49,8 @@ function returnTokens()
                 surgeNumber = returnToken(surgeBag,obj,surgeNumber)
             elseif obj.getName() == "Smoke Token" then
                 smokeNumber = returnToken(smokeBag,obj,smokeNumber)
+            elseif obj.getName() == "Observation Token" then
+                observationNumber = returnToken(observationBag,obj,observationNumber)
 
             elseif obj.getVar("isAToken") == true then
 
@@ -59,15 +60,11 @@ function returnTokens()
                 local pos = commandTray.getPosition()
                 pos.y = pos.y + 0.5 +(0.2 * commandNumber)
                 local rot = commandTray.getRotation()
-                --rot.y = rot.y - 90
 
                 obj.setPositionSmooth(pos, false, false)
                 obj.setRotationSmooth(rot, false, false)
                 commandNumber = commandNumber + 1
             end
-
-            --elseif obj.getTable("unitData").tokenCommandType
-
         end
     end
 end
