@@ -3,22 +3,22 @@
     "GUID": "4f823a",
     "Name": "Digital_Clock",
     "Transform": {
-      "posX": 62.2451668,
-      "posY": 0.949036956,
-      "posZ": -11.4484711,
-      "rotX": -0.00000231010745,
-      "rotY": 89.97666,
-      "rotZ": 5.293321e-7,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1
+      "posX": -40,
+      "posY": 0.5,
+      "posZ": 6.84,
+      "rotX": 90,
+      "rotY": 90,
+      "rotZ": 0,
+      "scaleX": 0.7,
+      "scaleY": 0.7,
+      "scaleZ": 0.7
     },
     "Nickname": "",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 0,
-      "g": 0.311236084,
+      "g": 0.311235964,
       "b": 0.5372549
     },
     "LayoutGroupSortIndex": 0,

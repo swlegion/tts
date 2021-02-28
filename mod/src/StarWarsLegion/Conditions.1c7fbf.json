@@ -56,9 +56,9 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Rapid_Reinforcements.e35aaa.json",
     "Supply_Drop.472274.json",
     "Fortified_Positions.ce8e43.json",
-    "Minefield.a4b6ac.json",
-    "Rapid_Reinforcements.e35aaa.json"
+    "Minefield.a4b6ac.json"
   ]
 }

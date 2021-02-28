@@ -956,7 +956,15 @@ function attackMenu(attackTargetObj)
 
     -- attack menu buttons
     local leaderUnitName = attackTargetObj.getVar("unitName")
-    local buttonHeight = unitInfo[leaderUnitName].buttonHeight
+
+    -- this used to be configurable per unit type, which meant that we made the
+    -- ion/wound/suppression buttons vertically higher to make up for variable
+    -- height minis.
+    --
+    -- in practice, this can just be hard-coded to 5 to simplify; it's possible
+    -- we can use the actual collider height of the mini in the future in order
+    -- to tune this.
+    local buttonHeight = 5
 
     refreshTimer()
     _G["addIon"..timerCounter] = function() addIon(attackTargetObj) end

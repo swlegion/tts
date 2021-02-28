@@ -18,9 +18,12 @@ export async function extractSaveFile(
     console.info(`Creating output directory "${output}"`);
     await fs.mkdirp(output);
   } else {
-    console.info(`Clearing output directory "${output}"`);
-    await fs.remove(output);
-    await fs.mkdirp(output);
+    const baseName = path.basename(source).split('.')[0];
+    const modOutput = path.join(output, baseName);
+    console.info(`Clearing output directory "${modOutput}"`);
+    await fs.remove(modOutput);
+    await fs.mkdirp(modOutput);
+    console.info(`Cleared "${modOutput}"`);
   }
   const splitter = new expander.SplitIO();
   const modTree = await splitter.readSaveAndSplit(source);

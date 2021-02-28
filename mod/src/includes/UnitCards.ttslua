@@ -1,0 +1,13 @@
+-- WILL BE AUTO-GENERATED IN THE FUTURE.
+--
+-- Try to keep the content below as standard as possible.
+function generateUnitCards()
+  return {
+    {
+      name  = "Rebel Trooper",
+      rank  = "Corps",
+      base  = "Small",
+      speed = 2,
+    },
+  }
+end
