@@ -28,7 +28,7 @@ function onLoad()
     -- setUp
 
     unitData = {}
-    if self.getName() != " " then
+    if unitName != nil then
         isAToken = true
         unitData.unitName = unitName
         unitData.tokenCommandType = unitInfo[unitData.unitName].commandType
