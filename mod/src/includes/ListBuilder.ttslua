@@ -1,283 +1,67 @@
-function buildListBuilder()
-    local listBuilder = {}
-    listBuilder.modelTemplateGUID = "ba9920"
-    listBuilder.redZoneGUID = "2c09a9"
-    listBuilder.blueZoneGUID = "818608"
+-- This is the shared execution code for {RED|BLUE}_LIST_BUILDER.
 
-    listBuilder.redDeckMountGUID = "eb2d78"
-    listBuilder.blueDeckMountGUID = "0c1c93"
+function onLoadShared(
+  _colorZone,
+  _listBuilderOptions, 
+  _listBuilderButtons,
+  _backButton,
+  _dataDiskMount
+)
+  -- Disable direct interactivity.
+  self.interactable = false
 
-    listBuilder.redDeckZoneGUID = "99d398"
-    listBuilder.blueDeckZoneGUID = "4541f9"
-
-    listBuilder.redCounterGUID = "5c7de3"
-    listBuilder.blueCounterGUID = "55da62"
-
-    listBuilder.commandCardsGUID = "4ee41a"
-
-    listBuilder.dataDisk = {}
-    listBuilder.dataDisk.guid = "66f23c"
-
-    listBuilder.redDataDiskZone = "ccdc98"
-    listBuilder.blueDataDiskZone = "cd7b3b"
-
-    listBuilder.deckBuilderPos = {}
-
-    listBuilder.deckBuilderPos.red = {-35.11, 0.95, -30.45}
-    listBuilder.deckBuilderPos.blue = {-35.11, 0.95, 30.45}
-
-    listBuilder.deckBuilderMesh = "http://cloud-3.steamusercontent.com/ugc/786360308354566451/1A3E2F61E3596E35D3FFA10660B8C63D5BE010E1/"
-    listBuilder.deckBuilderDiffuse = "http://cloud-3.steamusercontent.com/ugc/786360308354566564/58E3DBF4523A099C371DA8A674AE9DB1932B4006/"
-    listBuilder.deckBuilderGUID = "082f27"
-
-    listBuilder.redTemplatePos = {}
-    listBuilder.redTemplatePos[1] = {x = -23.57,y= 1,z=-22}
-    listBuilder.redTemplatePos[2] = {x =-16.60,y= 1,z=-22}
-    listBuilder.redTemplatePos[3] = {x =-9.60,y= 1,z=-22}
-    listBuilder.redTemplatePos[4] = {x =-2.63,y= 1,z=-22}
-    listBuilder.redTemplatePos[5] = {x =4.38,y= 1,z=-22}
-    listBuilder.redTemplatePos[6] = {x =11.38,y= 1,z=-22}
-    listBuilder.redTemplatePos[7] = {x =18.35,y= 1,z=-22}
-    listBuilder.redTemplatePos[8] = {x =25.07,y= 1,z=-22}
-    listBuilder.redTemplatePos[9] = {x =32.36,y= 1,z=-22}
-    listBuilder.redTemplatePos[10] = {x =39.37,y= 1,z=-22}
-
-    listBuilder.redTemplatePos[11] = {x = -23.57,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[12] = {x =-16.60,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[13] = {x =-9.60,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[14] = {x =-2.63,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[15] = {x =4.38,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[16] = {x =11.38,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[17] = {x =18.35,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[18] = {x =25.07,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[19] = {x =32.36,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[20] = {x =39.37,y= 1,z= -33.09}
-
-
-
-    listBuilder.blueTemplatePos = {}
-    listBuilder.blueTemplatePos[1] = {x=39.37,y= 1,z=22}
-    listBuilder.blueTemplatePos[2] = {x=32.36,y= 1,z=22}
-    listBuilder.blueTemplatePos[3] = {x=25.07,y= 1,z=22}
-    listBuilder.blueTemplatePos[4] = {x=18.35,y= 1,z=22}
-    listBuilder.blueTemplatePos[5] = {x=11.38,y= 1,z=22}
-    listBuilder.blueTemplatePos[6] = {x=4.38,y= 1,z=22}
-    listBuilder.blueTemplatePos[7] = {x=-2.63,y= 1,z=22}
-    listBuilder.blueTemplatePos[8] = {x=-9.60,y= 1,z=22}
-    listBuilder.blueTemplatePos[9] = {x=-16.60,y= 1,z=22}
-    listBuilder.blueTemplatePos[10] = {x=-23.57,y= 1,z=22}
-
-    listBuilder.blueTemplatePos[11] = {x=39.37,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[12] = {x=32.36,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[13] = {x=25.07,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[14] = {x=18.35,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[15] = {x=11.38,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[16] = {x=4.38,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[17] = {x=-2.63,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[18] = {x=-9.60,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[19] = {x=-16.60,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[20] = {x=-23.57,y= 1,z=33.09}
-
-    listBuilder.miniSpawnPos = {}
-    listBuilder.miniSpawnPos[1] = {c = 5.32, q = -90}
-    listBuilder.miniSpawnPos[2] = {q = 74.097447395813,  c = -5.5109073663055}
-    listBuilder.miniSpawnPos[3] = {q = 83.470464001153, c = -6.6833524521754}
-    listBuilder.miniSpawnPos[4] = {q = -83.460700769998, c = 6.6734174153878}
-    listBuilder.miniSpawnPos[5] = {q = -73.826845678316, c = 5.5288063811279}
-    listBuilder.miniSpawnPos[6] = {q = -78.799202212116, c = 4.1184463089859}
-    listBuilder.miniSpawnPos[7] = {q = 79.544342439695, c = -4.0777076893764}
-    listBuilder.miniSpawnPos[8] = {c = 7.9, q = -90}
-
-    listBuilder.handPos = {}
-    listBuilder.handPos.red = {}
-    listBuilder.handPos.red.pos = {7.07, 2.39, -40.63}
-    listBuilder.handPos.red.rot = {0,180,0}
-    listBuilder.handPos.blue = {}
-    listBuilder.handPos.blue.pos = {7.07, 2.39, 40.17}
-    listBuilder.handPos.blue.rot = {0,0,0}
-
-    listBuilder.tokenModelGUID = "a57c41"
-    modelToken = getObjectFromGUID(listBuilder.tokenModelGUID)
-    listBuilder.tokenScript = modelToken.getLuaScript()
-
-    listBuilder.modelMiniGUID = "99f1c8"
-    modelMini = getObjectFromGUID(listBuilder.modelMiniGUID)
-    listBuilder.modelMiniScript = modelMini.getLuaScript()
-
-
-    listBuilder.commandCards = {}
-    -- IMPERIAL
-    listBuilder.commandCards.generalVeers = {
-        varName = "generalVeers",
-        cards = {"Maximum Firepower","Evasive Maneuvers","Imperial Discipline"}
-
-    }
-    listBuilder.commandCards.imperialOfficer = {
-        varName = "imperialOfficer"
-    }
-    listBuilder.commandCards.darthVader = {
-        varName = "darthVader",
-        cards = {"Implacable","New Ways to Motivate Them","Master of Evil"},
-        cards2 = {"Vaders Might","Fear and Dead Men","Darkness Descends"}
-    }
-    listBuilder.commandCards.darthVaderTheEmperorsApprentice = {
-        varName = "darthVaderTheEmperorsApprentice",
-        cards = {"Implacable","New Ways to Motivate Them","Master of Evil"},
-        cards2 = {"Vaders Might","Fear and Dead Men","Darkness Descends"}
-    }
-    listBuilder.commandCards.emperorPalpatine = {
-        varName = "emperorPalpatine",
-        cards = {"And Now... You Will Die", "Give in to Your Anger", "An Entire Legion"}
-    }
-    listBuilder.commandCards.directorOrsonKrennic = {
-        varName = "directorOrsonKrennic",
-        cards = {"Voracious Ambition", "Deploy the Garrison", "Annihilation Looms"}
-    }
-    listBuilder.commandCards.idenVersio = {
-        varName = "idenVersio",
-        cards = {"Pulse Scan", "Concussive Blast", "Tactical Strike"},
-        -- Here, versus .id10, because .id10 is a "noToken" and doesn't check cards.
-        cards2 = {"Ambush", "Incapacitate", "Assault"}
-    }
-    listBuilder.commandCards.agentKallus = {
-        varName = "agentKallus",
-        cards = {"Face Me!", "ISB Investigation", "Ruthless Tactics"}
-    }
-    listBuilder.commandCards.bobaFett = {
-        varName = "bobaFett",
-        cards = {"Whipcord Launcher", "ZX Flame Projector", "Z-6 Jetpack Rocket"}
-    }
-    listBuilder.commandCards.bossk = {
-        varName = "bossk",
-        cards = {"Merciless Munitions", "Reptilian Rampage", "Lying in Wait"}
-    }
-
-    -- REBEL
-    listBuilder.commandCards.lukeSkywalker = {
-        varName = "lukeSkywalker",
-        cards = {"Son of Skywalker", "My Ally Is the Force", "Return of the Jedi"},
-        cards2 = {"You Serve Your Master Well", "Full of Surprises", "I am a Jedi"}
-    }
-    listBuilder.commandCards.lukeSkywalkerJediKnight = {
-        varName = "lukeSkywalkerJediKnight",
-        cards = {"Son of Skywalker", "My Ally Is the Force", "Return of the Jedi"},
-        cards2 = {"You Serve Your Master Well", "Full of Surprises", "I am a Jedi"}
-    }
-    listBuilder.commandCards.leiaOrgana = {
-        varName = "leiaOrgana",
-        cards = {"Coordinated Bombardment","No Time for Sorrows","Somebody Has to Save Our Skins"}
-    }
-    listBuilder.commandCards.hanSolo = {
-        varName = "hanSolo",
-        cards = {"Sorry About the Mess","Reckless Diversion","Change of Plans"}
-    }
-    listBuilder.commandCards.jynErso = {
-        varName = "jynErso",
-        cards = {"Rebellious","Trust Goes Both Ways","Complete the Mission"}
-    }
-    listBuilder.commandCards.cassianAndor = {
-        varName = "cassianAndor",
-        cards = {"Crack Shot","Last Stand","Volunteer Mission"}
-    }
-    listBuilder.commandCards.k2so = {
-        varName = "k2so",
-        cards = {"Ambush", "Push", "Sacrifice"}
-    }
-    listBuilder.commandCards.chewbacca = {
-        varName = "chewbacca",
-        cards = {"Common Cause","Brains and Brawn","Notorious Scoundrels"}
-    }
-    listBuilder.commandCards.sabineWren = {
-        varName = "sabineWren",
-        cards = {"Explosions!","Symbol of Rebellion","Legacy of Mandalore"}
-    }
-    listBuilder.commandCards.r2d2 = {
-        varName = "r2d2",
-        cards = {"Blast Off!", "Impromptu Immolation", "Smoke Screen"}
-    }
-    listBuilder.commandCards.c3po = {
-        varName = "c3po",
-        cards = {"Ambush", "Push", "Assault"}
-    }
-    listBuilder.commandCards.rebelOfficer = {
-        varName = "rebelOfficer"
-    }
-    listBuilder.commandCards.landoCalrissian = {
-        varName = "landoCalrissian",
-        cards = {"Idiots Array", "Ace Up His Sleeve", "All In"}
-    }
-    -- SEPARATIST
-    listBuilder.commandCards.generalGrievous = {
-        varName = "generalGrievous",
-        cards = {"Trained in Your Jedi Arts","Supreme Commander","Crush Them!"}
-    }
-    listBuilder.commandCards.countDooku = {
-        varName = "countDooku",
-        cards = {"Fear, Suprise, Intimidation","Double the Fall","You Disappoint Me"}
-    }
-    listBuilder.commandCards.cadBane = {
-        varName = "cadBane",
-        cards = {"Im Your Worst Nightmare","Im In Control","I Make The Rules Now"}
-    }
-    listBuilder.commandCards.maul = {
-      varName = "maul",
-      cards = {"Duel Of The Fates","The Phantom Menace","At Last"}
-    }
-    listBuilder.commandCards.tSeriesTacticalDroid = {
-    varName = "tSeriesTacticalDroid"
-    }
-    -- REPUBLIC
-    listBuilder.commandCards.obiWanKenobi = {
-        varName = "obiWanKenobi",
-        cards = {"Hello There!","Knowledge and Defense","General Kenobi"}
-    }
-    listBuilder.commandCards.cloneCaptainRex = {
-        varName = "cloneCaptainRex",
-        cards = {"Call Me Captain","Take That, Clankers!","Were Not Programmed"}
-    }
-    listBuilder.commandCards.anakinSkywalker = {
-      varName = "anakinSkywalker",
-      cards = {"This Is Where The Fun Begins","You Underestimate My Power","Hero Of The Clone Wars"}
-  }
-    listBuilder.commandCards.republicR2d2 = {
-        varName = "republicR2d2",
-        cards = {"Blast Off!", "Impromptu Immolation", "Smoke Screen"}
-    }
-    listBuilder.commandCards.republicC3po = {
-        varName = "republicC3po",
-        cards = {"Ambush", "Push", "Assault"}
-    }
-    listBuilder.commandCards.padme = {
-        varName = "padme",
-        cards = {"Our Fate Is In Your Hands", "Aggressive Negotiations", "Diplomatic Cover"}
-    }
-    listBuilder.commandCards.cloneCommander = {
-        varName = "cloneCommander"
-    }
-    -- NEUTRAL
-    listBuilder.commandCards.neutral = {
-        varName = "neutral",
-        cards = {"Ambush", "Push", "Assault"}
-    }
-    listBuilder.commandCards.neutralAltArt = {
-        varName = "neutral",
-        cards = {"Ambush Alt Art", "Push Alt Art", "Assault Alt Art"}
-    }
-    listBuilder.commandCards.neutralImperial = {
-        varName = "neutralImperial",
-        cards = {"Covert Observation", "Pinned Down", "Coordinated Fire"}
-    }
-    listBuilder.commandCards.neutralRebel = {
-        varName = "neutralRebel",
-        cards = {"Sabotaged Communications", "Turning the Tide", "Covering Fire"}
-    }
-    listBuilder.commandCards.neutralSeparatist = {
-        varName = "neutralSeparatist",
-        cards = {"Mechanized Incursion", "Orbital Strike", "Roger, Roger"}
-    }
-    listBuilder.commandCards.neutralRepublic = {
-        varName = "neutralSeparatist",
-        cards = {"Synchronized Offensive", "Air Support", "Attack Of The Clones"}
-    }
-    return listBuilder
+  -- Objects passed by the actual (non-shared) code.
+  colorZone = _colorZone
+  listBuilderOptions = _listBuilderOptions;
+  listBuilderButtons = _listBuilderButtons;
+  backButton = _backButton
+  dataDiskMount = _dataDiskMount
 end
+
+function clearAllButtons()
+  for _, o in pairs(listBuilderOptions) do
+    o.clearButtons()
+  end
+  for _, o in pairs(listBuilderButtons) do
+    o.clearButtons()
+    o.setColorTint({0, 0, 0})
+  end
+  backButton.clearButtons()
+  backButton.setColorTint({0, 0,0 })
+end
+
+function mainMenu()
+  clearAllButtons()
+  
+  createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "chooseArmy", "Create Army", "Create a custom Army", {0,0.913,1})
+  createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "loadArmy", "Load Army", "Load army from Data Disk", {0,0.913,1})
+  createOptionButton(3, listBuilderOptions[3], listBuilderButtons[3], "clearZone", "Clear Cards", "Clears current cards", {0,0.913,1})
+end
+
+function chooseArmy()
+  clearAllButtons()
+
+  changeBackButton("mainMenu", "Go back to Main Menu")
+  createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "createRebelArmy", "Rebels", "Create a custom Rebel army", {0,0.913,1})
+  createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "createImperialArmy", "Imperials", "Create a custom Imperial army", {0,0.913,1})
+  createOptionButton(3, listBuilderOptions[3], listBuilderButtons[3], "createSeparatistArmy", "Separatist", "Create a custom Separatist army", {0,0.913,1})
+  createOptionButton(4, listBuilderOptions[4], listBuilderButtons[4], "createRepublicArmy", "Republic", "Create a custom Republic army", {0,0.913,1})
+end
+
+function createArmyMenu()
+  clearAllButtons()
+
+  changeBackButton("chooseArmy", "Go back to Faction Selection")
+  createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "finishArmy", "Spawn Minis", "Finished creating army", {1,0,0})
+  createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "saveArmy", "Save Army", "Save army to Data Disk", {0,0.913,1})
+  createOptionButton(3, listBuilderOptions[3], listBuilderButtons[3], "respawnZone", "Reset Army", "Reset Army Creation", {0,0.913,1})
+end
+
+function loadArmyMenu()
+  clearAllButtons()
+  changeBackButton("mainMenu", "Go back to Main Menu")
+  createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "dud", "Insert Data Disk", "Insert Data Disk into Slot Above", {0,0,0})
+  createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "loadArmy", "Load Army", "Load army from Data Disk", {0,0.913,1})
+end
+
+function dud() end

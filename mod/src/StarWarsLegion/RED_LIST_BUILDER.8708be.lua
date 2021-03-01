@@ -1,21 +1,27 @@
-function onLoad(save_state)
-    self.interactable = false
-    -- BUTTONS
-    listBuilderOption1 = getObjectFromGUID("9ef6b1")
-    listBuilderOption2 = getObjectFromGUID("5e6794")
-    listBuilderOption3 = getObjectFromGUID("93647c")
-    listBuilderOption4 = getObjectFromGUID("b1c973")
+#include !/ListBuilder
 
-    listBuilderOption1Button = getObjectFromGUID("909b03")
-    listBuilderOption2Button = getObjectFromGUID("1b5cc8")
-    listBuilderOption3Button = getObjectFromGUID("a39e50")
-    listBuilderOption4Button = getObjectFromGUID("1faf70")
-
-    backButton = getObjectFromGUID("d323a0")
-
-    dataDiskMount = getObjectFromGUID("ace9b9")
-
-    colorZone = "red"
+function onLoad()
+    onLoadShared(
+      "red",
+      -- List Builder Menu
+      {
+        getObjectFromGUID("9ef6b1"),
+        getObjectFromGUID("5e6794"),
+        getObjectFromGUID("93647c"),
+        getObjectFromGUID("b1c973"),
+      },
+      -- List Builder Buttons
+      {
+        getObjectFromGUID("909b03"),
+        getObjectFromGUID("1b5cc8"),
+        getObjectFromGUID("a39e50"),
+        getObjectFromGUID("1faf70"),
+      },
+      -- Back Button
+      getObjectFromGUID("d323a0"),
+      -- Data Disk Mount
+      getObjectFromGUID("ace9b9")
+    )
 
     -- INIT
     gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
@@ -44,30 +50,8 @@ function onLoad(save_state)
     deckMount = getObjectFromGUID(listBuilder[colorSide.."DeckMountGUID"])
     deckZone = getObjectFromGUID(listBuilder[colorSide.."DeckZoneGUID"])
 
-
     mainMenu()
-
 end
-
-
-function clearAllButtons()
-    listBuilderOption1.clearButtons()
-    listBuilderOption2.clearButtons()
-    listBuilderOption3.clearButtons()
-    listBuilderOption4.clearButtons()
-    listBuilderOption1Button.clearButtons()
-    listBuilderOption2Button.clearButtons()
-    listBuilderOption3Button.clearButtons()
-    listBuilderOption4Button.clearButtons()
-    backButton.clearButtons()
-
-    listBuilderOption1Button.setColorTint({0,0,0})
-    listBuilderOption2Button.setColorTint({0,0,0})
-    listBuilderOption3Button.setColorTint({0,0,0})
-    backButton.setColorTint({0,0,0})
-
-end
-
 
 function createOptionButton(optionNumber, optionObj, optionButton, optionClickFunction, optionLabel, optionToolTip,tint)
 
@@ -97,37 +81,6 @@ function changeBackButton(optionClickFunction, optionToolTip)
         click_function = colorSide.."ListBuilderBackButtonFunction", function_owner = self, label = "BACK", position = {0, 0.65, 0}, scale = {1, 1, 0.7}, width = 1500, height = 2000, font_size = 400, color = {0.7573, 0.7573, 0.7573, 0.01}, font_color = {0, 0, 0, 100}, tooltip = optionToolTip
     })
     backButton.setColorTint({1,0,0})
-end
-
-function mainMenu()
-    clearAllButtons()
-
-    createOptionButton(1, listBuilderOption1, listBuilderOption1Button, "chooseArmy", "Create Army", "Create a custom Army", {0,0.913,1})
-    createOptionButton(2, listBuilderOption2, listBuilderOption2Button, "loadArmy", "Load Army", "Load army from Data Disk", {0,0.913,1})
-    createOptionButton(3, listBuilderOption3, listBuilderOption3Button, "clearZone", "Clear Cards", "Clears current cards", {0,0.913,1})
-end
-
-function chooseArmy()
-    clearAllButtons()
-
-    changeBackButton("mainMenu", "Go back to Main Menu")
-    createOptionButton(1, listBuilderOption1, listBuilderOption1Button, "createRebelArmy", "Rebels", "Create a custom Rebel army", {0,0.913,1})
-    createOptionButton(2, listBuilderOption2, listBuilderOption2Button, "createImperialArmy", "Imperials", "Create a custom Imperial army", {0,0.913,1})
-    createOptionButton(3, listBuilderOption3, listBuilderOption3Button, "createSeparatistArmy", "Separatist", "Create a custom Separatist army", {0,0.913,1})
-    createOptionButton(4, listBuilderOption4, listBuilderOption4Button, "createRepublicArmy", "Republic", "Create a custom Republic army", {0,0.913,1})
-end
-
-function createArmyMenu()
-    clearAllButtons()
-
-    changeBackButton("chooseArmy", "Go back to Faction Selection")
-    createOptionButton(1, listBuilderOption1, listBuilderOption1Button, "finishArmy", "Spawn Minis", "Finished creating army", {1,0,0})
-    createOptionButton(2, listBuilderOption2, listBuilderOption2Button, "saveArmy", "Save Army", "Save army to Data Disk", {0,0.913,1})
-    createOptionButton(3, listBuilderOption3, listBuilderOption3Button, "respawnZone", "Reset Army", "Reset Army Creation", {0,0.913,1})
-
-end
-
-function dud()
 end
 
 function loadArmy()
@@ -605,13 +558,6 @@ function dealCommandCard(selectionCard, isContingency)
     end
 
     destroyObject(commandCards)
-end
-
-function loadArmyMenu()
-    clearAllButtons()
-    changeBackButton("mainMenu", "Go back to Main Menu")
-    createOptionButton(1, listBuilderOption1, listBuilderOption1Button, "dud", "Insert Data Disk", "Insert Data Disk into Slot Above", {0,0,0})
-    createOptionButton(2, listBuilderOption2, listBuilderOption2Button, "loadArmy", "Load Army", "Load army from Data Disk", {0,0.913,1})
 end
 
 function getListData()

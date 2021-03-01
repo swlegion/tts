@@ -1,8 +1,8 @@
-#include !/CardInfo
-#include !/ListBuilder
-#include !/MiniInfo
-#include !/TemplateMenu
-#include !/UnitInfo
+#include !/data/CardInfo
+#include !/data/ListBuilder
+#include !/data/MiniInfo
+#include !/data/TemplateMenu
+#include !/data/UnitInfo
 
 function onLoad()
     timerCounter = 1
