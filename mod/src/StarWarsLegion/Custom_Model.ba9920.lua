@@ -628,7 +628,6 @@ function spawnMinis()
                 type           = "Custom_Model",
                 position       = pos,
                 rotation       = {rot.x, rot.y + 180, rot.z},
-                scale          = data.scale
             })
             spawnedMini.setCustomObject({
                 mesh = data.mesh,
@@ -685,7 +684,6 @@ function spawnMinis()
                     type           = "Custom_Model",
                     position       = pos,
                     rotation       = {rot.x, rot.y + 180, rot.z},
-                    scale          = upgradeCardIndex[i].miniInfo.scale
                 })
                 spawnedMini.setCustomObject({
                     mesh = upgradeCardIndex[i].miniInfo.mesh,
