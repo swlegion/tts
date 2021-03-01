@@ -41,7 +41,7 @@
       "ColliderURL": "",
       "Convex": true,
       "MaterialIndex": 0,
-      "TypeIndex": 0,
+      "TypeIndex": 5,
       "CastShadows": true
     },
     "LuaScript": "",
