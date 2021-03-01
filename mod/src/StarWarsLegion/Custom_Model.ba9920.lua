@@ -1,3 +1,5 @@
+#include !/common/Math
+
 -- model template
 function onLoad(save_state)
     if self.getName() != " " then
@@ -744,20 +746,6 @@ function getCommandCards()
     end
     return selectCommandCardsTable
 end
-
-function translatePos(originPos,originRot,distance, angle)
-    local pos = originPos
-    local rot = originRot
-
-    local a = distance * math.cos(math.rad(angle + rot.y))
-    local b = distance * math.sin(math.rad(angle + rot.y))
-
-    pos.x = pos.x - b
-    pos.z = pos.z - a
-
-    return pos
-end
-
 
 function dealCommandCard(selectionCard)
     -- Uppercase color
