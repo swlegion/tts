@@ -1,6 +1,6 @@
 -- Model mini
 function onLoad()
-    if self.getName() != " " then
+    if self.getName() != "Unit Leader" then
         isAMini = true
         local timerCounter = Global.getVar("timerCounter")
         timerCounter = timerCounter + 1
@@ -53,7 +53,6 @@ function setUp()
         unitData.buttonPosition = templateInfo.buttonPosition[unitData.selectedSpeed]
         unitData.buttonColor = templateInfo.buttonColor[unitData.selectedSpeed]
         unitData.fontColor = templateInfo.fontColor[unitData.selectedSpeed]
-        unitData.buttonHeight = templateInfo.buttonHeight[unitData.selectedSpeed]
         unitData.cohesionRadius = templateInfo.cohesionRadius[unitData.baseSize]
 
         unitIDButtonPos = unitInfo.unitCountPos[unitData.baseSize]
