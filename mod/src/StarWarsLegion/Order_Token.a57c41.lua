@@ -59,7 +59,6 @@ function setTemplateVariables()
     unitData.buttonPosition = templateInfo.buttonPosition[unitData.selectedSpeed]
     unitData.buttonColor = templateInfo.buttonColor[unitData.selectedSpeed]
     unitData.fontColor = templateInfo.fontColor[unitData.selectedSpeed]
-    unitData.buttonHeight = templateInfo.buttonHeight[unitData.selectedSpeed]
 end
 ------------------------------------------------- MATH FIND PROXIMITY------------------------------------------------------------
 function findProximity(targetObj, object)
@@ -949,9 +948,7 @@ end
 
 function attackMenu(attackTargetObj)
     unhighlightEnemies()
-
     highlightEnemy(attackTargetObj)
-
     clearRangeRulers()
 
     -- attack menu buttons

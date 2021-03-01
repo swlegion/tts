@@ -16,7 +16,6 @@ function onLoad()
 end
 
 function setUp()
-
     templateInfo = {}
     templateInfo = Global.getTable("templateInfo")
 
@@ -26,9 +25,7 @@ function setUp()
     moveState = false
     silhouetteState = false
 
-
     if unitName != nil and colorSide != nil then
-
         unitData = {}
         unitData.commandType = unitInfo[unitName].commandType
         unitData.baseSize = unitInfo[unitName].baseSize
@@ -36,12 +33,12 @@ function setUp()
         unitData.selectedSpeed = unitInfo[unitName].selectedSpeed
         unitData.fixedArc = unitInfo[unitName].fixedArc
         unitData.squadStatus = unitInfo[unitName].squadStatus
+
         if unitInfo[unitName].strafeMove != nil then
               unitData.strafeMove = true
         else
               unitData.strafeMove = false
         end
-
 
         -- set info
         unitData.aStart = templateInfo.aStart[unitData.baseSize][unitData.selectedSpeed]
@@ -58,7 +55,6 @@ function setUp()
         unitIDButtonPos = unitInfo.unitCountPos[unitData.baseSize]
 
         resetUnitButtons()
-
     end
 end
 
