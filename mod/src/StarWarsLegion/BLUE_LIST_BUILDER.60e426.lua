@@ -170,7 +170,7 @@ function spawnUnitIDToken(idSpawnPos, idSpawnRot,idNumber)
     end
 end
 
-function spawnMini(colorSide, miniSpawnPos, miniSpawnRot, miniData)
+function spawnMini(miniSpawnPos, miniSpawnRot, miniData)
     local funcSpawnedMini
     if miniData.type and miniData.type == "assetbundle" then
       funcSpawnedMini = spawnObject({
@@ -193,7 +193,7 @@ function spawnMini(colorSide, miniSpawnPos, miniSpawnRot, miniData)
       funcSpawnedMini.setCustomObject({
           mesh = miniData.mesh,
           collider = miniData.collider,
-          diffuse = miniData[colorSide],
+          diffuse = miniData.diffuse,
           type = 1,
           material = 3
       })
@@ -387,7 +387,7 @@ function spawnArmy(loadListData)
                 end
 
                 -- spawn Minis
-                local spawnedMini = spawnMini(colorSide, spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, passedData)
+                local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, passedData)
 
                 table.insert(spawnMiniTable.miniObjs, {obj = spawnedMini, name = data.name})
                 spawnedMinisNumber = m
@@ -408,7 +408,7 @@ function spawnArmy(loadListData)
 
                     -- spawnMinis
 
-                    local spawnedMini = spawnMini(colorSide, spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, spawnMiniInfo)
+                    local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, spawnMiniInfo)
 
                     local insertInfo = {obj = spawnedMini, name = spawnMiniInfo.name}
 
