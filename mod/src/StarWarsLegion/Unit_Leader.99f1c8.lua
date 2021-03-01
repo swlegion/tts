@@ -26,12 +26,15 @@ function setUp()
     silhouetteState = false
 
     if unitName != nil and colorSide != nil then
+        local baseSize = unitInfo[unitName].baseSize
+        local fixed = baseSize != 'Small'
+
         unitData = {}
         unitData.commandType = unitInfo[unitName].commandType
-        unitData.baseSize = unitInfo[unitName].baseSize
-        unitData.fixedMove = unitInfo[unitName].fixedMove
+        unitData.baseSize = baseSize
+        unitData.fixedMove = fixed
+        unitData.fixedArc = fixed
         unitData.selectedSpeed = unitInfo[unitName].selectedSpeed
-        unitData.fixedArc = unitInfo[unitName].fixedArc
         unitData.squadStatus = unitInfo[unitName].squadStatus
 
         if unitInfo[unitName].strafeMove != nil then
