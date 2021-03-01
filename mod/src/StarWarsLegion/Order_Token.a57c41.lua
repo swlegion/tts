@@ -38,7 +38,6 @@ function onLoad()
         unitData.strafeMove = unitInfo[unitData.unitName].strafeMove
         unitData.selectedSpeed = unitInfo[unitData.unitName].selectedSpeed
         unitData.fixedArc = unitInfo[unitData.unitName].fixedArc
-        unitData.squadStatus = unitInfo[unitData.unitName].squadStatus
 
         dieRoller = getObjectFromGUID(dieRollerInfo[colorSide.."DieRollerGUID"])
 
@@ -174,7 +173,6 @@ function getSelectedUnitObjVariables()
         unitData.strafeMove = newUnitData.strafeMove
         unitData.selectedSpeed = newUnitData.selectedSpeed
         unitData.fixedArc = newUnitData.fixedArc
-        unitData.squadStatus = newUnitData.squadStatus
 
     end
 end

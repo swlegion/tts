@@ -230,140 +230,120 @@ function onLoad()
     unitInfo.rebelTrooper.commandType = "rebelCore"
     unitInfo.rebelTrooper.baseSize = "small"
     unitInfo.rebelTrooper.selectedSpeed = 2
-    unitInfo.rebelTrooper.squadStatus = true
     unitInfo.rebelTrooper.buttonHeight = 2
 
     unitInfo.rebelOfficer = {}
     unitInfo.rebelOfficer.commandType = "rebelCommander"
     unitInfo.rebelOfficer.baseSize = "small"
     unitInfo.rebelOfficer.selectedSpeed = 2
-    unitInfo.rebelOfficer.squadStatus = true
     unitInfo.rebelOfficer.buttonHeight = 2
 
     unitInfo.rebelCommandos = {}
     unitInfo.rebelCommandos.commandType = "rebelSpecialForces"
     unitInfo.rebelCommandos.baseSize = "small"
     unitInfo.rebelCommandos.selectedSpeed = 2
-    unitInfo.rebelCommandos.squadStatus = true
     unitInfo.rebelCommandos.buttonHeight = 2
 
     unitInfo.rebelCommandosStrikeTeam = {}
     unitInfo.rebelCommandosStrikeTeam.commandType = "rebelSpecialForces"
     unitInfo.rebelCommandosStrikeTeam.baseSize = "small"
     unitInfo.rebelCommandosStrikeTeam.selectedSpeed = 2
-    unitInfo.rebelCommandosStrikeTeam.squadStatus = true
     unitInfo.rebelCommandosStrikeTeam.buttonHeight = 2
 
     unitInfo.rebelPathfinders = {}
     unitInfo.rebelPathfinders.commandType = "rebelSpecialForces"
     unitInfo.rebelPathfinders.baseSize = "small"
     unitInfo.rebelPathfinders.selectedSpeed = 2
-    unitInfo.rebelPathfinders.squadStatus = true
     unitInfo.rebelPathfinders.buttonHeight = 2
 
     unitInfo.wookieeWarriors = {}
     unitInfo.wookieeWarriors.commandType = "rebelSpecialForces"
     unitInfo.wookieeWarriors.baseSize = "small"
     unitInfo.wookieeWarriors.selectedSpeed = 2
-    unitInfo.wookieeWarriors.squadStatus = true
     unitInfo.wookieeWarriors.buttonHeight = 2
 
     unitInfo.mandalorianResistance = {}
     unitInfo.mandalorianResistance.commandType = "rebelSpecialForces"
     unitInfo.mandalorianResistance.baseSize = "small"
     unitInfo.mandalorianResistance.selectedSpeed = 3
-    unitInfo.mandalorianResistance.squadStatus = true
     unitInfo.mandalorianResistance.buttonHeight = 2
 
     unitInfo.clanWren = {}
     unitInfo.clanWren.commandType = "rebelSpecialForces"
     unitInfo.clanWren.baseSize = "small"
     unitInfo.clanWren.selectedSpeed = 3
-    unitInfo.clanWren.squadStatus = true
     unitInfo.clanWren.buttonHeight = 2
 
     unitInfo.fleetTroopers = {}
     unitInfo.fleetTroopers.commandType = "rebelCore"
     unitInfo.fleetTroopers.baseSize = "small"
     unitInfo.fleetTroopers.selectedSpeed = 2
-    unitInfo.fleetTroopers.squadStatus = true
     unitInfo.fleetTroopers.buttonHeight = 2
 
     unitInfo.rebelVeterans = {}
     unitInfo.rebelVeterans.commandType = "rebelCore"
     unitInfo.rebelVeterans.baseSize = "small"
     unitInfo.rebelVeterans.selectedSpeed = 2
-    unitInfo.rebelVeterans.squadStatus = true
     unitInfo.rebelVeterans.buttonHeight = 2
 
     unitInfo.markIIMediumBlasterTrooper = {}
     unitInfo.markIIMediumBlasterTrooper.commandType = "rebelCore"
     unitInfo.markIIMediumBlasterTrooper.baseSize = "medium"
     unitInfo.markIIMediumBlasterTrooper.selectedSpeed = 1
-    unitInfo.markIIMediumBlasterTrooper.squadStatus = false
     unitInfo.markIIMediumBlasterTrooper.buttonHeight = 2
 
     unitInfo.lukeSkywalker = {}
     unitInfo.lukeSkywalker.commandType = "rebelCommander"
     unitInfo.lukeSkywalker.baseSize = "small"
     unitInfo.lukeSkywalker.selectedSpeed = 2
-    unitInfo.lukeSkywalker.squadStatus = false
     unitInfo.lukeSkywalker.buttonHeight = 2
 
     unitInfo.lukeSkywalkerJediKnight = {}
     unitInfo.lukeSkywalkerJediKnight.commandType = "rebelOperative"
     unitInfo.lukeSkywalkerJediKnight.baseSize = "small"
     unitInfo.lukeSkywalkerJediKnight.selectedSpeed = 2
-    unitInfo.lukeSkywalkerJediKnight.squadStatus = false
     unitInfo.lukeSkywalkerJediKnight.buttonHeight = 2
 
     unitInfo.hanSolo = {}
     unitInfo.hanSolo.commandType = "rebelCommander"
     unitInfo.hanSolo.baseSize = "small"
     unitInfo.hanSolo.selectedSpeed = 2
-    unitInfo.hanSolo.squadStatus = false
     unitInfo.hanSolo.buttonHeight = 2
 
     unitInfo.leiaOrgana = {}
     unitInfo.leiaOrgana.commandType = "rebelCommander"
     unitInfo.leiaOrgana.baseSize = "small"
     unitInfo.leiaOrgana.selectedSpeed = 2
-    unitInfo.leiaOrgana.squadStatus = false
     unitInfo.leiaOrgana.buttonHeight = 2
 
     unitInfo.jynErso = {}
     unitInfo.jynErso.commandType = "rebelCommander"
     unitInfo.jynErso.baseSize = "small"
     unitInfo.jynErso.selectedSpeed = 2
-    unitInfo.jynErso.squadStatus = false
     unitInfo.jynErso.buttonHeight = 2
 
     unitInfo.cassianAndor = {}
     unitInfo.cassianAndor.commandType = "rebelCommander"
     unitInfo.cassianAndor.baseSize = "small"
     unitInfo.cassianAndor.selectedSpeed = 2
-    unitInfo.cassianAndor.squadStatus = false
     unitInfo.cassianAndor.buttonHeight = 2
 
     unitInfo.landoCalrissian = {}
     unitInfo.landoCalrissian.commandType = "rebelCommander"
     unitInfo.landoCalrissian.baseSize = "small"
     unitInfo.landoCalrissian.selectedSpeed = 2
-    unitInfo.landoCalrissian.squadStatus = false
     unitInfo.landoCalrissian.buttonHeight = 2
 
     unitInfo.chewbacca = {}
     unitInfo.chewbacca.commandType = "rebelOperative"
     unitInfo.chewbacca.baseSize = "small"
     unitInfo.chewbacca.selectedSpeed = 2
-    unitInfo.chewbacca.squadStatus = false
     unitInfo.chewbacca.buttonHeight = 2
 
     unitInfo.c3po = {}
     unitInfo.c3po.commandType = nil
     unitInfo.c3po.baseSize = "small"
     unitInfo.c3po.selectedSpeed = 1
-    unitInfo.c3po.squadStatus = false
     unitInfo.c3po.buttonHeight = 2
     unitInfo.c3po.noToken = true
 
@@ -371,21 +351,18 @@ function onLoad()
     unitInfo.k2so.commandType = "rebelOperative"
     unitInfo.k2so.baseSize = "small"
     unitInfo.k2so.selectedSpeed = 2
-    unitInfo.k2so.squadStatus = false
     unitInfo.k2so.buttonHeight = 2
 
     unitInfo.r2d2 = {}
     unitInfo.r2d2.commandType = "rebelOperative"
     unitInfo.r2d2.baseSize = "small"
     unitInfo.r2d2.selectedSpeed = 1
-    unitInfo.r2d2.squadStatus = true
     unitInfo.r2d2.buttonHeight = 2
 
     unitInfo.republicC3po = {}
     unitInfo.republicC3po.commandType = nil
     unitInfo.republicC3po.baseSize = "small"
     unitInfo.republicC3po.selectedSpeed = 1
-    unitInfo.republicC3po.squadStatus = false
     unitInfo.republicC3po.buttonHeight = 2
     unitInfo.republicC3po.noToken = true
 
@@ -393,91 +370,78 @@ function onLoad()
     unitInfo.republicR2d2.commandType = "republicOperative"
     unitInfo.republicR2d2.baseSize = "small"
     unitInfo.republicR2d2.selectedSpeed = 1
-    unitInfo.republicR2d2.squadStatus = true
     unitInfo.republicR2d2.buttonHeight = 2
 
     unitInfo.sabineWren = {}
     unitInfo.sabineWren.commandType = "rebelOperative"
     unitInfo.sabineWren.baseSize = "small"
     unitInfo.sabineWren.selectedSpeed = 3
-    unitInfo.sabineWren.squadStatus = false
     unitInfo.sabineWren.buttonHeight = 2
 
     unitInfo.atrt = {}
     unitInfo.atrt.commandType = "rebelSupport"
     unitInfo.atrt.baseSize = "big"
     unitInfo.atrt.selectedSpeed = 2
-    unitInfo.atrt.squadStatus = false
     unitInfo.atrt.buttonHeight = 3.3
 
     unitInfo.tauntaunRiders = {}
     unitInfo.tauntaunRiders.commandType = "rebelSupport"
     unitInfo.tauntaunRiders.baseSize = "medium"
     unitInfo.tauntaunRiders.selectedSpeed = 3
-    unitInfo.tauntaunRiders.squadStatus = true
     unitInfo.tauntaunRiders.buttonHeight = 3.3
 
     unitInfo.fdLaserCannonTeam = {}
     unitInfo.fdLaserCannonTeam.commandType = "rebelSupport"
     unitInfo.fdLaserCannonTeam.baseSize = "huge"
     unitInfo.fdLaserCannonTeam.selectedSpeed = 2
-    unitInfo.fdLaserCannonTeam.squadStatus = false
     unitInfo.fdLaserCannonTeam.buttonHeight = 3.1
 
     unitInfo.x34Landspeeder = {}
     unitInfo.x34Landspeeder.commandType = "rebelHeavy"
     unitInfo.x34Landspeeder.baseSize = "huge"
     unitInfo.x34Landspeeder.selectedSpeed = 2
-    unitInfo.x34Landspeeder.squadStatus = false
     unitInfo.x34Landspeeder.buttonHeight = 3.1
 
     unitInfo.darthVader = {}
     unitInfo.darthVader.commandType = "imperialCommander"
     unitInfo.darthVader.baseSize = "small"
     unitInfo.darthVader.selectedSpeed = 1
-    unitInfo.darthVader.squadStatus = false
     unitInfo.darthVader.buttonHeight = 2
 
     unitInfo.darthVaderTheEmperorsApprentice = {}
     unitInfo.darthVaderTheEmperorsApprentice.commandType = "imperialOperative"
     unitInfo.darthVaderTheEmperorsApprentice.baseSize = "small"
     unitInfo.darthVaderTheEmperorsApprentice.selectedSpeed = 1
-    unitInfo.darthVaderTheEmperorsApprentice.squadStatus = false
     unitInfo.darthVaderTheEmperorsApprentice.buttonHeight = 2
 
     unitInfo.generalVeers = {}
     unitInfo.generalVeers.commandType = "imperialCommander"
     unitInfo.generalVeers.baseSize = "small"
     unitInfo.generalVeers.selectedSpeed = 2
-    unitInfo.generalVeers.squadStatus = false
     unitInfo.generalVeers.buttonHeight = 2
 
     unitInfo.emperorPalpatine = {}
     unitInfo.emperorPalpatine.commandType = "imperialCommander"
     unitInfo.emperorPalpatine.baseSize = "small"
     unitInfo.emperorPalpatine.selectedSpeed = 1
-    unitInfo.emperorPalpatine.squadStatus = false
     unitInfo.emperorPalpatine.buttonHeight = 2
 
     unitInfo.directorOrsonKrennic = {}
     unitInfo.directorOrsonKrennic.commandType = "imperialCommander"
     unitInfo.directorOrsonKrennic.baseSize = "small"
     unitInfo.directorOrsonKrennic.selectedSpeed = 2
-    unitInfo.directorOrsonKrennic.squadStatus = false
     unitInfo.directorOrsonKrennic.buttonHeight = 2
 
     unitInfo.idenVersio = {}
     unitInfo.idenVersio.commandType = "imperialCommander"
     unitInfo.idenVersio.baseSize = "small"
     unitInfo.idenVersio.selectedSpeed = 2
-    unitInfo.idenVersio.squadStatus = true
     unitInfo.idenVersio.buttonHeight = 2
 
     unitInfo.id10 = {}
     unitInfo.id10.commandType = nil
     unitInfo.id10.baseSize = "small"
     unitInfo.id10.selectedSpeed = 1
-    unitInfo.id10.squadStatus = false
     unitInfo.id10.buttonHeight = 2
     unitInfo.id10.noToken = true
 
@@ -485,224 +449,192 @@ function onLoad()
     unitInfo.imperialOfficer.commandType = "imperialCommander"
     unitInfo.imperialOfficer.baseSize = "small"
     unitInfo.imperialOfficer.selectedSpeed = 2
-    unitInfo.imperialOfficer.squadStatus = false
     unitInfo.imperialOfficer.buttonHeight = 2
 
     unitInfo.agentKallus = {}
     unitInfo.agentKallus.commandType = "imperialCommander"
     unitInfo.agentKallus.baseSize = "small"
     unitInfo.agentKallus.selectedSpeed = 2
-    unitInfo.agentKallus.squadStatus = false
     unitInfo.agentKallus.buttonHeight = 2
 
     unitInfo.bobaFett = {}
     unitInfo.bobaFett.commandType = "imperialOperative"
     unitInfo.bobaFett.baseSize = "small"
     unitInfo.bobaFett.selectedSpeed = 3
-    unitInfo.bobaFett.squadStatus = false
     unitInfo.bobaFett.buttonHeight = 2
 
     unitInfo.bossk = {}
     unitInfo.bossk.commandType = "imperialOperative"
     unitInfo.bossk.baseSize = "small"
     unitInfo.bossk.selectedSpeed = 2
-    unitInfo.bossk.squadStatus = false
     unitInfo.bossk.buttonHeight = 2
 
     unitInfo.stormtrooper = {}
     unitInfo.stormtrooper.commandType = "imperialCore"
     unitInfo.stormtrooper.baseSize = "small"
     unitInfo.stormtrooper.selectedSpeed = 2
-    unitInfo.stormtrooper.squadStatus = true
     unitInfo.stormtrooper.buttonHeight = 2
 
     unitInfo.snowtrooper = {}
     unitInfo.snowtrooper.commandType = "imperialCore"
     unitInfo.snowtrooper.baseSize = "small"
     unitInfo.snowtrooper.selectedSpeed = 1
-    unitInfo.snowtrooper.squadStatus = true
     unitInfo.snowtrooper.buttonHeight = 2
 
     unitInfo.shoretroopers = {}
     unitInfo.shoretroopers.commandType = "imperialCore"
     unitInfo.shoretroopers.baseSize = "small"
     unitInfo.shoretroopers.selectedSpeed = 2
-    unitInfo.shoretroopers.squadStatus = true
     unitInfo.shoretroopers.buttonHeight = 2
 
     unitInfo.df90MortarTrooper = {}
     unitInfo.df90MortarTrooper.commandType = "imperialCore"
     unitInfo.df90MortarTrooper.baseSize = "medium"
     unitInfo.df90MortarTrooper.selectedSpeed = 1
-    unitInfo.df90MortarTrooper.squadStatus = false
     unitInfo.df90MortarTrooper.buttonHeight = 2
 
     unitInfo.scoutTroopers = {}
     unitInfo.scoutTroopers.commandType = "imperialSpecialForces"
     unitInfo.scoutTroopers.baseSize = "small"
     unitInfo.scoutTroopers.selectedSpeed = 2
-    unitInfo.scoutTroopers.squadStatus = true
     unitInfo.scoutTroopers.buttonHeight = 2
 
     unitInfo.scoutTroopersStrikeTeam = {}
     unitInfo.scoutTroopersStrikeTeam.commandType = "imperialSpecialForces"
     unitInfo.scoutTroopersStrikeTeam.baseSize = "small"
     unitInfo.scoutTroopersStrikeTeam.selectedSpeed = 2
-    unitInfo.scoutTroopersStrikeTeam.squadStatus = true
     unitInfo.scoutTroopersStrikeTeam.buttonHeight = 2
 
     unitInfo.imperialDeathTroopers = {}
     unitInfo.imperialDeathTroopers.commandType = "imperialSpecialForces"
     unitInfo.imperialDeathTroopers.baseSize = "small"
     unitInfo.imperialDeathTroopers.selectedSpeed = 2
-    unitInfo.imperialDeathTroopers.squadStatus = true
     unitInfo.imperialDeathTroopers.buttonHeight = 2
 
     unitInfo.imperialRoyalGuards = {}
     unitInfo.imperialRoyalGuards.commandType = "imperialSpecialForces"
     unitInfo.imperialRoyalGuards.baseSize = "small"
     unitInfo.imperialRoyalGuards.selectedSpeed = 2
-    unitInfo.imperialRoyalGuards.squadStatus = true
     unitInfo.imperialRoyalGuards.buttonHeight = 2
 
     unitInfo.isf = {}
     unitInfo.isf.commandType = "imperialSpecialForces"
     unitInfo.isf.baseSize = "small"
     unitInfo.isf.selectedSpeed = 2
-    unitInfo.isf.squadStatus = true
     unitInfo.isf.buttonHeight = 2
 
     unitInfo.infernoSquad = {}
     unitInfo.infernoSquad.commandType = "imperialSpecialForces"
     unitInfo.infernoSquad.baseSize = "small"
     unitInfo.infernoSquad.selectedSpeed = 2
-    unitInfo.infernoSquad.squadStatus = true
     unitInfo.infernoSquad.buttonHeight = 2
 
     unitInfo.speederBike = {}
     unitInfo.speederBike.commandType = "imperialSupport"
     unitInfo.speederBike.baseSize = "medium"
     unitInfo.speederBike.selectedSpeed = 3
-    unitInfo.speederBike.squadStatus = true
     unitInfo.speederBike.buttonHeight = 2.2
 
     unitInfo.eWebHeavyBlasterTeam = {}
     unitInfo.eWebHeavyBlasterTeam.commandType = "imperialSupport"
     unitInfo.eWebHeavyBlasterTeam.baseSize = "big"
     unitInfo.eWebHeavyBlasterTeam.selectedSpeed = 1
-    unitInfo.eWebHeavyBlasterTeam.squadStatus = false
     unitInfo.eWebHeavyBlasterTeam.buttonHeight = 2
 
     unitInfo.dewbackRider = {}
     unitInfo.dewbackRider.commandType = "imperialSupport"
     unitInfo.dewbackRider.baseSize = "big"
     unitInfo.dewbackRider.selectedSpeed = 1
-    unitInfo.dewbackRider.squadStatus = false
     unitInfo.dewbackRider.buttonHeight = 3.3
 
     unitInfo.atst = {}
     unitInfo.atst.commandType = "imperialHeavy"
     unitInfo.atst.baseSize = "huge"
     unitInfo.atst.selectedSpeed = 2
-    unitInfo.atst.squadStatus = false
     unitInfo.atst.buttonHeight = 8.7
 
     unitInfo.tx225 = {}
     unitInfo.tx225.commandType = "imperialHeavy"
     unitInfo.tx225.baseSize = "long"
     unitInfo.tx225.selectedSpeed = 1
-    unitInfo.tx225.squadStatus = false
     unitInfo.tx225.buttonHeight = 2.5
 
     unitInfo.airSpeeder = {}
     unitInfo.airSpeeder.commandType = "rebelHeavy"
     unitInfo.airSpeeder.baseSize = "huge"
     unitInfo.airSpeeder.selectedSpeed = 3
-    unitInfo.airSpeeder.squadStatus = false
     unitInfo.airSpeeder.buttonHeight = 5.6
 
     unitInfo.generalGrievous = {}
     unitInfo.generalGrievous.commandType = "separatistCommander"
     unitInfo.generalGrievous.baseSize = "small"
     unitInfo.generalGrievous.selectedSpeed = 2
-    unitInfo.generalGrievous.squadStatus = false
     unitInfo.generalGrievous.buttonHeight = 2
 
     unitInfo.countDooku = {}
     unitInfo.countDooku.commandType = "separatistCommander"
     unitInfo.countDooku.baseSize = "small"
     unitInfo.countDooku.selectedSpeed = 2
-    unitInfo.countDooku.squadStatus = false
     unitInfo.countDooku.buttonHeight = 2
 
     unitInfo.cadBane = {}
     unitInfo.cadBane.commandType = "separatistOperative"
     unitInfo.cadBane.baseSize = "small"
     unitInfo.cadBane.selectedSpeed = 2
-    unitInfo.cadBane.squadStatus = false
     unitInfo.cadBane.buttonHeight = 2
 
     unitInfo.maul = {}
     unitInfo.maul.commandType = "separatistOperative"
     unitInfo.maul.baseSize = "small"
     unitInfo.maul.selectedSpeed = 2
-    unitInfo.maul.squadStatus = false
     unitInfo.maul.buttonHeight = 2
 
     unitInfo.tSeriesTacticalDroid = {}
     unitInfo.tSeriesTacticalDroid.commandType = "separatistCommander"
     unitInfo.tSeriesTacticalDroid.baseSize = "small"
     unitInfo.tSeriesTacticalDroid.selectedSpeed = 2
-    unitInfo.tSeriesTacticalDroid.squadStatus = false
     unitInfo.tSeriesTacticalDroid.buttonHeight = 2
 
     unitInfo.b1BattleDroids = {}
     unitInfo.b1BattleDroids.commandType = "separatistCore"
     unitInfo.b1BattleDroids.baseSize = "small"
     unitInfo.b1BattleDroids.selectedSpeed = 2
-    unitInfo.b1BattleDroids.squadStatus = true
     unitInfo.b1BattleDroids.buttonHeight = 2
 
     unitInfo.b2SuperBattleDroids = {}
     unitInfo.b2SuperBattleDroids.commandType = "separatistCore"
     unitInfo.b2SuperBattleDroids.baseSize = "small"
     unitInfo.b2SuperBattleDroids.selectedSpeed = 2
-    unitInfo.b2SuperBattleDroids.squadStatus = true
     unitInfo.b2SuperBattleDroids.buttonHeight = 2
 
     unitInfo.drk1SithProbeDroids = {}
     unitInfo.drk1SithProbeDroids.commandType = "separatistSpecialForces"
     unitInfo.drk1SithProbeDroids.baseSize = "small"
     unitInfo.drk1SithProbeDroids.selectedSpeed = 2
-    unitInfo.drk1SithProbeDroids.squadStatus = true
     unitInfo.drk1SithProbeDroids.buttonHeight = 2
 
     unitInfo.bxCommandoDroids = {}
     unitInfo.bxCommandoDroids.commandType = "separatistSpecialForces"
     unitInfo.bxCommandoDroids.baseSize = "small"
     unitInfo.bxCommandoDroids.selectedSpeed = 2
-    unitInfo.bxCommandoDroids.squadStatus = true
     unitInfo.bxCommandoDroids.buttonHeight = 2
 
     unitInfo.bxCommandoDroidsStrikeTeam = {}
     unitInfo.bxCommandoDroidsStrikeTeam.commandType = "separatistSpecialForces"
     unitInfo.bxCommandoDroidsStrikeTeam.baseSize = "small"
     unitInfo.bxCommandoDroidsStrikeTeam.selectedSpeed = 2
-    unitInfo.bxCommandoDroidsStrikeTeam.squadStatus = true
     unitInfo.bxCommandoDroidsStrikeTeam.buttonHeight = 2
 
     unitInfo.droidekas = {}
     unitInfo.droidekas.commandType = "separatistSupport"
     unitInfo.droidekas.baseSize = "medium"
     unitInfo.droidekas.selectedSpeed = 1
-    unitInfo.droidekas.squadStatus = true
     unitInfo.droidekas.buttonHeight = 2.2
 
     unitInfo.STAP = {}
     unitInfo.STAP.commandType = "separatistSupport"
     unitInfo.STAP.baseSize = "medium"
     unitInfo.STAP.selectedSpeed = 3
-    unitInfo.STAP.squadStatus = true
     unitInfo.STAP.buttonHeight = 3
 
     unitInfo.aatTank = {}
@@ -710,84 +642,72 @@ function onLoad()
     unitInfo.aatTank.baseSize = "epic"
     unitInfo.aatTank.strafeMove = true
     unitInfo.aatTank.selectedSpeed = 1
-    unitInfo.aatTank.squadStatus = false
     unitInfo.aatTank.buttonHeight = 4
 
     unitInfo.obiWanKenobi = {}
     unitInfo.obiWanKenobi.commandType = "republicCommander"
     unitInfo.obiWanKenobi.baseSize = "small"
     unitInfo.obiWanKenobi.selectedSpeed = 2
-    unitInfo.obiWanKenobi.squadStatus = false
     unitInfo.obiWanKenobi.buttonHeight = 2
 
     unitInfo.cloneCaptainRex = {}
     unitInfo.cloneCaptainRex.commandType = "republicCommander"
     unitInfo.cloneCaptainRex.baseSize = "small"
     unitInfo.cloneCaptainRex.selectedSpeed = 2
-    unitInfo.cloneCaptainRex.squadStatus = false
     unitInfo.cloneCaptainRex.buttonHeight = 2
 
     unitInfo.anakinSkywalker = {}
     unitInfo.anakinSkywalker.commandType = "republicCommander"
     unitInfo.anakinSkywalker.baseSize = "small"
     unitInfo.anakinSkywalker.selectedSpeed = 2
-    unitInfo.anakinSkywalker.squadStatus = false
     unitInfo.anakinSkywalker.buttonHeight = 2
 
     unitInfo.padme = {}
     unitInfo.padme.commandType = "republicOperative"
     unitInfo.padme.baseSize = "small"
     unitInfo.padme.selectedSpeed = 2
-    unitInfo.padme.squadStatus = false
     unitInfo.padme.buttonHeight = 2
 
     unitInfo.cloneCommander = {}
     unitInfo.cloneCommander.commandType = "republicCommander"
     unitInfo.cloneCommander.baseSize = "small"
     unitInfo.cloneCommander.selectedSpeed = 2
-    unitInfo.cloneCommander.squadStatus = false
     unitInfo.cloneCommander.buttonHeight = 2
 
     unitInfo.phaseICloneTroopers = {}
     unitInfo.phaseICloneTroopers.commandType = "republicCore"
     unitInfo.phaseICloneTroopers.baseSize = "small"
     unitInfo.phaseICloneTroopers.selectedSpeed = 2
-    unitInfo.phaseICloneTroopers.squadStatus = true
     unitInfo.phaseICloneTroopers.buttonHeight = 2
 
     unitInfo.phaseIICloneTroopers = {}
     unitInfo.phaseIICloneTroopers.commandType = "republicCore"
     unitInfo.phaseIICloneTroopers.baseSize = "small"
     unitInfo.phaseIICloneTroopers.selectedSpeed = 2
-    unitInfo.phaseIICloneTroopers.squadStatus = true
     unitInfo.phaseIICloneTroopers.buttonHeight = 2
 
     unitInfo.arcTroopers = {}
     unitInfo.arcTroopers.commandType = "republicSpecialForces"
     unitInfo.arcTroopers.baseSize = "small"
     unitInfo.arcTroopers.selectedSpeed = 2
-    unitInfo.arcTroopers.squadStatus = true
     unitInfo.arcTroopers.buttonHeight = 2
 
     unitInfo.arcTroopersStrikeTeam = {}
     unitInfo.arcTroopersStrikeTeam.commandType = "republicSpecialForces"
     unitInfo.arcTroopersStrikeTeam.baseSize = "small"
     unitInfo.arcTroopersStrikeTeam.selectedSpeed = 2
-    unitInfo.arcTroopersStrikeTeam.squadStatus = true
     unitInfo.arcTroopersStrikeTeam.buttonHeight = 2
 
     unitInfo.barcSpeeder = {}
     unitInfo.barcSpeeder.commandType = "republicSupport"
     unitInfo.barcSpeeder.baseSize = "big"
     unitInfo.barcSpeeder.selectedSpeed = 3
-    unitInfo.barcSpeeder.squadStatus = false
     unitInfo.barcSpeeder.buttonHeight = 3
 
     unitInfo.republicATRT = {}
     unitInfo.republicATRT.commandType = "republicSupport"
     unitInfo.republicATRT.baseSize = "big"
     unitInfo.republicATRT.selectedSpeed = 2
-    unitInfo.republicATRT.squadStatus = false
     unitInfo.republicATRT.buttonHeight = 3.3
 
     unitInfo.saberTank = {}
@@ -795,7 +715,6 @@ function onLoad()
     unitInfo.saberTank.baseSize = "epic"
     unitInfo.saberTank.strafeMove = true
     unitInfo.saberTank.selectedSpeed = 2
-    unitInfo.saberTank.squadStatus = false
     unitInfo.saberTank.buttonHeight = 4
 
     unitInfo.unitNamesToType = {}
@@ -5918,7 +5837,6 @@ function showRangeOnHoveredModel(hoverObject)
       unitData.strafeMove = newUnitData.strafeMove
       unitData.selectedSpeed = newUnitData.selectedSpeed
       unitData.fixedArc = newUnitData.fixedArc
-      unitData.squadStatus = newUnitData.squadStatus
 
       unitData.aStart = templateInfo.aStart[unitData.baseSize][unitData.selectedSpeed]
       unitData.bStart = templateInfo.bStart[unitData.baseSize][unitData.selectedSpeed]

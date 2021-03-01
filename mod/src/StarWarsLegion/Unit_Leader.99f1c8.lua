@@ -35,7 +35,6 @@ function setUp()
         unitData.fixedMove = fixed
         unitData.fixedArc = fixed
         unitData.selectedSpeed = unitInfo[unitName].selectedSpeed
-        unitData.squadStatus = unitInfo[unitName].squadStatus
 
         if unitInfo[unitName].strafeMove != nil then
               unitData.strafeMove = true
@@ -160,7 +159,8 @@ function onDropped(player_color)
 end
 
 function checkVelocity()
-    if moveState == true and unitData.squadStatus == true then
+    local hasNonLeaderMinis = #miniGUIDs > 1
+    if moveState == true and hasNonLeaderMinis then
         startLuaCoroutine(self, "dropCoroutine")
     end
 end
