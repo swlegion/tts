@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "38fcd0",
-    "Name": "Custom_Model_Bag",
+    "GUID": "5617da",
+    "Name": "Custom_Model_Stack",
     "Transform": {
-      "posX": 56.5584946,
-      "posY": 0.9640054,
-      "posZ": -2.92057133,
-      "rotX": 4.643923,
-      "rotY": 87.29852,
-      "rotZ": 358.398,
-      "scaleX": 0.350000441,
-      "scaleY": 0.350000441,
-      "scaleZ": 0.350000441
+      "posX": -20.6466484,
+      "posY": 0.9490363,
+      "posZ": -17.9134636,
+      "rotX": -0.000006380123,
+      "rotY": -0.000001046489,
+      "rotZ": 0.000009419621,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
     },
-    "Nickname": "Saved Map",
+    "Nickname": "Observation Token",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -36,19 +36,16 @@
     "Hands": false,
     "MaterialIndex": -1,
     "MeshIndex": -1,
-    "Number": 0,
+    "Number": 2,
     "CustomMesh": {
-      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234780862656636/53487DF81A11090FF7BA1C6E7FA26D96E80D9D8E/",
-      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234780862657065/EEBB10C312C8359898DD55209EE958396A8F4CAE/",
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314442992/DD893F407D50F2D029305A2F181989F90E3FA46A/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1777200555359034130/1D014D75BCE30D49638FC9C0CA5E1BDC9B4DFAE0/",
       "NormalURL": "",
       "ColliderURL": "",
       "Convex": true,
-      "MaterialIndex": 3,
-      "TypeIndex": 6,
+      "MaterialIndex": 0,
+      "TypeIndex": 5,
       "CastShadows": true
-    },
-    "Bag": {
-      "Order": 0
     },
     "LuaScript": "",
     "LuaScriptState": "",
