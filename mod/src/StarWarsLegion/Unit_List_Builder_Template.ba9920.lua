@@ -1,19 +1,10 @@
 #include !/common/Math
 
 -- model template
-function onLoad(save_state)
-    if self.getName() != " " then
-        local timerCounter = Global.getVar("timerCounter")
-        timerCounter = timerCounter + 1
-        Global.setVar("timerCounter", timerCounter)
-        Timer.create({
-            identifier     = "template".. timerCounter..self.getGUID(),
-            function_name  = "setUp",
-            function_owner = self,
-            delay          = 0.05
-        })
-    end
-
+function onLoad()
+  if self.getName() != "Unit List Builder Template" then
+    setUp()
+  end
 end
 
 function setUp()
@@ -42,7 +33,6 @@ function setUp()
     if templateIndex < 5 then
         initialize()
     end
-
 end
 
 function initialize()
@@ -78,14 +68,12 @@ function mainMenu()
     end
 
     for i,entry in pairs(templateMenu.mainMenu) do
-        refreshTimer()
-
-        _G["mainMenu"..timerCounter] = function() unitSubMenu(entry.varName) end
+        _G["mainMenu"..i] = function() unitSubMenu(entry.varName) end
 
         local fontSize = correctStringLength(entry.name)
 
         self.createButton({
-            click_function = "mainMenu"..timerCounter,
+            click_function = "mainMenu"..i,
             function_owner = self,
             label          = entry.name,
             position       = {0.93, 0.28, 2.48-(i*0.35)},
@@ -203,15 +191,13 @@ function unitSubMenu(selectedRank)
         if templateMenu[selectedArmyFaction][selectedRank][i] != nil then
             local entry = templateMenu[selectedArmyFaction][selectedRank][i]
 
-            refreshTimer()
-
-            _G["subMenu"..timerCounter] = function() spawnUnitCard(entry.varName) end
+            _G["subMenu"..i] = function() spawnUnitCard(entry.varName) end
 
             local fontSize = correctStringLength(entry.name)
             local relativeIndex = i - (unitCardPage * 6)
 
             self.createButton({
-                click_function = "subMenu"..timerCounter,
+                click_function = "subMenu"..i,
                 function_owner = self,
                 label          = entry.name,
                 position       = {0.93, 0.28, 2.48-(relativeIndex*0.35)},
@@ -237,14 +223,6 @@ function unitSubMenu(selectedRank)
 
     upgradeMenu()
 end
-
-function refreshTimer()
-    timerCounter = Global.getVar("timerCounter")
-    timerCounter = timerCounter + 1
-    Global.setVar("timerCounter", timerCounter)
-end
-
-
 
 function spawnUnitIDToken(idSpawnPos, idSpawnRot,idNumber)
     idSpawnRot.y = idSpawnRot.y +180
@@ -315,13 +293,6 @@ function spawnUnitCard(card)
 end
 
 function dud()
-end
-
-function getTimerCounter()
-    local timerCounterFunc = Global.getVar("timerCounter")
-    timerCounterFunc = timerCounterFunc + 1
-    Global.setVar("timerCounter", timerCounterFunc)
-    return timerCounterFunc
 end
 
 function updateCommandCardSelection(a1,b2)
@@ -592,182 +563,4 @@ function getListText()
     else
         return nil
     end
-end
-
-
-
-function spawnMinis()
-
-
-    if selectedUnit != nil then
-        -- set unitNumber
-        spos = translatePos(self.getPosition(),self.getRotation(),1.5620819440734, 52.543226290399+90)
-        spos.y = self.getPosition().y + 0.45
-
-        srot = {x=0,y=self.getRotation().y,z=0}
-
-
-        spawnUnitIDToken(spos, srot, templateIndex)
-
-        -- spawn minis
-        for i, data in pairs(cardInfo.unitCards[selectedUnit].miniInfo) do
-
-            -- math
-
-            local rot = self.getRotation()
-            local pos = self.getPosition()
-            local c = listBuilder.miniSpawnPos[i].c
-            local q = listBuilder.miniSpawnPos[i].q
-
-            local a = c * math.cos(math.rad(q + rot.y))
-            local b = c * math.sin(math.rad(q + rot.y))
-
-            pos.x = pos.x - a
-            pos.z = pos.z + b
-            pos.y = 1
-
-            local spawnedMini = spawnObject({
-                type           = "Custom_Model",
-                position       = pos,
-                rotation       = {rot.x, rot.y + 180, rot.z},
-            })
-            spawnedMini.setCustomObject({
-                mesh = data.mesh,
-                collider = data.collider,
-                diffuse = data[colorSide],
-                type = 1,
-                material = 3
-
-            })
-            spawnedMini.setColorTint(gameData.getTable("battlefieldTint"))
-
-            local strColor = colorSide
-            strColor = strColor:gsub("^%l", string.upper)
-
-            spawnedMini.setName(strColor.. " ".. data.name)
-            if i == 1 then
-                local miniScript = "unitName = '"..selectedUnit.."'\ncolorSide = '"..colorSide.."'cardGUID = '"..unitCard.getGUID().."'\nunitID = "..templateIndex.."\n"..listBuilder.modelMiniScript
-                spawnedMini.setLuaScript(miniScript)
-                --spawnedMini.setVar("unitCount", unitCount)
-                --spawnedMini.setVar("cardGUID", unitCard.getGUID())
-                description = ""
-
-                for n, upgrade in pairs(upgradeCardIndex) do
-                    description = description .. upgrade.name .. "\n"
-                end
-
-
-                spawnedMini.setDescription(description)
-            else
-                spawnedMini.use_snap_points = false
-            end
-
-            l = i
-        end
-        -- spawn upgrade minis
-        for i = 1, 4, 1 do
-            if upgradeCardIndex[i] != nil and upgradeCardIndex[i].miniInfo!= nil then
-                -- math
-                l = l + 1
-                local rot = self.getRotation()
-                local pos = self.getPosition()
-                local c = listBuilder.miniSpawnPos[l].c
-                local q = listBuilder.miniSpawnPos[l].q
-
-                local a = c * math.cos(math.rad(q + rot.y))
-                local b = c * math.sin(math.rad(q + rot.y))
-
-                pos.x = pos.x - a
-                pos.z = pos.z + b
-                pos.y = 1
-
-
-                local spawnedMini = spawnObject({
-                    type           = "Custom_Model",
-                    position       = pos,
-                    rotation       = {rot.x, rot.y + 180, rot.z},
-                })
-                spawnedMini.setCustomObject({
-                    mesh = upgradeCardIndex[i].miniInfo.mesh,
-                    collider = upgradeCardIndex[i].miniInfo.collider,
-                    diffuse = upgradeCardIndex[i].miniInfo[colorSide],
-                    type = 1,
-                    material = 3
-
-                })
-                spawnedMini.setColorTint(gameData.getTable("battlefieldTint"))
-                local strColor = colorSide
-                strColor = strColor:gsub("^%l", string.upper)
-
-                spawnedMini.setName(strColor.." "..upgradeCardIndex[i].miniInfo.name)
-                spawnedMini.use_snap_points = false
-            end
-        end
-
-        -- spawn command token
-        local commandType = unitInfo[selectedUnit].commandType
-
-        local guid = unitInfo.tokenGUID[colorSide][commandType]
-
-        local token = getObjectFromGUID(guid)
-
-        copy({token})
-
-        local pastedObj = paste()
-
-        local tokenObj = pastedObj[1]
-
-        local pos = unitInfo.tokenPosition[colorSide][commandType]
-        local rot = unitInfo.tokenRotation[colorSide]
-
-        tokenObj.setPosition(pos)
-        tokenObj.setRotation(rot)
-        tokenObj.setScale({0.38,1,0.38})
-
-        tokenObj.setLuaScript(listBuilder.tokenScript)
-
-        local strColor = colorSide
-
-        strColor = strColor:gsub("^%l", string.upper)
-
-        tokenObj.setName(strColor .. " " .. cardInfo.unitCards[selectedUnit].tokenName)
-        tokenObj.setVar("unitName", selectedUnit)
-        tokenObj.setVar("colorSide", colorSide)
-        tokenObj.setLock(false)
-    end
-end
-
-function getCommandCards()
-    selectCommandCardsTable = {}
-    if listBuilder.commandCards[selectedUnit] != nil then
-        for i=1,3,1 do
-            table.insert(selectCommandCardsTable, listBuilder.commandCards[selectedUnit].cards[i][selectedCommandCard[i]])
-        end
-    end
-    return selectCommandCardsTable
-end
-
-function dealCommandCard(selectionCard)
-    -- Uppercase color
-    strColor = colorSide
-    strColor = strColor:gsub("^%l", string.upper)
-
-    originalCommandCards = getObjectFromGUID(listBuilder.commandCardsGUID)
-    commandCards = originalCommandCards.clone({ position = {0,-30,0} })
-    commandCardsTable = commandCards.getObjects()
-    commandCards.setScale({1,1,1})
-
-    for i, entry in pairs(commandCardsTable) do
-        if entry.nickname == selectionCard then
-
-            takenCard = commandCards.takeObject({
-                position       = {0,10,0},
-                index          = entry.index
-            })
-            takenCard.deal(1, strColor)
-            break
-        end
-    end
-
-    destroyObject(commandCards)
 end
