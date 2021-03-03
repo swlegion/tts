@@ -194,8 +194,8 @@
     "ObjectStates": []
   },
   "ObjectPaths": [
-    "HandTrigger.ae224d.json",
-    "HandTrigger.3f03a2.json",
+    "Red_Player_Hand.ae224d.json",
+    "Blue_Player_Hand.3f03a2.json",
     "ScriptingTrigger.cbc575.json",
     "Model_Template_A.1f03c9.json",
     "Model_Template_B.a486ae.json",

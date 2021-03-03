@@ -33,5 +33,6 @@
   "editor.tabSize": 2,
   "files.associations": {
     "*.ttslua": "lua"
-  }
+  },
+  "editor.detectIndentation": false
 }
