@@ -25,7 +25,7 @@ function onLoad()
     clockGUIDs.red = "6ce1bb"
     initChessClocks(clockGUIDs)
 
-    battlefieldTable = "653dd0"
+    battlefieldTable = "3a3ed9"
 
     templateInfo = {}
 
