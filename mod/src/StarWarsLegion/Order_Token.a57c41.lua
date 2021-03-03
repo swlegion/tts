@@ -1,3 +1,4 @@
+#include !/common/Math
 
 -- Model Token
 
@@ -28,7 +29,7 @@ function onLoad()
     -- setUp
 
     unitData = {}
-    if self.getName() != " " then
+    if unitName != nil then
         isAToken = true
         unitData.unitName = unitName
         unitData.tokenCommandType = unitInfo[unitData.unitName].commandType
@@ -38,7 +39,6 @@ function onLoad()
         unitData.strafeMove = unitInfo[unitData.unitName].strafeMove
         unitData.selectedSpeed = unitInfo[unitData.unitName].selectedSpeed
         unitData.fixedArc = unitInfo[unitData.unitName].fixedArc
-        unitData.squadStatus = unitInfo[unitData.unitName].squadStatus
 
         dieRoller = getObjectFromGUID(dieRollerInfo[colorSide.."DieRollerGUID"])
 
@@ -59,7 +59,6 @@ function setTemplateVariables()
     unitData.buttonPosition = templateInfo.buttonPosition[unitData.selectedSpeed]
     unitData.buttonColor = templateInfo.buttonColor[unitData.selectedSpeed]
     unitData.fontColor = templateInfo.fontColor[unitData.selectedSpeed]
-    unitData.buttonHeight = templateInfo.buttonHeight[unitData.selectedSpeed]
 end
 ------------------------------------------------- MATH FIND PROXIMITY------------------------------------------------------------
 function findProximity(targetObj, object)
@@ -175,7 +174,6 @@ function getSelectedUnitObjVariables()
         unitData.strafeMove = newUnitData.strafeMove
         unitData.selectedSpeed = newUnitData.selectedSpeed
         unitData.fixedArc = newUnitData.fixedArc
-        unitData.squadStatus = newUnitData.squadStatus
 
     end
 end
@@ -949,9 +947,7 @@ end
 
 function attackMenu(attackTargetObj)
     unhighlightEnemies()
-
     highlightEnemy(attackTargetObj)
-
     clearRangeRulers()
 
     -- attack menu buttons
@@ -1332,20 +1328,6 @@ function resetActivation()
     stopUnit()
     stopAttack()
     standby()
-end
-
-
-function translatePos(originPos,originRot,distance, angle)
-    local pos = originPos
-    local rot = originRot
-
-    local a = distance * math.cos(math.rad(angle + rot.y))
-    local b = distance * math.sin(math.rad(angle + rot.y))
-
-    pos.x = pos.x - b
-    pos.z = pos.z - a
-
-    return pos
 end
 
 function getDistance(originObj, targetObj)

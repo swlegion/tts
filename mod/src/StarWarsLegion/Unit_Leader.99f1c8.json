@@ -1,25 +1,25 @@
 {
   "Object": {
-    "GUID": "a57c41",
-    "Name": "BlockRectangle",
+    "GUID": "99f1c8",
+    "Name": "BlockSquare",
     "Transform": {
-      "posX": 59.1742249,
-      "posY": 1.06649125,
-      "posZ": -0.285177,
-      "rotX": -0.00161050924,
-      "rotY": 0.013856966,
-      "rotZ": -0.000009657464,
+      "posX": 59.17631,
+      "posY": 1.06647265,
+      "posZ": -0.951033056,
+      "rotX": -0.00159306417,
+      "rotY": 359.985962,
+      "rotZ": -0.0000114085315,
       "scaleX": 0.250000417,
       "scaleY": 0.250000417,
       "scaleZ": 0.250000417
     },
-    "Nickname": " ",
+    "Nickname": "Unit Leader",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0,
-      "g": 0.201567829,
-      "b": 0.8235294
+      "r": 0.113668136,
+      "g": 0.160729945,
+      "b": 0.0979883149
     },
     "LayoutGroupSortIndex": 0,
     "Locked": true,
@@ -34,7 +34,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "LuaScript": "#include ./BlockRectangle.a57c41.lua",
+    "LuaScript": "#include ./Unit_Leader.99f1c8.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

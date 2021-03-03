@@ -1,6 +1,6 @@
 -- Model mini
 function onLoad()
-    if self.getName() != " " then
+    if self.getName() != "Unit Leader" then
         isAMini = true
         local timerCounter = Global.getVar("timerCounter")
         timerCounter = timerCounter + 1
@@ -16,7 +16,6 @@ function onLoad()
 end
 
 function setUp()
-
     templateInfo = {}
     templateInfo = Global.getTable("templateInfo")
 
@@ -26,22 +25,22 @@ function setUp()
     moveState = false
     silhouetteState = false
 
-
     if unitName != nil and colorSide != nil then
+        local baseSize = unitInfo[unitName].baseSize
+        local fixed = baseSize != 'Small'
 
         unitData = {}
         unitData.commandType = unitInfo[unitName].commandType
-        unitData.baseSize = unitInfo[unitName].baseSize
-        unitData.fixedMove = unitInfo[unitName].fixedMove
+        unitData.baseSize = baseSize
+        unitData.fixedMove = fixed
+        unitData.fixedArc = fixed
         unitData.selectedSpeed = unitInfo[unitName].selectedSpeed
-        unitData.fixedArc = unitInfo[unitName].fixedArc
-        unitData.squadStatus = unitInfo[unitName].squadStatus
+
         if unitInfo[unitName].strafeMove != nil then
               unitData.strafeMove = true
         else
               unitData.strafeMove = false
         end
-
 
         -- set info
         unitData.aStart = templateInfo.aStart[unitData.baseSize][unitData.selectedSpeed]
@@ -53,13 +52,11 @@ function setUp()
         unitData.buttonPosition = templateInfo.buttonPosition[unitData.selectedSpeed]
         unitData.buttonColor = templateInfo.buttonColor[unitData.selectedSpeed]
         unitData.fontColor = templateInfo.fontColor[unitData.selectedSpeed]
-        unitData.buttonHeight = templateInfo.buttonHeight[unitData.selectedSpeed]
         unitData.cohesionRadius = templateInfo.cohesionRadius[unitData.baseSize]
 
         unitIDButtonPos = unitInfo.unitCountPos[unitData.baseSize]
 
         resetUnitButtons()
-
     end
 end
 
@@ -162,7 +159,8 @@ function onDropped(player_color)
 end
 
 function checkVelocity()
-    if moveState == true and unitData.squadStatus == true then
+    local hasNonLeaderMinis = #miniGUIDs > 1
+    if moveState == true and hasNonLeaderMinis then
         startLuaCoroutine(self, "dropCoroutine")
     end
 end

@@ -1,0 +1,235 @@
+function buildTemplateMenu()
+    local templateMenu = {}
+
+    templateMenu.mainMenu = {}
+    templateMenu.mainMenu[1] = {name = "Commander", varName = "commander"}
+    templateMenu.mainMenu[2] = {name = "Operative", varName = "operative"}
+    templateMenu.mainMenu[3] = {name = "Corps", varName = "corps"}
+    templateMenu.mainMenu[4] = {name = "Special Forces", varName = "specialForces"}
+    templateMenu.mainMenu[5] = {name = "Support", varName = "support"}
+    templateMenu.mainMenu[6] = {name = "Heavy", varName = "heavy"}
+
+    templateMenu.rebel = {}
+    templateMenu.rebel.commander = {}
+    templateMenu.rebel.commander[1] = {name = "Luke Skywalker", varName = "lukeSkywalker"}
+    templateMenu.rebel.commander[2] = {name = "Leia Organa", varName = "leiaOrgana"}
+    templateMenu.rebel.commander[3] = {name = "Han Solo", varName = "hanSolo"}
+    templateMenu.rebel.commander[4] = {name = "Jyn Erso", varName = "jynErso"}
+    templateMenu.rebel.commander[5] = {name = "Cassian Andor", varName = "cassianAndor"}
+    templateMenu.rebel.commander[6] = {name = "Rebel Officer", varName = "rebelOfficer"}
+    templateMenu.rebel.commander[7] = {name = "Lando Calrissian", varName = "landoCalrissian"}
+
+    templateMenu.rebel.operative = {}
+    templateMenu.rebel.operative[1] = {name = "Chewbacca", varName = "chewbacca"}
+    templateMenu.rebel.operative[2] = {name = "Sabine Wren", varName = "sabineWren"}
+    templateMenu.rebel.operative[3] = {name = "Luke Skywalker", varName = "lukeSkywalkerJediKnight"}
+    templateMenu.rebel.operative[4] = {name = "R2-D2", varName = "r2d2"}
+    templateMenu.rebel.operative[5] = {name = "C-3PO", varName = "c3po"}
+    templateMenu.rebel.operative[6] = {name = "K-2SO", varName = "k2so"}
+
+    templateMenu.rebel.corps = {}
+    templateMenu.rebel.corps[1] = {name = "Rebel Troopers", varName = "rebelTrooper"}
+    templateMenu.rebel.corps[2] = {name = "Fleet Troopers", varName = "fleetTroopers"}
+    templateMenu.rebel.corps[3] = {name = "Rebel Veterans", varName = "rebelVeterans"}
+    templateMenu.rebel.corps[4] = {name = "Mark II Medium Blaster Trooper", varName = "markIIMediumBlasterTrooper"}
+
+    templateMenu.rebel.specialForces = {}
+    templateMenu.rebel.specialForces[1] = {name = "Rebel Commandos", varName = "rebelCommandos"}
+    templateMenu.rebel.specialForces[2] = {name = "Rebel Commandos Strike Team", varName = "rebelCommandosStrikeTeam"}
+    templateMenu.rebel.specialForces[3] = {name = "Wookiee Warriors", varName = "wookieeWarriors"}
+    templateMenu.rebel.specialForces[4] = {name = "Rebel Pathfinders", varName = "rebelPathfinders"}
+    templateMenu.rebel.specialForces[5] = {name = "Mandalorian Resistance", varName = "mandalorianResistance"}
+    templateMenu.rebel.specialForces[6] = {name = "Clan Wren", varName = "clanWren"}
+
+    templateMenu.rebel.support = {}
+    templateMenu.rebel.support[1] = {name = "AT-RT", varName = "atrt"}
+    templateMenu.rebel.support[2] = {name = "1.4 FD Laser Cannon Team", varName = "fdLaserCannonTeam"}
+    templateMenu.rebel.support[3] = {name = "Tauntaun Riders", varName = "tauntaunRiders"}
+
+    templateMenu.rebel.heavy = {}
+    templateMenu.rebel.heavy[1] = {name = "T-47 Airspeeder", varName = "airSpeeder"}
+    templateMenu.rebel.heavy[2] = {name = "X-34 Landspeeder", varName = "x34Landspeeder"}
+
+
+    templateMenu.imperial = {}
+    templateMenu.imperial.commander = {}
+    templateMenu.imperial.commander[1] = {name = "Darth Vader", varName = "darthVader"}
+    templateMenu.imperial.commander[2] = {name = "General Veers", varName = "generalVeers"}
+    templateMenu.imperial.commander[3] = {name = "Emperor Palpatine", varName = "emperorPalpatine"}
+    templateMenu.imperial.commander[4] = {name = "Director Orson Krennic", varName = "directorOrsonKrennic"}
+    templateMenu.imperial.commander[5] = {name = "Iden Versio", varName = "idenVersio"}
+    templateMenu.imperial.commander[6] = {name = "Imperial Officer", varName = "imperialOfficer"}
+    templateMenu.imperial.commander[7] = {name = "Agent Kallus", varName = "agentKallus"}
+
+    templateMenu.imperial.operative = {}
+    templateMenu.imperial.operative[1] = {name = "Boba Fett", varName = "bobaFett"}
+    templateMenu.imperial.operative[2] = {name = "Bossk", varName = "bossk"}
+    templateMenu.imperial.operative[3] = {name = "Darth Vader", varName = "darthVaderTheEmperorsApprentice"}
+    templateMenu.imperial.operative[4] = {name = "ID10 (Iden Versio)", varName = "id10"}
+
+    templateMenu.imperial.corps = {}
+    templateMenu.imperial.corps[1] = {name = "Stormtroopers", varName = "stormtrooper"}
+    templateMenu.imperial.corps[2] = {name = "Snowtroopers", varName = "snowtrooper"}
+    templateMenu.imperial.corps[3] = {name = "Shoretroopers", varName = "shoretroopers"}
+    templateMenu.imperial.corps[4] = {name = "DF-90 Mortar Trooper", varName = "df90MortarTrooper"}
+
+    templateMenu.imperial.specialForces = {}
+    templateMenu.imperial.specialForces[1] = {name = "Scout Troopers", varName = "scoutTroopers"}
+    templateMenu.imperial.specialForces[2] = {name = "Scout Troopers Strike Team", varName = "scoutTroopersStrikeTeam"}
+    templateMenu.imperial.specialForces[3] = {name = "Imperial Royal Guards", varName = "imperialRoyalGuards"}
+    templateMenu.imperial.specialForces[4] = {name = "Imperial Death Troopers", varName = "imperialDeathTroopers"}
+    templateMenu.imperial.specialForces[5] = {name = "Imperial Special Forces", varName = "isf"}
+    templateMenu.imperial.specialForces[6] = {name = "Inferno Squad", varName = "infernoSquad"}
+
+    templateMenu.imperial.support = {}
+    templateMenu.imperial.support[1] = {name = "74-Z Speeder Bikes", varName = "speederBike"}
+    templateMenu.imperial.support[2] = {name = "E-Web Heavy Blaster Team", varName = "eWebHeavyBlasterTeam"}
+    templateMenu.imperial.support[3] = {name = "Dewback Rider", varName = "dewbackRider"}
+
+    templateMenu.imperial.heavy = {}
+    templateMenu.imperial.heavy[1] = {name = "AT-ST", varName = "atst"}
+    templateMenu.imperial.heavy[2] = {name = "TX-225 GAVw Occupier", varName = "tx225"}
+
+    templateMenu.separatist = {}
+    templateMenu.separatist.commander = {}
+    templateMenu.separatist.commander[1] = {name = "General Grievous", varName = "generalGrievous"}
+    templateMenu.separatist.commander[2] = {name = "Count Dooku", varName = "countDooku"}
+    templateMenu.separatist.commander[3] = {name = "T-Series Tactical Droid", varName = "tSeriesTacticalDroid"}
+
+    templateMenu.separatist.operative = {}
+    templateMenu.separatist.operative[1] = {name = "Cad Bane", varName = "cadBane"}
+    templateMenu.separatist.operative[2] = {name = "Maul", varName = "maul"}
+
+    templateMenu.separatist.corps = {}
+    templateMenu.separatist.corps[1] = {name = "B1 Battle Droids", varName = "b1BattleDroids"}
+    templateMenu.separatist.corps[2] = {name = "B2 Super Battle Droids", varName = "b2SuperBattleDroids"}
+
+    templateMenu.separatist.specialForces = {}
+    templateMenu.separatist.specialForces[1] = {name = "BX Commando Droids", varName = "bxCommandoDroids"}
+    templateMenu.separatist.specialForces[2] = {name = "BX Commando Droids Strike Team", varName = "bxCommandoDroidsStrikeTeam"}
+    templateMenu.separatist.specialForces[3] = {name = "DRK-1 Sith Probe Droids", varName = "drk1SithProbeDroids"}
+
+    templateMenu.separatist.support = {}
+    templateMenu.separatist.support[1] = {name = "Droidekas", varName = "droidekas"}
+    templateMenu.separatist.support[2] = {name = "STAP Riders", varName = "STAP"}
+
+    templateMenu.separatist.heavy = {}
+    templateMenu.separatist.heavy[1] = {name = "AAT Trade Federation Battle Tank", varName = "aatTank"}
+
+    templateMenu.republic = {}
+    templateMenu.republic.commander = {}
+    templateMenu.republic.commander[1] = {name = "Obi-Wan Kenobi", varName = "obiWanKenobi"}
+    templateMenu.republic.commander[2] = {name = "Clone Captain Rex", varName = "cloneCaptainRex"}
+    templateMenu.republic.commander[3] = {name = "Anakin Skywalker", varName = "anakinSkywalker"}
+    templateMenu.republic.commander[4] = {name = "Clone Commander", varName = "cloneCommander"}
+
+    templateMenu.republic.operative = {}
+    templateMenu.republic.operative[1] = {name = "R2-D2", varName = "republicR2d2"}
+    templateMenu.republic.operative[2] = {name = "C-3PO", varName = "republicC3po"}
+    templateMenu.republic.operative[3] = {name = "Padme Amidala", varName = "padme"}
+
+    templateMenu.republic.corps = {}
+    templateMenu.republic.corps[1] = {name = "Phase I Clone Troopers", varName = "phaseICloneTroopers"}
+    templateMenu.republic.corps[2] = {name = "Phase II Clone Troopers", varName = "phaseIICloneTroopers"}
+
+    templateMenu.republic.specialForces = {}
+    templateMenu.republic.specialForces[1] = {name = "ARC Troopers", varName = "arcTroopers"}
+    templateMenu.republic.specialForces[2] = {name = "ARC Troopers Strike Team", varName = "arcTroopersStrikeTeam"}
+
+    templateMenu.republic.support = {}
+    templateMenu.republic.support[1] = {name = "BARC Speeder", varName = "barcSpeeder"}
+    templateMenu.republic.support[2] = {name = "Republic AT-RT", varName = "republicATRT"}
+
+    templateMenu.republic.heavy = {}
+    templateMenu.republic.heavy[1] = {name = "TX-130 Saber-Class Fighter Tank", varName = "saberTank"}
+
+    templateMenu.buttonPositions = {}
+    templateMenu.buttonPositions[1] = {
+        {-1.87, 0.28, 2.13},
+        {-1.87, 0.28, 1.78},
+        {-1.87, 0.28, 1.43},
+        {-1.87, 0.28, 1.08},
+        {-1.87, 0.28, 0.73},
+        {-1.57, 0.28, 0.36},{-2.17, 0.28, 0.36}
+    }
+    templateMenu.buttonPositions[2] = {
+        {1.87, 0.28, -0.58},
+        {1.87, 0.28, -0.93},
+        {1.87, 0.28, -1.28},
+        {1.87, 0.28, -1.63},
+        {1.87, 0.28, -1.98},
+        {2.17, 0.28, -2.33},{1.57, 0.28, -2.33}
+    }
+    templateMenu.buttonPositions[3] = {
+        {0, 0.28, -0.58},
+        {0, 0.28, -0.93},
+        {0, 0.28, -1.28},
+        {0, 0.28, -1.63},
+        {0, 0.28, -1.98},
+        {0.3, 0.28, -2.33},{-0.3, 0.28, -2.33}
+    }
+    templateMenu.buttonPositions[4] = {
+        {-1.87, 0.28, -0.58},
+        {-1.87, 0.28, -0.93},
+        {-1.87, 0.28, -1.28},
+        {-1.87, 0.28, -1.63},
+        {-1.87, 0.28, -1.98},
+        {-1.57, 0.28, -2.33},{-2.17, 0.28, -2.33}
+    }
+    templateMenu.buttonPositions[5] = {
+        {1.87, 0.28, -3.31},
+        {1.87, 0.28, -3.66},
+        {1.87, 0.28, -4.01},
+        {1.87, 0.28, -4.36},
+        {1.87, 0.28, -4.71},
+        {2.17, 0.28, -5.06},{1.57, 0.28, -5.06}
+    }
+    templateMenu.buttonPositions[6] = {
+        {0, 0.28, -3.31},
+        {0, 0.28, -3.66},
+        {0, 0.28, -4.01},
+        {0, 0.28, -4.36},
+        {0, 0.28, -4.71},
+        {0.3, 0.28, -5.06},{-0.3, 0.28, -5.06}
+    }
+    templateMenu.buttonPositions[7] = {
+        {-1.87, 0.28, -3.31},
+        {-1.87, 0.28, -3.66},
+        {-1.87, 0.28, -4.01},
+        {-1.87, 0.28, -4.36},
+        {-1.87, 0.28, -4.71},
+        {-1.57, 0.28, -5.06},{-2.17, 0.28, -5.06}
+    }
+
+    templateMenu.buttonPositions[8] = {
+        {1.87, 0.28, -6.5},
+        {1.87, 0.28, -6.85}
+    }
+    templateMenu.buttonPositions[9] = {
+        {0, 0.28, -6.5},
+        {0, 0.28, -6.85}
+    }
+    templateMenu.buttonPositions[10] = {
+        {-1.87, 0.28, -6.5},
+        {-1.87, 0.28, -6.85}
+    }
+
+    -- q = horizontal offset? c = vertical offset?
+    templateMenu.upgradeCardPos = {}
+    -- Top Right
+    templateMenu.upgradeCardPos[1] = {q = 146.451578117502, c = 2.2437691503361}
+    -- Center Left
+    templateMenu.upgradeCardPos[2] = {q = -37.790038154384, c = 2.3663051367058}
+    -- Center Middle
+    templateMenu.upgradeCardPos[3] = {q = -90, c = 1.45}
+    -- Center Right
+    templateMenu.upgradeCardPos[4] = {q = -142.209961845616, c = 2.3663051367058}
+    -- Bottom Left
+    templateMenu.upgradeCardPos[5] = {q = -65.897765498839, c = 4.5792248252297}
+    -- Bottom Middle
+    templateMenu.upgradeCardPos[6] = {q = -90, c = 4.18}
+    -- Bottom Right
+    templateMenu.upgradeCardPos[7] = {q = -114, c = 4.5792248252297}
+
+    return templateMenu
+end
