@@ -13,7 +13,7 @@
       "scaleY": 0.250000417,
       "scaleZ": 0.250000417
     },
-    "Nickname": " ",
+    "Nickname": "Unit List Builder Template",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -44,7 +44,7 @@
       "TypeIndex": 0,
       "CastShadows": true
     },
-    "LuaScript": "#include ./Custom_Model.ba9920.lua",
+    "LuaScript": "#include ./Unit_List_Builder_Template.ba9920.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },
