@@ -2,7 +2,7 @@
   "Save": {
     "SaveName": "StarWarsLegion",
     "GameMode": "Star Wars: Legion",
-    "Date": "2/28/2021 8:38:09 PM",
+    "Date": "3/3/2021 7:58:12 PM",
     "VersionNumber": "v13.0.5",
     "GameType": "",
     "GameComplexity": "",
@@ -199,9 +199,9 @@
     "ScriptingTrigger.cbc575.json",
     "Model_Template_A.1f03c9.json",
     "Model_Template_B.a486ae.json",
-    "ScriptingTrigger.2c09a9.json",
+    "Red_Units_Zone.2c09a9.json",
     "Red_Army_Point_Cost.5c7de3.json",
-    "ScriptingTrigger.818608.json",
+    "Blue_Units_Zone.818608.json",
     "Unit_Leader.99f1c8.json",
     "Order_Token.a57c41.json",
     "Black_Attack_Dice_Red.ada290.json",
@@ -380,6 +380,8 @@
     "This_is_the_b_BETA_b_mod._Do_not_use_for_tournaments..6f3be4.json",
     "This_is_the_b_BETA_b_mod._Do_not_use_for_tournaments..eecff6.json",
     "3.30_-_Beta.c282f8.json",
-    "Saved_Map.38fcd0.json"
+    "Saved_Map.38fcd0.json",
+    "Red_Hand_Surface.4511e9.json",
+    "Blue_Hand_Surface.87eb13.json"
   ]
 }

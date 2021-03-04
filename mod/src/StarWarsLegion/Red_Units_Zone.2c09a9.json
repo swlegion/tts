@@ -3,17 +3,17 @@
     "GUID": "2c09a9",
     "Name": "ScriptingTrigger",
     "Transform": {
-      "posX": 8.033237,
-      "posY": 3.10909247,
-      "posZ": -33.6313248,
+      "posX": 8,
+      "posY": 3.5,
+      "posZ": -30,
       "rotX": 0,
-      "rotY": 359.8334,
+      "rotY": 0,
       "rotZ": 0,
       "scaleX": 72,
       "scaleY": 5,
-      "scaleZ": 30.6627483
+      "scaleZ": 20
     },
-    "Nickname": "",
+    "Nickname": "Red Units Zone",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
