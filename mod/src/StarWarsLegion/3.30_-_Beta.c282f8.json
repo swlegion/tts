@@ -14,7 +14,7 @@
       "scaleZ": 1
     },
     "Nickname": "3.30 - Beta",
-    "Description": "Internal refactors: should not have user-visible behavior changes; please report bugs!\n\nObservation tokens now stack\n\nHand zones now have a dedicated surface seperate from list building",
+    "Description": "Internal refactors: should not have user-visible behavior changes; please report bugs!\n\nObservation tokens now stack\n\nHand zones now have a dedicated surface seperate from list building\n\nVarious performance improvements by removing unnecessary delays/timers.",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 1,

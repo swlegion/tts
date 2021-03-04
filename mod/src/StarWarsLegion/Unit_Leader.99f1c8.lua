@@ -2,16 +2,7 @@
 function onLoad()
     if self.getName() != "Unit Leader" then
         isAMini = true
-        local timerCounter = Global.getVar("timerCounter")
-        timerCounter = timerCounter + 1
-        Global.setVar("timerCounter", timerCounter)
-
-        Timer.create({
-            identifier     = "ModelMini".. math.random().. timerCounter.. self.getGUID(),
-            function_name  = "setUp",
-            function_owner = self,
-            delay          = 2
-        })
+        setUp()
     end
 end
 

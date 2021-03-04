@@ -676,15 +676,10 @@ function moveFull()
 
         selectedUnitObj.setPositionSmooth(endPos, false, false)
         selectedUnitObj.setRotationSmooth(startRot, false, false)
-        refreshTimer()
-        Timer.create({
-            identifier     = "checkVelocity"..timerCounter,
-            function_name  = "checkVelocity",
-            function_owner = selectedUnitObj,
-            delay          = 0.5
-        })
+        Wait.time(function()
+          selectedUnitObj.call("checkVelocity")
+        end, 0.5)
     end
-
 end
 
 
@@ -962,19 +957,18 @@ function attackMenu(attackTargetObj)
     -- to tune this.
     local buttonHeight = 5
 
-    refreshTimer()
-    _G["addIon"..timerCounter] = function() addIon(attackTargetObj) end
-    _G["addWound"..timerCounter] = function() addWound(attackTargetObj) end
-    _G["addSuppression"..timerCounter] = function() addSuppression(attackTargetObj) end
+    _G["addIon"..self.getGUID()] = function() addIon(attackTargetObj) end
+    _G["addWound"..self.getGUID()] = function() addWound(attackTargetObj) end
+    _G["addSuppression"..self.getGUID()] = function() addSuppression(attackTargetObj) end
 
     attackTargetObj.createButton({
-        click_function = "addIon"..timerCounter, function_owner = self, label = "I", position = {-0.9, buttonHeight, 0}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 700, height = 700, font_size = 500, color = {0, 0.1711, 1, 1}, tooltip = "I"
+        click_function = "addIon"..self.getGUID(), function_owner = self, label = "I", position = {-0.9, buttonHeight, 0}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 700, height = 700, font_size = 500, color = {0, 0.1711, 1, 1}, tooltip = "I"
     })
     attackTargetObj.createButton({
-        click_function = "addWound"..timerCounter, function_owner = self, label = "W", position = {0.9, buttonHeight, 0}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 700, height = 700, font_size = 500, color = {1, 0, 0, 1}, tooltip = "W"
+        click_function = "addWound"..self.getGUID(), function_owner = self, label = "W", position = {0.9, buttonHeight, 0}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 700, height = 700, font_size = 500, color = {1, 0, 0, 1}, tooltip = "W"
     })
     attackTargetObj.createButton({
-        click_function = "addSuppression"..timerCounter, function_owner = self, label = "S", position = {0, buttonHeight, 0}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 700, height = 700, font_size = 500, color = {1, 0.8723, 0, 1}, tooltip = "S"
+        click_function = "addSuppression"..self.getGUID(), function_owner = self, label = "S", position = {0, buttonHeight, 0}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 700, height = 700, font_size = 500, color = {1, 0.8723, 0, 1}, tooltip = "S"
     })
 
     -- create attack lines
@@ -1092,10 +1086,9 @@ function createAttackButton(leaderObj)
     local leaderUnitName = leaderObj.getVar("unitName")
     local buttonHeight = unitInfo[leaderUnitName].buttonHeight
 
-    refreshTimer()
-    _G["attackMenu"..timerCounter] = function() attackMenu(leaderObj) end
+    _G["attackMenu"..leaderObj.getGUID()] = function() attackMenu(leaderObj) end
 
-    local data = {click_function = "attackMenu"..timerCounter, function_owner = self, label = "ATTACK", position = {0, buttonHeight, -0.9}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 1800, height = 700, font_size = 400, color = {1, 0, 0, 1}, font_color = {0, 0, 0, 1}}
+    local data = {click_function = "attackMenu"..leaderObj.getGUID(), function_owner = self, label = "ATTACK", position = {0, buttonHeight, -0.9}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 1800, height = 700, font_size = 400, color = {1, 0, 0, 1}, font_color = {0, 0, 0, 1}}
 
     leaderObj.createButton(data)
 end
@@ -1335,10 +1328,4 @@ function getDistance(originObj, targetObj)
     local c = math.sqrt((localVector.x * localVector.x) + (localVector.z * localVector.z))
     --local finalDistance = math.sqrt((c * c) + (localVector.y * localVector.y))
     return c
-end
-
-function refreshTimer()
-    timerCounter = Global.getVar("timerCounter")
-    timerCounter = timerCounter + 1
-    Global.setVar("timerCounter", timerCounter)
 end

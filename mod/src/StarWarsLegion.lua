@@ -616,21 +616,7 @@ function onLoad()
     commandTokenTrayData.blue.stack = "c9f9d0"
 
     -- standby tokens
-
-    timerCounter = timerCounter + 1
-
-
-    Timer.create({
-        identifier     = "standbyTokens"..math.random()..timerCounter,
-        function_name  = "standbyTokens",
-        function_owner = self,
-        delay          = 5
-    })
-
-    updateModLoad()
-
-
-
+    standbyTokens()
 end
 
 
@@ -647,19 +633,6 @@ end
 
 
 function dummy() end
-
-function updateModLoad()
-    WebRequest.get("https://tierenswlegion.firebaseio.com/modLoadCount.json", self, "readCallback")
-end
-
-function readCallback(req)
-    if req.is_done and not req.is_error then
-        local currNum = tonumber(req.text)
-        if currNum then
-            WebRequest.put('https://tierenswlegion.firebaseio.com/modLoadCount.json', tostring(currNum+1), self, 'dummy')
-        end
-    end
-end
 
 -- Initialize red and blue clocks at 01:30:00
 function initChessClocks(guids)

@@ -112,7 +112,7 @@ function spawnObjs(selection,selectedCartridgeObj)
 
     selectedCartridgeObjClone.takeObject({
         position       = {0,-10,3},
-        callback       = "spawnFromCartridgeDelay",
+        callback       = "spawnObjsFromCartridge",
         callback_owner = self,
         smooth         = false,
         guid           = selectedGUID
@@ -123,28 +123,7 @@ function spawnObjs(selection,selectedCartridgeObj)
 
 end
 
-
-
-function spawnFromCartridgeDelay(spawnFromCartridgeObj)
-
-    spawnFromCartridgeObj.setLock(true)
-
-    local timerCounter = Global.getVar("timerCounter")
-    timerCounter = timerCounter + 1
-    Global.setVar("timerCounter", timerCounter)
-
-    Timer.create({
-        identifier     = "spawnObjsFromCartridgeDelay"..timerCounter,
-        function_name  = "spawnObjsFromCartridge",
-        function_owner = self,
-        parameters     = {spawnFromCartridgeObj},
-        delay          = 0.1
-    })
-end
-
-function spawnObjsFromCartridge(selectedCartridgeTable)
-    local cartridgeObj = selectedCartridgeTable[1]
-
+function spawnObjsFromCartridge(cartridgeObj)
     local cartridgeObjs = cartridgeObj.getObjects()
 
     for i, loadedObj in pairs(cartridgeObjs) do
@@ -160,23 +139,12 @@ function spawnObjsFromCartridge(selectedCartridgeTable)
 end
 
 function placeObjectDelay(passedObj)
-    local timerCounter = Global.getVar("timerCounter")
-    timerCounter = timerCounter + 1
-    Global.setVar("timerCounter", timerCounter)
-
-    Timer.create({
-        identifier     = "placeObjectDelay"..timerCounter,
-        function_name  = "placeObject",
-        function_owner = self,
-        parameters     = {passedObj},
-        delay          = 0.1
-    })
+  Wait.time(function()
+    placeObject(passedObj)
+  end, 0.5)
 end
 
-
-function placeObject(pObj)
-    local paObj = pObj[1]
-
+function placeObject(paObj)
     spawnPos = paObj.getTable("position")
     paObj.setPosition(spawnPos)
 
@@ -188,31 +156,6 @@ function placeObject(pObj)
     else
         paObj.setLuaScript("")
     end
-
-    if paObj.getCustomObject().type == 1 then
-        --paObj.setColorTint(gameData.getTable("battlefieldTint"))
-    end
-
-    refreshTimer()
-    Timer.create({
-        identifier     = "spawnObjDebug"..timerCounter,
-        function_name  = "spawnObjDebug",
-        function_owner = self,
-        parameters     = {paObj},
-        delay          = 2
-    })
-
-
-end
-
-function spawnObjDebug(objTable)
-    --objTable[1].reload()
-end
-
-function refreshTimer()
-    timerCounter = Global.getVar("timerCounter")
-    timerCounter = timerCounter + 1
-    Global.setVar("timerCounter", timerCounter)
 end
 
 function clearDeploymentBoundary()
