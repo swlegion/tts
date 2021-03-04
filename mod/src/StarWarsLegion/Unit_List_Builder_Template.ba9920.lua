@@ -332,14 +332,8 @@ function upgradeSubMenu()
             if availableUpgrades[i] != nil then
                 local selectedIndex = upgradeSelectionIndex[i] + a
                 if availableUpgrades[i][selectedIndex] != nil then
-
-
-                    local timerCounter = Global.getVar("timerCounter")
-                    timerCounter = timerCounter + 1
-                    Global.setVar("timerCounter", timerCounter)
-
-                    _G["upgradeSubMenu".. timerCounter] = function() spawnUpgradeCard(availableUpgrades[i][selectedIndex],templateMenu.upgradeCardPos[i],i) end
-                    upgradeClickFunction = "upgradeSubMenu"..timerCounter
+                    upgradeClickFunction = "upgradeSubMenu"..self.getGUID()..":"..i..":"..a
+                    _G[upgradeClickFunction] = function() spawnUpgradeCard(availableUpgrades[i][selectedIndex],templateMenu.upgradeCardPos[i],i) end
                     upgradeLabel = availableUpgrades[i][selectedIndex].name
                     upgradeColor = {0.1764, 0.1764, 0.1764, 0.01}
                     upgradeFontColor = {0, 0, 0, 100}
@@ -514,13 +508,10 @@ function spawnUpgradeCard(cardData, cardPos, upgradeNumber)
     upgradeCardIndex[upgradeNumber] = cardData
     upgradeCardInstance[upgradeNumber] = upgradeCard
 
-    local timerCounter = Global.getVar("timerCounter")
-    timerCounter = timerCounter + 1
-    Global.setVar("timerCounter", timerCounter)
-
-    _G["destroyUpgrade"..timerCounter] = function() destroyUpgradeCard(upgradeNumber) end
+    local functionName = "destroyUpgrade" .. upgradeCard.getGUID()
+    _G[functionName] = function() destroyUpgradeCard(upgradeNumber) end
     upgradeCard.createButton({
-        click_function = "destroyUpgrade"..timerCounter,
+        click_function = functionName,
         function_owner = self,
         label          = "X",
         position       = {-0.95,0.5,-1.4},
@@ -531,7 +522,6 @@ function spawnUpgradeCard(cardData, cardPos, upgradeNumber)
         font_color     = {1,1,1},
         tooltip        = "Delete Upgrade Card"
     })
-
 end
 
 function destroyUpgradeCard(index)
