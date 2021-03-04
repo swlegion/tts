@@ -492,30 +492,6 @@ function buildUnitInfo()
     unitInfo.saberTank.selectedSpeed = 2
     unitInfo.saberTank.buttonHeight = 4
 
-    unitInfo.unitNamesToType = {}
-    -- RED REBEL
-    unitInfo.unitNamesToType[1] = {name = "Red Rebel Trooper Leader", type = "rebelTrooper", token = "Red Rebel Core Command Token", colorSide = "red", commandType = "rebelCore"}
-    unitInfo.unitNamesToType[2] = {name = "Red Luke Skywalker", type = "lukeSkywalker", token = "Red Rebel Commander Command Token", colorSide = "red", commandType = "rebelCommander"}
-    unitInfo.unitNamesToType[3] = {name = "Red AT-RT", type = "atrt", token = "Red Rebel Support Command Token", colorSide = "red", commandType = "rebelSupport"}
-    unitInfo.unitNamesToType[4] = {name = "Red T-47 Airspeeder", type = "airSpeeder", token = "Red Rebel Heavy Command Token", colorSide = "red", commandType = "rebelHeavy"}
-
-    -- RED IMPERIAL
-    unitInfo.unitNamesToType[5] = {name = "Red Stormtrooper Leader", type = "stormtrooper", token = "Red Imperial Core Command Token", colorSide = "red", commandType = "imperialCore"}
-    unitInfo.unitNamesToType[6] = {name = "Red Darth Vader", type = "darthVader", token = "Red Imperial Commander Command Token", colorSide = "red", commandType = "imperialCommander"}
-    unitInfo.unitNamesToType[7] = {name = "Red 74-Z Speeder Bike Leader", type = "speederBike", token = "Red Imperial Support Command Token", colorSide = "red", commandType = "imperialSupport"}
-    unitInfo.unitNamesToType[8] = {name = "Red AT-ST", type = "atst", token = "Red Imperial Heavy Command Token", colorSide = "red", commandType = "imperialHeavy"}
-
-    -- BLUE REBEL
-    unitInfo.unitNamesToType[9] = {name = "Blue Rebel Trooper Leader", type = "rebelTrooper", token = "Blue Rebel Core Command Token", colorSide = "blue", commandType = "rebelCore"}
-    unitInfo.unitNamesToType[10] = {name = "Blue Luke Skywalker", type = "lukeSkywalker", token = "Blue Rebel Commander Command Token", colorSide = "blue", commandType = "rebelCommander"}
-    unitInfo.unitNamesToType[11] = {name = "Blue AT-RT", type = "atrt", token = "Blue Rebel Support Command Token", colorSide = "blue", commandType = "rebelSupport"}
-    unitInfo.unitNamesToType[12] = {name = "Blue T-47 Airspeeder", type = "airSpeeder", token = "Blue Rebel Heavy Command Token", colorSide = "blue", commandType = "rebelHeavy"}
-    -- BLUE IMPERIAL
-    unitInfo.unitNamesToType[13] = {name = "Blue Stormtrooper Leader", type = "stormtrooper", token = "Blue Imperial Core Command Token", colorSide = "blue", commandType = "imperialCore"}
-    unitInfo.unitNamesToType[14] = {name = "Blue Darth Vader", type = "darthVader", token = "Blue Imperial Commander Command Token", colorSide = "blue", commandType = "imperialCommander"}
-    unitInfo.unitNamesToType[15] = {name = "Blue 74-Z Speeder Bike Leader", type = "speederBike", token = "Blue Imperial Support Command Token", colorSide = "blue", commandType = "imperialSupport"}
-    unitInfo.unitNamesToType[16] = {name = "Blue AT-ST", type = "atst", token = "Blue Imperial Heavy Command Token", colorSide = "blue", commandType = "imperialHeavy"}
-
     unitInfo.tokenPosition = {}
     unitInfo.tokenPosition.red = {}
     unitInfo.tokenPosition.red.imperialCommander = {4.99, 1.03, -18.68}

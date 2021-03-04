@@ -1,30 +1,30 @@
 {
   "Object": {
-    "GUID": "2c09a9",
-    "Name": "ScriptingTrigger",
+    "GUID": "ae224d",
+    "Name": "HandTrigger",
     "Transform": {
-      "posX": 8.033237,
-      "posY": 3.10909247,
-      "posZ": -33.6313248,
+      "posX": 8.5,
+      "posY": 4,
+      "posZ": -48,
       "rotX": 0,
-      "rotY": 359.8334,
+      "rotY": 0,
       "rotZ": 0,
-      "scaleX": 72,
-      "scaleY": 5,
-      "scaleZ": 30.6627483
+      "scaleX": 70,
+      "scaleY": 4,
+      "scaleZ": 5
     },
-    "Nickname": "",
+    "Nickname": "Red Player Hand",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 1,
-      "g": 1,
-      "b": 1,
-      "a": 0.509803951
+      "r": 0.856,
+      "g": 0.09999997,
+      "b": 0.09399996,
+      "a": 0
     },
     "LayoutGroupSortIndex": 0,
     "Locked": true,
-    "Grid": true,
+    "Grid": false,
     "Snap": true,
     "IgnoreFoW": false,
     "MeasureMovement": false,
@@ -35,6 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
+    "FogColor": "Red",
     "LuaScript": "",
     "LuaScriptState": "",
     "XmlUI": ""

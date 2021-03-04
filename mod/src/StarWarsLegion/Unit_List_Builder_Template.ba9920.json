@@ -13,13 +13,13 @@
       "scaleY": 0.250000417,
       "scaleZ": 0.250000417
     },
-    "Nickname": " ",
+    "Nickname": "Unit List Builder Template",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.137212664,
-      "g": 0.188193053,
-      "b": 0.211720139
+      "r": 0.1372126,
+      "g": 0.188193,
+      "b": 0.211720079
     },
     "LayoutGroupSortIndex": 0,
     "Locked": true,
@@ -44,7 +44,7 @@
       "TypeIndex": 0,
       "CastShadows": true
     },
-    "LuaScript": "#include ./Custom_Model.ba9920.lua",
+    "LuaScript": "#include ./Unit_List_Builder_Template.ba9920.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

@@ -90,10 +90,10 @@ function buildListBuilder()
 
     listBuilder.handPos = {}
     listBuilder.handPos.red = {}
-    listBuilder.handPos.red.pos = {7.07, 2.39, -40.63}
+    listBuilder.handPos.red.pos = {8.50, 4, -48.00}
     listBuilder.handPos.red.rot = {0,180,0}
     listBuilder.handPos.blue = {}
-    listBuilder.handPos.blue.pos = {7.07, 2.39, 40.17}
+    listBuilder.handPos.blue.pos = {8.50, 4, 48.00}
     listBuilder.handPos.blue.rot = {0,0,0}
 
     listBuilder.tokenModelGUID = "a57c41"

@@ -1,30 +1,30 @@
 {
   "Object": {
-    "GUID": "3f03a2",
-    "Name": "HandTrigger",
+    "GUID": "818608",
+    "Name": "ScriptingTrigger",
     "Transform": {
-      "posX": 6.803023,
-      "posY": 2.64514518,
-      "posZ": 40.166,
+      "posX": 8,
+      "posY": 3.5,
+      "posZ": 30,
       "rotX": 0,
-      "rotY": 179.8,
+      "rotY": 0,
       "rotZ": 0,
-      "scaleX": 50,
-      "scaleY": 3,
-      "scaleZ": 5
+      "scaleX": 72,
+      "scaleY": 5,
+      "scaleZ": 20
     },
-    "Nickname": "",
+    "Nickname": "Blue Units Zone",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.117999978,
-      "g": 0.53,
+      "r": 1,
+      "g": 1,
       "b": 1,
-      "a": 0
+      "a": 0.509803951
     },
     "LayoutGroupSortIndex": 0,
     "Locked": true,
-    "Grid": false,
+    "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
     "MeasureMovement": false,
@@ -35,7 +35,6 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "FogColor": "Blue",
     "LuaScript": "",
     "LuaScriptState": "",
     "XmlUI": ""
