@@ -46,7 +46,7 @@
         "Stretch": true
       }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Blue_Hand_Surface.87eb13.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },
