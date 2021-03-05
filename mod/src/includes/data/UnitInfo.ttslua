@@ -115,13 +115,6 @@ function buildUnitInfo()
     unitInfo.chewbacca.selectedSpeed = 2
     unitInfo.chewbacca.buttonHeight = 2
 
-    unitInfo.c3po = {}
-    unitInfo.c3po.commandType = nil
-    unitInfo.c3po.baseSize = "small"
-    unitInfo.c3po.selectedSpeed = 1
-    unitInfo.c3po.buttonHeight = 2
-    unitInfo.c3po.noToken = true
-
     unitInfo.k2so = {}
     unitInfo.k2so.commandType = "rebelOperative"
     unitInfo.k2so.baseSize = "small"
@@ -133,13 +126,6 @@ function buildUnitInfo()
     unitInfo.r2d2.baseSize = "small"
     unitInfo.r2d2.selectedSpeed = 1
     unitInfo.r2d2.buttonHeight = 2
-
-    unitInfo.republicC3po = {}
-    unitInfo.republicC3po.commandType = nil
-    unitInfo.republicC3po.baseSize = "small"
-    unitInfo.republicC3po.selectedSpeed = 1
-    unitInfo.republicC3po.buttonHeight = 2
-    unitInfo.republicC3po.noToken = true
 
     unitInfo.republicR2d2 = {}
     unitInfo.republicR2d2.commandType = "republicOperative"
@@ -212,13 +198,6 @@ function buildUnitInfo()
     unitInfo.idenVersio.baseSize = "small"
     unitInfo.idenVersio.selectedSpeed = 2
     unitInfo.idenVersio.buttonHeight = 2
-
-    unitInfo.id10 = {}
-    unitInfo.id10.commandType = nil
-    unitInfo.id10.baseSize = "small"
-    unitInfo.id10.selectedSpeed = 1
-    unitInfo.id10.buttonHeight = 2
-    unitInfo.id10.noToken = true
 
     unitInfo.imperialOfficer = {}
     unitInfo.imperialOfficer.commandType = "imperialCommander"

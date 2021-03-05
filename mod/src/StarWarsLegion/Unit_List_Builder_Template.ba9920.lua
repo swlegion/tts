@@ -303,8 +303,12 @@ end
 
 function upgradeMenu()
     if selectedUnit != nil then
-        availableUpgrades = cardInfo.unitCards[selectedUnit].availableUpgrades
-        requiredUpgrades = cardInfo.unitCards[selectedUnit].requiredUpgrades
+        local unitCard = cardInfo.unitCards[selectedUnit]
+        availableUpgrades = unitCard.availableUpgrades
+        requiredUpgrades = unitCard.requiredUpgrades
+        if requiredUpgrades == nil then
+          requiredUpgrades = {}
+        end
         self.clearButtons()
     else
         availableUpgrades = {}
@@ -335,9 +339,9 @@ function drawUpgradeMenu()
           upgradeClickFunction = "upgradeSubMenu"..self.getGUID()..":"..i..":"..n
           upgradeLabel = availableUpgrades[i][selectedIndex].name
           if string.len(upgradeLabel) > 12 then
-            upgradeFontsize = 160 - ((string.len(upgradeLabel) - 12) * 7.2)
-            if upgradeFontsize < 70 then
-                upgradeFontsize = 70
+            upgradeFontSize = 160 - ((string.len(upgradeLabel) - 12) * 7.2)
+            if upgradeFontSize < 70 then
+              upgradeFontSize = 70
             end
           end
           upgradeColor = {0.1764, 0.1764, 0.1764, 0.01}

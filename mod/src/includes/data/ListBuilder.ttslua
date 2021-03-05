@@ -136,7 +136,6 @@ function buildListBuilder()
     listBuilder.commandCards.idenVersio = {
         varName = "idenVersio",
         cards = {"Pulse Scan", "Concussive Blast", "Tactical Strike"},
-        -- Here, versus .id10, because .id10 is a "noToken" and doesn't check cards.
         cards2 = {"Ambush", "Incapacitate", "Assault"}
     }
     listBuilder.commandCards.agentKallus = {
