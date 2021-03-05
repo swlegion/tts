@@ -176,7 +176,7 @@ function placeObject(paObj)
     paObj.setRotation(spawnRot)
 
     if paObj.getName() == "Deployment Boundary" then
-        paObj.interactable = false
+        paObj.setLuaScript("function onLoad() self.interactable = false end")
     elseif paObj.getName() == "Condition Token" then
         paObj.setLuaScript(conditionTokenScript)
     elseif paObj.getName() == "Objective Token" then
