@@ -1,5 +1,6 @@
 function onLoad(save_state)
     self.interactable = false
+
     -- intialize
     setUpCards = Global.getTable("setUpCards")
     setUpData = Global.getTable("setUpData")
@@ -8,8 +9,10 @@ function onLoad(save_state)
     objectiveCartridge = getObjectFromGUID(setUpData.objectiveCartridgeGUID)
     battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
     gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
-
     battlefieldTint = gameData.getTable("battlefieldTint")
+
+    -- token stacks
+    getTokenScripts()
 
     -- buttonObjs
     optionObjs = {}
@@ -30,6 +33,25 @@ function onLoad(save_state)
     objectiveMenu()
     deploymentMenu()
     conditionsMenu()
+end
+
+function getTokenScripts()
+    local conditionTokens = getObjectFromGUID("4d25eb")
+    local objectiveTokens = getObjectFromGUID("094239")
+
+    conditionTokens.takeObject({
+      callback_function = function(token)
+        conditionTokenScript = token.getLuaScript()
+        destroyObject(token)
+      end
+    })
+    
+    objectiveTokens.takeObject({
+      callback_function = function(token)
+        objectiveTokenScript = token.getLuaScript()
+        destroyObject(token)
+      end
+    })
 end
 
 function objectiveMenu()
@@ -154,10 +176,16 @@ function placeObject(paObj)
     paObj.setRotation(spawnRot)
 
     if paObj.getName() == "Deployment Boundary" then
-        paObj.setLuaScript("interactable = false")
+        paObj.interactable = false
+    elseif paObj.getName() == "Condition Token" then
+        paObj.setLuaScript(conditionTokenScript)
+    elseif paObj.getName() == "Objective Token" then
+        paObj.setLuaScript(objectiveTokenScript)
     else
         paObj.setLuaScript("")
     end
+
+    paObj.reload()
 end
 
 function clearDeploymentBoundary()
