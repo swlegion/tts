@@ -968,20 +968,6 @@ function placeTerrain(pObj)
         paObj.setLock(true)
         paObj.setLuaScript("function onLoad() self.interactable = false end")
     end
-
-    refreshTimer()
-    Timer.create({
-        identifier     = "debugObj"..timerCounter,
-        function_name  = "debugObj",
-        function_owner = self,
-        parameters     = {paObj},
-        delay          = 10
-    })
-
-end
-
-function debugObj(debuggedObj)
-    debuggedObj[1].reload()
 end
 
 -- UTILITY FUNCTIONS
