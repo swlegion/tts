@@ -676,9 +676,9 @@ function moveFull()
 
         selectedUnitObj.setPositionSmooth(endPos, false, false)
         selectedUnitObj.setRotationSmooth(startRot, false, false)
-        Wait.time(function()
+        Wait.frames(function()
           selectedUnitObj.call("checkVelocity")
-        end, 0.5)
+        end)
     end
 end
 
