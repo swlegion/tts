@@ -3,12 +3,12 @@
     "GUID": "ceb69c",
     "Name": "Card",
     "Transform": {
-      "posX": 53.56297,
-      "posY": 2.23357439,
-      "posZ": -14.3211451,
-      "rotX": 0.000007430875,
-      "rotY": 180,
-      "rotZ": 180,
+      "posX": 54.4175949,
+      "posY": 2.172646,
+      "posZ": -14.6064653,
+      "rotX": -0.0000272591424,
+      "rotY": 180.009,
+      "rotZ": 0.000007257462,
       "scaleX": 0.227068469,
       "scaleY": 1,
       "scaleZ": 0.227068469
@@ -17,9 +17,9 @@
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.713235259,
-      "g": 0.713235259,
-      "b": 0.713235259
+      "r": 1,
+      "g": 1,
+      "b": 1
     },
     "LayoutGroupSortIndex": 0,
     "Locked": false,

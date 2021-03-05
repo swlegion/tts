@@ -37,7 +37,6 @@
     "SidewaysCard": false,
     "DeckIDs": [
       35200,
-      35201,
       33611,
       33606,
       33605,
@@ -95,7 +94,6 @@
       37414,
       41405,
       37601,
-      38200,
       38202,
       38201,
       38204,
@@ -279,7 +277,6 @@
   "StatesPaths": {},
   "ContainedObjectPaths": [
     "R2-D2.149261.35200.json",
-    "C-3PO.a0f354.35201.json",
     "AAT_Trade_Federation_Battle_Tank.c18181.33611.json",
     "Droidekas.c18181.33606.json",
     "B1_Battle_Droids.c18181.33605.json",
@@ -337,7 +334,6 @@
     "Count_Dooku.a7d906.37414.json",
     "Wookiee_Warriors.cfe652.41405.json",
     "K-2SO.64d1f1.37601.json",
-    "Idens_ID10_Seeker_Droid.ceb69c.38200.json",
     "ARC_Troopers.455670.38202.json",
     "ARC_Troopers_Strike_Team.e77584.38201.json",
     "BX_Commando_Droids.7b09fd.38204.json",
