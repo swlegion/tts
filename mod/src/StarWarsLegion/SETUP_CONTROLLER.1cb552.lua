@@ -181,7 +181,7 @@ function placeObject(paObj)
         paObj.setLuaScript(conditionTokenScript)
     elseif paObj.getName() == "Objective Token" then
         paObj.setLuaScript(objectiveTokenScript)
-    else
+    elseif paObj.getVar("scripted") != true then
         paObj.setLuaScript("")
     end
 
