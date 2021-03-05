@@ -180,7 +180,8 @@ end
 
 function calculatePoints()
   local allCards = cardZone.getObjects()
-  local totalPoints = 0
+  -- Intentionally global.
+  totalPoints = 0
   for _, card in pairs(allCards) do
       local cardPoint = card.getVar("ptCost")
       if cardPoint != nil then
@@ -630,10 +631,8 @@ end
 function loadArmyFromJSON(jsonData)
   clearZone()
   local listData = JSON.decode(jsonData)
-  -- print(listData)
   spawnArmy(listData)
 end
-
 
 function getListData()
   if templateObjs[1][1] != nil then
@@ -709,8 +708,7 @@ function saveArmy()
 
   if listData != nil then
     -- parse list
-
-    luaString = "function onload()\nlistData = {}\nlistData.pts = "..totalPts.."\nlistData.armyFaction = '" .. listData.armyFaction .."'\n"
+    luaString = "function onload()\nlistData = {}\nlistData.pts = "..totalPoints.."\nlistData.armyFaction = '" .. listData.armyFaction .."'\n"
 
     -- COMMAND CARDS and CONTINGENCIES
     local commandCardsBuffer = {}
@@ -759,7 +757,7 @@ function saveArmy()
       pos.y = pos.y + 1
       dataDisk.setPosition(pos)
 
-      diskName = "(RENAME ME!) Army Data Disk ["..totalPts .. " Points]"
+      diskName = "(RENAME ME!) Army Data Disk ["..totalPoints .. " Points]"
       dataDisk.setRotation(self.getRotation())
       dataDisk.setName(diskName)
       dataDisk.setLuaScript(luaString)

@@ -354,7 +354,6 @@ function drawUpgradeMenu()
             ) 
           end
         end
-        print(tostring(upgradeFontSize))
         self.createButton({
           click_function = upgradeClickFunction,
           function_owner = self,
