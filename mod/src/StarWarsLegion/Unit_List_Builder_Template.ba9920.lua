@@ -338,15 +338,14 @@ function drawUpgradeMenu()
         if availableUpgrades[i] != nil and availableUpgrades[i][selectedIndex] != nil then
           upgradeClickFunction = "upgradeSubMenu"..self.getGUID()..":"..i..":"..n
           upgradeLabel = availableUpgrades[i][selectedIndex].name
+          upgradeColor = {0.1764, 0.1764, 0.1764, 0.01}
+          upgradeFontColor = {0, 0, 0, 100}
           if string.len(upgradeLabel) > 12 then
             upgradeFontSize = 160 - ((string.len(upgradeLabel) - 12) * 7.2)
             if upgradeFontSize < 70 then
               upgradeFontSize = 70
             end
           end
-          upgradeColor = {0.1764, 0.1764, 0.1764, 0.01}
-          upgradeFontColor = {0, 0, 0, 100}
-          upgradeFontSize = 160
           _G[upgradeClickFunction] = function()
             spawnUpgradeCard(
               availableUpgrades[i][selectedIndex],
@@ -355,6 +354,7 @@ function drawUpgradeMenu()
             ) 
           end
         end
+        print(tostring(upgradeFontSize))
         self.createButton({
           click_function = upgradeClickFunction,
           function_owner = self,
