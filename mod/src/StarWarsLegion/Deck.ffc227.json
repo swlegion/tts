@@ -226,7 +226,9 @@
       43200,
       41605,
       43301,
-      43305
+      43305,
+      38200,
+      35201
     ],
     "CustomDeck": {
       "269": {
@@ -319,6 +321,15 @@
         "UniqueBack": false,
         "Type": 0
       },
+      "352": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/777357228032268731/DE936B7C9539716FC1D7F8B85FAB44AFE8BC7283/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/777357228032268731/DE936B7C9539716FC1D7F8B85FAB44AFE8BC7283/",
+        "NumWidth": 2,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": true,
+        "Type": 0
+      },
       "355": {
         "FaceURL": "http://cloud-3.steamusercontent.com/ugc/777357228032300321/F46EED1E34127C47D63FAEDFC6FBED314BCFD2CE/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/777357228032300321/F46EED1E34127C47D63FAEDFC6FBED314BCFD2CE/",
@@ -387,6 +398,15 @@
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248408890722280/7442FA80FCB33B2ECAD25988BD320DD359F9AE9C/",
         "NumWidth": 3,
         "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      },
+      "382": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775122858930997637/1DD6C80C739D5AA7B4EF821BF7A44ADBCBC972F7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/775122858930997637/1DD6C80C739D5AA7B4EF821BF7A44ADBCBC972F7/",
+        "NumWidth": 3,
+        "NumHeight": 3,
         "BackIsHidden": false,
         "UniqueBack": true,
         "Type": 0
@@ -724,6 +744,8 @@
     "J-19_Bo-rifle_Blaster_Staff.eb2f97.43200.json",
     "EV-Series_Medical_Droid.cb47c5.41605.json",
     "Ive_Altered_The_Deal.804c11.43301.json",
-    "Developing_Sympathies.78339b.43305.json"
+    "Developing_Sympathies.78339b.43305.json",
+    "Idens_ID10_Seeker_Droid.ceb69c.38200.json",
+    "C-3PO.a0f354.35201.json"
   ]
 }

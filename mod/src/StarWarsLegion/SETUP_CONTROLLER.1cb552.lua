@@ -124,24 +124,26 @@ function spawnObjs(selection,selectedCartridgeObj)
 end
 
 function spawnObjsFromCartridge(cartridgeObj)
-    local cartridgeObjs = cartridgeObj.getObjects()
+    Wait.frames(function()
+      local cartridgeObjs = cartridgeObj.getObjects()
 
-    for i, loadedObj in pairs(cartridgeObjs) do
-        takenObj = cartridgeObj.takeObject({
-            position       = {-10+(i*0.5),-10,0},
-            callback       = "placeObjectDelay",
-            callback_owner = self,
-            smooth         = false
-        })
-    end
+      for i, loadedObj in pairs(cartridgeObjs) do
+          takenObj = cartridgeObj.takeObject({
+              position       = {-10+(i*0.5),-10,0},
+              callback       = "placeObjectDelay",
+              callback_owner = self,
+              smooth         = false
+          })
+      end
 
-    destroyObject(cartridgeObj)
+      destroyObject(cartridgeObj)
+    end)
 end
 
 function placeObjectDelay(passedObj)
-  Wait.time(function()
+  Wait.frames(function()
     placeObject(passedObj)
-  end, 0.5)
+  end)
 end
 
 function placeObject(paObj)

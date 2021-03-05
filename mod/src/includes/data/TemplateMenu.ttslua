@@ -24,8 +24,7 @@ function buildTemplateMenu()
     templateMenu.rebel.operative[2] = {name = "Sabine Wren", varName = "sabineWren"}
     templateMenu.rebel.operative[3] = {name = "Luke Skywalker", varName = "lukeSkywalkerJediKnight"}
     templateMenu.rebel.operative[4] = {name = "R2-D2", varName = "r2d2"}
-    templateMenu.rebel.operative[5] = {name = "C-3PO", varName = "c3po"}
-    templateMenu.rebel.operative[6] = {name = "K-2SO", varName = "k2so"}
+    templateMenu.rebel.operative[5] = {name = "K-2SO", varName = "k2so"}
 
     templateMenu.rebel.corps = {}
     templateMenu.rebel.corps[1] = {name = "Rebel Troopers", varName = "rebelTrooper"}
@@ -65,7 +64,6 @@ function buildTemplateMenu()
     templateMenu.imperial.operative[1] = {name = "Boba Fett", varName = "bobaFett"}
     templateMenu.imperial.operative[2] = {name = "Bossk", varName = "bossk"}
     templateMenu.imperial.operative[3] = {name = "Darth Vader", varName = "darthVaderTheEmperorsApprentice"}
-    templateMenu.imperial.operative[4] = {name = "ID10 (Iden Versio)", varName = "id10"}
 
     templateMenu.imperial.corps = {}
     templateMenu.imperial.corps[1] = {name = "Stormtroopers", varName = "stormtrooper"}
@@ -125,8 +123,7 @@ function buildTemplateMenu()
 
     templateMenu.republic.operative = {}
     templateMenu.republic.operative[1] = {name = "R2-D2", varName = "republicR2d2"}
-    templateMenu.republic.operative[2] = {name = "C-3PO", varName = "republicC3po"}
-    templateMenu.republic.operative[3] = {name = "Padme Amidala", varName = "padme"}
+    templateMenu.republic.operative[2] = {name = "Padme Amidala", varName = "padme"}
 
     templateMenu.republic.corps = {}
     templateMenu.republic.corps[1] = {name = "Phase I Clone Troopers", varName = "phaseICloneTroopers"}

@@ -427,15 +427,9 @@ function setBattleCardPos()
             spawnedCardObj.setRotation(spawnRot)
             spawnedCardObj.setPosition(spawnPos)
 
-            refreshTimer()
-            Timer.create({
-                identifier     = "debugSpawn"..timerCounter,
-                function_name  = "debugSpawnSetupCard",
-                function_owner = self,
-                parameters     = {spawnedCardObj},
-                delay          = 1
-            })
-
+            Wait.frames(function()
+              debugSpawnSetupCard(spawnedCardObj)
+            end)
         end
     end
 end
@@ -517,13 +511,7 @@ function revealBattleCards(insertedDeck)
     createButtonSetUpCard("deployment", 1)
     createButtonSetUpCard("conditions", 1)
 
-    refreshTimer()
-    Timer.create({
-        identifier     = "debugSetupCards"..timerCounter,
-        function_name  = "debugSetupCards",
-        function_owner = self,
-        delay          = 0.5
-    })
+    Wait.frames(debugSetupCards)
 end
 
 function debugSetupCards()
@@ -591,39 +579,8 @@ function insertSetUpCard(cardType)
     finalCard.clearButtons()
 end
 
-function finishSetUp()
-    setUpController.call("deploymentMenu")
-    clearAllButtons()
-
-    if gameMode == "tournament" then
-        printToScreen("START GAME!\n\n3 hour time limit starts now!\n\nGL HF :)", 90, 2)
-    else
-        printToScreen("START GAME!\n\nGL HF :)", 90, 2)
-    end
-    local timerCounter = Global.getVar("timerCounter")
-    timerCounter = timerCounter + 1
-    Global.setVar("timerCounter", timerCounter)
-
-    Timer.create({
-        identifier     = "timerMenu"..timerCounter,
-        function_name  = "mainMenu",
-        function_owner = self,
-        delay          = 5
-    })
-
-
-end
 function spawnObjectiveConditionsDelay()
-    local timerCounter = Global.getVar("timerCounter")
-    timerCounter = timerCounter + 1
-    Global.setVar("timerCounter", timerCounter)
-
-    Timer.create({
-        identifier     = "resolveObjectiveConditions"..timerCounter,
-        function_name  = "spawnObjectiveConditions",
-        function_owner = self,
-        delay          = 1
-    })
+    Wait.frames(spawnObjectiveConditions)
 end
 
 function spawnObjectiveConditions()
@@ -677,9 +634,6 @@ function spawnSetupCards(selection)
             spawnedCard = setUp5Data[selection.."CardsClone"].takeObject({
                 position       = spawnPos,
                 rotation       = spawnRot,
-                --callback       = "debugSpawnSetupCard",
-                --callback_owner = self,
-                --params         = {spawnRot},
                 smooth         = false,
                 top            = true
             })
@@ -690,15 +644,9 @@ function spawnSetupCards(selection)
 
             spawnedCardTable[n] = spawnedCard
 
-            refreshTimer()
-            Timer.create({
-                identifier     = "debugSpawn"..timerCounter,
-                function_name  = "debugSpawnSetupCard",
-                function_owner = self,
-                parameters     = {spawnedCard},
-                delay          = 1
-            })
-
+            Wait.frames(function()
+              debugSpawnSetupCard(spawnedCard)
+            end)
         end
 
         destroyObject(setUp5Data[selection.."CardsClone"])
@@ -707,7 +655,7 @@ function spawnSetupCards(selection)
 end
 
 function debugSpawnSetupCard(spawnedSetupCard)
-    spawnedSetupCard[1].setRotation({55.91, 270.00, 0.00})
+    spawnedSetupCard.setRotation({55.91, 270.00, 0.00})
 end
 
 function flipObjPos(pObj)
@@ -781,33 +729,18 @@ end
 
 function spawnFromCartridgeDelay(spawnFromCartridgeObj)
     spawnFromCartridgeObj.setLock(true)
-
-    local timerCounter = Global.getVar("timerCounter")
-    timerCounter = timerCounter + 1
-    Global.setVar("timerCounter", timerCounter)
-
-    Timer.create({
-        identifier     = "spawnMapFromCartridgeDelay"..timerCounter,
-        function_name  = "spawnPremadeMapFromCartridge",
-        function_owner = self,
-        parameters     = {spawnFromCartridgeObj},
-        delay          = 0.5
-    })
+    Wait.frames(function()
+      spawnMapFromCartridge(spawnFromCartridgeObj)
+      destroyObject(spawnFromCartridgeObj)
+    end)
 end
 
-function spawnPremadeMapFromCartridge(selectedPremadeMapCartridgeTable)
-    local selectedPremadeMapCartridge = selectedPremadeMapCartridgeTable[1]
-    spawnMapFromCartridge(selectedPremadeMapCartridge)
-
-    destroyObject(selectedPremadeMapCartridge)
-end
 
 function spawnMapFromCartridge(selectedCartridge)
     clearZones()
     changeBattlefieldTint(selectedCartridge.getTable("battlefieldTint"))
 
     local cartridgeObjs = selectedCartridge.getObjects()
-
 
     for i, loadedObj in pairs(cartridgeObjs) do
         takenObj = selectedCartridge.takeObject({
@@ -934,23 +867,10 @@ end
 
 
 function placeTerrainDelay(passedObj)
-    local timerCounter = Global.getVar("timerCounter")
-    timerCounter = timerCounter + 1
-    Global.setVar("timerCounter", timerCounter)
-
-    Timer.create({
-        identifier     = "placeTerrainDelay"..timerCounter,
-        function_name  = "placeTerrain",
-        function_owner = self,
-        parameters     = {passedObj},
-        delay          = 0.1
-    })
+    Wait.frames(function() placeTerrainDelay(passedObj) end)
 end
 
-
-function placeTerrain(pObj)
-    local paObj = pObj[1]
-
+function placeTerrain(paObj)
     spawnPos = paObj.getTable("position")
     paObj.setPosition(spawnPos)
 
@@ -968,20 +888,6 @@ function placeTerrain(pObj)
         paObj.setLock(true)
         paObj.setLuaScript("function onLoad() self.interactable = false end")
     end
-
-    refreshTimer()
-    Timer.create({
-        identifier     = "debugObj"..timerCounter,
-        function_name  = "debugObj",
-        function_owner = self,
-        parameters     = {paObj},
-        delay          = 10
-    })
-
-end
-
-function debugObj(debuggedObj)
-    debuggedObj[1].reload()
 end
 
 -- UTILITY FUNCTIONS
@@ -1094,7 +1000,7 @@ function downloadMapByUrl(url)
     -- TTS deletes the download handler after Wait.time, so copy the text.
     local text = data.text
     printToScreen("UNPACKING MAP...\n\nThis may take several seconds...")
-    Wait.time(function()
+    Wait.frames(function()
       local json = JSON.decode(text)
       if not json.ObjectStates then
         printToAll("Failed to decode map.")
@@ -1109,7 +1015,7 @@ function downloadMapByUrl(url)
           mainMenu()
         end
       })
-    end, 0.5)
+    end)
   end)
 end
 
@@ -1161,12 +1067,6 @@ function onPlayerChangedColor(player_color)
             Player[player_color].promote()
         end
     end
-end
-
-function refreshTimer()
-    timerCounter = Global.getVar("timerCounter")
-    timerCounter = timerCounter + 1
-    Global.setVar("timerCounter", timerCounter)
 end
 
 function enableExperimentalFeatures()

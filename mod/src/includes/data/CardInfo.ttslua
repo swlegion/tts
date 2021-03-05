@@ -322,8 +322,15 @@ function buildCardInfo()
     cardInfo.upgradeCards.agentKallusFlaw = {name = 'Developing Sympathies', ptCost = 0, varName = "agentKallusFlaw"}
     cardInfo.upgradeCards.landoFlaw = {name = 'Ive Altered The Deal', ptCost = 0, varName = "landoFlaw"}
 
-      -- upgradeMenu
+    -- counterparts
+    cardInfo.upgradeCards.c3po = {name = "C-3PO", ptCost = 15, varName = "c3po", miniInfo = miniInfo.c3po}
+    cardInfo.upgradeCards.idensID10 = {name = "Idens ID10 Seeker Droid", ptCost = 15, varName = "idensID10", miniInfo = miniInfo.id10}
+
+    -- upgradeMenu
     cardInfo.upgradeMenu = {}
+    cardInfo.upgradeMenu.r2d2Counteparts = {
+        cardInfo.upgradeCards.c3po,
+    }
     -- separatist
     cardInfo.upgradeMenu.separatist = {}
     cardInfo.upgradeMenu.separatist.force = {
@@ -512,9 +519,6 @@ function buildCardInfo()
     }
     cardInfo.upgradeMenu.republic.padmeSideArm = {
         cardInfo.upgradeCards.lootedE5Blaster
-    }
-    cardInfo.upgradeMenu.republic.anakinFlawCard = {
-        cardInfo.upgradeCards.anakinFlaw
     }
     cardInfo.upgradeMenu.republic.phaseICloneTroopersTrooper = {
         cardInfo.upgradeCards.phaseICloneTrooper,
@@ -809,9 +813,6 @@ function buildCardInfo()
         cardInfo.upgradeCards.a300RifleGunner,
         cardInfo.upgradeCards.rps6RocketGunner
     }
-    cardInfo.upgradeMenu.rebel.landoFlawCard = {
-        cardInfo.upgradeCards.landoFlaw
-    }
     -- imperial
 
     cardInfo.upgradeMenu.imperial = {}
@@ -949,6 +950,9 @@ function buildCardInfo()
         cardInfo.upgradeCards.idensDLT20ARifle,
         cardInfo.upgradeCards.idensTL50Repeater
     }
+    cardInfo.upgradeMenu.imperial.idenVersioCounterpart = {
+        cardInfo.upgradeCards.idensID10
+    }
     cardInfo.upgradeMenu.imperial.atstHardpoint = {
         cardInfo.upgradeCards.atstMortarLauncher,
         cardInfo.upgradeCards.twinLightBlasterCannon,
@@ -979,9 +983,6 @@ function buildCardInfo()
     }
     cardInfo.upgradeMenu.imperial.agentKallusSideArm = {
         cardInfo.upgradeCards.j19BoRifleBlasterStaff
-    }
-    cardInfo.upgradeMenu.imperial.agentKallusFlawCard = {
-        cardInfo.upgradeCards.agentKallusFlaw
     }
 
     -- unitCard GUID
@@ -1221,12 +1222,15 @@ function buildCardInfo()
         rank = "Commander"
     }
     cardInfo.unitCards.anakinSkywalker = {
-        ptCost = 160 , availableUpgrades = {
+        ptCost = 160 ,
+        availableUpgrades = {
             cardInfo.upgradeMenu.republic.force,
             cardInfo.upgradeMenu.republic.force,
             cardInfo.upgradeMenu.republic.tactics,
             cardInfo.upgradeMenu.republic.tactics,
-            cardInfo.upgradeMenu.republic.anakinFlawCard
+        },
+        requiredUpgrades = {
+            cardInfo.upgradeCards.anakinFlaw,
         },
         miniInfo = {
             miniInfo.anakinSkywalker
@@ -1251,22 +1255,13 @@ function buildCardInfo()
     cardInfo.unitCards.republicR2d2 = {
         ptCost = 45,
         availableUpgrades = {
-            cardInfo.upgradeMenu.separatist.comms
+            cardInfo.upgradeMenu.separatist.comms,
+            cardInfo.upgradeMenu.r2d2Counteparts,
         },
         miniInfo = {miniInfo.r2d2},
         tokenName = "Republic Operative Command Token",
         fullName = "R2-D2",
         rank = "Operative"
-    }
-    cardInfo.unitCards.republicC3po = {
-        ptCost = 15,
-        availableUpgrades = {
-        },
-        miniInfo = {miniInfo.c3po},
-        tokenName = "",
-        fullName = "C-3PO",
-        rank = "Counterpart",
-        noToken = true
     }
     cardInfo.unitCards.padme = {
         ptCost = 90,
@@ -1489,7 +1484,9 @@ function buildCardInfo()
             cardInfo.upgradeMenu.rebel.leadership,
             cardInfo.upgradeMenu.rebel.tactics,
             cardInfo.upgradeMenu.rebel.tech,
-            cardInfo.upgradeMenu.rebel.landoFlawCard
+        },
+        requiredUpgrades = {
+            cardInfo.upgradeCards.landoFlaw,
         },
         miniInfo = {
             miniInfo.landoCalrissian
@@ -1549,22 +1546,13 @@ function buildCardInfo()
     cardInfo.unitCards.r2d2 = {
         ptCost = 45,
         availableUpgrades = {
-            cardInfo.upgradeMenu.separatist.comms
+            cardInfo.upgradeMenu.separatist.comms,
+            cardInfo.upgradeMenu.r2d2Counteparts,
         },
         miniInfo = {miniInfo.r2d2},
         tokenName = "Rebel Operative Command Token",
         fullName = "R2-D2",
         rank = "Operative"
-    }
-    cardInfo.unitCards.c3po = {
-        ptCost = 15,
-        availableUpgrades = {
-        },
-        miniInfo = {miniInfo.c3po},
-        tokenName = "",
-        fullName = "C-3PO",
-        rank = "Counterpart",
-        noToken = true
     }
     cardInfo.unitCards.rebelTrooper = {
         ptCost = 40,
@@ -1733,13 +1721,15 @@ function buildCardInfo()
     cardInfo.unitCards.clanWren = {
       ptCost = 34,
       availableUpgrades = {
-        cardInfo.upgradeMenu.rebel.clanWrenSpecialist,
-        cardInfo.upgradeMenu.rebel.clanWrenSpecialist,
         cardInfo.upgradeMenu.rebel.tactics,
         cardInfo.upgradeMenu.rebel.comms,
         cardInfo.upgradeMenu.rebel.tech,
         cardInfo.upgradeMenu.rebel.mandalorianResistanceSideArm,
         cardInfo.upgradeMenu.rebel.grenade
+      },
+      requiredUpgrades = {
+        cardInfo.upgradeCards.ursaWren,
+        cardInfo.upgradeCards.tristanWren,
       },
       miniInfo = {
           miniInfo.clanWren1
@@ -1876,23 +1866,15 @@ function buildCardInfo()
             cardInfo.upgradeMenu.imperial.tactics,
             cardInfo.upgradeMenu.imperial.tactics,
             cardInfo.upgradeMenu.imperial.tech,
-            cardInfo.upgradeMenu.imperial.idenVersioSideArm
+            cardInfo.upgradeMenu.imperial.idenVersioSideArm,
+            cardInfo.upgradeMenu.separatist.comms,
+            {},
+            cardInfo.upgradeMenu.imperial.idenVersioCounterpart,
         },
         miniInfo = {miniInfo.idenVersio},
         tokenName = "Imperial Commander Command Token",
         fullName = "Iden Versio",
         rank = "Commander"
-    }
-    cardInfo.unitCards.id10 = {
-        ptCost = 15,
-        availableUpgrades = {
-            cardInfo.upgradeMenu.imperial.comms
-        },
-        miniInfo = {miniInfo.id10},
-        tokenName = nil,
-        fullName = "Idens ID10 Seeker Droid",
-        rank = "Counterpart",
-        noToken = true
     }
     cardInfo.unitCards.agentKallus = {
         ptCost = 90 ,
@@ -1901,7 +1883,9 @@ function buildCardInfo()
             cardInfo.upgradeMenu.imperial.tactics,
             cardInfo.upgradeMenu.imperial.tech,
             cardInfo.upgradeMenu.imperial.agentKallusSideArm,
-            cardInfo.upgradeMenu.imperial.agentKallusFlawCard
+        },
+        requiredUpgrades = {
+            cardInfo.upgradeCards.agentKallusFlaw
         },
         miniInfo = {
             miniInfo.agentKallus
@@ -2108,13 +2092,15 @@ function buildCardInfo()
     cardInfo.unitCards.infernoSquad = {
       ptCost = 34,
       availableUpgrades = {
-        cardInfo.upgradeMenu.imperial.infernoSquadSpecialist,
-        cardInfo.upgradeMenu.imperial.infernoSquadSpecialist,
         cardInfo.upgradeMenu.imperial.tactics,
         cardInfo.upgradeMenu.imperial.tactics,
         cardInfo.upgradeMenu.imperial.comms,
         cardInfo.upgradeMenu.imperial.tech,
         cardInfo.upgradeMenu.imperial.grenade
+      },
+      requiredUpgrades = {
+        cardInfo.upgradeCards.delMeeko,
+        cardInfo.upgradeCards.gideonHask,
       },
       miniInfo = {
         miniInfo.isfInferno,

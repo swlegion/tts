@@ -1,20 +1,20 @@
 {
   "Object": {
-    "GUID": "c282f8",
+    "GUID": "aecb8e",
     "Name": "Notecard",
     "Transform": {
-      "posX": 2.62444353,
+      "posX": 9.940838,
       "posY": 1.01903677,
-      "posZ": 3.97754049,
-      "rotX": -7.93286858e-7,
-      "rotY": -0.000001954575,
-      "rotZ": 4.46836935e-7,
+      "posZ": 3.98837924,
+      "rotX": -0.000003880552,
+      "rotY": -7.12654753e-8,
+      "rotZ": 0.0000011719668,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
     },
-    "Nickname": "3.30 - Beta",
-    "Description": "Internal refactors: should not have user-visible behavior changes; please report bugs!\n\nObservation tokens now stack\n\nHand zones now have a dedicated surface seperate from list building\n\nVarious performance improvements by removing unnecessary delays/timers.",
+    "Nickname": "3.30 - Beta (Continued)",
+    "Description": "Flaw cards now are automatically selected and cannot be removed during list building.\n\nCounterparts (C-3PO, ID10) are now treated as upgrades for their respective unit instead of standalone units.\n\nInferno Squad and Clan Wren automatically select required upgrades.",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 1,

@@ -5,8 +5,6 @@
 #include !/data/UnitInfo
 
 function onLoad()
-    timerCounter = 1
-
     gameDataGUID = "6bb850"
 
     battlefieldZoneGUID = "cbc575" -- real
