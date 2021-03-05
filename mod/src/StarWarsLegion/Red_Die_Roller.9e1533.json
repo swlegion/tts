@@ -55,7 +55,7 @@
       "CastShadows": true
     },
     "LuaScript": "#include ./Red_Die_Roller.9e1533.lua",
-    "LuaScriptState": "[]",
+    "LuaScriptState": "",
     "XmlUI": ""
   },
   "StatesPaths": {}

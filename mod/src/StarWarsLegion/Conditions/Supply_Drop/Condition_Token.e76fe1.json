@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "e76fe1",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 47.7540169,
+      "posY": 1.05021846,
+      "posZ": 9.121743,
+      "rotX": -3.67759441e-7,
+      "rotY": 90,
+      "rotZ": 180,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Condition Token",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441794/A5214853EF5CF66714FC230767A634761777F6A9/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 0,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Condition_Token.e76fe1.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "States": {}
+  }
+}
