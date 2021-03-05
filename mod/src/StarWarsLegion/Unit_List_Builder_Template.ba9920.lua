@@ -302,160 +302,135 @@ function updateCommandCardSelection(a1,b2)
 end
 
 function upgradeMenu()
-
     if selectedUnit != nil then
         availableUpgrades = cardInfo.unitCards[selectedUnit].availableUpgrades
+        requiredUpgrades = cardInfo.unitCards[selectedUnit].requiredUpgrades
         self.clearButtons()
-        -- create Command hand
-
-
     else
         availableUpgrades = {}
+        requiredUpgrades = {}
     end
 
     selectedUpgrade = nil
     selectedUpgrade = {}
 
-
-    upgradeSubMenu()
-
+    drawUpgradeMenu()
 end
 
-function upgradeSubMenu()
-    for i=1, 7, 1 do
-        buttonPos = templateMenu.buttonPositions[i]
+function drawUpgradeMenu()
+    local availableUpgradeCount = #availableUpgrades
+    local requiredUpgradeCount = #requiredUpgrades
 
+    for i = 1, availableUpgradeCount, 1 do
+      local buttonPosition = templateMenu.buttonPositions[i]
 
-
-        -- CREATE UPGRADE BUTTONS
-        for a=1, 5,1 do
-            if availableUpgrades[i] != nil then
-                local selectedIndex = upgradeSelectionIndex[i] + a
-                if availableUpgrades[i][selectedIndex] != nil then
-                    upgradeClickFunction = "upgradeSubMenu"..self.getGUID()..":"..i..":"..a
-                    _G[upgradeClickFunction] = function() spawnUpgradeCard(availableUpgrades[i][selectedIndex],templateMenu.upgradeCardPos[i],i) end
-                    upgradeLabel = availableUpgrades[i][selectedIndex].name
-                    upgradeColor = {0.1764, 0.1764, 0.1764, 0.01}
-                    upgradeFontColor = {0, 0, 0, 100}
-                    upgradeFontsize = 160
-                    if string.len(availableUpgrades[i][selectedIndex].name) > 12 then
-                        upgradeFontsize = 160 - ((string.len(availableUpgrades[i][selectedIndex].name) - 12) * 7.2)
-                        if upgradeFontsize < 70 then
-                            upgradeFontsize = 70
-                        end
-                    end
-                else
-                    upgradeClickFunction = "dud"
-                    upgradeLabel = " "
-                    upgradeColor = {0.1764, 0.1764, 0.1764, 50}
-                    upgradeFontColor = {0, 0, 0, 0}
-                    upgradeFontsize = 160
-                end
-            else
-                upgradeClickFunction = "dud"
-                upgradeLabel = " "
-                upgradeColor = {0.1764, 0.1764, 0.1764, 50}
-                upgradeFontColor = {0, 0, 0, 0}
-                upgradeFontsize = 160
-
-
+      for n = 1, 5, 1 do
+        local upgradeClickFunction = "dud"
+        local upgradeLabel = " "
+        local upgradeColor = {0.1764, 0.1764, 0.1764, 50}
+        local upgradeFontColor = {0, 0, 0, 0}
+        local upgradeFontSize = 160
+        local selectedIndex = upgradeSelectionIndex[i] + n
+        if availableUpgrades[i] != nil and availableUpgrades[i][selectedIndex] != nil then
+          upgradeClickFunction = "upgradeSubMenu"..self.getGUID()..":"..i..":"..n
+          upgradeLabel = availableUpgrades[i][selectedIndex].name
+          if string.len(upgradeLabel) > 12 then
+            upgradeFontsize = 160 - ((string.len(upgradeLabel) - 12) * 7.2)
+            if upgradeFontsize < 70 then
+                upgradeFontsize = 70
             end
-
-            self.createButton({
-                click_function = upgradeClickFunction,
-                function_owner = self,
-                label          = upgradeLabel,
-                position       = buttonPos[a],
-                width          = 1340,
-                height         = 380,
-                font_size      = upgradeFontsize,
-                rotation       = {0,180,0},
-                color          = upgradeColor,
-                font_color     = upgradeFontColor,
-                scale          = {0.5, 0.5, 0.5}
-            })
-
+          end
+          upgradeColor = {0.1764, 0.1764, 0.1764, 0.01}
+          upgradeFontColor = {0, 0, 0, 100}
+          upgradeFontSize = 160
+          _G[upgradeClickFunction] = function()
+            spawnUpgradeCard(
+              availableUpgrades[i][selectedIndex],
+              templateMenu.upgradeCardPos[i],
+              i
+            ) 
+          end
         end
-
-
+        self.createButton({
+          click_function = upgradeClickFunction,
+          function_owner = self,
+          label          = upgradeLabel,
+          position       = buttonPosition[n],
+          width          = 1340,
+          height         = 380,
+          font_size      = upgradeFontSize,
+          rotation       = {0,180,0},
+          color          = upgradeColor,
+          font_color     = upgradeFontColor,
+          scale          = {0.5, 0.5, 0.5}
+        })
+        
         _G["nextUpgradeMenu"..i] = function() nextUpgradeMenu(i) end
-
         _G["prevUpgradeMenu"..i] = function() prevUpgradeMenu(i) end
 
-        if availableUpgrades[i] != nil then
-            if #availableUpgrades[i] > 5 then
-
-                if upgradeSelectionIndex[i]<5 then
-                    upClickFunction = "dud"
-                    upFontColor = {0, 0, 0, 0}
-                    upButtonColor = {0.1764, 0.1764, 0.1764, 50}
-
-                    downClickFunction = "nextUpgradeMenu"..i
-                    downFontColor = {0, 0, 0, 100}
-                    downButtonColor = {0.1764, 0.1764, 0.1764, 0.01}
-                else
-                    upClickFunction = "prevUpgradeMenu"..i
-                    upFontColor = {0, 0, 0, 100}
-                    upButtonColor = {0.1764, 0.1764, 0.1764, 0.01}
-
-                    if (#availableUpgrades[i] - upgradeSelectionIndex[i]) < 6 then
-                        downClickFunction = "dud"
-                        downFontColor = {0, 0, 0, 0}
-                        downButtonColor = {0.1764, 0.1764, 0.1764, 50}
-                    else
-                        downClickFunction = "nextUpgradeMenu"..i
-                        downFontColor = {0, 0, 0, 100}
-                        downButtonColor = {0.1764, 0.1764, 0.1764, 0.01}
-                    end
-
-                end
-            else
-                upClickFunction = "dud"
-                upFontColor = {0, 0, 0, 0}
-                upButtonColor = {0.1764, 0.1764, 0.1764, 50}
-                downClickFunction = "dud"
-                downFontColor = {0, 0, 0, 0}
-                downButtonColor = {0.1764, 0.1764, 0.1764, 50}
+        local upClickFunction = "dud"
+        local upFontColor = {0, 0, 0, 0}
+        local upButtonColor = {0.1764, 0.1764, 0.1764, 50}
+        local downClickFunction = upClickFunction
+        local downFontColor = upFontColor
+        local downButtonColor = upButtonColor
+        if availableUpgrades[i] != nil and #availableUpgrades[i] > 5 then
+          if upgradeSelectionIndex[i] < 5 then
+            downClickFunction = "nextUpgradeMenu"..i
+            downFontColor = {0, 0, 0, 100}
+            downButtonColor = {0.1764, 0.1764, 0.1764, 0.01}
+          else
+            upClickFunction = "prevUpgradeMenu"..i
+            upFontColor = {0, 0, 0, 100}
+            upButtonColor = {0.1764, 0.1764, 0.1764, 0.01}
+            if (#availableUpgrades[i] - upgradeSelectionIndex[i]) >= 6 then
+              downClickFunction = "nextUpgradeMenu"..i
+              downFontColor = {0, 0, 0, 100}
+              downButtonColor = {0.1764, 0.1764, 0.1764, 0.01}
             end
-        else
-            upClickFunction = "dud"
-            upFontColor = {0, 0, 0, 0}
-            upButtonColor = {0.1764, 0.1764, 0.1764, 50}
-            downClickFunction = "dud"
-            downFontColor = {0, 0, 0, 0}
-            downButtonColor = {0.1764, 0.1764, 0.1764, 50}
+          end
         end
-
-
         -- CREATE UP DOWN BUTTONS
         self.createButton({
-            click_function = upClickFunction,
-            function_owner = self,
-            label          = "◄   ",
-            position       = buttonPos[6],
-            width          = 700,
-            height         = 380,
-            font_size      = 160,
-            rotation       = {0,180,0},
-            color          = upButtonColor,
-            font_color     = upFontColor,
-            scale          = {0.5, 0.5, 0.5}
+          click_function = upClickFunction,
+          function_owner = self,
+          label          = "◄   ",
+          position       = buttonPosition[6],
+          width          = 700,
+          height         = 380,
+          font_size      = 160,
+          rotation       = {0,180,0},
+          color          = upButtonColor,
+          font_color     = upFontColor,
+          scale          = {0.5, 0.5, 0.5}
         })
         self.createButton({
-            click_function = downClickFunction,
-            function_owner = self,
-            label          = "    ►",
-            position       = buttonPos[7],
-            width          = 700,
-            height         = 380,
-            font_size      = 160,
-            rotation       = {0,180,0},
-            color          = downButtonColor,
-            font_color     = downFontColor,
-            scale          = {0.5, 0.5, 0.5}
+          click_function = downClickFunction,
+          function_owner = self,
+          label          = "    ►",
+          position       = buttonPosition[7],
+          width          = 700,
+          height         = 380,
+          font_size      = 160,
+          rotation       = {0,180,0},
+          color          = downButtonColor,
+          font_color     = downFontColor,
+          scale          = {0.5, 0.5, 0.5}
         })
-
-
+      end
+    end
+    if requiredUpgradeCount > 0 then
+      local startAt = availableUpgradeCount + 1
+      local upIndex = 1
+      for i = startAt, availableUpgradeCount + requiredUpgradeCount, 1 do
+        spawnUpgradeCard(
+          requiredUpgrades[upIndex],
+          templateMenu.upgradeCardPos[i],
+          i,
+          true
+        )
+        upIndex = upIndex + 1
+      end
     end
 end
 
@@ -469,8 +444,7 @@ function prevUpgradeMenu(selectionNumber)
     upgradeMenu()
 end
 
-function spawnUpgradeCard(cardData, cardPos, upgradeNumber)
-
+function spawnUpgradeCard(cardData, cardPos, upgradeNumber, requiredUpgrade)
     local originalUpgradeCards = getObjectFromGUID(cardInfo.upgradeCardsGUID)
     local upgradeCards = originalUpgradeCards.clone({ position = {0,-30,0} })
     local cardName = cardData.name
@@ -508,20 +482,22 @@ function spawnUpgradeCard(cardData, cardPos, upgradeNumber)
     upgradeCardIndex[upgradeNumber] = cardData
     upgradeCardInstance[upgradeNumber] = upgradeCard
 
-    local functionName = "destroyUpgrade" .. upgradeCard.getGUID()
-    _G[functionName] = function() destroyUpgradeCard(upgradeNumber) end
-    upgradeCard.createButton({
-        click_function = functionName,
-        function_owner = self,
-        label          = "X",
-        position       = {-0.95,0.5,-1.4},
-        width          = 140,
-        height         = 180,
-        font_size      = 100,
-        color          = {1,0,0},
-        font_color     = {1,1,1},
-        tooltip        = "Delete Upgrade Card"
-    })
+    if requiredUpgrade != true then
+      local functionName = "destroyUpgrade" .. upgradeCard.getGUID()
+      _G[functionName] = function() destroyUpgradeCard(upgradeNumber) end
+      upgradeCard.createButton({
+          click_function = functionName,
+          function_owner = self,
+          label          = "X",
+          position       = {-0.95,0.5,-1.4},
+          width          = 140,
+          height         = 180,
+          font_size      = 100,
+          color          = {1,0,0},
+          font_color     = {1,1,1},
+          tooltip        = "Delete Upgrade Card"
+      })
+    end
 end
 
 function destroyUpgradeCard(index)

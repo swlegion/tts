@@ -513,9 +513,6 @@ function buildCardInfo()
     cardInfo.upgradeMenu.republic.padmeSideArm = {
         cardInfo.upgradeCards.lootedE5Blaster
     }
-    cardInfo.upgradeMenu.republic.anakinFlawCard = {
-        cardInfo.upgradeCards.anakinFlaw
-    }
     cardInfo.upgradeMenu.republic.phaseICloneTroopersTrooper = {
         cardInfo.upgradeCards.phaseICloneTrooper,
         cardInfo.upgradeCards.phaseICloneSpecialist,
@@ -809,9 +806,6 @@ function buildCardInfo()
         cardInfo.upgradeCards.a300RifleGunner,
         cardInfo.upgradeCards.rps6RocketGunner
     }
-    cardInfo.upgradeMenu.rebel.landoFlawCard = {
-        cardInfo.upgradeCards.landoFlaw
-    }
     -- imperial
 
     cardInfo.upgradeMenu.imperial = {}
@@ -979,9 +973,6 @@ function buildCardInfo()
     }
     cardInfo.upgradeMenu.imperial.agentKallusSideArm = {
         cardInfo.upgradeCards.j19BoRifleBlasterStaff
-    }
-    cardInfo.upgradeMenu.imperial.agentKallusFlawCard = {
-        cardInfo.upgradeCards.agentKallusFlaw
     }
 
     -- unitCard GUID
@@ -1221,12 +1212,15 @@ function buildCardInfo()
         rank = "Commander"
     }
     cardInfo.unitCards.anakinSkywalker = {
-        ptCost = 160 , availableUpgrades = {
+        ptCost = 160 ,
+        availableUpgrades = {
             cardInfo.upgradeMenu.republic.force,
             cardInfo.upgradeMenu.republic.force,
             cardInfo.upgradeMenu.republic.tactics,
             cardInfo.upgradeMenu.republic.tactics,
-            cardInfo.upgradeMenu.republic.anakinFlawCard
+        },
+        requiredUpgrades = {
+            cardInfo.upgradeCards.anakinFlaw,
         },
         miniInfo = {
             miniInfo.anakinSkywalker
@@ -1489,7 +1483,9 @@ function buildCardInfo()
             cardInfo.upgradeMenu.rebel.leadership,
             cardInfo.upgradeMenu.rebel.tactics,
             cardInfo.upgradeMenu.rebel.tech,
-            cardInfo.upgradeMenu.rebel.landoFlawCard
+        },
+        requiredUpgrades = {
+            cardInfo.upgradeCards.landoFlaw,
         },
         miniInfo = {
             miniInfo.landoCalrissian
@@ -1901,7 +1897,9 @@ function buildCardInfo()
             cardInfo.upgradeMenu.imperial.tactics,
             cardInfo.upgradeMenu.imperial.tech,
             cardInfo.upgradeMenu.imperial.agentKallusSideArm,
-            cardInfo.upgradeMenu.imperial.agentKallusFlawCard
+        },
+        requiredUpgrades = {
+            cardInfo.upgradeCards.agentKallusFlaw
         },
         miniInfo = {
             miniInfo.agentKallus
