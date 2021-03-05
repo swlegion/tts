@@ -1,20 +1,20 @@
 {
   "Object": {
-    "GUID": "c282f8",
+    "GUID": "aecb8e",
     "Name": "Notecard",
     "Transform": {
-      "posX": 2.62444353,
-      "posY": 1.01903677,
-      "posZ": 3.97754049,
-      "rotX": -7.93286858e-7,
-      "rotY": -0.000001954575,
-      "rotZ": 4.46836935e-7,
+      "posX": 9.940838,
+      "posY": 1.019037,
+      "posZ": 3.98837924,
+      "rotX": 0.000005235297,
+      "rotY": 0.0000019479512,
+      "rotZ": 0.00000117739137,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
     },
-    "Nickname": "3.30 - Beta",
-    "Description": "Internal refactors: should not have user-visible behavior changes; please report bugs!\n\nObservation tokens now stack\n\nHand zones now have a dedicated surface seperate from list building\n\nVarious performance improvements by removing unnecessary delays/timers.",
+    "Nickname": "CHANGELOG (Continued)",
+    "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 1,
