@@ -14,7 +14,7 @@
       "scaleZ": 1
     },
     "Nickname": "3.30 - Beta (Continued)",
-    "Description": "Flaw cards now are automatically selected and cannot be removed during list building.\n\nCounterparts (C-3PO, ID10) are now treated as upgrades for their respective unit instead of standalone units.",
+    "Description": "Flaw cards now are automatically selected and cannot be removed during list building.\n\nCounterparts (C-3PO, ID10) are now treated as upgrades for their respective unit instead of standalone units.\n\nInfero Squad and Clan Wren automatically select required upgrades.",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 1,
