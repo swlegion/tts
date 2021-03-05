@@ -48,12 +48,5 @@
     "LuaScriptState": "",
     "XmlUI": "",
     "States": {}
-  },
-  "StatesPaths": {
-    "1": "Condition_Token_1.85fa87.json",
-    "3": "Condition_Token_3.6d7d77.json",
-    "4": "Condition_Token_4.e7d4e1.json",
-    "5": "Condition_Token_5.2f908d.json",
-    "6": "Condition_Token_6.ca106f.json"
   }
 }

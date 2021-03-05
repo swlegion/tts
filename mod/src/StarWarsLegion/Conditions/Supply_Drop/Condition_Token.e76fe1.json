@@ -36,7 +36,7 @@
     "Hands": false,
     "CustomMesh": {
       "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
-      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786360308354563594/D7CA9A23D1F8610544A092594F1CFF19C8C0A578/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441794/A5214853EF5CF66714FC230767A634761777F6A9/",
       "NormalURL": "",
       "ColliderURL": "",
       "Convex": true,
@@ -48,12 +48,5 @@
     "LuaScriptState": "",
     "XmlUI": "",
     "States": {}
-  },
-  "StatesPaths": {
-    "2": "Condition_Token.7970ad.json",
-    "3": "Condition_Token.6d7d77.json",
-    "4": "Condition_Token.e7d4e1.json",
-    "5": "Condition_Token.2f908d.json",
-    "6": "Condition_Token.ca106f.json"
   }
 }
