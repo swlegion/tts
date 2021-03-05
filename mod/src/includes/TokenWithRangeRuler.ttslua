@@ -1,15 +1,22 @@
 function onLoad()
   rangeOn = false
+  createButton({0, 0, 0})
+  createButton({0, 0, 180})
+end
+
+function createButton(rotation)
   self.createButton({
     click_function = "toggleRangeRuler",
     function_owner = self,
     label = "R",
+    tooltip = "Spawn Range Ruler",
     position = {0, 0.1, 0.7},
+    rotation = rotation,
     scale = {0.5, 0.5, 0.5},
     width = 400,
     height = 300,
     font_size = 200,
-    color = {0, 0, 0, 0.8},
+    color = {0, 0, 0, 1},
     font_color = {0.1212, 0.8127, 0, 1}
   })
 end
