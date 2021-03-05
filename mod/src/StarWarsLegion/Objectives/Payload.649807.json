@@ -52,10 +52,5 @@
     "ContainedObjects": []
   },
   "StatesPaths": {},
-  "ContainedObjectPaths": [
-    "Bomb_Cart.85bca1.json",
-    "Bomb_Cart.4f9714.json",
-    "Objective_Token.36f292.json",
-    "Objective_Token.32bde3.json"
-  ]
+  "ContainedObjectPaths": ["Bomb_Cart.85bca1.json", "Bomb_Cart.4f9714.json"]
 }
