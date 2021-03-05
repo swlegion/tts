@@ -53,9 +53,9 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Mine_Condition_Token.de821c.json",
-    "Mine_Condition_Token.c9ac5c.json",
-    "Mine_Condition_Token.318653.json",
-    "Mine_Condition_Token.09d0f5.json"
+    "Condition_Token.de821c.json",
+    "Condition_Token.c9ac5c.json",
+    "Condition_Token.318653.json",
+    "Condition_Token.09d0f5.json"
   ]
 }

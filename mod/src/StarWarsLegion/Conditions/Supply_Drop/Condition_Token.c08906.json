@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "4d25eb",
-    "Name": "Custom_Model_Infinite_Bag",
+    "GUID": "c08906",
+    "Name": "Custom_Model",
     "Transform": {
-      "posX": 57.69312,
-      "posY": 0.9395281,
-      "posZ": 14.0338182,
-      "rotX": -8.219864e-7,
-      "rotY": 90.00001,
-      "rotZ": -0.00160648522,
-      "scaleX": 1.99999917,
-      "scaleY": 1.99999917,
-      "scaleZ": 1.99999917
+      "posX": 46.5476532,
+      "posY": 1.05021858,
+      "posZ": 6.783604,
+      "rotX": -0.000007721055,
+      "rotY": 270.00705,
+      "rotZ": 179.999969,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
     },
-    "Nickname": "Condition Tokens",
+    "Nickname": "Condition Token",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -22,7 +22,7 @@
       "b": 1
     },
     "LayoutGroupSortIndex": 0,
-    "Locked": true,
+    "Locked": false,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -34,8 +34,6 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "MaterialIndex": -1,
-    "MeshIndex": -1,
     "CustomMesh": {
       "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
       "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441794/A5214853EF5CF66714FC230767A634761777F6A9/",
@@ -43,16 +41,19 @@
       "ColliderURL": "",
       "Convex": true,
       "MaterialIndex": 3,
-      "TypeIndex": 7,
+      "TypeIndex": 0,
       "CastShadows": true
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Condition_Token.c08906.lua",
     "LuaScriptState": "",
     "XmlUI": "",
-    "ContainedObjects": []
+    "States": {}
   },
-  "StatesPaths": {},
-  "ContainedObjectPaths": [
-    "Condition_Token.85fa87.json"
-  ]
+  "StatesPaths": {
+    "1": "Condition_Token_1.85fa87.json",
+    "2": "Condition_Token_2.7970ad.json",
+    "3": "Condition_Token_3.6d7d77.json",
+    "4": "Condition_Token_4.e7d4e1.json",
+    "5": "Condition_Token_5.2f908d.json"
+  }
 }
