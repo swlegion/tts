@@ -1721,13 +1721,15 @@ function buildCardInfo()
     cardInfo.unitCards.clanWren = {
       ptCost = 34,
       availableUpgrades = {
-        cardInfo.upgradeMenu.rebel.clanWrenSpecialist,
-        cardInfo.upgradeMenu.rebel.clanWrenSpecialist,
         cardInfo.upgradeMenu.rebel.tactics,
         cardInfo.upgradeMenu.rebel.comms,
         cardInfo.upgradeMenu.rebel.tech,
         cardInfo.upgradeMenu.rebel.mandalorianResistanceSideArm,
         cardInfo.upgradeMenu.rebel.grenade
+      },
+      requiredUpgrades = {
+        cardInfo.upgradeCards.ursaWren,
+        cardInfo.upgradeCards.tristanWren,
       },
       miniInfo = {
           miniInfo.clanWren1
@@ -2090,13 +2092,15 @@ function buildCardInfo()
     cardInfo.unitCards.infernoSquad = {
       ptCost = 34,
       availableUpgrades = {
-        cardInfo.upgradeMenu.imperial.infernoSquadSpecialist,
-        cardInfo.upgradeMenu.imperial.infernoSquadSpecialist,
         cardInfo.upgradeMenu.imperial.tactics,
         cardInfo.upgradeMenu.imperial.tactics,
         cardInfo.upgradeMenu.imperial.comms,
         cardInfo.upgradeMenu.imperial.tech,
         cardInfo.upgradeMenu.imperial.grenade
+      },
+      requiredUpgrades = {
+        cardInfo.upgradeCards.delMeeko,
+        cardInfo.upgradeCards.gideonHask,
       },
       miniInfo = {
         miniInfo.isfInferno,
