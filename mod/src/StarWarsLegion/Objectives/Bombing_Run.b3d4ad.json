@@ -47,7 +47,7 @@
       "CastShadows": true
     },
     "LuaScript": "#include ./Bombing_Run.b3d4ad.lua",
-    "LuaScriptState": "",
+    "LuaScriptState": "{}",
     "XmlUI": "",
     "ContainedObjects": []
   },

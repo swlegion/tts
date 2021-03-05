@@ -43,7 +43,7 @@
       "TypeIndex": 1,
       "CastShadows": true
     },
-    "LuaScript": "#include ./Objective_Token.1af4d0.lua",
+    "LuaScript": "",
     "LuaScriptState": "",
     "XmlUI": ""
   },
