@@ -157,6 +157,11 @@ function spawnObjsFromCartridge(cartridgeObj)
               smooth         = false
           })
       end
+      
+      local deploymentZone = cartridgeObj.getTable("deploymentZone")
+      if deploymentZone != nil then
+          spawnDeploymentBoundary(deploymentZone)
+      end
 
       destroyObject(cartridgeObj)
     end)
@@ -186,6 +191,49 @@ function placeObject(paObj)
     end
 
     paObj.reload()
+end
+
+function spawnDeploymentBoundary(matrix)
+    local bAsset = "http://cloud-3.steamusercontent.com/ugc/1749057761574801767/2DE689AEC5846D465B3F01C9C71D29791596619D/"
+    local rAsset = "http://cloud-3.steamusercontent.com/ugc/1749057761574801093/14D3D1E90CF25C00C116D209A2167F2B8629AFB6/"
+    local xStart = -25
+    local zStart = 15
+    local yValue = 20
+    -- matrix is in the format of
+    -- { x, x, x, x, x, x, x, x, x, x, x, x }
+    -- { x, x, x, x, x, x, x, x, x, x, x, x }
+    -- { x, x, x, x, x, x, x, x, x, x, x, x }
+    -- { x, x, x, x, x, x, x, x, x, x, x, x }
+    -- { x, x, x, x, x, x, x, x, x, x, x, x }
+    -- { x, x, x, x, x, x, x, x, x, x, x, x }
+    -- ... where "x" can either be:
+    -- "r" :  red deployment zone
+    -- "b" :  blue deployment zone
+    -- ""  :  ignore
+    for z, row in pairs(matrix) do
+      for x, cell in pairs(row) do
+        if cell == "r" or cell == "b" then
+          local projector = spawnObject({
+            type        = "Custom_AssetBundle",
+            position    = {
+              xStart + (6 * (x - 1)),
+              yValue,
+              zStart - (6 * (z - 1)),
+            },
+            scale       = {0, 0, 0},
+          })
+          local asset = rAsset
+          if cell == "b" then
+            asset = bAsset
+          end
+          projector.setName("Deployment Boundary")
+          projector.setLock(true)
+          projector.setCustomObject({
+            assetbundle = asset,
+          })
+        end
+      end
+    end
 end
 
 function clearDeploymentBoundary()
