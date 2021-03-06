@@ -50,15 +50,5 @@
     "XmlUI": "",
     "ContainedObjects": []
   },
-  "StatesPaths": {},
-  "ContainedObjectPaths": [
-    "Deployment_Boundary.fd9230.json",
-    "Deployment_Boundary.d16152.json",
-    "Deployment_Boundary.e5bf69.json",
-    "Deployment_Boundary.37e150.json",
-    "Deployment_Boundary.2dbc95.json",
-    "Deployment_Boundary.c7d9e2.json",
-    "Deployment_Boundary.47796a.json",
-    "Deployment_Boundary.422ed1.json"
-  ]
+  "StatesPaths": {}
 }

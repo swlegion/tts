@@ -867,7 +867,7 @@ end
 
 
 function placeTerrainDelay(passedObj)
-    Wait.frames(function() placeTerrainDelay(passedObj) end)
+    Wait.frames(function() placeTerrain(passedObj) end)
 end
 
 function placeTerrain(paObj)

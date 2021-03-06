@@ -14,7 +14,7 @@
       "scaleZ": 1
     },
     "Nickname": "CHANGELOG",
-    "Description": "",
+    "Description": "[b]v4.0.0-Beta[/b]: Vital Assets \"bag\" was removed.\n\nAll condition, objective, mine tokens are streamlined and use the same implementation.\n\nDeployments use new projection-based deployment zone markers: try it out!",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 1,
