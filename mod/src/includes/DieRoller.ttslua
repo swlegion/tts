@@ -38,13 +38,46 @@ end
 function dud() end
 
 function rollDie()
-  if dieObjs != nil then
-      for i, obj in pairs(dieObjs) do
-          if obj != nil then
-              obj.roll()
-          end
+  local player = Player[colorSide]
+  local toRoll = dieObjs
+  if player != nil then
+    local selected = player.getSelectedObjects()
+    if selected != nil and #selected > 0 then
+      toRoll = {}
+      for _, s in pairs(selected) do
+        if s.getValue() != nil then
+          table.insert(toRoll, s)
+        end
       end
+    end
   end
+  if toRoll != nil then
+    for _, obj in pairs(toRoll) do
+      if obj != nil then
+        simulatedRoll(obj)
+      end
+    end
+  end
+end
+
+function simulatedRoll(dice)
+  local sides = dice.getRotationValues()
+  local count = 10
+  local pos = dice.getPosition()
+  dice.setPosition({pos.x, pos.y + 5, pos.z})
+  dice.interactable = false
+  local timer = Wait.time(function()
+    if dice != nil then
+      local side = sides[math.random(1, #sides)]
+      count = count - 1
+      if count <= 0 then
+        dice.setPositionSmooth(pos, false, true)
+        dice.interactable = true
+      else
+        dice.setRotationSmooth(side.rotation, false, true)
+      end
+    end
+  end, 0.10, count)
 end
 
 function printDieValues()
