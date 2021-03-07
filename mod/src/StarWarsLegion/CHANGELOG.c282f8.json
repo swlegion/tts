@@ -14,7 +14,7 @@
       "scaleZ": 1
     },
     "Nickname": "CHANGELOG",
-    "Description": "[b]v4.0.0-Beta[/b]: Vital Assets \"bag\" was removed.\n\nAll condition, objective, mine tokens are streamlined and use the same implementation.\n\nDeployments use new projection-based deployment zone markers: try it out!",
+    "Description": "[b]v4.0.0-Beta[/b]: Vital Assets \"bag\" was removed.\n\nAll condition, objective, mine tokens are streamlined and use the same implementation.\n\nDeployments use new projection-based deployment zone markers: try it out!\n\nDice rollers now announce results to the screen, and use a [i]simulated[/i] roll when using \"roll\".",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 1,
