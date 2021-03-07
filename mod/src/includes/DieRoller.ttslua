@@ -6,44 +6,54 @@ function onLoadShared(_colorSide)
   mode = nil
   selectedMode = "attack"
   dieCount = 0
+  partialRoll = nil
+  isRolling = false
+  createEmptyDieValues()
+end
 
-  -- dieValues
-  dieIndex = {}
-  dieIndex.crit = 0
-  dieIndex.hit = 1
-  dieIndex.oSurge = 2
-  dieIndex.block = 3
-  dieIndex.dSurge = 4
-
-  dieNames = {"crit","hit","oSurge","block","dSurge"}
-
-  self.createButton({
-      click_function = "dud", function_owner = self, label = "", position = {-3.12, 0.52, 1.62}, rotation = {0, -90, 0}, scale = {0.5, 0.5, 0.5}, width = 400, height = 400, font_size = 450, color = {1, 1, 1, 0.01}, font_color = {1, 0, 0, 100}, tooltip = "1", alignment = 3})
-
-  self.createButton({
-      click_function = "dud", function_owner = self, label = "", position = {-3.12, 0.52, 0.75}, rotation = {0, -90, 0}, scale = {0.5, 0.5, 0.5}, width = 400, height = 400, font_size = 450, color = {1, 1, 1, 0.01}, font_color = {1, 0, 0, 100}, tooltip = "2", alignment = 3})
-
-  self.createButton({
-      click_function = "dud", function_owner = self, label = "", position = {-3.12, 0.52, -0.12}, rotation = {0, -90, 0}, scale = {0.5, 0.5, 0.5}, width = 400, height = 400, font_size = 450, color = {1, 1, 1, 0.01}, font_color = {1, 0, 0, 100}, tooltip = "3", alignment = 3})
-
-  self.createButton({
-      click_function = "dud", function_owner = self, label = "", position = {-3.12, 0.52, -1}, rotation = {0, -90, 0}, scale = {0.5, 0.5, 0.5}, width = 400, height = 400, font_size = 450, color = {1, 1, 1, 0.01}, font_color = {1, 0, 0, 100}, tooltip = "4", alignment = 3})
-
-  self.createButton({
-      click_function = "dud", function_owner = self, label = "", position = {-3.12, 0.52, -1.88}, rotation = {0, -90, 0}, scale = {0.5, 0.5, 0.5}, width = 400, height = 400, font_size = 450, color = {1, 1, 1, 0.01}, font_color = {1, 0, 0, 100}, tooltip = "5", alignment = 3})
-
-  Wait.time(printDieValues, 0.5, -1)
+function createEmptyDieValues()
+  local tooltips = {
+    "Crits",
+    "Hits",
+    "Surges (Attack)",
+    "Blocks",
+    "Surges (Defense)",
+  }
+  local zStart = 1.62
+  for i, tooltip in pairs(tooltips) do
+    self.createButton({
+      click_function = "dud",
+      function_owner = self,
+      label = "",
+      position = {-3.12, 0.52, zStart - ((i - 1) * 0.88)},
+      rotation = {0, -90, 0},
+      scale = {0.5, 0.5, 0.5},
+      width = 400,
+      height = 400,
+      font_size = 450,
+      color = {1, 1, 1, 0.01},
+      font_color = {1, 0, 0, 100},
+      tooltip = tooltip,
+      alignment = 3
+    })
+  end
 end
 
 function dud() end
 
 function rollDie()
+  if isRolling == true then
+    return
+  end
+  isRolling = true
+  partialRoll = nil
   local player = Player[colorSide]
   local toRoll = dieObjs
   if player != nil then
     local selected = player.getSelectedObjects()
     if selected != nil and #selected > 0 then
       toRoll = {}
+      partialRoll = #selected
       for _, s in pairs(selected) do
         if s.getValue() != nil then
           table.insert(toRoll, s)
@@ -57,6 +67,10 @@ function rollDie()
         simulatedRoll(obj)
       end
     end
+    Wait.time(function()
+      isRolling = false
+      printDieValues()
+    end, 1)
   end
 end
 
@@ -70,7 +84,7 @@ function simulatedRoll(dice)
     if dice != nil then
       local side = sides[math.random(1, #sides)]
       count = count - 1
-      if count <= 0 then
+      if count <= 1 then
         dice.setPositionSmooth(pos, false, true)
         dice.interactable = true
       else
@@ -81,44 +95,73 @@ function simulatedRoll(dice)
 end
 
 function printDieValues()
-  local dieRecord = {}
-  dieRecord.crit = 0
-  dieRecord.hit = 0
-  dieRecord.oSurge = 0
-  dieRecord.block = 0
-  dieRecord.dSurge = 0
-  dieRecord.blank = 0
-  if dieObjs != nil then
-      for i, obj in pairs(dieObjs) do
-          if obj != nil then
-              local sDieValue = obj.getValue()
-              local sDieColor = obj.getVar("dieColor")
-              local sDieType = obj.getVar("dieType")
-
-              local sDieResult = dieRollerInfo.dieValues[sDieType][sDieColor][sDieValue]
-
-              dieRecord[sDieResult] = dieRecord[sDieResult] + 1
-
-
-          end
-      end
+  if dieObjs == nil then
+    return
   end
-
-  for i, v in pairs(dieNames) do
-      if dieRecord[v] == 0 then
-          d = ""
-      else
-          d = dieRecord[v]
+  local dieRecord = {
+    crit   = 0,
+    hit    = 0,
+    oSurge = 0,
+    block  = 0,
+    dSurge = 0,
+  }
+  local dieColors = {
+    red    = 0,
+    black  = 0,
+    white  = 0,
+  }
+  for _, obj in pairs(dieObjs) do
+    if obj != nil then
+      local sDieValue = obj.getValue()
+      local sDieColor = obj.getVar("dieColor")
+      dieColors[sDieColor] = dieColors[sDieColor] + 1
+      local sDieType = obj.getVar("dieType")
+      local sDieResult = dieRollerInfo.dieValues[sDieType][sDieColor][sDieValue]
+      if sDieResult != "blank" then
+        dieRecord[sDieResult] = dieRecord[sDieResult] + 1
       end
-
-
-      self.editButton({
-          index          = dieIndex[v],
-          label          = d
-      })
-
+    end
   end
+  local index = 0
+  for _, d in pairs(dieRecord) do
+    local label = tostring(d)
+    if d == 0 then
+      label = ""
+    end
+    self.editButton({
+      index          = index,
+      label          = label,
+    })
+    index = index + 1
+  end
+  printDieValuesToScreen(dieRecord, dieColors)
+end
 
+function printDieValuesToScreen(dieRecord, dieColors)
+  local message = string.upper(colorSide) .. " "
+  if partialRoll == nil or partialRoll == #dieObjs then
+    message = message .. "rolled " .. tostring(#dieObjs)
+  else
+    message = message .. "re-rolled " .. tostring(partialRoll) .. " of " .. tostring(#dieObjs)
+  end
+  local colors = ""
+  if dieColors.red > 0 then
+    colors = colors .. tostring(dieColors.red) .. "R "
+  end
+  if dieColors.black > 0 then
+    colors = colors .. tostring(dieColors.black) .. "B "
+  end
+  if dieColors.white > 0 then
+    colors = colors .. tostring(dieColors.white) .. "W "
+  end
+  if mode == "defend" then
+    message = message .. " defense dice " .."( pool: " .. colors .. ")\n"
+    message = message .. tostring(dieRecord.block) .. " BLOCKS, " .. tostring(dieRecord.dSurge) .. " SURGES."
+  else
+    message = message .. " attack dice " .. "( pool: " .. colors .. ")\n"
+    message = message .. tostring(dieRecord.crit) .. " CRITS, " .. tostring(dieRecord.hit) .. " HITS, " .. tostring(dieRecord.oSurge) .. " SURGES."
+  end
+  broadcastToAll(message)
 end
 
 function spawnWhiteAttackDice()
@@ -195,7 +238,6 @@ function spawnDie(dieColor,dieType)
 
       dieObjs[dieCount].setPosition(pos)
       dieObjs[dieCount].setLuaScript("function onDestroy() dieRollerInfo = Global.getTable('dieRollerInfo') dieRoller = getObjectFromGUID(dieRollerInfo."..colorSide.."DieRollerGUID) dieRoller.call('updateDieCountDisplay') end")
-
       dieObjs[dieCount].setVar("dieColor", dieColor)
       dieObjs[dieCount].setVar("dieType", mode)
 
