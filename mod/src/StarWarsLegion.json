@@ -171,7 +171,7 @@
     ],
     "DecalPallet": [],
     "LuaScript": "#include ./StarWarsLegion.lua",
-    "LuaScriptState": "{\"globalData\":{\"battlefieldTint\":{\"b\":0.258823529411765,\"g\":0.258823529411765,\"r\":0.258823529411765},\"hostName\":\"tieren\"}}",
+    "LuaScriptState": "",
     "XmlUI": "#include ./StarWarsLegion.xml",
     "CustomUIAssets": [
       {
