@@ -18,7 +18,7 @@ function setUp()
 
     if unitName != nil and colorSide != nil then
         local baseSize = unitInfo[unitName].baseSize
-        local fixed = baseSize != 'Small'
+        local fixed = baseSize != 'small'
 
         unitData = {}
         unitData.commandType = unitInfo[unitName].commandType
