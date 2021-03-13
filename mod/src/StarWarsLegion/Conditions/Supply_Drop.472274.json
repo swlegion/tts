@@ -53,12 +53,12 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Condition_Token_4.dfb09f.json",
-    "Condition_Token_6.c08906.json",
-    "Condition_Token_5.b0bd20.json",
-    "Condition_Token_3.147177.json",
-    "Condition_Token_1.e76fe1.json",
-    "Condition_Token_2.c65c35.json",
+    "Condition_Token.dfb09f.json",
+    "Condition_Token.c08906.json",
+    "Condition_Token.b0bd20.json",
+    "Condition_Token.147177.json",
+    "Condition_Token.e76fe1.json",
+    "Condition_Token.c65c35.json",
     "Supply_Card_Deck.cebbff.json"
   ]
 }

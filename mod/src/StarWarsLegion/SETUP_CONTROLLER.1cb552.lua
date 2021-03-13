@@ -1,5 +1,6 @@
 function onLoad(save_state)
     self.interactable = false
+
     -- intialize
     setUpCards = Global.getTable("setUpCards")
     setUpData = Global.getTable("setUpData")
@@ -8,8 +9,10 @@ function onLoad(save_state)
     objectiveCartridge = getObjectFromGUID(setUpData.objectiveCartridgeGUID)
     battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
     gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
-
     battlefieldTint = gameData.getTable("battlefieldTint")
+
+    -- token stacks
+    getTokenScripts()
 
     -- buttonObjs
     optionObjs = {}
@@ -30,6 +33,25 @@ function onLoad(save_state)
     objectiveMenu()
     deploymentMenu()
     conditionsMenu()
+end
+
+function getTokenScripts()
+    local conditionTokens = getObjectFromGUID("4d25eb")
+    local objectiveTokens = getObjectFromGUID("094239")
+
+    conditionTokens.takeObject({
+      callback_function = function(token)
+        conditionTokenScript = token.getLuaScript()
+        destroyObject(token)
+      end
+    })
+    
+    objectiveTokens.takeObject({
+      callback_function = function(token)
+        objectiveTokenScript = token.getLuaScript()
+        destroyObject(token)
+      end
+    })
 end
 
 function objectiveMenu()
@@ -135,6 +157,11 @@ function spawnObjsFromCartridge(cartridgeObj)
               smooth         = false
           })
       end
+      
+      local deploymentZone = cartridgeObj.getTable("deploymentZone")
+      if deploymentZone != nil then
+          spawnDeploymentBoundary(deploymentZone)
+      end
 
       destroyObject(cartridgeObj)
     end)
@@ -154,9 +181,58 @@ function placeObject(paObj)
     paObj.setRotation(spawnRot)
 
     if paObj.getName() == "Deployment Boundary" then
-        paObj.setLuaScript("interactable = false")
-    else
+        paObj.setLuaScript("function onLoad() self.interactable = false end")
+    elseif paObj.getName() == "Condition Token" then
+        paObj.setLuaScript(conditionTokenScript)
+    elseif paObj.getName() == "Objective Token" then
+        paObj.setLuaScript(objectiveTokenScript)
+    elseif paObj.getVar("scripted") != true then
         paObj.setLuaScript("")
+    end
+
+    paObj.reload()
+end
+
+function spawnDeploymentBoundary(matrix)
+    local bAsset = "http://cloud-3.steamusercontent.com/ugc/1749057761574801767/2DE689AEC5846D465B3F01C9C71D29791596619D/"
+    local rAsset = "http://cloud-3.steamusercontent.com/ugc/1749057761574801093/14D3D1E90CF25C00C116D209A2167F2B8629AFB6/"
+    local xStart = -25
+    local zStart = 15
+    local yValue = 20
+    -- matrix is in the format of
+    -- { x, x, x, x, x, x, x, x, x, x, x, x }
+    -- { x, x, x, x, x, x, x, x, x, x, x, x }
+    -- { x, x, x, x, x, x, x, x, x, x, x, x }
+    -- { x, x, x, x, x, x, x, x, x, x, x, x }
+    -- { x, x, x, x, x, x, x, x, x, x, x, x }
+    -- { x, x, x, x, x, x, x, x, x, x, x, x }
+    -- ... where "x" can either be:
+    -- "r" :  red deployment zone
+    -- "b" :  blue deployment zone
+    -- ""  :  ignore
+    for z, row in pairs(matrix) do
+      for x, cell in pairs(row) do
+        if cell == "r" or cell == "b" then
+          local projector = spawnObject({
+            type        = "Custom_AssetBundle",
+            position    = {
+              xStart + (6 * (x - 1)),
+              yValue,
+              zStart - (6 * (z - 1)),
+            },
+            scale       = {0, 0, 0},
+          })
+          local asset = rAsset
+          if cell == "b" then
+            asset = bAsset
+          end
+          projector.setName("Deployment Boundary")
+          projector.setLock(true)
+          projector.setCustomObject({
+            assetbundle = asset,
+          })
+        end
+      end
     end
 end
 

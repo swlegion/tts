@@ -1,0 +1,42 @@
+{
+  "Object": {
+    "GUID": "aecb8e",
+    "Name": "Notecard",
+    "Transform": {
+      "posX": 9.940838,
+      "posY": 1.019037,
+      "posZ": 3.98837924,
+      "rotX": 0.000005235297,
+      "rotY": 0.0000019479512,
+      "rotZ": 0.00000117739137,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "CHANGELOG (Continued)",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
