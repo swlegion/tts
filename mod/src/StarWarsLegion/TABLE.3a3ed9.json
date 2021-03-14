@@ -35,7 +35,7 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomMesh": {
-      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314447122/7BF6DAFBBAE5B9E551BB9F8B865548DB3BDB84D3/",
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314447122/7BF6DAFBBAE5B9E551BB9F8B865548DB3BDB84D3/", //TODO new table bundle here!
       "DiffuseURL": "",
       "NormalURL": "",
       "ColliderURL": "",
