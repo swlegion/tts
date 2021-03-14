@@ -874,7 +874,8 @@ end
 -- Chessclock Hotkeys --
 function initChessClockHotkeys()
   clocks = {
-        diffuse = getObjectFromGUID(clockGUIDs.red).Clock
+    Blue = getObjectFromGUID(clockGUIDs.blue).Clock,
+    Red = getObjectFromGUID(clockGUIDs.red).Clock
   }
   addHotkey("Toggle Chess Clocks", toggleChessClocks)
   addHotkey("Pause All Chess Clocks", pauseAllChessClocks)
