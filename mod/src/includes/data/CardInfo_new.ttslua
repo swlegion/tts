@@ -1,52 +1,190 @@
-function buildCardInfo()
-    local cardInfo = {}
+CardInfoClass = {}
+CardInfoClass.__index = CardInfoClass
 
-    cardInfo.upgradeCards = {
-      { name = "Force Push", ptCost = 10 },
-      { name = "Recon Intel", ptCost = 2 },
-      { name = "Z-6 Trooper", ptCost = 20, miniInfo = miniInfo.z6Trooper }
-    }
+UnitClass = {}
+UnitClass.__index = UnitClass
 
-    cardInfo.unitCards = {
-      {
-        name = "Luke Skywalker Hero of the Rebellion",
-        miniInfo = { miniInfo.lukeSkywalker },
-        rank = "Commander",
-        baseSize = "small",
-        selectedSpeed = 2,
-        buttonHeight = 2,
-        commandType = "rebelCommander"
-      },
-      {
-        name = "Rebel Troopers",
-        miniInfo = { miniInfo.rebelTrooperLeader, miniInfo.rebelTrooper1, miniInfo.rebelTrooper2, miniInfo.rebelTrooper3 },
-        rank = "Corp",
-        baseSize = "small",
-        selectedSpeed = 2,
-        buttonHeight = 2,
-        commandType = "rebelCore"
-      }
-    }
+function UnitClass:create(params)
+  local unit = {}
+  setmetatable(unit, UnitClass)
+  unit.name = params.name
+  unit.miniInfo = params.miniInfo or nil
+  unit.rank = params.rank
+  unit.baseSize = params.baseSize
+  unit.faction = params.faction
+  unit.selectedSpeed = params.selectedSpeed
+  unit.buttonHeight = params.buttonHeight or 2
+  unit.upgradeSlots = params.upgradeSlots
+  unit.noToken = params.noToken or nil
+  -- format commandType as, e.g., 'rebelCommander'
+  unit.commandType = unit.faction:lower() .. unit.rank:lower():gsub("^%l", string.upper)
 
+  return unit
+end
 
+function UnitClass:upgradeIsAllowed(upgrade)
+  local allowed = true
 
-    -- Build and return the associative dictionary that will be used at runtime
-    local returnTable = {}
-    returnTable.upgradeCards = {}
-    
-    for i, val in pairs(cardInfo.upgradeCards) do
-      returnTable.upgradeCards[val.name:lower()] = val
+  if upgrade.restrictions ~= nil then
+    allowed = false
+    for i, val in ipairs(upgrade.restrictions.units) do
+      if val:lower() == self.name:lower() then
+        allowed = true
+      end
     end
+  end
 
-    returnTable.unitCards = {}
-    
-    for i, val in pairs(cardInfo.unitCards) do
-      returnTable.unitCards[val.name:lower()] = val
+  return allowed
+end
+
+function UnitClass:filterAllowedUpgrades(upgrades)
+  local tbl = {}
+
+  for i, val in ipairs(upgrades) do
+    if self:upgradeIsAllowed(val) then
+      table.insert(tbl, val)
     end
+  end
 
-    -- unitCard GUID
-    returnTable.unitCardsGUID = "8e9aea"
-    returnTable.upgradeCardsGUID = "ffc227"
+  return tbl
+end
 
-    return returnTable
+function CardInfoClass:buildCardInfo()
+  local miniInfo = buildMiniInfo()
+  local cardInfoDB = {}
+
+  cardInfoDB.upgradeCards = {
+    -- Armament
+    -- Command
+    -- Comms
+    -- Crew
+    -- Force
+    { name = "Force Push", type="force", ptCost = 10 },
+    -- Gear
+    { name = "Recon Intel", type="gear", ptCost = 2 },
+    -- Generator
+    -- Grenades
+    -- Hardpoint
+    -- Heavy Weapon
+    { name = "Z-6 Trooper", type="heavy weapon", ptCost = 20, miniInfo = miniInfo.z6Trooper, restrictions = {units={"rebel troopers"}} }
+    -- Ordnance
+    -- Personnel
+    -- Pilot
+    -- Training
+  }
+
+  cardInfoDB.unitCards = {
+    -- REBEL --
+    -- Rebel Commander
+    UnitClass:create({
+      name = "Luke Skywalker Hero of the Rebellion",
+      miniInfo = { miniInfo.lukeSkywalker },
+      rank = "Commander",
+      baseSize = "small",
+      selectedSpeed = 2,
+      faction = "rebel",
+      upgradeSlots = {"force", "force", "gear"},
+    }),
+    UnitClass:create({
+      name = "Leia Organa Fearless and Inventive",
+      miniInfo = { miniInfo.leiaOrgana },
+      rank = "Commander",
+      baseSize = "small",
+      selectedSpeed = 2,
+      faction = "rebel",
+      upgradeSlots = {"command", "command", "gear"},
+    }),
+    -- Rebel Operative
+    -- Rebel Corps
+    UnitClass:create({
+      name = "Rebel Troopers",
+      miniInfo = { miniInfo.rebelTrooperLeader, miniInfo.rebelTrooper1, miniInfo.rebelTrooper2, miniInfo.rebelTrooper3 },
+      rank = "Corps",
+      baseSize = "small",
+      selectedSpeed = 2,
+      faction = "rebel",
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenade"},
+    }),
+    UnitClass:create({
+      name = "Fleet Troopers",
+      miniInfo = { miniInfo.fleetTroopersLeader, miniInfo.fleetTroopers1, miniInfo.fleetTroopers2, miniInfo.fleetTroopers3 },
+      rank = "Corps",
+      baseSize = "small",
+      selectedSpeed = 2,
+      faction = "rebel",
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenade"},
+    })
+    -- Rebel Special Forces
+    -- Rebel Support
+    -- Rebel Heavy
+
+    -- IMPERIAL --
+    -- Imperial Commander
+    -- Imperial Operative
+    -- Imperial Corps
+    -- Imperial Special Forces
+    -- Imperial Support
+    -- Imperial Heavy
+
+    -- REPUBLIC --
+    -- Republic Commander
+    -- Republic Operative
+    -- Republic Corps
+    -- Republic Special Forces
+    -- Republic Support
+    -- Republic Heavy
+    
+    -- SEPARATIST --
+    -- Separatist Commander
+    -- Separatist Operative
+    -- Separatist Corps
+    -- Separatist Special Forces
+    -- Separatist Support
+    -- Separatist Heavy
+  }
+
+
+
+  -- Build and return the associative dictionary that will be used at runtime
+  local returnTable = {}
+  setmetatable(returnTable, CardInfoClass)
+  returnTable.upgradeCards = {}
+  
+  for i, val in pairs(cardInfoDB.upgradeCards) do
+    returnTable.upgradeCards[val.name:lower()] = val
+  end
+
+  returnTable.unitCards = {}
+  
+  for i, val in pairs(cardInfoDB.unitCards) do
+    returnTable.unitCards[val.name:lower()] = val
+  end
+
+  -- unitCard GUID
+  returnTable.unitCardsGUID = "8e9aea"
+  returnTable.upgradeCardsGUID = "ffc227"
+
+  return returnTable
+end
+
+function CardInfoClass:getUpgradesByType(type)
+  local tbl = {}
+  for key, val in pairs(self.upgradeCards) do
+    if val.type == type then
+      table.insert(tbl, val)
+    end
+  end
+
+  return tbl
+end
+
+function CardInfoClass:getUnitsByFactionAndRank(faction, rank)
+  local tbl = {}
+  for key, val in pairs(self.unitCards) do
+    if val.faction:lower() == faction:lower() and val.rank:lower() == rank:lower() then
+      table.insert(tbl, val)
+    end
+  end
+
+  return tbl
 end

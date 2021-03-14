@@ -152,7 +152,7 @@ function buildListBuilder()
     }
 
     -- REBEL
-    listBuilder.commandCards.lukeSkywalker = {
+    listBuilder.commandCards["luke skywalker hero of the rebellion"] = {
         varName = "lukeSkywalker",
         cards = {"Son of Skywalker", "My Ally Is the Force", "Return of the Jedi"},
         cards2 = {"You Serve Your Master Well", "Full of Surprises", "I am a Jedi"}
@@ -162,7 +162,7 @@ function buildListBuilder()
         cards = {"Son of Skywalker", "My Ally Is the Force", "Return of the Jedi"},
         cards2 = {"You Serve Your Master Well", "Full of Surprises", "I am a Jedi"}
     }
-    listBuilder.commandCards.leiaOrgana = {
+    listBuilder.commandCards["leia organa fearless and inventive"] = {
         varName = "leiaOrgana",
         cards = {"Coordinated Bombardment","No Time for Sorrows","Somebody Has to Save Our Skins"}
     }

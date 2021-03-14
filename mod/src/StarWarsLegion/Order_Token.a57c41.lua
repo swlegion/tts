@@ -1,4 +1,6 @@
 #include !/common/Math
+#include !/data/CardInfo_new
+#include !/data/MiniInfo
 
 -- Model Token
 
@@ -8,7 +10,8 @@ function onLoad()
     battlefieldTint = Global.getTable("battlefieldTint")
     existingTint = battlefieldTint
     battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
-    unitInfo = Global.getTable("unitInfo")
+    -- unitInfo = Global.getTable("cardInfo").unitCards
+    unitInfo = CardInfoClass:buildCardInfo().unitCards
     templateInfo = Global.getTable("templateInfo")
     dieRollerInfo = Global.getTable("dieRollerInfo")
     tintedRed = false
