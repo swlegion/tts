@@ -1,0 +1,52 @@
+function buildCardInfo()
+    local cardInfo = {}
+
+    cardInfo.upgradeCards = {
+      { name = "Force Push", ptCost = 10 },
+      { name = "Recon Intel", ptCost = 2 },
+      { name = "Z-6 Trooper", ptCost = 20, miniInfo = miniInfo.z6Trooper }
+    }
+
+    cardInfo.unitCards = {
+      {
+        name = "Luke Skywalker Hero of the Rebellion",
+        miniInfo = { miniInfo.lukeSkywalker },
+        rank = "Commander",
+        baseSize = "small",
+        selectedSpeed = 2,
+        buttonHeight = 2,
+        commandType = "rebelCommander"
+      },
+      {
+        name = "Rebel Troopers",
+        miniInfo = { miniInfo.rebelTrooperLeader, miniInfo.rebelTrooper1, miniInfo.rebelTrooper2, miniInfo.rebelTrooper3 },
+        rank = "Corp",
+        baseSize = "small",
+        selectedSpeed = 2,
+        buttonHeight = 2,
+        commandType = "rebelCore"
+      }
+    }
+
+
+
+    -- Build and return the associative dictionary that will be used at runtime
+    local returnTable = {}
+    returnTable.upgradeCards = {}
+    
+    for i, val in pairs(cardInfo.upgradeCards) do
+      returnTable.upgradeCards[val.name:lower()] = val
+    end
+
+    returnTable.unitCards = {}
+    
+    for i, val in pairs(cardInfo.unitCards) do
+      returnTable.unitCards[val.name:lower()] = val
+    end
+
+    -- unitCard GUID
+    returnTable.unitCardsGUID = "8e9aea"
+    returnTable.upgradeCardsGUID = "ffc227"
+
+    return returnTable
+end

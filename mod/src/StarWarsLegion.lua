@@ -1,4 +1,4 @@
-#include !/data/CardInfo
+#include !/data/CardInfo_new
 #include !/data/ListBuilder
 #include !/data/MiniInfo
 #include !/data/TemplateMenu
