@@ -41,22 +41,22 @@
         "g": 0.9804,
         "b": 0.8902
       },
-      "AmbientIntensity": 2.26825333,
-      "AmbientType": 0,
+      "AmbientIntensity": 2,
+      "AmbientType": 1,
       "AmbientSkyColor": {
-        "r": 0.5,
-        "g": 0.5,
-        "b": 0.5
+        "r": 0.686,
+        "g": 0.636,
+        "b": 0.519
       },
       "AmbientEquatorColor": {
-        "r": 0.5,
-        "g": 0.5,
-        "b": 0.5
+        "r": 0.043,
+        "g": 0.023,
+        "b": 0.010
       },
       "AmbientGroundColor": {
-        "r": 0.5,
-        "g": 0.5,
-        "b": 0.5
+        "r": 0.018,
+        "g": 0.011,
+        "b": 0.006
       },
       "ReflectionIntensity": 1,
       "LutIndex": 0,
