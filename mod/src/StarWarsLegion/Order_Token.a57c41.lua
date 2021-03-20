@@ -1324,8 +1324,12 @@ function resetActivation()
 end
 
 function getDistance(originObj, targetObj)
-    local localVector = originObj.positionToLocal(targetObj.getPosition())
-    local c = math.sqrt((localVector.x * localVector.x) + (localVector.z * localVector.z))
-    --local finalDistance = math.sqrt((c * c) + (localVector.y * localVector.y))
-    return c
+  local originPos = originObj.getPosition()
+  local targetPos = targetObj.getPosition()
+
+  -- set the y-value for each position to 0 to ignore height differences
+  originPos:set(nil, 0, nil)
+  targetPos:set(nil, 0, nil)
+  
+  return Vector.distance(originPos, targetPos)
 end
