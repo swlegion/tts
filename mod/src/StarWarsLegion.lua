@@ -1,3 +1,4 @@
+#include !/Analytics
 #include !/data/CardInfo_new
 #include !/data/ListBuilder
 #include !/data/MiniInfo
@@ -5,8 +6,9 @@
 #include !/data/UnitInfo
 
 function onLoad()
-    gameDataGUID = "6bb850"
+    gaTrack("Global", "onLoad", "Version", "4.0.0-beta")
 
+    gameDataGUID = "6bb850"
     battlefieldZoneGUID = "cbc575" -- real
     conditionsZoneGUID = "c49089" -- conditions
     competitiveTerrainZoneGUID = "92b9be"
@@ -874,7 +876,8 @@ end
 -- Chessclock Hotkeys --
 function initChessClockHotkeys()
   clocks = {
-        diffuse = getObjectFromGUID(clockGUIDs.red).Clock
+    Blue = getObjectFromGUID(clockGUIDs.blue).Clock,
+    Red = getObjectFromGUID(clockGUIDs.red).Clock
   }
   addHotkey("Toggle Chess Clocks", toggleChessClocks)
   addHotkey("Pause All Chess Clocks", pauseAllChessClocks)

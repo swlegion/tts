@@ -3,7 +3,7 @@
     "GUID": "8887c9",
     "Name": "Custom_Model",
     "Transform": {
-      "posX": -7.88247871,
+      "posX": -10.63247871,
       "posY": 1.06331956,
       "posZ": -20.6646442,
       "rotX": 0.00103532418,
@@ -40,7 +40,7 @@
       "NormalURL": "",
       "ColliderURL": "",
       "Convex": true,
-      "MaterialIndex": 0,
+      "MaterialIndex": 3,
       "TypeIndex": 5,
       "CastShadows": true
     },

@@ -1,0 +1,27 @@
+function gaTrack(category, action, label, value)
+  local url = "https://www.google-analytics.com/collect?"
+  local data = {
+    v   = "1",
+    ds  = "web",
+    tid = "G-QBT9PVH8RW",
+    ec  = category,
+    ea  = action,
+    el  = label,
+    ev  = value,
+  }
+  local function charToHex(c)
+    return string.format("%%%02X", string.byte(c))
+  end
+  local function urlEncode(url)
+    url = url:gsub("\n", "\r\n")
+    url = url:gsub("([^%w ])", charToHex)
+    url = url:gsub(" ", "+")
+    return url
+  end
+  for key, value in pairs(data) do
+    if value != nil then
+      url = url .. ("&" .. urlEncode(tostring(key)) .. "=" .. urlEncode(tostring(value)))
+    end
+  end
+  WebRequest.post(url, data)
+end

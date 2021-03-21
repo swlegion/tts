@@ -54,7 +54,7 @@
         "SpecularSharpness": 2,
         "FresnelStrength": 0
       },
-      "CastShadows": true
+      "CastShadows": false
     },
     "LuaScript": "",
     "LuaScriptState": "",

@@ -31,52 +31,52 @@ function buildListBuilder()
     listBuilder.deckBuilderGUID = "082f27"
 
     listBuilder.redTemplatePos = {}
-    listBuilder.redTemplatePos[1] = {x = -23.57,y= 1,z=-22}
-    listBuilder.redTemplatePos[2] = {x =-16.60,y= 1,z=-22}
-    listBuilder.redTemplatePos[3] = {x =-9.60,y= 1,z=-22}
-    listBuilder.redTemplatePos[4] = {x =-2.63,y= 1,z=-22}
-    listBuilder.redTemplatePos[5] = {x =4.38,y= 1,z=-22}
-    listBuilder.redTemplatePos[6] = {x =11.38,y= 1,z=-22}
-    listBuilder.redTemplatePos[7] = {x =18.35,y= 1,z=-22}
-    listBuilder.redTemplatePos[8] = {x =25.07,y= 1,z=-22}
-    listBuilder.redTemplatePos[9] = {x =32.36,y= 1,z=-22}
-    listBuilder.redTemplatePos[10] = {x =39.37,y= 1,z=-22}
+    listBuilder.redTemplatePos[1] = {x = -23.57,y= 1,z=-30}
+    listBuilder.redTemplatePos[2] = {x =-16.60,y= 1,z=-30}
+    listBuilder.redTemplatePos[3] = {x =-9.60,y= 1,z=-30}
+    listBuilder.redTemplatePos[4] = {x =-2.63,y= 1,z=-30}
+    listBuilder.redTemplatePos[5] = {x =4.38,y= 1,z=-30}
+    listBuilder.redTemplatePos[6] = {x =11.38,y= 1,z=-30}
+    listBuilder.redTemplatePos[7] = {x =18.35,y= 1,z=-30}
+    listBuilder.redTemplatePos[8] = {x =25.07,y= 1,z=-30}
+    listBuilder.redTemplatePos[9] = {x =32.36,y= 1,z=-30}
+    listBuilder.redTemplatePos[10] = {x =39.37,y= 1,z=-30}
 
-    listBuilder.redTemplatePos[11] = {x = -23.57,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[12] = {x =-16.60,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[13] = {x =-9.60,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[14] = {x =-2.63,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[15] = {x =4.38,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[16] = {x =11.38,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[17] = {x =18.35,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[18] = {x =25.07,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[19] = {x =32.36,y= 1,z= -33.09}
-    listBuilder.redTemplatePos[20] = {x =39.37,y= 1,z= -33.09}
+    listBuilder.redTemplatePos[11] = {x = -23.57,y= 1,z= -39}
+    listBuilder.redTemplatePos[12] = {x =-16.60,y= 1,z= -39}
+    listBuilder.redTemplatePos[13] = {x =-9.60,y= 1,z= -39}
+    listBuilder.redTemplatePos[14] = {x =-2.63,y= 1,z= -39}
+    listBuilder.redTemplatePos[15] = {x =4.38,y= 1,z= -39}
+    listBuilder.redTemplatePos[16] = {x =11.38,y= 1,z= -39}
+    listBuilder.redTemplatePos[17] = {x =18.35,y= 1,z= -39}
+    listBuilder.redTemplatePos[18] = {x =25.07,y= 1,z= -39}
+    listBuilder.redTemplatePos[19] = {x =32.36,y= 1,z= -39}
+    listBuilder.redTemplatePos[20] = {x =39.37,y= 1,z= -39}
 
 
 
     listBuilder.blueTemplatePos = {}
-    listBuilder.blueTemplatePos[1] = {x=39.37,y= 1,z=22}
-    listBuilder.blueTemplatePos[2] = {x=32.36,y= 1,z=22}
-    listBuilder.blueTemplatePos[3] = {x=25.07,y= 1,z=22}
-    listBuilder.blueTemplatePos[4] = {x=18.35,y= 1,z=22}
-    listBuilder.blueTemplatePos[5] = {x=11.38,y= 1,z=22}
-    listBuilder.blueTemplatePos[6] = {x=4.38,y= 1,z=22}
-    listBuilder.blueTemplatePos[7] = {x=-2.63,y= 1,z=22}
-    listBuilder.blueTemplatePos[8] = {x=-9.60,y= 1,z=22}
-    listBuilder.blueTemplatePos[9] = {x=-16.60,y= 1,z=22}
-    listBuilder.blueTemplatePos[10] = {x=-23.57,y= 1,z=22}
+    listBuilder.blueTemplatePos[1] = {x=39.37,y= 1,z=30}
+    listBuilder.blueTemplatePos[2] = {x=32.36,y= 1,z=30}
+    listBuilder.blueTemplatePos[3] = {x=25.07,y= 1,z=30}
+    listBuilder.blueTemplatePos[4] = {x=18.35,y= 1,z=30}
+    listBuilder.blueTemplatePos[5] = {x=11.38,y= 1,z=30}
+    listBuilder.blueTemplatePos[6] = {x=4.38,y= 1,z=30}
+    listBuilder.blueTemplatePos[7] = {x=-2.63,y= 1,z=30}
+    listBuilder.blueTemplatePos[8] = {x=-9.60,y= 1,z=30}
+    listBuilder.blueTemplatePos[9] = {x=-16.60,y= 1,z=30}
+    listBuilder.blueTemplatePos[10] = {x=-23.57,y= 1,z=30}
 
-    listBuilder.blueTemplatePos[11] = {x=39.37,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[12] = {x=32.36,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[13] = {x=25.07,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[14] = {x=18.35,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[15] = {x=11.38,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[16] = {x=4.38,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[17] = {x=-2.63,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[18] = {x=-9.60,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[19] = {x=-16.60,y= 1,z=33.09}
-    listBuilder.blueTemplatePos[20] = {x=-23.57,y= 1,z=33.09}
+    listBuilder.blueTemplatePos[11] = {x=39.37,y= 1,z=39}
+    listBuilder.blueTemplatePos[12] = {x=32.36,y= 1,z=39}
+    listBuilder.blueTemplatePos[13] = {x=25.07,y= 1,z=39}
+    listBuilder.blueTemplatePos[14] = {x=18.35,y= 1,z=39}
+    listBuilder.blueTemplatePos[15] = {x=11.38,y= 1,z=39}
+    listBuilder.blueTemplatePos[16] = {x=4.38,y= 1,z=39}
+    listBuilder.blueTemplatePos[17] = {x=-2.63,y= 1,z=39}
+    listBuilder.blueTemplatePos[18] = {x=-9.60,y= 1,z=39}
+    listBuilder.blueTemplatePos[19] = {x=-16.60,y= 1,z=39}
+    listBuilder.blueTemplatePos[20] = {x=-23.57,y= 1,z=39}
 
     listBuilder.miniSpawnPos = {}
     listBuilder.miniSpawnPos[1] = {c = 5.32, q = -90}
@@ -90,10 +90,10 @@ function buildListBuilder()
 
     listBuilder.handPos = {}
     listBuilder.handPos.red = {}
-    listBuilder.handPos.red.pos = {8.50, 4, -48.00}
+    listBuilder.handPos.red.pos = {8.50, 4.0, -58}
     listBuilder.handPos.red.rot = {0,180,0}
     listBuilder.handPos.blue = {}
-    listBuilder.handPos.blue.pos = {8.50, 4, 48.00}
+    listBuilder.handPos.blue.pos = {8.50, 4.0, 58}
     listBuilder.handPos.blue.rot = {0,0,0}
 
     listBuilder.tokenModelGUID = "a57c41"

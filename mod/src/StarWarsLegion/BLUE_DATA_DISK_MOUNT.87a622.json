@@ -3,7 +3,7 @@
     "GUID": "87a622",
     "Name": "Custom_Model",
     "Transform": {
-      "posX": -37.1304932,
+      "posX": -39.8804932,
       "posY": 0.9422785,
       "posZ": 24.10808,
       "rotX": 0.009624384,
@@ -42,7 +42,7 @@
       "Convex": true,
       "MaterialIndex": 3,
       "TypeIndex": 0,
-      "CastShadows": true
+      "CastShadows": false
     },
     "LuaScript": "",
     "LuaScriptState": "",

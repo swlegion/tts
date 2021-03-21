@@ -3,7 +3,7 @@
     "GUID": "1daecb",
     "Name": "Custom_Model",
     "Transform": {
-      "posX": -33.782692,
+      "posX": -36.532692,
       "posY": 0.9604946,
       "posZ": 7.39744949,
       "rotX": -0.005261261,
@@ -52,7 +52,7 @@
         "SpecularSharpness": 2,
         "FresnelStrength": 0.0358068645
       },
-      "CastShadows": true
+      "CastShadows": false
     },
     "LuaScript": "#include ./Blue_Die_Roller.1daecb.lua",
     "LuaScriptState": "",

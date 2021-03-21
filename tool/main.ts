@@ -6,12 +6,13 @@ import { compileSaveFile, createSymlink, extractSaveFile } from '../src';
 require('make-promises-safe');
 
 (async () => {
-  const args = minimist(process.argv.slice(2));
+  const args = minimist(process.argv.slice(2), { alias: { r: 'reload' } });
   const positional = args._;
   switch (positional[0]) {
     case 'compile':
       console.info(`Compiling "${positional[1]}" -> "${positional[2]}"...`);
-      await compileSaveFile(positional[1], positional[2]);
+      const reload = !!args['reload'];
+      await compileSaveFile(positional[1], positional[2], { reload });
       break;
     case 'extract':
       console.info(`Extracting "${positional[1]}" -> "${positional[2]}"`);
