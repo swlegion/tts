@@ -16,5 +16,5 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build
+      - name: Compile
         run: npm run compile
