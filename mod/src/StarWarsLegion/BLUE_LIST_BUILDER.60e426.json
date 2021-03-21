@@ -42,7 +42,7 @@
       "Convex": true,
       "MaterialIndex": 3,
       "TypeIndex": 0,
-      "CastShadows": true
+      "CastShadows": false
     },
     "LuaScript": "#include ./BLUE_LIST_BUILDER.60e426.lua",
     "LuaScriptState": "",

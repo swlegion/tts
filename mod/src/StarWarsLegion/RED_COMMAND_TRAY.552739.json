@@ -42,7 +42,7 @@
       "Convex": true,
       "MaterialIndex": 3,
       "TypeIndex": 0,
-      "CastShadows": true
+      "CastShadows": false
     },
     "LuaScript": "#include ./RED_COMMAND_TRAY.552739.lua",
     "LuaScriptState": "",

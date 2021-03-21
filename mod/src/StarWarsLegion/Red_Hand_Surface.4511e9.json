@@ -19,7 +19,8 @@
     "ColorDiffuse": {
       "r": 1,
       "g": 1,
-      "b": 1
+      "b": 1,
+      "a": 0
     },
     "LayoutGroupSortIndex": 0,
     "Locked": true,

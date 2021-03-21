@@ -3,9 +3,9 @@
     "GUID": "c4364f",
     "Name": "Custom_Model_Infinite_Bag",
     "Transform": {
-      "posX": -42.030262,
+      "posX": -44.0724678,
       "posY": 0.9471459,
-      "posZ": -17.8937912,
+      "posZ": -3.00188049,
       "rotX": 0.0000109490848,
       "rotY": 180,
       "rotZ": -0.0000132978457,
@@ -42,9 +42,9 @@
       "NormalURL": "",
       "ColliderURL": "",
       "Convex": true,
-      "MaterialIndex": 0,
+      "MaterialIndex": 3,
       "TypeIndex": 7,
-      "CastShadows": true
+      "CastShadows": false
     },
     "LuaScript": "",
     "LuaScriptState": "",

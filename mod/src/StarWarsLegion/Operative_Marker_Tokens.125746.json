@@ -3,7 +3,7 @@
     "GUID": "125746",
     "Name": "Custom_Model_Infinite_Bag",
     "Transform": {
-      "posX": -46.2621,
+      "posX": -45.2621,
       "posY": 0.9472634,
       "posZ": -20.195549,
       "rotX": -0.0000110126575,
@@ -54,7 +54,7 @@
         "SpecularSharpness": 2,
         "FresnelStrength": 0
       },
-      "CastShadows": true
+      "CastShadows": false
     },
     "LuaScript": "",
     "LuaScriptState": "",

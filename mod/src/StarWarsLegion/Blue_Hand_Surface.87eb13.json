@@ -19,7 +19,8 @@
     "ColorDiffuse": {
       "r": 1,
       "g": 1,
-      "b": 1
+      "b": 1,
+      "a": 0
     },
     "LayoutGroupSortIndex": 0,
     "Locked": true,
@@ -35,7 +36,7 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1749057548226607634/C1986AF3C26609B8B7D8933F99C51C1A89E9EA6B/",
+      "ImageURL": "",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,

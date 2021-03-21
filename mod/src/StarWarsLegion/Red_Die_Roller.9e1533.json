@@ -52,7 +52,7 @@
         "SpecularSharpness": 2,
         "FresnelStrength": 0.0358068645
       },
-      "CastShadows": true
+      "CastShadows": false
     },
     "LuaScript": "#include ./Red_Die_Roller.9e1533.lua",
     "LuaScriptState": "",

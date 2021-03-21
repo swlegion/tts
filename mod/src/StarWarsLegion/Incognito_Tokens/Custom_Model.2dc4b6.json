@@ -40,7 +40,7 @@
       "NormalURL": "",
       "ColliderURL": "",
       "Convex": true,
-      "MaterialIndex": 0,
+      "MaterialIndex": 3,
       "TypeIndex": 0,
       "CastShadows": true
     },
