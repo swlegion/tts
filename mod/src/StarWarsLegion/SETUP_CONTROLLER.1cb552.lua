@@ -194,8 +194,8 @@ function placeObject(paObj)
 end
 
 function spawnDeploymentBoundary(matrix)
-    local bAsset = "http://cloud-3.steamusercontent.com/ugc/1749057761574801767/2DE689AEC5846D465B3F01C9C71D29791596619D/"
-    local rAsset = "http://cloud-3.steamusercontent.com/ugc/1749057761574801093/14D3D1E90CF25C00C116D209A2167F2B8629AFB6/"
+    local bAsset = "http://cloud-3.steamusercontent.com/ugc/1738926104368207752/531BBEE87D18C75A19503307A1A07EA9D0E0438A/"
+    local rAsset = "http://cloud-3.steamusercontent.com/ugc/1738926104368206955/F087A123F300047E9737292752DE512E10641E3B/"
     local xStart = -25
     local zStart = 15
     local yValue = 20
