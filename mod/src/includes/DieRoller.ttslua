@@ -54,12 +54,12 @@ function rollDie(callbackParams)
     local selected = player.getSelectedObjects()
     if selected != nil and #selected > 0 then
       toRoll = {}
-      partialRoll = #selected
       for _, s in pairs(selected) do
         if s.getValue() != nil then
           table.insert(toRoll, s)
         end
       end
+      partialRoll = toRoll
     end
   end
   if toRoll != nil then
@@ -140,10 +140,25 @@ end
 
 function printDieValuesToScreen(dieRecord, dieColors)
   local message = string.upper(colorSide) .. " "
-  if partialRoll == nil or partialRoll == #dieObjs then
+  if partialRoll == nil or #partialRoll == #dieObjs then
     message = message .. "rolled " .. tostring(#dieObjs)
   else
-    message = message .. "re-rolled " .. tostring(partialRoll) .. " of " .. tostring(#dieObjs)
+    local reRolled = {red = 0, black = 0, white = 0}
+    for _, die in pairs(partialRoll) do
+      local sDieColor = die.getVar("dieColor")
+      reRolled[sDieColor] = reRolled[sDieColor] + 1
+    end
+    local reRollMessage = ""
+    if reRolled.red > 0 then
+      reRollMessage = reRollMessage .. (tostring(reRolled.red) .. "R ")
+    end
+    if reRolled.black > 0 then
+      reRollMessage = reRollMessage .. (tostring(reRolled.black) .. "B ")
+    end
+    if reRolled.white > 0 then
+      reRollMessage = reRollMessage .. (tostring(reRolled.white) .. "W ")
+    end
+    message = message .. "re-rolled " .. reRollMessage .. "of " .. tostring(#dieObjs)
   end
   local colors = ""
   if dieColors.red > 0 then
