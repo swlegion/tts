@@ -1,3 +1,4 @@
+#include !/Analytics
 #include !/data/CardInfo
 #include !/data/ListBuilder
 #include !/data/MiniInfo
@@ -5,8 +6,9 @@
 #include !/data/UnitInfo
 
 function onLoad()
-    gameDataGUID = "6bb850"
+    gaTrack("Global", "onLoad", "Version", "4.0.0-beta")
 
+    gameDataGUID = "6bb850"
     battlefieldZoneGUID = "cbc575" -- real
     conditionsZoneGUID = "c49089" -- conditions
     competitiveTerrainZoneGUID = "92b9be"
