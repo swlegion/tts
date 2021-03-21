@@ -4,12 +4,12 @@
     "Name": "HandTrigger",
     "Transform": {
       "posX": 8.5,
-      "posY": 4,
-      "posZ": 48,
+      "posY": 2.25,
+      "posZ": 58,
       "rotX": 0,
       "rotY": 180,
       "rotZ": 0,
-      "scaleX": 70,
+      "scaleX": 36,
       "scaleY": 4,
       "scaleZ": 5
     },
