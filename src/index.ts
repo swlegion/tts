@@ -1,5 +1,7 @@
+import TTS, { OutgoingJsonObject } from '@matanlurey/tts-editor';
 import * as expander from '@matanlurey/tts-expander';
 import * as steam from '@matanlurey/tts-runner/steam_finder';
+import { ObjectState } from '@matanlurey/tts-save-files';
 import fs from 'fs-extra';
 import os from 'os';
 import path from 'path';
@@ -31,9 +33,30 @@ export async function extractSaveFile(
   console.info(`Wrote "${output}"...`);
 }
 
+function concatAllObjectScripts(
+  states: ObjectState[],
+  buffer?: OutgoingJsonObject[],
+): OutgoingJsonObject[] {
+  if (!buffer) {
+    buffer = [];
+  }
+  states.forEach((state) => {
+    buffer!.push({
+      guid: state.GUID!,
+      script: state.LuaScript,
+      ui: state.XmlUI,
+    });
+    if (state.ContainedObjects) {
+      concatAllObjectScripts(state.ContainedObjects, buffer);
+    }
+  });
+  return buffer;
+}
+
 export async function compileSaveFile(
   source: string,
   output: string,
+  options?: { reload: boolean },
 ): Promise<void> {
   if (!fs.pathExists(source)) {
     throw new Error(`No source directory "${source}".`);
@@ -53,6 +76,23 @@ export async function compileSaveFile(
   console.info(`Writing "${output}"...`);
   await fs.writeJson(output, saveFile);
   console.info(`Wrote "${output}"...`);
+  if (options?.reload) {
+    const api = new TTS();
+    const json: OutgoingJsonObject[] = [
+      {
+        guid: '-1',
+        script: saveFile.LuaScript,
+        ui: saveFile.XmlUI,
+      },
+      ...concatAllObjectScripts(saveFile.ObjectStates),
+    ];
+    try {
+      await api.saveAndPlay(json);
+      console.info(`Sent reload command!`);
+    } catch (e) {
+      console.warn(`Could not reload. Is TTS currently running?`);
+    }
+  }
 }
 
 export async function destroySymlink(homeDir?: string): Promise<void> {
