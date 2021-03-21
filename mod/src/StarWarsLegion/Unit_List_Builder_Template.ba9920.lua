@@ -534,14 +534,15 @@ function getListText()
 
         for i, entry in pairs(upgradeCardIndex) do
             if entry.name != nil then
-                returnTable.upgrades[k] = {name = entry.name, varName = entry.varName}
+                returnTable.upgrades[k] = entry.name
+                -- returnTable.upgrades[k] = {name = entry.name, varName = entry.varName}
                 k = k + 1
             end
         end
 
         -- rank
         returnTable.rank = selectedUnit.rank
-        returnTable.varName = selectedUnit.name
+        -- returnTable.varName = selectedUnit.name
         return returnTable
     else
         return nil
