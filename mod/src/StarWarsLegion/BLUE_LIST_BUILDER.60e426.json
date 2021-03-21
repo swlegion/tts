@@ -3,7 +3,7 @@
     "GUID": "60e426",
     "Name": "Custom_Model",
     "Transform": {
-      "posX": -32.7500954,
+      "posX": -35.5000954,
       "posY": 0.942128837,
       "posZ": 22.4785423,
       "rotX": 0.00160364667,
@@ -42,7 +42,7 @@
       "Convex": true,
       "MaterialIndex": 3,
       "TypeIndex": 0,
-      "CastShadows": true
+      "CastShadows": false
     },
     "LuaScript": "#include ./BLUE_LIST_BUILDER.60e426.lua",
     "LuaScriptState": "",

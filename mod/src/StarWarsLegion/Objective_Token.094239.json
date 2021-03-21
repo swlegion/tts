@@ -13,7 +13,7 @@
       "scaleY": 1.99999917,
       "scaleZ": 1.99999917
     },
-    "Nickname": "Objective Token",
+    "Nickname": "Objective Tokens",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -44,7 +44,7 @@
       "Convex": true,
       "MaterialIndex": 3,
       "TypeIndex": 7,
-      "CastShadows": true
+      "CastShadows": false
     },
     "LuaScript": "",
     "LuaScriptState": "",

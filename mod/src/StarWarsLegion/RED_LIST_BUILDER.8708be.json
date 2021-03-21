@@ -3,7 +3,7 @@
     "GUID": "8708be",
     "Name": "Custom_Model",
     "Transform": {
-      "posX": -35.03033,
+      "posX": -37.78033,
       "posY": 0.9409819,
       "posZ": -22.5352726,
       "rotX": 0.0136225633,
@@ -42,7 +42,7 @@
       "Convex": true,
       "MaterialIndex": 3,
       "TypeIndex": 0,
-      "CastShadows": true
+      "CastShadows": false
     },
     "LuaScript": "#include ./RED_LIST_BUILDER.8708be.lua",
     "LuaScriptState": "",
