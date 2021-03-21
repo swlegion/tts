@@ -6,7 +6,7 @@ import { compileSaveFile, createSymlink, extractSaveFile } from '../src';
 require('make-promises-safe');
 
 (async () => {
-  const args = minimist(process.argv.slice(2));
+  const args = minimist(process.argv.slice(2), { alias: { r: 'reload' } });
   const positional = args._;
   switch (positional[0]) {
     case 'compile':
