@@ -203,13 +203,16 @@ function unitSubMenu(selectedRank)
 
             _G["subMenu"..i] = function() spawnUnitCard(entry) end
 
-            local fontSize = correctStringLength(entry.name)
+            -- local maxNameLength = math.min(entry.name:len(), DISPLAY_NAME_CHAR_LIMIT)
+            local nameToDisplay = entry.name
+            if entry.displayName then nameToDisplay = entry.displayName end
+            local fontSize = correctStringLength(nameToDisplay)
             local relativeIndex = i - (unitCardPage * 6)
 
             self.createButton({
                 click_function = "subMenu"..i,
                 function_owner = self,
-                label          = entry.name,
+                label          = nameToDisplay,
                 position       = {0.93, 0.28, 2.48-(relativeIndex*0.35)},
                 width          = 1010,
                 height         = 190,
@@ -217,7 +220,7 @@ function unitSubMenu(selectedRank)
                 rotation       = {0,180,0},
                 color          = {0.1764, 0.1764, 0.1764, 0.01},
                 font_color     = {0, 0, 0, 100},
-                tooltip        = "Spawn ".. entry.name.." Unit Card"
+                tooltip        = "Spawn ".. entry.name .." Unit Card"
             })
         else
             createDudMenuButton({0.93, 0.28, 2.48-(i*0.35)})

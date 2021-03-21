@@ -8,6 +8,7 @@ function UnitClass:create(params)
   local unit = {}
   setmetatable(unit, UnitClass)
   unit.name = params.name
+  unit.displayName = params.displayName or nil
   unit.miniInfo = params.miniInfo or nil
   unit.rank = params.rank
   unit.baseSize = params.baseSize
@@ -78,6 +79,7 @@ function CardInfoClass:buildCardInfo()
     -- Rebel Commander
     UnitClass:create({
       name = "Luke Skywalker Hero of the Rebellion",
+      displayName = "Luke Skywalker",
       miniInfo = { miniInfo.lukeSkywalker },
       rank = "Commander",
       baseSize = "small",
@@ -87,6 +89,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Leia Organa Fearless and Inventive",
+      displayName = "Leia Organa",
       miniInfo = { miniInfo.leiaOrgana },
       rank = "Commander",
       baseSize = "small",
