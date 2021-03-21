@@ -1,5 +1,7 @@
 # Tabletop Simulator Mod for Star Wars: Legion
 
+[![CI](https://github.com/swlegion/tts/actions/workflows/nodejs.yml/badge.svg)](https://github.com/swlegion/tts/actions/workflows/nodejs.yml)
+
 This project is a community-contributed open source mod for
 [Tabletop Simulator][1], emulating some features and game play of
 [Star Wars Legion][2]. It is periodically updated to the [Steam Workshop][3].
