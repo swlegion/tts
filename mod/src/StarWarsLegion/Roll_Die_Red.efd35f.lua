@@ -9,7 +9,7 @@ function onload()
 end
 
 
-function buttonPress()
-    self.AssetBundle.playTriggerEffect(0) --triggers animation/sound
-    dieRoller.call("rollDie")
+function buttonPress(_, color)
+  self.AssetBundle.playTriggerEffect(0) --triggers animation/sound
+  dieRoller.call("rollDie", {color})
 end

@@ -41,13 +41,14 @@ end
 
 function dud() end
 
-function rollDie()
+function rollDie(callbackParams)
   if isRolling == true then
     return
   end
   isRolling = true
   partialRoll = nil
-  local player = Player[colorSide]
+  local color = callbackParams[1]
+  local player = Player[color]
   local toRoll = dieObjs
   if player != nil then
     local selected = player.getSelectedObjects()
