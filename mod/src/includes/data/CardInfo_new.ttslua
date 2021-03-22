@@ -4,6 +4,7 @@ CardInfoClass.__index = CardInfoClass
 UnitClass = {}
 UnitClass.__index = UnitClass
 
+-- UnitClass constructor
 function UnitClass:create(params)
   local unit = {}
   setmetatable(unit, UnitClass)
@@ -39,6 +40,7 @@ function UnitClass:upgradeIsAllowed(upgrade)
   return isAllowed
 end
 
+-- "public" method used by the list builder to filter a list of upgrades to only those which are allowed for the unit
 function UnitClass:filterAllowedUpgrades(upgrades)
   local tbl = {}
 
@@ -51,6 +53,7 @@ function UnitClass:filterAllowedUpgrades(upgrades)
   return tbl
 end
 
+-- CardInfoClass constructor
 function CardInfoClass:buildCardInfo()
   local miniInfo = buildMiniInfo()
   local cardInfoDB = {}
@@ -632,6 +635,7 @@ function CardInfoClass:buildCardInfo()
   return returnTable
 end
 
+-- "public" method to filter the upgrade database by type
 function CardInfoClass:getUpgradesByType(type)
   local tbl = {}
   for key, val in pairs(self.upgradeCards) do
@@ -643,6 +647,7 @@ function CardInfoClass:getUpgradesByType(type)
   return tbl
 end
 
+-- "public" method to filter the unit database by the intersection of faction and rank
 function CardInfoClass:getUnitsByFactionAndRank(faction, rank)
   local tbl = {}
   for key, val in pairs(self.unitCards) do
