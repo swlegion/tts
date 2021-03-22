@@ -157,7 +157,7 @@ function buildListBuilder()
         cards = {"Son of Skywalker", "My Ally Is the Force", "Return of the Jedi"},
         cards2 = {"You Serve Your Master Well", "Full of Surprises", "I am a Jedi"}
     }
-    listBuilder.commandCards.lukeSkywalkerJediKnight = {
+    listBuilder.commandCards["luke skywalker jedi knight"] = {
         varName = "lukeSkywalkerJediKnight",
         cards = {"Son of Skywalker", "My Ally Is the Force", "Return of the Jedi"},
         cards2 = {"You Serve Your Master Well", "Full of Surprises", "I am a Jedi"}
@@ -166,42 +166,42 @@ function buildListBuilder()
         varName = "leiaOrgana",
         cards = {"Coordinated Bombardment","No Time for Sorrows","Somebody Has to Save Our Skins"}
     }
-    listBuilder.commandCards.hanSolo = {
+    listBuilder.commandCards["han solo unorthodox general"] = {
         varName = "hanSolo",
         cards = {"Sorry About the Mess","Reckless Diversion","Change of Plans"}
     }
-    listBuilder.commandCards.jynErso = {
+    listBuilder.commandCards["jyn erso stardust"] = {
         varName = "jynErso",
         cards = {"Rebellious","Trust Goes Both Ways","Complete the Mission"}
     }
-    listBuilder.commandCards.cassianAndor = {
+    listBuilder.commandCards["cassian andor capable intelligence agent"] = {
         varName = "cassianAndor",
         cards = {"Crack Shot","Last Stand","Volunteer Mission"}
     }
-    listBuilder.commandCards.k2so = {
+    listBuilder.commandCards["k-2so sardonic security droid"] = {
         varName = "k2so",
         cards = {"Ambush", "Push", "Sacrifice"}
     }
-    listBuilder.commandCards.chewbacca = {
+    listBuilder.commandCards["chewbacca walking carpet"] = {
         varName = "chewbacca",
         cards = {"Common Cause","Brains and Brawn","Notorious Scoundrels"}
     }
-    listBuilder.commandCards.sabineWren = {
+    listBuilder.commandCards["sabine wren explosive artist"] = {
         varName = "sabineWren",
         cards = {"Explosions!","Symbol of Rebellion","Legacy of Mandalore"}
     }
-    listBuilder.commandCards.r2d2 = {
+    listBuilder.commandCards["r2-d2 hero of a thousand devices"] = {
         varName = "r2d2",
         cards = {"Blast Off!", "Impromptu Immolation", "Smoke Screen"}
     }
-    listBuilder.commandCards.c3po = {
+    listBuilder.commandCards["c3po human-cyborg relations"] = {
         varName = "c3po",
         cards = {"Ambush", "Push", "Assault"}
     }
-    listBuilder.commandCards.rebelOfficer = {
+    listBuilder.commandCards["rebel officer resolute commander"] = {
         varName = "rebelOfficer"
     }
-    listBuilder.commandCards.landoCalrissian = {
+    listBuilder.commandCards["lando calrissian smooth operator"] = {
         varName = "landoCalrissian",
         cards = {"Idiots Array", "Ace Up His Sleeve", "All In"}
     }
