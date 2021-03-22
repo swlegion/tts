@@ -436,10 +436,24 @@ function spawnArmy(loadListData)
               end
           end
 
+          spawnedMinisNumber = 0
+
+          listBuilder = Global.getTable("listBuilder")
+          local tempPos = listBuilder[colorSide.."TemplatePos"][n]
+          tempPos.x = tempPos.x - 2
+          local xOffset = 1.25
+          local zOffset = 1.75
+          if (tempPos.z < 0) then 
+            tempPos.z = tempPos.z - 2
+            zOffset = zOffset * -1
+          else
+            tempPos.z = tempPos.z + 2
+          end
+
           for m, data in pairs(cardInfo.unitCards[spawnMiniTable.varName].miniInfo) do
               -- math position
-              listBuilder = Global.getTable("listBuilder")
-              spawnPos = translatePos(listBuilder[colorSide.."TemplatePos"][n], self.getRotation(), listBuilder.miniSpawnPos[m].c, listBuilder.miniSpawnPos[m].q+90)
+
+              spawnPos = simpleTranslatePos(tempPos, xOffset * spawnedMinisNumber, zOffset)
 
               if m == 1 and upgradeLeader == true and data.altModelInfo != nil then
                   passedData = data.altModelInfo
@@ -451,9 +465,12 @@ function spawnArmy(loadListData)
               local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, passedData)
 
               table.insert(spawnMiniTable.miniObjs, {obj = spawnedMini, name = data.name})
-              spawnedMinisNumber = m
+              spawnedMinisNumber = spawnedMinisNumber + 1
           end
 --
+          --reset minis count so upgrades spawn in a new row
+          spawnedMinisNumber = 0
+
           -- spawn upgrade minis
           for q, upgrade in pairs(unit.upgrades) do
               listBuilder = Global.getTable("listBuilder")
@@ -463,9 +480,7 @@ function spawnArmy(loadListData)
                   local spawnMiniInfo = cardInfo.upgradeCards[upgrade.varName].miniInfo
 
                   -- math position
-                  spawnedMinisNumber = spawnedMinisNumber + 1
-
-                  local spawnPos = translatePos(listBuilder[colorSide.."TemplatePos"][n], self.getRotation(), listBuilder.miniSpawnPos[spawnedMinisNumber].c, listBuilder.miniSpawnPos[spawnedMinisNumber].q+90)
+                  spawnPos = simpleTranslatePos(tempPos, xOffset * spawnedMinisNumber, zOffset * 2)
 
                   -- spawnMinis
 
@@ -478,6 +493,7 @@ function spawnArmy(loadListData)
                   end
 
                   table.insert(spawnMiniTable.miniObjs, insertInfo)
+                  spawnedMinisNumber = spawnedMinisNumber + 1
               end
           end
 

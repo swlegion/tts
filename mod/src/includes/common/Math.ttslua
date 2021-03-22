@@ -10,3 +10,8 @@ function translatePos(originPos, originRot, distance, angle)
 
   return pos
 end
+
+function simpleTranslatePos(originPos, xOffset, zOffset)
+    local pos = {originPos.x + xOffset, originPos.y, originPos.z + zOffset}
+    return pos
+end
