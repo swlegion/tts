@@ -194,11 +194,30 @@ function placeObject(paObj)
 end
 
 function spawnDeploymentBoundary(matrix)
+    local function invertMatrix(input)
+      -- See https://github.com/swlegion/tts/issues/275.
+      local output = {}
+      local height = #input
+      local width  = #input[1]
+      for y = 1, height, 1 do
+        output[y] = {}
+        for x = 1, width, 1 do
+          output[y][x] = " "
+        end
+      end
+      for y = 1, height, 1 do
+        for x = 1, width, 1 do
+          output[y][x] = input[height + 1 - y][width + 1 - x]
+        end
+      end
+      return output
+    end
     local bAsset = "http://cloud-3.steamusercontent.com/ugc/1738926104368207752/531BBEE87D18C75A19503307A1A07EA9D0E0438A/"
     local rAsset = "http://cloud-3.steamusercontent.com/ugc/1738926104368206955/F087A123F300047E9737292752DE512E10641E3B/"
     local xStart = -25
     local zStart = 15
     local yValue = 20
+    matrix = invertMatrix(matrix)
     -- matrix is in the format of
     -- { x, x, x, x, x, x, x, x, x, x, x, x }
     -- { x, x, x, x, x, x, x, x, x, x, x, x }
