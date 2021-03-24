@@ -71,7 +71,7 @@ function splitTokens()
 end
 
 function setTokenPosDelay(obj, index)
-  setTokenPos(obj, index[1])
+  Wait.frames(function() setTokenPos(obj, index[1]) end)
 end
 
 function setTokenPos(obj, index)
