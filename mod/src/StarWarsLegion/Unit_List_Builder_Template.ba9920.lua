@@ -429,7 +429,8 @@ function drawUpgradeMenu()
         spawnUpgradeCard(
           requiredUpgrades[upIndex],
           templateMenu.upgradeCardPos[i],
-          i
+          i,
+          true
         )
         upIndex = upIndex + 1
       end
@@ -446,7 +447,7 @@ function prevUpgradeMenu(selectionNumber)
     upgradeMenu()
 end
 
-function spawnUpgradeCard(cardData, cardPos, upgradeNumber)
+function spawnUpgradeCard(cardData, cardPos, upgradeNumber, requiredUpgrade)
     local originalUpgradeCards = getObjectFromGUID(cardInfo.upgradeCardsGUID)
     local upgradeCards = originalUpgradeCards.clone({ position = {0,-30,0} })
     local cardName = cardData.name
@@ -484,20 +485,22 @@ function spawnUpgradeCard(cardData, cardPos, upgradeNumber)
     upgradeCardIndex[upgradeNumber] = cardData
     upgradeCardInstance[upgradeNumber] = upgradeCard
 
-    local functionName = "destroyUpgrade" .. upgradeCard.getGUID()
-    _G[functionName] = function() destroyUpgradeCard(upgradeNumber) end
-    upgradeCard.createButton({
-        click_function = functionName,
-        function_owner = self,
-        label          = "X",
-        position       = {-0.95,0.5,-1.4},
-        width          = 140,
-        height         = 180,
-        font_size      = 100,
-        color          = {1,0,0},
-        font_color     = {1,1,1},
-        tooltip        = "Delete Upgrade Card"
-    })
+    if requiredUpgrade != true then
+      local functionName = "destroyUpgrade" .. upgradeCard.getGUID()
+      _G[functionName] = function() destroyUpgradeCard(upgradeNumber) end
+      upgradeCard.createButton({
+          click_function = functionName,
+          function_owner = self,
+          label          = "X",
+          position       = {-0.95,0.5,-1.4},
+          width          = 140,
+          height         = 180,
+          font_size      = 100,
+          color          = {1,0,0},
+          font_color     = {1,1,1},
+          tooltip        = "Delete Upgrade Card"
+      })
+    end
 end
 
 function destroyUpgradeCard(index)
