@@ -107,46 +107,46 @@ function buildListBuilder()
 
     listBuilder.commandCards = {}
     -- IMPERIAL
-    listBuilder.commandCards.generalVeers = {
+    listBuilder.commandCards["General Veers Master Tactician"] = {
         varName = "generalVeers",
         cards = {"Maximum Firepower","Evasive Maneuvers","Imperial Discipline"}
 
     }
-    listBuilder.commandCards.imperialOfficer = {
+    listBuilder.commandCards["Imperial Officer Ruthless Commander"] = {
         varName = "imperialOfficer"
     }
-    listBuilder.commandCards.darthVader = {
+    listBuilder.commandCards["Darth Vader Dark Lord of the Sith"] = {
         varName = "darthVader",
         cards = {"Implacable","New Ways to Motivate Them","Master of Evil"},
         cards2 = {"Vaders Might","Fear and Dead Men","Darkness Descends"}
     }
-    listBuilder.commandCards.darthVaderTheEmperorsApprentice = {
+    listBuilder.commandCards["Darth Vader The Emperor's Apprentice"] = {
         varName = "darthVaderTheEmperorsApprentice",
         cards = {"Implacable","New Ways to Motivate Them","Master of Evil"},
         cards2 = {"Vaders Might","Fear and Dead Men","Darkness Descends"}
     }
-    listBuilder.commandCards.emperorPalpatine = {
+    listBuilder.commandCards["Emperor Palpatine Rule of the Galactic Empire"] = {
         varName = "emperorPalpatine",
         cards = {"And Now... You Will Die", "Give in to Your Anger", "An Entire Legion"}
     }
-    listBuilder.commandCards.directorOrsonKrennic = {
+    listBuilder.commandCards["Director Orson Krennic Architect of Terror"] = {
         varName = "directorOrsonKrennic",
         cards = {"Voracious Ambition", "Deploy the Garrison", "Annihilation Looms"}
     }
-    listBuilder.commandCards.idenVersio = {
+    listBuilder.commandCards["Iden Versio Inferno Squad Leader"] = {
         varName = "idenVersio",
         cards = {"Pulse Scan", "Concussive Blast", "Tactical Strike"},
         cards2 = {"Ambush", "Incapacitate", "Assault"}
     }
-    listBuilder.commandCards.agentKallus = {
+    listBuilder.commandCards["Agent Kallus Hunter of Spectres"] = {
         varName = "agentKallus",
         cards = {"Face Me!", "ISB Investigation", "Ruthless Tactics"}
     }
-    listBuilder.commandCards.bobaFett = {
+    listBuilder.commandCards["Boba Fett Infamous Bounty Hunter"] = {
         varName = "bobaFett",
         cards = {"Whipcord Launcher", "ZX Flame Projector", "Z-6 Jetpack Rocket"}
     }
-    listBuilder.commandCards.bossk = {
+    listBuilder.commandCards["Bossk Trandoshan Terror"] = {
         varName = "bossk",
         cards = {"Merciless Munitions", "Reptilian Rampage", "Lying in Wait"}
     }
