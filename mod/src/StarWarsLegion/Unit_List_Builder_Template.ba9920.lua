@@ -302,6 +302,15 @@ function updateCommandCardSelection(a1,b2)
 end
 
 function upgradeMenu()
+    if spawnedRequiredUpgrades != nil then
+      for _, o in ipairs(spawnedRequiredUpgrades) do
+        if o != nil then
+          destroyObject(o)
+        end
+      end
+    end
+    spawnedRequiredUpgrades = {}
+
     if selectedUnit != nil then
         local unitCard = cardInfo.unitCards[selectedUnit]
         availableUpgrades = unitCard.availableUpgrades
@@ -434,6 +443,7 @@ function drawUpgradeMenu()
         )
         upIndex = upIndex + 1
       end
+      requiredUpgrades = {}
     end
 end
 
@@ -500,6 +510,8 @@ function spawnUpgradeCard(cardData, cardPos, upgradeNumber, requiredUpgrade)
           font_color     = {1,1,1},
           tooltip        = "Delete Upgrade Card"
       })
+    else
+      table.insert(spawnedRequiredUpgrades, upgradeCard)
     end
 end
 
