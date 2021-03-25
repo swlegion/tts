@@ -429,8 +429,7 @@ function drawUpgradeMenu()
         spawnUpgradeCard(
           requiredUpgrades[upIndex],
           templateMenu.upgradeCardPos[i],
-          i,
-          true
+          i
         )
         upIndex = upIndex + 1
       end
@@ -447,7 +446,7 @@ function prevUpgradeMenu(selectionNumber)
     upgradeMenu()
 end
 
-function spawnUpgradeCard(cardData, cardPos, upgradeNumber, requiredUpgrade)
+function spawnUpgradeCard(cardData, cardPos, upgradeNumber)
     local originalUpgradeCards = getObjectFromGUID(cardInfo.upgradeCardsGUID)
     local upgradeCards = originalUpgradeCards.clone({ position = {0,-30,0} })
     local cardName = cardData.name
@@ -485,22 +484,20 @@ function spawnUpgradeCard(cardData, cardPos, upgradeNumber, requiredUpgrade)
     upgradeCardIndex[upgradeNumber] = cardData
     upgradeCardInstance[upgradeNumber] = upgradeCard
 
-    if requiredUpgrade != true then
-      local functionName = "destroyUpgrade" .. upgradeCard.getGUID()
-      _G[functionName] = function() destroyUpgradeCard(upgradeNumber) end
-      upgradeCard.createButton({
-          click_function = functionName,
-          function_owner = self,
-          label          = "X",
-          position       = {-0.95,0.5,-1.4},
-          width          = 140,
-          height         = 180,
-          font_size      = 100,
-          color          = {1,0,0},
-          font_color     = {1,1,1},
-          tooltip        = "Delete Upgrade Card"
-      })
-    end
+    local functionName = "destroyUpgrade" .. upgradeCard.getGUID()
+    _G[functionName] = function() destroyUpgradeCard(upgradeNumber) end
+    upgradeCard.createButton({
+        click_function = functionName,
+        function_owner = self,
+        label          = "X",
+        position       = {-0.95,0.5,-1.4},
+        width          = 140,
+        height         = 180,
+        font_size      = 100,
+        color          = {1,0,0},
+        font_color     = {1,1,1},
+        tooltip        = "Delete Upgrade Card"
+    })
 end
 
 function destroyUpgradeCard(index)
