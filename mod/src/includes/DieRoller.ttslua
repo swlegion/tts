@@ -63,15 +63,19 @@ function rollDie(callbackParams)
     end
   end
   if toRoll != nil then
+    local rolled = 0
     for _, obj in pairs(toRoll) do
       if obj != nil then
         simulatedRoll(obj)
+        rolled = rolled + 1
       end
     end
-    Wait.time(function()
-      isRolling = false
-      printDieValues()
-    end, 1.25)
+    if rolled > 0 then
+      Wait.time(function()
+        isRolling = false
+        printDieValues()
+      end, 1.25)
+    end
   end
 end
 
@@ -80,6 +84,7 @@ function simulatedRoll(dice)
   local count = 10
   local pos = dice.getPosition()
   dice.setPosition({pos.x, pos.y + 5, pos.z})
+  dice.setRotation(sides[math.random(1, #sides)].rotation, false, true)
   dice.interactable = false
   local timer = Wait.time(function()
     if dice != nil then
