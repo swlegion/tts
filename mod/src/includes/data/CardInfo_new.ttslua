@@ -71,9 +71,9 @@ function CardInfoClass:buildCardInfo()
      { name = "Iden's ID10 Seeker Droid Droid", type = "counterpart", ptCost = 15, miniInfo = miniInfo.id10, restrictions = {units={"iden versio inferno squad leader"}} },
 
     -- Armament
-    { name = "A-300", type = "armament", ptCost = 0, restrictions = {units={"rebel pathfinders"}} },
-    { name = "A-180", type = "armament", ptCost = 0, restrictions = {units={"jyn erso stardust"}} },
-    { name = "Jyns SE-14 Blaster", type = "armament", ptCost = 10, restrictions = {units={"jyn erso stardust", "k-2so sardonic security droid"}} },
+    { name = "A-300 Config", type = "armament", ptCost = 0, restrictions = {units={"rebel pathfinders"}} },
+    { name = "A-180 Config", type = "armament", ptCost = 0, restrictions = {units={"jyn erso stardust"}} },
+    { name = "Jyn's SE-14 Blaster", type = "armament", ptCost = 10, restrictions = {units={"jyn erso stardust", "k-2so sardonic security droid"}} },
     { name = "A-280-CFE Config", type = "armament", ptCost = 10, restrictions = {units={"cassian andor capable intelligence agent"}} },
     { name = "The Darksaber", type = "armament", ptCost = 15, restrictions = {units={"sabine wren explosive artist"}} },
     { name = 'Jetpack Rockets', type = "armament", ptCost = 8, restrictions = {units={"mandalorian resistance", "mandalorian resistance clan wren"}} },
