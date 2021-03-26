@@ -1020,7 +1020,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.droidekaLeader, miniInfo.droideka1 },
       rank = "Support",
       selectedSpeed = 1,
-      baseSize = "medium"
+      baseSize = "medium",
       faction = "separatist",
       upgradeSlots = {"comms"},
     }),
@@ -1030,7 +1030,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.STAPLeader, miniInfo.STAP1 },
       rank = "Support",
       selectedSpeed = 3,
-      baseSize = "medium"
+      baseSize = "medium",
       faction = "separatist",
       upgradeSlots = {"comms"},
     }),
@@ -1041,7 +1041,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.aatTank },
       rank = "Heavy",
       selectedSpeed = 1,
-      baseSize = "epic"
+      baseSize = "epic",
       faction = "separatist",
       upgradeSlots = {"pilot", "ordnance", "ordnance", "comms"},
     }),
