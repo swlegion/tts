@@ -17,7 +17,8 @@ function UnitClass:create(params)
   unit.faction = params.faction
   unit.selectedSpeed = params.selectedSpeed or 2
   unit.buttonHeight = params.buttonHeight or 2
-  unit.upgradeSlots = params.upgradeSlots
+  unit.upgradeSlots = params.upgradeSlots or nil
+  unit.upgrades = params.upgrades or {}
   unit.requiredUpgrades = params.requiredUpgrades or nil
   unit.noToken = params.noToken or nil
   -- format commandType as, e.g., 'rebelCommander'
@@ -26,7 +27,7 @@ function UnitClass:create(params)
   return unit
 end
 
-function UnitClass:upgradeIsAllowed(upgrade)
+function UnitClass:_upgradeIsAllowed(upgrade)
   local isAllowed = true
 
   if upgrade.restrictions ~= nil then
@@ -46,11 +47,61 @@ function UnitClass:filterAllowedUpgrades(upgrades)
   local tbl = {}
 
   for i, val in ipairs(upgrades) do
-    if self:upgradeIsAllowed(val) then
+    if self:_upgradeIsAllowed(val) then
       table.insert(tbl, val)
     end
   end
 
+  return tbl
+end
+
+function UnitClass:addUpgrade(upgrade)
+  if self.upgrades == nil then self.upgrades = {} end
+  table.insert(self.upgrades, upgrade)
+end
+
+function UnitClass:addUpgrades(upgradeList)
+  for k, v in pairs(upgradeList) do
+    self:addUpgrade(v)
+  end
+end
+
+-- returns a flat array of all minis in the unit, including minis from upgrades
+-- also returns the index of the unit's leader mini
+function UnitClass:getMinisTable()
+  local minisTable = {}
+  local upgradesWithMinis = self:_getUpgradesWithMinis()
+  local leaderIndex = 1
+
+  for k, v in pairs(self.miniInfo) do
+    table.insert(minisTable, v)
+  end
+  if self.upgrades ~= nil then
+    for i, upgrade in ipairs(upgradesWithMinis) do
+      if upgrade.miniInfo ~= nil then
+        table.insert(minisTable, upgrade.miniInfo)
+        if upgrade.miniInfo.leader == true then
+          leaderIndex = #self.miniInfo + i
+        end
+      end
+    end
+  end
+
+  -- special case for the Heavy Weapon Team keyword
+  if string.find(self.name:lower(), "strike team") then
+    leaderIndex = #self.miniInfo + 1
+  end
+
+  return minisTable, leaderIndex
+end
+
+function UnitClass:_getUpgradesWithMinis()
+  local tbl = {}
+  for i, upgrade in ipairs(self.upgrades) do
+    if upgrade.miniInfo ~= nil then
+      table.insert(tbl, upgrade)
+    end
+  end
   return tbl
 end
 
@@ -183,9 +234,7 @@ function CardInfoClass:buildCardInfo()
     { name = "CM-0/93 Trooper", type="heavy weapon", ptCost = 26, miniInfo = miniInfo.cm093Trooper, restrictions = {units={"rebel veterans"}} },
 
     { name = "DH-447 Sniper", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.dh447Sniper, restrictions = {units={"rebel commandos", "rebel commandos strike team"}} },
-    { name = "DH-447 Sniper", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.dh447SniperLeader, restrictions = {units={"rebel commandos strike team"}}, leader = true },
-    { name = "Proton Charge Saboteur", type="heavy weapon", ptCost = 26, miniInfo = miniInfo.protonChargeSaboteur, restrictions = {units={"rebel commandos"}} },
-    { name = "Proton Charge Saboteur", type="heavy weapon", ptCost = 26, miniInfo = miniInfo.protonChargeSaboteurLeader, restrictions = {units={"rebel commandos strike team"}}, leader = true },
+    { name = "Proton Charge Saboteur", type="heavy weapon", ptCost = 26, miniInfo = miniInfo.protonChargeSaboteur, restrictions = {units={"rebel commandos", "rebel commandos strike team"}} },
 
     { name = "Bowcaster Wookiee", type="heavy weapon", ptCost = 31, miniInfo = miniInfo.bowcasterWookiee, restrictions = {units={"wookiee warriors"}} },
     
@@ -208,10 +257,8 @@ function CardInfoClass:buildCardInfo()
 
     { name = "Electrostaff Guard", type="heavy weapon", ptCost = 25, miniInfo = miniInfo.electrostaffGuard, restrictions = {units={"imperial royal guards"}} },
 
-    { name = "DLT-19x Sniper", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.dlt19xSniper, restrictions = {units={"scout troopers"}} },
-    { name = "DLT-19x Sniper", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.dlt19xSniperLeader, restrictions = {units={"scout troopers strike team"}}, leader = true },
-    { name = "Sonic Charge Saboteur", type="heavy weapon", ptCost = 26, miniInfo = miniInfo.sonicChargeSaboteurLeader, restrictions = {units={"scout troopers"}} },
-    { name = "Sonic Charge Saboteur", type="heavy weapon", ptCost = 26, miniInfo = miniInfo.sonicChargeSaboteur, restrictions = {units={"scout troopers strike team"}}, leader = true },
+    { name = "DLT-19x Sniper", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.dlt19xSniper, restrictions = {units={"scout troopers", "scout troopers strike team"}} },
+    { name = "Sonic Charge Saboteur", type="heavy weapon", ptCost = 26, miniInfo = miniInfo.sonicChargeSaboteurLeader, restrictions = {units={"scout troopers", "scout troopers strike team"}} },
     
     { name = "T-21 Special Forces Trooper", type="heavy weapon", ptCost = 29, miniInfo = miniInfo.isfT21, restrictions = {units={"imperial special forces"}} },
 
@@ -229,8 +276,7 @@ function CardInfoClass:buildCardInfo()
     { name = "Z-6 Phase II Trooper", type="heavy weapon", ptCost = 27, miniInfo = miniInfo.z6PhaseIITrooper, restrictions = {units={"phase ii clone troopers"}} },
     { name = "Phase II Mortar Trooper", type="heavy weapon", ptCost = 20, miniInfo = miniInfo.mortarPhaseIITrooper, restrictions = {units={"phase ii clone troopers"}} },
 
-    { name = "DC-15x ARC Trooper", type="heavy weapon", ptCost = 31, miniInfo = miniInfo.arcTrooperDC15x, restrictions = {units={"arc troopers"}} },
-    { name = "DC-15x ARC Trooper", type="heavy weapon", ptCost = 31, miniInfo = miniInfo.arcTrooperDC15xLeader, restrictions = {units={"arc troopers strike team"}}, leader = true },
+    { name = "DC-15x ARC Trooper", type="heavy weapon", ptCost = 31, miniInfo = miniInfo.arcTrooperDC15x, restrictions = {units={"arc troopers", "arc troopers strike team"}} },
     { name = "Echo", type="heavy weapon", ptCost = 40, miniInfo = miniInfo.echoLeader, restrictions = {units={"arc troopers", "arc troopers strike team"}} },
     { name = "Fives", type="heavy weapon", ptCost = 36, miniInfo = miniInfo.fivesLeader, restrictions = {units={"arc troopers", "arc troopers strike team"}} },
 
@@ -242,10 +288,8 @@ function CardInfoClass:buildCardInfo()
     { name = "B2-ACM Trooper", type="heavy weapon", ptCost = 24, miniInfo = miniInfo.b2ACMTrooper, restrictions = {units={"b2 super battle droids"}} },
     { name = "B2-HA Trooper", type="heavy weapon", ptCost = 30, miniInfo = miniInfo.b2HATrooper, restrictions = {units={"b2 super battle droids"}} },
 
-    { name = "BX-Series Droid Sniper", type="heavy weapon", ptCost = 30, miniInfo = miniInfo.bxCommandoDroidSniper, restrictions = {units={"bx-series droid commandos"}} },
-    { name = "BX-Series Droid Sniper", type="heavy weapon", ptCost = 30, miniInfo = miniInfo.bxCommandoDroidSniperLeader, restrictions = {units={"bx-series droid commandos strike team"}}, leader = true },
-    { name = "BX-Series Droid Saboteur", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.bxCommandoDroidSaboteur, restrictions = {units={"bx-series droid commandos"}} },
-    { name = "BX-Series Droid Saboteur", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.bxCommandoDroidSaboteurLeader, restrictions = {units={"bx-series droid commandos strike team"}}, leader = true },
+    { name = "BX-Series Droid Sniper", type="heavy weapon", ptCost = 30, miniInfo = miniInfo.bxCommandoDroidSniper, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
+    { name = "BX-Series Droid Saboteur", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.bxCommandoDroidSaboteur, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
     
     -- Ordnance
     { name = "Armor-Piercing Shells", type = "ordnance", ptCost = 10 },
@@ -1079,6 +1123,17 @@ function CardInfoClass:getUpgradesByType(type)
     if val.type == type then
       table.insert(tbl, val)
     end
+  end
+
+  return tbl
+end
+
+-- convenience method for getting multiple upgrade objects at once
+function CardInfoClass:getUpgradesByNames(upgradeNames)
+  local tbl = {}
+
+  for k, name in pairs(upgradeNames) do
+    table.insert(tbl, self.upgradeCards[name:lower()])
   end
 
   return tbl

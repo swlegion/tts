@@ -392,6 +392,19 @@ function spawnArmy(loadListData)
   end
 end
 
+function copyTable(obj, seen)
+  -- Handle non-tables and previously-seen tables.
+  if type(obj) ~= 'table' then return obj end
+  if seen and seen[obj] then return seen[obj] end
+
+  -- New table; mark it as seen and copy recursively.
+  local s = seen or {}
+  local res = {}
+  s[obj] = res
+  for k, v in pairs(obj) do res[copyTable(k, s)] = copyTable(v, s) end
+  return setmetatable(res, getmetatable(obj))
+end
+
 function spawnUnit(unit, n, faction)
   spawnMiniTable = {}
 
@@ -405,6 +418,9 @@ function spawnUnit(unit, n, faction)
   
   local unitKey = spawnMiniTable.name:lower()
 
+  local unitObject = copyTable(cardInfo.unitCards[unitKey])
+  local upgradeObjects = cardInfo:getUpgradesByNames(unit.upgrades)
+  unitObject:addUpgrades(upgradeObjects)
 
   -- initialise
   templatePos = listBuilder[colorSide.."TemplatePos"][n]
@@ -432,63 +448,19 @@ function spawnUnit(unit, n, faction)
 
   -- SPAWN MINIS
   -- mini table
+  local minisToSpawn, leaderIndex = unitObject:getMinisTable()
+  spawnMiniTable.leaderIndex = leaderIndex
 
-  -- detect leader
-  upgradeLeader = false
-  for u, upgrade in pairs(unit.upgrades) do
+  for i, miniData in ipairs(minisToSpawn) do
     listBuilder = Global.getTable("listBuilder")
-
-    if cardInfo.upgradeCards[upgrade:lower()].miniInfo != nil then
-      if cardInfo.upgradeCards[upgrade:lower()].miniInfo.leader == true then
-        upgradeLeader = true
-      end
-    end
-  end
-
-  for m, data in pairs(cardInfo.unitCards[unitKey].miniInfo) do
-    -- math position
-    listBuilder = Global.getTable("listBuilder")
-    spawnPos = translatePos(listBuilder[colorSide.."TemplatePos"][n], self.getRotation(), listBuilder.miniSpawnPos[m].c, listBuilder.miniSpawnPos[m].q+90)
-    
-    if m == 1 and upgradeLeader == true and data.altModelInfo != nil then
-      passedData = data.altModelInfo
-    else
-      passedData = data
-    end
-    
-    -- spawn Minis
+    -- determine spawn position
+    spawnPos = translatePos(listBuilder[colorSide.."TemplatePos"][n], self.getRotation(), listBuilder.miniSpawnPos[i].c, listBuilder.miniSpawnPos[i].q+90)
+    passedData = miniData
+    -- spawn the mini
     local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, passedData)
-
-    table.insert(spawnMiniTable.miniObjs, {obj = spawnedMini, name = data.name})
-    spawnedMinisNumber = m
-  end
-
-  -- spawn upgrade minis
-  for q, upgrade in pairs(unit.upgrades) do
-    local upgradeKey = upgrade:lower()
-    listBuilder = Global.getTable("listBuilder")
-    
-    if cardInfo.upgradeCards[upgradeKey].miniInfo != nil then
-
-      local spawnMiniInfo = cardInfo.upgradeCards[upgradeKey].miniInfo
-
-      -- math position
-      spawnedMinisNumber = spawnedMinisNumber + 1
-
-      local spawnPos = translatePos(listBuilder[colorSide.."TemplatePos"][n], self.getRotation(), listBuilder.miniSpawnPos[spawnedMinisNumber].c, listBuilder.miniSpawnPos[spawnedMinisNumber].q+90)
-
-      -- spawnMinis
-
-      local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, spawnMiniInfo)
-
-      local insertInfo = {obj = spawnedMini, name = spawnMiniInfo.name}
-
-      if spawnMiniInfo.leader == true then
-          insertInfo.leader = true
-      end
-
-      table.insert(spawnMiniTable.miniObjs, insertInfo)
-    end
+    local insertInfo = {obj = spawnedMini, name = miniData.name}
+    if i == leaderIndex then insertInfo.leader = true end
+    table.insert(spawnMiniTable.miniObjs, insertInfo)
   end
 
   initializeMini(spawnMiniTable)
@@ -497,7 +469,6 @@ function spawnUnit(unit, n, faction)
   if cardInfo.unitCards[unitKey].noToken == nil then
     commandData = {}
 
-    -- local commandType = faction .. cardInfo.unitCards[unitKey].rank
     local commandType = cardInfo.unitCards[unitKey].commandType
     local commandTray = getObjectFromGUID(commandTokenTrayData[colorSide][commandType])
     local pos = commandTray.getPosition()
@@ -526,7 +497,7 @@ function initializeMini(pMiniTable)
   strColor = strColor:gsub("^%l", string.upper)
   
   -- detect leader units
-  local leaderInt = getLeaderIndex(pMiniTable.miniObjs)
+  local leaderInt = pMiniTable.leaderIndex
   
   for i, objEntry in pairs(pMiniTable.miniObjs) do
     -- init mini script
@@ -558,18 +529,6 @@ function initializeMini(pMiniTable)
     -- SET SCRIPT
     objEntry.obj.setLuaScript(selectedMiniScript)
   end
-end
-
-function getLeaderIndex(miniObjs)
-  local index = 1
-
-  for h, entry in pairs(miniObjs) do
-    if entry.leader == true then
-      index = h
-    end
-  end
-
-  return index
 end
 
 function spawnUnitIDToken(idSpawnPos, idSpawnRot,idNumber)
