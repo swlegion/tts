@@ -883,9 +883,31 @@ function initChessClockHotkeys()
   addHotkey("Pause All Chess Clocks", pauseAllChessClocks)
 end
 
+function updateClockButton()
+  if clocks.Blue.paused and clocks.Red.paused then
+    UI.setValue("toggleClockText", "Chess Clocks Paused")
+    UI.setAttribute("toggleClockButton", "colors", "#FFFFFF|#DFDFDF")
+  elseif clocks.Blue.paused then
+    UI.setValue("toggleClockText", "Red Player on Clock")
+    UI.setAttribute("toggleClockButton", "colors", "#DF0000|#DF0000")
+  else
+    UI.setValue("toggleClockText", "Blue Player on Clock")
+    UI.setAttribute("toggleClockButton", "colors", "#0000DF|#0000DF")
+  end
+end
+
+function toggleClockButton(player, button)
+  local color = tostring(player.color)
+  if button == "-1" then
+    toggleChessClocks(color)
+  else
+    pauseAllChessClocks(color)
+  end
+end
+
 -- Toggles the active clock between Red and Blue
 -- If neither clock is currently active, activates Blue
-function toggleChessClocks(playerColor, hoveredObject, worldPosition, keyDownUp)
+function toggleChessClocks(playerColor)
   if not clocks[playerColor] then
     broadcastToAll('Only players can toggle chess clocks')
     return
@@ -912,16 +934,18 @@ function toggleChessClocks(playerColor, hoveredObject, worldPosition, keyDownUp)
   end
 
   local fontColors = {
-        diffuse = {1,0,0},
+    diffuse = {1,0,0},
   }
   broadcastToAll ("*** " .. getClockPlayerName() .. " is now on the clock ***", fontColors[getClockPlayerColor()])
+  updateClockButton()
 end
 
 -- Calls pauseStart() for each clock that is not already paused
-function pauseAllChessClocks(playerColor, hoveredObject, worldPosition, keyDownUp)
+function pauseAllChessClocks(playerColor)
   for k, v in pairs(clocks) do
     if not v.paused then v.pauseStart() end
   end
   broadcastToAll('All chess clocks paused')
+  updateClockButton()
 end
 -- END Chessclock Hotkeys --
