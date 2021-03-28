@@ -10,7 +10,7 @@ function UnitClass:create(params)
   setmetatable(unit, UnitClass)
   unit.name = params.name
   unit.displayName = params.displayName or nil
-  unit.points = params.points or 0
+  unit.ptCost = params.points or 0
   unit.miniInfo = params.miniInfo or nil
   unit.rank = params.rank
   unit.baseSize = params.baseSize or "small"
@@ -21,6 +21,9 @@ function UnitClass:create(params)
   unit.upgrades = params.upgrades or {}
   unit.requiredUpgrades = params.requiredUpgrades or nil
   unit.noToken = params.noToken or nil
+  unit.fixedArc = unit.baseSize ~= "small"
+  unit.fixedMove = unit.baseSize ~= "small"
+  unit.strafeMove = params.strafeMove or nil
   -- format commandType as, e.g., 'rebelCommander'
   unit.commandType = unit.faction:lower() .. unit.rank:lower():gsub("^%l", string.upper)
 
@@ -42,6 +45,35 @@ function UnitClass:_upgradeIsAllowed(upgrade)
   return isAllowed
 end
 
+-- returns a list of possible search strings for the unit card.
+-- the list is sorted in priority order. The first to return a hit should be used.
+function UnitClass:getPossibleUnitCardNames()
+  local tbl = {}
+
+  table.insert(tbl, self.name)
+  table.insert(tbl, self.name .. " (" .. self.faction .. ")")
+
+  return tbl
+end
+
+function UnitClass:getUnitCardIndex(unitCardsTable)
+  local searchStrings = self:getPossibleUnitCardNames()
+  local cardInt = -1
+
+  -- loop through all search strings, and break after the first hit
+  for k, searchName in pairs(searchStrings) do
+    for i, entry in pairs(unitCardsTable) do
+      if entry.nickname:lower() == searchName:lower() then
+        cardInt = entry.index
+        break
+      end
+    end
+    if cardInt > 0 then break end
+  end
+
+  return cardInt
+end
+
 -- "public" method used by the list builder to filter a list of upgrades to only those which are allowed for the unit
 function UnitClass:filterAllowedUpgrades(upgrades)
   local tbl = {}
@@ -55,11 +87,15 @@ function UnitClass:filterAllowedUpgrades(upgrades)
   return tbl
 end
 
+-- inserts an upgrade table into the unit's list of selected upgrades. This represents the list of upgrades that will alter be spawned.
+-- upgrade is expected to have this shape:
+-- { name, type, ptCost, miniInfo?, restrictions? }
 function UnitClass:addUpgrade(upgrade)
   if self.upgrades == nil then self.upgrades = {} end
   table.insert(self.upgrades, upgrade)
 end
 
+-- convenience mthod to add multiple upgrades with a single call
 function UnitClass:addUpgrades(upgradeList)
   for k, v in pairs(upgradeList) do
     self:addUpgrade(v)
@@ -219,8 +255,8 @@ function CardInfoClass:buildCardInfo()
     { name = "Mark II Medium Blaster", type="hardpoint", ptCost = 26, restrictions = {units={"x-34 landspeeder"}} },
     { name = "RT-97C Rifle Pintle", type="hardpoint", ptCost = 14, restrictions = {units={"tx-225 gavw occupier combat assault tank"}} },
     { name = 'DLT-19 Rifle Pintle', type="hardpoint", ptCost = 18, restrictions = {units={"tx-225 gavw occupier combat assault tank"}} },
-    { name = 'TX-130 Beam Cannon Turret', ptCost = 30, restrictions = {units={"tx-130 saber-class fighter tank"}} },
-    { name = 'TX-130 Twin Laser Turret', ptCost = 14, restrictions = {units={"tx-130 saber-class fighter tank"}} },
+    { name = 'TX-130 Beam Cannon Turret', type="hardpoint", ptCost = 30, restrictions = {units={"tx-130 saber-class fighter tank"}} },
+    { name = 'TX-130 Twin Laser Turret', type="hardpoint", ptCost = 14, restrictions = {units={"tx-130 saber-class fighter tank"}} },
 
     -- Heavy Weapon
     { name = "Z-6 Trooper", type="heavy weapon", ptCost = 20, miniInfo = miniInfo.z6Trooper, restrictions = {units={"rebel troopers"}} },
@@ -370,7 +406,7 @@ function CardInfoClass:buildCardInfo()
     -- Rebel Commander
     UnitClass:create({
       name = "Luke Skywalker Hero of the Rebellion",
-      points = 0,
+      points = 160,
       displayName = "Luke Skywalker",
       miniInfo = { miniInfo.lukeSkywalker },
       rank = "Commander",
@@ -844,6 +880,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "TX-225 GAVw Occupier Combat Assault Tank",
+      displayName = "TX-225 GAVw Tank",
       points = 0,
       miniInfo = { miniInfo.tx225 },
       rank = "Heavy",
@@ -947,7 +984,8 @@ function CardInfoClass:buildCardInfo()
     }),
     -- Republic Support
     UnitClass:create({
-      name = "AT-RT",
+      name = "AT-RT (republic)",
+      displayName = "AT-RT",
       points = 65,
       miniInfo = { miniInfo.republicATRT },
       rank = "Support",
@@ -970,7 +1008,8 @@ function CardInfoClass:buildCardInfo()
       name = "TX-130 Saber-class Fighter Tank",
       points = 170,
       miniInfo = { miniInfo.saberTank },
-      rank = "epic",
+      rank = "Heavy",
+      baseSize = "epic",
       faction = "republic",
       upgradeSlots = {"pilot", "hardpoint", "ordnance", "comms"},
     }),
@@ -1042,7 +1081,7 @@ function CardInfoClass:buildCardInfo()
     }),
     -- Separatist Specialforces
     UnitClass:create({
-      name = "Bx-series Droid Commandos",
+      name = "BX-series Droid Commandos",
       points = 68,
       miniInfo = { miniInfo.bxCommandoDroidLeader, miniInfo.bxCommandoDroid1, miniInfo.bxCommandoDroid2, miniInfo.bxCommandoDroid3 },
       rank = "Specialforces",
@@ -1050,12 +1089,21 @@ function CardInfoClass:buildCardInfo()
       upgradeSlots = {"heavy weapon", "training", "comms", "armament", "grenades"},
     }),
     UnitClass:create({
-      name = "Bx-series Droid Commandos Strike Team",
+      name = "BX-series Droid Commandos Strike Team",
+      displayName = "Bx Commandos Strike Team",
       points = 20,
       miniInfo = { miniInfo.bxCommandoDroid1 },
       rank = "Specialforces",
       faction = "separatist",
       upgradeSlots = {"heavy weapon", "training", "comms", "armament", "grenades"},
+    }),
+    UnitClass:create({
+      name = "DRK-1 Sith Probe Droids",
+      points = 35,
+      miniInfo = { miniInfo.drk1SithProbeDroidLeader, miniInfo.drk1SithProbeDroid1, miniInfo.drk1SithProbeDroid2 },
+      rank = "Specialforces",
+      faction = "separatist",
+      upgradeSlots = {"comms"},
     }),
     -- Separatist Support
     UnitClass:create({
@@ -1099,14 +1147,18 @@ function CardInfoClass:buildCardInfo()
   
   for i, val in pairs(cardInfoDB.upgradeCards) do
     local key = val.name:lower()
-    if val.leader then key = key .. " leader" end
+    -- if val.leader then key = key .. " leader" end
     returnTable.upgradeCards[key] = val
   end
 
   returnTable.unitCards = {}
   
   for i, val in pairs(cardInfoDB.unitCards) do
-    returnTable.unitCards[val.name:lower()] = val
+    if returnTable.unitCards[val.name:lower()] ~= nil then
+      returnTable.unitCards[self:_formantNameWithFaction(val.name, val.faction)] = val
+    else
+      returnTable.unitCards[val.name:lower()] = val
+    end
   end
 
   -- unitCard GUID
@@ -1114,6 +1166,10 @@ function CardInfoClass:buildCardInfo()
   returnTable.upgradeCardsGUID = "ffc227"
 
   return returnTable
+end
+
+function CardInfoClass:_formatNameWithFaction(name, faction)
+  return name:lower() .. " (" .. faction:lower() .. ")"
 end
 
 -- "public" method to filter the upgrade database by type
@@ -1137,6 +1193,18 @@ function CardInfoClass:getUpgradesByNames(upgradeNames)
   end
 
   return tbl
+end
+
+function CardInfoClass:getUnitByName(unitName, faction)
+  local foundUnit = nil
+  foundUnit = self.unitCards[unitName:lower()]
+  -- some units require disambiguation by faction name
+  if foundUnit == nil then
+    local key = self:_formatNameWithFaction(unitName, faction)
+    foundUnit = self.unitCards[key]
+  end
+
+  return foundUnit
 end
 
 -- "public" method to filter the unit database by the intersection of faction and rank

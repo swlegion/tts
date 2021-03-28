@@ -526,7 +526,7 @@ function buildUnitInfo()
     unitInfo.unitCountPos = {}
     unitInfo.unitCountPos.small = {-0.3, 0.2, 0.2}
     unitInfo.unitCountPos.medium = {-0.4, 0.2, 0.5}
-    unitInfo.unitCountPos.big = {0,0.2,1}
+    unitInfo.unitCountPos.large = {0,0.2,1}
     unitInfo.unitCountPos.huge = {0,0.2,1.6}
     return unitInfo
 end

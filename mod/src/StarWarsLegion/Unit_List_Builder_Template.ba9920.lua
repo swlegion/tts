@@ -256,13 +256,7 @@ function spawnUnitCard(unit)
     local unitCards = originalUnitCards.clone({ position = {0,-30,0} })
     local cardName = selectedUnit.name
     local unitCardTable = unitCards.getObjects()
-
-    for i, entry in pairs(unitCardTable) do
-        if entry.nickname == cardName then
-            cardInt = entry.index
-            break
-        end
-    end
+    local cardInt = unit:getUnitCardIndex(unitCardTable)
 
     unitCard = unitCards.takeObject({
         position       = {0,10,0},
@@ -479,6 +473,7 @@ function spawnUpgradeCard(cardData, cardPos, upgradeNumber, requiredUpgrade)
     local upgradeCards = originalUpgradeCards.clone({ position = {0,-30,0} })
     local cardName = cardData.name
     local upgradeCardTable = upgradeCards.getObjects()
+    local cardInt = -1
 
     for i, entry in pairs(upgradeCardTable) do
         if entry.nickname == cardName then

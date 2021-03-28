@@ -230,29 +230,24 @@ function initializeCommandToken(cData)
 
   tokenObj.setName(strColor .. " " .. cData.faction .. " " .. cData.rank .. " Command Token")
   -- tokenObj.setName(strColor .. " " .. cardInfo.unitCards[cData.varName].tokenName)
-  local luaScript = "unitName = '"..cData.varName.."'\ncommandType = '"..cData.commandType.."'\ncolorSide = '"..colorSide.."'\n"..listBuilder.tokenScript
+  local luaScript = "unitName = '"..cData.varName.."'\ncommandType = '"..cData.commandType.."'\ncolorSide = '"..colorSide.."'\nfaction = '"..cData.faction.."'\n"..listBuilder.tokenScript
   tokenObj.setLuaScript(luaScript)
 
 end
 
-function spawnUnitCard(cardName, passedTemplatePos, passedTemplateRot)
+function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot)
   local templatePosUnit = passedTemplatePos
-
-
+  
+  
   local originalUnitCards = getObjectFromGUID(cardInfo.unitCardsGUID)
   copy({originalUnitCards})
   local pastedObj = paste({
-      position     = {0,-10,0}
+    position     = {0,-10,0}
   })
   local unitCards = pastedObj[1]
   local unitCardTable = unitCards.getObjects()
-
-  for i, entry in pairs(unitCardTable) do
-      if entry.nickname:lower() == cardName:lower() then
-          cardInt = entry.index
-          break
-      end
-  end
+  
+  local cardInt = unitObj:getUnitCardIndex(unitCardTable)
 
   unitCard = unitCards.takeObject({
       position       = {0,10,0},
@@ -281,6 +276,7 @@ function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
   local originalUpgradeCards = getObjectFromGUID(cardInfo.upgradeCardsGUID)
   local upgradeCards = originalUpgradeCards.clone({ position = {0,-30,0} })
   local upgradeCardTable = upgradeCards.getObjects()
+  local cardInt = 0
 
   local cardPos = templateMenu.upgradeCardPos[upgradeNumber]
 
@@ -418,7 +414,7 @@ function spawnUnit(unit, n, faction)
   
   local unitKey = spawnMiniTable.name:lower()
 
-  local unitObject = copyTable(cardInfo.unitCards[unitKey])
+  local unitObject = copyTable(cardInfo:getUnitByName(unit.name, faction))
   local upgradeObjects = cardInfo:getUpgradesByNames(unit.upgrades)
   unitObject:addUpgrades(upgradeObjects)
 
@@ -431,8 +427,7 @@ function spawnUnit(unit, n, faction)
 
   -- SPAWN CARDS
   -- spawn unit Card
-  spawnMiniTable.unitCardObj = spawnUnitCard(unit.name, templatePos, self.getRotation())
-  -- spawnMiniTable.unitCardObj = spawnUnitCardObj
+  spawnMiniTable.unitCardObj = spawnUnitCard(unitObject, templatePos, self.getRotation())
   spawnUnitIDToken(templatePos, self.getRotation(), n)
 
 
@@ -793,7 +788,7 @@ function drawBattlefieldCard(data, cardType)
   for k, entry in pairs(data.battlefieldDeck[cardType]) do
       -- compare to deck
       local cardTable = allBattlefieldCardsClone.getObjects()
-      cardInt = -1
+      local cardInt = -1
       for l, entryCard in pairs(cardTable) do
           if entry == entryCard.nickname then
               cardInt = entryCard.index

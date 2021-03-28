@@ -30,10 +30,10 @@ function onLoad()
     templateInfo = {}
 
     templateInfo.templateAGUID = {
-        small = {"15849b", "f8f24c", "7568b1"}, medium = {"e20bd9", "9ab5d8", "ea3b10"}, big = {"28e15d", "2b6fd5", "62e790"}, huge = {"d80f36", "819324", "28a694"}
+        small = {"15849b", "f8f24c", "7568b1"}, medium = {"e20bd9", "9ab5d8", "ea3b10"}, large = {"28e15d", "2b6fd5", "62e790"}, huge = {"d80f36", "819324", "28a694"}
     }
     templateInfo.templateBGUID = {
-        small = {"b35f7f", "4536a9", "c6150a"}, medium = {"46d669", "7c0b7a", "a99aaa"}, big = {"53689b", "93219f", "62d768"}, huge = {"0975c7", "968781", "f80c9d"}
+        small = {"b35f7f", "4536a9", "c6150a"}, medium = {"46d669", "7c0b7a", "a99aaa"}, large = {"53689b", "93219f", "62d768"}, huge = {"0975c7", "968781", "f80c9d"}
     }
     templateInfo.templateCollider = {
         "http://cloud-3.steamusercontent.com/ugc/874120727305531901/BA0C6DDDC393B87EEBC53774FD23812CC1F6740A/",
@@ -55,7 +55,7 @@ function onLoad()
     templateInfo.aStart = {}
     templateInfo.aStart.small = 	{1.968995,3,4}
     templateInfo.aStart.medium = 	{2.234375,3.26538,4.26538}
-    templateInfo.aStart.big =		 {2.640625,3.67163,4.67163}
+    templateInfo.aStart.large =		 {2.640625,3.67163,4.67163}
     templateInfo.aStart.huge =		 {3.21875,4.249755,5.249755}
     templateInfo.aStart.long =		 {4.71875,5.749755,6.749755}
     templateInfo.aStart.epic =		 {4.21875,5.249755,6.249755}
@@ -63,7 +63,7 @@ function onLoad()
     templateInfo.bStart = {}
     templateInfo.bStart.small = 	{1.968995,3,4}
     templateInfo.bStart.medium =	 {2.234375,3.26538,4.26538}
-    templateInfo.bStart.big =		 {2.640625,3.67163,4.67163}
+    templateInfo.bStart.large =		 {2.640625,3.67163,4.67163}
     templateInfo.bStart.huge =		 {3.21875,4.249755,5.249755}
     templateInfo.bStart.long =		 {4.71875,5.749755,6.749755}
 
@@ -90,32 +90,32 @@ function onLoad()
     templateInfo.templateNameToData = {}
     templateInfo.templateNameToData.whiteTemplateASnap25mm = {baseSize = "small", selectedSpeed = 1}
     templateInfo.templateNameToData.whiteTemplateASnap40mm = {baseSize = "medium", selectedSpeed = 1}
-    templateInfo.templateNameToData.whiteTemplateASnap60mm = {baseSize = "big", selectedSpeed = 1}
+    templateInfo.templateNameToData.whiteTemplateASnap60mm = {baseSize = "large", selectedSpeed = 1}
     templateInfo.templateNameToData.whiteTemplateASnap90mm = {baseSize = "huge", selectedSpeed = 1}
 
     templateInfo.templateNameToData.blackTemplateASnap25mm = {baseSize = "small", selectedSpeed = 2}
     templateInfo.templateNameToData.blackTemplateASnap40mm = {baseSize = "medium", selectedSpeed = 2}
-    templateInfo.templateNameToData.blackTemplateASnap60mm = {baseSize = "big", selectedSpeed = 2}
+    templateInfo.templateNameToData.blackTemplateASnap60mm = {baseSize = "large", selectedSpeed = 2}
     templateInfo.templateNameToData.blackTemplateASnap90mm = {baseSize = "huge", selectedSpeed = 2}
 
     templateInfo.templateNameToData.redTemplateASnap25mm = {baseSize = "small", selectedSpeed = 3}
     templateInfo.templateNameToData.redTemplateASnap40mm = {baseSize = "medium", selectedSpeed = 3}
-    templateInfo.templateNameToData.redTemplateASnap60mm = {baseSize = "big", selectedSpeed = 3}
+    templateInfo.templateNameToData.redTemplateASnap60mm = {baseSize = "large", selectedSpeed = 3}
     templateInfo.templateNameToData.redTemplateASnap90mm = {baseSize = "huge", selectedSpeed = 3}
 
     templateInfo.templateNameToData.whiteTemplateBSnap25mm = {baseSize = "small", selectedSpeed = 1}
     templateInfo.templateNameToData.whiteTemplateBSnap40mm = {baseSize = "medium", selectedSpeed = 1}
-    templateInfo.templateNameToData.whiteTemplateBSnap60mm = {baseSize = "big", selectedSpeed = 1}
+    templateInfo.templateNameToData.whiteTemplateBSnap60mm = {baseSize = "large", selectedSpeed = 1}
     templateInfo.templateNameToData.whiteTemplateBSnap90mm = {baseSize = "huge", selectedSpeed = 1}
 
     templateInfo.templateNameToData.blackTemplateBSnap25mm = {baseSize = "small", selectedSpeed = 2}
     templateInfo.templateNameToData.blackTemplateBSnap40mm = {baseSize = "medium", selectedSpeed = 2}
-    templateInfo.templateNameToData.blackTemplateBSnap60mm = {baseSize = "big", selectedSpeed = 2}
+    templateInfo.templateNameToData.blackTemplateBSnap60mm = {baseSize = "large", selectedSpeed = 2}
     templateInfo.templateNameToData.blackTemplateBSnap90mm = {baseSize = "huge", selectedSpeed = 2}
 
     templateInfo.templateNameToData.redTemplateBSnap25mm = {baseSize = "small", selectedSpeed = 3}
     templateInfo.templateNameToData.redTemplateBSnap40mm = {baseSize = "medium", selectedSpeed = 3}
-    templateInfo.templateNameToData.redTemplateBSnap60mm = {baseSize = "big", selectedSpeed = 3}
+    templateInfo.templateNameToData.redTemplateBSnap60mm = {baseSize = "large", selectedSpeed = 3}
     templateInfo.templateNameToData.redTemplateBSnap90mm = {baseSize = "huge", selectedSpeed = 3}
     templateInfo.diceTrayGUID = "3d3ac4"
 
@@ -124,7 +124,7 @@ function onLoad()
     templateInfo.moveTemplate[1].mesh = {}
     templateInfo.moveTemplate[1].mesh.small = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
     templateInfo.moveTemplate[1].mesh.medium = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
-    templateInfo.moveTemplate[1].mesh.big = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
+    templateInfo.moveTemplate[1].mesh.large = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
     templateInfo.moveTemplate[1].mesh.huge = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
     templateInfo.moveTemplate[1].mesh.long = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
     templateInfo.moveTemplate[1].mesh.epic = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
@@ -138,7 +138,7 @@ function onLoad()
     templateInfo.moveTemplate[2].mesh = {}
     templateInfo.moveTemplate[2].mesh.small = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
     templateInfo.moveTemplate[2].mesh.medium = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
-    templateInfo.moveTemplate[2].mesh.big = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
+    templateInfo.moveTemplate[2].mesh.large = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
     templateInfo.moveTemplate[2].mesh.huge = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
     templateInfo.moveTemplate[2].mesh.long = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
     templateInfo.moveTemplate[2].mesh.epic = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
@@ -151,7 +151,7 @@ function onLoad()
     templateInfo.moveTemplate[3].mesh = {}
     templateInfo.moveTemplate[3].mesh.small = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
     templateInfo.moveTemplate[3].mesh.medium = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
-    templateInfo.moveTemplate[3].mesh.big = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
+    templateInfo.moveTemplate[3].mesh.large = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
     templateInfo.moveTemplate[3].mesh.huge = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
     templateInfo.moveTemplate[3].mesh.long = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
     templateInfo.moveTemplate[3].mesh.epic = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
@@ -168,7 +168,7 @@ function onLoad()
       medium = 1.9685,
 
       -- AT-RTs, eWebs
-      big = 2.75591,
+      large = 2.75591,
 
       -- Landspeeder, AT-ST
       huge = 3.93701,
@@ -188,7 +188,7 @@ function onLoad()
       medium = 5.45275,
 
       -- AT-RTs, eWebs
-      big = 7.133865,
+      large = 7.133865,
 
       -- These are obviously incorrect, but currently cohesion does not matter for any of these units.
 
@@ -723,7 +723,7 @@ function spawnRangeRuler()
   baseAddition = {}
   baseAddition.small = 1.06299 / 2
   baseAddition.medium = 1.9685 / 2
-  baseAddition.big = 2.75591 / 2
+  baseAddition.large = 2.75591 / 2
   baseAddition.huge = 3.93701 / 2
   baseAddition.long = 3.525856871366164 / 2
   baseAddition.epic = 5.90551 / 2

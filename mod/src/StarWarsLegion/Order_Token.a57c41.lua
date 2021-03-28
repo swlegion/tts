@@ -11,7 +11,8 @@ function onLoad()
     existingTint = battlefieldTint
     battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
     -- unitInfo = Global.getTable("cardInfo").unitCards
-    unitInfo = CardInfoClass:buildCardInfo().unitCards
+    cardInfo = CardInfoClass:buildCardInfo()
+    unitInfo = cardInfo.unitCards
     templateInfo = Global.getTable("templateInfo")
     dieRollerInfo = Global.getTable("dieRollerInfo")
     tintedRed = false
@@ -33,15 +34,17 @@ function onLoad()
 
     unitData = {}
     if unitName != nil then
+        local unitObj = cardInfo:getUnitByName(unitName, faction)
         isAToken = true
         unitData.unitName = unitName
-        unitData.tokenCommandType = unitInfo[unitData.unitName].commandType
+        unitData.faction = faction
+        unitData.tokenCommandType = unitObj.commandType
 
-        unitData.baseSize = unitInfo[unitData.unitName].baseSize
-        unitData.fixedMove = unitInfo[unitData.unitName].fixedMove
-        unitData.strafeMove = unitInfo[unitData.unitName].strafeMove
-        unitData.selectedSpeed = unitInfo[unitData.unitName].selectedSpeed
-        unitData.fixedArc = unitInfo[unitData.unitName].fixedArc
+        unitData.baseSize = unitObj.baseSize
+        unitData.fixedMove = unitObj.fixedMove
+        unitData.strafeMove = unitObj.strafeMove
+        unitData.selectedSpeed = unitObj.selectedSpeed
+        unitData.fixedArc = unitObj.fixedArc
 
         dieRoller = getObjectFromGUID(dieRollerInfo[colorSide.."DieRollerGUID"])
 
