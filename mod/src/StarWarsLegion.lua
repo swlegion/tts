@@ -888,10 +888,10 @@ function updateClockButton()
     UI.setValue("toggleClockText", "Chess Clocks Paused")
     UI.setAttribute("toggleClockButton", "colors", "#FFFFFF|#DFDFDF")
   elseif clocks.Blue.paused then
-    UI.setValue("toggleClockText", "Red Player")
+    UI.setValue("toggleClockText", "Red Player on Clock")
     UI.setAttribute("toggleClockButton", "colors", "#DF0000|#DF0000")
   else
-    UI.setValue("toggleClockText", "Blue Player")
+    UI.setValue("toggleClockText", "Blue Player on Clock")
     UI.setAttribute("toggleClockButton", "colors", "#0000DF|#0000DF")
   end
 end
