@@ -786,7 +786,10 @@ function prepareToSave()
 
     -- create data cartridge
     local spawnPos = dataDiskMount.getPosition()
-    spawnPos.y = spawnPos.y + 1
+    -- offset to "snap" the cartridge neatly
+    spawnPos.x = spawnPos.x + 0.05
+    spawnPos.y = spawnPos.y - 0.41
+    spawnPos.z = spawnPos.z + 0.02
     local dataCartridgeOriginal = getObjectFromGUID(gameController.dataCartridgeGUID)
 
     dataCartridge = dataCartridgeOriginal.clone({
