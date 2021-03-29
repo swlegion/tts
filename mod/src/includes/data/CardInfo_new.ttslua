@@ -243,9 +243,9 @@ function CardInfoClass:buildCardInfo()
     { name = "EMP Droid Poppers", type="grenades", ptCost = 3 },
 
     -- Hardpoint
-    { name = "AT-RT Rotary Blaster", type="hardpoint", ptCost = 20, restrictions = {units={"at-rt"}} },
-    { name = "AT-RT Laser Cannon", type="hardpoint", ptCost = 10, restrictions = {units={"at-rt"}} },
-    { name = "AT-RT Flamethrower", type="hardpoint", ptCost = 20, restrictions = {units={"at-rt"}} },
+    { name = "AT-RT Rotary Blaster", type="hardpoint", ptCost = 20, restrictions = {units={"at-rt", "at-rt (republic)"}} },
+    { name = "AT-RT Laser Cannon", type="hardpoint", ptCost = 10, restrictions = {units={"at-rt", "at-rt (republic)"}} },
+    { name = "AT-RT Flamethrower", type="hardpoint", ptCost = 20, restrictions = {units={"at-rt", "at-rt (republic)"}} },
     { name = 'Ax-108 "Ground Buzzer"', type="hardpoint", ptCost = 10, restrictions = {units={"t-47 airspeeder"}} },
     { name = "Mo/Dk Power Harpoon", type="hardpoint", ptCost = 0, restrictions = {units={"t-47 airspeeder"}} },
     { name = "AT-ST Mortar Launcher", type="hardpoint", ptCost = 10, restrictions = {units={"at-st"}} },
@@ -594,6 +594,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Mandalorian Resistance Clan Wren",
+      displayName = "Clan Wren",
       points = 0,
       miniInfo = { miniInfo.clanWren1 },
       rank = "SpecialForces",
@@ -1182,6 +1183,11 @@ function CardInfoClass:getUpgradesByType(type)
   end
 
   return tbl
+end
+
+-- returns a the unit object that matches the given name
+function CardInfoClass:getUpgradeByName(upgradeName)
+  return self.upgradeCards[upgradeName:lower()]
 end
 
 -- convenience method for getting multiple upgrade objects at once

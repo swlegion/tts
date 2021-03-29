@@ -446,8 +446,9 @@ function drawUpgradeMenu()
       local startAt = availableUpgradeSlotCount + 1
       local upIndex = 1
       for i = startAt, availableUpgradeSlotCount + requiredUpgradeCount, 1 do
+        local cardObj = cardInfo:getUpgradeByName(requiredUpgrades[upIndex])
         spawnUpgradeCard(
-          requiredUpgrades[upIndex],
+          cardObj,
           templateMenu.upgradeCardPos[i],
           i,
           true
