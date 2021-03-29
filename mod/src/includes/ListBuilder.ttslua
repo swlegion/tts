@@ -249,6 +249,8 @@ function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot)
   
   local cardInt = unitObj:getUnitCardIndex(unitCardTable)
 
+  -- TODO: if cardInt == -1, spawn a placeholder card
+
   unitCard = unitCards.takeObject({
       position       = {0,10,0},
       index          = cardInt
@@ -286,6 +288,8 @@ function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
           break
       end
   end
+
+  -- TODO: if cardInt == -1, spawn a placeholder card
 
   upgradeCard = upgradeCards.takeObject({
       position       = {0,10,0},
