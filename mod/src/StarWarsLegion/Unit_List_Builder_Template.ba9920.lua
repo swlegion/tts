@@ -50,7 +50,7 @@ function mainMenu()
     if unitCard != nil then
         destroyObject(unitCard)
         if selectedUnit.rank == "Commander" or selectedUnit.rank == "Operative"  then
-            deckBuilderObj.call("removeCommander", selectedUnit.name)
+            deckBuilderObj.call("removeCommander", selectedUnit.name:lower())
         end
 
     end
