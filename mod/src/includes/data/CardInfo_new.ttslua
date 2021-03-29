@@ -415,7 +415,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Leia Organa Fearless and Inventive",
-      points = 0,
+      points = 90,
       displayName = "Leia Organa",
       miniInfo = { miniInfo.leiaOrgana },
       rank = "Commander",
@@ -424,7 +424,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Han Solo Unorthodox General",
-      points = 0,
+      points = 100,
       displayName = "Han Solo",
       miniInfo = { miniInfo.hanSolo },
       rank = "Commander",
@@ -433,7 +433,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Jyn Erso Stardust",
-      points = 0,
+      points = 100,
       displayName = "Jyn Erso",
       miniInfo = { miniInfo.jynErso },
       rank = "Commander",
@@ -442,7 +442,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Cassian Andor Capable Intelligence Agent",
-      points = 0,
+      points = 90,
       displayName = "Cassian Andor",
       miniInfo = { miniInfo.cassianAndor },
       rank = "Commander",
@@ -451,7 +451,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Lando Calrissian Smooth Operator",
-      points = 0,
+      points = 105,
       displayName = "Lando Calrissian",
       miniInfo = { miniInfo.landoCalrissian },
       rank = "Commander",
@@ -461,7 +461,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Rebel Officer Resolute Commander",
-      points = 0,
+      points = 45,
       displayName = "Rebel Officer",
       miniInfo = { miniInfo.rebelOfficerLeader },
       rank = "Commander",
@@ -471,7 +471,7 @@ function CardInfoClass:buildCardInfo()
     -- Rebel Operative
     UnitClass:create({
       name = "Chewbacca Walking Carpet",
-      points = 0,
+      points = 90,
       displayName = "Chewbacca",
       miniInfo = { miniInfo.chewbacca },
       rank = "Operative",
@@ -480,7 +480,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "K-2SO Sardonic Security Droid",
-      points = 0,
+      points = 70,
       displayName = "K-2SO",
       miniInfo = { miniInfo.chewbacca },
       rank = "Operative",
@@ -489,7 +489,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Luke Skywalker Jedi Knight",
-      points = 0,
+      points = 195,
       displayName = "Luke Skywalker",
       miniInfo = { miniInfo.lukeSkywalkerJediKnight },
       rank = "Operative",
@@ -498,7 +498,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "R2-D2 Hero of a Thousand Devices",
-      points = 0,
+      points = 45,
       displayName = "R2-D2",
       miniInfo = { miniInfo.r2d2 },
       rank = "Operative",
@@ -508,7 +508,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Sabine Wren Explosive Artist",
-      points = 0,
+      points = 125,
       displayName = "Sabine Wren",
       miniInfo = { miniInfo.sabineWren },
       rank = "Operative",
@@ -519,7 +519,7 @@ function CardInfoClass:buildCardInfo()
     -- Rebel Corps
     UnitClass:create({
       name = "Rebel Troopers",
-      points = 0,
+      points = 40,
       miniInfo = { miniInfo.rebelTrooperLeader, miniInfo.rebelTrooper1, miniInfo.rebelTrooper2, miniInfo.rebelTrooper3 },
       rank = "Corps",
       faction = "rebel",
@@ -527,7 +527,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Fleet Troopers",
-      points = 0,
+      points = 40,
       miniInfo = { miniInfo.fleetTroopersLeader, miniInfo.fleetTroopers1, miniInfo.fleetTroopers2, miniInfo.fleetTroopers3 },
       rank = "Corps",
       faction = "rebel",
@@ -535,7 +535,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Rebel Veterans",
-      points = 0,
+      points = 48,
       miniInfo = { miniInfo.rebelVeteransLeader, miniInfo.rebelVeterans1, miniInfo.rebelVeterans2, miniInfo.rebelVeterans3 },
       rank = "Corps",
       faction = "rebel",
@@ -543,7 +543,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Mark II Medium Blaster Trooper",
-      points = 0,
+      points =38,
       miniInfo = { miniInfo.markIIMediumBlasterTrooper },
       rank = "Corps",
       baseSize = "medium",
@@ -553,7 +553,7 @@ function CardInfoClass:buildCardInfo()
     -- Rebel Specialforces
     UnitClass:create({
       name = "Rebel Commandos",
-      points = 0,
+      points = 50,
       miniInfo = { miniInfo.rebelCommandosLeader, miniInfo.rebelCommandos1, miniInfo.rebelCommandos2, miniInfo.rebelCommandos3 },
       rank = "SpecialForces",
       faction = "rebel",
@@ -561,7 +561,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Rebel Commandos Strike Team",
-      points = 0,
+      points = 20,
       miniInfo = { miniInfo.rebelCommandos4 },
       rank = "SpecialForces",
       faction = "rebel",
@@ -569,7 +569,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Wookiee Warriors",
-      points = 0,
+      points = 69,
       miniInfo = { miniInfo.wookieeWarriorsLeader, miniInfo.wookieeWarriors1, miniInfo.wookieeWarriors2 },
       rank = "SpecialForces",
       faction = "rebel",
@@ -577,7 +577,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Rebel Pathfinders",
-      points = 0,
+      points = 58,
       miniInfo = { miniInfo.rebelPathfindersLeader, miniInfo.rebelPathfinders1, miniInfo.rebelPathfinders2, miniInfo.rebelPathfinders3 },
       rank = "SpecialForces",
       faction = "rebel",
@@ -585,7 +585,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Mandalorian Resistance",
-      points = 0,
+      points = 72,
       miniInfo = { miniInfo.mandalorianResistanceLeader, miniInfo.mandalorianResistance1, miniInfo.mandalorianResistance2 },
       rank = "SpecialForces",
       selectedSpeed = 3,
@@ -595,7 +595,7 @@ function CardInfoClass:buildCardInfo()
     UnitClass:create({
       name = "Mandalorian Resistance Clan Wren",
       displayName = "Clan Wren",
-      points = 0,
+      points = 34,
       miniInfo = { miniInfo.clanWren1 },
       rank = "SpecialForces",
       selectedSpeed = 3,
@@ -606,7 +606,7 @@ function CardInfoClass:buildCardInfo()
     -- Rebel Support
     UnitClass:create({
       name = "AT-RT",
-      points = 0,
+      points = 55,
       miniInfo = { miniInfo.atrt },
       rank = "Support",
       baseSize = "large",
@@ -615,7 +615,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "1.4 FD Laser Cannon Team",
-      points = 0,
+      points = 70,
       miniInfo = { miniInfo.fdLaserCannonTeam },
       rank = "Support",
       baseSize = "huge",
@@ -625,7 +625,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Tauntaun Riders",
-      points = 0,
+      points = 95,
       miniInfo = { miniInfo.tauntaunRidersLeader, miniInfo.tauntaunRiders1 },
       rank = "Support",
       baseSize = "medium",
@@ -636,7 +636,7 @@ function CardInfoClass:buildCardInfo()
     -- Rebel Heavy
     UnitClass:create({
       name = "T-47 Airspeeder",
-      points = 0,
+      points = 130,
       miniInfo = { miniInfo.airSpeeder },
       rank = "Heavy",
       baseSize = "huge",
@@ -646,7 +646,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "X-34 Landspeeder",
-      points = 0,
+      points = 60,
       miniInfo = { miniInfo.x34Landspeeder },
       rank = "Heavy",
       baseSize = "huge",
@@ -658,7 +658,7 @@ function CardInfoClass:buildCardInfo()
     -- Imperial Commander
     UnitClass:create({
       name = "Agent Kallus Hunter of Spectres",
-      points = 0,
+      points = 90,
       displayName = "Agent Kallus",
       miniInfo = { miniInfo.agentKallus },
       rank = "Commander",
@@ -667,7 +667,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Darth Vader Dark Lord of the Sith",
-      points = 0,
+      points = 175,
       displayName = "Darth Vader",
       miniInfo = { miniInfo.darthVader },
       rank = "Commander",
@@ -677,7 +677,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Director Orson Krennic Architect of Terror",
-      points = 0,
+      points = 90,
       displayName = "Director Orson Krennic",
       miniInfo = { miniInfo.directorOrsonKrennic },
       rank = "Commander",
@@ -686,7 +686,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Emperor Palpatine Ruler of the Galactic Empire",
-      points = 0,
+      points = 200,
       displayName = "Emperor Palpatine",
       miniInfo = { miniInfo.emperorPalpatine },
       rank = "Commander",
@@ -696,7 +696,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "General Veers Master Tactician",
-      points = 0,
+      points = 80,
       displayName = "General Veers",
       miniInfo = { miniInfo.generalVeers },
       rank = "Commander",
@@ -705,7 +705,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Iden Versio Inferno Squad Leader",
-      points = 0,
+      points = 100,
       displayName = "Iden Versio",
       miniInfo = { miniInfo.idenVersio },
       rank = "Commander",
@@ -714,7 +714,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Imperial Officer Ruthless Commander",
-      points = 0,
+      points = 45,
       displayName = "Imperial Officer",
       miniInfo = { miniInfo.imperialOfficer },
       rank = "Commander",
@@ -724,7 +724,7 @@ function CardInfoClass:buildCardInfo()
     -- Imperial Operative
     UnitClass:create({
       name = "Boba Fett Infamous Bounty Hunter",
-      points = 0,
+      points = 125,
       displayName = "Boba Fett",
       miniInfo = { miniInfo.bobaFett },
       rank = "Operative",
@@ -734,7 +734,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Bossk Trandoshan Terror",
-      points = 0,
+      points = 115,
       displayName = "Bossk",
       miniInfo = { miniInfo.bossk },
       rank = "Operative",
@@ -743,7 +743,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Darth Vader The Emperor's Apprentice",
-      points = 0,
+      points = 155,
       displayName = "Darth Vader",
       miniInfo = { miniInfo.darthVaderTheEmperorsApprentice },
       rank = "Operative",
@@ -754,7 +754,7 @@ function CardInfoClass:buildCardInfo()
     -- Imperial Corps
     UnitClass:create({
       name = "DF-90 Mortar Trooper",
-      points = 0,
+      points = 38,
       miniInfo = { miniInfo.df90MortarTrooper },
       rank = "Corps",
       baseSize = "medium",
@@ -764,7 +764,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Shoretroopers",
-      points = 0,
+      points = 52,
       miniInfo = { miniInfo.shoretroopersLeader, miniInfo.shoretroopers1, miniInfo.shoretroopers2, miniInfo.shoretroopers3 },
       rank = "Corps",
       faction = "imperial",
@@ -772,7 +772,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Snowtroopers",
-      points = 0,
+      points = 44,
       miniInfo = { miniInfo.snowtrooperLeader, miniInfo.snowtrooper1, miniInfo.snowtrooper2, miniInfo.snowtrooper3 },
       rank = "Corps",
       selectedSpeed = 1,
@@ -781,7 +781,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Stormtroopers",
-      points = 0,
+      points = 44,
       miniInfo = { miniInfo.stormtrooperLeader, miniInfo.stormtrooper1, miniInfo.stormtrooper2, miniInfo.stormtrooper3 },
       rank = "Corps",
       faction = "imperial",
@@ -790,7 +790,7 @@ function CardInfoClass:buildCardInfo()
     -- Imperial Specialforces
     UnitClass:create({
       name = "Imperial Death Troopers",
-      points = 0,
+      points = 76,
       miniInfo = { miniInfo.imperialDeathTroopersLeader, miniInfo.imperialDeathTroopers1, miniInfo.imperialDeathTroopers2, miniInfo.imperialDeathTroopers3 },
       rank = "Specialforces",
       faction = "imperial",
@@ -798,7 +798,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Imperial Special Forces",
-      points = 0,
+      points = 68,
       miniInfo = { miniInfo.isfLeader, miniInfo.isf1, miniInfo.isf2, miniInfo.isf3 },
       rank = "Specialforces",
       faction = "imperial",
@@ -806,7 +806,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Imperial Special Forces Inferno Squad",
-      points = 0,
+      points = 34,
       displayName = "Inferno Squad",
       miniInfo = { miniInfo.isfInferno },
       rank = "Specialforces",
@@ -816,7 +816,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Imperial Royal Guards",
-      points = 0,
+      points = 75,
       miniInfo = { miniInfo.imperialRoyalGuardsLeader, miniInfo.imperialRoyalGuards1, miniInfo.imperialRoyalGuards2 },
       rank = "Specialforces",
       faction = "imperial",
@@ -824,7 +824,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Scout Troopers",
-      points = 0,
+      points = 48,
       miniInfo = { miniInfo.scoutTroopersLeader, miniInfo.scoutTroopers1, miniInfo.scoutTroopers2, miniInfo.scoutTroopers3 },
       rank = "Specialforces",
       faction = "imperial",
@@ -832,7 +832,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Scout Troopers Strike Team",
-      points = 0,
+      points = 20,
       miniInfo = { miniInfo.scoutTroopers1 },
       rank = "Specialforces",
       faction = "imperial",
@@ -841,7 +841,7 @@ function CardInfoClass:buildCardInfo()
     -- Imperial Support
     UnitClass:create({
       name = "Dewback Rider",
-      points = 0,
+      points = 75,
       miniInfo = { miniInfo.dewbackRider },
       rank = "Support",
       baseSize = "large",
@@ -851,7 +851,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "E-Web Heavy Blaster Team",
-      points = 0,
+      points = 55,
       miniInfo = { miniInfo.eWebHeavyBlasterTeam },
       rank = "Support",
       baseSize = "large",
@@ -861,7 +861,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "74-Z Speeder Bikes",
-      points = 0,
+      points = 75,
       miniInfo = { miniInfo.speederBikeLeader, miniInfo.speederBike },
       rank = "Support",
       baseSize = "medium",
@@ -872,7 +872,7 @@ function CardInfoClass:buildCardInfo()
     -- Imperial Heavy
     UnitClass:create({
       name = "AT-ST",
-      points = 0,
+      points = 160,
       miniInfo = { miniInfo.atst },
       rank = "Heavy",
       baseSize = "huge",
@@ -882,7 +882,7 @@ function CardInfoClass:buildCardInfo()
     UnitClass:create({
       name = "TX-225 GAVw Occupier Combat Assault Tank",
       displayName = "TX-225 GAVw Tank",
-      points = 0,
+      points = 145,
       miniInfo = { miniInfo.tx225 },
       rank = "Heavy",
       baseSize = "long",
@@ -1148,7 +1148,6 @@ function CardInfoClass:buildCardInfo()
   
   for i, val in pairs(cardInfoDB.upgradeCards) do
     local key = val.name:lower()
-    -- if val.leader then key = key .. " leader" end
     returnTable.upgradeCards[key] = val
   end
 

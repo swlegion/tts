@@ -229,7 +229,6 @@ function initializeCommandToken(cData)
   strColor = strColor:gsub("^%l", string.upper)
 
   tokenObj.setName(strColor .. " " .. cData.faction .. " " .. cData.rank .. " Command Token")
-  -- tokenObj.setName(strColor .. " " .. cardInfo.unitCards[cData.varName].tokenName)
   local luaScript = "unitName = \""..cData.varName.."\"\ncommandType = '"..cData.commandType.."'\ncolorSide = '"..colorSide.."'\nfaction = '"..cData.faction.."'\n"..listBuilder.tokenScript
   tokenObj.setLuaScript(luaScript)
 
@@ -265,7 +264,6 @@ function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot)
   unitCard.setRotation({0,passedTemplateRot.y+180,0})
   unitCard.setScale({0.83,1,0.83})
 
-  --unitCard.setVar("ptCost", cardInfo.unitCards[card].ptCost)
   unitCard.setPosition(pos)
   unitCard.setLock(false)
 
@@ -392,6 +390,8 @@ function spawnArmy(loadListData)
   end
 end
 
+-- TODO: Move this function to a common include
+-- Helper function to deeply copy a table, including metatables
 function copyTable(obj, seen)
   -- Handle non-tables and previously-seen tables.
   if type(obj) ~= 'table' then return obj end
@@ -454,10 +454,10 @@ function spawnUnit(unit, n, faction)
     listBuilder = Global.getTable("listBuilder")
     -- determine spawn position
     spawnPos = translatePos(listBuilder[colorSide.."TemplatePos"][n], self.getRotation(), listBuilder.miniSpawnPos[i].c, listBuilder.miniSpawnPos[i].q+90)
-    passedData = miniData
     -- spawn the mini
-    local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, passedData)
+    local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, miniData)
     local insertInfo = {obj = spawnedMini, name = miniData.name}
+    -- mark the leader mini
     if i == leaderIndex then insertInfo.leader = true end
     table.insert(spawnMiniTable.miniObjs, insertInfo)
   end
@@ -624,7 +624,6 @@ function getListData()
               for i, entry in pairs(recievedData.upgrades) do
                   insertTable.upgrades[i] = entry
               end
-              --insertTable.setTable("upgrades", recievedData.upgrades)
 
               table.insert(listData.units, insertTable)
 

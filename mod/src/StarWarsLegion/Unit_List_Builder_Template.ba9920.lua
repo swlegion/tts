@@ -14,12 +14,10 @@ function setUp()
 
     battlefieldTint = gameData.getTable("battlefieldTint")
     templateMenu = Global.getTable("templateMenu")
-    -- cardInfo = Global.getTable("cardInfo")
     cardInfo = CardInfoClass:buildCardInfo()
     selectedArmyFaction = Global.getVar(colorSide.."SelectedArmyFaction")
     listBuilder = Global.getTable("listBuilder")
     miniInfo = Global.getTable("miniInfo")
-    -- unitInfo = Global.getTable("unitInfo")
     unitIDTokenBag = getObjectFromGUID(Global.getVar("unitIDTokenBagGUID"))
     unitCard = nil
     unitCardPage = 0
@@ -192,13 +190,10 @@ function unitSubMenu(selectedRank)
     local endIndex = (unitCardPage + 1) * 6
 
     local unitList = cardInfo:getUnitsByFactionAndRank(selectedArmyFaction, selectedRank)
-    -- local unitList = cardInfo.unitCards
 
     for i=startIndex, endIndex, startIndex do
 
-        -- if templateMenu[selectedArmyFaction][selectedRank][i] != nil then
         if unitList[i] != nil then
-            -- local entry = templateMenu[selectedArmyFaction][selectedRank][i]
             local entry = unitList[i]
 
             _G["subMenu"..i] = function() spawnUnitCard(entry) end
@@ -288,7 +283,6 @@ function spawnUnitCard(unit)
     unitCard.setVar("ptCost", selectedUnit.ptCost)
     unitCard.setPosition(pos)
     unitCard.setLock(false)
-    -- selectedUnit = cardKey
 
     -- update deckBuilder
     if selectedUnit.rank == "Commander" or selectedUnit.rank == "Operative"  then
@@ -320,7 +314,6 @@ function upgradeMenu()
     spawnedRequiredUpgrades = {}
 
     if selectedUnit != nil then
-        -- local unitCard = selectedUnit
         availableUpgradeSlots = selectedUnit.upgradeSlots
         requiredUpgrades = selectedUnit.requiredUpgrades
         if requiredUpgrades == nil then
@@ -354,7 +347,6 @@ function drawUpgradeMenu()
         local upgradeFontColor = {0, 0, 0, 0}
         local upgradeFontSize = 160
         local selectedIndex = upgradeSelectionIndex[i] + n
-        -- if availableUpgradeSlots[i] != nil and availableUpgradeSlots[i][selectedIndex] != nil then
         if availableUpgradeSlots[i] != nil and allowableUpgrades[selectedIndex] != nil then
           upgradeClickFunction = "upgradeSubMenu"..self.getGUID()..":"..i..":"..n
           upgradeLabel = allowableUpgrades[selectedIndex].name
@@ -546,14 +538,12 @@ function getListText()
         for i, entry in pairs(upgradeCardIndex) do
             if entry.name != nil then
                 returnTable.upgrades[k] = entry.name
-                -- returnTable.upgrades[k] = {name = entry.name, varName = entry.varName}
                 k = k + 1
             end
         end
 
         -- rank
         returnTable.rank = selectedUnit.rank
-        -- returnTable.varName = selectedUnit.name
         return returnTable
     else
         return nil
