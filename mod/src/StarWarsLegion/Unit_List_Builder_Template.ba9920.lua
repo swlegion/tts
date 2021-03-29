@@ -357,7 +357,7 @@ function drawUpgradeMenu()
         -- if availableUpgradeSlots[i] != nil and availableUpgradeSlots[i][selectedIndex] != nil then
         if availableUpgradeSlots[i] != nil and allowableUpgrades[selectedIndex] != nil then
           upgradeClickFunction = "upgradeSubMenu"..self.getGUID()..":"..i..":"..n
-          upgradeLabel = allowableUpgrades[n].name
+          upgradeLabel = allowableUpgrades[selectedIndex].name
           upgradeColor = {0.1764, 0.1764, 0.1764, 0.01}
           upgradeFontColor = {0, 0, 0, 100}
           if string.len(upgradeLabel) > 12 then
@@ -368,7 +368,7 @@ function drawUpgradeMenu()
           end
           _G[upgradeClickFunction] = function()
             spawnUpgradeCard(
-              allowableUpgrades[n],
+              allowableUpgrades[selectedIndex],
               templateMenu.upgradeCardPos[i],
               i
             ) 
