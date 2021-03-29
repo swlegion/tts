@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "1954d7",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 77.21295,
+      "posY": 1.98473966,
+      "posZ": -1.71538746,
+      "rotX": -1.57314517e-7,
+      "rotY": 180.009232,
+      "rotZ": 1.65257621e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "R2-D2 Independent Astromech",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 43400,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "434": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1718660448858996431/2528547B8473B7402B10344046ED0A1AA322CD15/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1718660448858996431/2528547B8473B7402B10344046ED0A1AA322CD15/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
