@@ -684,7 +684,7 @@ function CardInfoClass:buildCardInfo()
       upgradeSlots = {"command", "command", "gear"},
     }),
     UnitClass:create({
-      name = "Emperor Palpatine Rule of the Galactic Empire",
+      name = "Emperor Palpatine Ruler of the Galactic Empire",
       points = 0,
       displayName = "Emperor Palpatine",
       miniInfo = { miniInfo.emperorPalpatine },
@@ -859,7 +859,7 @@ function CardInfoClass:buildCardInfo()
       upgradeSlots = {"comms", "generator"},
     }),
     UnitClass:create({
-      name = "74-Z Speeder Bike",
+      name = "74-Z Speeder Bikes",
       points = 0,
       miniInfo = { miniInfo.speederBikeLeader, miniInfo.speederBike },
       rank = "Support",

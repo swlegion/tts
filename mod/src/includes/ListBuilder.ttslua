@@ -230,7 +230,7 @@ function initializeCommandToken(cData)
 
   tokenObj.setName(strColor .. " " .. cData.faction .. " " .. cData.rank .. " Command Token")
   -- tokenObj.setName(strColor .. " " .. cardInfo.unitCards[cData.varName].tokenName)
-  local luaScript = "unitName = '"..cData.varName.."'\ncommandType = '"..cData.commandType.."'\ncolorSide = '"..colorSide.."'\nfaction = '"..cData.faction.."'\n"..listBuilder.tokenScript
+  local luaScript = "unitName = \""..cData.varName.."\"\ncommandType = '"..cData.commandType.."'\ncolorSide = '"..colorSide.."'\nfaction = '"..cData.faction.."'\n"..listBuilder.tokenScript
   tokenObj.setLuaScript(luaScript)
 
 end
@@ -500,7 +500,7 @@ function initializeMini(pMiniTable)
 
     -- SET NAME
     objEntry.obj.setName(strColor.. " "..objEntry.name)
-    selectedMiniScript = selectedMiniScript .. "colorSide = '"..pMiniTable.colorSide.."'\nminiName = '"..objEntry.name.."'\n"
+    selectedMiniScript = selectedMiniScript .. "colorSide = '"..pMiniTable.colorSide.."'\nminiName = \""..objEntry.name.."\"\n"
 
     if i == leaderInt then
       -- DESCRIPTION
@@ -516,7 +516,7 @@ function initializeMini(pMiniTable)
       for n, objEntry in pairs(pMiniTable.miniObjs) do
         miniGUIDsScript = miniGUIDsScript .. "miniGUIDs["..n.."] = '" .. objEntry.obj.getGUID() .. "'\n"
       end
-      selectedMiniScript = selectedMiniScript .. miniGUIDsScript.."cardGUID = '"..pMiniTable.unitCardObj.getGUID().."'\nunitName = '"..pMiniTable.name:lower().."'\nunitID = "..pMiniTable.unitID.."\n"..listBuilder.modelMiniScript
+      selectedMiniScript = selectedMiniScript .. miniGUIDsScript.."cardGUID = '"..pMiniTable.unitCardObj.getGUID().."'\nunitName = \""..pMiniTable.name:lower().."\"\nunitID = "..pMiniTable.unitID.."\n"..listBuilder.modelMiniScript
     else
       objEntry.obj.use_snap_points = false
     end
