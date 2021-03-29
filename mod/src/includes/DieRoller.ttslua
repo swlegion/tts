@@ -70,12 +70,12 @@ function rollDie(callbackParams)
         rolled = rolled + 1
       end
     end
-    if rolled > 0 then
-      Wait.time(function()
-        isRolling = false
+    Wait.time(function()
+      isRolling = false
+      if rolled > 0 then
         printDieValues()
-      end, 1.25)
-    end
+      end
+    end, 1.25)
   end
 end
 
@@ -104,6 +104,7 @@ function printDieValues()
   if dieObjs == nil then
     return
   end
+  local totalCount = 0
   local dieRecord = {
     crit   = 0,
     hit    = 0,
@@ -118,6 +119,7 @@ function printDieValues()
   }
   for _, obj in pairs(dieObjs) do
     if obj != nil then
+      totalCount = totalCount + 1
       local sDieValue = obj.getValue()
       local sDieColor = obj.getVar("dieColor")
       dieColors[sDieColor] = dieColors[sDieColor] + 1
@@ -140,7 +142,11 @@ function printDieValues()
     })
     index = index + 1
   end
-  printDieValuesToScreen(dieRecord, dieColors)
+  if totalCount == 0 then
+    broadcastToAll(string.upper(colorSide) .. " deleted their dice mid-roll.")
+  else
+    printDieValuesToScreen(dieRecord, dieColors)
+  end
 end
 
 function printDieValuesToScreen(dieRecord, dieColors)
