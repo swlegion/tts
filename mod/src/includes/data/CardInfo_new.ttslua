@@ -149,7 +149,7 @@ function CardInfoClass:buildCardInfo()
   cardInfoDB.upgradeCards = {
     -- Flaw
     { name = 'Developing Sympathies', type = "flaw", ptCost = 0 },
-    { name = 'Ive Altered The Deal', type = "flaw", ptCost = 0 },
+    { name = "I've Altered The Deal", type = "flaw", ptCost = 0 },
     { name = 'Not A Story The Jedi Would Tell', type = "flaw", ptCost = 0 },
 
      -- Counterpart
@@ -457,7 +457,7 @@ function CardInfoClass:buildCardInfo()
       rank = "Commander",
       faction = "rebel",
       upgradeSlots = {"command", "training", "gear"},
-      requiredUpgrades = {"ive altered the deal"}
+      requiredUpgrades = {"i've altered the deal"}
     }),
     UnitClass:create({
       name = "Rebel Officer Resolute Commander",
