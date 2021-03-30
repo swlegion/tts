@@ -246,10 +246,10 @@ function CardInfoClass:buildCardInfo()
     { name = "Grappling Hooks", type="gear", ptCost = 1 },
     { name = "Environmental Gear", type="gear", ptCost = 2 },
     { name = "Emergency Stims", type="gear", ptCost = 10 },
-    { name = "Personal Combat Shield", type="gear", ptCost = 5 },
-    { name = "Electro Grappling Line", type="gear", ptCost = 5 },
+    { name = "Personal Combat Shield", type="gear", ptCost = 5, restrictions = {units={"sabine wren explosive artist"}} },
+    { name = "Electro Grappling Line", type="gear", ptCost = 5, restrictions = {units={"sabine wren explosive artist"}} },
     { name = "Electrobinoculars", type="gear", ptCost = 8 },
-    { name = "JT-12 Jetpacks", type="gear", ptCost = 10 },
+    { name = "JT-12 Jetpacks", type="gear", ptCost = 10, restrictions = {units={"clone captain rex honorable soldier", "arc troopers", "arc troopers strike team"}} },
     { name = "Ascension Cables", type="gear", ptCost = 4 },
     { name = "Portable Scanner", type="gear", ptCost = 6 },
 
