@@ -1,0 +1,1310 @@
+CardInfoClass = {}
+CardInfoClass.__index = CardInfoClass
+
+UnitClass = {}
+UnitClass.__index = UnitClass
+
+-- UnitClass constructor
+function UnitClass:create(params)
+  local unit = {}
+  setmetatable(unit, UnitClass)
+  unit.name = params.name
+  unit.displayName = params.displayName or nil
+  unit.ptCost = params.points or 0
+  unit.miniInfo = params.miniInfo or nil
+  unit.rank = params.rank
+  unit.type = params.type or "trooper"
+  unit.baseSize = params.baseSize or "small"
+  unit.faction = params.faction
+  unit.selectedSpeed = params.selectedSpeed or 2
+  unit.buttonHeight = params.buttonHeight or 2
+  unit.upgradeSlots = params.upgradeSlots or nil
+  unit.upgrades = params.upgrades or {}
+  unit.requiredUpgrades = params.requiredUpgrades or nil
+  unit.noToken = params.noToken or nil
+  unit.fixedArc = unit.baseSize ~= "small"
+  unit.fixedMove = unit.baseSize ~= "small"
+  unit.strafeMove = params.strafeMove or nil
+  unit.alignment = self:_getAlignment(unit)
+  -- format commandType as, e.g., 'rebelCommander'
+  unit.commandType = unit.faction:lower() .. unit.rank:lower():gsub("^%l", string.upper)
+
+  return unit
+end
+
+function UnitClass:_getAlignment(unit)
+  if unit.name:lower():find("anakin skywalker") then return nil end
+  if unit.faction == "rebel" or unit.faction == "republic" then return "light" end
+  if unit.faction == "imperial" or unit.faction == "separatist" then return "dark" end
+  return nil
+end
+
+-- assumes that an upgrade is allowed if any single restriction on the upgrade is validated
+function UnitClass:_upgradeIsAllowed(upgrade)
+  local isAllowed = true
+
+  if upgrade.restrictions ~= nil then
+    isAllowed = false
+
+    if upgrade.restrictions.units ~= nil then
+      if self:_validateUnitRestrictions(upgrade.restrictions.units) then return true end
+    end
+
+    if upgrade.restrictions.alignment ~= nil and self.alignment ~= nil then
+      if self:_validateAlignmentRestrictions(upgrade.restrictions.alignment) then return true end
+    end
+
+    if upgrade.restrictions.type ~= nil then
+      if self:_validateUnitTypeRestrictions(upgrade.restrictions.type) then return true end
+    end
+
+    if upgrade.restrictions.rank ~= nil then
+      if self:_validateUnitRankRestrictions(upgrade.restrictions.rank) then return true end
+    end
+  end
+
+  return isAllowed
+end
+
+function UnitClass:_validateUnitRestrictions(allowedUnits)
+  for i, val in ipairs(allowedUnits) do
+    if val:lower() == self.name:lower() then
+      return true
+    end
+  end
+  return false
+end
+
+function UnitClass:_validateAlignmentRestrictions(allowedAlignments)
+  for i, val in ipairs(allowedAlignments) do
+    if val:lower() == self.alignment:lower() then
+      return true
+    end
+  end
+  return false
+end
+
+function UnitClass:_validateUnitTypeRestrictions(allowedUnitTypes)
+  for i, val in ipairs(allowedUnitTypes) do
+    if self.type:lower():find(val:lower()) then
+      return true
+    end
+  end
+  return false
+end
+
+function UnitClass:_validateUnitRankRestrictions(allowedUnitRanks)
+  for i, val in ipairs(allowedUnitRanks) do
+    if val:lower() == self.rank:lower() then
+      return true
+    end
+  end
+  return false
+end
+
+-- returns a list of possible search strings for the unit card.
+-- the list is sorted in priority order. The first to return a hit should be used.
+function UnitClass:getPossibleUnitCardNames()
+  local tbl = {}
+
+  table.insert(tbl, self.name)
+  table.insert(tbl, self.name .. " (" .. self.faction .. ")")
+
+  return tbl
+end
+
+function UnitClass:getUnitCardIndex(unitCardsTable)
+  local searchStrings = self:getPossibleUnitCardNames()
+  local cardInt = -1
+
+  -- loop through all search strings, and break after the first hit
+  for k, searchName in pairs(searchStrings) do
+    for i, entry in pairs(unitCardsTable) do
+      if entry.nickname:lower() == searchName:lower() then
+        cardInt = entry.index
+        break
+      end
+    end
+    if cardInt > 0 then break end
+  end
+
+  return cardInt
+end
+
+-- "public" method used by the list builder to filter a list of upgrades to only those which are allowed for the unit
+function UnitClass:filterAllowedUpgrades(upgrades)
+  local tbl = {}
+
+  for i, val in ipairs(upgrades) do
+    if self:_upgradeIsAllowed(val) then
+      table.insert(tbl, val)
+    end
+  end
+
+  return tbl
+end
+
+-- inserts an upgrade table into the unit's list of selected upgrades. This represents the list of upgrades that will alter be spawned.
+-- upgrade is expected to have this shape:
+-- { name, type, ptCost, miniInfo?, restrictions? }
+function UnitClass:addUpgrade(upgrade)
+  if self.upgrades == nil then self.upgrades = {} end
+  table.insert(self.upgrades, upgrade)
+end
+
+-- convenience mthod to add multiple upgrades with a single call
+function UnitClass:addUpgrades(upgradeList)
+  for k, v in pairs(upgradeList) do
+    self:addUpgrade(v)
+  end
+end
+
+-- returns a flat array of all minis in the unit, including minis from upgrades
+-- also returns the index of the unit's leader mini
+function UnitClass:getMinisTable()
+  local minisTable = {}
+  local upgradesWithMinis = self:_getUpgradesWithMinis()
+  local leaderIndex = 1
+
+  for k, v in pairs(self.miniInfo) do
+    table.insert(minisTable, v)
+  end
+  if self.upgrades ~= nil then
+    for i, upgrade in ipairs(upgradesWithMinis) do
+      if upgrade.miniInfo ~= nil then
+        table.insert(minisTable, upgrade.miniInfo)
+        if upgrade.miniInfo.leader == true then
+          leaderIndex = #self.miniInfo + i
+        end
+      end
+    end
+  end
+
+  -- special case for the Heavy Weapon Team keyword
+  if string.find(self.name:lower(), "strike team") then
+    leaderIndex = #self.miniInfo + 1
+  end
+
+  return minisTable, leaderIndex
+end
+
+function UnitClass:_getUpgradesWithMinis()
+  local tbl = {}
+  for i, upgrade in ipairs(self.upgrades) do
+    if upgrade.miniInfo ~= nil then
+      table.insert(tbl, upgrade)
+    end
+  end
+  return tbl
+end
+
+-- CardInfoClass constructor
+function CardInfoClass:buildCardInfo()
+  local miniInfo = buildMiniInfo()
+  local cardInfoDB = {}
+
+  cardInfoDB.upgradeCards = {
+    -- Flaw
+    { name = 'Developing Sympathies', type = "flaw", ptCost = 0 },
+    { name = "I've Altered The Deal", type = "flaw", ptCost = 0 },
+    { name = 'Not A Story The Jedi Would Tell', type = "flaw", ptCost = 0 },
+
+     -- Counterpart
+     { name = "C-3PO Human Cyborg Relations", type = "counterpart", ptCost = 15, miniInfo = miniInfo.c3po, restrictions = {units={"r2-d2 hero of a thousand devices"}} },
+     { name = "C-3PO Made To Suffer", type = "counterpart", ptCost = 15, miniInfo = miniInfo.c3po, restrictions = {units={"r2-d2 independent astromech"}} },
+     { name = "Iden's ID10 Seeker Droid Droid", type = "counterpart", ptCost = 15, miniInfo = miniInfo.id10, restrictions = {units={"iden versio inferno squad leader"}} },
+
+    -- Armament
+    { name = "A-300 Config", type = "armament", ptCost = 0, restrictions = {units={"rebel pathfinders"}} },
+    { name = "A-180 Config", type = "armament", ptCost = 0, restrictions = {units={"jyn erso stardust"}} },
+    { name = "Jyn's SE-14 Blaster", type = "armament", ptCost = 10, restrictions = {units={"jyn erso stardust", "k-2so sardonic security droid"}} },
+    { name = "A-280-CFE Config", type = "armament", ptCost = 10, restrictions = {units={"cassian andor capable intelligence agent"}} },
+    { name = "The Darksaber", type = "armament", ptCost = 15, restrictions = {units={"sabine wren explosive artist"}} },
+    { name = 'Jetpack Rockets', type = "armament", ptCost = 8, restrictions = {units={"mandalorian resistance", "mandalorian resistance clan wren"}} },
+
+    { name = "Iden's DLT-20A Rifle", type = "armament", ptCost = 15, restrictions = {units={"iden versio inferno squad leader"}} },
+    { name = "Iden's TL-50 Repeater", type = "armament", ptCost = 15, restrictions = {units={"iden versio inferno squad leader"}} },
+    { name = "E-11D", type = "armament", ptCost = 8, restrictions = {units={"imperial death troopers"}} },
+    { name = 'J-19 Bo-rifle Blaster/Staff', type = "armament", ptCost = 25, restrictions = {units={"agent kallus hunter of spectres"}} },
+    { name = "RT-97C Blaster Rifle", type = "armament", ptCost = 10, restrictions = {units={"dewback rider"}} },
+    { name = "CR-24 Flame Rifle", type = "armament", ptCost = 15, restrictions = {units={"dewback rider"}} },
+    { name = "T-21 Blaster Rifle", type = "armament", ptCost = 5, restrictions = {units={"dewback rider"}} },
+
+    { name = 'Looted E-5 Blaster', type = "armament", ptCost = 5, restrictions = {units={"padme amidala spirited senator"}} },
+
+    { name = 'DT-57 "Annihilator"', type = "armament", ptCost = 12, restrictions = {units={"general grievous sinister cyborg"}} },
+    { name = 'Vibroswords', type = "armament", ptCost = 6, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
+    { name = 'Deflector Shields', type = "armament", ptCost = 18, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
+    { name = 'Electro Gauntlets', type = "armament", ptCost = 10, restrictions = {units={"cad bane needs no introduction"}} },
+
+    -- Command
+    { name = "Commanding Presence", type = "command", ptCost = 5 },
+    { name = "Esteemed Leader", type = "command", ptCost = 5 },
+    { name = "Improvised Orders", type = "command", ptCost = 5 },
+    { name = "Strict Orders", type = "command", ptCost = 5 },
+    { name = "Aggressive Tactics", type = "command", ptCost = 15 },
+    { name = "Inspiring Presence", type = "command", ptCost = 5 },
+    { name = "Vigilance", type = "command", ptCost = 5 },
+
+    -- Comms
+    { name =  "Comms Jammer", type="comms", ptCost = 5 },
+    { name =  "Long-Range Comlink", type="comms", ptCost = 5 },
+    { name =  "HQ Uplink", type="comms", ptCost = 10 },
+    { name =  "Comms Relay", type="comms", ptCost = 5 },
+    { name =  "Linked Targeting Array", type="comms", ptCost = 5, restrictions = {type={"emplacement trooper", "vehicle"}} },
+    { name =  "Integrated Comms Antenna", type="comms", ptCost = 3, restrictions = {type={"droid trooper"}} },
+    { name =  "Command Control Array", type="comms", ptCost = 2, restrictions = {type={"vehicle"}} },
+
+    -- Crew
+    { name =  "A-300 Rifle Gunner", type="crew", ptCost = 9, restrictions = {units={"x-34 landspeeder"}} },
+    { name = 'RPS-6 Rocket Gunner', type="crew", ptCost = 31, restrictions = {units={"x-34 landspeeder"}} },
+    { name = 'BARC RPS-6 Gunner', type="crew", ptCost = 21, restrictions = {units={"barc speeder"}} },
+    { name = 'BARC Twin Laser Gunner', type="crew", ptCost = 15, restrictions = {units={"barc speeder"}} },
+    { name = 'BARC Ion Gunner', type="crew", ptCost = 22, restrictions = {units={"barc speeder"}} },
+
+    -- Force
+    { name = "Force Push", type="force", ptCost = 10 },
+    { name = "Force Reflexes", type="force", ptCost = 5 },
+    { name = "Saber Throw", type="force", ptCost = 5 },
+    { name = "Jedi Mind Trick", type="force", ptCost = 5, restrictions = {alignment={"light"}} },
+    { name = "Battle Meditation", type="force", ptCost = 5 },
+    { name = "Force Choke", type="force", ptCost = 5, restrictions = {alignment={"dark"}} },
+    { name = "Anger", type="force", ptCost = 5, restrictions = {alignment={"dark"}} },
+    { name = "Fear", type="force", ptCost = 3, restrictions = {alignment={"dark"}} },
+    { name = "Force Guidance", type="force", ptCost = 5 },
+    { name = "Hope", type="force", ptCost = 3, restrictions = {alignment={"light"}} },
+    { name = "Force Barrier", type="force", ptCost = 10 },
+
+    -- Gear
+    { name = "Recon Intel", type="gear", ptCost = 2 },
+    { name = "Targeting Scopes", type="gear", ptCost = 4 },
+    { name = "Grappling Hooks", type="gear", ptCost = 1 },
+    { name = "Environmental Gear", type="gear", ptCost = 2 },
+    { name = "Emergency Stims", type="gear", ptCost = 10 },
+    { name = "Personal Combat Shield", type="gear", ptCost = 5, restrictions = {units={"sabine wren explosive artist"}} },
+    { name = "Electro Grappling Line", type="gear", ptCost = 5, restrictions = {units={"sabine wren explosive artist"}} },
+    { name = "Electrobinoculars", type="gear", ptCost = 8 },
+    { name = "JT-12 Jetpacks", type="gear", ptCost = 10, restrictions = {units={"clone captain rex honorable soldier", "arc troopers", "arc troopers strike team"}} },
+    { name = "Ascension Cables", type="gear", ptCost = 4 },
+    { name = "Portable Scanner", type="gear", ptCost = 6 },
+
+    -- Generator
+    { name =  "Barrage Generator", type="generator", ptCost = 3 },
+    { name =  "Overcharged Generator", type="generator", ptCost = 3 },
+
+    -- Grenades
+    { name = "Concussion Grenades", type="grenades", ptCost = 3 },
+    { name = "Impact Grenades", type="grenades", ptCost = 3 },
+    { name = "Fragmentation Grenades", type="grenades", ptCost = 5 },
+    { name = "Smoke Grenades", type="grenades", ptCost = 2 },
+    { name = "EMP Droid Poppers", type="grenades", ptCost = 3 },
+
+    -- Hardpoint
+    { name = "AT-RT Rotary Blaster", type="hardpoint", ptCost = 20, restrictions = {units={"at-rt", "at-rt (republic)"}} },
+    { name = "AT-RT Laser Cannon", type="hardpoint", ptCost = 10, restrictions = {units={"at-rt", "at-rt (republic)"}} },
+    { name = "AT-RT Flamethrower", type="hardpoint", ptCost = 20, restrictions = {units={"at-rt", "at-rt (republic)"}} },
+    { name = 'Ax-108 "Ground Buzzer"', type="hardpoint", ptCost = 10, restrictions = {units={"t-47 airspeeder"}} },
+    { name = "Mo/Dk Power Harpoon", type="hardpoint", ptCost = 0, restrictions = {units={"t-47 airspeeder"}} },
+    { name = "AT-ST Mortar Launcher", type="hardpoint", ptCost = 10, restrictions = {units={"at-st"}} },
+    { name = "88 Twin Light Blaster Cannon", type="hardpoint", ptCost = 20, restrictions = {units={"at-st"}} },
+    { name = "DW-3 Concussion Grenade Launcher", type="hardpoint", ptCost = 15, restrictions = {units={"at-st"}} },
+    { name = "M-45 Ion Blaster", type="hardpoint", ptCost = 31, restrictions = {units={"x-34 landspeeder"}} },
+    { name = "Mark II Medium Blaster", type="hardpoint", ptCost = 26, restrictions = {units={"x-34 landspeeder"}} },
+    { name = "RT-97C Rifle Pintle", type="hardpoint", ptCost = 14, restrictions = {units={"tx-225 gavw occupier combat assault tank"}} },
+    { name = 'DLT-19 Rifle Pintle', type="hardpoint", ptCost = 18, restrictions = {units={"tx-225 gavw occupier combat assault tank"}} },
+    { name = 'TX-130 Beam Cannon Turret', type="hardpoint", ptCost = 30, restrictions = {units={"tx-130 saber-class fighter tank"}} },
+    { name = 'TX-130 Twin Laser Turret', type="hardpoint", ptCost = 14, restrictions = {units={"tx-130 saber-class fighter tank"}} },
+
+    -- Heavy Weapon
+    { name = "Z-6 Trooper", type="heavy weapon", ptCost = 20, miniInfo = miniInfo.z6Trooper, restrictions = {units={"rebel troopers"}} },
+    { name = "MPL-57 Ion Trooper", type="heavy weapon", ptCost = 22, miniInfo = miniInfo.mpl57IonTrooper, restrictions = {units={"rebel troopers"}} },
+    { name = "SX-21 Trooper", type="heavy weapon", ptCost = 17, miniInfo = miniInfo.sx21Trooper, restrictions = {units={"rebel troopers"}} },
+    { name = "DLT-20A Trooper", type="heavy weapon", ptCost = 26, miniInfo = miniInfo.dlt20ATrooper, restrictions = {units={"rebel troopers"}} },
+
+    { name = "Scatter Gun Trooper", type="heavy weapon", ptCost = 23, miniInfo = miniInfo.scatterGunTrooper, restrictions = {units={"fleet troopers"}} },
+    { name = "MPL-57 Barrage Trooper", type="heavy weapon", ptCost = 22, miniInfo = miniInfo.mpl57BarrageTrooper, restrictions = {units={"fleet troopers"}} },
+
+    { name = "CM-0/93 Trooper", type="heavy weapon", ptCost = 26, miniInfo = miniInfo.cm093Trooper, restrictions = {units={"rebel veterans"}} },
+
+    { name = "DH-447 Sniper", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.dh447Sniper, restrictions = {units={"rebel commandos", "rebel commandos strike team"}} },
+    { name = "Proton Charge Saboteur", type="heavy weapon", ptCost = 26, miniInfo = miniInfo.protonChargeSaboteur, restrictions = {units={"rebel commandos", "rebel commandos strike team"}} },
+
+    { name = "Bowcaster Wookiee", type="heavy weapon", ptCost = 31, miniInfo = miniInfo.bowcasterWookiee, restrictions = {units={"wookiee warriors"}} },
+    
+    { name = "Beskad Duelist", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.beskadDuelist, restrictions = {units={"mandalorian resistance"}} },
+    { name = "Ursa Wren", type="heavy weapon", ptCost = 38, miniInfo = miniInfo.ursaWren, restrictions = {units={"mandalorian resistance"}} },
+    { name = "Tristan Wren", type="heavy weapon", ptCost = 38, miniInfo = miniInfo.tristanWren, restrictions = {units={"mandalorian resistance"}} },
+    
+    { name = "Pao", type="heavy weapon", ptCost = 22, miniInfo = miniInfo.pao, restrictions = {units={"rebel pathfinders"}} },
+    { name = "Bistan", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.bistan, restrictions = {units={"rebel pathfinders"}} },
+
+    { name = "DLT-19 Stormtrooper", type="heavy weapon", ptCost = 22, miniInfo = miniInfo.dlt19Stormtrooper, restrictions = {units={"stormtroopers"}} },
+    { name = "HH-12 Stormtrooper", type="heavy weapon", ptCost = 20, miniInfo = miniInfo.hh12Stormtrooper, restrictions = {units={"stormtroopers"}} },
+    { name = "RT-97C Stormtrooper", type="heavy weapon", ptCost = 26, miniInfo = miniInfo.rt97CStormtrooper, restrictions = {units={"stormtroopers"}} },
+    { name = "T-21 Stormtrooper", type="heavy weapon", ptCost = 24, miniInfo = miniInfo.t21Stormtrooper, restrictions = {units={"stormtroopers"}} },
+
+    { name = "T-7 Ion Snowtrooper", type="heavy weapon", ptCost = 20, miniInfo = miniInfo.t7IonSnowtrooper, restrictions = {units={"snowtroopers"}} },
+    { name = "Flametrooper", type="heavy weapon", ptCost = 20, miniInfo = miniInfo.flametrooper,  restrictions = {units={"snowtroopers"}} },
+
+    { name = "T-21B Trooper", type="heavy weapon", ptCost = 35, miniInfo = miniInfo.t21BTrooper, restrictions = {units={"shoretroopers"}} },
+
+    { name = "Electrostaff Guard", type="heavy weapon", ptCost = 25, miniInfo = miniInfo.electrostaffGuard, restrictions = {units={"imperial royal guards"}} },
+
+    { name = "DLT-19x Sniper", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.dlt19xSniper, restrictions = {units={"scout troopers", "scout troopers strike team"}} },
+    { name = "Sonic Charge Saboteur", type="heavy weapon", ptCost = 26, miniInfo = miniInfo.sonicChargeSaboteurLeader, restrictions = {units={"scout troopers", "scout troopers strike team"}} },
+    
+    { name = "T-21 Special Forces Trooper", type="heavy weapon", ptCost = 29, miniInfo = miniInfo.isfT21, restrictions = {units={"imperial special forces"}} },
+
+    { name = "DT-F16", type="heavy weapon", ptCost = 22, miniInfo = miniInfo.dtf16, restrictions = {units={"imperial death troopers"}} },
+    { name = "DLT-19D Trooper", type="heavy weapon", ptCost = 34, miniInfo = miniInfo.dlt19DTrooper, restrictions = {units={"imperial death troopers"}} },
+
+    { name = "Del Meeko", type="heavy weapon", ptCost = 38, miniInfo = miniInfo.delMeeko, restrictions = {units={"stormtroopers", "snowtroopers", "shoretroopers", "imperial special forces"}} },
+    { name = "Gideon Hask", type="heavy weapon", ptCost = 38, miniInfo = miniInfo.gideonHask, restrictions = {units={"stormtroopers", "snowtroopers", "shoretroopers", "imperial special forces"}} },
+
+    { name = "Z-6 Phase I Trooper", type="heavy weapon", ptCost = 23, miniInfo = miniInfo.z6PhaseITrooper, restrictions = {units={"phase i clone troopers"}} },
+    { name = "DC-15 Phase I Trooper", type="heavy weapon", ptCost = 27, miniInfo = miniInfo.dc15PhaseITrooper,  restrictions = {units={"phase i clone troopers"}} },
+    { name = "DP-23 Phase I Trooper", type="heavy weapon", ptCost = 23, miniInfo = miniInfo.dp23PhaseITrooper, restrictions = {units={"phase i clone troopers"}} },
+    { name = "RPS-6 Phase I Trooper", type="heavy weapon", ptCost = 21, miniInfo = miniInfo.rps6PhaseITrooper, restrictions = {units={"phase i clone troopers"}} },
+
+    { name = "Z-6 Phase II Trooper", type="heavy weapon", ptCost = 27, miniInfo = miniInfo.z6PhaseIITrooper, restrictions = {units={"phase ii clone troopers"}} },
+    { name = "Phase II Mortar Trooper", type="heavy weapon", ptCost = 20, miniInfo = miniInfo.mortarPhaseIITrooper, restrictions = {units={"phase ii clone troopers"}} },
+
+    { name = "DC-15x ARC Trooper", type="heavy weapon", ptCost = 31, miniInfo = miniInfo.arcTrooperDC15x, restrictions = {units={"arc troopers", "arc troopers strike team"}} },
+    { name = "Echo", type="heavy weapon", ptCost = 40, miniInfo = miniInfo.echoLeader, restrictions = {units={"arc troopers", "arc troopers strike team", "phase i clone troopers", "phase ii clone troopers"}} },
+    { name = "Fives", type="heavy weapon", ptCost = 36, miniInfo = miniInfo.fivesLeader, restrictions = {units={"arc troopers", "arc troopers strike team", "phase i clone troopers", "phase ii clone troopers"}} },
+
+    { name = "E-5C B1 Trooper", type="heavy weapon", ptCost = 18, miniInfo = miniInfo.e5CB1Trooper, restrictions = {units={"b1 battle droids"}} },
+    { name = "E-60R B1 Trooper", type="heavy weapon", ptCost = 20, miniInfo = miniInfo.e60RB1Trooper, restrictions = {units={"b1 battle droids"}} },
+    { name = "E-5s B1 Trooper", type="heavy weapon", ptCost = 20, miniInfo = miniInfo.e5sB1Trooper, restrictions = {units={"b1 battle droids"}} },
+    { name = "Radiation Cannon B1 Trooper", type="heavy weapon", ptCost = 22, miniInfo = miniInfo.radiationCannonB1Trooper, restrictions = {units={"b1 battle droids"}} },
+
+    { name = "B2-ACM Trooper", type="heavy weapon", ptCost = 24, miniInfo = miniInfo.b2ACMTrooper, restrictions = {units={"b2 super battle droids"}} },
+    { name = "B2-HA Trooper", type="heavy weapon", ptCost = 30, miniInfo = miniInfo.b2HATrooper, restrictions = {units={"b2 super battle droids"}} },
+
+    { name = "BX-Series Droid Sniper", type="heavy weapon", ptCost = 30, miniInfo = miniInfo.bxCommandoDroidSniper, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
+    { name = "BX-Series Droid Saboteur", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.bxCommandoDroidSaboteur, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
+    
+    -- Ordnance
+    { name = "Armor-Piercing Shells", type = "ordnance", ptCost = 10 },
+    { name = "High-Energy Shells", type = "ordnance", ptCost = 8 },
+    { name = '"Bunker Buster" Shells', type = "ordnance", ptCost = 12 },
+    
+    -- Personnel
+    { name = "Rebel Trooper", type="personnel", ptCost = 7, miniInfo = miniInfo.rebelTrooper4, restrictions = {units={"rebel troopers"}} },
+    { name = "Rebel Trooper Specialist", type="personnel", ptCost = 12, miniInfo = miniInfo.rebelTrooperSpecialist, restrictions = {units={"rebel troopers"}} },
+    { name = "Rebel Trooper Captain", type="personnel", ptCost = 11, miniInfo = miniInfo.rebelTrooperCaptain, restrictions = {units={"rebel troopers"}} },
+    { name = "Fleet Trooper", type="personnel", ptCost = 7, miniInfo = miniInfo.fleetTroopers4, restrictions = {units={"fleet troopers"}} },
+    { name = "Rebel Veteran", type="personnel", ptCost = 12, miniInfo = miniInfo.rebelVeterans4, restrictions = {units={"rebel veterans"}} },
+    { name = "Rebel Officer", type="personnel", ptCost = 16, miniInfo = miniInfo.rebelOfficerLeader, restrictions = {units={"rebel troopers", "fleet troopers", "rebel veterans"}} },
+    { name = "2-1B Medical Droid", type="personnel", ptCost = 18, miniInfo = miniInfo.medicalDroid21B, restrictions = {units={"rebel troopers", "fleet troopers", "rebel veterans"}} },
+    { name = "R5 Astromech Droid", type="personnel", ptCost = 8, miniInfo = miniInfo.r5AstromechDroid, restrictions = {units={"rebel troopers", "fleet troopers", "rebel veterans"}} },
+    { name = "Rebel Comms Technician", type="personnel", ptCost = 9, miniInfo = miniInfo.rebelCommsTechnician, restrictions = {units={"rebel troopers", "fleet troopers", "rebel veterans"}} },
+    
+    { name = "Stormtrooper", type="personnel", ptCost = 8, miniInfo = miniInfo.stormtrooper4, restrictions = {units={"stormtroopers"}} },
+    { name = "Stormtrooper Captain", type="personnel", ptCost = 12, miniInfo = miniInfo.stormtrooperCaptain, restrictions = {units={"stormtroopers"}} },
+    { name = "Stormtrooper Specialist", type="personnel", ptCost = 12, miniInfo = miniInfo.stormtrooperSpecialist, restrictions = {units={"stormtroopers"}} },
+    { name = "Snowtrooper", type="personnel", ptCost = 8, miniInfo = miniInfo.snowtrooper4, restrictions = {units={"snowtroopers"}} },
+    { name = "Shoretrooper", type="personnel", ptCost = 13, miniInfo = miniInfo.shoretroopers4, restrictions = {units={"shoretroopers"}} },
+    { name = "Imperial Officer", type="personnel", ptCost = 17, miniInfo = miniInfo.imperialOfficerLeader, restrictions = {units={"stormtroopers", "snowtroopers", "shoretroopers"}} },
+    { name = "R4 Astromech Droid", type="personnel", ptCost = 9, miniInfo = miniInfo.r4AstromechDroid, restrictions = {units={"stormtroopers", "snowtroopers", "shoretroopers"}} },
+    { name = "FX-9 Medical Droid", type="personnel", ptCost = 19, miniInfo = miniInfo.fx9MedicalDroid, restrictions = {units={"stormtroopers", "snowtroopers", "shoretroopers"}} },
+    { name = "Imperial Comms Technician", type="personnel", ptCost = 10, miniInfo = miniInfo.imperialCommsTechnician, restrictions = {units={"stormtroopers", "snowtroopers", "shoretroopers"}} },
+    
+    
+    { name = "Phase I Clone Trooper", type="personnel", ptCost = 10, miniInfo = miniInfo.phaseICloneTrooper4, restrictions = {units={"phase i clone troopers"}} },
+    { name = "Phase I Clone Specialist", type="personnel", ptCost = 14, miniInfo = miniInfo.phaseICloneSpecialist, restrictions = {units={"phase i clone troopers"}} },
+    { name = "Phase I Clone Captain", type="personnel", ptCost = 14, miniInfo = miniInfo.phaseICloneCaptain, restrictions = {units={"phase i clone troopers"}} },
+    { name = "Phase II Clone Trooper", type="personnel", ptCost = 13, miniInfo = miniInfo.phaseIICloneTrooper4, restrictions = {units={"phase ii clone troopers"}} },
+    { name = "Clone Engineer", type="personnel", ptCost = 18, miniInfo = miniInfo.cloneEngineer, restrictions = {units={"phase i clone troopers", "phase ii clone troopers"}} },
+    { name = "Clone Medic", type="personnel", ptCost = 20, miniInfo = miniInfo.cloneMedic, restrictions = {units={"phase i clone troopers", "phase ii clone troopers"}} },
+    { name = "Clone Commander", type="personnel", ptCost = 20, miniInfo = miniInfo.cloneCommanderLeader, restrictions = {units={"phase i clone troopers", "phase ii clone troopers"}} },
+    { name = "Clone Comms Technician", type="personnel", ptCost = 12, miniInfo = miniInfo.cloneCommsTechnician, restrictions = {units={"phase i clone troopers", "phase ii clone troopers"}} },
+    
+    { name = "B1 Battle Droid", type="personnel", ptCost = 5, miniInfo = miniInfo.b1BattleDroid6, restrictions = {units={"b1 battle droids"}} },
+    { name = "B1 Security Droid", type="personnel", ptCost = 7, miniInfo = miniInfo.b1SecurityDroid, restrictions = {units={"b1 battle droids"}} },
+    { name = "OOM-Series Battle Droid", type="personnel", ptCost = 9, miniInfo = miniInfo.oomSeriesBattleDroid, restrictions = {units={"b1 battle droids"}} },
+    { name = "B2 Super Battle Droid", type="personnel", ptCost = 13, miniInfo = miniInfo.b2SuperBattleDroid3, restrictions = {units={"b2 super battle droids"}} },
+    { name = "T-Series Tactical Droid", type="personnel", ptCost = 18, miniInfo = miniInfo.tSeriesTacticalDroidLeader, restrictions = {units={"b1 battle droids", "b2 super battle droids"}} },
+    { name = "EV-Series Medical Droid", type="personnel", ptCost = 14, miniInfo = miniInfo.evSeriesMedicalDroid, restrictions = {units={"b1 battle droids", "b2 super battle droids"}} },
+    { name = "PK-Series Worker Droid", type="personnel", ptCost = 12, miniInfo = miniInfo.pkSeriesWorkerDroid, restrictions = {units={"b1 battle droids", "b2 super battle droids"}} },
+    { name = "Viper Recon Droid", type="personnel", ptCost = 8, miniInfo = miniInfo.viperReconDroid, restrictions = {units={"b1 battle droids", "b2 super battle droids"}} },
+    
+    -- Pilot
+    { name = "Wedge Antilles", type = "pilot", ptCost = 1, restrictions = {units={"t-47 airspeeder", "x-34 landspeeder"}} },
+    { name = "Ryder Azadi", type = "pilot", ptCost = 5, restrictions = {units={"t-47 airspeeder", "x-34 landspeeder"}} },
+    { name = "Outer Rim Speeder Jockey", type = "pilot", ptCost = 10, restrictions = {units={"t-47 airspeeder", "x-34 landspeeder"}} },
+
+    { name = "General Weiss", type = "pilot", ptCost = 1, restrictions = {units={"at-st", "tx-225 gavw occupier combat assault tank"}} },
+    { name = "First Sergeant Arbmab", type = "pilot", ptCost = 5, restrictions = {units={"at-st", "tx-225 gavw occupier combat assault tank"}} },
+    { name = "Imperial Hammers Elite Armor Pilot", type = "pilot", ptCost = 10, restrictions = {units={"at-st", "tx-225 gavw occupier combat assault tank"}} },
+
+    { name = "Aayla Secura", type = "pilot", ptCost = 5, restrictions = {units={"tx-130 saber-class fighter tank"}} },
+    { name = "Veteran Clone Pilot", type="pilot", ptCost = 7, restrictions = {units={"tx-130 saber-class fighter tank"}} },
+    { name = "Plo Koon", type="pilot", ptCost = 9, restrictions = {units={"tx-130 saber-class fighter tank"}} },
+
+    { name = "T-Series Tactical Droid Pilot", type="pilot", ptCost = 5, restrictions = {units={"aat trade federation battle tank"}} },
+    { name = "OOM-Series Droid Pilot", type="pilot", ptCost = 7, restrictions = {units={"aat trade federation battle tank"}} },
+    { name = "Lok Durd", type="pilot", ptCost = 9, restrictions = {units={"aat trade federation battle tank"}} },
+
+    -- Training
+    { name = "Duck and Cover", type = "training", ptCost = 4 },
+    { name = "Hunter", type = "training", ptCost = 6 },
+    { name = "Tenacity", type = "training", ptCost = 4 },
+    { name = "Endurance", type = "training", ptCost = 6 },
+    { name = "Overwatch", type = "training", ptCost = 4 },
+    { name = "Offensive Push", type = "training", ptCost = 4 },
+    { name = "Situational Awareness", type = "training", ptCost = 2 },
+    { name = "Offensive Stance", type = "training", ptCost = 5 },
+    { name = "Seize The Initiative", type = "training", ptCost = 5 },
+  }
+
+  cardInfoDB.unitCards = {
+    -- REBEL --
+    -- Rebel Commander
+    UnitClass:create({
+      name = "Luke Skywalker Hero of the Rebellion",
+      points = 160,
+      displayName = "Luke Skywalker",
+      miniInfo = { miniInfo.lukeSkywalker },
+      rank = "Commander",
+      faction = "rebel",
+      upgradeSlots = {"force", "force", "gear"},
+    }),
+    UnitClass:create({
+      name = "Leia Organa Fearless and Inventive",
+      points = 90,
+      displayName = "Leia Organa",
+      miniInfo = { miniInfo.leiaOrgana },
+      rank = "Commander",
+      faction = "rebel",
+      upgradeSlots = {"command", "command", "gear"},
+    }),
+    UnitClass:create({
+      name = "Han Solo Unorthodox General",
+      points = 100,
+      displayName = "Han Solo",
+      miniInfo = { miniInfo.hanSolo },
+      rank = "Commander",
+      faction = "rebel",
+      upgradeSlots = {"command", "training", "gear"},
+    }),
+    UnitClass:create({
+      name = "Jyn Erso Stardust",
+      points = 100,
+      displayName = "Jyn Erso",
+      miniInfo = { miniInfo.jynErso },
+      rank = "Commander",
+      faction = "rebel",
+      upgradeSlots = {"command", "training", "gear", "armament"},
+    }),
+    UnitClass:create({
+      name = "Cassian Andor Capable Intelligence Agent",
+      points = 90,
+      displayName = "Cassian Andor",
+      miniInfo = { miniInfo.cassianAndor },
+      rank = "Commander",
+      faction = "rebel",
+      upgradeSlots = {"training", "training", "gear", "armament"},
+    }),
+    UnitClass:create({
+      name = "Lando Calrissian Smooth Operator",
+      points = 105,
+      displayName = "Lando Calrissian",
+      miniInfo = { miniInfo.landoCalrissian },
+      rank = "Commander",
+      faction = "rebel",
+      upgradeSlots = {"command", "training", "gear"},
+      requiredUpgrades = {"i've altered the deal"}
+    }),
+    UnitClass:create({
+      name = "Rebel Officer Resolute Commander",
+      points = 45,
+      displayName = "Rebel Officer",
+      miniInfo = { miniInfo.rebelOfficerLeader },
+      rank = "Commander",
+      faction = "rebel",
+      upgradeSlots = {"command", "gear"},
+    }),
+    -- Rebel Operative
+    UnitClass:create({
+      name = "Chewbacca Walking Carpet",
+      points = 90,
+      displayName = "Chewbacca",
+      miniInfo = { miniInfo.chewbacca },
+      rank = "Operative",
+      faction = "rebel",
+      upgradeSlots = {"training", "training", "gear"},
+    }),
+    UnitClass:create({
+      name = "K-2SO Sardonic Security Droid",
+      points = 70,
+      displayName = "K-2SO",
+      miniInfo = { miniInfo.chewbacca },
+      rank = "Operative",
+      type = "droid trooper",
+      faction = "rebel",
+      upgradeSlots = {"comms", "armament"},
+    }),
+    UnitClass:create({
+      name = "Luke Skywalker Jedi Knight",
+      points = 195,
+      displayName = "Luke Skywalker",
+      miniInfo = { miniInfo.lukeSkywalkerJediKnight },
+      rank = "Operative",
+      faction = "rebel",
+      upgradeSlots = {"force", "force", "force", "training"},
+    }),
+    UnitClass:create({
+      name = "R2-D2 Hero of a Thousand Devices",
+      points = 45,
+      displayName = "R2-D2",
+      miniInfo = { miniInfo.r2d2 },
+      rank = "Operative",
+      type = "droid trooper",
+      selectedSpeed = 1,
+      faction = "rebel",
+      upgradeSlots = {"comms", "counterpart"},
+    }),
+    UnitClass:create({
+      name = "Sabine Wren Explosive Artist",
+      points = 125,
+      displayName = "Sabine Wren",
+      miniInfo = { miniInfo.sabineWren },
+      rank = "Operative",
+      selectedSpeed = 3,
+      faction = "rebel",
+      upgradeSlots = {"training", "gear", "gear", "armament"},
+    }),
+    -- Rebel Corps
+    UnitClass:create({
+      name = "Rebel Troopers",
+      points = 40,
+      miniInfo = { miniInfo.rebelTrooperLeader, miniInfo.rebelTrooper1, miniInfo.rebelTrooper2, miniInfo.rebelTrooper3 },
+      rank = "Corps",
+      faction = "rebel",
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Fleet Troopers",
+      points = 40,
+      miniInfo = { miniInfo.fleetTroopersLeader, miniInfo.fleetTroopers1, miniInfo.fleetTroopers2, miniInfo.fleetTroopers3 },
+      rank = "Corps",
+      faction = "rebel",
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Rebel Veterans",
+      points = 48,
+      miniInfo = { miniInfo.rebelVeteransLeader, miniInfo.rebelVeterans1, miniInfo.rebelVeterans2, miniInfo.rebelVeterans3 },
+      rank = "Corps",
+      faction = "rebel",
+      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Mark II Medium Blaster Trooper",
+      points =38,
+      miniInfo = { miniInfo.markIIMediumBlasterTrooper },
+      rank = "Corps",
+      type = "emplacement trooper",
+      baseSize = "medium",
+      faction = "rebel",
+      upgradeSlots = {"comms"},
+    }),
+    -- Rebel Specialforces
+    UnitClass:create({
+      name = "Rebel Commandos",
+      points = 50,
+      miniInfo = { miniInfo.rebelCommandosLeader, miniInfo.rebelCommandos1, miniInfo.rebelCommandos2, miniInfo.rebelCommandos3 },
+      rank = "SpecialForces",
+      faction = "rebel",
+      upgradeSlots = {"heavy weapon", "training", "comms", "gear", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Rebel Commandos Strike Team",
+      points = 20,
+      miniInfo = { miniInfo.rebelCommandos4 },
+      rank = "SpecialForces",
+      faction = "rebel",
+      upgradeSlots = {"heavy weapon", "training", "comms", "gear", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Wookiee Warriors",
+      points = 69,
+      miniInfo = { miniInfo.wookieeWarriorsLeader, miniInfo.wookieeWarriors1, miniInfo.wookieeWarriors2 },
+      rank = "SpecialForces",
+      type = "wookiee trooper",
+      faction = "rebel",
+      upgradeSlots = {"heavy weapon", "training", "training", "gear", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Rebel Pathfinders",
+      points = 58,
+      miniInfo = { miniInfo.rebelPathfindersLeader, miniInfo.rebelPathfinders1, miniInfo.rebelPathfinders2, miniInfo.rebelPathfinders3 },
+      rank = "SpecialForces",
+      faction = "rebel",
+      upgradeSlots = {"heavy weapon", "training", "comms", "gear", "armament", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Mandalorian Resistance",
+      points = 72,
+      miniInfo = { miniInfo.mandalorianResistanceLeader, miniInfo.mandalorianResistance1, miniInfo.mandalorianResistance2 },
+      rank = "SpecialForces",
+      selectedSpeed = 3,
+      faction = "rebel",
+      upgradeSlots = {"heavy weapon", "training", "comms", "gear", "armament", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Mandalorian Resistance Clan Wren",
+      displayName = "Clan Wren",
+      points = 34,
+      miniInfo = { miniInfo.clanWren1 },
+      rank = "SpecialForces",
+      selectedSpeed = 3,
+      faction = "rebel",
+      upgradeSlots = {"training", "comms", "gear", "armament", "grenades"},
+      requiredUpgrades = {"ursa wren", "tristan wren"}
+    }),
+    -- Rebel Support
+    UnitClass:create({
+      name = "AT-RT",
+      points = 55,
+      miniInfo = { miniInfo.atrt },
+      rank = "Support",
+      type = "ground vehicle",
+      baseSize = "large",
+      faction = "rebel",
+      upgradeSlots = {"hardpoint", "comms"}
+    }),
+    UnitClass:create({
+      name = "1.4 FD Laser Cannon Team",
+      points = 70,
+      miniInfo = { miniInfo.fdLaserCannonTeam },
+      rank = "Support",
+      type = "emplacement trooper",
+      baseSize = "huge",
+      selectedSpeed = 0,
+      faction = "rebel",
+      upgradeSlots = {"comms", "generator"}
+    }),
+    UnitClass:create({
+      name = "Tauntaun Riders",
+      points = 95,
+      miniInfo = { miniInfo.tauntaunRidersLeader, miniInfo.tauntaunRiders1 },
+      rank = "Support",
+      type = "creature trooper",
+      baseSize = "medium",
+      selectedSpeed = 3,
+      faction = "rebel",
+      upgradeSlots = {"training", "comms"}
+    }),
+    -- Rebel Heavy
+    UnitClass:create({
+      name = "T-47 Airspeeder",
+      points = 130,
+      miniInfo = { miniInfo.airSpeeder },
+      rank = "Heavy",
+      type = "repulsor vehicle",
+      baseSize = "huge",
+      selectedSpeed = 3,
+      faction = "rebel",
+      upgradeSlots = {"pilot", "hardpoint", "comms"}
+    }),
+    UnitClass:create({
+      name = "X-34 Landspeeder",
+      points = 60,
+      miniInfo = { miniInfo.x34Landspeeder },
+      rank = "Heavy",
+      type = "repulsor vehicle",
+      baseSize = "huge",
+      faction = "rebel",
+      upgradeSlots = {"pilot", "crew", "crew", "hardpoint", "comms"}
+    }),
+
+    -- IMPERIAL --
+    -- Imperial Commander
+    UnitClass:create({
+      name = "Agent Kallus Hunter of Spectres",
+      points = 90,
+      displayName = "Agent Kallus",
+      miniInfo = { miniInfo.agentKallus },
+      rank = "Commander",
+      faction = "imperial",
+      upgradeSlots = {"command", "training", "gear", "armament"},
+    }),
+    UnitClass:create({
+      name = "Darth Vader Dark Lord of the Sith",
+      points = 175,
+      displayName = "Darth Vader",
+      miniInfo = { miniInfo.darthVader },
+      rank = "Commander",
+      selectedSpeed = 1,
+      faction = "imperial",
+      upgradeSlots = {"force", "force", "force"},
+    }),
+    UnitClass:create({
+      name = "Director Orson Krennic Architect of Terror",
+      points = 90,
+      displayName = "Director Orson Krennic",
+      miniInfo = { miniInfo.directorOrsonKrennic },
+      rank = "Commander",
+      faction = "imperial",
+      upgradeSlots = {"command", "command", "gear"},
+    }),
+    UnitClass:create({
+      name = "Emperor Palpatine Ruler of the Galactic Empire",
+      points = 200,
+      displayName = "Emperor Palpatine",
+      miniInfo = { miniInfo.emperorPalpatine },
+      rank = "Commander",
+      selectedSpeed = 1,
+      faction = "imperial",
+      upgradeSlots = {"force", "force", "force", "command"},
+    }),
+    UnitClass:create({
+      name = "General Veers Master Tactician",
+      points = 80,
+      displayName = "General Veers",
+      miniInfo = { miniInfo.generalVeers },
+      rank = "Commander",
+      faction = "imperial",
+      upgradeSlots = {"command", "command", "gear"},
+    }),
+    UnitClass:create({
+      name = "Iden Versio Inferno Squad Leader",
+      points = 100,
+      displayName = "Iden Versio",
+      miniInfo = { miniInfo.idenVersio },
+      rank = "Commander",
+      faction = "imperial",
+      upgradeSlots = {"training", "training", "gear", "armament", "counterpart"},
+    }),
+    UnitClass:create({
+      name = "Imperial Officer Ruthless Commander",
+      points = 45,
+      displayName = "Imperial Officer",
+      miniInfo = { miniInfo.imperialOfficer },
+      rank = "Commander",
+      faction = "imperial",
+      upgradeSlots = {"command", "gear"},
+    }),
+    -- Imperial Operative
+    UnitClass:create({
+      name = "Boba Fett Infamous Bounty Hunter",
+      points = 125,
+      displayName = "Boba Fett",
+      miniInfo = { miniInfo.bobaFett },
+      rank = "Operative",
+      selectedSpeed = 3,
+      faction = "imperial",
+      upgradeSlots = {"training", "training", "gear", "gear"},
+    }),
+    UnitClass:create({
+      name = "Bossk Trandoshan Terror",
+      points = 115,
+      displayName = "Bossk",
+      miniInfo = { miniInfo.bossk },
+      rank = "Operative",
+      faction = "imperial",
+      upgradeSlots = {"training", "training", "gear"},
+    }),
+    UnitClass:create({
+      name = "Darth Vader The Emperor's Apprentice",
+      points = 155,
+      displayName = "Darth Vader",
+      miniInfo = { miniInfo.darthVaderTheEmperorsApprentice },
+      rank = "Operative",
+      selectedSpeed = 1,
+      faction = "imperial",
+      upgradeSlots = {"force", "force", "training"},
+    }),
+    -- Imperial Corps
+    UnitClass:create({
+      name = "DF-90 Mortar Trooper",
+      points = 38,
+      miniInfo = { miniInfo.df90MortarTrooper },
+      rank = "Corps",
+      baseSize = "medium",
+      type = "emplacement trooper",
+      selectedSpeed = 1,
+      faction = "imperial",
+      upgradeSlots = {"comms"},
+    }),
+    UnitClass:create({
+      name = "Shoretroopers",
+      points = 52,
+      miniInfo = { miniInfo.shoretroopersLeader, miniInfo.shoretroopers1, miniInfo.shoretroopers2, miniInfo.shoretroopers3 },
+      rank = "Corps",
+      faction = "imperial",
+      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Snowtroopers",
+      points = 44,
+      miniInfo = { miniInfo.snowtrooperLeader, miniInfo.snowtrooper1, miniInfo.snowtrooper2, miniInfo.snowtrooper3 },
+      rank = "Corps",
+      selectedSpeed = 1,
+      faction = "imperial",
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Stormtroopers",
+      points = 44,
+      miniInfo = { miniInfo.stormtrooperLeader, miniInfo.stormtrooper1, miniInfo.stormtrooper2, miniInfo.stormtrooper3 },
+      rank = "Corps",
+      faction = "imperial",
+      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades"},
+    }),
+    -- Imperial Specialforces
+    UnitClass:create({
+      name = "Imperial Death Troopers",
+      points = 76,
+      miniInfo = { miniInfo.imperialDeathTroopersLeader, miniInfo.imperialDeathTroopers1, miniInfo.imperialDeathTroopers2, miniInfo.imperialDeathTroopers3 },
+      rank = "Specialforces",
+      faction = "imperial",
+      upgradeSlots = {"heavy weapon", "training", "comms", "gear", "armament", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Imperial Special Forces",
+      points = 68,
+      miniInfo = { miniInfo.isfLeader, miniInfo.isf1, miniInfo.isf2, miniInfo.isf3 },
+      rank = "Specialforces",
+      faction = "imperial",
+      upgradeSlots = {"heavy weapon", "training", "training", "comms", "gear", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Imperial Special Forces Inferno Squad",
+      points = 34,
+      displayName = "Inferno Squad",
+      miniInfo = { miniInfo.isfInferno },
+      rank = "Specialforces",
+      faction = "imperial",
+      upgradeSlots = {"training", "training", "comms", "gear", "grenades"},
+      requiredUpgrades = {"del meeko", "gideon hask"}
+    }),
+    UnitClass:create({
+      name = "Imperial Royal Guards",
+      points = 75,
+      miniInfo = { miniInfo.imperialRoyalGuardsLeader, miniInfo.imperialRoyalGuards1, miniInfo.imperialRoyalGuards2 },
+      rank = "Specialforces",
+      faction = "imperial",
+      upgradeSlots = {"heavy weapon", "training", "training", "gear", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Scout Troopers",
+      points = 48,
+      miniInfo = { miniInfo.scoutTroopersLeader, miniInfo.scoutTroopers1, miniInfo.scoutTroopers2, miniInfo.scoutTroopers3 },
+      rank = "Specialforces",
+      faction = "imperial",
+      upgradeSlots = {"heavy weapon", "training", "comms", "gear", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Scout Troopers Strike Team",
+      points = 20,
+      miniInfo = { miniInfo.scoutTroopers1 },
+      rank = "Specialforces",
+      faction = "imperial",
+      upgradeSlots = {"heavy weapon", "training", "comms", "gear", "grenades"},
+    }),
+    -- Imperial Support
+    UnitClass:create({
+      name = "Dewback Rider",
+      points = 75,
+      miniInfo = { miniInfo.dewbackRider },
+      rank = "Support",
+      type = "creature trooper",
+      baseSize = "large",
+      selectedSpeed = 1,
+      faction = "imperial",
+      upgradeSlots = {"training", "comms", "armament"},
+    }),
+    UnitClass:create({
+      name = "E-Web Heavy Blaster Team",
+      points = 55,
+      miniInfo = { miniInfo.eWebHeavyBlasterTeam },
+      rank = "Support",
+      type = "emplacement trooper",
+      baseSize = "large",
+      selectedSpeed = 1,
+      faction = "imperial",
+      upgradeSlots = {"comms", "generator"},
+    }),
+    UnitClass:create({
+      name = "74-Z Speeder Bikes",
+      points = 75,
+      miniInfo = { miniInfo.speederBikeLeader, miniInfo.speederBike },
+      rank = "Support",
+      type = "repulsor vehicle",
+      baseSize = "medium",
+      selectedSpeed = 3,
+      faction = "imperial",
+      upgradeSlots = {"comms"},
+    }),
+    -- Imperial Heavy
+    UnitClass:create({
+      name = "AT-ST",
+      points = 160,
+      miniInfo = { miniInfo.atst },
+      rank = "Heavy",
+      type = "ground vehicle",
+      baseSize = "huge",
+      faction = "imperial",
+      upgradeSlots = {"pilot", "hardpoint", "hardpoint", "hardpoint", "comms"},
+    }),
+    UnitClass:create({
+      name = "TX-225 GAVw Occupier Combat Assault Tank",
+      displayName = "TX-225 GAVw Tank",
+      points = 145,
+      miniInfo = { miniInfo.tx225 },
+      rank = "Heavy",
+      type = "ground vehicle",
+      baseSize = "long",
+      selectedSpeed = 1,
+      faction = "imperial",
+      upgradeSlots = {"pilot", "hardpoint", "comms"},
+    }),
+
+    -- REPUBLIC --
+    -- Republic Commander
+    UnitClass:create({
+      name = "Anakin Skywalker The Chosen One",
+      points = 160,
+      displayName = "Anakin Skywalker",
+      miniInfo = { miniInfo.anakinSkywalker },
+      rank = "Commander",
+      faction = "republic",
+      upgradeSlots = {"force", "force", "training", "training"},
+    }),
+    UnitClass:create({
+      name = "Clone Captain Rex Honorable Soldier",
+      points = 90,
+      displayName = "Clone Captain Rex",
+      miniInfo = { miniInfo.cloneCaptainRex },
+      rank = "Commander",
+      faction = "republic",
+      upgradeSlots = {"command", "training", "gear", "gear", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Clone Commander Trained For Leadership",
+      points = 55,
+      displayName = "Clone Commander",
+      miniInfo = { miniInfo.cloneCommander },
+      rank = "Commander",
+      faction = "republic",
+      upgradeSlots = {"command", "training", "gear"},
+    }),
+    UnitClass:create({
+      name = "Obi-Wan Kenobi Civilized Warrior",
+      points = 170,
+      displayName = "Obi-Wan Kenobi",
+      miniInfo = { miniInfo.obiWanKenobi },
+      rank = "Commander",
+      faction = "republic",
+      upgradeSlots = {"force", "force", "command", "training"},
+    }),
+    -- Republic Operative
+    UnitClass:create({
+      name = "Padme Amidala Spirited Senator",
+      points = 90,
+      displayName = "Padme Amidala",
+      miniInfo = { miniInfo.padme },
+      rank = "Operative",
+      faction = "republic",
+      upgradeSlots = {"command", "training", "gear", "armament"},
+    }),
+    UnitClass:create({
+      name = "R2-D2 Independent Astromech",
+      points = 45,
+      displayName = "R2-D2",
+      miniInfo = { miniInfo.r2d2 },
+      rank = "Operative",
+      type = "droid trooper",
+      selectedSpeed = 1,
+      faction = "republic",
+      upgradeSlots = {"comms", "counterpart"},
+    }),
+    -- Republic Corps
+    UnitClass:create({
+      name = "Phase I Clone Troopers",
+      points = 52,
+      miniInfo = { miniInfo.phaseICloneTrooperLeader, miniInfo.phaseICloneTrooper1, miniInfo.phaseICloneTrooper2, miniInfo.phaseICloneTrooper3 },
+      rank = "Corps",
+      faction = "republic",
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Phase II Clone Troopers",
+      points = 62,
+      miniInfo = { miniInfo.phaseIICloneTrooperLeader, miniInfo.phaseIICloneTrooper1, miniInfo.phaseIICloneTrooper2, miniInfo.phaseIICloneTrooper3 },
+      rank = "Corps",
+      faction = "republic",
+      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades"},
+    }),
+    -- Republic Specialforces
+    UnitClass:create({
+      name = "ARC Troopers",
+      points = 78,
+      miniInfo = { miniInfo.arcTrooperLeader, miniInfo.arcTrooper1, miniInfo.arcTrooper2, miniInfo.arcTrooper3 },
+      rank = "Specialforces",
+      faction = "republic",
+      upgradeSlots = {"heavy weapon", "training", "comms", "gear", "gear", "grenades"},
+    }),
+    UnitClass:create({
+      name = "ARC Troopers Strike Team",
+      points = 27,
+      miniInfo = { miniInfo.arcTrooper1 },
+      rank = "Specialforces",
+      faction = "republic",
+      upgradeSlots = {"heavy weapon", "training", "comms", "gear", "gear", "grenades"},
+    }),
+    -- Republic Support
+    UnitClass:create({
+      name = "AT-RT (republic)",
+      displayName = "AT-RT",
+      points = 65,
+      miniInfo = { miniInfo.republicATRT },
+      rank = "Support",
+      type = "ground vehicle",
+      baseSize = "large",
+      faction = "republic",
+      upgradeSlots = {"hardpoint", "comms"},
+    }),
+    UnitClass:create({
+      name = "BARC Speeder",
+      points = 60,
+      miniInfo = { miniInfo.barcSpeeder },
+      rank = "Support",
+      type = "repulsor vehicle",
+      baseSize = "large",
+      selectedSpeed = 3,
+      faction = "republic",
+      upgradeSlots = {"crew", "comms"},
+    }),
+    -- Republic Heavy
+    UnitClass:create({
+      name = "TX-130 Saber-class Fighter Tank",
+      points = 170,
+      miniInfo = { miniInfo.saberTank },
+      rank = "Heavy",
+      type = "repulsor vehicle",
+      baseSize = "epic",
+      faction = "republic",
+      upgradeSlots = {"pilot", "hardpoint", "ordnance", "comms"},
+    }),
+    
+    -- SEPARATIST --
+    -- Separatist Commander
+    UnitClass:create({
+      name = "Count Dooku Darth Tyranus",
+      points = 200,
+      displayName = "Count Dooku",
+      miniInfo = { miniInfo.countDooku },
+      rank = "Commander",
+      faction = "separatist",
+      upgradeSlots = {"force", "force", "force", "command"},
+    }),
+    UnitClass:create({
+      name = "General Grievous Sinister Cyborg",
+      points = 170,
+      displayName = "General Grievous",
+      miniInfo = { miniInfo.generalGrievous },
+      rank = "Commander",
+      faction = "separatist",
+      upgradeSlots = {"command", "command", "training", "armament"},
+    }),
+    UnitClass:create({
+      name = "T-series Tactical Droid Programmed for Strategy",
+      points = 55,
+      displayName = "T-series Tactical Droid",
+      miniInfo = { miniInfo.tSeriesTacticalDroid },
+      rank = "Commander",
+      type = "droid trooper",
+      faction = "separatist",
+      upgradeSlots = {"command", "comms", "gear"},
+    }),
+    -- Separatist Operative
+    UnitClass:create({
+      name = "Cad Bane Needs No Introduction",
+      points = 125,
+      displayName = "Cad Bane",
+      miniInfo = { miniInfo.cadBane },
+      rank = "Operative",
+      faction = "separatist",
+      upgradeSlots = {"training", "comms", "gear", "armament", "grenades"},
+    }),
+    UnitClass:create({
+      name = "Maul Impatient Apprentice",
+      points = 125,
+      displayName = "Maul",
+      miniInfo = { miniInfo.maul },
+      rank = "Operative",
+      faction = "separatist",
+      upgradeSlots = {"force", "force", "training", "training"},
+    }),
+    -- Separatist Corps
+    UnitClass:create({
+      name = "B1 Battle Droids",
+      points = 36,
+      miniInfo = { miniInfo.b1BattleDroidLeader, miniInfo.b1BattleDroid1, miniInfo.b1BattleDroid2, miniInfo.b1BattleDroid3, miniInfo.b1BattleDroid4, miniInfo.b1BattleDroid5 },
+      rank = "Corps",
+      type = "droid trooper",
+      faction = "separatist",
+      upgradeSlots = {"heavy weapon", "personnel", "comms"},
+    }),
+    UnitClass:create({
+      name = "B2 Super Battle Droids",
+      points = 45,
+      miniInfo = { miniInfo.b2SuperBattleDroidLeader, miniInfo.b2SuperBattleDroid1, miniInfo.b2SuperBattleDroid2 },
+      rank = "Corps",
+      type = "droid trooper",
+      faction = "separatist",
+      upgradeSlots = {"heavy weapon", "personnel", "comms"},
+    }),
+    -- Separatist Specialforces
+    UnitClass:create({
+      name = "BX-series Droid Commandos",
+      points = 68,
+      miniInfo = { miniInfo.bxCommandoDroidLeader, miniInfo.bxCommandoDroid1, miniInfo.bxCommandoDroid2, miniInfo.bxCommandoDroid3 },
+      rank = "Specialforces",
+      type = "droid trooper",
+      faction = "separatist",
+      upgradeSlots = {"heavy weapon", "training", "comms", "armament", "grenades"},
+    }),
+    UnitClass:create({
+      name = "BX-series Droid Commandos Strike Team",
+      displayName = "Bx Commandos Strike Team",
+      points = 20,
+      miniInfo = { miniInfo.bxCommandoDroid1 },
+      rank = "Specialforces",
+      type = "droid trooper",
+      faction = "separatist",
+      upgradeSlots = {"heavy weapon", "training", "comms", "armament", "grenades"},
+    }),
+    UnitClass:create({
+      name = "DRK-1 Sith Probe Droids",
+      points = 35,
+      miniInfo = { miniInfo.drk1SithProbeDroidLeader, miniInfo.drk1SithProbeDroid1, miniInfo.drk1SithProbeDroid2 },
+      rank = "Specialforces",
+      type = "droid trooper",
+      faction = "separatist",
+      upgradeSlots = {"comms"},
+    }),
+    -- Separatist Support
+    UnitClass:create({
+      name = "Droidekas",
+      points = 80,
+      miniInfo = { miniInfo.droidekaLeader, miniInfo.droideka1 },
+      rank = "Support",
+      type = "ground vehicle",
+      selectedSpeed = 1,
+      baseSize = "medium",
+      faction = "separatist",
+      upgradeSlots = {"comms"},
+    }),
+    UnitClass:create({
+      name = "STAP Riders",
+      points = 73,
+      miniInfo = { miniInfo.STAPLeader, miniInfo.STAP1 },
+      rank = "Support",
+      type = "repulsor vehicle",
+      selectedSpeed = 3,
+      baseSize = "medium",
+      faction = "separatist",
+      upgradeSlots = {"comms"},
+    }),
+    -- Separatist Heavy
+    UnitClass:create({
+      name = "AAT Trade Federation Battle Tank",
+      points = 170,
+      miniInfo = { miniInfo.aatTank },
+      rank = "Heavy",
+      type = "repulsor vehicle",
+      selectedSpeed = 1,
+      baseSize = "epic",
+      faction = "separatist",
+      upgradeSlots = {"pilot", "ordnance", "ordnance", "comms"},
+    }),
+  }
+
+
+  -- Build and return the associative dictionary that will be used at runtime
+  local returnTable = {}
+  setmetatable(returnTable, CardInfoClass)
+  returnTable.upgradeCards = {}
+  
+  for i, val in pairs(cardInfoDB.upgradeCards) do
+    local key = val.name:lower()
+    returnTable.upgradeCards[key] = val
+  end
+
+  returnTable.unitCards = {}
+  
+  for i, val in pairs(cardInfoDB.unitCards) do
+    if returnTable.unitCards[val.name:lower()] ~= nil then
+      returnTable.unitCards[self:_formantNameWithFaction(val.name, val.faction)] = val
+    else
+      returnTable.unitCards[val.name:lower()] = val
+    end
+  end
+
+  -- unitCard GUID
+  returnTable.unitCardsGUID = "8e9aea"
+  returnTable.upgradeCardsGUID = "ffc227"
+
+  return returnTable
+end
+
+function CardInfoClass:_formatNameWithFaction(name, faction)
+  return name:lower() .. " (" .. faction:lower() .. ")"
+end
+
+-- "public" method to filter the upgrade database by type
+function CardInfoClass:getUpgradesByType(type)
+  local tbl = {}
+  for key, val in pairs(self.upgradeCards) do
+    if val.type == type then
+      table.insert(tbl, val)
+    end
+  end
+
+  return tbl
+end
+
+-- returns a the unit object that matches the given name
+function CardInfoClass:getUpgradeByName(upgradeName)
+  return self.upgradeCards[upgradeName:lower()]
+end
+
+-- convenience method for getting multiple upgrade objects at once
+function CardInfoClass:getUpgradesByNames(upgradeNames)
+  local tbl = {}
+
+  for k, name in pairs(upgradeNames) do
+    table.insert(tbl, self.upgradeCards[name:lower()])
+  end
+
+  return tbl
+end
+
+function CardInfoClass:getUnitByName(unitName, faction)
+  local foundUnit = nil
+  foundUnit = self.unitCards[unitName:lower()]
+  -- some units require disambiguation by faction name
+  if foundUnit == nil then
+    local key = self:_formatNameWithFaction(unitName, faction)
+    foundUnit = self.unitCards[key]
+  end
+
+  return foundUnit
+end
+
+-- "public" method to filter the unit database by the intersection of faction and rank
+function CardInfoClass:getUnitsByFactionAndRank(faction, rank)
+  local tbl = {}
+  for key, val in pairs(self.unitCards) do
+    if val.faction:lower() == faction:lower() and val.rank:lower() == rank:lower() then
+      table.insert(tbl, val)
+    end
+  end
+
+  return tbl
+end

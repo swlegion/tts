@@ -1,4 +1,6 @@
 #include !/common/Math
+#include !/data/CardInfo_new
+#include !/data/MiniInfo
 
 -- model template
 function onLoad()
@@ -12,11 +14,10 @@ function setUp()
 
     battlefieldTint = gameData.getTable("battlefieldTint")
     templateMenu = Global.getTable("templateMenu")
-    cardInfo = Global.getTable("cardInfo")
+    cardInfo = CardInfoClass:buildCardInfo()
     selectedArmyFaction = Global.getVar(colorSide.."SelectedArmyFaction")
     listBuilder = Global.getTable("listBuilder")
     miniInfo = Global.getTable("miniInfo")
-    unitInfo = Global.getTable("unitInfo")
     unitIDTokenBag = getObjectFromGUID(Global.getVar("unitIDTokenBagGUID"))
     unitCard = nil
     unitCardPage = 0
@@ -48,8 +49,8 @@ function mainMenu()
     self.clearButtons()
     if unitCard != nil then
         destroyObject(unitCard)
-        if cardInfo.unitCards[selectedUnit].rank == "Commander" or cardInfo.unitCards[selectedUnit].rank == "Operative"  then
-            deckBuilderObj.call("removeCommander", selectedUnit)
+        if selectedUnit.rank == "Commander" or selectedUnit.rank == "Operative"  then
+            deckBuilderObj.call("removeCommander", selectedUnit.name:lower())
         end
 
     end
@@ -62,6 +63,8 @@ function mainMenu()
     unitCardRank = nil
     selectedUnit = nil
 
+    -- these values are used to control upgrade pagination
+    -- initialized at 0 and incremented by +/- 5 to move through "pages"
     upgradeSelectionIndex = {}
     for n=1, 7, 1 do
         upgradeSelectionIndex[n] = 0
@@ -186,20 +189,25 @@ function unitSubMenu(selectedRank)
     local startIndex = unitCardPage * 6 + 1
     local endIndex = (unitCardPage + 1) * 6
 
+    local unitList = cardInfo:getUnitsByFactionAndRank(selectedArmyFaction, selectedRank)
+
     for i=startIndex, endIndex, startIndex do
 
-        if templateMenu[selectedArmyFaction][selectedRank][i] != nil then
-            local entry = templateMenu[selectedArmyFaction][selectedRank][i]
+        if unitList[i] != nil then
+            local entry = unitList[i]
 
-            _G["subMenu"..i] = function() spawnUnitCard(entry.varName) end
+            _G["subMenu"..i] = function() spawnUnitCard(entry) end
 
-            local fontSize = correctStringLength(entry.name)
+            -- local maxNameLength = math.min(entry.name:len(), DISPLAY_NAME_CHAR_LIMIT)
+            local nameToDisplay = entry.name
+            if entry.displayName then nameToDisplay = entry.displayName end
+            local fontSize = correctStringLength(nameToDisplay)
             local relativeIndex = i - (unitCardPage * 6)
 
             self.createButton({
                 click_function = "subMenu"..i,
                 function_owner = self,
-                label          = entry.name,
+                label          = nameToDisplay,
                 position       = {0.93, 0.28, 2.48-(relativeIndex*0.35)},
                 width          = 1010,
                 height         = 190,
@@ -207,7 +215,7 @@ function unitSubMenu(selectedRank)
                 rotation       = {0,180,0},
                 color          = {0.1764, 0.1764, 0.1764, 0.01},
                 font_color     = {0, 0, 0, 100},
-                tooltip        = "Spawn ".. entry.name.."Unit Card"
+                tooltip        = "Spawn ".. entry.name .." Unit Card"
             })
         else
             createDudMenuButton({0.93, 0.28, 2.48-(i*0.35)})
@@ -236,19 +244,14 @@ function spawnUnitIDToken(idSpawnPos, idSpawnRot,idNumber)
     end
 end
 
-function spawnUnitCard(card)
-    mainMenu()
+function spawnUnitCard(unit)
+  mainMenu()
+  selectedUnit = unit
     local originalUnitCards = getObjectFromGUID(cardInfo.unitCardsGUID)
     local unitCards = originalUnitCards.clone({ position = {0,-30,0} })
-    local cardName = cardInfo.unitCards[card].fullName
+    local cardName = selectedUnit.name
     local unitCardTable = unitCards.getObjects()
-
-    for i, entry in pairs(unitCardTable) do
-        if entry.nickname == cardName then
-            cardInt = entry.index
-            break
-        end
-    end
+    local cardInt = unit:getUnitCardIndex(unitCardTable)
 
     unitCard = unitCards.takeObject({
         position       = {0,10,0},
@@ -277,14 +280,13 @@ function spawnUnitCard(card)
         font_color     = {1,1,1},
         tooltip        = "Delete Unit Card"
     })
-    unitCard.setVar("ptCost", cardInfo.unitCards[card].ptCost)
+    unitCard.setVar("ptCost", selectedUnit.ptCost)
     unitCard.setPosition(pos)
     unitCard.setLock(false)
-    selectedUnit = card
 
     -- update deckBuilder
-    if cardInfo.unitCards[selectedUnit].rank == "Commander" or cardInfo.unitCards[selectedUnit].rank == "Operative"  then
-        deckBuilderObj.call("addCommander", selectedUnit)
+    if selectedUnit.rank == "Commander" or selectedUnit.rank == "Operative"  then
+        deckBuilderObj.call("addCommander", selectedUnit.name:lower())
 
     end
 
@@ -312,15 +314,14 @@ function upgradeMenu()
     spawnedRequiredUpgrades = {}
 
     if selectedUnit != nil then
-        local unitCard = cardInfo.unitCards[selectedUnit]
-        availableUpgrades = unitCard.availableUpgrades
-        requiredUpgrades = unitCard.requiredUpgrades
+        availableUpgradeSlots = selectedUnit.upgradeSlots
+        requiredUpgrades = selectedUnit.requiredUpgrades
         if requiredUpgrades == nil then
           requiredUpgrades = {}
         end
         self.clearButtons()
     else
-        availableUpgrades = {}
+        availableUpgradeSlots = {}
         requiredUpgrades = {}
     end
 
@@ -331,11 +332,13 @@ function upgradeMenu()
 end
 
 function drawUpgradeMenu()
-    local availableUpgradeCount = #availableUpgrades
+    local availableUpgradeSlotCount = #availableUpgradeSlots
     local requiredUpgradeCount = #requiredUpgrades
 
-    for i = 1, availableUpgradeCount, 1 do
+    for i = 1, availableUpgradeSlotCount, 1 do
       local buttonPosition = templateMenu.buttonPositions[i]
+      local upgradesList = cardInfo:getUpgradesByType(availableUpgradeSlots[i])
+      local allowableUpgrades = selectedUnit:filterAllowedUpgrades(upgradesList)
 
       for n = 1, 5, 1 do
         local upgradeClickFunction = "dud"
@@ -344,9 +347,9 @@ function drawUpgradeMenu()
         local upgradeFontColor = {0, 0, 0, 0}
         local upgradeFontSize = 160
         local selectedIndex = upgradeSelectionIndex[i] + n
-        if availableUpgrades[i] != nil and availableUpgrades[i][selectedIndex] != nil then
+        if availableUpgradeSlots[i] != nil and allowableUpgrades[selectedIndex] != nil then
           upgradeClickFunction = "upgradeSubMenu"..self.getGUID()..":"..i..":"..n
-          upgradeLabel = availableUpgrades[i][selectedIndex].name
+          upgradeLabel = allowableUpgrades[selectedIndex].name
           upgradeColor = {0.1764, 0.1764, 0.1764, 0.01}
           upgradeFontColor = {0, 0, 0, 100}
           if string.len(upgradeLabel) > 12 then
@@ -357,7 +360,7 @@ function drawUpgradeMenu()
           end
           _G[upgradeClickFunction] = function()
             spawnUpgradeCard(
-              availableUpgrades[i][selectedIndex],
+              allowableUpgrades[selectedIndex],
               templateMenu.upgradeCardPos[i],
               i
             ) 
@@ -386,7 +389,7 @@ function drawUpgradeMenu()
         local downClickFunction = upClickFunction
         local downFontColor = upFontColor
         local downButtonColor = upButtonColor
-        if availableUpgrades[i] != nil and #availableUpgrades[i] > 5 then
+        if availableUpgradeSlots[i] != nil and #allowableUpgrades > 5 then
           if upgradeSelectionIndex[i] < 5 then
             downClickFunction = "nextUpgradeMenu"..i
             downFontColor = {0, 0, 0, 100}
@@ -395,7 +398,7 @@ function drawUpgradeMenu()
             upClickFunction = "prevUpgradeMenu"..i
             upFontColor = {0, 0, 0, 100}
             upButtonColor = {0.1764, 0.1764, 0.1764, 0.01}
-            if (#availableUpgrades[i] - upgradeSelectionIndex[i]) >= 6 then
+            if (#allowableUpgrades - upgradeSelectionIndex[i]) >= 6 then
               downClickFunction = "nextUpgradeMenu"..i
               downFontColor = {0, 0, 0, 100}
               downButtonColor = {0.1764, 0.1764, 0.1764, 0.01}
@@ -432,11 +435,12 @@ function drawUpgradeMenu()
       end
     end
     if requiredUpgradeCount > 0 then
-      local startAt = availableUpgradeCount + 1
+      local startAt = availableUpgradeSlotCount + 1
       local upIndex = 1
-      for i = startAt, availableUpgradeCount + requiredUpgradeCount, 1 do
+      for i = startAt, availableUpgradeSlotCount + requiredUpgradeCount, 1 do
+        local cardObj = cardInfo:getUpgradeByName(requiredUpgrades[upIndex])
         spawnUpgradeCard(
-          requiredUpgrades[upIndex],
+          cardObj,
           templateMenu.upgradeCardPos[i],
           i,
           true
@@ -462,6 +466,7 @@ function spawnUpgradeCard(cardData, cardPos, upgradeNumber, requiredUpgrade)
     local upgradeCards = originalUpgradeCards.clone({ position = {0,-30,0} })
     local cardName = cardData.name
     local upgradeCardTable = upgradeCards.getObjects()
+    local cardInt = -1
 
     for i, entry in pairs(upgradeCardTable) do
         if entry.nickname == cardName then
@@ -526,20 +531,19 @@ function getListText()
     if selectedUnit != nil then
         returnTable = {}
 
-        returnTable.unitName = cardInfo.unitCards[selectedUnit].fullName
+        returnTable.name = selectedUnit.name
         returnTable.upgrades = {}
         k = 1
 
         for i, entry in pairs(upgradeCardIndex) do
             if entry.name != nil then
-                returnTable.upgrades[k] = {name = entry.name, varName = entry.varName}
+                returnTable.upgrades[k] = entry.name
                 k = k + 1
             end
         end
 
         -- rank
-        returnTable.rank = cardInfo.unitCards[selectedUnit].rank
-        returnTable.varName = selectedUnit
+        returnTable.rank = selectedUnit.rank
         return returnTable
     else
         return nil

@@ -10,24 +10,25 @@ function setUp()
     templateInfo = {}
     templateInfo = Global.getTable("templateInfo")
 
-    unitInfo = {}
+    -- unitInfo = {}
+    cardInfo = Global.getTable("cardInfo").unitCards
     unitInfo = Global.getTable("unitInfo")
 
     moveState = false
     silhouetteState = false
 
     if unitName != nil and colorSide != nil then
-        local baseSize = unitInfo[unitName].baseSize
+        local baseSize = cardInfo[unitName].baseSize
         local fixed = baseSize != 'small'
 
         unitData = {}
-        unitData.commandType = unitInfo[unitName].commandType
+        unitData.commandType = cardInfo[unitName].commandType
         unitData.baseSize = baseSize
         unitData.fixedMove = fixed
         unitData.fixedArc = fixed
-        unitData.selectedSpeed = unitInfo[unitName].selectedSpeed
+        unitData.selectedSpeed = cardInfo[unitName].selectedSpeed
 
-        if unitInfo[unitName].strafeMove != nil then
+        if cardInfo[unitName].strafeMove != nil then
               unitData.strafeMove = true
         else
               unitData.strafeMove = false

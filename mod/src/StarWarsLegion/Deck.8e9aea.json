@@ -37,6 +37,7 @@
     "SidewaysCard": false,
     "DeckIDs": [
       35200,
+      43400,
       33611,
       33606,
       33605,
@@ -277,6 +278,7 @@
   "StatesPaths": {},
   "ContainedObjectPaths": [
     "R2-D2.149261.35200.json",
+    "R2-D2_Independent_Astromech.1954d7.43400.json",
     "AAT_Trade_Federation_Battle_Tank.c18181.33611.json",
     "Droidekas.c18181.33606.json",
     "B1_Battle_Droids.c18181.33605.json",

@@ -1,5 +1,5 @@
 #include !/Analytics
-#include !/data/CardInfo
+#include !/data/CardInfo_new
 #include !/data/ListBuilder
 #include !/data/MiniInfo
 #include !/data/TemplateMenu
@@ -30,10 +30,10 @@ function onLoad()
     templateInfo = {}
 
     templateInfo.templateAGUID = {
-        small = {"15849b", "f8f24c", "7568b1"}, medium = {"e20bd9", "9ab5d8", "ea3b10"}, big = {"28e15d", "2b6fd5", "62e790"}, huge = {"d80f36", "819324", "28a694"}
+        small = {"15849b", "f8f24c", "7568b1"}, medium = {"e20bd9", "9ab5d8", "ea3b10"}, large = {"28e15d", "2b6fd5", "62e790"}, huge = {"d80f36", "819324", "28a694"}
     }
     templateInfo.templateBGUID = {
-        small = {"b35f7f", "4536a9", "c6150a"}, medium = {"46d669", "7c0b7a", "a99aaa"}, big = {"53689b", "93219f", "62d768"}, huge = {"0975c7", "968781", "f80c9d"}
+        small = {"b35f7f", "4536a9", "c6150a"}, medium = {"46d669", "7c0b7a", "a99aaa"}, large = {"53689b", "93219f", "62d768"}, huge = {"0975c7", "968781", "f80c9d"}
     }
     templateInfo.templateCollider = {
         "http://cloud-3.steamusercontent.com/ugc/874120727305531901/BA0C6DDDC393B87EEBC53774FD23812CC1F6740A/",
@@ -55,7 +55,7 @@ function onLoad()
     templateInfo.aStart = {}
     templateInfo.aStart.small = 	{1.968995,3,4}
     templateInfo.aStart.medium = 	{2.234375,3.26538,4.26538}
-    templateInfo.aStart.big =		 {2.640625,3.67163,4.67163}
+    templateInfo.aStart.large =		 {2.640625,3.67163,4.67163}
     templateInfo.aStart.huge =		 {3.21875,4.249755,5.249755}
     templateInfo.aStart.long =		 {4.71875,5.749755,6.749755}
     templateInfo.aStart.epic =		 {4.21875,5.249755,6.249755}
@@ -63,7 +63,7 @@ function onLoad()
     templateInfo.bStart = {}
     templateInfo.bStart.small = 	{1.968995,3,4}
     templateInfo.bStart.medium =	 {2.234375,3.26538,4.26538}
-    templateInfo.bStart.big =		 {2.640625,3.67163,4.67163}
+    templateInfo.bStart.large =		 {2.640625,3.67163,4.67163}
     templateInfo.bStart.huge =		 {3.21875,4.249755,5.249755}
     templateInfo.bStart.long =		 {4.71875,5.749755,6.749755}
 
@@ -90,32 +90,32 @@ function onLoad()
     templateInfo.templateNameToData = {}
     templateInfo.templateNameToData.whiteTemplateASnap25mm = {baseSize = "small", selectedSpeed = 1}
     templateInfo.templateNameToData.whiteTemplateASnap40mm = {baseSize = "medium", selectedSpeed = 1}
-    templateInfo.templateNameToData.whiteTemplateASnap60mm = {baseSize = "big", selectedSpeed = 1}
+    templateInfo.templateNameToData.whiteTemplateASnap60mm = {baseSize = "large", selectedSpeed = 1}
     templateInfo.templateNameToData.whiteTemplateASnap90mm = {baseSize = "huge", selectedSpeed = 1}
 
     templateInfo.templateNameToData.blackTemplateASnap25mm = {baseSize = "small", selectedSpeed = 2}
     templateInfo.templateNameToData.blackTemplateASnap40mm = {baseSize = "medium", selectedSpeed = 2}
-    templateInfo.templateNameToData.blackTemplateASnap60mm = {baseSize = "big", selectedSpeed = 2}
+    templateInfo.templateNameToData.blackTemplateASnap60mm = {baseSize = "large", selectedSpeed = 2}
     templateInfo.templateNameToData.blackTemplateASnap90mm = {baseSize = "huge", selectedSpeed = 2}
 
     templateInfo.templateNameToData.redTemplateASnap25mm = {baseSize = "small", selectedSpeed = 3}
     templateInfo.templateNameToData.redTemplateASnap40mm = {baseSize = "medium", selectedSpeed = 3}
-    templateInfo.templateNameToData.redTemplateASnap60mm = {baseSize = "big", selectedSpeed = 3}
+    templateInfo.templateNameToData.redTemplateASnap60mm = {baseSize = "large", selectedSpeed = 3}
     templateInfo.templateNameToData.redTemplateASnap90mm = {baseSize = "huge", selectedSpeed = 3}
 
     templateInfo.templateNameToData.whiteTemplateBSnap25mm = {baseSize = "small", selectedSpeed = 1}
     templateInfo.templateNameToData.whiteTemplateBSnap40mm = {baseSize = "medium", selectedSpeed = 1}
-    templateInfo.templateNameToData.whiteTemplateBSnap60mm = {baseSize = "big", selectedSpeed = 1}
+    templateInfo.templateNameToData.whiteTemplateBSnap60mm = {baseSize = "large", selectedSpeed = 1}
     templateInfo.templateNameToData.whiteTemplateBSnap90mm = {baseSize = "huge", selectedSpeed = 1}
 
     templateInfo.templateNameToData.blackTemplateBSnap25mm = {baseSize = "small", selectedSpeed = 2}
     templateInfo.templateNameToData.blackTemplateBSnap40mm = {baseSize = "medium", selectedSpeed = 2}
-    templateInfo.templateNameToData.blackTemplateBSnap60mm = {baseSize = "big", selectedSpeed = 2}
+    templateInfo.templateNameToData.blackTemplateBSnap60mm = {baseSize = "large", selectedSpeed = 2}
     templateInfo.templateNameToData.blackTemplateBSnap90mm = {baseSize = "huge", selectedSpeed = 2}
 
     templateInfo.templateNameToData.redTemplateBSnap25mm = {baseSize = "small", selectedSpeed = 3}
     templateInfo.templateNameToData.redTemplateBSnap40mm = {baseSize = "medium", selectedSpeed = 3}
-    templateInfo.templateNameToData.redTemplateBSnap60mm = {baseSize = "big", selectedSpeed = 3}
+    templateInfo.templateNameToData.redTemplateBSnap60mm = {baseSize = "large", selectedSpeed = 3}
     templateInfo.templateNameToData.redTemplateBSnap90mm = {baseSize = "huge", selectedSpeed = 3}
     templateInfo.diceTrayGUID = "3d3ac4"
 
@@ -124,7 +124,7 @@ function onLoad()
     templateInfo.moveTemplate[1].mesh = {}
     templateInfo.moveTemplate[1].mesh.small = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
     templateInfo.moveTemplate[1].mesh.medium = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
-    templateInfo.moveTemplate[1].mesh.big = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
+    templateInfo.moveTemplate[1].mesh.large = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
     templateInfo.moveTemplate[1].mesh.huge = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
     templateInfo.moveTemplate[1].mesh.long = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
     templateInfo.moveTemplate[1].mesh.epic = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
@@ -138,7 +138,7 @@ function onLoad()
     templateInfo.moveTemplate[2].mesh = {}
     templateInfo.moveTemplate[2].mesh.small = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
     templateInfo.moveTemplate[2].mesh.medium = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
-    templateInfo.moveTemplate[2].mesh.big = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
+    templateInfo.moveTemplate[2].mesh.large = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
     templateInfo.moveTemplate[2].mesh.huge = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
     templateInfo.moveTemplate[2].mesh.long = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
     templateInfo.moveTemplate[2].mesh.epic = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
@@ -151,7 +151,7 @@ function onLoad()
     templateInfo.moveTemplate[3].mesh = {}
     templateInfo.moveTemplate[3].mesh.small = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
     templateInfo.moveTemplate[3].mesh.medium = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
-    templateInfo.moveTemplate[3].mesh.big = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
+    templateInfo.moveTemplate[3].mesh.large = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
     templateInfo.moveTemplate[3].mesh.huge = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
     templateInfo.moveTemplate[3].mesh.long = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
     templateInfo.moveTemplate[3].mesh.epic = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
@@ -168,7 +168,7 @@ function onLoad()
       medium = 1.9685,
 
       -- AT-RTs, eWebs
-      big = 2.75591,
+      large = 2.75591,
 
       -- Landspeeder, AT-ST
       huge = 3.93701,
@@ -188,7 +188,7 @@ function onLoad()
       medium = 5.45275,
 
       -- AT-RTs, eWebs
-      big = 7.133865,
+      large = 7.133865,
 
       -- These are obviously incorrect, but currently cohesion does not matter for any of these units.
 
@@ -238,8 +238,8 @@ function onLoad()
     templateMenu = buildTemplateMenu()
 
     -- mini info
-    miniInfo = buildMiniInfo()
-    cardInfo = buildCardInfo()
+    -- miniInfo = buildMiniInfo()
+    cardInfo = CardInfoClass:buildCardInfo()
 
     dieRollerInfo = {}
     dieRollerInfo.diePos = {}
@@ -503,58 +503,58 @@ function onLoad()
     commandTokenData.red = {}
     commandTokenData.red.imperialCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181599643/538FA3C32413306DE7F650F9A0B1B19BB68FDE59/ "
     commandTokenData.red.imperialOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181602271/BAA5A49CC32D2F30D5F3519D3B8A11C0B91E4938/"
-    commandTokenData.red.imperialCore = "http://cloud-3.steamusercontent.com/ugc/1018319581181601340/9C023439BD650520C6260EE49AE23C619AD3A3E2/"
-    commandTokenData.red.imperialSpecialForces = "http://cloud-3.steamusercontent.com/ugc/1018319581181602934/38C669F790A0932DFB092B5A6DDC10F3017CB9AA/"
+    commandTokenData.red.imperialCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181601340/9C023439BD650520C6260EE49AE23C619AD3A3E2/"
+    commandTokenData.red.imperialSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181602934/38C669F790A0932DFB092B5A6DDC10F3017CB9AA/"
     commandTokenData.red.imperialSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181603317/6299EEDC4EAC45EB5C6CE9DD1451C49012C42A56/"
     commandTokenData.red.imperialHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181601845/B2E886C7B7639C491D0B7A5F369E9DACDE31A8FF/"
 
     commandTokenData.red.rebelCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181606961/B11A9AB1E8860F6E1EA263150C5608580522773C/"
     commandTokenData.red.rebelOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181607788/309F540CF290A636E47BCEC08509BF049EA2C96C/"
-    commandTokenData.red.rebelCore = "http://cloud-3.steamusercontent.com/ugc/1018319581181607230/299FF1E61697FFCBB40A74AAC189D11B4EAFBA3B/"
-    commandTokenData.red.rebelSpecialForces = "http://cloud-3.steamusercontent.com/ugc/1018319581181608049/93F9E0FA9F969438FC7F0A2508739CBE55119089/"
+    commandTokenData.red.rebelCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181607230/299FF1E61697FFCBB40A74AAC189D11B4EAFBA3B/"
+    commandTokenData.red.rebelSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181608049/93F9E0FA9F969438FC7F0A2508739CBE55119089/"
     commandTokenData.red.rebelSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181608299/117B4BBD9BFCA743B24FA873529080F60D127376/"
     commandTokenData.red.rebelHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181607465/424CED4049BE2724595B4D8DCA61034090D2F163/"
 
     commandTokenData.red.separatistCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181506935/F326233CD49B1CB2CE69DEFE791B37BD56B7BD25/"
     commandTokenData.red.separatistOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181507250/B6874C9325A8638EF87FC5C6BA68CF2629A84E45/"
-    commandTokenData.red.separatistCore = "http://cloud-3.steamusercontent.com/ugc/1018319581181507051/6C46619634312333ECE65818274D508912E18C39/"
-    commandTokenData.red.separatistSpecialForces = "http://cloud-3.steamusercontent.com/ugc/1018319581181507369/C0070810C0D058539BEDDE5B6893E6EAAB2798AD/"
+    commandTokenData.red.separatistCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181507051/6C46619634312333ECE65818274D508912E18C39/"
+    commandTokenData.red.separatistSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181507369/C0070810C0D058539BEDDE5B6893E6EAAB2798AD/"
     commandTokenData.red.separatistSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181507457/78724FE17CEC857896F886FBF5A4F6698502AB3C/"
     commandTokenData.red.separatistHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181507153/50D4D88CB44EF0FDFFF369E81DF08D91EB79A12B/"
 
     commandTokenData.red.republicCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181604329/E2F9C9A96EDD4E6D53505D87F32A69626C7B6A02/"
     commandTokenData.red.republicOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181605292/782B85305B4C7BB6D03306E02D33F8D051CDEF47/"
-    commandTokenData.red.republicCore = "http://cloud-3.steamusercontent.com/ugc/1018319581181604631/288BB3DB047861724810E08E7512B005E1E7046A/"
-    commandTokenData.red.republicSpecialForces = "http://cloud-3.steamusercontent.com/ugc/1018319581181605649/09E2E50C8CE87041E630B29183D4D3F3E17801BC/"
+    commandTokenData.red.republicCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181604631/288BB3DB047861724810E08E7512B005E1E7046A/"
+    commandTokenData.red.republicSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181605649/09E2E50C8CE87041E630B29183D4D3F3E17801BC/"
     commandTokenData.red.republicSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181605997/96BF8F41D8B4EA9E441FD1F5F6890DCF7337AAFF/"
     commandTokenData.red.republicHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181604927/AF5A4C46BC7FD06425DFE9481A8086DBE865404B/"
 
     commandTokenData.blue = {}
     commandTokenData.blue.imperialCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181467231/3D469F73AB4AEE0A8D4DAC26EE98A82C144C2312/"
     commandTokenData.blue.imperialOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181470653/D06C37C9664EEE89FA4B4A5A4588C4576CC9C72E/"
-    commandTokenData.blue.imperialCore = "http://cloud-3.steamusercontent.com/ugc/1018319581181469578/56191D081421C02B875AC944DCEFE2063F1D7FC1/"
-    commandTokenData.blue.imperialSpecialForces = "http://cloud-3.steamusercontent.com/ugc/1018319581181471412/21A6DB99FF4692AC1EA2C2A1E9EAEA867F32150E/"
+    commandTokenData.blue.imperialCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181469578/56191D081421C02B875AC944DCEFE2063F1D7FC1/"
+    commandTokenData.blue.imperialSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181471412/21A6DB99FF4692AC1EA2C2A1E9EAEA867F32150E/"
     commandTokenData.blue.imperialSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181471773/10D6943934FD8A2FB6DC1F2F5ED766C8AF4B05CB/"
     commandTokenData.blue.imperialHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181469895/150FB46A62076AE9617AF4E24421060702896E17/"
 
     commandTokenData.blue.rebelCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181476307/3A7B81D4F46F476F3D74834F4B61448EDE37FDC6/"
     commandTokenData.blue.rebelOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181480853/E2992559CBCB8D9712DB3B69F6C2BEF780A194AA/"
-    commandTokenData.blue.rebelCore = "http://cloud-3.steamusercontent.com/ugc/1018319581181477778/29C9963DB9D2CFE5565EDF4F2B687A5648F8F8DE/"
-    commandTokenData.blue.rebelSpecialForces = "http://cloud-3.steamusercontent.com/ugc/1018319581181481428/CA5B75597BF564B305A8638F732B802BE4CB3DA0/"
+    commandTokenData.blue.rebelCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181477778/29C9963DB9D2CFE5565EDF4F2B687A5648F8F8DE/"
+    commandTokenData.blue.rebelSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181481428/CA5B75597BF564B305A8638F732B802BE4CB3DA0/"
     commandTokenData.blue.rebelSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181481946/5898BF5462D11B8D49D6735D959379AC8B527DCF/"
     commandTokenData.blue.rebelHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181479826/6106C3F552B8A4286B6FE02FB319593D9245E658/"
 
     commandTokenData.blue.separatistCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181449743/EAF70993553414449641A211913A77AD021B18C9/"
     commandTokenData.blue.separatistOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181450993/AFE85A02D6C48DDBC4846FA571E2E1B7AACD968A/"
-    commandTokenData.blue.separatistCore = "http://cloud-3.steamusercontent.com/ugc/1018319581181450408/539DA5CD945A8D06F4D94862CD785F5FEE304CCB/"
-    commandTokenData.blue.separatistSpecialForces = "http://cloud-3.steamusercontent.com/ugc/1018319581181466311/BBAE13B86F470FB0098906CE82C217ECED36F22E/"
+    commandTokenData.blue.separatistCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181450408/539DA5CD945A8D06F4D94862CD785F5FEE304CCB/"
+    commandTokenData.blue.separatistSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181466311/BBAE13B86F470FB0098906CE82C217ECED36F22E/"
     commandTokenData.blue.separatistSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181466661/6827A183859436F4BAB606B62EC27FB1F02DDAB2/"
     commandTokenData.blue.separatistHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181450723/2D5159B73DF62A6E9910A376D47DC0A7EB702338/"
 
     commandTokenData.blue.republicCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181472136/4A0FA517DC4F0D56E9D2532283931EE40C779EC0/"
     commandTokenData.blue.republicOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181474496/EB70DAE07E3E9D9BAC1D8D245D6318668C06D17D/"
-    commandTokenData.blue.republicCore = "http://cloud-3.steamusercontent.com/ugc/1018319581181472463/64892947D4142261C8A9F729533D5A075EA383D1/"
-    commandTokenData.blue.republicSpecialForces = "http://cloud-3.steamusercontent.com/ugc/1018319581181474915/D48FDC9815EEDBE6306F310E78ED1C9ADFF69D57/"
+    commandTokenData.blue.republicCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181472463/64892947D4142261C8A9F729533D5A075EA383D1/"
+    commandTokenData.blue.republicSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181474915/D48FDC9815EEDBE6306F310E78ED1C9ADFF69D57/"
     commandTokenData.blue.republicSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181475330/17110C087B25CEE6E0ADDBA8F4E4D34A6594D3C7/"
     commandTokenData.blue.republicHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181472795/79E2E21BD525AC36BA389C77A0227E12E624707B/"
 
@@ -563,26 +563,26 @@ function onLoad()
     commandTokenTrayData.red.trayZoneGUID = "a74687"
     commandTokenTrayData.red.rebelCommander = "071592"
     commandTokenTrayData.red.rebelOperative = "369fa9"
-    commandTokenTrayData.red.rebelCore = "af4c28"
-    commandTokenTrayData.red.rebelSpecialForces = "abb909"
+    commandTokenTrayData.red.rebelCorps = "af4c28"
+    commandTokenTrayData.red.rebelSpecialforces = "abb909"
     commandTokenTrayData.red.rebelSupport = "ce9be9"
     commandTokenTrayData.red.rebelHeavy = "f68963"
     commandTokenTrayData.red.imperialCommander = "071592"
     commandTokenTrayData.red.imperialOperative = "369fa9"
-    commandTokenTrayData.red.imperialCore = "af4c28"
-    commandTokenTrayData.red.imperialSpecialForces = "abb909"
+    commandTokenTrayData.red.imperialCorps = "af4c28"
+    commandTokenTrayData.red.imperialSpecialforces = "abb909"
     commandTokenTrayData.red.imperialSupport = "ce9be9"
     commandTokenTrayData.red.imperialHeavy = "f68963"
     commandTokenTrayData.red.republicCommander = "071592"
     commandTokenTrayData.red.republicOperative = "369fa9"
-    commandTokenTrayData.red.republicCore = "af4c28"
-    commandTokenTrayData.red.republicSpecialForces = "abb909"
+    commandTokenTrayData.red.republicCorps = "af4c28"
+    commandTokenTrayData.red.republicSpecialforces = "abb909"
     commandTokenTrayData.red.republicSupport = "ce9be9"
     commandTokenTrayData.red.republicHeavy = "f68963"
     commandTokenTrayData.red.separatistCommander = "071592"
     commandTokenTrayData.red.separatistOperative = "369fa9"
-    commandTokenTrayData.red.separatistCore = "af4c28"
-    commandTokenTrayData.red.separatistSpecialForces = "abb909"
+    commandTokenTrayData.red.separatistCorps = "af4c28"
+    commandTokenTrayData.red.separatistSpecialforces = "abb909"
     commandTokenTrayData.red.separatistSupport = "ce9be9"
     commandTokenTrayData.red.separatistHeavy = "f68963"
     commandTokenTrayData.red.stack = "e2202d"
@@ -591,26 +591,26 @@ function onLoad()
     commandTokenTrayData.blue.trayZoneGUID = "97b998"
     commandTokenTrayData.blue.rebelCommander = "57ab78"
     commandTokenTrayData.blue.rebelOperative = "b30914"
-    commandTokenTrayData.blue.rebelCore = "e5e8df"
-    commandTokenTrayData.blue.rebelSpecialForces = "3832c6"
+    commandTokenTrayData.blue.rebelCorps = "e5e8df"
+    commandTokenTrayData.blue.rebelSpecialforces = "3832c6"
     commandTokenTrayData.blue.rebelSupport = "d2c857"
     commandTokenTrayData.blue.rebelHeavy = "6d221d"
     commandTokenTrayData.blue.imperialCommander = "57ab78"
     commandTokenTrayData.blue.imperialOperative = "b30914"
-    commandTokenTrayData.blue.imperialCore = "e5e8df"
-    commandTokenTrayData.blue.imperialSpecialForces = "3832c6"
+    commandTokenTrayData.blue.imperialCorps = "e5e8df"
+    commandTokenTrayData.blue.imperialSpecialforces = "3832c6"
     commandTokenTrayData.blue.imperialSupport = "d2c857"
     commandTokenTrayData.blue.imperialHeavy = "6d221d"
     commandTokenTrayData.blue.republicCommander = "57ab78"
     commandTokenTrayData.blue.republicOperative = "b30914"
-    commandTokenTrayData.blue.republicCore = "e5e8df"
-    commandTokenTrayData.blue.republicSpecialForces = "3832c6"
+    commandTokenTrayData.blue.republicCorps = "e5e8df"
+    commandTokenTrayData.blue.republicSpecialforces = "3832c6"
     commandTokenTrayData.blue.republicSupport = "d2c857"
     commandTokenTrayData.blue.republicHeavy = "6d221d"
     commandTokenTrayData.blue.separatistCommander = "57ab78"
     commandTokenTrayData.blue.separatistOperative = "b30914"
-    commandTokenTrayData.blue.separatistCore = "e5e8df"
-    commandTokenTrayData.blue.separatistSpecialForces = "3832c6"
+    commandTokenTrayData.blue.separatistCorps = "e5e8df"
+    commandTokenTrayData.blue.separatistSpecialforces = "3832c6"
     commandTokenTrayData.blue.separatistSupport = "d2c857"
     commandTokenTrayData.blue.separatistHeavy = "6d221d"
     commandTokenTrayData.blue.stack = "c9f9d0"
@@ -723,7 +723,7 @@ function spawnRangeRuler()
   baseAddition = {}
   baseAddition.small = 1.06299 / 2
   baseAddition.medium = 1.9685 / 2
-  baseAddition.big = 2.75591 / 2
+  baseAddition.large = 2.75591 / 2
   baseAddition.huge = 3.93701 / 2
   baseAddition.long = 3.525856871366164 / 2
   baseAddition.epic = 5.90551 / 2
