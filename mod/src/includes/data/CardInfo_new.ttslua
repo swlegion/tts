@@ -13,6 +13,7 @@ function UnitClass:create(params)
   unit.ptCost = params.points or 0
   unit.miniInfo = params.miniInfo or nil
   unit.rank = params.rank
+  unit.type = params.type or "trooper"
   unit.baseSize = params.baseSize or "small"
   unit.faction = params.faction
   unit.selectedSpeed = params.selectedSpeed or 2
@@ -38,33 +39,67 @@ function UnitClass:_getAlignment(unit)
   return nil
 end
 
+-- assumes that an upgrade is allowed if any single restriction on the upgrade is validated
 function UnitClass:_upgradeIsAllowed(upgrade)
   local isAllowed = true
 
   if upgrade.restrictions ~= nil then
-    -- validate unit restrictions
+    isAllowed = false
+
     if upgrade.restrictions.units ~= nil then
-      isAllowed = false
-      for i, val in ipairs(upgrade.restrictions.units) do
-        if val:lower() == self.name:lower() then
-          isAllowed = true
-          break
-        end
-      end
+      if self:_validateUnitRestrictions(upgrade.restrictions.units) then return true end
     end
 
-    -- validate alignment restrictions
     if upgrade.restrictions.alignment ~= nil and self.alignment ~= nil then
-      isAllowed = false
-      for i, val in ipairs(upgrade.restrictions.alignment) do
-        if val:lower() == self.alignment:lower() then
-          isAllowed = true
-        end
-      end
+      if self:_validateAlignmentRestrictions(upgrade.restrictions.alignment) then return true end
+    end
+
+    if upgrade.restrictions.type ~= nil then
+      if self:_validateUnitTypeRestrictions(upgrade.restrictions.type) then return true end
+    end
+
+    if upgrade.restrictions.rank ~= nil then
+      if self:_validateUnitRankRestrictions(upgrade.restrictions.rank) then return true end
     end
   end
 
   return isAllowed
+end
+
+function UnitClass:_validateUnitRestrictions(allowedUnits)
+  for i, val in ipairs(allowedUnits) do
+    if val:lower() == self.name:lower() then
+      return true
+    end
+  end
+  return false
+end
+
+function UnitClass:_validateAlignmentRestrictions(allowedAlignments)
+  for i, val in ipairs(allowedAlignments) do
+    if val:lower() == self.alignment:lower() then
+      return true
+    end
+  end
+  return false
+end
+
+function UnitClass:_validateUnitTypeRestrictions(allowedUnitTypes)
+  for i, val in ipairs(allowedUnitTypes) do
+    if self.type:lower():find(val:lower()) then
+      return true
+    end
+  end
+  return false
+end
+
+function UnitClass:_validateUnitRankRestrictions(allowedUnitRanks)
+  for i, val in ipairs(allowedUnitRanks) do
+    if val:lower() == self.rank:lower() then
+      return true
+    end
+  end
+  return false
 end
 
 -- returns a list of possible search strings for the unit card.
@@ -216,9 +251,9 @@ function CardInfoClass:buildCardInfo()
     { name =  "Long-Range Comlink", type="comms", ptCost = 5 },
     { name =  "HQ Uplink", type="comms", ptCost = 10 },
     { name =  "Comms Relay", type="comms", ptCost = 5 },
-    { name =  "Linked Targeting Array", type="comms", ptCost = 5 },
-    { name =  "Integrated Comms Antenna", type="comms", ptCost = 3 },
-    { name =  "Command Control Array", type="comms", ptCost = 2 },
+    { name =  "Linked Targeting Array", type="comms", ptCost = 5, restrictions = {type={"emplacement trooper", "vehicle"}} },
+    { name =  "Integrated Comms Antenna", type="comms", ptCost = 3, restrictions = {type={"droid trooper"}} },
+    { name =  "Command Control Array", type="comms", ptCost = 2, restrictions = {type={"vehicle"}} },
 
     -- Crew
     { name =  "A-300 Rifle Gunner", type="crew", ptCost = 9, restrictions = {units={"x-34 landspeeder"}} },
@@ -506,6 +541,7 @@ function CardInfoClass:buildCardInfo()
       displayName = "K-2SO",
       miniInfo = { miniInfo.chewbacca },
       rank = "Operative",
+      type = "droid trooper",
       faction = "rebel",
       upgradeSlots = {"comms", "armament"},
     }),
@@ -524,6 +560,7 @@ function CardInfoClass:buildCardInfo()
       displayName = "R2-D2",
       miniInfo = { miniInfo.r2d2 },
       rank = "Operative",
+      type = "droid trooper",
       selectedSpeed = 1,
       faction = "rebel",
       upgradeSlots = {"comms", "counterpart"},
@@ -568,6 +605,7 @@ function CardInfoClass:buildCardInfo()
       points =38,
       miniInfo = { miniInfo.markIIMediumBlasterTrooper },
       rank = "Corps",
+      type = "emplacement trooper",
       baseSize = "medium",
       faction = "rebel",
       upgradeSlots = {"comms"},
@@ -594,6 +632,7 @@ function CardInfoClass:buildCardInfo()
       points = 69,
       miniInfo = { miniInfo.wookieeWarriorsLeader, miniInfo.wookieeWarriors1, miniInfo.wookieeWarriors2 },
       rank = "SpecialForces",
+      type = "wookiee trooper",
       faction = "rebel",
       upgradeSlots = {"heavy weapon", "training", "training", "gear", "grenades"},
     }),
@@ -631,6 +670,7 @@ function CardInfoClass:buildCardInfo()
       points = 55,
       miniInfo = { miniInfo.atrt },
       rank = "Support",
+      type = "ground vehicle",
       baseSize = "large",
       faction = "rebel",
       upgradeSlots = {"hardpoint", "comms"}
@@ -640,6 +680,7 @@ function CardInfoClass:buildCardInfo()
       points = 70,
       miniInfo = { miniInfo.fdLaserCannonTeam },
       rank = "Support",
+      type = "emplacement trooper",
       baseSize = "huge",
       selectedSpeed = 0,
       faction = "rebel",
@@ -650,6 +691,7 @@ function CardInfoClass:buildCardInfo()
       points = 95,
       miniInfo = { miniInfo.tauntaunRidersLeader, miniInfo.tauntaunRiders1 },
       rank = "Support",
+      type = "creature trooper",
       baseSize = "medium",
       selectedSpeed = 3,
       faction = "rebel",
@@ -661,6 +703,7 @@ function CardInfoClass:buildCardInfo()
       points = 130,
       miniInfo = { miniInfo.airSpeeder },
       rank = "Heavy",
+      type = "repulsor vehicle",
       baseSize = "huge",
       selectedSpeed = 3,
       faction = "rebel",
@@ -671,6 +714,7 @@ function CardInfoClass:buildCardInfo()
       points = 60,
       miniInfo = { miniInfo.x34Landspeeder },
       rank = "Heavy",
+      type = "repulsor vehicle",
       baseSize = "huge",
       faction = "rebel",
       upgradeSlots = {"pilot", "crew", "crew", "hardpoint", "comms"}
@@ -780,6 +824,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.df90MortarTrooper },
       rank = "Corps",
       baseSize = "medium",
+      type = "emplacement trooper",
       selectedSpeed = 1,
       faction = "imperial",
       upgradeSlots = {"comms"},
@@ -866,6 +911,7 @@ function CardInfoClass:buildCardInfo()
       points = 75,
       miniInfo = { miniInfo.dewbackRider },
       rank = "Support",
+      type = "creature trooper",
       baseSize = "large",
       selectedSpeed = 1,
       faction = "imperial",
@@ -876,6 +922,7 @@ function CardInfoClass:buildCardInfo()
       points = 55,
       miniInfo = { miniInfo.eWebHeavyBlasterTeam },
       rank = "Support",
+      type = "emplacement trooper",
       baseSize = "large",
       selectedSpeed = 1,
       faction = "imperial",
@@ -886,6 +933,7 @@ function CardInfoClass:buildCardInfo()
       points = 75,
       miniInfo = { miniInfo.speederBikeLeader, miniInfo.speederBike },
       rank = "Support",
+      type = "repulsor vehicle",
       baseSize = "medium",
       selectedSpeed = 3,
       faction = "imperial",
@@ -897,6 +945,7 @@ function CardInfoClass:buildCardInfo()
       points = 160,
       miniInfo = { miniInfo.atst },
       rank = "Heavy",
+      type = "ground vehicle",
       baseSize = "huge",
       faction = "imperial",
       upgradeSlots = {"pilot", "hardpoint", "hardpoint", "hardpoint", "comms"},
@@ -907,6 +956,7 @@ function CardInfoClass:buildCardInfo()
       points = 145,
       miniInfo = { miniInfo.tx225 },
       rank = "Heavy",
+      type = "ground vehicle",
       baseSize = "long",
       selectedSpeed = 1,
       faction = "imperial",
@@ -967,6 +1017,7 @@ function CardInfoClass:buildCardInfo()
       displayName = "R2-D2",
       miniInfo = { miniInfo.r2d2 },
       rank = "Operative",
+      type = "droid trooper",
       selectedSpeed = 1,
       faction = "republic",
       upgradeSlots = {"comms", "counterpart"},
@@ -1012,6 +1063,7 @@ function CardInfoClass:buildCardInfo()
       points = 65,
       miniInfo = { miniInfo.republicATRT },
       rank = "Support",
+      type = "ground vehicle",
       baseSize = "large",
       faction = "republic",
       upgradeSlots = {"hardpoint", "comms"},
@@ -1021,6 +1073,7 @@ function CardInfoClass:buildCardInfo()
       points = 60,
       miniInfo = { miniInfo.barcSpeeder },
       rank = "Support",
+      type = "repulsor vehicle",
       baseSize = "large",
       selectedSpeed = 3,
       faction = "republic",
@@ -1032,6 +1085,7 @@ function CardInfoClass:buildCardInfo()
       points = 170,
       miniInfo = { miniInfo.saberTank },
       rank = "Heavy",
+      type = "repulsor vehicle",
       baseSize = "epic",
       faction = "republic",
       upgradeSlots = {"pilot", "hardpoint", "ordnance", "comms"},
@@ -1063,6 +1117,7 @@ function CardInfoClass:buildCardInfo()
       displayName = "T-series Tactical Droid",
       miniInfo = { miniInfo.tSeriesTacticalDroid },
       rank = "Commander",
+      type = "droid trooper",
       faction = "separatist",
       upgradeSlots = {"command", "comms", "gear"},
     }),
@@ -1091,6 +1146,7 @@ function CardInfoClass:buildCardInfo()
       points = 36,
       miniInfo = { miniInfo.b1BattleDroidLeader, miniInfo.b1BattleDroid1, miniInfo.b1BattleDroid2, miniInfo.b1BattleDroid3, miniInfo.b1BattleDroid4, miniInfo.b1BattleDroid5 },
       rank = "Corps",
+      type = "droid trooper",
       faction = "separatist",
       upgradeSlots = {"heavy weapon", "personnel", "comms"},
     }),
@@ -1099,6 +1155,7 @@ function CardInfoClass:buildCardInfo()
       points = 45,
       miniInfo = { miniInfo.b2SuperBattleDroidLeader, miniInfo.b2SuperBattleDroid1, miniInfo.b2SuperBattleDroid2 },
       rank = "Corps",
+      type = "droid trooper",
       faction = "separatist",
       upgradeSlots = {"heavy weapon", "personnel", "comms"},
     }),
@@ -1108,6 +1165,7 @@ function CardInfoClass:buildCardInfo()
       points = 68,
       miniInfo = { miniInfo.bxCommandoDroidLeader, miniInfo.bxCommandoDroid1, miniInfo.bxCommandoDroid2, miniInfo.bxCommandoDroid3 },
       rank = "Specialforces",
+      type = "droid trooper",
       faction = "separatist",
       upgradeSlots = {"heavy weapon", "training", "comms", "armament", "grenades"},
     }),
@@ -1117,6 +1175,7 @@ function CardInfoClass:buildCardInfo()
       points = 20,
       miniInfo = { miniInfo.bxCommandoDroid1 },
       rank = "Specialforces",
+      type = "droid trooper",
       faction = "separatist",
       upgradeSlots = {"heavy weapon", "training", "comms", "armament", "grenades"},
     }),
@@ -1125,6 +1184,7 @@ function CardInfoClass:buildCardInfo()
       points = 35,
       miniInfo = { miniInfo.drk1SithProbeDroidLeader, miniInfo.drk1SithProbeDroid1, miniInfo.drk1SithProbeDroid2 },
       rank = "Specialforces",
+      type = "droid trooper",
       faction = "separatist",
       upgradeSlots = {"comms"},
     }),
@@ -1134,6 +1194,7 @@ function CardInfoClass:buildCardInfo()
       points = 80,
       miniInfo = { miniInfo.droidekaLeader, miniInfo.droideka1 },
       rank = "Support",
+      type = "ground vehicle",
       selectedSpeed = 1,
       baseSize = "medium",
       faction = "separatist",
@@ -1144,6 +1205,7 @@ function CardInfoClass:buildCardInfo()
       points = 73,
       miniInfo = { miniInfo.STAPLeader, miniInfo.STAP1 },
       rank = "Support",
+      type = "repulsor vehicle",
       selectedSpeed = 3,
       baseSize = "medium",
       faction = "separatist",
@@ -1155,6 +1217,7 @@ function CardInfoClass:buildCardInfo()
       points = 170,
       miniInfo = { miniInfo.aatTank },
       rank = "Heavy",
+      type = "repulsor vehicle",
       selectedSpeed = 1,
       baseSize = "epic",
       faction = "separatist",
