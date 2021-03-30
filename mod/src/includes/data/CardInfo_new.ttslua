@@ -24,20 +24,42 @@ function UnitClass:create(params)
   unit.fixedArc = unit.baseSize ~= "small"
   unit.fixedMove = unit.baseSize ~= "small"
   unit.strafeMove = params.strafeMove or nil
+  unit.alignment = self:_getAlignment(unit)
   -- format commandType as, e.g., 'rebelCommander'
   unit.commandType = unit.faction:lower() .. unit.rank:lower():gsub("^%l", string.upper)
 
   return unit
 end
 
+function UnitClass:_getAlignment(unit)
+  if unit.name:lower():find("anakin skywalker") then return nil end
+  if unit.faction == "rebel" or unit.faction == "republic" then return "light" end
+  if unit.faction == "imperial" or unit.faction == "separatist" then return "dark" end
+  return nil
+end
+
 function UnitClass:_upgradeIsAllowed(upgrade)
   local isAllowed = true
 
   if upgrade.restrictions ~= nil then
-    isAllowed = false
-    for i, val in ipairs(upgrade.restrictions.units) do
-      if val:lower() == self.name:lower() then
-        isAllowed = true
+    -- validate unit restrictions
+    if upgrade.restrictions.units ~= nil then
+      isAllowed = false
+      for i, val in ipairs(upgrade.restrictions.units) do
+        if val:lower() == self.name:lower() then
+          isAllowed = true
+          break
+        end
+      end
+    end
+
+    -- validate alignment restrictions
+    if upgrade.restrictions.alignment ~= nil and self.alignment ~= nil then
+      isAllowed = false
+      for i, val in ipairs(upgrade.restrictions.alignment) do
+        if val:lower() == self.alignment:lower() then
+          isAllowed = true
+        end
       end
     end
   end
@@ -209,13 +231,13 @@ function CardInfoClass:buildCardInfo()
     { name = "Force Push", type="force", ptCost = 10 },
     { name = "Force Reflexes", type="force", ptCost = 5 },
     { name = "Saber Throw", type="force", ptCost = 5 },
-    { name = "Jedi Mind Trick", type="force", ptCost = 5 },
+    { name = "Jedi Mind Trick", type="force", ptCost = 5, restrictions = {alignment={"light"}} },
     { name = "Battle Meditation", type="force", ptCost = 5 },
-    { name = "Force Choke", type="force", ptCost = 5 },
-    { name = "Anger", type="force", ptCost = 5 },
-    { name = "Fear", type="force", ptCost = 3 },
+    { name = "Force Choke", type="force", ptCost = 5, restrictions = {alignment={"dark"}} },
+    { name = "Anger", type="force", ptCost = 5, restrictions = {alignment={"dark"}} },
+    { name = "Fear", type="force", ptCost = 3, restrictions = {alignment={"dark"}} },
     { name = "Force Guidance", type="force", ptCost = 5 },
-    { name = "Hope", type="force", ptCost = 3 },
+    { name = "Hope", type="force", ptCost = 3, restrictions = {alignment={"light"}} },
     { name = "Force Barrier", type="force", ptCost = 10 },
 
     -- Gear
