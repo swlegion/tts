@@ -313,8 +313,8 @@ function CardInfoClass:buildCardInfo()
     { name = "Phase II Mortar Trooper", type="heavy weapon", ptCost = 20, miniInfo = miniInfo.mortarPhaseIITrooper, restrictions = {units={"phase ii clone troopers"}} },
 
     { name = "DC-15x ARC Trooper", type="heavy weapon", ptCost = 31, miniInfo = miniInfo.arcTrooperDC15x, restrictions = {units={"arc troopers", "arc troopers strike team"}} },
-    { name = "Echo", type="heavy weapon", ptCost = 40, miniInfo = miniInfo.echoLeader, restrictions = {units={"arc troopers", "arc troopers strike team"}} },
-    { name = "Fives", type="heavy weapon", ptCost = 36, miniInfo = miniInfo.fivesLeader, restrictions = {units={"arc troopers", "arc troopers strike team"}} },
+    { name = "Echo", type="heavy weapon", ptCost = 40, miniInfo = miniInfo.echoLeader, restrictions = {units={"arc troopers", "arc troopers strike team", "phase i clone troopers", "phase ii clone troopers"}} },
+    { name = "Fives", type="heavy weapon", ptCost = 36, miniInfo = miniInfo.fivesLeader, restrictions = {units={"arc troopers", "arc troopers strike team", "phase i clone troopers", "phase ii clone troopers"}} },
 
     { name = "E-5C B1 Trooper", type="heavy weapon", ptCost = 18, miniInfo = miniInfo.e5CB1Trooper, restrictions = {units={"b1 battle droids"}} },
     { name = "E-60R B1 Trooper", type="heavy weapon", ptCost = 20, miniInfo = miniInfo.e60RB1Trooper, restrictions = {units={"b1 battle droids"}} },
@@ -360,8 +360,8 @@ function CardInfoClass:buildCardInfo()
     { name = "Phase II Clone Trooper", type="personnel", ptCost = 13, miniInfo = miniInfo.phaseIICloneTrooper4, restrictions = {units={"phase ii clone troopers"}} },
     { name = "Clone Engineer", type="personnel", ptCost = 18, miniInfo = miniInfo.cloneEngineer, restrictions = {units={"phase i clone troopers", "phase ii clone troopers"}} },
     { name = "Clone Medic", type="personnel", ptCost = 20, miniInfo = miniInfo.cloneMedic, restrictions = {units={"phase i clone troopers", "phase ii clone troopers"}} },
-    { name = "Clone Commander", type="heavy weapon", ptCost = 20, miniInfo = miniInfo.cloneCommanderLeader, restrictions = {units={"phase i clone troopers", "phase ii clone troopers"}} },
-    { name = "Clone Comms Technician", type="heavy weapon", ptCost = 12, miniInfo = miniInfo.cloneCommsTechnician, restrictions = {units={"phase i clone troopers", "phase ii clone troopers"}} },
+    { name = "Clone Commander", type="personnel", ptCost = 20, miniInfo = miniInfo.cloneCommanderLeader, restrictions = {units={"phase i clone troopers", "phase ii clone troopers"}} },
+    { name = "Clone Comms Technician", type="personnel", ptCost = 12, miniInfo = miniInfo.cloneCommsTechnician, restrictions = {units={"phase i clone troopers", "phase ii clone troopers"}} },
     
     { name = "B1 Battle Droid", type="personnel", ptCost = 5, miniInfo = miniInfo.b1BattleDroid6, restrictions = {units={"b1 battle droids"}} },
     { name = "B1 Security Droid", type="personnel", ptCost = 7, miniInfo = miniInfo.b1SecurityDroid, restrictions = {units={"b1 battle droids"}} },
