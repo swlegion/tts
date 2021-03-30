@@ -54,8 +54,16 @@ function UnitClass:_upgradeIsAllowed(upgrade)
       if self:_validateAlignmentRestrictions(upgrade.restrictions.alignment) then return true end
     end
 
+    if upgrade.restrictions.upgradeSlot ~= nil then
+      if self:_validateUpgradeSlotRestrictions(upgrade.restrictions.upgradeSlot) then return true end
+    end
+
     if upgrade.restrictions.type ~= nil then
       if self:_validateUnitTypeRestrictions(upgrade.restrictions.type) then return true end
+    end
+
+    if upgrade.restrictions.disallowedType ~= nil then
+      if not self:_validateUnitTypeRestrictions(upgrade.restrictions.disallowedType) then return true end
     end
 
     if upgrade.restrictions.rank ~= nil then
@@ -67,7 +75,7 @@ function UnitClass:_upgradeIsAllowed(upgrade)
 end
 
 function UnitClass:_validateUnitRestrictions(allowedUnits)
-  for i, val in ipairs(allowedUnits) do
+  for _, val in ipairs(allowedUnits) do
     if val:lower() == self.name:lower() then
       return true
     end
@@ -76,7 +84,7 @@ function UnitClass:_validateUnitRestrictions(allowedUnits)
 end
 
 function UnitClass:_validateAlignmentRestrictions(allowedAlignments)
-  for i, val in ipairs(allowedAlignments) do
+  for _, val in ipairs(allowedAlignments) do
     if val:lower() == self.alignment:lower() then
       return true
     end
@@ -84,8 +92,19 @@ function UnitClass:_validateAlignmentRestrictions(allowedAlignments)
   return false
 end
 
+function UnitClass:_validateUpgradeSlotRestrictions(allowedUpgradeSlots)
+  for _, val in ipairs(allowedUpgradeSlots) do
+    for _, slot in ipairs(self.upgradeSlots) do
+      if val:lower() == slot:lower() then
+        return true
+      end
+    end
+  end
+  return false
+end
+
 function UnitClass:_validateUnitTypeRestrictions(allowedUnitTypes)
-  for i, val in ipairs(allowedUnitTypes) do
+  for _, val in ipairs(allowedUnitTypes) do
     if self.type:lower():find(val:lower()) then
       return true
     end
@@ -94,7 +113,7 @@ function UnitClass:_validateUnitTypeRestrictions(allowedUnitTypes)
 end
 
 function UnitClass:_validateUnitRankRestrictions(allowedUnitRanks)
-  for i, val in ipairs(allowedUnitRanks) do
+  for _, val in ipairs(allowedUnitRanks) do
     if val:lower() == self.rank:lower() then
       return true
     end
@@ -250,7 +269,7 @@ function CardInfoClass:buildCardInfo()
     { name =  "Comms Jammer", type="comms", ptCost = 5 },
     { name =  "Long-Range Comlink", type="comms", ptCost = 5 },
     { name =  "HQ Uplink", type="comms", ptCost = 10 },
-    { name =  "Comms Relay", type="comms", ptCost = 5 },
+    { name =  "Comms Relay", type="comms", ptCost = 5, restrictions = {disallowedType={"emplacement trooper"}} },
     { name =  "Linked Targeting Array", type="comms", ptCost = 5, restrictions = {type={"emplacement trooper", "vehicle"}} },
     { name =  "Integrated Comms Antenna", type="comms", ptCost = 3, restrictions = {type={"droid trooper"}} },
     { name =  "Command Control Array", type="comms", ptCost = 2, restrictions = {type={"vehicle"}} },
@@ -283,10 +302,10 @@ function CardInfoClass:buildCardInfo()
     { name = "Emergency Stims", type="gear", ptCost = 10 },
     { name = "Personal Combat Shield", type="gear", ptCost = 5, restrictions = {units={"sabine wren explosive artist"}} },
     { name = "Electro Grappling Line", type="gear", ptCost = 5, restrictions = {units={"sabine wren explosive artist"}} },
-    { name = "Electrobinoculars", type="gear", ptCost = 8 },
+    { name = "Electrobinoculars", type={"gear", "b1:gear"}, ptCost = 8 },
     { name = "JT-12 Jetpacks", type="gear", ptCost = 10, restrictions = {units={"clone captain rex honorable soldier", "arc troopers", "arc troopers strike team"}} },
     { name = "Ascension Cables", type="gear", ptCost = 4 },
-    { name = "Portable Scanner", type="gear", ptCost = 6 },
+    { name = "Portable Scanner", type={"gear", "b1:gear"}, ptCost = 6 },
 
     -- Generator
     { name =  "Barrage Generator", type="generator", ptCost = 3 },
@@ -454,8 +473,8 @@ function CardInfoClass:buildCardInfo()
     { name = "Overwatch", type = "training", ptCost = 4 },
     { name = "Offensive Push", type = "training", ptCost = 4 },
     { name = "Situational Awareness", type = "training", ptCost = 2 },
-    { name = "Offensive Stance", type = "training", ptCost = 5 },
-    { name = "Seize The Initiative", type = "training", ptCost = 5 },
+    { name = "Offensive Stance", type = "training", ptCost = 5, restrictions = {upgradeSlot={"force"}} },
+    { name = "Seize The Initiative", type = "training", ptCost = 5, restrictions = {rank={"commander", "operative"}} },
   }
 
   cardInfoDB.unitCards = {
@@ -973,6 +992,7 @@ function CardInfoClass:buildCardInfo()
       rank = "Commander",
       faction = "republic",
       upgradeSlots = {"force", "force", "training", "training"},
+      requiredUpgrades = {"not a story the jedi would tell"},
     }),
     UnitClass:create({
       name = "Clone Captain Rex Honorable Soldier",
@@ -1148,7 +1168,7 @@ function CardInfoClass:buildCardInfo()
       rank = "Corps",
       type = "droid trooper",
       faction = "separatist",
-      upgradeSlots = {"heavy weapon", "personnel", "comms"},
+      upgradeSlots = {"heavy weapon", "personnel", "comms", "b1:gear"},
     }),
     UnitClass:create({
       name = "B2 Super Battle Droids",
@@ -1258,10 +1278,18 @@ function CardInfoClass:_formatNameWithFaction(name, faction)
 end
 
 -- "public" method to filter the upgrade database by type
-function CardInfoClass:getUpgradesByType(type)
+function CardInfoClass:getUpgradesByType(upgradeType)
   local tbl = {}
-  for key, val in pairs(self.upgradeCards) do
-    if val.type == type then
+  for _, val in pairs(self.upgradeCards) do
+    local typeOrTable = val.type
+    if type(typeOrTable) == "table" then
+      for _, e in ipairs(typeOrTable) do
+        if e == upgradeType then
+          table.insert(tbl, val)
+          break
+        end
+      end
+    elseif typeOrTable == upgradeType then
       table.insert(tbl, val)
     end
   end

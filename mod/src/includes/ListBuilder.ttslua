@@ -96,10 +96,11 @@ function respawnZone()
 end
 
 function finishArmy()
-  listData = getListData()
+  saveArmy()
   clearZone()
-  spawnArmy(listData)
-  mainMenu()
+  Wait.time(function()
+    loadArmy()
+  end, 0.5)
 end
 
 function clearZone()
@@ -366,7 +367,7 @@ function spawnTemplates()
 end
 
 function spawnArmy(loadListData)
-  if loadListData.battlefieldDeck != nil then
+  if loadListData.savedDiskVersion == 3 then
     -- deal command Cards
     for _ , c in ipairs(loadListData.commandCards) do
         dealCommandCard(c, false)
@@ -383,15 +384,13 @@ function spawnArmy(loadListData)
       drawBattlefieldCard(loadListData, "conditions")
       destroyBattlefieldCards()
 
-
-
       -- spawn units
       for n, unit in pairs(loadListData.units) do
         spawnUnit(unit, n, loadListData.armyFaction)
       end
       listBuilder = Global.getTable("listBuilder")
   else
-      broadcastToAll("Old Data Disk version. Please remake new Data Disk.", {1,1,1})
+      broadcastToAll("Unsupported army disk. The mod has changed, please re-create your army.", {1,1,1})
   end
 end
 
@@ -681,7 +680,7 @@ function saveArmy()
 
   if listData != nil then
     -- parse list
-    luaString = "function onload()\nlistData = {}\nlistData.points = "..totalPoints.."\nlistData.armyFaction = '" .. listData.armyFaction .."'\n"
+    luaString = "function onload()\nlistData = {savedDiskVersion = 3}\nlistData.points = "..totalPoints.."\nlistData.armyFaction = '" .. listData.armyFaction .."'\n"
 
     -- COMMAND CARDS and CONTINGENCIES
     local commandCardsBuffer = {}
