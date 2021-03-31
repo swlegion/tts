@@ -3,8 +3,8 @@ function ga_track(data)
   local payload = {
     v   = "1",
     tid = "G-QBT9PVH8RW",
-    cid = _G.CCID,
-    uid = _G.UUID,
+    cid = "35009a79-1a05-49d7-b876-2b884d0f825b",
+    --uid = _G.UUID,
   }
   local function charToHex(c)
     return string.format("%%%02X", string.byte(c))
@@ -18,20 +18,17 @@ function ga_track(data)
   local out = ""
   for k, v in pairs(payload) do
     if v ~= nil then
-      out = out .. "&" .. tostring(k) .. "=" .. tostring(v)
+      out = out .. tostring(k) .. "=" .. tostring(v) .. "&"
     end
   end
   for k, v in pairs(data) do
     if v ~= nil then
-      out = out .. "&" .. urlEncode(tostring(k)) .. "=" .. urlEncode(tostring(v))
+      out = out .. urlEncode(tostring(k)) .. "=" .. urlEncode(tostring(v)) .. "&"
     end
   end
   print(out)
-  WebRequest.custom(url, "POST", false, out, {
-    ["User-Agent"] = "TabletopSimulator/v4.0.0-Beta"
-  }, function(e)
-    print(JSON.encode_pretty(e.getResponseHeaders()))
-    -- print(e.response_code)
+  WebRequest.post(url, out, function(e)
+    print(e.response_code)
     -- print(e.error)
   end)
 end
@@ -56,10 +53,10 @@ function ga_event(category, action, label, value)
   })
 end
 
-function ga_view(screen, page)
+function ga_view(screen)
   ga_track({
     t   = "pageview",
-    dp  = page,
+    dp  = screen,
   })
 end
 
