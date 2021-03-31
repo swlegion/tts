@@ -10,7 +10,6 @@ function onLoad()
     battlefieldTint = Global.getTable("battlefieldTint")
     existingTint = battlefieldTint
     battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
-    -- unitInfo = Global.getTable("cardInfo").unitCards
     cardInfo = CardInfoClass:buildCardInfo()
     unitInfo = cardInfo.unitCards
     templateInfo = Global.getTable("templateInfo")
@@ -1192,7 +1191,7 @@ function spawnRangeRuler()
     baseAddition = {}
     baseAddition.small = 1.06299 / 2
     baseAddition.medium = 1.9685 / 2
-    baseAddition.big = 2.75591 / 2
+    baseAddition.large = 2.75591 / 2
     baseAddition.huge = 3.93701 / 2
     baseAddition.long = 3.525856871366164 / 2
     baseAddition.epic = 5.90551 / 2
