@@ -3,8 +3,9 @@ function ga_track(data)
   local payload = {
     v   = "1",
     tid = "UA-192712398-2",
-    cid = _G.CCID,
-    uid = _G.UUID,
+    cid = "35009a79-1a05-49d7-b876-2b884d0f825b",
+    --cid = _G.CCID,
+    --uid = _G.UUID,
   }
   local function charToHex(c)
     return string.format("%%%02X", string.byte(c))

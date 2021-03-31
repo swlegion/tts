@@ -9,7 +9,7 @@
 function onLoad()
     CCID = sha256(tostring(Time.time))
     UUID = sha256(Player.getPlayers()[1].steam_id)
-    ga_view("Load")
+    ga_view("welcome")
 
     gameDataGUID = "6bb850"
     battlefieldZoneGUID = "cbc575" -- real
