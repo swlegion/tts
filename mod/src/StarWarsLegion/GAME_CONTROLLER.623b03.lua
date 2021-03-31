@@ -739,16 +739,16 @@ end
 function spawnMapFromCartridge(selectedCartridge)
     clearZones()
     changeBattlefieldTint(selectedCartridge.getTable("battlefieldTint"))
-
-    local cartridgeObjs = selectedCartridge.getObjects()
-
-    for i, loadedObj in pairs(cartridgeObjs) do
-        takenObj = selectedCartridge.takeObject({
-            position       = {0,-10-i,0},
-            callback       = "placeTerrainDelay",
-            callback_owner = self,
-            smooth         = false
-        })
+    for i = 1, #selectedCartridge.getObjects(), 1 do
+      selectedCartridge.takeObject({
+        position          = {0,-10-i,0},
+        smooth            = false,
+        callback_function = function(spawnedObject)
+          Wait.frames(function()
+            placeTerrain(spawnedObject)
+          end)
+        end,
+    })
     end
 end
 
@@ -822,16 +822,16 @@ function saveMap()
 end
 
 function logObj(selectedObjs)
-    for i, obj in pairs(selectedObjs) do
+    for _, obj in pairs(selectedObjs) do
         if obj.getName() != "TABLE" then
             local objLuaScript = getLuaScriptData(obj)
 
             if string.len(obj.getLuaScript()) > 5 then
-                finalScript = objLuaScript .. "\nscripted = true"
+                objLuaScript = objLuaScript .. "\nscripted = true"
             else
-                finalScript = objLuaScript
+                objLuaScript = objLuaScript
             end
-            obj.setLuaScript(finalScript.."\n"..obj.getLuaScript())
+            obj.setLuaScript(objLuaScript.."\n"..obj.getLuaScript())
 
             dataCartridge.putObject(obj)
         end
@@ -868,16 +868,11 @@ function loadMap()
     end
 end
 
-
-function placeTerrainDelay(passedObj)
-    Wait.frames(function() placeTerrain(passedObj) end)
-end
-
 function placeTerrain(paObj)
-    spawnPos = paObj.getTable("position")
+    local spawnPos = paObj.getTable("position")
     paObj.setPosition(spawnPos)
 
-    spawnRot = paObj.getTable("rotation")
+    local spawnRot = paObj.getTable("rotation")
     paObj.setRotation(spawnRot)
 
     if paObj.getVar("scripted") == true then
