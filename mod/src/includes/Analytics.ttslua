@@ -1,13 +1,10 @@
-function gaTrack(category, action, label, value)
-  local url = "https://www.google-analytics.com/collect?"
-  local data = {
+function ga_track(data)
+  local url = "https://www.google-analytics.com/collect"
+  local payload = {
     v   = "1",
-    ds  = "web",
     tid = "G-QBT9PVH8RW",
-    ec  = category,
-    ea  = action,
-    el  = label,
-    ev  = value,
+    cid = _G.CCID,
+    uid = _G.UUID,
   }
   local function charToHex(c)
     return string.format("%%%02X", string.byte(c))
@@ -18,10 +15,73 @@ function gaTrack(category, action, label, value)
     url = url:gsub(" ", "+")
     return url
   end
-  for key, value in pairs(data) do
-    if value != nil then
-      url = url .. ("&" .. urlEncode(tostring(key)) .. "=" .. urlEncode(tostring(value)))
+  local out = ""
+  for k, v in pairs(payload) do
+    if v ~= nil then
+      out = out .. "&" .. tostring(k) .. "=" .. tostring(v)
     end
   end
-  WebRequest.post(url, data)
+  for k, v in pairs(data) do
+    if v ~= nil then
+      out = out .. "&" .. urlEncode(tostring(k)) .. "=" .. urlEncode(tostring(v))
+    end
+  end
+  print(out)
+  WebRequest.custom(url, "POST", false, out, {
+    ["User-Agent"] = "TabletopSimulator/v4.0.0-Beta"
+  }, function(e)
+    print(JSON.encode_pretty(e.getResponseHeaders()))
+    -- print(e.response_code)
+    -- print(e.error)
+  end)
+end
+
+function ga_event(category, action, label, value)
+  local data = {
+    t   = "event",
+    ec  = category,
+    ea  = action,
+  }
+  if label ~= nil then
+    data["el"] = label
+    if value ~=nil then
+      data["ev"] = value
+    end
+  end
+  ga_track({
+    t   = "event",
+    ec  = category,
+    ea  = action,
+    ev  = value,
+  })
+end
+
+function ga_view(screen, page)
+  ga_track({
+    t   = "pageview",
+    dp  = page,
+  })
+end
+
+function ga_timing(category, variable, time, label)
+  ga_track({
+    t   = "timing",
+    utc = category,
+    utv = variable,
+    utt = time,
+    utl = label,
+  })
+end
+
+function ga_exception(description, is_fatal)
+  if is_fatal == true then
+    is_fatal = 1
+  else
+    is_fatal = 0
+  end
+  ga_track({
+    t   = "exception",
+    exd = description,
+    exf = is_fatal,
+  })
 end
