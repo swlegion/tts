@@ -249,7 +249,7 @@ function initializeCommandToken(cData)
 
 end
 
-function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot, unitNameFallback)
+function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot)
   local templatePosUnit = passedTemplatePos
   local originalUnitCards = getObjectFromGUID(cardInfo.unitCardsGUID)
   copy({originalUnitCards})
@@ -259,26 +259,21 @@ function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot, unitNameFa
   local unitCards = pastedObj[1]
   local unitCardTable = unitCards.getObjects()
   
+  local cardInt = unitObj:getUnitCardIndex(unitCardTable)
 
-  local unitCard
-  if unitObj == nil then
-    unitCard = unitCards.takeObject({
-      position       = {0,10,0},
-      index          = 0,
-    })
-    unitCard.setName(unitNameFallback)
-  else
-    unitCard = unitCards.takeObject({
-      position       = {0,10,0},
-      index          = unitObj:getUnitCardIndex(unitCardTable),
-    })
-  end
+  -- TODO: if cardInt == -1, spawn a placeholder card
 
+  unitCard = unitCards.takeObject({
+      position       = {0,10,0},
+      index          = cardInt
+  })
   ga_event("Game", "spawnUnitCard", unitCard.getName())
+
   destroyObject(unitCards)
 
   pos = translatePos(passedTemplatePos, passedTemplateRot, 1.5620819440734, 52.543226290399+90)
   pos.y = passedTemplatePos.y
+
 
   unitCard.setRotation({0,passedTemplateRot.y+180,0})
   unitCard.setScale({0.83,1,0.83})
@@ -291,10 +286,11 @@ function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot, unitNameFa
 end
 
 function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
+
   local originalUpgradeCards = getObjectFromGUID(cardInfo.upgradeCardsGUID)
   local upgradeCards = originalUpgradeCards.clone({ position = {0,-30,0} })
   local upgradeCardTable = upgradeCards.getObjects()
-  local cardInt = -1
+  local cardInt = 0
 
   local upgradeCardPos = {
     -- q = horziontal offset?
@@ -323,21 +319,14 @@ function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
       end
   end
 
-  local upgradeCard
-  if cardInt == -1 then
-    upgradeCard = upgradeCards.takeObject({
-      position       = {0,10,0},
-      index          = 0
-    })
-    upgradeCard.setName(cardName)
-  else
-    upgradeCard = upgradeCards.takeObject({
-        position       = {0,10,0},
-        index          = cardInt
-    })
-  end
+  -- TODO: if cardInt == -1, spawn a placeholder card
 
-  ga_event("Game", "spawnUpgradeCard", cardName)
+  upgradeCard = upgradeCards.takeObject({
+      position       = {0,10,0},
+      index          = cardInt
+  })
+  ga_event("Game", "spawnUpgradeCard", upgradeCard.getName())
+
   destroyObject(upgradeCards)
 
   local rotUpgrade = pTemplateRot
@@ -350,6 +339,7 @@ function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
   upgradeCard.setPosition(finalPos)
   upgradeCard.setRotation({0,pTemplateRot.y+180,0})
   upgradeCard.setLock(false)
+
 end
 
 function spawnTemplates()
@@ -462,10 +452,7 @@ function spawnUnit(unit, n, faction)
 
   local unitObject = copyTable(cardInfo:getUnitByName(unit.name, faction))
   local upgradeObjects = cardInfo:getUpgradesByNames(unit.upgrades)
-
-  if unitObject ~= nil then
-    unitObject:addUpgrades(upgradeObjects)
-  end
+  unitObject:addUpgrades(upgradeObjects)
 
   -- initialise
   templatePos = listBuilder[colorSide.."TemplatePos"][n]
@@ -476,7 +463,7 @@ function spawnUnit(unit, n, faction)
 
   -- SPAWN CARDS
   -- spawn unit Card
-  spawnMiniTable.unitCardObj = spawnUnitCard(unitObject, templatePos, self.getRotation(), unit.name)
+  spawnMiniTable.unitCardObj = spawnUnitCard(unitObject, templatePos, self.getRotation())
   spawnUnitIDToken(templatePos, self.getRotation(), n)
 
 
@@ -485,34 +472,32 @@ function spawnUnit(unit, n, faction)
   for j, upgrade in pairs(unit.upgrades) do
     listBuilder = Global.getTable("listBuilder")
     templatePos = listBuilder[colorSide.."TemplatePos"][n]
-    spawnUpgradeCard(upgrade, templatePos, self.getRotation(), j)
+    spawnUpgradeCard(upgrade,templatePos, self.getRotation(), j)
     table.insert(spawnMiniTable.upgrades, upgrade)
   end
 
 
   -- SPAWN MINIS
   -- mini table
-  if unitObject ~= nil then
-    local minisToSpawn, leaderIndex = unitObject:getMinisTable()
-    spawnMiniTable.leaderIndex = leaderIndex
+  local minisToSpawn, leaderIndex = unitObject:getMinisTable()
+  spawnMiniTable.leaderIndex = leaderIndex
 
-    for i, miniData in ipairs(minisToSpawn) do
-      listBuilder = Global.getTable("listBuilder")
-      -- determine spawn position
-      spawnPos = translatePos(listBuilder[colorSide.."TemplatePos"][n], self.getRotation(), listBuilder.miniSpawnPos[i].c, listBuilder.miniSpawnPos[i].q+90)
-      -- spawn the mini
-      local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, miniData)
-      local insertInfo = {obj = spawnedMini, name = miniData.name}
-      -- mark the leader mini
-      if i == leaderIndex then insertInfo.leader = true end
-      table.insert(spawnMiniTable.miniObjs, insertInfo)
-    end
-
-    initializeMini(spawnMiniTable)
+  for i, miniData in ipairs(minisToSpawn) do
+    listBuilder = Global.getTable("listBuilder")
+    -- determine spawn position
+    spawnPos = translatePos(listBuilder[colorSide.."TemplatePos"][n], self.getRotation(), listBuilder.miniSpawnPos[i].c, listBuilder.miniSpawnPos[i].q+90)
+    -- spawn the mini
+    local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, miniData)
+    local insertInfo = {obj = spawnedMini, name = miniData.name}
+    -- mark the leader mini
+    if i == leaderIndex then insertInfo.leader = true end
+    table.insert(spawnMiniTable.miniObjs, insertInfo)
   end
 
+  initializeMini(spawnMiniTable)
+
   -- spawn command token
-  if unitObject ~= nil and cardInfo.unitCards[unitKey].noToken == nil then
+  if cardInfo.unitCards[unitKey].noToken == nil then
     commandData = {}
 
     local commandType = cardInfo.unitCards[unitKey].commandType

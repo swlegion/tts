@@ -2,7 +2,7 @@
   "Save": {
     "SaveName": "StarWarsLegion",
     "GameMode": "Star Wars: Legion",
-    "Date": "4/1/2021 3:56:52 PM",
+    "Date": "3/5/2021 11:16:45 AM",
     "VersionNumber": "v13.0.5",
     "GameType": "",
     "GameComplexity": "",
@@ -51,7 +51,7 @@
       "AmbientEquatorColor": {
         "r": 0.043,
         "g": 0.023,
-        "b": 0.01
+        "b": 0.010
       },
       "AmbientGroundColor": {
         "r": 0.018,
@@ -304,7 +304,7 @@
     "Custom_Model.c6b3a9.json",
     "SETUP_CONTROLLER.1cb552.json",
     "Victory_Tokens.8a2a49.json",
-    "Objective_Tokens.094239.json",
+    "Objective_Token.094239.json",
     "Custom_Model.294fce.json",
     "Condition_Tokens.4d25eb.json",
     "Standby_Tokens.f103c2.json",

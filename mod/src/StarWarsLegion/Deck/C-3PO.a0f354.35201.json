@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "ceb69c",
+    "GUID": "a0f354",
     "Name": "Card",
     "Transform": {
-      "posX": 54.4175949,
+      "posX": 54.6305428,
       "posY": 2.172646,
-      "posZ": -14.6064653,
-      "rotX": -0.0000272591424,
-      "rotY": 180.009,
-      "rotZ": 0.000007257462,
-      "scaleX": 0.181600809,
+      "posZ": -14.0233479,
+      "rotX": -0.00001841166,
+      "rotY": 270.015869,
+      "rotZ": -0.0000138863315,
+      "scaleX": 0.227068469,
       "scaleY": 1,
-      "scaleZ": 0.181600809
+      "scaleZ": 0.227068469
     },
-    "Nickname": "Iden's ID10 Seeker Droid Droid",
+    "Nickname": "C-3PO Human Cyborg Relations",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -34,15 +34,15 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": true,
-    "CardID": 38200,
+    "CardID": 35201,
     "SidewaysCard": false,
     "CustomDeck": {
-      "382": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775122858930997637/1DD6C80C739D5AA7B4EF821BF7A44ADBCBC972F7/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/775122858930997637/1DD6C80C739D5AA7B4EF821BF7A44ADBCBC972F7/",
-        "NumWidth": 3,
-        "NumHeight": 3,
-        "BackIsHidden": false,
+      "352": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/777357228032268731/DE936B7C9539716FC1D7F8B85FAB44AFE8BC7283/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/777357228032268731/DE936B7C9539716FC1D7F8B85FAB44AFE8BC7283/",
+        "NumWidth": 2,
+        "NumHeight": 2,
+        "BackIsHidden": true,
         "UniqueBack": true,
         "Type": 0
       }
