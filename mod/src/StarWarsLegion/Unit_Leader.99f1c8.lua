@@ -9,7 +9,6 @@ end
 function setUp()
     templateInfo = Global.getTable("templateInfo")
     cardInfo = Global.getTable("cardInfo").unitCards
-    unitInfo = Global.getTable("unitInfo")
 
     moveState = false
     silhouetteState = false
@@ -44,10 +43,10 @@ function setUp()
         unitData.cohesionRadius = templateInfo.cohesionRadius[unitData.baseSize]
 
         local unitCountPos = {}
-        unitInfo.unitCountPos.small = {-0.3, 0.2, 0.2}
-        unitInfo.unitCountPos.medium = {-0.4, 0.2, 0.5}
-        unitInfo.unitCountPos.large = {0,0.2,1}
-        unitInfo.unitCountPos.huge = {0,0.2,1.6}
+        unitCountPos.small = {-0.3, 0.2, 0.2}
+        unitCountPos.medium = {-0.4, 0.2, 0.5}
+        unitCountPos.large = {0,0.2,1}
+        unitCountPos.huge = {0,0.2,1.6}
         unitIDButtonPos = unitCountPos[unitData.baseSize]
 
         resetUnitButtons()
