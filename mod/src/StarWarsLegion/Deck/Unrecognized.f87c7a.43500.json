@@ -1,20 +1,20 @@
 {
   "Object": {
-    "GUID": "4de94f",
-    "Name": "Card",
+    "GUID": "f87c7a",
+    "Name": "CardCustom",
     "Transform": {
-      "posX": 76.21643,
-      "posY": 1.9847399,
-      "posZ": -25.1588879,
-      "rotX": -0.00000184784392,
-      "rotY": 180.019318,
-      "rotZ": -0.00000429244847,
-      "scaleX": 0.367304444,
+      "posX": 59.52454,
+      "posY": 8.349054,
+      "posZ": -9.882911,
+      "rotX": -2.49105881e-7,
+      "rotY": 270.018738,
+      "rotZ": 8.470857e-8,
+      "scaleX": 1,
       "scaleY": 1,
-      "scaleZ": 0.367304444
+      "scaleZ": 1
     },
-    "Nickname": "ISB Investigation",
-    "Description": "",
+    "Nickname": "Unrecognized",
+    "Description": "Report a bug to the list builder you used and include a copy of the JSON data exported.",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 0.713235259,
@@ -34,14 +34,14 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 43303,
+    "CardID": 43500,
     "SidewaysCard": false,
     "CustomDeck": {
-      "433": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1776078094156403922/BE6417434C2C981C6356C97F30A65DB2ED10BB4C/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
-        "NumWidth": 3,
-        "NumHeight": 2,
+      "435": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1714157207248706085/FCF9E1781D480BE93B6F0E34AEDCDA6F2BB4C4CB/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1714157207248706085/FCF9E1781D480BE93B6F0E34AEDCDA6F2BB4C4CB/",
+        "NumWidth": 1,
+        "NumHeight": 1,
         "BackIsHidden": true,
         "UniqueBack": false,
         "Type": 0
