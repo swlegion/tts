@@ -1,4 +1,4 @@
-#import !/Analytics
+#include !/Analytics
 
 -- This is the shared execution code for {RED|BLUE}_LIST_BUILDER.
 

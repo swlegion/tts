@@ -1,4 +1,4 @@
-#import !/Analytics
+#include !/Analytics
 
 function onLoad(save_state)
     -- init values
