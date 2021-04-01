@@ -3,7 +3,6 @@
 #include !/data/CardInfo_new
 #include !/data/ListBuilder
 #include !/data/MiniInfo
-#include !/data/TemplateMenu
 #include !/data/UnitInfo
 
 function onLoad()
@@ -238,7 +237,6 @@ function onLoad()
     redSelectedArmyFaction = ""
     blueSelectedArmyFaction = ""
     listBuilder = buildListBuilder()
-    templateMenu = buildTemplateMenu()
 
     -- mini info
     -- miniInfo = buildMiniInfo()

@@ -70,15 +70,20 @@ function mainMenu()
         upgradeSelectionIndex[n] = 0
     end
 
-    for i,entry in pairs(templateMenu.mainMenu) do
-        _G["mainMenu"..i] = function() unitSubMenu(entry.varName) end
-
-        local fontSize = correctStringLength(entry.name)
-
+    for _, name in pairs({
+      "Commander",
+      "Operative",
+      "Corps",
+      "Special Forces",
+      "Support",
+      "Heavy",
+    }) do
+        _G["mainMenu"..i] = function() unitSubMenu(entry.name:lower()) end
+        local fontSize = correctStringLength(name)
         self.createButton({
             click_function = "mainMenu"..i,
             function_owner = self,
-            label          = entry.name,
+            label          = name,
             position       = {0.93, 0.28, 2.48-(i*0.35)},
             width          = 1010,
             height         = 190,
@@ -86,7 +91,7 @@ function mainMenu()
             rotation       = {0,180,0},
             color          = {0.1764, 0.1764, 0.1764, 0.01},
             font_color     = {0, 0, 0, 100},
-            tooltip        = entry.name.."Sub Menu"
+            tooltip        = name.."Sub Menu"
         })
 
     end
@@ -185,11 +190,9 @@ function unitSubMenu(selectedRank)
     updateBackButton("mainMenu", "X", 0.01, "Go back to main menu")
     unitCardRank = selectedRank
 
-    local unitCount = #templateMenu[selectedArmyFaction][selectedRank]
+    local unitList = cardInfo:getUnitsByFactionAndRank(selectedArmyFaction, selectedRank)
     local startIndex = unitCardPage * 6 + 1
     local endIndex = (unitCardPage + 1) * 6
-
-    local unitList = cardInfo:getUnitsByFactionAndRank(selectedArmyFaction, selectedRank)
 
     for i=startIndex, endIndex, startIndex do
 
@@ -222,7 +225,7 @@ function unitSubMenu(selectedRank)
         end
     end
 
-    if endIndex < unitCount then
+    if endIndex < #unitList then
       createNextUnitButton()
     end
     if startIndex > 1 then
