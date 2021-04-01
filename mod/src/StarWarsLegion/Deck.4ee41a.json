@@ -36,6 +36,7 @@
     "Hands": false,
     "SidewaysCard": false,
     "DeckIDs": [
+      43500,
       36306,
       36300,
       36301,
@@ -247,6 +248,15 @@
         "BackIsHidden": true,
         "UniqueBack": false,
         "Type": 0
+      },
+      "435": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1714157207248706085/FCF9E1781D480BE93B6F0E34AEDCDA6F2BB4C4CB/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1714157207248706085/FCF9E1781D480BE93B6F0E34AEDCDA6F2BB4C4CB/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
       }
     },
     "LuaScript": "",
@@ -256,6 +266,7 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Unrecognized.f87c7a.43500.json",
     "Fear_Suprise_Intimidation.9c1944.36306.json",
     "Trained_in_Your_Jedi_Arts.038459.36300.json",
     "Supreme_Commander.9d461e.36301.json",
