@@ -27,11 +27,15 @@ function ga_event(category, action, label, value)
   ga_track(data)
 end
 
-function ga_view(screen)
-  ga_track({
+function ga_view(screen, title)
+  local data = {
     t   = "pageview",
     dp  = screen,
-  })
+  }
+  if title ~= nil then
+    data["dt"] = title
+  end
+  ga_track(data)
 end
 
 function ga_timing(category, variable, time, label)

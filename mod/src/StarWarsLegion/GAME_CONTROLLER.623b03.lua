@@ -652,7 +652,7 @@ function flipMap()
 end
 
 function spawnCustomMap(selectedMap, selectedCartridgeObj, mapMenuCallback, clearZone)
-    ga_event("Creative", "spawnCustomMap", "Name", selectedMap)
+    ga_event("Creative", "spawnCustomMap", selectedMap)
     if mapMenuCallback != nil then
         self.call(mapMenuCallback)
     end
@@ -699,7 +699,7 @@ end
 
 
 function spawnMapFromCartridge(selectedCartridge)
-    ga_event("Game", "spawnMapFromCartridge", "Name", selectedCartridge.getName())
+    ga_event("Game", "spawnMapFromCartridge", selectedCartridge.getName())
     clearZones()
     changeBattlefieldTint(selectedCartridge.getTable("battlefieldTint"))
     for i = 1, #selectedCartridge.getObjects(), 1 do
@@ -781,7 +781,7 @@ function saveMap()
 
     local zoneBox = getObjectFromGUID(zonesGUIDs.battlefield)
     local zoneObjs = zoneBox.getObjects()
-    ga_event("Creative", "saveMap", "Objects", #zoneObjs)
+    ga_event("Creative", "saveMap", #zoneObjs)
     logObj(zoneObjs)
 end
 

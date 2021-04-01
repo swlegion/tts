@@ -72,28 +72,28 @@ function loadArmyMenu()
 end
 
 function createRebelArmy()
-  ga_event("Game", "createArmy", "Faction", "Rebel")
+  ga_view("Game", "createArmy", "Rebel")
   createArmyMenu()
   Global.setVar(colorZone.."SelectedArmyFaction", "rebel")
   respawnZone()
 end
 
 function createImperialArmy()
-  ga_event("Game", "createArmy", "Faction", "Imperial")
+  ga_event("Game", "createArmy", "Imperial")
   createArmyMenu()
   Global.setVar(colorZone.."SelectedArmyFaction", "imperial")
   respawnZone()
 end
 
 function createSeparatistArmy()
-  ga_event("Game", "createArmy", "Faction", "Separatist")
+  ga_event("Game", "createArmy", "Separatist")
   createArmyMenu()
   Global.setVar(colorZone.."SelectedArmyFaction", "separatist")
   respawnZone()
 end
 
 function createRepublicArmy()
-  ga_event("Game", "createArmy", "Faction", "Republic")
+  ga_event("Game", "createArmy", "Republic")
   createArmyMenu()
   Global.setVar(colorZone.."SelectedArmyFaction", "republic")
   respawnZone()
@@ -267,7 +267,7 @@ function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot)
       position       = {0,10,0},
       index          = cardInt
   })
-  ga_event("Game", "spawnUnitCard", "Unit", unitCard.getName())
+  ga_event("Game", "spawnUnitCard", unitCard.getName())
 
   destroyObject(unitCards)
 
@@ -307,7 +307,7 @@ function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
       position       = {0,10,0},
       index          = cardInt
   })
-  ga_event("Game", "spawnUpgradeCard", "Upgrade", upgradeCard.getName())
+  ga_event("Game", "spawnUpgradeCard", upgradeCard.getName())
 
   destroyObject(upgradeCards)
 
@@ -618,7 +618,7 @@ function loadArmyFromJSON(jsonData)
     local listData = JSON.decode(jsonData)
     author = listData.author
     spawnArmy(listData, true)
-    ga_event("Game", "loadArmyFromJSON", "Author", author)
+    ga_event("Game", "loadArmyFromJSON", author)
   end)
   if not success then
     ga_exception("loadArmyFromJSON:" .. author .. ":" .. tostring(exception))
