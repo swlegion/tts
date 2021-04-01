@@ -270,8 +270,6 @@ function onLoad()
     dieRollerInfo.diePos[24] = {q = -53.130102354156, c = -2.5}
     dieRollerInfo.diePos[25] = {q = -75.963756532074, c = -2.0615528128088}
 
-
-
     dieRollerInfo.buttonInfo = {}
     dieRollerInfo.buttonInfo.redPlayer = {}
     dieRollerInfo.buttonInfo.redPlayer.whiteAttackButtonGUID = "64453f"
