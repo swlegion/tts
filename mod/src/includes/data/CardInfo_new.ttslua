@@ -558,7 +558,7 @@ function CardInfoClass:buildCardInfo()
       name = "K-2SO Sardonic Security Droid",
       points = 70,
       displayName = "K-2SO",
-      miniInfo = { miniInfo.chewbacca },
+      miniInfo = { miniInfo.k2so },
       rank = "Operative",
       type = "droid trooper",
       faction = "rebel",
