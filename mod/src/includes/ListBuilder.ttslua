@@ -292,7 +292,25 @@ function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
   local upgradeCardTable = upgradeCards.getObjects()
   local cardInt = 0
 
-  local cardPos = templateMenu.upgradeCardPos[upgradeNumber]
+  local upgradeCardPos = {
+    -- q = horziontal offset?
+    -- c = vertical offset?
+    -- top right
+    {q = 146.451578117502, c = 2.2437691503361},
+    -- center left
+    {q = -37.790038154384, c = 2.3663051367058},
+    -- center middle
+    {q = -90, c = 1.45},
+    -- center right
+    {q = -142.209961845616, c = 2.3663051367058},
+    -- bottom left
+    {q = -65.897765498839, c = 4.5792248252297},
+    -- bottom middle
+    {q = -90, c = 4.18},
+    -- bottom right
+    {q = -114, c = 4.5792248252297},
+  }
+  local cardPos = upgradeCardPos[upgradeNumber]
 
   for i, entry in pairs(upgradeCardTable) do
       if entry.nickname:lower() == cardName:lower() then
@@ -621,6 +639,7 @@ function loadArmyFromJSON(jsonData)
     ga_event("Game", "loadArmyFromJSON", author)
   end)
   if not success then
+    print("Failed to load from JSON:\n\n" .. tostring(exception))
     ga_exception("loadArmyFromJSON:" .. author .. ":" .. tostring(exception))
   end
 end
