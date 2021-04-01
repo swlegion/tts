@@ -7,10 +7,7 @@ function onLoad()
 end
 
 function setUp()
-    templateInfo = {}
     templateInfo = Global.getTable("templateInfo")
-
-    -- unitInfo = {}
     cardInfo = Global.getTable("cardInfo").unitCards
     unitInfo = Global.getTable("unitInfo")
 
@@ -46,7 +43,12 @@ function setUp()
         unitData.fontColor = templateInfo.fontColor[unitData.selectedSpeed]
         unitData.cohesionRadius = templateInfo.cohesionRadius[unitData.baseSize]
 
-        unitIDButtonPos = unitInfo.unitCountPos[unitData.baseSize]
+        local unitCountPos = {}
+        unitInfo.unitCountPos.small = {-0.3, 0.2, 0.2}
+        unitInfo.unitCountPos.medium = {-0.4, 0.2, 0.5}
+        unitInfo.unitCountPos.large = {0,0.2,1}
+        unitInfo.unitCountPos.huge = {0,0.2,1.6}
+        unitIDButtonPos = unitCountPos[unitData.baseSize]
 
         resetUnitButtons()
     end

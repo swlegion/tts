@@ -11,7 +11,6 @@ function onLoad(save_state)
     ionBag = getObjectFromGUID(Global.getVar("ionBagGUID"))
     suppressionBag = getObjectFromGUID(Global.getVar("suppressionBagGUID"))
     observationBag = getObjectFromGUID(Global.getVar("observationBagGUID"))
-    unitInfo = Global.getTable("unitInfo")
     commandTokenTrayData = Global.getTable("commandTokenTrayData")
 
     assetButton = getObjectFromGUID("9a68d8")
