@@ -1,37 +1,15 @@
 function ga_track(data)
-  local url = "https://www.google-analytics.com/collect"
+  local url =  "http://www.google-analytics.com/collect"
   local payload = {
     v   = "1",
     tid = "UA-192712398-2",
-    cid = "35009a79-1a05-49d7-b876-2b884d0f825b",
-    --cid = _G.CCID,
-    --uid = _G.UUID,
+    cid = _G.CCID,
+    uid = _G.UUID,
   }
-  local function charToHex(c)
-    return string.format("%%%02X", string.byte(c))
-  end
-  local function urlEncode(url)
-    url = url:gsub("\n", "\r\n")
-    url = url:gsub("([^%w ])", charToHex)
-    url = url:gsub(" ", "+")
-    return url
-  end
-  local out = ""
-  for k, v in pairs(payload) do
-    if v ~= nil then
-      out = out .. tostring(k) .. "=" .. tostring(v) .. "&"
-    end
-  end
   for k, v in pairs(data) do
-    if v ~= nil then
-      out = out .. urlEncode(tostring(k)) .. "=" .. urlEncode(tostring(v)) .. "&"
-    end
+    payload[k] = v
   end
-  print(out)
-  WebRequest.post(url, out, function(e)
-    print(e.response_code)
-    -- print(e.error)
-  end)
+  WebRequest.post(url, payload)
 end
 
 function ga_event(category, action, label, value)
