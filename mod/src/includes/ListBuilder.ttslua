@@ -693,6 +693,15 @@ function getListData()
 end
 
 function saveArmy()
+  local success, exception = pcall(saveArmyImpl)
+  if success then
+    ga_event("Game", "saveArmy")
+  else
+    ga_exception("saveArmy:" .. tostring(exception))
+  end
+end
+
+function saveArmyImpl()
   -- get listData
   listData = getListData()
 
@@ -751,7 +760,6 @@ function saveArmy()
     dataDisk.setName(diskName)
     dataDisk.setLuaScript(luaString)
     dataDisk.setLock(false)
-
   end
 end
 
