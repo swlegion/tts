@@ -70,7 +70,7 @@ function mainMenu()
         upgradeSelectionIndex[n] = 0
     end
 
-    for _, name in pairs({
+    for i, name in pairs({
       "Commander",
       "Operative",
       "Corps",
@@ -78,7 +78,7 @@ function mainMenu()
       "Support",
       "Heavy",
     }) do
-        _G["mainMenu"..i] = function() unitSubMenu(entry.name:lower()) end
+        _G["mainMenu"..i] = function() unitSubMenu(name:lower()) end
         local fontSize = correctStringLength(name)
         self.createButton({
             click_function = "mainMenu"..i,

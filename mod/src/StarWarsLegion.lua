@@ -3,7 +3,6 @@
 #include !/data/CardInfo_new
 #include !/data/ListBuilder
 #include !/data/MiniInfo
-#include !/data/UnitInfo
 
 function onLoad()
     CCID = sha256(tostring(Time.time))
@@ -229,9 +228,6 @@ function onLoad()
     unitIDTokenBagGUID = "21550f"
 
     Wait.time(initHotkeys, 1)
-
-    -- unitInfo
-    unitInfo = buildUnitInfo()
   
     -- LIST BUILDER info
     redSelectedArmyFaction = ""
