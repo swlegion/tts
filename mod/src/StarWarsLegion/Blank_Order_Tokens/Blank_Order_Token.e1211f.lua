@@ -1,7 +1,6 @@
 --[[ Blank Order Token --]]
 local operative_marker_token_bag_GUID = "125746"
-local unit_info_table = Global.getTable("unitInfo")
-local unit_card_info_table = Global.getTable("cardInfo")
+local unit_info_table = Global.getTable("cardInfo").unitCards
 local list_builder_table = Global.getTable("listBuilder")
 local command_token_data_table = Global.getTable("commandTokenData")
 local held_by_color = nil
@@ -115,7 +114,7 @@ function assign_unit_to_this_token(token, color, alt_click)
             if object.getVar("unitName") and object.getTable("miniGUIDs") then
                 local unit_name = object.getVar("unitName")
                 local unit_command_type = unit_info_table[unit_name].commandType
-                local unit_token_name = unit_card_info_table.unitCards[unit_name].tokenName
+                local unit_token_name = unit_info_table[unit_name].tokenName
 
                 update_token(unit_name, unit_command_type, unit_token_name, color)
             end
