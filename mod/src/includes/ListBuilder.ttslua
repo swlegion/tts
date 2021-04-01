@@ -1,3 +1,5 @@
+#include !/Analytics
+
 -- This is the shared execution code for {RED|BLUE}_LIST_BUILDER.
 
 function onLoadShared(
@@ -41,6 +43,7 @@ function mainMenu()
 end
 
 function chooseArmy()
+  ga_view("list_builder/" .. colorZone .. "/createArmy")
   clearAllButtons()
 
   changeBackButton("mainMenu", "Go back to Main Menu")
@@ -60,31 +63,37 @@ function createArmyMenu()
 end
 
 function loadArmyMenu()
+  ga_view("list_builder/" .. colorZone .. "/loadArmy")
   clearAllButtons()
+
   changeBackButton("mainMenu", "Go back to Main Menu")
   createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "dud", "Insert Data Disk", "Insert Data Disk into Slot Above", {0,0,0})
   createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "loadArmy", "Load Army", "Load army from Data Disk", {0,0.913,1})
 end
 
 function createRebelArmy()
+  ga_event("Game", "createArmy", "Faction", "Rebel")
   createArmyMenu()
   Global.setVar(colorZone.."SelectedArmyFaction", "rebel")
   respawnZone()
 end
 
 function createImperialArmy()
+  ga_event("Game", "createArmy", "Faction", "Imperial")
   createArmyMenu()
   Global.setVar(colorZone.."SelectedArmyFaction", "imperial")
   respawnZone()
 end
 
 function createSeparatistArmy()
+  ga_event("Game", "createArmy", "Faction", "Separatist")
   createArmyMenu()
   Global.setVar(colorZone.."SelectedArmyFaction", "separatist")
   respawnZone()
 end
 
 function createRepublicArmy()
+  ga_event("Game", "createArmy", "Faction", "Republic")
   createArmyMenu()
   Global.setVar(colorZone.."SelectedArmyFaction", "republic")
   respawnZone()
@@ -242,8 +251,6 @@ end
 
 function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot)
   local templatePosUnit = passedTemplatePos
-  
-  
   local originalUnitCards = getObjectFromGUID(cardInfo.unitCardsGUID)
   copy({originalUnitCards})
   local pastedObj = paste({
@@ -260,6 +267,7 @@ function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot)
       position       = {0,10,0},
       index          = cardInt
   })
+  ga_event("Game", "spawnUnitCard", "Unit", unitCard.getName())
 
   destroyObject(unitCards)
 
@@ -299,6 +307,7 @@ function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
       position       = {0,10,0},
       index          = cardInt
   })
+  ga_event("Game", "spawnUpgradeCard", "Upgrade", upgradeCard.getName())
 
   destroyObject(upgradeCards)
 
@@ -366,8 +375,8 @@ function spawnTemplates()
   end
 end
 
-function spawnArmy(loadListData)
-  if loadListData.savedDiskVersion == 3 then
+function spawnArmy(loadListData, skipDiskVersionCheck)
+  if skipDiskVersionCheck or loadListData.savedDiskVersion == 3 then
     -- deal command Cards
     for _ , c in ipairs(loadListData.commandCards) do
         dealCommandCard(c, false)
@@ -390,6 +399,7 @@ function spawnArmy(loadListData)
       end
       listBuilder = Global.getTable("listBuilder")
   else
+      ga_exception("spawnArmyUnsupportedArmyDisk")
       broadcastToAll("Unsupported army disk. The mod has changed, please re-create your army.", {1,1,1})
   end
 end
@@ -603,8 +613,16 @@ end
 
 function loadArmyFromJSON(jsonData)
   clearZone()
-  local listData = JSON.decode(jsonData)
-  spawnArmy(listData)
+  local author = "Unknown"
+  local success, exception = pcall(function()
+    local listData = JSON.decode(jsonData)
+    author = listData.author
+    spawnArmy(listData, true)
+    ga_event("Game", "loadArmyFromJSON", "Author", author)
+  end)
+  if not success then
+    ga_exception("loadArmyFromJSON:" .. author .. ":" .. tostring(exception))
+  end
 end
 
 function getListData()
@@ -675,6 +693,15 @@ function getListData()
 end
 
 function saveArmy()
+  local success, exception = pcall(saveArmyImpl)
+  if success then
+    ga_event("Game", "saveArmy")
+  else
+    ga_exception("saveArmy:" .. tostring(exception))
+  end
+end
+
+function saveArmyImpl()
   -- get listData
   listData = getListData()
 
@@ -733,7 +760,6 @@ function saveArmy()
     dataDisk.setName(diskName)
     dataDisk.setLuaScript(luaString)
     dataDisk.setLock(false)
-
   end
 end
 
@@ -747,7 +773,6 @@ function toggleListImporterUI()
 end
 
 function importFromText(nothing, text)
-  print('Importing from JSON (EXPRIMENTAL)...')
   loadArmyFromJSON(text)
 end
 
