@@ -3,8 +3,6 @@
 #include !/data/CardInfo_new
 #include !/data/ListBuilder
 #include !/data/MiniInfo
-#include !/data/TemplateMenu
-#include !/data/UnitInfo
 
 function onLoad()
     CCID = sha256(tostring(Time.time))
@@ -230,15 +228,11 @@ function onLoad()
     unitIDTokenBagGUID = "21550f"
 
     Wait.time(initHotkeys, 1)
-
-    -- unitInfo
-    unitInfo = buildUnitInfo()
   
     -- LIST BUILDER info
     redSelectedArmyFaction = ""
     blueSelectedArmyFaction = ""
     listBuilder = buildListBuilder()
-    templateMenu = buildTemplateMenu()
 
     -- mini info
     -- miniInfo = buildMiniInfo()
@@ -271,8 +265,6 @@ function onLoad()
     dieRollerInfo.diePos[23] = {q = -33.69006752598, c = -1.802775637732}
     dieRollerInfo.diePos[24] = {q = -53.130102354156, c = -2.5}
     dieRollerInfo.diePos[25] = {q = -75.963756532074, c = -2.0615528128088}
-
-
 
     dieRollerInfo.buttonInfo = {}
     dieRollerInfo.buttonInfo.redPlayer = {}

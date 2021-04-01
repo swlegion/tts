@@ -70,15 +70,20 @@ function mainMenu()
         upgradeSelectionIndex[n] = 0
     end
 
-    for i,entry in pairs(templateMenu.mainMenu) do
-        _G["mainMenu"..i] = function() unitSubMenu(entry.varName) end
-
-        local fontSize = correctStringLength(entry.name)
-
+    for i, name in pairs({
+      "Commander",
+      "Operative",
+      "Corps",
+      "Special Forces",
+      "Support",
+      "Heavy",
+    }) do
+        _G["mainMenu"..i] = function() unitSubMenu(name:lower()) end
+        local fontSize = correctStringLength(name)
         self.createButton({
             click_function = "mainMenu"..i,
             function_owner = self,
-            label          = entry.name,
+            label          = name,
             position       = {0.93, 0.28, 2.48-(i*0.35)},
             width          = 1010,
             height         = 190,
@@ -86,7 +91,7 @@ function mainMenu()
             rotation       = {0,180,0},
             color          = {0.1764, 0.1764, 0.1764, 0.01},
             font_color     = {0, 0, 0, 100},
-            tooltip        = entry.name.."Sub Menu"
+            tooltip        = name.."Sub Menu"
         })
 
     end
@@ -185,11 +190,9 @@ function unitSubMenu(selectedRank)
     updateBackButton("mainMenu", "X", 0.01, "Go back to main menu")
     unitCardRank = selectedRank
 
-    local unitCount = #templateMenu[selectedArmyFaction][selectedRank]
+    local unitList = cardInfo:getUnitsByFactionAndRank(selectedArmyFaction, selectedRank)
     local startIndex = unitCardPage * 6 + 1
     local endIndex = (unitCardPage + 1) * 6
-
-    local unitList = cardInfo:getUnitsByFactionAndRank(selectedArmyFaction, selectedRank)
 
     for i=startIndex, endIndex, startIndex do
 
@@ -222,7 +225,7 @@ function unitSubMenu(selectedRank)
         end
     end
 
-    if endIndex < unitCount then
+    if endIndex < #unitList then
       createNextUnitButton()
     end
     if startIndex > 1 then
@@ -332,11 +335,101 @@ function upgradeMenu()
 end
 
 function drawUpgradeMenu()
+    local buttonPositions = {
+      {
+        {-1.87, 0.28, 2.13},
+        {-1.87, 0.28, 1.78},
+        {-1.87, 0.28, 1.43},
+        {-1.87, 0.28, 1.08},
+        {-1.87, 0.28, 0.73},
+        {-1.57, 0.28, 0.36},
+        {-2.17, 0.28, 0.36},
+      },
+      {
+        {1.87, 0.28, -0.58},
+        {1.87, 0.28, -0.93},
+        {1.87, 0.28, -1.28},
+        {1.87, 0.28, -1.63},
+        {1.87, 0.28, -1.98},
+        {2.17, 0.28, -2.33},
+        {1.57, 0.28, -2.33},
+      },
+      {
+        {0, 0.28, -0.58},
+        {0, 0.28, -0.93},
+        {0, 0.28, -1.28},
+        {0, 0.28, -1.63},
+        {0, 0.28, -1.98},
+        {0.3, 0.28, -2.33},
+        {-0.3, 0.28, -2.33},
+      },
+      {
+        {-1.87, 0.28, -0.58},
+        {-1.87, 0.28, -0.93},
+        {-1.87, 0.28, -1.28},
+        {-1.87, 0.28, -1.63},
+        {-1.87, 0.28, -1.98},
+        {-1.57, 0.28, -2.33},
+        {-2.17, 0.28, -2.33},
+      },
+      {
+        {1.87, 0.28, -3.31},
+        {1.87, 0.28, -3.66},
+        {1.87, 0.28, -4.01},
+        {1.87, 0.28, -4.36},
+        {1.87, 0.28, -4.71},
+        {2.17, 0.28, -5.06},
+        {1.57, 0.28, -5.06},
+      },
+      {
+        {0, 0.28, -3.31},
+        {0, 0.28, -3.66},
+        {0, 0.28, -4.01},
+        {0, 0.28, -4.36},
+        {0, 0.28, -4.71},
+        {0.3, 0.28, -5.06},
+        {-0.3, 0.28, -5.06},
+      },
+      {
+        {-1.87, 0.28, -3.31},
+        {-1.87, 0.28, -3.66},
+        {-1.87, 0.28, -4.01},
+        {-1.87, 0.28, -4.36},
+        {-1.87, 0.28, -4.71},
+        {-1.57, 0.28, -5.06},
+        {-2.17, 0.28, -5.06},
+      },
+      {
+        {0, 0.28, -6.5},
+        {0, 0.28, -6.85},
+      },
+      {
+        {-1.87, 0.28, -6.5},
+        {-1.87, 0.28, -6.85},
+      },
+    }
+    local upgradeCardPos = {
+      -- q = horziontal offset?
+      -- c = vertical offset?
+      -- top right
+      {q = 146.451578117502, c = 2.2437691503361},
+      -- center left
+      {q = -37.790038154384, c = 2.3663051367058},
+      -- center middle
+      {q = -90, c = 1.45},
+      -- center right
+      {q = -142.209961845616, c = 2.3663051367058},
+      -- bottom left
+      {q = -65.897765498839, c = 4.5792248252297},
+      -- bottom middle
+      {q = -90, c = 4.18},
+      -- bottom right
+      {q = -114, c = 4.5792248252297},
+    }
     local availableUpgradeSlotCount = #availableUpgradeSlots
     local requiredUpgradeCount = #requiredUpgrades
-
     for i = 1, availableUpgradeSlotCount, 1 do
-      local buttonPosition = templateMenu.buttonPositions[i]
+      local buttonPosition = buttonPositions[i]
       local upgradesList = cardInfo:getUpgradesByType(availableUpgradeSlots[i])
       local allowableUpgrades = selectedUnit:filterAllowedUpgrades(upgradesList)
 
@@ -361,7 +454,7 @@ function drawUpgradeMenu()
           _G[upgradeClickFunction] = function()
             spawnUpgradeCard(
               allowableUpgrades[selectedIndex],
-              templateMenu.upgradeCardPos[i],
+              upgradeCardPos[i],
               i
             ) 
           end
@@ -441,7 +534,7 @@ function drawUpgradeMenu()
         local cardObj = cardInfo:getUpgradeByName(requiredUpgrades[upIndex])
         spawnUpgradeCard(
           cardObj,
-          templateMenu.upgradeCardPos[i],
+          upgradeCardPos[i],
           i,
           true
         )
