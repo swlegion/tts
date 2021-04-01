@@ -24,12 +24,7 @@ function ga_event(category, action, label, value)
       data["ev"] = value
     end
   end
-  ga_track({
-    t   = "event",
-    ec  = category,
-    ea  = action,
-    ev  = value,
-  })
+  ga_track(data)
 end
 
 function ga_view(screen)
