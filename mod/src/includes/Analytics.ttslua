@@ -3,11 +3,11 @@ function ga_track(data)
   local payload = {
     v   = "1",
     tid = "UA-192712398-2",
-    cid = _G.CCID,
-    uid = _G.UUID,
+    cid = Global.getVar("CCID"),
+    uid = Global.getVar("UUID"),
   }
   for k, v in pairs(data) do
-    payload[k] = v
+    payload[tostring(k)] = tostring(v)
   end
   WebRequest.post(url, payload)
 end

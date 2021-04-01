@@ -375,8 +375,8 @@ function spawnTemplates()
   end
 end
 
-function spawnArmy(loadListData)
-  if loadListData.savedDiskVersion == 3 then
+function spawnArmy(loadListData, skipDiskVersionCheck)
+  if skipDiskVersionCheck or loadListData.savedDiskVersion == 3 then
     -- deal command Cards
     for _ , c in ipairs(loadListData.commandCards) do
         dealCommandCard(c, false)
@@ -617,7 +617,7 @@ function loadArmyFromJSON(jsonData)
   local success, exception = pcall(function()
     local listData = JSON.decode(jsonData)
     author = listData.author
-    spawnArmy(listData)
+    spawnArmy(listData, true)
     ga_event("Game", "loadArmyFromJSON", "Author", author)
   end)
   if not success then
@@ -773,7 +773,6 @@ function toggleListImporterUI()
 end
 
 function importFromText(nothing, text)
-  print('Importing from JSON (EXPRIMENTAL)...')
   loadArmyFromJSON(text)
 end
 
