@@ -292,7 +292,24 @@ function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot, unitNameFa
   unitCard.setLock(false)
 
   return unitCard
+end
 
+function spawnLoadoutBag(unitName, unitUpgrades, pTemplatePos, pTemplateRot)
+  local bagOfUpgrades = spawnObject({
+    type             = "Bag",
+    position         = translatePos(
+      pTemplatePos,
+      pTemplateRot,
+      1.5620819440734,
+      52.543226290399+90
+    ),
+    callback_function = function(spawnedBag)
+      for _, upgrade in pairs(unitUpgrades) do
+        spawnUpgradeCard(upgrade, spawnedBag, pTemplateRot)
+      end
+    end,
+  })
+  bagOfUpgrades.setName("Loadout for " .. unitName)
 end
 
 function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
@@ -349,17 +366,19 @@ function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
 
   ga_event("Game", "spawnUpgradeCard", cardName)
   destroyObject(upgradeCards)
-
-  local rotUpgrade = pTemplateRot
-  local posUpgrade = pTemplatePos
-
-  local finalPos = translatePos(posUpgrade, rotUpgrade, cardPos.c , cardPos.q+90)
-
-  --finalPos = translatePos(passedTemplatePos, passedTemplateRot, 1.5620819440734, 52.543226290399+90)
   upgradeCard.setScale({0.83,0.83,0.83})
-  upgradeCard.setPosition(finalPos)
-  upgradeCard.setRotation({0,pTemplateRot.y+180,0})
   upgradeCard.setLock(false)
+  upgradeCard.setRotation({0,pTemplateRot.y+180,0})
+
+  if upgradeNumber ~= nil then
+    local rotUpgrade = pTemplateRot
+    local posUpgrade = pTemplatePos
+    local finalPos = translatePos(posUpgrade, rotUpgrade, cardPos.c , cardPos.q+90)
+    upgradeCard.setPosition(finalPos)
+  else
+    local loadoutBag = pTemplatePos
+    loadoutBag.putObject(upgradeCard)
+  end
 end
 
 function spawnTemplates()
@@ -489,9 +508,12 @@ function spawnUnit(unit, n, faction)
   spawnMiniTable.unitCardObj = spawnUnitCard(unitObject, templatePos, self.getRotation(), unit.name)
   spawnUnitIDToken(templatePos, self.getRotation(), n)
 
+  -- spawn loadout bag
+  if unit.loadout ~= nil and #unit.loadout > 0 then
+    spawnLoadoutBag(unit.name, unit.loadout, templatePos, self.getRotation())
+  end
 
   -- spawn upgrade card
-
   for j, upgrade in pairs(unit.upgrades) do
     listBuilder = Global.getTable("listBuilder")
     templatePos = listBuilder[colorSide.."TemplatePos"][n]
