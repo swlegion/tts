@@ -484,6 +484,20 @@ function spawnUnit(unit, n, faction)
   spawnMiniTable.miniObjs = {}
   spawnMiniTable.unitID = n
 
+  -- prep mini position variables
+  local tempPos = templatePos
+  --slide over to edge of template zone
+  tempPos.x = tempPos.x - 2.5 
+
+  local zOffset = 1
+
+  if (tempPos.z < 0) then 
+    tempPos.z = tempPos.z - 2
+    zOffset =  -1
+  else
+    tempPos.z = tempPos.z + 2
+  end
+
   -- SPAWN CARDS
   -- spawn unit Card
   spawnMiniTable.unitCardObj = spawnUnitCard(unitObject, templatePos, self.getRotation(), unit.name)
@@ -509,7 +523,12 @@ function spawnUnit(unit, n, faction)
     for i, miniData in ipairs(minisToSpawn) do
       listBuilder = Global.getTable("listBuilder")
       -- determine spawn position
-      spawnPos = translatePos(listBuilder[colorSide.."TemplatePos"][n], self.getRotation(), listBuilder.miniSpawnPos[i].c, listBuilder.miniSpawnPos[i].q+90)
+      local base = cardInfo.unitCards[spawnMiniTable.name].miniInfo.collider[2]
+      local baseOffset = base + 0.2
+      local baseRadius = base * 0.5
+      local basePosOffset = tempPos.x + baseRadius
+      local miniPos = {x = basePosOffset, y = tempPos.y, z = tempPos.z }
+      spawnPos = simpleTranslatePos(miniPos, baseOffset * spawnedMinisNumber, baseOffset * zOffset)
       -- spawn the mini
       local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, miniData)
       local insertInfo = {obj = spawnedMini, name = miniData.name}
