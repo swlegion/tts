@@ -1,3 +1,5 @@
+#include !/Analytics
+
 function onLoad(save_state)
     -- init values
     gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
@@ -13,8 +15,6 @@ function onLoad(save_state)
     listBuilder = Global.getTable("listBuilder")
     redZone = getObjectFromGUID(listBuilder.redZoneGUID)
     blueZone = getObjectFromGUID(listBuilder.blueZoneGUID)
-    unitInfo = Global.getTable("unitInfo")
-    miniInfo = Global.getTable("miniInfo")
     cardInfo = Global.getTable("cardInfo")
     screen = getObjectFromGUID(Global.getVar("screenGUID"))
     objectiveCards = getObjectFromGUID(gameController.objectiveCardsGUID)
@@ -152,6 +152,7 @@ function removeLockedRulers()
 end
 
 function learningGameMenu()
+  ga_view("game_controller/learning_game")
   printToScreen("The Learning Game has been removed as part\nof this mod due to size constraints.\n\nSubscribe to\nhttps://go.swlegion.dev/map-archive\nfor cartridge access.", 80, 3)
 
   clearAllButtons()
@@ -184,6 +185,7 @@ function clearPlayerZones()
 end
 
 function defineBattlefieldMenu(selectedDeck)
+    ga_view("game_controller/define_battlefield")
     clearAllButtons()
     changeBackButton("reset", "Go back to Main Menu")
     local menuEntries = {}
@@ -200,6 +202,7 @@ function finishDefineBattlefieldMenu()
 end
 
 function gameOptionsMenu()
+    ga_view("game_controller/game_options")
     clearAllButtons()
     changeBackButton("mainMenu", "Go back to Main Menu")
     local menuEntries = {}
@@ -237,6 +240,7 @@ function gameOptionsMenu()
 end
 
 function mapMenu()
+    ga_view("game_controller/map_menu")
     printToScreen("MAP MENU", 80, 3)
 
     clearAllButtons()
@@ -255,14 +259,8 @@ function mapMenu()
     createMenu(menuEntries, 1)
 end
 
-function deploymentMenu()
-    clearAllButtons()
-
-    changeBackButton("mainMenu", "Go back to Main Menu")
-    createMapMenu(deploymentOverlays)
-end
-
 function featuredMapsMenu()
+  ga_view("game_controller/featured_maps")
   printToScreen("FEATURED MAPS\n\nThese are maps featured by the community.\n\nSee https://go.swlegion.dev/maps for details.", 80, 3)
   changeBackButton("mapMenu", "Go back to Maps Menu")
   local buttonTint = {0,0.913,1}
@@ -284,6 +282,7 @@ function featuredMapsMenu()
 end
 
 function featuredCompetitiveMenu()
+  ga_view("game_controller/featured_maps/competitive")
   printToScreen("FEATURED MAPS\n\nThese are maps featured by the community.\n\nSee https://go.swlegion.dev/maps for details.", 80, 3)
   changeBackButton("featuredMapsMenu", "Go back to featured maps")
   local url = "https://raw.githubusercontent.com/swlegion/tts/master/contrib/maps/competitive.json"
@@ -303,6 +302,7 @@ function featuredCompetitiveMenu()
 end
 
 function featuredSkirmisMenu()
+  ga_view("game_controller/featured_maps/skirmish")
   printToScreen("FEATURED MAPS\n\nThese are maps featured by the community.\n\nSee https://go.swlegion.dev/maps for details.\n\nFull support for Skirmish is currently limited:\nhttps://go.swlegion.dev/skirmish.", 80, 3)
   changeBackButton("featuredMapsMenu", "Go back to featured maps")
   local url = "https://raw.githubusercontent.com/swlegion/tts/master/contrib/maps/skirmish.json"
@@ -322,46 +322,27 @@ function featuredSkirmisMenu()
 end
 
 function createMapMenu(selectedCartridge, mapMenuCallback)
-
-    local selectedMapsTable = selectedCartridge.getObjects()
-
-    local menuEntries = {}
-
-    for iM, entry in pairs(selectedMapsTable) do
-        _G["spawnCustomMap"..entry.name] = function() spawnPremadeMap(entry.name, selectedCartridge, mapMenuCallback) end
-
-        table.insert(menuEntries, {functionName = "spawnCustomMap"..entry.name, label = entry.name, tooltip = "Load ".. entry.name .." map", buttonTint = {0,0.913,1}})
-    end
-
-    createMenu(menuEntries, 1)
-end
-
-function createCompetitiveTerrainMapMenuback(selectedCartridge, mapMenuCallback)
-
-    local selectedMapsTable = competitiveTerrainCartridge.getObjects()
-
-    local menuEntries = {}
-
-    for iM, entry in pairs(selectedMapsTable) do
-        _G["spawnCustomMap"..entry.name] = function() spawnPremadeMap(entry.name, selectedCartridge, mapMenuCallback) spawnPremadeMap(entry.name, competitiveTerrainCartridge, nil, false) end
-
-        table.insert(menuEntries, {functionName = "spawnCustomMap"..entry.name, label = entry.name, tooltip = "Load ".. entry.name .." map", buttonTint = {0,0.913,1}})
-    end
-
-    createMenu(menuEntries, 1)
+  local selectedMapsTable = selectedCartridge.getObjects()
+  local menuEntries = {}
+  for iM, entry in pairs(selectedMapsTable) do
+      _G["spawnCustomMap"..entry.name] = function() spawnCustomMap(entry.name, selectedCartridge, mapMenuCallback) end
+      table.insert(menuEntries, {functionName = "spawnCustomMap"..entry.name, label = entry.name, tooltip = "Load ".. entry.name .." map", buttonTint = {0,0.913,1}})
+  end
+  createMenu(menuEntries, 1)
 end
 
 function customMapMenu()
-    clearAllButtons()
-    changeBackButton("mapMenu", "Go back to Maps Menu")
-    createMapMenu(customMapsCartridge, "mapMenu")
-
+  ga_view("game_controller/custom_maps")
+  clearAllButtons()
+  changeBackButton("mapMenu", "Go back to Maps Menu")
+  createMapMenu(customMapsCartridge, "mapMenu")
 end
 
 -- SETUP Menu
 
 function spawnCardDecks()
   -- {52.43, 1.03, 32.53}
+  ga_event("Game", "spawnCardDecks")
   local cardInfo = Global.getTable('cardInfo')
   local unitCards = getObjectFromGUID(cardInfo.unitCardsGUID)
   local upgrades = getObjectFromGUID(cardInfo.upgradeCardsGUID)
@@ -389,25 +370,6 @@ function spawnCardDecks()
   commands.setLock(false)
   battlefield.setScale(cardScale)
   battlefield.setLock(false)
-end
-
-function lockBoard()
-    local allObjs = battlefieldZone.getObjects()
-    for _, obj in pairs(allObjs) do
-        if obj.getCustomObject().type != 1 then
-            obj.setLock(true)
-        end
-    end
-end
-
-function unlockBoard()
-    local allObjs = battlefieldZone.getObjects()
-    for _, obj in pairs(allObjs) do
-        if obj != battlefieldTable then
-            obj.setLock(false)
-        end
-
-    end
 end
 
 function setBattleCardPos()
@@ -670,11 +632,8 @@ function flipObjPos(pObj)
     pObj.setRotation(objRot)
 end
 
-function switchColorDelay()
-    Player.Purple.changeColor("Blue")
-end
-
 function flipMap()
+    ga_event("Game", "flipMap")
     --Get a list of any objects which are inside of the zone.
     local allObjs = battlefieldZone.getObjects()
 
@@ -690,7 +649,8 @@ function flipMap()
     end
 end
 
-function spawnPremadeMap(selectedMap,selectedCartridgeObj, mapMenuCallback, clearZone)
+function spawnCustomMap(selectedMap, selectedCartridgeObj, mapMenuCallback, clearZone)
+    ga_event("Creative", "spawnCustomMap", selectedMap)
     if mapMenuCallback != nil then
         self.call(mapMenuCallback)
     end
@@ -737,18 +697,19 @@ end
 
 
 function spawnMapFromCartridge(selectedCartridge)
+    ga_event("Game", "spawnMapFromCartridge", selectedCartridge.getName())
     clearZones()
     changeBattlefieldTint(selectedCartridge.getTable("battlefieldTint"))
-
-    local cartridgeObjs = selectedCartridge.getObjects()
-
-    for i, loadedObj in pairs(cartridgeObjs) do
-        takenObj = selectedCartridge.takeObject({
-            position       = {0,-10-i,0},
-            callback       = "placeTerrainDelay",
-            callback_owner = self,
-            smooth         = false
-        })
+    for i = 1, #selectedCartridge.getObjects(), 1 do
+      selectedCartridge.takeObject({
+        position          = {0,-10-i,0},
+        smooth            = false,
+        callback_function = function(spawnedObject)
+          Wait.frames(function()
+            placeTerrain(spawnedObject)
+          end)
+        end,
+    })
     end
 end
 
@@ -786,7 +747,10 @@ function prepareToSave()
 
     -- create data cartridge
     local spawnPos = dataDiskMount.getPosition()
-    spawnPos.y = spawnPos.y + 1
+    -- offset to "snap" the cartridge neatly
+    spawnPos.x = spawnPos.x + 0.05
+    spawnPos.y = spawnPos.y - 0.41
+    spawnPos.z = spawnPos.z + 0.02
     local dataCartridgeOriginal = getObjectFromGUID(gameController.dataCartridgeGUID)
 
     dataCartridge = dataCartridgeOriginal.clone({
@@ -815,20 +779,21 @@ function saveMap()
 
     local zoneBox = getObjectFromGUID(zonesGUIDs.battlefield)
     local zoneObjs = zoneBox.getObjects()
+    ga_event("Creative", "saveMap", #zoneObjs)
     logObj(zoneObjs)
 end
 
 function logObj(selectedObjs)
-    for i, obj in pairs(selectedObjs) do
+    for _, obj in pairs(selectedObjs) do
         if obj.getName() != "TABLE" then
             local objLuaScript = getLuaScriptData(obj)
 
             if string.len(obj.getLuaScript()) > 5 then
-                finalScript = objLuaScript .. "\nscripted = true"
+                objLuaScript = objLuaScript .. "\nscripted = true"
             else
-                finalScript = objLuaScript
+                objLuaScript = objLuaScript
             end
-            obj.setLuaScript(finalScript.."\n"..obj.getLuaScript())
+            obj.setLuaScript(objLuaScript.."\n"..obj.getLuaScript())
 
             dataCartridge.putObject(obj)
         end
@@ -865,16 +830,11 @@ function loadMap()
     end
 end
 
-
-function placeTerrainDelay(passedObj)
-    Wait.frames(function() placeTerrain(passedObj) end)
-end
-
 function placeTerrain(paObj)
-    spawnPos = paObj.getTable("position")
+    local spawnPos = paObj.getTable("position")
     paObj.setPosition(spawnPos)
 
-    spawnRot = paObj.getTable("rotation")
+    local spawnRot = paObj.getTable("rotation")
     paObj.setRotation(spawnRot)
 
     if paObj.getVar("scripted") == true then
@@ -1070,6 +1030,7 @@ function onPlayerChangedColor(player_color)
 end
 
 function enableExperimentalFeatures()
+    ga_event("Global", "enableExperimentalFeatures")
     printToAll("Enabled Experiments! Do not file bug reports or requests about these features.")
     local blueListBuilder = getObjectFromGUID("60e426")
     local redListBuilder = getObjectFromGUID("8708be")

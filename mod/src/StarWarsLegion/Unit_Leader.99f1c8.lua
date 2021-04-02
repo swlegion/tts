@@ -7,27 +7,24 @@ function onLoad()
 end
 
 function setUp()
-    templateInfo = {}
     templateInfo = Global.getTable("templateInfo")
-
-    unitInfo = {}
-    unitInfo = Global.getTable("unitInfo")
+    cardInfo = Global.getTable("cardInfo").unitCards
 
     moveState = false
     silhouetteState = false
 
     if unitName != nil and colorSide != nil then
-        local baseSize = unitInfo[unitName].baseSize
+        local baseSize = cardInfo[unitName].baseSize
         local fixed = baseSize != 'small'
 
         unitData = {}
-        unitData.commandType = unitInfo[unitName].commandType
+        unitData.commandType = cardInfo[unitName].commandType
         unitData.baseSize = baseSize
         unitData.fixedMove = fixed
         unitData.fixedArc = fixed
-        unitData.selectedSpeed = unitInfo[unitName].selectedSpeed
+        unitData.selectedSpeed = cardInfo[unitName].selectedSpeed
 
-        if unitInfo[unitName].strafeMove != nil then
+        if cardInfo[unitName].strafeMove != nil then
               unitData.strafeMove = true
         else
               unitData.strafeMove = false
@@ -45,7 +42,12 @@ function setUp()
         unitData.fontColor = templateInfo.fontColor[unitData.selectedSpeed]
         unitData.cohesionRadius = templateInfo.cohesionRadius[unitData.baseSize]
 
-        unitIDButtonPos = unitInfo.unitCountPos[unitData.baseSize]
+        local unitCountPos = {}
+        unitCountPos.small = {-0.3, 0.2, 0.2}
+        unitCountPos.medium = {-0.4, 0.2, 0.5}
+        unitCountPos.large = {0,0.2,1}
+        unitCountPos.huge = {0,0.2,1.6}
+        unitIDButtonPos = unitCountPos[unitData.baseSize]
 
         resetUnitButtons()
     end

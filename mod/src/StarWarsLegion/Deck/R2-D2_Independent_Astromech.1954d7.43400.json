@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "7953ed",
-    "Name": "Card",
+    "GUID": "1954d7",
+    "Name": "CardCustom",
     "Transform": {
-      "posX": 41.60874,
-      "posY": 1.16961753,
-      "posZ": 4.7356205,
-      "rotX": 0.0195944719,
-      "rotY": 269.999939,
-      "rotZ": 180.032532,
-      "scaleX": 0.181600809,
+      "posX": 77.21295,
+      "posY": 1.98473966,
+      "posZ": -1.71538746,
+      "rotX": -1.57314517e-7,
+      "rotY": 180.009232,
+      "rotZ": 1.65257621e-8,
+      "scaleX": 1,
       "scaleY": 1,
-      "scaleZ": 0.181600809
+      "scaleZ": 1
     },
-    "Nickname": "A-180 Config",
+    "Nickname": "R2-D2 Independent Astromech",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -32,18 +32,18 @@
     "Sticky": true,
     "Tooltip": true,
     "GridProjection": false,
-    "HideWhenFaceDown": false,
+    "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 26901,
+    "CardID": 43400,
     "SidewaysCard": false,
     "CustomDeck": {
-      "269": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/948474323838790044/425DF43B0C966E5D57EC9F1D5EA78BF283BE92D7/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/993513208355167768/8F7AEA70B695A33E374354761AF41E6F9BD6C8FF/",
-        "NumWidth": 4,
-        "NumHeight": 2,
+      "434": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1715283087742261862/2528547B8473B7402B10344046ED0A1AA322CD15/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1715283087742261862/2528547B8473B7402B10344046ED0A1AA322CD15/",
+        "NumWidth": 1,
+        "NumHeight": 1,
         "BackIsHidden": true,
-        "UniqueBack": true,
+        "UniqueBack": false,
         "Type": 0
       }
     },

@@ -1,3 +1,5 @@
+#include !/Analytics
+
 -- This is the shared execution code for {RED|BLUE}_LIST_BUILDER.
 
 function onLoadShared(
@@ -41,6 +43,7 @@ function mainMenu()
 end
 
 function chooseArmy()
+  ga_view("list_builder/" .. colorZone .. "/createArmy")
   clearAllButtons()
 
   changeBackButton("mainMenu", "Go back to Main Menu")
@@ -60,31 +63,37 @@ function createArmyMenu()
 end
 
 function loadArmyMenu()
+  ga_view("list_builder/" .. colorZone .. "/loadArmy")
   clearAllButtons()
+
   changeBackButton("mainMenu", "Go back to Main Menu")
   createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "dud", "Insert Data Disk", "Insert Data Disk into Slot Above", {0,0,0})
   createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "loadArmy", "Load Army", "Load army from Data Disk", {0,0.913,1})
 end
 
 function createRebelArmy()
+  ga_view("Game", "createArmy", "Rebel")
   createArmyMenu()
   Global.setVar(colorZone.."SelectedArmyFaction", "rebel")
   respawnZone()
 end
 
 function createImperialArmy()
+  ga_event("Game", "createArmy", "Imperial")
   createArmyMenu()
   Global.setVar(colorZone.."SelectedArmyFaction", "imperial")
   respawnZone()
 end
 
 function createSeparatistArmy()
+  ga_event("Game", "createArmy", "Separatist")
   createArmyMenu()
   Global.setVar(colorZone.."SelectedArmyFaction", "separatist")
   respawnZone()
 end
 
 function createRepublicArmy()
+  ga_event("Game", "createArmy", "Republic")
   createArmyMenu()
   Global.setVar(colorZone.."SelectedArmyFaction", "republic")
   respawnZone()
@@ -96,10 +105,11 @@ function respawnZone()
 end
 
 function finishArmy()
-  listData = getListData()
+  saveArmy()
   clearZone()
-  spawnArmy(listData)
-  mainMenu()
+  Wait.time(function()
+    loadArmy()
+  end, 0.5)
 end
 
 function clearZone()
@@ -141,6 +151,11 @@ function clearZone()
     if obj != deckMount then
         destroyObject(obj)
     end
+  end
+
+  -- And the hand zone, now that is separate from the other zones.
+  for _, obj in pairs(Player[colorZone].getHandObjects()) do
+    destroyObject(obj)
   end
 end
 
@@ -228,46 +243,51 @@ function initializeCommandToken(cData)
 
   strColor = strColor:gsub("^%l", string.upper)
 
-  tokenObj.setName(strColor .. " " .. cardInfo.unitCards[cData.varName].tokenName)
-  local luaScript = "unitName = '"..cData.varName.."'\ncommandType = '"..cData.commandType.."'\ncolorSide = '"..colorSide.."'\n"..listBuilder.tokenScript
+  tokenObj.setName(strColor .. " " .. cData.faction .. " " .. cData.rank .. " Command Token")
+  local luaScript = "unitName = \""..cData.varName.."\"\ncommandType = '"..cData.commandType.."'\ncolorSide = '"..colorSide.."'\nfaction = '"..cData.faction.."'\n"..listBuilder.tokenScript
   tokenObj.setLuaScript(luaScript)
 
 end
 
-function spawnUnitCard(cardName, passedTemplatePos, passedTemplateRot)
+function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot, unitNameFallback)
   local templatePosUnit = passedTemplatePos
-
-
   local originalUnitCards = getObjectFromGUID(cardInfo.unitCardsGUID)
   copy({originalUnitCards})
   local pastedObj = paste({
-      position     = {0,-10,0}
+    position     = {0,-10,0}
   })
   local unitCards = pastedObj[1]
   local unitCardTable = unitCards.getObjects()
+  
 
-  for i, entry in pairs(unitCardTable) do
-      if entry.nickname == cardName then
-          cardInt = entry.index
-          break
-      end
+  local unitCard
+  if unitObj == nil then
+    local face = "http://cloud-3.steamusercontent.com/ugc/1714157207248706790/F9785EFE7468A0196B91FECA725ADC0414674074/"
+    unitCard = spawnObject({
+      type           = "CardCustom",
+      position       = {0,10,0}
+    })
+    unitCard.setCustomObject({
+      face           = face,
+      back           = face,
+    })
+    unitCard.setName(unitNameFallback)
+  else
+    unitCard = unitCards.takeObject({
+      position       = {0,10,0},
+      index          = unitObj:getUnitCardIndex(unitCardTable),
+    })
   end
 
-  unitCard = unitCards.takeObject({
-      position       = {0,10,0},
-      index          = cardInt
-  })
-
+  ga_event("Game", "spawnUnitCard", unitCard.getName())
   destroyObject(unitCards)
 
   pos = translatePos(passedTemplatePos, passedTemplateRot, 1.5620819440734, 52.543226290399+90)
   pos.y = passedTemplatePos.y
 
-
   unitCard.setRotation({0,passedTemplateRot.y+180,0})
   unitCard.setScale({0.83,1,0.83})
 
-  --unitCard.setVar("ptCost", cardInfo.unitCards[card].ptCost)
   unitCard.setPosition(pos)
   unitCard.setLock(false)
 
@@ -276,25 +296,58 @@ function spawnUnitCard(cardName, passedTemplatePos, passedTemplateRot)
 end
 
 function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
-
   local originalUpgradeCards = getObjectFromGUID(cardInfo.upgradeCardsGUID)
   local upgradeCards = originalUpgradeCards.clone({ position = {0,-30,0} })
   local upgradeCardTable = upgradeCards.getObjects()
+  local cardInt = -1
 
-  local cardPos = templateMenu.upgradeCardPos[upgradeNumber]
+  local upgradeCardPos = {
+    -- q = horziontal offset?
+    -- c = vertical offset?
+    -- top right
+    {q = 146.451578117502, c = 2.2437691503361},
+    -- center left
+    {q = -37.790038154384, c = 2.3663051367058},
+    -- center middle
+    {q = -90, c = 1.45},
+    -- center right
+    {q = -142.209961845616, c = 2.3663051367058},
+    -- bottom left
+    {q = -65.897765498839, c = 4.5792248252297},
+    -- bottom middle
+    {q = -90, c = 4.18},
+    -- bottom right
+    {q = -114, c = 4.5792248252297},
+  }
+  local cardPos = upgradeCardPos[upgradeNumber]
 
   for i, entry in pairs(upgradeCardTable) do
-      if entry.nickname == cardName then
+      if entry.nickname:lower() == cardName:lower() then
           cardInt = entry.index
           break
       end
   end
 
-  upgradeCard = upgradeCards.takeObject({
-      position       = {0,10,0},
-      index          = cardInt
-  })
+  local upgradeCard
+  if cardInt == -1 then
+    local face = "http://cloud-3.steamusercontent.com/ugc/1714157207248707545/D04A7BAA681BE95F81F168FB7163FD897E7E1D33/"
+    upgradeCard = spawnObject({
+      type           = "CardCustom",
+      position       = {0,10,0}
+    })
+    upgradeCard.setCustomObject({
+      face           = face,
+      back           = face,
+    })
+    upgradeCard.setName(cardName)
+  else
+    upgradeCard = upgradeCards.takeObject({
+        position       = {0,10,0},
+        index          = cardInt
+    })
+  end
 
+  ga_event("Game", "spawnUpgradeCard", cardName)
   destroyObject(upgradeCards)
 
   local rotUpgrade = pTemplateRot
@@ -307,7 +360,6 @@ function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
   upgradeCard.setPosition(finalPos)
   upgradeCard.setRotation({0,pTemplateRot.y+180,0})
   upgradeCard.setLock(false)
-
 end
 
 function spawnTemplates()
@@ -361,8 +413,8 @@ function spawnTemplates()
   end
 end
 
-function spawnArmy(loadListData)
-  if loadListData.battlefieldDeck != nil then
+function spawnArmy(loadListData, skipDiskVersionCheck)
+  if skipDiskVersionCheck or loadListData.savedDiskVersion == 3 then
     -- deal command Cards
     for _ , c in ipairs(loadListData.commandCards) do
         dealCommandCard(c, false)
@@ -379,162 +431,115 @@ function spawnArmy(loadListData)
       drawBattlefieldCard(loadListData, "conditions")
       destroyBattlefieldCards()
 
-
-
       -- spawn units
       for n, unit in pairs(loadListData.units) do
-          spawnMiniTable = {}
-
-          -- get var name
-          if unit.varName != nil then
-              spawnMiniTable.varName = unit.varName
-          else
-              broadcastToAll("Old Data Disk version. Please remake new Data Disk.", {1,1,1})
-              break
-          end
-
-
-          -- initialise
-          templatePos = listBuilder[colorSide.."TemplatePos"][n]
-          spawnMiniTable.colorSide = colorSide
-          spawnMiniTable.upgrades = {}
-          spawnMiniTable.miniObjs = {}
-          spawnMiniTable.unitID = n
-
-          -- SPAWN CARDS
-          -- spawn unit Card
-
-          spawnUnitCardObj = spawnUnitCard(unit.unitName, templatePos, self.getRotation())
-          spawnMiniTable.unitCardObj = spawnUnitCardObj
-
-          spawnUnitIDToken(templatePos, self.getRotation(), n)
-
-
-          -- spawn upgrade card
-
-          for j, upgrade in pairs(unit.upgrades) do
-              listBuilder = Global.getTable("listBuilder")
-              templatePos = listBuilder[colorSide.."TemplatePos"][n]
-              spawnUpgradeCard(upgrade.name,templatePos, self.getRotation(), j)
-
-              table.insert(spawnMiniTable.upgrades, upgrade.name)
-          end
-
-
-          -- SPAWN MINIS
-          -- mini table
-
-          -- detect leader
-          upgradeLeader = false
-          for u, upgrade in pairs(unit.upgrades) do
-              listBuilder = Global.getTable("listBuilder")
-
-              if cardInfo.upgradeCards[upgrade.varName].miniInfo != nil then
-                  if cardInfo.upgradeCards[upgrade.varName].miniInfo.leader == true then
-                      upgradeLeader = true
-                  end
-              end
-          end
-
-          spawnedMinisNumber = 0
-
-          listBuilder = Global.getTable("listBuilder")
-          local tempPos = listBuilder[colorSide.."TemplatePos"][n]
-
-          --slide over to edge of template zone
-          tempPos.x = tempPos.x - 2.5 
-
-          local zOffset = 1
-
-          if (tempPos.z < 0) then 
-            tempPos.z = tempPos.z - 2
-            zOffset =  -1
-          else
-            tempPos.z = tempPos.z + 2
-          end
-
-          for m, data in pairs(cardInfo.unitCards[spawnMiniTable.varName].miniInfo) do
-              -- math position
-
-              local base = cardInfo.unitCards[spawnMiniTable.varName].miniInfo.collider[2]
-              local baseOffset = base + 0.2
-              local baseRadius = base * 0.5
-              local basePosOffset = tempPos.x + baseRadius
-              local miniPos = {x = basePosOffset, y = tempPos.y, z = tempPos.z }
-              spawnPos = simpleTranslatePos(miniPos, baseOffset * spawnedMinisNumber, baseOffset * zOffset)
-
-              if m == 1 and upgradeLeader == true and data.altModelInfo != nil then
-                  passedData = data.altModelInfo
-              else
-                  passedData = data
-              end
-
-              -- spawn Minis
-              local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, passedData)
-
-              table.insert(spawnMiniTable.miniObjs, {obj = spawnedMini, name = data.name})
-              spawnedMinisNumber = spawnedMinisNumber + 1
-          end
---
-          --reset minis count so upgrades spawn in a new row
-          spawnedMinisNumber = 0
-
-          -- spawn upgrade minis
-          for q, upgrade in pairs(unit.upgrades) do
-              listBuilder = Global.getTable("listBuilder")
-
-              if cardInfo.upgradeCards[upgrade.varName].miniInfo != nil then
-
-                  local spawnMiniInfo = cardInfo.upgradeCards[upgrade.varName].miniInfo
-                  local base = cardInfo.unitCards[spawnMiniTable.varName].miniInfo.collider[2]
-                  local baseOffset = base + 0.2
-                  local basePosOffset = tempPos.x + (base * 0.5)
-                  local miniPos = {x = basePosOffset, y = tempPos.y, z = tempPos.z }
-                  -- math position
-                  spawnPos = simpleTranslatePos(miniPos, baseOffset * spawnedMinisNumber, baseOffset * 2  * zOffset)
-
-                  -- spawnMinis
-
-                  local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, spawnMiniInfo)
-
-                  local insertInfo = {obj = spawnedMini, name = spawnMiniInfo.name}
-
-                  if spawnMiniInfo.leader == true then
-                      insertInfo.leader = true
-                  end
-
-                  table.insert(spawnMiniTable.miniObjs, insertInfo)
-                  spawnedMinisNumber = spawnedMinisNumber + 1
-              end
-          end
-
-          initializeMini(spawnMiniTable)
-
-          -- spawn command token
-          if unitInfo[spawnMiniTable.varName].noToken == nil then
-              commandData = {}
-
-              local commandType = unitInfo[spawnMiniTable.varName].commandType
-              local commandTray = getObjectFromGUID(commandTokenTrayData[colorSide][commandType])
-              local pos = commandTray.getPosition()
-              pos.y = pos.y + 0.5 + (0.2 * n)
-              local rot = self.getRotation()
-              rot.y = rot.y + 180
-
-              commandData.commandType = commandType
-              commandData.pos = pos
-              commandData.rot = rot
-              commandData.varName = spawnMiniTable.varName
-
-              initializeCommandToken(commandData)
-          end
-
-
-
+        spawnUnit(unit, n, loadListData.armyFaction)
       end
       listBuilder = Global.getTable("listBuilder")
   else
-      broadcastToAll("Old Data Disk version. Please remake new Data Disk.", {1,1,1})
+      ga_exception("spawnArmyUnsupportedArmyDisk")
+      broadcastToAll("Unsupported army disk. The mod has changed, please re-create your army.", {1,1,1})
+  end
+end
+
+-- TODO: Move this function to a common include
+-- Helper function to deeply copy a table, including metatables
+function copyTable(obj, seen)
+  -- Handle non-tables and previously-seen tables.
+  if type(obj) ~= 'table' then return obj end
+  if seen and seen[obj] then return seen[obj] end
+
+  -- New table; mark it as seen and copy recursively.
+  local s = seen or {}
+  local res = {}
+  s[obj] = res
+  for k, v in pairs(obj) do res[copyTable(k, s)] = copyTable(v, s) end
+  return setmetatable(res, getmetatable(obj))
+end
+
+function spawnUnit(unit, n, faction)
+  spawnMiniTable = {}
+
+  -- get var name
+  if unit.name != nil then
+    spawnMiniTable.name = unit.name
+  else
+    broadcastToAll("Old Data Disk version. Please remake new Data Disk.", {1,1,1})
+    return
+  end
+  
+  local unitKey = spawnMiniTable.name:lower()
+
+  local unitObject = copyTable(cardInfo:getUnitByName(unit.name, faction))
+  local upgradeObjects = cardInfo:getUpgradesByNames(unit.upgrades)
+
+  if unitObject ~= nil then
+    unitObject:addUpgrades(upgradeObjects)
+  end
+
+  -- initialise
+  templatePos = listBuilder[colorSide.."TemplatePos"][n]
+  spawnMiniTable.colorSide = colorSide
+  spawnMiniTable.upgrades = {}
+  spawnMiniTable.miniObjs = {}
+  spawnMiniTable.unitID = n
+
+  -- SPAWN CARDS
+  -- spawn unit Card
+  spawnMiniTable.unitCardObj = spawnUnitCard(unitObject, templatePos, self.getRotation(), unit.name)
+  spawnUnitIDToken(templatePos, self.getRotation(), n)
+
+
+  -- spawn upgrade card
+
+  for j, upgrade in pairs(unit.upgrades) do
+    listBuilder = Global.getTable("listBuilder")
+    templatePos = listBuilder[colorSide.."TemplatePos"][n]
+    spawnUpgradeCard(upgrade, templatePos, self.getRotation(), j)
+    table.insert(spawnMiniTable.upgrades, upgrade)
+  end
+
+
+  -- SPAWN MINIS
+  -- mini table
+  if unitObject ~= nil then
+    local minisToSpawn, leaderIndex = unitObject:getMinisTable()
+    spawnMiniTable.leaderIndex = leaderIndex
+
+    for i, miniData in ipairs(minisToSpawn) do
+      listBuilder = Global.getTable("listBuilder")
+      -- determine spawn position
+      spawnPos = translatePos(listBuilder[colorSide.."TemplatePos"][n], self.getRotation(), listBuilder.miniSpawnPos[i].c, listBuilder.miniSpawnPos[i].q+90)
+      -- spawn the mini
+      local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, miniData)
+      local insertInfo = {obj = spawnedMini, name = miniData.name}
+      -- mark the leader mini
+      if i == leaderIndex then insertInfo.leader = true end
+      table.insert(spawnMiniTable.miniObjs, insertInfo)
+    end
+
+    initializeMini(spawnMiniTable)
+  end
+
+  -- spawn command token
+  if unitObject ~= nil and cardInfo.unitCards[unitKey].noToken == nil then
+    commandData = {}
+
+    local commandType = cardInfo.unitCards[unitKey].commandType
+    local commandTray = getObjectFromGUID(commandTokenTrayData[colorSide][commandType])
+    local pos = commandTray.getPosition()
+    pos.y = pos.y + 0.5 + (0.2 * n)
+    local rot = self.getRotation()
+    rot.y = rot.y + 180
+
+    commandData.commandType = commandType
+    commandData.pos = pos
+    commandData.rot = rot
+    commandData.varName = spawnMiniTable.name:lower()
+    commandData.faction = faction
+    commandData.rank = cardInfo.unitCards[unitKey].rank
+
+    initializeCommandToken(commandData)
   end
 end
 
@@ -544,47 +549,41 @@ function spawnArmyFromDisk()
 end
 
 function initializeMini(pMiniTable)
-
   local strColor = pMiniTable.colorSide
   strColor = strColor:gsub("^%l", string.upper)
-
+  
   -- detect leader units
-  leaderInt = 1
-  for h, entry in pairs(pMiniTable.miniObjs) do
-      if entry.leader == true then
-          leaderInt = h
-      end
-  end
-
+  local leaderInt = pMiniTable.leaderIndex
+  
   for i, objEntry in pairs(pMiniTable.miniObjs) do
-      -- init mini script
-      local selectedMiniScript = ""
+    -- init mini script
+    local selectedMiniScript = ""
 
-      -- SET NAME
-      objEntry.obj.setName(strColor.. " "..objEntry.name)
-      selectedMiniScript = selectedMiniScript .. "colorSide = '"..pMiniTable.colorSide.."'\nminiName = '"..objEntry.name.."'\n"
+    -- SET NAME
+    objEntry.obj.setName(strColor.. " "..objEntry.name)
+    selectedMiniScript = selectedMiniScript .. "colorSide = '"..pMiniTable.colorSide.."'\nminiName = \""..objEntry.name.."\"\n"
 
-      if i == leaderInt then
-          -- DESCRIPTION
-          local description = ""
+    if i == leaderInt then
+      -- DESCRIPTION
+      local description = ""
 
-          for p, upgradeName in pairs(pMiniTable.upgrades) do
-              description = description .. upgradeName .. "\n"
-          end
-          objEntry.obj.setDescription(description)
-
-          -- miniGUIDs
-          local miniGUIDsScript = "miniGUIDs = {}\n"
-          for n, objEntry in pairs(pMiniTable.miniObjs) do
-              miniGUIDsScript = miniGUIDsScript .. "miniGUIDs["..n.."] = '" .. objEntry.obj.getGUID() .. "'\n"
-          end
-          selectedMiniScript = selectedMiniScript .. miniGUIDsScript.."cardGUID = '"..pMiniTable.unitCardObj.getGUID().."'\nunitName = '"..pMiniTable.varName.."'\nunitID = "..pMiniTable.unitID.."\n"..listBuilder.modelMiniScript
-      else
-          objEntry.obj.use_snap_points = false
+      for p, upgradeName in pairs(pMiniTable.upgrades) do
+        description = description .. upgradeName .. "\n"
       end
+      objEntry.obj.setDescription(description)
 
-      -- SET SCRIPT
-      objEntry.obj.setLuaScript(selectedMiniScript)
+      -- miniGUIDs
+      local miniGUIDsScript = "miniGUIDs = {}\n"
+      for n, objEntry in pairs(pMiniTable.miniObjs) do
+        miniGUIDsScript = miniGUIDsScript .. "miniGUIDs["..n.."] = '" .. objEntry.obj.getGUID() .. "'\n"
+      end
+      selectedMiniScript = selectedMiniScript .. miniGUIDsScript.."cardGUID = '"..pMiniTable.unitCardObj.getGUID().."'\nunitName = \""..pMiniTable.name:lower().."\"\nunitID = "..pMiniTable.unitID.."\n"..listBuilder.modelMiniScript
+    else
+      objEntry.obj.use_snap_points = false
+    end
+
+    -- SET SCRIPT
+    objEntry.obj.setLuaScript(selectedMiniScript)
   end
 end
 
@@ -657,8 +656,17 @@ end
 
 function loadArmyFromJSON(jsonData)
   clearZone()
-  local listData = JSON.decode(jsonData)
-  spawnArmy(listData)
+  local author = "Unknown"
+  local success, exception = pcall(function()
+    local listData = JSON.decode(jsonData)
+    author = listData.author
+    spawnArmy(listData, true)
+    ga_event("Game", "loadArmyFromJSON", author)
+  end)
+  if not success then
+    print("Failed to load from JSON:\n\n" .. tostring(exception))
+    ga_exception("loadArmyFromJSON:" .. author .. ":" .. tostring(exception))
+  end
 end
 
 function getListData()
@@ -676,13 +684,12 @@ function getListData()
               local recievedData = templateObjs[i][1].call("getListText")
 
               insertTable = {}
-              insertTable.unitName = recievedData.unitName
+              insertTable.name = recievedData.name
               insertTable.varName = recievedData.varName
               insertTable.upgrades = {}
               for i, entry in pairs(recievedData.upgrades) do
-                  insertTable.upgrades[i] = {name = entry.name, varName = entry.varName}
+                  insertTable.upgrades[i] = entry
               end
-              --insertTable.setTable("upgrades", recievedData.upgrades)
 
               table.insert(listData.units, insertTable)
 
@@ -730,12 +737,21 @@ function getListData()
 end
 
 function saveArmy()
+  local success, exception = pcall(saveArmyImpl)
+  if success then
+    ga_event("Game", "saveArmy")
+  else
+    ga_exception("saveArmy:" .. tostring(exception))
+  end
+end
+
+function saveArmyImpl()
   -- get listData
   listData = getListData()
 
   if listData != nil then
     -- parse list
-    luaString = "function onload()\nlistData = {}\nlistData.pts = "..totalPoints.."\nlistData.armyFaction = '" .. listData.armyFaction .."'\n"
+    luaString = "function onload()\nlistData = {savedDiskVersion = 3}\nlistData.points = "..totalPoints.."\nlistData.armyFaction = '" .. listData.armyFaction .."'\n"
 
     -- COMMAND CARDS and CONTINGENCIES
     local commandCardsBuffer = {}
@@ -745,51 +761,49 @@ function saveArmy()
     end
     luaString = luaString .. "listData.commandCards = {"..table.concat(commandCardsBuffer, ", ").."}\n"
     for _, c in ipairs(listData.contingencies) do
-      table.insert(contingencyCardsBuffer, "'" .. c .. "'")
+      table.insert(contingencyCardsBuffer, "\"" .. c .. "\"")
     end
     luaString = luaString .. "listData.contingencies = {"..table.concat(contingencyCardsBuffer, ", ").."}\n"
 
-      -- UNITS
-      luaString = luaString .. "listData.units = {}\n"
-      for k, unit in pairs(listData.units) do
-          luaString = luaString .. "listData.units["..k.."] = {}\nlistData.units["..k.."].unitName = '" .. listData.units[k].unitName .."'\nlistData.units["..k.."].varName = '" .. listData.units[k].varName .."'\n"
-          -- UPGRADES
-          luaString = luaString .. "listData.units["..k.."].upgrades = {}\n"
-          for l, upgrade in pairs(listData.units[k].upgrades) do
-
-              luaString = luaString .. "listData.units["..k.."].upgrades["..l.."] = {name = '" .. upgrade.name .."', varName = '"..upgrade.varName.."'}\n"
-          end
+    -- UNITS
+    luaString = luaString .. "listData.units = {}\n"
+    for k, unit in pairs(listData.units) do
+      luaString = luaString .. "listData.units["..k.."] = {}\nlistData.units["..k.."].name = \"" .. listData.units[k].name .."\"\n"
+      -- UPGRADES
+      luaString = luaString .. "listData.units["..k.."].upgrades = {}\n"
+      for l, upgrade in pairs(listData.units[k].upgrades) do
+        luaString = luaString .. "listData.units["..k.."].upgrades["..l.."] = \"" .. upgrade .."\"\n"
       end
-      -- battlefieldDeck
-      luaString = luaString .. "listData.battlefieldDeck = {}\nlistData.battlefieldDeck.objective = {}\nlistData.battlefieldDeck.deployment = {}\nlistData.battlefieldDeck.conditions = {}\n"
+    end
+    -- battlefieldDeck
+    luaString = luaString .. "listData.battlefieldDeck = {}\nlistData.battlefieldDeck.objective = {}\nlistData.battlefieldDeck.deployment = {}\nlistData.battlefieldDeck.conditions = {}\n"
 
-      local deckTypes = {"deployment", "objective", "conditions"}
+    local deckTypes = {"deployment", "objective", "conditions"}
 
-      for j, deckType in pairs(deckTypes) do
-          for l, battlefieldCardEntry in pairs(listData.battlefieldDeck[deckType]) do
-              luaString = luaString .. "listData.battlefieldDeck."..deckType.."["..l.."] = '"..battlefieldCardEntry.."'\n"
-          end
+    for j, deckType in pairs(deckTypes) do
+      for l, battlefieldCardEntry in pairs(listData.battlefieldDeck[deckType]) do
+        luaString = luaString .. "listData.battlefieldDeck."..deckType.."["..l.."] = \""..battlefieldCardEntry.."\"\n"
       end
+    end
 
 
-      luaString = luaString .. "self.createButton({click_function = 'dud', function_owner = self, label = '[' .. listData.pts .. ' pts]', position = {0, 0.4, -0.55}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 2000, height = 400, font_size = 300, color = {0.7573, 0.7573, 0.7573, 0.01}, font_color = {0.303, 0.1814, 0.0849, 100}})\nend\nfunction dud() end"
+    luaString = luaString .. "self.createButton({click_function = 'dud', function_owner = self, label = '[' .. listData.points .. ' pts]', position = {0, 0.4, -0.55}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 2000, height = 400, font_size = 300, color = {0.7573, 0.7573, 0.7573, 0.01}, font_color = {0.303, 0.1814, 0.0849, 100}})\nend\nfunction dud() end"
 
-      dataDisk = getObjectFromGUID(listBuilder.dataDisk.guid).clone({
-          position     = {0,-10,0},
-          snap_to_grid = false
-      })
+    dataDisk = getObjectFromGUID(listBuilder.dataDisk.guid).clone({
+      position     = {0,-10,0},
+      snap_to_grid = false
+    })
 
-      dataDisk.setScale({1,1,1})
-      pos = translatePos(dataDiskMount.getPosition(),dataDiskMount.getRotation(),0.03,90)
-      pos.y = pos.y + 1
-      dataDisk.setPosition(pos)
+    dataDisk.setScale({1,1,1})
+    pos = translatePos(dataDiskMount.getPosition(),dataDiskMount.getRotation(),0.03,90)
+    pos.y = pos.y + 1
+    dataDisk.setPosition(pos)
 
-      diskName = "(RENAME ME!) Army Data Disk ["..totalPoints .. " Points]"
-      dataDisk.setRotation(self.getRotation())
-      dataDisk.setName(diskName)
-      dataDisk.setLuaScript(luaString)
-      dataDisk.setLock(false)
-
+    diskName = "(RENAME ME!) Army Data Disk ["..totalPoints .. " Points]"
+    dataDisk.setRotation(self.getRotation())
+    dataDisk.setName(diskName)
+    dataDisk.setLuaScript(luaString)
+    dataDisk.setLock(false)
   end
 end
 
@@ -803,7 +817,6 @@ function toggleListImporterUI()
 end
 
 function importFromText(nothing, text)
-  print('Importing from JSON (EXPRIMENTAL)...')
   loadArmyFromJSON(text)
 end
 
@@ -851,7 +864,7 @@ function drawBattlefieldCard(data, cardType)
   for k, entry in pairs(data.battlefieldDeck[cardType]) do
       -- compare to deck
       local cardTable = allBattlefieldCardsClone.getObjects()
-      cardInt = -1
+      local cardInt = -1
       for l, entryCard in pairs(cardTable) do
           if entry == entryCard.nickname then
               cardInt = entryCard.index
