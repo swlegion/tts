@@ -40,6 +40,7 @@ function mainMenu()
   createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "chooseArmy", "Create Army", "Create a custom Army", {0,0.913,1})
   createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "loadArmy", "Load Army", "Load army from Data Disk", {0,0.913,1})
   createOptionButton(3, listBuilderOptions[3], listBuilderButtons[3], "clearZone", "Clear Cards", "Clears current cards", {0,0.913,1})
+  createOptionButton(4, listBuilderOptions[4], listBuilderButtons[4], "autoTint", "Auto Tint", "Apply automatic base tinting to yet-to-be-deployed units", {0,0.913,1})
 end
 
 function chooseArmy()
@@ -110,6 +111,57 @@ function finishArmy()
   Wait.time(function()
     loadArmy()
   end, 0.5)
+end
+
+function autoTint()
+  local colorMap
+  if colorZone == "red" then
+    colorMap = {
+      {245, 34, 45},
+      {255, 169, 64},
+      {255, 236, 61},
+      {130, 0, 20},
+      {135, 56, 0},
+      {135, 104, 0},
+    }
+  else
+    colorMap = {
+      {64, 169, 255},
+      {54, 207, 201},
+      {146, 84, 222},
+      {0, 58, 140},
+      {0, 71, 79},
+      {34, 7, 94},
+    }
+  end
+  for i, color in pairs(colorMap) do
+    colorMap[i] = {
+      color[1] / 255,
+      color[2] / 255,
+      color[3] / 255,
+    }
+  end
+  local rankCount = {}
+  for _, obj in pairs(cardZone.getObjects()) do
+    if obj.getVar("isAMini") == true then
+      local unitData = obj.getTable("unitData")
+      local rankType = unitData.commandType
+      local colorIndex = rankCount[rankType]
+      if colorIndex == nil then
+        colorIndex = 0
+      end
+      colorIndex = colorIndex + 1
+      if colorIndex > #colorMap then
+        colorIndex = 1
+      end
+      rankCount[rankType] = colorIndex
+      local miniGUIDs = obj.getTable("miniGUIDs")
+      for _, miniGuid in pairs(miniGUIDs) do
+        local miniObj = getObjectFromGUID(miniGuid)
+        miniObj.setColorTint(colorMap[colorIndex])
+      end
+    end
+  end
 end
 
 function clearZone()
