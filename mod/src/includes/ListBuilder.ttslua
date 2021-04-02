@@ -440,12 +440,15 @@ function spawnArmy(loadListData)
 
           listBuilder = Global.getTable("listBuilder")
           local tempPos = listBuilder[colorSide.."TemplatePos"][n]
-          tempPos.x = tempPos.x - 2
-          local xOffset = 1.25
-          local zOffset = 1.75
+
+          --slide over to edge of template zone
+          tempPos.x = tempPos.x - 2.5 
+
+          local zOffset = 1
+
           if (tempPos.z < 0) then 
             tempPos.z = tempPos.z - 2
-            zOffset = zOffset * -1
+            zOffset =  -1
           else
             tempPos.z = tempPos.z + 2
           end
@@ -453,7 +456,12 @@ function spawnArmy(loadListData)
           for m, data in pairs(cardInfo.unitCards[spawnMiniTable.varName].miniInfo) do
               -- math position
 
-              spawnPos = simpleTranslatePos(tempPos, xOffset * spawnedMinisNumber, zOffset)
+              local base = cardInfo.unitCards[spawnMiniTable.varName].miniInfo.collider[2]
+              local baseOffset = base + 0.2
+              local baseRadius = base * 0.5
+              local basePosOffset = tempPos.x + baseRadius
+              local miniPos = {x = basePosOffset, y = tempPos.y, z = tempPos.z }
+              spawnPos = simpleTranslatePos(miniPos, baseOffset * spawnedMinisNumber, baseOffset * zOffset)
 
               if m == 1 and upgradeLeader == true and data.altModelInfo != nil then
                   passedData = data.altModelInfo
@@ -478,9 +486,12 @@ function spawnArmy(loadListData)
               if cardInfo.upgradeCards[upgrade.varName].miniInfo != nil then
 
                   local spawnMiniInfo = cardInfo.upgradeCards[upgrade.varName].miniInfo
-
+                  local base = cardInfo.unitCards[spawnMiniTable.varName].miniInfo.collider[2]
+                  local baseOffset = base + 0.2
+                  local basePosOffset = tempPos.x + (base * 0.5)
+                  local miniPos = {x = basePosOffset, y = tempPos.y, z = tempPos.z }
                   -- math position
-                  spawnPos = simpleTranslatePos(tempPos, xOffset * spawnedMinisNumber, zOffset * 2)
+                  spawnPos = simpleTranslatePos(miniPos, baseOffset * spawnedMinisNumber, baseOffset * 2  * zOffset)
 
                   -- spawnMinis
 
@@ -611,7 +622,7 @@ function spawnMini(miniSpawnPos, miniSpawnRot, miniData)
     })
     funcSpawnedMini.setCustomObject({
         mesh = miniData.mesh,
-        collider = miniData.collider,
+        collider = miniData.collider[1],
         diffuse = miniData.diffuse,
         type = 1,
         material = 3
