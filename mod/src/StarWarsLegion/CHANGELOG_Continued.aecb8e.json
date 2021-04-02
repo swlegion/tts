@@ -14,7 +14,7 @@
       "scaleZ": 1
     },
     "Nickname": "CHANGELOG (Continued)",
-    "Description": "",
+    "Description": "Hand zones are cleared properly.\n\nA floating chess clock UI button was added.\n\nImporting lists from popular tools now fully supported.\n\nAdded optional \"auto-tint\" feature for bases.",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 1,
