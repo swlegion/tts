@@ -317,7 +317,7 @@ function CardInfoClass:buildCardInfo()
     { name = "Impact Grenades", type="grenades", ptCost = 3 },
     { name = "Fragmentation Grenades", type="grenades", ptCost = 5 },
     { name = "Smoke Grenades", type="grenades", ptCost = 2 },
-    { name = "EMP Droid Poppers", type="grenades", ptCost = 3 },
+    { name = "EMP \"Droid Poppers\"", type="grenades", ptCost = 3 },
 
     -- Hardpoint
     { name = "AT-RT Rotary Blaster", type="hardpoint", ptCost = 20, restrictions = {units={"at-rt", "at-rt (republic)"}} },
