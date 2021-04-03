@@ -230,7 +230,7 @@ function CardInfoClass:buildCardInfo()
     { name = 'Not A Story The Jedi Would Tell', type = "flaw", ptCost = 0 },
 
      -- Counterpart
-     { name = "C-3PO Human Cyborg Relations", type = "counterpart", ptCost = 15, miniInfo = miniInfo.c3po, restrictions = {units={"r2-d2 hero of a thousand devices"}} },
+     { name = "C-3PO Human-Cyborg Relations", type = "counterpart", ptCost = 15, miniInfo = miniInfo.c3po, restrictions = {units={"r2-d2 hero of a thousand devices"}} },
      { name = "C-3PO Made To Suffer", type = "counterpart", ptCost = 15, miniInfo = miniInfo.c3po, restrictions = {units={"r2-d2 independent astromech"}} },
      { name = "Iden's ID10 Seeker Droid Droid", type = "counterpart", ptCost = 15, miniInfo = miniInfo.id10, restrictions = {units={"iden versio inferno squad leader"}} },
 
@@ -245,7 +245,7 @@ function CardInfoClass:buildCardInfo()
     { name = "Iden's DLT-20A Rifle", type = "armament", ptCost = 15, restrictions = {units={"iden versio inferno squad leader"}} },
     { name = "Iden's TL-50 Repeater", type = "armament", ptCost = 15, restrictions = {units={"iden versio inferno squad leader"}} },
     { name = "E-11D", type = "armament", ptCost = 8, restrictions = {units={"imperial death troopers"}} },
-    { name = 'J-19 Bo-rifle Blaster/Staff', type = "armament", ptCost = 25, restrictions = {units={"agent kallus hunter of spectres"}} },
+    { name = 'J-19 Bo-rifle', type = "armament", ptCost = 25, restrictions = {units={"agent kallus hunter of spectres"}} },
     { name = "RT-97C Blaster Rifle", type = "armament", ptCost = 10, restrictions = {units={"dewback rider"}} },
     { name = "CR-24 Flame Rifle", type = "armament", ptCost = 15, restrictions = {units={"dewback rider"}} },
     { name = "T-21 Blaster Rifle", type = "armament", ptCost = 5, restrictions = {units={"dewback rider"}} },
@@ -402,7 +402,7 @@ function CardInfoClass:buildCardInfo()
     { name = "B2-HA Trooper", type="heavy weapon", ptCost = 30, miniInfo = miniInfo.b2HATrooper, restrictions = {units={"b2 super battle droids"}} },
 
     { name = "BX-Series Droid Sniper", type="heavy weapon", ptCost = 30, miniInfo = miniInfo.bxCommandoDroidSniper, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
-    { name = "BX-Series Droid Saboteur", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.bxCommandoDroidSaboteur, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
+    { name = "Dioxis Mine Saboteur", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.bxCommandoDroidSaboteur, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
     
     -- Ordnance
     { name = "Armor-Piercing Shells", type = "ordnance", ptCost = 10 },
