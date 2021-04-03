@@ -212,7 +212,7 @@ function buildListBuilder()
     }
     listBuilder.commandCards["count dooku darth tyranus"] = {
         varName = "countDooku",
-        cards = {"Fear, Suprise, Intimidation","Double the Fall","You Disappoint Me"}
+        cards = {"Fear, Surprise, Intimidation","Double the Fall","You Disappoint Me"}
     }
     listBuilder.commandCards["cad bane needs no introduction"] = {
         varName = "cadBane",
