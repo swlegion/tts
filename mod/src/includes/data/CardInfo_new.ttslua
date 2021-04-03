@@ -402,7 +402,7 @@ function CardInfoClass:buildCardInfo()
     { name = "B2-HA Trooper", type="heavy weapon", ptCost = 30, miniInfo = miniInfo.b2HATrooper, restrictions = {units={"b2 super battle droids"}} },
 
     { name = "BX-Series Droid Sniper", type="heavy weapon", ptCost = 30, miniInfo = miniInfo.bxCommandoDroidSniper, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
-    { name = "BX-Series Droid Saboteur", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.bxCommandoDroidSaboteur, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
+    { name = "Dioxis Mine Saboteur", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.bxCommandoDroidSaboteur, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
     
     -- Ordnance
     { name = "Armor-Piercing Shells", type = "ordnance", ptCost = 10 },
