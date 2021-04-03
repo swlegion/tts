@@ -244,7 +244,7 @@ function CardInfoClass:buildCardInfo()
 
     { name = "Iden's DLT-20A Rifle", type = "armament", ptCost = 15, restrictions = {units={"iden versio inferno squad leader"}} },
     { name = "Iden's TL-50 Repeater", type = "armament", ptCost = 15, restrictions = {units={"iden versio inferno squad leader"}} },
-    { name = "E-11D", type = "armament", ptCost = 8, restrictions = {units={"imperial death troopers"}} },
+    { name = "E-11D Config", type = "armament", ptCost = 8, restrictions = {units={"imperial death troopers"}} },
     { name = 'J-19 Bo-rifle', type = "armament", ptCost = 25, restrictions = {units={"agent kallus hunter of spectres"}} },
     { name = "RT-97C Blaster Rifle", type = "armament", ptCost = 10, restrictions = {units={"dewback rider"}} },
     { name = "CR-24 Flame Rifle", type = "armament", ptCost = 15, restrictions = {units={"dewback rider"}} },
