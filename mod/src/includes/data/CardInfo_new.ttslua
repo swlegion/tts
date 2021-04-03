@@ -230,7 +230,7 @@ function CardInfoClass:buildCardInfo()
     { name = 'Not A Story The Jedi Would Tell', type = "flaw", ptCost = 0 },
 
      -- Counterpart
-     { name = "C-3PO Human Cyborg Relations", type = "counterpart", ptCost = 15, miniInfo = miniInfo.c3po, restrictions = {units={"r2-d2 hero of a thousand devices"}} },
+     { name = "C-3PO Human-Cyborg Relations", type = "counterpart", ptCost = 15, miniInfo = miniInfo.c3po, restrictions = {units={"r2-d2 hero of a thousand devices"}} },
      { name = "C-3PO Made To Suffer", type = "counterpart", ptCost = 15, miniInfo = miniInfo.c3po, restrictions = {units={"r2-d2 independent astromech"}} },
      { name = "Iden's ID10 Seeker Droid Droid", type = "counterpart", ptCost = 15, miniInfo = miniInfo.id10, restrictions = {units={"iden versio inferno squad leader"}} },
 
