@@ -831,7 +831,7 @@ function saveArmyImpl()
     local commandCardsBuffer = {}
     local contingencyCardsBuffer = {}
     for _, c in ipairs(listData.commandCards) do
-      table.insert(commandCardsBuffer, "'" .. c .. "'")
+      table.insert(commandCardsBuffer, "\"" .. c .. "\"")
     end
     luaString = luaString .. "listData.commandCards = {"..table.concat(commandCardsBuffer, ", ").."}\n"
     for _, c in ipairs(listData.contingencies) do

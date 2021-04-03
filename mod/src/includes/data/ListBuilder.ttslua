@@ -118,7 +118,7 @@ function buildListBuilder()
     listBuilder.commandCards["darth vader dark lord of the sith"] = {
         varName = "darthVader",
         cards = {"Implacable","New Ways to Motivate Them","Master of Evil"},
-        cards2 = {"Vaders Might","Fear and Dead Men","Darkness Descends"}
+        cards2 = {"Vader's Might","Fear and Dead Men","Darkness Descends"}
     }
     listBuilder.commandCards["darth vader the emperor's apprentice"] = {
         varName = "darthVaderTheEmperorsApprentice",
