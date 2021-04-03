@@ -216,7 +216,7 @@ function buildListBuilder()
     }
     listBuilder.commandCards["cad bane needs no introduction"] = {
         varName = "cadBane",
-        cards = {"Im Your Worst Nightmare","Im In Control","I Make The Rules Now"}
+        cards = {"I'm Your Worst Nightmare","I'm In Control","I Make The Rules Now"}
     }
     listBuilder.commandCards["maul impatient apprentice"] = {
       varName = "maul",
@@ -272,7 +272,7 @@ function buildListBuilder()
     }
     listBuilder.commandCards.neutralSeparatist = {
         varName = "neutralSeparatist",
-        cards = {"Mechanized Incursion", "Orbital Strike", "Roger, Roger"}
+        cards = {"Mechanized Incursion", "Orbital Strike", "Roger, Roger!"}
     }
     listBuilder.commandCards.neutralRepublic = {
         varName = "neutralSeparatist",

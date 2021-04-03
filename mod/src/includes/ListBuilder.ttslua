@@ -901,7 +901,7 @@ function dealCommandCard(selectionCard, isContingency)
   commandCards.setScale({1,1,1})
 
   for i, entry in pairs(commandCardsTable) do
-      if entry.nickname == selectionCard then
+      if entry.nickname:lower() == selectionCard:lower() then
           local matchCard = commandCards.takeObject({
               position       = listBuilder.handPos[colorSide].pos ,
               index          = entry.index
