@@ -1110,10 +1110,12 @@ function CardInfoClass:buildCardInfo()
     -- Republic Heavy
     UnitClass:create({
       name = "TX-130 Saber-class Fighter Tank",
+      displayName = "TX-130 Saber Tank",
       points = 170,
       miniInfo = { miniInfo.saberTank },
       rank = "Heavy",
       type = "repulsor vehicle",
+      strafeMove = true,
       baseSize = "epic",
       faction = "republic",
       upgradeSlots = {"pilot", "hardpoint", "ordnance", "comms"},
@@ -1242,11 +1244,13 @@ function CardInfoClass:buildCardInfo()
     -- Separatist Heavy
     UnitClass:create({
       name = "AAT Trade Federation Battle Tank",
+      displayName = "AAT Battle Tank",
       points = 170,
       miniInfo = { miniInfo.aatTank },
       rank = "Heavy",
       type = "repulsor vehicle",
       selectedSpeed = 1,
+      strafeMove = true,
       baseSize = "epic",
       faction = "separatist",
       upgradeSlots = {"pilot", "ordnance", "ordnance", "comms"},
