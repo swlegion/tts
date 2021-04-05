@@ -803,7 +803,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.idenVersio },
       rank = "Commander",
       faction = "imperial",
-      upgradeSlots = {"training", "training", "gear", "armament", "counterpart"},
+      upgradeSlots = {"training", "training", "gear", "armament", "counterpart", "comms"},
     }),
     UnitClass:create({
       name = "Imperial Officer Ruthless Commander",
