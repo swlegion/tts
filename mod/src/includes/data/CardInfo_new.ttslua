@@ -609,7 +609,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.rebelTrooperLeader, miniInfo.rebelTrooper1, miniInfo.rebelTrooper2, miniInfo.rebelTrooper3 },
       rank = "Corps",
       faction = "rebel",
-      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades", "comms", "training", "gear"},
     }),
     UnitClass:create({
       name = "Fleet Troopers",
@@ -617,7 +617,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.fleetTroopersLeader, miniInfo.fleetTroopers1, miniInfo.fleetTroopers2, miniInfo.fleetTroopers3 },
       rank = "Corps",
       faction = "rebel",
-      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades", "comms"},
     }),
     UnitClass:create({
       name = "Rebel Veterans",
@@ -625,7 +625,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.rebelVeteransLeader, miniInfo.rebelVeterans1, miniInfo.rebelVeterans2, miniInfo.rebelVeterans3 },
       rank = "Corps",
       faction = "rebel",
-      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades", "comms"},
     }),
     UnitClass:create({
       name = "Mark II Medium Blaster Trooper",
@@ -862,7 +862,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.shoretroopersLeader, miniInfo.shoretroopers1, miniInfo.shoretroopers2, miniInfo.shoretroopers3 },
       rank = "Corps",
       faction = "imperial",
-      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades", "comms"},
     }),
     UnitClass:create({
       name = "Snowtroopers",
@@ -871,7 +871,7 @@ function CardInfoClass:buildCardInfo()
       rank = "Corps",
       selectedSpeed = 1,
       faction = "imperial",
-      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades", "comms"},
     }),
     UnitClass:create({
       name = "Stormtroopers",
@@ -879,7 +879,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.stormtrooperLeader, miniInfo.stormtrooper1, miniInfo.stormtrooper2, miniInfo.stormtrooper3 },
       rank = "Corps",
       faction = "imperial",
-      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades", "comms", "training", "gear"},
     }),
     -- Imperial Specialforces
     UnitClass:create({
@@ -1057,7 +1057,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.phaseICloneTrooperLeader, miniInfo.phaseICloneTrooper1, miniInfo.phaseICloneTrooper2, miniInfo.phaseICloneTrooper3 },
       rank = "Corps",
       faction = "republic",
-      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades", "comms", "training", "gear"},
     }),
     UnitClass:create({
       name = "Phase II Clone Troopers",
@@ -1065,7 +1065,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.phaseIICloneTrooperLeader, miniInfo.phaseIICloneTrooper1, miniInfo.phaseIICloneTrooper2, miniInfo.phaseIICloneTrooper3 },
       rank = "Corps",
       faction = "republic",
-      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades", "comms"},
     }),
     -- Republic Specialforces
     UnitClass:create({
