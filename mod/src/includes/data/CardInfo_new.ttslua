@@ -27,7 +27,14 @@ function UnitClass:create(params)
   unit.strafeMove = params.strafeMove or nil
   unit.alignment = self:_getAlignment(unit)
   -- format commandType as, e.g., 'rebelCommander'
-  unit.commandType = unit.faction:lower() .. unit.rank:lower():gsub("^%l", string.upper)
+  -- Currently we have specialized order tokens (i.e. rebelSpecialForces), and
+  -- this is much easiesr than writing a generalized string replacement method
+  -- for ranks that are unlikely to change.
+  local rank = unit.rank
+  if rank == "Special Forces" then
+    rank = "specialForces"
+  end
+  unit.commandType = unit.faction:lower() .. rank:lower():gsub("^%l", string.upper)
   unit.tokenName = unit.faction:match("^%l+"):gsub("^%l", string.upper) .. " " .. unit.rank .. " Command Token"
 
   return unit
