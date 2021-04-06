@@ -1,0 +1,54 @@
+<!-- Welcome/Help/Changelog Dialog -->
+
+<Panel 
+  active="true"
+  allowDragging="true"
+  color="#696969"
+  height="300"
+  id="welcomeDialog"
+  outline="#404040"
+  rectAlignment="CenterCenter"
+  returnToOriginalPositionWhenReleased="false"
+  width="385"
+>
+  <Panel
+    color="#19197040"
+    height="30"
+    outline="#00008B"
+    rectAlignment="UpperRight"
+    width="385"
+  >
+    <HorizontalLayout childForceExpandWidth="false" width="385" padding="5">
+      <Text
+        id="welcomeDialogTitle"
+        color="#ffffff"
+        fontSize="14"
+        fontStyle="bold"
+        height="30"
+        alignment="MiddleLeft"
+        minWidth="345"
+      >
+        Loading...
+      </Text>
+      <Button 
+        color="#990000"
+        fontSize="10"
+        onClick="toggleWelcomeDialog"
+        textColor="#FFFFFF"
+        text="X"
+        minWidth="30"
+      />
+    </HorizontalLayout>
+  </Panel>
+  <VerticalScrollView height="270" width="385" offsetXY="0 -15">
+    <VerticalLayout childAlignment="UpperLeft" padding="5"> 
+      <Panel>
+        <Text alignment="UpperLeft" fontSize="12">
+          This is a preview of the UI that will be used in this mod version.
+
+          
+        </Text>
+      </Panel>
+    </VerticalLayout>
+  </VerticalScrollView>
+</Panel>

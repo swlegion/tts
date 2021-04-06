@@ -3,10 +3,14 @@
 #include !/data/CardInfo_new
 #include !/data/ListBuilder
 #include !/data/MiniInfo
+#include !/UI
 
 function onLoad()
+    VERSION = "v5.0.0-beta"
     CCID = sha256(tostring(Time.time))
     UUID = sha256(Player.getPlayers()[1].steam_id)
+    initUI()
+
     ga_event("Global", "onLoad")
 
     gameDataGUID = "6bb850"

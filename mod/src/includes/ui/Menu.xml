@@ -2,8 +2,6 @@
 
 <!-- Height should be NUM_BUTTONS * 58-->
 <VerticalLayout
-  allowDragging="true"
-  color="black"
   height="232"
   id="legionFloatingMenu"
   offsetXY="-6 60"
@@ -11,8 +9,10 @@
   spacing="6"
   width="52"
 >
-  <Button fontSize="10">Welcome</Button>
-  <Button fontSize="10" interactable="false">Chess Clock</Button>
-  <Button fontSize="10" interactable="false">Unit Sizes</Button>
-  <Button fontSize="10" interactable="false">Import</Button>
+  <Button fontSize="10" onClick="toggleWelcomeDialog">Welcome</Button>
+  <Button fontSize="10" interactable="false">-</Button>
+  <Button fontSize="10" interactable="false">-</Button>
+  <Button fontSize="10" interactable="false">-</Button>
 </VerticalLayout>
+
+<!-- #include !/ui/Welcome -->

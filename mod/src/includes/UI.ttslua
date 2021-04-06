@@ -1,0 +1,11 @@
+function initUI()
+  UI.setValue("welcomeDialogTitle", "Star Wars Legion for TTS " .. VERSION)
+end
+
+function toggleWelcomeDialog()
+  if UI.getAttribute("welcomeDialog", "active") == "true" then
+    UI.hide("welcomeDialog")
+  else
+    UI.show("welcomeDialog")
+  end
+end
