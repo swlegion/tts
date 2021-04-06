@@ -1,4 +1,5 @@
 <VerticalLayout
+  active="false"
   color="black"
   id="legionDisplay"
   height="10"
