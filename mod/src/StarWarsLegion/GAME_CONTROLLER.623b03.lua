@@ -1031,9 +1031,5 @@ end
 
 function enableExperimentalFeatures()
     ga_event("Global", "enableExperimentalFeatures")
-    printToAll("Enabled Experiments! Do not file bug reports or requests about these features.")
-    local blueListBuilder = getObjectFromGUID("60e426")
-    local redListBuilder = getObjectFromGUID("8708be")
-    blueListBuilder.UI.show("mainPanel")
-    redListBuilder.UI.show("mainPanel")
+    Global.UI.show("legionDisplay")
 end
