@@ -18,14 +18,34 @@
     rectAlignment="UpperCenter"
     width="500"
   >
-    <Text color="#ffffff">Title</Text>
+    <Text color="#ffffff">Star Wars Legion for TTS</Text>
+  </Panel>
+  <Panel
+    height="30"
+    width="30"
+    rectAlignment="UpperRight"
+    padding="2"
+  >
+    <Button onClick="toggleWelcomeDialog">X</Button>
   </Panel>
   <Panel
     height="240"
     padding="5"
     width="500"
   >
-    <Text color="#ffffff">Content</Text>
+    <VerticalLayout>
+      <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
+        Welcome to Star Wars: Legion for TTS, <b>v5.0.0-beta</b>.
+
+        This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
+        
+        To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.
+
+        <b>CHANGELOG</b>
+
+        - Added a new welcome dialog and UI alternative to the janky notecards.
+      </Text>
+    </VerticalLayout>
   </Panel>
   <Panel 
     color="#202020"
@@ -37,16 +57,16 @@
   >
     <HorizontalLayout height="30">
       <Button>
-        <Text fontSize="10">Updates</Text>
+        <Text fontSize="10" fontStyle="bold">What's New</Text>
       </Button>
-      <Button>
-        <Text fontSize="10">Updates</Text>
+      <Button interactable="false">
+        <Text fontSize="10">-</Text>
       </Button>
-      <Button>
-        <Text fontSize="10">Updates</Text>
+      <Button interactable="false">
+        <Text fontSize="10">-</Text>
       </Button>
-      <Button>
-        <Text fontSize="10">Support</Text>
+      <Button interactable="false">
+        <Text fontSize="10">-</Text>
       </Button>
     </HorizontalLayout>
   </Panel>
