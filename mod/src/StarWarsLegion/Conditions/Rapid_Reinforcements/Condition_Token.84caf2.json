@@ -47,5 +47,6 @@
     "LuaScriptState": "",
     "XmlUI": "",
     "States": {}
-  }
+  },
+  "StatesPaths": {}
 }

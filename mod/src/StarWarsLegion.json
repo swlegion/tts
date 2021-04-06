@@ -2,7 +2,7 @@
   "Save": {
     "SaveName": "StarWarsLegion",
     "GameMode": "Star Wars: Legion",
-    "Date": "3/5/2021 11:16:45 AM",
+    "Date": "4/6/2021 11:06:48 AM",
     "VersionNumber": "v13.0.5",
     "GameType": "",
     "GameComplexity": "",
@@ -81,9 +81,160 @@
       "PassTurns": true,
       "TurnColor": ""
     },
-    "TabStates": {},
+    "TabStates": {
+      "0": {
+        "title": "Rules",
+        "body": "",
+        "color": "Grey",
+        "visibleColor": {
+          "r": 0.5,
+          "g": 0.5,
+          "b": 0.5
+        },
+        "id": 0
+      },
+      "1": {
+        "title": "White",
+        "body": "",
+        "color": "White",
+        "visibleColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "id": 1
+      },
+      "2": {
+        "title": "Brown",
+        "body": "",
+        "color": "Brown",
+        "visibleColor": {
+          "r": 0.443,
+          "g": 0.231,
+          "b": 0.09
+        },
+        "id": 2
+      },
+      "3": {
+        "title": "Red",
+        "body": "",
+        "color": "Red",
+        "visibleColor": {
+          "r": 0.856,
+          "g": 0.1,
+          "b": 0.094
+        },
+        "id": 3
+      },
+      "4": {
+        "title": "Orange",
+        "body": "",
+        "color": "Orange",
+        "visibleColor": {
+          "r": 0.956,
+          "g": 0.392,
+          "b": 0.113
+        },
+        "id": 4
+      },
+      "5": {
+        "title": "Yellow",
+        "body": "",
+        "color": "Yellow",
+        "visibleColor": {
+          "r": 0.905,
+          "g": 0.898,
+          "b": 0.172
+        },
+        "id": 5
+      },
+      "6": {
+        "title": "Green",
+        "body": "",
+        "color": "Green",
+        "visibleColor": {
+          "r": 0.192,
+          "g": 0.701,
+          "b": 0.168
+        },
+        "id": 6
+      },
+      "7": {
+        "title": "Blue",
+        "body": "",
+        "color": "Blue",
+        "visibleColor": {
+          "r": 0.118,
+          "g": 0.53,
+          "b": 1
+        },
+        "id": 7
+      },
+      "8": {
+        "title": "Teal",
+        "body": "",
+        "color": "Teal",
+        "visibleColor": {
+          "r": 0.129,
+          "g": 0.694,
+          "b": 0.607
+        },
+        "id": 8
+      },
+      "9": {
+        "title": "Purple",
+        "body": "",
+        "color": "Purple",
+        "visibleColor": {
+          "r": 0.627,
+          "g": 0.125,
+          "b": 0.941
+        },
+        "id": 9
+      },
+      "10": {
+        "title": "Pink",
+        "body": "",
+        "color": "Pink",
+        "visibleColor": {
+          "r": 0.96,
+          "g": 0.439,
+          "b": 0.807
+        },
+        "id": 10
+      },
+      "11": {
+        "title": "Black",
+        "body": "",
+        "color": "Black",
+        "visibleColor": {
+          "r": 0.25,
+          "g": 0.25,
+          "b": 0.25
+        },
+        "id": 11
+      }
+    },
     "CameraStates": [
-      null,
+      {
+        "Position": {
+          "x": 7.609456,
+          "y": -2.5,
+          "z": -0.271766365
+        },
+        "Rotation": {
+          "x": 64.99999,
+          "y": 0,
+          "z": 0
+        },
+        "Distance": 130.5,
+        "Zoomed": false,
+        "AbsolutePosition": {
+          "x": 7.60945559,
+          "y": 115.773163,
+          "z": -55.42346
+        }
+      },
       {
         "Position": {
           "x": 32.5023041,
@@ -281,7 +432,7 @@
     "Custom_Model.c6b3a9.json",
     "SETUP_CONTROLLER.1cb552.json",
     "Victory_Tokens.8a2a49.json",
-    "Objective_Token.094239.json",
+    "Objective_Tokens.094239.json",
     "Custom_Model.294fce.json",
     "Condition_Tokens.4d25eb.json",
     "Standby_Tokens.f103c2.json",
@@ -353,10 +504,6 @@
     "Observation_Tokens.aac68d.json",
     "Incognito_Tokens.c4364f.json",
     "TABLE.3a3ed9.json",
-    "This_is_the_b_BETA_b_mod._Do_not_use_for_tournaments..6f3be4.json",
-    "This_is_the_b_BETA_b_mod._Do_not_use_for_tournaments..eecff6.json",
-    "CHANGELOG.c282f8.json",
-    "Saved_Map.38fcd0.json",
-    "CHANGELOG_Continued.aecb8e.json"
+    "Saved_Map.38fcd0.json"
   ]
 }
