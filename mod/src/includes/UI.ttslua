@@ -9,3 +9,13 @@ function toggleWelcomeDialog()
     UI.show("welcomeDialog")
   end
 end
+
+function showWelcomeTab1()
+  UI.show("welcomeTab1")
+  UI.hide("welcomeTab2")
+end
+
+function showWelcomeTab2()
+  UI.hide("welcomeTab1")
+  UI.show("welcomeTab2")
+end
