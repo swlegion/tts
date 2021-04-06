@@ -46,7 +46,27 @@
         <Text alignment="UpperLeft" fontSize="12">
           This is a preview of the UI that will be used in this mod version.
 
-          
+          MINI SIZES
+          -----------
+          Small Base Troopers: 1
+          1.4 FD Laser Cannon: 1
+          E-Web Heavy Blaster: 1
+          Droidekas: 1
+          Tauntuan Riders 1.25
+          BARC Speeder 1.25
+          AT-RT: 1.5
+          X-34 Landspeeder: 1.5
+          74-Z Speeder Bikes, STAPs: 1.5
+          TX-225 GAVw Occupier: 1.5
+          TX-130 Saber-Class Fighter Tank 1.5
+          AAT Trade Federation Battle Tank: 2
+          T-47 Airspeeder: 4
+          AT-ST: 5
+
+          By SWLegion Dev Foundation (https://go.swlegion.dev/mod)
+
+          To find games, join SWLegion Discord:
+          https://discordapp.com/invite/UGP9N2v
         </Text>
       </Panel>
     </VerticalLayout>
