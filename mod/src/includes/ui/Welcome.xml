@@ -3,72 +3,51 @@
 <Panel 
   active="true"
   allowDragging="true"
-  color="#696969"
+  color="#40404080"
   height="300"
   id="welcomeDialog"
-  outline="#404040"
+  outline="#202020"
   rectAlignment="CenterCenter"
   returnToOriginalPositionWhenReleased="false"
-  width="385"
+  width="500"
 >
-  <Panel
-    color="#19197040"
+  <Panel 
+    color="#202020"
     height="30"
-    outline="#00008B"
-    rectAlignment="UpperRight"
-    width="385"
+    padding="5"
+    rectAlignment="UpperCenter"
+    width="500"
   >
-    <HorizontalLayout childForceExpandWidth="false" width="385" padding="5">
-      <Text
-        id="welcomeDialogTitle"
-        color="#ffffff"
-        fontSize="14"
-        fontStyle="bold"
-        height="30"
-        alignment="MiddleLeft"
-        minWidth="345"
-      >
-        Loading...
-      </Text>
-      <Button 
-        color="#990000"
-        fontSize="10"
-        onClick="toggleWelcomeDialog"
-        textColor="#FFFFFF"
-        text="X"
-        minWidth="30"
-      />
+    <Text color="#ffffff">Title</Text>
+  </Panel>
+  <Panel
+    height="240"
+    padding="5"
+    width="500"
+  >
+    <Text color="#ffffff">Content</Text>
+  </Panel>
+  <Panel 
+    color="#202020"
+    height="30"
+    offsetXY="0 -270"
+    padding="5"
+    rectAlignment="UpperCenter"
+    width="500"
+  >
+    <HorizontalLayout height="30">
+      <Button>
+        <Text fontSize="10">Updates</Text>
+      </Button>
+      <Button>
+        <Text fontSize="10">Updates</Text>
+      </Button>
+      <Button>
+        <Text fontSize="10">Updates</Text>
+      </Button>
+      <Button>
+        <Text fontSize="10">Support</Text>
+      </Button>
     </HorizontalLayout>
   </Panel>
-  <VerticalScrollView height="270" width="385" offsetXY="0 -15">
-    <VerticalLayout childAlignment="UpperLeft" padding="5"> 
-      <Panel>
-        <Text alignment="UpperLeft" fontSize="12">
-          This is a preview of the UI that will be used in this mod version.
-
-          MINI SIZES
-          -----------
-          Small Base Troopers: 1
-          1.4 FD Laser Cannon: 1
-          E-Web Heavy Blaster: 1
-          Droidekas: 1
-          Tauntuan Riders 1.25
-          BARC Speeder 1.25
-          AT-RT: 1.5
-          X-34 Landspeeder: 1.5
-          74-Z Speeder Bikes, STAPs: 1.5
-          TX-225 GAVw Occupier: 1.5
-          TX-130 Saber-Class Fighter Tank 1.5
-          AAT Trade Federation Battle Tank: 2
-          T-47 Airspeeder: 4
-          AT-ST: 5
-
-          By SWLegion Dev Foundation (https://go.swlegion.dev/mod)
-
-          To find games, join SWLegion Discord:
-          https://discordapp.com/invite/UGP9N2v
-        </Text>
-      </Panel>
-    </VerticalLayout>
-  </VerticalScrollView>
 </Panel>
