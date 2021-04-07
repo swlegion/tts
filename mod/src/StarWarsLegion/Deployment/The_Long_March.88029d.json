@@ -50,5 +50,6 @@
     "XmlUI": "",
     "ContainedObjects": []
   },
-  "StatesPaths": {}
+  "StatesPaths": {},
+  "ContainedObjectPaths": []
 }

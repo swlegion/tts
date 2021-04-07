@@ -1,0 +1,93 @@
+<!-- Welcome/Help/Changelog Dialog -->
+
+<Panel 
+  active="true"
+  allowDragging="true"
+  color="#40404080"
+  height="300"
+  id="welcomeDialog"
+  outline="#202020"
+  rectAlignment="CenterCenter"
+  returnToOriginalPositionWhenReleased="false"
+  width="500"
+>
+  <Panel 
+    color="#202020"
+    height="30"
+    padding="5"
+    rectAlignment="UpperCenter"
+    width="500"
+  >
+    <Text color="#ffffff">Star Wars Legion for TTS</Text>
+  </Panel>
+  <Panel
+    height="30"
+    width="30"
+    rectAlignment="UpperRight"
+    padding="2"
+  >
+    <Button onClick="toggleWelcomeDialog">X</Button>
+  </Panel>
+  <Panel
+    height="240"
+    padding="5"
+    width="500"
+  >
+    <VerticalLayout id="welcomeTab1" active="true">
+      <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
+        Welcome to Star Wars: Legion for TTS, <b>v5.0.0-beta</b>.
+
+        This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
+        
+        To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.
+
+        <b>CHANGELOG</b>
+
+        - Added a new welcome dialog and UI alternative to the janky notecards.
+      </Text>
+    </VerticalLayout>
+    <VerticalLayout id="welcomeTab2" active="false">
+      <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
+        <b>Unit Sizes</b>:
+
+        Small Base Troopers: 1
+        1.4 FD Laser Cannon: 1
+        E-Web Heavy Blaster: 1
+        Droidekas: 1
+        Tauntuan Riders 1.25
+        BARC Speeder 1.25
+        AT-RT: 1.5
+        X-34 Landspeeder: 1.5
+        74-Z Speeder Bikes, STAPs: 1.5
+        TX-225 GAVw Occupier: 1.5
+        TX-130 Saber-Class Fighter Tank 1.5
+        AAT Trade Federation Battle Tank: 2
+        T-47 Airspeeder: 4
+        AT-ST: 5
+      </Text>
+    </VerticalLayout>
+  </Panel>
+  <Panel 
+    color="#202020"
+    height="30"
+    offsetXY="0 -270"
+    padding="5"
+    rectAlignment="UpperCenter"
+    width="500"
+  >
+    <HorizontalLayout height="30">
+      <Button onClick="showWelcomeTab1">
+        <Text fontSize="10" fontStyle="bold">What's New</Text>
+      </Button>
+      <Button onClick="showWelcomeTab2">
+        <Text fontSize="10">Unit Sizes</Text>
+      </Button>
+      <Button interactable="false">
+        <Text fontSize="10">-</Text>
+      </Button>
+      <Button interactable="false">
+        <Text fontSize="10">-</Text>
+      </Button>
+    </HorizontalLayout>
+  </Panel>
+</Panel>

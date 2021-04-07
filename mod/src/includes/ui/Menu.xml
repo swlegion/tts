@@ -1,0 +1,18 @@
+<!-- The floating menu spawned in the bottom right corner-->
+
+<!-- Height should be NUM_BUTTONS * 58-->
+<VerticalLayout
+  height="232"
+  id="legionFloatingMenu"
+  offsetXY="-6 60"
+  rectAlignment="LowerRight"
+  spacing="6"
+  width="52"
+>
+  <Button fontSize="10" onClick="toggleWelcomeDialog">Welcome</Button>
+  <Button fontSize="10" interactable="false">-</Button>
+  <Button fontSize="10" interactable="false">-</Button>
+  <Button fontSize="10" interactable="false">-</Button>
+</VerticalLayout>
+
+<!-- #include !/ui/Welcome -->
