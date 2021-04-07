@@ -632,6 +632,7 @@ function CardInfoClass:buildCardInfo()
       points =38,
       miniInfo = { miniInfo.markIIMediumBlasterTrooper },
       rank = "Corps",
+      selectedSpeed = 1,
       type = "emplacement trooper",
       baseSize = "medium",
       faction = "rebel",
