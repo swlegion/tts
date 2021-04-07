@@ -249,7 +249,7 @@ function initializeCommandToken(cData)
 
 end
 
-function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot, unitNameFallback)
+function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot, unitNameFallback, scale)
   local templatePosUnit = passedTemplatePos
   local originalUnitCards = getObjectFromGUID(cardInfo.unitCardsGUID)
   copy({originalUnitCards})
@@ -282,11 +282,11 @@ function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot, unitNameFa
   ga_event("Game", "spawnUnitCard", unitCard.getName())
   destroyObject(unitCards)
 
-  pos = translatePos(passedTemplatePos, passedTemplateRot, 1.5620819440734, 52.543226290399+90)
-  pos.y = passedTemplatePos.y
+  pos = simpleTranslatePos(templatePosUnit, 0, 0)
+  pos.y = templatePosUnit.y
 
   unitCard.setRotation({0,passedTemplateRot.y+180,0})
-  unitCard.setScale({0.83,1,0.83})
+  unitCard.setScale({scale,1,scale})
 
   unitCard.setPosition(pos)
   unitCard.setLock(false)
@@ -295,31 +295,42 @@ function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot, unitNameFa
 
 end
 
-function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
+function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber, spawnOffsets, xOffset, zOffset)
   local originalUpgradeCards = getObjectFromGUID(cardInfo.upgradeCardsGUID)
   local upgradeCards = originalUpgradeCards.clone({ position = {0,-30,0} })
   local upgradeCardTable = upgradeCards.getObjects()
   local cardInt = -1
 
-  local upgradeCardPos = {
-    -- q = horziontal offset?
-    -- c = vertical offset?
-    -- top right
-    {q = 146.451578117502, c = 2.2437691503361},
-    -- center left
-    {q = -37.790038154384, c = 2.3663051367058},
-    -- center middle
-    {q = -90, c = 1.45},
-    -- center right
-    {q = -142.209961845616, c = 2.3663051367058},
-    -- bottom left
-    {q = -65.897765498839, c = 4.5792248252297},
-    -- bottom middle
-    {q = -90, c = 4.18},
-    -- bottom right
-    {q = -114, c = 4.5792248252297},
-  }
-  local cardPos = upgradeCardPos[upgradeNumber]
+  -- cache offsets
+  local unitCardWidth = spawnOffsets["unitCardWidth"]
+  local halfUnitCard = unitCardWidth * 0.5
+
+  local cardHeight = spawnOffsets["cardHeight"]
+  local cardWidth = spawnOffsets["upgradeCardWidth"]
+  local halfCardHeight = cardHeight * 0.5
+  local halfCardWidth = cardWidth * 0.5
+
+  local padding = spawnOffsets["padding"]
+
+  -- offset upgrade card
+  local xPosOffset = 0
+  local zPosOffset = 0
+
+  -- x offset
+  if ( upgradeNumber == 1 or upgradeNumber == 4 or upgradeNumber == 7) then
+    xPosOffset = (halfUnitCard + padding + halfCardWidth) * -xOffset
+  elseif ( upgradeNumber == 2 or upgradeNumber == 5 ) then
+    xPosOffset = (-halfUnitCard + halfCardWidth + (padding)) * -xOffset
+  elseif ( upgradeNumber == 3 or upgradeNumber == 6 ) then
+    xPosOffset = (halfCardWidth + padding) * -xOffset
+  end 
+  
+  -- z offset
+  if ( upgradeNumber > 1 and upgradeNumber < 5) then
+    zPosOffset = ((cardHeight + padding) * zOffset)
+  elseif ( upgradeNumber >= 5 ) then
+    zPosOffset = ((cardHeight + padding) * 2 * zOffset)
+  end
 
   for i, entry in pairs(upgradeCardTable) do
       if entry.nickname:lower() == cardName:lower() then
@@ -350,13 +361,9 @@ function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber)
   ga_event("Game", "spawnUpgradeCard", cardName)
   destroyObject(upgradeCards)
 
-  local rotUpgrade = pTemplateRot
-  local posUpgrade = pTemplatePos
-
-  local finalPos = translatePos(posUpgrade, rotUpgrade, cardPos.c , cardPos.q+90)
-
-  --finalPos = translatePos(passedTemplatePos, passedTemplateRot, 1.5620819440734, 52.543226290399+90)
-  upgradeCard.setScale({0.83,0.83,0.83})
+  local scale = spawnOffsets["cardScale"]
+  upgradeCard.setScale({scale,scale,scale})
+  local finalPos = simpleTranslatePos(pTemplatePos, xPosOffset, zPosOffset)
   upgradeCard.setPosition(finalPos)
   upgradeCard.setRotation({0,pTemplateRot.y+180,0})
   upgradeCard.setLock(false)
@@ -484,35 +491,47 @@ function spawnUnit(unit, n, faction)
   spawnMiniTable.miniObjs = {}
   spawnMiniTable.unitID = n
 
-  -- prep mini position variables
+  -- prep unit card spawn location
+  local cardScale = listBuilder.spawnOffsets["cardScale"]
+
   local tempPos = templatePos
-  --slide over to edge of template zone
-  tempPos.x = tempPos.x - 2.5 
 
+  local templateHalfWidth = listBuilder.spawnOffsets["templateHalfWidth"]
+  local templateHalfHeight = listBuilder.spawnOffsets["templateHalfHeight"]
+  local cardHeight = listBuilder.spawnOffsets["cardHeight"]
+  local unitCardWidth = listBuilder.spawnOffsets["unitCardWidth"]
+  local padding = listBuilder.spawnOffsets["padding"]
+  local xOffset = 1
   local zOffset = 1
-
+  
+  -- orient offsets based on our facing
   if (tempPos.z < 0) then 
-    tempPos.z = tempPos.z - 2
-    zOffset =  -1
-  else
-    tempPos.z = tempPos.z + 2
+    xOffset = -1
+    zOffset = -1
+    padding = padding * -1
+    cardHeight = cardHeight * -1
+    templateHalfWidth = templateHalfWidth * -1   
+    templateHalfHeight = templateHalfHeight * -1
   end
+
+  tempPos.x = tempPos.x + templateHalfWidth - padding
+  tempPos.z = tempPos.z - templateHalfHeight + cardHeight
 
   -- SPAWN CARDS
   -- spawn unit Card
-  spawnMiniTable.unitCardObj = spawnUnitCard(unitObject, templatePos, self.getRotation(), unit.name)
+  spawnMiniTable.unitCardObj = spawnUnitCard(unitObject, tempPos, self.getRotation(), unit.name, cardScale)
   spawnUnitIDToken(templatePos, self.getRotation(), n)
 
 
   -- spawn upgrade card
+  local upgradeCount = 0
 
   for j, upgrade in pairs(unit.upgrades) do
     listBuilder = Global.getTable("listBuilder")
-    templatePos = listBuilder[colorSide.."TemplatePos"][n]
-    spawnUpgradeCard(upgrade, templatePos, self.getRotation(), j)
+    spawnUpgradeCard(upgrade, tempPos, self.getRotation(), j, listBuilder.spawnOffsets, xOffset, zOffset)
     table.insert(spawnMiniTable.upgrades, upgrade)
+    upgradeCount = upgradeCount + 1
   end
-
 
   -- SPAWN MINIS
   -- mini table
@@ -523,12 +542,39 @@ function spawnUnit(unit, n, faction)
     for i, miniData in ipairs(minisToSpawn) do
       listBuilder = Global.getTable("listBuilder")
       -- determine spawn position
-      local base = cardInfo.unitCards[spawnMiniTable.name].miniInfo.collider[2]
-      local baseOffset = base + 0.2
+      local initialZOffset = (cardHeight + padding) * zOffset
+
+      if ( upgradeCount > 1 and upgradeCount < 5) then
+        initialZOffset = initialZOffset - cardHeight
+      elseif upgradeCount > 4 then
+        initialZOffset = initialZOffset + ((-cardHeight - padding) * 2)
+      end
+
+      local base = miniData.collider[2]      
       local baseRadius = base * 0.5
-      local basePosOffset = tempPos.x + baseRadius
-      local miniPos = {x = basePosOffset, y = tempPos.y, z = tempPos.z }
-      spawnPos = simpleTranslatePos(miniPos, baseOffset * spawnedMinisNumber, baseOffset * zOffset)
+      local initialXOffset = (unitCardWidth * 0.5) - baseRadius 
+      local xStart = tempPos.x + (initialXOffset * xOffset)
+      local miniPos = {x = xStart, y = tempPos.y, z = tempPos.z }
+
+      local templateFullWidth = templateHalfWidth * 2.0
+      local paddedBase = base + padding 
+      local basesPerRow = math.abs(math.floor(templateFullWidth/paddedBase))
+      print("basesPerRow:",basesPerRow)
+      local index = i
+
+      if (i > basesPerRow) then
+        initialZOffset = initialZOffset + (paddedBase + (padding * 2))
+        index = math.abs(math.floor(i/basesPerRow))
+      end
+
+      print("index:",index)
+
+      local xDir = xOffset * -1
+      local baseOffset = base + (padding * xOffset)
+      local totalXOffset = (baseOffset * (index - 1))
+      
+      local spawnPos = simpleTranslatePos(miniPos, totalXOffset * xDir, (initialZOffset + baseRadius) * zOffset)
+
       -- spawn the mini
       local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, miniData)
       local insertInfo = {obj = spawnedMini, name = miniData.name}

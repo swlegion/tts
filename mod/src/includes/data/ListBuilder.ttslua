@@ -30,6 +30,16 @@ function buildListBuilder()
     listBuilder.deckBuilderDiffuse = "http://cloud-3.steamusercontent.com/ugc/786360308354566564/58E3DBF4523A099C371DA8A674AE9DB1932B4006/"
     listBuilder.deckBuilderGUID = "082f27"
 
+    listBuilder.spawnOffsets = {
+      cardHeight=2.5,
+      cardScale=0.83,
+      unitCardWidth=3.5,
+      upgradeCardWidth=1.75,
+      padding=0.2,
+      templateHalfWidth=2,
+      templateHalfHeight=4
+    }
+
     listBuilder.redTemplatePos = {}
     listBuilder.redTemplatePos[1] = {x = -23.57,y= 1,z=-29}
     listBuilder.redTemplatePos[2] = {x =-16.60,y= 1,z=-29}
