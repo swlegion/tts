@@ -2,6 +2,7 @@ import fs from 'fs-extra';
 import isPng from 'is-png';
 import minimist from 'minimist';
 import fetch from 'node-fetch';
+import path from 'path';
 
 // Changes the default behavior of unhandled promises.
 require('make-promises-safe');
@@ -87,9 +88,7 @@ async function backupMiniAssets(
     const response = await fetch(url);
     return new Uint8Array(await response.arrayBuffer());
   }
-  async function nullWriteFile(name: string, data: Uint8Array): Promise<void> {
-    console.log(`Would write ${data.byteLength} bytes as "${name}"`);
-  }
+
   const args = minimist(process.argv.slice(2));
   const input = args['input'];
   const output = args['output'];
@@ -102,6 +101,14 @@ async function backupMiniAssets(
     console.error('No --output directory specified.');
     return;
   }
-  const writeFile = parse ? nullWriteFile : fs.writeFile;
+
+  async function fakeWriteFile(name: string, data: Uint8Array): Promise<void> {
+    console.log(`Would write ${data.byteLength} bytes as "${name}"`);
+  }
+  async function realWriteFile(name: string, data: Uint8Array): Promise<void> {
+    await fs.writeFile(`${path.join(output, name)}`, data);
+  }
+
+  const writeFile = parse ? fakeWriteFile : realWriteFile;
   await backupMiniAssets(writeFile, readUrl, await fs.readFile(input, 'utf-8'));
 })();
