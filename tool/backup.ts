@@ -1,3 +1,4 @@
+import { ObjectState } from '@matanlurey/tts-save-files';
 import fs from 'fs-extra';
 import isPng from 'is-png';
 import minimist from 'minimist';
@@ -40,7 +41,7 @@ function dirtyParseMiniInfo(region: string): MiniInfo | undefined {
  */
 async function backupMiniAssets(
   writeFile: (name: string, data: Uint8Array) => Promise<void>,
-  readUrl: (url: string) => Promise<Uint8Array>,
+  readUrl: (url: string) => Promise<{ url: string; data: Uint8Array }>,
   inputContents: string,
 ): Promise<number> {
   let count = 0;
@@ -64,15 +65,17 @@ async function backupMiniAssets(
     const promises: Promise<void>[] = [];
     if ('assetBundle' in parsed) {
       promises.push(
-        writeFile(`${name}.unity3d`, await readUrl(parsed.assetBundle)),
+        writeFile(`${name}.unity3d`, (await readUrl(parsed.assetBundle)).data),
       );
     } else {
-      promises.push(writeFile(`${name}.obj`, await readUrl(parsed.mesh)));
+      promises.push(
+        writeFile(`${name}.obj`, (await readUrl(parsed.mesh)).data),
+      );
       if (parsed.diffuse) {
         promises.push(
           readUrl(parsed.diffuse).then((data) => {
-            const extension = isPng(data) ? 'png' : 'jpg';
-            return writeFile(`${name}.${extension}`, data);
+            const extension = isPng(data.data) ? 'png' : 'jpg';
+            return writeFile(`${name}.${extension}`, data.data);
           }),
         );
       }
@@ -83,21 +86,71 @@ async function backupMiniAssets(
   return count;
 }
 
+async function backupCardAssets(
+  writeFile: (name: string, data: Uint8Array) => Promise<void>,
+  readUrl: (url: string) => Promise<{ url: string; data: Uint8Array }>,
+  cardDir: string,
+  cardFiles: string[],
+) {
+  // Step 1: Make a Set (uniqueness) of all card assets.
+  const assets = new Set<string>();
+  for (const cardFile of cardFiles) {
+    const cardPath = path.join(cardDir, cardFile);
+    const cardJson = (await fs.readJson(cardPath)).Object as ObjectState;
+    if (cardJson.CustomDeck) {
+      for (const key in cardJson.CustomDeck) {
+        const deck = cardJson.CustomDeck[key];
+        assets.add(deck.FaceURL);
+        assets.add(deck.BackURL);
+      }
+    }
+  }
+
+  // Step 2: Download.
+  console.log(
+    `Downloading ${assets.size} assets from ${cardFiles.length} cards.`,
+  );
+  const files = new Set<string>();
+  for (const cardAsset of Array.from(assets)) {
+    const file = await readUrl(cardAsset);
+    let name = path.basename(file.url);
+    if (files.has(name)) {
+      console.warn(`Ignoring "${name}" (duplicate filename)`);
+    } else {
+      files.add(name);
+      await writeFile(name, file.data);
+    }
+  }
+}
+
 (async () => {
-  async function readUrl(url: string): Promise<Uint8Array> {
+  async function readUrl(
+    url: string,
+  ): Promise<{ url: string; data: Uint8Array }> {
     const response = await fetch(url);
-    return new Uint8Array(await response.arrayBuffer());
+    const data = new Uint8Array(await response.arrayBuffer());
+    let name = response.url;
+    if (response.headers.get('Content-Disposition')) {
+      const header = response.headers.get('Content-Disposition')!;
+      const fileName = /filename=\"\w+\_(.*)\"/.exec(header)?.[1];
+      if (fileName) {
+        name = fileName;
+      }
+    }
+    return { url: name, data };
   }
 
   const args = minimist(process.argv.slice(2));
-  const input = args['input'];
+  const input = args['input'] as string | undefined;
   const output = args['output'];
   const parse = !!args['parse-only'];
+
   if (!input) {
-    console.error('No --input file specified.');
+    console.error('No --input file or directory specified.');
     return;
   }
-  if (!output) {
+
+  if (!output && !parse) {
     console.error('No --output directory specified.');
     return;
   }
@@ -110,5 +163,14 @@ async function backupMiniAssets(
   }
 
   const writeFile = parse ? fakeWriteFile : realWriteFile;
-  await backupMiniAssets(writeFile, readUrl, await fs.readFile(input, 'utf-8'));
+
+  if (input.endsWith('.ttslua')) {
+    await backupMiniAssets(
+      writeFile,
+      readUrl,
+      await fs.readFile(input, 'utf-8'),
+    );
+  } else {
+    await backupCardAssets(writeFile, readUrl, input, await fs.readdir(input));
+  }
 })();
