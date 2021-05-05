@@ -1,7 +1,7 @@
 {
   "Object": {
     "GUID": "ba5504",
-    "Name": "Custom_Model",
+    "Name": "Custom_Assetbundle",
     "Transform": {
       "posX": 57.4803352,
       "posY": 1.125693,
@@ -34,15 +34,12 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "CustomMesh": {
-      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441910/ED14AA37D66E5E75EA5D6790A50546B1FC105DAC/",
-      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786359883314444206/36C849E4F341F2BC6FAB66742D76FF8A38AB86AD/",
-      "NormalURL": "",
-      "ColliderURL": "",
-      "Convex": true,
-      "MaterialIndex": 3,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1803106482244357749/2622ADC2C38ED37EFA0865AB8D4A53116F8D2268/",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 0,
       "TypeIndex": 0,
-      "CastShadows": true
+      "LoopingEffectIndex": 0
     },
     "LuaScript": "",
     "LuaScriptState": "",
@@ -50,14 +47,14 @@
     "States": {}
   },
   "StatesPaths": {
-    "2": "Unit_ID_Token.471c43.json",
-    "3": "Unit_ID_Token.25154e.json",
-    "4": "Unit_ID_Token.d236b9.json",
-    "5": "Unit_ID_Token.16ef00.json",
-    "6": "Unit_ID_Token.3915a3.json",
-    "7": "Unit_ID_Token.10e8de.json",
-    "8": "Unit_ID_Token.7c564a.json",
-    "9": "Unit_ID_Token.91fd5f.json",
-    "10": "Unit_ID_Token.feaddb.json"
+    "2": "Unit_ID_Token.471c43.json", 
+    "3": "Unit_ID_Token.25154e.json", 
+    "4": "Unit_ID_Token.d236b9.json", 
+    "5": "Unit_ID_Token.16ef00.json", 
+    "6": "Unit_ID_Token.3915a3.json", 
+    "7": "Unit_ID_Token.10e8de.json", 
+    "8": "Unit_ID_Token.7c564a.json", 
+    "9": "Unit_ID_Token.91fd5f.json", 
+    "10": "Unit_ID_Token.feaddb.json" 
   }
 }
