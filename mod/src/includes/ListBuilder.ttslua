@@ -687,10 +687,6 @@ function spawnUnit(unit, n, faction, totalUnits)
     initializeMini(spawnMiniTable)
   end
 
-  -- attempt to add ID to miniObjs for tinting
-  -- local insertIdInfo = {obj = idToken, name = "idToken"}
-  -- table.insert(spawnMiniTable.miniObjs, insertIdInfo)
-
   -- spawn command token
   local unitCard = cardInfo.unitCards[unitKey]
   if unitObject ~= nil and unitCard.noToken == nil then
