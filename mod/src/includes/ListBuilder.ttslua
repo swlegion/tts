@@ -40,6 +40,7 @@ function mainMenu()
   createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "chooseArmy", "Create Army", "Create a custom Army", {0,0.913,1})
   createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "loadArmy", "Load Army", "Load army from Data Disk", {0,0.913,1})
   createOptionButton(3, listBuilderOptions[3], listBuilderButtons[3], "clearZone", "Clear Cards", "Clears current cards", {0,0.913,1})
+  createOptionButton(4, listBuilderOptions[4], listBuilderButtons[4], "autoTint", "Auto Tint", "Apply automatic base tinting to yet-to-be-deployed units", {0,0.913,1})
 end
 
 function chooseArmy()
@@ -110,6 +111,57 @@ function finishArmy()
   Wait.time(function()
     loadArmy()
   end, 0.5)
+end
+
+function autoTint()
+  local colorMap
+  if colorZone == "red" then
+    colorMap = {
+      {245, 34, 45},
+      {255, 169, 64},
+      {255, 236, 61},
+      {130, 0, 20},
+      {135, 56, 0},
+      {135, 104, 0},
+    }
+  else
+    colorMap = {
+      {64, 169, 255},
+      {54, 207, 201},
+      {146, 84, 222},
+      {0, 58, 140},
+      {0, 71, 79},
+      {34, 7, 94},
+    }
+  end
+  for i, color in pairs(colorMap) do
+    colorMap[i] = {
+      color[1] / 255,
+      color[2] / 255,
+      color[3] / 255,
+    }
+  end
+  local rankCount = {}
+  for _, obj in pairs(cardZone.getObjects()) do
+    if obj.getVar("isAMini") == true then
+      local unitData = obj.getTable("unitData")
+      local rankType = unitData.commandType
+      local colorIndex = rankCount[rankType]
+      if colorIndex == nil then
+        colorIndex = 0
+      end
+      colorIndex = colorIndex + 1
+      if colorIndex > #colorMap then
+        colorIndex = 1
+      end
+      rankCount[rankType] = colorIndex
+      local miniGUIDs = obj.getTable("miniGUIDs")
+      for _, miniGuid in pairs(miniGUIDs) do
+        local miniObj = getObjectFromGUID(miniGuid)
+        miniObj.setColorTint(colorMap[colorIndex])
+      end
+    end
+  end
 end
 
 function clearZone()
@@ -292,7 +344,24 @@ function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot, unitNameFa
   unitCard.setLock(false)
 
   return unitCard
+end
 
+function spawnLoadoutBag(unitName, unitUpgrades, pTemplatePos, pTemplateRot)
+  local bagOfUpgrades = spawnObject({
+    type             = "Bag",
+    position         = translatePos(
+      pTemplatePos,
+      pTemplateRot,
+      1.5620819440734,
+      52.543226290399+90
+    ),
+    callback_function = function(spawnedBag)
+      for _, upgrade in pairs(unitUpgrades) do
+        spawnUpgradeCard(upgrade, spawnedBag, pTemplateRot)
+      end
+    end,
+  })
+  bagOfUpgrades.setName("Loadout for " .. unitName)
 end
 
 function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber, spawnOffsets, xOffset, zOffset)
@@ -367,6 +436,17 @@ function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber, s
   upgradeCard.setPosition(finalPos)
   upgradeCard.setRotation({0,pTemplateRot.y+180,0})
   upgradeCard.setLock(false)
+  upgradeCard.setRotation({0,pTemplateRot.y+180,0})
+
+  if upgradeNumber ~= nil then
+    local rotUpgrade = pTemplateRot
+    local posUpgrade = pTemplatePos
+    local finalPos = translatePos(posUpgrade, rotUpgrade, cardPos.c , cardPos.q+90)
+    upgradeCard.setPosition(finalPos)
+  else
+    local loadoutBag = pTemplatePos
+    loadoutBag.putObject(upgradeCard)
+  end
 end
 
 function spawnTemplates()
@@ -522,6 +602,10 @@ function spawnUnit(unit, n, faction, totalUnits)
   spawnMiniTable.unitCardObj = spawnUnitCard(unitObject, tempPos, self.getRotation(), unit.name, cardScale)
   spawnUnitIDToken(templatePos, self.getRotation(), n)
 
+  -- spawn loadout bag
+  if unit.loadout ~= nil and #unit.loadout > 0 then
+    spawnLoadoutBag(unit.name, unit.loadout, templatePos, self.getRotation())
+  end
 
   -- spawn upgrade card
   local upgradeCount = 0
@@ -611,10 +695,10 @@ function spawnUnit(unit, n, faction, totalUnits)
   end
 
   -- spawn command token
-  if unitObject ~= nil and cardInfo.unitCards[unitKey].noToken == nil then
-    commandData = {}
-
-    local commandType = cardInfo.unitCards[unitKey].commandType
+  local unitCard = cardInfo.unitCards[unitKey]
+  if unitObject ~= nil and unitCard.noToken == nil then
+    local commandData = {}
+    local commandType = unitCard.commandType
     local commandTray = getObjectFromGUID(commandTokenTrayData[colorSide][commandType])
     local pos = commandTray.getPosition()
     pos.y = pos.y + 0.5 + (0.2 * n)
@@ -626,7 +710,7 @@ function spawnUnit(unit, n, faction, totalUnits)
     commandData.rot = rot
     commandData.varName = spawnMiniTable.name:lower()
     commandData.faction = faction
-    commandData.rank = cardInfo.unitCards[unitKey].rank
+    commandData.rank = unitCard.rank
 
     initializeCommandToken(commandData)
   end
@@ -846,7 +930,7 @@ function saveArmyImpl()
     local commandCardsBuffer = {}
     local contingencyCardsBuffer = {}
     for _, c in ipairs(listData.commandCards) do
-      table.insert(commandCardsBuffer, "'" .. c .. "'")
+      table.insert(commandCardsBuffer, "\"" .. c .. "\"")
     end
     luaString = luaString .. "listData.commandCards = {"..table.concat(commandCardsBuffer, ", ").."}\n"
     for _, c in ipairs(listData.contingencies) do
@@ -916,7 +1000,7 @@ function dealCommandCard(selectionCard, isContingency)
   commandCards.setScale({1,1,1})
 
   for i, entry in pairs(commandCardsTable) do
-      if entry.nickname == selectionCard then
+      if entry.nickname:lower() == selectionCard:lower() then
           local matchCard = commandCards.takeObject({
               position       = listBuilder.handPos[colorSide].pos ,
               index          = entry.index

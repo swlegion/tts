@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "a1165a",
+    "GUID": "cc5909",
     "Name": "Card",
     "Transform": {
-      "posX": 78.6747055,
-      "posY": 1.71358049,
-      "posZ": -14.5177336,
-      "rotX": -0.00000243214913,
-      "rotY": 180.009277,
-      "rotZ": -0.000009444357,
-      "scaleX": 0.367304444,
+      "posX": 42.1547,
+      "posY": 1.02090943,
+      "posZ": 4.08586025,
+      "rotX": 0.004623768,
+      "rotY": 269.628,
+      "rotZ": 359.969543,
+      "scaleX": 0.181600809,
       "scaleY": 1,
-      "scaleZ": 0.367304444
+      "scaleZ": 0.181600809
     },
-    "Nickname": "Im In Control",
+    "Nickname": "E-11D Config",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -32,18 +32,18 @@
     "Sticky": true,
     "Tooltip": true,
     "GridProjection": false,
-    "HideWhenFaceDown": true,
+    "HideWhenFaceDown": false,
     "Hands": true,
-    "CardID": 39502,
+    "CardID": 26902,
     "SidewaysCard": false,
     "CustomDeck": {
-      "395": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1002556126521110077/21FC8658467A8E21811F7974FA48E6C183F64542/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1002556126521104152/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
-        "NumWidth": 2,
+      "269": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/948474323838790044/425DF43B0C966E5D57EC9F1D5EA78BF283BE92D7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/993513208355167768/8F7AEA70B695A33E374354761AF41E6F9BD6C8FF/",
+        "NumWidth": 4,
         "NumHeight": 2,
         "BackIsHidden": true,
-        "UniqueBack": false,
+        "UniqueBack": true,
         "Type": 0
       }
     },

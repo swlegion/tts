@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "d14480",
-    "Name": "Card",
+    "GUID": "eb2f97",
+    "Name": "CardCustom",
     "Transform": {
-      "posX": 53.02603,
-      "posY": 4.22809172,
-      "posZ": -18.4223366,
-      "rotX": -0.00000110195469,
-      "rotY": 180.000015,
-      "rotZ": 0.00000966385,
-      "scaleX": 0.367304444,
+      "posX": 68.50089,
+      "posY": 2.10036421,
+      "posZ": -3.139282,
+      "rotX": 4.330074,
+      "rotY": 179.966492,
+      "rotZ": -0.00300924666,
+      "scaleX": 0.181600809,
       "scaleY": 1,
-      "scaleZ": 0.367304444
+      "scaleZ": 0.181600809
     },
-    "Nickname": "Idiots Array",
+    "Nickname": "J-19 Bo-rifle",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -34,14 +34,14 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 43302,
+    "CardID": 43200,
     "SidewaysCard": false,
     "CustomDeck": {
-      "433": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1776078094156403922/BE6417434C2C981C6356C97F30A65DB2ED10BB4C/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
-        "NumWidth": 3,
-        "NumHeight": 2,
+      "432": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1666859827674346826/F4637B4BD9E8FCC8BA2BF3D8FC06C29752B8EAE3/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1666859827674347328/332C9FADBA1A8E05F8D2B6C8E1AB4472372F2019/",
+        "NumWidth": 1,
+        "NumHeight": 1,
         "BackIsHidden": true,
         "UniqueBack": false,
         "Type": 0

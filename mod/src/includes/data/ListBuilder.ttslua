@@ -128,12 +128,12 @@ function buildListBuilder()
     listBuilder.commandCards["darth vader dark lord of the sith"] = {
         varName = "darthVader",
         cards = {"Implacable","New Ways to Motivate Them","Master of Evil"},
-        cards2 = {"Vaders Might","Fear and Dead Men","Darkness Descends"}
+        cards2 = {"Vader's Might","Fear and Dead Men","Darkness Descends"}
     }
     listBuilder.commandCards["darth vader the emperor's apprentice"] = {
         varName = "darthVaderTheEmperorsApprentice",
         cards = {"Implacable","New Ways to Motivate Them","Master of Evil"},
-        cards2 = {"Vaders Might","Fear and Dead Men","Darkness Descends"}
+        cards2 = {"Vader's Might","Fear and Dead Men","Darkness Descends"}
     }
     listBuilder.commandCards["emperor palpatine ruler of the galactic empire"] = {
         varName = "emperorPalpatine",
@@ -213,7 +213,7 @@ function buildListBuilder()
     }
     listBuilder.commandCards["lando calrissian smooth operator"] = {
         varName = "landoCalrissian",
-        cards = {"Idiots Array", "Ace Up His Sleeve", "All In"}
+        cards = {"Idiot's Array", "Ace Up His Sleeve", "All In"}
     }
     -- SEPARATIST
     listBuilder.commandCards["general grievous sinister cyborg"] = {
@@ -222,11 +222,11 @@ function buildListBuilder()
     }
     listBuilder.commandCards["count dooku darth tyranus"] = {
         varName = "countDooku",
-        cards = {"Fear, Suprise, Intimidation","Double the Fall","You Disappoint Me"}
+        cards = {"Fear, Surprise, Intimidation","Double the Fall","You Disappoint Me"}
     }
     listBuilder.commandCards["cad bane needs no introduction"] = {
         varName = "cadBane",
-        cards = {"Im Your Worst Nightmare","Im In Control","I Make The Rules Now"}
+        cards = {"I'm Your Worst Nightmare","I'm In Control","I Make The Rules Now"}
     }
     listBuilder.commandCards["maul impatient apprentice"] = {
       varName = "maul",
@@ -242,7 +242,7 @@ function buildListBuilder()
     }
     listBuilder.commandCards["clone captain rex honorable soldier"] = {
         varName = "cloneCaptainRex",
-        cards = {"Call Me Captain","Take That, Clankers!","Were Not Programmed"}
+        cards = {"Call Me Captain","Take That, Clankers!","We're Not Programmed"}
     }
     listBuilder.commandCards["anakin skywalker the chosen one"] = {
       varName = "anakinSkywalker",
@@ -282,7 +282,7 @@ function buildListBuilder()
     }
     listBuilder.commandCards.neutralSeparatist = {
         varName = "neutralSeparatist",
-        cards = {"Mechanized Incursion", "Orbital Strike", "Roger, Roger"}
+        cards = {"Mechanized Incursion", "Orbital Strike", "Roger, Roger!"}
     }
     listBuilder.commandCards.neutralRepublic = {
         varName = "neutralSeparatist",

@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "843afc",
+    "GUID": "a0f354",
     "Name": "Card",
     "Transform": {
-      "posX": 39.2231255,
-      "posY": 1.04284906,
-      "posZ": 15.1296387,
-      "rotX": -0.00001926676,
-      "rotY": 180.000015,
-      "rotZ": -0.000016528129,
-      "scaleX": 0.367304444,
+      "posX": 54.6305428,
+      "posY": 2.172646,
+      "posZ": -14.0233479,
+      "rotX": -0.00001841166,
+      "rotY": 270.015869,
+      "rotZ": -0.0000138863315,
+      "scaleX": 0.227068469,
       "scaleY": 1,
-      "scaleZ": 0.367304444
+      "scaleZ": 0.227068469
     },
-    "Nickname": "Were Not Programmed",
+    "Nickname": "C-3PO Human-Cyborg Relations",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -32,18 +32,18 @@
     "Sticky": true,
     "Tooltip": true,
     "GridProjection": false,
-    "HideWhenFaceDown": true,
+    "HideWhenFaceDown": false,
     "Hands": true,
-    "CardID": 36311,
+    "CardID": 35201,
     "SidewaysCard": false,
     "CustomDeck": {
-      "363": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767228385215131866/7138501B7BBC43CB204B196F13639A5DFCD06BCF/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
-        "NumWidth": 6,
+      "352": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/777357228032268731/DE936B7C9539716FC1D7F8B85FAB44AFE8BC7283/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/777357228032268731/DE936B7C9539716FC1D7F8B85FAB44AFE8BC7283/",
+        "NumWidth": 2,
         "NumHeight": 2,
         "BackIsHidden": true,
-        "UniqueBack": false,
+        "UniqueBack": true,
         "Type": 0
       }
     },

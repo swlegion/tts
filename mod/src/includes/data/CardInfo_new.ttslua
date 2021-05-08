@@ -27,7 +27,14 @@ function UnitClass:create(params)
   unit.strafeMove = params.strafeMove or nil
   unit.alignment = self:_getAlignment(unit)
   -- format commandType as, e.g., 'rebelCommander'
-  unit.commandType = unit.faction:lower() .. unit.rank:lower():gsub("^%l", string.upper)
+  -- Currently we have specialized order tokens (i.e. rebelSpecialForces), and
+  -- this is much easiesr than writing a generalized string replacement method
+  -- for ranks that are unlikely to change.
+  local rank = unit.rank
+  if rank == "Special Forces" then
+    rank = "specialForces"
+  end
+  unit.commandType = unit.faction:lower() .. rank:lower():gsub("^%l", string.upper)
   unit.tokenName = unit.faction:match("^%l+"):gsub("^%l", string.upper) .. " " .. unit.rank .. " Command Token"
 
   return unit
@@ -230,7 +237,7 @@ function CardInfoClass:buildCardInfo()
     { name = 'Not A Story The Jedi Would Tell', type = "flaw", ptCost = 0 },
 
      -- Counterpart
-     { name = "C-3PO Human Cyborg Relations", type = "counterpart", ptCost = 15, miniInfo = miniInfo.c3po, restrictions = {units={"r2-d2 hero of a thousand devices"}} },
+     { name = "C-3PO Human-Cyborg Relations", type = "counterpart", ptCost = 15, miniInfo = miniInfo.c3po, restrictions = {units={"r2-d2 hero of a thousand devices"}} },
      { name = "C-3PO Made To Suffer", type = "counterpart", ptCost = 15, miniInfo = miniInfo.c3po, restrictions = {units={"r2-d2 independent astromech"}} },
      { name = "Iden's ID10 Seeker Droid Droid", type = "counterpart", ptCost = 15, miniInfo = miniInfo.id10, restrictions = {units={"iden versio inferno squad leader"}} },
 
@@ -244,8 +251,8 @@ function CardInfoClass:buildCardInfo()
 
     { name = "Iden's DLT-20A Rifle", type = "armament", ptCost = 15, restrictions = {units={"iden versio inferno squad leader"}} },
     { name = "Iden's TL-50 Repeater", type = "armament", ptCost = 15, restrictions = {units={"iden versio inferno squad leader"}} },
-    { name = "E-11D", type = "armament", ptCost = 8, restrictions = {units={"imperial death troopers"}} },
-    { name = 'J-19 Bo-rifle Blaster/Staff', type = "armament", ptCost = 25, restrictions = {units={"agent kallus hunter of spectres"}} },
+    { name = "E-11D Config", type = "armament", ptCost = 8, restrictions = {units={"imperial death troopers"}} },
+    { name = 'J-19 Bo-rifle', type = "armament", ptCost = 25, restrictions = {units={"agent kallus hunter of spectres"}} },
     { name = "RT-97C Blaster Rifle", type = "armament", ptCost = 10, restrictions = {units={"dewback rider"}} },
     { name = "CR-24 Flame Rifle", type = "armament", ptCost = 15, restrictions = {units={"dewback rider"}} },
     { name = "T-21 Blaster Rifle", type = "armament", ptCost = 5, restrictions = {units={"dewback rider"}} },
@@ -317,7 +324,7 @@ function CardInfoClass:buildCardInfo()
     { name = "Impact Grenades", type="grenades", ptCost = 3 },
     { name = "Fragmentation Grenades", type="grenades", ptCost = 5 },
     { name = "Smoke Grenades", type="grenades", ptCost = 2 },
-    { name = "EMP Droid Poppers", type="grenades", ptCost = 3 },
+    { name = "EMP \"Droid Poppers\"", type="grenades", ptCost = 3 },
 
     -- Hardpoint
     { name = "AT-RT Rotary Blaster", type="hardpoint", ptCost = 20, restrictions = {units={"at-rt", "at-rt (republic)"}} },
@@ -402,7 +409,7 @@ function CardInfoClass:buildCardInfo()
     { name = "B2-HA Trooper", type="heavy weapon", ptCost = 30, miniInfo = miniInfo.b2HATrooper, restrictions = {units={"b2 super battle droids"}} },
 
     { name = "BX-Series Droid Sniper", type="heavy weapon", ptCost = 30, miniInfo = miniInfo.bxCommandoDroidSniper, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
-    { name = "BX-Series Droid Saboteur", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.bxCommandoDroidSaboteur, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
+    { name = "Dioxis Mine Saboteur", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.bxCommandoDroidSaboteur, restrictions = {units={"bx-series droid commandos", "bx-series droid commandos strike team"}} },
     
     -- Ordnance
     { name = "Armor-Piercing Shells", type = "ordnance", ptCost = 10 },
@@ -602,7 +609,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.rebelTrooperLeader, miniInfo.rebelTrooper1, miniInfo.rebelTrooper2, miniInfo.rebelTrooper3 },
       rank = "Corps",
       faction = "rebel",
-      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades", "comms", "training", "gear"},
     }),
     UnitClass:create({
       name = "Fleet Troopers",
@@ -610,7 +617,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.fleetTroopersLeader, miniInfo.fleetTroopers1, miniInfo.fleetTroopers2, miniInfo.fleetTroopers3 },
       rank = "Corps",
       faction = "rebel",
-      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades", "comms"},
     }),
     UnitClass:create({
       name = "Rebel Veterans",
@@ -618,13 +625,14 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.rebelVeteransLeader, miniInfo.rebelVeterans1, miniInfo.rebelVeterans2, miniInfo.rebelVeterans3 },
       rank = "Corps",
       faction = "rebel",
-      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades", "comms"},
     }),
     UnitClass:create({
       name = "Mark II Medium Blaster Trooper",
       points =38,
       miniInfo = { miniInfo.markIIMediumBlasterTrooper },
       rank = "Corps",
+      selectedSpeed = 1,
       type = "emplacement trooper",
       baseSize = "medium",
       faction = "rebel",
@@ -635,7 +643,7 @@ function CardInfoClass:buildCardInfo()
       name = "Rebel Commandos",
       points = 50,
       miniInfo = { miniInfo.rebelCommandosLeader, miniInfo.rebelCommandos1, miniInfo.rebelCommandos2, miniInfo.rebelCommandos3 },
-      rank = "SpecialForces",
+      rank = "Special Forces",
       faction = "rebel",
       upgradeSlots = {"heavy weapon", "training", "comms", "gear", "grenades"},
     }),
@@ -643,7 +651,7 @@ function CardInfoClass:buildCardInfo()
       name = "Rebel Commandos Strike Team",
       points = 20,
       miniInfo = { miniInfo.rebelCommandos4 },
-      rank = "SpecialForces",
+      rank = "Special Forces",
       faction = "rebel",
       upgradeSlots = {"heavy weapon", "training", "comms", "gear", "grenades"},
     }),
@@ -651,7 +659,7 @@ function CardInfoClass:buildCardInfo()
       name = "Wookiee Warriors",
       points = 69,
       miniInfo = { miniInfo.wookieeWarriorsLeader, miniInfo.wookieeWarriors1, miniInfo.wookieeWarriors2 },
-      rank = "SpecialForces",
+      rank = "Special Forces",
       type = "wookiee trooper",
       faction = "rebel",
       upgradeSlots = {"heavy weapon", "training", "training", "gear", "grenades"},
@@ -660,7 +668,7 @@ function CardInfoClass:buildCardInfo()
       name = "Rebel Pathfinders",
       points = 58,
       miniInfo = { miniInfo.rebelPathfindersLeader, miniInfo.rebelPathfinders1, miniInfo.rebelPathfinders2, miniInfo.rebelPathfinders3 },
-      rank = "SpecialForces",
+      rank = "Special Forces",
       faction = "rebel",
       upgradeSlots = {"heavy weapon", "training", "comms", "gear", "armament", "grenades"},
     }),
@@ -668,7 +676,7 @@ function CardInfoClass:buildCardInfo()
       name = "Mandalorian Resistance",
       points = 72,
       miniInfo = { miniInfo.mandalorianResistanceLeader, miniInfo.mandalorianResistance1, miniInfo.mandalorianResistance2 },
-      rank = "SpecialForces",
+      rank = "Special Forces",
       selectedSpeed = 3,
       faction = "rebel",
       upgradeSlots = {"heavy weapon", "training", "comms", "gear", "armament", "grenades"},
@@ -678,7 +686,7 @@ function CardInfoClass:buildCardInfo()
       displayName = "Clan Wren",
       points = 34,
       miniInfo = { miniInfo.clanWren1 },
-      rank = "SpecialForces",
+      rank = "Special Forces",
       selectedSpeed = 3,
       faction = "rebel",
       upgradeSlots = {"training", "comms", "gear", "armament", "grenades"},
@@ -796,7 +804,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.idenVersio },
       rank = "Commander",
       faction = "imperial",
-      upgradeSlots = {"training", "training", "gear", "armament", "counterpart"},
+      upgradeSlots = {"training", "training", "gear", "armament", "counterpart", "comms"},
     }),
     UnitClass:create({
       name = "Imperial Officer Ruthless Commander",
@@ -855,7 +863,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.shoretroopersLeader, miniInfo.shoretroopers1, miniInfo.shoretroopers2, miniInfo.shoretroopers3 },
       rank = "Corps",
       faction = "imperial",
-      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades", "comms"},
     }),
     UnitClass:create({
       name = "Snowtroopers",
@@ -864,7 +872,7 @@ function CardInfoClass:buildCardInfo()
       rank = "Corps",
       selectedSpeed = 1,
       faction = "imperial",
-      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades", "comms"},
     }),
     UnitClass:create({
       name = "Stormtroopers",
@@ -872,14 +880,14 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.stormtrooperLeader, miniInfo.stormtrooper1, miniInfo.stormtrooper2, miniInfo.stormtrooper3 },
       rank = "Corps",
       faction = "imperial",
-      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades", "comms", "training", "gear"},
     }),
     -- Imperial Specialforces
     UnitClass:create({
       name = "Imperial Death Troopers",
       points = 76,
       miniInfo = { miniInfo.imperialDeathTroopersLeader, miniInfo.imperialDeathTroopers1, miniInfo.imperialDeathTroopers2, miniInfo.imperialDeathTroopers3 },
-      rank = "Specialforces",
+      rank = "Special Forces",
       faction = "imperial",
       upgradeSlots = {"heavy weapon", "training", "comms", "gear", "armament", "grenades"},
     }),
@@ -887,7 +895,7 @@ function CardInfoClass:buildCardInfo()
       name = "Imperial Special Forces",
       points = 68,
       miniInfo = { miniInfo.isfLeader, miniInfo.isf1, miniInfo.isf2, miniInfo.isf3 },
-      rank = "Specialforces",
+      rank = "Special Forces",
       faction = "imperial",
       upgradeSlots = {"heavy weapon", "training", "training", "comms", "gear", "grenades"},
     }),
@@ -896,7 +904,7 @@ function CardInfoClass:buildCardInfo()
       points = 34,
       displayName = "Inferno Squad",
       miniInfo = { miniInfo.isfInferno },
-      rank = "Specialforces",
+      rank = "Special Forces",
       faction = "imperial",
       upgradeSlots = {"training", "training", "comms", "gear", "grenades"},
       requiredUpgrades = {"del meeko", "gideon hask"}
@@ -905,7 +913,7 @@ function CardInfoClass:buildCardInfo()
       name = "Imperial Royal Guards",
       points = 75,
       miniInfo = { miniInfo.imperialRoyalGuardsLeader, miniInfo.imperialRoyalGuards1, miniInfo.imperialRoyalGuards2 },
-      rank = "Specialforces",
+      rank = "Special Forces",
       faction = "imperial",
       upgradeSlots = {"heavy weapon", "training", "training", "gear", "grenades"},
     }),
@@ -913,7 +921,7 @@ function CardInfoClass:buildCardInfo()
       name = "Scout Troopers",
       points = 48,
       miniInfo = { miniInfo.scoutTroopersLeader, miniInfo.scoutTroopers1, miniInfo.scoutTroopers2, miniInfo.scoutTroopers3 },
-      rank = "Specialforces",
+      rank = "Special Forces",
       faction = "imperial",
       upgradeSlots = {"heavy weapon", "training", "comms", "gear", "grenades"},
     }),
@@ -921,7 +929,7 @@ function CardInfoClass:buildCardInfo()
       name = "Scout Troopers Strike Team",
       points = 20,
       miniInfo = { miniInfo.scoutTroopers1 },
-      rank = "Specialforces",
+      rank = "Special Forces",
       faction = "imperial",
       upgradeSlots = {"heavy weapon", "training", "comms", "gear", "grenades"},
     }),
@@ -1050,7 +1058,7 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.phaseICloneTrooperLeader, miniInfo.phaseICloneTrooper1, miniInfo.phaseICloneTrooper2, miniInfo.phaseICloneTrooper3 },
       rank = "Corps",
       faction = "republic",
-      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "gear", "grenades", "comms", "training", "gear"},
     }),
     UnitClass:create({
       name = "Phase II Clone Troopers",
@@ -1058,14 +1066,14 @@ function CardInfoClass:buildCardInfo()
       miniInfo = { miniInfo.phaseIICloneTrooperLeader, miniInfo.phaseIICloneTrooper1, miniInfo.phaseIICloneTrooper2, miniInfo.phaseIICloneTrooper3 },
       rank = "Corps",
       faction = "republic",
-      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades"},
+      upgradeSlots = {"heavy weapon", "personnel", "training", "gear", "grenades", "comms"},
     }),
     -- Republic Specialforces
     UnitClass:create({
       name = "ARC Troopers",
       points = 78,
       miniInfo = { miniInfo.arcTrooperLeader, miniInfo.arcTrooper1, miniInfo.arcTrooper2, miniInfo.arcTrooper3 },
-      rank = "Specialforces",
+      rank = "Special Forces",
       faction = "republic",
       upgradeSlots = {"heavy weapon", "training", "comms", "gear", "gear", "grenades"},
     }),
@@ -1073,7 +1081,7 @@ function CardInfoClass:buildCardInfo()
       name = "ARC Troopers Strike Team",
       points = 27,
       miniInfo = { miniInfo.arcTrooper1 },
-      rank = "Specialforces",
+      rank = "Special Forces",
       faction = "republic",
       upgradeSlots = {"heavy weapon", "training", "comms", "gear", "gear", "grenades"},
     }),
@@ -1103,10 +1111,12 @@ function CardInfoClass:buildCardInfo()
     -- Republic Heavy
     UnitClass:create({
       name = "TX-130 Saber-class Fighter Tank",
+      displayName = "TX-130 Saber Tank",
       points = 170,
       miniInfo = { miniInfo.saberTank },
       rank = "Heavy",
       type = "repulsor vehicle",
+      strafeMove = true,
       baseSize = "epic",
       faction = "republic",
       upgradeSlots = {"pilot", "hardpoint", "ordnance", "comms"},
@@ -1185,7 +1195,7 @@ function CardInfoClass:buildCardInfo()
       name = "BX-series Droid Commandos",
       points = 68,
       miniInfo = { miniInfo.bxCommandoDroidLeader, miniInfo.bxCommandoDroid1, miniInfo.bxCommandoDroid2, miniInfo.bxCommandoDroid3 },
-      rank = "Specialforces",
+      rank = "Special Forces",
       type = "droid trooper",
       faction = "separatist",
       upgradeSlots = {"heavy weapon", "training", "comms", "armament", "grenades"},
@@ -1195,7 +1205,7 @@ function CardInfoClass:buildCardInfo()
       displayName = "Bx Commandos Strike Team",
       points = 20,
       miniInfo = { miniInfo.bxCommandoDroid1 },
-      rank = "Specialforces",
+      rank = "Special Forces",
       type = "droid trooper",
       faction = "separatist",
       upgradeSlots = {"heavy weapon", "training", "comms", "armament", "grenades"},
@@ -1204,7 +1214,7 @@ function CardInfoClass:buildCardInfo()
       name = "DRK-1 Sith Probe Droids",
       points = 35,
       miniInfo = { miniInfo.drk1SithProbeDroidLeader, miniInfo.drk1SithProbeDroid1, miniInfo.drk1SithProbeDroid2 },
-      rank = "Specialforces",
+      rank = "Special Forces",
       type = "droid trooper",
       faction = "separatist",
       upgradeSlots = {"comms"},
@@ -1235,11 +1245,13 @@ function CardInfoClass:buildCardInfo()
     -- Separatist Heavy
     UnitClass:create({
       name = "AAT Trade Federation Battle Tank",
+      displayName = "AAT Battle Tank",
       points = 170,
       miniInfo = { miniInfo.aatTank },
       rank = "Heavy",
       type = "repulsor vehicle",
       selectedSpeed = 1,
+      strafeMove = true,
       baseSize = "epic",
       faction = "separatist",
       upgradeSlots = {"pilot", "ordnance", "ordnance", "comms"},

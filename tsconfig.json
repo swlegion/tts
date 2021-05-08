@@ -12,7 +12,8 @@
     // Require checked-in TypeScript code to pass a higher bar/be consistent.
     "strict": true,
 
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "lib": ["ES2020"]
   },
 
   "exclude": ["node_modules"]

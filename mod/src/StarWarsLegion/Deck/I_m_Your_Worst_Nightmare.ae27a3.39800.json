@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "eb2f97",
+    "GUID": "ae27a3",
     "Name": "CardCustom",
     "Transform": {
-      "posX": 68.50089,
-      "posY": 2.10036421,
-      "posZ": -3.139282,
-      "rotX": 4.330074,
-      "rotY": 179.966492,
-      "rotZ": -0.00300924666,
-      "scaleX": 0.181600809,
+      "posX": 60.83702,
+      "posY": 1.8164705,
+      "posZ": -3.954976,
+      "rotX": -0.00120530743,
+      "rotY": 179.999954,
+      "rotZ": 1.99320781,
+      "scaleX": 0.367304444,
       "scaleY": 1,
-      "scaleZ": 0.181600809
+      "scaleZ": 0.367304444
     },
-    "Nickname": "J-19 Bo-rifle Blaster/Staff",
+    "Nickname": "I'm Your Worst Nightmare",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -34,12 +34,12 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 43200,
+    "CardID": 39800,
     "SidewaysCard": false,
     "CustomDeck": {
-      "432": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1666859827674346826/F4637B4BD9E8FCC8BA2BF3D8FC06C29752B8EAE3/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1666859827674347328/332C9FADBA1A8E05F8D2B6C8E1AB4472372F2019/",
+      "398": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1055478574360951050/632FD21684E2F6428A3BF3979A09D248E7753BA8/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1002556126521104152/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
         "NumWidth": 1,
         "NumHeight": 1,
         "BackIsHidden": true,

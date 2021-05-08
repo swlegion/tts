@@ -7,8 +7,10 @@
         ".vscode/*.json"
     ],
     "words": [
+        "assetbundle",
         "Donge",
         "lucasfilm",
-        "Mbweha"
+        "Mbweha",
+        "ttslua"
     ]
 }

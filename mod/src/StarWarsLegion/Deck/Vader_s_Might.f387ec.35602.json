@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "9c1944",
+    "GUID": "f387ec",
     "Name": "Card",
     "Transform": {
-      "posX": 67.4618454,
-      "posY": 2.04284883,
-      "posZ": -14.6654663,
-      "rotX": -0.00000574276874,
-      "rotY": 179.968765,
-      "rotZ": 0.0000234873,
+      "posX": 47.431427,
+      "posY": 1.04284883,
+      "posZ": -13.5992966,
+      "rotX": 0.0000139778695,
+      "rotY": 179.968719,
+      "rotZ": 0.0000170512176,
       "scaleX": 0.367304444,
       "scaleY": 1,
       "scaleZ": 0.367304444
     },
-    "Nickname": "Fear, Suprise, Intimidation",
+    "Nickname": "Vader's Might",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -34,13 +34,13 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 36306,
+    "CardID": 35602,
     "SidewaysCard": false,
     "CustomDeck": {
-      "363": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767228385215131866/7138501B7BBC43CB204B196F13639A5DFCD06BCF/",
+      "356": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/777357228032283328/7A9CCE68A0303FEBBABB1312DF2A9E7A75F2DB6C/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
-        "NumWidth": 6,
+        "NumWidth": 3,
         "NumHeight": 2,
         "BackIsHidden": true,
         "UniqueBack": false,

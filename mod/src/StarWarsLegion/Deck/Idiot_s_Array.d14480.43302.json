@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "ae27a3",
-    "Name": "CardCustom",
+    "GUID": "d14480",
+    "Name": "Card",
     "Transform": {
-      "posX": 60.83702,
-      "posY": 1.8164705,
-      "posZ": -3.954976,
-      "rotX": -0.00120530743,
-      "rotY": 179.999954,
-      "rotZ": 1.99320781,
+      "posX": 53.02603,
+      "posY": 4.22809172,
+      "posZ": -18.4223366,
+      "rotX": -0.00000110195469,
+      "rotY": 180.000015,
+      "rotZ": 0.00000966385,
       "scaleX": 0.367304444,
       "scaleY": 1,
       "scaleZ": 0.367304444
     },
-    "Nickname": "Im Your Worst Nightmare",
+    "Nickname": "Idiot's Array",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -34,14 +34,14 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 39800,
+    "CardID": 43302,
     "SidewaysCard": false,
     "CustomDeck": {
-      "398": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1055478574360951050/632FD21684E2F6428A3BF3979A09D248E7753BA8/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1002556126521104152/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
-        "NumWidth": 1,
-        "NumHeight": 1,
+      "433": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1776078094156403922/BE6417434C2C981C6356C97F30A65DB2ED10BB4C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+        "NumWidth": 3,
+        "NumHeight": 2,
         "BackIsHidden": true,
         "UniqueBack": false,
         "Type": 0
