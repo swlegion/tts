@@ -632,9 +632,7 @@ function spawnUnit(unit, n, faction, totalUnits)
       local doZOffset = 1.0
 
       if ( (n > 10) and ( upgradeCount > 1) ) then
-        print("Offsetting Unit")
         offsetUnitSpawnCount = offsetUnitSpawnCount + 1
-        print(offsetUnitSpawnCount)
         local spawnIndex = totalUnits + offsetUnitSpawnCount
         local finalTempPos = listBuilder[colorSide.."TemplatePos"][spawnIndex] 
         doZOffset = 0.0
@@ -688,6 +686,10 @@ function spawnUnit(unit, n, faction, totalUnits)
 
     initializeMini(spawnMiniTable)
   end
+
+  -- attempt to add ID to miniObjs for tinting
+  -- local insertIdInfo = {obj = idToken, name = "idToken"}
+  -- table.insert(spawnMiniTable.miniObjs, insertIdInfo)
 
   -- spawn command token
   local unitCard = cardInfo.unitCards[unitKey]
