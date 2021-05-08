@@ -436,14 +436,8 @@ function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber, s
   upgradeCard.setPosition(finalPos)
   upgradeCard.setRotation({0,pTemplateRot.y+180,0})
   upgradeCard.setLock(false)
-  upgradeCard.setRotation({0,pTemplateRot.y+180,0})
 
-  if upgradeNumber ~= nil then
-    local rotUpgrade = pTemplateRot
-    local posUpgrade = pTemplatePos
-    local finalPos = translatePos(posUpgrade, rotUpgrade, cardPos.c , cardPos.q+90)
-    upgradeCard.setPosition(finalPos)
-  else
+  if upgradeNumber == nil then
     local loadoutBag = pTemplatePos
     loadoutBag.putObject(upgradeCard)
   end
@@ -517,6 +511,8 @@ function spawnArmy(loadListData, skipDiskVersionCheck)
       drawBattlefieldCard(loadListData, "deployment")
       drawBattlefieldCard(loadListData, "conditions")
       destroyBattlefieldCards()
+
+      offsetUnitSpawnCount = 0
 
       -- spawn units
       for n, unit in pairs(loadListData.units) do
@@ -617,8 +613,7 @@ function spawnUnit(unit, n, faction, totalUnits)
     upgradeCount = upgradeCount + 1
   end
 
-  local offsetUnitSpawnCount = 0
-
+  
   -- SPAWN MINIS
   -- mini table
   if unitObject ~= nil then
