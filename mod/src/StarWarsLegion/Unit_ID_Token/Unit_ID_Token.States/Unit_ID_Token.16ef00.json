@@ -1,7 +1,7 @@
 {
   "Object": {
     "GUID": "16ef00",
-    "Name": "Custom_Assetbundle",
+    "Name": "Custom_Model",
     "Transform": {
       "posX": 47.801693,
       "posY": 0.9454538,
@@ -14,7 +14,7 @@
       "scaleZ": 0.7750004
     },
     "Nickname": "Unit ID Token",
-    "Description": "Right Click > States to access different Unit ID",
+    "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 1,
@@ -34,12 +34,15 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "CustomAssetbundle": {
-      "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1803106576260862383/3682F0805A27B73240DD439C9904C9326C95537A/",
-      "AssetbundleSecondaryURL": "",
-      "MaterialIndex": 0,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441910/ED14AA37D66E5E75EA5D6790A50546B1FC105DAC/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786360308354564536/E2C1742340D04EA247D27375B59ECE785001C859/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
       "TypeIndex": 0,
-      "LoopingEffectIndex": 0
+      "CastShadows": true
     },
     "LuaScript": "",
     "LuaScriptState": "",
