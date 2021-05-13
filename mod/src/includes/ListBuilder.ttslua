@@ -620,24 +620,24 @@ function spawnUnit(unit, n, faction, totalUnits)
     local minisToSpawn, leaderIndex = unitObject:getMinisTable()
     spawnMiniTable.leaderIndex = leaderIndex
 
+    local doZOffset = 1.0
+    xStartPosition = tempPos.x
+
+    if ( (n > 10) and ( upgradeCount > 1) ) then
+      offsetUnitSpawnCount = offsetUnitSpawnCount + 1
+      local spawnIndex = totalUnits + offsetUnitSpawnCount
+      finalTempPos = listBuilder[colorSide.."TemplatePos"][spawnIndex] 
+      doZOffset = 0.0
+      xStartPosition = finalTempPos.x
+    end
+
     for i, miniData in ipairs(minisToSpawn) do
       listBuilder = Global.getTable("listBuilder")
 
       -- determine spawn position
       
       -- check if we need to do horizontal offset for back row minis
-      local xStartPosition = tempPos.x
       local templateFullWidth = templateHalfWidth * 2.0
-
-      local doZOffset = 1.0
-
-      if ( (n > 10) and ( upgradeCount > 1) ) then
-        offsetUnitSpawnCount = offsetUnitSpawnCount + 1
-        local spawnIndex = totalUnits + offsetUnitSpawnCount
-        local finalTempPos = listBuilder[colorSide.."TemplatePos"][spawnIndex] 
-        doZOffset = 0.0
-        xStartPosition = finalTempPos.x
-      end
 
       local initialZOffset = (cardHeight + padding)
 
@@ -661,7 +661,7 @@ function spawnUnit(unit, n, faction, totalUnits)
 
       if (i > basesPerRow) then
         initialZOffset = initialZOffset + ((paddedBase - padding) * zOffset)
-        index = math.abs(math.floor(i/basesPerRow))
+        index = i - basesPerRow
       end
 
       local xDir = xOffset * -1
