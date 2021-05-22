@@ -457,9 +457,9 @@ function CardInfoClass:buildCardInfo()
     { name = "Viper Recon Droid", type="personnel", ptCost = 8, miniInfo = miniInfo.viperReconDroid, restrictions = {units={"b1 battle droids", "b2 super battle droids"}} },
     
     -- Pilot
-    { name = "Wedge Antilles", type = "pilot", ptCost = 1, restrictions = {units={"t-47 airspeeder", "x-34 landspeeder"}} },
-    { name = "Ryder Azadi", type = "pilot", ptCost = 5, restrictions = {units={"t-47 airspeeder", "x-34 landspeeder"}} },
-    { name = "Outer Rim Speeder Jockey", type = "pilot", ptCost = 10, restrictions = {units={"t-47 airspeeder", "x-34 landspeeder"}} },
+    { name = "Wedge Antilles", type = "pilot", ptCost = 1, restrictions = {units={"t-47 airspeeder", "x-34 landspeeder", "a-a5 speeder truck"}} },
+    { name = "Ryder Azadi", type = "pilot", ptCost = 5, restrictions = {units={"t-47 airspeeder", "x-34 landspeeder", "a-a5 speeder truck"}} },
+    { name = "Outer Rim Speeder Jockey", type = "pilot", ptCost = 10, restrictions = {units={"t-47 airspeeder", "x-34 landspeeder", "a-a5 speeder truck"}} },
 
     { name = "General Weiss", type = "pilot", ptCost = 1, restrictions = {units={"at-st", "tx-225 gavw occupier combat assault tank"}} },
     { name = "First Sergeant Arbmab", type = "pilot", ptCost = 5, restrictions = {units={"at-st", "tx-225 gavw occupier combat assault tank"}} },
@@ -744,6 +744,17 @@ function CardInfoClass:buildCardInfo()
       rank = "Heavy",
       type = "repulsor vehicle",
       baseSize = "huge",
+      faction = "rebel",
+      upgradeSlots = {"pilot", "crew", "crew", "hardpoint", "comms"}
+    }),
+    UnitClass:create({
+      name = "A-A5 Speeder Truck",
+      points = 75,
+      miniInfo = { miniInfo.aa5SpeederTruck },
+      rank = "Heavy",
+      type = "repulsor vehicle",
+      selectedSpeed = 1,
+      baseSize = "long",
       faction = "rebel",
       upgradeSlots = {"pilot", "crew", "crew", "hardpoint", "comms"}
     }),

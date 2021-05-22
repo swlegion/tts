@@ -22,6 +22,7 @@
       "b": 1
     },
     "LayoutGroupSortIndex": 0,
+    "Value": 0,
     "Locked": true,
     "Grid": true,
     "Snap": true,
@@ -113,7 +114,8 @@
       41400,
       41402,
       41900,
-      41800
+      41800,
+      43602
     ],
     "CustomDeck": {
       "285": {
@@ -277,6 +279,15 @@
         "BackIsHidden": true,
         "UniqueBack": false,
         "Type": 0
+      },
+      "436": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1794098649056409229/12CB10CA44115F41A1B731EC82D1B54994BFBBB5/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1794098649056409229/12CB10CA44115F41A1B731EC82D1B54994BFBBB5/",
+        "NumWidth": 2,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
       }
     },
     "LuaScript": "",
@@ -363,6 +374,7 @@
     "Agent_Kallus_Hunter_of_Spectres.c1c77c.41400.json",
     "Lando_Calrissian_Smooth_Operator.eb9e33.41402.json",
     "Clone_Commander_Trained_For_Leadership.2c5222.41900.json",
-    "T-Series_Tactical_Droid_Programmed_for_Strategy.3a68ef.41800.json"
+    "T-Series_Tactical_Droid_Programmed_for_Strategy.3a68ef.41800.json",
+    "A-A5_Speeder_Truck.fece38.43602.json"
   ]
 }
