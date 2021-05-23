@@ -463,6 +463,11 @@ function buildMiniInfo()
       diffuse = "http://cloud-3.steamusercontent.com/ugc/949599512594267308/582E5F56A65FE6CD486BCBABB510CAE4B4DF6C8C/",
       name = "X-34 Landspeeder"
   }
+  miniInfo.aa5SpeederTruck = {
+    type = "assetbundle",
+    assetbundle = "http://cloud-3.steamusercontent.com/ugc/1803107668954610246/3C643CD6824D7380C1DE15EADAA53243607E8019/",
+    name = "A-A5 Speeder Truck"
+  }
 
   miniInfo.darthVader = {
       mesh = "http://cloud-3.steamusercontent.com/ugc/785234540541323740/BF58AB674CB7D638333F1B04A7C9A5B9D7DBF0E4/",
