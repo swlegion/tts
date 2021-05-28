@@ -115,7 +115,9 @@
       41402,
       41900,
       41800,
-      43602
+      43602,
+      43600,
+      43601
     ],
     "CustomDeck": {
       "285": {
@@ -375,6 +377,8 @@
     "Lando_Calrissian_Smooth_Operator.eb9e33.41402.json",
     "Clone_Commander_Trained_For_Leadership.2c5222.41900.json",
     "T-Series_Tactical_Droid_Programmed_for_Strategy.3a68ef.41800.json",
-    "A-A5_Speeder_Truck.fece38.43602.json"
+    "A-A5_Speeder_Truck.fece38.43602.json",
+    "LAAT_le_Patrol_Transport_republic.fede39.43600.json",
+    "LAAT_le_Patrol_Transport_imperial.feje99.43600.json"
   ]
 }

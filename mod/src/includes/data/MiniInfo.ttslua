@@ -1433,5 +1433,11 @@ function buildMiniInfo()
       diffuse = "http://cloud-3.steamusercontent.com/ugc/785236717873392638/CE1C3404249840D5F7F9499D1427E83530ACEB19/",
       name = "TX-130 Saber-Class Fighter Tank"
   }
+  miniInfo.laatLePatrolTransport = {
+    type = "assetbundle",
+    assetbundle = "http://cloud-3.steamusercontent.com/ugc/1747939379132611640/1EEBEB993635A56525283FAFA0D62D347FB3121C/",
+    collider = _BASE_COLLIDERS.laat,
+    name = "LAAT/le Patrol Transport"
+}
   return miniInfo
 end

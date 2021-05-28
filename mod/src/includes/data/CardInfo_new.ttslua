@@ -1001,6 +1001,18 @@ function CardInfoClass:buildCardInfo()
       faction = "imperial",
       upgradeSlots = {"pilot", "hardpoint", "comms"},
     }),
+    UnitClass:create({
+      name = "LAAT/le Patrol Transport",
+      displayName = "LAAT/le",
+      points = 120,
+      miniInfo = { miniInfo.laatLePatrolTransport },
+      rank = "Heavy",
+      type = "repulsor vehicle",
+      strafeMove = true,
+      baseSize = "laat",
+      faction = "imperial",
+      upgradeSlots = {"pilot", "ordnance", "comms"},
+    }),
 
     -- REPUBLIC --
     -- Republic Commander
@@ -1131,6 +1143,18 @@ function CardInfoClass:buildCardInfo()
       baseSize = "epic",
       faction = "republic",
       upgradeSlots = {"pilot", "hardpoint", "ordnance", "comms"},
+    }),
+    UnitClass:create({
+      name = "LAAT/le Patrol Transport (republic)",
+      displayName = "LAAT/le",
+      points = 120,
+      miniInfo = { miniInfo.laatLePatrolTransport },
+      rank = "Heavy",
+      type = "repulsor vehicle",
+      strafeMove = true,
+      baseSize = "laat",
+      faction = "republic",
+      upgradeSlots = {"pilot", "ordnance", "comms"},
     }),
     
     -- SEPARATIST --
@@ -1339,11 +1363,11 @@ end
 
 function CardInfoClass:getUnitByName(unitName, faction)
   local foundUnit = nil
-  foundUnit = self.unitCards[unitName:lower()]
   -- some units require disambiguation by faction name
+  local key = self:_formatNameWithFaction(unitName, faction)
+  foundUnit = self.unitCards[key]
   if foundUnit == nil then
-    local key = self:_formatNameWithFaction(unitName, faction)
-    foundUnit = self.unitCards[key]
+    foundUnit = self.unitCards[unitName:lower()]
   end
 
   return foundUnit
