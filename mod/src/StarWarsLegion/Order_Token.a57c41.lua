@@ -488,7 +488,7 @@ function moveUnit()
     })
     templateA.setCustomObject({
         type = 0,
-        mesh = templateInfo.moveTemplate[unitData.selectedSpeed].mesh[unitData.baseSize],
+        mesh = templateInfo.moveTemplate[unitData.selectedSpeed].mesh,
         diffuse = templateInfo.moveTemplate[unitData.selectedSpeed].diffuse,
         collider = templateInfo.moveTemplate[unitData.selectedSpeed].longCollider,
         material = 1,
@@ -517,7 +517,7 @@ function moveUnit()
     })
     templateB.setCustomObject({
         type = 0,
-        mesh = templateInfo.moveTemplate[unitData.selectedSpeed].mesh[unitData.baseSize],
+        mesh = templateInfo.moveTemplate[unitData.selectedSpeed].mesh,
         diffuse = templateInfo.moveTemplate[unitData.selectedSpeed].diffuse,
         collider = templateInfo.moveTemplate[unitData.selectedSpeed].shortCollider,
         material = 1,
@@ -1193,6 +1193,7 @@ function spawnRangeRuler()
     baseAddition.medium = 1.9685 / 2
     baseAddition.large = 2.75591 / 2
     baseAddition.huge = 3.93701 / 2
+    baseAddition.laat = 4.72440 / 2
     baseAddition.long = 3.525856871366164 / 2
     baseAddition.epic = 5.90551 / 2
 

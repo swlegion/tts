@@ -4,6 +4,7 @@ function buildMiniInfo()
     medium = { "http://cloud-3.steamusercontent.com/ugc/1009315641457670521/DAD6653F422046BD6BC4360FE18C96927D5F4C44/", 1.9685},
     large = { "http://cloud-3.steamusercontent.com/ugc/1009315641457670155/6727179496A9F397E953AAA3268C6CC6444598DF/", 2.75591},
     huge = { "http://cloud-3.steamusercontent.com/ugc/1009315641457669798/3B337900892D839BDBC3EBF2A5CC9EC87DDBFED1/", 3.93701},
+    laat = { "", 4.72440 },
     epic = { "http://cloud-3.steamusercontent.com/ugc/1009315641457669292/A7F6F75580BF1DFAA23E621875A761FB8B9EF2BC/", 5.90551},
     long = { "http://cloud-3.steamusercontent.com/ugc/963116666702885485/70F17B3327115A379D06F81C6F47F76470D7B826/", 6.88976}
   }
@@ -466,6 +467,7 @@ function buildMiniInfo()
   miniInfo.aa5SpeederTruck = {
     type = "assetbundle",
     assetbundle = "http://cloud-3.steamusercontent.com/ugc/1803107668954610246/3C643CD6824D7380C1DE15EADAA53243607E8019/",
+    collider = _BASE_COLLIDERS.long,
     name = "A-A5 Speeder Truck"
   }
 
@@ -1431,5 +1433,11 @@ function buildMiniInfo()
       diffuse = "http://cloud-3.steamusercontent.com/ugc/785236717873392638/CE1C3404249840D5F7F9499D1427E83530ACEB19/",
       name = "TX-130 Saber-Class Fighter Tank"
   }
+  miniInfo.laatLePatrolTransport = {
+    type = "assetbundle",
+    assetbundle = "http://cloud-3.steamusercontent.com/ugc/1747939379132611640/1EEBEB993635A56525283FAFA0D62D347FB3121C/",
+    collider = _BASE_COLLIDERS.laat,
+    name = "LAAT/le Patrol Transport"
+}
   return miniInfo
 end
