@@ -22,6 +22,7 @@
       "b": 0.713235259
     },
     "LayoutGroupSortIndex": 0,
+    "Value": 0,
     "Locked": true,
     "Grid": true,
     "Snap": true,
@@ -229,7 +230,23 @@
       41607,
       41606,
       43200,
-      41605
+      41605,
+      43800,
+      43714,
+      43709,
+      43713,
+      43712,
+      43711,
+      43710,
+      43708,
+      43707,
+      43706,
+      43705,
+      43701,
+      43704,
+      43700,
+      43703,
+      43702
     ],
     "CustomDeck": {
       "269": {
@@ -555,6 +572,24 @@
         "BackIsHidden": true,
         "UniqueBack": false,
         "Type": 0
+      },
+      "437": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1794098649056384338/084F917E07FCC32DC7E19B307165DEEB11C299F5/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1794098649056384338/084F917E07FCC32DC7E19B307165DEEB11C299F5/",
+        "NumWidth": 7,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      },
+      "438": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1769331484190021601/851B1A5112CE68A92F8315127F2269A5296ED66F/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1769331484190021601/851B1A5112CE68A92F8315127F2269A5296ED66F/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
       }
     },
     "LuaScript": "",
@@ -757,6 +792,22 @@
     "Viper_Recon_Droid.05a957.41607.json",
     "PK-Series_Worker_Droid.2326ae.41606.json",
     "J-19_Bo-rifle.eb2f97.43200.json",
-    "EV-Series_Medical_Droid.cb47c5.41605.json"
+    "EV-Series_Medical_Droid.cb47c5.41605.json",
+    "Onboard_Comms_Channel.37bc40.43800.json",
+    "Clone_Commander_Fox.f9f7c2.43714.json",
+    "Hound_&_Grizzer.04f3af.43709.json",
+    "Governor_Pryce.d916ca.43713.json",
+    "Heavy_Laser_Retrofit.5ebde9.43712.json",
+    "AG-2G_Quad_Laser.7f021d.43711.json",
+    "Clone_Shock_Trooper_Pilot.51037c.43710.json",
+    "Hotshot_Pilot.e3d077.43708.json",
+    "Reckless_Driver.b71904.43707.json",
+    "Refurbished_Gonk_Droid.df9a11.43706.json",
+    "Unstable_R5_Astromech.d62278.43705.json",
+    "Shriv_Suurgav.80c276.43701.json",
+    "Backworld_Medic.5968db.43704.json",
+    "Unorthodox_Tactician.af155c.43700.json",
+    "Baron_Rudor.784c09.43703.json",
+    "Imperial_TIE_Pilot.0a0e2a.43702.json"
   ]
 }
