@@ -466,6 +466,7 @@ function buildMiniInfo()
   miniInfo.aa5SpeederTruck = {
     type = "assetbundle",
     assetbundle = "http://cloud-3.steamusercontent.com/ugc/1803107668954610246/3C643CD6824D7380C1DE15EADAA53243607E8019/",
+    collider = _BASE_COLLIDERS.long,
     name = "A-A5 Speeder Truck"
   }
 
