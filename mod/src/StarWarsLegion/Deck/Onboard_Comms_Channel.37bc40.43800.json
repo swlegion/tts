@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "37bc40",
+    "Name": "Card",
+    "Transform": {
+      "posX": 33.0382652,
+      "posY": 1.02075016,
+      "posZ": 1.69074917,
+      "rotX": 0.00001985568,
+      "rotY": 269.985443,
+      "rotZ": 0.00000105641311,
+      "scaleX": 0.181600809,
+      "scaleY": 1,
+      "scaleZ": 0.181600809
+    },
+    "Nickname": "Onboard Comms Channel",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 43800,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "438": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1769331484190021601/851B1A5112CE68A92F8315127F2269A5296ED66F/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1769331484190021601/851B1A5112CE68A92F8315127F2269A5296ED66F/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
