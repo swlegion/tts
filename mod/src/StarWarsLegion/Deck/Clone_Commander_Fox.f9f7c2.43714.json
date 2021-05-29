@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "feje99",
+    "GUID": "f9f7c2",
     "Name": "Card",
     "Transform": {
-      "posX": 34.77898,
-      "posY": 2.02360559,
-      "posZ": -25.5089989,
-      "rotX": -0.00000448316769,
-      "rotY": 270.00293,
-      "rotZ": 180,
-      "scaleX": 0.227068469,
+      "posX": 47.54788,
+      "posY": 1.12836933,
+      "posZ": -15.108572,
+      "rotX": 0.000186070742,
+      "rotY": 179.965,
+      "rotZ": 180.000519,
+      "scaleX": 1,
       "scaleY": 1,
-      "scaleZ": 0.227068469
+      "scaleZ": 1
     },
-    "Nickname": "LAAT/le Patrol Transport (imperial)",
+    "Nickname": "Clone Commander Fox",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -22,6 +22,7 @@
       "b": 0.713235259
     },
     "LayoutGroupSortIndex": 0,
+    "Value": 0,
     "Locked": false,
     "Grid": true,
     "Snap": true,
@@ -34,21 +35,20 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": true,
-    "CardID": 43601,
+    "CardID": 43714,
     "SidewaysCard": false,
     "CustomDeck": {
-      "436": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1794098649056409229/12CB10CA44115F41A1B731EC82D1B54994BFBBB5/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1794098649056409229/12CB10CA44115F41A1B731EC82D1B54994BFBBB5/",
-        "NumWidth": 2,
-        "NumHeight": 2,
+      "437": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1794098649056384338/084F917E07FCC32DC7E19B307165DEEB11C299F5/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1794098649056384338/084F917E07FCC32DC7E19B307165DEEB11C299F5/",
+        "NumWidth": 7,
+        "NumHeight": 3,
         "BackIsHidden": false,
         "UniqueBack": true,
         "Type": 0
       }
     },
     "LuaScript": "",
-    "LuaScriptState": "",
     "XmlUI": ""
   },
   "StatesPaths": {}

@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "5968db",
+    "Name": "Card",
+    "Transform": {
+      "posX": 47.0280647,
+      "posY": 1.14132822,
+      "posZ": -15.1947374,
+      "rotX": -0.000851901539,
+      "rotY": 180.007858,
+      "rotZ": 186.614075,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Backworld Medic",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 43704,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "437": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1794098649056384338/084F917E07FCC32DC7E19B307165DEEB11C299F5/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1794098649056384338/084F917E07FCC32DC7E19B307165DEEB11C299F5/",
+        "NumWidth": 7,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

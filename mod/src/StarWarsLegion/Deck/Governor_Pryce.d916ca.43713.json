@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "d916ca",
+    "Name": "Card",
+    "Transform": {
+      "posX": 47.3219872,
+      "posY": 1.10908771,
+      "posZ": -15.4414139,
+      "rotX": -0.00006930515,
+      "rotY": 180.000015,
+      "rotZ": 180.000183,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Governor Pryce",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 43713,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "437": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1794098649056384338/084F917E07FCC32DC7E19B307165DEEB11C299F5/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1794098649056384338/084F917E07FCC32DC7E19B307165DEEB11C299F5/",
+        "NumWidth": 7,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

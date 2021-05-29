@@ -1,25 +1,25 @@
 {
   "Object": {
-    "GUID": "914cac",
-    "Name": "Card",
+    "GUID": "37bc40",
+    "Name": "CardCustom",
     "Transform": {
-      "posX": 45.71303,
-      "posY": 1.02075016,
-      "posZ": 7.86561871,
-      "rotX": -0.00000459893954,
-      "rotY": 179.968719,
-      "rotZ": 0.0000222236959,
-      "scaleX": 0.367304444,
+      "posX": 47.333744,
+      "posY": 1.137992,
+      "posZ": -15.0211773,
+      "rotX": 0.000159026982,
+      "rotY": 179.977051,
+      "rotZ": 180.000046,
+      "scaleX": 1,
       "scaleY": 1,
-      "scaleZ": 0.367304444
+      "scaleZ": 1
     },
-    "Nickname": "Reckless Diversion",
+    "Nickname": "Onboard Comms Channel",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 1,
-      "g": 1,
-      "b": 1
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -35,14 +35,14 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 28423,
+    "CardID": 43800,
     "SidewaysCard": false,
     "CustomDeck": {
-      "284": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/785232635608488823/00B5DFCD489D65A28E0AA0E93FD160AFD3C096A0/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
-        "NumWidth": 10,
-        "NumHeight": 5,
+      "438": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1769331484190021601/851B1A5112CE68A92F8315127F2269A5296ED66F/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1769331484190021601/851B1A5112CE68A92F8315127F2269A5296ED66F/",
+        "NumWidth": 1,
+        "NumHeight": 1,
         "BackIsHidden": true,
         "UniqueBack": false,
         "Type": 0

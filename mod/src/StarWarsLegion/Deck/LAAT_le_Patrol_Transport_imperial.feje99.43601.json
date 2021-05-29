@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "feje99",
+    "Name": "Card",
+    "Transform": {
+      "posX": 34.77898,
+      "posY": 2.02360559,
+      "posZ": -25.5089989,
+      "rotX": -0.00000448316769,
+      "rotY": 270.00293,
+      "rotZ": 180,
+      "scaleX": 0.227068469,
+      "scaleY": 1,
+      "scaleZ": 0.227068469
+    },
+    "Nickname": "LAAT/le Patrol Transport (imperial)",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 43601,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "436": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1794098649056409229/12CB10CA44115F41A1B731EC82D1B54994BFBBB5/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1794098649056409229/12CB10CA44115F41A1B731EC82D1B54994BFBBB5/",
+        "NumWidth": 2,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
