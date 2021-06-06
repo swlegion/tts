@@ -43,7 +43,13 @@
 
         <b>CHANGELOG</b>
 
-        - Added a new welcome dialog and UI alternative to the janky notecards.
+        - NEW: Added a new welcome dialog and UI alternative to the janky notecards.
+        - NEW: Added A-A5 Speeder Truck, LAAT, and associated upgrades.
+        - FIX: Armies no longer spawn off the table in some scenarios.
+        - FIX: Multi-faction units now spawn the correct version.
+        - FIX: Upgrades with double quotes no longer crash the list builder(s).
+        - FIX: Anakin can now equip dark-side upgrades.
+        - FIX: Imperial Saobteur's are no longer the leader in full-size squads.
       </Text>
     </VerticalLayout>
     <VerticalLayout id="welcomeTab2" active="false">
