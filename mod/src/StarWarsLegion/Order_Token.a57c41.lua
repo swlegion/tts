@@ -8,6 +8,7 @@ function onLoad()
 
     -- LOAD VALUES
     battlefieldTint = Global.getTable("battlefieldTint")
+    baseAddition = Global.getTable("baseAddition")
     existingTint = battlefieldTint
     battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
     cardInfo = CardInfoClass:buildCardInfo()
@@ -1187,15 +1188,6 @@ function spawnRangeRuler()
     baseRot = selectedUnitObj.getRotation()
 
     rangeRuler = {}
-
-    baseAddition = {}
-    baseAddition.small = 1.06299 / 2
-    baseAddition.medium = 1.9685 / 2
-    baseAddition.large = 2.75591 / 2
-    baseAddition.huge = 3.93701 / 2
-    baseAddition.laat = 4.72440 / 2
-    baseAddition.long = 3.525856871366164 / 2
-    baseAddition.epic = 5.90551 / 2
 
     longMesh = {}
     longMesh[1] = "http://cloud-3.steamusercontent.com/ugc/785234780861489665/6C93696005D62FDD38A344398E06D9AD8753141C/"
