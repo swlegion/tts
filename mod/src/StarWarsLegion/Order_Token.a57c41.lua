@@ -958,10 +958,10 @@ function attackMenu(attackTargetObj)
     -- ion/wound/suppression buttons vertically higher to make up for variable
     -- height minis.
     --
-    -- in practice, this can just be hard-coded to 5 to simplify; it's possible
-    -- we can use the actual collider height of the mini in the future in order
-    -- to tune this.
-    local buttonHeight = 5
+    -- it's possible we can use the actual collider height of the mini in the
+    -- future in order to tune this.
+    local buttonHeight = unitInfo[leaderUnitName].buttonHeight
+
 
     _G["addIon"..self.getGUID()] = function() addIon(attackTargetObj) end
     _G["addWound"..self.getGUID()] = function() addWound(attackTargetObj) end
