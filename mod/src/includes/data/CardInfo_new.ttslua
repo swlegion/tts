@@ -58,7 +58,7 @@ function UnitClass:_upgradeIsAllowed(upgrade)
       if self:_validateUnitRestrictions(upgrade.restrictions.units) then return true end
     end
 
-    if upgrade.restrictions.alignment ~= nil and self.alignment ~= nil then
+    if upgrade.restrictions.alignment ~= nil then
       if self:_validateAlignmentRestrictions(upgrade.restrictions.alignment) then return true end
     end
 
@@ -92,6 +92,9 @@ function UnitClass:_validateUnitRestrictions(allowedUnits)
 end
 
 function UnitClass:_validateAlignmentRestrictions(allowedAlignments)
+  -- Anakin has alignment=nil and should always return true
+  if self.alignment == nil then return true end
+
   for _, val in ipairs(allowedAlignments) do
     if val:lower() == self.alignment:lower() then
       return true
@@ -281,6 +284,7 @@ function CardInfoClass:buildCardInfo()
     { name =  "Linked Targeting Array", type="comms", ptCost = 5, restrictions = {type={"emplacement trooper", "vehicle"}} },
     { name =  "Integrated Comms Antenna", type="comms", ptCost = 3, restrictions = {type={"droid trooper"}} },
     { name =  "Command Control Array", type="comms", ptCost = 2, restrictions = {type={"vehicle"}} },
+    { name =  "Onboard Comms Channel", type="comms", ptCost = 3, restrictions = {type={"vehicle"}} },
 
     -- Crew
     { name =  "A-300 Rifle Gunner", type="crew", ptCost = 9, restrictions = {units={"x-34 landspeeder"}} },
@@ -288,6 +292,10 @@ function CardInfoClass:buildCardInfo()
     { name = 'BARC RPS-6 Gunner', type="crew", ptCost = 21, restrictions = {units={"barc speeder"}} },
     { name = 'BARC Twin Laser Gunner', type="crew", ptCost = 15, restrictions = {units={"barc speeder"}} },
     { name = 'BARC Ion Gunner', type="crew", ptCost = 22, restrictions = {units={"barc speeder"}} },
+    { name = "Refurbished \"Gonk\" Droid", type = "crew", ptCost = 10, restrictions = {units={"a-a5 speeder truck", "x-34 landspeeder"}} },
+    { name = "Unstable R5 Astromech", type = "crew", ptCost = 6, restrictions = {units={"a-a5 speeder truck", "x-34 landspeeder"}} },
+    { name = "Backworld Medic", type = "crew", ptCost = 12, restrictions = {units={"a-a5 speeder truck"}} },
+    { name = "Unorthodox Tactician", type = "crew", ptCost = 10, restrictions = {units={"a-a5 speeder truck"}} },
 
     -- Force
     { name = "Force Push", type="force", ptCost = 10 },
@@ -341,6 +349,8 @@ function CardInfoClass:buildCardInfo()
     { name = 'DLT-19 Rifle Pintle', type="hardpoint", ptCost = 18, restrictions = {units={"tx-225 gavw occupier combat assault tank"}} },
     { name = 'TX-130 Beam Cannon Turret', type="hardpoint", ptCost = 30, restrictions = {units={"tx-130 saber-class fighter tank"}} },
     { name = 'TX-130 Twin Laser Turret', type="hardpoint", ptCost = 14, restrictions = {units={"tx-130 saber-class fighter tank"}} },
+    { name = "AG-2G Quad Laser", type="hardpoint", ptCost = 36, restrictions = {units={"a-a5 speeder truck"}} },
+    { name = "Heavy Laser Retrofit", type="hardpoint", ptCost = 16, restrictions = {units={"a-a5 speeder truck"}} },
 
     -- Heavy Weapon
     { name = "Z-6 Trooper", type="heavy weapon", ptCost = 20, miniInfo = miniInfo.z6Trooper, restrictions = {units={"rebel troopers"}} },
@@ -378,7 +388,7 @@ function CardInfoClass:buildCardInfo()
     { name = "Electrostaff Guard", type="heavy weapon", ptCost = 25, miniInfo = miniInfo.electrostaffGuard, restrictions = {units={"imperial royal guards"}} },
 
     { name = "DLT-19x Sniper", type="heavy weapon", ptCost = 28, miniInfo = miniInfo.dlt19xSniper, restrictions = {units={"scout troopers", "scout troopers strike team"}} },
-    { name = "Sonic Charge Saboteur", type="heavy weapon", ptCost = 26, miniInfo = miniInfo.sonicChargeSaboteurLeader, restrictions = {units={"scout troopers", "scout troopers strike team"}} },
+    { name = "Sonic Charge Saboteur", type="heavy weapon", ptCost = 26, miniInfo = miniInfo.sonicChargeSaboteur, restrictions = {units={"scout troopers", "scout troopers strike team"}} },
     
     { name = "T-21 Special Forces Trooper", type="heavy weapon", ptCost = 29, miniInfo = miniInfo.isfT21, restrictions = {units={"imperial special forces"}} },
 
@@ -460,14 +470,23 @@ function CardInfoClass:buildCardInfo()
     { name = "Wedge Antilles", type = "pilot", ptCost = 1, restrictions = {units={"t-47 airspeeder", "x-34 landspeeder", "a-a5 speeder truck"}} },
     { name = "Ryder Azadi", type = "pilot", ptCost = 5, restrictions = {units={"t-47 airspeeder", "x-34 landspeeder", "a-a5 speeder truck"}} },
     { name = "Outer Rim Speeder Jockey", type = "pilot", ptCost = 10, restrictions = {units={"t-47 airspeeder", "x-34 landspeeder", "a-a5 speeder truck"}} },
+    { name = "Hotshot Pilot", type = "pilot", ptCost = 8, restrictions = {units={"t-47 airspeeder", "x-34 landspeeder", "a-a5 speeder truck"}} },
+    { name = "Shriv Suurgav", type = "pilot", ptCost = 10, restrictions = {units={"t-47 airspeeder", "x-34 landspeeder", "a-a5 speeder truck"}} },
+    { name = "Reckless Driver", type = "pilot", ptCost = 6, restrictions = {units={"a-a5 speeder truck"}} },
 
     { name = "General Weiss", type = "pilot", ptCost = 1, restrictions = {units={"at-st", "tx-225 gavw occupier combat assault tank"}} },
     { name = "First Sergeant Arbmab", type = "pilot", ptCost = 5, restrictions = {units={"at-st", "tx-225 gavw occupier combat assault tank"}} },
     { name = "Imperial Hammers Elite Armor Pilot", type = "pilot", ptCost = 10, restrictions = {units={"at-st", "tx-225 gavw occupier combat assault tank"}} },
+    { name = "Governor Pryce", type = "pilot", ptCost = 10, restrictions = {units={"at-st", "tx-225 gavw occupier combat assault tank", "laat/le patrol transport"}} },
+    { name = "Baron Rudor", type = "pilot", ptCost = 12, restrictions = {units={"laat/le patrol transport"}} },
+    { name = "Imperial TIE Pilot", type = "pilot", ptCost = 8, restrictions = {units={"laat/le patrol transport"}} },
 
     { name = "Aayla Secura", type = "pilot", ptCost = 5, restrictions = {units={"tx-130 saber-class fighter tank"}} },
     { name = "Veteran Clone Pilot", type="pilot", ptCost = 7, restrictions = {units={"tx-130 saber-class fighter tank"}} },
     { name = "Plo Koon", type="pilot", ptCost = 9, restrictions = {units={"tx-130 saber-class fighter tank"}} },
+    { name = "Clone Commander Fox", type="pilot", ptCost = 10, restrictions = {units={"laat/le patrol transport (republic)"}} },
+    { name = "Clone Shock Trooper Pilot", type="pilot", ptCost = 4, restrictions = {units={"laat/le patrol transport (republic)"}} },
+    { name = "Hound & Grizzer", type="pilot", ptCost = 8, restrictions = {units={"laat/le patrol transport (republic)"}} },
 
     { name = "T-Series Tactical Droid Pilot", type="pilot", ptCost = 5, restrictions = {units={"aat trade federation battle tank"}} },
     { name = "OOM-Series Droid Pilot", type="pilot", ptCost = 7, restrictions = {units={"aat trade federation battle tank"}} },
@@ -769,6 +788,7 @@ function CardInfoClass:buildCardInfo()
       rank = "Commander",
       faction = "imperial",
       upgradeSlots = {"command", "training", "gear", "armament"},
+      requiredUpgrades = {"developing sympathies"},
     }),
     UnitClass:create({
       name = "Darth Vader Dark Lord of the Sith",
@@ -1199,7 +1219,7 @@ function CardInfoClass:buildCardInfo()
     }),
     UnitClass:create({
       name = "Maul Impatient Apprentice",
-      points = 125,
+      points = 160,
       displayName = "Maul",
       miniInfo = { miniInfo.maul },
       rank = "Operative",
