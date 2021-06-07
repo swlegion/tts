@@ -49,7 +49,7 @@
         - FIX: Multi-faction units now spawn the correct version.
         - FIX: Upgrades with double quotes no longer crash the list builder(s).
         - FIX: Anakin can now equip dark-side upgrades.
-        - FIX: Imperial Saobteur's are no longer the leader in full-size squads.
+        - FIX: Imperial Saboteur's are no longer the leader in full-size squads.
       </Text>
     </VerticalLayout>
     <VerticalLayout id="welcomeTab2" active="false">
