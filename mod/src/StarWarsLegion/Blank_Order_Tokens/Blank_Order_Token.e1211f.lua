@@ -28,12 +28,17 @@ end
 
 --[[ Create buttons on each side of the token --]]
 function create_buttons()
+    local assignTooltip = "Create a new order token with the same rank as the selected unit leader"
+    local promoteTooltip = "Create a new Commander order token and change the selected unit leader's rank to Commander"
+    local covertOpsTooltip = "Create a new Operative order token and change the selected unit leader's rank to Operative"
+
     -- Red Side Buttons
     self.createButton(
         {
             click_function = "assign_unit_to_this_token",
             function_owner = self,
             label = "Assign",
+            tooltip = assignTooltip,
             position = {0, 0.05, -0.3},
             width = 500,
             height = 100
@@ -45,6 +50,7 @@ function create_buttons()
             click_function = "promote_new_commander",
             function_owner = self,
             label = "Promote",
+            tooltip = promoteTooltip,
             position = {0, 0.05, 0},
             width = 500,
             height = 100
@@ -56,6 +62,7 @@ function create_buttons()
             click_function = "assign_covert_ops",
             function_owner = self,
             label = "Covert Ops",
+            tooltip = covertOpsTooltip,
             position = {0, 0.05, 0.3},
             width = 500,
             height = 100
@@ -68,6 +75,7 @@ function create_buttons()
             click_function = "assign_unit_to_this_token",
             function_owner = self,
             label = "Assign",
+            tooltip = assignTooltip,
             position = {0, -0.05, 0.3},
             rotation = {180, 0, 0},
             width = 500,
@@ -80,6 +88,7 @@ function create_buttons()
             click_function = "promote_new_commander",
             function_owner = self,
             label = "Promote",
+            tooltip = promoteTooltip,
             position = {0, -0.05, 0},
             rotation = {180, 0, 0},
             width = 500,
@@ -92,6 +101,7 @@ function create_buttons()
             click_function = "assign_covert_ops",
             function_owner = self,
             label = "Covert Ops",
+            tooltip = covertOpsTooltip,
             position = {0, -0.05, -0.3},
             rotation = {180, 0, 0},
             width = 500,
@@ -192,6 +202,7 @@ end
 --[[ Turns this token into the required Order Token --]]
 function update_token(unit_name, unit_command_type, unit_token_name, color)
     -- Set Custom Object properties.
+    print(string.format("%s, %s, %s, %s", unit_name, unit_command_type, unit_token_name, color))
     self.setCustomObject(
         {
             mesh = command_token_data_table.mesh,
