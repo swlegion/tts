@@ -1344,6 +1344,9 @@ function CardInfoClass:buildCardInfo()
 end
 
 function CardInfoClass:_formatNameWithFaction(name, faction)
+  if faction == nil or faction == "" then
+    return name
+  end
   return name:lower() .. " (" .. faction:lower() .. ")"
 end
 

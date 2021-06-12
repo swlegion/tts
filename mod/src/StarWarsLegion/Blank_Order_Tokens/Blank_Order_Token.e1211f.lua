@@ -123,10 +123,11 @@ function assign_unit_to_this_token(token, color, alt_click)
         if object.getGUID() ~= self.getGUID() then
             if object.getVar("unitName") and object.getTable("miniGUIDs") then
                 local unit_name = object.getVar("unitName")
+                local unit_faction = object.getVar("faction")
                 local unit_command_type = unit_info_table[unit_name].commandType
                 local unit_token_name = unit_info_table[unit_name].tokenName
 
-                update_token(unit_name, unit_command_type, unit_token_name, color)
+                update_token(unit_name, unit_faction, unit_command_type, unit_token_name, color)
             end
         end
     end
@@ -177,6 +178,7 @@ function promote_unit(rank, color)
             if object.getVar("unitName") and object.getTable("miniGUIDs") then
                 -- Set up the new Order Token.
                 unit_name = object.getVar("unitName")
+                unit_faction = object.getVar("faction")
                 unit_command_type = unit_info_table[unit_name].commandType
                 new_unit_command_type = unit_command_type:match("^%l+") .. rank
                 unit_token_name =
@@ -187,7 +189,7 @@ function promote_unit(rank, color)
     end
 
     if unit_leader_mini then
-        update_token(unit_name, new_unit_command_type, unit_token_name, color)
+        update_token(unit_name, unit_faction, new_unit_command_type, unit_token_name, color)
 
         if order_token_to_delete then
             destroyObject(order_token_to_delete)
@@ -200,9 +202,8 @@ function promote_unit(rank, color)
 end
 
 --[[ Turns this token into the required Order Token --]]
-function update_token(unit_name, unit_command_type, unit_token_name, color)
+function update_token(unit_name, unit_faction, unit_command_type, unit_token_name, color)
     -- Set Custom Object properties.
-    print(string.format("%s, %s, %s, %s", unit_name, unit_command_type, unit_token_name, color))
     self.setCustomObject(
         {
             mesh = command_token_data_table.mesh,
@@ -223,12 +224,21 @@ function update_token(unit_name, unit_command_type, unit_token_name, color)
     self.setDescription("")
 
     -- Set the objects script.
-    local luaScript =
-        "unitName = '" ..
-        unit_name ..
-            "'\ncommandType = '" ..
-                unit_command_type .. "'\ncolorSide = '" .. color:lower() .. "'\n" .. list_builder_table.tokenScript
-
+    if unit_faction == nil then
+      unit_faction = ""
+    end
+    local luaScript = string.format(
+      "unitName    = [[%s]]\n" ..
+      "faction     = [[%s]]\n" ..
+      "commandType = [[%s]]\n" ..
+      "colorSide   = [[%s]]\n" ..
+      "%s", 
+      unit_name,
+      unit_faction,
+      unit_command_type,
+      color:lower(),
+      list_builder_table.tokenScript
+    )
     self.setLuaScript(luaScript)
     self.reload()
 end
