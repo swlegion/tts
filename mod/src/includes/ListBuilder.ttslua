@@ -922,11 +922,11 @@ function saveArmyImpl()
     local commandCardsBuffer = {}
     local contingencyCardsBuffer = {}
     for _, c in ipairs(listData.commandCards) do
-      table.insert(commandCardsBuffer, "\"" .. c .. "\"")
+      table.insert(commandCardsBuffer, "[[" .. c .. "]]")
     end
     luaString = luaString .. "listData.commandCards = {"..table.concat(commandCardsBuffer, ", ").."}\n"
     for _, c in ipairs(listData.contingencies) do
-      table.insert(contingencyCardsBuffer, "\"" .. c .. "\"")
+      table.insert(contingencyCardsBuffer, "[[" .. c .. "]]")
     end
     luaString = luaString .. "listData.contingencies = {"..table.concat(contingencyCardsBuffer, ", ").."}\n"
 
@@ -937,7 +937,7 @@ function saveArmyImpl()
       -- UPGRADES
       luaString = luaString .. "listData.units["..k.."].upgrades = {}\n"
       for l, upgrade in pairs(listData.units[k].upgrades) do
-        luaString = luaString .. "listData.units["..k.."].upgrades["..l.."] = \'" .. upgrade .."\'\n"
+        luaString = luaString .. "listData.units["..k.."].upgrades["..l.."] = [[" .. upgrade .."]]\n"
       end
     end
     -- battlefieldDeck
@@ -947,7 +947,7 @@ function saveArmyImpl()
 
     for j, deckType in pairs(deckTypes) do
       for l, battlefieldCardEntry in pairs(listData.battlefieldDeck[deckType]) do
-        luaString = luaString .. "listData.battlefieldDeck."..deckType.."["..l.."] = \""..battlefieldCardEntry.."\"\n"
+        luaString = luaString .. "listData.battlefieldDeck."..deckType.."["..l.."] = [["..battlefieldCardEntry.."]]\n"
       end
     end
 
