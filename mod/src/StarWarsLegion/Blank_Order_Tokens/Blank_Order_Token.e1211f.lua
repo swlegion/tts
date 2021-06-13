@@ -28,12 +28,17 @@ end
 
 --[[ Create buttons on each side of the token --]]
 function create_buttons()
+    local assignTooltip = "Create a new order token with the same rank as the selected unit leader"
+    local promoteTooltip = "Create a new Commander order token and change the selected unit leader's rank to Commander"
+    local covertOpsTooltip = "Create a new Operative order token and change the selected unit leader's rank to Operative"
+
     -- Red Side Buttons
     self.createButton(
         {
             click_function = "assign_unit_to_this_token",
             function_owner = self,
             label = "Assign",
+            tooltip = assignTooltip,
             position = {0, 0.05, -0.3},
             width = 500,
             height = 100
@@ -45,6 +50,7 @@ function create_buttons()
             click_function = "promote_new_commander",
             function_owner = self,
             label = "Promote",
+            tooltip = promoteTooltip,
             position = {0, 0.05, 0},
             width = 500,
             height = 100
@@ -56,6 +62,7 @@ function create_buttons()
             click_function = "assign_covert_ops",
             function_owner = self,
             label = "Covert Ops",
+            tooltip = covertOpsTooltip,
             position = {0, 0.05, 0.3},
             width = 500,
             height = 100
@@ -68,6 +75,7 @@ function create_buttons()
             click_function = "assign_unit_to_this_token",
             function_owner = self,
             label = "Assign",
+            tooltip = assignTooltip,
             position = {0, -0.05, 0.3},
             rotation = {180, 0, 0},
             width = 500,
@@ -80,6 +88,7 @@ function create_buttons()
             click_function = "promote_new_commander",
             function_owner = self,
             label = "Promote",
+            tooltip = promoteTooltip,
             position = {0, -0.05, 0},
             rotation = {180, 0, 0},
             width = 500,
@@ -92,6 +101,7 @@ function create_buttons()
             click_function = "assign_covert_ops",
             function_owner = self,
             label = "Covert Ops",
+            tooltip = covertOpsTooltip,
             position = {0, -0.05, -0.3},
             rotation = {180, 0, 0},
             width = 500,
@@ -113,10 +123,11 @@ function assign_unit_to_this_token(token, color, alt_click)
         if object.getGUID() ~= self.getGUID() then
             if object.getVar("unitName") and object.getTable("miniGUIDs") then
                 local unit_name = object.getVar("unitName")
+                local unit_faction = object.getVar("faction")
                 local unit_command_type = unit_info_table[unit_name].commandType
                 local unit_token_name = unit_info_table[unit_name].tokenName
 
-                update_token(unit_name, unit_command_type, unit_token_name, color)
+                update_token(unit_name, unit_faction, unit_command_type, unit_token_name, color)
             end
         end
     end
@@ -148,6 +159,7 @@ function promote_unit(rank, color)
     end
 
     local unit_name = ""
+    local unit_faction = ""
     local unit_command_type = ""
     local new_unit_command_type = ""
     local unit_token_name = ""
@@ -167,17 +179,22 @@ function promote_unit(rank, color)
             if object.getVar("unitName") and object.getTable("miniGUIDs") then
                 -- Set up the new Order Token.
                 unit_name = object.getVar("unitName")
+                unit_faction = object.getVar("faction")
                 unit_command_type = unit_info_table[unit_name].commandType
                 new_unit_command_type = unit_command_type:match("^%l+") .. rank
-                unit_token_name =
-                    new_unit_command_type:match("^%l+"):gsub("^%l", string.upper) .. " " .. rank .. " Command Token"
+                unit_token_name = new_unit_command_type:match("^%l+"):gsub("^%l", string.upper) .. " " .. rank .. " Command Token"
                 unit_leader_mini = object
+
+                -- Change the unit's rank
+                local unitData = object.getTable("unitData")
+                unitData.commandType = new_unit_command_type
+                object.setTable("unitData", unitData)
             end
         end
     end
 
     if unit_leader_mini then
-        update_token(unit_name, new_unit_command_type, unit_token_name, color)
+        update_token(unit_name, unit_faction, new_unit_command_type, unit_token_name, color)
 
         if order_token_to_delete then
             destroyObject(order_token_to_delete)
@@ -190,7 +207,7 @@ function promote_unit(rank, color)
 end
 
 --[[ Turns this token into the required Order Token --]]
-function update_token(unit_name, unit_command_type, unit_token_name, color)
+function update_token(unit_name, unit_faction, unit_command_type, unit_token_name, color)
     -- Set Custom Object properties.
     self.setCustomObject(
         {
@@ -212,12 +229,21 @@ function update_token(unit_name, unit_command_type, unit_token_name, color)
     self.setDescription("")
 
     -- Set the objects script.
-    local luaScript =
-        "unitName = '" ..
-        unit_name ..
-            "'\ncommandType = '" ..
-                unit_command_type .. "'\ncolorSide = '" .. color:lower() .. "'\n" .. list_builder_table.tokenScript
-
+    if unit_faction == nil then
+      unit_faction = ""
+    end
+    local luaScript = string.format(
+      "unitName    = [[%s]]\n" ..
+      "faction     = [[%s]]\n" ..
+      "commandType = [[%s]]\n" ..
+      "colorSide   = [[%s]]\n" ..
+      "%s", 
+      unit_name,
+      unit_faction,
+      unit_command_type,
+      color:lower(),
+      list_builder_table.tokenScript
+    )
     self.setLuaScript(luaScript)
     self.reload()
 end

@@ -63,8 +63,6 @@ function buildListBuilder()
     listBuilder.redTemplatePos[19] = {x =32.36,y= 1,z=-38}
     listBuilder.redTemplatePos[20] = {x =39.37,y= 1,z=-38}
 
-
-
     listBuilder.blueTemplatePos = {}
     listBuilder.blueTemplatePos[1] = {x=39.37,y= 1,z=29}
     listBuilder.blueTemplatePos[2] = {x=32.36,y= 1,z=29}
