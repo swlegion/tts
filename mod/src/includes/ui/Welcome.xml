@@ -33,25 +33,36 @@
     padding="5"
     width="500"
   >
-    <VerticalLayout id="welcomeTab1" active="true">
-      <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-        Welcome to Star Wars: Legion for TTS, <b>v5.0.0-beta</b>.
+    <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
+      <VerticalLayout>
+        <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
+          Welcome to Star Wars: Legion for TTS, <b>v5.0.0-beta</b>.
 
-        This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
-        
-        To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.
+          This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
+          
+          To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.
 
-        <b>CHANGELOG</b>
+          <b>CHANGELOG</b>
 
-        - NEW: Added a new welcome dialog and UI alternative to the janky notecards.
-        - NEW: Added A-A5 Speeder Truck, LAAT, and associated upgrades.
-        - FIX: Armies no longer spawn off the table in some scenarios.
-        - FIX: Multi-faction units now spawn the correct version.
-        - FIX: Upgrades with double quotes no longer crash the list builder(s).
-        - FIX: Anakin can now equip dark-side upgrades.
-        - FIX: Imperial Saboteur's are no longer the leader in full-size squads.
-      </Text>
-    </VerticalLayout>
+          (Since last <i>Beta</i>)
+
+          - FIX: Can once again spawn ARCs/Fives/Echo/BX/ISF/Hask/Meeko.
+          - FIX: Can once again spawn Operative Vader through the list builder.
+          - FIX: And Now You Will Die now imports correctly from LHQ/TTA.
+          - FIX: The "blank" order token now functions properly (assign/promote/covert).
+
+          (Since last <i>Stable</i>)
+
+          - NEW: Added a new welcome dialog and UI alternative to the janky notecards.
+          - NEW: Added A-A5 Speeder Truck, LAAT, and associated upgrades.
+          - FIX: Armies no longer spawn off the table in some scenarios.
+          - FIX: Multi-faction units now spawn the correct version.
+          - FIX: Upgrades with double quotes no longer crash the list builder(s).
+          - FIX: Anakin can now equip dark-side upgrades.
+          - FIX: Imperial Saboteur's are no longer the leader in full-size squads.
+        </Text>
+      </VerticalLayout>
+    </VerticalScrollView>
     <VerticalLayout id="welcomeTab2" active="false">
       <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
         <b>Unit Sizes</b>:
