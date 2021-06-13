@@ -773,6 +773,7 @@ function CardInfoClass:buildCardInfo()
       rank = "Heavy",
       type = "repulsor vehicle",
       selectedSpeed = 1,
+      buttonHeight = 4,
       baseSize = "long",
       faction = "rebel",
       upgradeSlots = {"pilot", "crew", "crew", "hardpoint", "comms"}

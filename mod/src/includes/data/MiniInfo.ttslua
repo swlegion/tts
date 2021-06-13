@@ -835,48 +835,56 @@ function buildMiniInfo()
     type = "assetbundle",
     assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618438238122999812/779C9D69CA440F970DD0B7C6394A812732F9C588/",
     assetbundle_secondary = isfMaterials,
+    collider = _BASE_COLLIDERS.small,
     name = "Imperial Special Forces Leader"
   }
   miniInfo.isfInferno = {
     type = "assetbundle",
     assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618438238122999341/C1AEEE50112F060BA8E5CAFBC16F417A0EF7C3C0/",
     assetbundle_secondary = isfMaterials,
+    collider = _BASE_COLLIDERS.small,
     name = "Inferno Squad"
   }
   miniInfo.isf1 = {
     type = "assetbundle",
     assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618438238122996093/C79160007FD884C2B8737DCA888D61C955073141/",
     assetbundle_secondary = isfMaterials,
+    collider = _BASE_COLLIDERS.small,
     name = "Imperial Special Forces"
   }
   miniInfo.isf2 = {
     type = "assetbundle",
     assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618438238122996656/AAD706C50446522C98259A20C03E757C4F7B98B1/",
     assetbundle_secondary = isfMaterials,
+    collider = _BASE_COLLIDERS.small,
     name = "Imperial Special Forces"
   }
   miniInfo.isf3 = {
     type = "assetbundle",
     assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618438238122997115/F100B28E5DBF4A56FB22D3410270BEE4EF344FEF/",
     assetbundle_secondary = isfMaterials,
+    collider = _BASE_COLLIDERS.small,
     name = "Imperial Special Forces"
   }
   miniInfo.isfT21 = {
     type = "assetbundle",
     assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618438238123000906/C64EAD02CA22F8BFB59320925DAD7D89BA1E7AD6/",
     assetbundle_secondary = isfMaterials,
+    collider = _BASE_COLLIDERS.small,
     name = "T-21 Special Forces Trooper"
   }
   miniInfo.delMeeko = {
     type = "assetbundle",
     assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618437692581074585/1C74BEB92DC42D3585BFC1185A77DE14EC3249CA/",
     assetbundle_secondary = isfMaterials,
+    collider = _BASE_COLLIDERS.small,
     name = "Del Meeko"
   }
   miniInfo.gideonHask = {
     type = "assetbundle",
     assetbundle = "http://cloud-3.steamusercontent.com/ugc/1618437692581075349/6265F81E1BAA090FFA813270A8E3126CF8AD6CC5/",
     assetbundle_secondary = isfMaterials,
+    collider = _BASE_COLLIDERS.small,
     name = "Gideon Hask",
     leader = true
   }
@@ -1104,36 +1112,42 @@ function buildMiniInfo()
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457847081/F7D4E8D3EC85BAEEB5C1B5B913B7F484CC28FC10/",
       assetbundle_secondary = bxDroidMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "BX Commando Droid Leader"
   }
   miniInfo.bxCommandoDroid1 = {
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457845802/AE70766EAA85C875B023FB980A5A5CEEFB98B1D9/",
       assetbundle_secondary = bxDroidMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "BX Commando Droid"
   }
   miniInfo.bxCommandoDroid2 = {
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457846188/D7F348E890430AA319DDDFA513D99DC2783ECF91/",
       assetbundle_secondary = bxDroidMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "BX Commando Droid"
   }
   miniInfo.bxCommandoDroid3 = {
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457846574/F169D9E2E45B73D1E21B17E32D3B4B4D9AACB196/",
       assetbundle_secondary = bxDroidMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "BX Commando Droid"
   }
   miniInfo.bxCommandoDroidSniper = {
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457847963/0EA6BE014DA494689FF32F9570C6A73CD88F1894/",
       assetbundle_secondary = bxDroidMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "BX Commando Droid Sniper"
   }
   miniInfo.bxCommandoDroidSniperLeader = {
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457847963/0EA6BE014DA494689FF32F9570C6A73CD88F1894/",
       assetbundle_secondary = bxDroidMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "BX Commando Droid Sniper",
       leader = true
   }
@@ -1141,12 +1155,14 @@ function buildMiniInfo()
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457847567/079157D001A1520085C6A30620750817C6C01BFF/",
       assetbundle_secondary = bxDroidMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "BX Commando Droid Saboteur"
   }
   miniInfo.bxCommandoDroidSaboteurLeader = {
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457847567/079157D001A1520085C6A30620750817C6C01BFF/",
       assetbundle_secondary = bxDroidMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "BX Commando Droid Saboteur",
       leader = true
   }
@@ -1356,36 +1372,42 @@ function buildMiniInfo()
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457802621/01F605D855048F823A0ECA6C46D2A62B56C04124/",
       -- assetbundle = "http://cloud-3.steamusercontent.com/ugc/776248816758255676/F51F732336CFEF3DCF549C2B396CD201FECE6A4B/",
       assetbundle_secondary = arcMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "ARC Trooper Leader"
   }
   miniInfo.arcTrooper1 = {
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457799750/AE83DC038BA8AAF48678D07E1F9734D4A9944C1D/",
       assetbundle_secondary = arcMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "ARC Trooper"
   }
   miniInfo.arcTrooper2 = {
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457800134/88E2FEC812AD5E7B7570836120992252AC758BF8/",
       assetbundle_secondary = arcMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "ARC Trooper"
   }
   miniInfo.arcTrooper3 = {
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457800538/06BBAAAAC7FB68DAA9351F12008475068A96BFFB/",
       assetbundle_secondary = arcMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "ARC Trooper"
   }
   miniInfo.arcTrooperDC15x = {
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457800878/34EC84D7ECD99E073417866A9BEC4288E00F5359/",
       assetbundle_secondary = arcMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "DC-15x ARC Trooper"
   }
   miniInfo.arcTrooperDC15xLeader = {
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457800878/34EC84D7ECD99E073417866A9BEC4288E00F5359/",
       assetbundle_secondary = arcMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "DC-15x ARC Trooper",
       leader = true
   }
@@ -1393,12 +1415,14 @@ function buildMiniInfo()
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457801321/CED1CD80F307683E79B9A4ED87CECAED7C070EBF/",
       assetbundle_secondary = arcMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "Echo"
   }
   miniInfo.echoLeader = {
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457801321/CED1CD80F307683E79B9A4ED87CECAED7C070EBF/",
       assetbundle_secondary = arcMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "Echo",
       leader = true
   }
@@ -1406,12 +1430,14 @@ function buildMiniInfo()
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457802221/506D704E232C1BFD85F063A24EBF24C5914C2C40/",
       assetbundle_secondary = arcMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "Fives"
   }
   miniInfo.fivesLeader = {
       type = "assetbundle",
       assetbundle = "http://cloud-3.steamusercontent.com/ugc/1009315641457802221/506D704E232C1BFD85F063A24EBF24C5914C2C40/",
       assetbundle_secondary = arcMaterials,
+      collider = _BASE_COLLIDERS.small,
       name = "Fives",
       leader = true
   }

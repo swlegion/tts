@@ -48,6 +48,7 @@ function setUp()
         unitCountPos.large = {0,0.2,1}
         unitCountPos.laat = {0,0.2,1.4}
         unitCountPos.huge = {0,0.2,1.6}
+        unitCountPos.long = {0,0.2,3}
         unitIDButtonPos = unitCountPos[unitData.baseSize]
 
         resetUnitButtons()
