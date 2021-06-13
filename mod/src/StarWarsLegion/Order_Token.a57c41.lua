@@ -38,8 +38,13 @@ function onLoad()
         isAToken = true
         unitData.unitName = unitName
         unitData.faction = faction
-        unitData.tokenCommandType = unitObj.commandType
 
+        -- TODO: This is used as a hack for "promote"/"covert ops" currently.
+        if commandType == nil then
+          commandType = unitObj.commandType
+        end
+        unitData.tokenCommandType = commandType
+        
         unitData.baseSize = unitObj.baseSize
         unitData.fixedMove = unitObj.fixedMove
         unitData.strafeMove = unitObj.strafeMove

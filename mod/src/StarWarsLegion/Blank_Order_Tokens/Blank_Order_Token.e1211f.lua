@@ -159,6 +159,7 @@ function promote_unit(rank, color)
     end
 
     local unit_name = ""
+    local unit_faction = ""
     local unit_command_type = ""
     local new_unit_command_type = ""
     local unit_token_name = ""
@@ -181,9 +182,13 @@ function promote_unit(rank, color)
                 unit_faction = object.getVar("faction")
                 unit_command_type = unit_info_table[unit_name].commandType
                 new_unit_command_type = unit_command_type:match("^%l+") .. rank
-                unit_token_name =
-                    new_unit_command_type:match("^%l+"):gsub("^%l", string.upper) .. " " .. rank .. " Command Token"
+                unit_token_name = new_unit_command_type:match("^%l+"):gsub("^%l", string.upper) .. " " .. rank .. " Command Token"
                 unit_leader_mini = object
+
+                -- Change the unit's rank
+                local unitData = object.getTable("unitData")
+                unitData.commandType = new_unit_command_type
+                object.setTable("unitData", unitData)
             end
         end
     end
