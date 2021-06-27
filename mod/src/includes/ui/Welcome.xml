@@ -34,7 +34,7 @@
     width="500"
   >
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
-      <VerticalLayout>
+      <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
           Welcome to Star Wars: Legion for TTS, <b>v5.0.0-beta</b>.
 
@@ -46,10 +46,7 @@
 
           (Since last <i>Beta</i>)
 
-          - FIX: Can once again spawn ARCs/Fives/Echo/BX/ISF/Hask/Meeko.
-          - FIX: Can once again spawn Operative Vader through the list builder.
-          - FIX: And Now You Will Die now imports correctly from LHQ/TTA.
-          - FIX: The "blank" order token now functions properly (assign/promote/covert).
+          - FIX: The Payload objective now spawns properly.
 
           (Since last <i>Stable</i>)
 
@@ -60,6 +57,7 @@
           - FIX: Upgrades with double quotes no longer crash the list builder(s).
           - FIX: Anakin can now equip dark-side upgrades.
           - FIX: Imperial Saboteur's are no longer the leader in full-size squads.
+          - FIX: The "blank" order token now functions properly (assign/promote/covert).
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
