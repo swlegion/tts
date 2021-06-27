@@ -295,7 +295,7 @@ function initializeCommandToken(cData)
 
   strColor = strColor:gsub("^%l", string.upper)
 
-  tokenObj.setName(strColor .. " " .. cData.faction .. " " .. cData.rank .. " Command Token")
+  tokenObj.setName(strColor .. " " .. cData.faction:gsub("^%l", string.upper) .. " " .. cData.rank:gsub("^%l", string.upper) .. " Command Token")
   local luaScript = "unitName = \""..cData.varName.."\"\ncommandType = '"..cData.commandType.."'\ncolorSide = '"..colorSide.."'\nfaction = '"..cData.faction.."'\n"..listBuilder.tokenScript
   tokenObj.setLuaScript(luaScript)
 
@@ -595,6 +595,7 @@ function spawnUnit(unit, n, faction, totalUnits)
 
   -- SPAWN CARDS
   -- spawn unit Card
+  spawnMiniTable.displayName = unitObject.displayName
   spawnMiniTable.unitCardObj = spawnUnitCard(unitObject, tempPos, self.getRotation(), unit.name, cardScale)
   spawnUnitIDToken(templatePos, self.getRotation(), n)
 
@@ -725,7 +726,8 @@ function initializeMini(pMiniTable)
     local selectedMiniScript = ""
 
     -- SET NAME
-    objEntry.obj.setName(strColor.. " "..objEntry.name)
+    local displayName = pMiniTable.displayName or objEntry.name
+    objEntry.obj.setName(strColor.. " "..displayName)
     selectedMiniScript = selectedMiniScript .. "colorSide = '"..pMiniTable.colorSide.."'\nminiName = \""..objEntry.name.."\"\n"
 
     if i == leaderInt then
