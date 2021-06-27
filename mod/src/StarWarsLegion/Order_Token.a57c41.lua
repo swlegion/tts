@@ -63,7 +63,6 @@ end
 function setTemplateVariables()
     unitData.aStart = templateInfo.aStart[unitData.baseSize][unitData.selectedSpeed]
     unitData.bStart = templateInfo.bStart[unitData.baseSize][unitData.selectedSpeed]
-
     unitData.templateMesh = templateInfo.templateMesh[unitData.selectedSpeed]
     unitData.templateBallCollider = templateInfo.templateBallCollider
     unitData.tint = templateInfo.tint[unitData.selectedSpeed]
@@ -103,11 +102,9 @@ function getEligibleUnit()
         for i, unit in pairs(allUnits) do
             -- check eligibility
 
-            if unit.getTable("unitData") != nil then
-
-                if unit.getTable("unitData").commandType == unitData.tokenCommandType and unit.getVar("colorSide") == colorSide then
-
-
+            local miniData = unit.getTable("unitData")
+            if miniData != nil then
+                if unitData.commandType == miniData.tokenCommandType and unit.getVar("colorSide") == colorSide then
                     -- add to eligible units
                     eligibleUnitsNumber = eligibleUnitsNumber + 1
                     eligibleUnits[eligibleUnitsNumber] = unit
