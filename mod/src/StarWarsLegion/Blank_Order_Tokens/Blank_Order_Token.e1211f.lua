@@ -123,11 +123,14 @@ function assign_unit_to_this_token(token, color, alt_click)
         if object.getGUID() ~= self.getGUID() then
             if object.getVar("unitName") and object.getTable("miniGUIDs") then
                 local unit_name = object.getVar("unitName")
+                -- We don't lookup the unit rank, because some other effect in
+                -- the game could have already changed the unit leader's rank
+                -- (such as covert ops, promote).
+                local unit_rank = object.getTable("unitData").commandType
                 local unit_faction = object.getVar("faction")
-                local unit_command_type = unit_info_table[unit_name].commandType
                 local unit_token_name = unit_info_table[unit_name].tokenName
 
-                update_token(unit_name, unit_faction, unit_command_type, unit_token_name, color)
+                update_token(unit_name, unit_faction, unit_rank, unit_token_name, color)
             end
         end
     end
