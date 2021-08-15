@@ -46,8 +46,8 @@
 
           (Since last <i>Beta</i>)
 
-          - FIX: The Payload objective now spawns properly.
-          - FIX: Unit leader mini names and order token names are consistent again.
+          - FIX: Order tokens now only activate the right unit ranks.
+          - FIX: Using "Assign" on a Blank Token after "Promote" create the right token.
 
           (Since last <i>Stable</i>)
 
