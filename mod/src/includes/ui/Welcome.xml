@@ -36,7 +36,7 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v5.0.0-beta</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v6.0.0-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
           
@@ -46,19 +46,11 @@
 
           (Since last <i>Beta</i>)
 
-          - FIX: Order tokens now only activate the right unit ranks.
-          - FIX: Using "Assign" on a Blank Token after "Promote" create the right token.
+          - TBD.
 
           (Since last <i>Stable</i>)
 
-          - NEW: Added a new welcome dialog and UI alternative to the janky notecards.
-          - NEW: Added A-A5 Speeder Truck, LAAT, and associated upgrades.
-          - FIX: Armies no longer spawn off the table in some scenarios.
-          - FIX: Multi-faction units now spawn the correct version.
-          - FIX: Upgrades with double quotes no longer crash the list builder(s).
-          - FIX: Anakin can now equip dark-side upgrades.
-          - FIX: Imperial Saboteur's are no longer the leader in full-size squads.
-          - FIX: The "blank" order token now functions properly (assign/promote/covert).
+          - TBD.
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
