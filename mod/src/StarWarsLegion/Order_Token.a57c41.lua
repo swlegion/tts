@@ -94,7 +94,6 @@ function getEligibleUnit()
     local allUnits = nil
     local allUnits = battlefieldZone.getObjects()
 
-
     if allUnits != nil then
         local closestDistance = 9999999999999
 
@@ -103,8 +102,8 @@ function getEligibleUnit()
             -- check eligibility
 
             local miniData = unit.getTable("unitData")
-            if miniData != nil then
-                if unitData.commandType == miniData.tokenCommandType and unit.getVar("colorSide") == colorSide then
+            if miniData != nil and miniData.commandType != nil then
+                if unitData.tokenCommandType == miniData.commandType and unit.getVar("colorSide") == colorSide then
                     -- add to eligible units
                     eligibleUnitsNumber = eligibleUnitsNumber + 1
                     eligibleUnits[eligibleUnitsNumber] = unit
