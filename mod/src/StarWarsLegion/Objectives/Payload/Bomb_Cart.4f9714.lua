@@ -148,7 +148,7 @@ function spawnMoveTemplate()
   })
   templateA.setCustomObject({
       type = 0,
-      mesh = templateInfo.moveTemplate[selectedSpeed].mesh[baseSize],
+      mesh = templateInfo.moveTemplate[selectedSpeed].mesh,
       diffuse = templateInfo.moveTemplate[selectedSpeed].diffuse,
       collider = templateInfo.moveTemplate[selectedSpeed].longCollider,
       material = 1,
@@ -174,7 +174,7 @@ function spawnMoveTemplate()
   })
   templateB.setCustomObject({
       type = 0,
-      mesh = templateInfo.moveTemplate[selectedSpeed].mesh[baseSize],
+      mesh = templateInfo.moveTemplate[selectedSpeed].mesh,
       diffuse = templateInfo.moveTemplate[selectedSpeed].diffuse,
       collider = templateInfo.moveTemplate[selectedSpeed].shortCollider,
       material = 1,
