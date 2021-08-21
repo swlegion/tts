@@ -160,6 +160,8 @@ function autoTint()
         local miniObj = getObjectFromGUID(miniGuid)
         miniObj.setColorTint(colorMap[colorIndex])
       end
+      local unitIDTokenObject = getObjectFromGUID(obj.getVar("unitIDTokenGUID"))
+      unitIDTokenObject.setColorTint(colorMap[colorIndex])
     end
   end
 end
@@ -565,6 +567,10 @@ function spawnUnit(unit, n, faction, totalUnits)
   spawnMiniTable.colorSide = colorSide
   spawnMiniTable.upgrades = {}
   spawnMiniTable.miniObjs = {}
+  -- we have a maximum ID token value of 10 so we need to wrap back to 1
+  if n > 10 then
+    n = n - 10
+  end
   spawnMiniTable.unitID = n
 
   -- prep unit card spawn location
@@ -596,8 +602,8 @@ function spawnUnit(unit, n, faction, totalUnits)
   -- SPAWN CARDS
   -- spawn unit Card
   spawnMiniTable.displayName = unitObject.displayName
-  spawnMiniTable.unitCardObj = spawnUnitCard(unitObject, tempPos, self.getRotation(), unit.name, cardScale)
-  spawnUnitIDToken(templatePos, self.getRotation(), n)
+  spawnMiniTable.unitCardObj = spawnUnitCard(unitObject, tempPos, self.getRotation(), unit.name, cardScale)  
+  spawnMiniTable.unitIDTokenGUID = spawnUnitIDToken(templatePos, self.getRotation(), n)
 
   -- spawn loadout bag
   if unit.loadout ~= nil and #unit.loadout > 0 then
@@ -740,11 +746,12 @@ function initializeMini(pMiniTable)
       objEntry.obj.setDescription(description)
 
       -- miniGUIDs
+
       local miniGUIDsScript = "miniGUIDs = {}\n"
       for n, objEntry in pairs(pMiniTable.miniObjs) do
         miniGUIDsScript = miniGUIDsScript .. "miniGUIDs["..n.."] = '" .. objEntry.obj.getGUID() .. "'\n"
       end
-      selectedMiniScript = selectedMiniScript .. miniGUIDsScript.."cardGUID = '"..pMiniTable.unitCardObj.getGUID().."'\nunitName = \""..pMiniTable.name:lower().."\"\nunitID = "..pMiniTable.unitID.."\n"..listBuilder.modelMiniScript
+      selectedMiniScript = selectedMiniScript .. miniGUIDsScript .. "cardGUID = '" .. pMiniTable.unitCardObj.getGUID() .. "'\n unitName = \""..pMiniTable.name:lower() .. "\"\n unitID = " .. pMiniTable.unitID .. "\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID .. "\"\n" .. listBuilder.modelMiniScript
     else
       objEntry.obj.use_snap_points = false
     end
@@ -754,16 +761,19 @@ function initializeMini(pMiniTable)
   end
 end
 
-function spawnUnitIDToken(idSpawnPos, idSpawnRot,idNumber)
+function spawnUnitIDToken(idSpawnPos, idSpawnRot, idNumber)
   idSpawnRot.y = idSpawnRot.y +180
-  idToken = unitIDTokenBag.takeObject({
+  local idToken = unitIDTokenBag.takeObject({
       position       = idSpawnPos,
       rotation       = idSpawnRot,
       smooth         = false
   })
+  local idTokenGUID = idToken.getGUID()
   if idNumber != 1 then
-      idToken.setState(idNumber)
+      idTokenGUID = idToken.setState(idNumber).getGUID()
   end
+
+  return idTokenGUID
 end
 
 function spawnMini(miniSpawnPos, miniSpawnRot, miniData)
