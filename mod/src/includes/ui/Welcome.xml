@@ -50,7 +50,7 @@
 
           (Since last <i>Stable</i>)
 
-          - TBD.
+          - ID tokens are now also tinted as part of the "auto tint" functionality.
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
