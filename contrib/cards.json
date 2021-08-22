@@ -103,7 +103,7 @@
         },
         {
           "name": "Wookiee Warriors",
-          "title": "Kashyyk Resistance",
+          "title": "Kashyyyk Resistance",
           "image": ""
         }
       ],
@@ -262,7 +262,192 @@
         }
       ]
     },
-    "Republic": [],
-    "Separatist": []
+    "Republic": {
+      "Commander": [
+        {
+          "name": "Obi-Wan Kenobi",
+          "title": "Civilized Warrior",
+          "image": ""
+        },
+        {
+          "name": "Clone Captain Rex",
+          "title": "Honorable Soldier",
+          "image": ""
+        },
+        {
+          "name": "Anakin Skywalker",
+          "title": "The Chosen One",
+          "image": ""
+        },
+        {
+          "name": "Clone Commander",
+          "title": "Trained For Leadership",
+          "image": ""
+        },
+        {
+          "name": "Yoda",
+          "title": "Grand Master Of The Jedi Order",
+          "image": ""
+        },
+        {
+          "name": "Wookiee Chieftan",
+          "title": "Clan Leader",
+          "image": ""
+        },
+        {
+          "name": "Chewbacca",
+          "title": "Hero Of Kashyyyk",
+          "image": ""
+        }
+      ],
+      "Operative": [
+        {
+          "name": "R2-D2",
+          "title": "Independent Astromech",
+          "image": ""
+        },
+        {
+          "name": "Padme Amidala",
+          "title": "Spirited Senator",
+          "image": ""
+        }
+      ],
+      "Corps": [
+        {
+          "name": "Phase I Clone Troopers",
+          "image": ""
+        },
+        {
+          "name": "Phase II Clone Troopers",
+          "image": ""
+        }
+      ],
+      "Special Forces": [
+        {
+          "name": "Arc Troopers",
+          "image": ""
+        },
+        {
+          "name": "Arc Troopers",
+          "title": "Strike Team",
+          "image": ""
+        },
+        {
+          "name": "Wookiee Warriors",
+          "image": ""
+        },
+        {
+          "name": "Wookiee Warriors",
+          "title": "Kashyyyk Defenders",
+          "image": ""
+        }
+      ],
+      "Support": [
+        {
+          "name": "BARC Speeder",
+          "image": ""
+        },
+        {
+          "name": "AT-RT",
+          "image": ""
+        }
+      ],
+      "Heavy": [
+        {
+          "name": "TX-130 Saber-Class Fighter Tank",
+          "image": ""
+        },
+        {
+          "name": "LAAT/LE Patrol Transport",
+          "image": ""
+        }
+      ]
+    },
+    "Separatist": {
+      "Commander": [
+        {
+          "name": "General Grievous",
+          "title": "Sinister Cyborg",
+          "image": ""
+        },
+        {
+          "name": "Count Dooku",
+          "title": "Darth Tyranus",
+          "image": ""
+        },
+        {
+          "name": "T-Series Tactical Droid",
+          "title": "Programmed For Strategy",
+          "image": ""
+        },
+        {
+          "name": "Super Tactical Droid",
+          "image": ""
+        },
+        {
+          "name": "Super Tactical Droid",
+          "title": "Kalani",
+          "image": ""
+        },
+        {
+          "name": "Super Tactical Droid",
+          "title": "Kraken",
+          "image": ""
+        }
+      ],
+      "Operative": [
+        {
+          "name": "Cad Bane",
+          "title": "Needs No Introduction",
+          "image": ""
+        },
+        {
+          "name": "Maul",
+          "title": "Impatient Apprentice",
+          "image": ""
+        }
+      ],
+      "Corps": [
+        {
+          "name": "B1 Battle Droids",
+          "image": ""
+        },
+        {
+          "name": "B2 Super Battle Droids",
+          "image": ""
+        }
+      ],
+      "Special Forces": [
+        {
+          "name": "BX-Series Droid Commandos",
+          "image": ""
+        },
+        {
+          "name": "BX-Series Droid Commandos",
+          "title": "Strike Team",
+          "image": ""
+        },
+        {
+          "name": "IG-100 MagnaGuard",
+          "image": ""
+        }
+      ],
+      "Support": [
+        {
+          "name": "Droidekas",
+          "image": ""
+        },
+        {
+          "name": "STAP RiderS",
+          "image": ""
+        }
+      ],
+      "Heavy": [
+        {
+          "name": "AAT Trade Federation Battle Tank",
+          "image": ""
+        }
+      ]
+    }
   }
 }
