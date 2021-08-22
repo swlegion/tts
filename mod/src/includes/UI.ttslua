@@ -10,6 +10,14 @@ function toggleWelcomeDialog()
   end
 end
 
+function toggleChessClockUI()
+  if UI.getAttribute("floatingChessClockUI", "active") == "true" then
+    UI.hide("floatingChessClockUI")
+  else
+    UI.show("floatingChessClockUI")
+  end
+end
+
 function showWelcomeTab1()
   UI.show("welcomeTab1")
   UI.hide("welcomeTab2")
