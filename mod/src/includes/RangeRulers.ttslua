@@ -46,13 +46,12 @@ function spawnRangeRuler(rangeSourceObject)
     type = "Custom_AssetBundle",
     position = {basePos.x, basePos.y + 20, basePos.z},
     rotation = {90, baseRot.y, 0},
-    scale = {1,1,1}
+    scale = {0,0,0} -- 0 scale will hide TTS default box and won't impact projector
   })
 
   rangeRuler.setCustomObject({
     type = 0,
-    assetbundle = rulerBundleToSpawn,
-    collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/"
+    assetbundle = rulerBundleToSpawn
   })
 
   rangeRuler.setLock(true)
