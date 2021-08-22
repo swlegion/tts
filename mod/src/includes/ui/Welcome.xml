@@ -50,6 +50,9 @@
 
           (Since last <i>Stable</i>)
 
+          - Deleted the unused middle (black) clock.
+          - Chess clocks are now hidden by default. Click "Chess Clocks" to show (and use).
+          - Chess clocks (and the UI) are now persisted across saves/loads.
           - ID tokens are now also tinted as part of the "auto tint" functionality.
         </Text>
       </VerticalLayout>

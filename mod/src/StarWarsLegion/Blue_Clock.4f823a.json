@@ -13,7 +13,7 @@
       "scaleY": 0.7,
       "scaleZ": 0.7
     },
-    "Nickname": "",
+    "Nickname": "Blue Clock",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -39,7 +39,7 @@
       "SecondsPassed": 5400,
       "Paused": true
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Blue_Clock.4f823a.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },
