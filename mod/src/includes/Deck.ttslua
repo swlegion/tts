@@ -5,6 +5,7 @@ Deck = {}
 Deck.__index = Deck;
 function Deck:create()
   local meta = {
+    -- TODO: Have the schema be configurable.
     _schema = DeckSchema,
     _unknown = {
       command = "http://cloud-3.steamusercontent.com/ugc/1683770885590601027/47E5B7470CAAC79372CB5C607AEF29DF195EB7CE/",

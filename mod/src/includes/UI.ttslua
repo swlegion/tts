@@ -1,5 +1,8 @@
+#include !/Deck
+
 function initUI()
   UI.setValue("welcomeDialogTitle", "Star Wars Legion for TTS " .. VERSION)
+  _G.Deck = Deck:create()
 end
 
 function toggleWelcomeDialog()
@@ -20,6 +23,10 @@ function toggleChessClockUI()
     getObjectFromGUID(clockGUIDs.blue).setScale({0.7, 0.7, 0.7})
     getObjectFromGUID(clockGUIDs.red).setScale({0.7, 0.7, 0.7})
   end
+end
+
+function debugSpawnUnits()
+  Deck:spawnUnitCard("Empire", "Stormtroopers")
 end
 
 function showWelcomeTab1()
