@@ -17,22 +17,17 @@ function Deck:create()
 end
 
 function Deck:spawnUnitCard(faction, name)
-  print("1")
   local units = self._schema[faction]
   if units == nil then
-    print("2")
     return self:_spawnUnitOrBattleDud(name, "No faction found \"" .. faction .. "\".")
   end
   local unit = units[name]
   if unit == nil then
-    print("3")
     return self:_spawnUnitOrBattleDud(name, "No unit found \"" .. name .. "\".\n" .. "Faction: " .. faction)
   else
-    print("4")
     local image = self._unknown.unit
     local card = self:_spawnCard(image, image)
     card.setName(name)
-    print("5")
     return card
   end
 end
