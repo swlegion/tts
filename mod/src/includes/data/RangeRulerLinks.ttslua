@@ -1,18 +1,18 @@
 function getRangeRulerLinks()
     local rangeRulers  = {}
         -- 27mm
-        rangeRulers.small = "http://cloud-3.steamusercontent.com/ugc/1689400250503557534/8C925FE9C23F757829C9558C5E11718AC732EF62/"
+        rangeRulers.small = "http://cloud-3.steamusercontent.com/ugc/1689400411869123038/DDF5EB3C25EB15388BFEE48AED9FAB35746E53DF/"
         -- 50mm
-        rangeRulers.medium = "http://cloud-3.steamusercontent.com/ugc/1689400250503560096/C30D7FD89B8B23DEC901C65D85DD3A1F8298AC03/"
+        rangeRulers.medium = "http://cloud-3.steamusercontent.com/ugc/1689400411869122542/F1EA321364F4CC920875FD892460DC2CA4D148E8/"
         -- 70mm
-        rangeRulers.large = "http://cloud-3.steamusercontent.com/ugc/1689400250503561476/FFA2395287B7C46E3FFE1A7583A542960E8F0550/"
+        rangeRulers.large = "http://cloud-3.steamusercontent.com/ugc/1689400411869121900/7EFE862C01C66F441B87E40DACA8A5F5FAC3C7B0/"
         -- 100mm
-        rangeRulers.huge = "http://cloud-3.steamusercontent.com/ugc/1689400250503562331/FB6BB144DAC05F84D735D5DAFD7A065D19E543FB/"
+        rangeRulers.huge = "http://cloud-3.steamusercontent.com/ugc/1689400411869121454/BB90253F2A501E5877A4D1A3543A5F812C2CE399/"
         -- 120mm
-        rangeRulers.laat = "http://cloud-3.steamusercontent.com/ugc/1689400250503564919/3633A8BA117345454BEE15E3DDD1933C411B0033/"
+        rangeRulers.laat = "http://cloud-3.steamusercontent.com/ugc/1689400411869118291/83686585356BD87DC6936F44FD2C6979920F6AB0/"
         -- 150mm
-        rangeRulers.epic = "http://cloud-3.steamusercontent.com/ugc/1689400250503565766/211EB6CC36C838B9D5CABD2D9F9BFA8F904E2A6B/"
+        rangeRulers.epic = "http://cloud-3.steamusercontent.com/ugc/1689400411869120250/E09739E83D01C1EF7FF48D489DEB5C9C369FFC02/"
         -- 100mm oblong
-        rangeRulers.long = "http://cloud-3.steamusercontent.com/ugc/1689400250503563823/99A69650671E8262FA966CAF2A43F98D0E7E4FE0/"
+        rangeRulers.long = "http://cloud-3.steamusercontent.com/ugc/1689400411869120694/D6CC6EA414924FFD844AEB93645708F2FFE77C99/"
     return rangeRulers
 end
