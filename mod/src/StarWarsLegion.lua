@@ -651,7 +651,9 @@ function initChessClocks(guids, show)
       toggleChessClockUI()
     else
       for _, v in pairs(guids) do
-        getObjectFromGUID(v).Clock.setValue(5400)
+        local obj = getObjectFromGUID(v)
+        obj.setScale({0, 0, 0})
+        obj.Clock.setValue(5400)
       end
     end
   end)
