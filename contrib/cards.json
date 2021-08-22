@@ -120,6 +120,20 @@
           "name": "Tauntaun Riders",
           "image": ""
         }
+      ],
+      "Heavy": [
+        {
+          "name": "T-47 Airspeeder",
+          "image": ""
+        },
+        {
+          "name": "X-34 Landspeeder",
+          "image": ""
+        },
+        {
+          "name": "A-A5 Speeder Truck",
+          "image": ""
+        }
       ]
     },
     "Empire": [],
