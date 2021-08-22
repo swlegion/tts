@@ -1,6 +1,7 @@
 #include !/common/Math
 #include !/data/CardInfo_new
 #include !/data/MiniInfo
+#include !/RangeRulers
 
 -- Model Token
 
@@ -763,23 +764,6 @@ function clearCohesionRulers()
     end
 end
 
-function clearRangeRulers()
-    if rangeRuler != nil then
-        for i = 1,5,1 do
-            destroyObject(rangeRuler[i])
-        end
-        rangeRuler = nil
-    end
-    if frontArc != nil then
-        destroyObject(frontArc)
-    end
-    if backArc != nil then
-        destroyObject(backArc)
-    end
-    clearAttackLine()
-    noRulers = true
-end
-
 function clearAttackLine()
     if attackLine != nil then
         for k, attackLineObj in pairs(attackLine) do
@@ -894,7 +878,7 @@ function targetingMode()
         exitAttackMode()
 
         highlightEnemies()
-        spawnRangeRuler()
+        spawnRangeRuler(selectedUnitObj)
         enemyHighlighted = true
         resetRangeButtons()
     else
@@ -908,7 +892,7 @@ function attackMode()
         exitTargetingMode()
 
         highlightEnemies()
-        spawnRangeRuler()
+        spawnRangeRuler(selectedUnitObj)
         attackModeOn = true
         resetTargetingButtons()
     else
@@ -1182,124 +1166,6 @@ function getEnemyUnits()
 
     return miniObjs
 end
-
-function spawnRangeRuler()
-
-    basePos = selectedUnitObj.getPosition()
-    baseRot = selectedUnitObj.getRotation()
-
-    rangeRuler = {}
-
-    longMesh = {}
-    longMesh[1] = "http://cloud-3.steamusercontent.com/ugc/785234780861489665/6C93696005D62FDD38A344398E06D9AD8753141C/"
-    longMesh[2] = "http://cloud-3.steamusercontent.com/ugc/785234780861491012/E6A15521D46FD2CE19CE547612DC2050DC916603/"
-    longMesh[3] = "http://cloud-3.steamusercontent.com/ugc/785234780861491929/4AD760438DD5333AD61144E3256533ACC85E08E4/"
-    longMesh[4] = "http://cloud-3.steamusercontent.com/ugc/785234780861492649/CFB2183925F6DF41E80A0B2BBB59EB6908DFB103/"
-    longMesh[5] = "http://cloud-3.steamusercontent.com/ugc/785234780861492649/CFB2183925F6DF41E80A0B2BBB59EB6908DFB103/"
-    for i = 1, 5, 1 do
-
-        if unitData.baseSize != "long" then
-            rangeRuler[i] = spawnObject({
-                type = "Custom_Model",
-                position = basePos,
-                rotation = {0, baseRot.y, 0},
-                scale = {i * 6 + baseAddition[unitData.baseSize], 3, i * 6 + baseAddition[unitData.baseSize]}
-            })
-            rangeRuler[i].setCustomObject({
-                type = 0,
-                mesh = "http://cloud-3.steamusercontent.com/ugc/785234780862835239/0858A62DF9F9E7DCB49B641E4938111697E4F3D4/",
-                collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
-                material = 1,
-            })
-        else
-            rangeRuler[i] = spawnObject({
-                type = "Custom_Model",
-                position = basePos,
-                rotation = {0, baseRot.y, 0},
-                scale = {1,4,1}
-            })
-            rangeRuler[i].setCustomObject({
-                type = 0,
-                mesh = longMesh[i],
-                collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
-                material = 1,
-            })
-        end
-
-        rangeRuler[i].setLock(true)
-        rangeRuler[i].setName("Range Ruler")
-        luaScript = "targetGUID = '"..selectedUnitObj.getGUID().."'\nfunction onFixedUpdate()\nif targetGUID != nil then\ntargetObj = getObjectFromGUID(targetGUID)\nself.setPosition(targetObj.getPosition())\nself.setRotation({0,targetObj.getRotation().y,0})\nend\nend"
-        rangeRuler[i].setLuaScript(luaScript)
-    end
-
-    rangeRuler[1].setColorTint({0.7, 0.7, 0.7})
-    rangeRuler[2].setColorTint({0.1, 0.1, 0.1})
-    rangeRuler[3].setColorTint({0.6, 0, 0})
-    rangeRuler[4].setColorTint({209/255, 143/255, 30/255})
-    rangeRuler[5].setColorTint({231/255, 229/255, 44/255})
-
-
-    fixedArcScale = (5 * 6) + baseAddition[unitData.baseSize]
-    if unitData.fixedArc then
-        if unitData.baseSize != "long" then
-            frontArc = spawnObject({
-                type = "Custom_Model",
-                position = basePos,
-                rotation = {0, baseRot.y - 45, 0},
-                scale = {fixedArcScale, 3, fixedArcScale}
-            })
-            frontArc.setCustomObject({
-                type = 0,
-                mesh = "http://cloud-3.steamusercontent.com/ugc/785234780861496438/BBC5E1730F64EBC971AA582ABF23E3E00246795D/",
-                collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
-                material = 1,
-            })
-
-            backArc = spawnObject({
-                type = "Custom_Model",
-                position = basePos,
-                rotation = {0, baseRot.y - 45 + 180, 0},
-                scale = {fixedArcScale, 3, fixedArcScale}
-            })
-            backArc.setCustomObject({
-                type = 0,
-                mesh = "http://cloud-3.steamusercontent.com/ugc/785234780861496438/BBC5E1730F64EBC971AA582ABF23E3E00246795D/",
-                collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
-                material = 1,
-            })
-            backArc.setLock(true)
-            backArc.setColorTint({0.1, 0.1, 0.1})
-            backArc.setName("Range Ruler")
-            luaScript = "targetGUID = '"..selectedUnitObj.getGUID().."'\nfunction onFixedUpdate()\nif targetGUID != nil then\ntargetObj = getObjectFromGUID(targetGUID)\nself.setPosition(targetObj.getPosition())\nself.setRotation({0,targetObj.getRotation().y+135,0})\nend\nend"
-            backArc.setLuaScript(luaScript)
-
-            luaScript = "targetGUID = '"..selectedUnitObj.getGUID().."'\nfunction onFixedUpdate()\nif targetGUID != nil then\ntargetObj = getObjectFromGUID(targetGUID)\nself.setPosition(targetObj.getPosition())\nself.setRotation({0,targetObj.getRotation().y-45,0})\nend\nend"
-            frontArc.setLuaScript(luaScript)
-        else
-            frontArc = spawnObject({
-                type = "Custom_Model",
-                position = basePos,
-                rotation = {0, baseRot.y, 0},
-                scale = {1,4,1}
-            })
-            frontArc.setCustomObject({
-                type = 0,
-                mesh = "http://cloud-3.steamusercontent.com/ugc/770611292008692712/70F8B26BCD51CE4C069E7E3933ED01AC53E76E82/",
-                collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
-                material = 1,
-            })
-            luaScript = "targetGUID = '"..selectedUnitObj.getGUID().."'\nfunction onFixedUpdate()\nif targetGUID != nil then\ntargetObj = getObjectFromGUID(targetGUID)\nself.setPosition(targetObj.getPosition())\nself.setRotation({0,targetObj.getRotation().y,0})\nend\nend"
-            frontArc.setLuaScript(luaScript)
-        end
-        frontArc.setLock(true)
-        frontArc.setColorTint({0.1, 0.1, 0.1})
-        frontArc.setName("Range Ruler")
-
-
-    end
-end
-
-
 
 
 function stopAttack()
