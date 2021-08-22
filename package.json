@@ -3,6 +3,7 @@
   "scripts": {
     "compile": "npx ts-node tool/main.ts compile mod/src/StarWarsLegion.json dist/StarWarsLegion.json",
     "extract": "npx ts-node tool/main.ts extract dist/StarWarsLegion.json mod/src",
+    "generate": "npx ts-node tool/main.ts generate",
     "start": "npx ts-node tool/main.ts develop mod/src/StarWarsLegion.json dist/StarWarsLegion.json"
   },
   "license": "MIT",

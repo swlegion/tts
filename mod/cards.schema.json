@@ -17,6 +17,45 @@
       ]
     },
 
+    "Image": {
+      "anyOf": [
+        {
+          "enum": [""]
+        },
+        {
+          "$ref": "#/definitions/ImageUrl"
+        },
+        {
+          "description": "A slice of a larger image/spritesheet",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "url": {
+              "$ref": "#/definitions/ImageUrl"
+            },
+
+            "x": {
+              "type": "number",
+              "minimum": 0,
+              "format": "integer"
+            },
+
+            "y": {
+              "type": "number",
+              "minimum": 0,
+              "format": "integer"
+            }
+          }
+        }
+      ]
+    },
+
+    "ImageUrl": {
+      "type": "string",
+      "format": "uri",
+      "minLength": 1
+    },
+
     "UnitCards": {
       "additionalProperties": {
         "additionalProperties": {
@@ -51,16 +90,7 @@
         },
 
         "image": {
-          "anyOf": [
-            {
-              "enum": [""]
-            },
-            {
-              "type": "string",
-              "format": "uri",
-              "minLength": 1
-            }
-          ]
+          "$ref": "#/definitions/Image"
         }
       },
 
