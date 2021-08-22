@@ -13,8 +13,12 @@ end
 function toggleChessClockUI()
   if UI.getAttribute("floatingChessClockUI", "active") == "true" then
     UI.hide("floatingChessClockUI")
+    getObjectFromGUID(clockGUIDs.blue).setScale({0, 0, 0})
+    getObjectFromGUID(clockGUIDs.red).setScale({0, 0, 0})
   else
     UI.show("floatingChessClockUI")
+    getObjectFromGUID(clockGUIDs.blue).setScale({0.7, 0.7, 0.7})
+    getObjectFromGUID(clockGUIDs.red).setScale({0.7, 0.7, 0.7})
   end
 end
 

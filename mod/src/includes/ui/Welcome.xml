@@ -50,7 +50,8 @@
 
           (Since last <i>Stable</i>)
 
-          - TBD.
+          - Deleted the unused middle (black) clock.
+          - Chess clocks are now hidden by default. Click "Chess Clocks" to show (and use).
         </Text>
       </VerticalLayout>
     </VerticalScrollView>

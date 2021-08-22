@@ -16,7 +16,7 @@
       <Button 
         id="toggleClockButton"
         onClick="toggleClockButton"
-        tooltip="Toggle Chess Clocks"
+        tooltip="Left click to switch player clock, right click to pause"
         colors="#FFFFFF|#DFDFDF">
         <Text id="toggleClockText">Chess Clocks Paused</Text>
       </Button>

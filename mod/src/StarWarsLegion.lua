@@ -870,8 +870,10 @@ function initChessClockHotkeys()
     Blue = getObjectFromGUID(clockGUIDs.blue).Clock,
     Red = getObjectFromGUID(clockGUIDs.red).Clock
   }
-  clocks.Blue.setScale({0, 0, 0})
-  clocks.Red.setScale({0, 0, 0})
+  Wait.frames(function()
+    getObjectFromGUID(clockGUIDs.blue).setScale({0, 0, 0})
+    getObjectFromGUID(clockGUIDs.red).setScale({0, 0, 0})
+  end)
   addHotkey("Toggle Chess Clocks", toggleChessClocks)
   addHotkey("Pause All Chess Clocks", pauseAllChessClocks)
 end
