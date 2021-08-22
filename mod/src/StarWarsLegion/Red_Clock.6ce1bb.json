@@ -39,7 +39,7 @@
       "SecondsPassed": 5400,
       "Paused": true
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Red_Clock.6ce1bb.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

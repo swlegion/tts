@@ -5,11 +5,25 @@
 #include !/data/MiniInfo
 #include !/UI
 
-function onLoad()
+function onSave()
+  local chessClocksActive = UI.getAttribute("floatingChessClockUI", "active") == "true"
+  return JSON.encode({
+    clocks = chessClocksActive,
+  })
+end
+
+function onLoad(saveData)
     VERSION = "v5.0.0-beta"
     CCID = sha256(tostring(Time.time))
     UUID = sha256(Player.getPlayers()[1].steam_id)
     initUI()
+
+    local loadData = {
+      clocks = false,
+    }
+    if saveData ~= "" then
+      loadData = JSON.decode(saveData)
+    end
 
     ga_event("Global", "onLoad")
 
@@ -28,7 +42,7 @@ function onLoad()
     clockGUIDs = {}
     clockGUIDs.blue = "4f823a"
     clockGUIDs.red = "6ce1bb"
-    initChessClocks(clockGUIDs)
+    initChessClocks(clockGUIDs, loadData.clocks)
 
     battlefieldTable = "3a3ed9"
 
@@ -631,10 +645,16 @@ end
 function dummy() end
 
 -- Initialize red and blue clocks at 01:30:00
-function initChessClocks(guids)
-  for k, v in pairs(guids) do
-    getObjectFromGUID(v).Clock.setValue(5400)
-  end
+function initChessClocks(guids, show)
+  Wait.frames(function()
+    if show then
+      toggleChessClockUI()
+    else
+      for _, v in pairs(guids) do
+        getObjectFromGUID(v).Clock.setValue(5400)
+      end
+    end
+  end)
 end
 
 -- Builds all mod-specific hotkeys. Players can customize key bindings via in-game menus
@@ -870,10 +890,6 @@ function initChessClockHotkeys()
     Blue = getObjectFromGUID(clockGUIDs.blue).Clock,
     Red = getObjectFromGUID(clockGUIDs.red).Clock
   }
-  Wait.frames(function()
-    getObjectFromGUID(clockGUIDs.blue).setScale({0, 0, 0})
-    getObjectFromGUID(clockGUIDs.red).setScale({0, 0, 0})
-  end)
   addHotkey("Toggle Chess Clocks", toggleChessClocks)
   addHotkey("Pause All Chess Clocks", pauseAllChessClocks)
 end
