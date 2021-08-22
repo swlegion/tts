@@ -1,0 +1,129 @@
+{
+  "units": {
+    "Rebel": {
+      "Commander": [
+        {
+          "name": "Luke Skywalker",
+          "title": "Hero Of The Rebellion",
+          "image": ""
+        },
+        {
+          "name": "Leia Organa",
+          "title": "Fearless And Inventive",
+          "image": ""
+        },
+        {
+          "name": "Han Solo",
+          "title": "Unorthodox General",
+          "image": ""
+        },
+        {
+          "name": "Rebel Officer",
+          "title": "Resolute Commander",
+          "image": ""
+        },
+        {
+          "name": "Jyn Erso",
+          "title": "Stardust",
+          "image": ""
+        },
+        {
+          "name": "Cassian Andor",
+          "title": "Capable Intelligence Agent",
+          "image": ""
+        },
+        {
+          "name": "Lando Calrissian",
+          "title": "Smooth Operator",
+          "image": ""
+        }
+      ],
+      "Operative": [
+        {
+          "name": "Chewbacca",
+          "title": "Walking Carpet",
+          "image": ""
+        },
+        {
+          "name": "Sabine Wren",
+          "title": "Explosive Artist",
+          "image": ""
+        },
+        {
+          "name": "Luke Skywalker",
+          "title": "Jedi Knight",
+          "image": ""
+        },
+        {
+          "name": "R2-D2",
+          "title": "Hero Of A Thousand Devices",
+          "image": ""
+        }
+      ],
+      "Corps": [
+        {
+          "name": "Rebel Troopers",
+          "image": ""
+        },
+        {
+          "name": "Fleet Troopers",
+          "image": ""
+        },
+        {
+          "name": "Rebel Veterans",
+          "image": ""
+        }
+      ],
+      "Special Forces": [
+        {
+          "name": "Rebel Commandos",
+          "image": ""
+        },
+        {
+          "name": "Rebel Commandos",
+          "title": "Strike Team",
+          "image": ""
+        },
+        {
+          "name": "Wookiee Warriors",
+          "image": ""
+        },
+        {
+          "name": "Rebel Pathfinders",
+          "image": ""
+        },
+        {
+          "name": "Mandalorian Resistance",
+          "image": ""
+        },
+        {
+          "name": "Mandalorian Resistance",
+          "title": "Clan Wren",
+          "image": ""
+        },
+        {
+          "name": "Wookiee Warriors",
+          "title": "Kashyyk Resistance",
+          "image": ""
+        }
+      ],
+      "Support": [
+        {
+          "name": "AT-RT",
+          "image": ""
+        },
+        {
+          "name": "1.4 FD Laser Cannon Team",
+          "image": ""
+        },
+        {
+          "name": "Tauntaun Riders",
+          "image": ""
+        }
+      ]
+    },
+    "Empire": [],
+    "Republic": [],
+    "Separatist": []
+  }
+}
