@@ -136,7 +136,132 @@
         }
       ]
     },
-    "Empire": [],
+    "Empire": {
+      "Commander": [
+        {
+          "name": "Darth Vader",
+          "title": "Dark Lord Of The Sith",
+          "image": ""
+        },
+        {
+          "name": "General Veers",
+          "title": "Master Tactician",
+          "image": ""
+        },
+        {
+          "name": "Emperor Palpatine",
+          "title": "Ruler Of The Galactic Empire",
+          "image": ""
+        },
+        {
+          "name": "Imperial Officer",
+          "title": "Ruthless Commander",
+          "image": ""
+        },
+        {
+          "name": "Director Orson Krennic",
+          "title": "Architect Of Terror",
+          "image": ""
+        },
+        {
+          "name": "Iden Versio",
+          "title": "Inferno Squad Leader",
+          "image": ""
+        },
+        {
+          "name": "Agent Kallus",
+          "title": "Hunter Of Spectres",
+          "image": ""
+        }
+      ],
+      "Operative": [
+        {
+          "name": "Boba Fett",
+          "title": "Infamous Bounty Hunter",
+          "image": ""
+        },
+        {
+          "name": "Bossk",
+          "title": "Trandoshan Terror",
+          "image": ""
+        },
+        {
+          "name": "Darth Vader",
+          "title": "The Emperor's Apprentice",
+          "image": ""
+        }
+      ],
+      "Corps": [
+        {
+          "name": "Stormtroopers",
+          "image": ""
+        },
+        {
+          "name": "Snowtroopers",
+          "image": ""
+        },
+        {
+          "name": "Shoretroopers",
+          "image": ""
+        }
+      ],
+      "Special Forces": [
+        {
+          "name": "Scout Troopers",
+          "image": ""
+        },
+        {
+          "name": "Imperial Royal Guards",
+          "image": ""
+        },
+        {
+          "name": "Scout Troopers",
+          "title": "Strike Team",
+          "image": ""
+        },
+        {
+          "name": "Imperial Death Troopers",
+          "image": ""
+        },
+        {
+          "name": "Imperial Special Forces",
+          "image": ""
+        },
+        {
+          "name": "Imperial Special Forces",
+          "title": "Inferno Squad",
+          "image": ""
+        }
+      ],
+      "Support": [
+        {
+          "name": "74-Z Speeder Bikes",
+          "image": ""
+        },
+        {
+          "name": "E-Web Heavy Blaster Team",
+          "image": ""
+        },
+        {
+          "name": "Dewback Rider",
+          "image": ""
+        }
+      ],
+      "Heavy": [
+        {
+          "name": "AT-ST",
+          "image": ""
+        },
+        {
+          "name": "TX-225 GAVw Occupier Combat Assault Tank",
+          "image": ""
+        },
+        {
+          "name": "LAAT/LE Patrol Transport",
+          "image": ""
+        }
+      ]
+    },
     "Republic": [],
     "Separatist": []
   }
