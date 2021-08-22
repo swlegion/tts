@@ -9,6 +9,12 @@ function buildMiniInfo()
     long = { "http://cloud-3.steamusercontent.com/ugc/963116666702885485/70F17B3327115A379D06F81C6F47F76470D7B826/", 6.88976}
   }
   local miniInfo = {}
+  miniInfo.stuntDoubleBot = {
+      type = "assetbundle",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1683770885586136226/1BF43B61B14CFD7C588AF6C59972B092674D6C8F/",
+      collider = _BASE_COLLIDERS.small,
+      name = "Stunt Double Bot (Proxy)"
+  }
   miniInfo.lukeSkywalker = {
       mesh = "http://cloud-3.steamusercontent.com/ugc/785234540537100371/0B15B2810ABEBE5429E4A24852D96BAC2DC28BF7/",
       collider = _BASE_COLLIDERS.small,
