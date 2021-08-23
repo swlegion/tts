@@ -1,5 +1,4 @@
 -- Utilities around creating and managing decks of cards.
-$include !/common/Decker
 #include !/generated/DeckSchema
 
 Deck = {}
@@ -30,9 +29,11 @@ function Deck:spawnUnitCard(faction, name)
     local image = unit.image
     if image == "" then
       image = self._unknown.unit
-      card.setDescription("No image specified! Using fallback.")
     end
     local card = self:_spawnCard(image, image)
+    if image == "" then
+      card.setDescription("No image specified! Using fallback.")
+    end
     card.setName(name)
     return card
   end

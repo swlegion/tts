@@ -26,7 +26,7 @@ function toggleChessClockUI()
 end
 
 function debugSpawnUnits()
-  Deck:spawnUnitCard("Empire", "Stormtroopers")
+  Deck:spawnUnitCard("Rebel", "Luke Skywalker Hero Of The Rebellion")
 end
 
 function showWelcomeTab1()
