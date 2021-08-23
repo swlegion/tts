@@ -14,7 +14,7 @@ export default async function buildDeckSchemaLua(
   lua.push('  units = {');
   Object.entries(units).forEach((factionAndRanks) => {
     const [faction, ranks] = factionAndRanks;
-    lua.push(`    ["${faction}"] = {`);
+    lua.push(`    ["${faction.toUpperCase()}"] = {`);
     Object.entries(ranks as object).forEach((rankAndUnits) => {
       const [_rank, units] = rankAndUnits;
       (units as any[]).forEach((unit) => {
@@ -22,7 +22,7 @@ export default async function buildDeckSchemaLua(
         if (unit.title) {
           name = `${name} ${unit.title}`;
         }
-        lua.push(`      ["${name}"] = {`);
+        lua.push(`      ["${name.toUpperCase()}"] = {`);
         Object.entries(unit).forEach((keyValuePair) => {
           let [key, value] = keyValuePair;
           if (typeof value === 'string') {

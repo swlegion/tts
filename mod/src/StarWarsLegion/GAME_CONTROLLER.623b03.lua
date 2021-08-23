@@ -1,6 +1,9 @@
 #include !/Analytics
+#include !/Deck
 
 function onLoad(save_state)
+    _G.Deck = Deck:create()
+
     -- init values
     gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
     battlefieldTint = gameData.getTable("battlefieldTint")
@@ -344,14 +347,18 @@ function spawnCardDecks()
   -- {52.43, 1.03, 32.53}
   ga_event("Game", "spawnCardDecks")
   local cardInfo = Global.getTable('cardInfo')
-  local unitCards = getObjectFromGUID(cardInfo.unitCardsGUID)
   local upgrades = getObjectFromGUID(cardInfo.upgradeCardsGUID)
   local commands = getObjectFromGUID(Global.getTable('listBuilder').commandCardsGUID)
   local battlefield = getObjectFromGUID(Global.getTable('gameController').battlefieldCardsGUID)
   local cardScale = {0.83, 1, 0.83}
-  unitCards = unitCards.clone({
-    position     = {52.43, 1.03, 32.53},
-  })
+
+  -- TODO: Make this less hard-coded.
+  local factions = {"Empire", "Rebel", "Republic", "Separatist"}
+  local unitCards
+  for _, faction in ipairs(factions) do
+    Deck:spawnUnitDeck(faction, {52.43, 1.42, 32.53})
+  end
+
   upgrades = upgrades.clone({
     position     = {52.43, 1.84, 29.23},
   })
@@ -361,8 +368,6 @@ function spawnCardDecks()
   battlefield = battlefield.clone({
     position     = {52.43, 1.42, 23}
   })
-  unitCards.setScale(cardScale)
-  unitCards.setLock(false)
   upgrades.setScale(cardScale)
   upgrades.setLock(false)
   commands.setScale(cardScale)

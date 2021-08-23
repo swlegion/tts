@@ -5,12 +5,16 @@ function initUI()
   _G.Deck = Deck:create()
 end
 
-function toggleWelcomeDialog()
-  if UI.getAttribute("welcomeDialog", "active") == "true" then
-    UI.hide("welcomeDialog")
+function _toggleDialog(name)
+  if UI.getAttribute(name, "active") == "true" then
+    UI.hide(name)
   else
-    UI.show("welcomeDialog")
+    UI.show(name)
   end
+end
+
+function toggleWelcomeDialog()
+  _toggleDialog("welcomeDialog")
 end
 
 function toggleChessClockUI()
