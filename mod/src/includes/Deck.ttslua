@@ -18,10 +18,22 @@ function Deck:create()
 end
 
 function Deck:spawnUnitCard(faction, name)
+  -- TODO: Remove remapping.
+  local remap = {
+    ["rebel"]      = "Rebel",
+    ["imperial"]   = "Empire",
+    ["separatist"] = "Separatist",
+    ["republic"]   = "Republic",
+  }
+  if remap[faction] ~= nil then
+    faction = remap[faction]
+  end
+
   local units = self._schema.units[faction:upper()]
   if units == nil then
     return self:_spawnUnitOrBattleDud(name, "No matching faction found: \"" .. faction .. "\".")
   end
+
   local unit = units[name:upper()]
   if unit == nil then
     return self:_spawnUnitOrBattleDud(name, "No matching unit found.\n" .. "Faction: " .. faction)
@@ -44,6 +56,7 @@ function Deck:spawnUnitDeck(faction, position)
   if units == nil then
     return self:_spawnUnitOrBattleDud(faction, "No matching faction found.")
   end
+
   local header
   local deck
   for name, _ in pairs(units) do

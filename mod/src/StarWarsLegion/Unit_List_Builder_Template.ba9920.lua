@@ -1,3 +1,4 @@
+#include !/Deck
 #include !/common/Math
 #include !/data/CardInfo_new
 #include !/data/MiniInfo
@@ -7,6 +8,9 @@ function onLoad()
   if self.getName() != "Unit List Builder Template" then
     setUp()
   end
+
+  -- Use deck data.
+  _G.Deck = Deck:create()
 end
 
 function setUp()
@@ -250,51 +254,34 @@ end
 function spawnUnitCard(unit)
   mainMenu()
   selectedUnit = unit
-    local originalUnitCards = getObjectFromGUID(cardInfo.unitCardsGUID)
-    local unitCards = originalUnitCards.clone({ position = {0,-30,0} })
-    local cardName = selectedUnit.name
-    local unitCardTable = unitCards.getObjects()
-    local cardInt = unit:getUnitCardIndex(unitCardTable)
+  unitCard = Deck:spawnUnitCard(selectedArmyFaction, selectedUnit.name)
+  local pos = translatePos(self.getPosition(),self.getRotation(),1.5620819440734, 52.543226290399+90)
+  pos.y = self.getPosition().y + 0.35
 
-    unitCard = unitCards.takeObject({
-        position       = {0,10,0},
-        index          = cardInt
-    })
+  unitCard.setPosition(pos)
+  unitCard.setRotation({0,self.getRotation().y+180,0})
+  unitCard.setScale({0.83,1,0.83})
 
-    destroyObject(unitCards)
+  unitCard.createButton({
+      click_function = "mainMenu",
+      function_owner = self,
+      label          = "X",
+      position       = {-0.7,0.5,-1.4},
+      width          = 140,
+      height         = 180,
+      font_size      = 100,
+      color          = {1,0,0},
+      font_color     = {1,1,1},
+      tooltip        = "Delete Unit Card"
+  })
+  unitCard.setVar("ptCost", selectedUnit.ptCost)
+  
+  -- update deckBuilder
+  if selectedUnit.rank == "Commander" or selectedUnit.rank == "Operative"  then
+      deckBuilderObj.call("addCommander", selectedUnit.name:lower())
+  end
 
-    pos = translatePos(self.getPosition(),self.getRotation(),1.5620819440734, 52.543226290399+90)
-    pos.y = self.getPosition().y + 0.35
-
-    --{-0.95, 1.58, 1.24}
-
-    unitCard.setRotation({0,self.getRotation().y+180,0})
-    unitCard.setScale({0.83,1,0.83})
-
-    unitCard.createButton({
-        click_function = "mainMenu",
-        function_owner = self,
-        label          = "X",
-        position       = {-0.7,0.5,-1.4},
-        width          = 140,
-        height         = 180,
-        font_size      = 100,
-        color          = {1,0,0},
-        font_color     = {1,1,1},
-        tooltip        = "Delete Unit Card"
-    })
-    unitCard.setVar("ptCost", selectedUnit.ptCost)
-    unitCard.setPosition(pos)
-    unitCard.setLock(false)
-
-    -- update deckBuilder
-    if selectedUnit.rank == "Commander" or selectedUnit.rank == "Operative"  then
-        deckBuilderObj.call("addCommander", selectedUnit.name:lower())
-
-    end
-
-    upgradeMenu()
-
+  upgradeMenu()
 end
 
 function dud()

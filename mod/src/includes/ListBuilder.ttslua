@@ -308,14 +308,7 @@ function initializeCommandToken(cData)
 end
 
 function spawnUnitCard(faction, name, position, rotation)
-  -- TODO: Remove remapping.
-  local remap = {
-    ["rebel"]      = "Rebel",
-    ["imperial"]   = "Empire",
-    ["separatist"] = "Separatist",
-    ["republic"]   = "Republic",
-  }
-  local card = Deck:spawnUnitCard(remap[faction], name)
+  local card = Deck:spawnUnitCard(faction, name)
   ga_event("Game", "spawnUnitCard", card.getName())
 
   local tPos = simpleTranslatePos(position, 0, 0)
