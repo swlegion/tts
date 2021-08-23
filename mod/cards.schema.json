@@ -24,28 +24,6 @@
         },
         {
           "$ref": "#/definitions/ImageUrl"
-        },
-        {
-          "description": "A slice of a larger image/spritesheet",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "url": {
-              "$ref": "#/definitions/ImageUrl"
-            },
-
-            "x": {
-              "type": "number",
-              "minimum": 0,
-              "format": "integer"
-            },
-
-            "y": {
-              "type": "number",
-              "minimum": 0,
-              "format": "integer"
-            }
-          }
         }
       ]
     },
