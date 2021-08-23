@@ -18,13 +18,13 @@ function Deck:create()
 end
 
 function Deck:spawnUnitCard(faction, name)
-  local units = self._schema.units[faction]
+  local units = self._schema.units[faction:upper()]
   if units == nil then
-    return self:_spawnUnitOrBattleDud(name, "No faction found \"" .. faction .. "\".")
+    return self:_spawnUnitOrBattleDud(name, "No matching faction found: \"" .. faction .. "\".")
   end
-  local unit = units[name]
+  local unit = units[name:upper()]
   if unit == nil then
-    return self:_spawnUnitOrBattleDud(name, "No unit found \"" .. name .. "\".\n" .. "Faction: " .. faction)
+    return self:_spawnUnitOrBattleDud(name, "No matching unit found.\n" .. "Faction: " .. faction)
   else
     local image = unit.image
     if image == "" then
@@ -37,6 +37,31 @@ function Deck:spawnUnitCard(faction, name)
     card.setName(name)
     return card
   end
+end
+
+function Deck:spawnUnitDeck(faction, position)
+  local units = self._schema.units[faction:upper()]
+  if units == nil then
+    return self:_spawnUnitOrBattleDud(faction, "No matching faction found.")
+  end
+  local header
+  local deck
+  for name, _ in pairs(units) do
+    local card = self:spawnUnitCard(faction, name)
+    if header == nil then
+      header = card
+      deck = card
+    else
+      local container = header.putObject(card)
+      if container ~= nil then
+        deck = container
+      end
+    end
+    if position ~= nil then
+      card.setPosition(position)
+    end
+  end
+  return deck
 end
 
 function Deck:spawnUpgradeCard(name)
@@ -69,7 +94,7 @@ end
 function Deck:_spawnCard(front, back)
   local custom = spawnObject({
     type     = "CardCustom",
-    position = {0, 10, 0},
+    position = {54.62, 0.94, -35.45},
     scale    = {0.83, 1, 0.83},
   })
   custom.setCustomObject({

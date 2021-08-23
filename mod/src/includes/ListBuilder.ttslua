@@ -1,4 +1,5 @@
 #include !/Analytics
+#include !/Deck
 
 -- This is the shared execution code for {RED|BLUE}_LIST_BUILDER.
 
@@ -18,6 +19,9 @@ function onLoadShared(
   listBuilderButtons = _listBuilderButtons;
   backButton = _backButton
   dataDiskMount = _dataDiskMount
+
+  -- Use deck data.
+  _G.Deck = Deck:create()
 end
 
 -- UI --------------------------------------------------------------------------
@@ -303,49 +307,22 @@ function initializeCommandToken(cData)
 
 end
 
-function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot, unitNameFallback, scale)
-  local templatePosUnit = passedTemplatePos
-  local originalUnitCards = getObjectFromGUID(cardInfo.unitCardsGUID)
-  copy({originalUnitCards})
-  local pastedObj = paste({
-    position     = {0,-10,0}
-  })
-  local unitCards = pastedObj[1]
-  local unitCardTable = unitCards.getObjects()
-  
+function spawnUnitCard(faction, name, position, rotation)
+  -- TODO: Remove remapping.
+  local remap = {
+    ["rebel"]      = "Rebel",
+    ["imperial"]   = "Empire",
+    ["separatist"] = "Separatist",
+    ["republic"]   = "Republic",
+  }
+  local card = Deck:spawnUnitCard(remap[faction], name)
+  ga_event("Game", "spawnUnitCard", card.getName())
 
-  local unitCard
-  if unitObj == nil then
-    local face = "http://cloud-3.steamusercontent.com/ugc/1714157207248706790/F9785EFE7468A0196B91FECA725ADC0414674074/"
-    unitCard = spawnObject({
-      type           = "CardCustom",
-      position       = {0,10,0}
-    })
-    unitCard.setCustomObject({
-      face           = face,
-      back           = face,
-    })
-    unitCard.setName(unitNameFallback)
-  else
-    unitCard = unitCards.takeObject({
-      position       = {0,10,0},
-      index          = unitObj:getUnitCardIndex(unitCardTable),
-    })
-  end
-
-  ga_event("Game", "spawnUnitCard", unitCard.getName())
-  destroyObject(unitCards)
-
-  pos = simpleTranslatePos(templatePosUnit, 0, 0)
-  pos.y = templatePosUnit.y
-
-  unitCard.setRotation({0,passedTemplateRot.y+180,0})
-  unitCard.setScale({scale,1,scale})
-
-  unitCard.setPosition(pos)
-  unitCard.setLock(false)
-
-  return unitCard
+  local tPos = simpleTranslatePos(position, 0, 0)
+  tPos.y = tPos.y
+  card.setRotation({0,rotation.y+180,0})
+  card.setPosition(tPos)
+  return card
 end
 
 function spawnLoadoutBag(unitName, unitUpgrades, pTemplatePos, pTemplateRot)
@@ -602,7 +579,7 @@ function spawnUnit(unit, n, faction, totalUnits)
   -- SPAWN CARDS
   -- spawn unit Card
   spawnMiniTable.displayName = unitObject.displayName
-  spawnMiniTable.unitCardObj = spawnUnitCard(unitObject, tempPos, self.getRotation(), unit.name, cardScale)  
+  spawnMiniTable.unitCardObj = spawnUnitCard(faction, unit.name, tempPos, self.getRotation())  
   spawnMiniTable.unitIDTokenGUID = spawnUnitIDToken(templatePos, self.getRotation(), n)
 
   -- spawn loadout bag
