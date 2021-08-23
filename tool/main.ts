@@ -1,6 +1,11 @@
 import minimist from 'minimist';
 import { exit } from 'shelljs';
-import { compileSaveFile, createSymlink, extractSaveFile } from '../src';
+import {
+  compileSaveFile,
+  createSymlink,
+  extractSaveFile,
+  generateFiles,
+} from '../src';
 
 // Changes the default behavior of unhandled promises.
 require('make-promises-safe');
@@ -23,6 +28,9 @@ require('make-promises-safe');
       await compileSaveFile(positional[1], positional[2]);
       const symLink = await createSymlink();
       console.info(`Created "${symLink}" -> "${positional[2]}"`);
+      break;
+    case 'generate':
+      await generateFiles();
       break;
     default:
       console.error('Unknown command', args);

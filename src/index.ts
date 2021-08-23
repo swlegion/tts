@@ -5,6 +5,7 @@ import { ObjectState } from '@matanlurey/tts-save-files';
 import fs from 'fs-extra';
 import os from 'os';
 import path from 'path';
+import buildDeckSchemaLua from './lib/generate-deck-schema';
 
 /**
  * Reads a `{TTS-SAVE-FILE}.json`, and replaces the contents of a directory.
@@ -70,6 +71,11 @@ export async function compileSaveFile(
     await fs.remove(outputDir);
     await fs.mkdirp(outputDir);
   }
+  await generateFiles();
+  await buildDeckSchemaLua(
+    path.join('contrib', 'cards.json'),
+    path.join('mod', 'src', 'includes', 'generated', 'DeckSchema.ttslua'),
+  );
   console.info(`Reading "${source}"...`);
   const splitter = new expander.SplitIO();
   const saveFile = await splitter.readAndCollapse(source);
@@ -123,4 +129,12 @@ export async function createSymlink(homeDir?: string): Promise<string> {
     os.platform() === 'win32' ? 'junction' : 'dir',
   );
   return from;
+}
+
+export async function generateFiles(): Promise<void> {
+  console.info(`Generating additional files...`);
+  await buildDeckSchemaLua(
+    path.join('contrib', 'cards.json'),
+    path.join('mod', 'src', 'includes', 'generated', 'DeckSchema.ttslua'),
+  );
 }

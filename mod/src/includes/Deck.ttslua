@@ -1,0 +1,80 @@
+-- Utilities around creating and managing decks of cards.
+#include !/generated/DeckSchema
+
+Deck = {}
+Deck.__index = Deck;
+function Deck:create()
+  local meta = {
+    -- TODO: Have the schema be configurable.
+    _schema = DeckSchema,
+    _unknown = {
+      command = "http://cloud-3.steamusercontent.com/ugc/1683770885590601027/47E5B7470CAAC79372CB5C607AEF29DF195EB7CE/",
+      unit    = "http://cloud-3.steamusercontent.com/ugc/1683770885590600993/4D9BAC2DD180E2CFF9A591E19EFEBD470CB25855/",
+      upgrade = "http://cloud-3.steamusercontent.com/ugc/1683770885590601060/FA4DD3B17A42BCD5A81D063CD13E257A0EBD419D/",
+    }
+  }
+  setmetatable(meta, Deck)
+  return meta
+end
+
+function Deck:spawnUnitCard(faction, name)
+  local units = self._schema.units[faction]
+  if units == nil then
+    return self:_spawnUnitOrBattleDud(name, "No faction found \"" .. faction .. "\".")
+  end
+  local unit = units[name]
+  if unit == nil then
+    return self:_spawnUnitOrBattleDud(name, "No unit found \"" .. name .. "\".\n" .. "Faction: " .. faction)
+  else
+    local image = unit.image
+    if image == "" then
+      image = self._unknown.unit
+    end
+    local card = self:_spawnCard(image, image)
+    if image == "" then
+      card.setDescription("No image specified! Using fallback.")
+    end
+    card.setName(name)
+    return card
+  end
+end
+
+function Deck:spawnUpgradeCard(name)
+  -- TODO: Implement.
+end
+
+function Deck:spawnCommandCard(name)
+  -- TODO: Implement.
+end
+
+function Deck:spawnBattleCard(name)
+  -- TODO: Implement.
+end
+
+function Deck:_spawnUnitOrBattleDud(name, description)
+  local card = self:_spawnCard(self._unknown.unit)
+  card.setName(name)
+  card.setDescription(description)
+  return card
+end
+
+function Deck:_spawnUpgradeDud(name, description)
+    -- TODO: Implement.
+end
+
+function Deck:_spawnComandDud(name, description)
+    -- TODO: Implement.
+end
+
+function Deck:_spawnCard(front, back)
+  local custom = spawnObject({
+    type     = "CardCustom",
+    position = {0, 10, 0},
+    scale    = {0.83, 1, 0.83},
+  })
+  custom.setCustomObject({
+    face     = front,
+    back     = back,
+  })
+  return custom
+end

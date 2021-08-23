@@ -1,0 +1,406 @@
+-- AUTO GENERATED (`npm run generate`). DO NOT MODIFY BY HAND.
+DeckSchema = {
+  units = {
+    ["Rebel"] = {
+      ["Luke Skywalker Hero Of The Rebellion"] = {
+        name  = "Luke Skywalker",
+        title  = "Hero Of The Rebellion",
+        image  = "http://cloud-3.steamusercontent.com/ugc/1683770969788425590/4AB2CCCFC2F45B3ACB9927166F6014A2903D7DCE/",
+      },
+      ["Leia Organa Fearless And Inventive"] = {
+        name  = "Leia Organa",
+        title  = "Fearless And Inventive",
+        image  = "",
+      },
+      ["Han Solo Unorthodox General"] = {
+        name  = "Han Solo",
+        title  = "Unorthodox General",
+        image  = "",
+      },
+      ["Rebel Officer Resolute Commander"] = {
+        name  = "Rebel Officer",
+        title  = "Resolute Commander",
+        image  = "",
+      },
+      ["Jyn Erso Stardust"] = {
+        name  = "Jyn Erso",
+        title  = "Stardust",
+        image  = "",
+      },
+      ["Cassian Andor Capable Intelligence Agent"] = {
+        name  = "Cassian Andor",
+        title  = "Capable Intelligence Agent",
+        image  = "",
+      },
+      ["Lando Calrissian Smooth Operator"] = {
+        name  = "Lando Calrissian",
+        title  = "Smooth Operator",
+        image  = "",
+      },
+      ["Chewbacca Walking Carpet"] = {
+        name  = "Chewbacca",
+        title  = "Walking Carpet",
+        image  = "",
+      },
+      ["Sabine Wren Explosive Artist"] = {
+        name  = "Sabine Wren",
+        title  = "Explosive Artist",
+        image  = "",
+      },
+      ["Luke Skywalker Jedi Knight"] = {
+        name  = "Luke Skywalker",
+        title  = "Jedi Knight",
+        image  = "",
+      },
+      ["R2-D2 Hero Of A Thousand Devices"] = {
+        name  = "R2-D2",
+        title  = "Hero Of A Thousand Devices",
+        image  = "",
+      },
+      ["Rebel Troopers"] = {
+        name  = "Rebel Troopers",
+        image  = "",
+      },
+      ["Fleet Troopers"] = {
+        name  = "Fleet Troopers",
+        image  = "",
+      },
+      ["Rebel Veterans"] = {
+        name  = "Rebel Veterans",
+        image  = "",
+      },
+      ["Rebel Commandos"] = {
+        name  = "Rebel Commandos",
+        image  = "",
+      },
+      ["Rebel Commandos Strike Team"] = {
+        name  = "Rebel Commandos",
+        title  = "Strike Team",
+        image  = "",
+      },
+      ["Wookiee Warriors"] = {
+        name  = "Wookiee Warriors",
+        image  = "",
+      },
+      ["Rebel Pathfinders"] = {
+        name  = "Rebel Pathfinders",
+        image  = "",
+      },
+      ["Mandalorian Resistance"] = {
+        name  = "Mandalorian Resistance",
+        image  = "",
+      },
+      ["Mandalorian Resistance Clan Wren"] = {
+        name  = "Mandalorian Resistance",
+        title  = "Clan Wren",
+        image  = "",
+      },
+      ["Wookiee Warriors Kashyyyk Resistance"] = {
+        name  = "Wookiee Warriors",
+        title  = "Kashyyyk Resistance",
+        image  = "",
+      },
+      ["AT-RT"] = {
+        name  = "AT-RT",
+        image  = "",
+      },
+      ["1.4 FD Laser Cannon Team"] = {
+        name  = "1.4 FD Laser Cannon Team",
+        image  = "",
+      },
+      ["Tauntaun Riders"] = {
+        name  = "Tauntaun Riders",
+        image  = "",
+      },
+      ["T-47 Airspeeder"] = {
+        name  = "T-47 Airspeeder",
+        image  = "",
+      },
+      ["X-34 Landspeeder"] = {
+        name  = "X-34 Landspeeder",
+        image  = "",
+      },
+      ["A-A5 Speeder Truck"] = {
+        name  = "A-A5 Speeder Truck",
+        image  = "",
+      },
+    },
+    ["Empire"] = {
+      ["Darth Vader Dark Lord Of The Sith"] = {
+        name  = "Darth Vader",
+        title  = "Dark Lord Of The Sith",
+        image  = "",
+      },
+      ["General Veers Master Tactician"] = {
+        name  = "General Veers",
+        title  = "Master Tactician",
+        image  = "",
+      },
+      ["Emperor Palpatine Ruler Of The Galactic Empire"] = {
+        name  = "Emperor Palpatine",
+        title  = "Ruler Of The Galactic Empire",
+        image  = "",
+      },
+      ["Imperial Officer Ruthless Commander"] = {
+        name  = "Imperial Officer",
+        title  = "Ruthless Commander",
+        image  = "",
+      },
+      ["Director Orson Krennic Architect Of Terror"] = {
+        name  = "Director Orson Krennic",
+        title  = "Architect Of Terror",
+        image  = "",
+      },
+      ["Iden Versio Inferno Squad Leader"] = {
+        name  = "Iden Versio",
+        title  = "Inferno Squad Leader",
+        image  = "",
+      },
+      ["Agent Kallus Hunter Of Spectres"] = {
+        name  = "Agent Kallus",
+        title  = "Hunter Of Spectres",
+        image  = "",
+      },
+      ["Boba Fett Infamous Bounty Hunter"] = {
+        name  = "Boba Fett",
+        title  = "Infamous Bounty Hunter",
+        image  = "",
+      },
+      ["Bossk Trandoshan Terror"] = {
+        name  = "Bossk",
+        title  = "Trandoshan Terror",
+        image  = "",
+      },
+      ["Darth Vader The Emperor's Apprentice"] = {
+        name  = "Darth Vader",
+        title  = "The Emperor's Apprentice",
+        image  = "",
+      },
+      ["Stormtroopers"] = {
+        name  = "Stormtroopers",
+        image  = "",
+      },
+      ["Snowtroopers"] = {
+        name  = "Snowtroopers",
+        image  = "",
+      },
+      ["Shoretroopers"] = {
+        name  = "Shoretroopers",
+        image  = "",
+      },
+      ["Scout Troopers"] = {
+        name  = "Scout Troopers",
+        image  = "",
+      },
+      ["Imperial Royal Guards"] = {
+        name  = "Imperial Royal Guards",
+        image  = "",
+      },
+      ["Scout Troopers Strike Team"] = {
+        name  = "Scout Troopers",
+        title  = "Strike Team",
+        image  = "",
+      },
+      ["Imperial Death Troopers"] = {
+        name  = "Imperial Death Troopers",
+        image  = "",
+      },
+      ["Imperial Special Forces"] = {
+        name  = "Imperial Special Forces",
+        image  = "",
+      },
+      ["Imperial Special Forces Inferno Squad"] = {
+        name  = "Imperial Special Forces",
+        title  = "Inferno Squad",
+        image  = "",
+      },
+      ["74-Z Speeder Bikes"] = {
+        name  = "74-Z Speeder Bikes",
+        image  = "",
+      },
+      ["E-Web Heavy Blaster Team"] = {
+        name  = "E-Web Heavy Blaster Team",
+        image  = "",
+      },
+      ["Dewback Rider"] = {
+        name  = "Dewback Rider",
+        image  = "",
+      },
+      ["AT-ST"] = {
+        name  = "AT-ST",
+        image  = "",
+      },
+      ["TX-225 GAVw Occupier Combat Assault Tank"] = {
+        name  = "TX-225 GAVw Occupier Combat Assault Tank",
+        image  = "",
+      },
+      ["LAAT/LE Patrol Transport"] = {
+        name  = "LAAT/LE Patrol Transport",
+        image  = "",
+      },
+    },
+    ["Republic"] = {
+      ["Obi-Wan Kenobi Civilized Warrior"] = {
+        name  = "Obi-Wan Kenobi",
+        title  = "Civilized Warrior",
+        image  = "",
+      },
+      ["Clone Captain Rex Honorable Soldier"] = {
+        name  = "Clone Captain Rex",
+        title  = "Honorable Soldier",
+        image  = "",
+      },
+      ["Anakin Skywalker The Chosen One"] = {
+        name  = "Anakin Skywalker",
+        title  = "The Chosen One",
+        image  = "",
+      },
+      ["Clone Commander Trained For Leadership"] = {
+        name  = "Clone Commander",
+        title  = "Trained For Leadership",
+        image  = "",
+      },
+      ["Yoda Grand Master Of The Jedi Order"] = {
+        name  = "Yoda",
+        title  = "Grand Master Of The Jedi Order",
+        image  = "",
+      },
+      ["Wookiee Chieftan Clan Leader"] = {
+        name  = "Wookiee Chieftan",
+        title  = "Clan Leader",
+        image  = "",
+      },
+      ["Chewbacca Hero Of Kashyyyk"] = {
+        name  = "Chewbacca",
+        title  = "Hero Of Kashyyyk",
+        image  = "",
+      },
+      ["R2-D2 Independent Astromech"] = {
+        name  = "R2-D2",
+        title  = "Independent Astromech",
+        image  = "",
+      },
+      ["Padme Amidala Spirited Senator"] = {
+        name  = "Padme Amidala",
+        title  = "Spirited Senator",
+        image  = "",
+      },
+      ["Phase I Clone Troopers"] = {
+        name  = "Phase I Clone Troopers",
+        image  = "",
+      },
+      ["Phase II Clone Troopers"] = {
+        name  = "Phase II Clone Troopers",
+        image  = "",
+      },
+      ["Arc Troopers"] = {
+        name  = "Arc Troopers",
+        image  = "",
+      },
+      ["Arc Troopers Strike Team"] = {
+        name  = "Arc Troopers",
+        title  = "Strike Team",
+        image  = "",
+      },
+      ["Wookiee Warriors"] = {
+        name  = "Wookiee Warriors",
+        image  = "",
+      },
+      ["Wookiee Warriors Kashyyyk Defenders"] = {
+        name  = "Wookiee Warriors",
+        title  = "Kashyyyk Defenders",
+        image  = "",
+      },
+      ["BARC Speeder"] = {
+        name  = "BARC Speeder",
+        image  = "",
+      },
+      ["AT-RT"] = {
+        name  = "AT-RT",
+        image  = "",
+      },
+      ["TX-130 Saber-Class Fighter Tank"] = {
+        name  = "TX-130 Saber-Class Fighter Tank",
+        image  = "",
+      },
+      ["LAAT/LE Patrol Transport"] = {
+        name  = "LAAT/LE Patrol Transport",
+        image  = "",
+      },
+    },
+    ["Separatist"] = {
+      ["General Grievous Sinister Cyborg"] = {
+        name  = "General Grievous",
+        title  = "Sinister Cyborg",
+        image  = "",
+      },
+      ["Count Dooku Darth Tyranus"] = {
+        name  = "Count Dooku",
+        title  = "Darth Tyranus",
+        image  = "",
+      },
+      ["T-Series Tactical Droid Programmed For Strategy"] = {
+        name  = "T-Series Tactical Droid",
+        title  = "Programmed For Strategy",
+        image  = "",
+      },
+      ["Super Tactical Droid"] = {
+        name  = "Super Tactical Droid",
+        image  = "",
+      },
+      ["Super Tactical Droid Kalani"] = {
+        name  = "Super Tactical Droid",
+        title  = "Kalani",
+        image  = "",
+      },
+      ["Super Tactical Droid Kraken"] = {
+        name  = "Super Tactical Droid",
+        title  = "Kraken",
+        image  = "",
+      },
+      ["Cad Bane Needs No Introduction"] = {
+        name  = "Cad Bane",
+        title  = "Needs No Introduction",
+        image  = "",
+      },
+      ["Maul Impatient Apprentice"] = {
+        name  = "Maul",
+        title  = "Impatient Apprentice",
+        image  = "",
+      },
+      ["B1 Battle Droids"] = {
+        name  = "B1 Battle Droids",
+        image  = "",
+      },
+      ["B2 Super Battle Droids"] = {
+        name  = "B2 Super Battle Droids",
+        image  = "",
+      },
+      ["BX-Series Droid Commandos"] = {
+        name  = "BX-Series Droid Commandos",
+        image  = "",
+      },
+      ["BX-Series Droid Commandos Strike Team"] = {
+        name  = "BX-Series Droid Commandos",
+        title  = "Strike Team",
+        image  = "",
+      },
+      ["IG-100 MagnaGuard"] = {
+        name  = "IG-100 MagnaGuard",
+        image  = "",
+      },
+      ["Droidekas"] = {
+        name  = "Droidekas",
+        image  = "",
+      },
+      ["STAP RiderS"] = {
+        name  = "STAP RiderS",
+        image  = "",
+      },
+      ["AAT Trade Federation Battle Tank"] = {
+        name  = "AAT Trade Federation Battle Tank",
+        image  = "",
+      },
+    },
+  },
+}
