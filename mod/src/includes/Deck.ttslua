@@ -46,6 +46,10 @@ function Deck:spawnUnitCard(faction, name)
     if image == "" then
       card.setDescription("No image specified! Using fallback.")
     end
+    local name = unit.name
+    if unit.title ~= nil then
+      name = name .. ": " .. unit.title
+    end
     card.setName(name)
     return card
   end
