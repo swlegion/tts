@@ -10,129 +10,134 @@
         {
           "name": "Leia Organa",
           "title": "Fearless And Inventive",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788535425/1ADD2DCEEA5D23013C2331604493EFF62AC46DB3/"
         },
         {
           "name": "Han Solo",
           "title": "Unorthodox General",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603832/92268B52B65228468DA0E1193EF01C808E899EF6/"
         },
         {
           "name": "Rebel Officer",
           "title": "Resolute Commander",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603864/8B88E031F49A36B1504A1D48202C4731C4025EB5/"
         },
         {
           "name": "Jyn Erso",
           "title": "Stardust",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603895/5D4275A9C4F93D4170453A9375C308ABCFE318A1/"
         },
         {
           "name": "Cassian Andor",
           "title": "Capable Intelligence Agent",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603937/418000BFD236B11C08F5EA8AF670673AC63199D2/"
         },
         {
           "name": "Lando Calrissian",
           "title": "Smooth Operator",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603976/14129DC0580196A6C188A7D5B037937BE3906C83/"
         }
       ],
       "Operative": [
         {
           "name": "Chewbacca",
           "title": "Walking Carpet",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604014/60F813972000C571BD52A7D55A5B8BFB8FADE3C2/"
         },
         {
           "name": "Sabine Wren",
           "title": "Explosive Artist",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604048/BE5C0706F024117D9DBCF3468D89A4DEA1C10BFE/"
         },
         {
           "name": "Luke Skywalker",
           "title": "Jedi Knight",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604076/98BCE6298F7E4D5086CB79D9592FC0151E7A447A/"
         },
         {
           "name": "R2-D2",
           "title": "Hero Of A Thousand Devices",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604120/5C6ED7C27799E640540BC177E7804442CB47C304/"
+        },
+        {
+          "name": "K-2SO",
+          "title": "Sardonic Security Droid",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788629460/11D489A9283627C5CE93F29C04BEB61BA3F166D5/"
         }
       ],
       "Corps": [
         {
           "name": "Rebel Troopers",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604151/FDE5B897188B36FF0336D103A45C20E91E25FED0/"
         },
         {
           "name": "Fleet Troopers",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604199/71EA4817F31B75D4845B95F3AF76D61069D66E9A/"
         },
         {
           "name": "Rebel Veterans",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604242/EA62216368A51479BDBB4264DE172879EB43B6A1/"
         }
       ],
       "Special Forces": [
         {
           "name": "Rebel Commandos",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604288/CC2622742539F3AD9EEA9AB88676DF7C0282FFB0/"
         },
         {
           "name": "Rebel Commandos",
           "title": "Strike Team",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/"
         },
         {
           "name": "Wookiee Warriors",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/"
         },
         {
           "name": "Rebel Pathfinders",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604432/47C2CB26F7C98A3F449136D78165F64BE7D0A846/"
         },
         {
           "name": "Mandalorian Resistance",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604461/D49CF324CDE3C648E683FCCD762B76F94E843065/"
         },
         {
           "name": "Mandalorian Resistance",
           "title": "Clan Wren",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604497/C4CEBD761320F416E03203426388067B95104C90/"
         },
         {
           "name": "Wookiee Warriors",
           "title": "Kashyyyk Resistance",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604546/F387DBCD02315CB56A87FF52D99CE3C1E6E548F2/"
         }
       ],
       "Support": [
         {
           "name": "AT-RT",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604581/361864DD585CE7DE99234C08416E9C4C1AA84A50/"
         },
         {
           "name": "1.4 FD Laser Cannon Team",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604624/D975E5460BB0A6B86E0AD105445ECBAEBBB2BEA0/"
         },
         {
           "name": "Tauntaun Riders",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604655/CC7501F41054D1F68139C8ABCFAEE0CAA855475C/"
         }
       ],
       "Heavy": [
         {
           "name": "T-47 Airspeeder",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604696/AD5CE170F4BBAC2DA1F5AF0F3AE4C7381EDC70AD/"
         },
         {
           "name": "X-34 Landspeeder",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604738/6DAAAD8E05BFAF02E405EB1A28FA6EC17771D678/"
         },
         {
           "name": "A-A5 Speeder Truck",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788629495/7CC8A26CAE70713A18D1A9C2A9DB7B59BC0839F9/"
         }
       ]
     },
@@ -141,124 +146,124 @@
         {
           "name": "Darth Vader",
           "title": "Dark Lord Of The Sith",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701730/72AE7649145939BD1B754C71CEA6AC3F9A6C11E5/"
         },
         {
           "name": "General Veers",
           "title": "Master Tactician",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701690/7C845644D274DFEBCE8EDA7F932905A4FBC27A11/"
         },
         {
           "name": "Emperor Palpatine",
           "title": "Ruler Of The Galactic Empire",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701664/ABD12EEF236402EDF420F7849146DDEB367FC290/"
         },
         {
           "name": "Imperial Officer",
           "title": "Ruthless Commander",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701634/8D2A4BA88A49B4F29CAD29560D2FB864F3497733/"
         },
         {
           "name": "Director Orson Krennic",
           "title": "Architect Of Terror",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701598/3832DC52B0D1BDBD5B71C222DD19A4C8AEF8B334/"
         },
         {
           "name": "Iden Versio",
           "title": "Inferno Squad Leader",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701556/6A3390D19B067EAACDF1CADD825D11BBE048DCEA/"
         },
         {
           "name": "Agent Kallus",
           "title": "Hunter Of Spectres",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701522/0198EDBE386830FA71A43C6887FD82E0CC28D241/"
         }
       ],
       "Operative": [
         {
           "name": "Boba Fett",
           "title": "Infamous Bounty Hunter",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701498/836304CFE19193261F594363CFD8860F22FCD5F1/"
         },
         {
           "name": "Bossk",
           "title": "Trandoshan Terror",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701468/4D83FEB79E36D5DD9A5DFB06CB479EBD35CCE130/"
         },
         {
           "name": "Darth Vader",
           "title": "The Emperor's Apprentice",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701427/7CD88B79A5D83D978F1FC76D438F87DD3991485A/"
         }
       ],
       "Corps": [
         {
           "name": "Stormtroopers",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701400/02C7B04C990D9753DBD492D8D3AA7B380E131E9B/"
         },
         {
           "name": "Snowtroopers",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701374/B2FE5819A3004E4C9A64FC3841FBCAE6F3465D2F/"
         },
         {
           "name": "Shoretroopers",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701337/62D4CDC12A785A32680980C485F009500F93762F/"
         }
       ],
       "Special Forces": [
         {
           "name": "Scout Troopers",
-          "image": ""
-        },
-        {
-          "name": "Imperial Royal Guards",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701305/172560D0D3A8FF9D0E646DE1F70272CD90CBE46F/"
         },
         {
           "name": "Scout Troopers",
           "title": "Strike Team",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701268/B5118D8147938CC0B6A146A8BFDD7A8B33593A89/"
+        },
+        {
+          "name": "Imperial Royal Guards",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701217/89E8CC46981E8C634A4E3D6C4F6EAF343B27C1E2/"
         },
         {
           "name": "Imperial Death Troopers",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701181/DD8B2B7C2D3C3AC66F7D90F738B04BB309A31B46/"
         },
         {
           "name": "Imperial Special Forces",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701129/EDA8288C48AF33A69F22AE18E6CEB1413A0B04F9/"
         },
         {
           "name": "Imperial Special Forces",
           "title": "Inferno Squad",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701097/D1043BFA3767D8E5A294ACA112D0E7E9A6B75627/"
         }
       ],
       "Support": [
         {
           "name": "74-Z Speeder Bikes",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701072/16EF027E626FA31293F4E88556AF9633F091180D/"
         },
         {
           "name": "E-Web Heavy Blaster Team",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701046/AC13001548D72E76B4DEC2D904EB44454C152806/"
         },
         {
           "name": "Dewback Rider",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701014/E1E943B567134E6A946C714BD07233CDC881A7AF/"
         }
       ],
       "Heavy": [
         {
           "name": "AT-ST",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700975/F5BACD8B7607BCB5FAA1576B7FA4151FA0A5CA59/"
         },
         {
           "name": "TX-225 GAVw Occupier Combat Assault Tank",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700946/705F2EF05FABA96D1386B8E41C56AD31E7901820/"
         },
         {
           "name": "LAAT/LE Patrol Transport",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700907/2DD3325FA71C1F920CC957F8B7393893AE282073/"
         }
       ]
     },
@@ -267,99 +272,99 @@
         {
           "name": "Obi-Wan Kenobi",
           "title": "Civilized Warrior",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790629/61D2CCB8A106E855E621557601F65B34FB2AEFC1/"
         },
         {
           "name": "Clone Captain Rex",
           "title": "Honorable Soldier",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790598/868FE96BEB709EE3A25D7973FF259B8BF7824475/"
         },
         {
           "name": "Anakin Skywalker",
           "title": "The Chosen One",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790573/1BDDD3F5C3D43558F79F35F1A4B9327F4729D62B/"
         },
         {
           "name": "Clone Commander",
           "title": "Trained For Leadership",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790538/EBB9911B9EB9C0F817370266A8ACB8357BEB3919/"
         },
         {
           "name": "Yoda",
           "title": "Grand Master Of The Jedi Order",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790511/A6CDD26B405EFC7CC306D96BB04AA24E5BED2794/"
         },
         {
           "name": "Wookiee Chieftan",
           "title": "Clan Leader",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790478/85E9C624082CA5731008121F45ABFA06CC4583DB/"
         },
         {
           "name": "Chewbacca",
           "title": "Hero Of Kashyyyk",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790442/8E99C974FA5AF735BADBABA2CEA6400399908E50/"
         }
       ],
       "Operative": [
         {
           "name": "R2-D2",
           "title": "Independent Astromech",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790410/0D5BE2D0E5632005D6BC47413845604898AF0004/"
         },
         {
           "name": "Padme Amidala",
           "title": "Spirited Senator",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790377/AC7989ED45A958942F1EF716B575174C5BEB92E1/"
         }
       ],
       "Corps": [
         {
           "name": "Phase I Clone Troopers",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790336/C2B0C8EB973E7D6657E288E5AFE9C3F00809461A/"
         },
         {
           "name": "Phase II Clone Troopers",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790299/B84917597F10DE241D7909430E91B5FC03248144/"
         }
       ],
       "Special Forces": [
         {
           "name": "Arc Troopers",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790227/9326CC2191C991FF9CB0EB06A4EA17A2A17078BC/"
         },
         {
           "name": "Arc Troopers",
           "title": "Strike Team",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790261/AD41C53AE8A6F57645BE2A51DAD8E9FF4FB9224D/"
         },
         {
           "name": "Wookiee Warriors",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/"
         },
         {
           "name": "Wookiee Warriors",
           "title": "Kashyyyk Defenders",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790192/E7C7082C239E04E3DF76FDFF909EE360D9C25012/"
         }
       ],
       "Support": [
         {
           "name": "BARC Speeder",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790145/DD6B7ACA36B88E28B4326E7AA96536230B87F01E/"
         },
         {
           "name": "AT-RT",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790101/7D591836DB5F16ED19FE2A28B55784950E1759CB/"
         }
       ],
       "Heavy": [
         {
           "name": "TX-130 Saber-Class Fighter Tank",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790069/CFA0E667E3B9FEB5F80A3F7A68CAADE7FCF5F340/"
         },
         {
           "name": "LAAT/LE Patrol Transport",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700907/2DD3325FA71C1F920CC957F8B7393893AE282073/"
         }
       ]
     },
@@ -368,84 +373,88 @@
         {
           "name": "General Grievous",
           "title": "Sinister Cyborg",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790037/C20F500DE55700AA568EA5BDA7794A1B0210E605/"
         },
         {
           "name": "Count Dooku",
           "title": "Darth Tyranus",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789992/5D0BFCF9DA9A3200D9D0A2CDE98E25782B8F4C10/"
         },
         {
           "name": "T-Series Tactical Droid",
           "title": "Programmed For Strategy",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789948/57BDB938C53DD5571B6FBC0F15225221BEDDF3F7/"
         },
         {
           "name": "Super Tactical Droid",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789910/D7965608F5D3FF1B7FD8D14BF740C098F8AB5B7D/"
         },
         {
           "name": "Super Tactical Droid",
           "title": "Kalani",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789867/EB6D7E54CBA8E867A4146B0CE70ADA1769D1EB86/"
         },
         {
           "name": "Super Tactical Droid",
           "title": "Kraken",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789829/C51EEBAA4150DA48EC395D6C275415592D430E54/"
         }
       ],
       "Operative": [
         {
           "name": "Cad Bane",
           "title": "Needs No Introduction",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789783/BF082412A93DED3289764E39E3D81ACF204DA989/"
         },
         {
           "name": "Maul",
           "title": "Impatient Apprentice",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789734/ABF8B8F5555C2DF64258B4DD432B479059AFF4D9/"
         }
       ],
       "Corps": [
         {
           "name": "B1 Battle Droids",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789698/9ADC7290CCCD4AA6F24BA74F9C098A4E3A61B063/"
         },
         {
           "name": "B2 Super Battle Droids",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789641/943F65C66737E7EB971F1F71FDE9D3E056F7BEC4/"
         }
       ],
       "Special Forces": [
         {
           "name": "BX-Series Droid Commandos",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789610/FE6991E3F921A3C5ACD09400FD9CED611AC8E7D0/"
         },
         {
           "name": "BX-Series Droid Commandos",
           "title": "Strike Team",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789579/00BF878D8FCAFAA8F7D9B4B5F0749C63E4EA6F08/"
+        },
+        {
+          "name": "DRK-1 Sith Probe Droids",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789552/446270D5F6DD23C36A7B268F2026A5B9DCFFC8BF/"
         },
         {
           "name": "IG-100 MagnaGuard",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789552/446270D5F6DD23C36A7B268F2026A5B9DCFFC8BF/"
         }
       ],
       "Support": [
         {
           "name": "Droidekas",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789475/1521CBD0935E6FB62CE544D89AC89E2F19F21D6B/"
         },
         {
           "name": "STAP RiderS",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789443/7BE1E58EECCFE75EA2705CD1345E6C0602711AB7/"
         }
       ],
       "Heavy": [
         {
           "name": "AAT Trade Federation Battle Tank",
-          "image": ""
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789411/3550FADAC84804AB14EE338E46C5FEFC339C08B6/"
         }
       ]
     }
