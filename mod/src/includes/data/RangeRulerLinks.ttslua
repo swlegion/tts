@@ -1,7 +1,7 @@
 function getRangeRulerLinks()
     local rangeRulers  = {}
         -- 27mm
-        rangeRulers.small = "http://cloud-3.steamusercontent.com/ugc/1689400411869123038/DDF5EB3C25EB15388BFEE48AED9FAB35746E53DF/"
+        rangeRulers.small = "http://cloud-3.steamusercontent.com/ugc/1689400561229080951/5176496143FC99DA7BC373AD5CE7F46FF3E5F2AF/"
         -- 50mm
         rangeRulers.medium = "http://cloud-3.steamusercontent.com/ugc/1689400411869122542/F1EA321364F4CC920875FD892460DC2CA4D148E8/"
         -- 70mm
@@ -14,5 +14,7 @@ function getRangeRulerLinks()
         rangeRulers.epic = "http://cloud-3.steamusercontent.com/ugc/1689400411869120250/E09739E83D01C1EF7FF48D489DEB5C9C369FFC02/"
         -- 100mm oblong
         rangeRulers.long = "http://cloud-3.steamusercontent.com/ugc/1689400411869120694/D6CC6EA414924FFD844AEB93645708F2FFE77C99/"
+        -- bomb card
+        rangeRulers.bombCart = "http://cloud-3.steamusercontent.com/ugc/1689400561229080066/3B9C550DA786A40E4242DA80116D8304BCC12B1B/"
     return rangeRulers
 end

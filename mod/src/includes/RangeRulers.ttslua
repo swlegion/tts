@@ -26,18 +26,24 @@ function clearRangeRulers()
 end
 
 
-function spawnRangeRuler(rangeSourceObject)
+function spawnRangeRuler(rangeSourceObject, projectorBundleOverride)
 
   if rangeSourceObject == nil then return end
 
-  local newUnitData = rangeSourceObject.getTable("unitData")
-  if not newUnitData then return end
+  local rulerBundleToSpawn = ""
+  print("Projector Override : ")
+  print(projectorBundleOverride)
 
-  local baseSize = newUnitData.baseSize
+  if projectorBundleOverride ~= nil then
+    rulerBundleToSpawn = projectorBundleOverride
+  else
+    local newUnitData = rangeSourceObject.getTable("unitData")
+    if not newUnitData then return end
 
-  local rulerBundleTable = getRangeRulerLinks()
-
-  local rulerBundleToSpawn = rulerBundleTable[baseSize] 
+    local baseSize = newUnitData.baseSize
+    local rulerBundleTable = getRangeRulerLinks()
+    rulerBundleToSpawn = rulerBundleTable[baseSize] 
+  end
 
   basePos = rangeSourceObject.getPosition()
   baseRot = rangeSourceObject.getRotation()
