@@ -31,8 +31,6 @@ function spawnRangeRuler(rangeSourceObject, projectorBundleOverride)
   if rangeSourceObject == nil then return end
 
   local rulerBundleToSpawn = ""
-  print("Projector Override : ")
-  print(projectorBundleOverride)
 
   if projectorBundleOverride ~= nil then
     rulerBundleToSpawn = projectorBundleOverride
