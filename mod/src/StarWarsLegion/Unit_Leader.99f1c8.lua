@@ -1,3 +1,5 @@
+#include !/data/CohesionLinks
+
 -- Model mini
 function onLoad()
     if self.getName() != "Unit Leader" then
@@ -176,21 +178,29 @@ end
 
 function spawnCohesionRuler()
     if cohesionRuler == nil then
+
+        local cohesionBundlesTable = getCohesionLinks()
+        local baseSize = unitData.baseSize
+        local cohesionBundleToSpawn = cohesionBundlesTable[baseSize]
+
+        if cohesionBundleToSpawn == nil then return end
+
+        local basePos = rangeSourceObject.getPosition()
+        local baseRot = rangeSourceObject.getRotation()
+
         cohesionRuler = spawnObject({
-            type="Custom_Model",
-            position = self.getPosition(),
-            scale={unitData.cohesionRadius,3,unitData.cohesionRadius}
+            type="Custom_AssetBundle",
+            position = {basePos.x, basePos.y + 20, basePos.z},
+            rotation = {90, baseRot.y, 0},
+            scale={0,0,0} -- 0 scale will hide TTS default box and won't impact projector
         })
         cohesionRuler.setCustomObject({
             type=0,
-            mesh = "http://cloud-3.steamusercontent.com/ugc/785234780862867182/0858A62DF9F9E7DCB49B641E4938111697E4F3D4/",
-            collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
-            material=1,
+            assetBundle = cohesionBundleToSpawn
         })
-        cohesionRuler.setLock(true)
-        cohesionRuler.setColorTint({0.5,0.5,0.5})
-        cohesionRuler.setName("Cohesion Ruler")
 
+        cohesionRuler.setLock(true)
+        cohesionRuler.setName("Cohesion Ruler")
     end
 
 end
