@@ -459,9 +459,9 @@ function buildMiniInfo()
       name = "1.4 FD Laser Cannon Team"
   }
   miniInfo.airSpeeder = {
-      mesh = "http://cloud-3.steamusercontent.com/ugc/999141806429331055/047818ABA85804B98787BC67BEF12D24EC8F8ADB/",
+      type = "assetbundle",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1686023047001948851/70DF790FE48756DF8C273F4865F3EC48B6CBB60D/",
       collider = _BASE_COLLIDERS.huge,
-      diffuse = "http://cloud-3.steamusercontent.com/ugc/785234540541315963/DD72FAD5F49D303A83A4463B0D3796E3A8FD5BE8/",
       name = "T-47 Airspeeder"
   }
   miniInfo.x34Landspeeder = {
