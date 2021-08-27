@@ -460,7 +460,7 @@ function buildMiniInfo()
   }
   miniInfo.airSpeeder = {
       type = "assetbundle",
-      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1686023047001948851/70DF790FE48756DF8C273F4865F3EC48B6CBB60D/",
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1686023073179090715/187094FD9EBAFB6FF44A65F2D411D68154C0FAC7/",
       collider = _BASE_COLLIDERS.huge,
       name = "T-47 Airspeeder"
   }
