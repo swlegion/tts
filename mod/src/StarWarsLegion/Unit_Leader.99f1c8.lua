@@ -185,28 +185,31 @@ function spawnCohesionRuler()
 
         if cohesionBundleToSpawn == nil then return end
 
-        local basePos = rangeSourceObject.getPosition()
-        local baseRot = rangeSourceObject.getRotation()
+        local basePos = self.getPosition()
+        local baseRot = self.getRotation()
 
         cohesionRuler = spawnObject({
             type="Custom_AssetBundle",
             position = {basePos.x, basePos.y + 20, basePos.z},
-            rotation = {90, baseRot.y, 0},
-            scale={0,0,0} -- 0 scale will hide TTS default box and won't impact projector
+            rotation = {0, baseRot.y, 0},
+            scale = {0,0,0} -- 0 scale will hide TTS default box and won't impact projector
         })
+
         cohesionRuler.setCustomObject({
-            type=0,
-            assetBundle = cohesionBundleToSpawn
+            type = 0,
+            assetbundle = cohesionBundleToSpawn
         })
 
         cohesionRuler.setLock(true)
+        cohesionRuler.use_gravity = false
         cohesionRuler.setName("Cohesion Ruler")
     end
 
 end
 
 function clearCohesionRuler()
-    if cohesionRuler != nil then
-        destroyObject(cohesionRuler)
+    if cohesionRuler ~= nil then
+        cohesionRuler.destruct()
+        cohesionRuler = nil
     end
 end
