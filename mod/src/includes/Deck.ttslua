@@ -7,10 +7,14 @@ function Deck:create()
   local meta = {
     -- TODO: Have the schema be configurable.
     _schema = DeckSchema,
+    _backs = {
+      command     = "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+      contignency = "http://cloud-3.steamusercontent.com/ugc/1753560235958347056/F845CB170FEF761DC7025AA3EEAE731F018C0E73/",
+    },
     _unknown = {
-      command = "http://cloud-3.steamusercontent.com/ugc/1683770885590601027/47E5B7470CAAC79372CB5C607AEF29DF195EB7CE/",
-      unit    = "http://cloud-3.steamusercontent.com/ugc/1683770885590600993/4D9BAC2DD180E2CFF9A591E19EFEBD470CB25855/",
-      upgrade = "http://cloud-3.steamusercontent.com/ugc/1683770885590601060/FA4DD3B17A42BCD5A81D063CD13E257A0EBD419D/",
+      command     = "http://cloud-3.steamusercontent.com/ugc/1683770885590601027/47E5B7470CAAC79372CB5C607AEF29DF195EB7CE/",
+      unit        = "http://cloud-3.steamusercontent.com/ugc/1683770885590600993/4D9BAC2DD180E2CFF9A591E19EFEBD470CB25855/",
+      upgrade     = "http://cloud-3.steamusercontent.com/ugc/1683770885590601060/FA4DD3B17A42BCD5A81D063CD13E257A0EBD419D/",
     }
   }
   setmetatable(meta, Deck)
@@ -140,9 +144,50 @@ function Deck:spawnUpgradeDeck(position)
   return deck
 end
 
-function Deck:spawnCommandCard(name)
-  -- TODO: Implement.
+function Deck:spawnCommandCard(name, isContingency)
+  local command = self._schema.commands[name:upper()]
+  if command == nil then
+    return self:_spawnCommandDud(name, "No matching command found.", isContingency)
+  else
+    local name = command.name
+    local image = command.image
+    if image == "" then
+      image = self._unknown.command
+    end
+    local back = self._backs.command
+    if isContingency == true then
+      back = self._backs.contignency
+    end
+    local card = self:_spawnCard(image, back)
+    if command.image == "" then
+      card.setDescription("No image specified! Using fallback.")
+    end
+    card.setName(name)
+    return card
+  end
 end
+
+function Deck:spawnCommandDeck(position)
+  local header
+  local deck
+  for name, _ in pairs(self._schema.commands) do
+    local card = self:spawnCommandCard(name)
+    if header == nil then
+      header = card
+      deck = card
+    else
+      local container = header.putObject(card)
+      if container ~= nil then
+        deck = container
+      end
+    end
+    if position ~= nil then
+      card.setPosition(position)
+    end
+  end
+  return deck
+end
+
 
 function Deck:spawnBattleCard(name)
   -- TODO: Implement.
@@ -162,8 +207,15 @@ function Deck:_spawnUpgradeDud(name, description)
   return card
 end
 
-function Deck:_spawnComandDud(name, description)
-    -- TODO: Implement.
+function Deck:_spawnCommandDud(name, description, isContingency)
+  local back = self._backs.command
+  if isContingency == true then
+    back = self._backs.contignency
+  end
+  local card = self:_spawnCard(self._unknown.command, back)
+  card.setName(name)
+  card.setDescription(description)
+  return card
 end
 
 function Deck:_spawnCard(front, back)
