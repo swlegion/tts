@@ -1337,8 +1337,6 @@ function CardInfoClass:buildCardInfo()
     end
   end
 
-  -- unitCard GUID
-  returnTable.upgradeCardsGUID = "ffc227"
 
   return returnTable
 end
