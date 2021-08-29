@@ -14,9 +14,9 @@ function formatData(data: object, indent: number): string[] {
       } else if (typeof value === 'object') {
         value = `{\n${formatData(value, indent + 2).join('\n')}${' '.repeat(
           indent,
-        )}}`;
+        )}\n${' '.repeat(indent)}}`;
       }
-      return `${' '.repeat(indent)}${key}  = ${value}`;
+      return `${' '.repeat(indent)}${key} = ${value}`;
     })
     .map((v) => `${v},`);
 }
@@ -53,16 +53,36 @@ export default async function buildDeckSchemaLua(
 
   lua.push('  },');
 
-  const upgrades = json['upgrades'];
-  lua.push('  upgrades = {');
-  Object.entries(upgrades).forEach((typeAndUpgrades) => {
-    const [type, upgrades] = typeAndUpgrades;
-    lua.push(`    [${encodeKey(type)}] = {`);
-    (upgrades as object[]).forEach((upgrade) => {
-      lua.push(`      [${encodeKey((upgrade as any).name)}] = {`);
-      lua.push(...formatData(upgrade, 8));
-      lua.push('      },');
+  const allUpgradesSorted: any[] = Object.entries(json['upgrades'])
+    .map((typeAndUpgrades) => {
+      const [_type, upgrades] = typeAndUpgrades;
+      return upgrades;
+    })
+    .flat();
+
+  // Handle "flip" cards by double-indexing (this is lazy, but deal with it).
+  [...allUpgradesSorted].forEach((upgrade) => {
+    if (!upgrade.flip) {
+      return;
+    }
+    const { name, image } = upgrade.flip;
+    allUpgradesSorted.push({
+      name,
+      image,
+      flip: {
+        name: upgrade.name,
+        image: upgrade.image,
+      },
     });
+  });
+
+  allUpgradesSorted.sort((a, b) =>
+    (a as any).name > (b as any).name ? 1 : -1,
+  );
+  lua.push('  upgrades = {');
+  allUpgradesSorted.forEach((upgrade) => {
+    lua.push(`    [${encodeKey(upgrade.name)}] = {`);
+    lua.push(...formatData(upgrade, 6));
     lua.push('    },');
   });
   lua.push('  },');

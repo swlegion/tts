@@ -337,81 +337,45 @@ function spawnLoadoutBag(unitName, unitUpgrades, pTemplatePos, pTemplateRot)
 end
 
 function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber, spawnOffsets, xOffset, zOffset)
-  local originalUpgradeCards = getObjectFromGUID(cardInfo.upgradeCardsGUID)
-  local upgradeCards = originalUpgradeCards.clone({ position = {0,-30,0} })
-  local upgradeCardTable = upgradeCards.getObjects()
-  local cardInt = -1
-
-  -- cache offsets
-  local unitCardWidth = spawnOffsets["unitCardWidth"]
-  local halfUnitCard = unitCardWidth * 0.5
-
-  local cardHeight = spawnOffsets["cardHeight"]
-  local cardWidth = spawnOffsets["upgradeCardWidth"]
-  local halfCardHeight = cardHeight * 0.5
-  local halfCardWidth = cardWidth * 0.5
-
-  local padding = spawnOffsets["padding"]
-
-  -- offset upgrade card
-  local xPosOffset = 0
-  local zPosOffset = 0
-
-  -- x offset
-  if ( upgradeNumber == 1 or upgradeNumber == 4 or upgradeNumber == 7) then
-    xPosOffset = (halfUnitCard + padding + halfCardWidth) * -xOffset
-  elseif ( upgradeNumber == 2 or upgradeNumber == 5 ) then
-    xPosOffset = (-halfUnitCard + halfCardWidth + (padding)) * -xOffset
-  elseif ( upgradeNumber == 3 or upgradeNumber == 6 ) then
-    xPosOffset = (halfCardWidth + padding) * -xOffset
-  end 
-  
-  -- z offset
-  if ( upgradeNumber > 1 and upgradeNumber < 5) then
-    zPosOffset = ((cardHeight + padding) * zOffset)
-  elseif ( upgradeNumber >= 5 ) then
-    zPosOffset = ((cardHeight + padding) * 2 * zOffset)
-  end
-
-  for i, entry in pairs(upgradeCardTable) do
-      if entry.nickname:lower() == cardName:lower() then
-          cardInt = entry.index
-          break
-      end
-  end
-
-  local upgradeCard
-  if cardInt == -1 then
-    local face = "http://cloud-3.steamusercontent.com/ugc/1714157207248707545/D04A7BAA681BE95F81F168FB7163FD897E7E1D33/"
-    upgradeCard = spawnObject({
-      type           = "CardCustom",
-      position       = {0,10,0}
-    })
-    upgradeCard.setCustomObject({
-      face           = face,
-      back           = face,
-    })
-    upgradeCard.setName(cardName)
-  else
-    upgradeCard = upgradeCards.takeObject({
-        position       = {0,10,0},
-        index          = cardInt
-    })
-  end
+  local upgradeCard = Deck:spawnUpgradeCard(cardName)
 
   ga_event("Game", "spawnUpgradeCard", cardName)
-  destroyObject(upgradeCards)
-
-  local scale = spawnOffsets["cardScale"]
-  upgradeCard.setScale({scale,scale,scale})
-  local finalPos = simpleTranslatePos(pTemplatePos, xPosOffset, zPosOffset)
-  upgradeCard.setPosition(finalPos)
   upgradeCard.setRotation({0,pTemplateRot.y+180,0})
-  upgradeCard.setLock(false)
 
   if upgradeNumber == nil then
     local loadoutBag = pTemplatePos
     loadoutBag.putObject(upgradeCard)
+  else
+    -- cache offsets
+    local unitCardWidth = spawnOffsets["unitCardWidth"]
+    local halfUnitCard = unitCardWidth * 0.5
+    local cardHeight = spawnOffsets["cardHeight"]
+    local cardWidth = spawnOffsets["upgradeCardWidth"]
+    local halfCardHeight = cardHeight * 0.5
+    local halfCardWidth = cardWidth * 0.5
+    local padding = spawnOffsets["padding"]
+
+    -- offset upgrade card
+    local xPosOffset = 0
+    local zPosOffset = 0
+
+    -- x offset
+    if ( upgradeNumber == 1 or upgradeNumber == 4 or upgradeNumber == 7) then
+      xPosOffset = (halfUnitCard + padding + halfCardWidth) * -xOffset
+    elseif ( upgradeNumber == 2 or upgradeNumber == 5 ) then
+      xPosOffset = (-halfUnitCard + halfCardWidth + (padding)) * -xOffset
+    elseif ( upgradeNumber == 3 or upgradeNumber == 6 ) then
+      xPosOffset = (halfCardWidth + padding) * -xOffset
+    end 
+    
+    -- z offset
+    if ( upgradeNumber > 1 and upgradeNumber < 5) then
+      zPosOffset = ((cardHeight + padding) * zOffset)
+    elseif ( upgradeNumber >= 5 ) then
+      zPosOffset = ((cardHeight + padding) * 2 * zOffset)
+    end
+    local finalPos = simpleTranslatePos(pTemplatePos, xPosOffset, zPosOffset)
+    upgradeCard.setPosition(finalPos)
   end
 end
 
