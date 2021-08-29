@@ -1365,5 +1365,452 @@
         "image": ""
       }
     ]
+  },
+
+  "commands": {
+    "1": [
+      {
+        "name": "Ambush",
+        "image": ""
+      },
+      {
+        "name": "And Now You Will Die",
+        "image": ""
+      },
+      {
+        "name": "Blast Off!",
+        "image": ""
+      },
+      {
+        "name": "Call Me Captain",
+        "image": ""
+      },
+      {
+        "name": "Common Cause",
+        "image": ""
+      },
+      {
+        "name": "Coordinated Bombardment",
+        "image": ""
+      },
+      {
+        "name": "Covert Observation",
+        "image": ""
+      },
+      {
+        "name": "Crack Shot",
+        "image": ""
+      },
+      {
+        "name": "Duel Of The Fates",
+        "image": ""
+      },
+      {
+        "name": "Explosions!",
+        "image": ""
+      },
+      {
+        "name": "Face Me!",
+        "image": ""
+      },
+      {
+        "name": "Fear, Suprise, Intimidation",
+        "image": ""
+      },
+      {
+        "name": "Grroooogrrraaaawrrrrrrrrmph",
+        "image": ""
+      },
+      {
+        "name": "Hello There!",
+        "image": ""
+      },
+      {
+        "name": "I'm Your Worst Nightmare",
+        "image": ""
+      },
+      {
+        "name": "Idiot's Array",
+        "image": ""
+      },
+      {
+        "name": "Implacable",
+        "image": ""
+      },
+      {
+        "name": "Maximum Firepower",
+        "image": ""
+      },
+      {
+        "name": "Mechanized Incursion",
+        "image": ""
+      },
+      {
+        "name": "Merciless Munitions",
+        "image": ""
+      },
+      {
+        "name": "Our Fate Is In Your Hands",
+        "image": ""
+      },
+      {
+        "name": "Pulse Scan",
+        "image": ""
+      },
+      {
+        "name": "Rebellious",
+        "image": ""
+      },
+      {
+        "name": "Sabotaged Communications",
+        "image": ""
+      },
+      {
+        "name": "Size Matters Not",
+        "image": ""
+      },
+      {
+        "name": "Son Of Skywalker",
+        "image": ""
+      },
+      {
+        "name": "Sorry About The Mess",
+        "image": ""
+      },
+      {
+        "name": "Synchronized Offensive",
+        "image": ""
+      },
+      {
+        "name": "They Too Will Suffer",
+        "image": ""
+      },
+      {
+        "name": "This Is Where The Fun Begins",
+        "image": ""
+      },
+      {
+        "name": "Trained In Your Jedi Arts",
+        "image": ""
+      },
+      {
+        "name": "Vader's Might",
+        "image": ""
+      },
+      {
+        "name": "Voracious Ambition",
+        "image": ""
+      },
+      {
+        "name": "Whipcord Launcher",
+        "image": ""
+      },
+      {
+        "name": "You Serve Your Master Well",
+        "image": ""
+      }
+    ],
+    "2": [
+      {
+        "name": "Ace Up His Sleeve",
+        "image": ""
+      },
+      {
+        "name": "Aggressive Negotiations",
+        "image": ""
+      },
+      {
+        "name": "Air Support",
+        "image": ""
+      },
+      {
+        "name": "Brains And Brawn",
+        "image": ""
+      },
+      {
+        "name": "Concussive Blast",
+        "image": ""
+      },
+      {
+        "name": "Deploy The Garrison",
+        "image": ""
+      },
+      {
+        "name": "Double The Fall",
+        "image": ""
+      },
+      {
+        "name": "Evasive Maneuvers",
+        "image": ""
+      },
+      {
+        "name": "Fear And Dead Men",
+        "image": ""
+      },
+      {
+        "name": "Full Of Surprises",
+        "image": ""
+      },
+      {
+        "name": "Give In To Your Anger",
+        "image": ""
+      },
+      {
+        "name": "I'M In Control",
+        "image": ""
+      },
+      {
+        "name": "ISB Investigation",
+        "image": ""
+      },
+      {
+        "name": "Impromptu Immolation",
+        "image": ""
+      },
+      {
+        "name": "Incapacitate",
+        "image": ""
+      },
+      {
+        "name": "Knowledge And Defense",
+        "image": ""
+      },
+      {
+        "name": "Last Stand",
+        "image": ""
+      },
+      {
+        "name": "MROWGH GHRRMROWRIG!",
+        "image": ""
+      },
+      {
+        "name": "My Ally Is The Force",
+        "image": ""
+      },
+      {
+        "name": "New Ways To Motivate Them",
+        "image": ""
+      },
+      {
+        "name": "No Time For Sorrows",
+        "image": ""
+      },
+      {
+        "name": "Orbital Strike",
+        "image": ""
+      },
+      {
+        "name": "Pinned Down",
+        "image": ""
+      },
+      {
+        "name": "Preservation Protocols",
+        "image": ""
+      },
+      {
+        "name": "Push",
+        "image": ""
+      },
+      {
+        "name": "Reckless Diversion",
+        "image": ""
+      },
+      {
+        "name": "Reptillian Rampage",
+        "image": ""
+      },
+      {
+        "name": "Size Matters Sometimes",
+        "image": ""
+      },
+      {
+        "name": "Supreme Commander",
+        "image": ""
+      },
+      {
+        "name": "Symbol Of Rebellion",
+        "image": ""
+      },
+      {
+        "name": "Take That, Clankers!",
+        "image": ""
+      },
+      {
+        "name": "The Phantom Menance",
+        "image": ""
+      },
+      {
+        "name": "There Is No Try",
+        "image": ""
+      },
+      {
+        "name": "Trust Goes Both Ways",
+        "image": ""
+      },
+      {
+        "name": "Turning The Tide",
+        "image": ""
+      },
+      {
+        "name": "You Understimate My Power",
+        "image": ""
+      },
+      {
+        "name": "ZX Flame Projector",
+        "image": ""
+      }
+    ],
+    "3": [
+      {
+        "name": "All In",
+        "image": ""
+      },
+      {
+        "name": "An Entire Legion",
+        "image": ""
+      },
+      {
+        "name": "Annihilation Looms",
+        "image": ""
+      },
+      {
+        "name": "Assault",
+        "image": ""
+      },
+      {
+        "name": "At Last",
+        "image": ""
+      },
+      {
+        "name": "AttacK Of the Clones",
+        "image": ""
+      },
+      {
+        "name": "Change Of Plans",
+        "image": ""
+      },
+      {
+        "name": "Complete The Mission",
+        "image": ""
+      },
+      {
+        "name": "Coordinated Fire",
+        "image": ""
+      },
+      {
+        "name": "Covering Fire",
+        "image": ""
+      },
+      {
+        "name": "Crush Them!",
+        "image": ""
+      },
+      {
+        "name": "Darkness Descends",
+        "image": ""
+      },
+      {
+        "name": "Dimplomatic Cover",
+        "image": ""
+      },
+      {
+        "name": "Do Not Underestimate Our Means",
+        "image": ""
+      },
+      {
+        "name": "General Kenobi",
+        "image": ""
+      },
+      {
+        "name": "Hero Of The Clone Wars",
+        "image": ""
+      },
+      {
+        "name": "I Make The Rules Now",
+        "image": ""
+      },
+      {
+        "name": "I Am A Jedi",
+        "image": ""
+      },
+      {
+        "name": "Imperial Discipline",
+        "image": ""
+      },
+      {
+        "name": "Legacy Of Mandalore",
+        "image": ""
+      },
+      {
+        "name": "Luminous Beings Are We",
+        "image": ""
+      },
+      {
+        "name": "Lying In Wait",
+        "image": ""
+      },
+      {
+        "name": "Master Of Evil",
+        "image": ""
+      },
+      {
+        "name": "Notorious Scoundrels",
+        "image": ""
+      },
+      {
+        "name": "Return Of The Jedi",
+        "image": ""
+      },
+      {
+        "name": "Roger, Roger!",
+        "image": ""
+      },
+      {
+        "name": "Ruthless Tactics",
+        "image": ""
+      },
+      {
+        "name": "Sacrifice",
+        "image": ""
+      },
+      {
+        "name": "Smoke Screen",
+        "image": ""
+      },
+      {
+        "name": "Somebody Has To Save Our Skins",
+        "image": ""
+      },
+      {
+        "name": "Tactical Strike",
+        "image": ""
+      },
+      {
+        "name": "Volunteer Mission",
+        "image": ""
+      },
+      {
+        "name": "We're Not Programmed",
+        "image": ""
+      },
+      {
+        "name": "YHWARGGHHHHHHHHHH",
+        "image": ""
+      },
+      {
+        "name": "You Dissapoint Me",
+        "image": ""
+      },
+      {
+        "name": "Z-6 Jetpack Rocket",
+        "image": ""
+      }
+    ],
+    "4": [
+      {
+        "name": "Standing Orders",
+        "image": ""
+      }
+    ]
   }
 }

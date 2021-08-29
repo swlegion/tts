@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://schema.swlegion.dev/CommandCard.json",
+
+  "title": "Command Card",
+  "description": "Definition of a command card. Note this should not include \"flaw\" cards.",
+
+  "additionalProperties": false,
+
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "image": {
+      "$ref": "./Image.json"
+    }
+  },
+
+  "required": ["name", "image"]
+}

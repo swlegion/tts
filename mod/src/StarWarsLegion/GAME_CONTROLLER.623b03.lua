@@ -347,7 +347,6 @@ function spawnCardDecks()
   -- {52.43, 1.03, 32.53}
   ga_event("Game", "spawnCardDecks")
   local cardInfo = Global.getTable('cardInfo')
-  local commands = getObjectFromGUID(Global.getTable('listBuilder').commandCardsGUID)
   local battlefield = getObjectFromGUID(Global.getTable('gameController').battlefieldCardsGUID)
   local cardScale = {0.83, 1, 0.83}
 
@@ -357,16 +356,10 @@ function spawnCardDecks()
     Deck:spawnUnitDeck(faction, {52.43, 1.42, 32.53})
   end
   Deck:spawnUpgradeDeck({52.43, 1.84, 29.23})
-
-  commands = commands.clone({
-    position     = {52.43, 1.42, 26.84}
-  })
+  Deck:spawnCommandDeck({52.43, 1.42, 26.84}).setRotation({0.00, 270.00, 0.00})
   battlefield = battlefield.clone({
     position     = {52.43, 1.42, 23}
   })
-  commands.setScale(cardScale)
-  commands.setRotation({0.00, 270.00, 0.00})
-  commands.setLock(false)
   battlefield.setScale(cardScale)
   battlefield.setLock(false)
 end

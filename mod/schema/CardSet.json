@@ -14,8 +14,12 @@
 
     "upgrades": {
       "$ref": "./UpgradeCardSet.json"
+    },
+
+    "commands": {
+      "$ref": "./CommandCardSet.json"
     }
   },
 
-  "required": ["units", "upgrades"]
+  "required": ["units", "upgrades", "commands"]
 }

@@ -87,6 +87,24 @@ export default async function buildDeckSchemaLua(
   });
   lua.push('  },');
 
+  const allCommandsSorted: any[] = Object.entries(json['commands'])
+    .map((pipAndCommands) => {
+      const [_pip, commands] = pipAndCommands;
+      return commands;
+    })
+    .flat();
+
+  allCommandsSorted.sort((a, b) =>
+    (a as any).name > (b as any).name ? 1 : -1,
+  );
+  lua.push('  commands = {');
+  allCommandsSorted.forEach((command) => {
+    lua.push(`    [${encodeKey(command.name)}] = {`);
+    lua.push(...formatData(command, 6));
+    lua.push('    },');
+  });
+  lua.push('  },');
+
   lua.push('}');
   lua.push('');
 
