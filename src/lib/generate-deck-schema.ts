@@ -1,4 +1,5 @@
 import fs from 'fs-extra';
+import path from 'path';
 
 export default async function buildDeckSchemaLua(
   inJson: string,
@@ -40,5 +41,6 @@ export default async function buildDeckSchemaLua(
   lua.push('}');
   lua.push('');
 
+  await fs.mkdirp(path.dirname(outLua));
   return fs.writeFile(outLua, lua.join('\n'), 'utf8');
 }
