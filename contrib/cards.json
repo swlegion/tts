@@ -466,5 +466,904 @@
         }
       ]
     }
+  },
+
+  "upgrades": {
+    "Armament": [
+      {
+        "name": "A-180 Rifle Config",
+        "image": "",
+        "flip": {
+          "name": "A-180 Pistol Config",
+          "image": ""
+        }
+      },
+      {
+        "name": "A-300 Long Range Config",
+        "image": "",
+        "flip": {
+          "name": "A-300 Short Range Config",
+          "image": ""
+        }
+      },
+      {
+        "name": "A280-CFE Sniper Config",
+        "image": "",
+        "flip": {
+          "name": "A280-CFE Pistol Config",
+          "image": ""
+        }
+      },
+      {
+        "name": "CR-24 Flame Rifle",
+        "image": ""
+      },
+      {
+        "name": "DT-57 \"Annihililator\"",
+        "image": ""
+      },
+      {
+        "name": "Deflector Shields",
+        "image": ""
+      },
+      {
+        "name": "E-11D Focused Fire Config",
+        "image": "",
+        "flip": {
+          "name": "E-11D Grenade Launcher Config",
+          "image": ""
+        }
+      },
+      {
+        "name": "Electro Gauntlets",
+        "image": ""
+      },
+      {
+        "name": "Iden's DLT-20A Rifle",
+        "image": ""
+      },
+      {
+        "name": "J-19 Bo-Rifle Blaster",
+        "image": "",
+        "flip": {
+          "name": "J-19 Bo-Rifle Staff",
+          "image": ""
+        }
+      },
+      {
+        "name": "Looted E-5 Blaster",
+        "image": ""
+      },
+      {
+        "name": "RT-97C Blaster Rifle",
+        "image": ""
+      },
+      {
+        "name": "T-21 Blaster Rifle",
+        "image": ""
+      },
+      {
+        "name": "Iden's TL-50 Repeater",
+        "image": ""
+      },
+      {
+        "name": "The Darksaber",
+        "image": ""
+      },
+      {
+        "name": "Vibroswords",
+        "image": ""
+      }
+    ],
+    "Command": [
+      {
+        "name": "Aggressive Tactics",
+        "image": ""
+      },
+      {
+        "name": "Commanding Presence",
+        "image": ""
+      },
+      {
+        "name": "Esteemed Leader",
+        "image": ""
+      },
+      {
+        "name": "Improvised Orders",
+        "image": ""
+      },
+      {
+        "name": "Inspiring Presence",
+        "image": ""
+      },
+      {
+        "name": "Strict Orders",
+        "image": ""
+      },
+      {
+        "name": "Vigilance",
+        "image": ""
+      }
+    ],
+    "Comms": [
+      {
+        "name": "Command Control Array",
+        "image": ""
+      },
+      {
+        "name": "Comms Jammer",
+        "image": ""
+      },
+      {
+        "name": "Comms Relay",
+        "image": ""
+      },
+      {
+        "name": "HQ Uplink",
+        "image": ""
+      },
+      {
+        "name": "Hacked Comms Unit",
+        "image": ""
+      },
+      {
+        "name": "Integrated Comms Attenna",
+        "image": ""
+      },
+      {
+        "name": "Linked Targeting Array",
+        "image": ""
+      },
+      {
+        "name": "Long-Range Comlink",
+        "image": ""
+      },
+      {
+        "name": "Onboard Comms Channel",
+        "image": ""
+      }
+    ],
+    "Crew": [
+      {
+        "name": "A-300 Rifle Gunner",
+        "image": ""
+      },
+      {
+        "name": "BARC Ion Gunner",
+        "image": ""
+      },
+      {
+        "name": "BARC RPS-6 Gunner",
+        "image": ""
+      },
+      {
+        "name": "BARC Twin Laser Gunner",
+        "image": ""
+      },
+      {
+        "name": "Backworld Medic",
+        "image": ""
+      },
+      {
+        "name": "Gnasp Gunner",
+        "image": ""
+      },
+      {
+        "name": "Refurbished \"Gonk\" Droid",
+        "image": ""
+      },
+      {
+        "name": "RPS-6 Rocket Gunner",
+        "image": ""
+      },
+      {
+        "name": "Unorthodox Tactician",
+        "image": ""
+      },
+      {
+        "name": "Unstable R5 Astromech",
+        "image": ""
+      }
+    ],
+    "Force": [
+      {
+        "name": "Anger",
+        "image": ""
+      },
+      {
+        "name": "Battle Meditation",
+        "image": ""
+      },
+      {
+        "name": "Burst Of Speed",
+        "image": ""
+      },
+      {
+        "name": "Fear",
+        "image": ""
+      },
+      {
+        "name": "Force Barrier",
+        "image": ""
+      },
+      {
+        "name": "Force Choke",
+        "image": ""
+      },
+      {
+        "name": "Force Guidance",
+        "image": ""
+      },
+      {
+        "name": "Force Lift",
+        "image": ""
+      },
+      {
+        "name": "Force Push",
+        "image": ""
+      },
+      {
+        "name": "Force Reflexes",
+        "image": ""
+      },
+      {
+        "name": "Hope",
+        "image": ""
+      },
+      {
+        "name": "Jedi Mind Trick",
+        "image": ""
+      },
+      {
+        "name": "Saber Throw",
+        "image": ""
+      }
+    ],
+    "Gear": [
+      {
+        "name": "Ascension Cables",
+        "image": ""
+      },
+      {
+        "name": "Electro Grappling Line",
+        "image": ""
+      },
+      {
+        "name": "Electrobinoculars",
+        "image": ""
+      },
+      {
+        "name": "Emergency Stims",
+        "image": ""
+      },
+      {
+        "name": "Environmental Gear",
+        "image": ""
+      },
+      {
+        "name": "Grappling Hooks",
+        "image": ""
+      },
+      {
+        "name": "JT-12 Jetpacks",
+        "image": ""
+      },
+      {
+        "name": "Personal Combat Shield",
+        "image": ""
+      },
+      {
+        "name": "Portable Scanner",
+        "image": ""
+      },
+      {
+        "name": "Recon Intel",
+        "image": ""
+      },
+      {
+        "name": "Targeting Scopes",
+        "image": ""
+      }
+    ],
+    "Generator": [
+      {
+        "name": "Barrage Generator",
+        "image": ""
+      },
+      {
+        "name": "Overcharged Generator",
+        "image": ""
+      }
+    ],
+    "Grenades": [
+      {
+        "name": "Concussion Grenades",
+        "image": ""
+      },
+      {
+        "name": "EMP \"Droid Poppers\"",
+        "image": ""
+      },
+      {
+        "name": "Fragmentation Grenades",
+        "image": ""
+      },
+      {
+        "name": "Impact Grenades",
+        "image": ""
+      },
+      {
+        "name": "Smoke Grenades",
+        "image": ""
+      }
+    ],
+    "Hardpoint": [
+      {
+        "name": "88 Twin Light Blaster Cannon",
+        "image": ""
+      },
+      {
+        "name": "AG-2G Quad Laser",
+        "image": ""
+      },
+      {
+        "name": "AT-RT Flamethrower",
+        "image": ""
+      },
+      {
+        "name": "AT-RT Laser Cannon",
+        "image": ""
+      },
+      {
+        "name": "AT-RT Rotary Blaster",
+        "image": ""
+      },
+      {
+        "name": "AT-ST Mortar Launcher",
+        "image": ""
+      },
+      {
+        "name": "AX-108 \"Ground Buzzer\"",
+        "image": ""
+      },
+      {
+        "name": "DLT-19 Rifle Pintle",
+        "image": ""
+      },
+      {
+        "name": "DW-3 Concussion Grenade Launcher",
+        "image": ""
+      },
+      {
+        "name": "Heavy Laser Retrofit",
+        "image": ""
+      },
+      {
+        "name": "M-45 Ion Blaster",
+        "image": ""
+      },
+      {
+        "name": "Mark II Medium Blaster",
+        "image": ""
+      },
+      {
+        "name": "MO/DK Power Harpoon",
+        "image": ""
+      },
+      {
+        "name": "RT-97C Rifle Pintle",
+        "image": ""
+      },
+      {
+        "name": "TX-130 Beam Cannon Turret",
+        "image": ""
+      },
+      {
+        "name": "TX-130 Twin Laser Turret",
+        "image": ""
+      }
+    ],
+    "Heavy Weapon": [
+      {
+        "name": "B2-ACM Trooper",
+        "image": ""
+      },
+      {
+        "name": "B2-HA Trooper",
+        "image": ""
+      },
+      {
+        "name": "Battle Shield Wookiee (Offensive)",
+        "image": "",
+        "flip": {
+          "name": "Battle Shield Wookiee (Defensive)",
+          "image": ""
+        }
+      },
+      {
+        "name": "BX-Series Droid Sniper",
+        "image": ""
+      },
+      {
+        "name": "MPL-57 Barrage Trooper",
+        "image": ""
+      },
+      {
+        "name": "Beskad Duelist",
+        "image": ""
+      },
+      {
+        "name": "Bistan",
+        "image": ""
+      },
+      {
+        "name": "Bowcaster Wookiee",
+        "image": ""
+      },
+      {
+        "name": "CM-0/93 Trooper",
+        "image": ""
+      },
+      {
+        "name": "DC-15 Phase I Trooper",
+        "image": ""
+      },
+      {
+        "name": "DC-15X ARC Trooper",
+        "image": ""
+      },
+      {
+        "name": "DH-447 Sniper",
+        "image": ""
+      },
+      {
+        "name": "DLT-19 Stormtrooper",
+        "image": ""
+      },
+      {
+        "name": "DLT-19D Trooper",
+        "image": ""
+      },
+      {
+        "name": "DLT-19X Sniper",
+        "image": ""
+      },
+      {
+        "name": "DLT-20A Trooper",
+        "image": ""
+      },
+      {
+        "name": "DP-23 Phase I Trooper",
+        "image": ""
+      },
+      {
+        "name": "DT-F16",
+        "image": ""
+      },
+      {
+        "name": "Del Meeko",
+        "image": ""
+      },
+      {
+        "name": "Dioxis Mine Saboteur",
+        "image": ""
+      },
+      {
+        "name": "E-5C B1 Trooper",
+        "image": ""
+      },
+      {
+        "name": "E-5S B1 Trooper",
+        "image": ""
+      },
+      {
+        "name": "E-60R B1 Trooper",
+        "image": ""
+      },
+      {
+        "name": "Echo",
+        "image": ""
+      },
+      {
+        "name": "Electro-Whip MagnaGuard",
+        "image": ""
+      },
+      {
+        "name": "Electrostaff Guard",
+        "image": ""
+      },
+      {
+        "name": "Fives",
+        "image": ""
+      },
+      {
+        "name": "Flametrooper",
+        "image": ""
+      },
+      {
+        "name": "Gideon Hask",
+        "image": ""
+      },
+      {
+        "name": "HH-12 Stormtrooper",
+        "image": ""
+      },
+      {
+        "name": "IG-100 MagnaGuard",
+        "image": ""
+      },
+      {
+        "name": "Long Gun Wookiee",
+        "image": ""
+      },
+      {
+        "name": "MPL-57 Ion Trooper",
+        "image": ""
+      },
+      {
+        "name": "Pao",
+        "image": ""
+      },
+      {
+        "name": "Phase II Mortar Trooper",
+        "image": ""
+      },
+      {
+        "name": "Proton Charge Saboteur",
+        "image": ""
+      },
+      {
+        "name": "RPS-6 MagnaGuard",
+        "image": ""
+      },
+      {
+        "name": "RPS-6 Phase I Trooper",
+        "image": ""
+      },
+      {
+        "name": "RT-97C Stormtrooper",
+        "image": ""
+      },
+      {
+        "name": "Radiation Cannon B1 Trooper",
+        "image": ""
+      },
+      {
+        "name": "SX-21 Trooper",
+        "image": ""
+      },
+      {
+        "name": "Scatter Gun Trooper",
+        "image": ""
+      },
+      {
+        "name": "Sonic Charge Saboteur",
+        "image": ""
+      },
+      {
+        "name": "T-21 Stormtrooper",
+        "image": ""
+      },
+      {
+        "name": "T-21 Special Forces Trooper",
+        "image": ""
+      },
+      {
+        "name": "T-21B Trooper",
+        "image": ""
+      },
+      {
+        "name": "T-7 Ion Snowtrooper",
+        "image": ""
+      },
+      {
+        "name": "Tristan Wren",
+        "image": ""
+      },
+      {
+        "name": "Ursa Wren",
+        "image": ""
+      },
+      {
+        "name": "Z-6 Trooper",
+        "image": ""
+      },
+      {
+        "name": "Z-6 Phase I Trooper",
+        "image": ""
+      },
+      {
+        "name": "Z-6 Phase II Trooper",
+        "image": ""
+      }
+    ],
+    "Ordnance": [
+      {
+        "name": "\"Bunker Buster\" Shells",
+        "image": ""
+      },
+      {
+        "name": "Armor-Piercing Shells",
+        "image": ""
+      },
+      {
+        "name": "High-Energy Shells",
+        "image": ""
+      }
+    ],
+    "Personnel": [
+      {
+        "name": "2-1B Medical Droid",
+        "image": ""
+      },
+      {
+        "name": "B1 Battle Droid",
+        "image": ""
+      },
+      {
+        "name": "B1 Security Droid",
+        "image": ""
+      },
+      {
+        "name": "Clone Commander",
+        "image": ""
+      },
+      {
+        "name": "Clone Comms Technician",
+        "image": ""
+      },
+      {
+        "name": "Clone Engineer",
+        "image": ""
+      },
+      {
+        "name": "Clone Medic",
+        "image": ""
+      },
+      {
+        "name": "EV-Series Medical Droid",
+        "image": ""
+      },
+      {
+        "name": "FX-9 Medical Droid",
+        "image": ""
+      },
+      {
+        "name": "Fleet Trooper",
+        "image": ""
+      },
+      {
+        "name": "Imperial Comms Technician",
+        "image": ""
+      },
+      {
+        "name": "Imperial Officer",
+        "image": ""
+      },
+      {
+        "name": "OOM-Series Battle Droid",
+        "image": ""
+      },
+      {
+        "name": "Phase I Clone Captain",
+        "image": ""
+      },
+      {
+        "name": "Phase I Clone Specialist",
+        "image": ""
+      },
+      {
+        "name": "Phase I Clone Trooper",
+        "image": ""
+      },
+      {
+        "name": "Phase II Clone Trooper",
+        "image": ""
+      },
+      {
+        "name": "PK-Series Worker Droid",
+        "image": ""
+      },
+      {
+        "name": "R4 Astromech Droid",
+        "image": ""
+      },
+      {
+        "name": "R5 Astromech Droid",
+        "image": ""
+      },
+      {
+        "name": "Rebel Comms Technician",
+        "image": ""
+      },
+      {
+        "name": "Rebel Officer",
+        "image": ""
+      },
+      {
+        "name": "Rebel Trooper",
+        "image": ""
+      },
+      {
+        "name": "Rebel Trooper Captain",
+        "image": ""
+      },
+      {
+        "name": "Rebel Trooper Specialist",
+        "image": ""
+      },
+      {
+        "name": "Rebel Veteran",
+        "image": ""
+      },
+      {
+        "name": "Shoretrooper",
+        "image": ""
+      },
+      {
+        "name": "Shoretrooper",
+        "image": ""
+      },
+      {
+        "name": "Snowtrooper",
+        "image": ""
+      },
+      {
+        "name": "Stormtrooper Captain",
+        "image": ""
+      },
+      {
+        "name": "Stormtrooper Specialist",
+        "image": ""
+      },
+      {
+        "name": "Super Battle Droid",
+        "image": ""
+      },
+      {
+        "name": "T-Series Tactical Droid",
+        "image": ""
+      },
+      {
+        "name": "Viper Recon Droid",
+        "image": ""
+      }
+    ],
+    "Pilot": [
+      {
+        "name": "Aayla Secura",
+        "image": ""
+      },
+      {
+        "name": "Baron Rudor",
+        "image": ""
+      },
+      {
+        "name": "Clone Commander Fox",
+        "image": ""
+      },
+      {
+        "name": "Clone Shock Trooper Pilot",
+        "image": ""
+      },
+      {
+        "name": "First Sergeant Arbmab",
+        "image": ""
+      },
+      {
+        "name": "General Weiss",
+        "image": ""
+      },
+      {
+        "name": "Governor Pryce",
+        "image": ""
+      },
+      {
+        "name": "Hound & Grizzer",
+        "image": ""
+      },
+      {
+        "name": "Hotshot Pilot",
+        "image": ""
+      },
+      {
+        "name": "Imperial Elite Armor Pilot",
+        "image": ""
+      },
+      {
+        "name": "Imperial TIE Pilot",
+        "image": ""
+      },
+      {
+        "name": "Lok Durd",
+        "image": ""
+      },
+      {
+        "name": "OOM-Series Droid Pilot",
+        "image": ""
+      },
+      {
+        "name": "Outer Rim Speeder Jockey",
+        "image": ""
+      },
+      {
+        "name": "Plo Koon",
+        "image": ""
+      },
+      {
+        "name": "Reckless Driver",
+        "image": ""
+      },
+      {
+        "name": "Ryder Azadi",
+        "image": ""
+      },
+      {
+        "name": "Shriv Suurgav",
+        "image": ""
+      },
+      {
+        "name": "T-Series Tactical Droid Pilot",
+        "image": ""
+      },
+      {
+        "name": "Veteran Clone Pilot",
+        "image": ""
+      },
+      {
+        "name": "Wedge Antilles",
+        "image": ""
+      }
+    ],
+    "Training": [
+      {
+        "name": "Defensive Stance",
+        "image": "",
+        "flip": {
+          "name": "Offensive Stance",
+          "image": ""
+        }
+      },
+      {
+        "name": "Duck And Cover",
+        "image": ""
+      },
+      {
+        "name": "Endurance",
+        "image": ""
+      },
+      {
+        "name": "Hunter",
+        "image": ""
+      },
+      {
+        "name": "Into The Fray",
+        "image": ""
+      },
+      {
+        "name": "Offensive Push",
+        "image": ""
+      },
+      {
+        "name": "Overwatch",
+        "image": ""
+      },
+      {
+        "name": "Protector",
+        "image": ""
+      },
+      {
+        "name": "Seize The Initiative",
+        "image": ""
+      },
+      {
+        "name": "Sitautional Awareness",
+        "image": ""
+      },
+      {
+        "name": "Tenacity",
+        "image": ""
+      }
+    ]
   }
 }

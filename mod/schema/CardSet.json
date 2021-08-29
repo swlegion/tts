@@ -10,8 +10,12 @@
   "properties": {
     "units": {
       "$ref": "./UnitCardSet.json"
+    },
+
+    "upgrades": {
+      "$ref": "./UpgradeCardSet.json"
     }
   },
 
-  "required": ["units"]
+  "required": ["units", "upgrades"]
 }

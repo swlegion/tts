@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://schema.swlegion.dev/Ranks.json",
+
+  "title": "Upgrade card types.",
+  "description": "Enum of all possible upgrade types in the game.",
+
+  "enum": [
+    "Armament",
+    "Command",
+    "Comms",
+    "Crew",
+    "Force",
+    "Gear",
+    "Generator",
+    "Grenades",
+    "Hardpoint",
+    "Heavy Weapon",
+    "Ordnance",
+    "Personnel",
+    "Pilot",
+    "Training"
+  ]
+}
