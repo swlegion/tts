@@ -539,11 +539,6 @@ function spawnUnit(unit, n, faction, totalUnits)
   spawnMiniTable.unitCardObj = spawnUnitCard(faction, unit.name, tempPos, self.getRotation())  
   spawnMiniTable.unitIDTokenGUID = spawnUnitIDToken(templatePos, self.getRotation(), n)
 
-  -- spawn loadout bag
-  if unit.loadout ~= nil and #unit.loadout > 0 then
-    spawnLoadoutBag(unit.name, unit.loadout, templatePos, self.getRotation())
-  end
-
   -- spawn upgrade card
   local upgradeCount = 0
 
@@ -553,7 +548,6 @@ function spawnUnit(unit, n, faction, totalUnits)
     table.insert(spawnMiniTable.upgrades, upgrade)
     upgradeCount = upgradeCount + 1
   end
-
   
   -- SPAWN MINIS
   -- mini table
@@ -626,6 +620,11 @@ function spawnUnit(unit, n, faction, totalUnits)
     end
 
     initializeMini(spawnMiniTable)
+  end
+
+  -- spawn loadout bag
+  if unit.loadout ~= nil and #unit.loadout > 0 then
+    spawnLoadoutBag(unit.name, unit.loadout, templatePos, self.getRotation())
   end
 
   -- spawn command token
