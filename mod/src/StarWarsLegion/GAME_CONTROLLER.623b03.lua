@@ -356,7 +356,7 @@ function spawnCardDecks()
     Deck:spawnUnitDeck(faction, {52.43, 1.42, 32.53})
   end
   Deck:spawnUpgradeDeck({52.43, 1.84, 29.23})
-  Deck:spawnCommandDeck({52.43, 1.42, 26.84}).setRotation({0.00, 270.00, 0.00})
+  Deck:spawnCommandDeck({52.51, 1.42, 26.35})
   battlefield = battlefield.clone({
     position     = {52.43, 1.42, 23}
   })
