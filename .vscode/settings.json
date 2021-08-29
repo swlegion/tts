@@ -40,7 +40,7 @@
   "json.schemas": [
     {
       "fileMatch": ["contrib/cards.json"],
-      "url": "/mod/cards.schema.json"
+      "url": "/mod/schema/CardSet.json"
     }
   ]
 }

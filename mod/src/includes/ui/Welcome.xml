@@ -44,13 +44,18 @@
 
           <b>CHANGELOG</b>
 
+          (<textcolor color="#f03333">!!! DO NOT PUBLISH !!!</textcolor>)
+
+          - We are missing images for the upgrade cards.
+
           (Since last <i>Beta</i>)
 
-          - We are testing a <i> new unit card flow</i> (internal to the mod).
-          - <b>Please report any bugs with unit cards</b>.
+          - We are testing a <i>new unit and upgrade card flow</i> (internal to the mod).
+          - <b>Please report any bugs with unit or upgrade cards</b>.
 
           (Since last <i>Stable</i>)
 
+          - Exporting a unit from a list builder with <i>loadout</i> works correctly.
           - Updated the models for the T-47 airspeeder.
           - Replaced unit cards across the mod. They should look better now/more consistent.
 

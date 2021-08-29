@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://schema.swlegion.dev/Image.json",
+
+  "title": "Image resource",
+  "description": "Possible image subtypes.",
+
+  "definitions": {
+    "Placeholder": {
+      "title": "Represents a missing or placeholder image.",
+
+      "enum": [""]
+    },
+
+    "Url": {
+      "title": "A URL to an image resource.",
+
+      "type": "string",
+      "format": "uri",
+      "minLength": 1
+    }
+  },
+
+  "oneOf": [
+    { "$ref": "#/definitions/Placeholder" },
+    { "$ref": "#/definitions/Url" }
+  ]
+}

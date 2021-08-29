@@ -542,25 +542,7 @@ function prevUpgradeMenu(selectionNumber)
 end
 
 function spawnUpgradeCard(cardData, cardPos, upgradeNumber, requiredUpgrade)
-    local originalUpgradeCards = getObjectFromGUID(cardInfo.upgradeCardsGUID)
-    local upgradeCards = originalUpgradeCards.clone({ position = {0,-30,0} })
-    local cardName = cardData.name
-    local upgradeCardTable = upgradeCards.getObjects()
-    local cardInt = -1
-
-    for i, entry in pairs(upgradeCardTable) do
-        if entry.nickname == cardName then
-            cardInt = entry.index
-            break
-        end
-    end
-
-    upgradeCard = upgradeCards.takeObject({
-        position       = {0,10,0},
-        index          = cardInt
-    })
-
-    destroyObject(upgradeCards)
+    local upgradeCard = Deck:spawnUpgradeCard(cardData.name)
 
     local rot = self.getRotation()
     local pos = self.getPosition()

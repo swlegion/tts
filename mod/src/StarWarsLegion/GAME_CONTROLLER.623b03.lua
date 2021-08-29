@@ -347,29 +347,23 @@ function spawnCardDecks()
   -- {52.43, 1.03, 32.53}
   ga_event("Game", "spawnCardDecks")
   local cardInfo = Global.getTable('cardInfo')
-  local upgrades = getObjectFromGUID(cardInfo.upgradeCardsGUID)
   local commands = getObjectFromGUID(Global.getTable('listBuilder').commandCardsGUID)
   local battlefield = getObjectFromGUID(Global.getTable('gameController').battlefieldCardsGUID)
   local cardScale = {0.83, 1, 0.83}
 
   -- TODO: Make this less hard-coded.
   local factions = {"Empire", "Rebel", "Republic", "Separatist"}
-  local unitCards
   for _, faction in ipairs(factions) do
     Deck:spawnUnitDeck(faction, {52.43, 1.42, 32.53})
   end
+  Deck:spawnUpgradeDeck({52.43, 1.84, 29.23})
 
-  upgrades = upgrades.clone({
-    position     = {52.43, 1.84, 29.23},
-  })
   commands = commands.clone({
     position     = {52.43, 1.42, 26.84}
   })
   battlefield = battlefield.clone({
     position     = {52.43, 1.42, 23}
   })
-  upgrades.setScale(cardScale)
-  upgrades.setLock(false)
   commands.setScale(cardScale)
   commands.setRotation({0.00, 270.00, 0.00})
   commands.setLock(false)
