@@ -44,18 +44,21 @@
 
           <b>CHANGELOG</b>
 
-          <!--
           (Since last <i>Beta</i>)
 
-          - TBD.
-          -->
+          - We are testing a <i> new unit card flow</i> (internal to the mod).
+          - <b>Please report any bugs with unit cards</b>.
 
           (Since last <i>Stable</i>)
+
+          - Updated the models for the T-47 airspeeder.
+          - Replaced unit cards across the mod. They should look better now/more consistent.
 
           - Deleted the unused middle (black) clock.
           - Chess clocks are now hidden by default. Click "Chess Clocks" to show (and use).
           - Chess clocks (and the UI) are now persisted across saves/loads.
           - ID tokens are now also tinted as part of the "auto tint" functionality.
+
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
