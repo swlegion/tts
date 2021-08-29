@@ -1,0 +1,24 @@
+function getMovementLinks()
+    local movements = {}
+        --27 mm
+        movements.small = 
+            {
+                "http://cloud-3.steamusercontent.com/ugc/1686023243873724120/F6CD5A3E2A1BDC2C5D2B3DF4E63CBAE885CA5A9A/",
+                "http://cloud-3.steamusercontent.com/ugc/1686023243873724174/CEC7255DFC6E984461249A1F51F427708712A30C/",
+                "http://cloud-3.steamusercontent.com/ugc/1686023243873724223/6DB11C84B2E4DEE051795676739C744B480693BE/"
+            }
+        --50 mm
+        movements.medium = 
+            {
+                "http://cloud-3.steamusercontent.com/ugc/1686023243873724120/F6CD5A3E2A1BDC2C5D2B3DF4E63CBAE885CA5A9A/",
+                "http://cloud-3.steamusercontent.com/ugc/1686023243873724174/CEC7255DFC6E984461249A1F51F427708712A30C/",
+                "http://cloud-3.steamusercontent.com/ugc/1686023243873724223/6DB11C84B2E4DEE051795676739C744B480693BE/"
+            }
+        --70mm
+        --100mm
+        --120mm
+        --150mm
+        --100mm oblong
+
+    return movements
+end

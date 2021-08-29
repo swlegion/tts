@@ -177,34 +177,34 @@ function dropCoroutine()
 end
 
 function spawnCohesionRuler()
-    if cohesionRuler == nil then
-
-        local cohesionBundlesTable = getCohesionLinks()
-        local baseSize = unitData.baseSize
-        local cohesionBundleToSpawn = cohesionBundlesTable[baseSize]
-
-        if cohesionBundleToSpawn == nil then return end
-
-        local basePos = self.getPosition()
-        local baseRot = self.getRotation()
-
-        cohesionRuler = spawnObject({
-            type="Custom_AssetBundle",
-            position = {basePos.x, basePos.y + 20, basePos.z},
-            rotation = {0, baseRot.y, 0},
-            scale = {0,0,0} -- 0 scale will hide TTS default box and won't impact projector
-        })
-
-        cohesionRuler.setCustomObject({
-            type = 0,
-            assetbundle = cohesionBundleToSpawn
-        })
-
-        cohesionRuler.setLock(true)
-        cohesionRuler.use_gravity = false
-        cohesionRuler.setName("Cohesion Ruler")
+    if cohesionRuler ~= nil then
+        clearCohesionRuler()
     end
 
+    local cohesionBundlesTable = getCohesionLinks()
+    local baseSize = unitData.baseSize
+    local cohesionBundleToSpawn = cohesionBundlesTable[baseSize]
+
+    if cohesionBundleToSpawn == nil then return end
+
+    local basePos = self.getPosition()
+    local baseRot = self.getRotation()
+
+    cohesionRuler = spawnObject({
+        type="Custom_AssetBundle",
+        position = {basePos.x, basePos.y + 20, basePos.z},
+        rotation = {0, baseRot.y, 0},
+        scale = {0,0,0} -- 0 scale will hide TTS default box and won't impact projector
+    })
+
+    cohesionRuler.setCustomObject({
+        type = 0,
+        assetbundle = cohesionBundleToSpawn
+    })
+
+    cohesionRuler.setLock(true)
+    cohesionRuler.use_gravity = false
+    cohesionRuler.setName("Cohesion Ruler")
 end
 
 function clearCohesionRuler()

@@ -2,6 +2,8 @@
 #include !/data/CardInfo_new
 #include !/data/MiniInfo
 #include !/RangeRulers
+#include !/data/MovementLinks
+
 
 -- Model Token
 
@@ -445,6 +447,7 @@ function initMove()
     initRot = selectedUnitObj.getRotation()
     moveUnit()
 end
+
 function moveUnit()
     stopAttack()
     resetButtons()
@@ -552,6 +555,28 @@ function moveUnit()
     templateB.setTable("baseRot", baseRot)
     templateB.setVar("templateA", templateA)
     templateB.setLock(false)
+
+    local maxMoveBundles = getMovementLinks()
+    local baseSizeMoveBundles = maxMoveBundles[unitData.baseSize]
+    local maxMoveTemplateBundleToSpawn = baseSizeMoveBundles[unitData.selectedSpeed]
+
+    if maxMoveTemplateBundleToSpawn ~= nil then
+        maxMoveTemplate = spawnObject({
+            type = "Custom_AssetBundle",
+            position = {basePos.x, basePos.y + 20, basePos.z},
+            rotation = {0, basePos.y, 0},
+            scale = {0,0,0} -- 0 scale will hide TTS default box and won't impact projector
+        })
+
+        maxMoveTemplate.setCustomObject({
+            type = 0,
+            assetbundle = maxMoveTemplateBundleToSpawn
+        })
+
+        maxMoveTemplate.setLock(true)
+        maxMoveTemplate.use_gravity = false
+        maxMoveTemplate.setName("Maximum Move")
+    end
 
     ------------------------------------------- SPAWN BUTTON -------------------------------------------
 
@@ -696,6 +721,9 @@ function moveStart()
     endPos.y = initPos.y + 2
     selectedUnitObj.setPositionSmooth(endPos, false, false)
     selectedUnitObj.setRotationSmooth(initRot, false, false)
+    Wait.frames(function()
+        selectedUnitObj.call("checkVelocity")
+    end)
 end
 
 function moveBackwards()
@@ -754,6 +782,9 @@ function clearMovementTemplates()
     end
     if templateB!= nil then
         destroyObject(templateB)
+    end
+    if maxMoveTemplate != nil then
+        destroyObject(maxMoveTemplate)
     end
 end
 
