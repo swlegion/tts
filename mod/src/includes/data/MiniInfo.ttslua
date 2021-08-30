@@ -1172,20 +1172,20 @@ function buildMiniInfo()
       name = "BX Commando Droid Saboteur",
       leader = true
   }
-  local droidekaFxMaterials = "http://cloud-3.steamusercontent.com/ugc/1686023445067146631/305531F34B6598A008F5925D828457DF1A8195F6/"
-  miniInfo.droidekaLeader = {
-      type = "assetbundle",
-      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1686023445067168845/FBADA8EDE2ED248CA7F50C1DB3BFF46215E0360B/",
-      assetbundle_secondary = droidekaFxMaterials,
-      collider = _BASE_COLLIDERS.medium,
-      name = "Droideka Leader"
-  }
-  miniInfo.droideka1 = {
-      type = "assetbundle",
-      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1686023445067146269/A9189AC12193D3BD24624F7A5137C4E69FADDBBF/",
-      assetbundle_secondary = droidekaFxMaterials,
-      collider = _BASE_COLLIDERS.medium,
-      name = "Droideka "
+  local droidekaFxMaterials = "http://cloud-3.steamusercontent.com/ugc/1686023445067146631/305531F34B6598A008F5925D828457DF1A8195F6/" 
+  miniInfo.droidekaLeader = { 
+      type = "assetbundle", 
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1686023445067168845/FBADA8EDE2ED248CA7F50C1DB3BFF46215E0360B/", 
+      assetbundle_secondary = droidekaFxMaterials, 
+      collider = _BASE_COLLIDERS.medium, 
+      name = "Droideka Leader" 
+  } 
+  miniInfo.droideka1 = {  
+      type = "assetbundle", 
+      assetbundle = "http://cloud-3.steamusercontent.com/ugc/1686023445067146269/A9189AC12193D3BD24624F7A5137C4E69FADDBBF/", 
+      assetbundle_secondary = droidekaFxMaterials, 
+      collider = _BASE_COLLIDERS.medium, 
+      name = "Droideka " 
   }
   miniInfo.STAPLeader = {
       mesh = "http://cloud-3.steamusercontent.com/ugc/1003681674396285422/B2205A5D8B8CC1718D0C9B507BC3E33BCA815567/",
