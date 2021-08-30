@@ -403,7 +403,7 @@ function createMatrixFromDeck(battleDeckInserted)
 
         for i, battleType in pairs(battleDeckTypes) do
             for k, compareCardData in pairs(setUpCards[battleType]) do
-                if compareCardData.name == cardData.nickname then
+                if compareCardData.name:upper() == cardData.nickname:upper() then
                     -- found match
                     drawCardGUID = cardData.guid
                     break
@@ -431,7 +431,6 @@ function createMatrixFromDeck(battleDeckInserted)
 end
 
 function revealBattleCards(insertedDeck)
-
     clearSetUpCards("all")
     setUp5Data = {}
     setUp5Data.objectiveCards = objectiveCards
@@ -450,13 +449,11 @@ function revealBattleCards(insertedDeck)
         setUp5Data.spawnedCards.conditions = conditionsCardMatrix
         setBattleCardPos()
     end
-
     setUp5Data.cardSelection = {objective = 1, deployment = 1, conditions = 1}
 
     createButtonSetUpCard("objective", 1)
     createButtonSetUpCard("deployment", 1)
     createButtonSetUpCard("conditions", 1)
-
     Wait.frames(debugSetupCards)
 end
 

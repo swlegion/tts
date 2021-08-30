@@ -929,48 +929,17 @@ function importFromText(nothing, text)
 end
 
 function dealCommandCard(selectionCard, isContingency)
-  originalCommandCards = getObjectFromGUID(listBuilder.commandCardsGUID)
-  commandCards = originalCommandCards.clone({ position = {0,-30,0} })
-  commandCardsTable = commandCards.getObjects()
-  commandCards.setScale({1,1,1})
-
-  for i, entry in pairs(commandCardsTable) do
-      if entry.nickname:lower() == selectionCard:lower() then
-          local matchCard = commandCards.takeObject({
-              position       = listBuilder.handPos[colorSide].pos ,
-              index          = entry.index
-          })
-
-          if isContingency then
-            local cardData = matchCard.getData()
-            for index, table in pairs(cardData.CustomDeck) do
-              local CustomDeck = {}
-              table.BackURL = "http://cloud-3.steamusercontent.com/ugc/1753560235958347056/F845CB170FEF761DC7025AA3EEAE731F018C0E73/"
-              CustomDeck[index] = table
-              cardData.CustomDeck = CustomDeck
-              break
-            end
-            destroyObject(matchCard)
-            matchCard = spawnObjectData({
-              data        = cardData,
-              position    = listBuilder.handPos[colorSide].pos,
-              scale       = {1, 1, 1},
-              rotation    = listBuilder.handPos[colorSide].rot,
-            })
-            matchCard.highlightOn({0, 1, 1})
-          else
-            matchCard.setRotation(listBuilder.handPos[colorSide].rot)
-          end
-          break
-      end
+  local card = Deck:spawnCommandCard(selectionCard, isContingency)
+  if isContingency then
+    card.highlightOn({0, 1, 1})
   end
-
-  destroyObject(commandCards)
+  card.setRotation(listBuilder.handPos[colorSide].rot)
+  card.setPosition(listBuilder.handPos[colorSide].pos)
 end
 
 function drawBattlefieldCard(data, cardType)
   for _, entry in pairs(data.battlefieldDeck[cardType]) do
-      local card = Deck:spawnBattleCard(entry)
+      local card = Deck:spawnBattleCard(cardType, entry)
       local deckMountPos = deckMount.getPosition()
       deckMountPos.y = deckMountPos.y + 0.23 + (deckHeight * 0.1)
       deckHeight = deckHeight + 1
