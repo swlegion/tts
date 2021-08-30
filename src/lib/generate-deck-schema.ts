@@ -105,6 +105,25 @@ export default async function buildDeckSchemaLua(
   });
   lua.push('  },');
 
+  const { battlefield } = json;
+  lua.push('  battlefield = {');
+  Object.entries(battlefield).forEach((typeAndCategories) => {
+    const [type, categories] = typeAndCategories;
+    lua.push(`    ${type.toLowerCase()} = {`);
+    Object.entries(categories as object).forEach((categoryAndCards) => {
+      const [category, cards] = categoryAndCards;
+      lua.push(`      ${category.toLowerCase()} = {`);
+      (cards as any[]).forEach((card) => {
+        lua.push(`        [${encodeKey(card.name)}] = {`);
+        lua.push(...formatData(card, 10));
+        lua.push('        },');
+      });
+      lua.push('      },');
+    });
+    lua.push('    },');
+  });
+  lua.push('  },');
+
   lua.push('}');
   lua.push('');
 

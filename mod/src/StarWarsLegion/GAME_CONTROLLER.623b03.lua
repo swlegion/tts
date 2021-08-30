@@ -344,11 +344,7 @@ end
 -- SETUP Menu
 
 function spawnCardDecks()
-  -- {52.43, 1.03, 32.53}
   ga_event("Game", "spawnCardDecks")
-  local cardInfo = Global.getTable('cardInfo')
-  local battlefield = getObjectFromGUID(Global.getTable('gameController').battlefieldCardsGUID)
-  local cardScale = {0.83, 1, 0.83}
 
   -- TODO: Make this less hard-coded.
   local factions = {"Empire", "Rebel", "Republic", "Separatist"}
@@ -357,11 +353,7 @@ function spawnCardDecks()
   end
   Deck:spawnUpgradeDeck({52.43, 1.84, 29.23})
   Deck:spawnCommandDeck({52.51, 1.42, 26.35})
-  battlefield = battlefield.clone({
-    position     = {52.43, 1.42, 23}
-  })
-  battlefield.setScale(cardScale)
-  battlefield.setLock(false)
+  Deck:spawnBattleDeck({52.43, 1.42, 23})
 end
 
 function setBattleCardPos()
@@ -411,7 +403,7 @@ function createMatrixFromDeck(battleDeckInserted)
 
         for i, battleType in pairs(battleDeckTypes) do
             for k, compareCardData in pairs(setUpCards[battleType]) do
-                if compareCardData.name == cardData.nickname then
+                if compareCardData.name:upper() == cardData.nickname:upper() then
                     -- found match
                     drawCardGUID = cardData.guid
                     break
@@ -439,7 +431,6 @@ function createMatrixFromDeck(battleDeckInserted)
 end
 
 function revealBattleCards(insertedDeck)
-
     clearSetUpCards("all")
     setUp5Data = {}
     setUp5Data.objectiveCards = objectiveCards
@@ -458,13 +449,11 @@ function revealBattleCards(insertedDeck)
         setUp5Data.spawnedCards.conditions = conditionsCardMatrix
         setBattleCardPos()
     end
-
     setUp5Data.cardSelection = {objective = 1, deployment = 1, conditions = 1}
 
     createButtonSetUpCard("objective", 1)
     createButtonSetUpCard("deployment", 1)
     createButtonSetUpCard("conditions", 1)
-
     Wait.frames(debugSetupCards)
 end
 

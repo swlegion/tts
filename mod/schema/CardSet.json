@@ -18,8 +18,12 @@
 
     "commands": {
       "$ref": "./CommandCardSet.json"
+    },
+
+    "battlefield": {
+      "$ref": "./BattleCardSet.json"
     }
   },
 
-  "required": ["units", "upgrades", "commands"]
+  "required": ["units", "upgrades", "commands", "battlefield"]
 }

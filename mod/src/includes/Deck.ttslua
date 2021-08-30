@@ -10,6 +10,9 @@ function Deck:create()
     _backs = {
       command     = "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
       contignency = "http://cloud-3.steamusercontent.com/ugc/1753560235958347056/F845CB170FEF761DC7025AA3EEAE731F018C0E73/",
+      objective   = "http://cloud-3.steamusercontent.com/ugc/786360308354563159/BDB495B60FFED8707BD013502C2F03D3F047B63E/",
+      condition   = "http://cloud-3.steamusercontent.com/ugc/786360308354563381/FF7DF081311A20CC396CAC9391D85EB1FBCA44E1/",
+      deployment  = "http://cloud-3.steamusercontent.com/ugc/786360308354562872/AF68672CC3B5A0A27A37FA0C02FD87F2210FAB86/",
     },
     _unknown = {
       command     = "http://cloud-3.steamusercontent.com/ugc/1683770885590601027/47E5B7470CAAC79372CB5C607AEF29DF195EB7CE/",
@@ -189,8 +192,67 @@ function Deck:spawnCommandDeck(position)
 end
 
 
-function Deck:spawnBattleCard(name)
-  -- TODO: Implement.
+function Deck:spawnBattleCard(category, name, scenario)
+  if scenario == nil then
+    scenario = "standard"
+  end
+  -- TODO: Remove remapping.
+  if category == "conditions" then
+    category = "condition"
+  end
+  local categories = self._schema.battlefield[scenario:lower()]
+  if categories == nil then
+    return self:_spawnUnitOrBattleDud(name, "No matching scenario: \"" .. scenario .. "\".")
+  end
+  local cards = categories[category:lower()]
+  if cards == nil then
+    return self:_spawnUnitOrBattleDud(name, "No matching command card found.\n" .. "Scenario: " .. scenario .. "\nCategory: " .. category)
+  end
+  local details = cards[name:upper()]
+  if details == nil then
+    return self:_spawnUnitOrBattleDud(name, "No matching command card found.\n" .. "Scenario: " .. scenario .. "\nCategory: " .. category)
+  else
+    local image = details.image
+    if image == "" then
+      image = self._unknown.unit
+    end
+    local card = self:_spawnCard(image, self._backs[category:lower()])
+    if image == "" then
+      card.setDescription("No image specified! Using fallback.")
+    end
+    card.setName(details.name)
+    return card
+  end
+end
+
+function Deck:spawnBattleDeck(position, scenarioName)
+  if scenarioName == nil then
+    scenarioName = "standard"
+  end
+  local scenario = self._schema.battlefield[scenarioName:lower()]
+  if scenario == nil then
+    return self:_spawnUnitOrBattleDud("Deck failed to load: " .. scenario, "No matching scenario.")
+  end
+  local header
+  local deck
+  for category, cardsByName in pairs(scenario) do
+    for name, details in pairs(cardsByName) do
+      local card = self:spawnBattleCard(category, name, scenarioName)
+      if header == nil then
+        header = card
+        deck = card
+      else
+        local container = header.putObject(card)
+        if container ~= nil then
+          deck = container
+        end
+      end
+      if position ~= nil then
+        card.setPosition(position)
+      end
+    end
+  end
+  return deck
 end
 
 function Deck:_spawnUnitOrBattleDud(name, description)

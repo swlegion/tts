@@ -1812,5 +1812,111 @@
         "image": ""
       }
     ]
+  },
+  "battlefield": {
+    "Standard": {
+      "Objective": [
+        {
+          "name": "Bombing Run",
+          "image": ""
+        },
+        {
+          "name": "Breakthrough",
+          "image": ""
+        },
+        {
+          "name": "Hostage Exchange",
+          "image": ""
+        },
+        {
+          "name": "Intercept The Transmissions",
+          "image": ""
+        },
+        {
+          "name": "Key Positions",
+          "image": ""
+        },
+        {
+          "name": "Payload",
+          "image": ""
+        },
+        {
+          "name": "Recover The Supplies",
+          "image": ""
+        },
+        {
+          "name": "Sabotage The Moisture Vaparators",
+          "image": ""
+        }
+      ],
+      "Deployment": [
+        {
+          "name": "Advanced Positions",
+          "image": ""
+        },
+        {
+          "name": "Battle Lines",
+          "image": ""
+        },
+        {
+          "name": "Danger Close",
+          "image": ""
+        },
+        {
+          "name": "Disarray",
+          "image": ""
+        },
+        {
+          "name": "Hemmed In",
+          "image": ""
+        },
+        {
+          "name": "Major Offensive",
+          "image": ""
+        },
+        {
+          "name": "Roll Out",
+          "image": ""
+        },
+        {
+          "name": "The Long March",
+          "image": ""
+        }
+      ],
+      "Condition": [
+        {
+          "name": "Clear Conditions",
+          "image": ""
+        },
+        {
+          "name": "Fortified Positions",
+          "image": ""
+        },
+        {
+          "name": "Hostile Environment",
+          "image": ""
+        },
+        {
+          "name": "Limited Visibility",
+          "image": ""
+        },
+        {
+          "name": "Minefield",
+          "image": ""
+        },
+        {
+          "name": "Rapid Reinforcements",
+          "image": ""
+        },
+        {
+          "name": "Supply Drop",
+          "image": ""
+        },
+        {
+          "name": "War Weary",
+          "image": ""
+        }
+      ]
+    }
   }
 }

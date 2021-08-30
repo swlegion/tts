@@ -47,8 +47,6 @@ function onLoad()
     deploymentCards = getObjectFromGUID(gameController.deploymentCardsGUID)
     conditionsCards = getObjectFromGUID(gameController.conditionsCardsGUID)
 
-    allBattlefieldCards = getObjectFromGUID(gameController.battlefieldCardsGUID)
-
     deckMount = getObjectFromGUID(listBuilder[colorSide.."DeckMountGUID"])
     deckZone = getObjectFromGUID(listBuilder[colorSide.."DeckZoneGUID"])
 
