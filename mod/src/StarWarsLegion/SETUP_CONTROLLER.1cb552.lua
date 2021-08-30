@@ -82,7 +82,7 @@ function checkCard(cardType)
 
     if zoneObj != nil then
         for i, entry in pairs(setUpCards[cardType]) do
-            if entry.name == zoneObj.getName() then
+            if entry.name:upper() == zoneObj.getName():upper() then
                 setUpCardData = entry
             end
         end

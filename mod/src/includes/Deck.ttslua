@@ -201,11 +201,11 @@ function Deck:spawnBattleCard(category, name, scenario)
   if cards == nil then
     return self:_spawnUnitOrBattleDud(name, "No matching command card found.\n" .. "Scenario: " .. scenario .. "\nCategory: " .. category)
   end
-  local card = cards[name:upper()]
-  if card == nil then
+  local details = cards[name:upper()]
+  if details == nil then
     return self:_spawnUnitOrBattleDud(name, "No matching command card found.\n" .. "Scenario: " .. scenario .. "\nCategory: " .. category)
   else
-    local image = card.image
+    local image = details.image
     if image == "" then
       image = self._unknown.unit
     end
@@ -213,24 +213,24 @@ function Deck:spawnBattleCard(category, name, scenario)
     if image == "" then
       card.setDescription("No image specified! Using fallback.")
     end
-    card.setName(card.name)
+    card.setName(details.name)
     return card
   end
 end
 
-function Deck:spawnBattleDeck(position, scenario)
-  if scenario == nil then
-    scenario = "standard"
+function Deck:spawnBattleDeck(position, scenarioName)
+  if scenarioName == nil then
+    scenarioName = "standard"
   end
-  local scenario = self._schema.battlefield[scenario:lower()]
+  local scenario = self._schema.battlefield[scenarioName:lower()]
   if scenario == nil then
     return self:_spawnUnitOrBattleDud("Deck failed to load: " .. scenario, "No matching scenario.")
   end
   local header
   local deck
   for category, categories in pairs(scenario) do
-    for name, details in pairs(categories) do
-      local card = self:spawnBattleCard(category, name, scenario)
+    for key, details in pairs(categories) do
+      local card = self:spawnBattleCard(category, key, scenarioName)
       if header == nil then
         header = card
         deck = card

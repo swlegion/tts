@@ -441,12 +441,10 @@ function spawnArmy(loadListData, skipDiskVersionCheck)
     end
 
       -- create battlefield deck
-      cloneBattlefieldCards()
       deckHeight = 1
       drawBattlefieldCard(loadListData, "objective")
       drawBattlefieldCard(loadListData, "deployment")
       drawBattlefieldCard(loadListData, "conditions")
-      destroyBattlefieldCards()
 
       offsetUnitSpawnCount = 0
 
@@ -931,56 +929,55 @@ function importFromText(nothing, text)
 end
 
 function dealCommandCard(selectionCard, isContingency)
-  local card = Deck:spawnCommandCard(selectionCard, isContingency)
-  if isContingency then
-    card.highlightOn({0, 1, 1})
+  originalCommandCards = getObjectFromGUID(listBuilder.commandCardsGUID)
+  commandCards = originalCommandCards.clone({ position = {0,-30,0} })
+  commandCardsTable = commandCards.getObjects()
+  commandCards.setScale({1,1,1})
+
+  for i, entry in pairs(commandCardsTable) do
+      if entry.nickname:lower() == selectionCard:lower() then
+          local matchCard = commandCards.takeObject({
+              position       = listBuilder.handPos[colorSide].pos ,
+              index          = entry.index
+          })
+
+          if isContingency then
+            local cardData = matchCard.getData()
+            for index, table in pairs(cardData.CustomDeck) do
+              local CustomDeck = {}
+              table.BackURL = "http://cloud-3.steamusercontent.com/ugc/1753560235958347056/F845CB170FEF761DC7025AA3EEAE731F018C0E73/"
+              CustomDeck[index] = table
+              cardData.CustomDeck = CustomDeck
+              break
+            end
+            destroyObject(matchCard)
+            matchCard = spawnObjectData({
+              data        = cardData,
+              position    = listBuilder.handPos[colorSide].pos,
+              scale       = {1, 1, 1},
+              rotation    = listBuilder.handPos[colorSide].rot,
+            })
+            matchCard.highlightOn({0, 1, 1})
+          else
+            matchCard.setRotation(listBuilder.handPos[colorSide].rot)
+          end
+          break
+      end
   end
-  card.setRotation(listBuilder.handPos[colorSide].rot)
-  card.setPosition(listBuilder.handPos[colorSide].pos)
+
+  destroyObject(commandCards)
 end
 
 function drawBattlefieldCard(data, cardType)
-  for k, entry in pairs(data.battlefieldDeck[cardType]) do
-      -- compare to deck
-      local cardTable = allBattlefieldCardsClone.getObjects()
-      local cardInt = -1
-      for l, entryCard in pairs(cardTable) do
-          if entry == entryCard.nickname then
-              cardInt = entryCard.index
-              break
-          end
-      end
+  for _, entry in pairs(data.battlefieldDeck[cardType]) do
+      local card = Deck:spawnBattleCard(entry)
+      local deckMountPos = deckMount.getPosition()
+      deckMountPos.y = deckMountPos.y + 0.23 + (deckHeight * 0.1)
+      deckHeight = deckHeight + 1
+      card.setPosition(deckMountPos)
 
-      -- draw card
-      if cardInt != -1 then
-          drawnCard = allBattlefieldCardsClone.takeObject({
-              smooth            = false,
-              index             = cardInt,
-              top               = false
-          })
-          drawnCard.setLock(false)
-          drawnCard.setScale({0.83,0.83,0.83})
-
-          local deckMountPos = deckMount.getPosition()
-          deckMountPos.y = deckMountPos.y + 0.23 + (deckHeight * 0.1)
-          deckHeight = deckHeight + 1
-          drawnCard.setPosition(deckMountPos)
-          local deckRot = deckMount.getRotation()
-          deckRot.z = 180
-          drawnCard.setRotation(deckRot)
-      end
-
+      local deckRot = deckMount.getRotation()
+      deckRot.z = 180
+      card.setRotation(deckRot)
   end
-end
-
-function cloneBattlefieldCards()
-  allBattlefieldCardsClone = allBattlefieldCards.clone({
-      position     = {5,-10,0}
-  })
-  allBattlefieldCardsClone.setPosition({5,-10,0})
-  allBattlefieldCardsClone.setLock(false)
-end
-
-function destroyBattlefieldCards()
-  destroyObject(allBattlefieldCardsClone)
 end

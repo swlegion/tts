@@ -344,11 +344,7 @@ end
 -- SETUP Menu
 
 function spawnCardDecks()
-  -- {52.43, 1.03, 32.53}
   ga_event("Game", "spawnCardDecks")
-  local cardInfo = Global.getTable('cardInfo')
-  local battlefield = getObjectFromGUID(Global.getTable('gameController').battlefieldCardsGUID)
-  local cardScale = {0.83, 1, 0.83}
 
   -- TODO: Make this less hard-coded.
   local factions = {"Empire", "Rebel", "Republic", "Separatist"}
@@ -357,11 +353,7 @@ function spawnCardDecks()
   end
   Deck:spawnUpgradeDeck({52.43, 1.84, 29.23})
   Deck:spawnCommandDeck({52.51, 1.42, 26.35})
-  battlefield = battlefield.clone({
-    position     = {52.43, 1.42, 23}
-  })
-  battlefield.setScale(cardScale)
-  battlefield.setLock(false)
+  Deck:spawnBattleDeck({52.43, 1.42, 23})
 end
 
 function setBattleCardPos()
