@@ -44,10 +44,6 @@
 
           <b>CHANGELOG</b>
 
-          (<textcolor color="#f03333">!!! DO NOT PUBLISH !!!</textcolor>)
-
-          - We are missing images for the upgrade cards.
-
           (Since last <i>Beta</i>)
 
           - We are testing a <i>new card flow</i> (internal to the mod).
@@ -56,8 +52,8 @@
           (Since last <i>Stable</i>)
 
           - Exporting a unit from a list builder with <i>loadout</i> works correctly.
-          - Updated the models for the T-47 airspeeder.
-          - Replaced unit cards across the mod. They should look better now/more consistent.
+          - Updated the models for the T-47 airspeeder, and Droideka.
+          - Replaced all cards across the mod. They should look better now/more consistent.
 
           - Deleted the unused middle (black) clock.
           - Chess clocks are now hidden by default. Click "Chess Clocks" to show (and use).
