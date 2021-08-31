@@ -28,8 +28,13 @@
 
         "image": {
           "$ref": "./Image.json"
+        },
+
+        "mini": {
+          "$ref": "./Mini.json"
         }
       },
+
       "required": ["name", "image"]
     }
   },

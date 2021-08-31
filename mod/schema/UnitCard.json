@@ -5,6 +5,12 @@
   "title": "Unit Card",
   "description": "Definition of a unit card.",
 
+  "definitions": {
+    "Bases": {
+      "enum": ["small", "medium", "large", "huge", "laat", "epic", "long"]
+    }
+  },
+
   "additionalProperties": false,
 
   "properties": {
@@ -20,8 +26,20 @@
 
     "image": {
       "$ref": "./Image.json"
+    },
+
+    "size": {
+      "description": "Size of the base.",
+      "$ref": "#/definitions/Bases"
+    },
+
+    "minis": {
+      "type": "array",
+      "items": {
+        "$ref": "./Mini.json"
+      }
     }
   },
 
-  "required": ["name", "image"]
+  "required": ["name", "image", "size"]
 }
