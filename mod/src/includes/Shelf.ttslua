@@ -57,11 +57,13 @@ function Shelf:spawnUnitModels(faction, name, upgrades)
     table.insert(result, self:_spawnModel(config))
   end
   for _, upgrade in ipairs(upgrades) do
-    local model = self:_spawnModel(upgrade.mini)
-    if upgrade.leader == true or card.heavyWeaponTeam == true then
-      table.insert(result, 1, model)
-    else
-      table.insert(result, model)
+    if upgrade.mini ~= nil then
+      local model = self:_spawnModel(upgrade.mini)
+      if upgrade.leader == true or card.heavyWeaponTeam == true then
+        table.insert(result, 1, model)
+      else
+        table.insert(result, model)
+      end
     end
   end
   return result
