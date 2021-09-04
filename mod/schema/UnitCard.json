@@ -33,13 +33,49 @@
       "$ref": "#/definitions/Bases"
     },
 
+    "heavyWeaponTeam": {
+      "description": "Reqyure a \"Heavy Weapon\" upgrade attached to this unit and make it the unit leader.",
+      "enum": [true]
+    },
+
     "minis": {
-      "type": "array",
-      "items": {
-        "$ref": "./Mini.json"
+      "oneOf": [
+        {
+          "description": "Number of placeholder minis to spawn",
+          "type": "number",
+          "minimum": 1
+        },
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "./Mini.json"
+          }
+        }
+      ]
+    },
+
+    "points": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "speed": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "upgrades": {
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 1
+      },
+
+      "propertyNames": {
+        "$ref": "./Upgrades.json"
       }
     }
   },
 
-  "required": ["name", "image", "size"]
+  "required": ["name", "image", "size", "points", "speed", "upgrades"]
 }

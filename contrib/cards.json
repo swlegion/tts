@@ -7,6 +7,12 @@
           "title": "Hero Of The Rebellion",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788425590/4AB2CCCFC2F45B3ACB9927166F6014A2903D7DCE/",
           "size": "small",
+          "points": 160,
+          "speed": 2,
+          "upgrades": {
+            "Force": 2,
+            "Gear": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540537100371/0B15B2810ABEBE5429E4A24852D96BAC2DC28BF7/",
@@ -19,6 +25,12 @@
           "title": "Fearless And Inventive",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788535425/1ADD2DCEEA5D23013C2331604493EFF62AC46DB3/",
           "size": "small",
+          "points": 90,
+          "speed": 2,
+          "upgrades": {
+            "Command": 2,
+            "Gear": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540537137572/2AC01B05AF1576F49C3156EDB614E2C1804C2A42/",
@@ -31,6 +43,13 @@
           "title": "Unorthodox General",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603832/92268B52B65228468DA0E1193EF01C808E899EF6/",
           "size": "small",
+          "points": 100,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Training": 1,
+            "Gear": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540669649/C440F429AB1182944D329D0C16C3402DB731CA87/",
@@ -43,6 +62,12 @@
           "title": "Resolute Commander",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603864/8B88E031F49A36B1504A1D48202C4731C4025EB5/",
           "size": "small",
+          "points": 45,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Gear": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862726770/62FECAB3FED284E098751CC3BBC70C4CFF828A58/",
@@ -55,6 +80,14 @@
           "title": "Stardust",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603895/5D4275A9C4F93D4170453A9375C308ABCFE318A1/",
           "size": "small",
+          "points": 100,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Training": 1,
+            "Gear": 1,
+            "Armament": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305475778/55B558E631655D0430BAF76E71C93899AAECA7A1/",
@@ -67,6 +100,13 @@
           "title": "Capable Intelligence Agent",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603937/418000BFD236B11C08F5EA8AF670673AC63199D2/",
           "size": "small",
+          "points": 90,
+          "speed": 2,
+          "upgrades": {
+            "Training": 2,
+            "Gear": 1,
+            "Armament": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/773996263556990389/C38E9CAD7E5BA5496E1A211CA799E9ACBAC51D00/",
@@ -79,6 +119,13 @@
           "title": "Smooth Operator",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603976/14129DC0580196A6C188A7D5B037937BE3906C83/",
           "size": "small",
+          "points": 105,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Training": 1,
+            "Gear": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1666859827674318376/E0A03ACDC6D2F607B8CC0C406AE196A9DB5347B7/",
@@ -93,6 +140,12 @@
           "title": "Walking Carpet",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789163592/3EE305AD57A0D00B7B413FF0F6F418D5FA544968/",
           "size": "small",
+          "points": 90,
+          "speed": 2,
+          "upgrades": {
+            "Training": 2,
+            "Gear": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540669973/90DD9EA44756CCF9B2473302DC644F3AEEED07B4/",
@@ -105,6 +158,13 @@
           "title": "Explosive Artist",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604048/BE5C0706F024117D9DBCF3468D89A4DEA1C10BFE/",
           "size": "small",
+          "points": 125,
+          "speed": 3,
+          "upgrades": {
+            "Training": 1,
+            "Gear": 2,
+            "Armament": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/948474323838790939/3E9EB4AAF653CD476FF3D90EA82072EDC2D4AC66/",
@@ -117,6 +177,12 @@
           "title": "Jedi Knight",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604076/98BCE6298F7E4D5086CB79D9592FC0151E7A447A/",
           "size": "small",
+          "points": 195,
+          "speed": 2,
+          "upgrades": {
+            "Force": 3,
+            "Training": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/777357228030156264/12F93F60CC26F1FDC2B577D4014787B7CAFBF9A1/",
@@ -129,6 +195,12 @@
           "title": "Hero Of A Thousand Devices",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604120/5C6ED7C27799E640540BC177E7804442CB47C304/",
           "size": "small",
+          "points": 45,
+          "speed": 1,
+          "upgrades": {
+            "Counterpart": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456806966/EFBA4A71BFE748A2868C14B82DA3A7B0D559874A/",
@@ -141,6 +213,12 @@
           "title": "Sardonic Security Droid",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788629460/11D489A9283627C5CE93F29C04BEB61BA3F166D5/",
           "size": "small",
+          "points": 70,
+          "speed": 2,
+          "upgrades": {
+            "Comms": 1,
+            "Armament": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/773996263557000439/C9EA2A27264C73E42C016FE26E665CBB75F8E7DE/",
@@ -154,6 +232,14 @@
           "name": "Rebel Troopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604151/FDE5B897188B36FF0336D103A45C20E91E25FED0/",
           "size": "small",
+          "points": 40,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862746147/3F3A21962C4AC0DA0445024688BF580A144D3825/",
@@ -177,6 +263,14 @@
           "name": "Fleet Troopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604199/71EA4817F31B75D4845B95F3AF76D61069D66E9A/",
           "size": "small",
+          "points": 40,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670464/96FB3825C890968C09B07A2E0E227886D2CC768C/",
@@ -200,6 +294,15 @@
           "name": "Rebel Veterans",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604242/EA62216368A51479BDBB4264DE172879EB43B6A1/",
           "size": "small",
+          "points": 48,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Training": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/788608699499192015/F194EFE217778158ED30DFD40EFC1F70BEC01772/",
@@ -222,7 +325,12 @@
         {
           "name": "Mark II Medium Blaster Team",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789216718/13B8F9971804EE108E554C9B348A29611CFE2495/",
-          "size": "small",
+          "size": "medium",
+          "points": 38,
+          "speed": 1,
+          "upgrades": {
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702688462/6B35D0B4E18CB7D0081825BEDC6E6C4AE45AA329/",
@@ -236,6 +344,15 @@
           "name": "Rebel Commandos",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604288/CC2622742539F3AD9EEA9AB88676DF7C0282FFB0/",
           "size": "small",
+          "points": 50,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Comms": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173156/D637683F992DD0C4488252BE266EEEA1F26006B0/",
@@ -258,8 +375,18 @@
         {
           "name": "Rebel Commandos",
           "title": "Strike Team",
+          "heavyWeaponTeam": true,
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/",
           "size": "small",
+          "points": 20,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Comms": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862776611/B8222AA4A3B680E969DC106C8A281D11845994EB/",
@@ -271,6 +398,14 @@
           "name": "Wookiee Warriors",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/",
           "size": "small",
+          "points": 69,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 2,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173937/5179F4315AD6B0839454E1934E794A7F006C7813/",
@@ -290,6 +425,16 @@
           "name": "Rebel Pathfinders",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604432/47C2CB26F7C98A3F449136D78165F64BE7D0A846/",
           "size": "small",
+          "points": 58,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Comms": 1,
+            "Gear": 1,
+            "Armament": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305475193/3C613417B99B185BBAEC7A4C66AAE10E8FD6F8D5/",
@@ -313,6 +458,16 @@
           "name": "Mandalorian Resistance",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604461/D49CF324CDE3C648E683FCCD762B76F94E843065/",
           "size": "small",
+          "points": 72,
+          "speed": 3,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Comms": 1,
+            "Gear": 1,
+            "Armament": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696350886421665/441B37D17213CA1B82174A8988ED23AA2D59336E/",
@@ -333,6 +488,16 @@
           "title": "Clan Wren",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604497/C4CEBD761320F416E03203426388067B95104C90/",
           "size": "small",
+          "points": 34,
+          "speed": 3,
+          "upgrades": {
+            "Heavy Weapon": 2,
+            "Training": 1,
+            "Comms": 1,
+            "Gear": 1,
+            "Armament": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357880886/06542D3BD6F03DC43D9E675680F86F2964B210F9/",
@@ -345,14 +510,28 @@
           "title": "Kashyyyk Resistance",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604546/F387DBCD02315CB56A87FF52D99CE3C1E6E548F2/",
           "size": "small",
-          "minis": []
+          "points": 72,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
+          "minis": 3
         }
       ],
       "Support": [
         {
           "name": "AT-RT",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604581/361864DD585CE7DE99234C08416E9C4C1AA84A50/",
-          "size": "small",
+          "size": "large",
+          "points": 55,
+          "speed": 2,
+          "upgrades": {
+            "Hardpoint": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541266463/014ECD21C93F864E1C1DFD104A365DFC555EBAF8/",
@@ -363,7 +542,13 @@
         {
           "name": "1.4 FD Laser Cannon Team",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604624/D975E5460BB0A6B86E0AD105445ECBAEBBB2BEA0/",
-          "size": "small",
+          "size": "huge",
+          "points": 70,
+          "speed": 0,
+          "upgrades": {
+            "Comms": 1,
+            "Generator": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541267781/BE163E2112B28E8C7C5E536B037D3115103F9642/",
@@ -374,7 +559,13 @@
         {
           "name": "Tauntaun Riders",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604655/CC7501F41054D1F68139C8ABCFAEE0CAA855475C/",
-          "size": "small",
+          "size": "medium",
+          "points": 95,
+          "speed": 3,
+          "upgrades": {
+            "Training": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/788608699499191489/E91DEB380842511B21284A125A505B6C71D18474/",
@@ -391,7 +582,14 @@
         {
           "name": "T-47 Airspeeder",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604696/AD5CE170F4BBAC2DA1F5AF0F3AE4C7381EDC70AD/",
-          "size": "small",
+          "size": "huge",
+          "points": 130,
+          "speed": 3,
+          "upgrades": {
+            "Pilot": 1,
+            "Hardpoint": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "bundle": "http://cloud-3.steamusercontent.com/ugc/1686023073179090715/187094FD9EBAFB6FF44A65F2D411D68154C0FAC7/"
@@ -402,6 +600,14 @@
           "name": "X-34 Landspeeder",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604738/6DAAAD8E05BFAF02E405EB1A28FA6EC17771D678/",
           "size": "small",
+          "points": 60,
+          "speed": 2,
+          "upgrades": {
+            "Pilot": 1,
+            "Crew": 2,
+            "Hardpoint": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594267188/9FA2B8A42C94B6E3683F1B753CEBA14FC3258592/",
@@ -413,6 +619,14 @@
           "name": "A-A5 Speeder Truck",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788629495/7CC8A26CAE70713A18D1A9C2A9DB7B59BC0839F9/",
           "size": "small",
+          "points": 75,
+          "speed": 1,
+          "upgrades": {
+            "Pilot": 1,
+            "Crew": 2,
+            "Hardpoint": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "bundle": "http://cloud-3.steamusercontent.com/ugc/1803107668954610246/3C643CD6824D7380C1DE15EADAA53243607E8019/"
@@ -428,6 +642,11 @@
           "title": "Dark Lord Of The Sith",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701730/72AE7649145939BD1B754C71CEA6AC3F9A6C11E5/",
           "size": "small",
+          "points": 175,
+          "speed": 1,
+          "upgrades": {
+            "Force": 3
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541323740/BF58AB674CB7D638333F1B04A7C9A5B9D7DBF0E4/",
@@ -440,6 +659,12 @@
           "title": "Master Tactician",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701690/7C845644D274DFEBCE8EDA7F932905A4FBC27A11/",
           "size": "small",
+          "points": 80,
+          "speed": 2,
+          "upgrades": {
+            "Command": 2,
+            "Gear": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541565411/F5F84397A9353DAD3D913F34E49812C1C895DA65/",
@@ -452,6 +677,12 @@
           "title": "Ruler Of The Galactic Empire",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701664/ABD12EEF236402EDF420F7849146DDEB367FC290/",
           "size": "small",
+          "points": 200,
+          "speed": 1,
+          "upgrades": {
+            "Force": 3,
+            "Command": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541565714/71E1936EB657F4BC1074EB740BC9AA0531A130AC/",
@@ -464,6 +695,12 @@
           "title": "Ruthless Commander",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701634/8D2A4BA88A49B4F29CAD29560D2FB864F3497733/",
           "size": "small",
+          "points": 45,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Gear": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541565898/F06AB6731446249164D34ACA208E4FAE70C6FE00/",
@@ -476,6 +713,12 @@
           "title": "Architect Of Terror",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701598/3832DC52B0D1BDBD5B71C222DD19A4C8AEF8B334/",
           "size": "small",
+          "points": 90,
+          "speed": 2,
+          "upgrades": {
+            "Command": 2,
+            "Gear": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305476013/77069645EC03E0F1C1DB10C2CE7EA85917E45404/",
@@ -488,6 +731,13 @@
           "title": "Inferno Squad Leader",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701556/6A3390D19B067EAACDF1CADD825D11BBE048DCEA/",
           "size": "small",
+          "points": 100,
+          "speed": 2,
+          "upgrades": {
+            "Training": 2,
+            "Gear": 1,
+            "Armament": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/773996263557021593/68887AFFBF8F1A2472A80F6514CD617A54A1D705/",
@@ -500,6 +750,14 @@
           "title": "Hunter Of Spectres",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701522/0198EDBE386830FA71A43C6887FD82E0CC28D241/",
           "size": "small",
+          "points": 90,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Training": 1,
+            "Gear": 1,
+            "Armament": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1666859827673303054/77A1D7624FA565991825B19513DBE6B70BD4F93C/",
@@ -514,6 +772,12 @@
           "title": "Infamous Bounty Hunter",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701498/836304CFE19193261F594363CFD8860F22FCD5F1/",
           "size": "small",
+          "points": 125,
+          "speed": 3,
+          "upgrades": {
+            "Training": 2,
+            "Gear": 2
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541667697/9BC2C54E14EA265620F3D96553274503245D1681/",
@@ -526,6 +790,12 @@
           "title": "Trandoshan Terror",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701468/4D83FEB79E36D5DD9A5DFB06CB479EBD35CCE130/",
           "size": "small",
+          "points": 115,
+          "speed": 2,
+          "upgrades": {
+            "Training": 2,
+            "Gear": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/948474323838791181/6B9D77B77DF8FD7AFA19342AD687F0E15A2E21B7/",
@@ -538,6 +808,12 @@
           "title": "The Emperor's Apprentice",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701427/7CD88B79A5D83D978F1FC76D438F87DD3991485A/",
           "size": "small",
+          "points": 155,
+          "speed": 1,
+          "upgrades": {
+            "Force": 2,
+            "Training": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/777357228030156593/FEBA127ECDF2917EA8F8066BBB10BADA7D365D3E/",
@@ -551,6 +827,14 @@
           "name": "Stormtroopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701400/02C7B04C990D9753DBD492D8D3AA7B380E131E9B/",
           "size": "small",
+          "points": 44,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711094/1DF94C3CDF022814179AFBA6D7521E6196760949/",
@@ -574,6 +858,14 @@
           "name": "Snowtroopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701374/B2FE5819A3004E4C9A64FC3841FBCAE6F3465D2F/",
           "size": "small",
+          "points": 44,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541801027/2A5DEE9952A0179FC8448FFA52819B387124ACD7/",
@@ -597,6 +889,15 @@
           "name": "Shoretroopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701337/62D4CDC12A785A32680980C485F009500F93762F/",
           "size": "small",
+          "points": 52,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Training": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702688359/642C317FE5C91E4DCC908FEA02A7ED4000B06A9F/",
@@ -619,7 +920,12 @@
         {
           "name": "DF-90 Mortar Trooper",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789216756/D8C157D8B31711EC7076FFF7C39347BC20B0E76A/",
-          "size": "small",
+          "size": "medium",
+          "points": 38,
+          "speed": 1,
+          "upgrades": {
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702688709/1EB7C549A90465F116EF307643FEA1D572CE1008/",
@@ -633,6 +939,15 @@
           "name": "Scout Troopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701305/172560D0D3A8FF9D0E646DE1F70272CD90CBE46F/",
           "size": "small",
+          "points": 48,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Comms": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541911155/36E8C01A67E5E7A4188FC619261E0BAB0DF438C1/",
@@ -655,8 +970,18 @@
         {
           "name": "Scout Troopers",
           "title": "Strike Team",
+          "heavyWeaponTeam": true,
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701268/B5118D8147938CC0B6A146A8BFDD7A8B33593A89/",
           "size": "small",
+          "points": 20,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Comms": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/770610077943667377/92306C3BFB675310563691C3C582BF5B9FC9ACD4/",
@@ -668,6 +993,14 @@
           "name": "Imperial Royal Guards",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701217/89E8CC46981E8C634A4E3D6C4F6EAF343B27C1E2/",
           "size": "small",
+          "points": 75,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 2,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541911959/D583DF28D96DBDF2F1FE9FB6AAB25809774C46EF/",
@@ -687,6 +1020,15 @@
           "name": "Imperial Death Troopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701181/DD8B2B7C2D3C3AC66F7D90F738B04BB309A31B46/",
           "size": "small",
+          "points": 68,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 2,
+            "Comms": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305474570/777B8146B150032E3D733D17110BE5887D1AB991/",
@@ -710,6 +1052,15 @@
           "name": "Imperial Special Forces",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701129/EDA8288C48AF33A69F22AE18E6CEB1413A0B04F9/",
           "size": "small",
+          "points": 68,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 2,
+            "Comms": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "bundle": "http://cloud-3.steamusercontent.com/ugc/1618438238122999812/779C9D69CA440F970DD0B7C6394A812732F9C588/",
@@ -734,6 +1085,15 @@
           "title": "Inferno Squad",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701097/D1043BFA3767D8E5A294ACA112D0E7E9A6B75627/",
           "size": "small",
+          "points": 34,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 2,
+            "Training": 2,
+            "Comms": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "bundle": "http://cloud-3.steamusercontent.com/ugc/1618438238122999341/C1AEEE50112F060BA8E5CAFBC16F417A0EF7C3C0/",
@@ -746,7 +1106,12 @@
         {
           "name": "74-Z Speeder Bikes",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701072/16EF027E626FA31293F4E88556AF9633F091180D/",
-          "size": "small",
+          "size": "medium",
+          "points": 75,
+          "speed": 3,
+          "upgrades": {
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540542045928/74630975D4992CA09BDDD88460874FB9E4095FC9/",
@@ -762,6 +1127,12 @@
           "name": "E-Web Heavy Blaster Team",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701046/AC13001548D72E76B4DEC2D904EB44454C152806/",
           "size": "small",
+          "points": 55,
+          "speed": 1,
+          "upgrades": {
+            "Comms": 1,
+            "Gear": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540542046063/4018BD67779A3F2ACCFA92C35306880C2FC60188/",
@@ -772,7 +1143,14 @@
         {
           "name": "Dewback Rider",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701014/E1E943B567134E6A946C714BD07233CDC881A7AF/",
-          "size": "small",
+          "size": "large",
+          "points": 75,
+          "speed": 1,
+          "upgrades": {
+            "Training": 1,
+            "Comms": 1,
+            "Armament": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702688959/0FCB94B52F0C2DF6E3F296AB6980CEC158E3E496/",
@@ -785,7 +1163,14 @@
         {
           "name": "AT-ST",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700975/F5BACD8B7607BCB5FAA1576B7FA4151FA0A5CA59/",
-          "size": "small",
+          "size": "huge",
+          "points": 160,
+          "speed": 2,
+          "upgrades": {
+            "Pilot": 1,
+            "Hardpoint": 3,
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/999141806429351360/24C098E7B3D1708CDCFB9AEA4B2C445EF2DBAEE0/",
@@ -796,7 +1181,14 @@
         {
           "name": "TX-225 GAVw Occupier Combat Assault Tank",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700946/705F2EF05FABA96D1386B8E41C56AD31E7901820/",
-          "size": "small",
+          "size": "long",
+          "points": 145,
+          "speed": 1,
+          "upgrades": {
+            "Pilot": 1,
+            "Hardpoint": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/770610077943664603/48F725F2C3EAAF7514813A42EE084CE2E7382909/",
@@ -807,7 +1199,14 @@
         {
           "name": "LAAT/LE Patrol Transport",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700907/2DD3325FA71C1F920CC957F8B7393893AE282073/",
-          "size": "small",
+          "size": "laat",
+          "points": 120,
+          "speed": 2,
+          "upgrades": {
+            "Pilot": 1,
+            "Ordnance": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "bundle": "http://cloud-3.steamusercontent.com/ugc/1747939379132611640/1EEBEB993635A56525283FAFA0D62D347FB3121C/"
@@ -823,6 +1222,13 @@
           "title": "Civilized Warrior",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790629/61D2CCB8A106E855E621557601F65B34FB2AEFC1/",
           "size": "small",
+          "points": 170,
+          "speed": 2,
+          "upgrades": {
+            "Force": 2,
+            "Command": 1,
+            "Training": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873394134/94407058FBA842AD0FDCC0BBB8AB613EA9A739C2/",
@@ -835,6 +1241,14 @@
           "title": "Honorable Soldier",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790598/868FE96BEB709EE3A25D7973FF259B8BF7824475/",
           "size": "small",
+          "points": 90,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Training": 1,
+            "Gear": 2,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456806720/869654FC3B0590BFFF2E1845C3CFA9169838EBF9/",
@@ -847,6 +1261,12 @@
           "title": "The Chosen One",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790573/1BDDD3F5C3D43558F79F35F1A4B9327F4729D62B/",
           "size": "small",
+          "points": 160,
+          "speed": 2,
+          "upgrades": {
+            "Force": 2,
+            "Training": 2
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1647717402898546429/B304222EB644FD345A672FA36A7C4F5DF5152C49/",
@@ -859,6 +1279,13 @@
           "title": "Trained For Leadership",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790538/EBB9911B9EB9C0F817370266A8ACB8357BEB3919/",
           "size": "small",
+          "points": 55,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Training": 1,
+            "Gear": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035126931/4EAB6085C2D2D6C176B3C9847E2F1F228CEFE7BB/",
@@ -871,36 +1298,40 @@
           "title": "Grand Master Of The Jedi Order",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790511/A6CDD26B405EFC7CC306D96BB04AA24E5BED2794/",
           "size": "small",
-          "minis": [
-            {
-              "mesh": "",
-              "diffuse": ""
-            }
-          ]
+          "points": 200,
+          "speed": 1,
+          "upgrades": {
+            "Force": 3,
+            "Command": 1
+          },
+          "minis": 1
         },
         {
           "name": "Wookiee Chieftan",
           "title": "Clan Leader",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790478/85E9C624082CA5731008121F45ABFA06CC4583DB/",
           "size": "small",
-          "minis": [
-            {
-              "mesh": "",
-              "diffuse": ""
-            }
-          ]
+          "points": 100,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Training": 2,
+            "Gear": 1
+          },
+          "minis": 1
         },
         {
           "name": "Chewbacca",
           "title": "Hero Of Kashyyyk",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790442/8E99C974FA5AF735BADBABA2CEA6400399908E50/",
           "size": "small",
-          "minis": [
-            {
-              "mesh": "",
-              "diffuse": ""
-            }
-          ]
+          "points": 90,
+          "speed": 2,
+          "upgrades": {
+            "Training": 2,
+            "Gear": 1
+          },
+          "minis": 1
         }
       ],
       "Operative": [
@@ -909,6 +1340,12 @@
           "title": "Independent Astromech",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790410/0D5BE2D0E5632005D6BC47413845604898AF0004/",
           "size": "small",
+          "points": 45,
+          "speed": 1,
+          "upgrades": {
+            "Counterpart": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456806966/EFBA4A71BFE748A2868C14B82DA3A7B0D559874A/",
@@ -921,6 +1358,14 @@
           "title": "Spirited Senator",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790377/AC7989ED45A958942F1EF716B575174C5BEB92E1/",
           "size": "small",
+          "points": 90,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Training": 1,
+            "Gear": 1,
+            "Armament": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1003681674396399543/F485B2E6C10CBC01661E393966F014E5A5DE8BF9/",
@@ -934,6 +1379,14 @@
           "name": "Phase I Clone Troopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790336/C2B0C8EB973E7D6657E288E5AFE9C3F00809461A/",
           "size": "small",
+          "points": 52,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873393043/33A6FEA07374DAC8EBB6CDD463B6C761DC765D03/",
@@ -957,6 +1410,15 @@
           "name": "Phase II Clone Troopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790299/B84917597F10DE241D7909430E91B5FC03248144/",
           "size": "small",
+          "points": 62,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Training": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321070793/294DC7F7A6BE9E31AB2823745854EF8C31D3281A/",
@@ -982,6 +1444,15 @@
           "name": "Arc Troopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790227/9326CC2191C991FF9CB0EB06A4EA17A2A17078BC/",
           "size": "small",
+          "points": 78,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Comms": 1,
+            "Gear": 2,
+            "Grenades": 1
+          },
           "minis": [
             {
               "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457802621/01F605D855048F823A0ECA6C46D2A62B56C04124/",
@@ -1004,8 +1475,18 @@
         {
           "name": "Arc Troopers",
           "title": "Strike Team",
+          "heavyWeaponTeam": true,
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790261/AD41C53AE8A6F57645BE2A51DAD8E9FF4FB9224D/",
           "size": "small",
+          "points": 27,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Comms": 1,
+            "Gear": 2,
+            "Grenades": 1
+          },
           "minis": [
             {
               "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457800878/34EC84D7ECD99E073417866A9BEC4288E00F5359/",
@@ -1017,6 +1498,14 @@
           "name": "Wookiee Warriors",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/",
           "size": "small",
+          "points": 69,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 2,
+            "Gear": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173937/5179F4315AD6B0839454E1934E794A7F006C7813/",
@@ -1037,14 +1526,28 @@
           "title": "Kashyyyk Defenders",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790192/E7C7082C239E04E3DF76FDFF909EE360D9C25012/",
           "size": "small",
-          "minis": []
+          "points": 72,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
+          "minis": 3
         }
       ],
       "Support": [
         {
           "name": "BARC Speeder",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790145/DD6B7ACA36B88E28B4326E7AA96536230B87F01E/",
-          "size": "small",
+          "size": "large",
+          "points": 60,
+          "speed": 3,
+          "upgrades": {
+            "Crew": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873394399/018F8CC63E0D90F58AADA6328DF1709D4D1DF796/",
@@ -1055,20 +1558,46 @@
         {
           "name": "AT-RT",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790101/7D591836DB5F16ED19FE2A28B55784950E1759CB/",
-          "size": "small",
+          "size": "large",
+          "points": 65,
+          "speed": 2,
+          "upgrades": {
+            "Hardpoint": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1002556126520812865/51DA6EC33B5B7DC2274B97867C4E68F302AF5AE5/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/1003681674396366135/D383D40E0AA3F75A159827B6938D2A93C75BC54B/"
             }
           ]
+        },
+        {
+          "name": "Raddaugh Gnasp Fluttercraft",
+          "image": "",
+          "size": "huge",
+          "points": 55,
+          "speed": 2,
+          "upgrades": {
+            "Crew": 1,
+            "Comms": 1
+          },
+          "minis": 1
         }
       ],
       "Heavy": [
         {
           "name": "TX-130 Saber-Class Fighter Tank",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790069/CFA0E667E3B9FEB5F80A3F7A68CAADE7FCF5F340/",
-          "size": "small",
+          "size": "epic",
+          "points": 170,
+          "speed": 2,
+          "upgrades": {
+            "Pilot": 1,
+            "Hardpoint": 1,
+            "Ordnance": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873392482/BC01571E47E96306C31FABABE3EA971814E00C96/",
@@ -1079,7 +1608,14 @@
         {
           "name": "LAAT/LE Patrol Transport",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700907/2DD3325FA71C1F920CC957F8B7393893AE282073/",
-          "size": "small",
+          "size": "laat",
+          "points": 120,
+          "speed": 2,
+          "upgrades": {
+            "Pilot": 1,
+            "Ordnance": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "bundle": "http://cloud-3.steamusercontent.com/ugc/1747939379132611640/1EEBEB993635A56525283FAFA0D62D347FB3121C/"
@@ -1095,6 +1631,13 @@
           "title": "Sinister Cyborg",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790037/C20F500DE55700AA568EA5BDA7794A1B0210E605/",
           "size": "small",
+          "points": 170,
+          "speed": 2,
+          "upgrades": {
+            "Command": 2,
+            "Training": 1,
+            "Armament": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869167436/AAA2C61A17BB43F2673AF16D30BD0478B9AAAD2A/",
@@ -1107,6 +1650,12 @@
           "title": "Darth Tyranus",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789992/5D0BFCF9DA9A3200D9D0A2CDE98E25782B8F4C10/",
           "size": "small",
+          "points": 200,
+          "speed": 2,
+          "upgrades": {
+            "Force": 3,
+            "Command": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849586543/25BD09F275C593DB6C794359A9C50F3188F4D804/",
@@ -1119,6 +1668,13 @@
           "title": "Programmed For Strategy",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789948/57BDB938C53DD5571B6FBC0F15225221BEDDF3F7/",
           "size": "small",
+          "points": 55,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Comms": 1,
+            "Gear": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1022821664192681738/6062182D66F6F043E4DCF98FCD592CBD7ECDFF18/",
@@ -1130,21 +1686,43 @@
           "name": "Super Tactical Droid",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789910/D7965608F5D3FF1B7FD8D14BF740C098F8AB5B7D/",
           "size": "small",
-          "minis": []
+          "points": 95,
+          "speed": 2,
+          "upgrades": {
+            "Command": 2,
+            "Comms": 1,
+            "Gear": 1
+          },
+          "minis": 1
         },
         {
           "name": "Super Tactical Droid",
           "title": "Kalani",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789867/EB6D7E54CBA8E867A4146B0CE70ADA1769D1EB86/",
           "size": "small",
-          "minis": []
+          "points": 100,
+          "speed": 2,
+          "upgrades": {
+            "Command": 3,
+            "Comms": 1,
+            "Gear": 1
+          },
+          "minis": 1
         },
         {
           "name": "Super Tactical Droid",
           "title": "Kraken",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789829/C51EEBAA4150DA48EC395D6C275415592D430E54/",
           "size": "small",
-          "minis": []
+          "points": 100,
+          "speed": 2,
+          "upgrades": {
+            "Command": 2,
+            "Training": 1,
+            "Comms": 1,
+            "Gear": 1
+          },
+          "minis": 1
         }
       ],
       "Operative": [
@@ -1153,6 +1731,15 @@
           "title": "Needs No Introduction",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789783/BF082412A93DED3289764E39E3D81ACF204DA989/",
           "size": "small",
+          "points": 125,
+          "speed": 2,
+          "upgrades": {
+            "Training": 1,
+            "Comms": 1,
+            "Gear": 1,
+            "Armament": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1003681674396400482/F8900CFC9EF2309C9F54AE33AE5444B2B09DB1CD/",
@@ -1165,6 +1752,12 @@
           "title": "Impatient Apprentice",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789734/ABF8B8F5555C2DF64258B4DD432B479059AFF4D9/",
           "size": "small",
+          "points": 160,
+          "speed": 2,
+          "upgrades": {
+            "Force": 2,
+            "Training": 2
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1647717402898544477/AC748B04B4363679177B27F514758C308A2A7E49/",
@@ -1178,6 +1771,13 @@
           "name": "B1 Battle Droids",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789698/9ADC7290CCCD4AA6F24BA74F9C098A4E3A61B063/",
           "size": "small",
+          "points": 36,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869166347/AA861F86A0B74CF335533E425A6CBACB99395A09/",
@@ -1209,6 +1809,13 @@
           "name": "B2 Super Battle Droids",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789641/943F65C66737E7EB971F1F71FDE9D3E056F7BEC4/",
           "size": "small",
+          "points": 45,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849586118/94F967F21EA7E390A200C4BDA5581D07DBB37AC2/",
@@ -1230,6 +1837,15 @@
           "name": "BX-Series Droid Commandos",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789610/FE6991E3F921A3C5ACD09400FD9CED611AC8E7D0/",
           "size": "small",
+          "points": 68,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Comms": 1,
+            "Armament": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457847081/F7D4E8D3EC85BAEEB5C1B5B913B7F484CC28FC10/",
@@ -1252,8 +1868,18 @@
         {
           "name": "BX-Series Droid Commandos",
           "title": "Strike Team",
+          "heavyWeaponTeam": true,
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789579/00BF878D8FCAFAA8F7D9B4B5F0749C63E4EA6F08/",
           "size": "small",
+          "points": 20,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Comms": 1,
+            "Armament": 1,
+            "Grenades": 1
+          },
           "minis": [
             {
               "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457847963/0EA6BE014DA494689FF32F9570C6A73CD88F1894/",
@@ -1265,18 +1891,23 @@
           "name": "DRK-1 Sith Probe Droids",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789552/446270D5F6DD23C36A7B268F2026A5B9DCFFC8BF/",
           "size": "small",
+          "points": 35,
+          "speed": 2,
+          "upgrades": {
+            "Comms": 1
+          },
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1693877203566022298/DF3FC1CF550C49A2C2340F5291798615E1978116/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/1693877203566022493/549FA81DA79A87D9134AF78B2D39417113C1C71C/"
             },
             {
-              "mesh": "",
-              "diffuse": ""
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1693877203566022298/DF3FC1CF550C49A2C2340F5291798615E1978116/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1693877203566022493/549FA81DA79A87D9134AF78B2D39417113C1C71C/"
             },
             {
-              "mesh": "",
-              "diffuse": ""
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1693877203566022298/DF3FC1CF550C49A2C2340F5291798615E1978116/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1693877203566022493/549FA81DA79A87D9134AF78B2D39417113C1C71C/"
             }
           ]
         },
@@ -1284,63 +1915,88 @@
           "name": "IG-100 MagnaGuard",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789521/5E40422D83C71854A725DB0231D790BAA359574E/",
           "size": "small",
-          "minis": [
-            {
-              "mesh": "",
-              "diffuse": ""
-            },
-            {
-              "mesh": "",
-              "diffuse": ""
-            },
-            {
-              "mesh": "",
-              "diffuse": ""
-            }
-          ]
+          "points": 0,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 2,
+            "Comms": 1,
+            "Grenades": 1
+          },
+          "minis": 3
         }
       ],
       "Support": [
         {
           "name": "Droidekas",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789475/1521CBD0935E6FB62CE544D89AC89E2F19F21D6B/",
-          "size": "small",
+          "size": "medium",
+          "points": 80,
+          "speed": 1,
+          "upgrades": {
+            "Comms": 1
+          },
           "minis": [
             {
-              "mesh": "",
-              "diffuse": ""
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1686023445067168845/FBADA8EDE2ED248CA7F50C1DB3BFF46215E0360B/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1686023445067146631/305531F34B6598A008F5925D828457DF1A8195F6/"
             },
             {
-              "mesh": "",
-              "diffuse": ""
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1686023445067146269/A9189AC12193D3BD24624F7A5137C4E69FADDBBF/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1686023445067146631/305531F34B6598A008F5925D828457DF1A8195F6/"
             }
           ]
         },
         {
-          "name": "STAP RiderS",
+          "name": "STAP Riders",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789443/7BE1E58EECCFE75EA2705CD1345E6C0602711AB7/",
-          "size": "small",
+          "size": "medium",
+          "points": 73,
+          "speed": 3,
+          "upgrades": {
+            "Comms": 1
+          },
           "minis": [
             {
-              "mesh": "",
-              "diffuse": ""
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1003681674396285422/B2205A5D8B8CC1718D0C9B507BC3E33BCA815567/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1003681674396285744/5725FD4B443FFC2C6ADD751A4094D4B65944C098/"
             },
             {
-              "mesh": "",
-              "diffuse": ""
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1003681674396285422/B2205A5D8B8CC1718D0C9B507BC3E33BCA815567/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1003681674396285948/9C496D83F828E242C3C7CC18613FA83AD57BCF93/"
             }
           ]
+        },
+        {
+          "name": "DSD1 Dwarf Spider Droid",
+          "image": "",
+          "size": "large",
+          "points": 55,
+          "speed": 2,
+          "upgrades": {
+            "Programming": 1,
+            "Hardpoint": 1,
+            "Comms": 1
+          },
+          "minis": 1
         }
       ],
       "Heavy": [
         {
           "name": "AAT Trade Federation Battle Tank",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789411/3550FADAC84804AB14EE338E46C5FEFC339C08B6/",
-          "size": "small",
+          "size": "epic",
+          "points": 170,
+          "speed": 1,
+          "upgrades": {
+            "Pilot": 1,
+            "Ordnance": 2,
+            "Comms": 1
+          },
           "minis": [
             {
-              "mesh": "",
-              "diffuse": ""
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785235151813166538/2F32058DDD51C131547B66A3927041BDACDD9E72/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785235151813166725/2751E83472B0B6BD0559F5E77FAA3D62A0E17BB1/"
             }
           ]
         }
@@ -1748,16 +2404,16 @@
         "name": "B2-ACM Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138530/E4F2F46CD0EFCCBEEFAC5F8CB2BA4E1D43B5BB88/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849585917/4D4047069796D1E0567BE9ABD836984FDF12E80E/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/"
         }
       },
       {
         "name": "B2-HA Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138574/542DD11379A68CFAAB14FFC165A582FB0CDC4377/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849585917/4D4047069796D1E0567BE9ABD836984FDF12E80E/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/"
         }
       },
       {
@@ -1767,401 +2423,392 @@
           "name": "Battle Shield Wookiee (Defensive)",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138967/E5E495CD6EEFD77393CD99C35CF651BBEDC1210A/"
         },
-        "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+        "mini": 1
       },
       {
         "name": "BX-Series Droid Sniper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139153/0CC9E44B3A97DEFEE965349938D03A01B829B231/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457847963/0EA6BE014DA494689FF32F9570C6A73CD88F1894/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
         }
       },
       {
         "name": "MPL-57 Barrage Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143680/A00C797802AB5F3B88D0F69EDED06A875250F9BD/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670338/28625FDF1F56EF08F0DB236C4ECFF67A54083B2B/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/"
         }
       },
       {
         "name": "Beskad Duelist",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139032/FD73A6FDED667993F98B7FBD7A1B3A408065B07F/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357841451/50164A1C84E6D119BC45BDD31C8209ED7D9A0F29/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696515357841757/1DC29C81D9DFCB2FB7D8A3B2EA2F2ABD3F416396/"
         }
       },
       {
         "name": "Bistan",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139058/D9ED7D523B3304E506F2BEDC4F067D3937D98FA3/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/993513208355174951/467D917BF6BCABCC9F6DD17F5DEDB43A11DEA9A7/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/993513208355175183/AD143EC79EC2BA3E7B93B114CC8AFEAAD322D806/"
         }
       },
       {
         "name": "Bowcaster Wookiee",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139088/9E0C04EE7D22BAE7023E8C8DB51A30B8877E0EEA/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541174665/9E1AA98159F76E271185345E9D347D7453C05D4B/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541174034/90C4A124BB82CCE0B5E38E13860ED49BB9A4973B/"
         }
       },
       {
         "name": "CM-0/93 Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139436/52C486B75EF3C105B674884E3930B773340F2936/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702687947/DCC60167A78C152DDAE932E699D7C70C5629008B/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/"
         }
       },
       {
         "name": "DC-15 Phase I Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139741/18705CF14C8BD2D88CF1827FE171F64D919E03C6/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873393393/915E79CA7D72B0DA950656C69F104A7BB586C0E0/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/"
         }
       },
       {
         "name": "DC-15X ARC Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139774/54F51273D6C53BD9C7384ECB6D4A32B76CB55B7D/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457800878/34EC84D7ECD99E073417866A9BEC4288E00F5359/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
         }
       },
       {
         "name": "DH-447 Sniper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139931/A4A301E1A5E58D34874BCE52DB7ED8D1B9E0552C/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862776611/B8222AA4A3B680E969DC106C8A281D11845994EB/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862776974/21649563BC0CB84E12C0B249C720919F528596D3/"
         }
       },
       {
         "name": "DLT-19 Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140049/9DA8A6B2DF19484212DC2516D345CE713F9D0F5E/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242465584/D38BBF10F76882CFF4189AB478E9F0691A22298F/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766101851242466181/BEF69EF45F1CCEF50CDF7B5CC6E1FE6BDC556310/"
         }
       },
       {
         "name": "DLT-19D Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140076/8927F1FC730F5790C314E6E3B25BF903587BC4E3/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/770610077943650040/CDB9EFD9CB36DE0EB5AB78B22F2B334BDB1E6DFE/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/770610077942938053/6187B2D6848EC35010DE6C3EEBB5DF6125D02D45/"
         }
       },
       {
         "name": "DLT-19X Sniper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140107/A9D503B1ABC7EF7286FBFAA193EE3351651AE68D/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/770610077943667377/92306C3BFB675310563691C3C582BF5B9FC9ACD4/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/770610077943667167/66F3188269E49FE5DAD649E771D799F2593263FF/"
         }
       },
       {
         "name": "DLT-20A Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140151/B259FD4422C504D8262FA548753B745260EC501F/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173464888456/63604C016242E6F545F139BC46515E0A894EC6B2/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173464889098/17A7BE90F158B80F88518F92EA4D211F16E14003/"
         }
       },
       {
         "name": "DP-23 Phase I Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140181/C7BE6B6A297BE993DDE8AB32151DB8E6240A2745/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785625549/5461468E09D086E4CF7E835AE69D6F4226690518/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764785620873/E3B1226B0836CF579F16C490896D5E2DE95C31F5/"
         }
       },
       {
         "name": "DT-F16",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140318/4B2F2E13CF6E386B13FA96D61FAFBC6058D92599/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/993513208355174615/DD0DA9DFDBCA621CF297C9A9EB2356279A733158/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/"
+        },
+        "leader": true
       },
       {
         "name": "Del Meeko",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139874/02F137C9987C446562434B6D358B1711E416A002/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1618437692581074585/1C74BEB92DC42D3585BFC1185A77DE14EC3249CA/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1618438238123043414/B7E9660E470DC070545782406C29F1E1356A5685/"
         }
       },
       {
         "name": "Dioxis Mine Saboteur",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139971/9FEB4E9518CC25CCA94E74EC0E4DD9DA68B0C380/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457847567/079157D001A1520085C6A30620750817C6C01BFF/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
         }
       },
       {
         "name": "E-5C B1 Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140436/6A3EBB89A4172017C75366D8A7E1613D22953C17/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780871782781/4DCE4780DE1CCDFB2996C28200A26C3B0696DD5A/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780871782881/ADC1DBC3987C84AF486F9CD0E19A0455F4C33291/"
         }
       },
       {
         "name": "E-5S B1 Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140479/A9EE65EB6F30F9FCAA43DBA0C025E5B76508D6BC/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/766102422959434489/60F05B7FC8544DFC640CB33DA55F19EB5F2CB55A/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102422959428835/10D3F8862BDECE8C0D7A874CC000F25CD6232168/"
         }
       },
       {
         "name": "E-60R B1 Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140583/AD8559ABB63B60727725BB86C817B45C9FC40AA8/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780871782500/34D317CFE0BE32E4FFFB84567822CDF7AC4D4C98/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780871782620/9A9EA2B54691F42EA6D34762D33D523A836201B2/"
         }
       },
       {
         "name": "Echo",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140625/9762EB09BAE98736D91887213C76E9CE34D9DE53/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457801321/CED1CD80F307683E79B9A4ED87CECAED7C070EBF/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
+        },
+        "leader": true
       },
       {
         "name": "Electro-Whip MagnaGuard",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226197/D447CE12E500790F2192A55991E31520C0DEBCFA/",
-        "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+        "mini": 1
       },
       {
         "name": "Electrostaff Guard",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140779/14B23EE6749131636CF1A9D1507192F6870A32A1/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541912278/DC9D78CD5742236F9F272AC1F8AA1D59D07CF5A9/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/"
         }
       },
       {
         "name": "Fives",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141128/F31F92F3977318E41C58131438E623171638DA41/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457802221/506D704E232C1BFD85F063A24EBF24C5914C2C40/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1618438238123043414/B7E9660E470DC070545782406C29F1E1356A5685/"
+        },
+        "leader": true
       },
       {
         "name": "Flametrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141172/DCD7C40FE7DE00A38E4FE2FE7AD77688C4F11907/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541801931/BDE907EBE0BFC0DC4180C76AFEA3F8667013FF3B/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541802054/044AD0961CD1485A61AC3B6CB3669FD8AA5A0FEB/"
         }
       },
       {
         "name": "Gideon Hask",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141632/01D01A2179E9AC81ED7BDF348D67E98A015EE52C/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1618437692581075349/6265F81E1BAA090FFA813270A8E3126CF8AD6CC5/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1618438238123043414/B7E9660E470DC070545782406C29F1E1356A5685/"
+        },
+        "leader": true
       },
       {
         "name": "HH-12 Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142253/2A3E6F8AB8FB506642A35A69516EB1F38E82F2D0/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711981/5D8FB39102FEE64DF1802AA71B66666B4E03717F/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541712102/C37F3281C89F697024FF1F343B06FB5AC828EA10/"
         }
       },
       {
         "name": "IG-100 MagnaGuard",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226161/53E8C5C2A3547D37E918BCE12B5200DC9DB1DBB7/",
-        "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+        "mini": 1
       },
       {
         "name": "Long Gun Wookiee",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226123/FC3395575F2DA5995F599877AEF70D14F53400D5/",
-        "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+        "mini": 1
       },
       {
         "name": "MPL-57 Ion Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143712/08DC46874BB4BF95387E3FAA316B97A91D1FD34F/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670338/28625FDF1F56EF08F0DB236C4ECFF67A54083B2B/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/"
         }
       },
       {
         "name": "Pao",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144174/A692F2A518931AA6E08AAF8C4641D8972ECDB267/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/993513208355174746/6F5A50CE6D4E23C6278AE868FD359A49E1C80179/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/993513208355174858/CCC2B3862F1FEB611B03317594F6F0E761750C70/"
+        },
+        "leader": true
       },
       {
         "name": "Phase II Mortar Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144436/3D8E7C0C4D7A837EEE925B65E044F1EF8B3388C4/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321578281/CBFA560559FE81326342AD0B65D2349447F882EB/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1028455893321728189/3FB4241F32F35813B6A934FCD3030D3F3D5B7090/"
         }
       },
       {
         "name": "Proton Charge Saboteur",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144574/C9A1D7CD9338BFA04FBF0CF3F29D418F776DA081/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173465/8193FD1F0862270CD23BA9243679840BE6324DC6/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541173570/3C100E92F0DEDEF117D3A0392D3271951BC90DD0/"
         }
       },
       {
         "name": "RPS-6 MagnaGuard",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226088/BF380B0BD77661C3735E03B48120CCC4104B339F/",
-        "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+        "mini": 1
       },
       {
         "name": "RPS-6 Phase I Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145035/004176D5900A3EC760D76F2657A811F811377443/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785603568/BB31C6873BD81E6B5B6F6D41B907DA95421063F0/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764785565294/2AA6ABC62F52DCD30C56D5DED210C35E7B4FD526/"
         }
       },
       {
         "name": "RT-97C Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145178/E34FCDD3060A28ED28C91966A004D3CB7DD6C62F/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242660925/33331F4DA2AE832C568A49BD24B65D4C1462AF27/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766101851242654975/755ABA199B9C3BEEA1F33AF58FD05D378A67C97F/"
         }
       },
       {
         "name": "Radiation Cannon B1 Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144682/FA1C881FCC17F3A4857FFE03FD564CC3BFCE6B1E/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785008444/482C29486FD00312B2C7848D26A82793BCDF7D7F/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764784997566/39300970854603B1F1539C46D70CC21280E278FF/"
         }
       },
       {
         "name": "SX-21 Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145748/C825ACC9B08D2EBBACCDF2E20D81A7BD992FB076/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173464725382/9DADA91B7A5BE8DEEC1BDE838B3140A350D661A4/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173464726852/2ABBCC6938695708489FB87C27C6B7481A1D294A/"
         }
       },
       {
         "name": "Scatter Gun Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145274/B6090C1087D7841687B3B8733B53D2796F054222/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540671094/4A4BCE6286ACB413B661F827BB00B920617F3E91/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/"
         }
       },
       {
         "name": "Sonic Charge Saboteur",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145528/F196986336A15DDB5BCE8951BFA4DAFBAA8A36A1/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/950714557093539716/6A0D63306F505A074395AFA61EB990280DB8995D/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/950714557093539899/FF7A535E91BF79D4C3E0D55E874C1ACEB6FBF434/"
         }
       },
       {
         "name": "T-21 Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145912/C6F9E9EDA22CB6B40D955AE391F14227D648AF3B/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242554815/68F112DE9EC465DA003ECBD26DE129ADD34CD558/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
         }
       },
       {
         "name": "T-21 Special Forces Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145856/2210B593FFE9EA0A6E9B31FF4861C890DE3CD7CF/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1618438238123000906/C64EAD02CA22F8BFB59320925DAD7D89BA1E7AD6/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1618438238123043414/B7E9660E470DC070545782406C29F1E1356A5685/"
         }
       },
       {
         "name": "T-21B Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145946/0F8C1C415DE21D5FC85AC008D2FA7E612B830CC0/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702687816/8C17AF1D2344B7E8B1C8D34A0F2228E9ADC2FFAA/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359682702687407/D5B685EA41E9C664F2D16381474B5F08DF9CFAE5/"
         }
       },
       {
         "name": "T-7 Ion Snowtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145786/8D000E653A4848F85C36D2809A66D3E778BC44F0/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541802160/69A03779E6B67F6F547C2FBD70ACDFC39281387D/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541802252/037749C730FACCA3361B041BCB3C68E7E19DCDF8/"
         }
       },
       {
         "name": "Tristan Wren",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146078/510B97CE7AEF65B5AC75FE3D94C769AB2CD070CD/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696350886429750/5D62ADB1200B1AD16A0349AF87E757F40E720115/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696350886427771/60D6CA1D97D822A2222E4FAF614931265B7B0AF2/"
         }
       },
       {
         "name": "Ursa Wren",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146355/375DF871CB9930A2C15C7A310420AC1541AB8830/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357881561/B365369415AE0FB6A96E69817D76D9BAD1366038/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/"
+        },
+        "leader": true
       },
       {
         "name": "Z-6 Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146746/5B85C86D1B259A5452AE5E7E1B60B9210A73EB95/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862734756/1F48FA301357905B28DA35A03658DFA39154DBFE/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862736228/22D1A1ACC79493FE82165CC95A5E23170A4FBC5B/"
         }
       },
       {
         "name": "Z-6 Phase I Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146663/29495FC4062EC1DD809CCED2F31F0ACF81C92C45/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873393876/DEDAF52B0D07E0F2A2BCB54DE9A56E4FA437A3E4/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/"
         }
       },
       {
         "name": "Z-6 Phase II Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146709/F3874CF8FD491DEF02AA37F322C61B51463D2ECD/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321579074/D5F10426146B81D46F02B027B9C4CC875FA6DA00/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1028455893321728189/3FB4241F32F35813B6A934FCD3030D3F3D5B7090/"
         }
       }
     ],
@@ -2184,272 +2831,279 @@
         "name": "2-1B Medical Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137676/C282622A211B384895C61D5EE0811E4E627FBDBF/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594268997/6248E4CAF3E978154106E7095E6984DCE6677CCA/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594282950/7A9A3E5518394273A507A64CCF7425A2E7EFC29B/"
         }
       },
       {
         "name": "B1 Battle Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138406/B83A83613C2F77D3BD237309689D70C47BD34350/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869167318/DBC7863706A08B96020D3BFBE7A0C2C5689B7B08/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
         }
       },
       {
         "name": "B1 Security Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138465/E66B9C058BA3D7B2B767CFA6E0A4D5581E744285/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173467517125/1BEF7A7795DF3F6DB91B84C1C82D8FBB24BF574B/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173467517405/DC3A7F38CF3839B7C5F2FCCE85745041094ADA81/"
         }
       },
       {
         "name": "Clone Commander",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139272/747D9B51470E308061A8A4A21FBA5B28B2CEC1BB/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035126931/4EAB6085C2D2D6C176B3C9847E2F1F228CEFE7BB/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035127510/89D5E03C721391A7CBC7930180396F3B14E5273F/"
+        },
+        "leader": true
       },
       {
         "name": "Clone Comms Technician",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139301/BA6F9C1E1B03C96908FD244F7F17188E070E5CF0/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035131182/F5BA58F09282727EFB8E38BA478970E44B983EED/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035131690/ED66D23D4467396F6858928E9FEE1DABB4F9B446/"
         }
       },
       {
         "name": "Clone Engineer",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139332/EFBC734554388F0628F88FF6AA3C3E8AA078141C/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035133539/7AD5C8B323760EFE19570C8F8D0DDA994973F03B/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035133984/DF3D2C9C54EBD45F87B48DCE203019FDD5FAECD2/"
         }
       },
       {
         "name": "Clone Medic",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139361/BD135C31EA1FAE5CED684E0BAEA59F27C40A42B1/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035135224/49D60D4EE5794A206AF8F604A68F58979CFEBC42/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035135810/BD84B4C5CAA84DDA6302739AD749CD29B1C39669/"
         }
       },
       {
         "name": "EV-Series Medical Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141000/351590750AFE04E144C510815B8C7D55B9A23D1F/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035000354/6248E4CAF3E978154106E7095E6984DCE6677CCA/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035001447/E6B6EC2DDAE8CEA46A1384161E789D76F8F296BA/"
         }
       },
       {
         "name": "FX-9 Medical Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141540/B2FECAE0481CC646596F372DA153E0216EE90A2A/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594268065/7B4874981CECB7BB80D5BC54F60F1939B9A9DAB1/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594268174/00246DE6DCE285206330C43B8049B19FFDF5BB41/"
         }
       },
       {
         "name": "Fleet Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141213/9844C89F6EFB3043914F0E7CA54F6089F46F7C5A/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670863/20FE73C6E9F8468BD468C820C88EAB9F697EC33E/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/"
         }
       },
       {
         "name": "Imperial Comms Technician",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142962/ABB4FE6D2C8D0A65384BC0CB85B2A05CB5CA9A15/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594268417/62CC1D5BCBD1EE294C72781B03AB972B3ED5AD12/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594268526/CA2596C0B2D7DF68D794B2A7880F34B5459F1206/"
         }
       },
       {
         "name": "Imperial Officer",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143040/BC1F5D5F046DE97E7D046534D9810655A049FDC4/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541565898/F06AB6731446249164D34ACA208E4FAE70C6FE00/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541566011/A7A84EBF79DA5E1D5BCE71E863FC16EC40937F6F/"
+        },
+        "leader": true
       },
       {
         "name": "OOM-Series Battle Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143867/A8A2CA8F507CEE4C16CAA27C0865FB334824A4AB/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785018348/F0B0C50757F4043A6C9B8746A73F8EC4342CA7DA/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764785012711/4DF65424F7D5400F0DC8A4DE7A028B373143CE6E/"
         }
       },
       {
         "name": "Phase I Clone Captain",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144246/21A589A6190BEF9C3355828DBE7769D925852B23/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785018348/F0B0C50757F4043A6C9B8746A73F8EC4342CA7DA/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764785012711/4DF65424F7D5400F0DC8A4DE7A028B373143CE6E/"
+        },
+        "leader": true
       },
       {
         "name": "Phase I Clone Specialist",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144315/9F73C154A39FAC78D16182FE4BA40C5CBFFE261F/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785643001/070425BBB2F0D33E71693679EEB72FEF790FE2F6/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/"
         }
       },
       {
         "name": "Phase I Clone Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144353/1238774FBDEE0A8E0E02849601C850720C86F506/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873394019/F7EDA9D80C35FADA3C000A88C8105823172123B8/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/"
         }
       },
       {
         "name": "Phase II Clone Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144398/18C969B5FB9B6031557CF11FE2397E6AD8955624/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321406830/59DC907FEFEF65FBAF245A3B31A4251026FC93AA/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1028455893321728189/3FB4241F32F35813B6A934FCD3030D3F3D5B7090/"
         }
       },
       {
         "name": "PK-Series Worker Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144469/375C3AB7DF614E63735F3A1FBF98F4FCD9E1507E/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035005605/95FAACF9FF4F9B6AB1921E3FD8C896DC631069BF/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035006060/711173DA172C4BC50686BBBC9C0D8BA1764D3175/"
         }
       },
       {
         "name": "R4 Astromech Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144617/020BAAE68FB4F811DEC372640141F5B79CF9A722/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594492173/DDA1CC3AEEC3D5ADB3B04F35125EE8A6FB7EB93A/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594267919/F44B2C3C810757626C7A4A61DAA7F2BC2BEECFC6/"
         }
       },
       {
         "name": "R5 Astromech Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144649/80478EA8C2BE8E3A92E3088FCCD4C3029AC573B0/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594428341/4AC5A309D701979A4B3E94725BC1E8745C598BCE/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594267684/F84F03E4A52F50EF5255A464FF85083CF4FB3D26/"
         }
       },
       {
         "name": "Rebel Comms Technician",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144715/C334BCF632593A2F8754691D5A62C1265BA573AF/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594474909/F8F049D7F88171ADBA83AF3EAF819495053C2873/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594268734/CF3C536F7B068020A99C5E3EE11CA9C54438E250/"
         }
       },
       {
         "name": "Rebel Officer",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144749/756F13AF16D25AED9D6AC864E92D17F0C28FF4DD/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862726770/62FECAB3FED284E098751CC3BBC70C4CFF828A58/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862727097/DE589901F66E4079D82BA2C819672F622A5D7240/"
+        },
+        "leader": true
       },
       {
         "name": "Rebel Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144840/A19523153BF3B7D13E7D8B892EF56F3DA0670482/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862761532/2FB3D83FC2BD077F4ADE619382382B9A59CD0ABE/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/"
         }
       },
       {
         "name": "Rebel Trooper Captain",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144780/9EC770A152D6E780070467F0A5240DCC1594C26A/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173464670173/ECC18FB91315A55181F38A6899122E005460C688/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173464683373/FE0A29CF1A46E7F97FEAE0C9FD665AB192A8D9A8/"
+        },
+        "leader": true
       },
       {
         "name": "Rebel Trooper Specialist",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144806/4E3FBF8193DF96A2AF0306C84B225898DBEB1455/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173464719285/839B79B3594F31585EB38763EDF43AD32E46F37F/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173464692456/FD09533718942CE5B08526B2CD1A00D5D38CB734/"
         }
       },
       {
         "name": "Rebel Veteran",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144901/B379F1B7C63F853ECAA61149EDEEA7D2AD83D813/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/788608699499192589/466305BFF474DBAB11F58FA13B3F4ACC9BB7127C/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/"
         }
       },
       {
         "name": "Shoretrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145345/C754AAE309BBD831F38F95B2308F1910A1035845/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702688256/B266465186713632AE14D6B4B473AB4E94814685/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359682702687694/C12AAE8B7F487BE4C1545E253AB3C026E0426AA1/"
         }
       },
       {
-        "name": "Shoretrooper",
+        "name": "Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145641/67887DD2E968766C0268BB4629E1EEA9CF54DFDC/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711777/1E415A2A18F2269B0C63E1C2901E5192DCCFE8CB/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
         }
       },
       {
         "name": "Snowtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145489/3D4F0A2826C4DE7A61CB0CC895D2E3495DE91DAB/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711777/1E415A2A18F2269B0C63E1C2901E5192DCCFE8CB/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
         }
       },
       {
         "name": "Stormtrooper Captain",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145556/326ED56BBF68B291DF37555D6155DD013F1E646A/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242555871/B1A38B82950DD8864591296C730D82E0D66BC985/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173464650963/1A63FC0E22280AA3B95488A298270874B7B6CDD2/"
+        },
+        "leader": true
       },
       {
         "name": "Stormtrooper Specialist",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145600/9F5038BBE19D0970091F9C1946001A4E825C22A1/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173464686810/87075FBAEFB7A45C107FEDD41E26ACF148C2592D/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
         }
       },
       {
         "name": "Super Battle Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138503/8FCB5B6A5739323F1E2F890625E041B67E2F93ED/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849586324/B5D59E535AFA2BF99FCA3C584E28FA500ADB89BD/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/"
         }
       },
       {
         "name": "T-Series Tactical Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146138/2F28A64E405A9426CB3248FB8D9D4F9B7FFA2E4B/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
-        }
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1022821664192681738/6062182D66F6F043E4DCF98FCD592CBD7ECDFF18/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1022821664192681931/11AB7637C0B8C60CB2E4BDC90F006B887A69DAF0/"
+        },
+        "leader": true
       },
       {
         "name": "Viper Recon Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146561/848DFAE83E6BF72D5D657ACB7B07CAFFABDCEA68/",
         "mini": {
-          "mesh": "",
-          "diffuse": ""
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364034959851/4D7F0531A10AEA9421878B1535604FDF1EBAE8D1/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364034974176/209AEB14BF56D899CB9220BDB0BAB98CE2BA90D4/"
         }
       }
     ],
