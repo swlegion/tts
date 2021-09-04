@@ -6,6 +6,20 @@ function encodeKey(name: string): string {
 }
 
 function formatData(data: object, indent: number): string[] {
+  if (Array.isArray(data)) {
+    return [
+      ...data.map((value) => {
+        if (typeof value === 'string') {
+          value = `\"${value.replace(/\"/g, '\\"')}\"`;
+        } else if (typeof value === 'object') {
+          value = `${' '.repeat(indent)}{\n${formatData(value, indent + 2).join(
+            '\n',
+          )}\n${' '.repeat(indent)}}`;
+        }
+        return value;
+      }),
+    ];
+  }
   return Object.entries(data)
     .map((keyValuePair) => {
       let [key, value] = keyValuePair;
@@ -28,7 +42,7 @@ export default async function buildDeckSchemaLua(
   const json = await fs.readJson(inJson);
   const lua: string[] = [
     '-- AUTO GENERATED (`npm run generate`). DO NOT MODIFY BY HAND.',
-    'DeckSchema = {',
+    'CardsSchema = {',
   ];
 
   const units = json['units'];
