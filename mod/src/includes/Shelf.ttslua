@@ -24,20 +24,52 @@ function Shelf:create()
   return meta
 end
 
-function Shelf:spawnUnitModel(faction, name, index, title)
-  -- TODO: Implement.
+function Shelf:spawnUnitModels(faction, name, upgrades)
+  -- TODO: Remove remapping.
+  local remap = {
+    ["rebel"]      = "Rebel",
+    ["imperial"]   = "Empire",
+    ["separatist"] = "Separatist",
+    ["republic"]   = "Republic",
+  }
+  if remap[faction] ~= nil then
+    faction = remap[faction]
+  end
+  local units = self._schema.units[faction:upper()]
+  if units == nil then
+    return {
+      self:_spawnDudModel(name, "No matching faction found: \"" .. faction .. "\".")
+    }
+  end
+  local card = units[name:upper()]
+  if card == nil then
+    return {
+      self:_spawnDudModel(name, "No matching unit found.\nFaction: \"" .. faction .. "\".")
+    }
+  end
+  local minis = card.minis
+  if type(minis) == "number" then
+    print("Spawning placeholder minis is not yet implemented (" .. name .. ": " .. tostring(minis) .. ")")
+    return {}
+  end
+  local result = {}
+  for _, config in pairs(minis) do
+    table.insert(result, self:_spawnModel(config))
+  end
+  for _, upgrade in ipairs(upgrades) do
+    local model = self:_spawnModel(upgrade.mini)
+    if upgrade.leader == true or card.heavyWeaponTeam == true then
+      table.insert(result, 1, model)
+    else
+      table.insert(result, model)
+    end
+  end
+  return result
 end
 
-function Shelf:spawnUnitModels(faction, name, title)
+function Shelf:_spawnDudModel(name, description)
   -- TODO: Implement.
-end
-
-function Shelf:spawnUpgradeModel(name)
-  -- TODO: Implement.
-end
-
-function Shelf:_spawnDudModel(name, title)
-  -- TODO: Implement.
+  print("_spawnDudModel: NOT YET IMPLEMENTED")
 end
 
 function Shelf:_spawnModel(miniConfig)
