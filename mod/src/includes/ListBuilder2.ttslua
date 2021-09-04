@@ -1,0 +1,952 @@
+#include !/Analytics
+#include !/Deck
+
+-- This is the shared execution code for {RED|BLUE}_LIST_BUILDER.
+
+function onLoadShared(
+  _colorZone,
+  _listBuilderOptions, 
+  _listBuilderButtons,
+  _backButton,
+  _dataDiskMount
+)
+  -- Disable direct interactivity.
+  self.interactable = false
+
+  -- Objects passed by the actual (non-shared) code.
+  colorZone = _colorZone
+  listBuilderOptions = _listBuilderOptions;
+  listBuilderButtons = _listBuilderButtons;
+  backButton = _backButton
+  dataDiskMount = _dataDiskMount
+
+  -- Use deck data.
+  _G.Deck = Deck:create()
+end
+
+-- UI --------------------------------------------------------------------------
+
+function clearAllButtons()
+  for _, o in pairs(listBuilderOptions) do
+    o.clearButtons()
+  end
+  for _, o in pairs(listBuilderButtons) do
+    o.clearButtons()
+    o.setColorTint({0, 0, 0})
+  end
+  backButton.clearButtons()
+  backButton.setColorTint({0, 0,0 })
+end
+
+function mainMenu()
+  clearAllButtons()
+  
+  createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "chooseArmy", "Create Army", "Create a custom Army", {0,0.913,1})
+  createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "loadArmy", "Load Army", "Load army from Data Disk", {0,0.913,1})
+  createOptionButton(3, listBuilderOptions[3], listBuilderButtons[3], "clearZone", "Clear Cards", "Clears current cards", {0,0.913,1})
+  createOptionButton(4, listBuilderOptions[4], listBuilderButtons[4], "autoTint", "Auto Tint", "Apply automatic base tinting to yet-to-be-deployed units", {0,0.913,1})
+end
+
+function chooseArmy()
+  ga_view("list_builder/" .. colorZone .. "/createArmy")
+  clearAllButtons()
+
+  changeBackButton("mainMenu", "Go back to Main Menu")
+  createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "createRebelArmy", "Rebels", "Create a custom Rebel army", {0,0.913,1})
+  createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "createImperialArmy", "Imperials", "Create a custom Imperial army", {0,0.913,1})
+  createOptionButton(3, listBuilderOptions[3], listBuilderButtons[3], "createSeparatistArmy", "Separatist", "Create a custom Separatist army", {0,0.913,1})
+  createOptionButton(4, listBuilderOptions[4], listBuilderButtons[4], "createRepublicArmy", "Republic", "Create a custom Republic army", {0,0.913,1})
+end
+
+function createArmyMenu()
+  clearAllButtons()
+
+  changeBackButton("chooseArmy", "Go back to Faction Selection")
+  createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "finishArmy", "Spawn Minis", "Finished creating army", {1,0,0})
+  createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "saveArmy", "Save Army", "Save army to Data Disk", {0,0.913,1})
+  createOptionButton(3, listBuilderOptions[3], listBuilderButtons[3], "respawnZone", "Reset Army", "Reset Army Creation", {0,0.913,1})
+end
+
+function loadArmyMenu()
+  ga_view("list_builder/" .. colorZone .. "/loadArmy")
+  clearAllButtons()
+
+  changeBackButton("mainMenu", "Go back to Main Menu")
+  createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "dud", "Insert Data Disk", "Insert Data Disk into Slot Above", {0,0,0})
+  createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "loadArmy", "Load Army", "Load army from Data Disk", {0,0.913,1})
+end
+
+function createRebelArmy()
+  ga_view("Game", "createArmy", "Rebel")
+  createArmyMenu()
+  Global.setVar(colorZone.."SelectedArmyFaction", "rebel")
+  respawnZone()
+end
+
+function createImperialArmy()
+  ga_event("Game", "createArmy", "Imperial")
+  createArmyMenu()
+  Global.setVar(colorZone.."SelectedArmyFaction", "imperial")
+  respawnZone()
+end
+
+function createSeparatistArmy()
+  ga_event("Game", "createArmy", "Separatist")
+  createArmyMenu()
+  Global.setVar(colorZone.."SelectedArmyFaction", "separatist")
+  respawnZone()
+end
+
+function createRepublicArmy()
+  ga_event("Game", "createArmy", "Republic")
+  createArmyMenu()
+  Global.setVar(colorZone.."SelectedArmyFaction", "republic")
+  respawnZone()
+end
+
+function respawnZone()
+  clearZone()
+  spawnTemplates()
+end
+
+function finishArmy()
+  saveArmy()
+  clearZone()
+  Wait.time(function()
+    loadArmy()
+  end, 0.5)
+end
+
+function autoTint()
+  local colorMap
+  if colorZone == "red" then
+    colorMap = {
+      {245, 34, 45},
+      {255, 169, 64},
+      {255, 236, 61},
+      {130, 0, 20},
+      {135, 56, 0},
+      {135, 104, 0},
+    }
+  else
+    colorMap = {
+      {64, 169, 255},
+      {54, 207, 201},
+      {146, 84, 222},
+      {0, 58, 140},
+      {0, 71, 79},
+      {34, 7, 94},
+    }
+  end
+  for i, color in pairs(colorMap) do
+    colorMap[i] = {
+      color[1] / 255,
+      color[2] / 255,
+      color[3] / 255,
+    }
+  end
+  local rankCount = {}
+  for _, obj in pairs(cardZone.getObjects()) do
+    if obj.getVar("isAMini") == true then
+      local unitData = obj.getTable("unitData")
+      local rankType = unitData.commandType
+      local colorIndex = rankCount[rankType]
+      if colorIndex == nil then
+        colorIndex = 0
+      end
+      colorIndex = colorIndex + 1
+      if colorIndex > #colorMap then
+        colorIndex = 1
+      end
+      rankCount[rankType] = colorIndex
+      local miniGUIDs = obj.getTable("miniGUIDs")
+      for _, miniGuid in pairs(miniGUIDs) do
+        local miniObj = getObjectFromGUID(miniGuid)
+        miniObj.setColorTint(colorMap[colorIndex])
+      end
+      local unitIDTokenObject = getObjectFromGUID(obj.getVar("unitIDTokenGUID"))
+      unitIDTokenObject.setColorTint(colorMap[colorIndex])
+    end
+  end
+end
+
+function clearZone()
+  local zoneObjs = cardZone.getObjects()
+
+  -- Remove all items on the table side (except the table itself).
+  for _, obj in pairs(zoneObjs) do
+    if obj != battlefieldTable then
+        destroyObject(obj)
+    end
+  end
+
+  -- Remove all command tokens on the order token tray.
+  local trayZone = getObjectFromGUID(commandTokenTrayData[colorSide].trayZoneGUID)
+  local trayZoneObjs = trayZone.getObjects()
+  for _, obj in pairs(trayZoneObjs) do
+    if obj.getVar("isAToken") == true then
+        destroyObject(obj)
+    end
+  end
+
+  local commandStack = getObjectFromGUID(commandTokenTrayData[colorSide].stack)
+  local commandStackObjs = commandStack.getObjects()
+
+  -- And do the same for stacked command tokens in the pool.
+  for _, obj in pairs(commandStackObjs) do
+    local drawnObj = commandStack.takeObject()
+    destroyObject(drawnObj)
+  end
+
+  -- And the deck builder, if it is exists.
+  if deckBuilderObj != nil then
+    destroyObject(deckBuilderObj)
+    deckBuilderObj = nil
+  end
+
+  -- And whatever the "deck zone" is (TBD).
+  for i, obj in pairs(deckZone.getObjects()) do
+    if obj != deckMount then
+        destroyObject(obj)
+    end
+  end
+
+  -- And the hand zone, now that is separate from the other zones.
+  for _, obj in pairs(Player[colorZone].getHandObjects()) do
+    destroyObject(obj)
+  end
+end
+
+function dud() end
+
+function createOptionButton(optionNumber, optionObj, optionButton, optionClickFunction, optionLabel, optionToolTip,tint)
+
+  _G[colorSide.."ListBuilderOptionFunction"..optionNumber] = function()
+      optionButton.AssetBundle.playTriggerEffect(0)
+      _G[optionClickFunction]()
+  end
+
+  optionObj.createButton({
+      click_function = colorSide.."ListBuilderOptionFunction"..optionNumber, function_owner = self, label = optionLabel, position = {-0.35, 0.3, 0}, scale = {0.5, 0.5, 0.5}, width = 4200, height = 600, font_size = 400, color = {0.7573, 0.7573, 0.7573, 0.01}, font_color = {0, 0, 0, 100},tooltip = optionToolTip
+  })
+
+  optionButton.createButton({
+      click_function = colorSide.."ListBuilderOptionFunction"..optionNumber, function_owner = self, label = "", position = {0, 0.65, 0}, width = 1400, height = 1400, font_size = 1100, color = {1,1,1,0.01},font_color = {1,1,1,100}, tooltip = optionToolTip, alignment = 3
+  })
+
+  optionButton.setColorTint(tint)
+end
+
+function changeBackButton(optionClickFunction, optionToolTip)
+  _G[colorSide.."ListBuilderBackButtonFunction"] = function()
+      backButton.AssetBundle.playTriggerEffect(0)
+      _G[optionClickFunction]()
+  end
+
+  backButton.createButton({
+      click_function = colorSide.."ListBuilderBackButtonFunction", function_owner = self, label = "BACK", position = {0, 0.65, 0}, scale = {1, 1, 0.7}, width = 1500, height = 2000, font_size = 400, color = {0.7573, 0.7573, 0.7573, 0.01}, font_color = {0, 0, 0, 100}, tooltip = optionToolTip
+  })
+  backButton.setColorTint({1,0,0})
+end
+
+-- CALULATE POINTS -------------------------------------------------------------
+
+function calculatePoints()
+  local allCards = cardZone.getObjects()
+  -- Intentionally global.
+  totalPoints = 0
+  for _, card in pairs(allCards) do
+      local cardPoint = card.getVar("ptCost")
+      if cardPoint != nil then
+        totalPoints = totalPoints + cardPoint
+      end
+  end
+  ptCounter.setValue(totalPoints)
+end
+
+function onObjectDestroyed()
+  calculatePoints()
+end
+
+function onObjectLeaveScriptingZone()
+  calculatePoints()
+end
+
+function onObjectEnterScriptingZone()
+  calculatePoints()
+end
+
+-- SPAWN UNITS AND TEMPLATES FOR LIST CREATION ---------------------------------
+function initializeCommandToken(cData)
+
+
+  tokenObj = spawnObject({
+      type           = "Custom_Model",
+      position       = cData.pos,
+      rotation       = cData.rot
+  })
+
+  tokenObj.setCustomObject({
+      mesh = "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
+      collider = "http://cloud-3.steamusercontent.com/ugc/785234780866339915/85F7E717B9EFBE0396126CA673DF17EAFEC7D451/",
+      diffuse = commandTokenData[colorSide][cData.commandType],
+      type = 0,
+      material = 3
+  })
+
+  tokenObj.setPosition(cData.pos)
+  tokenObj.setRotation(cData.rot)
+
+  local strColor = colorSide
+
+  strColor = strColor:gsub("^%l", string.upper)
+
+  tokenObj.setName(strColor .. " " .. cData.faction:gsub("^%l", string.upper) .. " " .. cData.rank:gsub("^%l", string.upper) .. " Command Token")
+  local luaScript = "unitName = \""..cData.varName.."\"\ncommandType = '"..cData.commandType.."'\ncolorSide = '"..colorSide.."'\nfaction = '"..cData.faction.."'\n"..listBuilder.tokenScript
+  tokenObj.setLuaScript(luaScript)
+
+end
+
+function spawnUnitCard(faction, name, position, rotation)
+  local card = Deck:spawnUnitCard(faction, name)
+  ga_event("Game", "spawnUnitCard", card.getName())
+
+  local tPos = simpleTranslatePos(position, 0, 0)
+  tPos.y = tPos.y
+  card.setRotation({0,rotation.y+180,0})
+  card.setPosition(tPos)
+  return card
+end
+
+function spawnLoadoutBag(unitName, unitUpgrades, pTemplatePos, pTemplateRot)
+  local bagOfUpgrades = spawnObject({
+    type             = "Bag",
+    position         = translatePos(
+      pTemplatePos,
+      pTemplateRot,
+      1.5620819440734,
+      52.543226290399+90
+    ),
+    callback_function = function(spawnedBag)
+      for _, upgrade in pairs(unitUpgrades) do
+        spawnUpgradeCard(upgrade, spawnedBag, pTemplateRot)
+      end
+    end,
+  })
+  bagOfUpgrades.setName("Loadout for " .. unitName)
+end
+
+function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber, spawnOffsets, xOffset, zOffset)
+  local upgradeCard = Deck:spawnUpgradeCard(cardName)
+
+  ga_event("Game", "spawnUpgradeCard", cardName)
+  upgradeCard.setRotation({0,pTemplateRot.y+180,0})
+
+  if upgradeNumber == nil then
+    local loadoutBag = pTemplatePos
+    loadoutBag.putObject(upgradeCard)
+  else
+    -- cache offsets
+    local unitCardWidth = spawnOffsets["unitCardWidth"]
+    local halfUnitCard = unitCardWidth * 0.5
+    local cardHeight = spawnOffsets["cardHeight"]
+    local cardWidth = spawnOffsets["upgradeCardWidth"]
+    local halfCardHeight = cardHeight * 0.5
+    local halfCardWidth = cardWidth * 0.5
+    local padding = spawnOffsets["padding"]
+
+    -- offset upgrade card
+    local xPosOffset = 0
+    local zPosOffset = 0
+
+    -- x offset
+    if ( upgradeNumber == 1 or upgradeNumber == 4 or upgradeNumber == 7) then
+      xPosOffset = (halfUnitCard + padding + halfCardWidth) * -xOffset
+    elseif ( upgradeNumber == 2 or upgradeNumber == 5 ) then
+      xPosOffset = (-halfUnitCard + halfCardWidth + (padding)) * -xOffset
+    elseif ( upgradeNumber == 3 or upgradeNumber == 6 ) then
+      xPosOffset = (halfCardWidth + padding) * -xOffset
+    end 
+    
+    -- z offset
+    if ( upgradeNumber > 1 and upgradeNumber < 5) then
+      zPosOffset = ((cardHeight + padding) * zOffset)
+    elseif ( upgradeNumber >= 5 ) then
+      zPosOffset = ((cardHeight + padding) * 2 * zOffset)
+    end
+    local finalPos = simpleTranslatePos(pTemplatePos, xPosOffset, zPosOffset)
+    upgradeCard.setPosition(finalPos)
+  end
+end
+
+function spawnTemplates()
+  deckBuilderObj = spawnObject({
+      type           = "Custom_Model",
+      position       = listBuilder.deckBuilderPos[colorSide],
+      rotation       = self.getRotation()
+  })
+  deckBuilderObj.setCustomObject({
+      mesh = listBuilder.deckBuilderMesh,
+      collider = listBuilder.deckBuilderMesh,
+      diffuse = listBuilder.deckBuilderDiffuse,
+      type = 1,
+      material = 3
+  })
+
+  deckBuilderObj.setPosition(listBuilder.deckBuilderPos[colorSide])
+  deckBuilderObj.setRotation(self.getRotation())
+  deckBuilderObj.setLock(true)
+  local deckBuilderScript = getObjectFromGUID(listBuilder.deckBuilderGUID).getLuaScript()
+  local factionScript = ("selectedFaction = '"..Global.getVar(colorZone.."SelectedArmyFaction").."'\n")
+  deckBuilderObj.setLuaScript(factionScript..deckBuilderScript)
+
+
+  templateObjs = {}
+  for i=1,20,1 do
+      templateParams = {getObjectFromGUID(listBuilder.modelTemplateGUID)}
+      copy(templateParams)
+      pastedObj = paste({
+          position = listBuilder[colorZone.."TemplatePos"][i]
+      })
+
+      templateObjs[i] = pastedObj
+
+      templateObjs[i][1].setLock(true)
+      templateObjs[i][1].setPosition({templateObjs[i][1].getPosition().x,1,templateObjs[i][1].getPosition().z})
+      templateObjs[i][1].setScale({1,1,1})
+
+      templateObjs[i][1].setVar("colorSide", colorZone)
+      templateObjs[i][1].setVar("listBuilderObj", self)
+      templateObjs[i][1].setVar("templateIndex", i)
+      templateObjs[i][1].setVar("deckBuilderObj", deckBuilderObj)
+      templateObjs[i][1].setName("")
+
+      if colorSide == "red" then
+          templateObjs[i][1].setRotation({0,0,180})
+
+      else
+          templateObjs[i][1].setRotation({0,180,180})
+      end
+  end
+end
+
+function spawnArmy(loadListData, skipDiskVersionCheck)
+  if skipDiskVersionCheck or loadListData.savedDiskVersion == 3 then
+    -- deal command Cards
+    for _ , c in ipairs(loadListData.commandCards) do
+        dealCommandCard(c, false)
+    end
+    for _ , c in ipairs(loadListData.contingencies) do
+        dealCommandCard(c, true)
+    end
+
+      -- create battlefield deck
+      deckHeight = 1
+      drawBattlefieldCard(loadListData, "objective")
+      drawBattlefieldCard(loadListData, "deployment")
+      drawBattlefieldCard(loadListData, "conditions")
+
+      offsetUnitSpawnCount = 0
+
+      -- spawn units
+      for n, unit in pairs(loadListData.units) do
+        spawnUnit(unit, n, loadListData.armyFaction, #loadListData.units)
+      end
+      listBuilder = Global.getTable("listBuilder")
+  else
+      ga_exception("spawnArmyUnsupportedArmyDisk")
+      broadcastToAll("Unsupported army disk. The mod has changed, please re-create your army.", {1,1,1})
+  end
+end
+
+-- TODO: Move this function to a common include
+-- Helper function to deeply copy a table, including metatables
+function copyTable(obj, seen)
+  -- Handle non-tables and previously-seen tables.
+  if type(obj) ~= 'table' then return obj end
+  if seen and seen[obj] then return seen[obj] end
+
+  -- New table; mark it as seen and copy recursively.
+  local s = seen or {}
+  local res = {}
+  s[obj] = res
+  for k, v in pairs(obj) do res[copyTable(k, s)] = copyTable(v, s) end
+  return setmetatable(res, getmetatable(obj))
+end
+
+function spawnUnit(unit, n, faction, totalUnits)
+  spawnMiniTable = {}
+
+  -- get var name
+  if unit.name != nil then
+    spawnMiniTable.name = unit.name
+  else
+    broadcastToAll("Old Data Disk version. Please remake new Data Disk.", {1,1,1})
+    return
+  end
+  
+  local unitKey = spawnMiniTable.name:lower()
+
+  local unitObject = copyTable(cardInfo:getUnitByName(unit.name, faction))
+  local upgradeObjects = cardInfo:getUpgradesByNames(unit.upgrades)
+
+  if unitObject ~= nil then
+    unitObject:addUpgrades(upgradeObjects)
+  end
+
+  -- initialise
+  templatePos = listBuilder[colorSide.."TemplatePos"][n]
+  spawnMiniTable.colorSide = colorSide
+  spawnMiniTable.upgrades = {}
+  spawnMiniTable.miniObjs = {}
+  -- we have a maximum ID token value of 10 so we need to wrap back to 1
+  if n > 10 then
+    n = n - 10
+  end
+  spawnMiniTable.unitID = n
+
+  -- prep unit card spawn location
+  local cardScale = listBuilder.spawnOffsets["cardScale"]
+
+  local tempPos = templatePos
+
+  local templateHalfWidth = listBuilder.spawnOffsets["templateHalfWidth"]
+  local templateHalfHeight = listBuilder.spawnOffsets["templateHalfHeight"]
+  local cardHeight = listBuilder.spawnOffsets["cardHeight"]
+  local unitCardWidth = listBuilder.spawnOffsets["unitCardWidth"]
+  local padding = listBuilder.spawnOffsets["padding"]
+  local xOffset = 1
+  local zOffset = 1
+  
+  -- orient offsets based on our facing
+  if (tempPos.z < 0) then 
+    xOffset = -1
+    zOffset = -1
+    padding = padding * -1
+    cardHeight = cardHeight * -1
+    templateHalfWidth = templateHalfWidth * -1   
+    templateHalfHeight = templateHalfHeight * -1
+  end
+
+  tempPos.x = tempPos.x + templateHalfWidth - padding
+  tempPos.z = tempPos.z - templateHalfHeight + cardHeight
+
+  -- SPAWN CARDS
+  -- spawn unit Card
+  spawnMiniTable.displayName = unitObject.displayName
+  spawnMiniTable.unitCardObj = spawnUnitCard(faction, unit.name, tempPos, self.getRotation())  
+  spawnMiniTable.unitIDTokenGUID = spawnUnitIDToken(templatePos, self.getRotation(), n)
+
+  -- spawn upgrade card
+  local upgradeCount = 0
+
+  for j, upgrade in pairs(unit.upgrades) do
+    listBuilder = Global.getTable("listBuilder")
+    spawnUpgradeCard(upgrade, tempPos, self.getRotation(), j, listBuilder.spawnOffsets, xOffset, zOffset)
+    table.insert(spawnMiniTable.upgrades, upgrade)
+    upgradeCount = upgradeCount + 1
+  end
+  
+  -- SPAWN MINIS
+  -- mini table
+  if unitObject ~= nil then
+    local minisToSpawn, leaderIndex = unitObject:getMinisTable()
+    spawnMiniTable.leaderIndex = leaderIndex
+
+    local doZOffset = 1.0
+    xStartPosition = tempPos.x
+
+    if ( (n > 10) and ( upgradeCount > 1) ) then
+      offsetUnitSpawnCount = offsetUnitSpawnCount + 1
+      local spawnIndex = totalUnits + offsetUnitSpawnCount
+      finalTempPos = listBuilder[colorSide.."TemplatePos"][spawnIndex] 
+      doZOffset = 0.0
+      xStartPosition = finalTempPos.x
+    end
+
+    for i, miniData in ipairs(minisToSpawn) do
+      listBuilder = Global.getTable("listBuilder")
+
+      -- determine spawn position
+      
+      -- check if we need to do horizontal offset for back row minis
+      local templateFullWidth = templateHalfWidth * 2.0
+
+      local initialZOffset = (cardHeight + padding)
+
+      if ( upgradeCount > 1 and upgradeCount < 5) then
+        initialZOffset = initialZOffset + cardHeight + padding
+      elseif upgradeCount > 4 then
+        initialZOffset = initialZOffset + ((cardHeight + padding) * 2) 
+      end
+
+      initialZOffset = initialZOffset * doZOffset
+
+      local base = miniData.collider[2]      
+      local baseRadius = base * 0.5
+      local initialXOffset = (unitCardWidth * 0.5) - baseRadius 
+      local xStart = xStartPosition + (initialXOffset * xOffset)
+      local miniPos = {x = xStart, y = tempPos.y, z = tempPos.z }
+     
+      local paddedBase = base + padding 
+      local basesPerRow = math.abs(math.floor(templateFullWidth/paddedBase))
+      local index = i
+
+      if (i > basesPerRow) then
+        initialZOffset = initialZOffset + ((paddedBase - padding) * zOffset)
+        index = i - basesPerRow
+      end
+
+      local xDir = xOffset * -1
+      local baseOffset = base + (padding * xOffset)
+      local totalXOffset = (baseOffset * (index - 1))
+
+      local totalZOffset = initialZOffset
+
+      if tempPos.z < 0 then
+        totalZOffset = totalZOffset * -1
+      end
+
+      local spawnPos = simpleTranslatePos(miniPos, totalXOffset * xDir, totalZOffset * zOffset)
+
+      -- spawn the mini
+      local spawnedMini = spawnMini(spawnPos, {self.getRotation().x,self.getRotation().y + 180, self.getRotation().z}, miniData)
+      local insertInfo = {obj = spawnedMini, name = miniData.name}
+      -- mark the leader mini
+      if i == leaderIndex then insertInfo.leader = true end
+      table.insert(spawnMiniTable.miniObjs, insertInfo)
+    end
+
+    initializeMini(spawnMiniTable)
+  end
+
+  -- spawn loadout bag
+  if unit.loadout ~= nil and #unit.loadout > 0 then
+    spawnLoadoutBag(unit.name, unit.loadout, templatePos, self.getRotation())
+  end
+
+  -- spawn command token
+  if unitObject ~= nil and unitObject.noToken == nil then
+    local commandData = {}
+    local commandType = unitObject.commandType
+    local commandTray = getObjectFromGUID(commandTokenTrayData[colorSide][commandType])
+    local pos = commandTray.getPosition()
+    pos.y = pos.y + 0.5 + (0.2 * n)
+    local rot = self.getRotation()
+    rot.y = rot.y + 180
+
+    commandData.commandType = commandType
+    commandData.pos = pos
+    commandData.rot = rot
+    commandData.varName = spawnMiniTable.name:lower()
+    commandData.faction = faction
+    commandData.rank = unitObject.rank
+
+    initializeCommandToken(commandData)
+  end
+end
+
+function spawnArmyFromDisk()
+  loadListData = loadDisk.getTable("listData")
+  spawnArmy(loadListData)
+end
+
+function initializeMini(pMiniTable)
+  local strColor = pMiniTable.colorSide
+  strColor = strColor:gsub("^%l", string.upper)
+  
+  -- detect leader units
+  local leaderInt = pMiniTable.leaderIndex
+  
+  for i, objEntry in pairs(pMiniTable.miniObjs) do
+    -- init mini script
+    local selectedMiniScript = ""
+
+    -- SET NAME
+    local displayName = pMiniTable.displayName or objEntry.name
+    objEntry.obj.setName(strColor.. " "..displayName)
+    selectedMiniScript = selectedMiniScript .. "colorSide = '"..pMiniTable.colorSide.."'\nminiName = \""..objEntry.name.."\"\n"
+
+    if i == leaderInt then
+      -- DESCRIPTION
+      local description = ""
+
+      for p, upgradeName in pairs(pMiniTable.upgrades) do
+        description = description .. upgradeName .. "\n"
+      end
+      objEntry.obj.setDescription(description)
+
+      -- miniGUIDs
+
+      local miniGUIDsScript = "miniGUIDs = {}\n"
+      for n, objEntry in pairs(pMiniTable.miniObjs) do
+        miniGUIDsScript = miniGUIDsScript .. "miniGUIDs["..n.."] = '" .. objEntry.obj.getGUID() .. "'\n"
+      end
+      selectedMiniScript = selectedMiniScript .. miniGUIDsScript .. "cardGUID = '" .. pMiniTable.unitCardObj.getGUID() .. "'\n unitName = \""..pMiniTable.name:lower() .. "\"\n unitID = " .. pMiniTable.unitID .. "\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID .. "\"\n" .. listBuilder.modelMiniScript
+    else
+      objEntry.obj.use_snap_points = false
+    end
+
+    -- SET SCRIPT
+    objEntry.obj.setLuaScript(selectedMiniScript)
+  end
+end
+
+function spawnUnitIDToken(idSpawnPos, idSpawnRot, idNumber)
+  idSpawnRot.y = idSpawnRot.y +180
+  local idToken = unitIDTokenBag.takeObject({
+      position       = idSpawnPos,
+      rotation       = idSpawnRot,
+      smooth         = false
+  })
+  local idTokenGUID = idToken.getGUID()
+  if idNumber != 1 then
+      idTokenGUID = idToken.setState(idNumber).getGUID()
+  end
+
+  return idTokenGUID
+end
+
+function spawnMini(miniSpawnPos, miniSpawnRot, miniData)
+  local funcSpawnedMini
+  if miniData.type and miniData.type == "assetbundle" then
+    funcSpawnedMini = spawnObject({
+        type           = "Custom_AssetBundle",
+        position       = miniSpawnPos,
+        rotation       = miniSpawnRot,
+    })
+    funcSpawnedMini.setCustomObject({
+        assetbundle = miniData.assetbundle,
+        assetbundle_secondary = miniData.assetbundle_secondary,
+        type = 1,
+        material = 3
+    })
+  else
+    funcSpawnedMini = spawnObject({
+        type           = "Custom_Model",
+        position       = miniSpawnPos,
+        rotation       = miniSpawnRot,
+    })
+    funcSpawnedMini.setCustomObject({
+        mesh = miniData.mesh,
+        collider = miniData.collider[1],
+        diffuse = miniData.diffuse,
+        type = 1,
+        material = 3
+    })
+  end
+
+  funcSpawnedMini.setColorTint(gameData.getTable("battlefieldTint"))
+  return funcSpawnedMini
+end
+
+-- LIST IMPORT / EXPORT --------------------------------------------------------
+function loadArmy()
+  local diskObjNumber = 0
+  diskZone = getObjectFromGUID(listBuilder[colorSide.. "DataDiskZone"])
+  diskObjs = diskZone.getObjects()
+  diskObjNumber = 0
+
+  for i, obj in pairs(diskObjs) do
+      if obj.getTable("listData") != nil then
+          loadDisk = obj
+          diskObjNumber = i
+      end
+  end
+  if diskObjNumber == 0 then
+      loadArmyMenu()
+  else
+      clearZone()
+      --- LOAD COMMAND CARDS
+      spawnArmyFromDisk()
+  end
+end
+
+function loadArmyFromJSON(jsonData)
+  clearZone()
+  local author = "Unknown"
+  local success, exception = pcall(function()
+    local listData = JSON.decode(jsonData)
+    author = listData.author
+    spawnArmy(listData, true)
+    ga_event("Game", "loadArmyFromJSON", author)
+  end)
+  if not success then
+    print("Failed to load from JSON:\n\n" .. tostring(exception))
+    ga_exception("loadArmyFromJSON:" .. author .. ":" .. tostring(exception))
+  end
+end
+
+function getListData()
+  if templateObjs[1][1] != nil then
+      listData = {}
+      listData.commandCards = {}
+      listData.contingencies = {}
+      listData.units = {}
+
+      commandCardsNumber = 0
+
+      -- GET DATA
+      for i=1,20,1 do
+          if templateObjs[i][1].call("getListText") != nil then
+              local recievedData = templateObjs[i][1].call("getListText")
+
+              insertTable = {}
+              insertTable.name = recievedData.name
+              insertTable.varName = recievedData.varName
+              insertTable.upgrades = {}
+              for i, entry in pairs(recievedData.upgrades) do
+                  insertTable.upgrades[i] = entry
+              end
+
+              table.insert(listData.units, insertTable)
+
+          end
+      end
+
+      selectedArmyFactionText = Global.getVar(colorZone.."SelectedArmyFaction")
+
+      listData.armyFaction = selectedArmyFactionText
+
+      -- set command Cards
+      listData.commandCards = deckBuilderObj.getTable("commandCardSelection")
+      listData.contingencies = deckBuilderObj.getTable("contingencyCardSelection")
+
+      table.insert(listData.commandCards, "Standing Orders")
+
+
+      -- set battlefield deck
+      local battlefieldCardSelection = deckBuilderObj.getTable("battlefieldCardSelection")
+      listData.battlefieldDeck = {}
+      listData.battlefieldDeck.objective = {}
+      listData.battlefieldDeck.deployment = {}
+      listData.battlefieldDeck.conditions = {}
+
+      n = 1
+      for i, entry in pairs(battlefieldCardSelection.objective) do
+          table.insert(listData.battlefieldDeck.objective, entry)
+
+          n = n + 1
+      end
+      for j, entry in pairs(battlefieldCardSelection.deployment) do
+          table.insert(listData.battlefieldDeck.deployment, entry)
+          n = n + 1
+      end
+      for k, entry in pairs(battlefieldCardSelection.conditions) do
+          table.insert(listData.battlefieldDeck.conditions, entry)
+          n = n + 1
+      end
+
+
+      return listData
+  else
+      return nil
+  end
+end
+
+function saveArmy()
+  local success, exception = pcall(saveArmyImpl)
+  if success then
+    ga_event("Game", "saveArmy")
+  else
+    ga_exception("saveArmy:" .. tostring(exception))
+  end
+end
+
+function saveArmyImpl()
+  -- get listData
+  listData = getListData()
+
+  if listData != nil then
+    -- parse list
+    luaString = "function onload()\nlistData = {savedDiskVersion = 3}\nlistData.points = "..totalPoints.."\nlistData.armyFaction = '" .. listData.armyFaction .."'\n"
+
+    -- COMMAND CARDS and CONTINGENCIES
+    local commandCardsBuffer = {}
+    local contingencyCardsBuffer = {}
+    for _, c in ipairs(listData.commandCards) do
+      table.insert(commandCardsBuffer, "[[" .. c .. "]]")
+    end
+    luaString = luaString .. "listData.commandCards = {"..table.concat(commandCardsBuffer, ", ").."}\n"
+    for _, c in ipairs(listData.contingencies) do
+      table.insert(contingencyCardsBuffer, "[[" .. c .. "]]")
+    end
+    luaString = luaString .. "listData.contingencies = {"..table.concat(contingencyCardsBuffer, ", ").."}\n"
+
+    -- UNITS
+    luaString = luaString .. "listData.units = {}\n"
+    for k, unit in pairs(listData.units) do
+      luaString = luaString .. "listData.units["..k.."] = {}\nlistData.units["..k.."].name = [[" .. listData.units[k].name .."]]\n"
+      -- UPGRADES
+      luaString = luaString .. "listData.units["..k.."].upgrades = {}\n"
+      for l, upgrade in pairs(listData.units[k].upgrades) do
+        luaString = luaString .. "listData.units["..k.."].upgrades["..l.."] = [[" .. upgrade .."]]\n"
+      end
+    end
+    -- battlefieldDeck
+    luaString = luaString .. "listData.battlefieldDeck = {}\nlistData.battlefieldDeck.objective = {}\nlistData.battlefieldDeck.deployment = {}\nlistData.battlefieldDeck.conditions = {}\n"
+
+    local deckTypes = {"deployment", "objective", "conditions"}
+
+    for j, deckType in pairs(deckTypes) do
+      for l, battlefieldCardEntry in pairs(listData.battlefieldDeck[deckType]) do
+        luaString = luaString .. "listData.battlefieldDeck."..deckType.."["..l.."] = [["..battlefieldCardEntry.."]]\n"
+      end
+    end
+
+
+    luaString = luaString .. "self.createButton({click_function = 'dud', function_owner = self, label = '[' .. listData.points .. ' pts]', position = {0, 0.4, -0.55}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 2000, height = 400, font_size = 300, color = {0.7573, 0.7573, 0.7573, 0.01}, font_color = {0.303, 0.1814, 0.0849, 100}})\nend\nfunction dud() end"
+
+    dataDisk = getObjectFromGUID(listBuilder.dataDisk.guid).clone({
+      position     = {0,-10,0},
+      snap_to_grid = false
+    })
+
+    dataDisk.setScale({1,1,1})
+    pos = translatePos(dataDiskMount.getPosition(),dataDiskMount.getRotation(),0.03,90)
+    pos.y = pos.y + 1
+    dataDisk.setPosition(pos)
+
+    diskName = "(RENAME ME!) Army Data Disk ["..totalPoints .. " Points]"
+    dataDisk.setRotation(self.getRotation())
+    dataDisk.setName(diskName)
+    dataDisk.setLuaScript(luaString)
+    dataDisk.setLock(false)
+  end
+end
+
+function toggleListImporterUI()
+  local uiStatus = self.UI.getAttribute('listImporterUI', 'active')
+  local newStatus = true
+  if uiStatus == 'True' then
+    newStatus = false
+  end
+  self.UI.setAttribute('listImporterUI', 'active', newStatus)
+end
+
+function importFromText(nothing, text)
+  loadArmyFromJSON(text)
+end
+
+function dealCommandCard(selectionCard, isContingency)
+  local card = Deck:spawnCommandCard(selectionCard, isContingency)
+  if isContingency then
+    card.highlightOn({0, 1, 1})
+  end
+  card.setRotation(listBuilder.handPos[colorSide].rot)
+  card.setPosition(listBuilder.handPos[colorSide].pos)
+end
+
+function drawBattlefieldCard(data, cardType)
+  for _, entry in pairs(data.battlefieldDeck[cardType]) do
+      local card = Deck:spawnBattleCard(cardType, entry)
+      local deckMountPos = deckMount.getPosition()
+      deckMountPos.y = deckMountPos.y + 0.23 + (deckHeight * 0.1)
+      deckHeight = deckHeight + 1
+      card.setPosition(deckMountPos)
+
+      local deckRot = deckMount.getRotation()
+      deckRot.z = 180
+      card.setRotation(deckRot)
+  end
+end
