@@ -1,4 +1,5 @@
 #include !/Analytics
+#include !/Deck
 
 -- This is the shared execution code for {RED|BLUE}_LIST_BUILDER.
 
@@ -18,6 +19,9 @@ function onLoadShared(
   listBuilderButtons = _listBuilderButtons;
   backButton = _backButton
   dataDiskMount = _dataDiskMount
+
+  -- Use deck data.
+  _G.Deck = Deck:create()
 end
 
 -- UI --------------------------------------------------------------------------
@@ -160,6 +164,8 @@ function autoTint()
         local miniObj = getObjectFromGUID(miniGuid)
         miniObj.setColorTint(colorMap[colorIndex])
       end
+      local unitIDTokenObject = getObjectFromGUID(obj.getVar("unitIDTokenGUID"))
+      unitIDTokenObject.setColorTint(colorMap[colorIndex])
     end
   end
 end
@@ -301,49 +307,15 @@ function initializeCommandToken(cData)
 
 end
 
-function spawnUnitCard(unitObj, passedTemplatePos, passedTemplateRot, unitNameFallback, scale)
-  local templatePosUnit = passedTemplatePos
-  local originalUnitCards = getObjectFromGUID(cardInfo.unitCardsGUID)
-  copy({originalUnitCards})
-  local pastedObj = paste({
-    position     = {0,-10,0}
-  })
-  local unitCards = pastedObj[1]
-  local unitCardTable = unitCards.getObjects()
-  
+function spawnUnitCard(faction, name, position, rotation)
+  local card = Deck:spawnUnitCard(faction, name)
+  ga_event("Game", "spawnUnitCard", card.getName())
 
-  local unitCard
-  if unitObj == nil then
-    local face = "http://cloud-3.steamusercontent.com/ugc/1714157207248706790/F9785EFE7468A0196B91FECA725ADC0414674074/"
-    unitCard = spawnObject({
-      type           = "CardCustom",
-      position       = {0,10,0}
-    })
-    unitCard.setCustomObject({
-      face           = face,
-      back           = face,
-    })
-    unitCard.setName(unitNameFallback)
-  else
-    unitCard = unitCards.takeObject({
-      position       = {0,10,0},
-      index          = unitObj:getUnitCardIndex(unitCardTable),
-    })
-  end
-
-  ga_event("Game", "spawnUnitCard", unitCard.getName())
-  destroyObject(unitCards)
-
-  pos = simpleTranslatePos(templatePosUnit, 0, 0)
-  pos.y = templatePosUnit.y
-
-  unitCard.setRotation({0,passedTemplateRot.y+180,0})
-  unitCard.setScale({scale,1,scale})
-
-  unitCard.setPosition(pos)
-  unitCard.setLock(false)
-
-  return unitCard
+  local tPos = simpleTranslatePos(position, 0, 0)
+  tPos.y = tPos.y
+  card.setRotation({0,rotation.y+180,0})
+  card.setPosition(tPos)
+  return card
 end
 
 function spawnLoadoutBag(unitName, unitUpgrades, pTemplatePos, pTemplateRot)
@@ -365,81 +337,45 @@ function spawnLoadoutBag(unitName, unitUpgrades, pTemplatePos, pTemplateRot)
 end
 
 function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber, spawnOffsets, xOffset, zOffset)
-  local originalUpgradeCards = getObjectFromGUID(cardInfo.upgradeCardsGUID)
-  local upgradeCards = originalUpgradeCards.clone({ position = {0,-30,0} })
-  local upgradeCardTable = upgradeCards.getObjects()
-  local cardInt = -1
-
-  -- cache offsets
-  local unitCardWidth = spawnOffsets["unitCardWidth"]
-  local halfUnitCard = unitCardWidth * 0.5
-
-  local cardHeight = spawnOffsets["cardHeight"]
-  local cardWidth = spawnOffsets["upgradeCardWidth"]
-  local halfCardHeight = cardHeight * 0.5
-  local halfCardWidth = cardWidth * 0.5
-
-  local padding = spawnOffsets["padding"]
-
-  -- offset upgrade card
-  local xPosOffset = 0
-  local zPosOffset = 0
-
-  -- x offset
-  if ( upgradeNumber == 1 or upgradeNumber == 4 or upgradeNumber == 7) then
-    xPosOffset = (halfUnitCard + padding + halfCardWidth) * -xOffset
-  elseif ( upgradeNumber == 2 or upgradeNumber == 5 ) then
-    xPosOffset = (-halfUnitCard + halfCardWidth + (padding)) * -xOffset
-  elseif ( upgradeNumber == 3 or upgradeNumber == 6 ) then
-    xPosOffset = (halfCardWidth + padding) * -xOffset
-  end 
-  
-  -- z offset
-  if ( upgradeNumber > 1 and upgradeNumber < 5) then
-    zPosOffset = ((cardHeight + padding) * zOffset)
-  elseif ( upgradeNumber >= 5 ) then
-    zPosOffset = ((cardHeight + padding) * 2 * zOffset)
-  end
-
-  for i, entry in pairs(upgradeCardTable) do
-      if entry.nickname:lower() == cardName:lower() then
-          cardInt = entry.index
-          break
-      end
-  end
-
-  local upgradeCard
-  if cardInt == -1 then
-    local face = "http://cloud-3.steamusercontent.com/ugc/1714157207248707545/D04A7BAA681BE95F81F168FB7163FD897E7E1D33/"
-    upgradeCard = spawnObject({
-      type           = "CardCustom",
-      position       = {0,10,0}
-    })
-    upgradeCard.setCustomObject({
-      face           = face,
-      back           = face,
-    })
-    upgradeCard.setName(cardName)
-  else
-    upgradeCard = upgradeCards.takeObject({
-        position       = {0,10,0},
-        index          = cardInt
-    })
-  end
+  local upgradeCard = Deck:spawnUpgradeCard(cardName)
 
   ga_event("Game", "spawnUpgradeCard", cardName)
-  destroyObject(upgradeCards)
-
-  local scale = spawnOffsets["cardScale"]
-  upgradeCard.setScale({scale,scale,scale})
-  local finalPos = simpleTranslatePos(pTemplatePos, xPosOffset, zPosOffset)
-  upgradeCard.setPosition(finalPos)
   upgradeCard.setRotation({0,pTemplateRot.y+180,0})
-  upgradeCard.setLock(false)
 
   if upgradeNumber == nil then
     local loadoutBag = pTemplatePos
     loadoutBag.putObject(upgradeCard)
+  else
+    -- cache offsets
+    local unitCardWidth = spawnOffsets["unitCardWidth"]
+    local halfUnitCard = unitCardWidth * 0.5
+    local cardHeight = spawnOffsets["cardHeight"]
+    local cardWidth = spawnOffsets["upgradeCardWidth"]
+    local halfCardHeight = cardHeight * 0.5
+    local halfCardWidth = cardWidth * 0.5
+    local padding = spawnOffsets["padding"]
+
+    -- offset upgrade card
+    local xPosOffset = 0
+    local zPosOffset = 0
+
+    -- x offset
+    if ( upgradeNumber == 1 or upgradeNumber == 4 or upgradeNumber == 7) then
+      xPosOffset = (halfUnitCard + padding + halfCardWidth) * -xOffset
+    elseif ( upgradeNumber == 2 or upgradeNumber == 5 ) then
+      xPosOffset = (-halfUnitCard + halfCardWidth + (padding)) * -xOffset
+    elseif ( upgradeNumber == 3 or upgradeNumber == 6 ) then
+      xPosOffset = (halfCardWidth + padding) * -xOffset
+    end 
+    
+    -- z offset
+    if ( upgradeNumber > 1 and upgradeNumber < 5) then
+      zPosOffset = ((cardHeight + padding) * zOffset)
+    elseif ( upgradeNumber >= 5 ) then
+      zPosOffset = ((cardHeight + padding) * 2 * zOffset)
+    end
+    local finalPos = simpleTranslatePos(pTemplatePos, xPosOffset, zPosOffset)
+    upgradeCard.setPosition(finalPos)
   end
 end
 
@@ -505,12 +441,10 @@ function spawnArmy(loadListData, skipDiskVersionCheck)
     end
 
       -- create battlefield deck
-      cloneBattlefieldCards()
       deckHeight = 1
       drawBattlefieldCard(loadListData, "objective")
       drawBattlefieldCard(loadListData, "deployment")
       drawBattlefieldCard(loadListData, "conditions")
-      destroyBattlefieldCards()
 
       offsetUnitSpawnCount = 0
 
@@ -565,6 +499,10 @@ function spawnUnit(unit, n, faction, totalUnits)
   spawnMiniTable.colorSide = colorSide
   spawnMiniTable.upgrades = {}
   spawnMiniTable.miniObjs = {}
+  -- we have a maximum ID token value of 10 so we need to wrap back to 1
+  if n > 10 then
+    n = n - 10
+  end
   spawnMiniTable.unitID = n
 
   -- prep unit card spawn location
@@ -596,13 +534,8 @@ function spawnUnit(unit, n, faction, totalUnits)
   -- SPAWN CARDS
   -- spawn unit Card
   spawnMiniTable.displayName = unitObject.displayName
-  spawnMiniTable.unitCardObj = spawnUnitCard(unitObject, tempPos, self.getRotation(), unit.name, cardScale)
-  spawnUnitIDToken(templatePos, self.getRotation(), n)
-
-  -- spawn loadout bag
-  if unit.loadout ~= nil and #unit.loadout > 0 then
-    spawnLoadoutBag(unit.name, unit.loadout, templatePos, self.getRotation())
-  end
+  spawnMiniTable.unitCardObj = spawnUnitCard(faction, unit.name, tempPos, self.getRotation())  
+  spawnMiniTable.unitIDTokenGUID = spawnUnitIDToken(templatePos, self.getRotation(), n)
 
   -- spawn upgrade card
   local upgradeCount = 0
@@ -613,7 +546,6 @@ function spawnUnit(unit, n, faction, totalUnits)
     table.insert(spawnMiniTable.upgrades, upgrade)
     upgradeCount = upgradeCount + 1
   end
-
   
   -- SPAWN MINIS
   -- mini table
@@ -688,6 +620,11 @@ function spawnUnit(unit, n, faction, totalUnits)
     initializeMini(spawnMiniTable)
   end
 
+  -- spawn loadout bag
+  if unit.loadout ~= nil and #unit.loadout > 0 then
+    spawnLoadoutBag(unit.name, unit.loadout, templatePos, self.getRotation())
+  end
+
   -- spawn command token
   if unitObject ~= nil and unitObject.noToken == nil then
     local commandData = {}
@@ -740,11 +677,12 @@ function initializeMini(pMiniTable)
       objEntry.obj.setDescription(description)
 
       -- miniGUIDs
+
       local miniGUIDsScript = "miniGUIDs = {}\n"
       for n, objEntry in pairs(pMiniTable.miniObjs) do
         miniGUIDsScript = miniGUIDsScript .. "miniGUIDs["..n.."] = '" .. objEntry.obj.getGUID() .. "'\n"
       end
-      selectedMiniScript = selectedMiniScript .. miniGUIDsScript.."cardGUID = '"..pMiniTable.unitCardObj.getGUID().."'\nunitName = \""..pMiniTable.name:lower().."\"\nunitID = "..pMiniTable.unitID.."\n"..listBuilder.modelMiniScript
+      selectedMiniScript = selectedMiniScript .. miniGUIDsScript .. "cardGUID = '" .. pMiniTable.unitCardObj.getGUID() .. "'\n unitName = \""..pMiniTable.name:lower() .. "\"\n unitID = " .. pMiniTable.unitID .. "\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID .. "\"\n" .. listBuilder.modelMiniScript
     else
       objEntry.obj.use_snap_points = false
     end
@@ -754,16 +692,19 @@ function initializeMini(pMiniTable)
   end
 end
 
-function spawnUnitIDToken(idSpawnPos, idSpawnRot,idNumber)
+function spawnUnitIDToken(idSpawnPos, idSpawnRot, idNumber)
   idSpawnRot.y = idSpawnRot.y +180
-  idToken = unitIDTokenBag.takeObject({
+  local idToken = unitIDTokenBag.takeObject({
       position       = idSpawnPos,
       rotation       = idSpawnRot,
       smooth         = false
   })
+  local idTokenGUID = idToken.getGUID()
   if idNumber != 1 then
-      idToken.setState(idNumber)
+      idTokenGUID = idToken.setState(idNumber).getGUID()
   end
+
+  return idTokenGUID
 end
 
 function spawnMini(miniSpawnPos, miniSpawnRot, miniData)
@@ -988,87 +929,24 @@ function importFromText(nothing, text)
 end
 
 function dealCommandCard(selectionCard, isContingency)
-  originalCommandCards = getObjectFromGUID(listBuilder.commandCardsGUID)
-  commandCards = originalCommandCards.clone({ position = {0,-30,0} })
-  commandCardsTable = commandCards.getObjects()
-  commandCards.setScale({1,1,1})
-
-  for i, entry in pairs(commandCardsTable) do
-      if entry.nickname:lower() == selectionCard:lower() then
-          local matchCard = commandCards.takeObject({
-              position       = listBuilder.handPos[colorSide].pos ,
-              index          = entry.index
-          })
-
-          if isContingency then
-            local cardData = matchCard.getData()
-            for index, table in pairs(cardData.CustomDeck) do
-              local CustomDeck = {}
-              table.BackURL = "http://cloud-3.steamusercontent.com/ugc/1753560235958347056/F845CB170FEF761DC7025AA3EEAE731F018C0E73/"
-              CustomDeck[index] = table
-              cardData.CustomDeck = CustomDeck
-              break
-            end
-            destroyObject(matchCard)
-            matchCard = spawnObjectData({
-              data        = cardData,
-              position    = listBuilder.handPos[colorSide].pos,
-              scale       = {1, 1, 1},
-              rotation    = listBuilder.handPos[colorSide].rot,
-            })
-            matchCard.highlightOn({0, 1, 1})
-          else
-            matchCard.setRotation(listBuilder.handPos[colorSide].rot)
-          end
-          break
-      end
+  local card = Deck:spawnCommandCard(selectionCard, isContingency)
+  if isContingency then
+    card.highlightOn({0, 1, 1})
   end
-
-  destroyObject(commandCards)
+  card.setRotation(listBuilder.handPos[colorSide].rot)
+  card.setPosition(listBuilder.handPos[colorSide].pos)
 end
 
 function drawBattlefieldCard(data, cardType)
-  for k, entry in pairs(data.battlefieldDeck[cardType]) do
-      -- compare to deck
-      local cardTable = allBattlefieldCardsClone.getObjects()
-      local cardInt = -1
-      for l, entryCard in pairs(cardTable) do
-          if entry == entryCard.nickname then
-              cardInt = entryCard.index
-              break
-          end
-      end
+  for _, entry in pairs(data.battlefieldDeck[cardType]) do
+      local card = Deck:spawnBattleCard(cardType, entry)
+      local deckMountPos = deckMount.getPosition()
+      deckMountPos.y = deckMountPos.y + 0.23 + (deckHeight * 0.1)
+      deckHeight = deckHeight + 1
+      card.setPosition(deckMountPos)
 
-      -- draw card
-      if cardInt != -1 then
-          drawnCard = allBattlefieldCardsClone.takeObject({
-              smooth            = false,
-              index             = cardInt,
-              top               = false
-          })
-          drawnCard.setLock(false)
-          drawnCard.setScale({0.83,0.83,0.83})
-
-          local deckMountPos = deckMount.getPosition()
-          deckMountPos.y = deckMountPos.y + 0.23 + (deckHeight * 0.1)
-          deckHeight = deckHeight + 1
-          drawnCard.setPosition(deckMountPos)
-          local deckRot = deckMount.getRotation()
-          deckRot.z = 180
-          drawnCard.setRotation(deckRot)
-      end
-
+      local deckRot = deckMount.getRotation()
+      deckRot.z = 180
+      card.setRotation(deckRot)
   end
-end
-
-function cloneBattlefieldCards()
-  allBattlefieldCardsClone = allBattlefieldCards.clone({
-      position     = {5,-10,0}
-  })
-  allBattlefieldCardsClone.setPosition({5,-10,0})
-  allBattlefieldCardsClone.setLock(false)
-end
-
-function destroyBattlefieldCards()
-  destroyObject(allBattlefieldCardsClone)
 end

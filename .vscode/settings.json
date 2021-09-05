@@ -34,5 +34,13 @@
   "files.associations": {
     "*.ttslua": "lua"
   },
-  "editor.detectIndentation": false
+  "editor.detectIndentation": false,
+
+  // Schemas.
+  "json.schemas": [
+    {
+      "fileMatch": ["contrib/cards.json"],
+      "url": "/mod/schema/CardSet.json"
+    }
+  ]
 }

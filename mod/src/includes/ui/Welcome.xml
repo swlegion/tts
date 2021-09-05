@@ -46,11 +46,20 @@
 
           (Since last <i>Beta</i>)
 
-          - TBD.
+          - We are testing a <i>new card flow</i> (internal to the mod).
+          - <b>Please report any bugs with unit/upgrade/command/battle cards</b>.
 
           (Since last <i>Stable</i>)
 
-          - TBD.
+          - Exporting a unit from a list builder with <i>loadout</i> works correctly.
+          - Updated the models for the T-47 airspeeder, and Droideka.
+          - Replaced all cards across the mod. They should look better now/more consistent.
+
+          - Deleted the unused middle (black) clock.
+          - Chess clocks are now hidden by default. Click "Chess Clocks" to show (and use).
+          - Chess clocks (and the UI) are now persisted across saves/loads.
+          - ID tokens are now also tinted as part of the "auto tint" functionality.
+
         </Text>
       </VerticalLayout>
     </VerticalScrollView>

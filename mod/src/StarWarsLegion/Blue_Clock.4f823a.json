@@ -1,0 +1,47 @@
+{
+  "Object": {
+    "GUID": "4f823a",
+    "Name": "Digital_Clock",
+    "Transform": {
+      "posX": -42.75,
+      "posY": 0.5,
+      "posZ": 6.84,
+      "rotX": 90,
+      "rotY": 90,
+      "rotZ": 0,
+      "scaleX": 0.7,
+      "scaleY": 0.7,
+      "scaleZ": 0.7
+    },
+    "Nickname": "Blue Clock",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0.3112358,
+      "b": 0.5372549
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "Clock": {
+      "Mode": 1,
+      "SecondsPassed": 5400,
+      "Paused": true
+    },
+    "LuaScript": "#include ./Blue_Clock.4f823a.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

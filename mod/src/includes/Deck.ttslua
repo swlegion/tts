@@ -1,0 +1,298 @@
+-- Utilities around creating and managing decks of cards.
+#include !/generated/DeckSchema
+
+Deck = {}
+Deck.__index = Deck;
+function Deck:create()
+  local meta = {
+    -- TODO: Have the schema be configurable.
+    _schema = DeckSchema,
+    _backs = {
+      command     = "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+      contignency = "http://cloud-3.steamusercontent.com/ugc/1753560235958347056/F845CB170FEF761DC7025AA3EEAE731F018C0E73/",
+      objective   = "http://cloud-3.steamusercontent.com/ugc/786360308354563159/BDB495B60FFED8707BD013502C2F03D3F047B63E/",
+      condition   = "http://cloud-3.steamusercontent.com/ugc/786360308354563381/FF7DF081311A20CC396CAC9391D85EB1FBCA44E1/",
+      deployment  = "http://cloud-3.steamusercontent.com/ugc/786360308354562872/AF68672CC3B5A0A27A37FA0C02FD87F2210FAB86/",
+    },
+    _unknown = {
+      command     = "http://cloud-3.steamusercontent.com/ugc/1683770885590601027/47E5B7470CAAC79372CB5C607AEF29DF195EB7CE/",
+      unit        = "http://cloud-3.steamusercontent.com/ugc/1683770885590600993/4D9BAC2DD180E2CFF9A591E19EFEBD470CB25855/",
+      upgrade     = "http://cloud-3.steamusercontent.com/ugc/1683770885590601060/FA4DD3B17A42BCD5A81D063CD13E257A0EBD419D/",
+    }
+  }
+  setmetatable(meta, Deck)
+  return meta
+end
+
+function Deck:spawnUnitCard(faction, name)
+  -- TODO: Remove remapping.
+  local remap = {
+    ["rebel"]      = "Rebel",
+    ["imperial"]   = "Empire",
+    ["separatist"] = "Separatist",
+    ["republic"]   = "Republic",
+  }
+  if remap[faction] ~= nil then
+    faction = remap[faction]
+  end
+  local units = self._schema.units[faction:upper()]
+  if units == nil then
+    return self:_spawnUnitOrBattleDud(name, "No matching faction found: \"" .. faction .. "\".")
+  end
+  local unit = units[name:upper()]
+  if unit == nil then
+    return self:_spawnUnitOrBattleDud(name, "No matching unit found.\n" .. "Faction: " .. faction)
+  else
+    local image = unit.image
+    if image == "" then
+      image = self._unknown.unit
+    end
+    local card = self:_spawnCard(image, image)
+    if image == "" then
+      card.setDescription("No image specified! Using fallback.")
+    end
+    local name = unit.name
+    if unit.title ~= nil then
+      name = name .. ": " .. unit.title
+    end
+    card.setName(name)
+    return card
+  end
+end
+
+function Deck:spawnUnitDeck(faction, position)
+  local units = self._schema.units[faction:upper()]
+  if units == nil then
+    return self:_spawnUnitOrBattleDud(faction, "No matching faction found.")
+  end
+  local header
+  local deck
+  for name, _ in pairs(units) do
+    local card = self:spawnUnitCard(faction, name)
+    if header == nil then
+      header = card
+      deck = card
+    else
+      local container = header.putObject(card)
+      if container ~= nil then
+        deck = container
+      end
+    end
+    if position ~= nil then
+      card.setPosition(position)
+    end
+  end
+  return deck
+end
+
+function Deck:spawnUpgradeCard(name)
+  -- TODO: Remove remapping.
+  local remap = {
+    ["A-180 Config"]      = "A-180 Rifle Config",
+    ["A-300 Config"]      = "A-300 Long Range Config",
+    ["A-280-CFE Config"]  = "A280-CFE Sniper Config",
+    ["E-11D Config"]      = "E11-D-Focused Fire Config",
+    ["J-19 Bo-rifle"]     = "J-19 Bo-Rifle Blaster",
+  }
+  if remap[name] ~= nil then
+    name = remap[name]
+  end
+  local upgrade = self._schema.upgrades[name:upper()]
+  if upgrade == nil then
+    return self:_spawnUpgradeDud(name, "No matching upgrade found.")
+  else
+    local unknown = self._unknown.upgrade
+    local name = upgrade.name
+    local front = upgrade.image
+    local back = ""
+    if upgrade.flip == nil then
+      back = front
+    else
+      name = name .. " / " .. upgrade.flip.name
+      back = upgrade.flip.image
+    end
+    if front == "" then
+      front = unknown
+    end
+    if back == "" then
+      back = unknown
+    end
+    local card = self:_spawnCard(front, back)
+    if front == unknown or back == unknown then
+      card.setDescription("One or more images not specified! Using fallback.")
+    end
+    card.setName(name)
+    return card
+  end
+end
+
+function Deck:spawnUpgradeDeck(position)
+  local header
+  local deck
+  for name, _ in pairs(self._schema.upgrades) do
+    local card = self:spawnUpgradeCard(name)
+    if header == nil then
+      header = card
+      deck = card
+    else
+      local container = header.putObject(card)
+      if container ~= nil then
+        deck = container
+      end
+    end
+    if position ~= nil then
+      card.setPosition(position)
+    end
+  end
+  return deck
+end
+
+function Deck:spawnCommandCard(name, isContingency)
+  local command = self._schema.commands[name:upper()]
+  if command == nil then
+    return self:_spawnCommandDud(name, "No matching command found.", isContingency)
+  else
+    local name = command.name
+    local image = command.image
+    if image == "" then
+      image = self._unknown.command
+    end
+    local back = self._backs.command
+    if isContingency == true then
+      back = self._backs.contignency
+    end
+    local card = self:_spawnCard(image, back)
+    if command.image == "" then
+      card.setDescription("No image specified! Using fallback.")
+    end
+    card.setName(name)
+    return card
+  end
+end
+
+function Deck:spawnCommandDeck(position)
+  local header
+  local deck
+  for name, _ in pairs(self._schema.commands) do
+    local card = self:spawnCommandCard(name)
+    if header == nil then
+      header = card
+      deck = card
+    else
+      local container = header.putObject(card)
+      if container ~= nil then
+        deck = container
+      end
+    end
+    if position ~= nil then
+      card.setPosition(position)
+    end
+  end
+  return deck
+end
+
+
+function Deck:spawnBattleCard(category, name, scenario)
+  if scenario == nil then
+    scenario = "standard"
+  end
+  -- TODO: Remove remapping.
+  if category == "conditions" then
+    category = "condition"
+  end
+  local categories = self._schema.battlefield[scenario:lower()]
+  if categories == nil then
+    return self:_spawnUnitOrBattleDud(name, "No matching scenario: \"" .. scenario .. "\".")
+  end
+  local cards = categories[category:lower()]
+  if cards == nil then
+    return self:_spawnUnitOrBattleDud(name, "No matching command card found.\n" .. "Scenario: " .. scenario .. "\nCategory: " .. category)
+  end
+  local details = cards[name:upper()]
+  if details == nil then
+    return self:_spawnUnitOrBattleDud(name, "No matching command card found.\n" .. "Scenario: " .. scenario .. "\nCategory: " .. category)
+  else
+    local image = details.image
+    if image == "" then
+      image = self._unknown.unit
+    end
+    local card = self:_spawnCard(image, self._backs[category:lower()])
+    if image == "" then
+      card.setDescription("No image specified! Using fallback.")
+    end
+    card.setName(details.name)
+    return card
+  end
+end
+
+function Deck:spawnBattleDeck(position, scenarioName)
+  if scenarioName == nil then
+    scenarioName = "standard"
+  end
+  local scenario = self._schema.battlefield[scenarioName:lower()]
+  if scenario == nil then
+    return self:_spawnUnitOrBattleDud("Deck failed to load: " .. scenario, "No matching scenario.")
+  end
+  local header
+  local deck
+  for category, cardsByName in pairs(scenario) do
+    for name, details in pairs(cardsByName) do
+      local card = self:spawnBattleCard(category, name, scenarioName)
+      if header == nil then
+        header = card
+        deck = card
+      else
+        local container = header.putObject(card)
+        if container ~= nil then
+          deck = container
+        end
+      end
+      if position ~= nil then
+        card.setPosition(position)
+      end
+    end
+  end
+  return deck
+end
+
+function Deck:_spawnUnitOrBattleDud(name, description)
+  local card = self:_spawnCard(self._unknown.unit)
+  card.setName(name)
+  card.setDescription(description)
+  return card
+end
+
+function Deck:_spawnUpgradeDud(name, description)
+  local card = self:_spawnCard(self._unknown.upgrade)
+  card.setName(name)
+  card.setDescription(description)
+  return card
+end
+
+function Deck:_spawnCommandDud(name, description, isContingency)
+  local back = self._backs.command
+  if isContingency == true then
+    back = self._backs.contignency
+  end
+  local card = self:_spawnCard(self._unknown.command, back)
+  card.setName(name)
+  card.setDescription(description)
+  return card
+end
+
+function Deck:_spawnCard(front, back)
+  local custom = spawnObject({
+    type     = "CardCustom",
+    position = {54.62, 0.94, -35.45},
+    scale    = {0.83, 1, 0.83},
+  })
+  -- Failsafe to avoid a `nil` error.
+  if back == nil then
+    back = front
+  end
+  custom.setCustomObject({
+    face     = front,
+    back     = back,
+  })
+  return custom
+end

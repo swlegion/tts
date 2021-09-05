@@ -1,0 +1,11 @@
+function onLoad(saveData)
+  if saveData == "" then
+    return
+  else
+    self.Clock.setValue(tonumber(saveData))
+  end
+end
+
+function onSave()
+  return tostring(self.Clock.getValue())
+end

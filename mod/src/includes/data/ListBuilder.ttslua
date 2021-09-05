@@ -13,8 +13,6 @@ function buildListBuilder()
     listBuilder.redCounterGUID = "5c7de3"
     listBuilder.blueCounterGUID = "55da62"
 
-    listBuilder.commandCardsGUID = "4ee41a"
-
     listBuilder.dataDisk = {}
     listBuilder.dataDisk.guid = "66f23c"
 

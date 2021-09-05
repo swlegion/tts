@@ -1,6 +1,9 @@
 #include !/Analytics
+#include !/Deck
 
 function onLoad(save_state)
+    _G.Deck = Deck:create()
+
     -- init values
     gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
     battlefieldTint = gameData.getTable("battlefieldTint")
@@ -341,35 +344,16 @@ end
 -- SETUP Menu
 
 function spawnCardDecks()
-  -- {52.43, 1.03, 32.53}
   ga_event("Game", "spawnCardDecks")
-  local cardInfo = Global.getTable('cardInfo')
-  local unitCards = getObjectFromGUID(cardInfo.unitCardsGUID)
-  local upgrades = getObjectFromGUID(cardInfo.upgradeCardsGUID)
-  local commands = getObjectFromGUID(Global.getTable('listBuilder').commandCardsGUID)
-  local battlefield = getObjectFromGUID(Global.getTable('gameController').battlefieldCardsGUID)
-  local cardScale = {0.83, 1, 0.83}
-  unitCards = unitCards.clone({
-    position     = {52.43, 1.03, 32.53},
-  })
-  upgrades = upgrades.clone({
-    position     = {52.43, 1.84, 29.23},
-  })
-  commands = commands.clone({
-    position     = {52.43, 1.42, 26.84}
-  })
-  battlefield = battlefield.clone({
-    position     = {52.43, 1.42, 23}
-  })
-  unitCards.setScale(cardScale)
-  unitCards.setLock(false)
-  upgrades.setScale(cardScale)
-  upgrades.setLock(false)
-  commands.setScale(cardScale)
-  commands.setRotation({0.00, 270.00, 0.00})
-  commands.setLock(false)
-  battlefield.setScale(cardScale)
-  battlefield.setLock(false)
+
+  -- TODO: Make this less hard-coded.
+  local factions = {"Empire", "Rebel", "Republic", "Separatist"}
+  for _, faction in ipairs(factions) do
+    Deck:spawnUnitDeck(faction, {52.43, 1.42, 32.53})
+  end
+  Deck:spawnUpgradeDeck({52.43, 1.84, 29.23})
+  Deck:spawnCommandDeck({52.51, 1.42, 26.35})
+  Deck:spawnBattleDeck({52.43, 1.42, 23})
 end
 
 function setBattleCardPos()
@@ -419,7 +403,7 @@ function createMatrixFromDeck(battleDeckInserted)
 
         for i, battleType in pairs(battleDeckTypes) do
             for k, compareCardData in pairs(setUpCards[battleType]) do
-                if compareCardData.name == cardData.nickname then
+                if compareCardData.name:upper() == cardData.nickname:upper() then
                     -- found match
                     drawCardGUID = cardData.guid
                     break
@@ -447,7 +431,6 @@ function createMatrixFromDeck(battleDeckInserted)
 end
 
 function revealBattleCards(insertedDeck)
-
     clearSetUpCards("all")
     setUp5Data = {}
     setUp5Data.objectiveCards = objectiveCards
@@ -466,13 +449,11 @@ function revealBattleCards(insertedDeck)
         setUp5Data.spawnedCards.conditions = conditionsCardMatrix
         setBattleCardPos()
     end
-
     setUp5Data.cardSelection = {objective = 1, deployment = 1, conditions = 1}
 
     createButtonSetUpCard("objective", 1)
     createButtonSetUpCard("deployment", 1)
     createButtonSetUpCard("conditions", 1)
-
     Wait.frames(debugSetupCards)
 end
 

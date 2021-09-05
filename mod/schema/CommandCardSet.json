@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://schema.swlegion.dev/CommandCardSet.json",
+
+  "title": "A collection of Command Cards.",
+  "description": "A set of command cards, by pip.",
+
+  "additionalProperties": {
+    "type": "array",
+    "items": {
+      "$ref": "./UpgradeCard.json"
+    }
+  },
+
+  "propertyNames": {
+    "enum": ["1", "2", "3", "4"]
+  }
+}

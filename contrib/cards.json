@@ -1,0 +1,1922 @@
+{
+  "units": {
+    "Rebel": {
+      "Commander": [
+        {
+          "name": "Luke Skywalker",
+          "title": "Hero Of The Rebellion",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788425590/4AB2CCCFC2F45B3ACB9927166F6014A2903D7DCE/"
+        },
+        {
+          "name": "Leia Organa",
+          "title": "Fearless And Inventive",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788535425/1ADD2DCEEA5D23013C2331604493EFF62AC46DB3/"
+        },
+        {
+          "name": "Han Solo",
+          "title": "Unorthodox General",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603832/92268B52B65228468DA0E1193EF01C808E899EF6/"
+        },
+        {
+          "name": "Rebel Officer",
+          "title": "Resolute Commander",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603864/8B88E031F49A36B1504A1D48202C4731C4025EB5/"
+        },
+        {
+          "name": "Jyn Erso",
+          "title": "Stardust",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603895/5D4275A9C4F93D4170453A9375C308ABCFE318A1/"
+        },
+        {
+          "name": "Cassian Andor",
+          "title": "Capable Intelligence Agent",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603937/418000BFD236B11C08F5EA8AF670673AC63199D2/"
+        },
+        {
+          "name": "Lando Calrissian",
+          "title": "Smooth Operator",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603976/14129DC0580196A6C188A7D5B037937BE3906C83/"
+        }
+      ],
+      "Operative": [
+        {
+          "name": "Chewbacca",
+          "title": "Walking Carpet",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789163592/3EE305AD57A0D00B7B413FF0F6F418D5FA544968/"
+        },
+        {
+          "name": "Sabine Wren",
+          "title": "Explosive Artist",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604048/BE5C0706F024117D9DBCF3468D89A4DEA1C10BFE/"
+        },
+        {
+          "name": "Luke Skywalker",
+          "title": "Jedi Knight",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604076/98BCE6298F7E4D5086CB79D9592FC0151E7A447A/"
+        },
+        {
+          "name": "R2-D2",
+          "title": "Hero Of A Thousand Devices",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604120/5C6ED7C27799E640540BC177E7804442CB47C304/"
+        },
+        {
+          "name": "K-2SO",
+          "title": "Sardonic Security Droid",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788629460/11D489A9283627C5CE93F29C04BEB61BA3F166D5/"
+        }
+      ],
+      "Corps": [
+        {
+          "name": "Rebel Troopers",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604151/FDE5B897188B36FF0336D103A45C20E91E25FED0/"
+        },
+        {
+          "name": "Fleet Troopers",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604199/71EA4817F31B75D4845B95F3AF76D61069D66E9A/"
+        },
+        {
+          "name": "Rebel Veterans",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604242/EA62216368A51479BDBB4264DE172879EB43B6A1/"
+        },
+        {
+          "name": "Mark II Medium Blaster Team",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789216718/13B8F9971804EE108E554C9B348A29611CFE2495/"
+        }
+      ],
+      "Special Forces": [
+        {
+          "name": "Rebel Commandos",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604288/CC2622742539F3AD9EEA9AB88676DF7C0282FFB0/"
+        },
+        {
+          "name": "Rebel Commandos",
+          "title": "Strike Team",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/"
+        },
+        {
+          "name": "Wookiee Warriors",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/"
+        },
+        {
+          "name": "Rebel Pathfinders",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604432/47C2CB26F7C98A3F449136D78165F64BE7D0A846/"
+        },
+        {
+          "name": "Mandalorian Resistance",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604461/D49CF324CDE3C648E683FCCD762B76F94E843065/"
+        },
+        {
+          "name": "Mandalorian Resistance",
+          "title": "Clan Wren",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604497/C4CEBD761320F416E03203426388067B95104C90/"
+        },
+        {
+          "name": "Wookiee Warriors",
+          "title": "Kashyyyk Resistance",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604546/F387DBCD02315CB56A87FF52D99CE3C1E6E548F2/"
+        }
+      ],
+      "Support": [
+        {
+          "name": "AT-RT",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604581/361864DD585CE7DE99234C08416E9C4C1AA84A50/"
+        },
+        {
+          "name": "1.4 FD Laser Cannon Team",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604624/D975E5460BB0A6B86E0AD105445ECBAEBBB2BEA0/"
+        },
+        {
+          "name": "Tauntaun Riders",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604655/CC7501F41054D1F68139C8ABCFAEE0CAA855475C/"
+        }
+      ],
+      "Heavy": [
+        {
+          "name": "T-47 Airspeeder",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604696/AD5CE170F4BBAC2DA1F5AF0F3AE4C7381EDC70AD/"
+        },
+        {
+          "name": "X-34 Landspeeder",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604738/6DAAAD8E05BFAF02E405EB1A28FA6EC17771D678/"
+        },
+        {
+          "name": "A-A5 Speeder Truck",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788629495/7CC8A26CAE70713A18D1A9C2A9DB7B59BC0839F9/"
+        }
+      ]
+    },
+    "Empire": {
+      "Commander": [
+        {
+          "name": "Darth Vader",
+          "title": "Dark Lord Of The Sith",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701730/72AE7649145939BD1B754C71CEA6AC3F9A6C11E5/"
+        },
+        {
+          "name": "General Veers",
+          "title": "Master Tactician",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701690/7C845644D274DFEBCE8EDA7F932905A4FBC27A11/"
+        },
+        {
+          "name": "Emperor Palpatine",
+          "title": "Ruler Of The Galactic Empire",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701664/ABD12EEF236402EDF420F7849146DDEB367FC290/"
+        },
+        {
+          "name": "Imperial Officer",
+          "title": "Ruthless Commander",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701634/8D2A4BA88A49B4F29CAD29560D2FB864F3497733/"
+        },
+        {
+          "name": "Director Orson Krennic",
+          "title": "Architect Of Terror",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701598/3832DC52B0D1BDBD5B71C222DD19A4C8AEF8B334/"
+        },
+        {
+          "name": "Iden Versio",
+          "title": "Inferno Squad Leader",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701556/6A3390D19B067EAACDF1CADD825D11BBE048DCEA/"
+        },
+        {
+          "name": "Agent Kallus",
+          "title": "Hunter Of Spectres",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701522/0198EDBE386830FA71A43C6887FD82E0CC28D241/"
+        }
+      ],
+      "Operative": [
+        {
+          "name": "Boba Fett",
+          "title": "Infamous Bounty Hunter",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701498/836304CFE19193261F594363CFD8860F22FCD5F1/"
+        },
+        {
+          "name": "Bossk",
+          "title": "Trandoshan Terror",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701468/4D83FEB79E36D5DD9A5DFB06CB479EBD35CCE130/"
+        },
+        {
+          "name": "Darth Vader",
+          "title": "The Emperor's Apprentice",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701427/7CD88B79A5D83D978F1FC76D438F87DD3991485A/"
+        }
+      ],
+      "Corps": [
+        {
+          "name": "Stormtroopers",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701400/02C7B04C990D9753DBD492D8D3AA7B380E131E9B/"
+        },
+        {
+          "name": "Snowtroopers",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701374/B2FE5819A3004E4C9A64FC3841FBCAE6F3465D2F/"
+        },
+        {
+          "name": "Shoretroopers",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701337/62D4CDC12A785A32680980C485F009500F93762F/"
+        },
+        {
+          "name": "DF-90 Mortar Trooper",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789216756/D8C157D8B31711EC7076FFF7C39347BC20B0E76A/"
+        }
+      ],
+      "Special Forces": [
+        {
+          "name": "Scout Troopers",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701305/172560D0D3A8FF9D0E646DE1F70272CD90CBE46F/"
+        },
+        {
+          "name": "Scout Troopers",
+          "title": "Strike Team",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701268/B5118D8147938CC0B6A146A8BFDD7A8B33593A89/"
+        },
+        {
+          "name": "Imperial Royal Guards",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701217/89E8CC46981E8C634A4E3D6C4F6EAF343B27C1E2/"
+        },
+        {
+          "name": "Imperial Death Troopers",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701181/DD8B2B7C2D3C3AC66F7D90F738B04BB309A31B46/"
+        },
+        {
+          "name": "Imperial Special Forces",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701129/EDA8288C48AF33A69F22AE18E6CEB1413A0B04F9/"
+        },
+        {
+          "name": "Imperial Special Forces",
+          "title": "Inferno Squad",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701097/D1043BFA3767D8E5A294ACA112D0E7E9A6B75627/"
+        }
+      ],
+      "Support": [
+        {
+          "name": "74-Z Speeder Bikes",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701072/16EF027E626FA31293F4E88556AF9633F091180D/"
+        },
+        {
+          "name": "E-Web Heavy Blaster Team",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701046/AC13001548D72E76B4DEC2D904EB44454C152806/"
+        },
+        {
+          "name": "Dewback Rider",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701014/E1E943B567134E6A946C714BD07233CDC881A7AF/"
+        }
+      ],
+      "Heavy": [
+        {
+          "name": "AT-ST",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700975/F5BACD8B7607BCB5FAA1576B7FA4151FA0A5CA59/"
+        },
+        {
+          "name": "TX-225 GAVw Occupier Combat Assault Tank",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700946/705F2EF05FABA96D1386B8E41C56AD31E7901820/"
+        },
+        {
+          "name": "LAAT/LE Patrol Transport",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700907/2DD3325FA71C1F920CC957F8B7393893AE282073/"
+        }
+      ]
+    },
+    "Republic": {
+      "Commander": [
+        {
+          "name": "Obi-Wan Kenobi",
+          "title": "Civilized Warrior",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790629/61D2CCB8A106E855E621557601F65B34FB2AEFC1/"
+        },
+        {
+          "name": "Clone Captain Rex",
+          "title": "Honorable Soldier",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790598/868FE96BEB709EE3A25D7973FF259B8BF7824475/"
+        },
+        {
+          "name": "Anakin Skywalker",
+          "title": "The Chosen One",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790573/1BDDD3F5C3D43558F79F35F1A4B9327F4729D62B/"
+        },
+        {
+          "name": "Clone Commander",
+          "title": "Trained For Leadership",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790538/EBB9911B9EB9C0F817370266A8ACB8357BEB3919/"
+        },
+        {
+          "name": "Yoda",
+          "title": "Grand Master Of The Jedi Order",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790511/A6CDD26B405EFC7CC306D96BB04AA24E5BED2794/"
+        },
+        {
+          "name": "Wookiee Chieftan",
+          "title": "Clan Leader",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790478/85E9C624082CA5731008121F45ABFA06CC4583DB/"
+        },
+        {
+          "name": "Chewbacca",
+          "title": "Hero Of Kashyyyk",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790442/8E99C974FA5AF735BADBABA2CEA6400399908E50/"
+        }
+      ],
+      "Operative": [
+        {
+          "name": "R2-D2",
+          "title": "Independent Astromech",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790410/0D5BE2D0E5632005D6BC47413845604898AF0004/"
+        },
+        {
+          "name": "Padme Amidala",
+          "title": "Spirited Senator",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790377/AC7989ED45A958942F1EF716B575174C5BEB92E1/"
+        }
+      ],
+      "Corps": [
+        {
+          "name": "Phase I Clone Troopers",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790336/C2B0C8EB973E7D6657E288E5AFE9C3F00809461A/"
+        },
+        {
+          "name": "Phase II Clone Troopers",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790299/B84917597F10DE241D7909430E91B5FC03248144/"
+        }
+      ],
+      "Special Forces": [
+        {
+          "name": "Arc Troopers",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790227/9326CC2191C991FF9CB0EB06A4EA17A2A17078BC/"
+        },
+        {
+          "name": "Arc Troopers",
+          "title": "Strike Team",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790261/AD41C53AE8A6F57645BE2A51DAD8E9FF4FB9224D/"
+        },
+        {
+          "name": "Wookiee Warriors",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/"
+        },
+        {
+          "name": "Wookiee Warriors",
+          "title": "Kashyyyk Defenders",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790192/E7C7082C239E04E3DF76FDFF909EE360D9C25012/"
+        }
+      ],
+      "Support": [
+        {
+          "name": "BARC Speeder",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790145/DD6B7ACA36B88E28B4326E7AA96536230B87F01E/"
+        },
+        {
+          "name": "AT-RT",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790101/7D591836DB5F16ED19FE2A28B55784950E1759CB/"
+        }
+      ],
+      "Heavy": [
+        {
+          "name": "TX-130 Saber-Class Fighter Tank",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790069/CFA0E667E3B9FEB5F80A3F7A68CAADE7FCF5F340/"
+        },
+        {
+          "name": "LAAT/LE Patrol Transport",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700907/2DD3325FA71C1F920CC957F8B7393893AE282073/"
+        }
+      ]
+    },
+    "Separatist": {
+      "Commander": [
+        {
+          "name": "General Grievous",
+          "title": "Sinister Cyborg",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790037/C20F500DE55700AA568EA5BDA7794A1B0210E605/"
+        },
+        {
+          "name": "Count Dooku",
+          "title": "Darth Tyranus",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789992/5D0BFCF9DA9A3200D9D0A2CDE98E25782B8F4C10/"
+        },
+        {
+          "name": "T-Series Tactical Droid",
+          "title": "Programmed For Strategy",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789948/57BDB938C53DD5571B6FBC0F15225221BEDDF3F7/"
+        },
+        {
+          "name": "Super Tactical Droid",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789910/D7965608F5D3FF1B7FD8D14BF740C098F8AB5B7D/"
+        },
+        {
+          "name": "Super Tactical Droid",
+          "title": "Kalani",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789867/EB6D7E54CBA8E867A4146B0CE70ADA1769D1EB86/"
+        },
+        {
+          "name": "Super Tactical Droid",
+          "title": "Kraken",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789829/C51EEBAA4150DA48EC395D6C275415592D430E54/"
+        }
+      ],
+      "Operative": [
+        {
+          "name": "Cad Bane",
+          "title": "Needs No Introduction",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789783/BF082412A93DED3289764E39E3D81ACF204DA989/"
+        },
+        {
+          "name": "Maul",
+          "title": "Impatient Apprentice",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789734/ABF8B8F5555C2DF64258B4DD432B479059AFF4D9/"
+        }
+      ],
+      "Corps": [
+        {
+          "name": "B1 Battle Droids",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789698/9ADC7290CCCD4AA6F24BA74F9C098A4E3A61B063/"
+        },
+        {
+          "name": "B2 Super Battle Droids",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789641/943F65C66737E7EB971F1F71FDE9D3E056F7BEC4/"
+        }
+      ],
+      "Special Forces": [
+        {
+          "name": "BX-Series Droid Commandos",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789610/FE6991E3F921A3C5ACD09400FD9CED611AC8E7D0/"
+        },
+        {
+          "name": "BX-Series Droid Commandos",
+          "title": "Strike Team",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789579/00BF878D8FCAFAA8F7D9B4B5F0749C63E4EA6F08/"
+        },
+        {
+          "name": "DRK-1 Sith Probe Droids",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789552/446270D5F6DD23C36A7B268F2026A5B9DCFFC8BF/"
+        },
+        {
+          "name": "IG-100 MagnaGuard",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789521/5E40422D83C71854A725DB0231D790BAA359574E/"
+        }
+      ],
+      "Support": [
+        {
+          "name": "Droidekas",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789475/1521CBD0935E6FB62CE544D89AC89E2F19F21D6B/"
+        },
+        {
+          "name": "STAP RiderS",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789443/7BE1E58EECCFE75EA2705CD1345E6C0602711AB7/"
+        }
+      ],
+      "Heavy": [
+        {
+          "name": "AAT Trade Federation Battle Tank",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789411/3550FADAC84804AB14EE338E46C5FEFC339C08B6/"
+        }
+      ]
+    }
+  },
+
+  "upgrades": {
+    "Armament": [
+      {
+        "name": "A-180 Rifle Config",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137807/208481F3DC8BE18ED10D2A17F12F35869213235C/",
+        "flip": {
+          "name": "A-180 Pistol Config",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137779/795B34FF0E53DA5355EA7952A034C6A4CFD003D0/"
+        }
+      },
+      {
+        "name": "A-300 Long Range Config",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137867/156C35C00A49AC23AE84E5ACCF35ADD6D7CBD820/",
+        "flip": {
+          "name": "A-300 Short Range Config",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137938/8B2FA2C71505CA93AB086154658132C221BEBE1D/"
+        }
+      },
+      {
+        "name": "A280-CFE Sniper Config",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137831/63A163395CE6017A0EB530C2B68DA6539467AFA9/",
+        "flip": {
+          "name": "A280-CFE Pistol Config",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137975/9505EB828E9F8B8F746E484527E05FC515D34891/"
+        }
+      },
+      {
+        "name": "CR-24 Flame Rifle",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139676/532C48256940506F24A3F86DF0841C96CE9A20E3/"
+      },
+      {
+        "name": "DT-57 \"Annihililator\"",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140274/F89F5BDDA3BA705867313D846B3C1331FC31AD61/"
+      },
+      {
+        "name": "Deflector Shields",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139844/502DCA18D664C848F5992832178ECCB8968C9358/"
+      },
+      {
+        "name": "E-11D Focused Fire Config",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140522/E9CFA877ABF3D3AA46EFE9D8D1EB77CF50DCA211/",
+        "flip": {
+          "name": "E-11D Grenade Launcher Config",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140554/DA69AFF0F6A0845BC7F7908386CB946A8D7DD65A/"
+        }
+      },
+      {
+        "name": "Electro Gauntlets",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140666/E94C606161E8FA9736C7483B6A8314F76599D114/"
+      },
+      {
+        "name": "Iden's DLT-20A Rifle",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142679/5583B4B2E96BA55F3A4D2DE46EBF31B130AAA757/"
+      },
+      {
+        "name": "J-19 Bo-Rifle Blaster",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143236/93E8E40BBA0157ACB1CC8492BFB7BCB58913BF28/",
+        "flip": {
+          "name": "J-19 Bo-Rifle Staff",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143309/544D8E7915CDDF661A0F75AD56BD3C4AF023108F/"
+        }
+      },
+      {
+        "name": "Looted E-5 Blaster",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143554/AAE0C21ACF5E130BCCD15B21BDC1027613DC26BA/"
+      },
+      {
+        "name": "RT-97C Blaster Rifle",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145098/F1FA0599FBE1CF545924E0DF1295FBCEDC4C1E31/"
+      },
+      {
+        "name": "T-21 Blaster Rifle",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145823/450F63D2D6AF6226A4CCFC77A02ADAE0F501D74E/"
+      },
+      {
+        "name": "Iden's TL-50 Repeater",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142734/E13169C3DF9153C7196A29DB82578DE1FD659F6D/"
+      },
+      {
+        "name": "The Darksaber",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146048/4D9FDAC4679C5636DCBD4244667ADF7BDCC2E8EA/"
+      },
+      {
+        "name": "Vibroswords",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146464/0B98A26254DDCEB3CECED855EA07ABF988C377A3/"
+      }
+    ],
+    "Command": [
+      {
+        "name": "Aggressive Tactics",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138085/A9EF32E5D1F5E222B484A821ACDC6FED6EE5EDC3/"
+      },
+      {
+        "name": "Commanding Presence",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139512/84EE686E19B56453386F3929C01D0B71687488E4/"
+      },
+      {
+        "name": "Esteemed Leader",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140964/439066821E561B2D148F432E1382CCE7E89C4195/"
+      },
+      {
+        "name": "Improvised Orders",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143118/8E9AFD74A3EEAD6F270FA6E15C62741A59BA4671/"
+      },
+      {
+        "name": "Inspiring Presence",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143173/36FADA7AC1AD3A80CEE85B159804D134CFD766FF/"
+      },
+      {
+        "name": "Strict Orders",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145675/43305265BDF594D84C9605D28F454F373A29BE05/"
+      },
+      {
+        "name": "Vigilance",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146515/D0D3C15D0DC26175A41EB79729AA4680E3E24954/"
+      }
+    ],
+    "Comms": [
+      {
+        "name": "Command Control Array",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139481/5040B2F80867500C98B1F599B64FE07F7AF51EC0/"
+      },
+      {
+        "name": "Comms Jammer",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139564/6382F97170B7A79B493E485C5858452E91ADEEC7/"
+      },
+      {
+        "name": "Comms Relay",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139607/B139A1D9FCCEDFCF0751B6E96A6FE774C312AB26/"
+      },
+      {
+        "name": "HQ Uplink",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142585/BFF381C7358C83BF8ECE84008577EB5060B55135/"
+      },
+      {
+        "name": "Hacked Comms Unit",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226344/20A0A5F26921D6132907912F6EF6CA039568AA8E/"
+      },
+      {
+        "name": "Integrated Comms Attenna",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143206/40A5FABD690D6741D18996F7896AF1AC8931EA56/"
+      },
+      {
+        "name": "Linked Targeting Array",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143463/337C8B311582824E462A167350CBC98346EA8C8C/"
+      },
+      {
+        "name": "Long-Range Comlink",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143528/99CEF391C6D9986657DE1CFF42306EAC06958A0B/"
+      },
+      {
+        "name": "Onboard Comms Channel",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143827/4081B1BC25E42766DE1CDEF5EC574C464AC4AB57/"
+      }
+    ],
+    "Crew": [
+      {
+        "name": "A-300 Rifle Gunner",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137900/130B3AB5DF25F69BC91D8C568EF147AD6DC9C240/"
+      },
+      {
+        "name": "BARC Ion Gunner",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138642/F8CB0F569FC79E3AC19F9F55EF8A5752120B7208/"
+      },
+      {
+        "name": "BARC RPS-6 Gunner",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138675/9DB09C4307B16C289B8E4518D40177CF6122CE20/"
+      },
+      {
+        "name": "BARC Twin Laser Gunner",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138722/946FBD11C5776F89102F92D94087A9DA81FABA87/"
+      },
+      {
+        "name": "Backworld Medic",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138613/2A6D4DEB2CA62EE06001AFE034EA9B0EBDF04712/"
+      },
+      {
+        "name": "Gnasp Gunner",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226311/08FF7D85F3D4B6D5C65D70ADE3EE76524D2E0BB6/"
+      },
+      {
+        "name": "Refurbished \"Gonk\" Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144996/C187B41FE3AE53493F4A9AA23B0F74B795F9B2C3/"
+      },
+      {
+        "name": "RPS-6 Rocket Gunner",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145068/CA32A4BCA29FE15FAADEFDDB1B22F7E107DC2826/"
+      },
+      {
+        "name": "Unorthodox Tactician",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146269/6A9E51CC6804D7D1D193F6087734A6B2A4087994/"
+      },
+      {
+        "name": "Unstable R5 Astromech",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146312/15D87007EAFBBAAF2EE385C446C0287163D47BEB/"
+      }
+    ],
+    "Force": [
+      {
+        "name": "Anger",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138122/92F8FD5EE7BBB3DDA644C0C12DEC40619DACB2D2/"
+      },
+      {
+        "name": "Battle Meditation",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138926/6CA76E020914829864896AC19CB9532DDED05558/"
+      },
+      {
+        "name": "Burst Of Speed",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226275/92131009B53AF7A0AFE4094D2F4D9AD1C8C94B6D/"
+      },
+      {
+        "name": "Fear",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141053/B44AFA0D2364EB909A34EF2542775A236DC40ACA/"
+      },
+      {
+        "name": "Force Barrier",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141252/A95771E904324EFB0DC8AA87120282C986D27B1B/"
+      },
+      {
+        "name": "Force Choke",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141299/B617CD9EC6D6C01C720989C66E7153E60E47126D/"
+      },
+      {
+        "name": "Force Guidance",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141346/20FACD17AA921D67E6DE9CA8562A204A1ABCA92C/"
+      },
+      {
+        "name": "Force Lift",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226237/8E8024D98127B2963C56671A8BE0DCE41E487350/"
+      },
+      {
+        "name": "Force Push",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141385/A275EF302DAE3DFA231E8EA1EA7B9AC84212666A/"
+      },
+      {
+        "name": "Force Reflexes",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141421/28E98E095ED1469D198952D50B62D798E3D0CB44/"
+      },
+      {
+        "name": "Hope",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142424/DD85A70E637C72F5F789DE89BA790FBC20A341A4/"
+      },
+      {
+        "name": "Jedi Mind Trick",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143339/DEFF1AF83C787C26075825C8E4B4E39CB9FC8DE7/"
+      },
+      {
+        "name": "Saber Throw",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145235/8F1CAA7B51F644DBFB34E6D114579CF7B64CA6EB/"
+      }
+    ],
+    "Gear": [
+      {
+        "name": "Ascension Cables",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138190/DBFD3BC31AD275E480FFAAB10F2C97A25EC53F7C/"
+      },
+      {
+        "name": "Electro Grappling Line",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140704/D0663049B1110A92D0816F1764BCA3676068E458/"
+      },
+      {
+        "name": "Electrobinoculars",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140740/445C229E49CEC494DD591071BCEFBCAD2E0D5E30/"
+      },
+      {
+        "name": "Emergency Stims",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140811/F8A07014225764F951B635DF595113FADDAB51BB/"
+      },
+      {
+        "name": "Environmental Gear",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140911/1A4EFB505CE02253DCEAEC1D4BF67834344D91A7/"
+      },
+      {
+        "name": "Grappling Hooks",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141742/DA7EFC4BC5B4AC25BDB4AE6C3A084A9B10F66A8D/"
+      },
+      {
+        "name": "JT-12 Jetpacks",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143399/3D728D8253711B25C2DE4E1177D8B08A115A2746/"
+      },
+      {
+        "name": "Personal Combat Shield",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144199/E3196D206A593BDF4C30F00F1A8B5F558BF0B217/"
+      },
+      {
+        "name": "Portable Scanner",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144545/37084A685608E563517BF1AEE00C9ECC55C058AF/"
+      },
+      {
+        "name": "Recon Intel",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144963/63594FB3AE94D1B4D9DBF1162AA53FDAB595E9FC/"
+      },
+      {
+        "name": "Targeting Scopes",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145981/32BA3AE81620BAF925DD2C0AEF04C207A350691B/"
+      }
+    ],
+    "Generator": [
+      {
+        "name": "Barrage Generator",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138795/B580C5ABBBE219D5BDD3A8AE097B4EC2D148B16F/"
+      },
+      {
+        "name": "Overcharged Generator",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143974/6EA2B41E48F30FB9343FFAA98DB54AF04F1CD742/"
+      }
+    ],
+    "Grenades": [
+      {
+        "name": "Concussion Grenades",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139643/9A4EAA2DB046B365D70E1EBFBF51E7FD9FDACE9F/"
+      },
+      {
+        "name": "EMP \"Droid Poppers\"",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140850/EA16F88F6B1308D37422702397315EEE731CEC2A/"
+      },
+      {
+        "name": "Fragmentation Grenades",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141461/8491940897B67853CD64E4E4948ED023D6602180/"
+      },
+      {
+        "name": "Impact Grenades",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142932/500E557544F78F6DA76F45646E59D43566C2A9D4/"
+      },
+      {
+        "name": "Smoke Grenades",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145447/2AA2EEE378C8854B97998CC8A2C527875161F18F/"
+      }
+    ],
+    "Hardpoint": [
+      {
+        "name": "88 Twin Light Blaster Cannon",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137716/C3D031A467025443C0F4B4490623F5D84A3D15A2/"
+      },
+      {
+        "name": "AG-2G Quad Laser",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138060/2F0A343971984B412473C58FD82F4922B7399B1A/"
+      },
+      {
+        "name": "AT-RT Flamethrower",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138235/D77C3DD9FF4F48FB8FC2AE426B349148800ADE46/"
+      },
+      {
+        "name": "AT-RT Laser Cannon",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138277/BF6E7C05171B0D9397AA521903AAB5B47B97CB7B/"
+      },
+      {
+        "name": "AT-RT Rotary Blaster",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138320/7C66EABCF4FF73DC6630F387C726068EA548FD9A/"
+      },
+      {
+        "name": "AT-ST Mortar Launcher",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138347/BC6154F6C5F0552679C8C9402DBA5AF2851378AF/"
+      },
+      {
+        "name": "AX-108 \"Ground Buzzer\"",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138379/A525E05DAFAAB7129F8D2A9626E33C169B28C462/"
+      },
+      {
+        "name": "DLT-19 Rifle Pintle",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140009/5BBDBCA0A1A79D898C63B099429F778FD978C993/"
+      },
+      {
+        "name": "DW-3 Concussion Grenade Launcher",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140401/EB45423FD61A806271D849371554698856203F35/"
+      },
+      {
+        "name": "Heavy Laser Retrofit",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141789/1466FB973611960CE6C870F27FE8D1735671048B/"
+      },
+      {
+        "name": "M-45 Ion Blaster",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143589/43CF60EDBFDD86484D1C481F19B6D14581F25410/"
+      },
+      {
+        "name": "Mark II Medium Blaster",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143619/E3949CD69ED911AF724373F0EE17CD656AD19556/"
+      },
+      {
+        "name": "MO/DK Power Harpoon",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143652/AB3D07BAC21F77DB7AFA6572CC962B972A19E6FE/"
+      },
+      {
+        "name": "RT-97C Rifle Pintle",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145142/326682328F95F04A5229510F832857C4392032D4/"
+      },
+      {
+        "name": "TX-130 Beam Cannon Turret",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146181/3EFE8D5F3AC5E50248734F4ABF50A175FE76460D/"
+      },
+      {
+        "name": "TX-130 Twin Laser Turret",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146220/1F78C6C75AB52F056FE726EA0C64563B914307B4/"
+      }
+    ],
+    "Heavy Weapon": [
+      {
+        "name": "B2-ACM Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138530/E4F2F46CD0EFCCBEEFAC5F8CB2BA4E1D43B5BB88/"
+      },
+      {
+        "name": "B2-HA Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138574/542DD11379A68CFAAB14FFC165A582FB0CDC4377/"
+      },
+      {
+        "name": "Battle Shield Wookiee (Offensive)",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138999/81A76F415A7B73A3AEF6B5EEF5DF6F0ABC9C9CF5/",
+        "flip": {
+          "name": "Battle Shield Wookiee (Defensive)",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138967/E5E495CD6EEFD77393CD99C35CF651BBEDC1210A/"
+        }
+      },
+      {
+        "name": "BX-Series Droid Sniper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139153/0CC9E44B3A97DEFEE965349938D03A01B829B231/"
+      },
+      {
+        "name": "MPL-57 Barrage Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143680/A00C797802AB5F3B88D0F69EDED06A875250F9BD/"
+      },
+      {
+        "name": "Beskad Duelist",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139032/FD73A6FDED667993F98B7FBD7A1B3A408065B07F/"
+      },
+      {
+        "name": "Bistan",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139058/D9ED7D523B3304E506F2BEDC4F067D3937D98FA3/"
+      },
+      {
+        "name": "Bowcaster Wookiee",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139088/9E0C04EE7D22BAE7023E8C8DB51A30B8877E0EEA/"
+      },
+      {
+        "name": "CM-0/93 Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139436/52C486B75EF3C105B674884E3930B773340F2936/"
+      },
+      {
+        "name": "DC-15 Phase I Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139741/18705CF14C8BD2D88CF1827FE171F64D919E03C6/"
+      },
+      {
+        "name": "DC-15X ARC Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139774/54F51273D6C53BD9C7384ECB6D4A32B76CB55B7D/"
+      },
+      {
+        "name": "DH-447 Sniper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139931/A4A301E1A5E58D34874BCE52DB7ED8D1B9E0552C/"
+      },
+      {
+        "name": "DLT-19 Stormtrooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140049/9DA8A6B2DF19484212DC2516D345CE713F9D0F5E/"
+      },
+      {
+        "name": "DLT-19D Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140076/8927F1FC730F5790C314E6E3B25BF903587BC4E3/"
+      },
+      {
+        "name": "DLT-19X Sniper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140107/A9D503B1ABC7EF7286FBFAA193EE3351651AE68D/"
+      },
+      {
+        "name": "DLT-20A Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140151/B259FD4422C504D8262FA548753B745260EC501F/"
+      },
+      {
+        "name": "DP-23 Phase I Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140181/C7BE6B6A297BE993DDE8AB32151DB8E6240A2745/"
+      },
+      {
+        "name": "DT-F16",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140318/4B2F2E13CF6E386B13FA96D61FAFBC6058D92599/"
+      },
+      {
+        "name": "Del Meeko",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139874/02F137C9987C446562434B6D358B1711E416A002/"
+      },
+      {
+        "name": "Dioxis Mine Saboteur",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139971/9FEB4E9518CC25CCA94E74EC0E4DD9DA68B0C380/"
+      },
+      {
+        "name": "E-5C B1 Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140436/6A3EBB89A4172017C75366D8A7E1613D22953C17/"
+      },
+      {
+        "name": "E-5S B1 Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140479/A9EE65EB6F30F9FCAA43DBA0C025E5B76508D6BC/"
+      },
+      {
+        "name": "E-60R B1 Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140583/AD8559ABB63B60727725BB86C817B45C9FC40AA8/"
+      },
+      {
+        "name": "Echo",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140625/9762EB09BAE98736D91887213C76E9CE34D9DE53/"
+      },
+      {
+        "name": "Electro-Whip MagnaGuard",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226197/D447CE12E500790F2192A55991E31520C0DEBCFA/"
+      },
+      {
+        "name": "Electrostaff Guard",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140779/14B23EE6749131636CF1A9D1507192F6870A32A1/"
+      },
+      {
+        "name": "Fives",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141128/F31F92F3977318E41C58131438E623171638DA41/"
+      },
+      {
+        "name": "Flametrooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141172/DCD7C40FE7DE00A38E4FE2FE7AD77688C4F11907/"
+      },
+      {
+        "name": "Gideon Hask",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141632/01D01A2179E9AC81ED7BDF348D67E98A015EE52C/"
+      },
+      {
+        "name": "HH-12 Stormtrooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142253/2A3E6F8AB8FB506642A35A69516EB1F38E82F2D0/"
+      },
+      {
+        "name": "IG-100 MagnaGuard",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226161/53E8C5C2A3547D37E918BCE12B5200DC9DB1DBB7/"
+      },
+      {
+        "name": "Long Gun Wookiee",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226123/FC3395575F2DA5995F599877AEF70D14F53400D5/"
+      },
+      {
+        "name": "MPL-57 Ion Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143712/08DC46874BB4BF95387E3FAA316B97A91D1FD34F/"
+      },
+      {
+        "name": "Pao",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144174/A692F2A518931AA6E08AAF8C4641D8972ECDB267/"
+      },
+      {
+        "name": "Phase II Mortar Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144436/3D8E7C0C4D7A837EEE925B65E044F1EF8B3388C4/"
+      },
+      {
+        "name": "Proton Charge Saboteur",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144574/C9A1D7CD9338BFA04FBF0CF3F29D418F776DA081/"
+      },
+      {
+        "name": "RPS-6 MagnaGuard",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226088/BF380B0BD77661C3735E03B48120CCC4104B339F/"
+      },
+      {
+        "name": "RPS-6 Phase I Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145035/004176D5900A3EC760D76F2657A811F811377443/"
+      },
+      {
+        "name": "RT-97C Stormtrooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145178/E34FCDD3060A28ED28C91966A004D3CB7DD6C62F/"
+      },
+      {
+        "name": "Radiation Cannon B1 Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144682/FA1C881FCC17F3A4857FFE03FD564CC3BFCE6B1E/"
+      },
+      {
+        "name": "SX-21 Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145748/C825ACC9B08D2EBBACCDF2E20D81A7BD992FB076/"
+      },
+      {
+        "name": "Scatter Gun Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145274/B6090C1087D7841687B3B8733B53D2796F054222/"
+      },
+      {
+        "name": "Sonic Charge Saboteur",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145528/F196986336A15DDB5BCE8951BFA4DAFBAA8A36A1/"
+      },
+      {
+        "name": "T-21 Stormtrooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145912/C6F9E9EDA22CB6B40D955AE391F14227D648AF3B/"
+      },
+      {
+        "name": "T-21 Special Forces Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145856/2210B593FFE9EA0A6E9B31FF4861C890DE3CD7CF/"
+      },
+      {
+        "name": "T-21B Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145946/0F8C1C415DE21D5FC85AC008D2FA7E612B830CC0/"
+      },
+      {
+        "name": "T-7 Ion Snowtrooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145786/8D000E653A4848F85C36D2809A66D3E778BC44F0/"
+      },
+      {
+        "name": "Tristan Wren",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146078/510B97CE7AEF65B5AC75FE3D94C769AB2CD070CD/"
+      },
+      {
+        "name": "Ursa Wren",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146355/375DF871CB9930A2C15C7A310420AC1541AB8830/"
+      },
+      {
+        "name": "Z-6 Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146746/5B85C86D1B259A5452AE5E7E1B60B9210A73EB95/"
+      },
+      {
+        "name": "Z-6 Phase I Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146663/29495FC4062EC1DD809CCED2F31F0ACF81C92C45/"
+      },
+      {
+        "name": "Z-6 Phase II Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146709/F3874CF8FD491DEF02AA37F322C61B51463D2ECD/"
+      }
+    ],
+    "Ordnance": [
+      {
+        "name": "\"Bunker Buster\" Shells",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139117/F5DA5B7B6E57320977FD363E55781B7B620296D6/"
+      },
+      {
+        "name": "Armor-Piercing Shells",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138159/C02E6C43ED68319D2CC2F9ADF605A3D21B3748AA/"
+      },
+      {
+        "name": "High-Energy Shells",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142305/71D387B62FD63BF9EF7698D644082586A771B2D4/"
+      }
+    ],
+    "Personnel": [
+      {
+        "name": "2-1B Medical Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137676/C282622A211B384895C61D5EE0811E4E627FBDBF/"
+      },
+      {
+        "name": "B1 Battle Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138406/B83A83613C2F77D3BD237309689D70C47BD34350/"
+      },
+      {
+        "name": "B1 Security Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138465/E66B9C058BA3D7B2B767CFA6E0A4D5581E744285/"
+      },
+      {
+        "name": "Clone Commander",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139272/747D9B51470E308061A8A4A21FBA5B28B2CEC1BB/"
+      },
+      {
+        "name": "Clone Comms Technician",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139301/BA6F9C1E1B03C96908FD244F7F17188E070E5CF0/"
+      },
+      {
+        "name": "Clone Engineer",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139332/EFBC734554388F0628F88FF6AA3C3E8AA078141C/"
+      },
+      {
+        "name": "Clone Medic",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139361/BD135C31EA1FAE5CED684E0BAEA59F27C40A42B1/"
+      },
+      {
+        "name": "EV-Series Medical Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141000/351590750AFE04E144C510815B8C7D55B9A23D1F/"
+      },
+      {
+        "name": "FX-9 Medical Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141540/B2FECAE0481CC646596F372DA153E0216EE90A2A/"
+      },
+      {
+        "name": "Fleet Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141213/9844C89F6EFB3043914F0E7CA54F6089F46F7C5A/"
+      },
+      {
+        "name": "Imperial Comms Technician",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142962/ABB4FE6D2C8D0A65384BC0CB85B2A05CB5CA9A15/"
+      },
+      {
+        "name": "Imperial Officer",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143040/BC1F5D5F046DE97E7D046534D9810655A049FDC4/"
+      },
+      {
+        "name": "OOM-Series Battle Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143867/A8A2CA8F507CEE4C16CAA27C0865FB334824A4AB/"
+      },
+      {
+        "name": "Phase I Clone Captain",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144246/21A589A6190BEF9C3355828DBE7769D925852B23/"
+      },
+      {
+        "name": "Phase I Clone Specialist",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144315/9F73C154A39FAC78D16182FE4BA40C5CBFFE261F/"
+      },
+      {
+        "name": "Phase I Clone Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144353/1238774FBDEE0A8E0E02849601C850720C86F506/"
+      },
+      {
+        "name": "Phase II Clone Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144398/18C969B5FB9B6031557CF11FE2397E6AD8955624/"
+      },
+      {
+        "name": "PK-Series Worker Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144469/375C3AB7DF614E63735F3A1FBF98F4FCD9E1507E/"
+      },
+      {
+        "name": "R4 Astromech Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144617/020BAAE68FB4F811DEC372640141F5B79CF9A722/"
+      },
+      {
+        "name": "R5 Astromech Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144649/80478EA8C2BE8E3A92E3088FCCD4C3029AC573B0/"
+      },
+      {
+        "name": "Rebel Comms Technician",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144715/C334BCF632593A2F8754691D5A62C1265BA573AF/"
+      },
+      {
+        "name": "Rebel Officer",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144749/756F13AF16D25AED9D6AC864E92D17F0C28FF4DD/"
+      },
+      {
+        "name": "Rebel Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144840/A19523153BF3B7D13E7D8B892EF56F3DA0670482/"
+      },
+      {
+        "name": "Rebel Trooper Captain",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144780/9EC770A152D6E780070467F0A5240DCC1594C26A/"
+      },
+      {
+        "name": "Rebel Trooper Specialist",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144806/4E3FBF8193DF96A2AF0306C84B225898DBEB1455/"
+      },
+      {
+        "name": "Rebel Veteran",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144901/B379F1B7C63F853ECAA61149EDEEA7D2AD83D813/"
+      },
+      {
+        "name": "Shoretrooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145345/C754AAE309BBD831F38F95B2308F1910A1035845/"
+      },
+      {
+        "name": "Shoretrooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145641/67887DD2E968766C0268BB4629E1EEA9CF54DFDC/"
+      },
+      {
+        "name": "Snowtrooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145489/3D4F0A2826C4DE7A61CB0CC895D2E3495DE91DAB/"
+      },
+      {
+        "name": "Stormtrooper Captain",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145556/326ED56BBF68B291DF37555D6155DD013F1E646A/"
+      },
+      {
+        "name": "Stormtrooper Specialist",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145600/9F5038BBE19D0970091F9C1946001A4E825C22A1/"
+      },
+      {
+        "name": "Super Battle Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138503/8FCB5B6A5739323F1E2F890625E041B67E2F93ED/"
+      },
+      {
+        "name": "T-Series Tactical Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146138/2F28A64E405A9426CB3248FB8D9D4F9B7FFA2E4B/"
+      },
+      {
+        "name": "Viper Recon Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146561/848DFAE83E6BF72D5D657ACB7B07CAFFABDCEA68/"
+      }
+    ],
+    "Pilot": [
+      {
+        "name": "Aayla Secura",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138016/6FD454904B9ADCC463C52F3DCB9BD7899D570D93/"
+      },
+      {
+        "name": "Baron Rudor",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138757/0E1640674CF5C8E3653FCBF2F4D80A5114A39721/"
+      },
+      {
+        "name": "Clone Commander Fox",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139232/3CF812DA63F0274D8A74ADAE4FB14A50489D5A22/"
+      },
+      {
+        "name": "Clone Shock Trooper Pilot",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139399/ED1CD15D93C7BE18FFEAB95FB219847F8BC95848/"
+      },
+      {
+        "name": "First Sergeant Arbmab",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141090/740EAB2F18C57EDA5B5B68F65A450C3818C501D4/"
+      },
+      {
+        "name": "General Weiss",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141576/6F1DDB015ACC524050345200BB4AB1253B0A2831/"
+      },
+      {
+        "name": "Governor Pryce",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141682/37B77C2BC41659850CE2C282DAA59A3341D94107/"
+      },
+      {
+        "name": "Hound & Grizzer",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142527/7C8F0D3C99BA6BD83BB046156C618173065907E3/"
+      },
+      {
+        "name": "Hotshot Pilot",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142465/1100E3B8812032C0DA0E0889C61A17497CD5CF78/"
+      },
+      {
+        "name": "Imperial Elite Armor Pilot",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142993/63E86E72153D62F5E106D1E99D7F8782F681087C/"
+      },
+      {
+        "name": "Imperial TIE Pilot",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143081/BA4178196976FBEDBDF44E41564A943FCCBB3CDD/"
+      },
+      {
+        "name": "Lok Durd",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143492/DDD77075BD08BC796F7B7C4DFE927F95ABF68280/"
+      },
+      {
+        "name": "OOM-Series Droid Pilot",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143908/515B5D66730319DA2FE69696B0EB70ECCC297A81/"
+      },
+      {
+        "name": "Outer Rim Speeder Jockey",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143941/3BC3D08463BE51C7EE594BD45C8467F440AF3737/"
+      },
+      {
+        "name": "Plo Koon",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144509/262D350CAB98488C834D83AF4970CF00FA93BF95/"
+      },
+      {
+        "name": "Reckless Driver",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144930/910352F2AA646B8E97628B4DF56C364805ABD906/"
+      },
+      {
+        "name": "Ryder Azadi",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145202/427A7BFD7FB915C79DDAE3C9ACC6935915A2F972/"
+      },
+      {
+        "name": "Shriv Suurgav",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145381/6E16E20C50D62418BCECDAD075070EFEB0C9AF5C/"
+      },
+      {
+        "name": "T-Series Tactical Droid Pilot",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146102/336E82649F7A62C9767E86924A1038AB8D81AF83/"
+      },
+      {
+        "name": "Veteran Clone Pilot",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146406/11D4D175DDBD3965C61D8B20386D069FF2179B67/"
+      },
+      {
+        "name": "Wedge Antilles",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146615/85EE25E78E1BFDC281590A4481DB013D55D78945/"
+      }
+    ],
+    "Training": [
+      {
+        "name": "Defensive Stance",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139810/3DFF9DE65260A8180F887D0581523E9B69391F77/",
+        "flip": {
+          "name": "Offensive Stance",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143796/D0FC9D6D3C0F2AA900FB7366B356188272BE1786/"
+        }
+      },
+      {
+        "name": "Duck And Cover",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140354/46D43C9B55C4EDB047E4B6B49F2DD0C3CB31C302/"
+      },
+      {
+        "name": "Endurance",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140878/B43C130BAB58110E55D17F2B4E571FFB99631E7F/"
+      },
+      {
+        "name": "Hunter",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142636/489DEDF6E445694D94ED3E8CA238B0B0DE4B1DE6/"
+      },
+      {
+        "name": "Into The Fray",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226053/CB89272FB33D325DA4C7EA56545B22112CB630F5/"
+      },
+      {
+        "name": "Offensive Push",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143751/9080C15E59832CCE8A15D97665832E6573554A2E/"
+      },
+      {
+        "name": "Overwatch",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144022/17F4FAC24AE1F25A530D7E392355B9126C6787AA/"
+      },
+      {
+        "name": "Protector",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226011/140C2DB7EA56E3DB5C11919A3C0923E64B827667/"
+      },
+      {
+        "name": "Seize The Initiative",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145308/93CDCF8E86134737E0D89FED6BB10317BA7545CF/"
+      },
+      {
+        "name": "Sitautional Awareness",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145416/5965B627A7C6C0584CED87D7D08CF0C86F9C5418/"
+      },
+      {
+        "name": "Tenacity",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146012/69F96BBBF484ABB6A9CAD2637064D4C199BC6BE8/"
+      }
+    ]
+  },
+
+  "commands": {
+    "1": [
+      {
+        "name": "Ambush",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037146/9E4C2F5453A9016854F388BB078666B71AC794B6/"
+      },
+      {
+        "name": "And Now You Will Die",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037110/8E3A2FB239539785945D116F85B21B481603690C/"
+      },
+      {
+        "name": "Blast Off!",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037063/A7AE3401CB3A51A58A8682BBCD8D6F6C104804AF/"
+      },
+      {
+        "name": "Call Me Captain",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037031/128A58AE6DE52C3BFB59C0B621C1562EC5760564/"
+      },
+      {
+        "name": "Common Cause",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036994/19D8F067B325C88C9A9A3DE2D4CCAD9A7BAB5957/"
+      },
+      {
+        "name": "Coordinated Bombardment",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036952/79DBBA37340FFEA238E71B07D6969F19AD1B8BD1/"
+      },
+      {
+        "name": "Covert Observation",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036909/D7F23F07B22A1DB0ED2F094C1AC8170E7C27929E/"
+      },
+      {
+        "name": "Crack Shot",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036864/47CCB05A1DB54F77FADE1652F981DAB2BD39FEE1/"
+      },
+      {
+        "name": "Duel Of The Fates",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036827/1967B20CCD59FE2EAECDC15FA5750928F75963E0/"
+      },
+      {
+        "name": "Explosions!",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036773/60EF5E470AE0865CA28E50C31CDEDCD9266E0562/"
+      },
+      {
+        "name": "Face Me!",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036719/80DA17B10B9444036EB57237E434E28C2B8D9D7F/"
+      },
+      {
+        "name": "Fear, Suprise, Intimidation",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036674/940E3CA38FB4BDD50EE7E6775E0C0A9D42C75C4A/"
+      },
+      {
+        "name": "Grroooogrrraaaawrrrrrrrrmph",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036626/BA48B6895086D9FA7DA76D6CC2CB6D625CD1B7C6/"
+      },
+      {
+        "name": "Hello There!",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036592/C0182450268D43C5589930D988CF04ECC4A1C248/"
+      },
+      {
+        "name": "I'm Your Worst Nightmare",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036560/158F834A8FF94206F4F0149EF862D264E3B27804/"
+      },
+      {
+        "name": "Idiot's Array",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036507/059AB65ED149A6399024F171211A0D3ECD21F083/"
+      },
+      {
+        "name": "Implacable",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036469/5FD54CD860AE427BDF4E5FD49DD805E8724DFF31/"
+      },
+      {
+        "name": "Maximum Firepower",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036422/34C5A93E3C69A143EB6E537C1D984010996FDDF2/"
+      },
+      {
+        "name": "Mechanized Incursion",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036372/8ED4D92B15E96CF7AB14E89F832262CFF2E55201/"
+      },
+      {
+        "name": "Merciless Munitions",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036341/7FF893D01D2692E537EB6B157DCAB16421438FC4/"
+      },
+      {
+        "name": "Our Fate Is In Your Hands",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036311/3A7A61391C83C42A345A3EAB161E6561398BE472/"
+      },
+      {
+        "name": "Pulse Scan",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036274/DF63072DBC71647215D98AC674EA8979DA3C2137/"
+      },
+      {
+        "name": "Rebellious",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036244/9C57ADB262F7193BE9B7C07B645915C58498EEDA/"
+      },
+      {
+        "name": "Sabotaged Communications",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036214/A7A0CC7689A2F66143FB6AE89914414462A09635/"
+      },
+      {
+        "name": "Size Matters Not",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036164/6444F2658805AE43ED73CF592F8D9340262E8851/"
+      },
+      {
+        "name": "Son Of Skywalker",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036127/CF8D8E07205CB523EA3D2EE71AD61D9FB96B17BB/"
+      },
+      {
+        "name": "Sorry About The Mess",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036094/C7F82426F9CDB6835C1DC91F0584AADE44F207EE/"
+      },
+      {
+        "name": "Synchronized Offensive",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036052/B952054E6772C522A8DDBA3C3104B9FE566A7B5D/"
+      },
+      {
+        "name": "They Too Will Suffer",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036005/BCB6B4D75C375323E4CA020BB1AA01497BEE11ED/"
+      },
+      {
+        "name": "This Is Where The Fun Begins",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035947/5377294A33E87301DC4D54ED1A1C1DE218E1C882/"
+      },
+      {
+        "name": "Trained In Your Jedi Arts",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035917/02823FB99DD83199FB8D24F9257F684A251C91D2/"
+      },
+      {
+        "name": "Vader's Might",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035874/D411BF35A17D45663A7AE6DB04C4368F69B447EA/"
+      },
+      {
+        "name": "Voracious Ambition",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035835/61A0DCFF63E278C4BFE5FA84970D6C8A820647F4/"
+      },
+      {
+        "name": "Whipcord Launcher",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035802/A1AA027AE84C3CF96C2E671C6BFA78E2C94E2741/"
+      },
+      {
+        "name": "You Serve Your Master Well",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035766/83D508C088FC9B893BDA1C497410726302D84452/"
+      }
+    ],
+    "2": [
+      {
+        "name": "Ace Up His Sleeve",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035738/83A01C2C466036B1BF2EF3A47F21CB11017522BD/"
+      },
+      {
+        "name": "Aggressive Negotiations",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035707/638FD7106E81C966C44029EE4176F70CC9A2882F/"
+      },
+      {
+        "name": "Air Support",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035656/7903FA16377B9A65289123A1E422D50CC26DD83F/"
+      },
+      {
+        "name": "Brains And Brawn",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035622/3BC5E96C0730225BC27EB0CE2BDB471E5CE66F4A/"
+      },
+      {
+        "name": "Concussive Blast",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035579/49CC24C1F86F0BE2CD8324868E3EEFC1AE328E0C/"
+      },
+      {
+        "name": "Deploy The Garrison",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035541/3076FCDDC51B733A5970AD91FE0698F9A1888084/"
+      },
+      {
+        "name": "Double The Fall",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035517/E8A15E29EA9390DE382A583AE416BC4DDDDA6A90/"
+      },
+      {
+        "name": "Evasive Maneuvers",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035517/E8A15E29EA9390DE382A583AE416BC4DDDDA6A90/"
+      },
+      {
+        "name": "Fear And Dead Men",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035422/9DEA08C9F8E50304092AC36C943F9F91B5D602E8/"
+      },
+      {
+        "name": "Full Of Surprises",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035386/B9B2E0999D5AA4C072B3C45FBD2185A0D7F6A9F5/"
+      },
+      {
+        "name": "Give In To Your Anger",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035342/543139C6B87DC74DAA2C0A37E4519EF525E73E8E/"
+      },
+      {
+        "name": "I'm In Control",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035284/D2D4B7D2CE80F63F0D2706764B9B4DB838B23F43/"
+      },
+      {
+        "name": "ISB Investigation",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035240/AF545C5C697618B4891784AE68F39CBE906F3FB6/"
+      },
+      {
+        "name": "Impromptu Immolation",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035209/4C4829AE9D1B01B14F2D4FDE2C6D3935D8055954/"
+      },
+      {
+        "name": "Incapacitate",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035176/6E9CFBF7487DDE5D4940E64762EB72A7D68CE7A2/"
+      },
+      {
+        "name": "Knowledge And Defense",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035139/48E071EA2C88883329D050F338F8947FD2515F6D/"
+      },
+      {
+        "name": "Last Stand",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035098/CD888287DB06A86CEF0E5CA443F2E227C8A0D3E9/"
+      },
+      {
+        "name": "MROWGH GHRRMROWRIG!",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035071/5DAC9F1B36A1D6CCF3DB6BF0CB95D9D548A79F30/"
+      },
+      {
+        "name": "My Ally Is The Force",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035023/A55A52AA8780EEFEB9B8DB24FE4294A844B3678E/"
+      },
+      {
+        "name": "New Ways To Motivate Them",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034988/4F888B0F1849EDDA47FA8B635075B011F56B967A/"
+      },
+      {
+        "name": "No Time For Sorrows",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034953/BDC08D664C3DC9DFE785E312F2F0517921B3C799/"
+      },
+      {
+        "name": "Orbital Strike",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034923/43292A8BF63ECE8696FC48EE6273F006BF454A78/"
+      },
+      {
+        "name": "Pinned Down",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034888/B7C8BF24B26A8D360EDBDB07B16C773435EE2C3F/"
+      },
+      {
+        "name": "Preservation Protocols",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034846/6DFE5FBF65026639A194D1A915193AD147736713/"
+      },
+      {
+        "name": "Push",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034819/0E3D77E869D24AD638EB438F92577F44368487D3/"
+      },
+      {
+        "name": "Reckless Diversion",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034768/6CA17689021162EFE850A3CEA62AA3BD5B84B4A5/"
+      },
+      {
+        "name": "Reptillian Rampage",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034734/F11C62C109C1CA7EE490169555DBAE37E4A9B53C/"
+      },
+      {
+        "name": "Size Matters Sometimes",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034701/1CC8DEA4C8584B532EAA67A7BA8E4FEA81EEAD85/"
+      },
+      {
+        "name": "Supreme Commander",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034666/71DDFA4CA889DE1EDAC999866F6B0C887FF2D49F/"
+      },
+      {
+        "name": "Symbol Of Rebellion",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034630/5AD8C9A6E0D6ADC0C1BA7E53AE4BDB9653DADA60/"
+      },
+      {
+        "name": "Take That, Clankers!",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034598/FAD8628CEF4BC9782992174756FD109E5AD8E949/"
+      },
+      {
+        "name": "The Phantom Menance",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034564/5DB3351093F7A089A9C59B40BECBA70140095F9B/"
+      },
+      {
+        "name": "There Is No Try",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034526/8811897A231A24247FA9120971D4994A45BAE4CD/"
+      },
+      {
+        "name": "Trust Goes Both Ways",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034481/2822AD43412B26BC38EF8F091201BA501D4FDBD0/"
+      },
+      {
+        "name": "Turning The Tide",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034438/544487939B8A8BFB04860134ACC616A1EE285039/"
+      },
+      {
+        "name": "You Understimate My Power",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034404/7EE41514855E6FB133C999DD59A58EBE610744C2/"
+      },
+      {
+        "name": "ZX Flame Projector",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034359/7CC1427FEA79D22D3128A5650F8A93159661A656/"
+      }
+    ],
+    "3": [
+      {
+        "name": "All In",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034326/44C2D4E2EE50B69C41DDDEA5963FC50152F9AE57/"
+      },
+      {
+        "name": "An Entire Legion",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034291/4E6BD80297A517DC6C92B4874ED945A0171CADC2/"
+      },
+      {
+        "name": "Annihilation Looms",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034255/8D45E8D86D763AB24E9EBF32787CDE824CBB03D9/"
+      },
+      {
+        "name": "Assault",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034224/40364C1DDCF973A233C4A8F7AD43734067014C06/"
+      },
+      {
+        "name": "At Last",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034186/C08B05E1C969B6ADBB158DE85C499CD938FBC8B5/"
+      },
+      {
+        "name": "AttacK Of the Clones",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034137/F1FFFF3A77BAAE6DB629082F50AC6B5AE9DEB6A7/"
+      },
+      {
+        "name": "Change Of Plans",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034095/F1EFCCA49BBF25049B679261404156EE2B259936/"
+      },
+      {
+        "name": "Complete The Mission",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034061/6FF1A4A6372B891E6F06022118ECF635BC40C2F2/"
+      },
+      {
+        "name": "Coordinated Fire",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034006/219E07F84100937144A74AC94987C024792986B1/"
+      },
+      {
+        "name": "Covering Fire",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033931/E4C7CE80C1179B43969BE76C60CC2744101E051E/"
+      },
+      {
+        "name": "Crush Them!",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033887/5DDF0AA77123DE906D2FA6A681B83BB73A48AAF5/"
+      },
+      {
+        "name": "Darkness Descends",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033838/AEF61989CB08EA36B8311851E1833708DEEE2059/"
+      },
+      {
+        "name": "Dimplomatic Cover",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033800/D0BF00F6C508E2765F47868E4399E798D8811426/"
+      },
+      {
+        "name": "Do Not Underestimate Our Means",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033761/20CD9F48F76B1F86610762FF16699A70F687827B/"
+      },
+      {
+        "name": "General Kenobi",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033710/C8724AA758E97BCBEDA8C66CECDA298AB74EFB05/"
+      },
+      {
+        "name": "Hero Of The Clone Wars",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033655/AA08CE1F53847CE3CCA7233A1060886F8EBE500F/"
+      },
+      {
+        "name": "I Make The Rules Now",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033609/804F443E3F33E8EB6622F46604963CE17A9D49EE/"
+      },
+      {
+        "name": "I Am A Jedi",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033560/7EFDE383C076E6F171E6B868D1F5C7EE66A466CE/"
+      },
+      {
+        "name": "Imperial Discipline",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033490/3EB2A5666B5D911D173242DD948521DFC169FE22/"
+      },
+      {
+        "name": "Legacy Of Mandalore",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033440/0011AF8A615526AED73E7A61D4E6C78B209F75E9/"
+      },
+      {
+        "name": "Luminous Beings Are We",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033410/83F24DB765D234502B457983834BF25FB5FAB05A/"
+      },
+      {
+        "name": "Lying In Wait",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033363/C8D04CF3CEE5DE82C69BAB90B7C61DFA842AE591/"
+      },
+      {
+        "name": "Master Of Evil",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033333/3BEA0BC9F2038200FFF56CDD8DA3C67808EB84E6/"
+      },
+      {
+        "name": "Notorious Scoundrels",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033300/4FA05D084E4DECE8DD8EED42E141C413F57201F2/"
+      },
+      {
+        "name": "Return Of The Jedi",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033269/7606E86C0B998BBB4DAADE6F01B300A7931B697C/"
+      },
+      {
+        "name": "Roger, Roger!",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033233/90EE522128D2F8D84425C25F4FC06F2A5A9B09B2/"
+      },
+      {
+        "name": "Ruthless Tactics",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033151/86AA97C5A365099681E54FA21C2B9D6F08519AB7/"
+      },
+      {
+        "name": "Sacrifice",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033075/A24FA101CA9A3071E18DB79779F8285B8F87B906/"
+      },
+      {
+        "name": "Smoke Screen",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033033/7FC32081CE8646476E7B0C475F452AA629BA7713/"
+      },
+      {
+        "name": "Somebody Has To Save Our Skins",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032996/852C2F232B15634E443A2317ED2D2316BA7496C4/"
+      },
+      {
+        "name": "Tactical Strike",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032968/40A2C000893514EFDE161EBBF950160618A947DA/"
+      },
+      {
+        "name": "Volunteer Mission",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032942/4047B661BAEEEFC2CA4DD45010D3029D9FB74C63/"
+      },
+      {
+        "name": "We're Not Programmed",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032907/37CBE4B02058855DF6EB5B305AEC12DA796E8FDD/"
+      },
+      {
+        "name": "YHWARGGHHHHHHHHHH",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032878/3AE933EA5F364FC236D8502BA96FF1FC6AA9FA27/"
+      },
+      {
+        "name": "You Dissapoint Me",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032838/8524059D85CFD5ED5238782110CAE2F821271706/"
+      },
+      {
+        "name": "Z-6 Jetpack Rocket",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032805/D4AEE724FC17B87F391BB7B24A3C8D44B40B704B/"
+      }
+    ],
+    "4": [
+      {
+        "name": "Standing Orders",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032760/662157DB1D462926F585301B5D6003D6B8172F14/"
+      }
+    ]
+  },
+  "battlefield": {
+    "Standard": {
+      "Objective": [
+        {
+          "name": "Bombing Run",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152284/34FB45C5D924F9975C35E307B36C42AD2F8153DB/"
+        },
+        {
+          "name": "Breakthrough",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152228/97E7C41CF4591B0909E9F8A5692193FDE83D4756/"
+        },
+        {
+          "name": "Hostage Exchange",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152166/E56E902183803EC15BFA3E84548C9F85B3EF5DC2/"
+        },
+        {
+          "name": "Intercept The Transmissions",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566156864/7F0F116D055EB147C07888524D71905E9D51ECF5/"
+        },
+        {
+          "name": "Key Positions",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152103/6BF1CD3BC8EA028CA31C3EE21FA87E28AC992873/"
+        },
+        {
+          "name": "Payload",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152051/1D6BFDBA0D76170AE1EB3129C5B589DE5426EB14/"
+        },
+        {
+          "name": "Recover The Supplies",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152002/C2C470607C4006FD51F83854CEA2093BA206222D/"
+        },
+        {
+          "name": "Sabotage The Moisture Vaparators",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151946/368BA0B7F0BBD659B37D6BE6781E01FECCDCB5E6/"
+        }
+      ],
+      "Deployment": [
+        {
+          "name": "Advanced Positions",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151907/AA1402B5634FB543727CF2659B03AA7BC296EA2D/"
+        },
+        {
+          "name": "Battle Lines",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151854/178A2F964AF10EA299F6C87503CD922F523FAE61/"
+        },
+        {
+          "name": "Danger Close",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151786/7FA3BD41F35BE7CF84362CDF4FE4638DC233C149/"
+        },
+        {
+          "name": "Disarray",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151743/AB62605E82D2BBACCA4C332AAFB1F17527533C2F/"
+        },
+        {
+          "name": "Hemmed In",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151699/108423F9BFAE604D3A0CA104721941914846D320/"
+        },
+        {
+          "name": "Major Offensive",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151624/2DD2B4AA3E270A875DDC1B7136E4F6474B6B30BD/"
+        },
+        {
+          "name": "Roll Out",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151553/38981B5EE58F47D362A37A12A74274F07B2FD9E2/"
+        },
+        {
+          "name": "The Long March",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151514/23D124E0F31E7BE7FB7EA2D8CD46EABEF8CBB289/"
+        }
+      ],
+      "Condition": [
+        {
+          "name": "Clear Conditions",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151419/955CCA2E7134CBE4FEF69C62F148FFFCCAE1A577/"
+        },
+        {
+          "name": "Fortified Positions",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151371/BAA93356D59B37199A3C468013F6A5E0CD0413FB/"
+        },
+        {
+          "name": "Hostile Environment",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151285/4B44EC69671E90D90000BB99A45500D85196E92C/"
+        },
+        {
+          "name": "Limited Visibility",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151238/46E6A35C7DBC3956A042707ADED4D3E7999D1792/"
+        },
+        {
+          "name": "Minefield",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151174/7BF21B789BA2A715EE474286DBB98A30D7FED51A/"
+        },
+        {
+          "name": "Rapid Reinforcements",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151116/18451A85E7201070C4E0D96F72FD5D8BE4377B80/"
+        },
+        {
+          "name": "Supply Drop",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151068/9801B093E60171C3AC7E5F4D447ADF27D7E9DC1F/"
+        },
+        {
+          "name": "War Weary",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151021/538B9C41BCD1FAAB09DAEB42E269D64E0AF334F8/"
+        }
+      ]
+    }
+  }
+}
