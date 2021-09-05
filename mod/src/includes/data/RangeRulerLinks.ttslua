@@ -1,19 +1,19 @@
 function getRangeRulerLinks()
     local rangeRulers  = {}
         -- 27mm
-        rangeRulers.small = "http://cloud-3.steamusercontent.com/ugc/1689400561229080951/5176496143FC99DA7BC373AD5CE7F46FF3E5F2AF/"
+        rangeRulers.small = "http://cloud-3.steamusercontent.com/ugc/1687149777005480437/C940E0ACE961B7E0CCF4028A59EBBEE13589C785/"
         -- 50mm
-        rangeRulers.medium = "http://cloud-3.steamusercontent.com/ugc/1689400411869122542/F1EA321364F4CC920875FD892460DC2CA4D148E8/"
+        rangeRulers.medium = "http://cloud-3.steamusercontent.com/ugc/1687149777005480478/530939493A14DF61B3D0DAB8B78BC010187DAA18/"
         -- 70mm
-        rangeRulers.large = "http://cloud-3.steamusercontent.com/ugc/1689400411869121900/7EFE862C01C66F441B87E40DACA8A5F5FAC3C7B0/"
+        rangeRulers.large = "http://cloud-3.steamusercontent.com/ugc/1687149777005480511/82A0869D18B87D1200BC5F266306D064DAEB3B49/"
         -- 100mm
-        rangeRulers.huge = "http://cloud-3.steamusercontent.com/ugc/1689400411869121454/BB90253F2A501E5877A4D1A3543A5F812C2CE399/"
+        rangeRulers.huge = "http://cloud-3.steamusercontent.com/ugc/1687149777005480542/4099ED3F6AE514C5C42EE833B373C9A3D329357F/"
         -- 120mm
-        rangeRulers.laat = "http://cloud-3.steamusercontent.com/ugc/1689400411869118291/83686585356BD87DC6936F44FD2C6979920F6AB0/"
+        rangeRulers.laat = "http://cloud-3.steamusercontent.com/ugc/1687149777005480641/E4AA50478BADB566AD24CF59C858267B59D91288/"
         -- 150mm
-        rangeRulers.epic = "http://cloud-3.steamusercontent.com/ugc/1689400411869120250/E09739E83D01C1EF7FF48D489DEB5C9C369FFC02/"
+        rangeRulers.epic = "http://cloud-3.steamusercontent.com/ugc/1687149777005480692/82DF47E272B6D4A25EAC6C9C466F25BC27CA3B36/"
         -- 100mm oblong
-        rangeRulers.long = "http://cloud-3.steamusercontent.com/ugc/1689400411869120694/D6CC6EA414924FFD844AEB93645708F2FFE77C99/"
+        rangeRulers.long = "http://cloud-3.steamusercontent.com/ugc/1687149777005592051/FB6DFFE7DE722D26A88C810097CCDC2F1B7DF476/"
         -- bomb card
         rangeRulers.bombCart = "http://cloud-3.steamusercontent.com/ugc/1689400561229080066/3B9C550DA786A40E4242DA80116D8304BCC12B1B/"
     return rangeRulers
