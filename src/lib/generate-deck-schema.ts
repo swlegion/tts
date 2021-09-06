@@ -14,7 +14,7 @@ function formatData(data: object, indent: number): string[] {
         } else if (typeof value === 'object') {
           value = `${' '.repeat(indent)}{\n${formatData(value, indent + 2).join(
             '\n',
-          )}\n${' '.repeat(indent)}}`;
+          )}\n${' '.repeat(indent)}},`;
         }
         return value;
       }),
@@ -29,6 +29,9 @@ function formatData(data: object, indent: number): string[] {
         value = `{\n${formatData(value, indent + 2).join('\n')}${' '.repeat(
           indent,
         )}\n${' '.repeat(indent)}}`;
+      }
+      if (key.indexOf(' ') !== -1) {
+        key = `[\"${key}\"]`;
       }
       return `${' '.repeat(indent)}${key} = ${value}`;
     })
