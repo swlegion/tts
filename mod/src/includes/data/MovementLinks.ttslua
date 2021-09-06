@@ -1,0 +1,53 @@
+function getMovementLinks()
+    local movements = {}
+        --27 mm
+        movements.small = 
+            {
+                "http://cloud-3.steamusercontent.com/ugc/1687149777004204398/3BF983176395A82824EF4EE3FB5846C1CB0D94C1/",
+                "http://cloud-3.steamusercontent.com/ugc/1687149777004204455/0328A5B6A65A6CCC03783F90F2F9ADBADBE51F16/",
+                "http://cloud-3.steamusercontent.com/ugc/1687149777004204508/3B461A9ED5C8FD15A9CE994B2EF4A23D1FE620B8/"
+            }
+        --50 mm
+        movements.medium = 
+            {
+                "http://cloud-3.steamusercontent.com/ugc/1687149777004204556/87F73A7126B6689E33C649AFF7EB066088058675/",
+                "http://cloud-3.steamusercontent.com/ugc/1687149777004204612/C9441D6D7226BC856FD32B1393EBCFEEF4BE06BC/",
+                "http://cloud-3.steamusercontent.com/ugc/1687149777004204654/31AE6A35319E67A7FA5F3FA095924FDB83EFE9BD/"
+            }
+        --70mm
+        movements.large = 
+        {
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004204703/498144067F964315AB9FFE0BE79524FA0BD82A78/",
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004204750/FD705459AEB3C1E5C0A7EA8F2822CB2956EC1D48/",
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004204808/B32F1BE12E4BA2E650E2A7C752BA456A8F833416/"
+        }
+        --100mm
+        movements.huge = 
+        {
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004204854/B728B49E1E03ECC40F2318700652525ECE1B1961/",
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004204904/5249FC634B658DF12ADC4D2ED7C952DAF4097F2C/",
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004204949/BC9B663C90D3BFEFE8E9BF351A8B44E5B34954CE/"
+        }
+        --120mm
+        movements.laat = 
+        {
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004204999/3D0E5B5EFA5A4D016847502CA7D7EA651D8118D2/",
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004205042/114008A17C31BE35A59FA82DDB4D746026D34599/",
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004205092/FA8D1FEA3F65886CEBD36F5FDC2C8C55455CECE0/"
+        }
+        --150mm
+        movements.epic =
+        {
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004205159/3D78003849E8563AB0ECAE3E3188B038425D44AE/",
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004205214/5C61176C31C6785328C6C1E5D2C9C87CA803858A/",
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004205245/ACAA917CA1F56999CCCDDC60266DB3D78C131866/"
+        }
+        --100mm oblong
+        movements.long = 
+        {
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004205310/A960CABCFD4E95BF5174136D4C1FB456C67C5477/",
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004205355/D4CACF1FDABB078937B0ABD3D6CF73EB3A3E6C82/",
+            "http://cloud-3.steamusercontent.com/ugc/1687149777004205405/5AB008BF976CF4FE3BDDB8939D5BD0A5324D617B/"
+        }
+    return movements
+end

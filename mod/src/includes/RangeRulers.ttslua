@@ -1,0 +1,67 @@
+#include !/data/RangeRulerLinks
+
+function showRangeOnHoveredModel(hoverObject)
+  if hoverObject then
+    if hoverObject.interactable then
+      unitData = {}
+      if selectedUnitObj == hoverObject then
+        clearRangeRulers()
+        selectedUnitObj = nil
+        return
+      end
+    end
+  end
+  clearRangeRulers()
+  spawnRangeRuler(hoverObject)
+end
+
+-- Refactor this to work with the refactored spawnRangeRuler()
+function clearRangeRulers()
+  if rangeRuler ~= nil then
+    destroyObject(rangeRuler)
+    rangeRuler = nil
+  end
+
+  noRulers = true
+end
+
+
+function spawnRangeRuler(rangeSourceObject, projectorBundleOverride)
+
+  if rangeSourceObject == nil then return end
+
+  local rulerBundleToSpawn = ""
+
+  if projectorBundleOverride ~= nil then
+    rulerBundleToSpawn = projectorBundleOverride
+  else
+    local newUnitData = rangeSourceObject.getTable("unitData")
+    if not newUnitData then return end
+
+    local baseSize = newUnitData.baseSize
+    local rulerBundleTable = getRangeRulerLinks()
+    rulerBundleToSpawn = rulerBundleTable[baseSize] 
+  end
+
+  basePos = rangeSourceObject.getPosition()
+  baseRot = rangeSourceObject.getRotation()
+
+  rangeRuler = spawnObject({
+    type = "Custom_AssetBundle",
+    position = {basePos.x, basePos.y + 20, basePos.z},
+    rotation = {90, baseRot.y, 0},
+    scale = {0,0,0} -- 0 scale will hide TTS default box and won't impact projector
+  })
+
+  rangeRuler.setCustomObject({
+    type = 0,
+    assetbundle = rulerBundleToSpawn
+  })
+
+  rangeRuler.setLock(true)
+  rangeRuler.setName("Range Ruler")
+  luaScript = "targetGUID = '"..rangeSourceObject.getGUID().."'\n function onFixedUpdate()\nif targetGUID ~= nil then\n targetObj = getObjectFromGUID(targetGUID)\n local targetPosition = targetObj.getPosition()\n self.setPosition({targetPosition.x, targetPosition.y + 20, targetPosition.z})\n self.setRotation({0,targetObj.getRotation().y,0})\n end\n end"
+  rangeRuler.setLuaScript(luaScript)
+
+  noRulers = false
+end
