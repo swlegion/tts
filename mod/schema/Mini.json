@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://schema.swlegion.dev/Mini.json",
+
+  "title": "Mini resource",
+  "description": "Possible mini subtypes.",
+
+  "oneOf": [
+    {
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mesh": {
+          "type": "string",
+          "format": "uri",
+          "minLength": 1
+        },
+        "diffuse": {
+          "type": "string",
+          "format": "uri",
+          "minLength": 1
+        }
+      },
+
+      "required": ["mesh", "diffuse"]
+    },
+    {
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bundle": {
+          "type": "string",
+          "format": "uri",
+          "minLength": 1
+        },
+        "secondary": {
+          "type": "string",
+          "format": "uri",
+          "minLength": 1
+        }
+      },
+
+      "required": ["bundle"]
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 -- Utilities around creating and managing decks of cards.
-#include !/generated/DeckSchema
+#include !/generated/cards
 
 Deck = {}
 Deck.__index = Deck;
 function Deck:create()
   local meta = {
     -- TODO: Have the schema be configurable.
-    _schema = DeckSchema,
+    _schema = CardsSchema,
     _backs = {
       command     = "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
       contignency = "http://cloud-3.steamusercontent.com/ugc/1753560235958347056/F845CB170FEF761DC7025AA3EEAE731F018C0E73/",

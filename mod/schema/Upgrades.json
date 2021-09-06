@@ -9,6 +9,7 @@
     "Armament",
     "Command",
     "Comms",
+    "Counterpart",
     "Crew",
     "Force",
     "Gear",
@@ -19,6 +20,7 @@
     "Ordnance",
     "Personnel",
     "Pilot",
+    "Programming",
     "Training"
   ]
 }

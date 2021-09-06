@@ -17,6 +17,23 @@
       "$ref": "./Image.json"
     },
 
+    "mini": {
+      "oneOf": [
+        {
+          "description": "A single placeholder mini.",
+          "enum": [1]
+        },
+        {
+          "$ref": "./Mini.json"
+        }
+      ]
+    },
+
+    "leader": {
+      "description": "Whether this upgrade becomes the unit leader.",
+      "enum": [true]
+    },
+
     "flip": {
       "type": "object",
 
@@ -30,6 +47,7 @@
           "$ref": "./Image.json"
         }
       },
+
       "required": ["name", "image"]
     }
   },

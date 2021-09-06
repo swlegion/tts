@@ -5,6 +5,12 @@
   "title": "Unit Card",
   "description": "Definition of a unit card.",
 
+  "definitions": {
+    "Bases": {
+      "enum": ["small", "medium", "large", "huge", "laat", "epic", "long"]
+    }
+  },
+
   "additionalProperties": false,
 
   "properties": {
@@ -20,8 +26,56 @@
 
     "image": {
       "$ref": "./Image.json"
+    },
+
+    "size": {
+      "description": "Size of the base.",
+      "$ref": "#/definitions/Bases"
+    },
+
+    "heavyWeaponTeam": {
+      "description": "Reqyure a \"Heavy Weapon\" upgrade attached to this unit and make it the unit leader.",
+      "enum": [true]
+    },
+
+    "minis": {
+      "oneOf": [
+        {
+          "description": "Number of placeholder minis to spawn",
+          "type": "number",
+          "minimum": 1
+        },
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "./Mini.json"
+          }
+        }
+      ]
+    },
+
+    "points": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "speed": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "upgrades": {
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 1
+      },
+
+      "propertyNames": {
+        "$ref": "./Upgrades.json"
+      }
     }
   },
 
-  "required": ["name", "image"]
+  "required": ["name", "image", "size", "points", "speed", "upgrades"]
 }
