@@ -648,6 +648,9 @@ function spawnUnit(unit, n, faction, totalUnits)
 end
 
 function spawnUnit2(unit, index, faction, totalUnits)
+  -- Without this, the templates start shifting, probably due to mutations :(
+  _G.listBuilder = Global.getTable("listBuilder")
+
   local name = unit.name
   local upgrades = unit.upgrades
   local loadout = unit.loadout
@@ -742,17 +745,32 @@ function spawnUnit2(unit, index, faction, totalUnits)
     totalZOffset = totalZOffset * -1
   end
 
-  Shelf:spawnUnitModels(faction, name, upgrades, function(model, index, base)   
+  local result = Shelf:spawnUnitModels(faction, name, upgrades, function(model, index, base)   
     local baseRadius = base * 0.5
     local initialXOffset = (unitCardWidth * 0.5) - baseRadius 
     local xStart = xStartPosition + (initialXOffset * xOffset)
+    local templateRot = self.getRotation()
     local rotation = {templateRot.x, templateRot.y + 180, templateRot.z}
     local position = {x = xStart, y = adjustedPos.y, z = adjustedPos.z}
+    local paddedBase = base + padding
+    local basesPerRow = math.abs(math.floor(templateFullWidth / paddedBase))
+    local newIndex = index
+    if (index > basesPerRow) then
+      initialZOffset = initialZOffset + (paddedBase - padding) * zOffset
+      newIndex = index - basesPerRow
+    end
+
     local baseOffset = base + (padding * xOffset)
-    local totalXOffset = (baseOffset * (index - 1))
+    local totalXOffset = (baseOffset * (newIndex - 1))
     local xDir = xOffset * -1
-    position = simpleTranslatePos(position, totalXOffset * xDir, totalZOffset * zOffset)
-    model.setPosition(position)
+
+    model.setPosition(
+      simpleTranslatePos(
+        position,
+        totalXOffset * xDir,
+        totalZOffset * zOffset
+      )
+    )
     model.setRotation(rotation)
     table.insert(miniData.miniObjs, {
       obj    = model,
@@ -763,8 +781,11 @@ function spawnUnit2(unit, index, faction, totalUnits)
 
   initializeMini(miniData)
 
-  -- TODO: Spawn Loadout bag
-  -- TODO: Spawn Command token
+  if #loadout > 0 then
+    spawnLoadoutBag(name, loadout, templatePos, self.getRotation())
+  end
+
+  -- TODO: Spawn command tokens.
 end
 
 function spawnArmyFromDisk()
