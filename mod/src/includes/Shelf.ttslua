@@ -24,7 +24,7 @@ function Shelf:create()
   return meta
 end
 
-function Shelf:spawnUnitModels(faction, name, upgrades)
+function Shelf:spawnUnitModels(faction, name, upgrades, callback)
   -- TODO: Remove remapping.
   local remap = {
     ["rebel"]      = "Rebel",
@@ -37,32 +37,52 @@ function Shelf:spawnUnitModels(faction, name, upgrades)
   end
   local units = self._schema.units[faction:upper()]
   if units == nil then
-    return {
-      self:_spawnDudModel(name, "No matching faction found: \"" .. faction .. "\".")
-    }
+    local model = self:_spawnDudModel(name, "No matching faction found: \"" .. faction .. "\".")
+    if callback ~= nil then
+      callback(model, 1, self._colliders.small[2])
+    end
+    return {model}
   end
   local card = units[name:upper()]
   if card == nil then
-    return {
-      self:_spawnDudModel(name, "No matching unit found.\nFaction: \"" .. faction .. "\".")
-    }
+    local model = self:_spawnDudModel(name, "No matching unit found.\nFaction: \"" .. faction .. "\".")
+    if callback ~= nil then
+      callback(model, 1, self._colliders.small[2])
+    end
+    return {model}
   end
+  local size = self._colliders[card.size][2]
   local minis = card.minis
   if type(minis) == "number" then
     print("Spawning placeholder minis is not yet implemented (" .. name .. ": " .. tostring(minis) .. ")")
     return {}
   end
   local result = {}
+  for _, upgrade in ipairs(upgrades) do
+    if upgrade.mini ~= nil and (upgrade.leader == true or card.heavyWeaponTeam == true) then
+      local model = self:_spawnModel(upgrade.mini)
+      table.insert(result, model)
+      if callback ~= nil then
+        callback(model, #result, size)
+      end
+      break
+    end
+  end
   for _, config in pairs(minis) do
-    table.insert(result, self:_spawnModel(config))
+    local model = self:_spawnModel(config)
+    table.insert(result, model)
+    if callback ~= nil then
+      callback(model, #result, size)
+    end
   end
   for _, upgrade in ipairs(upgrades) do
     if upgrade.mini ~= nil then
       local model = self:_spawnModel(upgrade.mini)
-      if upgrade.leader == true or card.heavyWeaponTeam == true then
-        table.insert(result, 1, model)
-      else
+      if upgrade.leader ~= true and card.heavyWeaponTeam ~= true then
         table.insert(result, model)
+      end
+      if callback ~= nil then
+        callback(model, #result, size)
       end
     end
   end
@@ -92,7 +112,7 @@ function Shelf:_spawnModel(miniConfig)
     })
     mini.setCustomObject({
       diffuse = miniConfig.diffuse,
-      mesh = mesh,
+      mesh = miniConfig.mesh,
       collider = self._colliders[miniConfig.base],
       type = 1,
       material = 3,

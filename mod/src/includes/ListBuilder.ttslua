@@ -1,27 +1,32 @@
 #include !/Analytics
 #include !/Deck
+#include !/Shelf
 
 -- This is the shared execution code for {RED|BLUE}_LIST_BUILDER.
 
 function onLoadShared(
-  _colorZone,
-  _listBuilderOptions, 
-  _listBuilderButtons,
-  _backButton,
-  _dataDiskMount
+  colorZone,
+  listBuilderOptions, 
+  listBuilderButtons,
+  backButton,
+  dataDiskMount
 )
   -- Disable direct interactivity.
   self.interactable = false
 
   -- Objects passed by the actual (non-shared) code.
-  colorZone = _colorZone
-  listBuilderOptions = _listBuilderOptions;
-  listBuilderButtons = _listBuilderButtons;
-  backButton = _backButton
-  dataDiskMount = _dataDiskMount
+  _G.colorZone = colorZone
+  _G.listBuilderOptions = listBuilderOptions;
+  _G.listBuilderButtons = listBuilderButtons;
+  _G.backButton = backButton
+  _G.dataDiskMount = dataDiskMount
+
+  -- Other globals.
+  _G.listBuilder = Global.getTable("listBuilder")
 
   -- Use deck data.
   _G.Deck = Deck:create()
+  _G.Shelf = Shelf:create()
 end
 
 -- UI --------------------------------------------------------------------------
@@ -450,9 +455,8 @@ function spawnArmy(loadListData, skipDiskVersionCheck)
 
       -- spawn units
       for n, unit in pairs(loadListData.units) do
-        spawnUnit(unit, n, loadListData.armyFaction, #loadListData.units)
+        spawnUnit2(unit, n, loadListData.armyFaction, #loadListData.units)
       end
-      listBuilder = Global.getTable("listBuilder")
   else
       ga_exception("spawnArmyUnsupportedArmyDisk")
       broadcastToAll("Unsupported army disk. The mod has changed, please re-create your army.", {1,1,1})
@@ -541,7 +545,6 @@ function spawnUnit(unit, n, faction, totalUnits)
   local upgradeCount = 0
 
   for j, upgrade in pairs(unit.upgrades) do
-    listBuilder = Global.getTable("listBuilder")
     spawnUpgradeCard(upgrade, tempPos, self.getRotation(), j, listBuilder.spawnOffsets, xOffset, zOffset)
     table.insert(spawnMiniTable.upgrades, upgrade)
     upgradeCount = upgradeCount + 1
@@ -565,8 +568,6 @@ function spawnUnit(unit, n, faction, totalUnits)
     end
 
     for i, miniData in ipairs(minisToSpawn) do
-      listBuilder = Global.getTable("listBuilder")
-
       -- determine spawn position
       
       -- check if we need to do horizontal offset for back row minis
@@ -644,6 +645,117 @@ function spawnUnit(unit, n, faction, totalUnits)
 
     initializeCommandToken(commandData)
   end
+end
+
+function spawnUnit2(unit, index, faction, totalUnits)
+  local name = unit.name
+  local upgrades = unit.upgrades
+  local loadout = unit.loadout
+  if name == nil or index == nil or faction == nil or totalUnits == nil then
+    -- TODO: Figure out a good way to handle this other than ignoring.
+    return
+  end
+  if upgrades == nil then
+    upgrades = {}
+  end
+  if loadout == nil then
+    loadout = {}
+  end
+  if index > 10 then
+    -- TODO: Support unit ID tokens > 10.
+    index = math.fmod(index, 10)
+  end
+
+  local templatePos = listBuilder[colorSide.."TemplatePos"][index]
+  local templateRot = self.getRotation()
+  local adjustedPos = templatePos
+  local templateHalfWidth = listBuilder.spawnOffsets["templateHalfWidth"]
+  local templateHalfHeight = listBuilder.spawnOffsets["templateHalfHeight"]
+  local cardHeight = listBuilder.spawnOffsets["cardHeight"]
+  local unitCardWidth = listBuilder.spawnOffsets["unitCardWidth"]
+  local padding = listBuilder.spawnOffsets["padding"]
+  local xOffset = 1
+  local zOffset = 1
+  -- orient offsets based on our facing
+  if (adjustedPos.z < 0) then 
+    xOffset = -1
+    zOffset = -1
+    padding = padding * -1
+    cardHeight = cardHeight * -1
+    templateHalfWidth = templateHalfWidth * -1   
+    templateHalfHeight = templateHalfHeight * -1
+  end
+  adjustedPos.x = adjustedPos.x + templateHalfWidth - padding
+  adjustedPos.z = adjustedPos.z - templateHalfHeight + cardHeight
+
+  -- Spawn Unit Card and ID Token.
+  local leaderData = {
+    colorSide       = colorSide,
+    upgrades        = {},
+    miniObjs        = {},
+    displayName     = "TBD",
+    unitCardObj     = spawnUnitCard(
+      faction,
+      name,
+      adjustedPos,
+      templateRot
+    ),
+    unitIDTokenGUID = spawnUnitIDToken(
+      templatePos,
+      templateRot,
+      index
+    ),
+    leaderIndex     = 1,
+  }
+
+  -- Spawn Upgrade Cards.
+  local upgradeCount = #upgrades
+  for i, upgrade in ipairs(upgrades) do
+    spawnUpgradeCard(
+      upgrade,
+      adjustedPos,
+      templateRot,
+      i,
+      listBuilder.spawnOffsets,
+      xOffset,
+      zOffset
+    )
+    table.insert(leaderData.upgrades, upgrade)
+  end
+
+  -- Spawn Minis.
+  local doZOffset = 1.0
+  local xStartPosition = adjustedPos.x
+  local templateFullWidth = templateHalfWidth * 2.0
+  local initialZOffset = (cardHeight + padding)
+  if upgradeCount > 1 and upgradeCount < 5 then
+    initialZOffset = initialZOffset + cardHeight + padding
+  elseif upgradeCount > 4 then
+    initialZOffset = initialZOffset + (cardHeight + padding) * 2
+  end
+  initialZOffset = initialZOffset * doZOffset
+  local totalZOffset = initialZOffset
+  if adjustedPos.z < 0 then
+    totalZOffset = totalZOffset * -1
+  end
+
+  Shelf:spawnUnitModels(faction, name, upgrades, function(model, index, base)   
+    local baseRadius = base * 0.5
+    local initialXOffset = (unitCardWidth * 0.5) - baseRadius 
+    local xStart = xStartPosition + (initialXOffset * xOffset)
+    local rotation = {templateRot.x, templateRot.y + 180, templateRot.z}
+    local position = {x = xStart, y = adjustedPos.y, z = adjustedPos.z}
+    local baseOffset = base + (padding * xOffset)
+    local totalXOffset = (baseOffset * (index - 1))
+    local xDir = xOffset * -1
+    position = simpleTranslatePos(position, totalXOffset * xDir, totalZOffset * zOffset)
+    model.setPosition(position)
+    model.setRotation(rotation)
+  end)
+
+  -- TODO: Initialize Minis
+  -- TODO: Spawn Loadout bag
+  -- TODO: Spawn Command token
 end
 
 function spawnArmyFromDisk()
