@@ -667,7 +667,6 @@ function spawnUnit2(unit, index, faction, totalUnits)
   end
 
   local templatePos = listBuilder[colorSide.."TemplatePos"][index]
-  local templateRot = self.getRotation()
   local adjustedPos = templatePos
   local templateHalfWidth = listBuilder.spawnOffsets["templateHalfWidth"]
   local templateHalfHeight = listBuilder.spawnOffsets["templateHalfHeight"]
@@ -693,7 +692,7 @@ function spawnUnit2(unit, index, faction, totalUnits)
     faction,
     name,
     adjustedPos,
-    templateRot
+    self.getRotation()
   )
   local miniData = {
     name            = name,
@@ -706,7 +705,7 @@ function spawnUnit2(unit, index, faction, totalUnits)
     unitCardObj     = unitCardObj,
     unitIDTokenGUID = spawnUnitIDToken(
       templatePos,
-      templateRot,
+      self.getRotation(),
       index
     ),
     leaderIndex     = 1,
@@ -718,7 +717,7 @@ function spawnUnit2(unit, index, faction, totalUnits)
     spawnUpgradeCard(
       upgrade,
       adjustedPos,
-      templateRot,
+      self.getRotation(),
       i,
       listBuilder.spawnOffsets,
       xOffset,
