@@ -58,35 +58,52 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
     return {}
   end
   local result = {}
-  for _, upgrade in ipairs(upgrades) do
-    if upgrade.mini ~= nil and (upgrade.leader == true or card.heavyWeaponTeam == true) then
-      local model = self:_spawnModel(upgrade.mini)
-      table.insert(result, model)
-      if callback ~= nil then
-        callback(model, #result, size)
+  for _, upgradeName in ipairs(upgrades) do
+    local upgrade = self:_fetchUpgradeByName(upgradeName)
+    -- TODO: Handle missing upgrade more gracefully.
+    if upgrade ~= nil then
+      if upgrade.mini ~= nil and (upgrade.leader == true or card.heavyWeaponTeam == true) then
+        local model = self:_spawnModel(upgrade.mini)
+        model.setName(upgrade.name .. " (Unit Leader)")
+        table.insert(result, model)
+        if callback ~= nil then
+          callback(model, #result, size)
+        end
+        break
       end
-      break
     end
   end
   for _, config in pairs(minis) do
     local model = self:_spawnModel(config)
     table.insert(result, model)
+    if #result == 1 then
+      model.setName(name .. " (Unit Leader)")
+    else
+      model.setName(name)
+    end
     if callback ~= nil then
       callback(model, #result, size)
     end
   end
-  for _, upgrade in ipairs(upgrades) do
-    if upgrade.mini ~= nil then
-      local model = self:_spawnModel(upgrade.mini)
-      if upgrade.leader ~= true and card.heavyWeaponTeam ~= true then
+  for _, upgradeName in ipairs(upgrades) do
+    local upgrade = self:_fetchUpgradeByName(upgradeName)
+    -- TODO: Handle missing upgrade more gracefully.
+    if upgrade ~= nil then
+      if upgrade.mini ~= nil and upgrade.leader ~= true and card.heavyWeaponTeam ~= true then
+        local model = self:_spawnModel(upgrade.mini)
+        model.setName(upgrade.name)
         table.insert(result, model)
-      end
-      if callback ~= nil then
-        callback(model, #result, size)
+        if callback ~= nil then
+          callback(model, #result, size)
+        end
       end
     end
   end
   return result
+end
+
+function Shelf:_fetchUpgradeByName(name)
+  return self._schema.upgrades[name:upper()]
 end
 
 function Shelf:_spawnDudModel(name, description)

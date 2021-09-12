@@ -689,17 +689,21 @@ function spawnUnit2(unit, index, faction, totalUnits)
   adjustedPos.z = adjustedPos.z - templateHalfHeight + cardHeight
 
   -- Spawn Unit Card and ID Token.
-  local leaderData = {
+  local unitCardObj = spawnUnitCard(
+    faction,
+    name,
+    adjustedPos,
+    templateRot
+  )
+  local miniData = {
+    name            = name,
     colorSide       = colorSide,
     upgrades        = {},
     miniObjs        = {},
-    displayName     = "TBD",
-    unitCardObj     = spawnUnitCard(
-      faction,
-      name,
-      adjustedPos,
-      templateRot
-    ),
+    -- Intentionally omitted. We use the name assigned from the spawned model.
+    displayName     = nil,
+    unitID          = index,
+    unitCardObj     = unitCardObj,
     unitIDTokenGUID = spawnUnitIDToken(
       templatePos,
       templateRot,
@@ -720,7 +724,7 @@ function spawnUnit2(unit, index, faction, totalUnits)
       xOffset,
       zOffset
     )
-    table.insert(leaderData.upgrades, upgrade)
+    table.insert(miniData.upgrades, upgrade)
   end
 
   -- Spawn Minis.
@@ -751,9 +755,15 @@ function spawnUnit2(unit, index, faction, totalUnits)
     position = simpleTranslatePos(position, totalXOffset * xDir, totalZOffset * zOffset)
     model.setPosition(position)
     model.setRotation(rotation)
+    table.insert(miniData.miniObjs, {
+      obj    = model,
+      name   = model.getName(),
+      leader = index == miniData.leaderIndex,
+    })
   end)
 
-  -- TODO: Initialize Minis
+  initializeMini(miniData)
+
   -- TODO: Spawn Loadout bag
   -- TODO: Spawn Command token
 end
