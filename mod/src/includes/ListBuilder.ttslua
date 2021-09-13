@@ -664,11 +664,8 @@ function spawnUnit2(unit, index, faction, totalUnits)
   if loadout == nil then
     loadout = {}
   end
-  if index > 10 then
-    -- TODO: Support unit ID tokens > 10.
-    index = math.fmod(index, 10)
-  end
 
+  -- Prep unit card spawn locations.
   local templatePos = listBuilder[colorSide.."TemplatePos"][index]
   local adjustedPos = templatePos
   local templateHalfWidth = listBuilder.spawnOffsets["templateHalfWidth"]
@@ -678,7 +675,17 @@ function spawnUnit2(unit, index, faction, totalUnits)
   local padding = listBuilder.spawnOffsets["padding"]
   local xOffset = 1
   local zOffset = 1
-  -- orient offsets based on our facing
+  if index > 10 then
+    -- TODO: Support unit ID tokens > 10.
+    index = index - 10
+    adjustedPos = {
+      x = adjustedPos.x,
+      y = adjustedPos.y,
+      z = adjustedPos.z - (templateHalfHeight * 0.3),
+    }
+  end
+
+  -- Orient offsets based on our facing (i.e. red v blue player).
   if (adjustedPos.z < 0) then 
     xOffset = -1
     zOffset = -1
@@ -707,7 +714,7 @@ function spawnUnit2(unit, index, faction, totalUnits)
     unitID          = index,
     unitCardObj     = unitCardObj,
     unitIDTokenGUID = spawnUnitIDToken(
-      templatePos,
+      adjustedPos,
       self.getRotation(),
       index
     ),
@@ -730,40 +737,40 @@ function spawnUnit2(unit, index, faction, totalUnits)
   end
 
   -- Spawn Minis.
-  local doZOffset = 1.0
-  local xStartPosition = adjustedPos.x
-  local templateFullWidth = templateHalfWidth * 2.0
-  local initialZOffset = (cardHeight + padding)
+
+  -- Determine starting mini location (i.e. the leader).
+  local initialZOffset = cardHeight + padding
   if upgradeCount > 1 and upgradeCount < 5 then
-    initialZOffset = initialZOffset + cardHeight + padding
+    initialZOffset = initialZOffset + (cardHeight + padding)
   elseif upgradeCount > 4 then
     initialZOffset = initialZOffset + (cardHeight + padding) * 2
-  end
-  initialZOffset = initialZOffset * doZOffset
-  local totalZOffset = initialZOffset
-  if adjustedPos.z < 0 then
-    totalZOffset = totalZOffset * -1
   end
 
   local result = Shelf:spawnUnitModels(faction, name, upgrades, function(model, index, base)   
     local baseRadius = base * 0.5
-    local initialXOffset = (unitCardWidth * 0.5) - baseRadius 
-    local xStart = xStartPosition + (initialXOffset * xOffset)
-    local templateRot = self.getRotation()
-    local rotation = {templateRot.x, templateRot.y + 180, templateRot.z}
-    local position = {x = xStart, y = adjustedPos.y, z = adjustedPos.z}
-    local paddedBase = base + padding
-    local basesPerRow = math.abs(math.floor(templateFullWidth / paddedBase))
+    local initialXOffset = unitCardWidth * 0.5 - baseRadius 
+    local xStart = adjustedPos.x + initialXOffset * xOffset
+    local position = {
+      x = xStart,
+      y = adjustedPos.y,
+      z = adjustedPos.z,
+    }
+    local paddedBase = (base + padding) * 2
+    local basesPerRow = math.abs(math.floor(templateHalfWidth * 2.0 / paddedBase))
     local newIndex = index
-    if (index > basesPerRow) then
-      initialZOffset = initialZOffset + (paddedBase - padding) * zOffset
+    local totalZOffset = initialZOffset
+    if index > basesPerRow then
+      totalZOffset = initialZOffset + (paddedBase * zOffset)
       newIndex = index - basesPerRow
     end
 
     local baseOffset = base + (padding * xOffset)
     local totalXOffset = (baseOffset * (newIndex - 1))
     local xDir = xOffset * -1
-
+    if adjustedPos.z < 0 then
+      totalZOffset = totalZOffset * -1
+    end
+    
     model.setPosition(
       simpleTranslatePos(
         position,
@@ -771,6 +778,8 @@ function spawnUnit2(unit, index, faction, totalUnits)
         totalZOffset * zOffset
       )
     )
+    local templateRot = self.getRotation()
+    local rotation = {templateRot.x, templateRot.y + 180, templateRot.z}
     model.setRotation(rotation)
     table.insert(miniData.miniObjs, {
       obj    = model,
@@ -837,13 +846,13 @@ end
 function spawnUnitIDToken(idSpawnPos, idSpawnRot, idNumber)
   idSpawnRot.y = idSpawnRot.y +180
   local idToken = unitIDTokenBag.takeObject({
-      position       = idSpawnPos,
-      rotation       = idSpawnRot,
-      smooth         = false
+    position       = idSpawnPos,
+    rotation       = idSpawnRot,
+    smooth         = false
   })
   local idTokenGUID = idToken.getGUID()
   if idNumber != 1 then
-      idTokenGUID = idToken.setState(idNumber).getGUID()
+    idTokenGUID = idToken.setState(idNumber).getGUID()
   end
 
   return idTokenGUID

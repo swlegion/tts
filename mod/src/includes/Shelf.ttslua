@@ -99,7 +99,12 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
       end
     end
   end
-  return result
+  return {
+    rank   = card.rank,
+    speed  = card.speed,
+    size   = card.size,
+    models = result,
+  }
 end
 
 function Shelf:_fetchUpgradeByName(name)
