@@ -4,62 +4,46 @@
 #include !/RangeRulers
 #include !/data/MovementLinks
 
-
 -- Model Token
 
-function onLoad()
+function onSave()
+  return JSON.encode(unitData)
+end
 
-    -- LOAD VALUES
-    battlefieldTint = Global.getTable("battlefieldTint")
-    baseAddition = Global.getTable("baseAddition")
-    existingTint = battlefieldTint
-    battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
-    cardInfo = CardInfoClass:buildCardInfo()
-    unitInfo = cardInfo.unitCards
-    templateInfo = Global.getTable("templateInfo")
-    dieRollerInfo = Global.getTable("dieRollerInfo")
-    tintedRed = false
-    highlightTints = Global.getTable("highlightTints")
+function onLoad(saveData)
+  -- LOAD VALUES
+  battlefieldTint = Global.getTable("battlefieldTint")
+  baseAddition = Global.getTable("baseAddition")
+  existingTint = battlefieldTint
+  battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
+  cardInfo = CardInfoClass:buildCardInfo()
+  unitInfo = cardInfo.unitCards
+  templateInfo = Global.getTable("templateInfo")
+  dieRollerInfo = Global.getTable("dieRollerInfo")
+  tintedRed = false
+  highlightTints = Global.getTable("highlightTints")
 
-    -- set info
-    inBattlefield = false
-    dieNumber = 1
-    defenceDieNumber = 1
-    atkDieNumber = 1
-    dieObjs = nil
-    selectedUnit = nil
-    activated = false
+  -- set info
+  inBattlefield = false
+  dieNumber = 1
+  defenceDieNumber = 1
+  atkDieNumber = 1
+  dieObjs = nil
+  selectedUnit = nil
+  activated = false
+  moveStatus = true
 
-
-    moveStatus = true
-
-    -- setUp
-
-    unitData = {}
-    if unitName != nil then
-        local unitObj = cardInfo:getUnitByName(unitName, faction)
-        isAToken = true
-        unitData.unitName = unitName
-        unitData.faction = faction
-
-        -- TODO: This is used as a hack for "promote"/"covert ops" currently.
-        if commandType == nil then
-          commandType = unitObj.commandType
-        end
-        unitData.tokenCommandType = commandType
-        
-        unitData.baseSize = unitObj.baseSize
-        unitData.fixedMove = unitObj.fixedMove
-        unitData.strafeMove = unitObj.strafeMove
-        unitData.selectedSpeed = unitObj.selectedSpeed
-        unitData.fixedArc = unitObj.fixedArc
-
-        dieRoller = getObjectFromGUID(dieRollerInfo[colorSide.."DieRollerGUID"])
-
-        setTemplateVariables()
-        initialize()
-    end
-
+  -- setUp
+  if saveData ~= "" then
+    unitData = JSON.decode(saveData)
+  end
+  if unitData ~= nil then
+    print(JSON.encode_pretty(unitData))
+    isAToken = true
+    dieRoller = getObjectFromGUID(dieRollerInfo[unitData.colorSide.."DieRollerGUID"])
+    setTemplateVariables()
+    initialize()
+  end
 end
 
 --
@@ -106,7 +90,7 @@ function getEligibleUnit()
 
             local miniData = unit.getTable("unitData")
             if miniData != nil and miniData.commandType != nil then
-                if unitData.tokenCommandType == miniData.commandType and unit.getVar("colorSide") == colorSide then
+                if unitData.commandType == miniData.commandType and unit.getVar("colorSide") == colorSide then
                     -- add to eligible units
                     eligibleUnitsNumber = eligibleUnitsNumber + 1
                     eligibleUnits[eligibleUnitsNumber] = unit
@@ -204,7 +188,7 @@ function createStandbyButtons()
             click_function = "activate",
             function_owner = self,
             label = "ACT", position = {0, 0.05, 0.4}, width = 350, height = 250, font_size = 120, color = {0.03, 0.6, 0.03, 1}, font_color = {1, 1, 1, 1},
-            tooltip = "Activate nearest " .. unitData.tokenCommandType .. " unit",
+            tooltip = "Activate nearest " .. unitData.commandType .. " unit",
             color = {0.03, 0.6, 0.03}
         })
     else
@@ -1190,7 +1174,7 @@ function getEnemyUnits()
 
     local allUnits = battlefieldZone.getObjects()
     for _, obj in pairs(allUnits) do
-        if obj.getVar("isAMini") == true and obj.getVar("colorSide") != colorSide then
+        if obj.getVar("isAMini") == true and obj.getVar("colorSide") != unitData.colorSide then
             table.insert(miniObjs, obj)
         end
     end
