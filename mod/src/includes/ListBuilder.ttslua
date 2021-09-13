@@ -803,8 +803,7 @@ function spawnUnit2(unit, index, faction, totalUnits)
   }
   if remap[faction] ~= nil then
     faction = remap[faction]
-  end
-  print(result.rank)
+  end)
   local commandType = faction:lower() .. result.rank:lower():gsub("^%l", string.upper)
   local commandTray = getObjectFromGUID(commandTokenTrayData[colorSide][commandType])
   local pos = commandTray.getPosition()
