@@ -305,7 +305,7 @@ function initializeCommandToken(cData)
   strColor = strColor:gsub("^%l", string.upper)
 
   tokenObj.setName(strColor .. " " .. cData.faction:gsub("^%l", string.upper) .. " " .. cData.rank:gsub("^%l", string.upper) .. " Command Token")
-  local luaScript = "commandType = '"..cData.commandType.."'\ncolorSide = '"..colorSide.."'\nfaction = '"..cData.faction.."'\n"..listBuilder.tokenScript
+  local luaScript = "unitName = '"..cData.varName.."'" .. "\ncommandType = '"..cData.commandType.."'\ncolorSide = '"..colorSide.."'\nfaction = '"..cData.faction.."'\n"..listBuilder.tokenScript
   tokenObj.setLuaScript(luaScript)
 
 end
@@ -807,6 +807,7 @@ function spawnUnit2(unit, index, faction, totalUnits)
   rot.y = rot.y + 180
 
   initializeCommandToken({
+    varName = name:lower(),
     commandType = commandType,
     pos = pos,
     rot = rot,
