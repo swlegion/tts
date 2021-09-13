@@ -54,8 +54,9 @@ export default async function buildDeckSchemaLua(
     const [faction, ranks] = factionAndRanks;
     lua.push(`    [${encodeKey(faction)}] = {`);
     Object.entries(ranks as object).forEach((rankAndUnits) => {
-      const [_rank, units] = rankAndUnits;
+      const [rank, units] = rankAndUnits;
       (units as any[]).forEach((unit) => {
+        unit = { ...unit, rank };
         let { name } = unit;
         if (unit.title) {
           name = `${name} ${unit.title}`;

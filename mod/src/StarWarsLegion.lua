@@ -249,9 +249,6 @@ function onLoad(saveData)
     redSelectedArmyFaction = ""
     blueSelectedArmyFaction = ""
     listBuilder = buildListBuilder()
-
-    -- mini info
-    -- miniInfo = buildMiniInfo()
     cardInfo = CardInfoClass:buildCardInfo()
 
     dieRollerInfo = {}

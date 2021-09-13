@@ -24,7 +24,7 @@ function Shelf:create()
   return meta
 end
 
-function Shelf:spawnUnitModels(faction, name, upgrades)
+function Shelf:spawnUnitModels(faction, name, upgrades, callback)
   -- TODO: Remove remapping.
   local remap = {
     ["rebel"]      = "Rebel",
@@ -37,36 +37,78 @@ function Shelf:spawnUnitModels(faction, name, upgrades)
   end
   local units = self._schema.units[faction:upper()]
   if units == nil then
-    return {
-      self:_spawnDudModel(name, "No matching faction found: \"" .. faction .. "\".")
-    }
+    local model = self:_spawnDudModel(name, "No matching faction found: \"" .. faction .. "\".")
+    if callback ~= nil then
+      callback(model, 1, self._colliders.small[2])
+    end
+    return {model}
   end
   local card = units[name:upper()]
   if card == nil then
-    return {
-      self:_spawnDudModel(name, "No matching unit found.\nFaction: \"" .. faction .. "\".")
-    }
+    local model = self:_spawnDudModel(name, "No matching unit found.\nFaction: \"" .. faction .. "\".")
+    if callback ~= nil then
+      callback(model, 1, self._colliders.small[2])
+    end
+    return {model}
   end
+  local size = self._colliders[card.size][2]
   local minis = card.minis
   if type(minis) == "number" then
     print("Spawning placeholder minis is not yet implemented (" .. name .. ": " .. tostring(minis) .. ")")
     return {}
   end
   local result = {}
-  for _, config in pairs(minis) do
-    table.insert(result, self:_spawnModel(config))
-  end
-  for _, upgrade in ipairs(upgrades) do
-    if upgrade.mini ~= nil then
-      local model = self:_spawnModel(upgrade.mini)
-      if upgrade.leader == true or card.heavyWeaponTeam == true then
-        table.insert(result, 1, model)
-      else
+  for _, upgradeName in ipairs(upgrades) do
+    local upgrade = self:_fetchUpgradeByName(upgradeName)
+    -- TODO: Handle missing upgrade more gracefully.
+    if upgrade ~= nil then
+      if upgrade.mini ~= nil and (upgrade.leader == true or card.heavyWeaponTeam == true) then
+        local model = self:_spawnModel(upgrade.mini)
+        model.setName(upgrade.name .. " (Unit Leader)")
         table.insert(result, model)
+        if callback ~= nil then
+          callback(model, #result, size)
+        end
+        break
       end
     end
   end
-  return result
+  for _, config in pairs(minis) do
+    local model = self:_spawnModel(config)
+    table.insert(result, model)
+    if #result == 1 then
+      model.setName(name .. " (Unit Leader)")
+    else
+      model.setName(name)
+    end
+    if callback ~= nil then
+      callback(model, #result, size)
+    end
+  end
+  for _, upgradeName in ipairs(upgrades) do
+    local upgrade = self:_fetchUpgradeByName(upgradeName)
+    -- TODO: Handle missing upgrade more gracefully.
+    if upgrade ~= nil then
+      if upgrade.mini ~= nil and upgrade.leader ~= true and card.heavyWeaponTeam ~= true then
+        local model = self:_spawnModel(upgrade.mini)
+        model.setName(upgrade.name)
+        table.insert(result, model)
+        if callback ~= nil then
+          callback(model, #result, size)
+        end
+      end
+    end
+  end
+  return {
+    rank   = card.rank,
+    speed  = card.speed,
+    size   = card.size,
+    models = result,
+  }
+end
+
+function Shelf:_fetchUpgradeByName(name)
+  return self._schema.upgrades[name:upper()]
 end
 
 function Shelf:_spawnDudModel(name, description)
@@ -92,7 +134,7 @@ function Shelf:_spawnModel(miniConfig)
     })
     mini.setCustomObject({
       diffuse = miniConfig.diffuse,
-      mesh = mesh,
+      mesh = miniConfig.mesh,
       collider = self._colliders[miniConfig.base],
       type = 1,
       material = 3,
