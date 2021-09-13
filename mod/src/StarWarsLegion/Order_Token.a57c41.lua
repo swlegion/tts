@@ -38,7 +38,6 @@ function onLoad(saveData)
     unitData = JSON.decode(saveData)
   end
   if unitData ~= nil then
-    print(JSON.encode_pretty(unitData))
     isAToken = true
     dieRoller = getObjectFromGUID(dieRollerInfo[unitData.colorSide.."DieRollerGUID"])
     setTemplateVariables()
@@ -89,8 +88,9 @@ function getEligibleUnit()
             -- check eligibility
 
             local miniData = unit.getTable("unitData")
+            local isAToken = unit.getVar("isAToken")
             if miniData != nil and miniData.commandType != nil then
-                if unitData.commandType == miniData.commandType and unit.getVar("colorSide") == colorSide then
+                if isAToken != true and unitData.commandType == miniData.commandType and unit.getVar("colorSide") == unitData.colorSide then
                     -- add to eligible units
                     eligibleUnitsNumber = eligibleUnitsNumber + 1
                     eligibleUnits[eligibleUnitsNumber] = unit
@@ -103,7 +103,6 @@ function getEligibleUnit()
                         selectedUnitObj = unit
                         selectedUnitNumber = eligibleUnitsNumber
                         closestDistance = distance
-
                     end
                 end
             end
@@ -218,22 +217,21 @@ function standby()
 end
 ------------------------------------------------- ACTIVATE ------------------------------------------------------------
 function activate()
-    getEligibleUnit()
-    if selectedUnitObj != nil then
-        moveDirection = "forward"
-        activated = true
-        self.clearButtons()
-        getSelectedUnitObjVariables()
-        setTemplateVariables()
+  getEligibleUnit()
+  if selectedUnitObj != nil then
+    moveDirection = "forward"
+    activated = true
+    self.clearButtons()
+    getSelectedUnitObjVariables()
+    setTemplateVariables()
 
-        highlightUnit(selectedUnitObj.getTable("miniGUIDs"),{0,1,0})
-        highlightCard(getObjectFromGUID(selectedUnitObj.getVar("cardGUID")))
+    highlightUnit(selectedUnitObj.getTable("miniGUIDs"),{0,1,0})
+    highlightCard(getObjectFromGUID(selectedUnitObj.getVar("cardGUID")))
 
-        resetButtons()
-    else
-        standby()
-    end
-
+    resetButtons()
+  else
+    standby()
+  end
 end
 ------------------------------------------------- ResetButtons------------------------------------------------------------
 function resetButtons()
