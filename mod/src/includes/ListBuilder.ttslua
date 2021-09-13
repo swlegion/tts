@@ -794,7 +794,31 @@ function spawnUnit2(unit, index, faction, totalUnits)
     spawnLoadoutBag(name, loadout, templatePos, self.getRotation())
   end
 
-  -- TODO: Spawn command tokens.
+  -- TODO: Remove remapping.
+  local remap = {
+    ["rebel"]      = "Rebel",
+    ["imperial"]   = "Empire",
+    ["separatist"] = "Separatist",
+    ["republic"]   = "Republic",
+  }
+  if remap[faction] ~= nil then
+    faction = remap[faction]
+  end
+  print(result.rank)
+  local commandType = faction:lower() .. result.rank:lower():gsub("^%l", string.upper)
+  local commandTray = getObjectFromGUID(commandTokenTrayData[colorSide][commandType])
+  local pos = commandTray.getPosition()
+  pos.y = pos.y + 0.5 + (0.2 * n)
+  local rot = self.getRotation()
+  rot.y = rot.y + 180
+
+  initializeCommandToken({
+    commandType = commandType,
+    pos = pos,
+    rot = rot,
+    faction = faction,
+    rank = result.rank,
+  })
 end
 
 function spawnArmyFromDisk()
