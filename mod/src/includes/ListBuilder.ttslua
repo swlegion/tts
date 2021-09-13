@@ -618,6 +618,7 @@ function spawnUnit(unit, index, faction, totalUnits)
     })
   end)
 
+  miniData.baseSize = result.size
   initializeMini(miniData)
 
   if #loadout > 0 then
@@ -685,7 +686,13 @@ function initializeMini(pMiniTable)
       for n, objEntry in pairs(pMiniTable.miniObjs) do
         miniGUIDsScript = miniGUIDsScript .. "miniGUIDs["..n.."] = '" .. objEntry.obj.getGUID() .. "'\n"
       end
-      selectedMiniScript = selectedMiniScript .. miniGUIDsScript .. "cardGUID = '" .. pMiniTable.unitCardObj.getGUID() .. "'\n unitName = \""..pMiniTable.name:lower() .. "\"\n unitID = " .. pMiniTable.unitID .. "\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID .. "\"\n" .. listBuilder.modelMiniScript
+      selectedMiniScript = selectedMiniScript .. miniGUIDsScript .. 
+        "cardGUID = \"" .. pMiniTable.unitCardObj.getGUID() .. 
+        "\"\n unitName = \""..pMiniTable.name:lower() .. 
+        "\"\n baseSize = \""..pMiniTable.baseSize .. 
+        "\"\n unitID = \"" .. pMiniTable.unitID .. 
+        "\"\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID .. 
+        "\"\n" .. listBuilder.modelMiniScript
     else
       objEntry.obj.use_snap_points = false
     end

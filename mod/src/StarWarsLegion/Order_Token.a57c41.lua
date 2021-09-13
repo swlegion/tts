@@ -1,6 +1,4 @@
 #include !/common/Math
-#include !/data/CardInfo_new
-#include !/data/MiniInfo
 #include !/RangeRulers
 #include !/data/MovementLinks
 
@@ -16,8 +14,6 @@ function onLoad(saveData)
   baseAddition = Global.getTable("baseAddition")
   existingTint = battlefieldTint
   battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
-  cardInfo = CardInfoClass:buildCardInfo()
-  unitInfo = cardInfo.unitCards
   templateInfo = Global.getTable("templateInfo")
   dieRollerInfo = Global.getTable("dieRollerInfo")
   tintedRed = false
@@ -882,7 +878,6 @@ function attack()
         font_color = {1, 2, 1}
     })
     attackMode()
-
 end
 
 function targetingMode()
@@ -958,7 +953,7 @@ function attackMenu(attackTargetObj)
     --
     -- it's possible we can use the actual collider height of the mini in the
     -- future in order to tune this.
-    local buttonHeight = unitInfo[leaderUnitName].buttonHeight
+    local buttonHeight = 2
 
 
     _G["addIon"..self.getGUID()] = function() addIon(attackTargetObj) end
@@ -1088,7 +1083,7 @@ end
 
 function createAttackButton(leaderObj)
     local leaderUnitName = leaderObj.getVar("unitName")
-    local buttonHeight = unitInfo[leaderUnitName].buttonHeight
+    local buttonHeight = 2
 
     _G["attackMenu"..leaderObj.getGUID()] = function() attackMenu(leaderObj) end
 
@@ -1109,7 +1104,7 @@ function isMiniOnTable(mini, allUnits)
 function createRangeButton(leaderObj)
     local selectedUnitObjUnitName = selectedUnitObj.getVar("unitName")
     local allUnitsOnTable = battlefieldZone.getObjects()
-    local enemyLeaderUnitName = leaderObj.getVar("unitName")
+    local enemyBaseSize = leaderObj.getVar("baseSize")
     local enemyMinis = leaderObj.getTable("miniGUIDs")
     local lowestDistance = 99
     for k, guidEntry in pairs(enemyMinis) do
@@ -1123,14 +1118,14 @@ function createRangeButton(leaderObj)
         end
     end
 
-    lowestDistance = lowestDistance - templateInfo.baseRadius[unitInfo[enemyLeaderUnitName].baseSize]/2 - templateInfo.baseRadius[unitInfo[selectedUnitObjUnitName].baseSize]/2
+    lowestDistance = lowestDistance - templateInfo.baseRadius[enemyBaseSize]/2 - templateInfo.baseRadius[enemyBaseSize]/2
 
     finalRange = math.ceil(lowestDistance/6)
     if finalRange > 4 then
         finalRange = ">4"
     end
 
-    local buttonHeight = unitInfo[enemyLeaderUnitName].buttonHeight
+    local buttonHeight = 2
     local data = {click_function = "dud", function_owner = self, label = finalRange, position = {0, buttonHeight, 0}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 900, height = 700, font_size = 500, color = {1, 1, 0, 1}, font_color = {0, 0, 0, 1}}
 
     leaderObj.createButton(data)
