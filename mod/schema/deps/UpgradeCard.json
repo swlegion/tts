@@ -5,6 +5,68 @@
   "title": "Upgrade Card",
   "description": "Definition of an upgrade card.",
 
+  "definitions": {
+    "Restriction": {
+      "description": "List-building requirements enforced by the in-mod list builder.",
+      "type": "object",
+
+      "properties": {
+        "alignment": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": ["Dark", "Light"]
+          }
+        },
+
+        "rank": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "./Ranks.json"
+          }
+        },
+
+        "slot": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "./Upgrades.json"
+          }
+        },
+
+        "unit": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+
+        "faction": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "./Factions.json"
+          }
+        },
+
+        "type": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$comment": "TODO: Add unit types.",
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+
+      "minProperties": 1
+    }
+  },
+
   "additionalProperties": false,
 
   "properties": {
@@ -54,6 +116,25 @@
     "points": {
       "type": "number",
       "minimum": 0
+    },
+
+    "restrictions": {
+      "type": "object",
+      "minProperties": 1,
+
+      "properties": {
+        "include": {
+          "$ref": "#/definitions/Restriction"
+        },
+
+        "exclude": {
+          "$ref": "#/definitions/Restriction"
+        },
+
+        "override": {
+          "$ref": "#/definitions/Restriction"
+        }
+      }
     }
   },
 
