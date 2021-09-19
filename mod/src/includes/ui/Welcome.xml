@@ -55,7 +55,6 @@
           - <b>Bugs</b>: The in-game list builder ..
             .. can spawn templates in a wrong position.
             .. allows upgrades that were hidden before.
-            .. does not show points.
 
           (Since last <i>Stable</i>)
 

@@ -248,7 +248,8 @@
               "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034326/44C2D4E2EE50B69C41DDDEA5963FC50152F9AE57/",
               "pip": 3
             }
-          ]
+          ],
+          "required": ["I've Altered The Deal"]
         }
       ],
       "Operative": [
@@ -698,7 +699,6 @@
           "points": 34,
           "speed": 3,
           "upgrades": {
-            "Heavy Weapon": 2,
             "Training": 1,
             "Comms": 1,
             "Gear": 1,
@@ -710,7 +710,8 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357880886/06542D3BD6F03DC43D9E675680F86F2964B210F9/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/"
             }
-          ]
+          ],
+          "required": ["Ursa Wren", "Tristan Wren"]
         },
         {
           "name": "Wookiee Warriors",
@@ -1026,7 +1027,8 @@
           "upgrades": {
             "Training": 2,
             "Gear": 1,
-            "Armament": 1
+            "Armament": 1,
+            "Counterpart": 1
           },
           "minis": [
             {
@@ -1092,7 +1094,8 @@
               "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033151/86AA97C5A365099681E54FA21C2B9D6F08519AB7/",
               "pip": 3
             }
-          ]
+          ],
+          "required": ["Developing Sympathies"]
         }
       ],
       "Operative": [
@@ -1483,7 +1486,6 @@
           "points": 34,
           "speed": 2,
           "upgrades": {
-            "Heavy Weapon": 2,
             "Training": 2,
             "Comms": 1,
             "Gear": 1,
@@ -1494,7 +1496,8 @@
               "bundle": "http://cloud-3.steamusercontent.com/ugc/1618438238122999341/C1AEEE50112F060BA8E5CAFBC16F417A0EF7C3C0/",
               "secondary": "http://cloud-3.steamusercontent.com/ugc/1618438238123043414/B7E9660E470DC070545782406C29F1E1356A5685/"
             }
-          ]
+          ],
+          "required": ["Gideon Hask", "Del Meeko"]
         }
       ],
       "Support": [
@@ -1718,7 +1721,8 @@
               "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033655/AA08CE1F53847CE3CCA7233A1060886F8EBE500F/",
               "pip": 3
             }
-          ]
+          ],
+          "required": ["Not A Store The Jedi Would Tell"]
         },
         {
           "name": "Clone Commander",
@@ -2814,6 +2818,26 @@
         "points": 3
       }
     ],
+    "Counterpart": [
+      {
+        "name": "C-3PO",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505080628828/F6A01DB4DFDB1A518FC4E373D72237AB1B31300B/",
+        "points": 15,
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456807069/DE7E32B39455DB5111769436FD0C5BFDA3841268/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/777357228032306506/D60CB8A1159723917EF1831D4042318A67458A7A/"
+        }
+      },
+      {
+        "name": "Iden's ID10 Seeker Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505080628898/0AD977B53010124C73F966F87EC1E3CBB0F18255/",
+        "points": 15,
+        "mini": {
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/770611889399999868/37F150131345FF1F47592A96239395A583AAE5EA/",
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/773996263557020821/1E2319EBFD85D7748450F40689A1315696052EFC/"
+        }
+      }
+    ],
     "Crew": [
       {
         "name": "A-300 Rifle Gunner",
@@ -2864,6 +2888,23 @@
         "name": "Unstable R5 Astromech",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146312/15D87007EAFBBAAF2EE385C446C0287163D47BEB/",
         "points": 6
+      }
+    ],
+    "Flaw": [
+      {
+        "name": "Developing Sympathies",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505080628668/E7A23D34D591C5EF876B320534798142C0A460EE/",
+        "points": 0
+      },
+      {
+        "name": "I've Altered The Deal",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505080628591/9F5E8A23795A68A3AA5FE82B933F4BDA78084207/",
+        "points": 0
+      },
+      {
+        "name": "Not A Store The Jedi Would Tell",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505080628743/9BF0AAE54D0CF62B22871F7E99B1DCD5617E05DA/",
+        "points": 0
       }
     ],
     "Force": [

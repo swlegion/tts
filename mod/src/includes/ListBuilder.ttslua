@@ -622,7 +622,11 @@ function spawnUnit(unit, index, faction, totalUnits)
   if remap[faction] ~= nil then
     faction = remap[faction]
   end
-  local commandType = faction:lower() .. result.rank:lower():gsub("^%l", string.upper)
+  local rankAndRemap = result.rank
+  if rankAndRemap == "Special Forces" then
+    rankAndRemap = "specialForces"
+  end
+  local commandType = faction:lower() .. rankAndRemap:lower():gsub("^%l", string.upper)
   local commandName = colorSide:gsub("^%l", string.upper) .. 
                       " " .. faction:gsub("^%l", string.upper) ..
                       " " .. result.rank:gsub("^%l", string.upper) ..

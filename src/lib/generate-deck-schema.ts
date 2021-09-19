@@ -13,7 +13,7 @@ function formatData(
     return [
       ...data.map((value) => {
         if (typeof value === 'string') {
-          value = `\"${value.replace(/\"/g, '\\"')}\"`;
+          value = `${' '.repeat(indent)}\"${value.replace(/\"/g, '\\"')}\",`;
         } else if (typeof value === 'object') {
           value = `${' '.repeat(indent)}{\n${formatData(value, indent + 2).join(
             '\n',
