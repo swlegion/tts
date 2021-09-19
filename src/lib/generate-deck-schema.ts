@@ -93,6 +93,7 @@ export default async function buildDeckSchemaLua(
     allUpgradesSorted.push({
       ...(upgrade.flip as { [key: string]: unknown }),
       type: (upgrade as { [key: string]: unknown }).type,
+      points: (upgrade as { [key: string]: unknown }).points,
       flip: {
         name: upgrade.name,
         image: upgrade.image,
