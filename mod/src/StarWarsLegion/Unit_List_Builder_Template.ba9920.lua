@@ -205,6 +205,11 @@ function unitSubMenu(selectedRank)
             local nameToDisplay = entry.name
             local fontSize = correctStringLength(nameToDisplay)
             local relativeIndex = i - (unitCardPage * 6)
+            local tooltip = "Spawn ".. entry.name
+            if entry.title then
+              tooltip = tooltip .. " (" .. entry.title .. ")" 
+            end
+            tooltip = tooltip .." Unit Card"
 
             self.createButton({
                 click_function = "subMenu"..i,
@@ -217,7 +222,7 @@ function unitSubMenu(selectedRank)
                 rotation       = {0,180,0},
                 color          = {0.1764, 0.1764, 0.1764, 0.01},
                 font_color     = {0, 0, 0, 100},
-                tooltip        = "Spawn ".. entry.name .." Unit Card"
+                tooltip        = tooltip,
             })
         else
             createDudMenuButton({0.93, 0.28, 2.48-(i*0.35)})
