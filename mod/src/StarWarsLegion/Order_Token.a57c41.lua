@@ -1,65 +1,34 @@
 #include !/common/Math
-#include !/data/CardInfo_new
-#include !/data/MiniInfo
 #include !/RangeRulers
 #include !/data/MovementLinks
 
-
 -- Model Token
 
-function onLoad()
+function onSave()
+  return JSON.encode(unitData)
+end
 
-    -- LOAD VALUES
-    battlefieldTint = Global.getTable("battlefieldTint")
-    baseAddition = Global.getTable("baseAddition")
-    existingTint = battlefieldTint
-    battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
-    cardInfo = CardInfoClass:buildCardInfo()
-    unitInfo = cardInfo.unitCards
-    templateInfo = Global.getTable("templateInfo")
-    dieRollerInfo = Global.getTable("dieRollerInfo")
-    tintedRed = false
-    highlightTints = Global.getTable("highlightTints")
+function onLoad(saveData)
+  -- LOAD VALUES
+  _G.battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
+  _G.templateInfo = Global.getTable("templateInfo")
+  _G.highlightTints = Global.getTable("highlightTints")
 
-    -- set info
-    inBattlefield = false
-    dieNumber = 1
-    defenceDieNumber = 1
-    atkDieNumber = 1
-    dieObjs = nil
-    selectedUnit = nil
-    activated = false
+  -- set info
+  _G.selectedUnit = nil
+  _G.activated = false
 
-
-    moveStatus = true
-
-    -- setUp
-
-    unitData = {}
-    if unitName != nil then
-        local unitObj = cardInfo:getUnitByName(unitName, faction)
-        isAToken = true
-        unitData.unitName = unitName
-        unitData.faction = faction
-
-        -- TODO: This is used as a hack for "promote"/"covert ops" currently.
-        if commandType == nil then
-          commandType = unitObj.commandType
-        end
-        unitData.tokenCommandType = commandType
-        
-        unitData.baseSize = unitObj.baseSize
-        unitData.fixedMove = unitObj.fixedMove
-        unitData.strafeMove = unitObj.strafeMove
-        unitData.selectedSpeed = unitObj.selectedSpeed
-        unitData.fixedArc = unitObj.fixedArc
-
-        dieRoller = getObjectFromGUID(dieRollerInfo[colorSide.."DieRollerGUID"])
-
-        setTemplateVariables()
-        initialize()
-    end
-
+  -- setUp
+  if saveData ~= "" then
+    _G.unitData = JSON.decode(saveData)
+  end
+  if _G.unitData ~= nil then
+    local dieRollerInfo = Global.getTable("dieRollerInfo")
+    _G.isAToken = true
+    _G.dieRoller = getObjectFromGUID(dieRollerInfo[_G.unitData.colorSide.."DieRollerGUID"])
+    setTemplateVariables()
+    initialize()
+  end
 end
 
 --
@@ -105,8 +74,9 @@ function getEligibleUnit()
             -- check eligibility
 
             local miniData = unit.getTable("unitData")
+            local isAMini = unit.getVar("isAMini")
             if miniData != nil and miniData.commandType != nil then
-                if unitData.tokenCommandType == miniData.commandType and unit.getVar("colorSide") == colorSide then
+                if isAMini == true and unitData.commandType == miniData.commandType and unit.getVar("colorSide") == unitData.colorSide then
                     -- add to eligible units
                     eligibleUnitsNumber = eligibleUnitsNumber + 1
                     eligibleUnits[eligibleUnitsNumber] = unit
@@ -119,7 +89,6 @@ function getEligibleUnit()
                         selectedUnitObj = unit
                         selectedUnitNumber = eligibleUnitsNumber
                         closestDistance = distance
-
                     end
                 end
             end
@@ -136,12 +105,12 @@ function getEligibleUnit()
 end
 
 function highlightUnit(selectedMiniGUIDs, highlightColor)
-    for k, guidEntry in pairs(selectedMiniGUIDs) do
-        obj = getObjectFromGUID(guidEntry)
-        if obj != nil then
-            obj.highlightOn(highlightColor)
-        end
+  for _, guidEntry in ipairs(selectedMiniGUIDs) do
+    obj = getObjectFromGUID(guidEntry)
+    if obj != nil then
+      obj.highlightOn(highlightColor)
     end
+  end
 end
 
 function unhighlightUnit(selectedMiniGUIDs)
@@ -204,7 +173,7 @@ function createStandbyButtons()
             click_function = "activate",
             function_owner = self,
             label = "ACT", position = {0, 0.05, 0.4}, width = 350, height = 250, font_size = 120, color = {0.03, 0.6, 0.03, 1}, font_color = {1, 1, 1, 1},
-            tooltip = "Activate nearest " .. unitData.tokenCommandType .. " unit",
+            tooltip = "Activate nearest " .. unitData.commandType .. " unit",
             color = {0.03, 0.6, 0.03}
         })
     else
@@ -234,22 +203,21 @@ function standby()
 end
 ------------------------------------------------- ACTIVATE ------------------------------------------------------------
 function activate()
-    getEligibleUnit()
-    if selectedUnitObj != nil then
-        moveDirection = "forward"
-        activated = true
-        self.clearButtons()
-        getSelectedUnitObjVariables()
-        setTemplateVariables()
+  getEligibleUnit()
+  if selectedUnitObj != nil then
+    moveDirection = "forward"
+    activated = true
+    self.clearButtons()
+    getSelectedUnitObjVariables()
+    setTemplateVariables()
 
-        highlightUnit(selectedUnitObj.getTable("miniGUIDs"),{0,1,0})
-        highlightCard(getObjectFromGUID(selectedUnitObj.getVar("cardGUID")))
+    highlightUnit(selectedUnitObj.getTable("miniGUIDs"),{0,1,0})
+    highlightCard(getObjectFromGUID(selectedUnitObj.getVar("cardGUID")))
 
-        resetButtons()
-    else
-        standby()
-    end
-
+    resetButtons()
+  else
+    standby()
+  end
 end
 ------------------------------------------------- ResetButtons------------------------------------------------------------
 function resetButtons()
@@ -900,7 +868,6 @@ function attack()
         font_color = {1, 2, 1}
     })
     attackMode()
-
 end
 
 function targetingMode()
@@ -936,6 +903,7 @@ function exitTargetingMode()
     attackModeOn = false
     clearRangeRulers()
     unhighlightEnemies()
+    clearAttackLine()
 end
 
 function exitAttackMode()
@@ -967,16 +935,13 @@ function attackMenu(attackTargetObj)
     highlightEnemy(attackTargetObj)
     clearRangeRulers()
 
-    -- attack menu buttons
-    local leaderUnitName = attackTargetObj.getVar("unitName")
-
     -- this used to be configurable per unit type, which meant that we made the
     -- ion/wound/suppression buttons vertically higher to make up for variable
     -- height minis.
     --
     -- it's possible we can use the actual collider height of the mini in the
     -- future in order to tune this.
-    local buttonHeight = unitInfo[leaderUnitName].buttonHeight
+    local buttonHeight = 2
 
 
     _G["addIon"..self.getGUID()] = function() addIon(attackTargetObj) end
@@ -1105,8 +1070,7 @@ function getAngle(originObj, angleTargetObj)
 end
 
 function createAttackButton(leaderObj)
-    local leaderUnitName = leaderObj.getVar("unitName")
-    local buttonHeight = unitInfo[leaderUnitName].buttonHeight
+    local buttonHeight = 2
 
     _G["attackMenu"..leaderObj.getGUID()] = function() attackMenu(leaderObj) end
 
@@ -1127,7 +1091,7 @@ function isMiniOnTable(mini, allUnits)
 function createRangeButton(leaderObj)
     local selectedUnitObjUnitName = selectedUnitObj.getVar("unitName")
     local allUnitsOnTable = battlefieldZone.getObjects()
-    local enemyLeaderUnitName = leaderObj.getVar("unitName")
+    local enemyBaseSize = leaderObj.getVar("baseSize")
     local enemyMinis = leaderObj.getTable("miniGUIDs")
     local lowestDistance = 99
     for k, guidEntry in pairs(enemyMinis) do
@@ -1141,14 +1105,14 @@ function createRangeButton(leaderObj)
         end
     end
 
-    lowestDistance = lowestDistance - templateInfo.baseRadius[unitInfo[enemyLeaderUnitName].baseSize]/2 - templateInfo.baseRadius[unitInfo[selectedUnitObjUnitName].baseSize]/2
+    lowestDistance = lowestDistance - templateInfo.baseRadius[enemyBaseSize]/2 - templateInfo.baseRadius[enemyBaseSize]/2
 
     finalRange = math.ceil(lowestDistance/6)
     if finalRange > 4 then
         finalRange = ">4"
     end
 
-    local buttonHeight = unitInfo[enemyLeaderUnitName].buttonHeight
+    local buttonHeight = 2
     local data = {click_function = "dud", function_owner = self, label = finalRange, position = {0, buttonHeight, 0}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 900, height = 700, font_size = 500, color = {1, 1, 0, 1}, font_color = {0, 0, 0, 1}}
 
     leaderObj.createButton(data)
@@ -1158,44 +1122,37 @@ function dud()
 end
 
 function highlightEnemies()
-    enemyLeaders = getEnemyUnits()
-
-    for _, leader in pairs(enemyLeaders) do
-        local enemyID = leader.getVar("unitID")
-        local enemyMinis = leader.getTable("miniGUIDs")
-        highlightUnit(enemyMinis,highlightTints[enemyID])
-    end
+  for _, leader in ipairs(getEnemyUnits()) do
+    highlightEnemy(leader)
+  end
 end
 
 function highlightEnemy(leader)
-    local enemyID = leader.getVar("unitID")
-    local enemyMinis = leader.getTable("miniGUIDs")
-    highlightUnit(enemyMinis, highlightTints[enemyID])
+  local enemyID = leader.getVar("unitID")
+  local enemyMinis = leader.getTable("miniGUIDs")
+  highlightUnit(enemyMinis, highlightTints[enemyID])
 end
 
 function unhighlightEnemies()
-    enemyLeaders = getEnemyUnits()
-
-    for _, leader in pairs(enemyLeaders) do
-        local enemyID = leader.getVar("unitID")
-        local enemyMinis = leader.getTable("miniGUIDs")
-        unhighlightUnit(enemyMinis)
-        leader.call("resetUnitButtons")
-    end
+  for _, leader in ipairs(getEnemyUnits()) do
+    local enemyID = leader.getVar("unitID")
+    local enemyMinis = leader.getTable("miniGUIDs")
+    unhighlightUnit(enemyMinis)
+    leader.call("resetUnitButtons")
+  end
 end
 
 function getEnemyUnits()
-    -- tableObj
-    local miniObjs = {}
+  local miniObjs = {}
+  local allUnits = battlefieldZone.getObjects()
 
-    local allUnits = battlefieldZone.getObjects()
-    for _, obj in pairs(allUnits) do
-        if obj.getVar("isAMini") == true and obj.getVar("colorSide") != colorSide then
-            table.insert(miniObjs, obj)
-        end
+  for _, obj in pairs(allUnits) do
+    if obj.getVar("isAMini") == true and obj.getVar("colorSide") != unitData.colorSide then
+      table.insert(miniObjs, obj)
     end
+  end
 
-    return miniObjs
+  return miniObjs
 end
 
 

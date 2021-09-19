@@ -284,30 +284,31 @@ end
 -- SPAWN UNITS AND TEMPLATES FOR LIST CREATION ---------------------------------
 function initializeCommandToken(cData)
   local tokenObj = spawnObject({
-      type           = "Custom_Model",
-      position       = cData.pos,
-      rotation       = cData.rot
+    type           = "Custom_Model",
+    position       = cData.pos,
+    rotation       = cData.rot
   })
-
   tokenObj.setCustomObject({
-      mesh = "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
-      collider = "http://cloud-3.steamusercontent.com/ugc/785234780866339915/85F7E717B9EFBE0396126CA673DF17EAFEC7D451/",
-      diffuse = commandTokenData[colorSide][cData.commandType],
-      type = 0,
-      material = 3
+    mesh = "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
+    collider = "http://cloud-3.steamusercontent.com/ugc/785234780866339915/85F7E717B9EFBE0396126CA673DF17EAFEC7D451/",
+    diffuse = commandTokenData[colorSide][cData.commandType],
+    type = 0,
+    material = 3
   })
-
-  tokenObj.setPosition(cData.pos)
-  tokenObj.setRotation(cData.rot)
-
-  local strColor = colorSide
-
-  strColor = strColor:gsub("^%l", string.upper)
-
+  local strColor = colorSide:gsub("^%l", string.upper)
   tokenObj.setName(strColor .. " " .. cData.faction:gsub("^%l", string.upper) .. " " .. cData.rank:gsub("^%l", string.upper) .. " Command Token")
-  local luaScript = "unitName = '"..cData.varName.."'" .. "\ncommandType = '"..cData.commandType.."'\ncolorSide = '"..colorSide.."'\nfaction = '"..cData.faction.."'\n"..listBuilder.tokenScript
-  tokenObj.setLuaScript(luaScript)
-
+  tokenObj.setLuaScript(listBuilder.tokenScript)
+  tokenObj.setTable("unitData", {
+    commandType   = cData.commandType,
+    baseSize      = cData.baseSize,
+    fixedMove     = cData.baseSize:lower() ~= "small",
+    fixedArc      = cData.baseSize:lower() ~= "small",
+    strafeMove    = cData.baseSize:lower() ~= "small",
+    selectedSpeed = cData.selectedSpeed,
+    faction       = cData.faction,
+    rank          = cData.rank,
+    colorSide     = colorSide,
+  })
 end
 
 function spawnUnitCard(faction, name, position, rotation)
@@ -617,6 +618,7 @@ function spawnUnit(unit, index, faction, totalUnits)
     })
   end)
 
+  miniData.baseSize = result.size
   initializeMini(miniData)
 
   if #loadout > 0 then
@@ -638,12 +640,13 @@ function spawnUnit(unit, index, faction, totalUnits)
   rot.y = rot.y + 180
 
   initializeCommandToken({
-    varName = name:lower(),
-    commandType = commandType,
-    pos = pos,
-    rot = rot,
-    faction = faction,
-    rank = result.rank,
+    commandType   = commandType,
+    pos           = pos,
+    rot           = rot,
+    baseSize      = result.size,
+    selectedSpeed = result.speed,
+    faction       = faction,
+    rank          = result.rank,
   })
 end
 
@@ -683,7 +686,13 @@ function initializeMini(pMiniTable)
       for n, objEntry in pairs(pMiniTable.miniObjs) do
         miniGUIDsScript = miniGUIDsScript .. "miniGUIDs["..n.."] = '" .. objEntry.obj.getGUID() .. "'\n"
       end
-      selectedMiniScript = selectedMiniScript .. miniGUIDsScript .. "cardGUID = '" .. pMiniTable.unitCardObj.getGUID() .. "'\n unitName = \""..pMiniTable.name:lower() .. "\"\n unitID = " .. pMiniTable.unitID .. "\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID .. "\"\n" .. listBuilder.modelMiniScript
+      selectedMiniScript = selectedMiniScript .. miniGUIDsScript .. 
+        "cardGUID = \"" .. pMiniTable.unitCardObj.getGUID() .. 
+        "\"\n unitName = \""..pMiniTable.name:lower() .. 
+        "\"\n baseSize = \""..pMiniTable.baseSize .. 
+        "\"\n unitID = " .. pMiniTable.unitID .. 
+        "\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID .. 
+        "\"\n" .. listBuilder.modelMiniScript
     else
       objEntry.obj.use_snap_points = false
     end
