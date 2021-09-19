@@ -378,39 +378,45 @@ function Deck:_isUpgradeValidFor(upgrade, unit)
 
   if restrictions then
     if restrictions.include then
-      local skipUnitCheck = false
+      -- If there is a unit test, and we pass, then it's valid.
+      -- There currently are no "<NAME> and <OTHER CONDITION> only upgrades".
+      if restrictions.include.unit then
+        for _, unitName in ipairs(restrictions.include.unit) do
+          if unitName:upper() == unit.name:upper() then
+            return true
+          end
+        end
+      end
+
+      local nonUnitChecks = 0
+      local passedNonUnit = 0
 
       if restrictions.include.faction then
-        skipUnitCheck = true
+        nonUnitChecks = nonUnitChecks + 1
         for _, unitFaction in ipairs(restrictions.include.faction) do
-          if unitFaction:upper() ~= unit.faction:upper() then
-            return false
+          if unitFaction:upper() == unit.faction:upper() then
+            passedNonUnit = passedNonUnit + 1
+            break
           end
         end
       end
 
       if restrictions.include.rank then
-        skipUnitCheck = true
+        nonUnitChecks = nonUnitChecks + 1
         for _, unitRank in ipairs(restrictions.include.rank) do
-          if unitRank:upper() ~= unit.rank:upper() then
-            return false
+          if unitRank:upper() == unit.rank:upper() then
+            passedNonUnit = passedNonUnit + 1
+            break
           end
         end
       end
 
       if restrictions.include.type then
-        skipUnitCheck = true
+        nonUnitChecks = nonUnitChecks + 1
         for _, unitType in ipairs(restrictions.include.type) do
-          if not string.find(unit.type:upper(), unitType:upper()) then
-            return false
-          end
-        end
-      end
-
-      if not skipUnitCheck and restrictions.include.unit then
-        for _, unitName in ipairs(restrictions.include.unit) do
-          if unitName:upper() ~= unit.name:upper() then
-            return false
+          if string.find(unit.type:upper(), unitType:upper()) then
+            passedNonUnit = passedNonUnit + 1
+            break
           end
         end
       end
@@ -425,6 +431,8 @@ function Deck:_isUpgradeValidFor(upgrade, unit)
           end
         end
       end
+
+      return nonUnitChecks > 0 and passedNonUnit == nonUnitChecks
     end
 
     if restrictions.exclude then

@@ -3653,7 +3653,7 @@
         "points": 24,
         "restrictions": {
           "include": {
-            "unit": ["TX-130 Saber-Class Fighter Tank"]
+            "unit": ["B2 Super Battle Droids"]
           }
         }
       },
@@ -4474,7 +4474,7 @@
         "points": 12,
         "restrictions": {
           "include": {
-            "faction": ["Empire"]
+            "type": ["Clone Trooper"]
           }
         }
       },
