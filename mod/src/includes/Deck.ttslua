@@ -378,29 +378,71 @@ function Deck:_isUpgradeValidFor(upgrade, unit)
 
   if restrictions then
     if restrictions.include then
+      -- If there is a unit test, and we pass, then it's valid.
+      -- There currently are no "<NAME> and <OTHER CONDITION> only upgrades".
       if restrictions.include.unit then
         for _, unitName in ipairs(restrictions.include.unit) do
-          if unitName:upper() ~= unit.name:upper() then
-            return false
+          if unitName:upper() == unit.name:upper() then
+            return true
           end
         end
       end
+
+      local nonUnitChecks = 0
+      local passedNonUnit = 0
 
       if restrictions.include.faction then
+        nonUnitChecks = nonUnitChecks + 1
         for _, unitFaction in ipairs(restrictions.include.faction) do
-          if unitFaction:upper() ~= unit.faction:upper() then
-            return false
+          if unitFaction:upper() == unit.faction:upper() then
+            passedNonUnit = passedNonUnit + 1
+            break
           end
         end
       end
 
-      -- TODO: Add support for type.
-      -- TODO: Add support for rank.
-      -- TODO: Add support for alignment.
+      if restrictions.include.rank then
+        nonUnitChecks = nonUnitChecks + 1
+        for _, unitRank in ipairs(restrictions.include.rank) do
+          if unitRank:upper() == unit.rank:upper() then
+            passedNonUnit = passedNonUnit + 1
+            break
+          end
+        end
+      end
+
+      if restrictions.include.type then
+        nonUnitChecks = nonUnitChecks + 1
+        for _, unitType in ipairs(restrictions.include.type) do
+          if string.find(unit.type:upper(), unitType:upper()) then
+            passedNonUnit = passedNonUnit + 1
+            break
+          end
+        end
+      end
+
+      if restrictions.include.alignment and unit.name:upper() ~= "ANAKIN SKYWALKER" then
+        for _, unitAlignment in ipairs(restrictions.include.alignment) do
+          unitAlignment = unitAlignment:upper()
+          if unitAlignment == "LIGHT" then
+            return unit.faction:upper() == "REBEL" or unit.faction:upper() == "REPUBLIC"
+          elseif unitAlignment == "DARK" then
+            return unit.faction:upper() == "EMPIRE" or unit.faction:upper() == "SEPARATIST"
+          end
+        end
+      end
+
+      return nonUnitChecks > 0 and passedNonUnit == nonUnitChecks
     end
 
     if restrictions.exclude then
-      -- TODO: Add support for exclusions.
+      if restrictions.exclude.type then
+        for _, unitType in ipairs(restrictions.exclude.type) do
+          if string.find(unit.type:upper(), unitType:upper()) then
+            return false
+          end
+        end
+      end
     end
   end
 

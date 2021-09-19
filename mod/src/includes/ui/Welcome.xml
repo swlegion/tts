@@ -54,7 +54,8 @@
   
           - <b>Bugs</b>: The in-game list builder ..
             .. can spawn templates in a wrong position.
-            .. allows upgrades that were hidden before.
+            .. doesn't allow B1s to use binocs/scanner.
+            .. doesn't add new upgrade slots for captains/specialist.
 
           (Since last <i>Stable</i>)
 

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://schema.swlegion.dev/deps/UnitTypes.json",
+
+  "title": "Unit types",
+  "description": "Enum of all possible unit types in the game.",
+
+  "enum": [
+    "Droid Trooper",
+    "Clone Trooper",
+    "Creature Trooper",
+    "Emplacement Trooper",
+    "Ground Vehicle",
+    "Repulsor Vehicle",
+    "Trooper",
+    "Wookiee Trooper"
+  ]
+}

@@ -33,6 +33,10 @@
       "$ref": "#/definitions/Bases"
     },
 
+    "type": {
+      "$ref": "./UnitTypes.json"
+    },
+
     "heavyWeaponTeam": {
       "description": "Reqyure a \"Heavy Weapon\" upgrade attached to this unit and make it the unit leader.",
       "enum": [true]
@@ -97,5 +101,5 @@
   },
 
   "type": "object",
-  "required": ["name", "image", "size", "points", "speed", "upgrades"]
+  "required": ["name", "image", "size", "type", "points", "speed", "upgrades"]
 }
