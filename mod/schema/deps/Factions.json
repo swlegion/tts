@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://schema.swlegion.dev/Factions.json",
+  "$id": "https://schema.swlegion.dev/deps/Factions.json",
 
   "title": "Unit factions",
   "description": "Enum of all possible factions in the game.",

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://schema.swlegion.dev/Image.json",
+  "$id": "https://schema.swlegion.dev/deps/Image.json",
 
   "title": "Image resource",
   "description": "Possible image subtypes.",
@@ -16,7 +16,6 @@
       "title": "A URL to an image resource.",
 
       "type": "string",
-      "format": "uri",
       "minLength": 1
     }
   },

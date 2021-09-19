@@ -11,8 +11,7 @@
   "extends": [
     "plugin:json/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "prettier/@typescript-eslint"
+    "prettier"
   ],
   "plugins": ["import", "prettier", "@typescript-eslint"]
 }

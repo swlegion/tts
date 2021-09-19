@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://schema.swlegion.dev/Mini.json",
+  "$id": "https://schema.swlegion.dev/deps/Mini.json",
 
   "title": "Mini resource",
   "description": "Possible mini subtypes.",
@@ -14,16 +14,15 @@
         },
         "mesh": {
           "type": "string",
-          "format": "uri",
           "minLength": 1
         },
         "diffuse": {
           "type": "string",
-          "format": "uri",
           "minLength": 1
         }
       },
 
+      "type": "object",
       "required": ["mesh", "diffuse"]
     },
     {
@@ -34,16 +33,15 @@
         },
         "bundle": {
           "type": "string",
-          "format": "uri",
           "minLength": 1
         },
         "secondary": {
           "type": "string",
-          "format": "uri",
           "minLength": 1
         }
       },
 
+      "type": "object",
       "required": ["bundle"]
     }
   ]

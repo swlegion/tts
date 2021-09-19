@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://schema.swlegion.dev/UnitCardSet.json",
+  "$id": "https://schema.swlegion.dev/deps/UnitCardSet.json",
 
   "title": "A collection of Unit Cards.",
   "description": "A set of unit cards, by faction and rank.",
@@ -15,10 +15,14 @@
 
     "propertyNames": {
       "$ref": "./Ranks.json"
-    }
+    },
+
+    "type": "object"
   },
 
   "propertyNames": {
     "$ref": "./Factions.json"
-  }
+  },
+
+  "type": "object"
 }

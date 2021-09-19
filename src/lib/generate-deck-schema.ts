@@ -5,7 +5,10 @@ function encodeKey(name: string): string {
   return `\"${name.toUpperCase().replace(/\"/g, '\\"')}\"`;
 }
 
-function formatData(data: object, indent: number): string[] {
+function formatData(
+  data: { [key: string]: unknown },
+  indent: number,
+): string[] {
   if (Array.isArray(data)) {
     return [
       ...data.map((value) => {
@@ -26,9 +29,10 @@ function formatData(data: object, indent: number): string[] {
       if (typeof value === 'string') {
         value = `\"${value.replace(/\"/g, '\\"')}\"`;
       } else if (typeof value === 'object') {
-        value = `{\n${formatData(value, indent + 2).join('\n')}${' '.repeat(
-          indent,
-        )}\n${' '.repeat(indent)}}`;
+        value = `{\n${formatData(
+          value as { [key: string]: unknown },
+          indent + 2,
+        ).join('\n')}${' '.repeat(indent)}\n${' '.repeat(indent)}}`;
       }
       if (key.indexOf(' ') !== -1) {
         key = `[\"${key}\"]`;
@@ -53,28 +57,30 @@ export default async function buildDeckSchemaLua(
   Object.entries(units).forEach((factionAndRanks) => {
     const [faction, ranks] = factionAndRanks;
     lua.push(`    [${encodeKey(faction)}] = {`);
-    Object.entries(ranks as object).forEach((rankAndUnits) => {
-      const [rank, units] = rankAndUnits;
-      (units as any[]).forEach((unit) => {
-        unit = { ...unit, rank };
-        let { name } = unit;
-        if (unit.title) {
-          name = `${name} ${unit.title}`;
-        }
-        lua.push(`      [${encodeKey(name)}] = {`);
-        lua.push(...formatData(unit, 8));
-        lua.push('      },');
-      });
-    });
+    Object.entries(ranks as { [key: string]: unknown }).forEach(
+      (rankAndUnits) => {
+        const [rank, units] = rankAndUnits;
+        (units as { [key: string]: unknown }[]).forEach((unit) => {
+          unit = { ...unit, rank };
+          let { name } = unit;
+          if (unit.title) {
+            name = `${name} ${unit.title}`;
+          }
+          lua.push(`      [${encodeKey(name as string)}] = {`);
+          lua.push(...formatData(unit, 8));
+          lua.push('      },');
+        });
+      },
+    );
     lua.push('    },');
   });
 
   lua.push('  },');
 
-  const allUpgradesSorted: any[] = [];
+  const allUpgradesSorted: { [key: string]: unknown }[] = [];
   Object.entries(json['upgrades']).forEach((typeAndUpgrades) => {
     const [type, upgrades] = typeAndUpgrades;
-    (upgrades as any[]).forEach((upgrade) => {
+    (upgrades as { [key: string]: unknown }[]).forEach((upgrade) => {
       allUpgradesSorted.push({ ...upgrade, type });
     });
   });
@@ -85,8 +91,9 @@ export default async function buildDeckSchemaLua(
       return;
     }
     allUpgradesSorted.push({
-      ...upgrade.flip,
-      type: (upgrade as any).type,
+      ...(upgrade.flip as { [key: string]: unknown }),
+      type: (upgrade as { [key: string]: unknown }).type,
+      points: (upgrade as { [key: string]: unknown }).points,
       flip: {
         name: upgrade.name,
         image: upgrade.image,
@@ -95,24 +102,28 @@ export default async function buildDeckSchemaLua(
   });
 
   allUpgradesSorted.sort((a, b) =>
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (a as any).name > (b as any).name ? 1 : -1,
   );
   lua.push('  upgrades = {');
   allUpgradesSorted.forEach((upgrade) => {
-    lua.push(`    [${encodeKey(upgrade.name)}] = {`);
+    lua.push(`    [${encodeKey(upgrade.name as string)}] = {`);
     lua.push(...formatData(upgrade, 6));
     lua.push('    },');
   });
   lua.push('  },');
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const allCommandsSorted: any[] = Object.entries(json['commands'])
     .map((pipAndCommands) => {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const [_pip, commands] = pipAndCommands;
       return commands;
     })
     .flat();
 
   allCommandsSorted.sort((a, b) =>
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (a as any).name > (b as any).name ? 1 : -1,
   );
   lua.push('  commands = {');
@@ -128,16 +139,18 @@ export default async function buildDeckSchemaLua(
   Object.entries(battlefield).forEach((typeAndCategories) => {
     const [type, categories] = typeAndCategories;
     lua.push(`    ${type.toLowerCase()} = {`);
-    Object.entries(categories as object).forEach((categoryAndCards) => {
-      const [category, cards] = categoryAndCards;
-      lua.push(`      ${category.toLowerCase()} = {`);
-      (cards as any[]).forEach((card) => {
-        lua.push(`        [${encodeKey(card.name)}] = {`);
-        lua.push(...formatData(card, 10));
-        lua.push('        },');
-      });
-      lua.push('      },');
-    });
+    Object.entries(categories as { [key: string]: unknown }).forEach(
+      (categoryAndCards) => {
+        const [category, cards] = categoryAndCards;
+        lua.push(`      ${category.toLowerCase()} = {`);
+        (cards as { [key: string]: unknown }[]).forEach((card) => {
+          lua.push(`        [${encodeKey(card.name as string)}] = {`);
+          lua.push(...formatData(card, 10));
+          lua.push('        },');
+        });
+        lua.push('      },');
+      },
+    );
     lua.push('    },');
   });
   lua.push('  },');
