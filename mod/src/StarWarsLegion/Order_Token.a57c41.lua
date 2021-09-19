@@ -24,6 +24,7 @@ function onLoad(saveData)
   end
   if _G.unitData ~= nil then
     local dieRollerInfo = Global.getTable("dieRollerInfo")
+    _G.isAToken = true
     _G.dieRoller = getObjectFromGUID(dieRollerInfo[_G.unitData.colorSide.."DieRollerGUID"])
     setTemplateVariables()
     initialize()
@@ -104,12 +105,12 @@ function getEligibleUnit()
 end
 
 function highlightUnit(selectedMiniGUIDs, highlightColor)
-    for k, guidEntry in pairs(selectedMiniGUIDs) do
-        obj = getObjectFromGUID(guidEntry)
-        if obj != nil then
-            obj.highlightOn(highlightColor)
-        end
+  for _, guidEntry in ipairs(selectedMiniGUIDs) do
+    obj = getObjectFromGUID(guidEntry)
+    if obj != nil then
+      obj.highlightOn(highlightColor)
     end
+  end
 end
 
 function unhighlightUnit(selectedMiniGUIDs)
@@ -902,6 +903,7 @@ function exitTargetingMode()
     attackModeOn = false
     clearRangeRulers()
     unhighlightEnemies()
+    clearAttackLine()
 end
 
 function exitAttackMode()
@@ -932,9 +934,6 @@ function attackMenu(attackTargetObj)
     unhighlightEnemies()
     highlightEnemy(attackTargetObj)
     clearRangeRulers()
-
-    -- attack menu buttons
-    local leaderUnitName = attackTargetObj.getVar("unitName")
 
     -- this used to be configurable per unit type, which meant that we made the
     -- ion/wound/suppression buttons vertically higher to make up for variable
@@ -1071,7 +1070,6 @@ function getAngle(originObj, angleTargetObj)
 end
 
 function createAttackButton(leaderObj)
-    local leaderUnitName = leaderObj.getVar("unitName")
     local buttonHeight = 2
 
     _G["attackMenu"..leaderObj.getGUID()] = function() attackMenu(leaderObj) end

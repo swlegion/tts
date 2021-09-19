@@ -690,8 +690,8 @@ function initializeMini(pMiniTable)
         "cardGUID = \"" .. pMiniTable.unitCardObj.getGUID() .. 
         "\"\n unitName = \""..pMiniTable.name:lower() .. 
         "\"\n baseSize = \""..pMiniTable.baseSize .. 
-        "\"\n unitID = \"" .. pMiniTable.unitID .. 
-        "\"\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID .. 
+        "\"\n unitID = " .. pMiniTable.unitID .. 
+        "\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID .. 
         "\"\n" .. listBuilder.modelMiniScript
     else
       objEntry.obj.use_snap_points = false
