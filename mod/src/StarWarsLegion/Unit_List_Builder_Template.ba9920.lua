@@ -1,7 +1,6 @@
 #include !/Deck
 #include !/common/Math
 #include !/data/CardInfo_new
-#include !/data/MiniInfo
 
 -- model template
 function onLoad()
@@ -21,7 +20,6 @@ function setUp()
     cardInfo = CardInfoClass:buildCardInfo()
     selectedArmyFaction = Global.getVar(colorSide.."SelectedArmyFaction")
     listBuilder = Global.getTable("listBuilder")
-    miniInfo = Global.getTable("miniInfo")
     unitIDTokenBag = getObjectFromGUID(Global.getVar("unitIDTokenBagGUID"))
     unitCard = nil
     unitCardPage = 0

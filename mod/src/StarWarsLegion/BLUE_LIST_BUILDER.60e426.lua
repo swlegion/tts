@@ -1,5 +1,4 @@
 #include !/common/Math
-#include !/data/MiniInfo
 #include !/ListBuilder
 
 function onLoad()
@@ -35,7 +34,6 @@ function onLoad()
     colorSide = colorZone
     battlefieldTable = getObjectFromGUID(Global.getVar("battlefieldTable"))
     templateMenu = Global.getTable("templateMenu")
-    miniInfo = Global.getTable("miniInfo")
     unitIDTokenBag = getObjectFromGUID(Global.getVar("unitIDTokenBagGUID"))
     commandTokenData = Global.getTable("commandTokenData")
     commandTokenTrayData = Global.getTable("commandTokenTrayData")
