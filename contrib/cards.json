@@ -7,6 +7,7 @@
           "title": "Hero Of The Rebellion",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788425590/4AB2CCCFC2F45B3ACB9927166F6014A2903D7DCE/",
           "size": "small",
+          "type": "Trooper",
           "points": 160,
           "speed": 2,
           "upgrades": {
@@ -57,6 +58,7 @@
           "title": "Fearless And Inventive",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788535425/1ADD2DCEEA5D23013C2331604493EFF62AC46DB3/",
           "size": "small",
+          "type": "Trooper",
           "points": 90,
           "speed": 2,
           "upgrades": {
@@ -92,6 +94,7 @@
           "title": "Unorthodox General",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603832/92268B52B65228468DA0E1193EF01C808E899EF6/",
           "size": "small",
+          "type": "Trooper",
           "points": 100,
           "speed": 2,
           "upgrades": {
@@ -128,6 +131,7 @@
           "title": "Resolute Commander",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603864/8B88E031F49A36B1504A1D48202C4731C4025EB5/",
           "size": "small",
+          "type": "Trooper",
           "points": 45,
           "speed": 2,
           "upgrades": {
@@ -146,6 +150,7 @@
           "title": "Stardust",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603895/5D4275A9C4F93D4170453A9375C308ABCFE318A1/",
           "size": "small",
+          "type": "Trooper",
           "points": 100,
           "speed": 2,
           "upgrades": {
@@ -183,6 +188,7 @@
           "title": "Capable Intelligence Agent",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603937/418000BFD236B11C08F5EA8AF670673AC63199D2/",
           "size": "small",
+          "type": "Trooper",
           "points": 90,
           "speed": 2,
           "upgrades": {
@@ -219,6 +225,7 @@
           "title": "Smooth Operator",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603976/14129DC0580196A6C188A7D5B037937BE3906C83/",
           "size": "small",
+          "type": "Trooper",
           "points": 105,
           "speed": 2,
           "upgrades": {
@@ -258,6 +265,7 @@
           "title": "Walking Carpet",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789163592/3EE305AD57A0D00B7B413FF0F6F418D5FA544968/",
           "size": "small",
+          "type": "Wookiee Trooper",
           "points": 90,
           "speed": 2,
           "upgrades": {
@@ -293,6 +301,7 @@
           "title": "Explosive Artist",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604048/BE5C0706F024117D9DBCF3468D89A4DEA1C10BFE/",
           "size": "small",
+          "type": "Trooper",
           "points": 125,
           "speed": 3,
           "upgrades": {
@@ -329,6 +338,7 @@
           "title": "Jedi Knight",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604076/98BCE6298F7E4D5086CB79D9592FC0151E7A447A/",
           "size": "small",
+          "type": "Trooper",
           "points": 195,
           "speed": 2,
           "upgrades": {
@@ -379,6 +389,7 @@
           "title": "Hero Of A Thousand Devices",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604120/5C6ED7C27799E640540BC177E7804442CB47C304/",
           "size": "small",
+          "type": "Droid Trooper",
           "points": 45,
           "speed": 1,
           "upgrades": {
@@ -414,6 +425,7 @@
           "title": "Sardonic Security Droid",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788629460/11D489A9283627C5CE93F29C04BEB61BA3F166D5/",
           "size": "small",
+          "type": "Droid Trooper",
           "points": 70,
           "speed": 2,
           "upgrades": {
@@ -440,6 +452,7 @@
           "name": "Rebel Troopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604151/FDE5B897188B36FF0336D103A45C20E91E25FED0/",
           "size": "small",
+          "type": "Trooper",
           "points": 40,
           "speed": 2,
           "upgrades": {
@@ -471,6 +484,7 @@
           "name": "Fleet Troopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604199/71EA4817F31B75D4845B95F3AF76D61069D66E9A/",
           "size": "small",
+          "type": "Trooper",
           "points": 40,
           "speed": 2,
           "upgrades": {
@@ -502,6 +516,7 @@
           "name": "Rebel Veterans",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604242/EA62216368A51479BDBB4264DE172879EB43B6A1/",
           "size": "small",
+          "type": "Trooper",
           "points": 48,
           "speed": 2,
           "upgrades": {
@@ -534,6 +549,7 @@
           "name": "Mark II Medium Blaster Team",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789216718/13B8F9971804EE108E554C9B348A29611CFE2495/",
           "size": "medium",
+          "type": "Emplacement Trooper",
           "points": 38,
           "speed": 1,
           "upgrades": {
@@ -552,6 +568,7 @@
           "name": "Rebel Commandos",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604288/CC2622742539F3AD9EEA9AB88676DF7C0282FFB0/",
           "size": "small",
+          "type": "Trooper",
           "points": 50,
           "speed": 2,
           "upgrades": {
@@ -586,6 +603,7 @@
           "heavyWeaponTeam": true,
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/",
           "size": "small",
+          "type": "Trooper",
           "points": 20,
           "speed": 2,
           "upgrades": {
@@ -606,6 +624,7 @@
           "name": "Wookiee Warriors",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/",
           "size": "small",
+          "type": "Wookiee Trooper",
           "points": 69,
           "speed": 2,
           "upgrades": {
@@ -633,6 +652,7 @@
           "name": "Rebel Pathfinders",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604432/47C2CB26F7C98A3F449136D78165F64BE7D0A846/",
           "size": "small",
+          "type": "Trooper",
           "points": 58,
           "speed": 2,
           "upgrades": {
@@ -666,6 +686,7 @@
           "name": "Mandalorian Resistance",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604461/D49CF324CDE3C648E683FCCD762B76F94E843065/",
           "size": "small",
+          "type": "Trooper",
           "points": 72,
           "speed": 3,
           "upgrades": {
@@ -696,6 +717,7 @@
           "title": "Clan Wren",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604497/C4CEBD761320F416E03203426388067B95104C90/",
           "size": "small",
+          "type": "Trooper",
           "points": 34,
           "speed": 3,
           "upgrades": {
@@ -718,6 +740,7 @@
           "title": "Kashyyyk Resistance",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604546/F387DBCD02315CB56A87FF52D99CE3C1E6E548F2/",
           "size": "small",
+          "type": "Wookiee Trooper",
           "points": 72,
           "speed": 2,
           "upgrades": {
@@ -734,6 +757,7 @@
           "name": "AT-RT",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604581/361864DD585CE7DE99234C08416E9C4C1AA84A50/",
           "size": "large",
+          "type": "Ground Vehicle",
           "points": 55,
           "speed": 2,
           "upgrades": {
@@ -751,6 +775,7 @@
           "name": "1.4 FD Laser Cannon Team",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604624/D975E5460BB0A6B86E0AD105445ECBAEBBB2BEA0/",
           "size": "huge",
+          "type": "Emplacement Trooper",
           "points": 70,
           "speed": 0,
           "upgrades": {
@@ -768,6 +793,7 @@
           "name": "Tauntaun Riders",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604655/CC7501F41054D1F68139C8ABCFAEE0CAA855475C/",
           "size": "medium",
+          "type": "Creature Trooper",
           "points": 95,
           "speed": 3,
           "upgrades": {
@@ -791,6 +817,7 @@
           "name": "T-47 Airspeeder",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604696/AD5CE170F4BBAC2DA1F5AF0F3AE4C7381EDC70AD/",
           "size": "huge",
+          "type": "Repulsor Vehicle",
           "points": 130,
           "speed": 3,
           "upgrades": {
@@ -808,6 +835,7 @@
           "name": "X-34 Landspeeder",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604738/6DAAAD8E05BFAF02E405EB1A28FA6EC17771D678/",
           "size": "small",
+          "type": "Repulsor Vehicle",
           "points": 60,
           "speed": 2,
           "upgrades": {
@@ -827,6 +855,7 @@
           "name": "A-A5 Speeder Truck",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788629495/7CC8A26CAE70713A18D1A9C2A9DB7B59BC0839F9/",
           "size": "small",
+          "type": "Repulsor Vehicle",
           "points": 75,
           "speed": 1,
           "upgrades": {
@@ -850,6 +879,7 @@
           "title": "Dark Lord Of The Sith",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701730/72AE7649145939BD1B754C71CEA6AC3F9A6C11E5/",
           "size": "small",
+          "type": "Trooper",
           "points": 175,
           "speed": 1,
           "upgrades": {
@@ -899,6 +929,7 @@
           "title": "Master Tactician",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701690/7C845644D274DFEBCE8EDA7F932905A4FBC27A11/",
           "size": "small",
+          "type": "Trooper",
           "points": 80,
           "speed": 2,
           "upgrades": {
@@ -934,6 +965,7 @@
           "title": "Ruler Of The Galactic Empire",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701664/ABD12EEF236402EDF420F7849146DDEB367FC290/",
           "size": "small",
+          "type": "Trooper",
           "points": 200,
           "speed": 1,
           "upgrades": {
@@ -969,6 +1001,7 @@
           "title": "Ruthless Commander",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701634/8D2A4BA88A49B4F29CAD29560D2FB864F3497733/",
           "size": "small",
+          "type": "Trooper",
           "points": 45,
           "speed": 2,
           "upgrades": {
@@ -987,6 +1020,7 @@
           "title": "Architect Of Terror",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701598/3832DC52B0D1BDBD5B71C222DD19A4C8AEF8B334/",
           "size": "small",
+          "type": "Trooper",
           "points": 90,
           "speed": 2,
           "upgrades": {
@@ -1022,6 +1056,7 @@
           "title": "Inferno Squad Leader",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701556/6A3390D19B067EAACDF1CADD825D11BBE048DCEA/",
           "size": "small",
+          "type": "Trooper",
           "points": 100,
           "speed": 2,
           "upgrades": {
@@ -1064,6 +1099,7 @@
           "title": "Hunter Of Spectres",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701522/0198EDBE386830FA71A43C6887FD82E0CC28D241/",
           "size": "small",
+          "type": "Trooper",
           "points": 90,
           "speed": 2,
           "upgrades": {
@@ -1104,6 +1140,7 @@
           "title": "Infamous Bounty Hunter",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701498/836304CFE19193261F594363CFD8860F22FCD5F1/",
           "size": "small",
+          "type": "Trooper",
           "points": 125,
           "speed": 3,
           "upgrades": {
@@ -1139,6 +1176,7 @@
           "title": "Trandoshan Terror",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701468/4D83FEB79E36D5DD9A5DFB06CB479EBD35CCE130/",
           "size": "small",
+          "type": "Trooper",
           "points": 115,
           "speed": 2,
           "upgrades": {
@@ -1174,6 +1212,7 @@
           "title": "The Emperor's Apprentice",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701427/7CD88B79A5D83D978F1FC76D438F87DD3991485A/",
           "size": "small",
+          "type": "Trooper",
           "points": 155,
           "speed": 1,
           "upgrades": {
@@ -1225,6 +1264,7 @@
           "name": "Stormtroopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701400/02C7B04C990D9753DBD492D8D3AA7B380E131E9B/",
           "size": "small",
+          "type": "Trooper",
           "points": 44,
           "speed": 2,
           "upgrades": {
@@ -1256,6 +1296,7 @@
           "name": "Snowtroopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701374/B2FE5819A3004E4C9A64FC3841FBCAE6F3465D2F/",
           "size": "small",
+          "type": "Trooper",
           "points": 44,
           "speed": 2,
           "upgrades": {
@@ -1287,6 +1328,7 @@
           "name": "Shoretroopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701337/62D4CDC12A785A32680980C485F009500F93762F/",
           "size": "small",
+          "type": "Trooper",
           "points": 52,
           "speed": 2,
           "upgrades": {
@@ -1319,6 +1361,7 @@
           "name": "DF-90 Mortar Trooper",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789216756/D8C157D8B31711EC7076FFF7C39347BC20B0E76A/",
           "size": "medium",
+          "type": "Emplacement Trooper",
           "points": 38,
           "speed": 1,
           "upgrades": {
@@ -1337,6 +1380,7 @@
           "name": "Scout Troopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701305/172560D0D3A8FF9D0E646DE1F70272CD90CBE46F/",
           "size": "small",
+          "type": "Trooper",
           "points": 48,
           "speed": 2,
           "upgrades": {
@@ -1371,6 +1415,7 @@
           "heavyWeaponTeam": true,
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701268/B5118D8147938CC0B6A146A8BFDD7A8B33593A89/",
           "size": "small",
+          "type": "Trooper",
           "points": 20,
           "speed": 2,
           "upgrades": {
@@ -1391,6 +1436,7 @@
           "name": "Imperial Royal Guards",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701217/89E8CC46981E8C634A4E3D6C4F6EAF343B27C1E2/",
           "size": "small",
+          "type": "Trooper",
           "points": 75,
           "speed": 2,
           "upgrades": {
@@ -1418,6 +1464,7 @@
           "name": "Imperial Death Troopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701181/DD8B2B7C2D3C3AC66F7D90F738B04BB309A31B46/",
           "size": "small",
+          "type": "Trooper",
           "points": 68,
           "speed": 2,
           "upgrades": {
@@ -1450,6 +1497,7 @@
           "name": "Imperial Special Forces",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701129/EDA8288C48AF33A69F22AE18E6CEB1413A0B04F9/",
           "size": "small",
+          "type": "Trooper",
           "points": 68,
           "speed": 2,
           "upgrades": {
@@ -1483,6 +1531,7 @@
           "title": "Inferno Squad",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701097/D1043BFA3767D8E5A294ACA112D0E7E9A6B75627/",
           "size": "small",
+          "type": "Trooper",
           "points": 34,
           "speed": 2,
           "upgrades": {
@@ -1505,6 +1554,7 @@
           "name": "74-Z Speeder Bikes",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701072/16EF027E626FA31293F4E88556AF9633F091180D/",
           "size": "medium",
+          "type": "Repulsor Vehicle",
           "points": 75,
           "speed": 3,
           "upgrades": {
@@ -1525,6 +1575,7 @@
           "name": "E-Web Heavy Blaster Team",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701046/AC13001548D72E76B4DEC2D904EB44454C152806/",
           "size": "small",
+          "type": "Emplacement Trooper",
           "points": 55,
           "speed": 1,
           "upgrades": {
@@ -1542,6 +1593,7 @@
           "name": "Dewback Rider",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701014/E1E943B567134E6A946C714BD07233CDC881A7AF/",
           "size": "large",
+          "type": "Creature Trooper",
           "points": 75,
           "speed": 1,
           "upgrades": {
@@ -1562,6 +1614,7 @@
           "name": "AT-ST",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700975/F5BACD8B7607BCB5FAA1576B7FA4151FA0A5CA59/",
           "size": "huge",
+          "type": "Ground Vehicle",
           "points": 160,
           "speed": 2,
           "upgrades": {
@@ -1580,6 +1633,7 @@
           "name": "TX-225 GAVw Occupier Combat Assault Tank",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700946/705F2EF05FABA96D1386B8E41C56AD31E7901820/",
           "size": "long",
+          "type": "Ground Vehicle",
           "points": 145,
           "speed": 1,
           "upgrades": {
@@ -1598,6 +1652,7 @@
           "name": "LAAT/LE Patrol Transport",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700907/2DD3325FA71C1F920CC957F8B7393893AE282073/",
           "size": "laat",
+          "type": "Repulsor Vehicle",
           "points": 120,
           "speed": 2,
           "upgrades": {
@@ -1620,6 +1675,7 @@
           "title": "Civilized Warrior",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790629/61D2CCB8A106E855E621557601F65B34FB2AEFC1/",
           "size": "small",
+          "type": "Trooper",
           "points": 170,
           "speed": 2,
           "upgrades": {
@@ -1656,6 +1712,7 @@
           "title": "Honorable Soldier",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790598/868FE96BEB709EE3A25D7973FF259B8BF7824475/",
           "size": "small",
+          "type": "Clone Trooper",
           "points": 90,
           "speed": 2,
           "upgrades": {
@@ -1693,6 +1750,7 @@
           "title": "The Chosen One",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790573/1BDDD3F5C3D43558F79F35F1A4B9327F4729D62B/",
           "size": "small",
+          "type": "Trooper",
           "points": 160,
           "speed": 2,
           "upgrades": {
@@ -1729,6 +1787,7 @@
           "title": "Trained For Leadership",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790538/EBB9911B9EB9C0F817370266A8ACB8357BEB3919/",
           "size": "small",
+          "type": "Clone Trooper",
           "points": 55,
           "speed": 2,
           "upgrades": {
@@ -1748,6 +1807,7 @@
           "title": "Grand Master Of The Jedi Order",
           "image": "http://cloud-3.steamusercontent.com/ugc/1617345381346377755/75D0ACFDFFCA5A08D7CAB59DA941B226D1563D46/",
           "size": "small",
+          "type": "Trooper",
           "points": 200,
           "speed": 1,
           "upgrades": {
@@ -1782,6 +1842,7 @@
           "title": "Clan Leader",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790478/85E9C624082CA5731008121F45ABFA06CC4583DB/",
           "size": "small",
+          "type": "Wookiee Trooper",
           "points": 100,
           "speed": 2,
           "upgrades": {
@@ -1796,6 +1857,7 @@
           "title": "Hero Of Kashyyyk",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790442/8E99C974FA5AF735BADBABA2CEA6400399908E50/",
           "size": "small",
+          "type": "Wookiee Trooper",
           "points": 90,
           "speed": 2,
           "upgrades": {
@@ -1818,6 +1880,7 @@
           "title": "Independent Astromech",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790410/0D5BE2D0E5632005D6BC47413845604898AF0004/",
           "size": "small",
+          "type": "Droid Trooper",
           "points": 45,
           "speed": 1,
           "upgrades": {
@@ -1853,6 +1916,7 @@
           "title": "Spirited Senator",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790377/AC7989ED45A958942F1EF716B575174C5BEB92E1/",
           "size": "small",
+          "type": "Trooper",
           "points": 90,
           "speed": 2,
           "upgrades": {
@@ -1891,6 +1955,7 @@
           "name": "Phase I Clone Troopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790336/C2B0C8EB973E7D6657E288E5AFE9C3F00809461A/",
           "size": "small",
+          "type": "Clone Trooper",
           "points": 52,
           "speed": 2,
           "upgrades": {
@@ -1922,6 +1987,7 @@
           "name": "Phase II Clone Troopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790299/B84917597F10DE241D7909430E91B5FC03248144/",
           "size": "small",
+          "type": "Clone Trooper",
           "points": 62,
           "speed": 2,
           "upgrades": {
@@ -1956,6 +2022,7 @@
           "name": "Arc Troopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790227/9326CC2191C991FF9CB0EB06A4EA17A2A17078BC/",
           "size": "small",
+          "type": "Clone Trooper",
           "points": 78,
           "speed": 2,
           "upgrades": {
@@ -1990,6 +2057,7 @@
           "heavyWeaponTeam": true,
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790261/AD41C53AE8A6F57645BE2A51DAD8E9FF4FB9224D/",
           "size": "small",
+          "type": "Clone Trooper",
           "points": 27,
           "speed": 2,
           "upgrades": {
@@ -2010,6 +2078,7 @@
           "name": "Wookiee Warriors",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/",
           "size": "small",
+          "type": "Wookiee Trooper",
           "points": 69,
           "speed": 2,
           "upgrades": {
@@ -2038,6 +2107,7 @@
           "title": "Kashyyyk Defenders",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790192/E7C7082C239E04E3DF76FDFF909EE360D9C25012/",
           "size": "small",
+          "type": "Wookiee Trooper",
           "points": 72,
           "speed": 2,
           "upgrades": {
@@ -2054,6 +2124,7 @@
           "name": "BARC Speeder",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790145/DD6B7ACA36B88E28B4326E7AA96536230B87F01E/",
           "size": "large",
+          "type": "Repulsor Vehicle",
           "points": 60,
           "speed": 3,
           "upgrades": {
@@ -2071,6 +2142,7 @@
           "name": "AT-RT",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790101/7D591836DB5F16ED19FE2A28B55784950E1759CB/",
           "size": "large",
+          "type": "Ground Vehicle",
           "points": 65,
           "speed": 2,
           "upgrades": {
@@ -2088,6 +2160,7 @@
           "name": "Raddaugh Gnasp Fluttercraft",
           "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189347/2BD4025EABD6F2A919AC40FC4E6D3C8AC4292E86/",
           "size": "huge",
+          "type": "Repulsor Vehicle",
           "points": 55,
           "speed": 2,
           "upgrades": {
@@ -2102,6 +2175,7 @@
           "name": "TX-130 Saber-Class Fighter Tank",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790069/CFA0E667E3B9FEB5F80A3F7A68CAADE7FCF5F340/",
           "size": "epic",
+          "type": "Repulsor Vehicle",
           "points": 170,
           "speed": 2,
           "upgrades": {
@@ -2121,6 +2195,7 @@
           "name": "LAAT/LE Patrol Transport",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700907/2DD3325FA71C1F920CC957F8B7393893AE282073/",
           "size": "laat",
+          "type": "Repulsor Vehicle",
           "points": 120,
           "speed": 2,
           "upgrades": {
@@ -2138,6 +2213,7 @@
           "name": "Infantry Support Platform",
           "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189285/5E0D18805F9C4BF8A978A9F1F20CFAE73575D02F/",
           "size": "epic",
+          "type": "Repulsor Vehicle",
           "points": 65,
           "speed": 3,
           "upgrades": {
@@ -2156,6 +2232,7 @@
           "title": "Sinister Cyborg",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790037/C20F500DE55700AA568EA5BDA7794A1B0210E605/",
           "size": "small",
+          "type": "Trooper",
           "points": 170,
           "speed": 2,
           "upgrades": {
@@ -2192,6 +2269,7 @@
           "title": "Darth Tyranus",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789992/5D0BFCF9DA9A3200D9D0A2CDE98E25782B8F4C10/",
           "size": "small",
+          "type": "Trooper",
           "points": 200,
           "speed": 2,
           "upgrades": {
@@ -2227,6 +2305,7 @@
           "title": "Programmed For Strategy",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789948/57BDB938C53DD5571B6FBC0F15225221BEDDF3F7/",
           "size": "small",
+          "type": "Droid Trooper",
           "points": 55,
           "speed": 2,
           "upgrades": {
@@ -2245,6 +2324,7 @@
           "name": "Super Tactical Droid",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789910/D7965608F5D3FF1B7FD8D14BF740C098F8AB5B7D/",
           "size": "small",
+          "type": "Droid Trooper",
           "points": 95,
           "speed": 2,
           "upgrades": {
@@ -2276,6 +2356,7 @@
           "title": "Kalani",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789867/EB6D7E54CBA8E867A4146B0CE70ADA1769D1EB86/",
           "size": "small",
+          "type": "Droid Trooper",
           "points": 100,
           "speed": 2,
           "upgrades": {
@@ -2307,6 +2388,7 @@
           "title": "Kraken",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789829/C51EEBAA4150DA48EC395D6C275415592D430E54/",
           "size": "small",
+          "type": "Droid Trooper",
           "points": 100,
           "speed": 2,
           "upgrades": {
@@ -2341,6 +2423,7 @@
           "title": "Needs No Introduction",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789783/BF082412A93DED3289764E39E3D81ACF204DA989/",
           "size": "small",
+          "type": "Trooper",
           "points": 125,
           "speed": 2,
           "upgrades": {
@@ -2379,6 +2462,7 @@
           "title": "Impatient Apprentice",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789734/ABF8B8F5555C2DF64258B4DD432B479059AFF4D9/",
           "size": "small",
+          "type": "Trooper",
           "points": 160,
           "speed": 2,
           "upgrades": {
@@ -2415,6 +2499,7 @@
           "name": "B1 Battle Droids",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789698/9ADC7290CCCD4AA6F24BA74F9C098A4E3A61B063/",
           "size": "small",
+          "type": "Droid Trooper",
           "points": 36,
           "speed": 2,
           "upgrades": {
@@ -2453,6 +2538,7 @@
           "name": "B2 Super Battle Droids",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789641/943F65C66737E7EB971F1F71FDE9D3E056F7BEC4/",
           "size": "small",
+          "type": "Droid Trooper",
           "points": 45,
           "speed": 2,
           "upgrades": {
@@ -2481,6 +2567,7 @@
           "name": "BX-Series Droid Commandos",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789610/FE6991E3F921A3C5ACD09400FD9CED611AC8E7D0/",
           "size": "small",
+          "type": "Droid Trooper",
           "points": 68,
           "speed": 2,
           "upgrades": {
@@ -2515,6 +2602,7 @@
           "heavyWeaponTeam": true,
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789579/00BF878D8FCAFAA8F7D9B4B5F0749C63E4EA6F08/",
           "size": "small",
+          "type": "Droid Trooper",
           "points": 20,
           "speed": 2,
           "upgrades": {
@@ -2535,6 +2623,7 @@
           "name": "DRK-1 Sith Probe Droids",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789552/446270D5F6DD23C36A7B268F2026A5B9DCFFC8BF/",
           "size": "small",
+          "type": "Droid Trooper",
           "points": 35,
           "speed": 2,
           "upgrades": {
@@ -2559,6 +2648,7 @@
           "name": "IG-100 MagnaGuard",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789521/5E40422D83C71854A725DB0231D790BAA359574E/",
           "size": "small",
+          "type": "Droid Trooper",
           "points": 0,
           "speed": 2,
           "upgrades": {
@@ -2575,6 +2665,7 @@
           "name": "Droidekas",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789475/1521CBD0935E6FB62CE544D89AC89E2F19F21D6B/",
           "size": "medium",
+          "type": "Ground Vehicle",
           "points": 80,
           "speed": 1,
           "upgrades": {
@@ -2595,6 +2686,7 @@
           "name": "STAP Riders",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789443/7BE1E58EECCFE75EA2705CD1345E6C0602711AB7/",
           "size": "medium",
+          "type": "Repulsor Vehicle",
           "points": 73,
           "speed": 3,
           "upgrades": {
@@ -2615,6 +2707,7 @@
           "name": "DSD1 Dwarf Spider Droid",
           "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189625/4E13A18FC19BA72238A142EE1D475C2EB16CE20A/",
           "size": "large",
+          "type": "Ground Vehicle",
           "points": 55,
           "speed": 2,
           "upgrades": {
@@ -2630,6 +2723,7 @@
           "name": "AAT Trade Federation Battle Tank",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789411/3550FADAC84804AB14EE338E46C5FEFC339C08B6/",
           "size": "epic",
+          "type": "Repulsor Vehicle",
           "points": 170,
           "speed": 1,
           "upgrades": {
@@ -2648,6 +2742,7 @@
           "name": "NR-N99 Persuader-Class Tank Droid",
           "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189694/7B7C520E6E95958DDD99114AA3CC6B28147D7284/",
           "size": "long",
+          "type": "Ground Vehicle",
           "points": 145,
           "speed": 1,
           "upgrades": {

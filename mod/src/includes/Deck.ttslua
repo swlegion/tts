@@ -378,15 +378,10 @@ function Deck:_isUpgradeValidFor(upgrade, unit)
 
   if restrictions then
     if restrictions.include then
-      if restrictions.include.unit then
-        for _, unitName in ipairs(restrictions.include.unit) do
-          if unitName:upper() ~= unit.name:upper() then
-            return false
-          end
-        end
-      end
+      local skipUnitCheck = false
 
       if restrictions.include.faction then
+        skipUnitCheck = true
         for _, unitFaction in ipairs(restrictions.include.faction) do
           if unitFaction:upper() ~= unit.faction:upper() then
             return false
@@ -394,13 +389,52 @@ function Deck:_isUpgradeValidFor(upgrade, unit)
         end
       end
 
-      -- TODO: Add support for type.
-      -- TODO: Add support for rank.
-      -- TODO: Add support for alignment.
+      if restrictions.include.rank then
+        skipUnitCheck = true
+        for _, unitRank in ipairs(restrictions.include.rank) do
+          if unitRank:upper() ~= unit.rank:upper() then
+            return false
+          end
+        end
+      end
+
+      if restrictions.include.type then
+        skipUnitCheck = true
+        for _, unitType in ipairs(restrictions.include.type) do
+          if not string.find(unit.type:upper(), unitType:upper()) then
+            return false
+          end
+        end
+      end
+
+      if not skipUnitCheck and restrictions.include.unit then
+        for _, unitName in ipairs(restrictions.include.unit) do
+          if unitName:upper() ~= unit.name:upper() then
+            return false
+          end
+        end
+      end
+
+      if restrictions.include.alignment and unit.name:upper() ~= "ANAKIN SKYWALKER" then
+        for _, unitAlignment in ipairs(restrictions.include.alignment) do
+          unitAlignment = unitAlignment:upper()
+          if unitAlignment == "LIGHT" then
+            return unit.faction:upper() == "REBEL" or unit.faction:upper() == "REPUBLIC"
+          elseif unitAlignment == "DARK" then
+            return unit.faction:upper() == "EMPIRE" or unit.faction:upper() == "SEPARATIST"
+          end
+        end
+      end
     end
 
     if restrictions.exclude then
-      -- TODO: Add support for exclusions.
+      if restrictions.exclude.type then
+        for _, unitType in ipairs(restrictions.exclude.type) do
+          if string.find(unit.type:upper(), unitType:upper()) then
+            return false
+          end
+        end
+      end
     end
   end
 
