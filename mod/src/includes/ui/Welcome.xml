@@ -52,12 +52,13 @@
           - We are testing a <i>new card flow</i> (internal to the mod).
           - <b>Please report any bugs with unit/upgrade/command/battle cards</b>.
   
-          - <b>Bugs</b>: The in-game list builder ..
+          - <b>Known Bugs</b>: The in-game list builder ..
             .. can spawn templates in a wrong position.
-            .. doesn't allow B1s to use binocs/scanner.
-            .. doesn't add new upgrade slots for captains/specialist.
+            .. allows upgrades that were hidden before.
 
           (Since last <i>Stable</i>)
+
+          - Added Yoda.
 
           - Range rulers are now displayed with color-coded projectors + work with elevation.
           - Move actions now show a "maximum" move-circle based on selected move speed.
@@ -72,7 +73,6 @@
           - Chess clocks are now hidden by default. Click "Chess Clocks" to show (and use).
           - Chess clocks (and the UI) are now persisted across saves/loads.
           - ID tokens are now also tinted as part of the "auto tint" functionality.
-
         </Text>
       </VerticalLayout>
     </VerticalScrollView>

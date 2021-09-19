@@ -1805,7 +1805,7 @@
         {
           "name": "Yoda",
           "title": "Grand Master Of The Jedi Order",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1617345381346377755/75D0ACFDFFCA5A08D7CAB59DA941B226D1563D46/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790511/A6CDD26B405EFC7CC306D96BB04AA24E5BED2794/",
           "size": "small",
           "type": "Trooper",
           "points": 200,
@@ -1816,7 +1816,7 @@
           },
           "minis": [
             {
-              "bundle": "https://discord.com/channels/616348109806764033/620733407420350490/889286180401725513"
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1617345381346377755/75D0ACFDFFCA5A08D7CAB59DA941B226D1563D46/"
             }
           ],
           "commands": [
@@ -1864,7 +1864,12 @@
             "Training": 2,
             "Gear": 1
           },
-          "minis": 1,
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540669973/90DD9EA44756CCF9B2473302DC644F3AEEED07B4/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670117/5AA04499FC8CC467864F9F335601E6335C03326D/"
+            }
+          ],
           "commands": [
             {
               "name": "Size Matters Sometimes",
