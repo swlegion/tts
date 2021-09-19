@@ -49,8 +49,13 @@
       },
 
       "required": ["name", "image"]
+    },
+
+    "points": {
+      "type": "number",
+      "minimum": 0
     }
   },
 
-  "required": ["name", "image"]
+  "required": ["name", "image", "points"]
 }
