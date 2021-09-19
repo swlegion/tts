@@ -50,9 +50,12 @@ function mainMenu()
     if unitCard != nil then
         destroyObject(unitCard)
         if selectedUnit.rank == "Commander" or selectedUnit.rank == "Operative"  then
-            deckBuilderObj.call("removeCommander", selectedUnit.name:lower())
+          local fullName = selectedUnit.name
+          if selectedUnit.title then
+            fullName = fullName .. " " .. selectedUnit.title
+          end
+          deckBuilderObj.call("removeCommander", fullName:upper())
         end
-
     end
     for _,upgradeCard in pairs(upgradeCardInstance) do
         destroyObject(upgradeCard)
@@ -283,7 +286,11 @@ function spawnUnitCard(unit)
   
   -- update deckBuilder
   if selectedUnit.rank == "Commander" or selectedUnit.rank == "Operative"  then
-      deckBuilderObj.call("addCommander", selectedUnit.name:lower())
+    local fullName = selectedUnit.name
+    if selectedUnit.title then
+      fullName = fullName .. " " .. selectedUnit.title
+    end
+    deckBuilderObj.call("addCommander", fullName:upper())
   end
 
   upgradeMenu()

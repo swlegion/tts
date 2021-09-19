@@ -1,7 +1,10 @@
+#include !/Deck
+
 function onLoad(save_state)
     self.interactable = false
     listBuilder = Global.getTable("listBuilder")
     setUpCards = Global.getTable("setUpCards")
+    _G.Deck = Deck:create()
 
     battlefieldEntry = {}
     battlefieldEntry.clickFunction = {}
@@ -15,8 +18,6 @@ function onLoad(save_state)
     battlefieldEntry.labelString[3] = "Conditions"
 
     selectedCommanders = {}
-    selectedCommanders[1] = "neutral"
-    selectedCommanders[2] = "neutralAltArt"
 
     deckBuilderCommandCategories = {
       "1 Pips",
@@ -26,16 +27,6 @@ function onLoad(save_state)
       "3 Pips",
       "3 Pips: Contingencies"
     }
-
-    if selectedFaction == "imperial" then
-        addCommander("neutralImperial")
-    elseif selectedFaction == "rebel" then
-        addCommander("neutralRebel")
-    elseif selectedFaction == "separatist" then
-        addCommander("neutralSeparatist")
-    elseif selectedFaction == "republic" then
-        addCommander("neutralRepublic")
-    end
 
     resetCommandCards()
 
@@ -164,70 +155,58 @@ function resetChoicesButtons()
 end
 
 function commandCardSubMenu(numberSelection)
-    nilChoices()
+  nilChoices()
 
-    -- PIP SELECTION
-    local pipSelected = math.ceil(numberSelection / 2)
-    local isContingencies = numberSelection % 2 == 0
-    local selectedCards
-    if isContingencies then
-      selectedCards = contingencyCardSelection
-    else
-      selectedCards = commandCardSelection
-    end
+  -- PIP SELECTION
+  local pipSelected = math.ceil(numberSelection / 2)
+  local isContingencies = numberSelection % 2 == 0
+  local selectedCards
+  if isContingencies then
+    selectedCards = contingencyCardSelection
+  else
+    selectedCards = commandCardSelection
+  end
 
-    local n = 1
-    for i, selectedCommander in pairs(selectedCommanders) do
+  local validCCs = Deck:getCommandsByFactionAndUnits(
+    selectedFaction,
+    selectedCommanders
+  )
 
-        -- GET AVAILABLE CARD
-        if listBuilder.commandCards[selectedCommander].cards != nil then
-            local availableCard = listBuilder.commandCards[selectedCommander].cards[pipSelected]
-
-            -- SET FUNCTION NAME
-            _G["choiceSubMenu"..n] = function() selectCommandCard(isContingencies, availableCard, numberSelection) end
-
-            local aColor = {0.1764,0.1764,0.1764,0.01}
-            local aFontColor = {0,0,0,100}
-            for _, selected in pairs(selectedCards) do
-              if selected == availableCard then
-                aColor = {0,1,1,0.5}
-                aFontColor = {0,0,0,2}
-                break
-              end
-            end
-
-            setChoiceAttributes(n, availableCard, "choiceSubMenu"..n, aColor, aFontColor)
+  local index = 1
+  for _, potentialCC in ipairs(validCCs) do
+    if potentialCC.pip == pipSelected then
+      local availableCard = potentialCC.name
+      local selected = false
+      for _, card in ipairs(selectedCards) do
+        if availableCard == card then
+          selected = true
+          break
         end
-        n = n + 1
-        if listBuilder.commandCards[selectedCommander].cards2 != nil then
-            local availableCard = listBuilder.commandCards[selectedCommander].cards2[pipSelected]
-
-            -- SET FUNCTION NAME
-            _G["choiceSubMenu"..n] = function() selectCommandCard(isContingencies, availableCard, numberSelection) end
-
-            local aColor = {0.1764,0.1764,0.1764,0.01}
-            local aFontColor = {0,0,0,100}
-            for _, selected in pairs(selectedCards) do
-              if selected == availableCard then
-                aColor = {0,1,1,0.5}
-                aFontColor = {0,0,0,2}
-                break
-              end
-            end
-
-            setChoiceAttributes(n, availableCard, "choiceSubMenu"..n, aColor, aFontColor)
-            n = n + 1
-        end
-
-
-
+      end
+      _G["choiceSubMenu"..index] = function() 
+        selectCommandCard(isContingencies, availableCard, numberSelection)
+      end
+      local aColor = {0.1764,0.1764,0.1764,0.01}
+      if selected then
+        aColor = {0,1,1,0.5}
+      end
+      local aFontColor = {0,0,0,100}
+      if selected then
+        aFontColor = {0,0,0,2}
+      end
+      setChoiceAttributes(
+        index,
+        availableCard,
+        "choiceSubMenu"..index,
+        aColor,
+        aFontColor
+      )
+      index = index + 1
     end
+  end
 
-    updateButtons()
-
+  updateButtons()
 end
-
-
 
 function objectiveSubMenu()
     battlefieldCardSubMenu("objective")
