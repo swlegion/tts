@@ -46,12 +46,15 @@ async function backupMiniAssets(
 ): Promise<number> {
   let count = 0;
   for (const match of Array.from(inputContents.matchAll(findMiniInfo))) {
+    if (!match.index) {
+      continue;
+    }
     count++;
     const name = match[1];
 
     // Find the next mesh = "URL" and diffuse = "URL" before the "}"
     const region = inputContents.substring(
-      match.index!,
+      match.index,
       inputContents.indexOf('}', match.index),
     );
 
@@ -113,7 +116,7 @@ async function backupCardAssets(
   const files = new Set<string>();
   for (const cardAsset of Array.from(assets)) {
     const file = await readUrl(cardAsset);
-    let name = path.basename(file.url);
+    const name = path.basename(file.url);
     if (files.has(name)) {
       console.warn(`Ignoring "${name}" (duplicate filename)`);
     } else {
@@ -131,10 +134,12 @@ async function backupCardAssets(
     const data = new Uint8Array(await response.arrayBuffer());
     let name = response.url;
     if (response.headers.get('Content-Disposition')) {
-      const header = response.headers.get('Content-Disposition')!;
-      const fileName = /filename=\"\w+\_(.*)\"/.exec(header)?.[1];
-      if (fileName) {
-        name = fileName;
+      const header = response.headers.get('Content-Disposition');
+      if (header) {
+        const fileName = /filename=\"\w+\_(.*)\"/.exec(header)?.[1];
+        if (fileName) {
+          name = fileName;
+        }
       }
     }
     return { url: name, data };

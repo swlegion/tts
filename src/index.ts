@@ -38,20 +38,22 @@ function concatAllObjectScripts(
   states: ObjectState[],
   buffer?: OutgoingJsonObject[],
 ): OutgoingJsonObject[] {
-  if (!buffer) {
-    buffer = [];
-  }
+  const writeBuffer = buffer || [];
   states.forEach((state) => {
-    buffer!.push({
-      guid: state.GUID!,
+    const { GUID } = state;
+    if (!GUID) {
+      return;
+    }
+    writeBuffer.push({
+      guid: GUID,
       script: state.LuaScript,
       ui: state.XmlUI,
     });
     if (state.ContainedObjects) {
-      concatAllObjectScripts(state.ContainedObjects, buffer);
+      concatAllObjectScripts(state.ContainedObjects, writeBuffer);
     }
   });
-  return buffer;
+  return writeBuffer;
 }
 
 export async function compileSaveFile(
