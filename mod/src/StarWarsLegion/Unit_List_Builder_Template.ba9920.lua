@@ -1,6 +1,5 @@
 #include !/Deck
 #include !/common/Math
-#include !/data/CardInfo_new
 
 -- model template
 function onLoad()
@@ -17,7 +16,6 @@ function setUp()
 
     battlefieldTint = gameData.getTable("battlefieldTint")
     templateMenu = Global.getTable("templateMenu")
-    cardInfo = CardInfoClass:buildCardInfo()
     selectedArmyFaction = Global.getVar(colorSide.."SelectedArmyFaction")
     listBuilder = Global.getTable("listBuilder")
     unitIDTokenBag = getObjectFromGUID(Global.getVar("unitIDTokenBagGUID"))
@@ -527,14 +525,15 @@ function drawUpgradeMenu()
       local startAt = availableUpgradeSlotCount + 1
       local upIndex = 1
       for i = startAt, availableUpgradeSlotCount + requiredUpgradeCount, 1 do
-        local cardObj = cardInfo:getUpgradeByName(requiredUpgrades[upIndex])
-        spawnUpgradeCard(
-          cardObj,
-          upgradeCardPos[i],
-          i,
-          true
-        )
-        upIndex = upIndex + 1
+        --TODO: Restore.
+        --local cardObj = cardInfo:getUpgradeByName(requiredUpgrades[upIndex])
+        --spawnUpgradeCard(
+        --  cardObj,
+        --  upgradeCardPos[i],
+        --  i,
+        --  true
+        --)
+        --upIndex = upIndex + 1
       end
       requiredUpgrades = {}
     end
