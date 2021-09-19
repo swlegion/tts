@@ -296,3 +296,27 @@ function Deck:_spawnCard(front, back)
   })
   return custom
 end
+
+function Deck:getUnitsByFactionAndRank(faction, rank)
+  -- TODO: Remove remapping.
+  local remap = {
+    ["rebel"]      = "Rebel",
+    ["imperial"]   = "Empire",
+    ["separatist"] = "Separatist",
+    ["republic"]   = "Republic",
+  }
+  if remap[faction] ~= nil then
+    faction = remap[faction]
+  end
+  local units = self._schema.units[faction:upper()]
+  if units == nil then
+    return {}
+  end
+  local result = {}
+  for _, unit in pairs(units) do
+    if unit.rank:upper() == rank:upper() then
+      table.insert(result, unit)
+    end
+  end
+  return result
+end

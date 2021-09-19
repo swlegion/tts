@@ -192,7 +192,7 @@ function unitSubMenu(selectedRank)
     updateBackButton("mainMenu", "X", 0.01, "Go back to main menu")
     unitCardRank = selectedRank
 
-    local unitList = cardInfo:getUnitsByFactionAndRank(selectedArmyFaction, selectedRank)
+    local unitList = Deck:getUnitsByFactionAndRank(selectedArmyFaction, selectedRank)
     local startIndex = unitCardPage * 6 + 1
     local endIndex = (unitCardPage + 1) * 6
 
