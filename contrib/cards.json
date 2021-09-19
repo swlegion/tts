@@ -3186,7 +3186,7 @@
         "points": 8,
         "restrictions": {
           "override": {
-            "unit": ["B1 Battle Droid"]
+            "unit": ["B1 Battle Droids"]
           }
         }
       },
@@ -3231,7 +3231,7 @@
         "points": 6,
         "restrictions": {
           "override": {
-            "unit": ["B1 Battle Droid"]
+            "unit": ["B1 Battle Droids"]
           }
         }
       },
@@ -3714,7 +3714,7 @@
           "include": {
             "faction": ["Empire"],
             "unit": ["Imperial Special Forces"],
-            "type": ["Corps"]
+            "rank": ["Corps"]
           }
         }
       },
@@ -3829,7 +3829,7 @@
           "include": {
             "faction": ["Republic"],
             "unit": ["ARC Troopers"],
-            "type": ["Corps"]
+            "rank": ["Corps"]
           }
         }
       },
@@ -3860,7 +3860,7 @@
           "include": {
             "faction": ["Empire"],
             "unit": ["Imperial Special Forces"],
-            "type": ["Corps"]
+            "rank": ["Corps"]
           }
         }
       },

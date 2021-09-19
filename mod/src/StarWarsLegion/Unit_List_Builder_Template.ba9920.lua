@@ -434,9 +434,10 @@ function drawUpgradeMenu()
     local requiredUpgradeCount = #requiredUpgrades
     for i = 1, availableUpgradeSlotCount, 1 do
       local buttonPosition = buttonPositions[i]
-      local upgradesList = Deck:getUpgradesByType(availableUpgradeSlots[i])
-      -- TODO: RESTORE.
-      local allowableUpgrades = upgradesList -- selectedUnit:filterAllowedUpgrades(upgradesList)
+      local allowableUpgrades = Deck:getUpgradesByType(
+        availableUpgradeSlots[i],
+        selectedUnit
+      )
 
       for n = 1, 5, 1 do
         local upgradeClickFunction = "dud"

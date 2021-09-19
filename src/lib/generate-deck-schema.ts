@@ -61,7 +61,7 @@ export default async function buildDeckSchemaLua(
       (rankAndUnits) => {
         const [rank, units] = rankAndUnits;
         (units as { [key: string]: unknown }[]).forEach((unit) => {
-          unit = { ...unit, rank };
+          unit = { ...unit, rank, faction };
           let { name } = unit;
           if (unit.title) {
             name = `${name} ${unit.title}`;
@@ -94,6 +94,7 @@ export default async function buildDeckSchemaLua(
       ...(upgrade.flip as { [key: string]: unknown }),
       type: (upgrade as { [key: string]: unknown }).type,
       points: (upgrade as { [key: string]: unknown }).points,
+      restrictions: (upgrade as { [key: string]: unknown }).restrictions,
       flip: {
         name: upgrade.name,
         image: upgrade.image,
