@@ -10,32 +10,21 @@ end
 
 function onLoad(saveData)
   -- LOAD VALUES
-  battlefieldTint = Global.getTable("battlefieldTint")
-  baseAddition = Global.getTable("baseAddition")
-  existingTint = battlefieldTint
-  battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
-  templateInfo = Global.getTable("templateInfo")
-  dieRollerInfo = Global.getTable("dieRollerInfo")
-  tintedRed = false
-  highlightTints = Global.getTable("highlightTints")
+  _G.battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
+  _G.templateInfo = Global.getTable("templateInfo")
+  _G.highlightTints = Global.getTable("highlightTints")
 
   -- set info
-  inBattlefield = false
-  dieNumber = 1
-  defenceDieNumber = 1
-  atkDieNumber = 1
-  dieObjs = nil
-  selectedUnit = nil
-  activated = false
-  moveStatus = true
+  _G.selectedUnit = nil
+  _G.activated = false
 
   -- setUp
   if saveData ~= "" then
-    unitData = JSON.decode(saveData)
+    _G.unitData = JSON.decode(saveData)
   end
-  if unitData ~= nil then
-    isAToken = true
-    dieRoller = getObjectFromGUID(dieRollerInfo[unitData.colorSide.."DieRollerGUID"])
+  if _G.unitData ~= nil then
+    local dieRollerInfo = Global.getTable("dieRollerInfo")
+    _G.dieRoller = getObjectFromGUID(dieRollerInfo[_G.unitData.colorSide.."DieRollerGUID"])
     setTemplateVariables()
     initialize()
   end
@@ -84,9 +73,9 @@ function getEligibleUnit()
             -- check eligibility
 
             local miniData = unit.getTable("unitData")
-            local isAToken = unit.getVar("isAToken")
+            local isAMini = unit.getVar("isAMini")
             if miniData != nil and miniData.commandType != nil then
-                if isAToken != true and unitData.commandType == miniData.commandType and unit.getVar("colorSide") == unitData.colorSide then
+                if isAMini == true and unitData.commandType == miniData.commandType and unit.getVar("colorSide") == unitData.colorSide then
                     -- add to eligible units
                     eligibleUnitsNumber = eligibleUnitsNumber + 1
                     eligibleUnits[eligibleUnitsNumber] = unit
