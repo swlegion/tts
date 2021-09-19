@@ -113,14 +113,16 @@ export default async function buildDeckSchemaLua(
   });
   lua.push('  },');
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const allCommandsSorted: any[] = Object.entries(json['commands'])
-    .map((pipAndCommands) => {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const [_pip, commands] = pipAndCommands;
-      return commands;
-    })
-    .flat();
+  const allCommandsSorted: { [key: string]: unknown }[] = [];
+  Object.entries(json['commands']).forEach((factionAndCommands) => {
+    const [faction, commands] = factionAndCommands;
+    (commands as { [key: string]: unknown }[]).forEach((command) => {
+      allCommandsSorted.push({
+        ...command,
+        faction,
+      });
+    });
+  });
 
   allCommandsSorted.sort((a, b) =>
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -128,7 +130,7 @@ export default async function buildDeckSchemaLua(
   );
   lua.push('  commands = {');
   allCommandsSorted.forEach((command) => {
-    lua.push(`    [${encodeKey(command.name)}] = {`);
+    lua.push(`    [${encodeKey(command.name as string)}] = {`);
     lua.push(...formatData(command, 6));
     lua.push('    },');
   });
