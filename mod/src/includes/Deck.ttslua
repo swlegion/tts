@@ -346,7 +346,7 @@ function Deck:getUnitsByFactionAndRank(faction, rank)
   return result
 end
 
-function Deck:getUpgradesByType(type)
+function Deck:getUpgradesByType(type, filterForUnit)
   -- Makes the cost of this less unbearable since it's called many times.
   if self._cache.upgrades[type] then
     return self._cache.upgrades[type]
@@ -354,11 +354,57 @@ function Deck:getUpgradesByType(type)
   local result = {}
   for _, upgrade in pairs(self._schema.upgrades) do
     if upgrade.type:upper() == type:upper() then
-      table.insert(result, upgrade)
+      if not filterForUnit or self:_isUpgradeValidFor(upgrade, filterForUnit) then
+        table.insert(result, upgrade)
+      end
     end
   end
   self._cache.upgrades[type] = result
   return result
+end
+
+function Deck:_isUpgradeValidFor(upgrade, unit)
+  local restrictions = upgrade.restrictions
+
+  -- Basically this exists so B1's can equip Binoculars/Scanner.
+  -- Hopefully AMG uses this again in the future, because otheriwse ugh.
+  if restrictions and restrictions.override and restrictions.override.unit then
+    for _, overrideForUnit in ipairs(restrictions.override.unit) do
+      if overrideForUnit:upper() == unit.name:upper() then
+        return true
+      end
+    end
+  end
+
+  if restrictions then
+    if restrictions.include then
+      if restrictions.include.unit then
+        for _, unitName in ipairs(restrictions.include.unit) do
+          if unitName:upper() ~= unit.name:upper() then
+            return false
+          end
+        end
+      end
+
+      if restrictions.include.faction then
+        for _, unitFaction in ipairs(restrictions.include.faction) do
+          if unitFaction:upper() ~= unit.faction:upper() then
+            return false
+          end
+        end
+      end
+
+      -- TODO: Add support for type.
+      -- TODO: Add support for rank.
+      -- TODO: Add support for alignment.
+    end
+
+    if restrictions.exclude then
+      -- TODO: Add support for exclusions.
+    end
+  end
+
+  return true
 end
 
 function Deck:getUpgradeByName(name)
