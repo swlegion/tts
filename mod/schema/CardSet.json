@@ -9,21 +9,22 @@
 
   "properties": {
     "units": {
-      "$ref": "./UnitCardSet.json"
+      "$ref": "./deps/UnitCardSet.json"
     },
 
     "upgrades": {
-      "$ref": "./UpgradeCardSet.json"
+      "$ref": "./deps/UpgradeCardSet.json"
     },
 
     "commands": {
-      "$ref": "./CommandCardSet.json"
+      "$ref": "./deps/CommandCardSet.json"
     },
 
     "battlefield": {
-      "$ref": "./BattleCardSet.json"
+      "$ref": "./deps/BattleCardSet.json"
     }
   },
 
+  "type": "object",
   "required": ["units", "upgrades", "commands", "battlefield"]
 }

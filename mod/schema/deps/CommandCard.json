@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://schema.swlegion.dev/BattleCard.json",
+  "$id": "https://schema.swlegion.dev/deps/CommandCard.json",
 
-  "title": "Battle Card",
-  "description": "Definition of a battle card.",
+  "title": "Command Card",
+  "description": "Definition of a command card. Note this should not include \"flaw\" cards.",
 
   "additionalProperties": false,
 
@@ -18,5 +18,6 @@
     }
   },
 
+  "type": "object",
   "required": ["name", "image"]
 }

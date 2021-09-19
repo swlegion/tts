@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://schema.swlegion.dev/BattleCardSet.json",
+  "$id": "https://schema.swlegion.dev/deps/BattleCardSet.json",
 
   "title": "A collection of Battle Cards.",
   "description": "A set of battle cards, by type and scenario.",

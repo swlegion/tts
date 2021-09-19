@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://schema.swlegion.dev/UnitCard.json",
+  "$id": "https://schema.swlegion.dev/deps/UnitCard.json",
 
   "title": "Unit Card",
   "description": "Definition of a unit card.",
@@ -73,9 +73,12 @@
 
       "propertyNames": {
         "$ref": "./Upgrades.json"
-      }
+      },
+
+      "type": "object"
     }
   },
 
+  "type": "object",
   "required": ["name", "image", "size", "points", "speed", "upgrades"]
 }
