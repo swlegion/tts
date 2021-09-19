@@ -1122,44 +1122,37 @@ function dud()
 end
 
 function highlightEnemies()
-    enemyLeaders = getEnemyUnits()
-
-    for _, leader in pairs(enemyLeaders) do
-        local enemyID = leader.getVar("unitID")
-        local enemyMinis = leader.getTable("miniGUIDs")
-        highlightUnit(enemyMinis,highlightTints[enemyID])
-    end
+  for _, leader in ipairs(getEnemyUnits()) do
+    highlightEnemy(leader)
+  end
 end
 
 function highlightEnemy(leader)
-    local enemyID = leader.getVar("unitID")
-    local enemyMinis = leader.getTable("miniGUIDs")
-    highlightUnit(enemyMinis, highlightTints[enemyID])
+  local enemyID = leader.getVar("unitID")
+  local enemyMinis = leader.getTable("miniGUIDs")
+  highlightUnit(enemyMinis, highlightTints[enemyID])
 end
 
 function unhighlightEnemies()
-    enemyLeaders = getEnemyUnits()
-
-    for _, leader in pairs(enemyLeaders) do
-        local enemyID = leader.getVar("unitID")
-        local enemyMinis = leader.getTable("miniGUIDs")
-        unhighlightUnit(enemyMinis)
-        leader.call("resetUnitButtons")
-    end
+  for _, leader in ipairs(getEnemyUnits()) do
+    local enemyID = leader.getVar("unitID")
+    local enemyMinis = leader.getTable("miniGUIDs")
+    unhighlightUnit(enemyMinis)
+    leader.call("resetUnitButtons")
+  end
 end
 
 function getEnemyUnits()
-    -- tableObj
-    local miniObjs = {}
+  local miniObjs = {}
+  local allUnits = battlefieldZone.getObjects()
 
-    local allUnits = battlefieldZone.getObjects()
-    for _, obj in pairs(allUnits) do
-        if obj.getVar("isAMini") == true and obj.getVar("colorSide") != unitData.colorSide then
-            table.insert(miniObjs, obj)
-        end
+  for _, obj in pairs(allUnits) do
+    if obj.getVar("isAMini") == true and obj.getVar("colorSide") != unitData.colorSide then
+      table.insert(miniObjs, obj)
     end
+  end
 
-    return miniObjs
+  return miniObjs
 end
 
 
