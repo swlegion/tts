@@ -322,7 +322,6 @@ function upgradeMenu()
             table.insert(availableUpgradeSlots, name)
           end
         end
-        -- TODO: Restore.
         requiredUpgrades = selectedUnit.required
         if requiredUpgrades == nil then
           requiredUpgrades = {}
@@ -537,15 +536,14 @@ function drawUpgradeMenu()
       local startAt = availableUpgradeSlotCount + 1
       local upIndex = 1
       for i = startAt, availableUpgradeSlotCount + requiredUpgradeCount, 1 do
-        --TODO: Restore.
-        --local cardObj = cardInfo:getUpgradeByName(requiredUpgrades[upIndex])
-        --spawnUpgradeCard(
-        --  cardObj,
-        --  upgradeCardPos[i],
-        --  i,
-        --  true
-        --)
-        --upIndex = upIndex + 1
+        local upgradeCard = Deck:getUpgradeByName(requiredUpgrades[upIndex])
+        spawnUpgradeCard(
+          upgradeCard,
+          upgradeCardPos[i],
+          i,
+          true
+        )
+        upIndex = upIndex + 1
       end
       requiredUpgrades = {}
     end
@@ -576,7 +574,7 @@ function spawnUpgradeCard(cardData, cardPos, upgradeNumber, requiredUpgrade)
 
     upgradeCard.setRotation({0,rot.y+180,0})
     upgradeCard.setPosition(pos)
-    upgradeCard.setVar("ptCost", cardData.ptCost)
+    upgradeCard.setVar("ptCost", cardData.points or 0)
     upgradeCard.setLock(false)
     upgradeCard.setScale({0.83,0.83,0.83})
     upgradeCardIndex[upgradeNumber] = cardData

@@ -699,7 +699,6 @@
           "points": 34,
           "speed": 3,
           "upgrades": {
-            "Heavy Weapon": 2,
             "Training": 1,
             "Comms": 1,
             "Gear": 1,
@@ -1487,7 +1486,6 @@
           "points": 34,
           "speed": 2,
           "upgrades": {
-            "Heavy Weapon": 2,
             "Training": 2,
             "Comms": 1,
             "Gear": 1,

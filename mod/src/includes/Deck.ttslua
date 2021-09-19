@@ -361,6 +361,10 @@ function Deck:getUpgradesByType(type)
   return result
 end
 
+function Deck:getUpgradeByName(name)
+  return self._schema.upgrades[name:upper()]
+end
+
 function Deck:getCommandsByFactionAndUnits(faction, units)
   -- TODO: Remove remapping.
   local remap = {
