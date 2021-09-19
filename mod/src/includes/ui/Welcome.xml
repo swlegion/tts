@@ -51,6 +51,11 @@
 
           - We are testing a <i>new card flow</i> (internal to the mod).
           - <b>Please report any bugs with unit/upgrade/command/battle cards</b>.
+  
+          - <b>Bugs</b>: The in-game list builder ..
+            .. can spawn templates in a wrong position.
+            .. allows upgrades that were hidden before.
+            .. does not show points.
 
           (Since last <i>Stable</i>)
 

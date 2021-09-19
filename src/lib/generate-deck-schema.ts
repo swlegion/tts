@@ -71,22 +71,22 @@ export default async function buildDeckSchemaLua(
 
   lua.push('  },');
 
-  const allUpgradesSorted: any[] = Object.entries(json['upgrades'])
-    .map((typeAndUpgrades) => {
-      const [_type, upgrades] = typeAndUpgrades;
-      return upgrades;
-    })
-    .flat();
+  const allUpgradesSorted: any[] = [];
+  Object.entries(json['upgrades']).forEach((typeAndUpgrades) => {
+    const [type, upgrades] = typeAndUpgrades;
+    (upgrades as any[]).forEach((upgrade) => {
+      allUpgradesSorted.push({ ...upgrade, type });
+    });
+  });
 
   // Handle "flip" cards by double-indexing (this is lazy, but deal with it).
   [...allUpgradesSorted].forEach((upgrade) => {
     if (!upgrade.flip) {
       return;
     }
-    const { name, image } = upgrade.flip;
     allUpgradesSorted.push({
-      name,
-      image,
+      ...upgrade.flip,
+      type: (upgrade as any).type,
       flip: {
         name: upgrade.name,
         image: upgrade.image,
