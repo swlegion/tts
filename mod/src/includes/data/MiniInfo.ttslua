@@ -1,4 +1,0 @@
-function buildMiniInfo()
-  -- TODO
-  return {}
-end

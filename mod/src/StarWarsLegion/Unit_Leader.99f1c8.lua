@@ -10,39 +10,15 @@ end
 
 function setUp()
     templateInfo = Global.getTable("templateInfo")
-    cardInfo = Global.getTable("cardInfo").unitCards
 
     moveState = false
     silhouetteState = false
 
     if unitName != nil and colorSide != nil then
-        local baseSize = cardInfo[unitName].baseSize
-        local fixed = baseSize != 'small'
-
         unitData = {}
-        unitData.commandType = cardInfo[unitName].commandType
+        unitData.commandType = commandType
         unitData.baseSize = baseSize
-        unitData.fixedMove = fixed
-        unitData.fixedArc = fixed
-        unitData.selectedSpeed = cardInfo[unitName].selectedSpeed
-
-        if cardInfo[unitName].strafeMove != nil then
-              unitData.strafeMove = true
-        else
-              unitData.strafeMove = false
-        end
-
-        -- set info
-        unitData.aStart = templateInfo.aStart[unitData.baseSize][unitData.selectedSpeed]
-        unitData.bStart = templateInfo.bStart[unitData.baseSize][unitData.selectedSpeed]
-
-        unitData.templateMesh = templateInfo[unitData.selectedSpeed]
-        unitData.templateCollider = templateInfo.templateCollider
-        unitData.tint = templateInfo.tint[unitData.selectedSpeed]
-        unitData.buttonPosition = templateInfo.buttonPosition[unitData.selectedSpeed]
-        unitData.buttonColor = templateInfo.buttonColor[unitData.selectedSpeed]
-        unitData.fontColor = templateInfo.fontColor[unitData.selectedSpeed]
-        unitData.cohesionRadius = templateInfo.cohesionRadius[unitData.baseSize]
+        unitData.selectedSpeed = selectedSpeed
 
         local unitCountPos = {}
         unitCountPos.small = {-0.3, 0.2, 0.2}

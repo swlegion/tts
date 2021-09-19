@@ -1,6 +1,5 @@
 --[[ Blank Order Token --]]
 local operative_marker_token_bag_GUID = "125746"
-local unit_info_table = Global.getTable("cardInfo").unitCards
 local list_builder_table = Global.getTable("listBuilder")
 local command_token_data_table = Global.getTable("commandTokenData")
 local held_by_color = nil
@@ -112,46 +111,45 @@ end
 
 --[[ Determine the unit and set up the required Order Token --]]
 function assign_unit_to_this_token(token, color, alt_click)
-    if not is_player_permitted(color) then
-        broadcastToColor("Only the Blue or Red Player can do this.", color, {r = 1, g = 0, b = 0})
-        return
+  if not is_player_permitted(color) then
+    broadcastToColor("Only the Blue or Red Player can do this.", color, {r = 1, g = 0, b = 0})
+    return
+  end
+
+  local objects = Player[color].getSelectedObjects()
+
+  for _, object in ipairs(objects) do
+    if object.getGUID() ~= self.getGUID() then
+      if object.getVar("unitName") and object.getTable("miniGUIDs") then
+        update_token(
+          object.getVar("commandType"),
+          object.getVar("commandName"),
+          color,
+          object.getVar("baseSize"),
+          object.getVar("selectedSpeed")
+        )
+        break
+      end
     end
-
-    local objects = Player[color].getSelectedObjects()
-
-    for _, object in ipairs(objects) do
-        if object.getGUID() ~= self.getGUID() then
-            if object.getVar("unitName") and object.getTable("miniGUIDs") then
-                local unit_name = object.getVar("unitName")
-                -- We don't lookup the unit rank, because some other effect in
-                -- the game could have already changed the unit leader's rank
-                -- (such as covert ops, promote).
-                local unit_rank = object.getTable("unitData").commandType
-                local unit_faction = object.getVar("faction")
-                local unit_token_name = unit_info_table[unit_name].tokenName
-
-                update_token(unit_name, unit_faction, unit_rank, unit_token_name, color)
-            end
-        end
-    end
+  end
 end
 
 --[[  Changes a unit's rank to "Commander" and spawns the "Commander" token--]]
 function promote_new_commander(token, color, alt_click)
-    local unit_leader_mini = promote_unit("Commander", color)
+  local unit_leader_mini = promote_unit("Commander", color)
 
-    if unit_leader_mini then
-        spawn_commander_token(unit_leader_mini)
-    end
+  if unit_leader_mini then
+    spawn_commander_token(unit_leader_mini)
+  end
 end
 
 --[[  Changes a unit's rank to "Operative" and spawns the "Operative Marker" token--]]
 function assign_covert_ops(token, color, alt_click)
-    local unit_leader_mini = promote_unit("Operative", color)
+  local unit_leader_mini = promote_unit("Operative", color)
 
-    if unit_leader_mini then
-        spawn_operative_marker_token(unit_leader_mini)
-    end
+  if unit_leader_mini then
+    spawn_operative_marker_token(unit_leader_mini)
+  end
 end
 
 --[[ Determine the unit, promote to Rank, replace the Order Token --]]
@@ -161,31 +159,31 @@ function promote_unit(rank, color)
         return
     end
 
-    local unit_name = ""
-    local unit_faction = ""
     local unit_command_type = ""
     local new_unit_command_type = ""
     local unit_token_name = ""
     local order_token_to_delete = nil
     local unit_leader_mini = nil
+    local baseSize
+    local selectedSpeed
 
     local objects = Player[color].getSelectedObjects()
 
     for _, object in ipairs(objects) do
         if object.getGUID() ~= self.getGUID() then
             -- If Order Token
-            if object.getVar("unitName") and object.getVar("commandType") then
+            if object.getVar("unitName") and object.getVar("isAToken") then
                 order_token_to_delete = object
             end
 
             -- If Unit Leader Mini
             if object.getVar("unitName") and object.getTable("miniGUIDs") then
                 -- Set up the new Order Token.
-                unit_name = object.getVar("unitName")
-                unit_faction = object.getVar("faction")
-                unit_command_type = unit_info_table[unit_name].commandType
+                unit_command_type = object.getVar("commandType")
+                baseSize = object.getVar("baseSize")
+                selectedSpeed = object.getVar("selectedSpeed")
                 new_unit_command_type = unit_command_type:match("^%l+") .. rank
-                unit_token_name = new_unit_command_type:match("^%l+"):gsub("^%l", string.upper) .. " " .. rank .. " Command Token"
+                unit_token_name = object.getVar("commandName")
                 unit_leader_mini = object
 
                 -- Change the unit's rank
@@ -197,57 +195,72 @@ function promote_unit(rank, color)
     end
 
     if unit_leader_mini then
-        update_token(unit_name, unit_faction, new_unit_command_type, unit_token_name, color)
+      update_token(
+        new_unit_command_type,
+        unit_token_name,
+        color,
+        baseSize,
+        selectedSpeed
+      )
 
-        if order_token_to_delete then
-            destroyObject(order_token_to_delete)
-        end
+      if order_token_to_delete then
+        destroyObject(order_token_to_delete)
+      end
     else
-        broadcastToColor("Could not determine unit leader mini.", color, {r = 1, g = 0, b = 0})
+      broadcastToColor("Could not determine unit leader mini.", color, {r = 1, g = 0, b = 0})
     end
 
     return unit_leader_mini
 end
 
 --[[ Turns this token into the required Order Token --]]
-function update_token(unit_name, unit_faction, unit_command_type, unit_token_name, color)
+function update_token(
+  unit_command_type,
+  unit_token_name,
+  color,
+  baseSize,
+  selectedSpeed
+)
     -- Set Custom Object properties.
     self.setCustomObject(
-        {
-            mesh = command_token_data_table.mesh,
-            collider = command_token_data_table.collider,
-            diffuse = command_token_data_table[color:lower()][unit_command_type],
-            type = 0,
-            material = 3
-        }
+      {
+        mesh = command_token_data_table.mesh,
+        collider = command_token_data_table.collider,
+        diffuse = command_token_data_table[color:lower()][unit_command_type],
+        type = 0,
+        material = 3
+      }
     )
 
     -- Rotate the Blue token
     if color == "Blue" then
-        self.setRotation({0, 0, 0})
+      self.setRotation({0, 0, 0})
     end
 
     -- Set object properties
-    self.setName(color .. " " .. unit_token_name)
+    self.setName(unit_token_name)
     self.setDescription("")
 
     -- Set the objects script.
-    if unit_faction == nil then
-      unit_faction = ""
-    end
     local luaScript = string.format(
-      "unitName    = [[%s]]\n" ..
-      "faction     = [[%s]]\n" ..
-      "commandType = [[%s]]\n" ..
-      "colorSide   = [[%s]]\n" ..
-      "%s", 
-      unit_name,
-      unit_faction,
-      unit_command_type,
+      "unitData = {" ..
+      "  baseSize      = [[%s]],\n" ..
+      "  colorSide     = [[%s]],\n" ..
+      "  commandType   = [[%s]],\n" ..
+      "  fixedArc      = %s,\n" ..
+      "  fixedMove     = %s,\n" ..
+      "  selectedSpeed = %s,\n" ..
+      "  strafeMove    = %s,\n" ..
+      "}\n\n",
+      baseSize,
       color:lower(),
-      list_builder_table.tokenScript
+      unit_command_type,
+      tostring(baseSize ~= "small"),
+      tostring(baseSize ~= "small"),
+      tostring(selectedSpeed),
+      tostring(baseSize ~= "small")
     )
-    self.setLuaScript(luaScript)
+    self.setLuaScript(luaScript .. list_builder_table.tokenScript)
     self.reload()
 end
 
