@@ -295,8 +295,7 @@ function initializeCommandToken(cData)
     type = 0,
     material = 3
   })
-  local strColor = colorSide:gsub("^%l", string.upper)
-  tokenObj.setName(strColor .. " " .. cData.faction:gsub("^%l", string.upper) .. " " .. cData.rank:gsub("^%l", string.upper) .. " Command Token")
+  tokenObj.setName(cData.name)
   tokenObj.setLuaScript(listBuilder.tokenScript)
   tokenObj.setTable("unitData", {
     commandType   = cData.commandType,
@@ -305,8 +304,6 @@ function initializeCommandToken(cData)
     fixedArc      = cData.baseSize:lower() ~= "small",
     strafeMove    = cData.baseSize:lower() ~= "small",
     selectedSpeed = cData.selectedSpeed,
-    faction       = cData.faction,
-    rank          = cData.rank,
     colorSide     = colorSide,
   })
 end
@@ -618,13 +615,6 @@ function spawnUnit(unit, index, faction, totalUnits)
     })
   end)
 
-  miniData.baseSize = result.size
-  initializeMini(miniData)
-
-  if #loadout > 0 then
-    spawnLoadoutBag(name, loadout, templatePos, self.getRotation())
-  end
-
   -- TODO: Remove remapping.
   local remap = {
     ["Empire"]     = "imperial",
@@ -633,6 +623,20 @@ function spawnUnit(unit, index, faction, totalUnits)
     faction = remap[faction]
   end
   local commandType = faction:lower() .. result.rank:lower():gsub("^%l", string.upper)
+  local commandName = colorSide:gsub("^%l", string.upper) .. 
+                      " " .. faction:gsub("^%l", string.upper) ..
+                      " " .. result.rank:gsub("^%l", string.upper) ..
+                      " Command Token"
+  miniData.baseSize = result.size
+  miniData.commandName = commandName
+  miniData.commandType = commandType
+  miniData.selectedSpeed = result.speed
+  initializeMini(miniData)
+
+  if #loadout > 0 then
+    spawnLoadoutBag(name, loadout, templatePos, self.getRotation())
+  end
+
   local commandTray = getObjectFromGUID(commandTokenTrayData[colorSide][commandType])
   local pos = commandTray.getPosition()
   pos.y = pos.y + 0.5 + (0.2 * index)
@@ -640,13 +644,12 @@ function spawnUnit(unit, index, faction, totalUnits)
   rot.y = rot.y + 180
 
   initializeCommandToken({
+    name          = commandName,
     commandType   = commandType,
     pos           = pos,
     rot           = rot,
     baseSize      = result.size,
     selectedSpeed = result.speed,
-    faction       = faction,
-    rank          = result.rank,
   })
 end
 
@@ -689,7 +692,10 @@ function initializeMini(pMiniTable)
       selectedMiniScript = selectedMiniScript .. miniGUIDsScript .. 
         "cardGUID = \"" .. pMiniTable.unitCardObj.getGUID() .. 
         "\"\n unitName = \""..pMiniTable.name:lower() .. 
-        "\"\n baseSize = \""..pMiniTable.baseSize .. 
+        "\"\n commandName = \""..pMiniTable.commandName .. 
+        "\"\n commandType = \""..pMiniTable.commandType .. 
+        "\"\n selectedSpeed = "..pMiniTable.selectedSpeed .. 
+        "\n baseSize = \""..pMiniTable.baseSize .. 
         "\"\n unitID = " .. pMiniTable.unitID .. 
         "\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID .. 
         "\"\n" .. listBuilder.modelMiniScript
