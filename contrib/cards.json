@@ -1746,7 +1746,7 @@
         {
           "name": "Yoda",
           "title": "Grand Master Of The Jedi Order",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790511/A6CDD26B405EFC7CC306D96BB04AA24E5BED2794/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1617345381346377755/75D0ACFDFFCA5A08D7CAB59DA941B226D1563D46/",
           "size": "small",
           "points": 200,
           "speed": 1,
@@ -1754,7 +1754,11 @@
             "Force": 3,
             "Command": 1
           },
-          "minis": 1,
+          "minis": [
+            {
+              "bundle": "https://discord.com/channels/616348109806764033/620733407420350490/889286180401725513"
+            }
+          ],
           "commands": [
             {
               "name": "Size Matters Not",
@@ -2082,7 +2086,7 @@
         },
         {
           "name": "Raddaugh Gnasp Fluttercraft",
-          "image": "",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189347/2BD4025EABD6F2A919AC40FC4E6D3C8AC4292E86/",
           "size": "huge",
           "points": 55,
           "speed": 2,
@@ -2129,6 +2133,19 @@
               "bundle": "http://cloud-3.steamusercontent.com/ugc/1747939379132611640/1EEBEB993635A56525283FAFA0D62D347FB3121C/"
             }
           ]
+        },
+        {
+          "name": "Infantry Support Platform",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189285/5E0D18805F9C4BF8A978A9F1F20CFAE73575D02F/",
+          "size": "epic",
+          "points": 65,
+          "speed": 3,
+          "upgrades": {
+            "Pilot": 1,
+            "Hardpoint": 1,
+            "Comms": 1
+          },
+          "minis": 1
         }
       ]
     },
@@ -2596,7 +2613,7 @@
         },
         {
           "name": "DSD1 Dwarf Spider Droid",
-          "image": "",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189625/4E13A18FC19BA72238A142EE1D475C2EB16CE20A/",
           "size": "large",
           "points": 55,
           "speed": 2,
@@ -2626,6 +2643,19 @@
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/785235151813166725/2751E83472B0B6BD0559F5E77FAA3D62A0E17BB1/"
             }
           ]
+        },
+        {
+          "name": "NR-N99 Persuader-Class Tank Droid",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189694/7B7C520E6E95958DDD99114AA3CC6B28147D7284/",
+          "size": "long",
+          "points": 145,
+          "speed": 1,
+          "upgrades": {
+            "Programming": 1,
+            "Ordnance": 1,
+            "Comms": 1
+          },
+          "minis": 1
         }
       ]
     }
@@ -3001,6 +3031,16 @@
         "restrictions": {
           "include": {
             "unit": ["A-A5 Speeder Truck"]
+          }
+        }
+      },
+      {
+        "name": "Gnasp Bombardier",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189228/8CCDEE09F1FB60741F7EA11A32F4B2601A5772AF/",
+        "points": 20,
+        "restrictions": {
+          "include": {
+            "unit": ["Raddaugh Gnasp Fluttercraft"]
           }
         }
       },
@@ -3417,12 +3457,72 @@
         }
       },
       {
+        "name": "Nose-Mounted Flamethrower",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081188902/48FE6A084E2809E4B4EF0B05BDF72B01683F2770/",
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["DSD1 Dwarf Spider Droid"]
+          }
+        }
+      },
+      {
+        "name": "Nose-Mounted Laser Cannon",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081188770/4969CF4FCB92FABFF423E8E382E47FB2B1DD6454/",
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["DSD1 Dwarf Spider Droid"]
+          }
+        }
+      },
+      {
+        "name": "Nose-Mounted Ion Blaster",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081188843/0C53E6C54EAB645F0D743DD9F017DADA78247BEF/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["DSD1 Dwarf Spider Droid"]
+          }
+        }
+      },
+      {
         "name": "RT-97C Rifle Pintle",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145142/326682328F95F04A5229510F832857C4392032D4/",
         "points": 14,
         "restrictions": {
           "include": {
             "unit": ["TX-225 GAVw Occupier Combat Assault Tank"]
+          }
+        }
+      },
+      {
+        "name": "Twin Beam Cannnons",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189108/F040A172FA29BC024E24EBA875B27A7CE4F48FFC/",
+        "points": 40,
+        "restrictions": {
+          "include": {
+            "unit": ["Infantry Support Platform"]
+          }
+        }
+      },
+      {
+        "name": "Twin Blaster Cannons",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189035/E0FE1C4A1C9FDB662B092EEE87DDF1679EE4F144/",
+        "points": 40,
+        "restrictions": {
+          "include": {
+            "unit": ["Infantry Support Platform"]
+          }
+        }
+      },
+      {
+        "name": "Twin Missile Pods",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081188964/A368F5EF82821FCC38D6FABC316A1C035C38ECCA/",
+        "points": 40,
+        "restrictions": {
+          "include": {
+            "unit": ["Infantry Support Platform"]
           }
         }
       },
@@ -4684,6 +4784,16 @@
     ],
     "Pilot": [
       {
+        "name": "327th Star Corps Elite Armor Pilots",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189166/802261753CA48395CE18829616984D09BFAEDB0F/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Infantry Support Platform"]
+          }
+        }
+      },
+      {
         "name": "Aayla Secura",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138016/6FD454904B9ADCC463C52F3DCB9BD7899D570D93/",
         "points": 5,
@@ -4903,6 +5013,38 @@
           "include": {
             "faction": ["Rebel"],
             "type": ["Repulsor Vehicle"]
+          }
+        }
+      }
+    ],
+    "Programming": [
+      {
+        "name": "Attack Protocols",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189556/B615AA77261F49A55D5424BF61863365D8147D13/",
+        "points": 3,
+        "restrictions": {
+          "include": {
+            "type": ["Vehicle"]
+          }
+        }
+      },
+      {
+        "name": "Defense Protocols",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189482/1C8F98036D5D02047E16BD1043E44A388A6CF58A/",
+        "points": 3,
+        "restrictions": {
+          "include": {
+            "type": ["Vehicle"]
+          }
+        }
+      },
+      {
+        "name": "Engagement Protocols",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189429/CE2795767E26EC108F8E8AE10E7DE2FE933385AD/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "type": ["Vehicle"]
           }
         }
       }
