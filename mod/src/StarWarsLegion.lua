@@ -1,8 +1,6 @@
 #include !/Analytics
 #include !/common/SHA256
-#include !/data/CardInfo_new
 #include !/data/ListBuilder
-#include !/data/MiniInfo
 #include !/UI
 #include !/RangeRulers
 
@@ -249,7 +247,6 @@ function onLoad(saveData)
     redSelectedArmyFaction = ""
     blueSelectedArmyFaction = ""
     listBuilder = buildListBuilder()
-    cardInfo = CardInfoClass:buildCardInfo()
 
     dieRollerInfo = {}
     dieRollerInfo.diePos = {}

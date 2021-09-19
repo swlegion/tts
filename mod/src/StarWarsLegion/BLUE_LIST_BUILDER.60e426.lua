@@ -1,5 +1,4 @@
 #include !/common/Math
-#include !/data/CardInfo_new
 #include !/data/MiniInfo
 #include !/ListBuilder
 
@@ -35,7 +34,6 @@ function onLoad()
     ptCounter = getObjectFromGUID(listBuilder[colorZone.."CounterGUID"])
     colorSide = colorZone
     battlefieldTable = getObjectFromGUID(Global.getVar("battlefieldTable"))
-    cardInfo = CardInfoClass:buildCardInfo()
     templateMenu = Global.getTable("templateMenu")
     miniInfo = Global.getTable("miniInfo")
     unitIDTokenBag = getObjectFromGUID(Global.getVar("unitIDTokenBagGUID"))
