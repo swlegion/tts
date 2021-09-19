@@ -2887,6 +2887,23 @@
         "points": 6
       }
     ],
+    "Flaw": [
+      {
+        "name": "Developing Sympathies",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505080628668/E7A23D34D591C5EF876B320534798142C0A460EE/",
+        "points": 0
+      },
+      {
+        "name": "I've Altered The Deal",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505080628591/9F5E8A23795A68A3AA5FE82B933F4BDA78084207/",
+        "points": 0
+      },
+      {
+        "name": "Not A Store The Jedi Would Tell",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505080628743/9BF0AAE54D0CF62B22871F7E99B1DCD5617E05DA/",
+        "points": 0
+      }
+    ],
     "Force": [
       {
         "name": "Anger",
