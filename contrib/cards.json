@@ -1026,7 +1026,8 @@
           "upgrades": {
             "Training": 2,
             "Gear": 1,
-            "Armament": 1
+            "Armament": 1,
+            "Counterpart": 1
           },
           "minis": [
             {
@@ -2812,6 +2813,26 @@
         "name": "Onboard Comms Channel",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143827/4081B1BC25E42766DE1CDEF5EC574C464AC4AB57/",
         "points": 3
+      }
+    ],
+    "Counterpart": [
+      {
+        "name": "C-3PO",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505080628828/F6A01DB4DFDB1A518FC4E373D72237AB1B31300B/",
+        "points": 15,
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456807069/DE7E32B39455DB5111769436FD0C5BFDA3841268/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/777357228032306506/D60CB8A1159723917EF1831D4042318A67458A7A/"
+        }
+      },
+      {
+        "name": "Iden's ID10 Seeker Droid",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505080628898/0AD977B53010124C73F966F87EC1E3CBB0F18255/",
+        "points": 15,
+        "mini": {
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/770611889399999868/37F150131345FF1F47592A96239395A583AAE5EA/",
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/773996263557020821/1E2319EBFD85D7748450F40689A1315696052EFC/"
+        }
       }
     ],
     "Crew": [
