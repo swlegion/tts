@@ -30,6 +30,7 @@
     "@types/sanitize-filename": "^1.6.3",
     "@types/shelljs": "^0.8.8",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
     "ajv-cli": "^5.0.0",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
