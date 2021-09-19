@@ -15,9 +15,13 @@
 
     "image": {
       "$ref": "./Image.json"
+    },
+
+    "pip": {
+      "enum": [1, 2, 3, 4]
     }
   },
 
   "type": "object",
-  "required": ["name", "image"]
+  "required": ["name", "image", "pip"]
 }

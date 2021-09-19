@@ -18,6 +18,38 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540537100371/0B15B2810ABEBE5429E4A24852D96BAC2DC28BF7/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540537079134/11A17263AD81DC9D4271B7C6BD809B69141DCB61/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Son Of Skywalker",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036127/CF8D8E07205CB523EA3D2EE71AD61D9FB96B17BB/",
+              "pip": 1
+            },
+            {
+              "name": "You Serve Your Master Well",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035766/83D508C088FC9B893BDA1C497410726302D84452/",
+              "pip": 1
+            },
+            {
+              "name": "My Ally Is The Force",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035023/A55A52AA8780EEFEB9B8DB24FE4294A844B3678E/",
+              "pip": 2
+            },
+            {
+              "name": "Full Of Surprises",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035386/B9B2E0999D5AA4C072B3C45FBD2185A0D7F6A9F5/",
+              "pip": 2
+            },
+            {
+              "name": "Return Of The Jedi",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033269/7606E86C0B998BBB4DAADE6F01B300A7931B697C/",
+              "pip": 3
+            },
+            {
+              "name": "I Am A Jedi",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033560/7EFDE383C076E6F171E6B868D1F5C7EE66A466CE/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -35,6 +67,23 @@
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540537137572/2AC01B05AF1576F49C3156EDB614E2C1804C2A42/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540537137853/F8E5FE7B221E9115B36E22C14E5707B7CFA6CFC3/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Coordinated Bombardment",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036952/79DBBA37340FFEA238E71B07D6969F19AD1B8BD1/",
+              "pip": 1
+            },
+            {
+              "name": "No Time For Sorrows",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034953/BDC08D664C3DC9DFE785E312F2F0517921B3C799/",
+              "pip": 2
+            },
+            {
+              "name": "Somebody Has To Save Our Skins",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032996/852C2F232B15634E443A2317ED2D2316BA7496C4/",
+              "pip": 3
             }
           ]
         },
@@ -54,6 +103,23 @@
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540669649/C440F429AB1182944D329D0C16C3402DB731CA87/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540669835/B4E395AA781518EAC4FBFFCB27BAA646201F411C/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Sorry About The Mess",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036094/C7F82426F9CDB6835C1DC91F0584AADE44F207EE/",
+              "pip": 1
+            },
+            {
+              "name": "Reckless Diversion",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034768/6CA17689021162EFE850A3CEA62AA3BD5B84B4A5/",
+              "pip": 2
+            },
+            {
+              "name": "Change Of Plans",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034095/F1EFCCA49BBF25049B679261404156EE2B259936/",
+              "pip": 3
             }
           ]
         },
@@ -93,6 +159,23 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305475778/55B558E631655D0430BAF76E71C93899AAECA7A1/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/951848302305475871/06400240648CC39F933BE504C74DA9BEF4D006C4/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Rebellious",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036244/9C57ADB262F7193BE9B7C07B645915C58498EEDA/",
+              "pip": 1
+            },
+            {
+              "name": "Trust Goes Both Ways",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034481/2822AD43412B26BC38EF8F091201BA501D4FDBD0/",
+              "pip": 2
+            },
+            {
+              "name": "Complete The Mission",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034061/6FF1A4A6372B891E6F06022118ECF635BC40C2F2/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -112,6 +195,23 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/773996263556990389/C38E9CAD7E5BA5496E1A211CA799E9ACBAC51D00/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/770611701143191344/5CAA4F0CE9A3FBE89A81560221ADCDDB5A801CC3/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Crack Shot",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036864/47CCB05A1DB54F77FADE1652F981DAB2BD39FEE1/",
+              "pip": 1
+            },
+            {
+              "name": "Last Stand",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035098/CD888287DB06A86CEF0E5CA443F2E227C8A0D3E9/",
+              "pip": 2
+            },
+            {
+              "name": "Volunteer Mission",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032942/4047B661BAEEEFC2CA4DD45010D3029D9FB74C63/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -130,6 +230,23 @@
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1666859827674318376/E0A03ACDC6D2F607B8CC0C406AE196A9DB5347B7/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/1666859827674318640/6674121C184DF4BBD67EAB0DAA75F6B41A93669A/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Idiot's Array",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036507/059AB65ED149A6399024F171211A0D3ECD21F083/",
+              "pip": 1
+            },
+            {
+              "name": "Ace Up His Sleeve",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035738/83A01C2C466036B1BF2EF3A47F21CB11017522BD/",
+              "pip": 2
+            },
+            {
+              "name": "All In",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034326/44C2D4E2EE50B69C41DDDEA5963FC50152F9AE57/",
+              "pip": 3
             }
           ]
         }
@@ -151,6 +268,23 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540669973/90DD9EA44756CCF9B2473302DC644F3AEEED07B4/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670117/5AA04499FC8CC467864F9F335601E6335C03326D/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Common Cause",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036994/19D8F067B325C88C9A9A3DE2D4CCAD9A7BAB5957/",
+              "pip": 1
+            },
+            {
+              "name": "Brains And Brawn",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035622/3BC5E96C0730225BC27EB0CE2BDB471E5CE66F4A/",
+              "pip": 2
+            },
+            {
+              "name": "Notorious Scoundrels",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033300/4FA05D084E4DECE8DD8EED42E141C413F57201F2/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -170,6 +304,23 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/948474323838790939/3E9EB4AAF653CD476FF3D90EA82072EDC2D4AC66/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/948474323838791034/38CDAF985C2DC983942183E1DFD3ACBC33D8E40E/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Explosions!",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036773/60EF5E470AE0865CA28E50C31CDEDCD9266E0562/",
+              "pip": 1
+            },
+            {
+              "name": "Symbol Of Rebellion",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034630/5AD8C9A6E0D6ADC0C1BA7E53AE4BDB9653DADA60/",
+              "pip": 2
+            },
+            {
+              "name": "Legacy Of Mandalore",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033440/0011AF8A615526AED73E7A61D4E6C78B209F75E9/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -187,6 +338,38 @@
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/777357228030156264/12F93F60CC26F1FDC2B577D4014787B7CAFBF9A1/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/777357228030156398/F811CAE962A0BFE369544C0A96C251F5BF198B3A/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Son Of Skywalker",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036127/CF8D8E07205CB523EA3D2EE71AD61D9FB96B17BB/",
+              "pip": 1
+            },
+            {
+              "name": "You Serve Your Master Well",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035766/83D508C088FC9B893BDA1C497410726302D84452/",
+              "pip": 1
+            },
+            {
+              "name": "My Ally Is The Force",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035023/A55A52AA8780EEFEB9B8DB24FE4294A844B3678E/",
+              "pip": 2
+            },
+            {
+              "name": "Full Of Surprises",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035386/B9B2E0999D5AA4C072B3C45FBD2185A0D7F6A9F5/",
+              "pip": 2
+            },
+            {
+              "name": "Return Of The Jedi",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033269/7606E86C0B998BBB4DAADE6F01B300A7931B697C/",
+              "pip": 3
+            },
+            {
+              "name": "I Am A Jedi",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033560/7EFDE383C076E6F171E6B868D1F5C7EE66A466CE/",
+              "pip": 3
             }
           ]
         },
@@ -206,6 +389,23 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456806966/EFBA4A71BFE748A2868C14B82DA3A7B0D559874A/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/777357228032306302/F5CA6FC54A8625E261F123D73792DE36D74E1686/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Blast Off!",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037063/A7AE3401CB3A51A58A8682BBCD8D6F6C104804AF/",
+              "pip": 1
+            },
+            {
+              "name": "Impromptu Immolation",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035209/4C4829AE9D1B01B14F2D4FDE2C6D3935D8055954/",
+              "pip": 2
+            },
+            {
+              "name": "Smoke Screen",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033033/7FC32081CE8646476E7B0C475F452AA629BA7713/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -223,6 +423,13 @@
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/773996263557000439/C9EA2A27264C73E42C016FE26E665CBB75F8E7DE/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/770611701143471855/26BE70BB475D8B61122C8954CCA2EC79C1ED4C25/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Sacrifice",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033075/A24FA101CA9A3071E18DB79779F8285B8F87B906/",
+              "pip": 3
             }
           ]
         }
@@ -652,6 +859,38 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541323740/BF58AB674CB7D638333F1B04A7C9A5B9D7DBF0E4/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541324289/B37D84D512722740E8310629C3E7BFC45AF0FBC9/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Implacable",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036469/5FD54CD860AE427BDF4E5FD49DD805E8724DFF31/",
+              "pip": 1
+            },
+            {
+              "name": "Vader's Might",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035874/D411BF35A17D45663A7AE6DB04C4368F69B447EA/",
+              "pip": 1
+            },
+            {
+              "name": "New Ways To Motivate Them",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034988/4F888B0F1849EDDA47FA8B635075B011F56B967A/",
+              "pip": 2
+            },
+            {
+              "name": "Fear And Dead Men",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035422/9DEA08C9F8E50304092AC36C943F9F91B5D602E8/",
+              "pip": 2
+            },
+            {
+              "name": "Master Of Evil",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033333/3BEA0BC9F2038200FFF56CDD8DA3C67808EB84E6/",
+              "pip": 3
+            },
+            {
+              "name": "Darkness Descends",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033838/AEF61989CB08EA36B8311851E1833708DEEE2059/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -670,6 +909,23 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541565411/F5F84397A9353DAD3D913F34E49812C1C895DA65/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541565593/F948637FEE70F52681A5A3C49C0E00EF25471AC1/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Maximum Firepower",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036422/34C5A93E3C69A143EB6E537C1D984010996FDDF2/",
+              "pip": 1
+            },
+            {
+              "name": "Evasive Maneuvers",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035517/E8A15E29EA9390DE382A583AE416BC4DDDDA6A90/",
+              "pip": 2
+            },
+            {
+              "name": "Imperial Discipline",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033490/3EB2A5666B5D911D173242DD948521DFC169FE22/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -687,6 +943,23 @@
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541565714/71E1936EB657F4BC1074EB740BC9AA0531A130AC/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541565804/0EB3EBFD318678DBE5B7C83B39A31DC8AB3376B6/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "And Now... You Will Die",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037110/8E3A2FB239539785945D116F85B21B481603690C/",
+              "pip": 1
+            },
+            {
+              "name": "Give In To Your Anger",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035342/543139C6B87DC74DAA2C0A37E4519EF525E73E8E/",
+              "pip": 2
+            },
+            {
+              "name": "An Entire Legion",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034291/4E6BD80297A517DC6C92B4874ED945A0171CADC2/",
+              "pip": 3
             }
           ]
         },
@@ -724,6 +997,23 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305476013/77069645EC03E0F1C1DB10C2CE7EA85917E45404/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/951848302305476130/772EEBD3EC49A7271C1C7647F817C51ED23DE3B2/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Voracious Ambition",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035835/61A0DCFF63E278C4BFE5FA84970D6C8A820647F4/",
+              "pip": 1
+            },
+            {
+              "name": "Deploy The Garrison",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035541/3076FCDDC51B733A5970AD91FE0698F9A1888084/",
+              "pip": 2
+            },
+            {
+              "name": "Annihilation Looms",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034255/8D45E8D86D763AB24E9EBF32787CDE824CBB03D9/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -742,6 +1032,28 @@
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/773996263557021593/68887AFFBF8F1A2472A80F6514CD617A54A1D705/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/770611889400014191/9442AAB074AB2204C7A5CD8843037C71CFC44540/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Pulse Scan",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036274/DF63072DBC71647215D98AC674EA8979DA3C2137/",
+              "pip": 1
+            },
+            {
+              "name": "Concussive Blast",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035579/49CC24C1F86F0BE2CD8324868E3EEFC1AE328E0C/",
+              "pip": 2
+            },
+            {
+              "name": "Incapacitate",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035176/6E9CFBF7487DDE5D4940E64762EB72A7D68CE7A2/",
+              "pip": 2
+            },
+            {
+              "name": "Tactical Strike",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032968/40A2C000893514EFDE161EBBF950160618A947DA/",
+              "pip": 3
             }
           ]
         },
@@ -763,6 +1075,23 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1666859827673303054/77A1D7624FA565991825B19513DBE6B70BD4F93C/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/1666859827673291479/CA1D69C65D0F6FD2AE838BFFA3FD85A48CCBFB6C/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Face Me!",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036719/80DA17B10B9444036EB57237E434E28C2B8D9D7F/",
+              "pip": 1
+            },
+            {
+              "name": "ISB Investigation",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035240/AF545C5C697618B4891784AE68F39CBE906F3FB6/",
+              "pip": 2
+            },
+            {
+              "name": "Ruthless Tactics",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033151/86AA97C5A365099681E54FA21C2B9D6F08519AB7/",
+              "pip": 3
+            }
           ]
         }
       ],
@@ -783,6 +1112,23 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541667697/9BC2C54E14EA265620F3D96553274503245D1681/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541669466/60DFE8F3EC756ECE7E5729D3261EF37CACA587C6/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Whipcord Launcher",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035802/A1AA027AE84C3CF96C2E671C6BFA78E2C94E2741/",
+              "pip": 1
+            },
+            {
+              "name": "ZX Flame Projector",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034359/7CC1427FEA79D22D3128A5650F8A93159661A656/",
+              "pip": 2
+            },
+            {
+              "name": "Z-6 Jetpack Rocket",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032805/D4AEE724FC17B87F391BB7B24A3C8D44B40B704B/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -801,6 +1147,23 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/948474323838791181/6B9D77B77DF8FD7AFA19342AD687F0E15A2E21B7/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/948474323838791276/ABFCDD8C71D484E6B6050080BB80B79D0DE93178/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Merciless Munitions",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036341/7FF893D01D2692E537EB6B157DCAB16421438FC4/",
+              "pip": 1
+            },
+            {
+              "name": "Reptillian Rampage",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034734/F11C62C109C1CA7EE490169555DBAE37E4A9B53C/",
+              "pip": 2
+            },
+            {
+              "name": "Lying In Wait",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033363/C8D04CF3CEE5DE82C69BAB90B7C61DFA842AE591/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -818,6 +1181,38 @@
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/777357228030156593/FEBA127ECDF2917EA8F8066BBB10BADA7D365D3E/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541324289/B37D84D512722740E8310629C3E7BFC45AF0FBC9/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Implacable",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036469/5FD54CD860AE427BDF4E5FD49DD805E8724DFF31/",
+              "pip": 1
+            },
+            {
+              "name": "Vader's Might",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035874/D411BF35A17D45663A7AE6DB04C4368F69B447EA/",
+              "pip": 1
+            },
+            {
+              "name": "New Ways To Motivate Them",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034988/4F888B0F1849EDDA47FA8B635075B011F56B967A/",
+              "pip": 2
+            },
+            {
+              "name": "Fear And Dead Men",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035422/9DEA08C9F8E50304092AC36C943F9F91B5D602E8/",
+              "pip": 2
+            },
+            {
+              "name": "Master Of Evil",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033333/3BEA0BC9F2038200FFF56CDD8DA3C67808EB84E6/",
+              "pip": 3
+            },
+            {
+              "name": "Darkness Descends",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033838/AEF61989CB08EA36B8311851E1833708DEEE2059/",
+              "pip": 3
             }
           ]
         }
@@ -1234,6 +1629,23 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873394134/94407058FBA842AD0FDCC0BBB8AB613EA9A739C2/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717873394267/272C1C9A8C15C36DC5C10DD62D5EFCEF9BFF4496/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Hello There!",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036592/C0182450268D43C5589930D988CF04ECC4A1C248/",
+              "pip": 1
+            },
+            {
+              "name": "Knowledge And Defense",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035139/48E071EA2C88883329D050F338F8947FD2515F6D/",
+              "pip": 2
+            },
+            {
+              "name": "General Kenobi",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033710/C8724AA758E97BCBEDA8C66CECDA298AB74EFB05/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -1254,6 +1666,23 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456806720/869654FC3B0590BFFF2E1845C3CFA9169838EBF9/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/776232727456806858/52327997163A5113DF9E11B85F9DA8B6B970012C/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Call Me Captain",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037031/128A58AE6DE52C3BFB59C0B621C1562EC5760564/",
+              "pip": 1
+            },
+            {
+              "name": "Take That, Clankers!",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034598/FAD8628CEF4BC9782992174756FD109E5AD8E949/",
+              "pip": 2
+            },
+            {
+              "name": "We're Not Programmed",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032907/37CBE4B02058855DF6EB5B305AEC12DA796E8FDD/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -1271,6 +1700,23 @@
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1647717402898546429/B304222EB644FD345A672FA36A7C4F5DF5152C49/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/1647717402898546712/394E72447FF020F1D95846D07120EE63FCD0435B/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "This Is Where The Fun Begins",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035947/5377294A33E87301DC4D54ED1A1C1DE218E1C882/",
+              "pip": 1
+            },
+            {
+              "name": "You Understimate My Power",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034404/7EE41514855E6FB133C999DD59A58EBE610744C2/",
+              "pip": 2
+            },
+            {
+              "name": "Hero Of The Clone Wars",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033655/AA08CE1F53847CE3CCA7233A1060886F8EBE500F/",
+              "pip": 3
             }
           ]
         },
@@ -1304,7 +1750,24 @@
             "Force": 3,
             "Command": 1
           },
-          "minis": 1
+          "minis": 1,
+          "commands": [
+            {
+              "name": "Size Matters Not",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036164/6444F2658805AE43ED73CF592F8D9340262E8851/",
+              "pip": 1
+            },
+            {
+              "name": "There Is No Try",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034526/8811897A231A24247FA9120971D4994A45BAE4CD/",
+              "pip": 2
+            },
+            {
+              "name": "Luminous Beings Are We",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033410/83F24DB765D234502B457983834BF25FB5FAB05A/",
+              "pip": 3
+            }
+          ]
         },
         {
           "name": "Wookiee Chieftan",
@@ -1331,7 +1794,14 @@
             "Training": 2,
             "Gear": 1
           },
-          "minis": 1
+          "minis": 1,
+          "commands": [
+            {
+              "name": "Size Matters Sometimes",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034701/1CC8DEA4C8584B532EAA67A7BA8E4FEA81EEAD85/",
+              "pip": 2
+            }
+          ]
         }
       ],
       "Operative": [
@@ -1350,6 +1820,23 @@
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456806966/EFBA4A71BFE748A2868C14B82DA3A7B0D559874A/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/777357228032306302/F5CA6FC54A8625E261F123D73792DE36D74E1686/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Blast Off!",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037063/A7AE3401CB3A51A58A8682BBCD8D6F6C104804AF/",
+              "pip": 1
+            },
+            {
+              "name": "Impromptu Immolation",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035209/4C4829AE9D1B01B14F2D4FDE2C6D3935D8055954/",
+              "pip": 2
+            },
+            {
+              "name": "Smoke Screen",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033033/7FC32081CE8646476E7B0C475F452AA629BA7713/",
+              "pip": 3
             }
           ]
         },
@@ -1370,6 +1857,23 @@
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1003681674396399543/F485B2E6C10CBC01661E393966F014E5A5DE8BF9/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/1003681674396399785/16C4492225E9C885997F59A86B4C1C67050F4197/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Our Fate Is In Your Hands",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036311/3A7A61391C83C42A345A3EAB161E6561398BE472/",
+              "pip": 1
+            },
+            {
+              "name": "Aggressive Negotiations",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035707/638FD7106E81C966C44029EE4176F70CC9A2882F/",
+              "pip": 2
+            },
+            {
+              "name": "Diplomatic Cover",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033800/D0BF00F6C508E2765F47868E4399E798D8811426/",
+              "pip": 3
             }
           ]
         }
@@ -1643,6 +2147,23 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869167436/AAA2C61A17BB43F2673AF16D30BD0478B9AAAD2A/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869167571/EF86CBDA5F361282AD077D61FA81ABF0FEE061A0/"
             }
+          ],
+          "commands": [
+            {
+              "name": "Trained In Your Jedi Arts",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035917/02823FB99DD83199FB8D24F9257F684A251C91D2/",
+              "pip": 1
+            },
+            {
+              "name": "Supreme Commander",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034666/71DDFA4CA889DE1EDAC999866F6B0C887FF2D49F/",
+              "pip": 2
+            },
+            {
+              "name": "Crush Them!",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033887/5DDF0AA77123DE906D2FA6A681B83BB73A48AAF5/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -1660,6 +2181,23 @@
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849586543/25BD09F275C593DB6C794359A9C50F3188F4D804/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/775105953849586640/B0512CC73C982F94EB5FEAE1661CF4438DAD8879/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Fear, Suprise, Intimidation",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036674/940E3CA38FB4BDD50EE7E6775E0C0A9D42C75C4A/",
+              "pip": 1
+            },
+            {
+              "name": "Double The Fall",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035517/E8A15E29EA9390DE382A583AE416BC4DDDDA6A90/",
+              "pip": 2
+            },
+            {
+              "name": "You Dissapoint Me",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032838/8524059D85CFD5ED5238782110CAE2F821271706/",
+              "pip": 3
             }
           ]
         },
@@ -1693,7 +2231,24 @@
             "Comms": 1,
             "Gear": 1
           },
-          "minis": 1
+          "minis": 1,
+          "commands": [
+            {
+              "name": "They Too Will Suffer",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036005/BCB6B4D75C375323E4CA020BB1AA01497BEE11ED/",
+              "pip": 1
+            },
+            {
+              "name": "Preservation Protocols",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034846/6DFE5FBF65026639A194D1A915193AD147736713/",
+              "pip": 2
+            },
+            {
+              "name": "Do Not Underestimate Our Means",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033761/20CD9F48F76B1F86610762FF16699A70F687827B/",
+              "pip": 3
+            }
+          ]
         },
         {
           "name": "Super Tactical Droid",
@@ -1707,7 +2262,24 @@
             "Comms": 1,
             "Gear": 1
           },
-          "minis": 1
+          "minis": 1,
+          "commands": [
+            {
+              "name": "They Too Will Suffer",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036005/BCB6B4D75C375323E4CA020BB1AA01497BEE11ED/",
+              "pip": 1
+            },
+            {
+              "name": "Preservation Protocols",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034846/6DFE5FBF65026639A194D1A915193AD147736713/",
+              "pip": 2
+            },
+            {
+              "name": "Do Not Underestimate Our Means",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033761/20CD9F48F76B1F86610762FF16699A70F687827B/",
+              "pip": 3
+            }
+          ]
         },
         {
           "name": "Super Tactical Droid",
@@ -1722,7 +2294,24 @@
             "Comms": 1,
             "Gear": 1
           },
-          "minis": 1
+          "minis": 1,
+          "commands": [
+            {
+              "name": "They Too Will Suffer",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036005/BCB6B4D75C375323E4CA020BB1AA01497BEE11ED/",
+              "pip": 1
+            },
+            {
+              "name": "Preservation Protocols",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034846/6DFE5FBF65026639A194D1A915193AD147736713/",
+              "pip": 2
+            },
+            {
+              "name": "Do Not Underestimate Our Means",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033761/20CD9F48F76B1F86610762FF16699A70F687827B/",
+              "pip": 3
+            }
+          ]
         }
       ],
       "Operative": [
@@ -1745,6 +2334,23 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1003681674396400482/F8900CFC9EF2309C9F54AE33AE5444B2B09DB1CD/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/1003681674396400696/907F4310FEA7A7CD89EE64A1AF3A8CC77897CCAC/"
             }
+          ],
+          "commands": [
+            {
+              "name": "I'm Your Worst Nightmare",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036560/158F834A8FF94206F4F0149EF862D264E3B27804/",
+              "pip": 1
+            },
+            {
+              "name": "I'm In Control",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035284/D2D4B7D2CE80F63F0D2706764B9B4DB838B23F43/",
+              "pip": 2
+            },
+            {
+              "name": "I Make The Rules Now",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033609/804F443E3F33E8EB6622F46604963CE17A9D49EE/",
+              "pip": 3
+            }
           ]
         },
         {
@@ -1762,6 +2368,23 @@
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1647717402898544477/AC748B04B4363679177B27F514758C308A2A7E49/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/1647717402898544863/C61437A96B0AB9BC3C226475A87C9BB248D2CA2A/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Duel Of The Fates",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036827/1967B20CCD59FE2EAECDC15FA5750928F75963E0/",
+              "pip": 1
+            },
+            {
+              "name": "The Phantom Menance",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034564/5DB3351093F7A089A9C59B40BECBA70140095F9B/",
+              "pip": 2
+            },
+            {
+              "name": "At Last",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034186/C08B05E1C969B6ADBB158DE85C499CD938FBC8B5/",
+              "pip": 3
             }
           ]
         }
@@ -3456,448 +4079,109 @@
   },
 
   "commands": {
-    "1": [
+    "Generic": [
       {
         "name": "Ambush",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037146/9E4C2F5453A9016854F388BB078666B71AC794B6/"
-      },
-      {
-        "name": "And Now You Will Die",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037110/8E3A2FB239539785945D116F85B21B481603690C/"
-      },
-      {
-        "name": "Blast Off!",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037063/A7AE3401CB3A51A58A8682BBCD8D6F6C104804AF/"
-      },
-      {
-        "name": "Call Me Captain",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037031/128A58AE6DE52C3BFB59C0B621C1562EC5760564/"
-      },
-      {
-        "name": "Common Cause",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036994/19D8F067B325C88C9A9A3DE2D4CCAD9A7BAB5957/"
-      },
-      {
-        "name": "Coordinated Bombardment",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036952/79DBBA37340FFEA238E71B07D6969F19AD1B8BD1/"
-      },
-      {
-        "name": "Covert Observation",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036909/D7F23F07B22A1DB0ED2F094C1AC8170E7C27929E/"
-      },
-      {
-        "name": "Crack Shot",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036864/47CCB05A1DB54F77FADE1652F981DAB2BD39FEE1/"
-      },
-      {
-        "name": "Duel Of The Fates",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036827/1967B20CCD59FE2EAECDC15FA5750928F75963E0/"
-      },
-      {
-        "name": "Explosions!",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036773/60EF5E470AE0865CA28E50C31CDEDCD9266E0562/"
-      },
-      {
-        "name": "Face Me!",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036719/80DA17B10B9444036EB57237E434E28C2B8D9D7F/"
-      },
-      {
-        "name": "Fear, Suprise, Intimidation",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036674/940E3CA38FB4BDD50EE7E6775E0C0A9D42C75C4A/"
-      },
-      {
-        "name": "Grroooogrrraaaawrrrrrrrrmph",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036626/BA48B6895086D9FA7DA76D6CC2CB6D625CD1B7C6/"
-      },
-      {
-        "name": "Hello There!",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036592/C0182450268D43C5589930D988CF04ECC4A1C248/"
-      },
-      {
-        "name": "I'm Your Worst Nightmare",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036560/158F834A8FF94206F4F0149EF862D264E3B27804/"
-      },
-      {
-        "name": "Idiot's Array",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036507/059AB65ED149A6399024F171211A0D3ECD21F083/"
-      },
-      {
-        "name": "Implacable",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036469/5FD54CD860AE427BDF4E5FD49DD805E8724DFF31/"
-      },
-      {
-        "name": "Maximum Firepower",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036422/34C5A93E3C69A143EB6E537C1D984010996FDDF2/"
-      },
-      {
-        "name": "Mechanized Incursion",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036372/8ED4D92B15E96CF7AB14E89F832262CFF2E55201/"
-      },
-      {
-        "name": "Merciless Munitions",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036341/7FF893D01D2692E537EB6B157DCAB16421438FC4/"
-      },
-      {
-        "name": "Our Fate Is In Your Hands",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036311/3A7A61391C83C42A345A3EAB161E6561398BE472/"
-      },
-      {
-        "name": "Pulse Scan",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036274/DF63072DBC71647215D98AC674EA8979DA3C2137/"
-      },
-      {
-        "name": "Rebellious",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036244/9C57ADB262F7193BE9B7C07B645915C58498EEDA/"
-      },
-      {
-        "name": "Sabotaged Communications",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036214/A7A0CC7689A2F66143FB6AE89914414462A09635/"
-      },
-      {
-        "name": "Size Matters Not",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036164/6444F2658805AE43ED73CF592F8D9340262E8851/"
-      },
-      {
-        "name": "Son Of Skywalker",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036127/CF8D8E07205CB523EA3D2EE71AD61D9FB96B17BB/"
-      },
-      {
-        "name": "Sorry About The Mess",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036094/C7F82426F9CDB6835C1DC91F0584AADE44F207EE/"
-      },
-      {
-        "name": "Synchronized Offensive",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036052/B952054E6772C522A8DDBA3C3104B9FE566A7B5D/"
-      },
-      {
-        "name": "They Too Will Suffer",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036005/BCB6B4D75C375323E4CA020BB1AA01497BEE11ED/"
-      },
-      {
-        "name": "This Is Where The Fun Begins",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035947/5377294A33E87301DC4D54ED1A1C1DE218E1C882/"
-      },
-      {
-        "name": "Trained In Your Jedi Arts",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035917/02823FB99DD83199FB8D24F9257F684A251C91D2/"
-      },
-      {
-        "name": "Vader's Might",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035874/D411BF35A17D45663A7AE6DB04C4368F69B447EA/"
-      },
-      {
-        "name": "Voracious Ambition",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035835/61A0DCFF63E278C4BFE5FA84970D6C8A820647F4/"
-      },
-      {
-        "name": "Whipcord Launcher",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035802/A1AA027AE84C3CF96C2E671C6BFA78E2C94E2741/"
-      },
-      {
-        "name": "You Serve Your Master Well",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035766/83D508C088FC9B893BDA1C497410726302D84452/"
-      }
-    ],
-    "2": [
-      {
-        "name": "Ace Up His Sleeve",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035738/83A01C2C466036B1BF2EF3A47F21CB11017522BD/"
-      },
-      {
-        "name": "Aggressive Negotiations",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035707/638FD7106E81C966C44029EE4176F70CC9A2882F/"
-      },
-      {
-        "name": "Air Support",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035656/7903FA16377B9A65289123A1E422D50CC26DD83F/"
-      },
-      {
-        "name": "Brains And Brawn",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035622/3BC5E96C0730225BC27EB0CE2BDB471E5CE66F4A/"
-      },
-      {
-        "name": "Concussive Blast",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035579/49CC24C1F86F0BE2CD8324868E3EEFC1AE328E0C/"
-      },
-      {
-        "name": "Deploy The Garrison",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035541/3076FCDDC51B733A5970AD91FE0698F9A1888084/"
-      },
-      {
-        "name": "Double The Fall",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035517/E8A15E29EA9390DE382A583AE416BC4DDDDA6A90/"
-      },
-      {
-        "name": "Evasive Maneuvers",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035517/E8A15E29EA9390DE382A583AE416BC4DDDDA6A90/"
-      },
-      {
-        "name": "Fear And Dead Men",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035422/9DEA08C9F8E50304092AC36C943F9F91B5D602E8/"
-      },
-      {
-        "name": "Full Of Surprises",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035386/B9B2E0999D5AA4C072B3C45FBD2185A0D7F6A9F5/"
-      },
-      {
-        "name": "Give In To Your Anger",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035342/543139C6B87DC74DAA2C0A37E4519EF525E73E8E/"
-      },
-      {
-        "name": "I'm In Control",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035284/D2D4B7D2CE80F63F0D2706764B9B4DB838B23F43/"
-      },
-      {
-        "name": "ISB Investigation",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035240/AF545C5C697618B4891784AE68F39CBE906F3FB6/"
-      },
-      {
-        "name": "Impromptu Immolation",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035209/4C4829AE9D1B01B14F2D4FDE2C6D3935D8055954/"
-      },
-      {
-        "name": "Incapacitate",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035176/6E9CFBF7487DDE5D4940E64762EB72A7D68CE7A2/"
-      },
-      {
-        "name": "Knowledge And Defense",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035139/48E071EA2C88883329D050F338F8947FD2515F6D/"
-      },
-      {
-        "name": "Last Stand",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035098/CD888287DB06A86CEF0E5CA443F2E227C8A0D3E9/"
-      },
-      {
-        "name": "MROWGH GHRRMROWRIG!",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035071/5DAC9F1B36A1D6CCF3DB6BF0CB95D9D548A79F30/"
-      },
-      {
-        "name": "My Ally Is The Force",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035023/A55A52AA8780EEFEB9B8DB24FE4294A844B3678E/"
-      },
-      {
-        "name": "New Ways To Motivate Them",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034988/4F888B0F1849EDDA47FA8B635075B011F56B967A/"
-      },
-      {
-        "name": "No Time For Sorrows",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034953/BDC08D664C3DC9DFE785E312F2F0517921B3C799/"
-      },
-      {
-        "name": "Orbital Strike",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034923/43292A8BF63ECE8696FC48EE6273F006BF454A78/"
-      },
-      {
-        "name": "Pinned Down",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034888/B7C8BF24B26A8D360EDBDB07B16C773435EE2C3F/"
-      },
-      {
-        "name": "Preservation Protocols",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034846/6DFE5FBF65026639A194D1A915193AD147736713/"
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037146/9E4C2F5453A9016854F388BB078666B71AC794B6/",
+        "pip": 1
       },
       {
         "name": "Push",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034819/0E3D77E869D24AD638EB438F92577F44368487D3/"
-      },
-      {
-        "name": "Reckless Diversion",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034768/6CA17689021162EFE850A3CEA62AA3BD5B84B4A5/"
-      },
-      {
-        "name": "Reptillian Rampage",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034734/F11C62C109C1CA7EE490169555DBAE37E4A9B53C/"
-      },
-      {
-        "name": "Size Matters Sometimes",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034701/1CC8DEA4C8584B532EAA67A7BA8E4FEA81EEAD85/"
-      },
-      {
-        "name": "Supreme Commander",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034666/71DDFA4CA889DE1EDAC999866F6B0C887FF2D49F/"
-      },
-      {
-        "name": "Symbol Of Rebellion",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034630/5AD8C9A6E0D6ADC0C1BA7E53AE4BDB9653DADA60/"
-      },
-      {
-        "name": "Take That, Clankers!",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034598/FAD8628CEF4BC9782992174756FD109E5AD8E949/"
-      },
-      {
-        "name": "The Phantom Menance",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034564/5DB3351093F7A089A9C59B40BECBA70140095F9B/"
-      },
-      {
-        "name": "There Is No Try",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034526/8811897A231A24247FA9120971D4994A45BAE4CD/"
-      },
-      {
-        "name": "Trust Goes Both Ways",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034481/2822AD43412B26BC38EF8F091201BA501D4FDBD0/"
-      },
-      {
-        "name": "Turning The Tide",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034438/544487939B8A8BFB04860134ACC616A1EE285039/"
-      },
-      {
-        "name": "You Understimate My Power",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034404/7EE41514855E6FB133C999DD59A58EBE610744C2/"
-      },
-      {
-        "name": "ZX Flame Projector",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034359/7CC1427FEA79D22D3128A5650F8A93159661A656/"
-      }
-    ],
-    "3": [
-      {
-        "name": "All In",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034326/44C2D4E2EE50B69C41DDDEA5963FC50152F9AE57/"
-      },
-      {
-        "name": "An Entire Legion",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034291/4E6BD80297A517DC6C92B4874ED945A0171CADC2/"
-      },
-      {
-        "name": "Annihilation Looms",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034255/8D45E8D86D763AB24E9EBF32787CDE824CBB03D9/"
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034819/0E3D77E869D24AD638EB438F92577F44368487D3/",
+        "pip": 2
       },
       {
         "name": "Assault",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034224/40364C1DDCF973A233C4A8F7AD43734067014C06/"
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034224/40364C1DDCF973A233C4A8F7AD43734067014C06/",
+        "pip": 3
       },
       {
-        "name": "At Last",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034186/C08B05E1C969B6ADBB158DE85C499CD938FBC8B5/"
+        "name": "Standing Orders",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032760/662157DB1D462926F585301B5D6003D6B8172F14/",
+        "pip": 4
+      }
+    ],
+    "Empire": [
+      {
+        "name": "Covert Observation",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036909/D7F23F07B22A1DB0ED2F094C1AC8170E7C27929E/",
+        "pip": 1
       },
       {
-        "name": "AttacK Of the Clones",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034137/F1FFFF3A77BAAE6DB629082F50AC6B5AE9DEB6A7/"
-      },
-      {
-        "name": "Change Of Plans",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034095/F1EFCCA49BBF25049B679261404156EE2B259936/"
-      },
-      {
-        "name": "Complete The Mission",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034061/6FF1A4A6372B891E6F06022118ECF635BC40C2F2/"
+        "name": "Pinned Down",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034888/B7C8BF24B26A8D360EDBDB07B16C773435EE2C3F/",
+        "pip": 2
       },
       {
         "name": "Coordinated Fire",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034006/219E07F84100937144A74AC94987C024792986B1/"
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034006/219E07F84100937144A74AC94987C024792986B1/",
+        "pip": 3
+      }
+    ],
+    "Rebel": [
+      {
+        "name": "Sabotaged Communications",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036214/A7A0CC7689A2F66143FB6AE89914414462A09635/",
+        "pip": 1
+      },
+      {
+        "name": "Turning The Tide",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034438/544487939B8A8BFB04860134ACC616A1EE285039/",
+        "pip": 2
       },
       {
         "name": "Covering Fire",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033931/E4C7CE80C1179B43969BE76C60CC2744101E051E/"
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033931/E4C7CE80C1179B43969BE76C60CC2744101E051E/",
+        "pip": 3
+      }
+    ],
+    "Republic": [
+      {
+        "name": "Synchronized Offensive",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036052/B952054E6772C522A8DDBA3C3104B9FE566A7B5D/",
+        "pip": 1
       },
       {
-        "name": "Crush Them!",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033887/5DDF0AA77123DE906D2FA6A681B83BB73A48AAF5/"
+        "name": "Grroooogrrraaaawrrrrrrrrmph",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036626/BA48B6895086D9FA7DA76D6CC2CB6D625CD1B7C6/",
+        "pip": 1
       },
       {
-        "name": "Darkness Descends",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033838/AEF61989CB08EA36B8311851E1833708DEEE2059/"
+        "name": "Air Support",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035656/7903FA16377B9A65289123A1E422D50CC26DD83F/",
+        "pip": 2
       },
       {
-        "name": "Dimplomatic Cover",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033800/D0BF00F6C508E2765F47868E4399E798D8811426/"
+        "name": "MROWGH GHRRMROWRIG!",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035071/5DAC9F1B36A1D6CCF3DB6BF0CB95D9D548A79F30/",
+        "pip": 2
       },
       {
-        "name": "Do Not Underestimate Our Means",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033761/20CD9F48F76B1F86610762FF16699A70F687827B/"
-      },
-      {
-        "name": "General Kenobi",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033710/C8724AA758E97BCBEDA8C66CECDA298AB74EFB05/"
-      },
-      {
-        "name": "Hero Of The Clone Wars",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033655/AA08CE1F53847CE3CCA7233A1060886F8EBE500F/"
-      },
-      {
-        "name": "I Make The Rules Now",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033609/804F443E3F33E8EB6622F46604963CE17A9D49EE/"
-      },
-      {
-        "name": "I Am A Jedi",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033560/7EFDE383C076E6F171E6B868D1F5C7EE66A466CE/"
-      },
-      {
-        "name": "Imperial Discipline",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033490/3EB2A5666B5D911D173242DD948521DFC169FE22/"
-      },
-      {
-        "name": "Legacy Of Mandalore",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033440/0011AF8A615526AED73E7A61D4E6C78B209F75E9/"
-      },
-      {
-        "name": "Luminous Beings Are We",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033410/83F24DB765D234502B457983834BF25FB5FAB05A/"
-      },
-      {
-        "name": "Lying In Wait",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033363/C8D04CF3CEE5DE82C69BAB90B7C61DFA842AE591/"
-      },
-      {
-        "name": "Master Of Evil",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033333/3BEA0BC9F2038200FFF56CDD8DA3C67808EB84E6/"
-      },
-      {
-        "name": "Notorious Scoundrels",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033300/4FA05D084E4DECE8DD8EED42E141C413F57201F2/"
-      },
-      {
-        "name": "Return Of The Jedi",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033269/7606E86C0B998BBB4DAADE6F01B300A7931B697C/"
-      },
-      {
-        "name": "Roger, Roger!",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033233/90EE522128D2F8D84425C25F4FC06F2A5A9B09B2/"
-      },
-      {
-        "name": "Ruthless Tactics",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033151/86AA97C5A365099681E54FA21C2B9D6F08519AB7/"
-      },
-      {
-        "name": "Sacrifice",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033075/A24FA101CA9A3071E18DB79779F8285B8F87B906/"
-      },
-      {
-        "name": "Smoke Screen",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033033/7FC32081CE8646476E7B0C475F452AA629BA7713/"
-      },
-      {
-        "name": "Somebody Has To Save Our Skins",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032996/852C2F232B15634E443A2317ED2D2316BA7496C4/"
-      },
-      {
-        "name": "Tactical Strike",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032968/40A2C000893514EFDE161EBBF950160618A947DA/"
-      },
-      {
-        "name": "Volunteer Mission",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032942/4047B661BAEEEFC2CA4DD45010D3029D9FB74C63/"
-      },
-      {
-        "name": "We're Not Programmed",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032907/37CBE4B02058855DF6EB5B305AEC12DA796E8FDD/"
+        "name": "AttacK Of the Clones",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034137/F1FFFF3A77BAAE6DB629082F50AC6B5AE9DEB6A7/",
+        "pip": 3
       },
       {
         "name": "YHWARGGHHHHHHHHHH",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032878/3AE933EA5F364FC236D8502BA96FF1FC6AA9FA27/"
-      },
-      {
-        "name": "You Dissapoint Me",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032838/8524059D85CFD5ED5238782110CAE2F821271706/"
-      },
-      {
-        "name": "Z-6 Jetpack Rocket",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032805/D4AEE724FC17B87F391BB7B24A3C8D44B40B704B/"
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032878/3AE933EA5F364FC236D8502BA96FF1FC6AA9FA27/",
+        "pip": 3
       }
     ],
-    "4": [
+    "Separatist": [
       {
-        "name": "Standing Orders",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032760/662157DB1D462926F585301B5D6003D6B8172F14/"
+        "name": "Mechanized Incursion",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036372/8ED4D92B15E96CF7AB14E89F832262CFF2E55201/",
+        "pip": 1
+      },
+      {
+        "name": "Orbital Strike",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034923/43292A8BF63ECE8696FC48EE6273F006BF454A78/",
+        "pip": 2
+      },
+      {
+        "name": "Roger, Roger!",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033233/90EE522128D2F8D84425C25F4FC06F2A5A9B09B2/",
+        "pip": 3
       }
     ]
   },
