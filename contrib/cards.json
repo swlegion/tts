@@ -1580,7 +1580,7 @@
           "speed": 1,
           "upgrades": {
             "Comms": 1,
-            "Gear": 1
+            "Generator": 1
           },
           "minis": [
             {
