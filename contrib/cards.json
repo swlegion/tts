@@ -248,7 +248,8 @@
               "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034326/44C2D4E2EE50B69C41DDDEA5963FC50152F9AE57/",
               "pip": 3
             }
-          ]
+          ],
+          "required": ["I've Altered The Deal"]
         }
       ],
       "Operative": [
@@ -710,7 +711,8 @@
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357880886/06542D3BD6F03DC43D9E675680F86F2964B210F9/",
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/"
             }
-          ]
+          ],
+          "required": ["Ursa Wren", "Tristan Wren"]
         },
         {
           "name": "Wookiee Warriors",
@@ -1093,7 +1095,8 @@
               "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033151/86AA97C5A365099681E54FA21C2B9D6F08519AB7/",
               "pip": 3
             }
-          ]
+          ],
+          "required": ["Developing Sympathies"]
         }
       ],
       "Operative": [
@@ -1495,7 +1498,8 @@
               "bundle": "http://cloud-3.steamusercontent.com/ugc/1618438238122999341/C1AEEE50112F060BA8E5CAFBC16F417A0EF7C3C0/",
               "secondary": "http://cloud-3.steamusercontent.com/ugc/1618438238123043414/B7E9660E470DC070545782406C29F1E1356A5685/"
             }
-          ]
+          ],
+          "required": ["Gideon Hask", "Del Meeko"]
         }
       ],
       "Support": [
@@ -1719,7 +1723,8 @@
               "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033655/AA08CE1F53847CE3CCA7233A1060886F8EBE500F/",
               "pip": 3
             }
-          ]
+          ],
+          "required": ["Not A Store The Jedi Would Tell"]
         },
         {
           "name": "Clone Commander",

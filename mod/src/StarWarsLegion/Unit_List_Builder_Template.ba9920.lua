@@ -323,7 +323,7 @@ function upgradeMenu()
           end
         end
         -- TODO: Restore.
-        -- requiredUpgrades = selectedUnit.requiredUpgrades
+        requiredUpgrades = selectedUnit.required
         if requiredUpgrades == nil then
           requiredUpgrades = {}
         end

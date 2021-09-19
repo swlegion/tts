@@ -84,6 +84,15 @@
       "items": {
         "$ref": "./CommandCard.json"
       }
+    },
+
+    "required": {
+      "type": "array",
+      "description": "Required upgrades or flaw cards, by name.",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
     }
   },
 
