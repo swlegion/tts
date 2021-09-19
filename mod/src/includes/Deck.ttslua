@@ -18,7 +18,10 @@ function Deck:create()
       command     = "http://cloud-3.steamusercontent.com/ugc/1683770885590601027/47E5B7470CAAC79372CB5C607AEF29DF195EB7CE/",
       unit        = "http://cloud-3.steamusercontent.com/ugc/1683770885590600993/4D9BAC2DD180E2CFF9A591E19EFEBD470CB25855/",
       upgrade     = "http://cloud-3.steamusercontent.com/ugc/1683770885590601060/FA4DD3B17A42BCD5A81D063CD13E257A0EBD419D/",
-    }
+    },
+    _cache   = {
+      upgrades    = {},
+    },
   }
   setmetatable(meta, Deck)
   return meta
@@ -318,5 +321,20 @@ function Deck:getUnitsByFactionAndRank(faction, rank)
       table.insert(result, unit)
     end
   end
+  return result
+end
+
+function Deck:getUpgradesByType(type)
+  -- Makes the cost of this less unbearable since it's called many times.
+  if self._cache.upgrades[type] then
+    return self._cache.upgrades[type]
+  end
+  local result = {}
+  for _, upgrade in pairs(self._schema.upgrades) do
+    if upgrade.type:upper() == type:upper() then
+      table.insert(result, upgrade)
+    end
+  end
+  self._cache.upgrades[type] = result
   return result
 end
