@@ -1780,7 +1780,7 @@
               "pip": 3
             }
           ],
-          "required": ["Not A Store The Jedi Would Tell"]
+          "required": ["Not A Story The Jedi Would Tell"]
         },
         {
           "name": "Clone Commander",
@@ -2816,7 +2816,7 @@
         }
       },
       {
-        "name": "DT-57 \"Annihililator\"",
+        "name": "DT-57 \"Annihilator\"",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140274/F89F5BDDA3BA705867313D846B3C1331FC31AD61/",
         "points": 12,
         "restrictions": {
@@ -3018,7 +3018,7 @@
         "points": 5
       },
       {
-        "name": "Integrated Comms Attenna",
+        "name": "Integrated Comms Antenna",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143206/40A5FABD690D6741D18996F7896AF1AC8931EA56/",
         "points": 3,
         "restrictions": {
@@ -3207,7 +3207,7 @@
         "points": 0
       },
       {
-        "name": "Not A Store The Jedi Would Tell",
+        "name": "Not A Story The Jedi Would Tell",
         "image": "http://cloud-3.steamusercontent.com/ugc/1616219505080628743/9BF0AAE54D0CF62B22871F7E99B1DCD5617E05DA/",
         "points": 0
       }
@@ -4991,7 +4991,7 @@
         }
       },
       {
-        "name": "Imperial Elite Armor Pilot",
+        "name": "Imperial Hammers Elite Armor Pilot",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142993/63E86E72153D62F5E106D1E99D7F8782F681087C/",
         "points": 10,
         "restrictions": {
