@@ -546,7 +546,7 @@
           ]
         },
         {
-          "name": "Mark II Medium Blaster Team",
+          "name": "Mark II Medium Blaster Trooper",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789216718/13B8F9971804EE108E554C9B348A29611CFE2495/",
           "size": "medium",
           "type": "Emplacement Trooper",
@@ -585,7 +585,7 @@
             },
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541172497/B3E1593143504101920CC6419BE7C2EAEF52993F/",
-              "diffuse": "p://cloud-3.steamusercontent.com/ugc/785234540541188141/6E23E29BB42963B94A0B7DFE01C4C49D776D9657/"
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541188141/6E23E29BB42963B94A0B7DFE01C4C49D776D9657/"
             },
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173253/155BAA01BA51A8EB524DD434A3C512D8C0B3A04B/",
