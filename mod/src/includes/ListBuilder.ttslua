@@ -608,6 +608,7 @@ function spawnUnit(unit, index, faction, totalUnits)
     local templateRot = self.getRotation()
     local rotation = {templateRot.x, templateRot.y + 180, templateRot.z}
     model.setRotation(rotation)
+    model.setColorTint(gameData.getTable("battlefieldTint"))
     table.insert(miniData.miniObjs, {
       obj    = model,
       name   = model.getName(),
@@ -623,38 +624,40 @@ function spawnUnit(unit, index, faction, totalUnits)
     faction = remap[faction]
   end
   local rankAndRemap = result.rank
-  if rankAndRemap == "Special Forces" then
-    rankAndRemap = "specialForces"
+  if rankAndRemap then
+    if rankAndRemap == "Special Forces" then
+      rankAndRemap = "specialForces"
+    end
+    local commandType = faction:lower() .. rankAndRemap:lower():gsub("^%l", string.upper)
+    local commandName = colorSide:gsub("^%l", string.upper) .. 
+                        " " .. faction:gsub("^%l", string.upper) ..
+                        " " .. result.rank:gsub("^%l", string.upper) ..
+                        " Command Token"
+    miniData.baseSize = result.size
+    miniData.commandName = commandName
+    miniData.commandType = commandType
+    miniData.selectedSpeed = result.speed
+    initializeMini(miniData)
+
+    if #loadout > 0 then
+      spawnLoadoutBag(name, loadout, templatePos, self.getRotation())
+    end
+
+    local commandTray = getObjectFromGUID(commandTokenTrayData[colorSide][commandType])
+    local pos = commandTray.getPosition()
+    pos.y = pos.y + 0.5 + (0.2 * index)
+    local rot = self.getRotation()
+    rot.y = rot.y + 180
+
+    initializeCommandToken({
+      name          = commandName,
+      commandType   = commandType,
+      pos           = pos,
+      rot           = rot,
+      baseSize      = result.size,
+      selectedSpeed = result.speed,
+    })
   end
-  local commandType = faction:lower() .. rankAndRemap:lower():gsub("^%l", string.upper)
-  local commandName = colorSide:gsub("^%l", string.upper) .. 
-                      " " .. faction:gsub("^%l", string.upper) ..
-                      " " .. result.rank:gsub("^%l", string.upper) ..
-                      " Command Token"
-  miniData.baseSize = result.size
-  miniData.commandName = commandName
-  miniData.commandType = commandType
-  miniData.selectedSpeed = result.speed
-  initializeMini(miniData)
-
-  if #loadout > 0 then
-    spawnLoadoutBag(name, loadout, templatePos, self.getRotation())
-  end
-
-  local commandTray = getObjectFromGUID(commandTokenTrayData[colorSide][commandType])
-  local pos = commandTray.getPosition()
-  pos.y = pos.y + 0.5 + (0.2 * index)
-  local rot = self.getRotation()
-  rot.y = rot.y + 180
-
-  initializeCommandToken({
-    name          = commandName,
-    commandType   = commandType,
-    pos           = pos,
-    rot           = rot,
-    baseSize      = result.size,
-    selectedSpeed = result.speed,
-  })
 end
 
 function spawnArmyFromDisk()
@@ -725,39 +728,6 @@ function spawnUnitIDToken(idSpawnPos, idSpawnRot, idNumber)
   end
 
   return idTokenGUID
-end
-
-function spawnMini(miniSpawnPos, miniSpawnRot, miniData)
-  local funcSpawnedMini
-  if miniData.type and miniData.type == "assetbundle" then
-    funcSpawnedMini = spawnObject({
-        type           = "Custom_AssetBundle",
-        position       = miniSpawnPos,
-        rotation       = miniSpawnRot,
-    })
-    funcSpawnedMini.setCustomObject({
-        assetbundle = miniData.assetbundle,
-        assetbundle_secondary = miniData.assetbundle_secondary,
-        type = 1,
-        material = 3
-    })
-  else
-    funcSpawnedMini = spawnObject({
-        type           = "Custom_Model",
-        position       = miniSpawnPos,
-        rotation       = miniSpawnRot,
-    })
-    funcSpawnedMini.setCustomObject({
-        mesh = miniData.mesh,
-        collider = miniData.collider[1],
-        diffuse = miniData.diffuse,
-        type = 1,
-        material = 3
-    })
-  end
-
-  funcSpawnedMini.setColorTint(gameData.getTable("battlefieldTint"))
-  return funcSpawnedMini
 end
 
 -- LIST IMPORT / EXPORT --------------------------------------------------------

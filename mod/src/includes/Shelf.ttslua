@@ -112,8 +112,12 @@ function Shelf:_fetchUpgradeByName(name)
 end
 
 function Shelf:_spawnDudModel(name, description)
-  -- TODO: Implement.
-  print("_spawnDudModel: NOT YET IMPLEMENTED")
+  local model = self:_spawnModel({
+    bundle = "http://cloud-3.steamusercontent.com/ugc/1616219505081638790/1BF43B61B14CFD7C588AF6C59972B092674D6C8F/",
+  })
+  model.setName(name)
+  model.setDescription(description)
+  return model
 end
 
 function Shelf:_spawnModel(miniConfig)
@@ -140,6 +144,5 @@ function Shelf:_spawnModel(miniConfig)
       material = 3,
     })
   end
-  -- TODO: mini.setColorTint(gameData.getTable("battlefieldTint"))
   return mini
 end
