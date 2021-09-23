@@ -2662,7 +2662,20 @@
             "Comms": 1,
             "Grenades": 1
           },
-          "minis": 3
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386731/FA50237A0BF717ED06EA3020D5F4089D452ADCD6/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849308236386612/47AFA9AC449D6FBE170B788F9AE9253A8292CA49/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386470/4D5227051DEEED77303985CE6D34CDBFB27FD472/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849308236386612/47AFA9AC449D6FBE170B788F9AE9253A8292CA49/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386513/AC53B9F503C0B353AE7AA797072F7EBA15A1214C/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849308236386612/47AFA9AC449D6FBE170B788F9AE9253A8292CA49/"
+            }
+          ]
         }
       ],
       "Support": [
@@ -2720,7 +2733,11 @@
             "Hardpoint": 1,
             "Comms": 1
           },
-          "minis": 1
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386376/2E1E7BB0E0B625852B5E5B784D0DD3D309A3C7FC/"
+            }
+          ]
         }
       ],
       "Heavy": [
@@ -2755,7 +2772,11 @@
             "Ordnance": 1,
             "Comms": 1
           },
-          "minis": 1
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386847/90DBAB3C81CE15B1528F5E08A09F55B7F3B1DC97/"
+            }
+          ]
         }
       ]
     }
@@ -3683,7 +3704,11 @@
           "name": "Battle Shield Wookiee (Defensive)",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138967/E5E495CD6EEFD77393CD99C35CF651BBEDC1210A/"
         },
-        "mini": 1,
+        "mini": [
+          {
+            "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386933/DCD62751F06157E85CE575C8BB1CCF86379BB7DE/"
+          }
+        ],
         "points": 26,
         "restrictions": {
           "include": {
@@ -3994,7 +4019,12 @@
       {
         "name": "Electro-Whip MagnaGuard",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226197/D447CE12E500790F2192A55991E31520C0DEBCFA/",
-        "mini": 1,
+        "mini": [
+          {
+            "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386662/7ABB72B5A8A301611033E4A424FD61271024FB4C/",
+            "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849308236386612/47AFA9AC449D6FBE170B788F9AE9253A8292CA49/"
+          }
+        ],
         "points": 28,
         "restrictions": {
           "include": {
@@ -4081,7 +4111,12 @@
       {
         "name": "IG-100 MagnaGuard",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226161/53E8C5C2A3547D37E918BCE12B5200DC9DB1DBB7/",
-        "mini": 1,
+        "mini": [
+          {
+            "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386555/F47418A458CF12C80756A80B842817EA1CCC62CF/",
+            "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849308236386612/47AFA9AC449D6FBE170B788F9AE9253A8292CA49/"
+          }
+        ],
         "points": 22,
         "restrictions": {
           "include": {
@@ -4160,7 +4195,12 @@
       {
         "name": "RPS-6 MagnaGuard",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226088/BF380B0BD77661C3735E03B48120CCC4104B339F/",
-        "mini": 1,
+        "mini": [
+          {
+            "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386787/E93D6E65A61C9262B5934C5A419736B45B50D75B/",
+            "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849308236386612/47AFA9AC449D6FBE170B788F9AE9253A8292CA49/"
+          }
+        ],
         "points": 28,
         "restrictions": {
           "include": {
