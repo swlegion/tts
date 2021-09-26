@@ -108,6 +108,13 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
 end
 
 function Shelf:_fetchUpgradeByName(name)
+  -- TODO: Remove remapping.
+  local remap = {
+    ["C-3PO Made to Suffer"]  = "C-3PO",
+  }
+  if remap[name] ~= nil then
+    name = remap[name]
+  end
   return self._schema.upgrades[name:upper()]
 end
 
