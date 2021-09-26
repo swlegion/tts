@@ -11,7 +11,7 @@
 >
   <Button fontSize="10" onClick="toggleWelcomeDialog">Welcome</Button>
   <Button fontSize="10" onClick="toggleChessClockUI" tooltip="Toggle using chess clocks this game">Chess Clocks</Button>
-  <Button fontSize="10" onClick="debugSpawnUnits">Debug Spawn</Button>
+  <Button fontSize="10" onClick="experimentalSideLoad">Override Game Data</Button>
   <Button fontSize="10" interactable="false">-</Button>
 </VerticalLayout>
 
