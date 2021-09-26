@@ -193,43 +193,42 @@ function unitSubMenu(selectedRank)
     updateBackButton("mainMenu", "X", 0.01, "Go back to main menu")
     unitCardRank = selectedRank
 
-    local unitList = Deck:getUnitsByFactionAndRank(selectedArmyFaction, selectedRank)
+    local unitList = Deck:getUnitsByFactionAndRank(
+      selectedArmyFaction, 
+      selectedRank
+    )
     local startIndex = unitCardPage * 6 + 1
     local endIndex = (unitCardPage + 1) * 6
 
-    for i=startIndex, endIndex, startIndex do
+    for i=startIndex, endIndex, 1 do
+      if unitList[i] then
+        local entry = unitList[i]
+        _G["subMenu"..i] = function() spawnUnitCard(entry) end
 
-        if unitList[i] != nil then
-            local entry = unitList[i]
-
-            _G["subMenu"..i] = function() spawnUnitCard(entry) end
-
-            -- local maxNameLength = math.min(entry.name:len(), DISPLAY_NAME_CHAR_LIMIT)
-            local nameToDisplay = entry.name
-            local fontSize = correctStringLength(nameToDisplay)
-            local relativeIndex = i - (unitCardPage * 6)
-            local tooltip = "Spawn ".. entry.name
-            if entry.title then
-              tooltip = tooltip .. " (" .. entry.title .. ")" 
-            end
-            tooltip = tooltip .." Unit Card"
-
-            self.createButton({
-                click_function = "subMenu"..i,
-                function_owner = self,
-                label          = nameToDisplay,
-                position       = {0.93, 0.28, 2.48-(relativeIndex*0.35)},
-                width          = 1010,
-                height         = 190,
-                font_size      = fontSize,
-                rotation       = {0,180,0},
-                color          = {0.1764, 0.1764, 0.1764, 0.01},
-                font_color     = {0, 0, 0, 100},
-                tooltip        = tooltip,
-            })
-        else
-            createDudMenuButton({0.93, 0.28, 2.48-(i*0.35)})
+        -- local maxNameLength = math.min(entry.name:len(), DISPLAY_NAME_CHAR_LIMIT)
+        local nameToDisplay = entry.name
+        local fontSize = correctStringLength(nameToDisplay)
+        local relativeIndex = i - (unitCardPage * 6)
+        local tooltip = "Spawn ".. entry.name
+        if entry.title then
+          tooltip = tooltip .. " (" .. entry.title .. ")" 
         end
+        tooltip = tooltip .." Unit Card"
+
+        self.createButton({
+          click_function = "subMenu"..i,
+          function_owner = self,
+          label          = nameToDisplay,
+          position       = {0.93, 0.28, 2.48-(relativeIndex*0.35)},
+          width          = 1010,
+          height         = 190,
+          font_size      = fontSize,
+          rotation       = {0,180,0},
+          color          = {0.1764, 0.1764, 0.1764, 0.01},
+          font_color     = {0, 0, 0, 100},
+          tooltip        = tooltip,
+        })
+      end
     end
 
     if endIndex < #unitList then

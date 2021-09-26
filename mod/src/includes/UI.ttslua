@@ -35,7 +35,30 @@ end
 function experimentalSideLoad()
   WebRequest.get(sideLoadUrl, function(data)
     local json = JSON.decode(data.text)
-    print(JSON.encode_pretty(json))
+    local loaded = 0
+
+    if json.units then
+      for faction, ranks in pairs(json.units) do
+        for rank, units in pairs(ranks) do
+          for _, unit in ipairs(units) do
+            local key = unit.name
+            if unit.title then
+              key = key .. " " .. unit.title
+            end
+            unit.rank = rank
+            unit.faction = faction
+            Global.call("sideLoadUnit", {
+              faction = faction,
+              key     = key,
+              unit    = unit,
+            })
+            loaded = loaded + 1
+          end
+        end
+      end
+    end
+
+    print("Loaded " .. tostring(loaded) .. " unit(s). Upgrades not yet supported.")
   end)
 end
 
