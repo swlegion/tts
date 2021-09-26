@@ -147,13 +147,8 @@ end
 function getSelectedUnitObjVariables()
     if selectedUnitObj != nil then
         newUnitData = selectedUnitObj.getTable("unitData")
-
         unitData.baseSize = newUnitData.baseSize
-        unitData.fixedMove = newUnitData.fixedMove
-        unitData.strafeMove = newUnitData.strafeMove
         unitData.selectedSpeed = newUnitData.selectedSpeed
-        unitData.fixedArc = newUnitData.fixedArc
-
     end
 end
 
@@ -517,7 +512,8 @@ function moveUnit()
     templateA.setTable("baseRot", baseRot)
     templateA.setVar("templateB", templateB)
 
-    templateA.setLock(unitData.fixedMove)
+    local fixedMove = unitData.baseSize ~= "small"
+    templateA.setLock(fixedMove)
 
     templateB.setTable("basePos", basePos)
     templateB.setTable("baseRot", baseRot)
@@ -573,9 +569,9 @@ function moveUnit()
         position = {3, 0.2, 1.2}, width = 300, height = 350, font_size = 200, color = {0.8103, 0.0857, 0.0857, 1}, font_color = {1, 1, 1, 1},
         tooltip = "Move Speed 3"
     })
-    if unitData.fixedMove then
+    if fixedMove then
 
-        if unitData.strafeMove then
+        if true then -- TODO: Is it worth enforcing this? "unitData.strafeMove" 
 
               self.createButton({
                   click_function = "moveForward",
