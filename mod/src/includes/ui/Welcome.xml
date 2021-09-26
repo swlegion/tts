@@ -101,6 +101,17 @@
         AT-ST: 5
       </Text>
     </VerticalLayout>
+    <VerticalLayout id="welcomeTab3" active="false">
+      <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
+        URL to a "cards.json" compatible file.
+        This will be additive, and new factions are less supported:
+      </Text>
+      <InputField
+        placeholder="https://domain.com/cards.json"
+        onValueChanged="sideLoadUrlChanged">
+      </InputField>
+      <Button onClick="experimentalSideLoad">Load</Button>
+    </VerticalLayout>
   </Panel>
   <Panel 
     color="#202020"
@@ -117,8 +128,8 @@
       <Button onClick="showWelcomeTab2">
         <Text fontSize="10">Unit Sizes</Text>
       </Button>
-      <Button interactable="false">
-        <Text fontSize="10">-</Text>
+      <Button onClick="showWelcomeTab3">
+        <Text fontSize="10">Experimental Side Load</Text>
       </Button>
       <Button interactable="false">
         <Text fontSize="10">-</Text>

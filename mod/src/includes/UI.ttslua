@@ -1,8 +1,5 @@
-#include !/Deck
-
 function initUI()
   UI.setValue("welcomeDialogTitle", "Star Wars Legion for TTS " .. VERSION)
-  _G.Deck = Deck:create()
 end
 
 function _toggleDialog(name)
@@ -29,16 +26,33 @@ function toggleChessClockUI()
   end
 end
 
-function debugSpawnUnits()
-  Deck:spawnUnitCard("Rebel", "Luke Skywalker Hero Of The Rebellion")
+local sideLoadUrl = ""
+
+function sideLoadUrlChanged(_player, newValue)
+  sideLoadUrl = newValue
+end
+
+function experimentalSideLoad()
+  WebRequest.get(sideLoadUrl, function(data)
+    local json = JSON.decode(data.text)
+    print(JSON.encode_pretty(json))
+  end)
 end
 
 function showWelcomeTab1()
   UI.show("welcomeTab1")
   UI.hide("welcomeTab2")
+  UI.hide("welcomeTab3")
 end
 
 function showWelcomeTab2()
   UI.hide("welcomeTab1")
   UI.show("welcomeTab2")
+  UI.hide("welcomeTab3")
+end
+
+function showWelcomeTab3()
+  UI.hide("welcomeTab1")
+  UI.hide("welcomeTab2")
+  UI.show("welcomeTab3")
 end
