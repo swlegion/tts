@@ -110,7 +110,8 @@ end
 function Shelf:_fetchUpgradeByName(name)
   -- TODO: Remove remapping.
   local remap = {
-    ["C-3PO Made to Suffer"]  = "C-3PO",
+    ["C-3PO Human-Cyborg Relations"] = "C-3PO"
+    ["C-3PO Made to Suffer"]         = "C-3PO",
   }
   if remap[name] ~= nil then
     name = remap[name]

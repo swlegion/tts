@@ -91,12 +91,13 @@ end
 function Deck:spawnUpgradeCard(name)
   -- TODO: Remove remapping.
   local remap = {
-    ["A-180 Config"]          = "A-180 Rifle Config",
-    ["A-300 Config"]          = "A-300 Long Range Config",
-    ["A-280-CFE Config"]      = "A280-CFE Sniper Config",
-    ["E-11D Config"]          = "E11-D-Focused Fire Config",
-    ["J-19 Bo-rifle"]         = "J-19 Bo-Rifle Blaster",
-    ["C-3PO Made to Suffer"]  = "C-3PO",
+    ["A-180 Config"]                 = "A-180 Rifle Config",
+    ["A-300 Config"]                 = "A-300 Long Range Config",
+    ["A-280-CFE Config"]             = "A280-CFE Sniper Config",
+    ["E-11D Config"]                 = "E11-D-Focused Fire Config",
+    ["J-19 Bo-rifle"]                = "J-19 Bo-Rifle Blaster",
+    ["C-3PO Human-Cyborg Relations"] = "C-3PO"
+    ["C-3PO Made to Suffer"]         = "C-3PO",
   }
   if remap[name] ~= nil then
     name = remap[name]
