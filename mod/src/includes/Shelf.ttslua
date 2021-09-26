@@ -1,12 +1,9 @@
 -- Utilities around creating and managing minis.
-#include !/generated/cards
-
 Shelf = {}
 Shelf.__index = Shelf;
 function Shelf:create()
   local meta = {
     -- TODO: Have the schema be configurable.
-    _schema = CardsSchema,
     _colliders = {
       small    = { "http://cloud-3.steamusercontent.com/ugc/1009315641457429932/1534D6C1AA4F3D5BDA469241B8F0319BE560E7ED/", 1.06299},
       medium   = { "http://cloud-3.steamusercontent.com/ugc/1009315641457670521/DAD6653F422046BD6BC4360FE18C96927D5F4C44/", 1.9685},
@@ -24,6 +21,10 @@ function Shelf:create()
   return meta
 end
 
+function Shelf:_getSchema()
+  return Global.getTable("CardsSchema")
+end
+
 function Shelf:spawnUnitModels(faction, name, upgrades, callback)
   -- TODO: Remove remapping.
   local remap = {
@@ -35,7 +36,7 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
   if remap[faction] ~= nil then
     faction = remap[faction]
   end
-  local units = self._schema.units[faction:upper()]
+  local units = self:_getSchema().units[faction:upper()]
   if units == nil then
     local model = self:_spawnDudModel(name, "No matching faction found: \"" .. faction .. "\".")
     if callback ~= nil then
@@ -110,13 +111,13 @@ end
 function Shelf:_fetchUpgradeByName(name)
   -- TODO: Remove remapping.
   local remap = {
-    ["C-3PO Human-Cyborg Relations"] = "C-3PO"
+    ["C-3PO Human-Cyborg Relations"] = "C-3PO",
     ["C-3PO Made to Suffer"]         = "C-3PO",
   }
   if remap[name] ~= nil then
     name = remap[name]
   end
-  return self._schema.upgrades[name:upper()]
+  return self:_getSchema().upgrades[name:upper()]
 end
 
 function Shelf:_spawnDudModel(name, description)

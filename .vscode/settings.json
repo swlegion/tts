@@ -39,7 +39,7 @@
   // Schemas.
   "json.schemas": [
     {
-      "fileMatch": ["contrib/cards.json"],
+      "fileMatch": ["contrib/cards.json", "contrib/cards/homebrew.json"],
       "url": "/mod/schema/CardSet.json"
     }
   ]

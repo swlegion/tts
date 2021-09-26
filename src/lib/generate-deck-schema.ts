@@ -49,7 +49,7 @@ export default async function buildDeckSchemaLua(
   const json = await fs.readJson(inJson);
   const lua: string[] = [
     '-- AUTO GENERATED (`npm run generate`). DO NOT MODIFY BY HAND.',
-    'CardsSchema = {',
+    'GENERATED_CARDS_SCHEMA = {',
   ];
 
   const units = json['units'];
