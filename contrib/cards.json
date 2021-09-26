@@ -1196,7 +1196,7 @@
               "pip": 1
             },
             {
-              "name": "Reptillian Rampage",
+              "name": "Reptilian Rampage",
               "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034734/F11C62C109C1CA7EE490169555DBAE37E4A9B53C/",
               "pip": 2
             },
@@ -1427,8 +1427,8 @@
           },
           "minis": [
             {
-              "mesh": "http://cloud-3.steamusercontent.com/ugc/770610077943667377/92306C3BFB675310563691C3C582BF5B9FC9ACD4/",
-              "diffuse": "http://cloud-3.steamusercontent.com/ugc/770610077943667167/66F3188269E49FE5DAD649E771D799F2593263FF/"
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541911155/36E8C01A67E5E7A4188FC619261E0BAB0DF438C1/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/950714557093539603/6584D58DCD3135C901F302599C304E2D7044AD4B/"
             }
           ]
         },
@@ -2074,7 +2074,7 @@
           },
           "minis": [
             {
-              "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457800878/34EC84D7ECD99E073417866A9BEC4288E00F5359/",
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457802621/01F605D855048F823A0ECA6C46D2A62B56C04124/",
               "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
             }
           ]
