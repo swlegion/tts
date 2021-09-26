@@ -46,6 +46,11 @@
 
           (Since last <i>Beta</i>)
 
+          - Fixed the import of "Reptilian Rampage".
+          - Fixed scout trooper model(s).
+          - Fixed ARC trooper model(s).
+          - Fixed the movement tool (at least to some degree).
+
           - We are testing <i>new range/cohesion</i> projection-based rulers.
           - <b>Please report any bugs/issues with these rulers!</b>.
 
