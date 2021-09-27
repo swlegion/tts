@@ -25,7 +25,7 @@ function onLoad(saveData)
       loadData = JSON.decode(saveData)
     end
 
-    _G.CardsSchema = GENERATED_CARDS_SCHEMA
+    initCardsSchema()
     ga_event("Global", "onLoad")
 
     gameDataGUID = "6bb850"
@@ -624,17 +624,6 @@ function onLoad(saveData)
 
     -- standby tokens
     standbyTokens()
-end
-
-function sideLoadUnit(params)
-  local faction = params.faction:upper()
-  local unitKey = params.key:upper()
-  local unitDat = params.unit
-  _G.CardsSchema.units[faction][unitKey] = unitDat
-end
-
-function getCardsSchema()
-  return _G.CardsSchema
 end
 
 function standbyTokens()
