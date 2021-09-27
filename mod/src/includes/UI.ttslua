@@ -26,7 +26,7 @@ function toggleChessClockUI()
   end
 end
 
-local sideLoadUrl = ""
+local sideLoadUrl = "https://raw.githubusercontent.com/swlegion/tts/main/contrib/cards/homebrew.json"
 
 function sideLoadUrlChanged(_player, newValue)
   sideLoadUrl = newValue
