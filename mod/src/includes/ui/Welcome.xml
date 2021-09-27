@@ -46,7 +46,7 @@
 
           (Since last <i>Beta</i>)
 
-          - Added experimental homebrew support. See https://go.swlegion.dev/homebrew.
+          - Changed the battlefield selection deck to pick 4 (instead of 3) for upcoming RRG.
 
           - We are testing <i>new range/cohesion</i> projection-based rulers.
           - <b>Please report any bugs/issues with these rulers!</b>.
@@ -59,6 +59,8 @@
             .. allows upgrades that were hidden before.
 
           (Since last <i>Stable</i>)
+
+          - Added experimental homebrew support. See https://go.swlegion.dev/homebrew.
 
           - Added Yoda.
 
