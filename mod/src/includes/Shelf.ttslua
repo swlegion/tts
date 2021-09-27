@@ -64,7 +64,7 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
     -- TODO: Handle missing upgrade more gracefully.
     if upgrade ~= nil then
       if upgrade.mini ~= nil and (upgrade.leader == true or card.heavyWeaponTeam == true) then
-        local model = self:_spawnModel(upgrade.mini)
+        local model = self:_spawnModel(card.size, upgrade.mini)
         model.setName(upgrade.name .. " (Unit Leader)")
         table.insert(result, model)
         if callback ~= nil then
@@ -75,7 +75,7 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
     end
   end
   for _, config in pairs(minis) do
-    local model = self:_spawnModel(config)
+    local model = self:_spawnModel(card.size, config)
     table.insert(result, model)
     if #result == 1 then
       model.setName(name .. " (Unit Leader)")
@@ -91,7 +91,7 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
     -- TODO: Handle missing upgrade more gracefully.
     if upgrade ~= nil then
       if upgrade.mini ~= nil and upgrade.leader ~= true and card.heavyWeaponTeam ~= true then
-        local model = self:_spawnModel(upgrade.mini)
+        local model = self:_spawnModel(card.size, upgrade.mini)
         model.setName(upgrade.name)
         table.insert(result, model)
         if callback ~= nil then
@@ -121,7 +121,7 @@ function Shelf:_fetchUpgradeByName(name)
 end
 
 function Shelf:_spawnDudModel(name, description)
-  local model = self:_spawnModel({
+  local model = self:_spawnModel("small", {
     bundle = "http://cloud-3.steamusercontent.com/ugc/1616219505081638790/1BF43B61B14CFD7C588AF6C59972B092674D6C8F/",
   })
   model.setName(name)
@@ -129,8 +129,9 @@ function Shelf:_spawnDudModel(name, description)
   return model
 end
 
-function Shelf:_spawnModel(miniConfig)
+function Shelf:_spawnModel(size, miniConfig)
   local mini
+  print(size)
   if miniConfig.mesh == nil then
     mini = spawnObject({
       type = "Custom_AssetBundle"
@@ -148,7 +149,7 @@ function Shelf:_spawnModel(miniConfig)
     mini.setCustomObject({
       diffuse = miniConfig.diffuse,
       mesh = miniConfig.mesh,
-      collider = self._colliders[miniConfig.base],
+      collider = self._colliders[size][1],
       type = 1,
       material = 3,
     })
