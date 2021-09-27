@@ -1,12 +1,9 @@
 -- Utilities around creating and managing minis.
-#include !/generated/cards
-
 Shelf = {}
 Shelf.__index = Shelf;
 function Shelf:create()
   local meta = {
     -- TODO: Have the schema be configurable.
-    _schema = CardsSchema,
     _colliders = {
       small    = { "http://cloud-3.steamusercontent.com/ugc/1009315641457429932/1534D6C1AA4F3D5BDA469241B8F0319BE560E7ED/", 1.06299},
       medium   = { "http://cloud-3.steamusercontent.com/ugc/1009315641457670521/DAD6653F422046BD6BC4360FE18C96927D5F4C44/", 1.9685},
@@ -24,6 +21,10 @@ function Shelf:create()
   return meta
 end
 
+function Shelf:_getSchema()
+  return Global.getTable("CardsSchema")
+end
+
 function Shelf:spawnUnitModels(faction, name, upgrades, callback)
   -- TODO: Remove remapping.
   local remap = {
@@ -35,7 +36,7 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
   if remap[faction] ~= nil then
     faction = remap[faction]
   end
-  local units = self._schema.units[faction:upper()]
+  local units = self:_getSchema().units[faction:upper()]
   if units == nil then
     local model = self:_spawnDudModel(name, "No matching faction found: \"" .. faction .. "\".")
     if callback ~= nil then
@@ -63,7 +64,7 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
     -- TODO: Handle missing upgrade more gracefully.
     if upgrade ~= nil then
       if upgrade.mini ~= nil and (upgrade.leader == true or card.heavyWeaponTeam == true) then
-        local model = self:_spawnModel(upgrade.mini)
+        local model = self:_spawnModel(card.size, upgrade.mini)
         model.setName(upgrade.name .. " (Unit Leader)")
         table.insert(result, model)
         if callback ~= nil then
@@ -74,7 +75,7 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
     end
   end
   for _, config in pairs(minis) do
-    local model = self:_spawnModel(config)
+    local model = self:_spawnModel(card.size, config)
     table.insert(result, model)
     if #result == 1 then
       model.setName(name .. " (Unit Leader)")
@@ -90,7 +91,7 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
     -- TODO: Handle missing upgrade more gracefully.
     if upgrade ~= nil then
       if upgrade.mini ~= nil and upgrade.leader ~= true and card.heavyWeaponTeam ~= true then
-        local model = self:_spawnModel(upgrade.mini)
+        local model = self:_spawnModel(card.size, upgrade.mini)
         model.setName(upgrade.name)
         table.insert(result, model)
         if callback ~= nil then
@@ -108,11 +109,19 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
 end
 
 function Shelf:_fetchUpgradeByName(name)
-  return self._schema.upgrades[name:upper()]
+  -- TODO: Remove remapping.
+  local remap = {
+    ["C-3PO Human-Cyborg Relations"] = "C-3PO",
+    ["C-3PO Made to Suffer"]         = "C-3PO",
+  }
+  if remap[name] ~= nil then
+    name = remap[name]
+  end
+  return self:_getSchema().upgrades[name:upper()]
 end
 
 function Shelf:_spawnDudModel(name, description)
-  local model = self:_spawnModel({
+  local model = self:_spawnModel("small", {
     bundle = "http://cloud-3.steamusercontent.com/ugc/1616219505081638790/1BF43B61B14CFD7C588AF6C59972B092674D6C8F/",
   })
   model.setName(name)
@@ -120,7 +129,7 @@ function Shelf:_spawnDudModel(name, description)
   return model
 end
 
-function Shelf:_spawnModel(miniConfig)
+function Shelf:_spawnModel(size, miniConfig)
   local mini
   if miniConfig.mesh == nil then
     mini = spawnObject({
@@ -139,7 +148,7 @@ function Shelf:_spawnModel(miniConfig)
     mini.setCustomObject({
       diffuse = miniConfig.diffuse,
       mesh = miniConfig.mesh,
-      collider = self._colliders[miniConfig.base],
+      collider = self._colliders[size][1],
       type = 1,
       material = 3,
     })

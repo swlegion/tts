@@ -1,0 +1,35 @@
+#include !/generated/cards
+
+function initCardsSchema()
+  _G.CardsSchema = GENERATED_CARDS_SCHEMA
+end
+
+function sideLoadUnit(params)
+  local faction = params.faction:upper()
+  local unitKey = params.key:upper()
+  local unitDat = params.unit
+  if not _G.CardsSchema.units[faction] then
+    _G.CardsSchema.units[faction] = {}
+  end
+  _G.CardsSchema.units[faction][unitKey] = unitDat
+end
+
+function sideLoadUpgrade(params)
+  local name = params.name:upper()
+  local data = params.data
+  _G.CardsSchema.upgrades[name] = data
+end
+
+function sideLoadCommand(params)
+  local name = params.name:upper()
+  local data = params.data
+  _G.CardsSchema.commands[name] = data
+end
+
+function sideLoadBattle(params)
+  local name = params.name:upper()
+  local data = params.data
+  local type = params.type:lower()
+  local kind = params.kind:lower()
+  _G.CardsSchema.battlefield[type][kind] = data
+end

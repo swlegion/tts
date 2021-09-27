@@ -1,6 +1,8 @@
 #include !/Analytics
+#include !/CardSchema
 #include !/common/SHA256
 #include !/data/ListBuilder
+#include !/generated/cards
 #include !/UI
 #include !/RangeRulers
 
@@ -24,6 +26,7 @@ function onLoad(saveData)
       loadData = JSON.decode(saveData)
     end
 
+    initCardsSchema()
     ga_event("Global", "onLoad")
 
     gameDataGUID = "6bb850"
@@ -334,136 +337,30 @@ function onLoad(saveData)
     gameController.conditionsCardsGUID = "3494a8"
     gameController.battlefieldCardsGUID = "9ef154"
 
-    gameController.setUpCardsPos = {}
-    gameController.setUpCardsPos.objective = {{0.18, -3.42, -2.62}, {0.18, -3.42, 0.08}, {0.18, -3.42, 2.76}}
-    gameController.setUpCardsPos.deployment = {{1.23, -1.88, -2.62},  {1.23, -1.88, 0.08}, {1.23, -1.88, 2.76}}
-    gameController.setUpCardsPos.conditions = {{2.27, -0.32, -2.62}, {2.27, -0.32,0.08}, {2.27, -0.32, 2.76}}
+    gameController.setUpCardsPos = {
+      objective = {
+        {0.18, -3.42, -3.24},
+        {0.18, -3.42, -0.62},
+        {0.18, -3.42, 2.08},
+        {0.18, -3.42, 4.76},
+      },
+      deployment = {
+        {1.23, -1.88, -3.24},
+        {1.23, -1.88, -0.62}, 
+        {1.23, -1.88, 2.08},
+        {1.23, -1.88, 4.76},
+      },
+      conditions = {
+        {2.27, -0.32, -3.24},
+        {2.27, -0.32, -0.62},
+        {2.27, -0.32, 2.08},
+        {2.27, -0.32, 4.76},
+      }
+    }
 
 
     -- TV
     screenGUID = "33d1ed"
-
-
-    -- setup cards
-
-    setUpCards = {}
-    setUpCards.objective = {}
-    setUpCards.objective.keyPositions = {
-        varName = "keyPositions",
-        name = "Key Positions",
-        tokens = true
-    }
-    setUpCards.objective.breakthrough = {
-        varName = "breakthrough",
-        name = "Breakthrough",
-        tokens = false
-    }
-    setUpCards.objective.interceptTheTransmissions = {
-        varName = "interceptTheTransmissions",
-        name = "Intercept the Transmissions",
-        tokens = true
-    }
-    setUpCards.objective.recoverTheSupplies = {
-        varName = "recoverTheSupplies",
-        name = "Recover the Supplies",
-        tokens = true
-    }
-    setUpCards.objective.sabotageTheMoistureVaporators = {
-        varName = "sabotageTheMoistureVaporators",
-        name = "Sabotage the Moisture Vaporators",
-        tokens = true
-    }
-    setUpCards.objective.payload = {
-        varName = "payload",
-        name = "Payload",
-        tokens = true
-    }
-    setUpCards.objective.bombingRun = {
-        varName = "bombingRun",
-        name = "Bombing Run",
-        tokens = true
-    }
-    setUpCards.objective.hostageExchange = {
-        varName = "hostageExchange",
-        name = "Hostage Exchange",
-        tokens = true
-    }
-
-    setUpCards.deployment = {}
-    setUpCards.deployment.battleLines = {
-        varName = "battleLines",
-        name = "Battle Lines"
-    }
-    setUpCards.deployment.theLongMarch = {
-        varName = "theLongMarch",
-        name = "The Long March"
-    }
-    setUpCards.deployment.disarray = {
-        varName = "disarray",
-        name = "Disarray"
-    }
-    setUpCards.deployment.majorOffensive = {
-        varName = "majorOffensive",
-        name = "Major Offensive"
-    }
-    setUpCards.deployment.advancedPositions = {
-        varName = "advancedPositions",
-        name = "Advanced Positions"
-    }
-    setUpCards.deployment.rollOut = {
-        varName = "rollOut",
-        name = "Roll Out"
-    }
-    setUpCards.deployment.dangerClose = {
-        varName = "dangerClose",
-        name = "Danger Close"
-    }
-    setUpCards.deployment.hemmedIn = {
-        varName = "hemmedIn",
-        name = "Hemmed In"
-    }
-
-    setUpCards.conditions = {}
-    setUpCards.conditions.clearConditions = {
-        varName = "clearConditions",
-        name = "Clear Conditions",
-        tokens = false
-    }
-    setUpCards.conditions.limitedVisibility = {
-        varName = "limitedVisibility",
-        name = "Limited Visibility",
-        tokens = false
-    }
-    setUpCards.conditions.rapidReinforcements = {
-        varName = "rapidReinforcements",
-        name = "Rapid Reinforcements",
-        tokens = true
-    }
-    setUpCards.conditions.hostileEnvironment = {
-        varName = "hostileEnvironment",
-        name = "Hostile Environment",
-        tokens = false
-    }
-    setUpCards.conditions.mineField = {
-        varName = "mineField",
-        name = "Minefield",
-        tokens = true
-    }
-    setUpCards.conditions.warWeary = {
-        varName = "warWeary",
-        name = "War Weary",
-        tokens = false
-    }
-    setUpCards.conditions.fortifiedPositions = {
-        varName = "fortifiedPositions",
-        name = "Fortified Positions",
-        tokens = true
-    }
-    setUpCards.conditions.supplyDrop = {
-        varName = "supplyDrop",
-        name = "Supply Drop",
-        tokens = true
-    }
 
     -- setup data
     setUpData = {}
@@ -623,7 +520,6 @@ function onLoad(saveData)
     -- standby tokens
     standbyTokens()
 end
-
 
 function standbyTokens()
     local allObjs = getAllObjects()

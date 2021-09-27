@@ -2905,6 +2905,16 @@
         }
       },
       {
+        "name": "Jetpack Rockets",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616220044491093901/42DF534EFBABAB01D0A173C7A8F67D8B0970B3DE/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Mandalorian Resistance"]
+          }
+        }
+      },
+      {
         "name": "Looted E-5 Blaster",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143554/AAE0C21ACF5E130BCCD15B21BDC1027613DC26BA/",
         "points": 5,
@@ -5242,7 +5252,7 @@
         }
       },
       {
-        "name": "Sitautional Awareness",
+        "name": "Situational Awareness",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145416/5965B627A7C6C0584CED87D7D08CF0C86F9C5418/",
         "points": 2
       },

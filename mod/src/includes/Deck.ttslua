@@ -1,12 +1,8 @@
 -- Utilities around creating and managing decks of cards.
-#include !/generated/cards
-
 Deck = {}
 Deck.__index = Deck;
 function Deck:create()
   local meta = {
-    -- TODO: Have the schema be configurable.
-    _schema = CardsSchema,
     _backs = {
       command     = "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
       contignency = "http://cloud-3.steamusercontent.com/ugc/1753560235958347056/F845CB170FEF761DC7025AA3EEAE731F018C0E73/",
@@ -27,18 +23,19 @@ function Deck:create()
   return meta
 end
 
+function Deck:_getSchema()
+  return Global.getTable("CardsSchema")
+end
+
 function Deck:spawnUnitCard(faction, name)
   -- TODO: Remove remapping.
   local remap = {
-    ["rebel"]      = "Rebel",
     ["imperial"]   = "Empire",
-    ["separatist"] = "Separatist",
-    ["republic"]   = "Republic",
   }
   if remap[faction] ~= nil then
     faction = remap[faction]
   end
-  local units = self._schema.units[faction:upper()]
+  local units = self:_getSchema().units[faction:upper()]
   if units == nil then
     return self:_spawnUnitOrBattleDud(name, "No matching faction found: \"" .. faction .. "\".")
   end
@@ -64,7 +61,7 @@ function Deck:spawnUnitCard(faction, name)
 end
 
 function Deck:spawnUnitDeck(faction, position)
-  local units = self._schema.units[faction:upper()]
+  local units = self:_getSchema().units[faction:upper()]
   if units == nil then
     return self:_spawnUnitOrBattleDud(faction, "No matching faction found.")
   end
@@ -91,16 +88,18 @@ end
 function Deck:spawnUpgradeCard(name)
   -- TODO: Remove remapping.
   local remap = {
-    ["A-180 Config"]      = "A-180 Rifle Config",
-    ["A-300 Config"]      = "A-300 Long Range Config",
-    ["A-280-CFE Config"]  = "A280-CFE Sniper Config",
-    ["E-11D Config"]      = "E11-D-Focused Fire Config",
-    ["J-19 Bo-rifle"]     = "J-19 Bo-Rifle Blaster",
+    ["A-180 Config"]                 = "A-180 Rifle Config",
+    ["A-300 Config"]                 = "A-300 Long Range Config",
+    ["A-280-CFE Config"]             = "A280-CFE Sniper Config",
+    ["E-11D Config"]                 = "E11-D-Focused Fire Config",
+    ["J-19 Bo-rifle"]                = "J-19 Bo-Rifle Blaster",
+    ["C-3PO Human-Cyborg Relations"] = "C-3PO",
+    ["C-3PO Made to Suffer"]         = "C-3PO",
   }
   if remap[name] ~= nil then
     name = remap[name]
   end
-  local upgrade = self._schema.upgrades[name:upper()]
+  local upgrade = self:_getSchema().upgrades[name:upper()]
   if upgrade == nil then
     return self:_spawnUpgradeDud(name, "No matching upgrade found.")
   else
@@ -132,7 +131,7 @@ end
 function Deck:spawnUpgradeDeck(position)
   local header
   local deck
-  for name, _ in pairs(self._schema.upgrades) do
+  for name, _ in pairs(self:_getSchema().upgrades) do
     local card = self:spawnUpgradeCard(name)
     if header == nil then
       header = card
@@ -201,8 +200,9 @@ function Deck:spawnCommandDeck(position)
 end
 
 function Deck:_cacheCommandCardsByName()
+  local schema = self:_getSchema()
   local cache = {}
-  for _, units in pairs(self._schema.units) do
+  for _, units in pairs(schema.units) do
     for _, unit in pairs(units) do
       if unit.commands then
         for _, command in ipairs(unit.commands) do
@@ -211,7 +211,7 @@ function Deck:_cacheCommandCardsByName()
       end
     end
   end
-  for _, command in pairs(self._schema.commands) do
+  for _, command in pairs(schema.commands) do
     cache[command.name:upper()] = command
   end
   self._cache.commands = cache
@@ -225,7 +225,7 @@ function Deck:spawnBattleCard(category, name, scenario)
   if category == "conditions" then
     category = "condition"
   end
-  local categories = self._schema.battlefield[scenario:lower()]
+  local categories = self:_getSchema().battlefield[scenario:lower()]
   if categories == nil then
     return self:_spawnUnitOrBattleDud(name, "No matching scenario: \"" .. scenario .. "\".")
   end
@@ -254,7 +254,7 @@ function Deck:spawnBattleDeck(position, scenarioName)
   if scenarioName == nil then
     scenarioName = "standard"
   end
-  local scenario = self._schema.battlefield[scenarioName:lower()]
+  local scenario = self:_getSchema().battlefield[scenarioName:lower()]
   if scenario == nil then
     return self:_spawnUnitOrBattleDud("Deck failed to load: " .. scenario, "No matching scenario.")
   end
@@ -322,18 +322,23 @@ function Deck:_spawnCard(front, back)
   return custom
 end
 
+function Deck:getFactions()
+  local result = {}
+  for faction, _ in pairs(self._getSchema().units) do
+    table.insert(result, faction)
+  end
+  return result
+end
+
 function Deck:getUnitsByFactionAndRank(faction, rank)
   -- TODO: Remove remapping.
   local remap = {
-    ["rebel"]      = "Rebel",
     ["imperial"]   = "Empire",
-    ["separatist"] = "Separatist",
-    ["republic"]   = "Republic",
   }
   if remap[faction] ~= nil then
     faction = remap[faction]
   end
-  local units = self._schema.units[faction:upper()]
+  local units = self:_getSchema().units[faction:upper()]
   if units == nil then
     return {}
   end
@@ -352,7 +357,7 @@ function Deck:getUpgradesByType(type, filterForUnit)
     return self._cache.upgrades[type]
   end
   local result = {}
-  for _, upgrade in pairs(self._schema.upgrades) do
+  for _, upgrade in pairs(self:_getSchema().upgrades) do
     if upgrade.type:upper() == type:upper() then
       if not filterForUnit or self:_isUpgradeValidFor(upgrade, filterForUnit) then
         table.insert(result, upgrade)
@@ -422,6 +427,16 @@ function Deck:_isUpgradeValidFor(upgrade, unit)
       end
 
       if restrictions.include.alignment and unit.name:upper() ~= "ANAKIN SKYWALKER" then
+        local known = {
+          imperial   = 1,
+          rebel      = 1,
+          separatist = 1,
+          republic   = 1,
+        }
+        if not known[unit.faction:lower()] then
+          -- HACK: Don't filter out alignment based cards for homebrew factions.
+          return true
+        end
         for _, unitAlignment in ipairs(restrictions.include.alignment) do
           unitAlignment = unitAlignment:upper()
           if unitAlignment == "LIGHT" then
@@ -450,21 +465,19 @@ function Deck:_isUpgradeValidFor(upgrade, unit)
 end
 
 function Deck:getUpgradeByName(name)
-  return self._schema.upgrades[name:upper()]
+  return self:_getSchema().upgrades[name:upper()]
 end
 
 function Deck:getCommandsByFactionAndUnits(faction, units)
   -- TODO: Remove remapping.
   local remap = {
-    ["rebel"]      = "Rebel",
     ["imperial"]   = "Empire",
-    ["separatist"] = "Separatist",
-    ["republic"]   = "Republic",
   }
   if remap[faction] ~= nil then
     faction = remap[faction]
   end
-  local database = self._schema.units[faction:upper()]
+  local schema = self:_getSchema()
+  local database = schema.units[faction:upper()]
   if not database then
     return {}
   end
@@ -477,10 +490,22 @@ function Deck:getCommandsByFactionAndUnits(faction, units)
       end
     end
   end
-  for _, command in pairs(self._schema.commands or {}) do
+  for _, command in pairs(schema.commands or {}) do
     if command.faction:upper() == "GENERIC" or command.faction:upper() == faction:upper() then
       table.insert(result, command)
     end
   end
   return result
+end
+
+function Deck:getBattleCardType(name, scenario)
+  if not scenario then
+    scenario = 'standard'
+  end
+  for type, cards in pairs(self:_getSchema().battlefield[scenario]) do
+    if cards[name:upper()] then
+      return type
+    end
+  end
+  return nil
 end

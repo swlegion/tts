@@ -1,8 +1,5 @@
-#include !/Deck
-
 function initUI()
   UI.setValue("welcomeDialogTitle", "Star Wars Legion for TTS " .. VERSION)
-  _G.Deck = Deck:create()
 end
 
 function _toggleDialog(name)
@@ -29,16 +26,99 @@ function toggleChessClockUI()
   end
 end
 
-function debugSpawnUnits()
-  Deck:spawnUnitCard("Rebel", "Luke Skywalker Hero Of The Rebellion")
+local sideLoadUrl = "https://raw.githubusercontent.com/swlegion/tts/main/contrib/cards/homebrew.json"
+
+function sideLoadUrlChanged(_player, newValue)
+  sideLoadUrl = newValue
+end
+
+function experimentalSideLoad()
+  WebRequest.get(sideLoadUrl, function(data)
+    local json = JSON.decode(data.text)
+    if json.units then
+      local loaded = 0
+      for faction, ranks in pairs(json.units) do
+        for rank, units in pairs(ranks) do
+          for _, unit in ipairs(units) do
+            local key = unit.name
+            if unit.title then
+              key = key .. " " .. unit.title
+            end
+            unit.rank = rank
+            unit.faction = faction
+            Global.call("sideLoadUnit", {
+              faction = faction,
+              key     = key,
+              unit    = unit,
+            })
+            loaded = loaded + 1
+          end
+        end
+      end
+      print("Injected " .. tostring(loaded) .. " unit card(s).")
+    end
+    if json.upgrades then
+      local loaded = 0
+      for type, upgrades in pairs(json.upgrades) do
+        for _, upgrade in ipairs(upgrades) do
+          upgrade.type = type
+          Global.call("sideLoadUpgrade", {
+            name = upgrade.name,
+            data = upgrade,
+          })
+          loaded = loaded + 1
+        end
+      end
+      print("Injected " .. tostring(loaded) .. " upgrades card(s).")
+    end
+    if json.commands then
+      local loaded = 0
+      for faction, commands in pairs(json.commands) do
+        for _, command in ipairs(commands) do
+          command.faction = faction
+          Global.call("sideLoadCommand", {
+            name = command.name,
+            data = command,
+          })
+          loaded = loaded + 1
+        end
+      end
+      print("Injected " .. tostring(loaded) .. " generic command card(s).")
+    end
+    if json.battlefield then
+      local loaded = 0
+      for type, kinds in pairs(json.battlefield) do
+        for kind, cards in pairs(kinds) do
+          for _, card in ipairs(cards) do
+            Global.call("sideLoadBattlefield", {
+              name = card.name,
+              data = card,
+              type = type,
+              kind = kind,
+            })
+            loaded = loaded + 1
+          end
+        end
+      end
+      print("Injected " .. tostring(loaded) .. " battlefield card(s).")
+    end
+  end)
 end
 
 function showWelcomeTab1()
   UI.show("welcomeTab1")
   UI.hide("welcomeTab2")
+  UI.hide("welcomeTab3")
 end
 
 function showWelcomeTab2()
   UI.hide("welcomeTab1")
   UI.show("welcomeTab2")
+  UI.hide("welcomeTab3")
+end
+
+function showWelcomeTab3()
+  UI.hide("welcomeTab1")
+  UI.hide("welcomeTab2")
+  UI.show("welcomeTab3")
 end
