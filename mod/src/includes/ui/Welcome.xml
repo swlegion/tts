@@ -106,7 +106,7 @@
       <InputField
         placeholder="https://go.swlegion.dev/homebrew.json"
         onValueChanged="sideLoadUrlChanged">
-        https://go.swlegion.dev/homebrew.json
+        https://raw.githubusercontent.com/swlegion/tts/main/contrib/cards/homebrew.json
       </InputField>
       <Button onClick="experimentalSideLoad">Load</Button>
     </VerticalLayout>
