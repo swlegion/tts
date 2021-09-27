@@ -131,7 +131,6 @@ end
 
 function Shelf:_spawnModel(size, miniConfig)
   local mini
-  print(size)
   if miniConfig.mesh == nil then
     mini = spawnObject({
       type = "Custom_AssetBundle"
