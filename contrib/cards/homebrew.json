@@ -1,6 +1,44 @@
 {
   "units": {
     "First Order": {
+      "Commander": [
+        {
+          "name": "Captain Phasma",
+          "title": "Ruthless Leader",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1027324804930937035/30C22DF987890556EDA35958BBACA2AF066BBA4F/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 100,
+          "upgrades": {
+            "Command": 2,
+            "Training": 1,
+            "Armament": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1027324804925773451/29E9C01AADB63D0F11307AC6DF9FE7F0C29178CD/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1027324804925773688/AA999386C07D280297E4E55F78BE951C22CC4765/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Traitor!",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1027324712401796009/E80F6D102F47A6DB9E6AFE5EB672F718A39F97BF/",
+              "pip": 1
+            },
+            {
+              "name": "So Good To Have You Back",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1027324712401797801/9068684896D2C73825A05F2CA954ACC3635913B8/",
+              "pip": 2
+            },
+            {
+              "name": "On My Command",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1027324712401799817/1A4627E71A0BA3C1F42A3624DC562C9E8CDB8A5F/",
+              "pip": 3
+            }
+          ]
+        }
+      ],
       "Operative": [
         {
           "name": "Kylo Ren",
@@ -73,6 +111,29 @@
             }
           ]
         }
+      ],
+      "Support": [
+        {
+          "name": "125=Z Treadspeeder Bikes",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1021696515357808026/ABE976BE897F31B806CE32246741B2EB07D14FBA/",
+          "size": "medium",
+          "type": "Repulsor Vehicle",
+          "points": 75,
+          "speed": 3,
+          "upgrades": {
+            "Comms": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1022821770981171565/A72EE65BB1B64233BC73B5A19F8BEEB49B6D25C2/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1022821770981171714/24D19968CC914CDDF4318CD7F4D6A4A8C6453857/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1022821770981171565/A72EE65BB1B64233BC73B5A19F8BEEB49B6D25C2/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1022821770981171714/24D19968CC914CDDF4318CD7F4D6A4A8C6453857/"
+            }
+          ]
+        }
       ]
     },
     "Republic": {
@@ -118,6 +179,18 @@
     }
   },
   "upgrades": {
+    "Armament": [
+      {
+        "name": "Quicksilver Baton",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1021696515357818157/FAAC5F19359BE39BD499A8BA18F7D790FD5A7562/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Captain Phasma"]
+          }
+        }
+      }
+    ],
     "Force": [
       {
         "name": "Force Statis",
