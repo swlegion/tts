@@ -497,3 +497,15 @@ function Deck:getCommandsByFactionAndUnits(faction, units)
   end
   return result
 end
+
+function Deck:getBattleCardType(name, scenario)
+  if not scenario then
+    scenario = 'standard'
+  end
+  for type, cards in pairs(self:_getSchema().battlefield[scenario]) do
+    if cards[name:upper()] then
+      return type
+    end
+  end
+  return nil
+end

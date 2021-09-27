@@ -31,7 +31,6 @@ function onLoad(save_state)
     zonesGUIDs = Global.getTable("zonesGUIDs")
 
     setUpController = getObjectFromGUID(Global.getVar("setUpControllerGUID"))
-    setUpCards = Global.getTable("setUpCards")
     battleDeckTypes = {"deployment", "objective", "conditions"}
 
     blueDeckMount = getObjectFromGUID(listBuilder.blueDeckMountGUID)
@@ -355,20 +354,25 @@ end
 
 function setBattleCardPos()
     for i, battleDeckType in pairs(battleDeckTypes) do
-        for n=1,3,1 do
+        for n=1, 4, 1 do
             local setUpCardPos = gameController.setUpCardsPos[battleDeckType][n]
             local spawnPos = {}
+            
             spawnPos.x = screen.getPosition().x - setUpCardPos[1]
             spawnPos.y = screen.getPosition().y - setUpCardPos[2]
             spawnPos.z = screen.getPosition().z - setUpCardPos[3]
 
             local spawnRot = {55.91, 270.00, 0.00}
+            print(n .. ": " .. battleDeckType)
             local spawnedCardObj = setUp5Data.spawnedCards[battleDeckType][n]
+            print(spawnedCardObj)
 
             spawnedCardObj.setLock(true)
+            print(n)
             spawnedCardObj.setScale({0.57,1,0.57})
             spawnedCardObj.setRotation(spawnRot)
             spawnedCardObj.setPosition(spawnPos)
+            print(n)
 
             Wait.frames(function()
               debugSpawnSetupCard(spawnedCardObj)
@@ -378,63 +382,53 @@ function setBattleCardPos()
 end
 
 function createMatrixFromDeck(battleDeckInserted)
-    -- CLONE DECK
-    local battleDeckClone = battleDeckInserted.clone({
-        position     = {0,-10,0}
+  -- CLONE DECK
+  local battleDeckClone = battleDeckInserted.clone({
+      position     = {0,-10,0}
+  })
+  battleDeckClone.setPosition({0,-10,0})
+  battleDeckClone.setRotation({55.91, 270.00, 0.00})
+  battleDeckClone.shuffle()
+  local battleDeckTable = battleDeckClone.getObjects()
+
+  -- for each card
+
+  local cardMatrixSelected = {
+    deployment = {},
+    objective  = {},
+    conditions = {},
+  }
+
+  for i, card in ipairs(battleDeckClone.getObjects()) do
+    local object = battleDeckClone.takeObject({
+      position     = {i*1, -10, 0},
     })
-    battleDeckClone.setPosition({0,-10,0})
-    battleDeckClone.setRotation({55.91, 270.00, 0.00})
-    battleDeckClone.shuffle()
-    local battleDeckTable = battleDeckClone.getObjects()
-
-    -- for each card
-
-    local cardMatrixSelected = {}
-    cardMatrixSelected.deployment = {}
-    cardMatrixSelected.objective = {}
-    cardMatrixSelected.conditions = {}
-
-    for m, cardData in pairs(battleDeckTable) do
-        local drawCardGUID = nil
-        -- compare to find type
-
-        for i, battleType in pairs(battleDeckTypes) do
-            for k, compareCardData in pairs(setUpCards[battleType]) do
-                if compareCardData.name:upper() == cardData.nickname:upper() then
-                    -- found match
-                    drawCardGUID = cardData.guid
-                    break
-                end
-            end
-            -- check if found card
-            if drawCardGUID != nil then
-                -- draw card and add to matrix table
-
-                if #cardMatrixSelected[battleType] < 3 then
-                    local battleDeckDrawnCard = battleDeckClone.takeObject({
-                        position = {i*5,-10,#cardMatrixSelected[battleType]*5},
-                        guid = drawCardGUID
-                    })
-                    table.insert(cardMatrixSelected[battleType], battleDeckDrawnCard)
-                end
-                break
-            end
-        end
+    local name = object.getName()
+    local type = Deck:getBattleCardType(name)
+    -- TODO: Rename conditions -> condition
+    if type == "condition" then
+      type = "conditions"
     end
+    table.insert(cardMatrixSelected[type], object)
+  end
 
+  if battleDeckClone then
     destroyObject(battleDeckClone)
+  end
 
-    return cardMatrixSelected.objective , cardMatrixSelected.deployment, cardMatrixSelected.conditions
+  return cardMatrixSelected.objective, 
+          cardMatrixSelected.deployment,
+          cardMatrixSelected.conditions
 end
 
 function revealBattleCards(insertedDeck)
     clearSetUpCards("all")
-    setUp5Data = {}
-    setUp5Data.objectiveCards = objectiveCards
-    setUp5Data.deploymentCards = deploymentCards
-    setUp5Data.conditionsCards = conditionsCards
-
-    setUp5Data.spawnedCards = {}
+    setUp5Data = {
+      objectiveCards  = objectiveCards,
+      deploymentCards = deploymentCards,
+      conditionsCards = conditionsCards,
+      spawnedCards    = {},
+    }
     if insertedDeck == nil then
         setUp5Data.spawnedCards.objective = spawnSetupCards("objective")
         setUp5Data.spawnedCards.deployment = spawnSetupCards("deployment")
@@ -455,7 +449,7 @@ function revealBattleCards(insertedDeck)
 end
 
 function debugSetupCards()
-    for i = 1, 3, 1 do
+    for i = 1, 4, 1 do
         if setUp5Data.spawnedCards.objective[i]!= nil then
             setUp5Data.spawnedCards.objective[i].setRotation({55.91, 270.00, 0.00})
         end
@@ -471,7 +465,7 @@ end
 
 function clearSetUpCards(clearedCards)
     if setUp5Data != nil then
-        for i = 1, 3, 1 do
+        for i = 1, 4, 1 do
             if setUp5Data.cardSelection.objective == i and clearedCards == "eliminate" then
             else
                 if setUp5Data.spawnedCards.objective[i]!= nil then
@@ -561,7 +555,7 @@ function spawnSetupCards(selection)
 
         local spawnedCardTable = {}
 
-        for n=1,3,1 do
+        for n=1, #gameController.setUpCardsPos[selection], 1 do
             local setUpCardPos = gameController.setUpCardsPos[selection][n]
 
             local spawnPos = {}
