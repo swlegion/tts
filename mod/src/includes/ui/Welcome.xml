@@ -104,8 +104,9 @@
         This will be additive, and new factions are less supported:
       </Text>
       <InputField
-        placeholder="https://domain.com/cards.json"
+        placeholder="https://go.swlegion.dev/homebrew.json"
         onValueChanged="sideLoadUrlChanged">
+        https://go.swlegion.dev/homebrew.json
       </InputField>
       <Button onClick="experimentalSideLoad">Load</Button>
     </VerticalLayout>

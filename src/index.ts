@@ -75,7 +75,7 @@ export async function compileSaveFile(
   }
   await generateFiles();
   await buildDeckSchemaLua(
-    path.join('contrib', 'cards.json'),
+    path.join('contrib', 'cards', 'official.json'),
     path.join('mod', 'src', 'includes', 'generated', 'cards.ttslua'),
   );
   console.info(`Reading "${source}"...`);
@@ -136,7 +136,7 @@ export async function createSymlink(homeDir?: string): Promise<string> {
 export async function generateFiles(): Promise<void> {
   console.info(`Generating additional files...`);
   await buildDeckSchemaLua(
-    path.join('contrib', 'cards.json'),
+    path.join('contrib', 'cards', 'official.json'),
     path.join('mod', 'src', 'includes', 'generated', 'cards.ttslua'),
   );
 }

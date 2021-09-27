@@ -35,9 +35,8 @@ end
 function experimentalSideLoad()
   WebRequest.get(sideLoadUrl, function(data)
     local json = JSON.decode(data.text)
-    local loaded = 0
-
     if json.units then
+      local loaded = 0
       for faction, ranks in pairs(json.units) do
         for rank, units in pairs(ranks) do
           for _, unit in ipairs(units) do
@@ -56,9 +55,53 @@ function experimentalSideLoad()
           end
         end
       end
+      print("Injected " .. tostring(loaded) .. " unit card(s).")
     end
-
-    print("Loaded " .. tostring(loaded) .. " unit(s). Upgrades not yet supported.")
+    if json.upgrades then
+      local loaded = 0
+      for type, upgrades in pairs(json.upgrades) do
+        for _, upgrade in ipairs(upgrades) do
+          upgrade.type = type
+          Global.call("sideLoadUpgrade", {
+            name = upgrade.name,
+            data = upgrade,
+          })
+          loaded = loaded + 1
+        end
+      end
+      print("Injected " .. tostring(loaded) .. " upgrades card(s).")
+    end
+    if json.commands then
+      local loaded = 0
+      for faction, commands in pairs(json.commands) do
+        for _, command in ipairs(commands) do
+          command.faction = faction
+          Global.call("sideLoadCommand", {
+            name = command.name,
+            data = command,
+          })
+          loaded = loaded + 1
+        end
+      end
+      print("Injected " .. tostring(loaded) .. " generic command card(s).")
+    end
+    if json.battlefield then
+      local loaded = 0
+      for type, kinds in pairs(json.battlefield) do
+        for kind, cards in pairs(kinds) do
+          for _, card in ipairs(cards) do
+            Global.call("sideLoadBattlefield", {
+              name = card.name,
+              data = card,
+              type = type,
+              kind = kind,
+            })
+            loaded = loaded + 1
+          end
+        end
+      end
+      print("Injected " .. tostring(loaded) .. " battlefield card(s).")
+    end
   end)
 end
 

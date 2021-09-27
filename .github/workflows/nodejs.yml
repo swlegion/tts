@@ -49,5 +49,5 @@ jobs:
           prerelease: true
           files: |
             LICENSE
-            contrib/cards.json
+            contrib/cards/*.json
             dist/StarWarsLegion.json

@@ -1,5 +1,80 @@
 {
   "units": {
+    "First Order": {
+      "Operative": [
+        {
+          "name": "Kylo Ren",
+          "title": "Fallen Apprentice",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1027324804930935641/32053EC6023686069120CF8DBBDF21C4625233B0/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 150,
+          "speed": 2,
+          "upgrades": {
+            "Force": 2,
+            "Training": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1027324804925562786/E8A84B89A9397EDE6466F969084F683316C98D64/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1027324804925562981/94795F169138667E0322FE1E28F68E2B8B7F4C37/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "I Will Finish What You Started",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1027324712401782746/D22391FEFBF043B2B445F41144FC2A492E4C28BD/",
+              "pip": 1
+            },
+            {
+              "name": "Raw Untamed Power",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1027324712401786509/F7F43ECE7A51D3E22F6588B8A6DD8493A22D16A6/",
+              "pip": 2
+            },
+            {
+              "name": "Mind Probe",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1027324712401788021/D2857A28E90794F48843CF6F281004E4A7B8AB18/",
+              "pip": 3
+            }
+          ]
+        }
+      ],
+      "Corps": [
+        {
+          "name": "First Order Stormtroopers",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1027324804931510298/AF04FDEDA7216024A534A74F972923DDBFF8A2A5/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 52,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Training": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1027324804926496354/534247FC18865263C1D30BC8C906CB39C93B0394/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1027324804926496614/9FECECAF48C7046C3714B33C4C16FFB773FCC94C/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1027324804926504208/94BA6801EC3D5C7915A803C8DB037D55499DA148/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1027324804926496614/9FECECAF48C7046C3714B33C4C16FFB773FCC94C/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1027324804926504208/94BA6801EC3D5C7915A803C8DB037D55499DA148/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1027324804926496614/9FECECAF48C7046C3714B33C4C16FFB773FCC94C/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1027324804926504208/94BA6801EC3D5C7915A803C8DB037D55499DA148/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1027324804926496614/9FECECAF48C7046C3714B33C4C16FFB773FCC94C/"
+            }
+          ]
+        }
+      ]
+    },
     "Republic": {
       "Commander": [
         {
@@ -42,8 +117,72 @@
       ]
     }
   },
-
-  "upgrades": {},
+  "upgrades": {
+    "Force": [
+      {
+        "name": "Force Statis",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1027324712401854487/A6235C36D7CB46051FF654A7CE532C6AF8E1C85E/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "alignment": ["Dark"]
+          }
+        }
+      }
+    ],
+    "Heavy Weapon": [
+      {
+        "name": "Z6 Riot Baton Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1021696515357806642/44993426511AB7D0D10454600BEE354823F5CBCA/",
+        "points": 20,
+        "restrictions": {
+          "include": {
+            "unit": ["First Order Stormtroopers"]
+          }
+        },
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1027324932747749076/BC0B7C898A646CCDFC518280A48B7C82EECB54B1/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1027324932747749244/7BD30A42AAF722FC4D005E08EC5EB2BCBD938E22/"
+        }
+      }
+    ],
+    "Personnel": [
+      {
+        "name": "First Order Stormtrooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1027324804931509424/141535D01679C2B839782C8AE821CA5C24AFBD2F/",
+        "points": 13,
+        "restrictions": {
+          "include": {
+            "unit": ["First Order Stormtroopers"]
+          }
+        },
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1027324804926507457/5178F7589B3E8647E3FBFDE3C3C0829F284FA23D/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1027324804926496614/9FECECAF48C7046C3714B33C4C16FFB773FCC94C/"
+        }
+      }
+    ],
+    "Training": [
+      {
+        "name": "Conditioning",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1027325137553694727/5A2D2C8BBA135A33871093554B186278F54ACF70/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "faction": ["First Order"]
+          }
+        }
+      }
+    ]
+  },
   "battlefield": {},
-  "commands": {}
+  "commands": {
+    "Generic": [
+      {
+        "name": "Standing Orders",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1027325137554512908/C6844D833CDEF04260949CDC8BCF7DD4B3CC9C88/",
+        "pip": 4
+      }
+    ]
+  }
 }

@@ -344,9 +344,7 @@ end
 
 function spawnCardDecks()
   ga_event("Game", "spawnCardDecks")
-
-  -- TODO: Make this less hard-coded.
-  local factions = {"Empire", "Rebel", "Republic", "Separatist"}
+  local factions = Deck:getFactions()
   for _, faction in ipairs(factions) do
     Deck:spawnUnitDeck(faction, {52.43, 1.42, 32.53})
   end
