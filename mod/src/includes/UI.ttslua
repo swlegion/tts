@@ -59,7 +59,7 @@ function experimentalSideLoad()
     end
     if json.upgrades then
       local loaded = 0
-      for type, upgrades in pairs(json.updates) do
+      for type, upgrades in pairs(json.upgrades) do
         for _, upgrade in ipairs(upgrades) do
           upgrade.type = type
           Global.call("sideLoadUpgrade", {

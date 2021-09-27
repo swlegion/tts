@@ -30,10 +30,7 @@ end
 function Deck:spawnUnitCard(faction, name)
   -- TODO: Remove remapping.
   local remap = {
-    ["rebel"]      = "Rebel",
     ["imperial"]   = "Empire",
-    ["separatist"] = "Separatist",
-    ["republic"]   = "Republic",
   }
   if remap[faction] ~= nil then
     faction = remap[faction]
@@ -325,13 +322,18 @@ function Deck:_spawnCard(front, back)
   return custom
 end
 
+function Deck:getFactions()
+  local result = {}
+  for faction, _ in pairs(self._getSchema().units) do
+    table.insert(result, faction)
+  end
+  return result
+end
+
 function Deck:getUnitsByFactionAndRank(faction, rank)
   -- TODO: Remove remapping.
   local remap = {
-    ["rebel"]      = "Rebel",
     ["imperial"]   = "Empire",
-    ["separatist"] = "Separatist",
-    ["republic"]   = "Republic",
   }
   if remap[faction] ~= nil then
     faction = remap[faction]
@@ -459,10 +461,7 @@ end
 function Deck:getCommandsByFactionAndUnits(faction, units)
   -- TODO: Remove remapping.
   local remap = {
-    ["rebel"]      = "Rebel",
     ["imperial"]   = "Empire",
-    ["separatist"] = "Separatist",
-    ["republic"]   = "Republic",
   }
   if remap[faction] ~= nil then
     faction = remap[faction]

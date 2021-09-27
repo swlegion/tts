@@ -46,7 +46,7 @@ end
 function mainMenu()
   clearAllButtons()
   
-  createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "chooseArmy", "Create Army", "Create a custom Army", {0,0.913,1})
+  createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "chooseArmy", "Create Army", "Create a custom army", {0,0.913,1})
   createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "loadArmy", "Load Army", "Load army from Data Disk", {0,0.913,1})
   createOptionButton(3, listBuilderOptions[3], listBuilderButtons[3], "clearZone", "Clear Cards", "Clears current cards", {0,0.913,1})
   createOptionButton(4, listBuilderOptions[4], listBuilderButtons[4], "autoTint", "Auto Tint", "Apply automatic base tinting to yet-to-be-deployed units", {0,0.913,1})
@@ -57,10 +57,23 @@ function chooseArmy()
   clearAllButtons()
 
   changeBackButton("mainMenu", "Go back to Main Menu")
-  createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "createRebelArmy", "Rebels", "Create a custom Rebel army", {0,0.913,1})
-  createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "createImperialArmy", "Imperials", "Create a custom Imperial army", {0,0.913,1})
-  createOptionButton(3, listBuilderOptions[3], listBuilderButtons[3], "createSeparatistArmy", "Separatist", "Create a custom Separatist army", {0,0.913,1})
-  createOptionButton(4, listBuilderOptions[4], listBuilderButtons[4], "createRepublicArmy", "Republic", "Create a custom Republic army", {0,0.913,1})
+  for i, faction in ipairs(Deck:getFactions()) do
+    local name = faction:lower():gsub("^%l", string.upper)
+    createOptionButton(
+      i,
+      listBuilderOptions[i],
+      listBuilderButtons[i],
+      function()
+        ga_view("Game", "createArmy", name)
+        createArmyMenu()
+        Global.setVar(colorZone.."SelectedArmyFaction", faction)
+        respawnZone()
+      end,
+      name,
+      "Create a " .. name .. " army",
+      {0,0.913,1}
+    )
+  end
 end
 
 function createArmyMenu()
@@ -79,34 +92,6 @@ function loadArmyMenu()
   changeBackButton("mainMenu", "Go back to Main Menu")
   createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "dud", "Insert Data Disk", "Insert Data Disk into Slot Above", {0,0,0})
   createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "loadArmy", "Load Army", "Load army from Data Disk", {0,0.913,1})
-end
-
-function createRebelArmy()
-  ga_view("Game", "createArmy", "Rebel")
-  createArmyMenu()
-  Global.setVar(colorZone.."SelectedArmyFaction", "rebel")
-  respawnZone()
-end
-
-function createImperialArmy()
-  ga_event("Game", "createArmy", "Imperial")
-  createArmyMenu()
-  Global.setVar(colorZone.."SelectedArmyFaction", "imperial")
-  respawnZone()
-end
-
-function createSeparatistArmy()
-  ga_event("Game", "createArmy", "Separatist")
-  createArmyMenu()
-  Global.setVar(colorZone.."SelectedArmyFaction", "separatist")
-  respawnZone()
-end
-
-function createRepublicArmy()
-  ga_event("Game", "createArmy", "Republic")
-  createArmyMenu()
-  Global.setVar(colorZone.."SelectedArmyFaction", "republic")
-  respawnZone()
 end
 
 function respawnZone()
@@ -228,15 +213,39 @@ function createOptionButton(optionNumber, optionObj, optionButton, optionClickFu
 
   _G[colorSide.."ListBuilderOptionFunction"..optionNumber] = function()
       optionButton.AssetBundle.playTriggerEffect(0)
-      _G[optionClickFunction]()
+      if type(optionClickFunction) == "string" then
+        _G[optionClickFunction]()
+      else
+        optionClickFunction()
+      end
   end
 
   optionObj.createButton({
-      click_function = colorSide.."ListBuilderOptionFunction"..optionNumber, function_owner = self, label = optionLabel, position = {-0.35, 0.3, 0}, scale = {0.5, 0.5, 0.5}, width = 4200, height = 600, font_size = 400, color = {0.7573, 0.7573, 0.7573, 0.01}, font_color = {0, 0, 0, 100},tooltip = optionToolTip
+      click_function = colorSide.."ListBuilderOptionFunction"..optionNumber,
+      function_owner = self,
+      label = optionLabel,
+      position = {-0.35, 0.3, 0},
+      scale = {0.5, 0.5, 0.5},
+      width = 4200,
+      height = 600,
+      font_size = 400,
+      color = {0.7573, 0.7573, 0.7573, 0.01},
+      font_color = {0, 0, 0, 100},
+      tooltip = optionToolTip,
   })
 
   optionButton.createButton({
-      click_function = colorSide.."ListBuilderOptionFunction"..optionNumber, function_owner = self, label = "", position = {0, 0.65, 0}, width = 1400, height = 1400, font_size = 1100, color = {1,1,1,0.01},font_color = {1,1,1,100}, tooltip = optionToolTip, alignment = 3
+      click_function = colorSide.."ListBuilderOptionFunction"..optionNumber,
+      function_owner = self,
+      label = "",
+      position = {0, 0.65, 0},
+      width = 1400,
+      height = 1400,
+      font_size = 1100,
+      color = {1,1,1,0.01},
+      font_color = {1,1,1,100},
+      tooltip = optionToolTip,
+      alignment = 3,
   })
 
   optionButton.setColorTint(tint)
@@ -245,7 +254,11 @@ end
 function changeBackButton(optionClickFunction, optionToolTip)
   _G[colorSide.."ListBuilderBackButtonFunction"] = function()
       backButton.AssetBundle.playTriggerEffect(0)
-      _G[optionClickFunction]()
+      if type(optionClickFunction) == "string" then
+        _G[optionClickFunction]()
+      else
+        optionClickFunction()
+      end
   end
 
   backButton.createButton({

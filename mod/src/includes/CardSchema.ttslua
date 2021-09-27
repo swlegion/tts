@@ -8,6 +8,9 @@ function sideLoadUnit(params)
   local faction = params.faction:upper()
   local unitKey = params.key:upper()
   local unitDat = params.unit
+  if not _G.CardsSchema.units[faction] then
+    _G.CardsSchema.units[faction] = {}
+  end
   _G.CardsSchema.units[faction][unitKey] = unitDat
 end
 
