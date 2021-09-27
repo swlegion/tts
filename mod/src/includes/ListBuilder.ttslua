@@ -212,7 +212,11 @@ function dud() end
 function createOptionButton(optionNumber, optionObj, optionButton, optionClickFunction, optionLabel, optionToolTip,tint)
 
   _G[colorSide.."ListBuilderOptionFunction"..optionNumber] = function()
-      optionButton.AssetBundle.playTriggerEffect(0)
+      local toPlay = optionButton
+      if not toPlay then
+        toPlay = listBuilderButtons[4]
+      end
+      toPlay.AssetBundle.playTriggerEffect(0)
       if type(optionClickFunction) == "string" then
         _G[optionClickFunction]()
       else
@@ -220,32 +224,50 @@ function createOptionButton(optionNumber, optionObj, optionButton, optionClickFu
       end
   end
 
-  optionObj.createButton({
+  if optionNumber > 4 then
+    local offset = optionNumber - 4
+    -- Sorry, this is a huge hack until we have a fully XML UI list builder.
+    listBuilderOptions[4].createButton({
       click_function = colorSide.."ListBuilderOptionFunction"..optionNumber,
       function_owner = self,
       label = optionLabel,
-      position = {-0.35, 0.3, 0},
+      position = {-0.35, 0.3, offset},
       scale = {0.5, 0.5, 0.5},
       width = 4200,
       height = 600,
       font_size = 400,
-      color = {0.7573, 0.7573, 0.7573, 0.01},
       font_color = {0, 0, 0, 100},
       tooltip = optionToolTip,
+    })
+    return
+  end
+
+  optionObj.createButton({
+    click_function = colorSide.."ListBuilderOptionFunction"..optionNumber,
+    function_owner = self,
+    label = optionLabel,
+    position = {-0.35, 0.3, 0},
+    scale = {0.5, 0.5, 0.5},
+    width = 4200,
+    height = 600,
+    font_size = 400,
+    color = {0.7573, 0.7573, 0.7573, 0.01},
+    font_color = {0, 0, 0, 100},
+    tooltip = optionToolTip,
   })
 
   optionButton.createButton({
-      click_function = colorSide.."ListBuilderOptionFunction"..optionNumber,
-      function_owner = self,
-      label = "",
-      position = {0, 0.65, 0},
-      width = 1400,
-      height = 1400,
-      font_size = 1100,
-      color = {1,1,1,0.01},
-      font_color = {1,1,1,100},
-      tooltip = optionToolTip,
-      alignment = 3,
+    click_function = colorSide.."ListBuilderOptionFunction"..optionNumber,
+    function_owner = self,
+    label = "",
+    position = {0, 0.65, 0},
+    width = 1400,
+    height = 1400,
+    font_size = 1100,
+    color = {1,1,1,0.01},
+    font_color = {1,1,1,100},
+    tooltip = optionToolTip,
+    alignment = 3,
   })
 
   optionButton.setColorTint(tint)
@@ -635,6 +657,11 @@ function spawnUnit(unit, index, faction, totalUnits)
   }
   if remap[faction] ~= nil then
     faction = remap[faction]
+  end
+  local known = {imperial = 1, rebel = 1, separatist = 1, republic = 1}
+  if not known[faction] then
+    -- HACK: Support homebrew factions.
+    faction = "imperial"
   end
   local rankAndRemap = result.rank
   if rankAndRemap then

@@ -427,6 +427,16 @@ function Deck:_isUpgradeValidFor(upgrade, unit)
       end
 
       if restrictions.include.alignment and unit.name:upper() ~= "ANAKIN SKYWALKER" then
+        local known = {
+          imperial   = 1,
+          rebel      = 1,
+          separatist = 1,
+          republic   = 1,
+        }
+        if not known[unit.faction:lower()] then
+          -- HACK: Don't filter out alignment based cards for homebrew factions.
+          return true
+        end
         for _, unitAlignment in ipairs(restrictions.include.alignment) do
           unitAlignment = unitAlignment:upper()
           if unitAlignment == "LIGHT" then
