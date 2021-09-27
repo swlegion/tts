@@ -363,16 +363,12 @@ function setBattleCardPos()
             spawnPos.z = screen.getPosition().z - setUpCardPos[3]
 
             local spawnRot = {55.91, 270.00, 0.00}
-            print(n .. ": " .. battleDeckType)
             local spawnedCardObj = setUp5Data.spawnedCards[battleDeckType][n]
-            print(spawnedCardObj)
 
             spawnedCardObj.setLock(true)
-            print(n)
             spawnedCardObj.setScale({0.57,1,0.57})
             spawnedCardObj.setRotation(spawnRot)
             spawnedCardObj.setPosition(spawnPos)
-            print(n)
 
             Wait.frames(function()
               debugSpawnSetupCard(spawnedCardObj)
@@ -531,7 +527,7 @@ function eliminateCard(eliminatedCategory, eliminateNumber)
     eliminiatedCard.setRotation(cardRot)
     eliminiatedCard.clearButtons()
 
-    if eliminateNumber != 2 then
+    if eliminateNumber != 3 then
         createButtonSetUpCard(eliminatedCategory, eliminateNumber+1)
     end
 

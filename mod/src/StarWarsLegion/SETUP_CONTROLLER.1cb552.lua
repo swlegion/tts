@@ -1,4 +1,7 @@
+#include !/Deck
+
 function onLoad(save_state)
+    _G.Deck = Deck:create()
     self.interactable = false
 
     -- intialize
@@ -76,25 +79,24 @@ function checkCardCall(cardTable)
 end
 
 function checkCard(cardType)
-    setUpCardData = nil
-    zoneObj = nil
-    zoneObj = getObjectFromZone(cardType)
+  setUpCardData = nil
+  zoneObj = nil
+  zoneObj = getObjectFromZone(cardType)
 
-    if zoneObj != nil then
-        for i, entry in pairs(setUpCards[cardType]) do
-            if entry.name:upper() == zoneObj.getName():upper() then
-                setUpCardData = entry
-            end
-        end
-
-        if setUpCardData != nil then
-            self.call("activate"..cardType, setUpCardData)
-        else
-            self.call("wrong".. cardType)
-        end
-    else
-        self.call("no".. cardType)
+  if zoneObj != nil then
+    local name = zoneObj.getName()
+    local type = Deck:getBattleCardType(name)
+    if type == "condition" then
+      type = "conditions"
     end
+    if type:upper() == cardType:upper() then
+      self.call("activate"..cardType, name)
+    else
+      self.call("wrong".. cardType)
+    end
+  else
+    self.call("no".. cardType)
+  end
 end
 
 function getObjectFromZone(selectedZone)
@@ -126,7 +128,7 @@ function spawnObjs(selection,selectedCartridgeObj)
     local selectedCartridgeTable = selectedCartridgeObj.getObjects()
 
     for i, entry in pairs(selectedCartridgeTable) do
-        if entry.name == selection then
+        if entry.name:upper() == selection:upper() then
             selectedGUID = entry.guid
             break
         end
@@ -264,14 +266,9 @@ function clearDeploymentBoundary()
     end
 end
 
-function activateobjective(passedData)
-    if passedData.tokens == true then
-        spawnObjs(passedData.name, objectiveCartridge)
-        objectiveMenu()
-    else
-        noObjectiveTokensMenu()
-        resetTimer("objective")
-    end
+function activateobjective(name)
+  spawnObjs(name, objectiveCartridge)
+  objectiveMenu()
 end
 
 function resetTimer(setUpType)
@@ -309,9 +306,9 @@ function noDeploymentMenu()
     resetTimer("deployment")
 end
 
-function activatedeployment(passedData)
+function activatedeployment(name)
     clearDeploymentBoundary()
-    spawnObjs(passedData.name, deploymentCartridge)
+    spawnObjs(name, deploymentCartridge)
     deactivateDeploymentMenu()
 end
 
@@ -320,14 +317,9 @@ function deactivateDeploymentMenu()
     createOptionButton("deployment", "deploymentMenu", "Remove Overlay", "Remove Deployment Overlay", {0.7,0,0})
 end
 
-function activateconditions(passedData)
-    if passedData.tokens == true then
-        spawnObjs(passedData.name, conditionsCartridge)
-        objectiveMenu()
-    else
-        noConditionsTokensMenu()
-        resetTimer("conditions")
-    end
+function activateconditions(name)
+  spawnObjs(name, conditionsCartridge)
+  objectiveMenu()
 end
 
 function checkObjective()
