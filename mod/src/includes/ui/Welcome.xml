@@ -46,30 +46,27 @@
 
           (Since last <i>Beta</i>)
 
-          - Changed the battlefield selection deck to pick 4 (instead of 3) for upcoming RRG.
-          - Fixed most units which were not using base-size colliders. They are now.
-          - Added DSD1 Dwarf Spider Droid, IG-100 MagnaGuard.
+          - Fixed Rebel Commandos, Extra Snowtrooper.
+          - Fixed "Return Tokens".
 
           - We are testing <i>new range/cohesion</i> projection-based rulers.
           - <b>Please report any bugs/issues with these rulers!</b>.
 
           - We are testing a <i>new card flow</i> (internal to the mod).
           - <b>Please report any bugs with unit/upgrade/command/battle cards</b>.
-  
-          - <b>Known Bugs</b>: The in-game list builder ..
-            .. can spawn templates in a wrong position.
-            .. allows upgrades that were hidden before.
 
           (Since last <i>Stable</i>)
+
+          - Changed the battlefield selection deck to pick 4 (instead of 3) for upcoming RRG.
 
           - Added experimental homebrew support. See https://go.swlegion.dev/homebrew.
 
           - Added Yoda.
+          - Added DSD1 Dwarf Spider Droid, IG-100 MagnaGuard, Snail Tank (Not Functioning Yet).
 
           - Range rulers are now displayed with color-coded projectors + work with elevation.
           - Move actions now show a "maximum" move-circle based on selected move speed.
           - Cohesion circles are also now projectors!
-          - Fixed some bugs with cohesion circles not appearing when placing a unit leader.
 
           - Exporting a unit from a list builder with <i>loadout</i> works correctly.
           - Updated the models for the T-47 airspeeder, and Droideka.
