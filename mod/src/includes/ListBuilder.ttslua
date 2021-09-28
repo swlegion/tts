@@ -486,7 +486,7 @@ function spawnArmy(loadListData, skipDiskVersionCheck)
 
       -- spawn units
       for n, unit in pairs(loadListData.units) do
-        spawnUnit(unit, n, loadListData.faction, #loadListData.units)
+        spawnUnit(unit, n, loadListData.armyFaction, #loadListData.units)
       end
   else
       ga_exception("spawnArmyUnsupportedArmyDisk")
@@ -814,7 +814,7 @@ function getListData()
   local listData    = {
     author          = "SWLegion TTS Mod",
     points          = totalPoints,
-    faction         = Global.getVar(colorZone.."SelectedArmyFaction"),
+    armyFaction     = Global.getVar(colorZone.."SelectedArmyFaction"),
     units           = {},
     commandCards    = deckBuilderObj.getTable("commandCardSelection"),
     contingencies   = deckBuilderObj.getTable("contingencyCardSelection"),
