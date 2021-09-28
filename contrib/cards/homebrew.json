@@ -177,6 +177,47 @@
           ]
         }
       ]
+    },
+    "Scum": {
+      "Commander": [
+        {
+          "name": "Tyber Zann",
+          "title": "Cold, Methodical, and Ruthless",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1021696642365726426/6C643C4CDED20E0AD9C608320838340518E23209/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 140,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Training": 1,
+            "Gear": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696642365775807/337D2A5009DD4A91F0A469B418D4C77867FDF52D/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696642365776115/8606DE28865E723D2343D17F890A99959E25AC8F/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Orbital Bombardment",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1021696642365730116/C2710668C06B4AF19BE8F470A73ABB9288102D45/",
+              "pip": 1
+            },
+            {
+              "name": "Corruption is My Weapon",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1021696827919795635/EF3551FAAB549E5DC2543AC50BEFBF1FCA59F8C7/",
+              "pip": 2
+            },
+            {
+              "name": "Everyone Has a Price",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1022824544169539052/873F1BE6567D7268064A19E10FE11C7543526444/",
+              "pip": 3
+            }
+          ]
+        }
+      ]
     }
   },
   "upgrades": {
@@ -188,6 +229,18 @@
         "restrictions": {
           "include": {
             "unit": ["Captain Phasma"]
+          }
+        }
+      }
+    ],
+    "Command": [
+      {
+        "name": "Racketeering",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1022824296872635141/571DEBE31636523DED5AD040A707569E7EB4C926/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Tyber Zann"]
           }
         }
       }
