@@ -486,7 +486,7 @@ function spawnArmy(loadListData, skipDiskVersionCheck)
 
       -- spawn units
       for n, unit in pairs(loadListData.units) do
-        spawnUnit(unit, n, loadListData.armyFaction, #loadListData.units)
+        spawnUnit(unit, n, loadListData.faction, #loadListData.units)
       end
   else
       ga_exception("spawnArmyUnsupportedArmyDisk")
@@ -701,8 +701,8 @@ function spawnUnit(unit, index, faction, totalUnits)
 end
 
 function spawnArmyFromDisk()
-  loadListData = loadDisk.getTable("listData")
-  spawnArmy(loadListData)
+  local listData = loadDisk.getVar("listData")
+  loadArmyFromJSON(listData)
 end
 
 function initializeMini(pMiniTable)
@@ -778,7 +778,7 @@ function loadArmy()
   diskObjNumber = 0
 
   for i, obj in pairs(diskObjs) do
-      if obj.getTable("listData") != nil then
+      if obj.getVar("listData") != nil then
           loadDisk = obj
           diskObjNumber = i
       end
@@ -808,70 +808,32 @@ function loadArmyFromJSON(jsonData)
 end
 
 function getListData()
-  if templateObjs[1][1] != nil then
-      listData = {}
-      listData.commandCards = {}
-      listData.contingencies = {}
-      listData.units = {}
-
-      commandCardsNumber = 0
-
-      -- GET DATA
-      for i=1,20,1 do
-          if templateObjs[i][1].call("getListText") != nil then
-              local recievedData = templateObjs[i][1].call("getListText")
-
-              insertTable = {}
-              insertTable.name = recievedData.name
-              insertTable.varName = recievedData.varName
-              insertTable.upgrades = {}
-              for i, entry in pairs(recievedData.upgrades) do
-                  insertTable.upgrades[i] = entry
-              end
-
-              table.insert(listData.units, insertTable)
-
-          end
-      end
-
-      selectedArmyFactionText = Global.getVar(colorZone.."SelectedArmyFaction")
-
-      listData.armyFaction = selectedArmyFactionText
-
-      -- set command Cards
-      listData.commandCards = deckBuilderObj.getTable("commandCardSelection")
-      listData.contingencies = deckBuilderObj.getTable("contingencyCardSelection")
-
-      table.insert(listData.commandCards, "Standing Orders")
-
-
-      -- set battlefield deck
-      local battlefieldCardSelection = deckBuilderObj.getTable("battlefieldCardSelection")
-      listData.battlefieldDeck = {}
-      listData.battlefieldDeck.objective = {}
-      listData.battlefieldDeck.deployment = {}
-      listData.battlefieldDeck.conditions = {}
-
-      n = 1
-      for i, entry in pairs(battlefieldCardSelection.objective) do
-          table.insert(listData.battlefieldDeck.objective, entry)
-
-          n = n + 1
-      end
-      for j, entry in pairs(battlefieldCardSelection.deployment) do
-          table.insert(listData.battlefieldDeck.deployment, entry)
-          n = n + 1
-      end
-      for k, entry in pairs(battlefieldCardSelection.conditions) do
-          table.insert(listData.battlefieldDeck.conditions, entry)
-          n = n + 1
-      end
-
-
-      return listData
-  else
-      return nil
+  if not templateObjs[1][1] then
+    return nil
   end
+  local listData    = {
+    author          = "SWLegion TTS Mod",
+    points          = totalPoints,
+    faction         = Global.getVar(colorZone.."SelectedArmyFaction"),
+    units           = {},
+    commandCards    = deckBuilderObj.getTable("commandCardSelection"),
+    contingencies   = deckBuilderObj.getTable("contingencyCardSelection"),
+    battlefieldDeck = deckBuilderObj.getTable("battlefieldCardSelection"),
+  }
+  for i=1,20,1 do
+    local text = templateObjs[i][1].call("getListText")
+    if text then
+      local upgrades = {}
+      for _, entry in ipairs(text.upgrades) do
+        table.insert(upgrades, entry)
+      end
+      table.insert(listData.units, {
+        name     = text.name,
+        upgrades = upgrades,
+      })
+    end
+  end
+  return listData
 end
 
 function saveArmy()
@@ -884,65 +846,22 @@ function saveArmy()
 end
 
 function saveArmyImpl()
-  -- get listData
-  listData = getListData()
-
-  if listData != nil then
-    -- parse list
-    luaString = "function onload()\nlistData = {savedDiskVersion = 3}\nlistData.points = "..totalPoints.."\nlistData.armyFaction = '" .. listData.armyFaction .."'\n"
-
-    -- COMMAND CARDS and CONTINGENCIES
-    local commandCardsBuffer = {}
-    local contingencyCardsBuffer = {}
-    for _, c in ipairs(listData.commandCards) do
-      table.insert(commandCardsBuffer, "[[" .. c .. "]]")
-    end
-    luaString = luaString .. "listData.commandCards = {"..table.concat(commandCardsBuffer, ", ").."}\n"
-    for _, c in ipairs(listData.contingencies) do
-      table.insert(contingencyCardsBuffer, "[[" .. c .. "]]")
-    end
-    luaString = luaString .. "listData.contingencies = {"..table.concat(contingencyCardsBuffer, ", ").."}\n"
-
-    -- UNITS
-    luaString = luaString .. "listData.units = {}\n"
-    for k, unit in pairs(listData.units) do
-      luaString = luaString .. "listData.units["..k.."] = {}\nlistData.units["..k.."].name = [[" .. listData.units[k].name .."]]\n"
-      -- UPGRADES
-      luaString = luaString .. "listData.units["..k.."].upgrades = {}\n"
-      for l, upgrade in pairs(listData.units[k].upgrades) do
-        luaString = luaString .. "listData.units["..k.."].upgrades["..l.."] = [[" .. upgrade .."]]\n"
-      end
-    end
-    -- battlefieldDeck
-    luaString = luaString .. "listData.battlefieldDeck = {}\nlistData.battlefieldDeck.objective = {}\nlistData.battlefieldDeck.deployment = {}\nlistData.battlefieldDeck.conditions = {}\n"
-
-    local deckTypes = {"deployment", "objective", "conditions"}
-
-    for j, deckType in pairs(deckTypes) do
-      for l, battlefieldCardEntry in pairs(listData.battlefieldDeck[deckType]) do
-        luaString = luaString .. "listData.battlefieldDeck."..deckType.."["..l.."] = [["..battlefieldCardEntry.."]]\n"
-      end
-    end
-
-
-    luaString = luaString .. "self.createButton({click_function = 'dud', function_owner = self, label = '[' .. listData.points .. ' pts]', position = {0, 0.4, -0.55}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 2000, height = 400, font_size = 300, color = {0.7573, 0.7573, 0.7573, 0.01}, font_color = {0.303, 0.1814, 0.0849, 100}})\nend\nfunction dud() end"
-
-    dataDisk = getObjectFromGUID(listBuilder.dataDisk.guid).clone({
-      position     = {0,-10,0},
-      snap_to_grid = false
-    })
-
-    dataDisk.setScale({1,1,1})
-    pos = translatePos(dataDiskMount.getPosition(),dataDiskMount.getRotation(),0.03,90)
-    pos.y = pos.y + 1
-    dataDisk.setPosition(pos)
-
-    diskName = "(RENAME ME!) Army Data Disk ["..totalPoints .. " Points]"
-    dataDisk.setRotation(self.getRotation())
-    dataDisk.setName(diskName)
-    dataDisk.setLuaScript(luaString)
-    dataDisk.setLock(false)
+  local listData = getListData()
+  if not listData then
+    return
   end
+  local luaString = "function onload() listData = [[" .. JSON.encode(listData) .. "]] end"
+  local position = translatePos(dataDiskMount.getPosition(),dataDiskMount.getRotation(),0.03,90)
+  position.y = position.y + 1
+  local dataDisk = getObjectFromGUID(listBuilder.dataDisk.guid).clone({
+    position     = position,
+    scale        = {1, 1, 1},
+    snap_to_grid = false,
+  })
+  dataDisk.setRotation(self.getRotation())
+  dataDisk.setName("(RENAME ME!) Army Data Disk [" .. totalPoints .. " Points]")
+  dataDisk.setLuaScript(luaString)
+  dataDisk.setLock(false)
 end
 
 function toggleListImporterUI()
