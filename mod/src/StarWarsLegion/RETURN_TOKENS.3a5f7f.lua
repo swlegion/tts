@@ -50,12 +50,9 @@ function returnTokens()
                 smokeNumber = returnToken(smokeBag,obj,smokeNumber)
             elseif obj.getName() == "Observation Token" then
                 observationNumber = returnToken(observationBag,obj,observationNumber)
-
             elseif obj.getVar("isAToken") == true then
-
-                local commandType = obj.getVar("commandType")
-                local selectedColor = obj.getVar("colorSide")
-                local commandTray = getObjectFromGUID(commandTokenTrayData[selectedColor][commandType])
+                local unitData = obj.getTable("unitData")
+                local commandTray = getObjectFromGUID(commandTokenTrayData[unitData.colorSide][unitData.commandType])
                 local pos = commandTray.getPosition()
                 pos.y = pos.y + 0.5 +(0.2 * commandNumber)
                 local rot = commandTray.getRotation()

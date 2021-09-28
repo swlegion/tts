@@ -615,8 +615,8 @@
           },
           "minis": [
             {
-              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862776611/B8222AA4A3B680E969DC106C8A281D11845994EB/",
-              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862776974/21649563BC0CB84E12C0B249C720919F528596D3/"
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173156/D637683F992DD0C4488252BE266EEEA1F26006B0/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541172655/B10522A40482843AF69A3F321BD091B0ECF52C6B/"
             }
           ]
         },
@@ -4855,8 +4855,8 @@
         "name": "Snowtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145489/3D4F0A2826C4DE7A61CB0CC895D2E3495DE91DAB/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711777/1E415A2A18F2269B0C63E1C2901E5192DCCFE8CB/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541801717/EDEA1301FC55A6970D5FBCF0A9F10456E4C2EE40/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541801215/595165C57A67BF2BD505BE6F0DF8F11AD4EA55D2/"
         },
         "points": 8,
         "restrictions": {
