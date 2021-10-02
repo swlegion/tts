@@ -54,7 +54,7 @@
       },
       "CastShadows": true
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Graffiti_Token.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },
