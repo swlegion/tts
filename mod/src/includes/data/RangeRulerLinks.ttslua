@@ -14,7 +14,13 @@ function getRangeRulerLinks()
         rangeRulers.epic = "http://cloud-3.steamusercontent.com/ugc/1687150026155793842/2167463B3A81EE3B349EEE87C3667132712B2C10/"
         -- 100mm oblong
         rangeRulers.long = "http://cloud-3.steamusercontent.com/ugc/1687150026155793765/886AA24010766DC679DD0016C05F7FEAE8AE590D/"
-        -- bomb card
+        -- bomb cart
         rangeRulers.bombCart = "http://cloud-3.steamusercontent.com/ugc/1687150026155793874/DEE7A6178F9E83F224026EBE61E3F2D004D83117/"
+        -- smoke token
+        rangeRulers.smokeToken = "http://cloud-3.steamusercontent.com/ugc/1624101885257799545/AC155B8CE200AC1095A33D1C5FB458D7143B66C0/"
+        -- charge, objective, condition
+        rangeRulers.token = "http://cloud-3.steamusercontent.com/ugc/1624101885257847518/F6767437413C6A1F901BC8FEBE126ABA9155DA86/"
+        -- graffiti token, same as objective but range 2
+        rangeRulers.tokenRangeTwo = "http://cloud-3.steamusercontent.com/ugc/1624101885257826026/31D65B42F0E815869058E527967D977DDFABA835/"
     return rangeRulers
 end

@@ -1,3 +1,11 @@
+#include !/RangeRulers
+
+-- each token must define 'rangeKey' with key listed below
+
+-- Token keys in RangeRulers Table
+-- smokeToken = 18.8mm diameter (range 1)
+-- token = 25.1mm diameter (range 1)
+
 function onLoad()
   rangeOn = false
   createButton({0, 0, 0})
@@ -29,37 +37,19 @@ function toggleRangeRuler()
   clearRangeRuler()
   rangeOn = not rangeOn
   if rangeOn then
-    spawnRangeRuler()
+    spawnTokenRangeRuler()
   end
 end
 
 function clearRangeRuler()
   if rangeRuler != nil then
     destroyObject(rangeRuler)
+    rangeRuler = nil
   end
 end
 
-function spawnRangeRuler()
-  local basePos = self.getPosition()
-  local baseRot = self.getRotation()
-  local baseAddition = 1.06299 / 2
-
-  rangeRuler = spawnObject({
-      type = "Custom_Model",
-      position = basePos,
-      rotation = {0, baseRot.y, 0},
-      scale = {6 + baseAddition, 3, 6 + baseAddition}
-  })
-  rangeRuler.setCustomObject({
-      type = 0,
-      mesh = "http://cloud-3.steamusercontent.com/ugc/785234780862835239/0858A62DF9F9E7DCB49B641E4938111697E4F3D4/",
-      collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
-      material = 1,
-  })
-
-  rangeRuler.setLock(true)
-  rangeRuler.setName("Range Ruler")
-  rangeRuler.setColorTint({0.7, 0.7, 0.7})
-  luaScript = "targetGUID = '"..self.getGUID().."'\nfunction onFixedUpdate()\nif targetGUID != nil then\ntargetObj = getObjectFromGUID(targetGUID)\nself.setPosition(targetObj.getPosition())\nself.setRotation(targetObj.getRotation())\nend\nend"
-  rangeRuler.setLuaScript(luaScript)
+function spawnTokenRangeRuler()
+  local rangeRulerTable = getRangeRulerLinks()
+  local tokenRulerBundle = rangeRulerTable[rangeKey]
+  spawnRangeRuler(self, tokenRulerBundle)
 end

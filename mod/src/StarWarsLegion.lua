@@ -84,20 +84,20 @@ function onLoad(saveData)
     end
 
     templateInfo.aStart = {}
-    templateInfo.aStart.small = 	{1.968995,3,4}
-    templateInfo.aStart.medium = 	{2.234375,3.26538,4.26538}
-    templateInfo.aStart.large =		 {2.640625,3.67163,4.67163}
-    templateInfo.aStart.huge =		 {3.21875,4.249755,5.249755}
-    templateInfo.aStart.laat =     {4.21875 - 0.59055, 5.249755 - 0.59055, 6.249755 - 0.59055}
-    templateInfo.aStart.long =		 {4.71875,5.749755,6.749755}
-    templateInfo.aStart.epic =		 {4.21875,5.249755,6.249755}
+    templateInfo.aStart.small = 	{1.968995, 3, 4}
+    templateInfo.aStart.medium = 	{2.234375, 3.26538, 4.26538}
+    templateInfo.aStart.large =		{2.640625, 3.67163, 4.67163}
+    templateInfo.aStart.huge =		{3.21875, 4.249755, 5.249755}
+    templateInfo.aStart.laat =      {4.21875 - 0.59055, 5.249755 - 0.59055, 6.249755 - 0.59055}
+    templateInfo.aStart.long =		{4.71875, 5.749755, 6.749755}
+    templateInfo.aStart.epic =		{4.21875, 5.249755, 6.249755}
 
     templateInfo.bStart = {}
-    templateInfo.bStart.small = 	{1.968995,3,4}
-    templateInfo.bStart.medium =	 {2.234375,3.26538,4.26538}
-    templateInfo.bStart.large =		 {2.640625,3.67163,4.67163}
-    templateInfo.bStart.huge =		 {3.21875,4.249755,5.249755}
-    templateInfo.bStart.long =		 {4.71875,5.749755,6.749755}
+    templateInfo.bStart.small = 	{1.968995, 3, 4}
+    templateInfo.bStart.medium =	{2.234375, 3.26538, 4.26538}
+    templateInfo.bStart.large =		{2.640625, 3.67163, 4.67163}
+    templateInfo.bStart.huge =		{3.21875, 4.249755, 5.249755}
+    templateInfo.bStart.long =		{4.71875, 5.749755, 6.749755}
 
     templateInfo.bStart.laat = templateInfo.aStart.laat
     templateInfo.bStart.epic = templateInfo.aStart.epic

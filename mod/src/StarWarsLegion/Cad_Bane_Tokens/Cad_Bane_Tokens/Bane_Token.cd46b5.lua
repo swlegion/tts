@@ -1,1 +1,3 @@
+rangeKey = "token"
+
 #include !/TokenWithRangeRuler
