@@ -206,7 +206,7 @@ function unitSubMenu(selectedRank)
         _G["subMenu"..i] = function() spawnUnitCard(entry) end
 
         -- local maxNameLength = math.min(entry.name:len(), DISPLAY_NAME_CHAR_LIMIT)
-        local nameToDisplay = entry.name
+        local nameToDisplay = entry.displayName or entry.name
         local fontSize = correctStringLength(nameToDisplay)
         local relativeIndex = i - (unitCardPage * 6)
         local tooltip = "Spawn ".. entry.name
@@ -447,7 +447,7 @@ function drawUpgradeMenu()
         local selectedIndex = upgradeSelectionIndex[i] + n
         if availableUpgradeSlots[i] != nil and allowableUpgrades[selectedIndex] != nil then
           upgradeClickFunction = "upgradeSubMenu"..self.getGUID()..":"..i..":"..n
-          upgradeLabel = allowableUpgrades[selectedIndex].name
+          upgradeLabel = allowableUpgrades[selectedIndex].displayName or allowableUpgrades[selectedIndex].name
           upgradeColor = {0.1764, 0.1764, 0.1764, 0.01}
           upgradeFontColor = {0, 0, 0, 100}
           if string.len(upgradeLabel) > 12 then
