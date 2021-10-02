@@ -46,8 +46,9 @@
 
           (Since last <i>Beta</i>)
 
-          - Fixed Rebel Commandos, Extra Snowtrooper.
-          - Fixed "Return Tokens".
+          - Fixed a few card import bugs (E-11D, Battle Shield Wookiees).
+          - Fixed the base size of a few units.
+          - Tokens now use projector range bands.
 
           - We are testing <i>new range/cohesion</i> projection-based rulers.
           - <b>Please report any bugs/issues with these rulers!</b>.

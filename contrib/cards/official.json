@@ -937,6 +937,8 @@
           "speed": 2,
           "upgrades": {
             "Command": 2,
+            "Grenades": 1,
+            "Training": 1,
             "Gear": 1
           },
           "minis": [
