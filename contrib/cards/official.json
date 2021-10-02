@@ -834,7 +834,7 @@
         {
           "name": "X-34 Landspeeder",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604738/6DAAAD8E05BFAF02E405EB1A28FA6EC17771D678/",
-          "size": "small",
+          "size": "huge",
           "type": "Repulsor Vehicle",
           "points": 60,
           "speed": 2,
@@ -854,7 +854,7 @@
         {
           "name": "A-A5 Speeder Truck",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788629495/7CC8A26CAE70713A18D1A9C2A9DB7B59BC0839F9/",
-          "size": "small",
+          "size": "long",
           "type": "Repulsor Vehicle",
           "points": 75,
           "speed": 1,
@@ -1574,7 +1574,7 @@
         {
           "name": "E-Web Heavy Blaster Team",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701046/AC13001548D72E76B4DEC2D904EB44454C152806/",
-          "size": "small",
+          "size": "large",
           "type": "Emplacement Trooper",
           "points": 55,
           "speed": 1,
