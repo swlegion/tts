@@ -75,6 +75,12 @@
       "minLength": 1
     },
 
+    "displayName": {
+      "description": "Optional. If provided, is used instead of name or title for list building purposes.",
+      "type": "string",
+      "minLength": 1
+    },
+
     "image": {
       "$ref": "./Image.json"
     },
