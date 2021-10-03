@@ -320,7 +320,8 @@ end
 function initializeCommandToken(cData)
   local tokenObj = spawnObject({
     type           = "Custom_Model",
-    rotation       = cData.rot
+    rotation       = cData.rot,
+    position       = cData.pos,
   })
   tokenObj.setCustomObject({
     mesh = "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
@@ -330,20 +331,27 @@ function initializeCommandToken(cData)
     material = 3
   })
   tokenObj.setName(cData.name)
-  tokenObj.setLuaScript(listBuilder.tokenScript)
-  tokenObj.setTable("unitData", {
-    commandType   = cData.commandType,
-    baseSize      = cData.baseSize,
-    fixedMove     = cData.baseSize:lower() ~= "small",
-    fixedArc      = cData.baseSize:lower() ~= "small",
-    strafeMove    = cData.baseSize:lower() ~= "small",
-    selectedSpeed = cData.selectedSpeed,
-    colorSide     = colorSide,
-  })
-  -- Move the object a frame later, because otherwise onSave() isn't triggered sometimes.
-  Wait.frames(function()
-    tokenObj.setPosition(cData.pos)
-  end)
+  -- Set the objects script.
+  -- Note this is used instead of "setTable()" because onLoad/onSave is buggy with stuff that stacks.
+  local luaScript = string.format(
+    "_G.unitData = {" ..
+    "  baseSize      = [[%s]],\n" ..
+    "  colorSide     = [[%s]],\n" ..
+    "  commandType   = [[%s]],\n" ..
+    "  fixedArc      = %s,\n" ..
+    "  fixedMove     = %s,\n" ..
+    "  selectedSpeed = %s,\n" ..
+    "  strafeMove    = %s,\n" ..
+    "}\n\n",
+    cData.baseSize,
+    colorSide:lower(),
+    cData.commandType,
+    tostring(cData.baseSize:lower() ~= "small"),
+    tostring(cData.baseSize:lower() ~= "small"),
+    tostring(cData.selectedSpeed),
+    tostring(cData.baseSize:lower() ~= "small")
+  )
+  tokenObj.setLuaScript(luaScript)
 end
 
 function spawnUnitCard(faction, name, position, rotation)
