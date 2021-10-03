@@ -1,6 +1,6 @@
 
 -- TEMPLATE A
-function onLoad(save_state)
+function onload(save_state)
 
     -- info
     if self.getName() ~= "Model Template A" then

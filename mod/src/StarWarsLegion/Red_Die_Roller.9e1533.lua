@@ -1,5 +1,5 @@
 require('!/DieRoller')
 
-function onLoad()
+function onload()
   onLoadShared("red")
 end

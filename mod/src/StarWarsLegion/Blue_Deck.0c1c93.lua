@@ -1,4 +1,4 @@
-function onLoad(save_state)
+function onload(save_state)
     -- intialize
     self.interactable = false
     listBuilder = Global.getTable("listBuilder")

@@ -1,3 +1,3 @@
-function onLoad()
+function onload()
     self.interactable = false
 end

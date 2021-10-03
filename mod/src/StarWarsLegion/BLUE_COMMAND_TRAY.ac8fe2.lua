@@ -1,6 +1,6 @@
 require('!/CommandTray')
 
-function onLoad()
+function onload()
   local colorSide = "blue"
   local splitButton = getObjectFromGUID("af10b9")
   local stackButton = getObjectFromGUID("ff8c41")

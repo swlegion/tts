@@ -6,14 +6,14 @@ require('!/generated/cards')
 require('!/UI')
 require('!/RangeRulers')
 
-function onSave()
+function onsave()
   local chessClocksActive = UI.getAttribute("floatingChessClockUI", "active") == "true"
   return JSON.encode({
     clocks = chessClocksActive,
   })
 end
 
-function onLoad(saveData)
+function onload(saveData)
     VERSION = "v5.0.0-beta"
     CCID = sha256(tostring(Time.time))
     UUID = sha256(Player.getPlayers()[1].steam_id)

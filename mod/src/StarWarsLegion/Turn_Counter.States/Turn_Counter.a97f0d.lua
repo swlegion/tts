@@ -1,4 +1,4 @@
-function onLoad(save_state)
+function onload(save_state)
     checkState()
 end
 

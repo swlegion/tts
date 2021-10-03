@@ -4,7 +4,7 @@ local list_builder_table = Global.getTable("listBuilder")
 local command_token_data_table = Global.getTable("commandTokenData")
 local held_by_color = nil
 
-function onLoad()
+function onload()
     self.setDescription(
         "Select this token, the existing order token and all the minis of the unit before clicking a button."
     )

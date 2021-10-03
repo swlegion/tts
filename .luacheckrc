@@ -1,9 +1,9 @@
 -- Standard library (globals) available.
 std = {
   globals = {
-    "onDestroy",
-    "onLoad",
-    "onSave",
+    "ondestroy",
+    "onload",
+    "onsave",
   },
 
   read_globals = {
