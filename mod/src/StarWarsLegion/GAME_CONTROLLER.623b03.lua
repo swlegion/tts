@@ -366,7 +366,7 @@ function setBattleCardPos()
             local spawnedCardObj = setUp5Data.spawnedCards[battleDeckType][n]
 
             spawnedCardObj.setLock(true)
-            spawnedCardObj.setScale({0.57,1,0.57})
+            spawnedCardObj.setScale({0.5,1,0.5})
             spawnedCardObj.setRotation(spawnRot)
             spawnedCardObj.setPosition(spawnPos)
 
@@ -380,10 +380,10 @@ end
 function createMatrixFromDeck(battleDeckInserted)
   -- CLONE DECK
   local battleDeckClone = battleDeckInserted.clone({
-      position     = {0,-10,0}
+      position     = {0,-10,0},
+      rotation     = {55.91, 270.00, 0.00},
+      scale        = {0.5, 1, 0.5},
   })
-  battleDeckClone.setPosition({0,-10,0})
-  battleDeckClone.setRotation({55.91, 270.00, 0.00})
   battleDeckClone.shuffle()
   local battleDeckTable = battleDeckClone.getObjects()
 
@@ -564,13 +564,11 @@ function spawnSetupCards(selection)
             spawnedCard = setUp5Data[selection.."CardsClone"].takeObject({
                 position       = spawnPos,
                 rotation       = spawnRot,
-                scale          = {0.7, 0.7, 0.7},
                 smooth         = false,
                 top            = true
             })
 
             spawnedCard.setLock(true)
-            spawnedCard.setScale({0.57,1,0.57})
             spawnedCard.setRotation(spawnRot)
 
             spawnedCardTable[n] = spawnedCard
