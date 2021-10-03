@@ -1,1 +1,1 @@
-#include !/TokenWithRangeRuler
+require('!/TokenWithRangeRuler')

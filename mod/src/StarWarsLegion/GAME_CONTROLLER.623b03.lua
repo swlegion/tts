@@ -1,5 +1,5 @@
-#include !/Analytics
-#include !/Deck
+require('!/Analytics')
+require('!/Deck')
 
 function onLoad(save_state)
     _G.Deck = Deck:create()
@@ -174,12 +174,12 @@ function clearPlayerZones()
     local blueZoneObjs = blueZone.getObjects()
 
     for i, obj in pairs(redZoneObjs) do
-        if obj != battlefieldTable then
+        if obj ~= battlefieldTable then
             destroyObject(obj)
         end
     end
     for i, obj in pairs(blueZoneObjs) do
-        if obj != battlefieldTable then
+        if obj ~= battlefieldTable then
             destroyObject(obj)
         end
     end
@@ -446,39 +446,39 @@ end
 
 function debugSetupCards()
     for i = 1, 4, 1 do
-        if setUp5Data.spawnedCards.objective[i]!= nil then
+        if setUp5Data.spawnedCards.objective[i] then
             setUp5Data.spawnedCards.objective[i].setRotation({55.91, 270.00, 0.00})
         end
 
-        if setUp5Data.spawnedCards.deployment[i] != nil then
+        if setUp5Data.spawnedCards.deployment[i] then
             setUp5Data.spawnedCards.deployment[i].setRotation({55.91, 270.00, 0.00})
         end
-        if setUp5Data.spawnedCards.conditions[i] != nil then
+        if setUp5Data.spawnedCards.conditions[i] then
             setUp5Data.spawnedCards.conditions[i].setRotation({55.91, 270.00, 0.00})
         end
     end
 end
 
 function clearSetUpCards(clearedCards)
-    if setUp5Data != nil then
+    if setUp5Data then
         for i = 1, 4, 1 do
             if setUp5Data.cardSelection.objective == i and clearedCards == "eliminate" then
             else
-                if setUp5Data.spawnedCards.objective[i]!= nil then
+                if setUp5Data.spawnedCards.objective[i] then
                     destroyObject(setUp5Data.spawnedCards.objective[i])
                 end
             end
 
             if setUp5Data.cardSelection.deployment == i and clearedCards == "eliminate" then
             else
-                if setUp5Data.spawnedCards.deployment[i] != nil then
+                if setUp5Data.spawnedCards.deployment[i] then
                     destroyObject(setUp5Data.spawnedCards.deployment[i])
                 end
             end
 
             if setUp5Data.cardSelection.conditions == i and clearedCards == "eliminate" then
             else
-                if setUp5Data.spawnedCards.conditions[i] != nil then
+                if setUp5Data.spawnedCards.conditions[i] then
                     destroyObject(setUp5Data.spawnedCards.conditions[i])
                 end
             end
@@ -527,7 +527,7 @@ function eliminateCard(eliminatedCategory, eliminateNumber)
     eliminiatedCard.setRotation(cardRot)
     eliminiatedCard.clearButtons()
 
-    if eliminateNumber != 3 then
+    if eliminateNumber ~= 3 then
         createButtonSetUpCard(eliminatedCategory, eliminateNumber+1)
     end
 
@@ -609,7 +609,7 @@ function flipMap()
     else
         for _, obj in ipairs(allObjs) do
             -- flip obj
-            if obj != battlefieldTable then
+            if obj ~= battlefieldTable then
                 flipObjPos(obj)
             end
         end
@@ -618,11 +618,11 @@ end
 
 function spawnCustomMap(selectedMap, selectedCartridgeObj, mapMenuCallback, clearZone)
     ga_event("Creative", "spawnCustomMap", selectedMap)
-    if mapMenuCallback != nil then
+    if mapMenuCallback ~= nil then
         self.call(mapMenuCallback)
     end
 
-    if clearZone != false then
+    if clearZone ~= false then
         clearZones()
     end
 
@@ -695,7 +695,7 @@ function clearMap()
         --If it isn't empty, we use a for loop to look at each entry in the list
         for _, object in ipairs(objectsInZone) do
             -- destroy object
-            if object != battlefieldTable then
+            if object ~= battlefieldTable then
                 destroyObject(object)
             end
         end
@@ -707,7 +707,7 @@ function prepareToSave()
     local mountObjs = mountZone.getObjects()
 
     for i, obj in pairs(mountObjs) do
-        if obj != dataDiskMount then
+        if obj ~= dataDiskMount then
             destroyObject(obj)
         end
     end
@@ -752,7 +752,7 @@ end
 
 function logObj(selectedObjs)
     for _, obj in pairs(selectedObjs) do
-        if obj.getName() != "TABLE" then
+        if obj.getName() ~= "TABLE" then
             local objLuaScript = getLuaScriptData(obj)
 
             if string.len(obj.getLuaScript()) > 5 then
@@ -784,13 +784,13 @@ function loadMap()
     local mountObjs = mountZone.getObjects()
 
     for i, obj in pairs(mountObjs) do
-        if obj.getTable("battlefieldTint") != nil then
+        if obj.getTable("battlefieldTint") ~= nil then
             loadedCartridge = obj
         end
     end
 
     -- spawn cartridge
-    if loadedCartridge != nil then
+    if loadedCartridge ~= nil then
         clearZones()
         spawnMapFromCartridge(loadedCartridge)
     else
@@ -832,7 +832,7 @@ function clearAllButtons(exception)
         optionButtonEntry.setColorTint({0,0,0})
     end
 
-    if exception != backButton then
+    if exception ~= backButton then
         backButton.clearButtons()
         backButton.setColorTint({0,0,0})
     end
@@ -962,9 +962,9 @@ function createMenu(optionTable, selectedIndex)
     end
 
     for oI=0,4,1 do
-        if optionTable[selectedIndex+oI] != nil then
+        if optionTable[selectedIndex+oI] ~= nil then
             local entry = optionTable[selectedIndex+oI]
-            if entry.url != nil then
+            if entry.url ~= nil then
               optionUrls[selectedIndex+oI] = entry.url
               createOptionButton(oI+1, "downloadMap", entry.label,entry.tooltip, entry.buttonTint)
             else

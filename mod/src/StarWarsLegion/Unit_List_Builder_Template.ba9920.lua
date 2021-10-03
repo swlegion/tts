@@ -1,9 +1,9 @@
-#include !/Deck
-#include !/common/Math
+require('!/Deck')
+require('!/common/Math')
 
 -- model template
 function onLoad()
-  if self.getName() != "Unit List Builder Template" then
+  if self.getName() ~= "Unit List Builder Template" then
     setUp()
   end
 
@@ -47,7 +47,7 @@ end
 
 function mainMenu()
     self.clearButtons()
-    if unitCard != nil then
+    if unitCard then
         destroyObject(unitCard)
         if selectedUnit.rank == "Commander" or selectedUnit.rank == "Operative"  then
           local fullName = selectedUnit.name
@@ -248,7 +248,7 @@ function spawnUnitIDToken(idSpawnPos, idSpawnRot,idNumber)
         rotation       = idSpawnRot,
         smooth         = false
     })
-    if idNumber != 1 then
+    if idNumber ~= 1 then
         idToken.setState(idNumber)
     end
 end
@@ -305,16 +305,16 @@ function updateCommandCardSelection(a1,b2)
 end
 
 function upgradeMenu()
-    if spawnedRequiredUpgrades != nil then
+    if spawnedRequiredUpgrades then
       for _, o in ipairs(spawnedRequiredUpgrades) do
-        if o != nil then
+        if o then
           destroyObject(o)
         end
       end
     end
     spawnedRequiredUpgrades = {}
 
-    if selectedUnit != nil then
+    if selectedUnit then
         availableUpgradeSlots = {}
         for name, amount in pairs(selectedUnit.upgrades) do
           for _ = 1, amount do
@@ -445,7 +445,7 @@ function drawUpgradeMenu()
         local upgradeFontColor = {0, 0, 0, 0}
         local upgradeFontSize = 160
         local selectedIndex = upgradeSelectionIndex[i] + n
-        if availableUpgradeSlots[i] != nil and allowableUpgrades[selectedIndex] != nil then
+        if availableUpgradeSlots[i] and allowableUpgrades[selectedIndex] then
           upgradeClickFunction = "upgradeSubMenu"..self.getGUID()..":"..i..":"..n
           upgradeLabel = allowableUpgrades[selectedIndex].displayName or allowableUpgrades[selectedIndex].name
           upgradeColor = {0.1764, 0.1764, 0.1764, 0.01}
@@ -487,7 +487,7 @@ function drawUpgradeMenu()
         local downClickFunction = upClickFunction
         local downFontColor = upFontColor
         local downButtonColor = upButtonColor
-        if availableUpgradeSlots[i] != nil and #allowableUpgrades > 5 then
+        if availableUpgradeSlots[i] and #allowableUpgrades > 5 then
           if upgradeSelectionIndex[i] < 5 then
             downClickFunction = "nextUpgradeMenu"..i
             downFontColor = {0, 0, 0, 100}
@@ -580,7 +580,7 @@ function spawnUpgradeCard(cardData, cardPos, upgradeNumber, requiredUpgrade)
     upgradeCardIndex[upgradeNumber] = cardData
     upgradeCardInstance[upgradeNumber] = upgradeCard
 
-    if requiredUpgrade != true then
+    if requiredUpgrade ~= true then
       local functionName = "destroyUpgrade" .. upgradeCard.getGUID()
       _G[functionName] = function() destroyUpgradeCard(upgradeNumber) end
       upgradeCard.createButton({
@@ -608,7 +608,7 @@ function destroyUpgradeCard(index)
 end
 
 function getListText()
-    if selectedUnit != nil then
+    if selectedUnit then
         returnTable = {}
 
         returnTable.name = selectedUnit.name
@@ -619,7 +619,7 @@ function getListText()
         k = 1
 
         for i, entry in pairs(upgradeCardIndex) do
-            if entry.name != nil then
+            if entry.name then
                 returnTable.upgrades[k] = entry.name
                 k = k + 1
             end

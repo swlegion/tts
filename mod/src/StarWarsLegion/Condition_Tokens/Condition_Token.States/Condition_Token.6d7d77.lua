@@ -28,7 +28,7 @@ function toggleRangeRuler()
 end
 
 function clearRangeRuler()
-    if rangeRuler != nil then
+    if rangeRuler then
         destroyObject(rangeRuler)
     end
 end
@@ -58,7 +58,7 @@ function spawnRangeRuler()
     rangeRuler.setName("Range Ruler")
     rangeRuler.setColorTint({0.7, 0.7, 0.7})
 
-    luaScript = "targetGUID = '"..self.getGUID().."'\nfunction onFixedUpdate()\nif targetGUID != nil then\ntargetObj = getObjectFromGUID(targetGUID)\nself.setPosition(targetObj.getPosition())\nself.setRotation(targetObj.getRotation())\nend\nend"
+    luaScript = "targetGUID = '"..self.getGUID().."'\nfunction onFixedUpdate()\nif targetGUID then\ntargetObj = getObjectFromGUID(targetGUID)\nself.setPosition(targetObj.getPosition())\nself.setRotation(targetObj.getRotation())\nend\nend"
     rangeRuler.setLuaScript(luaScript)
 end
 

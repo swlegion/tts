@@ -1,15 +1,3 @@
 rangeKey = "smokeToken"
 
-#include !/TokenWithRangeRuler
-
-
-
-
-
-
-
-
-
-
-
-
+require('!/TokenWithRangeRuler')

@@ -3,7 +3,7 @@
 function onLoad(save_state)
 
     -- info
-    if self.getName() != "Model Template A" then
+    if self.getName() ~= "Model Template A" then
         templateInfo = Global.getTable("templateInfo")
 
         aStart = templateInfo.aStart[unitInfo.baseSize][unitInfo.selectedSpeed]
@@ -109,9 +109,9 @@ function onCollisionEnter(collision_info)
 end
 
 function onCollisionStay(collision_info)
-    if templatePos != nil then
-        self.setPosition(templatePos)
-        self.setRotation({0,templateRot.y,0})
+    if templatePos then
+      self.setPosition(templatePos)
+      self.setRotation({0,templateRot.y,0})
     end
     stopObject()
 end

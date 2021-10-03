@@ -45,7 +45,7 @@ function checkDeck()
     local deckObjs = deckZone.getObjects()
     local gotDeck = false
     for i, obj in pairs(deckObjs) do
-        if obj != deckMount then
+        if obj ~= deckMount then
             battleDeckObj = obj
             gotDeck = true
         end

@@ -1,5 +1,5 @@
-#include !/common/Math
-#include !/ListBuilder
+require('!/common/Math')
+require('!/ListBuilder')
 
 function onLoad()
     onLoadShared(

@@ -6,7 +6,7 @@ function onLoad(save_state)
     -- info
 
 
-    if self.getName() != "Model Template B" then
+    if self.getName() ~= "Model Template B" then
         templateInfo = Global.getTable("templateInfo")
         
 
@@ -127,7 +127,7 @@ function positionTemplate()
 end
 
 function onCollisionStay(collision_info)
-    if templateA.getTable("templatePos") != nil then
+    if templateA.getTable("templatePos") then
         self.setPosition(templateA.getTable("templatePos"))
 
         --self.setRotation(templateA.getTable("templateBRot"))

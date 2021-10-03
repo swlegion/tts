@@ -1,4 +1,4 @@
-#include !/Deck
+require('!/Deck')
 
 function onLoad(save_state)
     _G.Deck = Deck:create()
@@ -83,7 +83,7 @@ function checkCard(cardType)
   zoneObj = nil
   zoneObj = getObjectFromZone(cardType)
 
-  if zoneObj != nil then
+  if zoneObj then
     local name = zoneObj.getName()
     local type = Deck:getBattleCardType(name)
     if type == "condition" then
@@ -104,12 +104,12 @@ function getObjectFromZone(selectedZone)
     local selectedObj =  nil
     local zoneObjs = optionZones[selectedZone].getObjects()
     for i, obj in pairs(zoneObjs) do
-        if obj != optionObjs[selectedZone] then
+        if obj ~= optionObjs[selectedZone] then
             selectedObj = obj
             break
         end
     end
-    if selectedObj != nil then
+    if selectedObj ~= nil then
         return selectedObj
     else
         return nil
@@ -164,7 +164,7 @@ function spawnObjsFromCartridge(cartridgeObj)
       end
       
       local deploymentZone = cartridgeObj.getTable("deploymentZone")
-      if deploymentZone != nil then
+      if deploymentZone then
           spawnDeploymentBoundary(deploymentZone)
       end
 
@@ -191,7 +191,7 @@ function placeObject(paObj)
         paObj.setLuaScript(conditionTokenScript)
     elseif paObj.getName() == "Objective Token" then
         paObj.setLuaScript(objectiveTokenScript)
-    elseif paObj.getVar("scripted") != true then
+    elseif paObj.getVar("scripted") ~= true then
         paObj.setLuaScript("")
     end
 
