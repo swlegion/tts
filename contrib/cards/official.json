@@ -623,7 +623,7 @@
         },
         {
           "name": "Wookiee Warriors",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1619598366708170837/8CD09FD64849E8D2607D2C03FABD5B2DA092EE4E/",
           "size": "small",
           "type": "Wookiee Trooper",
           "points": 69,
@@ -740,7 +740,7 @@
         {
           "name": "Wookiee Warriors",
           "title": "Kashyyyk Resistance",
-          "displayName": "Wookiee Warriors (Kashyyyk Resistance)",
+          "displayName": "Wookiee Warriors (Resistance)",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604546/F387DBCD02315CB56A87FF52D99CE3C1E6E548F2/",
           "size": "small",
           "type": "Wookiee Trooper",
@@ -752,7 +752,17 @@
             "Gear": 1,
             "Grenades": 1
           },
-          "minis": 3
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708043779/0D96CE1619F4B27F583257A366431E3BAD428F19/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708043883/1EA1B3C21A50C20D4D168AB91ECFE1C01A4F7DF5/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708043883/1EA1B3C21A50C20D4D168AB91ECFE1C01A4F7DF5/"
+            }
+          ]
         }
       ],
       "Support": [
@@ -1858,7 +1868,11 @@
             "Training": 2,
             "Gear": 1
           },
-          "minis": 1
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708042527/2885A7CACE32FA461A6857D6A955A8C1CCF467C7/"
+            }
+          ]
         },
         {
           "name": "Chewbacca",
@@ -2090,7 +2104,7 @@
         },
         {
           "name": "Wookiee Warriors",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1619598366708171464/0A12FC8F203E5376156D3C2A207E33E1F5ACB0B6/",
           "size": "small",
           "type": "Wookiee Trooper",
           "points": 69,
@@ -2119,7 +2133,7 @@
         {
           "name": "Wookiee Warriors",
           "title": "Kashyyyk Defenders",
-          "displayName": "Wookiee Warriors (Kashyyyk Defenders)",
+          "displayName": "Wookiee Warriors (Defenders)",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790192/E7C7082C239E04E3DF76FDFF909EE360D9C25012/",
           "size": "small",
           "type": "Wookiee Trooper",
@@ -2131,7 +2145,17 @@
             "Gear": 1,
             "Grenades": 1
           },
-          "minis": 3
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708043779/0D96CE1619F4B27F583257A366431E3BAD428F19/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708043883/1EA1B3C21A50C20D4D168AB91ECFE1C01A4F7DF5/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708043883/1EA1B3C21A50C20D4D168AB91ECFE1C01A4F7DF5/"
+            }
+          ]
         }
       ],
       "Support": [
@@ -4163,7 +4187,9 @@
       {
         "name": "Long Gun Wookiee",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226123/FC3395575F2DA5995F599877AEF70D14F53400D5/",
-        "mini": 1,
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708042667/2DABB5788E51006EDB3FCB03400ACD4CE07755F3/"
+        },
         "points": 27,
         "restrictions": {
           "include": {
