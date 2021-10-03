@@ -320,7 +320,6 @@ end
 function initializeCommandToken(cData)
   local tokenObj = spawnObject({
     type           = "Custom_Model",
-    position       = cData.pos,
     rotation       = cData.rot
   })
   tokenObj.setCustomObject({
@@ -341,6 +340,9 @@ function initializeCommandToken(cData)
     selectedSpeed = cData.selectedSpeed,
     colorSide     = colorSide,
   })
+  Wait.frames(function()
+    tokenObj.setPosition(cData.pos)
+  end)
 end
 
 function spawnUnitCard(faction, name, position, rotation)
