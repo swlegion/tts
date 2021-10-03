@@ -90,12 +90,12 @@ function checkCard(cardType)
       type = "conditions"
     end
     if type:upper() == cardType:upper() then
-      self.call("activate"..cardType, name)
+      self.call("activate"..type, name)
     else
-      self.call("wrong".. cardType)
+      self.call("wrong".. type)
     end
   else
-    self.call("no".. cardType)
+    self.call("no".. type)
   end
 end
 
@@ -126,6 +126,7 @@ function spawnObjs(selection,selectedCartridgeObj)
 
     -- get guid
     local selectedCartridgeTable = selectedCartridgeObj.getObjects()
+    selectedGUID = nil
 
     for i, entry in pairs(selectedCartridgeTable) do
         if entry.name:upper() == selection:upper() then
@@ -134,13 +135,15 @@ function spawnObjs(selection,selectedCartridgeObj)
         end
     end
 
-    selectedCartridgeObjClone.takeObject({
-        position       = {0,-10,3},
-        callback       = "spawnObjsFromCartridge",
-        callback_owner = self,
-        smooth         = false,
-        guid           = selectedGUID
-    })
+    if selectedGUID then
+      selectedCartridgeObjClone.takeObject({
+          position       = {0,-10,3},
+          callback       = "spawnObjsFromCartridge",
+          callback_owner = self,
+          smooth         = false,
+          guid           = selectedGUID
+      })
+    end
 
     -- delete clone
     destroyObject(selectedCartridgeObjClone)
