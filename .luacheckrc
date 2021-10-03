@@ -1,5 +1,7 @@
+-- Standard library (globals) available.
 std = {
   globals = {
+    "onDestroy",
     "onLoad",
     "onSave",
   },
