@@ -1303,7 +1303,7 @@
           "size": "small",
           "type": "Trooper",
           "points": 44,
-          "speed": 2,
+          "speed": 1,
           "upgrades": {
             "Heavy Weapon": 1,
             "Personnel": 1,
@@ -1768,7 +1768,7 @@
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1647717402898546429/B304222EB644FD345A672FA36A7C4F5DF5152C49/",
-              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1647717402898546712/394E72447FF020F1D95846D07120EE63FCD0435B/"
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1618472373243511338/BA0B615A051FBA00DEFBB555DB87B516E19AF8EA/"
             }
           ],
           "commands": [
@@ -1941,7 +1941,7 @@
           "minis": [
             {
               "mesh": "http://cloud-3.steamusercontent.com/ugc/1003681674396399543/F485B2E6C10CBC01661E393966F014E5A5DE8BF9/",
-              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1003681674396399785/16C4492225E9C885997F59A86B4C1C67050F4197/"
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1618472373243511387/F761552349A2CA2AE8210CEE254BCE08D439B687/"
             }
           ],
           "commands": [

@@ -4,11 +4,7 @@
 
 -- Model Token
 
-function onSave()
-  return JSON.encode(unitData)
-end
-
-function onLoad(saveData)
+function onLoad()
   -- LOAD VALUES
   _G.battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
   _G.templateInfo = Global.getTable("templateInfo")
@@ -19,9 +15,6 @@ function onLoad(saveData)
   _G.activated = false
 
   -- setUp
-  if saveData ~= "" then
-    _G.unitData = JSON.decode(saveData)
-  end
   if _G.unitData ~= nil then
     local dieRollerInfo = Global.getTable("dieRollerInfo")
     _G.isAToken = true
