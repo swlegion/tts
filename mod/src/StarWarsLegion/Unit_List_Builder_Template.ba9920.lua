@@ -2,7 +2,7 @@ require('!/Deck')
 require('!/common/Math')
 
 -- model template
-function onLoad()
+function onload()
   if self.getName() ~= "Unit List Builder Template" then
     setUp()
   end

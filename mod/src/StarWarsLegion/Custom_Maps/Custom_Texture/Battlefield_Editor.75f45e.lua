@@ -10,7 +10,7 @@ position = {x = -25.4028015136719, y = 1.44191324710846, z = -14.9005193710327}
 rotation = {x = -0.00167207431513816, y = 180.008102416992, z = -1.47594300869969E-05}
 
 scripted = true
-function onLoad(save_state)
+function onload(save_state)
     urlString = ""
     gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
 

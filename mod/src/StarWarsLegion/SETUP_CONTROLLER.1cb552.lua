@@ -1,6 +1,6 @@
 require('!/Deck')
 
-function onLoad(save_state)
+function onload(save_state)
     _G.Deck = Deck:create()
     self.interactable = false
 
@@ -186,7 +186,7 @@ function placeObject(paObj)
     paObj.setRotation(spawnRot)
 
     if paObj.getName() == "Deployment Boundary" then
-        paObj.setLuaScript("function onLoad() self.interactable = false end")
+        paObj.setLuaScript("function onload() self.interactable = false end")
     elseif paObj.getName() == "Condition Token" then
         paObj.setLuaScript(conditionTokenScript)
     elseif paObj.getName() == "Objective Token" then

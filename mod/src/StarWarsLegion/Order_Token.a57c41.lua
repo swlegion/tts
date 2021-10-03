@@ -4,7 +4,7 @@ require('!/data/MovementLinks')
 
 -- Model Token
 
-function onLoad()
+function onload()
   -- LOAD VALUES
   _G.battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
   _G.templateInfo = Global.getTable("templateInfo")

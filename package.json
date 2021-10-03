@@ -6,6 +6,7 @@
     "generate": "npx ts-node tool/main.ts generate",
     "lint": "prettier --ignore-path .prettierignore --list-different src tool contrib && eslint src tool --ext .ts",
     "lint:fix": "prettier --ignore-path .prettierignore --write src tool contrib && eslint src tool --fix --ext .ts",
+    "lint:lua": "luacheck mod/src",
     "start": "npx ts-node tool/main.ts develop mod/src/StarWarsLegion.json dist/StarWarsLegion.json",
     "validate": "ts-node ./tool/validate.ts"
   },

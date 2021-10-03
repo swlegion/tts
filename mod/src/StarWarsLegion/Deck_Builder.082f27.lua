@@ -1,6 +1,6 @@
 require('!/Deck')
 
-function onLoad(save_state)
+function onload(save_state)
     self.interactable = false
     listBuilder = Global.getTable("listBuilder")
     setUpCards = Global.getTable("setUpCards")

@@ -1,4 +1,4 @@
-function onLoad(save_state)
+function onload(save_state)
     rangeOn = false
     self.createButton({
         click_function = "toggleRangeRuler",
@@ -12,7 +12,7 @@ function onLoad(save_state)
     })
 end
 
-function onDestroy()
+function ondestroy()
     clearRangeRuler()
 end
 

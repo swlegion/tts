@@ -1,7 +1,7 @@
 require('!/data/CohesionLinks')
 
 -- Model mini
-function onLoad()
+function onload()
     if self.getName() ~= "Unit Leader" then
         isAMini = true
         setUp()

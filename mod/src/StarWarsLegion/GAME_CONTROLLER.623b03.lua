@@ -1,7 +1,7 @@
 require('!/Analytics')
 require('!/Deck')
 
-function onLoad(save_state)
+function onload(save_state)
     _G.Deck = Deck:create()
 
     -- init values
@@ -813,7 +813,7 @@ function placeTerrain(paObj)
     if paObj.getName() == "BATTLEFIELD" then
         paObj.interactable = false
         paObj.setLock(true)
-        paObj.setLuaScript("function onLoad() self.interactable = false end")
+        paObj.setLuaScript("function onload() self.interactable = false end")
     end
 end
 

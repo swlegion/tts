@@ -1,7 +1,7 @@
 require('!/common/Math')
 require('!/ListBuilder')
 
-function onLoad()
+function onload()
     onLoadShared(
       "blue",
       -- List Builder Menu
