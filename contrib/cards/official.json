@@ -1303,7 +1303,7 @@
           "size": "small",
           "type": "Trooper",
           "points": 44,
-          "speed": 2,
+          "speed": 1,
           "upgrades": {
             "Heavy Weapon": 1,
             "Personnel": 1,
