@@ -46,7 +46,9 @@
 
           (Since last <i>Beta</i>)
 
+          - Added Super Tactical Droid(s)
           - Fixed Snowtroopers speed (1, not 2).
+          - Fixed Persuader Snail Tank.
           - Command tokens now spawn types other than Imperial.
           - Command token bugs with the activation button not appearing have been resolved.
           - Command tray issues (particularly around "split") have been resolved.
@@ -67,7 +69,8 @@
           - Added experimental homebrew support. See https://go.swlegion.dev/homebrew.
 
           - Added Yoda.
-          - Added DSD1 Dwarf Spider Droid, IG-100 MagnaGuard, Snail Tank (Not Functioning Yet).
+          - Added Super Tactical Droid(s)
+          - Added DSD1 Dwarf Spider Droid, IG-100 MagnaGuard, Snail Tank.
 
           - Range rulers are now displayed with color-coded projectors + work with elevation.
           - Move actions now show a "maximum" move-circle based on selected move speed.
