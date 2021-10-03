@@ -659,7 +659,7 @@ function spawnUnit(unit, index, faction, totalUnits)
     faction = remap[faction]
   end
   local known = {imperial = 1, rebel = 1, separatist = 1, republic = 1}
-  if not known[faction] then
+  if not known[faction:lower()] then
     -- HACK: Support homebrew factions.
     faction = "imperial"
   end
