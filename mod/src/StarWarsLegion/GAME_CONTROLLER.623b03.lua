@@ -564,6 +564,7 @@ function spawnSetupCards(selection)
             spawnedCard = setUp5Data[selection.."CardsClone"].takeObject({
                 position       = spawnPos,
                 rotation       = spawnRot,
+                scale          = {0.7, 0.7, 0.7},
                 smooth         = false,
                 top            = true
             })
