@@ -77,7 +77,7 @@ end
 function setTokenPos(obj, index)
   if obj.getVar("isAToken") == true then
       obj.setLock(false)
-      local commandType = obj.getVar("commandType")
+      local commandType = obj.getTable("unitData").commandType
       local commandTray = getObjectFromGUID(commandTokenTrayData[colorSide][commandType])
       local pos = commandTray.getPosition()
       pos.y = pos.y + 0.5 +(0.2 * index)

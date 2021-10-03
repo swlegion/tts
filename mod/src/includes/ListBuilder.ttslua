@@ -351,7 +351,7 @@ function initializeCommandToken(cData)
     tostring(cData.selectedSpeed),
     tostring(cData.baseSize:lower() ~= "small")
   )
-  tokenObj.setLuaScript(luaScript)
+  tokenObj.setLuaScript(luaScript .. listBuilder.tokenScript)
 end
 
 function spawnUnitCard(faction, name, position, rotation)
