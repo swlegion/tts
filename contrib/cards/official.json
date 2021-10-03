@@ -2349,7 +2349,12 @@
             "Comms": 1,
             "Gear": 1
           },
-          "minis": 1,
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366706441730/D50A1B8823BE590384D2A2D904A321B3337276AD/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1619598366706441991/04B29BB48A98AF8D79FC1414548496BAD49CCB28/"
+            }
+          ],
           "commands": [
             {
               "name": "They Too Will Suffer",
@@ -2381,7 +2386,12 @@
             "Comms": 1,
             "Gear": 1
           },
-          "minis": 1,
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366706441824/97EB6FA096B824294EE48FE762380CCBE866F3E2/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1619598366706441991/04B29BB48A98AF8D79FC1414548496BAD49CCB28/"
+            }
+          ],
           "commands": [
             {
               "name": "They Too Will Suffer",
@@ -2414,7 +2424,12 @@
             "Comms": 1,
             "Gear": 1
           },
-          "minis": 1,
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366706113202/449F19DA94D42DAD0F0B4D0B77A8E9AD45C320E5/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1619598366706441991/04B29BB48A98AF8D79FC1414548496BAD49CCB28/"
+            }
+          ],
           "commands": [
             {
               "name": "They Too Will Suffer",
