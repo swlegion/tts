@@ -340,6 +340,7 @@ function initializeCommandToken(cData)
     selectedSpeed = cData.selectedSpeed,
     colorSide     = colorSide,
   })
+  -- Move the object a frame later, because otherwise onSave() isn't triggered sometimes.
   Wait.frames(function()
     tokenObj.setPosition(cData.pos)
   end)
