@@ -2376,6 +2376,7 @@
         {
           "name": "Super Tactical Droid",
           "title": "Kalani",
+          "displayName": "Kalani",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789867/EB6D7E54CBA8E867A4146B0CE70ADA1769D1EB86/",
           "size": "small",
           "type": "Droid Trooper",
@@ -2413,6 +2414,7 @@
         {
           "name": "Super Tactical Droid",
           "title": "Kraken",
+          "displayName": "Kraken",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789829/C51EEBAA4150DA48EC395D6C275415592D430E54/",
           "size": "small",
           "type": "Droid Trooper",
