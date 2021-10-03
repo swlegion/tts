@@ -95,6 +95,7 @@ export default async function buildDeckSchemaLua(
       type: (upgrade as { [key: string]: unknown }).type,
       points: (upgrade as { [key: string]: unknown }).points,
       restrictions: (upgrade as { [key: string]: unknown }).restrictions,
+      mini: upgrade.mini,
       flip: {
         name: upgrade.name,
         image: upgrade.image,
