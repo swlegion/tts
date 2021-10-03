@@ -1,4 +1,4 @@
-#include !/CommandTray
+require('!/CommandTray')
 
 function onLoad()
   local colorSide = "blue"

@@ -1,4 +1,4 @@
-#include !/Deck
+require('!/Deck')
 
 function onLoad(save_state)
     self.interactable = false

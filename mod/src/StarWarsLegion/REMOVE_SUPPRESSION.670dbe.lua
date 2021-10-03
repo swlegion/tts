@@ -26,7 +26,7 @@ function removeSuppression()
     a = 1
 
 
-    if allObjects != nil then
+    if allObjects then
         for i, obj in pairs(allObjects) do
             if obj.getName() == "Suppression Token" then
 

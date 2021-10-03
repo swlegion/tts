@@ -1,5 +1,5 @@
-#include !/common/Math
-#include !/RangeRulers
+require('!/common/Math')
+require('!/RangeRulers')
 
 scripted = true
 
@@ -215,16 +215,16 @@ function spawnMoveTemplate()
 end
 
 function moveFull()
-  if templateB != nil then
-      local startPos = templateB.getPosition()
-      local startRot = templateB.getRotation()
-      local aStart = templateInfo.aStart[baseSize][selectedSpeed]
-      local endPos = translatePos(startPos, startRot, aStart, 0)
-      endPos.y = endPos.y + 2
-      local endRot = startRot
+  if templateB then
+    local startPos = templateB.getPosition()
+    local startRot = templateB.getRotation()
+    local aStart = templateInfo.aStart[baseSize][selectedSpeed]
+    local endPos = translatePos(startPos, startRot, aStart, 0)
+    endPos.y = endPos.y + 2
+    local endRot = startRot
 
-      self.setPositionSmooth(endPos, false, false)
-      self.setRotationSmooth(startRot, false, false)
+    self.setPositionSmooth(endPos, false, false)
+    self.setRotationSmooth(startRot, false, false)
   end
 end
 
@@ -236,11 +236,11 @@ function moveStart()
 end
 
 function hideMoveTemplate()
-  if templateA != nil then
+  if templateA then
     destroyObject(templateA)
     templateA = nil
   end
-  if templateB != nil then
+  if templateB then
     destroyObject(templateB)
     templateB = nil
   end

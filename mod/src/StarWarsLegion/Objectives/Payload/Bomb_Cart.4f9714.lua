@@ -4,4 +4,4 @@
 position = {48.97, 0.95, 15.19}
 rotation = {0.00, 270.03, 0.00}
 
-#include !/data/BombCarts
+require('!/data/BombCarts')

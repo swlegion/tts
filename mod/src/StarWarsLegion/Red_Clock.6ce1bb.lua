@@ -1,1 +1,1 @@
-#include !/ClockPersist
+require('!/ClockPersist')

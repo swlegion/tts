@@ -1,8 +1,8 @@
-#include !/data/CohesionLinks
+require('!/data/CohesionLinks')
 
 -- Model mini
 function onLoad()
-    if self.getName() != "Unit Leader" then
+    if self.getName() ~= "Unit Leader" then
         isAMini = true
         setUp()
     end
@@ -14,7 +14,7 @@ function setUp()
     moveState = false
     silhouetteState = false
 
-    if unitName != nil and colorSide != nil then
+    if unitName and colorSide then
         unitData = {}
         unitData.commandType = commandType
         unitData.baseSize = baseSize
@@ -143,7 +143,7 @@ function onPickedUp(player_color)
 end
 
 function dropCoroutine()
-    while self.getVelocity().y != 0 do
+    while self.getVelocity().y ~= 0 do
         coroutine.yield(0)
     end
     if moveState == true then

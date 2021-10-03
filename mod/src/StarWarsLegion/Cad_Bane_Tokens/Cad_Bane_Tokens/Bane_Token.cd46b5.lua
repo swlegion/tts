@@ -1,3 +1,3 @@
 rangeKey = "token"
 
-#include !/TokenWithRangeRuler
+require('!/TokenWithRangeRuler')

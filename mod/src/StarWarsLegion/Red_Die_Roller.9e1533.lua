@@ -1,4 +1,4 @@
-#include !/DieRoller
+require('!/DieRoller')
 
 function onLoad()
   onLoadShared("red")

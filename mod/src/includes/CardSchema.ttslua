@@ -1,4 +1,4 @@
-#include !/generated/cards
+require('!/generated/cards')
 
 function initCardsSchema()
   _G.CardsSchema = GENERATED_CARDS_SCHEMA

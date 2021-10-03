@@ -1,6 +1,6 @@
-#include !/common/Math
-#include !/RangeRulers
-#include !/data/MovementLinks
+require('!/common/Math')
+require('!/RangeRulers')
+require('!/data/MovementLinks')
 
 -- Model Token
 
@@ -59,7 +59,7 @@ function getEligibleUnit()
     local allUnits = nil
     local allUnits = battlefieldZone.getObjects()
 
-    if allUnits != nil then
+    if allUnits ~= nil then
         local closestDistance = 9999999999999
 
         -- check all units
@@ -68,7 +68,7 @@ function getEligibleUnit()
 
             local miniData = unit.getTable("unitData")
             local isAMini = unit.getVar("isAMini")
-            if miniData != nil and miniData.commandType != nil then
+            if miniData and miniData.commandTyp then
                 if isAMini == true and unitData.commandType == miniData.commandType and unit.getVar("colorSide") == unitData.colorSide then
                     -- add to eligible units
                     eligibleUnitsNumber = eligibleUnitsNumber + 1
@@ -88,11 +88,9 @@ function getEligibleUnit()
 
         end
         -- if success
-        if selectedUnitObj != nil then
-
+        if selectedUnitObj then
             getSelectedUnitObjVariables()
             setTemplateVariables()
-
         end
     end
 end
@@ -100,17 +98,17 @@ end
 function highlightUnit(selectedMiniGUIDs, highlightColor)
   for _, guidEntry in ipairs(selectedMiniGUIDs) do
     obj = getObjectFromGUID(guidEntry)
-    if obj != nil then
+    if obj then
       obj.highlightOn(highlightColor)
     end
   end
 end
 
 function unhighlightUnit(selectedMiniGUIDs)
-    if selectedMiniGUIDs != nil then
+    if selectedMiniGUIDs then
         for k, guidEntry in pairs(selectedMiniGUIDs) do
             obj = getObjectFromGUID(guidEntry)
-            if obj != nil then
+            if obj then
                 obj.highlightOff()
             end
         end
@@ -118,7 +116,7 @@ function unhighlightUnit(selectedMiniGUIDs)
 end
 
 function highlightCard(selectedUnitCard)
-    if selectedUnitCard != nil then
+    if selectedUnitCard then
         selectedUnitCard.highlightOn({0,1,0})
     end
 end
@@ -132,13 +130,13 @@ end
 
 
 function unHighlightCard(selectedUnitCard)
-    if selectedUnitCard != nil then
+    if selectedUnitCard then
         selectedUnitCard.highlightOff()
     end
 end
 
 function getSelectedUnitObjVariables()
-    if selectedUnitObj != nil then
+    if selectedUnitObj then
         newUnitData = selectedUnitObj.getTable("unitData")
         unitData.baseSize = newUnitData.baseSize
         unitData.selectedSpeed = newUnitData.selectedSpeed
@@ -156,7 +154,7 @@ function initialize()
 end
 
 function createStandbyButtons()
-    if selectedUnitObj != nil then
+    if selectedUnitObj then
         self.createButton({
             click_function = "activate",
             function_owner = self,
@@ -192,7 +190,7 @@ end
 ------------------------------------------------- ACTIVATE ------------------------------------------------------------
 function activate()
   getEligibleUnit()
-  if selectedUnitObj != nil then
+  if selectedUnitObj then
     moveDirection = "forward"
     activated = true
     self.clearButtons()
@@ -210,7 +208,7 @@ end
 ------------------------------------------------- ResetButtons------------------------------------------------------------
 function resetButtons()
     self.clearButtons()
-    if selectedUnitObj != nil then
+    if selectedUnitObj then
 
         self.createButton({
             click_function = "nextUnit",
@@ -340,7 +338,7 @@ function resetButtons()
 end
 
 function spawnCohesionRuler()
-    if rulerOn != true then
+    if rulerOn then
         selectedUnitObj.call("spawnCohesionRuler")
         rulerOn = true
     else
@@ -370,7 +368,7 @@ function nextUnit()
             end
         else
             -- examine nil status
-            if eligibleUnits[selectedUnitNumber] != nil then
+            if eligibleUnits[selectedUnitNumber] then
                 clearTint()
                 stopUnit()
                 stopAttack()
@@ -392,7 +390,7 @@ end
 function clearTint()
     unhighlightEnemies()
 
-    if selectedUnitObj != nil then
+    if selectedUnitObj then
         unhighlightUnit(selectedUnitObj.getTable("miniGUIDs"))
         unHighlightCard(getObjectFromGUID(selectedUnitObj.getVar("cardGUID")))
     end
@@ -649,7 +647,7 @@ end
 ------------------------------------------------- MOVE BACK------------------------------------------------------------
 
 function moveFull()
-    if templateB != nil then
+    if templateB then
         local startPos = templateB.getPosition()
         local startRot = templateB.getRotation()
         local endPos = translatePos(startPos, startRot, unitData.aStart, 0)
@@ -734,26 +732,26 @@ function clearTemplates()
 end
 
 function clearMovementTemplates()
-    if templateA != nil then
+    if templateA then
         destroyObject(templateA)
     end
-    if templateB!= nil then
+    if templateB then
         destroyObject(templateB)
     end
-    if maxMoveTemplate != nil then
+    if maxMoveTemplate then
         destroyObject(maxMoveTemplate)
     end
 end
 
 function clearCohesionRulers()
-    if selectedUnitObj != nil then
+    if selectedUnitObj then
         selectedUnitObj.setVar("moveState", false)
         selectedUnitObj.call("clearCohesionRuler")
     end
 end
 
 function clearAttackLine()
-    if attackLine != nil then
+    if attackLine then
         for k, attackLineObj in pairs(attackLine) do
             destroyObject(attackLine[k])
         end
@@ -861,7 +859,7 @@ end
 
 function targetingMode()
 
-    if enemyHighlighted != true then
+    if enemyHighlighted then
         exitAttackMode()
 
         highlightEnemies()
@@ -875,7 +873,7 @@ function targetingMode()
 end
 
 function attackMode()
-    if attackModeOn != true then
+    if attackModeOn then
         exitTargetingMode()
 
         highlightEnemies()
@@ -956,7 +954,7 @@ function attackMenu(attackTargetObj)
     for k, guidEntry in pairs(enemyMinis) do
         local obj = getObjectFromGUID(guidEntry)
 
-        if obj != nil then
+        if obj then
             if obj.getPosition().z <18.1 and obj.getPosition().z > -18.1 and obj.getPosition().x < 44.1 and obj.getPosition().x > -28.1 then
                 attackLine[n] = spawnAttackLine(selectedUnitObj, obj)
                 n = n + 1
@@ -1086,7 +1084,7 @@ function createRangeButton(leaderObj)
     for k, guidEntry in pairs(enemyMinis) do
         local obj = getObjectFromGUID(guidEntry)
 
-        if obj != nil and isMiniOnTable(obj, allUnitsOnTable) then
+        if obj and isMiniOnTable(obj, allUnitsOnTable) then
             distance = getDistance(selectedUnitObj, obj)
             if distance < lowestDistance then
                 lowestDistance = distance
@@ -1136,7 +1134,7 @@ function getEnemyUnits()
   local allUnits = battlefieldZone.getObjects()
 
   for _, obj in pairs(allUnits) do
-    if obj.getVar("isAMini") == true and obj.getVar("colorSide") != unitData.colorSide then
+    if obj.getVar("isAMini") == true and obj.getVar("colorSide") ~= unitData.colorSide then
       table.insert(miniObjs, obj)
     end
   end

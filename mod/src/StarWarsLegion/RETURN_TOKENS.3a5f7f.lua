@@ -36,7 +36,7 @@ function returnTokens()
     local commandNumber = 1
     local observationNumber = 1
 
-    if allObjects != nil then
+    if allObjects then
         for i, obj in pairs(allObjects) do
             if obj.getName() == "Aim Token" then
                 aimNumber = returnToken(aimBag,obj,aimNumber)

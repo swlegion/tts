@@ -1,10 +1,10 @@
-#include !/Analytics
-#include !/CardSchema
-#include !/common/SHA256
-#include !/data/ListBuilder
-#include !/generated/cards
-#include !/UI
-#include !/RangeRulers
+require('!/Analytics')
+require('!/CardSchema')
+require('!/common/SHA256')
+require('!/data/ListBuilder')
+require('!/generated/cards')
+require('!/UI')
+require('!/RangeRulers')
 
 function onSave()
   local chessClocksActive = UI.getAttribute("floatingChessClockUI", "active") == "true"
