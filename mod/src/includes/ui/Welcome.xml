@@ -46,15 +46,7 @@
 
           (Since last <i>Beta</i>)
 
-          - Added Super Tactical Droid(s)
-          - Fixed Snowtroopers speed (1, not 2).
-          - Fixed Persuader Snail Tank.
-          - Command tokens now spawn types other than Imperial.
-          - Command token bugs with the activation button not appearing have been resolved.
-          - Command tray issues (particularly around "split") have been resolved.
-          - Replaced Anakin and Padme textures with ones that receive projections.
-          - Fixed a bug where spawning condition tokens would error out.
-          - The "4 pick" battle card selection now properly is scaled to fit on screen.
+          - Added Wookiee Chieftain, Ranged Wookiees, Long-Gun Wookiee.
 
           - We are testing <i>new range/cohesion</i> projection-based rulers.
           - <b>Please report any bugs/issues with these rulers!</b>.
@@ -68,8 +60,9 @@
 
           - Added experimental homebrew support. See https://go.swlegion.dev/homebrew.
 
-          - Added Yoda.
-          - Added Super Tactical Droid(s)
+          - Added Yoda, Wookiee Chieftain, GAR Chewbacca, Ranged Wookiees.
+          - Added Battle Shield Wookiee, Long Gun Wookiee.
+          - Added Super Tactical Droid(s).
           - Added DSD1 Dwarf Spider Droid, IG-100 MagnaGuard, Snail Tank.
 
           - Range rulers are now displayed with color-coded projectors + work with elevation.
