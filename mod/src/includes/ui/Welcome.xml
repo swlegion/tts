@@ -46,9 +46,13 @@
 
           (Since last <i>Beta</i>)
 
-          - Fixed a few card import bugs (E-11D, Battle Shield Wookiees).
-          - Fixed the base size of a few units.
-          - Tokens now use projector range bands.
+          - Fixed Snowtroopers speed (1, not 2).
+          - Command tokens now spawn types other than Imperial.
+          - Command token bugs with the activation button not appearing have been resolved.
+          - Command tray issues (particularly around "split") have been resolved.
+          - Replaced Anakin and Padme textures with ones that receive projections.
+          - Fixed a bug where spawning condition tokens would error out.
+          - The "4 pick" battle card selection now properly is scaled to fit on screen.
 
           - We are testing <i>new range/cohesion</i> projection-based rulers.
           - <b>Please report any bugs/issues with these rulers!</b>.
