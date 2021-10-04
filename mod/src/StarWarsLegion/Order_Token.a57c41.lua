@@ -858,10 +858,8 @@ function attack()
 end
 
 function targetingMode()
-
-    if enemyHighlighted then
+    if not enemyHighlighted then
         exitAttackMode()
-
         highlightEnemies()
         spawnRangeRuler(selectedUnitObj)
         enemyHighlighted = true
@@ -869,13 +867,11 @@ function targetingMode()
     else
         exitTargetingMode()
     end
-
 end
 
 function attackMode()
-    if attackModeOn then
+    if not attackModeOn then
         exitTargetingMode()
-
         highlightEnemies()
         spawnRangeRuler(selectedUnitObj)
         attackModeOn = true

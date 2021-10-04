@@ -27,8 +27,9 @@ end
 
 
 function spawnRangeRuler(rangeSourceObject, projectorBundleOverride)
-
-  if rangeSourceObject == nil then return end
+  if rangeSourceObject == nil then 
+    return 
+  end
 
   local rulerBundleToSpawn = ""
 
@@ -36,7 +37,9 @@ function spawnRangeRuler(rangeSourceObject, projectorBundleOverride)
     rulerBundleToSpawn = projectorBundleOverride
   else
     local newUnitData = rangeSourceObject.getTable("unitData")
-    if not newUnitData then return end
+    if not newUnitData then 
+      return 
+    end
 
     local baseSize = newUnitData.baseSize
     local rulerBundleTable = getRangeRulerLinks()
