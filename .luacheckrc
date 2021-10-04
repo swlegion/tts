@@ -1,6 +1,7 @@
 -- Standard library (globals) available.
 std = {
   globals = {
+    "_G",
     "ondestroy",
     "onload",
     "onsave",
