@@ -95,7 +95,7 @@ function checkCard(cardType)
       self.call("wrong".. type)
     end
   else
-    self.call("no".. type)
+    self.call("no".. cardType)
   end
 end
 
