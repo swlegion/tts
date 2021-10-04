@@ -3765,9 +3765,11 @@
       },
       {
         "name": "Battle Shield Wookiee (Offensive)",
+        "displayName": "Shield Wookiee (Offensive)",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138999/81A76F415A7B73A3AEF6B5EEF5DF6F0ABC9C9CF5/",
         "flip": {
           "name": "Battle Shield Wookiee (Defensive)",
+          "displayName": "Shield Wookiee (Defensive)",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138967/E5E495CD6EEFD77393CD99C35CF651BBEDC1210A/"
         },
         "mini": {
