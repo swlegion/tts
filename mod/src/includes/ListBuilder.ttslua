@@ -104,6 +104,7 @@ function finishArmy()
   clearZone()
   Wait.time(function()
     loadArmy()
+    mainMenu()
   end, 0.5)
 end
 
@@ -540,7 +541,7 @@ function spawnUnit(unit, index, faction, totalUnits)
 
   -- Prep unit card spawn locations.
   local templatePos = listBuilder[colorSide.."TemplatePos"][index]
-  local adjustedPos = templatePos
+  local adjustedPos = {x = templatePos.x, y = templatePos.y, z = templatePos.z}
   local templateHalfWidth = listBuilder.spawnOffsets["templateHalfWidth"]
   local templateHalfHeight = listBuilder.spawnOffsets["templateHalfHeight"]
   local cardHeight = listBuilder.spawnOffsets["cardHeight"]
