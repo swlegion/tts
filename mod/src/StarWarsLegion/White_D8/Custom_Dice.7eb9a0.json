@@ -1,0 +1,117 @@
+{
+  "Object": {
+    "GUID": "7eb9a0",
+    "Name": "Custom_Dice",
+    "Transform": {
+      "posX": -43.0995636,
+      "posY": 3.695959,
+      "posZ": 2.831741,
+      "rotX": 326.2634,
+      "rotY": 223.123184,
+      "rotZ": 90.00048,
+      "scaleX": 0.8250004,
+      "scaleY": 0.8250004,
+      "scaleZ": 0.8250004
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": false,
+    "Snap": false,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/786359883314439144/C08101E0DC6B484700DE253D0EADB7790A7B53D7/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomDice": {
+        "Type": 2
+      }
+    },
+    "LuaScript": "#include ./Custom_Dice.7eb9a0.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "RotationValues": [
+      {
+        "Value": 1,
+        "Rotation": {
+          "x": -33,
+          "y": 0,
+          "z": 90
+        }
+      },
+      {
+        "Value": 2,
+        "Rotation": {
+          "x": -33,
+          "y": 0,
+          "z": 180
+        }
+      },
+      {
+        "Value": 3,
+        "Rotation": {
+          "x": 33,
+          "y": 180,
+          "z": -180
+        }
+      },
+      {
+        "Value": 4,
+        "Rotation": {
+          "x": 33,
+          "y": 180,
+          "z": 90
+        }
+      },
+      {
+        "Value": 5,
+        "Rotation": {
+          "x": 33,
+          "y": 180,
+          "z": -90
+        }
+      },
+      {
+        "Value": 6,
+        "Rotation": {
+          "x": 33,
+          "y": 180,
+          "z": 0
+        }
+      },
+      {
+        "Value": 7,
+        "Rotation": {
+          "x": -33,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "Value": 8,
+        "Rotation": {
+          "x": -33,
+          "y": 0,
+          "z": -90
+        }
+      }
+    ]
+  },
+  "StatesPaths": {}
+}
