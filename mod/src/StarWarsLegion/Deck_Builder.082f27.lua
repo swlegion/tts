@@ -44,7 +44,8 @@ function resetCommandCards()
     commandCardSelection = {
       "Ambush",
       "Push",
-      "Assault"
+      "Assault",
+      "Standing Orders",
     }
     contingencyCardSelection = {}
 end
