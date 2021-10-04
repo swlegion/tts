@@ -2257,7 +2257,7 @@
         {
           "name": "Infantry Support Platform",
           "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189285/5E0D18805F9C4BF8A978A9F1F20CFAE73575D02F/",
-          "size": "epic",
+          "size": "huge",
           "type": "Repulsor Vehicle",
           "points": 65,
           "speed": 3,
@@ -2266,7 +2266,11 @@
             "Hardpoint": 1,
             "Comms": 1
           },
-          "minis": 1
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598523372574861/CCF68AF1C35F52A714AB0344FCB170F5BAA1672A/"
+            }
+          ]
         }
       ]
     },
