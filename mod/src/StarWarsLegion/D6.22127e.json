@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "22127e",
+    "Name": "Custom_Model_Infinite_Bag",
+    "Transform": {
+      "posX": -600,
+      "posY": -6,
+      "posZ": -1.44728279,
+      "rotX": 359.9289,
+      "rotY": 179.999161,
+      "rotZ": 359.927277,
+      "scaleX": 2.050001,
+      "scaleY": 2.050001,
+      "scaleZ": 2.050001
+    },
+    "Nickname": "D6",
+    "Description": "Raw-http://pastebin.com/raw.php?i=cDn7Eum6\n\nTemplate-http://i.imgur.com/87o8GSa.png",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": false,
+    "Snap": false,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": false,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314439893/23D79B292735ECB5F7977DB04540BA2D3B26E308/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/786360308354566112/BB2B0B7785FA216DD23B9F6F98746FC1FCD33B02/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 0,
+      "TypeIndex": 7,
+      "CastShadows": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Dice.c898b0.json"
+  ]
+}

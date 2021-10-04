@@ -1,0 +1,101 @@
+{
+  "Object": {
+    "GUID": "9ef898",
+    "Name": "Custom_Dice",
+    "Transform": {
+      "posX": -46.3606033,
+      "posY": 2.75346279,
+      "posZ": 1.79422641,
+      "rotX": 271.6963,
+      "rotY": 90.00092,
+      "rotZ": 179.999084,
+      "scaleX": 0.825000167,
+      "scaleY": 0.825000167,
+      "scaleZ": 0.825000167
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": false,
+    "Snap": false,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/786359883314439995/3879920BDA71DD8BE1BFB7450AFA641203384BB3/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomDice": {
+        "Type": 1
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "RotationValues": [
+      {
+        "Value": 1,
+        "Rotation": {
+          "x": -90,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "Value": 2,
+        "Rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "Value": 3,
+        "Rotation": {
+          "x": 0,
+          "y": 0,
+          "z": -90
+        }
+      },
+      {
+        "Value": 4,
+        "Rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 90
+        }
+      },
+      {
+        "Value": 5,
+        "Rotation": {
+          "x": 0,
+          "y": 0,
+          "z": -180
+        }
+      },
+      {
+        "Value": 6,
+        "Rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ]
+  },
+  "StatesPaths": {}
+}
