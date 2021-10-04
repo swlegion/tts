@@ -4696,7 +4696,8 @@
           "include": {
             "unit": ["B1 Battle Droids"]
           }
-        }
+        },
+        "leader": true
       },
       {
         "name": "Phase I Clone Captain",
