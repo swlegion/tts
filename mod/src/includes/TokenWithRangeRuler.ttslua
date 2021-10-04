@@ -1,4 +1,4 @@
-#include !/RangeRulers
+require('!/RangeRulers')
 
 -- each token must define 'rangeKey' with key listed below
 
@@ -42,7 +42,7 @@ function toggleRangeRuler()
 end
 
 function clearRangeRuler()
-  if rangeRuler != nil then
+  if rangeRuler then
     destroyObject(rangeRuler)
     rangeRuler = nil
   end

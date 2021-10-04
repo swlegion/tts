@@ -47,7 +47,7 @@ function splitTokens()
 
   local commandStackObjs = commandStack.getObjects()
   local commandStackPos = commandStack.getPosition()
-  if #commandStackObjs != 0 then
+  if #commandStackObjs ~= 0 then
       for i, obj in pairs(commandStackObjs) do
           commandStackPos.y = commandStackPos.y + 0.4
           local drawnObj = commandStack.takeObject({
@@ -100,7 +100,7 @@ function stackTokens()
 
   if #trayZoneObjs >1 then
       for _, obj in pairs(trayZoneObjs) do
-          if obj != commandStack then
+          if obj ~= commandStack then
               commandStack.putObject(obj)
           end
       end

@@ -1,6 +1,6 @@
-#include !/Analytics
-#include !/Deck
-#include !/Shelf
+require('!/Analytics')
+require('!/Deck')
+require('!/Shelf')
 
 -- This is the shared execution code for {RED|BLUE}_LIST_BUILDER.
 
@@ -166,7 +166,7 @@ function clearZone()
 
   -- Remove all items on the table side (except the table itself).
   for _, obj in pairs(zoneObjs) do
-    if obj != battlefieldTable then
+    if obj ~= battlefieldTable then
         destroyObject(obj)
     end
   end
@@ -190,14 +190,14 @@ function clearZone()
   end
 
   -- And the deck builder, if it is exists.
-  if deckBuilderObj != nil then
+  if deckBuilderObj then
     destroyObject(deckBuilderObj)
     deckBuilderObj = nil
   end
 
   -- And whatever the "deck zone" is (TBD).
   for i, obj in pairs(deckZone.getObjects()) do
-    if obj != deckMount then
+    if obj ~= deckMount then
         destroyObject(obj)
     end
   end
@@ -298,7 +298,7 @@ function calculatePoints()
   totalPoints = 0
   for _, card in pairs(allCards) do
       local cardPoint = card.getVar("ptCost")
-      if cardPoint != nil then
+      if cardPoint then
         totalPoints = totalPoints + cardPoint
       end
   end
@@ -775,7 +775,7 @@ function spawnUnitIDToken(idSpawnPos, idSpawnRot, idNumber)
     smooth         = false
   })
   local idTokenGUID = idToken.getGUID()
-  if idNumber != 1 then
+  if idNumber ~= 1 then
     idTokenGUID = idToken.setState(idNumber).getGUID()
   end
 
@@ -790,7 +790,7 @@ function loadArmy()
   diskObjNumber = 0
 
   for i, obj in pairs(diskObjs) do
-      if obj.getVar("listData") != nil then
+      if obj.getVar("listData") then
           loadDisk = obj
           diskObjNumber = i
       end
