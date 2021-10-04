@@ -68,7 +68,7 @@ function getEligibleUnit()
 
             local miniData = unit.getTable("unitData")
             local isAMini = unit.getVar("isAMini")
-            if miniData and miniData.commandTyp then
+            if miniData and miniData.commandType then
                 if isAMini == true and unitData.commandType == miniData.commandType and unit.getVar("colorSide") == unitData.colorSide then
                     -- add to eligible units
                     eligibleUnitsNumber = eligibleUnitsNumber + 1
