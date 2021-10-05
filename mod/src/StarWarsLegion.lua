@@ -83,24 +83,26 @@ function onload(saveData)
         end
     end
 
+    -- math available here: https://docs.google.com/spreadsheets/d/1LD6spROJFw29c5L-lN1RJwqk7XplQShOj1Z8QQkBGf4/edit?usp=sharing
+    -- formula is: ((tool - notch + base) * 0.5) /25.4
     templateInfo.aStart = {}
-    templateInfo.aStart.small = 	{1.968995, 3, 4}
-    templateInfo.aStart.medium = 	{2.234375, 3.26538, 4.26538}
-    templateInfo.aStart.large =		{2.640625, 3.67163, 4.67163}
-    templateInfo.aStart.huge =		{3.21875, 4.249755, 5.249755}
-    templateInfo.aStart.laat =      {4.21875 - 0.59055, 5.249755 - 0.59055, 6.249755 - 0.59055}
-    templateInfo.aStart.long =		{4.71875, 5.749755, 6.749755}
-    templateInfo.aStart.epic =		{4.21875, 5.249755, 6.249755}
+    templateInfo.aStart.small = 	{2.007874016, 2.992125984, 3.976377953}
+    templateInfo.aStart.medium = 	{2.342519685, 3.326771654, 4.311023622}
+    templateInfo.aStart.large =		{2.736220472, 3.720472441, 4.704724409}
+    templateInfo.aStart.huge =		{3.326771654, 4.311023622, 5.295275591}
+    templateInfo.aStart.laat =      {3.720472441, 4.704724409, 5.688976378}
+    templateInfo.aStart.long =		{4.803149606, 5.787401575, 6.771653543}
+    templateInfo.aStart.epic =		{4.311023622, 5.295275591, 6.279527559}
 
+    --probably just remove these at some point
     templateInfo.bStart = {}
-    templateInfo.bStart.small = 	{1.968995, 3, 4}
-    templateInfo.bStart.medium =	{2.234375, 3.26538, 4.26538}
-    templateInfo.bStart.large =		{2.640625, 3.67163, 4.67163}
-    templateInfo.bStart.huge =		{3.21875, 4.249755, 5.249755}
-    templateInfo.bStart.long =		{4.71875, 5.749755, 6.749755}
-
-    templateInfo.bStart.laat = templateInfo.aStart.laat
-    templateInfo.bStart.epic = templateInfo.aStart.epic
+    templateInfo.bStart.small = 	templateInfo.aStart.small
+    templateInfo.bStart.medium =	templateInfo.aStart.medium
+    templateInfo.bStart.large =		templateInfo.aStart.large
+    templateInfo.bStart.huge =		templateInfo.aStart.huge
+    templateInfo.bStart.long =		templateInfo.aStart.long
+    templateInfo.bStart.laat =      templateInfo.aStart.laat
+    templateInfo.bStart.epic =      templateInfo.aStart.epic
 
 
 
