@@ -384,16 +384,6 @@ function Deck:_isUpgradeValidFor(upgrade, unit)
 
   if restrictions then
     if restrictions.include then
-      -- If there is a unit test, and we pass, then it's valid.
-      -- There currently are no "<NAME> and <OTHER CONDITION> only upgrades".
-      if restrictions.include.unit then
-        for _, unitName in ipairs(restrictions.include.unit) do
-          if unitName:upper() == unit.name:upper() then
-            return true
-          end
-        end
-      end
-
       local nonUnitChecks = 0
       local passedNonUnit = 0
 
@@ -404,6 +394,20 @@ function Deck:_isUpgradeValidFor(upgrade, unit)
             passedNonUnit = passedNonUnit + 1
             break
           end
+        end
+      end
+
+      -- If there is a unit test, and we pass, then it's valid.
+      -- There currently are no "<NAME> and <OTHER CONDITION> only upgrades".
+      if restrictions.include.unit then
+        for _, unitName in ipairs(restrictions.include.unit) do
+          if unitName:upper() == unit.name:upper() then
+            return nonUnitChecks == passedNonUnit
+          end
+        end
+
+        if nonUnitChecks > 0 then
+          return false
         end
       end
 
