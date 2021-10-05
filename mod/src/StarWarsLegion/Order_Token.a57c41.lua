@@ -338,7 +338,7 @@ function resetButtons()
 end
 
 function spawnCohesionRuler()
-    if rulerOn then
+    if not rulerOn then
         selectedUnitObj.call("spawnCohesionRuler")
         rulerOn = true
     else
