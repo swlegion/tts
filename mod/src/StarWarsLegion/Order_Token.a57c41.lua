@@ -732,13 +732,13 @@ function clearTemplates()
 end
 
 function clearMovementTemplates()
-    if templateA then
+    if templateA ~= nil then
         destroyObject(templateA)
     end
-    if templateB then
+    if templateB ~= nil then
         destroyObject(templateB)
     end
-    if maxMoveTemplate then
+    if maxMoveTemplate ~= nil then
         destroyObject(maxMoveTemplate)
     end
 end

@@ -46,7 +46,10 @@
 
           (Since last <i>Beta</i>)
 
-          - Added Wookiee Chieftain, Ranged Wookiees, Long-Gun Wookiee.
+          - Fix: Movement distance calculations.
+          - Fix: Standing Orders is now included as part of in-mod list building.
+          - Fix: OOM-Series Battle Droid is now included a Unit Leader.
+          - Added Infantry Support Platform, Fluttercraft.
 
           - We are testing <i>new range/cohesion</i> projection-based rulers.
           - <b>Please report any bugs/issues with these rulers!</b>.
@@ -62,6 +65,7 @@
 
           - Added Yoda, Wookiee Chieftain, GAR Chewbacca, Ranged Wookiees.
           - Added Battle Shield Wookiee, Long Gun Wookiee.
+          - Added Infantry Support Platform, Fluttercraft.
           - Added Super Tactical Droid(s).
           - Added DSD1 Dwarf Spider Droid, IG-100 MagnaGuard, Snail Tank.
 
