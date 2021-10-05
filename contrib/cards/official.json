@@ -1870,7 +1870,7 @@
           },
           "minis": [
             {
-              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708042527/2885A7CACE32FA461A6857D6A955A8C1CCF467C7/"
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598523372467360/2810096383D51B0939DC3FFCBC83155C6D08CB53/"
             }
           ]
         },
@@ -2207,7 +2207,11 @@
             "Crew": 1,
             "Comms": 1
           },
-          "minis": 1
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598523372505515/1191E8089B37C0CC4BBE8283EF6B7F9C5A74A13C/"
+            }
+          ]
         }
       ],
       "Heavy": [
@@ -2253,7 +2257,7 @@
         {
           "name": "Infantry Support Platform",
           "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189285/5E0D18805F9C4BF8A978A9F1F20CFAE73575D02F/",
-          "size": "epic",
+          "size": "huge",
           "type": "Repulsor Vehicle",
           "points": 65,
           "speed": 3,
@@ -2262,7 +2266,11 @@
             "Hardpoint": 1,
             "Comms": 1
           },
-          "minis": 1
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598523372574861/CCF68AF1C35F52A714AB0344FCB170F5BAA1672A/"
+            }
+          ]
         }
       ]
     },
