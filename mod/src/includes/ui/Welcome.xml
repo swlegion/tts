@@ -46,16 +46,8 @@
 
           (Since last <i>Beta</i>)
 
-          - Fix: Movement distance calculations.
-          - Fix: Standing Orders is now included as part of in-mod list building.
-          - Fix: OOM-Series Battle Droid is now included a Unit Leader.
-          - Added Infantry Support Platform, Fluttercraft.
-
-          - We are testing <i>new range/cohesion</i> projection-based rulers.
-          - <b>Please report any bugs/issues with these rulers!</b>.
-
-          - We are testing a <i>new card flow</i> (internal to the mod).
-          - <b>Please report any bugs with unit/upgrade/command/battle cards</b>.
+          - Fix: Objective and condition tokens now use the same range-1 hookups.
+          - Updated deployment projectors to use the same colors as range projectors.
 
           (Since last <i>Stable</i>)
 
