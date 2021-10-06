@@ -217,8 +217,8 @@ function spawnDeploymentBoundary(matrix)
       end
       return output
     end
-    local bAsset = "http://cloud-3.steamusercontent.com/ugc/1738926104368207752/531BBEE87D18C75A19503307A1A07EA9D0E0438A/"
-    local rAsset = "http://cloud-3.steamusercontent.com/ugc/1738926104368206955/F087A123F300047E9737292752DE512E10641E3B/"
+    local bAsset = "http://cloud-3.steamusercontent.com/ugc/1738944060882006162/077B3B0AE278E39363F5BD3AE070B5AE36F025FA/"
+    local rAsset = "http://cloud-3.steamusercontent.com/ugc/1738944060882006204/75F636F4133C5F85682ECDEBBECB9F6CD821315F/"
     local xStart = -25
     local zStart = 15
     local yValue = 20
