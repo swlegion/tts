@@ -1,4 +1,4 @@
-require('!/data/CohesionLinks')
+﻿require('!/data/CohesionLinks')
 
 -- Model mini
 function onload()
@@ -13,6 +13,10 @@ function setUp()
 
     moveState = false
     silhouetteState = false
+    lockState = false
+
+    lockBtnGreen = {0.2, 0.9, 0.05, 0.7}
+    lockBtnRed = {0.9, 0.1, 0.05, 0.7}
 
     if unitName and colorSide then
         unitData = {}
@@ -37,6 +41,7 @@ function resetUnitButtons()
     self.clearButtons()
     data = {click_function = "clearCohesionRuler", function_owner = self, label = unitID, position = unitIDButtonPos , scale = {0.5, 0.5, 0.5}, width = 1, height = 1, font_size = 300, color = {0.7573, 0.7573, 0.7573, 0.01}, font_color = {1, 1, 1, 100}}
 
+    addLockButton()
     self.createButton(data)
     if unitData.baseSize == "small" then
       addSilhouetteButton()
@@ -51,7 +56,7 @@ function addSilhouetteButton()
     function_owner = self,
     label = "SIL",
     tooltip = "Toggle silhouettes on this unit",
-    position = {0,0.25,0.6},
+    position = {-0.225,0.25,0.6},
     width = 230,
     height = 180,
     font_size = 100,
@@ -60,6 +65,71 @@ function addSilhouetteButton()
   }
   self.createButton(btnData)
 end
+
+function addLockButton()
+    local gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
+    local btnTint = gameData.getTable("battlefieldTint")
+    lockBtnData = {
+        click_function = "toggleLocks",
+        function_owner = self,
+        label = "LCK",
+        tooltip = "Toggle Physics Lock on this unit",
+        position = {0.225, 0.25, 0.6},
+        width = 230,
+        height = 180,
+        font_size = 100,
+        color = lockBtnGreen,
+        font_color= {1, 1, 1, 100}
+    }
+    self.createButton(lockBtnData)
+end
+
+function updateLockBtnColor()
+    if lockState == true then
+        self.editButton({
+            index = 0,
+            color = lockBtnRed
+        })
+    else
+        self.editButton({
+            index = 0,
+            color = lockBtnGreen
+        })
+    end
+end
+
+function toggleLocks()
+    local newValue
+    if lockState == true then
+        newValue = false
+    else
+        newValue = true
+    end
+
+    for k, guid in pairs(miniGUIDs) do
+        local obj = getObjectFromGUID(guid)
+
+        if obj ~= nil then
+            obj.locked = newValue
+        end
+    end
+
+    lockState = newValue
+    updateLockBtnColor()
+end
+
+function setLocks(boolValue)
+    for k, guid in pairs(miniGUIDs) do
+        local obj = getObjectFromGUID(guid)
+
+        if obj ~= nil then
+            obj.locked = boolValue
+        end
+    end    
+    lockState = boolValue
+    updateLockBtnColor()
+end
+  
 
 function toggleSilhouettes()
   if silhouetteState then

@@ -454,6 +454,8 @@ function moveUnit()
         material = 1,
     })
 
+    templateA.mass = 0.0
+
     templateA.setPosition({basePos.x - b, basePos.y, basePos.z - a})
     templateA.setRotation({0, baseRot.y + 180, 0})
 
@@ -482,6 +484,8 @@ function moveUnit()
         collider = templateInfo.moveTemplate[unitData.selectedSpeed].shortCollider,
         material = 1,
     })
+
+    templateB.mass = 0.0
 
     templateB.setPosition({basePos.x - bEx, basePos.y, basePos.z - aEx})
     templateB.setRotation({0, baseRot.y, 0})
