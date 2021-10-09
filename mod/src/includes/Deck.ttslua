@@ -514,3 +514,21 @@ function Deck:getBattleCardType(name, scenario)
   end
   return nil
 end
+
+function Deck:getBattleCardNamesByType(name, scenario)
+  if not scenario then
+    scenario = 'standard'
+  end
+  if name:lower() == "conditions" then
+    name = "condition"
+  end
+  local cards = self:_getSchema().battlefield[scenario][name:lower()]
+  if not cards then
+    return {}
+  end
+  local result = {}
+  for _, entry in pairs(cards) do
+    table.insert(result, entry.name)
+  end
+  return result
+end
