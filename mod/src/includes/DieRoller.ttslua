@@ -5,7 +5,6 @@ function onLoadShared(_colorSide)
   dieRollerZone = getObjectFromGUID(dieRollerInfo.dieRollerZone[colorSide])
   mode = nil
   selectedMode = "attack"
-  dieCount = 0
   partialRoll = nil
   isRolling = false
   createEmptyDieValues()
@@ -218,57 +217,54 @@ end
 
 function spawnDie(dieColor,dieType)
   if selectedMode ~= mode then
-      clearDie()
-      selectedMode = mode
+    clearDie()
+    selectedMode = mode
   end
 
   if dieObjs == nil then
-      dieObjs = {}
-  else
-      for i, obj in pairs(dieObjs) do
-          dieCount = i
-          if obj == nil then
-              dieCount = i - 1
-              break
-          end
-      end
+    dieObjs = {}
   end
 
+  local dieCount = #dieObjs
+
   if dieCount < 25 then
-      dieCount = dieCount + 1
+    local rot = self.getRotation()
+    local pos = self.getPosition()
 
-      local rot = self.getRotation()
-      local pos = self.getPosition()
+    local c = dieRollerInfo.diePos[dieCount + 1].c
+    local q = dieRollerInfo.diePos[dieCount + 1].q
 
-      local c = dieRollerInfo.diePos[dieCount].c
-      local q = dieRollerInfo.diePos[dieCount].q
+    local a = c * math.cos(math.rad(q + rot.y))
+    local b = c * math.sin(math.rad(q + rot.y))
 
-      local a = c * math.cos(math.rad(q + rot.y))
-      local b = c * math.sin(math.rad(q + rot.y))
+    pos.x = pos.x + a
+    pos.z = pos.z - b
+    pos.y = 3
 
-      pos.x = pos.x + a
-      pos.z = pos.z - b
-      pos.y = 3
+    local dieBag = getObjectFromGUID(Global.getVar(dieColor .. dieType .."BagGUID"))
 
-      local dieBag = getObjectFromGUID(Global.getVar(dieColor .. dieType .."BagGUID"))
+    local diceRot
+    if mode == "attack" then
+        diceRot = {326.26, 1.20, 89.99}
+    else
+        diceRot = {270.00, 358.92, 0.00}
+    end
 
-      if mode == "attack" then
-          diceRot = {326.26, 1.20, 89.99}
-      else
-          diceRot = {270.00, 358.92, 0.00}
-      end
+    local newDice = dieBag.takeObject({
+      rotation = diceRot
+    })
+    newDice.setPosition(pos)
+    newDice.setLuaScript(
+        "function onDestroy() " ..
+        "  dieRollerInfo = Global.getTable('dieRollerInfo')\n" ..
+        "  dieRoller = getObjectFromGUID(dieRollerInfo."..colorSide.."DieRollerGUID)\n" ..
+        "  dieRoller.call('updateDieCountDisplay', {guid = self.getGUID()})\n" ..
+        "end")
+    newDice.setVar("dieColor", dieColor)
+    newDice.setVar("dieType", mode)
+    table.insert(dieObjs, newDice)
 
-      dieObjs[dieCount] = dieBag.takeObject({
-          position = pos,
-          rotation = diceRot
-      })
-
-      dieObjs[dieCount].setPosition(pos)
-      dieObjs[dieCount].setLuaScript("function onDestroy() dieRollerInfo = Global.getTable('dieRollerInfo') dieRoller = getObjectFromGUID(dieRollerInfo."..colorSide.."DieRollerGUID) dieRoller.call('updateDieCountDisplay') end")
-      dieObjs[dieCount].setVar("dieColor", dieColor)
-      dieObjs[dieCount].setVar("dieType", mode)
-
-      updateDieCountDisplay()
+    Wait.frames(updateDieCountDisplay)
   end
 end
 
@@ -279,8 +275,7 @@ function clearDie()
               destroyObject(obj)
           end
       end
-      dieObjs = nil
-      dieCount = 0
+      dieObjs = {}
   end
 
   local zoneObjs = dieRollerZone.getObjects()
@@ -292,21 +287,29 @@ function clearDie()
   end
 end
 
-function updateDieCountDisplay()
-  dieColorCount = {}
-  dieColorCount.white = 0
-  dieColorCount.black = 0
-  dieColorCount.red = 0
-
-  if dieObjs  then
-      for i, obj in pairs(dieObjs) do
-          if obj then
-              local selectedColor = obj.getVar("dieColor")
-              dieColorCount[selectedColor] = dieColorCount[selectedColor] + 1
-          end
-      end
+function updateDieCountDisplay(params)
+  local toDelete
+  if params then
+    toDelete = params.guid
   end
+  dieColorCount = {
+    white = 0,
+    black = 0,
+    red   = 0,
+  }
 
+  if dieObjs then
+    local clone = {unpack(dieObjs)} 
+    dieObjs = {}
+  
+    for _, obj in ipairs(clone) do
+      if obj and obj.getGUID() ~= toDelete then
+        local selectedColor = obj.getVar("dieColor")
+        dieColorCount[selectedColor] = dieColorCount[selectedColor] + 1
+        table.insert(dieObjs, obj)
+      end
+    end
+  end
 
   if mode == "attack" then
       clearButtonDisplay(dieRollerInfo.buttonInfo[colorSide.."Player"].whiteDefenseButtonGUID,"white")
