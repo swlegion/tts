@@ -3,7 +3,6 @@ require('!/Deck')
 function onload(save_state)
     self.interactable = false
     listBuilder = Global.getTable("listBuilder")
-    setUpCards = Global.getTable("setUpCards")
     _G.Deck = Deck:create()
 
     battlefieldEntry = {}
@@ -31,10 +30,26 @@ function onload(save_state)
     resetCommandCards()
 
     -- Default selections. Can be changed by the user!
-    battlefieldCardSelection = {}
-    battlefieldCardSelection.objective = {"Key Positions", "Breakthrough", "Intercept the Transmissions", "Recover the Supplies"}
-    battlefieldCardSelection.deployment = {"Battle Lines", "The Long March", "Disarray", "Major Offensive"}
-    battlefieldCardSelection.conditions = {"Clear Conditions", "Limited Visibility", "Rapid Reinforcements", "Hostile Environment"}
+    battlefieldCardSelection = {
+      objective = {
+        "Key Positions",
+        "Breakthrough",
+        "Intercept The Transmissions",
+        "Recover The Supplies",
+      },
+      deployment = {
+        "Battle Lines",
+        "The Long March",
+        "Disarray",
+        "Major Offensive",
+      },
+      conditions = {
+        "Clear Conditions",
+        "Limited Visibility",
+        "Rapid Reinforcements",
+        "Hostile Environment",
+      },
+    }
 
     resetButtons()
 end
@@ -222,31 +237,32 @@ function conditionsSubMenu()
 end
 
 function battlefieldCardSubMenu(selectedType)
-    nilChoices()
+  nilChoices()
 
-    j = 1
-    for i, entry in pairs(setUpCards[selectedType]) do
-        _G["choiceSubMenu"..i] = function() toggleBattlefieldCard(selectedType, entry.name) end
+  j = 1
+  for i, entry in ipairs(Deck:getBattleCardNamesByType(selectedType)) do
+    _G["choiceSubMenu"..i] = function() 
+      toggleBattlefieldCard(selectedType, entry)
+    end
+    acolor = {0.1764,0.1764,0.1764,0.01}
+    afontColor = {0,0,0,100}
+
+    for _, entryChoice in ipairs(battlefieldCardSelection[selectedType]) do
+      if entryChoice:lower() == entry:lower() then
+        acolor = {0,1,1,0.5}
+        afontColor = {0,0,0,2}
+        break
+      else
         acolor = {0.1764,0.1764,0.1764,0.01}
         afontColor = {0,0,0,100}
-
-        for n, entryChoice in pairs (battlefieldCardSelection[selectedType]) do
-            if entryChoice ==  entry.name then
-                acolor = {0,1,1,0.5}
-                afontColor = {0,0,0,2}
-                break
-            else
-                acolor = {0.1764,0.1764,0.1764,0.01}
-                afontColor = {0,0,0,100}
-            end
-        end
-
-
-        setChoiceAttributes(j, entry.name, "choiceSubMenu"..i, acolor, afontColor)
-        j = j + 1
+      end
     end
 
-    updateButtons()
+    setChoiceAttributes(j, entry, "choiceSubMenu"..i, acolor, afontColor)
+    j = j + 1
+  end
+
+  updateButtons()
 end
 
 function setChoiceAttributes(numberSelect, entryName, clickFunction, color, fontColor)
