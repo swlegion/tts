@@ -46,8 +46,11 @@
 
           (Since last <i>Beta</i>)
 
-          - Fix: Objective and condition tokens now use the same range-1 hookups.
-          - Updated deployment projectors to use the same colors as range projectors.
+          - Fix: Various die roller bugs around spawning and deleting dice.
+          - Fix: Battlefield deck builder (in game) works again.
+          - Fix: Various cards (Jyn's blaster, Phase I Clones, Fives, Shield Wookiee).
+          - Fix: Gideon and Del Meeko are now selectable for Imperial Corps.
+          - Fix: Evasive Manuevers no longer spawns "Double The Fall" (I wish tho).
 
           (Since last <i>Stable</i>)
 
@@ -64,6 +67,7 @@
           - Range rulers are now displayed with color-coded projectors + work with elevation.
           - Move actions now show a "maximum" move-circle based on selected move speed.
           - Cohesion circles are also now projectors!
+          - Deployment projectors have been updated with more intense colors.
 
           - Exporting a unit from a list builder with <i>loadout</i> works correctly.
           - Updated the models for the T-47 airspeeder, and Droideka.
