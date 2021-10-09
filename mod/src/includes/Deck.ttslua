@@ -406,7 +406,7 @@ function Deck:_isUpgradeValidFor(upgrade, unit)
           end
         end
 
-        if nonUnitChecks > 0 then
+        if nonUnitChecks > 0 and not restrictions.include.rank then
           return false
         end
       end
