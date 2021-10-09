@@ -965,7 +965,7 @@
             },
             {
               "name": "Evasive Maneuvers",
-              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035517/E8A15E29EA9390DE382A583AE416BC4DDDDA6A90/",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035477/69CEA53CB3D4B9ADDD22B28CA9BC9DDBADB3C706/",
               "pip": 2
             },
             {
@@ -2979,6 +2979,16 @@
         }
       },
       {
+        "name": "Jyn's SE-14 Blaster",
+        "image": "http://cloud-3.steamusercontent.com/ugc/4112341331066557077/E3E2DE71CD4C1BEB7C071189AEFEFC5EEC75A6F3/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Jyn Erso", "K-2SO"]
+          }
+        }
+      },
+      {
         "name": "Looted E-5 Blaster",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143554/AAE0C21ACF5E130BCCD15B21BDC1027613DC26BA/",
         "points": 5,
@@ -4123,7 +4133,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141128/F31F92F3977318E41C58131438E623171638DA41/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457802221/506D704E232C1BFD85F063A24EBF24C5914C2C40/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1618438238123043414/B7E9660E470DC070545782406C29F1E1356A5685/"
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
         },
         "leader": true,
         "points": 36,
@@ -4711,8 +4721,8 @@
         "name": "Phase I Clone Captain",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144246/21A589A6190BEF9C3355828DBE7769D925852B23/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785018348/F0B0C50757F4043A6C9B8746A73F8EC4342CA7DA/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764785012711/4DF65424F7D5400F0DC8A4DE7A028B373143CE6E/"
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785646423/F890985F1B31042E0BC10996930089A3A22BE5C5/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764785647603/8F9ADBD1429C1AF247858C877548E15E5996F4A9/"
         },
         "leader": true,
         "points": 14,
