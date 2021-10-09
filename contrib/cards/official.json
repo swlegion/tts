@@ -2979,6 +2979,16 @@
         }
       },
       {
+        "name": "Jyn's SE-14 Blaster",
+        "image": "http://cloud-3.steamusercontent.com/ugc/4112341331066557077/E3E2DE71CD4C1BEB7C071189AEFEFC5EEC75A6F3/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Jyn Erso", "K-2SO"]
+          }
+        }
+      },
+      {
         "name": "Looted E-5 Blaster",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143554/AAE0C21ACF5E130BCCD15B21BDC1027613DC26BA/",
         "points": 5,
