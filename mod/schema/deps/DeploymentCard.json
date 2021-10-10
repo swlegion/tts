@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://schema.swlegion.dev/deps/DeploymentCard.json",
+
+  "title": "Deployment Battle Card",
+  "description": "Definition of a deployment battle card.",
+
+  "definitions": {
+    "Zone": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "enum": ["r", "b", " "]
+        }
+      }
+    }
+  },
+
+  "additionalProperties": false,
+
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "image": {
+      "$ref": "./Image.json"
+    },
+
+    "type": {
+      "enum": ["horizontal", "vertical"]
+    },
+
+    "zone": {
+      "$ref": "#/definitions/Zone"
+    }
+  },
+
+  "type": "object",
+
+  "required": ["name", "image", "type", "zone"]
+}

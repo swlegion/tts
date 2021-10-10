@@ -15,9 +15,14 @@
 
     "image": {
       "$ref": "./Image.json"
+    },
+
+    "type": {
+      "enum": ["horizontal", "vertical"]
     }
   },
 
   "type": "object",
-  "required": ["name", "image"]
+
+  "required": ["name", "image", "type"]
 }
