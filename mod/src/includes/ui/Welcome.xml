@@ -36,7 +36,7 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v6.0.0-beta</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v7.0.0-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
           
@@ -46,37 +46,11 @@
 
           (Since last <i>Beta</i>)
 
-          - Fix: Various die roller bugs around spawning and deleting dice.
-          - Fix: Battlefield deck builder (in game) works again.
-          - Fix: Various cards (Jyn's blaster, Phase I Clones, Fives, Shield Wookiee).
-          - Fix: Gideon and Del Meeko are now selectable for Imperial Corps.
-          - Fix: Evasive Manuevers no longer spawns "Double The Fall" (I wish tho).
+          -
 
           (Since last <i>Stable</i>)
 
-          - Changed the battlefield selection deck to pick 4 (instead of 3) for upcoming RRG.
-
-          - Added experimental homebrew support. See https://go.swlegion.dev/homebrew.
-
-          - Added Yoda, Wookiee Chieftain, GAR Chewbacca, Ranged Wookiees.
-          - Added Battle Shield Wookiee, Long Gun Wookiee.
-          - Added Infantry Support Platform, Fluttercraft.
-          - Added Super Tactical Droid(s).
-          - Added DSD1 Dwarf Spider Droid, IG-100 MagnaGuard, Snail Tank.
-
-          - Range rulers are now displayed with color-coded projectors + work with elevation.
-          - Move actions now show a "maximum" move-circle based on selected move speed.
-          - Cohesion circles are also now projectors!
-          - Deployment projectors have been updated with more intense colors.
-
-          - Exporting a unit from a list builder with <i>loadout</i> works correctly.
-          - Updated the models for the T-47 airspeeder, and Droideka.
-          - Replaced all cards across the mod. They should look better now/more consistent.
-
-          - Deleted the unused middle (black) clock.
-          - Chess clocks are now hidden by default. Click "Chess Clocks" to show (and use).
-          - Chess clocks (and the UI) are now persisted across saves/loads.
-          - ID tokens are now also tinted as part of the "auto tint" functionality.
+          - Deployment cards now specify deployment zones programatically.
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
