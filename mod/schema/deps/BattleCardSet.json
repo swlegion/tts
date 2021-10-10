@@ -5,21 +5,37 @@
   "title": "A collection of Battle Cards.",
   "description": "A set of battle cards, by type and scenario.",
 
+  "type": "object",
   "additionalProperties": {
     "type": "object",
-    "propertyNames": {
-      "enum": ["Objective", "Deployment", "Condition"]
-    },
-    "additionalProperties": {
-      "type": "array",
-      "items": {
-        "$ref": "./BattleCard.json"
+    "additionalProperties": false,
+
+    "properties": {
+      "objective": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "$ref": "./BattleCard.json"
+        }
+      },
+      "deployment": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "$ref": "./DeploymentCard.json"
+        }
+      },
+      "condition": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "$ref": "./BattleCard.json"
+        }
       }
     }
   },
 
-  "type": "object",
   "propertyNames": {
-    "enum": ["Skirmish", "Standard", "Scenario"]
+    "enum": ["skirmish", "standard", "scenario", "community"]
   }
 }

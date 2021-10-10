@@ -7,7 +7,6 @@ function onload(save_state)
     -- intialize
     setUpCards = Global.getTable("setUpCards")
     setUpData = Global.getTable("setUpData")
-    deploymentCartridge = getObjectFromGUID(setUpData.deploymentCartridgeGUID)
     conditionsCartridge = getObjectFromGUID(setUpData.conditionsCartridgeGUID)
     objectiveCartridge = getObjectFromGUID(setUpData.objectiveCartridgeGUID)
     battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
@@ -162,11 +161,6 @@ function spawnObjsFromCartridge(cartridgeObj)
               smooth         = false
           })
       end
-      
-      local deploymentZone = cartridgeObj.getTable("deploymentZone")
-      if deploymentZone then
-          spawnDeploymentBoundary(deploymentZone)
-      end
 
       destroyObject(cartridgeObj)
     end)
@@ -311,7 +305,10 @@ end
 
 function activatedeployment(name)
     clearDeploymentBoundary()
-    spawnObjs(name, deploymentCartridge)
+    local zone = Deck:getDeploymentBoundary(name)
+    if zone and #zone > 0 then
+      spawnDeploymentBoundary(zone)
+    end
     deactivateDeploymentMenu()
 end
 

@@ -532,3 +532,20 @@ function Deck:getBattleCardNamesByType(name, scenario)
   end
   return result
 end
+
+function Deck:getDeploymentBoundary(name, scenario)
+  if not scenario then
+    scenario = 'standard'
+  end
+  local scenario = self:_getSchema().battlefield[scenario]
+  if not scenario then
+    print("Could not find cards for scenario: " .. scenario)
+    return {}
+  end
+  local deployment = scenario.deployment[name:upper()]
+  if not deployment then
+    print("Could not find cards for deployment: " .. name)
+    return {}
+  end
+  return deployment.zone or {}
+end
