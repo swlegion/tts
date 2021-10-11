@@ -51,6 +51,7 @@
           (Since last <i>Stable</i>)
 
           - Deployment cards now specify deployment zones programatically.
+          - Added limited support for Skirmish battlefield decks.
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
