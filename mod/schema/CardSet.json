@@ -26,10 +26,9 @@
     },
 
     "objects": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "$ref": "./GenericObject.json"
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "./deps/GenericObject.json"
       }
     }
   },

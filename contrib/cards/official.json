@@ -5738,5 +5738,25 @@
     },
     "scenario": {},
     "community": {}
+  },
+  "objects": {
+    "Aim Token": {
+      "model": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442508/5CF014A3E962C6116B3B910C8BE44FE1C8FCA1D2/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314442626/A2574B5726D1DE612FF4F2464A2315C7C85759D1/"
+      }
+    },
+    "Dodge Token": {
+      "model": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442740/91C08C293B53CCF3D104B0472B60ECF7BF4B613E/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314442875/553BAF41BE032BCE7282C4DECB180B5410AC7226/"
+      }
+    },
+    "Suppression Token": {
+      "model": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314443213/E353EC3098CC94615DE0BA5CEF4CE8B298CF7777/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314443321/002CBBCACEB0F7497BEA744B8D7B17736A5FF65E/"
+      }
+    }
   }
 }

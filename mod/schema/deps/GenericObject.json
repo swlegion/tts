@@ -10,11 +10,6 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "name": {
-          "type": "string",
-          "minLength": 1
-        },
-
         "image": {
           "$ref": "./Image.json"
         },
@@ -23,7 +18,7 @@
           "$ref": "./Image.json"
         }
       },
-      "required": ["name", "image"]
+      "required": ["image"]
     },
 
     "Deck": {
@@ -60,17 +55,12 @@
       "additionalProperties": false,
 
       "properties": {
-        "name": {
-          "type": "string",
-          "minLength": 1
-        },
-
         "mini": {
           "$ref": "./Mini.json"
         }
       },
 
-      "required": ["name", "model"]
+      "required": ["mini"]
     },
 
     "Token": {
@@ -88,7 +78,7 @@
         }
       },
 
-      "required": ["name", "model"]
+      "required": ["model"]
     }
   },
 
