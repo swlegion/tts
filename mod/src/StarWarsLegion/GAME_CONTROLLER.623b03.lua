@@ -186,6 +186,10 @@ function clearPlayerZones()
 end
 
 function defineBattlefieldMenu(selectedDeck)
+    if #selectedDeck.getObjects() < 12 then
+      broadcastToAll("At least 12 cards are required to use battlefield vetoes. Move your choices manually to the right places!")
+      return
+    end
     ga_view("game_controller/define_battlefield")
     clearAllButtons()
     changeBackButton("reset", "Go back to Main Menu")
@@ -386,9 +390,11 @@ function createMatrixFromDeck(battleDeckInserted)
   })
   battleDeckClone.shuffle()
   local battleDeckTable = battleDeckClone.getObjects()
+  local battleDeckScenario = battleDeckInserted.getVar("selectedScenario")
+  print(battleDeckScenario)
 
   -- for each card
-
+  
   local cardMatrixSelected = {
     deployment = {},
     objective  = {},
@@ -400,7 +406,7 @@ function createMatrixFromDeck(battleDeckInserted)
       position     = {i*1, -10, 0},
     })
     local name = object.getName()
-    local type = Deck:getBattleCardType(name)
+    local type = Deck:getBattleCardType(name, battleDeckScenario)
     -- TODO: Rename conditions -> condition
     if type == "condition" then
       type = "conditions"

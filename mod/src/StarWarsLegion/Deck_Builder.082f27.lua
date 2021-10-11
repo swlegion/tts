@@ -335,11 +335,56 @@ function switchBattleDeck(params)
     return
   end
   _G.selectedScenario = params.name
-  battlefieldCardSelection = {
-    objective  = {},
-    deployment = {},
-    conditions = {},
-  }
+  -- TODO: Make configurable as defaults.
+  if params.name:lower() == 'standard' then
+    battlefieldCardSelection = {
+      objective = {
+        "Key Positions",
+        "Breakthrough",
+        "Intercept The Transmissions",
+        "Recover The Supplies",
+      },
+      deployment = {
+        "Battle Lines",
+        "The Long March",
+        "Disarray",
+        "Major Offensive",
+      },
+      conditions = {
+        "Clear Conditions",
+        "Limited Visibility",
+        "Rapid Reinforcements",
+        "Hostile Environment",
+      },
+    }
+  elseif params.name:lower() == 'skirmish' then
+    battlefieldCardSelection = {
+      objective  = {
+        "Breach",
+        "Control",
+        "Elimination",
+        "Pivotal Positions",
+      },
+      deployment = {
+        "Battle Lines",
+        "Faceoff",
+        "Flanking Positions",
+        "Meeting Engagement",
+      },
+      conditions = {
+        "War Weary",
+        "Improvised Defenses",
+        "Dawn",
+        "Clear Conditions",
+      },
+    }
+  else
+    battlefieldCardSelection = {
+      objective  = {},
+      deployment = {},
+      conditions = {},
+    }
+  end
   resetButtons()
   updateButtons()
 end
