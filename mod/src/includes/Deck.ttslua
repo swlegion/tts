@@ -541,18 +541,18 @@ function Deck:getBattleCardNamesByType(name, scenario)
   return result
 end
 
-function Deck:getDeploymentBoundary(name, scenario)
+function Deck:getDeploymentBoundary(name, scenario_name)
   if not scenario then
-    scenario = 'standard'
+    scenario_name = 'standard'
   end
-  local scenario = self:_getSchema().battlefield[scenario]
+  local scenario = self:_getSchema().battlefield[scenario_name]
   if not scenario then
-    print("Could not find cards for scenario: " .. scenario)
+    print("Could not find cards for scenario: " .. scenario_name)
     return {}
   end
   local deployment = scenario.deployment[name:upper()]
   if not deployment then
-    print("Could not find cards for deployment: " .. name)
+    print("Could not find cards for deployment: " .. name .. " (" .. scenario_name .. ")")
     return {}
   end
   return deployment.zone or {}
@@ -560,8 +560,14 @@ end
 
 function Deck:getBattleCardScenarios()
   local result = {}
-  for name, _ in pairs(self._getSchema().battlefield) do
-    table.insert(result, name)
+  for name, deck in pairs(self._getSchema().battlefield) do
+    local hasCards = 0
+    for _, cards in pairs(deck) do
+      if #cards then hasCards = hasCards + 1 end
+    end
+    if hasCards == 3 then
+      table.insert(result, name)
+    end
   end
   return result
 end

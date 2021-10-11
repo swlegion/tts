@@ -35,6 +35,37 @@ function onload(save_state)
     objectiveMenu()
     deploymentMenu()
     conditionsMenu()
+    drawInput()
+end
+
+function drawInput()
+  self.createInput({
+    input_function = "scenarioChanged",
+    function_owner = self,
+    label          = "Scenario",
+    alignment      = 3,
+    position       = {x = -3.0, y = 0.2, z = 0},
+    rotation       = {x = 0, y = 180, z = 0},
+    width          = 2000,
+    height         = 350,
+    font_size      = 323,
+    validation     = 4,
+    value          = "standard",
+    tooltip        = "Battlefield Deck Type",
+  })
+end
+
+function scenarioChanged(_, _, input, editing)
+  if not editing then
+    _G.selectedScenario = input
+  end
+end
+
+function changeScenario(newScenario)
+  _G.selectedScenario = newScenario
+  self.editInput(0, {
+    value = newScenario,
+  })
 end
 
 function getTokenScripts()
@@ -74,28 +105,33 @@ function conditionsMenu()
 end
 
 function checkCardCall(cardTable)
-    checkCard(cardTable[1])
+  return checkCard(cardTable[1], _G.selectedScenario)
 end
 
-function checkCard(cardType)
+function checkCard(cardType, battleDeckScenario)
   setUpCardData = nil
   zoneObj = nil
   zoneObj = getObjectFromZone(cardType)
 
   if zoneObj then
     local name = zoneObj.getName()
-    local type = Deck:getBattleCardType(name)
+    local type = Deck:getBattleCardType(name, battleDeckScenario)
+    -- TODO: Clean up once there is a better mechanism for these types of cards.
+    if not type then
+      return false
+    end
     if type == "condition" then
       type = "conditions"
     end
     if type:upper() == cardType:upper() then
-      self.call("activate"..type, name)
+      self.call("activate"..type, {name, battleDeckScenario})
     else
       self.call("wrong".. type)
     end
   else
     self.call("no".. cardType)
   end
+  return true
 end
 
 function getObjectFromZone(selectedZone)
@@ -263,7 +299,12 @@ function clearDeploymentBoundary()
     end
 end
 
-function activateobjective(name)
+function activateobjective(params)
+  local name = params[0]
+  local deck = params[1]
+  if deck ~= nil and deck ~= "standard" then
+    return
+  end
   spawnObjs(name, objectiveCartridge)
   objectiveMenu()
 end
@@ -303,9 +344,11 @@ function noDeploymentMenu()
     resetTimer("deployment")
 end
 
-function activatedeployment(name)
+function activatedeployment(params)
+    local name = params[0]
+    local deck = params[1]
     clearDeploymentBoundary()
-    local zone = Deck:getDeploymentBoundary(name)
+    local zone = Deck:getDeploymentBoundary(name, deck)
     if zone and #zone > 0 then
       spawnDeploymentBoundary(zone)
     end
@@ -317,7 +360,12 @@ function deactivateDeploymentMenu()
     createOptionButton("deployment", "deploymentMenu", "Remove Overlay", "Remove Deployment Overlay", {0.7,0,0})
 end
 
-function activateconditions(name)
+function activateconditions(params)
+  local name = params[0]
+  local deck = params[1]
+  if deck ~= nil and deck ~= "standard" then
+    return
+  end
   spawnObjs(name, conditionsCartridge)
   objectiveMenu()
 end
