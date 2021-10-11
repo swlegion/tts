@@ -518,6 +518,7 @@ function spawnArmy(loadListData, skipDiskVersionCheck)
       drawBattlefieldCard(loadListData, "objective", scenario)
       drawBattlefieldCard(loadListData, "deployment", scenario)
       drawBattlefieldCard(loadListData, "conditions", scenario)
+      Global.setVar(colorSide .. "SelectedScenario", scenario)
 
       offsetUnitSpawnCount = 0
 
@@ -937,5 +938,4 @@ function drawBattlefieldCard(data, cardType, battleDeckScenario)
     deckRot.z = 180
     card.setRotation(deckRot)
   end
-  _G.dataDiskMount.setVar("selectedScenario", battleDeckScenario)
 end

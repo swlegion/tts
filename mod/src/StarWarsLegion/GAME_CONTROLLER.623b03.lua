@@ -383,7 +383,7 @@ function setBattleCardPos()
     end
 end
 
-function createMatrixFromDeck(battleDeckInserted)
+function createMatrixFromDeck(battleDeckInserted, battleDeckScenario)
   -- CLONE DECK
   local battleDeckClone = battleDeckInserted.clone({
       position     = {0,-10,0},
@@ -392,7 +392,6 @@ function createMatrixFromDeck(battleDeckInserted)
   })
   battleDeckClone.shuffle()
   local battleDeckTable = battleDeckClone.getObjects()
-  local battleDeckScenario = battleDeckInserted.getVar("selectedScenario")
 
   -- for each card
   
