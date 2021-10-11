@@ -6,9 +6,16 @@ function Deck:create()
     _backs = {
       command     = "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
       contignency = "http://cloud-3.steamusercontent.com/ugc/1753560235958347056/F845CB170FEF761DC7025AA3EEAE731F018C0E73/",
-      objective   = "http://cloud-3.steamusercontent.com/ugc/786360308354563159/BDB495B60FFED8707BD013502C2F03D3F047B63E/",
-      condition   = "http://cloud-3.steamusercontent.com/ugc/786360308354563381/FF7DF081311A20CC396CAC9391D85EB1FBCA44E1/",
-      deployment  = "http://cloud-3.steamusercontent.com/ugc/786360308354562872/AF68672CC3B5A0A27A37FA0C02FD87F2210FAB86/",
+      horizontal  = {
+        objective   = "http://cloud-3.steamusercontent.com/ugc/786360308354563159/BDB495B60FFED8707BD013502C2F03D3F047B63E/",
+        condition   = "http://cloud-3.steamusercontent.com/ugc/786360308354563381/FF7DF081311A20CC396CAC9391D85EB1FBCA44E1/",
+        deployment  = "http://cloud-3.steamusercontent.com/ugc/786360308354562872/AF68672CC3B5A0A27A37FA0C02FD87F2210FAB86/",
+      },
+      vertical    = {
+        objective   = "http://cloud-3.steamusercontent.com/ugc/4112341331071278905/7391A9D8F237C6D5361EE068AB9083F51FAEE83E/",
+        condition   = "http://cloud-3.steamusercontent.com/ugc/4112341331071279002/608E86CFE4BAF5BA63E5AAE86ECBA1526E6EB26C/",
+        deployment  = "http://cloud-3.steamusercontent.com/ugc/4112341331071278944/D0E9A51135A2AEEF1CB100554DA46B0704ECCB28/",
+      },
     },
     _unknown = {
       command     = "http://cloud-3.steamusercontent.com/ugc/1683770885590601027/47E5B7470CAAC79372CB5C607AEF29DF195EB7CE/",
@@ -242,7 +249,8 @@ function Deck:spawnBattleCard(category, name, scenario)
     if image == "" then
       image = self._unknown.unit
     end
-    local card = self:_spawnCard(image, self._backs[category:lower()])
+    local type = details.type
+    local card = self:_spawnCard(image, self._backs[type:lower()][category:lower()])
     if image == "" then
       card.setDescription("No image specified! Using fallback.")
     end
@@ -533,19 +541,33 @@ function Deck:getBattleCardNamesByType(name, scenario)
   return result
 end
 
-function Deck:getDeploymentBoundary(name, scenario)
-  if not scenario then
-    scenario = 'standard'
+function Deck:getDeploymentBoundary(name, scenario_name)
+  if not scenario_name then
+    scenario_name = 'standard'
   end
-  local scenario = self:_getSchema().battlefield[scenario]
+  local scenario = self:_getSchema().battlefield[scenario_name]
   if not scenario then
-    print("Could not find cards for scenario: " .. scenario)
+    print("Could not find cards for scenario: " .. scenario_name)
     return {}
   end
   local deployment = scenario.deployment[name:upper()]
   if not deployment then
-    print("Could not find cards for deployment: " .. name)
+    print("Could not find cards for deployment: " .. name .. " (" .. scenario_name .. ")")
     return {}
   end
   return deployment.zone or {}
+end
+
+function Deck:getBattleCardScenarios()
+  local result = {}
+  for name, deck in pairs(self._getSchema().battlefield) do
+    local hasCards = 0
+    for _, cards in pairs(deck) do
+      if #cards then hasCards = hasCards + 1 end
+    end
+    if hasCards == 3 then
+      table.insert(result, name)
+    end
+  end
+  return result
 end

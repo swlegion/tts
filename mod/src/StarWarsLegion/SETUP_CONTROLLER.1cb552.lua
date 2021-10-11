@@ -35,6 +35,38 @@ function onload(save_state)
     objectiveMenu()
     deploymentMenu()
     conditionsMenu()
+
+    _G.selectedScenario = "standard"
+    drawInput()
+end
+
+function drawInput()
+  self.clearInputs()
+  self.createInput({
+    input_function = "scenarioChanged",
+    function_owner = self,
+    label          = "Scenario",
+    alignment      = 3,
+    position       = {x = -3.0, y = 0.2, z = 0},
+    rotation       = {x = 0, y = 180, z = 0},
+    width          = 2000,
+    height         = 350,
+    font_size      = 323,
+    validation     = 4,
+    value          = _G.selectedScenario,
+    tooltip        = "Battlefield Deck Type",
+  })
+end
+
+function scenarioChanged(_, _, input, editing)
+  if input and not editing then
+    _G.selectedScenario = input
+  end
+end
+
+function changeScenario(params)
+  _G.selectedScenario = params[1]
+  drawInput()
 end
 
 function getTokenScripts()
@@ -74,17 +106,22 @@ function conditionsMenu()
 end
 
 function checkCardCall(cardTable)
-    checkCard(cardTable[1])
+  return checkCard(cardTable[1])
 end
 
 function checkCard(cardType)
+  local battleDeckScenario = _G.selectedScenario
   setUpCardData = nil
   zoneObj = nil
   zoneObj = getObjectFromZone(cardType)
 
   if zoneObj then
     local name = zoneObj.getName()
-    local type = Deck:getBattleCardType(name)
+    local type = Deck:getBattleCardType(name, battleDeckScenario)
+    -- TODO: Clean up once there is a better mechanism for these types of cards.
+    if not type then
+      return false
+    end
     if type == "condition" then
       type = "conditions"
     end
@@ -96,6 +133,7 @@ function checkCard(cardType)
   else
     self.call("no".. cardType)
   end
+  return true
 end
 
 function getObjectFromZone(selectedZone)
@@ -305,7 +343,7 @@ end
 
 function activatedeployment(name)
     clearDeploymentBoundary()
-    local zone = Deck:getDeploymentBoundary(name)
+    local zone = Deck:getDeploymentBoundary(name, _G.selectedScenario)
     if zone and #zone > 0 then
       spawnDeploymentBoundary(zone)
     end

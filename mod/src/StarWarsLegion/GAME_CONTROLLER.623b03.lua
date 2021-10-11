@@ -185,14 +185,21 @@ function clearPlayerZones()
     end
 end
 
-function defineBattlefieldMenu(selectedDeck)
+function defineBattlefieldMenu(params)
+    local selectedDeck = params.deck
+    local selectedScenario = params.scenario
+    if #selectedDeck.getObjects() < 12 then
+      broadcastToAll("At least 12 cards are required to use battlefield vetoes. Move your choices manually to the right places!")
+      return
+    end
+    _G.selectedScenario = selectedScenario
     ga_view("game_controller/define_battlefield")
     clearAllButtons()
     changeBackButton("reset", "Go back to Main Menu")
     local menuEntries = {}
     menuEntries[1] = {functionName = "finishDefineBattlefieldMenu", label = "NEXT", tooltip = "NEXT", buttonTint = {0,0.913,1}}
     createMenu(menuEntries, 1)
-    revealBattleCards(selectedDeck)
+    revealBattleCards(selectedDeck, selectedScenario)
     printToScreen("DEFINE BATTLEFIELD\nStarting with Blue player, players eliminate left most card.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", 60, 2)
 end
 
@@ -377,7 +384,7 @@ function setBattleCardPos()
     end
 end
 
-function createMatrixFromDeck(battleDeckInserted)
+function createMatrixFromDeck(battleDeckInserted, battleDeckScenario)
   -- CLONE DECK
   local battleDeckClone = battleDeckInserted.clone({
       position     = {0,-10,0},
@@ -388,7 +395,7 @@ function createMatrixFromDeck(battleDeckInserted)
   local battleDeckTable = battleDeckClone.getObjects()
 
   -- for each card
-
+  
   local cardMatrixSelected = {
     deployment = {},
     objective  = {},
@@ -400,7 +407,7 @@ function createMatrixFromDeck(battleDeckInserted)
       position     = {i*1, -10, 0},
     })
     local name = object.getName()
-    local type = Deck:getBattleCardType(name)
+    local type = Deck:getBattleCardType(name, battleDeckScenario)
     -- TODO: Rename conditions -> condition
     if type == "condition" then
       type = "conditions"
@@ -417,7 +424,7 @@ function createMatrixFromDeck(battleDeckInserted)
           cardMatrixSelected.conditions
 end
 
-function revealBattleCards(insertedDeck)
+function revealBattleCards(insertedDeck, battleDeckScenario)
     clearSetUpCards("all")
     setUp5Data = {
       objectiveCards  = objectiveCards,
@@ -430,7 +437,7 @@ function revealBattleCards(insertedDeck)
         setUp5Data.spawnedCards.deployment = spawnSetupCards("deployment")
         setUp5Data.spawnedCards.conditions = spawnSetupCards("conditions")
     else
-        objectiveCardMatrix, deploymentCardMatrix, conditionsCardMatrix = createMatrixFromDeck(insertedDeck)
+        objectiveCardMatrix, deploymentCardMatrix, conditionsCardMatrix = createMatrixFromDeck(insertedDeck, battleDeckScenario)
         setUp5Data.spawnedCards.objective = objectiveCardMatrix
         setUp5Data.spawnedCards.deployment = deploymentCardMatrix
         setUp5Data.spawnedCards.conditions = conditionsCardMatrix
@@ -514,6 +521,8 @@ function spawnObjectiveConditionsDelay()
 end
 
 function spawnObjectiveConditions()
+    local scenario = _G.selectedScenario
+    setUpController.call("changeScenario", {scenario})
     setUpController.call("checkCardCall", {"deployment"})
     setUpController.call("checkCardCall", {"objective"})
     setUpController.call("checkCardCall", {"conditions"})

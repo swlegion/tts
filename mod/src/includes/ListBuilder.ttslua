@@ -65,9 +65,9 @@ function chooseArmy()
       listBuilderButtons[i],
       function()
         ga_view("Game", "createArmy", name)
-        createArmyMenu()
         Global.setVar(colorZone.."SelectedArmyFaction", faction)
         respawnZone()
+        Wait.frames(createArmyMenu)
       end,
       name,
       "Create a " .. name .. " army",
@@ -83,6 +83,28 @@ function createArmyMenu()
   createOptionButton(1, listBuilderOptions[1], listBuilderButtons[1], "finishArmy", "Spawn Minis", "Finished creating army", {1,0,0})
   createOptionButton(2, listBuilderOptions[2], listBuilderButtons[2], "saveArmy", "Save Army", "Save army to Data Disk", {0,0.913,1})
   createOptionButton(3, listBuilderOptions[3], listBuilderButtons[3], "respawnZone", "Reset Army", "Reset Army Creation", {0,0.913,1})
+
+  local scenario = deckBuilderObj.getVar("selectedScenario"):gsub("^%l", string.upper)
+  createOptionButton(4, listBuilderOptions[4], listBuilderButtons[4], "switchBattleDeck", scenario .. " Battle Deck", "Change Battlefield Deck", {0,0.913,1}, "→")
+end
+
+function switchBattleDeck()
+  local current   = deckBuilderObj.getVar("selectedScenario")
+  local scenarios = Deck:getBattleCardScenarios()
+  local index     = 0
+  for i, name in ipairs(scenarios) do
+    if name:lower() == current:lower() then
+      index = i
+      break
+    end
+  end
+  index = index + 1
+  if index > #scenarios then
+    index = 1
+  end
+  current = scenarios[index]
+  deckBuilderObj.call("switchBattleDeck", {name = current})
+  createArmyMenu()
 end
 
 function loadArmyMenu()
@@ -210,7 +232,7 @@ end
 
 function dud() end
 
-function createOptionButton(optionNumber, optionObj, optionButton, optionClickFunction, optionLabel, optionToolTip,tint)
+function createOptionButton(optionNumber, optionObj, optionButton, optionClickFunction, optionLabel, optionToolTip, tint, secondaryButtonText)
 
   _G[colorSide.."ListBuilderOptionFunction"..optionNumber] = function()
       local toPlay = optionButton
@@ -260,13 +282,13 @@ function createOptionButton(optionNumber, optionObj, optionButton, optionClickFu
   optionButton.createButton({
     click_function = colorSide.."ListBuilderOptionFunction"..optionNumber,
     function_owner = self,
-    label = "",
+    label = secondaryButtonText or "",
     position = {0, 0.65, 0},
     width = 1400,
     height = 1400,
     font_size = 1100,
     color = {1,1,1,0.01},
-    font_color = {1,1,1,100},
+    font_color = {0, 0, 0, 100},
     tooltip = optionToolTip,
     alignment = 3,
   })
@@ -445,9 +467,11 @@ function spawnTemplates()
   deckBuilderObj.setRotation(self.getRotation())
   deckBuilderObj.setLock(true)
   local deckBuilderScript = getObjectFromGUID(listBuilder.deckBuilderGUID).getLuaScript()
-  local factionScript = ("selectedFaction = '"..Global.getVar(colorZone.."SelectedArmyFaction").."'\n")
+  local factionScript = (
+    "selectedFaction  = \""..Global.getVar(colorZone.."SelectedArmyFaction").."\"\n" ..
+    "selectedScenario = \"standard\"\n"
+  )
   deckBuilderObj.setLuaScript(factionScript..deckBuilderScript)
-
 
   templateObjs = {}
   for i=1,20,1 do
@@ -490,9 +514,11 @@ function spawnArmy(loadListData, skipDiskVersionCheck)
 
       -- create battlefield deck
       deckHeight = 1
-      drawBattlefieldCard(loadListData, "objective")
-      drawBattlefieldCard(loadListData, "deployment")
-      drawBattlefieldCard(loadListData, "conditions")
+      local scenario = loadListData.battlefieldDeck.scenario or "standard"
+      drawBattlefieldCard(loadListData, "objective", scenario)
+      drawBattlefieldCard(loadListData, "deployment", scenario)
+      drawBattlefieldCard(loadListData, "conditions", scenario)
+      Global.setVar(colorSide .. "SelectedScenario", scenario)
 
       offsetUnitSpawnCount = 0
 
@@ -823,6 +849,8 @@ function getListData()
   if not templateObjs[1][1] then
     return nil
   end
+  local battleDeck = deckBuilderObj.getTable("battlefieldCardSelection")
+  battleDeck.scenario = deckBuilderObj.getVar("selectedScenario")
   local listData    = {
     author          = "SWLegion TTS Mod",
     points          = totalPoints,
@@ -830,7 +858,7 @@ function getListData()
     units           = {},
     commandCards    = deckBuilderObj.getTable("commandCardSelection"),
     contingencies   = deckBuilderObj.getTable("contingencyCardSelection"),
-    battlefieldDeck = deckBuilderObj.getTable("battlefieldCardSelection"),
+    battlefieldDeck = battleDeck,
   }
   for i=1,20,1 do
     local text = templateObjs[i][1].call("getListText")
@@ -898,16 +926,16 @@ function dealCommandCard(selectionCard, isContingency)
   card.setPosition(listBuilder.handPos[colorSide].pos)
 end
 
-function drawBattlefieldCard(data, cardType)
+function drawBattlefieldCard(data, cardType, battleDeckScenario)
   for _, entry in pairs(data.battlefieldDeck[cardType]) do
-      local card = Deck:spawnBattleCard(cardType, entry)
-      local deckMountPos = deckMount.getPosition()
-      deckMountPos.y = deckMountPos.y + 0.23 + (deckHeight * 0.1)
-      deckHeight = deckHeight + 1
-      card.setPosition(deckMountPos)
+    local card = Deck:spawnBattleCard(cardType, entry, battleDeckScenario)
+    local deckMountPos = deckMount.getPosition()
+    deckMountPos.y = deckMountPos.y + 0.23 + (deckHeight * 0.1)
+    deckHeight = deckHeight + 1
+    card.setPosition(deckMountPos)
 
-      local deckRot = deckMount.getRotation()
-      deckRot.z = 180
-      card.setRotation(deckRot)
+    local deckRot = deckMount.getRotation()
+    deckRot.z = 180
+    card.setRotation(deckRot)
   end
 end

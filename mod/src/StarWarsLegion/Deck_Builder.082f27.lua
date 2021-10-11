@@ -1,5 +1,8 @@
 require('!/Deck')
 
+-- Defined via setLuaScript:
+--   _G.selectedScenario
+
 function onload(save_state)
     self.interactable = false
     listBuilder = Global.getTable("listBuilder")
@@ -240,7 +243,7 @@ function battlefieldCardSubMenu(selectedType)
   nilChoices()
 
   j = 1
-  for i, entry in ipairs(Deck:getBattleCardNamesByType(selectedType)) do
+  for i, entry in ipairs(Deck:getBattleCardNamesByType(selectedType, selectedScenario)) do
     _G["choiceSubMenu"..i] = function() 
       toggleBattlefieldCard(selectedType, entry)
     end
@@ -325,4 +328,63 @@ function correctStringLength(measuredString)
     else
         return 160
     end
+end
+
+function switchBattleDeck(params)
+  if not params or not params.name then
+    return
+  end
+  _G.selectedScenario = params.name
+  -- TODO: Make configurable as defaults.
+  if params.name:lower() == 'standard' then
+    battlefieldCardSelection = {
+      objective = {
+        "Key Positions",
+        "Breakthrough",
+        "Intercept The Transmissions",
+        "Recover The Supplies",
+      },
+      deployment = {
+        "Battle Lines",
+        "The Long March",
+        "Disarray",
+        "Major Offensive",
+      },
+      conditions = {
+        "Clear Conditions",
+        "Limited Visibility",
+        "Rapid Reinforcements",
+        "Hostile Environment",
+      },
+    }
+  elseif params.name:lower() == 'skirmish' then
+    battlefieldCardSelection = {
+      objective  = {
+        "Breach",
+        "Control",
+        "Elimination",
+        "Pivotal Positions",
+      },
+      deployment = {
+        "Battle Lines",
+        "Faceoff",
+        "Flanking Positions",
+        "Meeting Engagement",
+      },
+      conditions = {
+        "War Weary",
+        "Improvised Defenses",
+        "Dawn",
+        "Clear Conditions",
+      },
+    }
+  else
+    battlefieldCardSelection = {
+      objective  = {},
+      deployment = {},
+      conditions = {},
+    }
+  end
+  resetButtons()
+  updateButtons()
 end
