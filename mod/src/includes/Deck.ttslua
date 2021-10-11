@@ -542,7 +542,7 @@ function Deck:getBattleCardNamesByType(name, scenario)
 end
 
 function Deck:getDeploymentBoundary(name, scenario_name)
-  if not scenario then
+  if not scenario_name then
     scenario_name = 'standard'
   end
   local scenario = self:_getSchema().battlefield[scenario_name]

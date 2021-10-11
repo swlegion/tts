@@ -35,6 +35,8 @@ function onload(save_state)
     objectiveMenu()
     deploymentMenu()
     conditionsMenu()
+
+    _G.selectedScenario = "standard"
     drawInput()
 end
 
@@ -105,10 +107,11 @@ function conditionsMenu()
 end
 
 function checkCardCall(cardTable)
-  return checkCard(cardTable[1], _G.selectedScenario)
+  return checkCard(cardTable[1])
 end
 
-function checkCard(cardType, battleDeckScenario)
+function checkCard(cardType)
+  local battleDeckScenario = _G.selectedScenario
   setUpCardData = nil
   zoneObj = nil
   zoneObj = getObjectFromZone(cardType)
@@ -124,7 +127,7 @@ function checkCard(cardType, battleDeckScenario)
       type = "conditions"
     end
     if type:upper() == cardType:upper() then
-      self.call("activate"..type, {name, battleDeckScenario})
+      self.call("activate"..type, name)
     else
       self.call("wrong".. type)
     end
@@ -299,12 +302,7 @@ function clearDeploymentBoundary()
     end
 end
 
-function activateobjective(params)
-  local name = params[0]
-  local deck = params[1]
-  if deck ~= nil and deck ~= "standard" then
-    return
-  end
+function activateobjective(name)
   spawnObjs(name, objectiveCartridge)
   objectiveMenu()
 end
@@ -344,11 +342,9 @@ function noDeploymentMenu()
     resetTimer("deployment")
 end
 
-function activatedeployment(params)
-    local name = params[0]
-    local deck = params[1]
+function activatedeployment(name)
     clearDeploymentBoundary()
-    local zone = Deck:getDeploymentBoundary(name, deck)
+    local zone = Deck:getDeploymentBoundary(name, _G.selectedScenario)
     if zone and #zone > 0 then
       spawnDeploymentBoundary(zone)
     end
@@ -360,12 +356,7 @@ function deactivateDeploymentMenu()
     createOptionButton("deployment", "deploymentMenu", "Remove Overlay", "Remove Deployment Overlay", {0.7,0,0})
 end
 
-function activateconditions(params)
-  local name = params[0]
-  local deck = params[1]
-  if deck ~= nil and deck ~= "standard" then
-    return
-  end
+function activateconditions(name)
   spawnObjs(name, conditionsCartridge)
   objectiveMenu()
 end
