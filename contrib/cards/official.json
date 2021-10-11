@@ -5642,6 +5642,76 @@
           "type": "horizontal"
         }
       ]
-    }
+    },
+    "skirmish": {
+      "objective": [
+        {
+          "name": "Breach",
+          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279492/85477A894623DDA23BC182995DAF396671A0C007/",
+          "type": "vertical"
+        },
+        {
+          "name": "Control",
+          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279456/10F29ECE1579A06D7DC564A6480F2BE27CC6EF04/",
+          "type": "vertical"
+        },
+        {
+          "name": "Elimination",
+          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279416/6160501F308751CB9266FF991FF62E1409058C4B/",
+          "type": "vertical"
+        },
+        {
+          "name": "Pivotal Positions",
+          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279382/6E006F31C9D5200AAA94392D94C2AE78EE4D73C7/",
+          "type": "vertical"
+        }
+      ],
+      "deployment": [
+        {
+          "name": "Battle Lines",
+          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279345/8A96884057E13BF488E89177C2B9CCB0ADDDFFE0/",
+          "type": "vertical"
+        },
+        {
+          "name": "Faceoff",
+          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279307/F41700690107CC7398BD5B95CDED30B041538517/",
+          "type": "vertical"
+        },
+        {
+          "name": "Flanking Positions",
+          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279273/0D6B1CF6762E532AA4C0D039C2CC96F0E25A419F/",
+          "type": "vertical"
+        },
+        {
+          "name": "Meeting Engagement",
+          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279232/4F4C1C54E5DCE9FD1E9C46BB75379AEF60E2DAFC/",
+          "type": "vertical"
+        }
+      ],
+      "condition": [
+        {
+          "name": "War Weary",
+          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279193/052C3637BE4F31FAA691235E186CC73B1CE928F7/",
+          "type": "vertical"
+        },
+        {
+          "name": "Improvised Defenses",
+          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279155/3F72099B06947F23231D8B2228D25C63E01FED92/",
+          "type": "vertical"
+        },
+        {
+          "name": "Dawn",
+          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279122/1952ADAEF00EAAF039C3D0C160AABF3BD4F7B0E1/",
+          "type": "vertical"
+        },
+        {
+          "name": "Clear Conditions",
+          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279082/F2116A3FBAB46DAD85EE43AB1CBF9497C567B2A8/",
+          "type": "vertical"
+        }
+      ]
+    },
+    "scenario": {},
+    "community": {}
   }
 }

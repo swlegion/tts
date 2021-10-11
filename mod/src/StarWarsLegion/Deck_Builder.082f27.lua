@@ -1,5 +1,8 @@
 require('!/Deck')
 
+-- Defined via setLuaScript:
+--   _G.selectedScenario
+
 function onload(save_state)
     self.interactable = false
     listBuilder = Global.getTable("listBuilder")
@@ -240,7 +243,7 @@ function battlefieldCardSubMenu(selectedType)
   nilChoices()
 
   j = 1
-  for i, entry in ipairs(Deck:getBattleCardNamesByType(selectedType)) do
+  for i, entry in ipairs(Deck:getBattleCardNamesByType(selectedType, selectedScenario)) do
     _G["choiceSubMenu"..i] = function() 
       toggleBattlefieldCard(selectedType, entry)
     end
@@ -325,4 +328,18 @@ function correctStringLength(measuredString)
     else
         return 160
     end
+end
+
+function switchBattleDeck(params)
+  if not params or not params.name then
+    return
+  end
+  _G.selectedScenario = params.name
+  battlefieldCardSelection = {
+    objective  = {},
+    deployment = {},
+    conditions = {},
+  }
+  resetButtons()
+  updateButtons()
 end
