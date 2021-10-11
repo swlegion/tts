@@ -192,7 +192,7 @@ function defineBattlefieldMenu(params)
       broadcastToAll("At least 12 cards are required to use battlefield vetoes. Move your choices manually to the right places!")
       return
     end
-    _G.selectedScenario = scenario
+    _G.selectedScenario = selectedScenario
     ga_view("game_controller/define_battlefield")
     clearAllButtons()
     changeBackButton("reset", "Go back to Main Menu")
@@ -522,10 +522,10 @@ end
 
 function spawnObjectiveConditions()
     local scenario = _G.selectedScenario
-    setUpController.call("changeScenario", scenario)
-    setUpController.call("checkCardCall")
-    setUpController.call("checkCardCall")
-    setUpController.call("checkCardCall")
+    setUpController.call("changeScenario", {scenario})
+    setUpController.call("checkCardCall", {"deployment"})
+    setUpController.call("checkCardCall", {"objective"})
+    setUpController.call("checkCardCall", {"conditions"})
 end
 
 

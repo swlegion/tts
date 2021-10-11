@@ -41,6 +41,7 @@ function onload(save_state)
 end
 
 function drawInput()
+  self.clearInputs()
   self.createInput({
     input_function = "scenarioChanged",
     function_owner = self,
@@ -52,22 +53,20 @@ function drawInput()
     height         = 350,
     font_size      = 323,
     validation     = 4,
-    value          = "standard",
+    value          = _G.selectedScenario,
     tooltip        = "Battlefield Deck Type",
   })
 end
 
 function scenarioChanged(_, _, input, editing)
-  if not editing then
+  if input and not editing then
     _G.selectedScenario = input
   end
 end
 
-function changeScenario(newScenario)
-  _G.selectedScenario = newScenario
-  self.editInput(0, {
-    value = newScenario,
-  })
+function changeScenario(params)
+  _G.selectedScenario = params[1]
+  drawInput()
 end
 
 function getTokenScripts()
