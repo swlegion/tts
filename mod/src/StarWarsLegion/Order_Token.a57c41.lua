@@ -27,7 +27,6 @@ end
 --
 function setTemplateVariables()
     unitData.aStart = templateInfo.aStart[unitData.baseSize][unitData.selectedSpeed]
-    unitData.bStart = templateInfo.bStart[unitData.baseSize][unitData.selectedSpeed]
     unitData.templateMesh = templateInfo.templateMesh[unitData.selectedSpeed]
     unitData.templateBallCollider = templateInfo.templateBallCollider
     unitData.tint = templateInfo.tint[unitData.selectedSpeed]
@@ -432,11 +431,8 @@ function moveUnit()
     local q = math.rad(baseRot.y)
     local a = unitData.aStart * math.cos(q)
     local b = unitData.aStart * math.sin(q)
-    local aEx = unitData.bStart * math.cos(q)
-    local bEx = unitData.bStart * math.sin(q)
 
     ------------------------------------------- SPAWN TEMPLATES -------------------------------------------
-
 
     local modelTemplateA = getObjectFromGUID(templateInfo.modelTemplateAGUID)
 
@@ -444,7 +440,8 @@ function moveUnit()
         type = "Custom_Model",
         position = {basePos.x - b, basePos.y, basePos.z - a},
         rotation = {0, baseRot.y + 180, 0},
-        scale = {1,1,1}
+        --make the first bit a tiny bit shorter to stop zfighting at the joint
+        scale = {1,0.95,1}
     })
     templateA.setCustomObject({
         type = 0,
@@ -454,8 +451,7 @@ function moveUnit()
         material = 1,
     })
 
-    templateA.setPosition({basePos.x - b, basePos.y, basePos.z - a})
-    templateA.setRotation({0, baseRot.y + 180, 0})
+    templateA.mass = 0.0
 
     local templateLuaScriptA = "unitInfo = {}\nunitInfo.baseSize = '"..unitData.baseSize.."'\nunitInfo.selectedSpeed = "..unitData.selectedSpeed.."\n"..modelTemplateA.getLuaScript()
 
@@ -464,14 +460,12 @@ function moveUnit()
     templateA.setName("Movement Template")
     templateA.setColorTint(templateInfo.moveTemplate[unitData.selectedSpeed].colorTint)
 
-
-
     --templateB = getObjectFromGUID(unitData.templateBGUID)
     local modelTemplateB = getObjectFromGUID(templateInfo.modelTemplateBGUID)
 
     templateB = spawnObject({
         type = "Custom_Model",
-        position = {basePos.x - bEx, basePos.y, basePos.z - aEx},
+        position = {basePos.x - b, basePos.y, basePos.z - a},
         rotation = {0, baseRot.y, 0},
         scale = {1,1,1}
     })
@@ -483,21 +477,16 @@ function moveUnit()
         material = 1,
     })
 
-    templateB.setPosition({basePos.x - bEx, basePos.y, basePos.z - aEx})
-    templateB.setRotation({0, baseRot.y, 0})
+    templateB.mass = 0.0
+
     local templateLuaScriptB = "unitInfo = {}\nunitInfo.baseSize = '"..unitData.baseSize.."'\nunitInfo.selectedSpeed = "..unitData.selectedSpeed.."\n"..modelTemplateB.getLuaScript()
 
     templateB.setLuaScript(templateLuaScriptB)
     templateB.sticky = false
     templateB.setName("Movement Template")
     templateB.setColorTint(templateInfo.moveTemplate[unitData.selectedSpeed].colorTint)
-    --Global.setVar("templateAMoving", templateA)
-    --Global.setVar("templateBMoving", templateB)
-
-    --templateB.setLock(true)
 
     -- SET VALUES
-
 
     templateA.setTable("basePos", basePos)
     templateA.setTable("baseRot", baseRot)
@@ -515,6 +504,7 @@ function moveUnit()
     local baseSizeMoveBundles = maxMoveBundles[unitData.baseSize]
     local maxMoveTemplateBundleToSpawn = baseSizeMoveBundles[unitData.selectedSpeed]
 
+    --max movement ring projector
     if maxMoveTemplateBundleToSpawn ~= nil then
         maxMoveTemplate = spawnObject({
             type = "Custom_AssetBundle",

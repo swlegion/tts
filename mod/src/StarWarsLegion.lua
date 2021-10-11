@@ -48,16 +48,6 @@ function onload(saveData)
 
     battlefieldTable = "3a3ed9"
 
-    -- Base measurements used by the rangebands
-    baseAddition = {}
-    baseAddition.small = 1.06299 / 2
-    baseAddition.medium = 1.9685 / 2
-    baseAddition.large = 2.75591 / 2
-    baseAddition.huge = 3.93701 / 2
-    baseAddition.laat = 4.72440 / 2
-    baseAddition.long = 3.525856871366164 / 2
-    baseAddition.epic = 5.90551 / 2
-
     templateInfo = {}
 
     templateInfo.templateAGUID = {
@@ -86,25 +76,14 @@ function onload(saveData)
     -- math available here: https://docs.google.com/spreadsheets/d/1LD6spROJFw29c5L-lN1RJwqk7XplQShOj1Z8QQkBGf4/edit?usp=sharing
     -- formula is: ((tool - notch + base) * 0.5) /25.4
     templateInfo.aStart = {}
-    templateInfo.aStart.small = 	{2.007874016, 2.992125984, 3.976377953}
+    -- base size             =      {speed1,      speed2,      speed3}
+    templateInfo.aStart.small = 	   {2.007874016, 2.992125984, 3.976377953}
     templateInfo.aStart.medium = 	{2.342519685, 3.326771654, 4.311023622}
     templateInfo.aStart.large =		{2.736220472, 3.720472441, 4.704724409}
     templateInfo.aStart.huge =		{3.326771654, 4.311023622, 5.295275591}
     templateInfo.aStart.laat =      {3.720472441, 4.704724409, 5.688976378}
     templateInfo.aStart.long =		{4.803149606, 5.787401575, 6.771653543}
     templateInfo.aStart.epic =		{4.311023622, 5.295275591, 6.279527559}
-
-    --probably just remove these at some point
-    templateInfo.bStart = {}
-    templateInfo.bStart.small = 	templateInfo.aStart.small
-    templateInfo.bStart.medium =	templateInfo.aStart.medium
-    templateInfo.bStart.large =		templateInfo.aStart.large
-    templateInfo.bStart.huge =		templateInfo.aStart.huge
-    templateInfo.bStart.long =		templateInfo.aStart.long
-    templateInfo.bStart.laat =      templateInfo.aStart.laat
-    templateInfo.bStart.epic =      templateInfo.aStart.epic
-
-
 
     templateInfo.templateMesh = {"http://cloud-3.steamusercontent.com/ugc/874120727305531585/FD6D4B079FC24EE1CE4F034B1C1E0F6B665D45E6/", "http://cloud-3.steamusercontent.com/ugc/874120727305502854/B063611E236ACAD8060A08A63EDB0EE9D91919AA/","http://cloud-3.steamusercontent.com/ugc/874120727305373581/A5E705982C2AE4B89756EF5A5BAC10DEDA9881B4/"}
     templateInfo.templateBallCollider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/"
@@ -159,7 +138,7 @@ function onload(saveData)
     templateInfo.moveTemplate[1].mesh = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
     templateInfo.moveTemplate[1].diffuse = "http://cloud-3.steamusercontent.com/ugc/785234780854759947/54081B46AD51B4601980DE9C7AC85FA76DDB09EA/"
     templateInfo.moveTemplate[1].shortCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854760268/38CA5CF242EFC8AC89552BB5AB04C2F82E26869F/"
-    templateInfo.moveTemplate[1].longCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854760161/68075BDD0F19BAD552C1FAD7E0B5DC2B11ACC9CA/"
+    templateInfo.moveTemplate[1].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432096158316/C356386B621B33116BA45B1919AD99B4825D47F1/"
     templateInfo.moveTemplate[1].colorTint = {1,1,1}
 
 
@@ -167,35 +146,30 @@ function onload(saveData)
     templateInfo.moveTemplate[2].mesh = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
     templateInfo.moveTemplate[2].diffuse = "http://cloud-3.steamusercontent.com/ugc/785234780854724909/C072D675F67ED9DE36A6ECBC57399DB0497034C5/"
     templateInfo.moveTemplate[2].shortCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854760528/0F20A46474850AA384B713829775CEDA580618A9/"
-    templateInfo.moveTemplate[2].longCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854726030/A28F7F71502F3C567F4A69089A3440EEDA4049A0/"
+    templateInfo.moveTemplate[2].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432096268491/38639847026B2307EBF395001AFD704384C2EE42/"
     templateInfo.moveTemplate[2].colorTint = {0.5,0.5,0.5}
 
     templateInfo.moveTemplate[3] = {}
     templateInfo.moveTemplate[3].mesh = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
     templateInfo.moveTemplate[3].diffuse = "http://cloud-3.steamusercontent.com/ugc/785234780854771943/3C734C233CD0ECF47797501CBFBE21E0AB8A84F0/"
     templateInfo.moveTemplate[3].shortCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854760896/35D512103AAFBC7856FA2FF4ACF14C342688A40D/"
-    templateInfo.moveTemplate[3].longCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854760805/D65DED99C49D606A540D8BFAC4740E2FF55C9ACD/"
+    templateInfo.moveTemplate[3].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432096268991/67B09F5892CEA72024DEDE702144F3BB4EF92A5B/"
     templateInfo.moveTemplate[3].colorTint = {1,0.2,0.2}
 
+    --This is actually diameter... just saying
     templateInfo.baseRadius = {
       -- Troopers
       small = 1.06299,
-
       -- Tauntauns, Droidekas, Speeder Bikes, Mortars
       medium = 1.9685,
-
       -- AT-RTs, eWebs
       large = 2.75591,
-
       -- Landspeeder, AT-ST
       huge = 3.93701,
-
       -- LAAT
       laat = 4.72440,
-
       -- Occupier Tank
       long = 3.93701,
-
       -- AAT, Saber Tank
       epic = 5.867,
     }
@@ -203,21 +177,15 @@ function onload(saveData)
     templateInfo.cohesionRadius = {
       -- Troopers
       small = 4.494485,
-
       -- Tauntauns, Droidekas, Speeder Bikes, Mortars
       medium = 5.45275,
-
       -- AT-RTs, eWebs
       large = 7.133865,
-
       -- These are obviously incorrect, but currently cohesion does not matter for any of these units.
-
       -- Landspeeder, AT-ST
       huge = 8.905515,
-
       -- Occupier Tank
       long = 8.905515,
-
        -- AAT, Saber Tank
       epic = 8.905515
     }
