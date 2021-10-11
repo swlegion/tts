@@ -937,4 +937,5 @@ function drawBattlefieldCard(data, cardType, battleDeckScenario)
     deckRot.z = 180
     card.setRotation(deckRot)
   end
+  _G.dataDiskMount.setVar("selectedScenario", battleDeckScenario)
 end

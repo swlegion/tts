@@ -52,7 +52,10 @@ function checkDeck()
     end
 
     if gotDeck == true then
-        gameControllerObj.call("defineBattlefieldMenu", battleDeckObj)
+        gameControllerObj.call("defineBattlefieldMenu", {
+          deck     = battleDeckObj,
+          scenario = self.getVar("selectedScenario"),
+        })
     else
         broadcastToAll("No Battlefield Deck. Insert Battlefield Deck to Blue Player Deck Mount to Define Battlefield",{1,1,1})
     end

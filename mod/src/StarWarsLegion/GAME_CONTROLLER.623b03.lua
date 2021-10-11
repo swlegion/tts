@@ -185,7 +185,9 @@ function clearPlayerZones()
     end
 end
 
-function defineBattlefieldMenu(selectedDeck)
+function defineBattlefieldMenu(params)
+    local selectedDeck = params.deck
+    local selectedScenario = params.scenario
     if #selectedDeck.getObjects() < 12 then
       broadcastToAll("At least 12 cards are required to use battlefield vetoes. Move your choices manually to the right places!")
       return
@@ -196,7 +198,7 @@ function defineBattlefieldMenu(selectedDeck)
     local menuEntries = {}
     menuEntries[1] = {functionName = "finishDefineBattlefieldMenu", label = "NEXT", tooltip = "NEXT", buttonTint = {0,0.913,1}}
     createMenu(menuEntries, 1)
-    revealBattleCards(selectedDeck)
+    revealBattleCards(selectedDeck, selectedScenario)
     printToScreen("DEFINE BATTLEFIELD\nStarting with Blue player, players eliminate left most card.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", 60, 2)
 end
 
@@ -391,7 +393,6 @@ function createMatrixFromDeck(battleDeckInserted)
   battleDeckClone.shuffle()
   local battleDeckTable = battleDeckClone.getObjects()
   local battleDeckScenario = battleDeckInserted.getVar("selectedScenario")
-  print(battleDeckScenario)
 
   -- for each card
   
@@ -423,7 +424,7 @@ function createMatrixFromDeck(battleDeckInserted)
           cardMatrixSelected.conditions
 end
 
-function revealBattleCards(insertedDeck)
+function revealBattleCards(insertedDeck, battleDeckScenario)
     clearSetUpCards("all")
     setUp5Data = {
       objectiveCards  = objectiveCards,
@@ -436,7 +437,7 @@ function revealBattleCards(insertedDeck)
         setUp5Data.spawnedCards.deployment = spawnSetupCards("deployment")
         setUp5Data.spawnedCards.conditions = spawnSetupCards("conditions")
     else
-        objectiveCardMatrix, deploymentCardMatrix, conditionsCardMatrix = createMatrixFromDeck(insertedDeck)
+        objectiveCardMatrix, deploymentCardMatrix, conditionsCardMatrix = createMatrixFromDeck(insertedDeck, battleDeckScenario)
         setUp5Data.spawnedCards.objective = objectiveCardMatrix
         setUp5Data.spawnedCards.deployment = deploymentCardMatrix
         setUp5Data.spawnedCards.conditions = conditionsCardMatrix
