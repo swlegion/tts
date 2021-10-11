@@ -48,6 +48,10 @@ function resetUnitButtons()
     end
 end
 
+function calculateButtonZOffset(baseDiameter)
+   return ((baseDiameter * 0.5) + 0.1)
+end
+
 function addSilhouetteButton()
   local gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
   local btnTint = gameData.getTable("battlefieldTint")
@@ -69,12 +73,14 @@ end
 function addLockButton()
     local gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
     local btnTint = gameData.getTable("battlefieldTint")
+    local templateInfo = Global.getTable("templateInfo")
+    local buttonOffset = calculateButtonZOffset(templateInfo.baseRadius[unitData.baseSize])
     lockBtnData = {
         click_function = "toggleLocks",
         function_owner = self,
         label = "LCK",
         tooltip = "Toggle Physics Lock on this unit",
-        position = {0.225, 0.25, 0.6},
+        position = {0.225, 0.25, buttonOffset},
         width = 230,
         height = 180,
         font_size = 100,
