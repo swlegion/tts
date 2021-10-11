@@ -52,6 +52,8 @@
 
           - Deployment cards now specify deployment zones programatically.
           - Added limited support for Skirmish battlefield decks.
+
+          - Fix for medium base size and various movement tool oddities.
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
