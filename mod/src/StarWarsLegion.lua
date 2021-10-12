@@ -138,7 +138,7 @@ function onload(saveData)
     templateInfo.moveTemplate[1].mesh = "http://cloud-3.steamusercontent.com/ugc/785234780854759842/01D41C421A255FA3851BD89F18C85B5B294545EB/"
     templateInfo.moveTemplate[1].diffuse = "http://cloud-3.steamusercontent.com/ugc/785234780854759947/54081B46AD51B4601980DE9C7AC85FA76DDB09EA/"
     templateInfo.moveTemplate[1].shortCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854760268/38CA5CF242EFC8AC89552BB5AB04C2F82E26869F/"
-    templateInfo.moveTemplate[1].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432096158316/C356386B621B33116BA45B1919AD99B4825D47F1/"
+    templateInfo.moveTemplate[1].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432101766462/B034D388FDC9B4D10326CE8690D8C19360109A45/"
     templateInfo.moveTemplate[1].colorTint = {1,1,1}
 
 
@@ -146,14 +146,14 @@ function onload(saveData)
     templateInfo.moveTemplate[2].mesh = "http://cloud-3.steamusercontent.com/ugc/785234780854723671/BBF8FA3F838F18A0A774CB6F275A69922A829BDE/"
     templateInfo.moveTemplate[2].diffuse = "http://cloud-3.steamusercontent.com/ugc/785234780854724909/C072D675F67ED9DE36A6ECBC57399DB0497034C5/"
     templateInfo.moveTemplate[2].shortCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854760528/0F20A46474850AA384B713829775CEDA580618A9/"
-    templateInfo.moveTemplate[2].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432096268491/38639847026B2307EBF395001AFD704384C2EE42/"
+    templateInfo.moveTemplate[2].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432101765834/D3232FDBBFA0D8AE962DB5505E1AE4A52D08DEBA/"
     templateInfo.moveTemplate[2].colorTint = {0.5,0.5,0.5}
 
     templateInfo.moveTemplate[3] = {}
     templateInfo.moveTemplate[3].mesh = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
     templateInfo.moveTemplate[3].diffuse = "http://cloud-3.steamusercontent.com/ugc/785234780854771943/3C734C233CD0ECF47797501CBFBE21E0AB8A84F0/"
     templateInfo.moveTemplate[3].shortCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854760896/35D512103AAFBC7856FA2FF4ACF14C342688A40D/"
-    templateInfo.moveTemplate[3].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432096268991/67B09F5892CEA72024DEDE702144F3BB4EF92A5B/"
+    templateInfo.moveTemplate[3].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432101765410/5E770EDD217B25DDF7725EB1A0DAC189955D1708/"
     templateInfo.moveTemplate[3].colorTint = {1,0.2,0.2}
 
     --This is actually diameter... just saying
