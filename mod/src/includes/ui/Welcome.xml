@@ -46,7 +46,13 @@
 
           (Since last <i>Beta</i>)
 
-          - Fix: Medium base size oddness and some minor issues with the movement tool.
+          - <b>KNOWN ISSUES</b>: Some vehicle pilots are not selectable w/ list-builder.
+          - We are <b>NOT</b> fixing these issues in time for a stable release.
+          - Please still do report them, we'll fix them in an upcoming release.
+
+          - Fix: Movement tool bugs.
+          - Fix: Payload is now movable.
+          - Fix: Encoded 1.4 FD as "Speed 1" in order to allow Scout-X moves.
 
           (Since last <i>Stable</i>)
 

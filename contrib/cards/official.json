@@ -790,7 +790,7 @@
           "size": "huge",
           "type": "Emplacement Trooper",
           "points": 70,
-          "speed": 0,
+          "speed": 1,
           "upgrades": {
             "Comms": 1,
             "Generator": 1
