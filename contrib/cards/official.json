@@ -5129,7 +5129,7 @@
         "restrictions": {
           "include": {
             "faction": ["Empire"],
-            "type": ["Repuslor Vehicle"]
+            "type": ["Repulsor Vehicle"]
           }
         }
       },
@@ -5170,7 +5170,7 @@
         "points": 9,
         "restrictions": {
           "include": {
-            "unit": ["TX-130 Saber Class Fighter Tank"]
+            "unit": ["TX-130 Saber-Class Fighter Tank"]
           }
         }
       },
@@ -5222,7 +5222,7 @@
         "points": 7,
         "restrictions": {
           "include": {
-            "unit": ["TX-130 Saber Class Fighter Tank"]
+            "unit": ["TX-130 Saber-Class Fighter Tank"]
           }
         }
       },
