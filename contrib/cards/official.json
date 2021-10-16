@@ -2524,7 +2524,11 @@
               "pip": 3
             }
           ],
-          "additionalObjects": ["Bane Token 1", "Bane Token 2", "Bane Token 3"]
+          "additionalObjects": [
+            "Bane Token: Blank",
+            "Bane Token: Bomb",
+            "Bane Token: Bane"
+          ]
         },
         {
           "name": "Maul",
@@ -5817,7 +5821,7 @@
       },
       "target": "unit"
     },
-    "Bane Token 1": {
+    "Bane Token: Blank": {
       "token": {
         "name": "Bane Token",
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
@@ -5825,7 +5829,7 @@
       },
       "target": "table"
     },
-    "Bane Token 2": {
+    "Bane Token: Bomb": {
       "token": {
         "name": "Bane Token",
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
@@ -5833,7 +5837,7 @@
       },
       "target": "table"
     },
-    "Bane Token 3": {
+    "Bane Token: Bane": {
       "token": {
         "name": "Bane Token",
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
