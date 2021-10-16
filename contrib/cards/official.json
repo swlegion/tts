@@ -5763,6 +5763,14 @@
       "target": "unit",
       "stacks": false
     },
+    "Condition Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786360308354563594/D7CA9A23D1F8610544A092594F1CFF19C8C0A578/"
+      },
+      "target": "table",
+      "stacks": false
+    },
     "Damaged Token": {
       "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442142/E2BBDA84DFF104080284F15909B71C8F125DA50F/",
@@ -5822,6 +5830,14 @@
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/1777200555359034130/1D014D75BCE30D49638FC9C0CA5E1BDC9B4DFAE0/"
       },
       "target": "unit"
+    },
+    "Objective Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786360308354563594/D7CA9A23D1F8610544A092594F1CFF19C8C0A578/"
+      },
+      "target": "table",
+      "stacks": false
     },
     "Operative Token": {
       "token": {
@@ -5887,6 +5903,13 @@
       "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717874060749/314173062C289E83F826F78FC7FD0FF0D2E6E418/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717874060915/75B609A561604CAF66D7BD2868211D40F18B74E3/"
+      },
+      "target": "unit"
+    },
+    "Victory Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786360308354563474/D727C55A73EC48FBF56D78D188A731FEDDC2635B/"
       },
       "target": "unit"
     },
