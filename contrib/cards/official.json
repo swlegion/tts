@@ -5741,14 +5741,22 @@
   },
   "objects": {
     "Aim Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442508/5CF014A3E962C6116B3B910C8BE44FE1C8FCA1D2/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314442626/A2574B5726D1DE612FF4F2464A2315C7C85759D1/"
       },
       "target": "unit"
     },
-    "Commander Token": {
+    "Barricade": {
       "model": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540542429589/F10F499F8D061EFA2C4C696641235D706E4C0974/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540542379040/149A4BEBD1F20D82737DB21773B93C52BC30DF78/",
+        "collider": "http://cloud-3.steamusercontent.com/ugc/785234540542430072/AA329530B252DDE7329AC70F9A98502F7875400C/"
+      },
+      "type": "terrain"
+    },
+    "Commander Token": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314443431/097A439FFEDF419BAA723FB00918F6A8188D390D/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314443535/51A0B4A9A3A230825DFAB81B6AA97ED36C85E420/"
       },
@@ -5756,7 +5764,7 @@
       "stacks": false
     },
     "Damaged Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442142/E2BBDA84DFF104080284F15909B71C8F125DA50F/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314442381/27F7A3A2E3687E52F3576BF9A1E1A12CFD0267FD/"
       },
@@ -5764,7 +5772,7 @@
       "stacks": false
     },
     "Disabled Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442142/E2BBDA84DFF104080284F15909B71C8F125DA50F/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314442275/B66CD8AB21D41AAE360DCF69A8F58E418CE0FBF3/"
       },
@@ -5772,14 +5780,14 @@
       "stacks": false
     },
     "Dodge Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442740/91C08C293B53CCF3D104B0472B60ECF7BF4B613E/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314442875/553BAF41BE032BCE7282C4DECB180B5410AC7226/"
       },
       "target": "unit"
     },
     "Graffiti Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717874061240/B449ED876CF0B2455BBCEE1E22CDEFFC12EDCBF8/"
       },
@@ -5787,14 +5795,14 @@
       "stacks": false
     },
     "Immobilize Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442992/DD893F407D50F2D029305A2F181989F90E3FA46A/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314446126/CCD2483A716B81931D26829BF205D6C0CB0196CD/"
       },
       "target": "unit"
     },
     "Incognito Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/1777200555359102353/86DFA2C0B4428415B5765DE845A19BC78EC70050/"
       },
@@ -5802,21 +5810,21 @@
       "stacks": false
     },
     "Ion Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442992/DD893F407D50F2D029305A2F181989F90E3FA46A/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314443114/1C858EEC4B7A2247AA506EC699FF65D7C72E5484/"
       },
       "target": "unit"
     },
     "Observation Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442992/DD893F407D50F2D029305A2F181989F90E3FA46A/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/1777200555359034130/1D014D75BCE30D49638FC9C0CA5E1BDC9B4DFAE0/"
       },
       "target": "unit"
     },
     "Operative Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/1019446639705431555/05F948CC883AFC3BDBDA8F8485957731EE29AF03/"
       },
@@ -5824,7 +5832,7 @@
       "stacks": false
     },
     "Panic Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442142/E2BBDA84DFF104080284F15909B71C8F125DA50F/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314444049/7A5C1C3F824FDE5C14596782B4DCC628F9846334/"
       },
@@ -5832,14 +5840,14 @@
       "stacks": false
     },
     "Poison Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442992/DD893F407D50F2D029305A2F181989F90E3FA46A/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717874061462/2C7252E4C3030E3640741560C7C24E55950EF332/"
       },
       "target": "unit"
     },
     "Proton Charge Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314446398/425766A72D25CEB4F0E9C8BED9FCFDD68109D4B7/"
       },
@@ -5847,14 +5855,14 @@
       "stacks": false
     },
     "Shield Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717874061363/FC8A9E131548DC42D21D9748015A67D8235BDA93/"
       },
       "target": "unit"
     },
     "Smoke Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717874061016/BB4832A82AEEA19EE9B1E9498380E7D3850DB0B6/"
       },
@@ -5862,28 +5870,28 @@
       "stacks": false
     },
     "Standby Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441910/ED14AA37D66E5E75EA5D6790A50546B1FC105DAC/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314442019/EF36C682BC69BB9239DC15B0C52EE6FFACEE19C0/"
       },
       "target": "unit"
     },
     "Suppression Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314443213/E353EC3098CC94615DE0BA5CEF4CE8B298CF7777/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314443321/002CBBCACEB0F7497BEA744B8D7B17736A5FF65E/"
       },
       "target": "unit"
     },
     "Surge Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717874060749/314173062C289E83F826F78FC7FD0FF0D2E6E418/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717874060915/75B609A561604CAF66D7BD2868211D40F18B74E3/"
       },
       "target": "unit"
     },
     "Weapon Disrupted Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442142/E2BBDA84DFF104080284F15909B71C8F125DA50F/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314443730/B474A9A42C93151761AFE01AB45DBE5CABA1F451/"
       },
@@ -5891,7 +5899,7 @@
       "stacks": false
     },
     "Wheel Mode Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/780734328492115080/57765C267CCBA4F177CF4C7FBED9B6BA242FB49B/"
       },
@@ -5899,7 +5907,7 @@
       "stacks": false
     },
     "Wound Token": {
-      "model": {
+      "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314443832/CC490842F0159459C8D5C252BE7225E9D2581951/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314443935/0F8A37E8CD128D5644B391E4EFEC50656D558FF7/"
       },

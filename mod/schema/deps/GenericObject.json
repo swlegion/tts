@@ -52,17 +52,21 @@
       }
     },
 
-    "Mini": {
+    "Model": {
       "type": "object",
       "additionalProperties": false,
 
       "properties": {
-        "mini": {
+        "model": {
           "$ref": "./Mini.json"
+        },
+
+        "type": {
+          "enum": ["terrain"]
         }
       },
 
-      "required": ["mini"]
+      "required": ["model", "type"]
     },
 
     "Token": {
@@ -70,7 +74,7 @@
       "additionalProperties": false,
 
       "properties": {
-        "model": {
+        "token": {
           "$ref": "./Mini.json"
         },
 
@@ -83,14 +87,14 @@
         }
       },
 
-      "required": ["model", "target"]
+      "required": ["token", "target"]
     }
   },
 
   "oneOf": [
     { "$ref": "#/definitions/Card" },
     { "$ref": "#/definitions/Deck" },
-    { "$ref": "#/definitions/Mini" },
+    { "$ref": "#/definitions/Model" },
     { "$ref": "#/definitions/Token" }
   ]
 }
