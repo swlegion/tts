@@ -36,13 +36,15 @@
           "items": {
             "type": "object",
             "additionalProperties": false,
-            "name": {
-              "type": "string",
-              "minLength": 1
-            },
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
 
-            "image": {
-              "$ref": "./Image.json"
+              "image": {
+                "$ref": "./Image.json"
+              }
             },
             "required": ["name", "image"]
           }
