@@ -88,10 +88,12 @@
         },
 
         "stacks": {
+          "description": "By default tokens are assumed to stack. May set to \"false\" to prevent that.",
           "enum": [false]
         },
 
         "infinite": {
+          "description": "By default tokens are spawned as a 1-off. May set to \"true\" to spawn a token generator instead.",
           "enum": [true]
         }
       },
