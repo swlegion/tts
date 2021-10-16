@@ -153,7 +153,7 @@ function onload(saveData)
     templateInfo.moveTemplate[3].mesh = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
     templateInfo.moveTemplate[3].diffuse = "http://cloud-3.steamusercontent.com/ugc/785234780854771943/3C734C233CD0ECF47797501CBFBE21E0AB8A84F0/"
     templateInfo.moveTemplate[3].shortCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854760896/35D512103AAFBC7856FA2FF4ACF14C342688A40D/"
-    templateInfo.moveTemplate[3].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432101765410/5E770EDD217B25DDF7725EB1A0DAC189955D1708/"
+    templateInfo.moveTemplate[3].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432101765410/5E770EDD217B25DDF7725EB1A0DAC189955D1708/" 
     templateInfo.moveTemplate[3].colorTint = {1,0.2,0.2}
 
     --This is actually diameter... just saying
