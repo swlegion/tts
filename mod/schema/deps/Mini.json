@@ -19,9 +19,14 @@
         "diffuse": {
           "type": "string",
           "minLength": 1
+        },
+        "collider": {
+          "type": "string",
+          "minLength": 1
         }
       },
 
+      "additionalProperties": false,
       "type": "object",
       "required": ["mesh", "diffuse"]
     },
@@ -38,9 +43,14 @@
         "secondary": {
           "type": "string",
           "minLength": 1
+        },
+        "collider": {
+          "type": "string",
+          "minLength": 1
         }
       },
 
+      "additionalProperties": false,
       "type": "object",
       "required": ["bundle"]
     }

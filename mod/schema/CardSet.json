@@ -5,6 +5,7 @@
   "title": "Set of cards.",
   "description": "Definitions of unit, upgrade, commmand, and battle cards.",
 
+  "type": "object",
   "additionalProperties": false,
 
   "properties": {
@@ -22,9 +23,15 @@
 
     "battlefield": {
       "$ref": "./deps/BattleCardSet.json"
+    },
+
+    "objects": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "./deps/GenericObject.json"
+      }
     }
   },
 
-  "type": "object",
   "required": ["units", "upgrades", "commands", "battlefield"]
 }

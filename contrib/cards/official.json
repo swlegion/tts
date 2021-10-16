@@ -331,7 +331,8 @@
               "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033440/0011AF8A615526AED73E7A61D4E6C78B209F75E9/",
               "pip": 3
             }
-          ]
+          ],
+          "additionalObjects": ["Proton Charge Token", "Graffiti Token"]
         },
         {
           "name": "Luke Skywalker",
@@ -1220,7 +1221,8 @@
               "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033363/C8D04CF3CEE5DE82C69BAB90B7C61DFA842AE591/",
               "pip": 3
             }
-          ]
+          ],
+          "additionalObjects": ["Proton Charge Token"]
         },
         {
           "name": "Darth Vader",
@@ -2521,6 +2523,11 @@
               "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033609/804F443E3F33E8EB6622F46604963CE17A9D49EE/",
               "pip": 3
             }
+          ],
+          "additionalObjects": [
+            "Bane Token: Blank",
+            "Bane Token: Bomb",
+            "Bane Token: Bane"
           ]
         },
         {
@@ -3371,7 +3378,8 @@
       {
         "name": "Force Lift",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226237/8E8024D98127B2963C56671A8BE0DCE41E487350/",
-        "points": 5
+        "points": 5,
+        "additionalObjects": ["Barricade"]
       },
       {
         "name": "Force Push",
@@ -4039,7 +4047,8 @@
           "include": {
             "unit": ["BX-Series Droid Commandos"]
           }
-        }
+        },
+        "additionalObjects": ["Proton Charge Token"]
       },
       {
         "name": "E-5C B1 Trooper",
@@ -4272,7 +4281,8 @@
           "include": {
             "unit": ["Rebel Commandos"]
           }
-        }
+        },
+        "additionalObjects": ["Proton Charge Token"]
       },
       {
         "name": "RPS-6 MagnaGuard",
@@ -4370,7 +4380,8 @@
           "include": {
             "unit": ["Scout Troopers"]
           }
-        }
+        },
+        "additionalObjects": ["Proton Charge Token"]
       },
       {
         "name": "T-21 Stormtrooper",
@@ -5456,7 +5467,15 @@
         {
           "name": "Bombing Run",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152284/34FB45C5D924F9975C35E307B36C42AD2F8153DB/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
         },
         {
           "name": "Breakthrough",
@@ -5466,12 +5485,18 @@
         {
           "name": "Hostage Exchange",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152166/E56E902183803EC15BFA3E84548C9F85B3EF5DC2/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": ["Hostage Deck"]
         },
         {
           "name": "Intercept The Transmissions",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566156864/7F0F116D055EB147C07888524D71905E9D51ECF5/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
         },
         {
           "name": "Key Positions",
@@ -5481,17 +5506,31 @@
         {
           "name": "Payload",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152051/1D6BFDBA0D76170AE1EB3129C5B589DE5426EB14/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": ["Bomb Cart", "Bomb Cart"]
         },
         {
           "name": "Recover The Supplies",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152002/C2C470607C4006FD51F83854CEA2093BA206222D/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
         },
         {
           "name": "Sabotage The Moisture Vaporators",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151946/368BA0B7F0BBD659B37D6BE6781E01FECCDCB5E6/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
         }
       ],
       "deployment": [
@@ -5609,7 +5648,17 @@
         {
           "name": "Fortified Positions",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151371/BAA93356D59B37199A3C468013F6A5E0CD0413FB/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Barricade",
+            "Barricade",
+            "Barricade",
+            "Barricade",
+            "Barricade",
+            "Barricade",
+            "Barricade",
+            "Barricade"
+          ]
         },
         {
           "name": "Hostile Environment",
@@ -5624,17 +5673,30 @@
         {
           "name": "Minefield",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151174/7BF21B789BA2A715EE474286DBB98A30D7FED51A/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Condition Token",
+            "Condition Token",
+            "Condition Token",
+            "Condition Token"
+          ]
         },
         {
           "name": "Rapid Reinforcements",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151116/18451A85E7201070C4E0D96F72FD5D8BE4377B80/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Condition Token",
+            "Condition Token",
+            "Condition Token",
+            "Condition Token"
+          ]
         },
         {
           "name": "Supply Drop",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151068/9801B093E60171C3AC7E5F4D447ADF27D7E9DC1F/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": ["Supply Deck"]
         },
         {
           "name": "War Weary",
@@ -5653,7 +5715,8 @@
         {
           "name": "Control",
           "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279456/10F29ECE1579A06D7DC564A6480F2BE27CC6EF04/",
-          "type": "vertical"
+          "type": "vertical",
+          "additionalObjects": ["Objective Token"]
         },
         {
           "name": "Elimination",
@@ -5663,7 +5726,12 @@
         {
           "name": "Pivotal Positions",
           "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279382/6E006F31C9D5200AAA94392D94C2AE78EE4D73C7/",
-          "type": "vertical"
+          "type": "vertical",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
         }
       ],
       "deployment": [
@@ -5722,7 +5790,13 @@
         {
           "name": "Improvised Defenses",
           "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279155/3F72099B06947F23231D8B2228D25C63E01FED92/",
-          "type": "vertical"
+          "type": "vertical",
+          "additionalObjects": [
+            "Barricade",
+            "Barricade",
+            "Barricade",
+            "Barricade"
+          ]
         },
         {
           "name": "Dawn",
@@ -5738,5 +5812,285 @@
     },
     "scenario": {},
     "community": {}
+  },
+  "objects": {
+    "Aim Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442508/5CF014A3E962C6116B3B910C8BE44FE1C8FCA1D2/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314442626/A2574B5726D1DE612FF4F2464A2315C7C85759D1/"
+      },
+      "target": "unit"
+    },
+    "Bane Token: Blank": {
+      "token": {
+        "name": "Bane Token",
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/1055478574362401130/E1FA2715959E37138C25B4B36FB963149643DAA6/"
+      },
+      "target": "table"
+    },
+    "Bane Token: Bomb": {
+      "token": {
+        "name": "Bane Token",
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/1055478574362399079/B91760D0E7895797EBF0320BFC752F5DC04A5962/"
+      },
+      "target": "table"
+    },
+    "Bane Token: Bane": {
+      "token": {
+        "name": "Bane Token",
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/1055478574362319474/84ACA1633B9C944D709B8770A251A629FF05ACBA/"
+      },
+      "target": "table"
+    },
+    "Barricade": {
+      "model": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540542429589/F10F499F8D061EFA2C4C696641235D706E4C0974/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540542379040/149A4BEBD1F20D82737DB21773B93C52BC30DF78/",
+        "collider": "http://cloud-3.steamusercontent.com/ugc/785234540542430072/AA329530B252DDE7329AC70F9A98502F7875400C/"
+      },
+      "type": "terrain"
+    },
+    "Bomb Cart": {
+      "model": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/1002556529493751157/9D26DC64BAAB57A2EC4CCB04016AFEC660256685/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/1002556529493751537/4CC48BB4450924701366C8EDED262930F423E4AB/",
+        "collider": "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/"
+      },
+      "type": "custom"
+    },
+    "Commander Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314443431/097A439FFEDF419BAA723FB00918F6A8188D390D/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314443535/51A0B4A9A3A230825DFAB81B6AA97ED36C85E420/"
+      },
+      "target": "unit",
+      "stacks": false
+    },
+    "Condition Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786360308354563594/D7CA9A23D1F8610544A092594F1CFF19C8C0A578/"
+      },
+      "target": "table",
+      "stacks": false
+    },
+    "Damaged Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442142/E2BBDA84DFF104080284F15909B71C8F125DA50F/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314442381/27F7A3A2E3687E52F3576BF9A1E1A12CFD0267FD/"
+      },
+      "target": "unit",
+      "stacks": false
+    },
+    "Disabled Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442142/E2BBDA84DFF104080284F15909B71C8F125DA50F/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314442275/B66CD8AB21D41AAE360DCF69A8F58E418CE0FBF3/"
+      },
+      "target": "unit",
+      "stacks": false
+    },
+    "Dodge Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442740/91C08C293B53CCF3D104B0472B60ECF7BF4B613E/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314442875/553BAF41BE032BCE7282C4DECB180B5410AC7226/"
+      },
+      "target": "unit"
+    },
+    "Graffiti Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717874061240/B449ED876CF0B2455BBCEE1E22CDEFFC12EDCBF8/"
+      },
+      "target": "terrain",
+      "stacks": false
+    },
+    "Hostage Deck": {
+      "cards": [
+        {
+          "name": "Hostage",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315486174/6A01D6080A44D121D4DFCFFAD82EC4F9073C79AF/"
+        },
+        {
+          "name": "Hostage",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315486113/545C3FA50BADD14C160FA3DA555E2DEB8DA87E68/"
+        }
+      ]
+    },
+    "Immobilize Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442992/DD893F407D50F2D029305A2F181989F90E3FA46A/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314446126/CCD2483A716B81931D26829BF205D6C0CB0196CD/"
+      },
+      "target": "unit"
+    },
+    "Incognito Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/1777200555359102353/86DFA2C0B4428415B5765DE845A19BC78EC70050/"
+      },
+      "target": "unit",
+      "stacks": false
+    },
+    "Ion Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442992/DD893F407D50F2D029305A2F181989F90E3FA46A/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314443114/1C858EEC4B7A2247AA506EC699FF65D7C72E5484/"
+      },
+      "target": "unit"
+    },
+    "Observation Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442992/DD893F407D50F2D029305A2F181989F90E3FA46A/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/1777200555359034130/1D014D75BCE30D49638FC9C0CA5E1BDC9B4DFAE0/"
+      },
+      "target": "unit"
+    },
+    "Objective Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786360308354563594/D7CA9A23D1F8610544A092594F1CFF19C8C0A578/"
+      },
+      "target": "table",
+      "stacks": false
+    },
+    "Operative Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/1019446639705431555/05F948CC883AFC3BDBDA8F8485957731EE29AF03/"
+      },
+      "target": "unit",
+      "stacks": false
+    },
+    "Panic Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442142/E2BBDA84DFF104080284F15909B71C8F125DA50F/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314444049/7A5C1C3F824FDE5C14596782B4DCC628F9846334/"
+      },
+      "target": "unit",
+      "stacks": false
+    },
+    "Poison Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442992/DD893F407D50F2D029305A2F181989F90E3FA46A/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717874061462/2C7252E4C3030E3640741560C7C24E55950EF332/"
+      },
+      "target": "unit"
+    },
+    "Proton Charge Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314446398/425766A72D25CEB4F0E9C8BED9FCFDD68109D4B7/"
+      },
+      "target": "table",
+      "stacks": false
+    },
+    "Shield Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717874061363/FC8A9E131548DC42D21D9748015A67D8235BDA93/"
+      },
+      "target": "unit"
+    },
+    "Smoke Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717874061016/BB4832A82AEEA19EE9B1E9498380E7D3850DB0B6/"
+      },
+      "target": "table",
+      "stacks": false
+    },
+    "Standby Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441910/ED14AA37D66E5E75EA5D6790A50546B1FC105DAC/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314442019/EF36C682BC69BB9239DC15B0C52EE6FFACEE19C0/"
+      },
+      "target": "unit"
+    },
+    "Supply Deck": {
+      "back": "http://cloud-3.steamusercontent.com/ugc/1773847942315485602/925B9FA7B35FE1478BAFC4E7314C60288C8819AB/",
+      "mutiples": 2,
+      "cards": [
+        {
+          "name": "Arc Welder",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315485990/C3F3B1B5B459DCA2B73598B2CBB178B4C7EE6DC5/"
+        },
+        {
+          "name": "Bacta Capsules",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315486053/CA14B9CD49FD92428F0B2D5050EA5DD25797DB33/"
+        },
+        {
+          "name": "Camoflauge",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315485930/9D9EDF3108F222D53AF43EB41EDD5005FF20ABDE/"
+        },
+        {
+          "name": "Field Scanner",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315485652/63D35175DBB6FC01579253CE0386B30C6D76B796/"
+        },
+        {
+          "name": "Grapnel Harpoon",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315485870/99B837BC86196C56118132AF3B36B710F9FFD87B/"
+        },
+        {
+          "name": "Holoprojector",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315485706/DD7D68FDCAB31B1BD344FE8196A8B21E8FB098D9/"
+        },
+        {
+          "name": "Precision Scopes",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315485814/B5F5B7B897E1C13EFA45120F854D762364BF9DC9/"
+        },
+        {
+          "name": "Targeting Rangefinder",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315485757/734B12CDF6B61ED03B40E35759400C1EB916D3D5/"
+        }
+      ]
+    },
+    "Suppression Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314443213/E353EC3098CC94615DE0BA5CEF4CE8B298CF7777/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314443321/002CBBCACEB0F7497BEA744B8D7B17736A5FF65E/"
+      },
+      "target": "unit"
+    },
+    "Surge Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717874060749/314173062C289E83F826F78FC7FD0FF0D2E6E418/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717874060915/75B609A561604CAF66D7BD2868211D40F18B74E3/"
+      },
+      "target": "unit"
+    },
+    "Victory Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786360308354563474/D727C55A73EC48FBF56D78D188A731FEDDC2635B/"
+      },
+      "target": "unit"
+    },
+    "Weapon Disrupted Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314442142/E2BBDA84DFF104080284F15909B71C8F125DA50F/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314443730/B474A9A42C93151761AFE01AB45DBE5CABA1F451/"
+      },
+      "target": "unit",
+      "stacks": false
+    },
+    "Wheel Mode Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/780734328492115080/57765C267CCBA4F177CF4C7FBED9B6BA242FB49B/"
+      },
+      "target": "unit",
+      "stacks": false
+    },
+    "Wound Token": {
+      "token": {
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314443832/CC490842F0159459C8D5C252BE7225E9D2581951/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314443935/0F8A37E8CD128D5644B391E4EFEC50656D558FF7/"
+      },
+      "target": "mini"
+    }
   }
 }
