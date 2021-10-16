@@ -5456,7 +5456,15 @@
         {
           "name": "Bombing Run",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152284/34FB45C5D924F9975C35E307B36C42AD2F8153DB/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
         },
         {
           "name": "Breakthrough",
@@ -5466,12 +5474,18 @@
         {
           "name": "Hostage Exchange",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152166/E56E902183803EC15BFA3E84548C9F85B3EF5DC2/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": ["Hostage Deck"]
         },
         {
           "name": "Intercept The Transmissions",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566156864/7F0F116D055EB147C07888524D71905E9D51ECF5/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
         },
         {
           "name": "Key Positions",
@@ -5481,17 +5495,31 @@
         {
           "name": "Payload",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152051/1D6BFDBA0D76170AE1EB3129C5B589DE5426EB14/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": ["Bomb Cart", "Bomb Cart"]
         },
         {
           "name": "Recover The Supplies",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152002/C2C470607C4006FD51F83854CEA2093BA206222D/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
         },
         {
           "name": "Sabotage The Moisture Vaporators",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151946/368BA0B7F0BBD659B37D6BE6781E01FECCDCB5E6/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
         }
       ],
       "deployment": [
@@ -5609,7 +5637,17 @@
         {
           "name": "Fortified Positions",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151371/BAA93356D59B37199A3C468013F6A5E0CD0413FB/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Barricade",
+            "Barricade",
+            "Barricade",
+            "Barricade",
+            "Barricade",
+            "Barricade",
+            "Barricade",
+            "Barricade"
+          ]
         },
         {
           "name": "Hostile Environment",
@@ -5624,17 +5662,30 @@
         {
           "name": "Minefield",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151174/7BF21B789BA2A715EE474286DBB98A30D7FED51A/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Condition Token",
+            "Condition Token",
+            "Condition Token",
+            "Condition Token"
+          ]
         },
         {
           "name": "Rapid Reinforcements",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151116/18451A85E7201070C4E0D96F72FD5D8BE4377B80/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Condition Token",
+            "Condition Token",
+            "Condition Token",
+            "Condition Token"
+          ]
         },
         {
           "name": "Supply Drop",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151068/9801B093E60171C3AC7E5F4D447ADF27D7E9DC1F/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": ["Supply Deck"]
         },
         {
           "name": "War Weary",
@@ -5653,7 +5704,8 @@
         {
           "name": "Control",
           "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279456/10F29ECE1579A06D7DC564A6480F2BE27CC6EF04/",
-          "type": "vertical"
+          "type": "vertical",
+          "additionalObjects": ["Objective Token"]
         },
         {
           "name": "Elimination",
@@ -5663,7 +5715,12 @@
         {
           "name": "Pivotal Positions",
           "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279382/6E006F31C9D5200AAA94392D94C2AE78EE4D73C7/",
-          "type": "vertical"
+          "type": "vertical",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
         }
       ],
       "deployment": [
@@ -5722,7 +5779,13 @@
         {
           "name": "Improvised Defenses",
           "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279155/3F72099B06947F23231D8B2228D25C63E01FED92/",
-          "type": "vertical"
+          "type": "vertical",
+          "additionalObjects": [
+            "Barricade",
+            "Barricade",
+            "Barricade",
+            "Barricade"
+          ]
         },
         {
           "name": "Dawn",
@@ -5809,6 +5872,18 @@
       },
       "target": "terrain",
       "stacks": false
+    },
+    "Hostage Deck": {
+      "cards": [
+        {
+          "name": "Hostage",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315486174/6A01D6080A44D121D4DFCFFAD82EC4F9073C79AF/"
+        },
+        {
+          "name": "Hostage",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315486113/545C3FA50BADD14C160FA3DA555E2DEB8DA87E68/"
+        }
+      ]
     },
     "Immobilize Token": {
       "token": {
@@ -5899,6 +5974,44 @@
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314442019/EF36C682BC69BB9239DC15B0C52EE6FFACEE19C0/"
       },
       "target": "unit"
+    },
+    "Supply Deck": {
+      "back": "http://cloud-3.steamusercontent.com/ugc/1773847942315485602/925B9FA7B35FE1478BAFC4E7314C60288C8819AB/",
+      "mutiples": 2,
+      "cards": [
+        {
+          "name": "Arc Welder",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315485990/C3F3B1B5B459DCA2B73598B2CBB178B4C7EE6DC5/"
+        },
+        {
+          "name": "Bacta Capsules",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315486053/CA14B9CD49FD92428F0B2D5050EA5DD25797DB33/"
+        },
+        {
+          "name": "Camoflauge",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315485930/9D9EDF3108F222D53AF43EB41EDD5005FF20ABDE/"
+        },
+        {
+          "name": "Field Scanner",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315485652/63D35175DBB6FC01579253CE0386B30C6D76B796/"
+        },
+        {
+          "name": "Grapnel Harpoon",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315485870/99B837BC86196C56118132AF3B36B710F9FFD87B/"
+        },
+        {
+          "name": "Holoprojector",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315485706/DD7D68FDCAB31B1BD344FE8196A8B21E8FB098D9/"
+        },
+        {
+          "name": "Precision Scopes",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315485814/B5F5B7B897E1C13EFA45120F854D762364BF9DC9/"
+        },
+        {
+          "name": "Targeting Rangefinder",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1773847942315485757/734B12CDF6B61ED03B40E35759400C1EB916D3D5/"
+        }
+      ]
     },
     "Suppression Token": {
       "token": {
