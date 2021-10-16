@@ -331,7 +331,8 @@
               "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033440/0011AF8A615526AED73E7A61D4E6C78B209F75E9/",
               "pip": 3
             }
-          ]
+          ],
+          "additionalObjects": ["Proton Charge Token", "Graffiti Token"]
         },
         {
           "name": "Luke Skywalker",
@@ -1220,7 +1221,8 @@
               "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033363/C8D04CF3CEE5DE82C69BAB90B7C61DFA842AE591/",
               "pip": 3
             }
-          ]
+          ],
+          "additionalObjects": ["Proton Charge Token"]
         },
         {
           "name": "Darth Vader",
@@ -2521,7 +2523,8 @@
               "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033609/804F443E3F33E8EB6622F46604963CE17A9D49EE/",
               "pip": 3
             }
-          ]
+          ],
+          "additionalObjects": ["Bane Token 1", "Bane Token 2", "Bane Token 3"]
         },
         {
           "name": "Maul",
@@ -3371,7 +3374,8 @@
       {
         "name": "Force Lift",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226237/8E8024D98127B2963C56671A8BE0DCE41E487350/",
-        "points": 5
+        "points": 5,
+        "additionalObjects": ["Barricade"]
       },
       {
         "name": "Force Push",
@@ -4039,7 +4043,8 @@
           "include": {
             "unit": ["BX-Series Droid Commandos"]
           }
-        }
+        },
+        "additionalObjects": ["Proton Charge Token"]
       },
       {
         "name": "E-5C B1 Trooper",
@@ -4272,7 +4277,8 @@
           "include": {
             "unit": ["Rebel Commandos"]
           }
-        }
+        },
+        "additionalObjects": ["Proton Charge Token"]
       },
       {
         "name": "RPS-6 MagnaGuard",
@@ -4370,7 +4376,8 @@
           "include": {
             "unit": ["Scout Troopers"]
           }
-        }
+        },
+        "additionalObjects": ["Proton Charge Token"]
       },
       {
         "name": "T-21 Stormtrooper",
@@ -5809,6 +5816,30 @@
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314442626/A2574B5726D1DE612FF4F2464A2315C7C85759D1/"
       },
       "target": "unit"
+    },
+    "Bane Token 1": {
+      "token": {
+        "name": "Bane Token",
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/1055478574362401130/E1FA2715959E37138C25B4B36FB963149643DAA6/"
+      },
+      "target": "table"
+    },
+    "Bane Token 2": {
+      "token": {
+        "name": "Bane Token",
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/1055478574362399079/B91760D0E7895797EBF0320BFC752F5DC04A5962/"
+      },
+      "target": "table"
+    },
+    "Bane Token 3": {
+      "token": {
+        "name": "Bane Token",
+        "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
+        "diffuse": "http://cloud-3.steamusercontent.com/ugc/1055478574362319474/84ACA1633B9C944D709B8770A251A629FF05ACBA/"
+      },
+      "target": "table"
     },
     "Barricade": {
       "model": {

@@ -103,6 +103,10 @@
       "items": {
         "type": "string"
       }
+    },
+
+    "additionalObjects": {
+      "$ref": "./AdditionalObjects.json"
     }
   },
 

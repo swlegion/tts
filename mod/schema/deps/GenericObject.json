@@ -89,6 +89,10 @@
 
         "stacks": {
           "enum": [false]
+        },
+
+        "infinite": {
+          "enum": [true]
         }
       },
 
