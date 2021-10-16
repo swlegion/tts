@@ -104,6 +104,7 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
     rank   = card.rank,
     speed  = card.speed,
     size   = card.size,
+    height = card.height or 2,
     models = result,
   }
 end
