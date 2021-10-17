@@ -5095,28 +5095,6 @@
     ]
   },
   "commands": {
-    "Resistance": [
-      {
-        "name": "Ambush",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1638738640747367511/0D64123967CBCB3E57E64E324321483E2E9A92A3/",
-        "pip": 1
-      },
-      {
-        "name": "Push",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1638738640747367841/8BFBD7B304352B113D73EA1163B5FB6A945CFFEA/",
-        "pip": 2
-      },
-      {
-        "name": "Assault",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1638738640747368914/291F77D9D709AABDD09048587737386AB26630E6/",
-        "pip": 3
-      },
-      {
-        "name": "Standing Orders",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1638738640747368408/17A434AB411C8F18417841375F88746E01E0924A/",
-        "pip": 4
-      }
-    ],
     "Sith Empire": [
       {
         "name": "Oppressive Tactics",
@@ -5127,28 +5105,6 @@
         "name": "Legacy of Vaiken",
         "image": "http://cloud-3.steamusercontent.com/ugc/1776099479278110292/436DDD7EE789790446C0C4DB7F79A24843F7273A/",
         "pip": 3
-      }
-    ],
-    "First Order": [
-      {
-        "name": "Ambush",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1638738640747367511/0D64123967CBCB3E57E64E324321483E2E9A92A3/",
-        "pip": 1
-      },
-      {
-        "name": "Push",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1638738640747367841/8BFBD7B304352B113D73EA1163B5FB6A945CFFEA/",
-        "pip": 2
-      },
-      {
-        "name": "Assault",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1638738640747368914/291F77D9D709AABDD09048587737386AB26630E6/",
-        "pip": 3
-      },
-      {
-        "name": "Standing Orders",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1638738640747368408/17A434AB411C8F18417841375F88746E01E0924A/",
-        "pip": 4
       }
     ]
   },
