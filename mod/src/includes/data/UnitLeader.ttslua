@@ -1,0 +1,44 @@
+--- Script to be initialized for every unit that is a *UNIT LEADER*.
+--
+-- @module UnitLeader
+
+--- Hidden internal state.
+--
+-- Do not store anything that isn't JSON encodable.
+local __state = {
+  -- Name of the mini.
+  name    = '',
+  -- Faction.
+  faction = '',
+  -- GUIDs to other minis and objects.
+  guids   = {
+    minis  = {},
+    card   = nil,
+    unitId = nil,
+  },
+  -- Default speed for movement.
+  speed   = 2,
+  -- Base size, mostly for calculations.
+  size    = "small",
+  -- Which player (color in TTS, not color in Legion) controls this leader.
+  owner   = "Blue",
+  -- The rank of the unit (for order control purposes).
+  rank    = "Corps",
+}
+
+function onLoad(state)
+  if not state then
+    __state = nil
+    return
+  end
+  if state then
+    __state = JSON.decode(state)
+  end
+
+  self.addTag("mini")
+  self.addTag("leader")
+end
+
+function onSave()
+  return JSON.encode(__state)
+end
