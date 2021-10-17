@@ -254,13 +254,13 @@ function spawnUnitIDToken(idSpawnPos, idSpawnRot,idNumber)
 end
 
 function spawnUnitCard(unit)
-  mainMenu()
   selectedUnit = unit
 
   local fullName = unit.name
   if unit.title then
     fullName = fullName .. " " .. unit.title
   end
+  
   unitCard = Deck:spawnUnitCard(selectedArmyFaction, fullName)
   local pos = translatePos(self.getPosition(),self.getRotation(),1.5620819440734, 52.543226290399+90)
   pos.y = self.getPosition().y + 0.35
