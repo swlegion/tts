@@ -388,22 +388,10 @@ function spawnUnitCard(faction, name, position, rotation)
   return card
 end
 
-function spawnLoadoutBag(unitName, unitUpgrades, pTemplatePos, pTemplateRot)
-  local bagOfUpgrades = spawnObject({
-    type             = "Bag",
-    position         = translatePos(
-      pTemplatePos,
-      pTemplateRot,
-      1.5620819440734,
-      52.543226290399+90
-    ),
-    callback_function = function(spawnedBag)
-      for _, upgrade in pairs(unitUpgrades) do
-        spawnUpgradeCard(upgrade, spawnedBag, pTemplateRot)
-      end
-    end,
-  })
-  bagOfUpgrades.setName("Loadout for " .. unitName)
+function spawnLoadoutBag(upgrades, container)
+  for _, upgrade in ipairs(upgrades) do
+    spawnUpgradeCard(upgrade, container, container.getRotation())
+  end
 end
 
 function spawnUpgradeCard(cardName, pTemplatePos, pTemplateRot, upgradeNumber, spawnOffsets, xOffset, zOffset)
@@ -646,48 +634,63 @@ function spawnUnit(unit, index, faction, totalUnits)
     initialZOffset = initialZOffset + (cardHeight + padding) * 2
   end
 
-  local result = Shelf:spawnUnitModels(faction, name, upgrades, function(model, index, base)   
-    local baseRadius = base * 0.5
-    local initialXOffset = unitCardWidth * 0.5 - baseRadius 
-    local xStart = adjustedPos.x + initialXOffset * xOffset
-    local position = {
-      x = xStart,
-      y = adjustedPos.y,
-      z = adjustedPos.z,
-    }
-    local paddedBase = (base + padding) * 1.5
-    local basesPerRow = math.abs(math.floor(templateHalfWidth * 2.0 / paddedBase))
-    local newIndex = index
-    local totalZOffset = initialZOffset
-    if index > basesPerRow then
-      totalZOffset = initialZOffset + (paddedBase * zOffset)
-      newIndex = index - basesPerRow
+  local objects = {
+    position = adjustedPos,
+    rotation = self.getRotation(),
+  }
+  if #loadout then
+    objects.callback = function(spawnedBag)
+      spawnLoadoutBag(loadout, spawnedBag)
     end
+  end
+  local result = Shelf:spawnUnitModels({
+    faction    = faction,
+    name       = name,
+    upgrades   = upgrades,
+    additional = objects,
+    callback   = function(model, index, base)   
+      local baseRadius = base * 0.5
+      local initialXOffset = unitCardWidth * 0.5 - baseRadius 
+      local xStart = adjustedPos.x + initialXOffset * xOffset
+      local position = {
+        x = xStart,
+        y = adjustedPos.y,
+        z = adjustedPos.z,
+      }
+      local paddedBase = (base + padding) * 1.5
+      local basesPerRow = math.abs(math.floor(templateHalfWidth * 2.0 / paddedBase))
+      local newIndex = index
+      local totalZOffset = initialZOffset
+      if index > basesPerRow then
+        totalZOffset = initialZOffset + (paddedBase * zOffset)
+        newIndex = index - basesPerRow
+      end
 
-    local baseOffset = base + (padding * xOffset)
-    local totalXOffset = (baseOffset * (newIndex - 1))
-    local xDir = xOffset * -1
-    if adjustedPos.z < 0 then
-      totalZOffset = totalZOffset * -1
-    end
-    
-    model.setPosition(
-      simpleTranslatePos(
-        position,
-        totalXOffset * xDir,
-        totalZOffset * zOffset
+      local baseOffset = base + (padding * xOffset)
+      local totalXOffset = (baseOffset * (newIndex - 1))
+      local xDir = xOffset * -1
+      if adjustedPos.z < 0 then
+        totalZOffset = totalZOffset * -1
+      end
+      
+      model.setPosition(
+        simpleTranslatePos(
+          position,
+          totalXOffset * xDir,
+          totalZOffset * zOffset
+        )
       )
-    )
-    local templateRot = self.getRotation()
-    local rotation = {templateRot.x, templateRot.y + 180, templateRot.z}
-    model.setRotation(rotation)
-    model.setColorTint(gameData.getTable("battlefieldTint"))
-    table.insert(miniData.miniObjs, {
-      obj    = model,
-      name   = model.getName(),
-      leader = index == miniData.leaderIndex,
-    })
-  end)
+      local templateRot = self.getRotation()
+      local rotation = {templateRot.x, templateRot.y + 180, templateRot.z}
+      model.setRotation(rotation)
+      model.setColorTint(gameData.getTable("battlefieldTint"))
+      table.insert(miniData.miniObjs, {
+        obj    = model,
+        name   = model.getName(),
+        leader = index == miniData.leaderIndex,
+      })
+    end
+  })
 
   -- TODO: Remove remapping.
   local remap = {
@@ -717,10 +720,6 @@ function spawnUnit(unit, index, faction, totalUnits)
     miniData.selectedSpeed = result.speed
     miniData.height = result.height
     initializeMini(miniData)
-
-    if #loadout > 0 then
-      spawnLoadoutBag(name, loadout, templatePos, self.getRotation())
-    end
 
     local commandTray = getObjectFromGUID(commandTokenTrayData[colorSide][commandType])
     local pos = commandTray.getPosition()
@@ -835,16 +834,10 @@ end
 function loadArmyFromJSON(jsonData)
   clearZone()
   local author = "Unknown"
-  local success, exception = pcall(function()
-    local listData = JSON.decode(jsonData)
-    author = listData.author
-    spawnArmy(listData, true)
-    ga_event("Game", "loadArmyFromJSON", author)
-  end)
-  if not success then
-    print("Failed to load from JSON:\n\n" .. tostring(exception))
-    ga_exception("loadArmyFromJSON:" .. author .. ":" .. tostring(exception))
-  end
+  local listData = JSON.decode(jsonData)
+  author = listData.author
+  spawnArmy(listData, true)
+  ga_event("Game", "loadArmyFromJSON", author)
 end
 
 function getListData()

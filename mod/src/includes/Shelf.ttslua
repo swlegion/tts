@@ -16,6 +16,9 @@ function Shelf:create()
     _unknown   = {
       -- TODO: Add stand-ins.
     },
+    _cache     = {
+      -- objects  = {},
+    }
   }
   setmetatable(meta, Shelf)
   return meta
@@ -25,7 +28,18 @@ function Shelf:_getSchema()
   return Global.getTable("CardsSchema")
 end
 
-function Shelf:spawnUnitModels(faction, name, upgrades, callback)
+function Shelf:spawnUnitModels(params)
+  -- Standard parameters (required).
+  local faction = params.faction
+  local name = params.name
+  local upgrades = params.upgrades
+
+  -- Optional parameters.
+  local callback = params.callback
+  local additional = params.additional
+
+  local additionalObjects = {}
+
   -- TODO: Remove remapping.
   local remap = {
     ["rebel"]      = "Rebel",
@@ -63,6 +77,11 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
     local upgrade = self:_fetchUpgradeByName(upgradeName)
     -- TODO: Handle missing upgrade more gracefully.
     if upgrade ~= nil then
+      if additional and upgrade.additionalObjects then
+        for _, name in ipairs(upgrade.additionalObjects) do
+          table.insert(additionalObjects, name)
+        end
+      end
       if upgrade.mini ~= nil and (upgrade.leader == true or card.heavyWeaponTeam == true) then
         local model = self:_spawnModel(card.size, upgrade.mini)
         model.setName(upgrade.name .. " (Unit Leader)")
@@ -100,6 +119,28 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
       end
     end
   end
+  if additional and additional.position then
+    for _, name in ipairs(card.additionalObjects or {}) do
+      table.insert(additionalObjects, name)
+    end
+    -- Spawn additional objects attached to unit or upgrade cards.
+    if #additionalObjects or additional.callback then
+      spawnObject({
+        type              = "Bag",
+        position          = additional.position,
+        rotation          = additional.rotation,
+        callback_function = function(spawnedBag)
+          for _, object in ipairs(additionalObjects) do
+            self:_spawnComplimentaryObject(object, spawnedBag)
+          end
+          if additional.callback then
+            additional.callback(spawnedBag)
+          end
+          spawnedBag.setName(card.name .. "'s Objects")
+        end
+      })
+    end
+  end
   return {
     rank   = card.rank,
     speed  = card.speed,
@@ -107,6 +148,32 @@ function Shelf:spawnUnitModels(faction, name, upgrades, callback)
     height = card.height or 2,
     models = result,
   }
+end
+
+function Shelf:_spawnComplimentaryObject(name, container)
+  if not self._cache.objects then
+    local cache = {}
+    for name, details in pairs(self._getSchema().objects) do
+      cache[name:upper()] = details
+    end
+    self._cache.objects = cache
+  end
+  local spawn = self._cache.objects[name:upper()]
+  local object
+  if spawn.token then
+    object = self:_spawnModel(nil, spawn.token, { type = 5 })
+    object.setName(spawn.token.name or name)
+  elseif spawn.model then
+    object = self:_spawnModel(nil, spawn.model)
+    object.setName(name)
+  elseif spawn.cards then
+    print("Unimplemented object definition: \"" .. name .. "\" (" .. container.getName() .. ")")
+  else
+    print("Unsupported object definition: \"" .. name .. "\" (" .. container.getName() .. ")")
+  end
+  if object then
+    container.putObject(object)
+  end
 end
 
 function Shelf:_fetchUpgradeByName(name)
@@ -131,8 +198,9 @@ function Shelf:_spawnDudModel(name, description)
   return model
 end
 
-function Shelf:_spawnModel(size, miniConfig)
+function Shelf:_spawnModel(size, miniConfig, objectOverrides)
   local mini
+  local type = objectOverrides and objectOverrides.type or 1
   if miniConfig.mesh == nil then
     mini = spawnObject({
       type = "Custom_AssetBundle"
@@ -140,18 +208,22 @@ function Shelf:_spawnModel(size, miniConfig)
     mini.setCustomObject({
       assetbundle = miniConfig.bundle,
       assetbundle_secondary = miniConfig.secondary,
-      type = 1,
+      type = type,
       material = 3,
     })
   else
+    local collider = miniConfig.collider
+    if not collider and size then
+      collider = self._colliders[size][1]
+    end
     mini = spawnObject({
       type = "Custom_Model"
     })
     mini.setCustomObject({
       diffuse = miniConfig.diffuse,
       mesh = miniConfig.mesh,
-      collider = self._colliders[size][1],
-      type = 1,
+      collider = collider,
+      type = type,
       material = 3,
     })
   end
