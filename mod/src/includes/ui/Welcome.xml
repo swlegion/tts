@@ -36,9 +36,15 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v6.0.0</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v6.0.1</b>.
 
           <b>CHANGELOG</b>
+
+          (Since v6.0.0)
+
+          - Fix: Re-selecting a unit with the in-game list builder no longer causes "unknown error".
+
+          (Since v5.0.0)
 
           - Changed the battlefield selection deck to pick 4 (instead of 3) for upcoming RRG.
 
