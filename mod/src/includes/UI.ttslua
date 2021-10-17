@@ -102,6 +102,15 @@ function experimentalSideLoad()
       end
       print("Injected " .. tostring(loaded) .. " battlefield card(s).")
     end
+    if json.objects then
+      local loaded = 0
+      for name, data in pairs(json.objects) do
+        Global.call("sideLoadObject", {
+          name = name,
+          data = data,
+        })
+      end
+    end
   end)
 end
 
