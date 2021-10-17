@@ -199,9 +199,9 @@ function Shelf:_spawnComplimentaryObject(name, container, scripts)
       object.setLuaScript(luaScript)
       object.reload()
       container.putObject(object)
+    else
+      container.putObject(object)
     end
-  else
-    container.putObject(object)
   end
 end
 

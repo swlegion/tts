@@ -153,6 +153,9 @@ function spawnObjs(cardType, selectedBattleCardName)
     cardType,
     _G.selectedScenario
   )
+  if #objects == 0 then
+    return
+  end
   local position = ({
     objective  = {49, 1, 16},
     deployment = {49, 1, 12},
