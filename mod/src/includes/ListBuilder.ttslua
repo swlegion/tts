@@ -638,7 +638,7 @@ function spawnUnit(unit, index, faction, totalUnits)
     position = adjustedPos,
     rotation = self.getRotation(),
   }
-  if #loadout then
+  if #loadout > 0 then
     objects.callback = function(spawnedBag)
       spawnLoadoutBag(loadout, spawnedBag)
     end

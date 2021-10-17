@@ -124,7 +124,7 @@ function Shelf:spawnUnitModels(params)
       table.insert(additionalObjects, name)
     end
     -- Spawn additional objects attached to unit or upgrade cards.
-    if #additionalObjects or additional.callback then
+    if #additionalObjects > 0 or additional.callback then
       self:spawnAdditionalObjects({
         name     = card.name .. "'s Objects",
         position = additional.position,
