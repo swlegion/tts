@@ -36,25 +36,9 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v6.0.0-beta</b>.
-
-          This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
-          
-          To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.
+          Welcome to Star Wars: Legion for TTS, <b>v6.0.0</b>.
 
           <b>CHANGELOG</b>
-
-          (Since last <i>Beta</i>)
-
-          - <b>KNOWN ISSUES</b>: Some vehicle pilots are not selectable w/ list-builder.
-          - We are <b>NOT</b> fixing these issues in time for a stable release.
-          - Please still do report them, we'll fix them in an upcoming release.
-
-          - Fix: Movement tool bugs.
-          - Fix: Payload is now movable.
-          - Fix: Encoded 1.4 FD as "Speed 1" in order to allow Scout-X moves.
-
-          (Since last <i>Stable</i>)
 
           - Changed the battlefield selection deck to pick 4 (instead of 3) for upcoming RRG.
 
@@ -79,6 +63,10 @@
           - Chess clocks are now hidden by default. Click "Chess Clocks" to show (and use).
           - Chess clocks (and the UI) are now persisted across saves/loads.
           - ID tokens are now also tinted as part of the "auto tint" functionality.
+
+          - <b>KNOWN ISSUES</b>: Some vehicle pilots are not selectable w/ list-builder.
+          - We are <b>NOT</b> fixing these issues in time for a stable release.
+          - Please still do report them, we'll fix them in an upcoming release.
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
