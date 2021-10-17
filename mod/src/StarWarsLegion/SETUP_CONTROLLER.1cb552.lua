@@ -168,8 +168,8 @@ function spawnObjs(cardType, selectedBattleCardName)
     -- skipped, i.e. the setup controller is the only way to get scripting
     -- behavior.
     scripts  = {
-      ["toggle-range-1"] = scriptRange1Token,
-      ["bomb-cart"]      = scriptBombCart,
+      ["toggle-range-1"] = _G.scriptRange1Token,
+      ["bomb-cart"]      = _G.scriptBombCart,
     }
   })
 end

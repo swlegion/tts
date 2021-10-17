@@ -155,7 +155,7 @@ function Shelf:spawnAdditionalObjects(params)
     rotation          = rotation,
     callback_function = function(spawnedBag)
       for _, object in ipairs(objects) do
-        self:_spawnComplimentaryObject(object, spawnedBag)
+        self:_spawnComplimentaryObject(object, spawnedBag, params.scripts or {})
       end
       if callback then
         callback(spawnedBag)
@@ -165,7 +165,7 @@ function Shelf:spawnAdditionalObjects(params)
   })
 end
 
-function Shelf:_spawnComplimentaryObject(name, container)
+function Shelf:_spawnComplimentaryObject(name, container, scripts)
   if not self._cache.objects then
     local cache = {}
     for name, details in pairs(self._getSchema().objects) do
@@ -194,6 +194,13 @@ function Shelf:_spawnComplimentaryObject(name, container)
     print("Unsupported object definition: \"" .. name .. "\" (" .. container.getName() .. ")")
   end
   if object then
+    if spawn.scripted then
+      local luaScript = scripts[spawn.scripted]
+      object.setLuaScript(luaScript)
+      object.reload()
+      container.putObject(object)
+    end
+  else
     container.putObject(object)
   end
 end
