@@ -182,13 +182,37 @@ function Shelf:_spawnComplimentaryObject(name, container)
     object = self:_spawnModel(nil, spawn.model)
     object.setName(name)
   elseif spawn.cards then
-    print("Unimplemented object definition: \"" .. name .. "\" (" .. container.getName() .. ")")
+    for i = 1, spawn.multiples or 1 do
+      for _, details in ipairs(spawn.cards) do
+        local back = details.back or spawn.back
+        local card = self:_spawnCard(details.image, back)
+        card.setName(details.name)
+        container.putObject(card)
+      end
+    end
   else
     print("Unsupported object definition: \"" .. name .. "\" (" .. container.getName() .. ")")
   end
   if object then
     container.putObject(object)
   end
+end
+
+function Shelf:_spawnCard(front, back)
+  local custom = spawnObject({
+    type     = "CardCustom",
+    position = {54.62, 0.94, -35.45},
+    scale    = {0.83, 1, 0.83},
+  })
+  -- Failsafe to avoid a `nil` error.
+  if back == nil then
+    back = front
+  end
+  custom.setCustomObject({
+    face     = front,
+    back     = back,
+  })
+  return custom
 end
 
 function Shelf:_fetchUpgradeByName(name)

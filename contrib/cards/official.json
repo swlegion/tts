@@ -5506,7 +5506,12 @@
         {
           "name": "Key Positions",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152103/6BF1CD3BC8EA028CA31C3EE21FA87E28AC992873/",
-          "type": "horizontal"
+          "type": "horizontal",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
         },
         {
           "name": "Payload",
@@ -6017,7 +6022,7 @@
     },
     "Supply Deck": {
       "back": "http://cloud-3.steamusercontent.com/ugc/1773847942315485602/925B9FA7B35FE1478BAFC4E7314C60288C8819AB/",
-      "mutiples": 2,
+      "multiples": 2,
       "cards": [
         {
           "name": "Arc Welder",
