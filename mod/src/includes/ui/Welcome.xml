@@ -44,14 +44,16 @@
 
           <b>CHANGELOG</b>
 
+          <!---
           (Since last <i>Beta</i>)
 
           -
-
+          
+          -->
           (Since last <i>Stable</i>)
 
-          - Feat: Deployment cards now specify deployment zones programatically.
-          - Feat: Added limited support for Skirmish battlefield decks.
+          - Feat: Battle cards now specify objects and zones programatically.
+          - Feat: Added full support for Skirmish battlefield decks.
 
           - Fix: Various pilots that were not selectable w/ list-builder are now.
           - Fix: Medium base size and various movement tool oddities.
