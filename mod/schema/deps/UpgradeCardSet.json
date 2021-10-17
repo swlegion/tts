@@ -13,7 +13,10 @@
   },
 
   "propertyNames": {
-    "$ref": "./Upgrades.json"
+    "anyOf": [
+      { "$ref": "./Upgrades.json" },
+      { "type": "string", "minLength": 1 }
+    ]
   },
 
   "type": "object"

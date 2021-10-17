@@ -40,7 +40,10 @@
     },
 
     "type": {
-      "$ref": "./UnitTypes.json"
+      "anyOf": [
+        { "$ref": "./UnitTypes.json" },
+        { "type": "string", "minLength": 1 }
+      ]
     },
 
     "heavyWeaponTeam": {
@@ -90,7 +93,10 @@
       },
 
       "propertyNames": {
-        "$ref": "./Upgrades.json"
+        "anyOf": [
+          { "$ref": "./Upgrades.json" },
+          { "type": "string", "minLength": 1 }
+        ]
       },
 
       "type": "object"
