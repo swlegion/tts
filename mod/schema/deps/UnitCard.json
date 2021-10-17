@@ -75,6 +75,14 @@
       "minimum": 0
     },
 
+    "height": {
+      "description": "The approximate height of the model, in inches. The default, which is intended for small-base (trooper) minis, is 2.",
+      "type": "number",
+      "minimum": 1,
+      "default": 2,
+      "maximum": 10
+    },
+
     "upgrades": {
       "additionalProperties": {
         "type": "number",

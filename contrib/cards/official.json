@@ -872,6 +872,7 @@
           "type": "Repulsor Vehicle",
           "points": 75,
           "speed": 1,
+          "height": 4,
           "upgrades": {
             "Pilot": 1,
             "Crew": 2,
@@ -1675,6 +1676,7 @@
           "type": "Repulsor Vehicle",
           "points": 120,
           "speed": 2,
+          "height": 7,
           "upgrades": {
             "Pilot": 1,
             "Ordnance": 1,
@@ -2245,6 +2247,7 @@
           "type": "Repulsor Vehicle",
           "points": 120,
           "speed": 2,
+          "height": 7,
           "upgrades": {
             "Pilot": 1,
             "Ordnance": 1,

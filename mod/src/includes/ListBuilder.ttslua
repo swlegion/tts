@@ -715,6 +715,7 @@ function spawnUnit(unit, index, faction, totalUnits)
     miniData.commandName = commandName
     miniData.commandType = commandType
     miniData.selectedSpeed = result.speed
+    miniData.height = result.height
     initializeMini(miniData)
 
     if #loadout > 0 then
@@ -782,6 +783,7 @@ function initializeMini(pMiniTable)
         "\"\n selectedSpeed = "..pMiniTable.selectedSpeed .. 
         "\n baseSize = \""..pMiniTable.baseSize .. 
         "\"\n unitID = " .. pMiniTable.unitID .. 
+        "\n height = " .. pMiniTable.height ..
         "\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID .. 
         "\"\n" .. listBuilder.modelMiniScript
     else
