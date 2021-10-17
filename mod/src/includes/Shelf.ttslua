@@ -125,19 +125,12 @@ function Shelf:spawnUnitModels(params)
     end
     -- Spawn additional objects attached to unit or upgrade cards.
     if #additionalObjects or additional.callback then
-      spawnObject({
-        type              = "Bag",
-        position          = additional.position,
-        rotation          = additional.rotation,
-        callback_function = function(spawnedBag)
-          for _, object in ipairs(additionalObjects) do
-            self:_spawnComplimentaryObject(object, spawnedBag)
-          end
-          if additional.callback then
-            additional.callback(spawnedBag)
-          end
-          spawnedBag.setName(card.name .. "'s Objects")
-        end
+      self:spawnAdditionalObjects({
+        name     = card.name .. "'s Objects",
+        position = additional.position,
+        rotation = additional.rotation,
+        callback = additional.callback,
+        objects  = additionalObjects,
       })
     end
   end
@@ -148,6 +141,28 @@ function Shelf:spawnUnitModels(params)
     height = card.height or 2,
     models = result,
   }
+end
+
+function Shelf:spawnAdditionalObjects(params)
+  local name     = params.name or "Additional Objects"
+  local position = params.position
+  local rotation = params.rotation
+  local objects  = params.objects or {}
+  local callback = params.callback
+  spawnObject({
+    type              = "Bag",
+    position          = position,
+    rotation          = rotation,
+    callback_function = function(spawnedBag)
+      for _, object in ipairs(objects) do
+        self:_spawnComplimentaryObject(object, spawnedBag)
+      end
+      if callback then
+        callback(spawnedBag)
+      end
+      spawnedBag.setName(name)
+    end
+  })
 end
 
 function Shelf:_spawnComplimentaryObject(name, container)
