@@ -5837,7 +5837,8 @@
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/1055478574362401130/E1FA2715959E37138C25B4B36FB963149643DAA6/"
       },
-      "target": "table"
+      "target": "table",
+      "scripted": "toggle-range-1"
     },
     "Bane Token: Bomb": {
       "token": {
@@ -5845,7 +5846,8 @@
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/1055478574362399079/B91760D0E7895797EBF0320BFC752F5DC04A5962/"
       },
-      "target": "table"
+      "target": "table",
+      "scripted": "toggle-range-1"
     },
     "Bane Token: Bane": {
       "token": {
@@ -5853,7 +5855,8 @@
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/1055478574362319474/84ACA1633B9C944D709B8770A251A629FF05ACBA/"
       },
-      "target": "table"
+      "target": "table",
+      "scripted": "toggle-range-1"
     },
     "Barricade": {
       "model": {
@@ -5869,7 +5872,8 @@
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/1002556529493751537/4CC48BB4450924701366C8EDED262930F423E4AB/",
         "collider": "http://cloud-3.steamusercontent.com/ugc/785234540540671597/B477FDC4D3200384E974945C2974ABFEFA566166/"
       },
-      "type": "custom"
+      "type": "custom",
+      "scripted": "bomb-cart"
     },
     "Commander Token": {
       "token": {
@@ -5885,7 +5889,8 @@
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786360308354563594/D7CA9A23D1F8610544A092594F1CFF19C8C0A578/"
       },
       "target": "table",
-      "stacks": false
+      "stacks": false,
+      "scripted": "toggle-range-1"
     },
     "Damaged Token": {
       "token": {
@@ -5965,7 +5970,8 @@
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786360308354563594/D7CA9A23D1F8610544A092594F1CFF19C8C0A578/"
       },
       "target": "table",
-      "stacks": false
+      "stacks": false,
+      "scripted": "toggle-range-1"
     },
     "Operative Token": {
       "token": {
@@ -5996,7 +6002,8 @@
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359883314446398/425766A72D25CEB4F0E9C8BED9FCFDD68109D4B7/"
       },
       "target": "table",
-      "stacks": false
+      "stacks": false,
+      "scripted": "toggle-range-1"
     },
     "Shield Token": {
       "token": {
@@ -6011,7 +6018,8 @@
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717874061016/BB4832A82AEEA19EE9B1E9498380E7D3850DB0B6/"
       },
       "target": "table",
-      "stacks": false
+      "stacks": false,
+      "scripted": "toggle-range-1"
     },
     "Standby Token": {
       "token": {

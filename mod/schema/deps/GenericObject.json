@@ -50,7 +50,7 @@
           }
         },
 
-        "mutiples": {
+        "multiples": {
           "type": "number",
           "minimum": 2
         }
@@ -68,6 +68,10 @@
 
         "type": {
           "enum": ["custom", "terrain"]
+        },
+
+        "scripted": {
+          "enum": ["bomb-cart"]
         }
       },
 
@@ -95,6 +99,10 @@
         "infinite": {
           "description": "By default tokens are spawned as a 1-off. May set to \"true\" to spawn a token generator instead.",
           "enum": [true]
+        },
+
+        "scripted": {
+          "enum": ["toggle-range-1"]
         }
       },
 

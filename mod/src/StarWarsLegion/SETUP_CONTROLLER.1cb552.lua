@@ -15,7 +15,9 @@ function onload(save_state)
     gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
     battlefieldTint = gameData.getTable("battlefieldTint")
 
-    -- token stacks
+    -- token scripts
+    _G.scriptRange1Token = nil
+    _G.scriptBombCart = nil
     getTokenScripts()
 
     -- buttonObjs
@@ -72,22 +74,12 @@ function changeScenario(params)
 end
 
 function getTokenScripts()
-    local conditionTokens = getObjectFromGUID("4d25eb")
-    local objectiveTokens = getObjectFromGUID("094239")
-
-    conditionTokens.takeObject({
-      callback_function = function(token)
-        conditionTokenScript = token.getLuaScript()
-        destroyObject(token)
-      end
-    })
-    
-    objectiveTokens.takeObject({
-      callback_function = function(token)
-        objectiveTokenScript = token.getLuaScript()
-        destroyObject(token)
-      end
-    })
+  getObjectFromGUID("4d25eb").takeObject({
+    callback_function = function(token)
+      _G.scriptRange1Token = token.getLuaScript()
+      destroyObject(token)
+    end
+  })
 end
 
 function objectiveMenu()
@@ -171,10 +163,15 @@ function spawnObjs(cardType, selectedBattleCardName)
     name     = selectedBattleCardName .. "'s Objects",
     position = position,
     objects  = objects,
+    -- TODO: Make this global somehow instead.
+    -- Right now if you spawn scripted tokens from the list builder this is
+    -- skipped, i.e. the setup controller is the only way to get scripting
+    -- behavior.
+    scripts  = {
+      ["toggle-range-1"] = scriptRange1Token,
+      ["bomb-cart"]      = scriptBombCart,
+    }
   })
-  -- TODO
-  -- conditionTokenScript
-  -- objectiveTokenScript
 end
 
 function spawnDeploymentBoundary(matrix)
