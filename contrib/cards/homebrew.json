@@ -1034,7 +1034,7 @@
           "heavyWeaponTeam": true,
           "image": "http://cloud-3.steamusercontent.com/ugc/1022821770986742661/33B78DBDC2B4A466B810D5299DB14745FAFB1E68/",
           "size": "medium",
-          "type": "CreatureTrooper",
+          "type": "Creature Trooper",
           "points": 45,
           "speed": 2,
           "upgrades": {
@@ -1051,7 +1051,7 @@
         },
         {
           "name": "Rose Tico",
-          "Title": "Skilled Technician",
+          "title": "Skilled Technician",
           "image": "http://cloud-3.steamusercontent.com/ugc/1021697620253184171/055BD7F8C30E5D043104316A572B1846227F6DC5/",
           "size": "small",
           "type": "Trooper",
@@ -2976,7 +2976,6 @@
     "Counterpart": [
       {
         "name": "BB-8",
-        "title": "Quite a Popular Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1022824296871784739/BA69ED4E4B2926D1C9E5FB255791569EB5AA7A05/",
         "points": 25,
         "mini": {
@@ -3468,21 +3467,7 @@
           "include": {
             "unit": ["SD-4K Assassin Droid"]
           }
-        },
-        "minis": [
-          {
-            "mesh": "http://cloud-3.steamusercontent.com/ugc/1055478180707374292/2E17AB5EA70C93FFCBE1972EF8FDAD91A0666B41/",
-            "diffuse": "http://cloud-3.steamusercontent.com/ugc/1055478180707371561/0E33F8C27E1D74193F435DFABE59064AED0FB64B/"
-          },
-          {
-            "mesh": "http://cloud-3.steamusercontent.com/ugc/1055478180707374292/2E17AB5EA70C93FFCBE1972EF8FDAD91A0666B41/",
-            "diffuse": "http://cloud-3.steamusercontent.com/ugc/1055478180707371561/0E33F8C27E1D74193F435DFABE59064AED0FB64B/"
-          },
-          {
-            "mesh": "http://cloud-3.steamusercontent.com/ugc/1055478180707374292/2E17AB5EA70C93FFCBE1972EF8FDAD91A0666B41/",
-            "diffuse": "http://cloud-3.steamusercontent.com/ugc/1055478180707371561/0E33F8C27E1D74193F435DFABE59064AED0FB64B/"
-          }
-        ]
+        }
       },
       {
         "name": "Proton Missile Launcher",
@@ -5090,7 +5075,7 @@
       {
         "name": "Geonosian Brain Worms",
         "image": "http://cloud-3.steamusercontent.com/ugc/1638738640746957609/4564866DD4465ADC1224AC20C8A82A2895D19FE9/",
-        "points": -12,
+        "points": 0,
         "restrictions": {
           "include": {
             "unit": ["Geonosian Warriors"]
