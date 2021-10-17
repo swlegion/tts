@@ -33,3 +33,9 @@ function sideLoadBattle(params)
   local kind = params.kind:lower()
   _G.CardsSchema.battlefield[type][kind] = data
 end
+
+function sideLoadObject(params)
+  local name = params.name:upper()
+  local data = params.data
+  _G.CardsSchema.objects[name] = data
+end
