@@ -44,12 +44,10 @@
 
           <b>CHANGELOG</b>
 
-          <!---
           (Since last <i>Beta</i>)
 
-          -
+          - Fix: Re-selecting a unit with the in-game list builder no longer causes "unknown error".
           
-          -->
           (Since last <i>Stable</i>)
 
           - Feat: Battle cards now specify objects and zones programatically.
