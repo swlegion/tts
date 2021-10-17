@@ -6,6 +6,10 @@ scripted = true
 -- Bomb Cart Token
 -- It acts both as a miniature *and* a command token (for itself).
 function onLoad()
+  if self.getName() ~= "Bomb Cart" then
+    return
+  end
+
   -- Medium base and movement states.
   moveState = false
   baseSize = "medium"

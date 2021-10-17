@@ -78,6 +78,7 @@ function getTokenScripts()
       destroyObject(token)
     end
   })
+  _G.scriptBombCart = getObjectFromGUID("b497e1").getLuaScript()
 end
 
 function objectiveMenu()
