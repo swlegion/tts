@@ -338,8 +338,6 @@ function onload(saveData)
 
     -- setup data
     setUpData = {}
-    setUpData.conditionsCartridgeGUID = "1c7fbf"
-    setUpData.objectiveCartridgeGUID = "3d15a5"
     setUpData.deploymentMountGUID = "538f4d"
     setUpData.objectiveMountGUID = "9480a7"
     setUpData.conditionsMountGUID = "c6b3a9"
