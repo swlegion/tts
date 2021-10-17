@@ -9,8 +9,6 @@ function onload(save_state)
     -- intialize
     setUpCards = Global.getTable("setUpCards")
     setUpData = Global.getTable("setUpData")
-    conditionsCartridge = getObjectFromGUID(setUpData.conditionsCartridgeGUID)
-    objectiveCartridge = getObjectFromGUID(setUpData.objectiveCartridgeGUID)
     battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
     gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
     battlefieldTint = gameData.getTable("battlefieldTint")
