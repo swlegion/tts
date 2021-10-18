@@ -1,0 +1,60 @@
+local function initListSpawner(deck, globals, color, mount)
+  local function dealCommandCard(name, contingency)
+    local card = deck:spawnCommandCard(name, contingency)
+    if contingency then
+      card.highlightOn({0, 1, 1})
+    end
+    local hand = globals.handPos[color:lower()]
+    card.setRotation(hand.rot)
+    card.setPosition(hand.pos)
+  end
+
+  local function drawBattlefieldCard(height, name, type, scenario)
+    local card = deck:spawnBattleCard(type, name, scenario)
+    local position = mount.getPosition()
+    position.y = position.y + 0.23 + (height * 0.1)
+    card.setPosition(position)
+    local rotation = mount.getRotation()
+    rotation.z = 180
+    card.setRotation(rotation)
+  end
+
+  local function buildBattlefieldDeck(
+    scenario,
+    objectives,
+    deployments,
+    conditions
+  )
+    local i = 0
+    for _, card in ipairs(objectives) do
+      drawBattlefieldCard(i, card, "objective", scenario)
+      i = i + 1
+    end
+    for _, card in ipairs(deployments) do
+      drawBattlefieldCard(i, card, "deployment", scenario)
+      i = i + 1
+    end
+    for _, card in ipairs(conditions) do
+      drawBattlefieldCard(i, card, "condition", scenario)
+      i = i + 1
+    end
+  end
+
+  return function(listData)
+    for _, c in ipairs(listData.commandCards) do
+      dealCommandCard(c, false)
+    end
+    for _, c in ipairs(listDAta.contingencies) do
+      dealCommandCard(c, true)
+    end
+    local scenario = listData.battlefieldDeck.scenario or "standard"
+    buildBattlefieldDeck(
+      scenario,
+      listData.battlefieldDeck.objective,
+      listData.battlefieldDeck.deployment,
+      listData.battlefieldDeck.condition or listData.battlefieldDeck.condtions
+    )
+    -- TODO: Remove this giant hack and replace it with a select/text box.
+    Global.setVar(color:lower() .. "SelectedScenario", listData.scenario)
+  end
+end

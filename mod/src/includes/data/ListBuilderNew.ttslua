@@ -411,7 +411,8 @@ function _loadArmyFromJson(data)
   local spawn = initListSpawner(
     _deck,
     Global.getTable("listBuilder"),
-    __state.color
+    __state.color,
+    getObjectFromGUID(__state.guids.deckBuilder)
   )
   spawn(data)
 end
