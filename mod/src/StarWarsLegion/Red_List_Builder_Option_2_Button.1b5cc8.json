@@ -41,7 +41,7 @@
       "TypeIndex": 0,
       "LoopingEffectIndex": 0
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Red_List_Builder_Option_2_Button.1b5cc8.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },
