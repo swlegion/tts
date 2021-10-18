@@ -4,7 +4,10 @@
     "options": ["9ef6b1", "5e6794", "93647c", "b1c973"],
     "buttons": ["909b03", "1b5cc8", "a39e50", "1faf70"],
     "back": "d323a0",
-    "mount": "ace9b9"
+    "mount": "ace9b9",
+    "deckBuilder": null,
+    "unitBuilders": []
   },
+  "faction": null,
   "scenario": "Standard"
 }

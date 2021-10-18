@@ -2,18 +2,7 @@ require('!/common/Stringx')
 require('!/Deck')
 require('!/Shelf')
 
-local __state = {
-  color    = "Blue",
-  guids    = {
-    options  = {},
-    buttons  = {},
-    back     = nil,
-    mount    = nil,
-    builder  = nil,
-  },
-  faction  = nil,
-  scenario = "",
-}
+local __state = {}
 
 local _deck = Deck:create()
 local _shelf = Shelf:create()
@@ -45,13 +34,13 @@ local ui = {
 
   back = function(tooltip, callback)
     local button = getObjectFromGUID(__state.guids.back)
-    local callback = "_onButtonClicked_Back"
-    _G[callback] = function()
-      button.AssetBundle.playTriggerEffect()
+    local callName = "_onButtonClicked_Back"
+    _G[callName] = function()
+      button.AssetBundle.playTriggerEffect(0)
       callback()
     end
     button.createButton({
-      click_function    = callback,
+      click_function    = callName,
       function_owner    = self,
       label             = "BACK",
       position          = {0, 0.65, 0},
@@ -129,18 +118,27 @@ local ui = {
 }
 
 function _clearZone()
-  if __state.guids.builder then
-    local o = getObjectFromGUID(__state.guids.builder)
-    destroyObject(o)
-    __state.guids.builder = nil
+  if __state.guids.deckBuilder then
+    local o = getObjectFromGUID(__state.guids.deckBuilder)
+    if o then
+      destroyObject(o)
+    end
+    __state.guids.deckBuilder = nil
   end
+  for _, o in ipairs(__state.guids.unitBuilders) do
+    o = getObjectFromGUID(o)
+    if o then
+      destroyObject(o)
+    end
+  end
+  __state.guids.unitBuilders = {}
 end
 
 function _spawnTemplates()
   local globals = Global.getTable("listBuilder")
   local deckBuilder = spawnObject({
     type       = "Custom_Model",
-    position   = globals.deckBuilderPos[__state.color],
+    position   = globals.deckBuilderPos[__state.color:lower()],
     rotation   = self.getRotation(),
   })
   deckBuilder.setCustomObject({
@@ -161,8 +159,33 @@ function _spawnTemplates()
       getObjectFromGUID(globals.deckBuilderGUID).getLuaScript()
     )
   )
-  deckBuilder.interactable = false
-  __state.guids.builder = deckBuilder.getGUID()
+  __state.guids.deckBuilder = deckBuilder.getGUID()
+
+  local unitTemplate = getObjectFromGUID(globals.modelTemplateGUID)
+  for i = 1, 20, 1 do
+    local position = globals[__state.color:lower() .. "TemplatePos"][i]
+    local rotation
+    if __state.color == "Red" then
+      rotation = {0, 0, 180}
+    else
+      rotation = {0, 180, 180}
+    end
+    local unitBuilder = unitTemplate.clone({
+      position = position,
+      rotation = rotation,
+      scale    = {1, 1, 1},
+    })
+    -- TODO: Triggers the script running. Remove after refactored.
+    unitBuilder.setName("")
+    unitBuilder.interactable = false
+    unitBuilder.script_state = JSON.encode({
+      colorSide       = __state.color:lower(),
+      templateIndex   = i,
+      deckBuilderGuid = deckBuilder.getGUID(),
+      selectedFaction = __state.faction,
+    })
+    table.insert(__state.guids.unitBuilders, unitBuilder.getGUID())
+  end
 end
 
 function _mainMenu()
@@ -202,6 +225,7 @@ function _mainMenu()
 end
 
 function _chooseFaction()
+  _clearZone()
   ui.clear()
   ui.back("Go back to the main menu", _mainMenu)
   local buttons = {}
@@ -211,8 +235,7 @@ function _chooseFaction()
       title    = title,
       tooltip  = "Create a " .. title .. " army",
       callback = function()
-        __state.faction = faction:upper()
-        _createArmy()
+        _createArmy(title)
       end,
       tint     = {0, 0.913, 1},
     })
@@ -220,7 +243,8 @@ function _chooseFaction()
   ui.draw(buttons)
 end
 
-function _createArmy()
+function _createArmy(faction)
+  __state.faction = faction
   _clearZone()
   _spawnTemplates()
 
