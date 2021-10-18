@@ -8,6 +8,5 @@
     "deckBuilder": null,
     "unitBuilders": []
   },
-  "faction": null,
-  "scenario": "Standard"
+  "faction": null
 }

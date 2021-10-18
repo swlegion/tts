@@ -270,7 +270,7 @@ function _createArmy(faction)
       tint      = {0, 0.913, 1},
     },
     {
-      title     = __state.scenario .. " Battle Deck",
+      title     = _getSelectedScenario() .. " Battle Deck",
       tooltip   = "Change battle deck",
       secondary = "→",
       callback  = _changeBattleDeck,
@@ -291,6 +291,31 @@ function _resetArmy()
 
 end
 
-function _changeBattleDeck()
+function _getSelectedScenario()
+  return getObjectFromGUID(__state.guids.deckBuilderObj).getVar("selectedScenario")
+end
 
+function _setSelectedScenario(name)
+  getObjectFromGUID(__state.guids.deckBuilderObj).call("switchBattleDeck", {
+    name = name,
+  })
+end
+
+function _changeBattleDeck()
+  local current = _getSelectedScenario()
+  local scenarios = _deck:getBattleCardScenarios()
+  local index = 0
+  for i, name in ipairs(scenarios) do
+    if name:lower() == current:lower() then
+      index = i
+      break
+    end
+  end
+  index = index + 1
+  if index > #scenarios then
+    index = 1
+  end
+  current = scenarios[index]
+  _setSelectedScenario(current)
+  _createArmy(__state.faction)
 end
