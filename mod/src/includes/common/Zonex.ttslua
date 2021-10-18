@@ -1,0 +1,7 @@
+local zonex = {
+  clear = function(zone)
+    for _, o in ipairs(zone.getObjects()) do
+      destroyObject(o)
+    end
+  end,
+}

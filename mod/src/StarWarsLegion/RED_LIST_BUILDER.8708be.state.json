@@ -5,9 +5,12 @@
     "buttons": ["909b03", "1b5cc8", "a39e50", "1faf70"],
     "back": "d323a0",
     "mount": "ace9b9",
+    "cardZone": "2c09a9",
+    "handZone": "ae224d",
     "deckBuilder": null,
     "unitBuilders": []
   },
+  "points": 0,
   "faction": null,
   "scenario": "standard"
 }

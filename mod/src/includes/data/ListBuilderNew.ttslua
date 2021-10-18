@@ -1,3 +1,4 @@
+require('!/common/Math')
 require('!/common/Stringx')
 require('!/Deck')
 require('!/Shelf')
@@ -184,6 +185,8 @@ function _spawnTemplates()
       deckBuilderGuid = deckBuilder.getGUID(),
       selectedFaction = __state.faction,
     })
+    position = unitBuilder.getPosition()
+    unitBuilder.setPosition({position.x, 1, position.z})
     table.insert(__state.guids.unitBuilders, unitBuilder.getGUID())
   end
 end
@@ -216,12 +219,32 @@ function _mainMenu()
     {
       title    = "Auto Tint",
       tooltip  = "Apply automatic base tining to yet-to-be-deployment units",
-      callback = function()
-        print("Auto Tint")
-      end,
+      callback = _autoTint,
       tint     = {0, 0.913, 1},
     }
   })
+end
+
+function _autoTint()
+  local tints = ({
+    Red  = {
+      0xFE737C,
+      0xF5D3B3,
+      0xF4A460,
+      0xD2691E,
+      0xDAA520,
+      0x8B4513,
+    },
+    Blue = {
+      0x0C2C8C,
+      0x36E19C,
+      0xA46C8C,
+      0xBCD0D6,
+      0x29335D,
+      0x4875F1,
+    }
+  })[__state.color]
+  -- TODO: Finish implementing.
 end
 
 function _chooseFaction()
@@ -282,12 +305,68 @@ function _saveAndLoadArmy()
 
 end
 
-function _saveArmy()
+function _generateListData()
+  local deckBuilder = getObjectFromGUID(__state.guids.deckBuilder)
+  local battleDeck = deckBuilder.getTable("battlefieldCardSelection")
+  battleDeck.scenario = __state.scenario
+  local listData = {
+    author          = "SWLegion TTS Mod",
+    points          = __state.points,
+    faction         = __state.faction,
+    units           = {},
+    commandCards    = deckBuilder.getTable("commandCardSelection"),
+    contingencies   = deckBuilder.getTable("contingencyCardSelection"),
+    battlefieldDeck = battleDeck,
+  }
+  for _, guid in ipairs(__state.guids.unitBuilders) do
+    local unitBuilder = getObjectFromGUID(guid)
+    local text = unitBuilder.call("getListText")
+    if text then
+      local upgrades = {}
+      for _, entry in ipairs(text.upgrades) do
+        table.insert(upgrades, entry)
+      end
+      table.insert(listData.units, {
+        name     = text.name,
+        upgrades = upgrades,
+      })
+    end
+  end
+  return listData
+end
 
+function _saveArmy()
+  local globals = Global.getTable("listBuilder")
+  local listData = _generateListData()
+  local diskMount = getObjectFromGUID(__state.guids.mount)
+  local position = translatePos(
+    diskMount.getPosition(),
+    diskMount.getRotation(),
+    0.03,
+    90
+  )
+  position.y = position.y + 1
+  local dataDisk = getObjectFromGUID(globals.dataDisk.guid).clone({
+    position     = position,
+    rotation     = self.getRotation(),
+    scale        = {1, 1, 1},
+    snap_to_grid = false,
+  })
+  dataDisk.setLock(false)
+  dataDisk.setName(
+    string.format(
+      "%s Army: %d Points (%s)",
+      stringx.titleCase(__state.faction),
+      __state.points,
+      stringx.titleCase(__state.scenario)
+    )
+  )
+  dataDisk.script_state = JSON.encode(listData)
 end
 
 function _resetArmy()
-
+  _clearZone()
+  _spawnTemplates()
 end
 
 function _setSelectedScenario(name)
