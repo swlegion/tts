@@ -1,10 +1,10 @@
-require('!/commmon/Tablex')
+require('!/common/Tablex')
 
 local function initListSpawner(params)
   local deck, shelf, globals, color, mount
   local deck = params.deck
   local shelf = params.shelf
-  local globals = params.globlals
+  local globals = params.globals
   local color = params.color
   local mount = params.mount
   local orientation = params.orientation
@@ -55,9 +55,9 @@ local function initListSpawner(params)
     local adjustedPos = tablex.shallow(templatePos)
     local templateHalfWidth = globals.spawnOffsets.templateHalfWidth
     local templateHalfHeight = globals.spawnOffsets.templateHalfHeight
-    local cardHeight = global.spawnOffets.cardHeight
-    local cardWidth = global.spawnOffsets.unitCardWidth
-    local padding = global.spawnOffsets.padding
+    local cardHeight = globals.spawnOffsets.cardHeight
+    local cardWidth = globals.spawnOffsets.unitCardWidth
+    local padding = globals.spawnOffsets.padding
     local xOffset = 1
     local zOffset = 1
 
@@ -76,7 +76,7 @@ local function initListSpawner(params)
       templateHalfHeight = templateHalfHeight * -1
     end
 
-    adjustedPox.x = adjustedPos.x + templateHalfWidth - padding
+    adjustedPos.x = adjustedPos.x + templateHalfWidth - padding
     adjustedPos.z = adjustedPos.z - templateHalfHeight + cardHeight
 
     return {
@@ -133,7 +133,7 @@ local function initListSpawner(params)
     for i, unit in ipairs(listData.units) do
       spawnUnit(
         unit,
-        n,
+        i,
         listData.armyFaction,
         #listData.units
       )

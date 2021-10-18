@@ -1,5 +1,21 @@
 local tablex = {
-  shallow = function(table)
-    return {table.unpack(table)}
+  isArray = function(input)
+    return #input > 0 and next(input, #input) == nil
+  end,
+
+  shallow = function(input)
+    if input then
+      if #input > 0 and next(input, #input) == nil then
+        return {table.unpack(input)}
+      else
+        local copy = {}
+        for k, v in pairs(input) do
+          copy[k] = v
+        end
+        return copy
+      end
+    else
+      return nil
+    end
   end,
 }
