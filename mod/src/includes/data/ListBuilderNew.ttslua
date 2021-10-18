@@ -1,0 +1,272 @@
+require('!/common/Stringx')
+require('!/Deck')
+require('!/Shelf')
+
+local __state = {
+  color    = "Blue",
+  guids    = {
+    options  = {},
+    buttons  = {},
+    back     = nil,
+    mount    = nil,
+    builder  = nil,
+  },
+  faction  = nil,
+  scenario = "",
+}
+
+local _deck = Deck:create()
+local _shelf = Shelf:create()
+
+function onSave()
+  return JSON.encode(__state)
+end
+
+function _onLoadShared(state)
+  __state = JSON.decode(state)
+  _mainMenu()
+end
+
+local ui = {
+  clear = function()
+    for _, guid in ipairs(__state.guids.options) do
+      local object = getObjectFromGUID(guid)
+      object.clearButtons()
+    end
+    for _, guid in ipairs(__state.guids.buttons) do
+      local button = getObjectFromGUID(guid)
+      button.clearButtons()
+      button.setColorTint({0, 0, 0})
+    end
+    local back = getObjectFromGUID(__state.guids.back)
+    back.clearButtons()
+    back.setColorTint({0, 0, 0})
+  end,
+
+  back = function(tooltip, callback)
+    local button = getObjectFromGUID(__state.guids.back)
+    local callback = "_onButtonClicked_Back"
+    _G[callback] = function()
+      button.AssetBundle.playTriggerEffect()
+      callback()
+    end
+    button.createButton({
+      click_function    = callback,
+      function_owner    = self,
+      label             = "BACK",
+      position          = {0, 0.65, 0},
+      scale             = {1, 1, 0.7},
+      width             = 1500,
+      height            = 2000,
+      font_size         = 400,
+      color             = {0.7573, 0.7573, 0.7573, 0.01},
+      font_color        = {0, 0, 0, 100},
+      tooltip           = tooltip,
+    })
+    button.setColorTint({1, 0, 0})
+  end,
+
+  draw = function(buttons)
+    for i, config in ipairs(buttons) do
+      local callback = "_onButtonClicked_" .. i
+      local button
+      if i > 4 then
+        -- Emulate a button by drawing a rectangle.
+        --
+        -- Sorry, this is a huge hack until we have XML-UI list building
+        -- or a new table design that can account for more option buttons.
+        button = getObjectFromGUID(__state.guids.buttons[4])
+        button.createButton({
+          click_function = callback,
+          function_owner = self,
+          label          = config.title,
+          tooltip        = config.tooltip,
+          position       = {-0.3, 0.3, i},
+          scale          = {0.5, 0.5, 0.5},
+          width          = 4200,
+          height         = 600,
+          font_size      = 400,
+          font_color     = {0, 0, 0, 100},
+        })
+      else
+        local option = getObjectFromGUID(__state.guids.options[i])
+        button = getObjectFromGUID(__state.guids.buttons[i])
+        option.createButton({
+          click_function = callback,
+          function_owner = self,
+          label          = config.title,
+          tooltip        = config.tooltip,
+          position       = {-0.35, 0.3, 0},
+          scale          = {0.5, 0.5, 0.5},
+          width          = 4200,
+          height         = 600,
+          font_size      = 400,
+          font_color     = {0, 0, 0, 100},
+          color          = {0.7573, 0.7573, 0.7573, 0.01},
+        })
+        button.createButton({
+          click_function = callback,
+          function_owner = self,
+          label          = config.secondary or "",
+          tooltip        = config.tooltip,
+          position       = {0, 0.65, 0},
+          width          = 1400,
+          height         = 1400,
+          font_size      = 1100,
+          color          = {1, 1, 1, 0.01},
+          font_color     = {0, 0, 0, 100},
+          alignment      = 3,
+        })
+        button.setColorTint(config.tint)
+      end
+      
+      _G[callback] = function()
+        button.AssetBundle.playTriggerEffect(0)
+        config.callback()
+      end
+    end
+  end,
+}
+
+function _clearZone()
+  if __state.guids.builder then
+    local o = getObjectFromGUID(__state.guids.builder)
+    destroyObject(o)
+    __state.guids.builder = nil
+  end
+end
+
+function _spawnTemplates()
+  local globals = Global.getTable("listBuilder")
+  local deckBuilder = spawnObject({
+    type       = "Custom_Model",
+    position   = globals.deckBuilderPos[__state.color],
+    rotation   = self.getRotation(),
+  })
+  deckBuilder.setCustomObject({
+    mesh       = globals.deckBuilderMesh,
+    diffuse    = globals.deckBuilderDiffuse,
+    type       = 1,
+    material   = 3,
+  })
+  deckBuilder.setLuaScript(
+    string.format(
+      [[
+        selectedFaction  = "%s"
+        selectedScenario = "%s"
+        %s
+      ]],
+      __state.faction,
+      __state.scenario,
+      getObjectFromGUID(globals.deckBuilderGUID).getLuaScript()
+    )
+  )
+  deckBuilder.interactable = false
+  __state.guids.builder = deckBuilder.getGUID()
+end
+
+function _mainMenu()
+  ui.clear()
+  ui.draw({
+    {
+      title    = "Create Army",
+      tooltip  = "Create an army",
+      callback = _chooseFaction,
+      tint     = {0, 0.913, 1},
+    },
+    {
+      title    = "Load Army",
+      tootlip  = "Load an army from JSON or Data Disk",
+      callback = function()
+        print("Load Army")
+      end,
+      tint     = {0, 0.913, 1},
+    },
+    {
+      title    = "Clear Hand",
+      tooltip  = "Clears the units and cards on your side of the table",
+      callback = function()
+        print("Clear Hand")
+      end,
+      tint     = {0, 0.913, 1},
+    },
+    {
+      title    = "Auto Tint",
+      tooltip  = "Apply automatic base tining to yet-to-be-deployment units",
+      callback = function()
+        print("Auto Tint")
+      end,
+      tint     = {0, 0.913, 1},
+    }
+  })
+end
+
+function _chooseFaction()
+  ui.clear()
+  ui.back("Go back to the main menu", _mainMenu)
+  local buttons = {}
+  for _, faction in ipairs(_deck:getFactions()) do
+    local title = stringx.titleCase(faction)
+    table.insert(buttons, {
+      title    = title,
+      tooltip  = "Create a " .. title .. " army",
+      callback = function()
+        __state.faction = faction:upper()
+        _createArmy()
+      end,
+      tint     = {0, 0.913, 1},
+    })
+  end
+  ui.draw(buttons)
+end
+
+function _createArmy()
+  _clearZone()
+  _spawnTemplates()
+
+  ui.clear()
+  ui.back("Go back to faction selection", _chooseFaction)
+  ui.draw({
+    {
+      title     = "Spawn Army",
+      tooltip   = "Finish creating and spawn your army",
+      callback  = _saveAndLoadArmy,
+      tint      = {1, 0, 0},
+    },
+    {
+      title     = "Save Army",
+      tooltip   = "Save army to a data disk",
+      callback  = _saveArmy,
+      tint      = {0, 0.913, 1},
+    },
+    {
+      title     = "Reset Army",
+      tooltip   = "Reset army creation",
+      callback  = _resetArmy,
+      tint      = {0, 0.913, 1},
+    },
+    {
+      title     = __state.scenario .. " Battle Deck",
+      tooltip   = "Change battle deck",
+      secondary = "→",
+      callback  = _changeBattleDeck,
+      tint      = {0, 0.913, 1},
+    }
+  })
+end
+
+function _saveAndLoadArmy()
+
+end
+
+function _saveArmy()
+
+end
+
+function _resetArmy()
+
+end
+
+function _changeBattleDeck()
+
+end
