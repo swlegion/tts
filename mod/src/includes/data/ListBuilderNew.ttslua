@@ -155,7 +155,7 @@ function _spawnTemplates()
         %s
       ]],
       __state.faction,
-      __state.scenario,
+      "Standard",
       getObjectFromGUID(globals.deckBuilderGUID).getLuaScript()
     )
   )
@@ -236,6 +236,8 @@ function _chooseFaction()
       tooltip  = "Create a " .. title .. " army",
       callback = function()
         _createArmy(title)
+        _clearZone()
+        _spawnTemplates()
       end,
       tint     = {0, 0.913, 1},
     })
@@ -245,9 +247,6 @@ end
 
 function _createArmy(faction)
   __state.faction = faction
-  _clearZone()
-  _spawnTemplates()
-
   ui.clear()
   ui.back("Go back to faction selection", _chooseFaction)
   ui.draw({
@@ -270,7 +269,7 @@ function _createArmy(faction)
       tint      = {0, 0.913, 1},
     },
     {
-      title     = _getSelectedScenario() .. " Battle Deck",
+      title     = stringx.titleCase(__state.scenario) .. " Battle Deck",
       tooltip   = "Change battle deck",
       secondary = "→",
       callback  = _changeBattleDeck,
@@ -291,18 +290,16 @@ function _resetArmy()
 
 end
 
-function _getSelectedScenario()
-  return getObjectFromGUID(__state.guids.deckBuilderObj).getVar("selectedScenario")
-end
-
 function _setSelectedScenario(name)
-  getObjectFromGUID(__state.guids.deckBuilderObj).call("switchBattleDeck", {
+  getObjectFromGUID(__state.guids.deckBuilder).call("switchBattleDeck", {
     name = name,
   })
+  __state.scenario = name
+  _createArmy(__state.faction)
 end
 
 function _changeBattleDeck()
-  local current = _getSelectedScenario()
+  local current = __state.scenario
   local scenarios = _deck:getBattleCardScenarios()
   local index = 0
   for i, name in ipairs(scenarios) do
@@ -317,5 +314,4 @@ function _changeBattleDeck()
   end
   current = scenarios[index]
   _setSelectedScenario(current)
-  _createArmy(__state.faction)
 end
