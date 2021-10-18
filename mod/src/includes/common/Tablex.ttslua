@@ -1,0 +1,5 @@
+local tablex = {
+  shallow = function(table)
+    return {table.unpack(table)}
+  end,
+}

@@ -5,9 +5,11 @@
     "buttons": ["909b03", "1b5cc8", "a39e50", "1faf70"],
     "back": "d323a0",
     "mount": "ace9b9",
+    "battleDeck": "eb2d78",
     "cardZone": "2c09a9",
     "handZone": "ae224d",
     "diskZone": "ccdc98",
+    "battleZone": "99d398",
     "deckBuilder": null,
     "unitBuilders": []
   },

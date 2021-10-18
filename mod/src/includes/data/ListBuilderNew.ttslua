@@ -131,6 +131,7 @@ function _clearZone()
   __state.guids.unitBuilders = {}
   zonex.clearExcept(getObjectFromGUID(__state.guids.cardZone), "Table")
   zonex.clearExcept(getObjectFromGUID(__state.guids.handZone), "Table")
+  zonex.clearExcept(getObjectFromGUID(__state.guids.battleZone), "Table")
 end
 
 function _spawnTemplates()
@@ -408,12 +409,14 @@ function _loadArmy()
 end
 
 function _loadArmyFromJson(data)
-  local spawn = initListSpawner(
-    _deck,
-    Global.getTable("listBuilder"),
-    __state.color,
-    getObjectFromGUID(__state.guids.deckBuilder)
-  )
+  local spawn = initListSpawner({
+    deck        = _deck,
+    shelf       = _shelf,
+    globals     = Global.getTable("listBuilder"),
+    color       = __state.color,
+    mount       = getObjectFromGUID(__state.guids.battleDeck),
+    orientation = self.getRotation(),
+  })
   spawn(data)
 end
 

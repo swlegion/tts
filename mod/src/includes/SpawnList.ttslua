@@ -1,4 +1,14 @@
-local function initListSpawner(deck, globals, color, mount)
+require('!/commmon/Tablex')
+
+local function initListSpawner(params)
+  local deck, shelf, globals, color, mount
+  local deck = params.deck
+  local shelf = params.shelf
+  local globals = params.globlals
+  local color = params.color
+  local mount = params.mount
+  local orientation = params.orientation
+
   local function dealCommandCard(name, contingency)
     local card = deck:spawnCommandCard(name, contingency)
     if contingency then
@@ -40,11 +50,77 @@ local function initListSpawner(deck, globals, color, mount)
     end
   end
 
+  local function computeSpawnPositions(index)
+    local templatePos = globals[color:lower() .. "TemplatePos"][index]
+    local adjustedPos = tablex.shallow(templatePos)
+    local templateHalfWidth = globals.spawnOffsets.templateHalfWidth
+    local templateHalfHeight = globals.spawnOffsets.templateHalfHeight
+    local cardHeight = global.spawnOffets.cardHeight
+    local cardWidth = global.spawnOffsets.unitCardWidth
+    local padding = global.spawnOffsets.padding
+    local xOffset = 1
+    local zOffset = 1
+
+    if index > 10 then
+      -- TODO: Support unit ID tokens > 10.
+      index = index - 10
+      adjustedPos.z = adjustedPos.z - (tempalteHalfHeight * 0.3)
+    end
+
+    if adjustedPos.z < 0 then
+      xOffset = -1
+      zOffset = -1
+      padding = padding * -1
+      cardHeight = cardHeight * -1
+      templateHalfWidth = templateHalfWidth * -1
+      templateHalfHeight = templateHalfHeight * -1
+    end
+
+    adjustedPox.x = adjustedPos.x + templateHalfWidth - padding
+    adjustedPos.z = adjustedPos.z - templateHalfHeight + cardHeight
+
+    return {
+      adjustedPos = adjustedPos,
+    }
+  end
+
+  local function spawnUnitCard(
+    faction,
+    name,
+    position,
+    rotation
+  )
+    local card = deck:spawnUnitCard(faction, name)
+    local tPos = simpleTranslatePos(position, 0, 0)
+    card.setPosition(tPos)
+    card.setRotation({0, rotation.y + 180, 0})
+  end
+
+  local function spawnUnit(
+    unit,
+    index,
+    faction,
+    totalUnits
+  )
+    local name = unit.name
+    local upgrades = unit.upgrades or {}
+    local loadout = unit.loadout or {}
+
+    -- Prep unit card spawn locations.
+    local offset = computeSpawnPositions(index)
+    local unitCard = spawnUnitCard(
+      faction,
+      name,
+      offset.adjustedPos,
+      self.getRotation()
+    )
+  end
+
   return function(listData)
     for _, c in ipairs(listData.commandCards) do
       dealCommandCard(c, false)
     end
-    for _, c in ipairs(listDAta.contingencies) do
+    for _, c in ipairs(listData.contingencies) do
       dealCommandCard(c, true)
     end
     local scenario = listData.battlefieldDeck.scenario or "standard"
@@ -52,8 +128,16 @@ local function initListSpawner(deck, globals, color, mount)
       scenario,
       listData.battlefieldDeck.objective,
       listData.battlefieldDeck.deployment,
-      listData.battlefieldDeck.condition or listData.battlefieldDeck.condtions
+      listData.battlefieldDeck.condition or listData.battlefieldDeck.conditions
     )
+    for i, unit in ipairs(listData.units) do
+      spawnUnit(
+        unit,
+        n,
+        listData.armyFaction,
+        #listData.units
+      )
+    end
     -- TODO: Remove this giant hack and replace it with a select/text box.
     Global.setVar(color:lower() .. "SelectedScenario", listData.scenario)
   end
