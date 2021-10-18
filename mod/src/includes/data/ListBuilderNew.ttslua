@@ -1,7 +1,9 @@
 require('!/common/Math')
 require('!/common/Stringx')
+require('!/common/Zonex')
 require('!/Deck')
 require('!/Shelf')
+require('!/SpawnList')
 
 local __state = {}
 
@@ -126,13 +128,9 @@ function _clearZone()
     end
     __state.guids.deckBuilder = nil
   end
-  for _, o in ipairs(__state.guids.unitBuilders) do
-    o = getObjectFromGUID(o)
-    if o then
-      destroyObject(o)
-    end
-  end
   __state.guids.unitBuilders = {}
+  zonex.clearExcept(getObjectFromGUID(__state.guids.cardZone), "Table")
+  zonex.clearExcept(getObjectFromGUID(__state.guids.handZone), "Table")
 end
 
 function _spawnTemplates()
@@ -203,17 +201,13 @@ function _mainMenu()
     {
       title    = "Load Army",
       tootlip  = "Load an army from JSON or Data Disk",
-      callback = function()
-        print("Load Army")
-      end,
+      callback = _loadArmy,
       tint     = {0, 0.913, 1},
     },
     {
-      title    = "Clear Hand",
+      title    = "Clear Side",
       tooltip  = "Clears the units and cards on your side of the table",
-      callback = function()
-        print("Clear Hand")
-      end,
+      callback = _clearZone,
       tint     = {0, 0.913, 1},
     },
     {
@@ -302,7 +296,8 @@ function _createArmy(faction)
 end
 
 function _saveAndLoadArmy()
-
+  _saveArmy()
+  _loadArmy()
 end
 
 function _generateListData()
@@ -362,6 +357,8 @@ function _saveArmy()
     )
   )
   dataDisk.script_state = JSON.encode(listData)
+  _clearZone()
+  _mainMenu()
 end
 
 function _resetArmy()
@@ -393,4 +390,45 @@ function _changeBattleDeck()
   end
   current = scenarios[index]
   _setSelectedScenario(current)
+end
+
+function _loadArmy()
+  local mount = getObjectFromGUID(__state.guids.mount)
+  local zone = getObjectFromGUID(__state.guids.diskZone)
+  for _, object in ipairs(zone.getObjects()) do
+    if object ~= mount then
+      _loadArmyFromJson(JSON.decode(object.script_state))
+      _mainMenu()
+      return
+    end
+  end
+  broadcastToAll(
+    "No data disk inserted for " .. stringx.titleCase(__state.color)
+  )
+end
+
+function _loadArmyFromJson(data)
+  local spawn = initListSpawner(
+    _deck,
+    Global.getTable("listBuilder"),
+    __state.color
+  )
+  spawn(data)
+end
+
+-- TODO: Rename to _importFromText.
+function importFromText(_, text)
+  _clearZone()
+  _loadArmyFromJson(JSON.decode(text))
+  _mainMenu()
+end
+
+-- TODO: Rename to _toggleListImporterUI
+function toggleListImporterUI()
+  local uiStatus = self.UI.getAttribute('listImporterUI', 'active')
+  local newStatus = true
+  if uiStatus == 'True' then
+    newStatus = false
+  end
+  self.UI.setAttribute('listImporterUI', 'active', newStatus)
 end
