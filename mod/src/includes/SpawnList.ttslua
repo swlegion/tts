@@ -114,10 +114,6 @@ local function initListSpawner(params)
     }
   end
 
-  local function spawnUnitIDToken()
-    return nil
-  end
-
   local function spawnUnit(
     unit,
     index,
@@ -149,6 +145,14 @@ local function initListSpawner(params)
       upgradeCard.setRotation({0, rotation.y + 180, 0})
     end
 
+    -- Spawn unit ID token.
+    local unitId = unitIDTokenBag.takeObject({
+      position = offsets.adjustedPos,
+      rotation = {0, rotation.y + 180, 0},
+      smooth   = false,
+    })
+    unitId.setState(math.mod(index, 10))
+
     local miniData = {
       name            = name,
       colorSide       = color,
@@ -158,11 +162,7 @@ local function initListSpawner(params)
       displayName     = nil,
       unitID          = index,
       unitCardObj     = unitCard,
-      unitIDTokenGUID = spawnUnitIDToken(
-        offset,
-        rotation,
-        index
-      ),
+      unitIDTokenGUID = unitId.getGUID(),
       leaderIndex     = 1,
     }
   end
