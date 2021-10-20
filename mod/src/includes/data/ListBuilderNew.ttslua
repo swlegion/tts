@@ -417,6 +417,7 @@ function _loadArmyFromJson(data)
     color       = __state.color,
     mount       = getObjectFromGUID(__state.guids.battleDeck),
     orientation = self.getRotation(),
+    unitTokens  = getObjectFromGUID(Global.getVar("unitIDTokenBagGUID")),
   })
   spawn(data)
 end

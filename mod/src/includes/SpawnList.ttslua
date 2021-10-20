@@ -7,6 +7,7 @@ local function initListSpawner(params)
   local color = params.color
   local mount = params.mount
   local orientation = params.orientation
+  local unitTokens = params.unitTokens
 
   local function dealCommandCard(name, contingency)
     local card = deck:spawnCommandCard(name, contingency)
@@ -114,6 +115,63 @@ local function initListSpawner(params)
     }
   end
 
+  local function initialZOffset(upgradeCount)
+    local cardHeight = globals.spawnOffsets.cardHeight
+    local padding = globals.spawnOffsets.padding
+    local initialZOffset = cardHeight + padding
+    if upgradeCount > 1 and upgradeCount < 5 then
+      initialZOffset = initialZOffset + (cardHeight + padding)
+    elseif upgradeCount > 4 then
+      initialZOffset = initialZOffset + (cardHeight + padding) * 2
+    end
+    return initialZOffset
+  end
+
+  local function computeMiniPositions(
+    adjustedPos,
+    index,
+    base,
+    xOffset,
+    zOffset,
+    upgradeCount
+  )
+    local templateHalfWidth = globals.spawnOffsets.templateHalfWidth
+    local unitCardWidth = globals.spawnOffsets.unitCardWidth
+    local padding = globals.spawnOffsets.padding
+
+    local baseRadius = base * 0.5
+    local initialXOffset = unitCardWidth * 0.5 - baseRadius 
+    local position = {
+      x = adjustedPos.x + initialXOffset * xOffset,
+      y = adjustedPos.y,
+      z = adjustedPos.z,
+    }
+    local paddedBase = (base + padding) * 1.5
+    local basesPerRow = math.abs(math.floor(templateHalfWidth * 2.0 / paddedBase))
+    local newIndex = index
+    local totalZOffset = initialZOffset(upgradeCount)
+    if index > basesPerRow then
+      totalZOffset = totalZOffset - (paddedBase * zOffset)
+      newIndex = index - basesPerRow
+    end
+    local baseOffset = base + (padding / 3 * xOffset)
+    local totalXOffset = (baseOffset * (newIndex - 1))
+    local xDir = xOffset * -1
+    --if adjustedPos.z < 0 then
+    --  totalZOffset = totalZOffset * -1
+    --end
+  
+    return simpleTranslatePos(
+      position,
+      totalXOffset * xDir,
+      totalZOffset * zOffset
+    )
+  end
+
+  local function getGlobalTint()
+    return getObjectFromGUID(Global.getVar("gameDataGUID")).getTable("battlefieldTint")
+  end
+
   local function spawnUnit(
     unit,
     index,
@@ -145,13 +203,49 @@ local function initListSpawner(params)
       upgradeCard.setRotation({0, rotation.y + 180, 0})
     end
 
+    -- Spawn loadout and addon cards.
+    local additional = {
+      position = offsets.adjustedPos,
+      rotation  = rotation,
+    }
+    if #loadout > 0 then
+      additional.callback = function(spawnedBag)
+        for _, upgrade in ipairs(loadout) do
+          local upgradeCard = deck:spawnUpgradeCard(upgrade)
+          spawnedBag.putObject(upgradeCard)
+        end
+      end
+    end
+    local result = shelf:spawnUnitModels({
+      faction    = faction,
+      name       = name,
+      upgrades   = upgrades,
+      additional = additional,
+      callback   = function(model, index, base)
+        local position = computeMiniPositions(
+          offsets.adjustedPos,
+          index,
+          base,
+          offsets.xOffset,
+          offsets.zOffset,
+          #upgrades
+        )
+        model.setPosition(position)
+        model.setRotation({rotation.x, rotation.y + 180, rotation.z})
+        model.setColorTint(getGlobalTint())
+      end,
+    })
+
     -- Spawn unit ID token.
-    local unitId = unitIDTokenBag.takeObject({
+    local unitId = unitTokens.takeObject({
       position = offsets.adjustedPos,
       rotation = {0, rotation.y + 180, 0},
       smooth   = false,
     })
-    unitId.setState(math.mod(index, 10))
+    local unitIdState = math.fmod(index, 10)
+    if unitIdState > 1 then
+      unitId.setState(unitIdState)
+    end
 
     local miniData = {
       name            = name,
