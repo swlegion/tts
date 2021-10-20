@@ -308,7 +308,7 @@ function _generateListData()
   local listData = {
     author          = "SWLegion TTS Mod",
     points          = __state.points,
-    faction         = __state.faction,
+    armyFaction     = __state.faction,
     units           = {},
     commandCards    = deckBuilder.getTable("commandCardSelection"),
     contingencies   = deckBuilder.getTable("contingencyCardSelection"),
@@ -332,6 +332,7 @@ function _generateListData()
 end
 
 function _saveArmy()
+  -- FIXME: Remove the previous disk, if any.
   local globals = Global.getTable("listBuilder")
   local listData = _generateListData()
   local diskMount = getObjectFromGUID(__state.guids.mount)

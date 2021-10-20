@@ -1,7 +1,6 @@
 require('!/common/Tablex')
 
 local function initListSpawner(params)
-  local deck, shelf, globals, color, mount
   local deck = params.deck
   local shelf = params.shelf
   local globals = params.globals
@@ -64,7 +63,7 @@ local function initListSpawner(params)
     if index > 10 then
       -- TODO: Support unit ID tokens > 10.
       index = index - 10
-      adjustedPos.z = adjustedPos.z - (tempalteHalfHeight * 0.3)
+      adjustedPos.z = adjustedPos.z - (templateHalfHeight * 0.3)
     end
 
     if adjustedPos.z < 0 then
@@ -81,19 +80,42 @@ local function initListSpawner(params)
 
     return {
       adjustedPos = adjustedPos,
+      xOffset     = xOffset,
+      zOffset     = zOffset,
     }
   end
 
-  local function spawnUnitCard(
-    faction,
-    name,
-    position,
-    rotation
-  )
-    local card = deck:spawnUnitCard(faction, name)
-    local tPos = simpleTranslatePos(position, 0, 0)
-    card.setPosition(tPos)
-    card.setRotation({0, rotation.y + 180, 0})
+  local function computeUpgradePositions(index)
+    local cardHeight = globals.spawnOffsets.cardHeight
+    local cardWidth = globals.spawnOffsets.unitCardWidth
+    local upgradeCardWidth = globals.spawnOffsets.upgradeCardWidth
+    local padding = globals.spawnOffsets.padding
+
+    local xOffset = 0
+    if (index == 1 or index == 4 or index == 7) then
+      xOffset = cardWidth - upgradeCardWidth / 2 + padding
+    elseif (index == 2 or index == 5) then
+      xOffset = -cardWidth / 2 + upgradeCardWidth / 2
+    elseif (index == 3 or index == 6) then
+      xOffset = upgradeCardWidth / 2 + padding / 2
+    end
+
+    local zOffset = 0
+    if index > 1 then
+      zOffset = cardHeight + padding
+    end
+    if index >= 5 then
+      zOffset = zOffset * 2
+    end
+
+    return {
+      xOffset     = xOffset,
+      zOffset     = zOffset,
+    }
+  end
+
+  local function spawnUnitIDToken()
+    return nil
   end
 
   local function spawnUnit(
@@ -107,13 +129,42 @@ local function initListSpawner(params)
     local loadout = unit.loadout or {}
 
     -- Prep unit card spawn locations.
-    local offset = computeSpawnPositions(index)
-    local unitCard = spawnUnitCard(
-      faction,
-      name,
-      offset.adjustedPos,
-      self.getRotation()
-    )
+    local offsets = computeSpawnPositions(index)
+    local rotation = self.getRotation()
+    local unitCard = deck:spawnUnitCard(faction, name)
+    unitCard.setPosition(offsets.adjustedPos)
+    unitCard.setRotation({0, rotation.y + 180, 0})
+
+    -- Spawn upgrade cards.
+    for i, upgrade in ipairs(upgrades) do
+      local uOffsets = computeUpgradePositions(i)
+      local upgradeCard = deck:spawnUpgradeCard(upgrade)
+      upgradeCard.setPosition(
+        simpleTranslatePos(
+          offsets.adjustedPos,
+          uOffsets.xOffset * offsets.xOffset * -1,
+          uOffsets.zOffset * offsets.zOffset
+        )
+      )
+      upgradeCard.setRotation({0, rotation.y + 180, 0})
+    end
+
+    local miniData = {
+      name            = name,
+      colorSide       = color,
+      upgrades        = {},
+      miniObjs        = {},
+      -- Intentionally omitted. We use the name assigned from the spawned model.
+      displayName     = nil,
+      unitID          = index,
+      unitCardObj     = unitCard,
+      unitIDTokenGUID = spawnUnitIDToken(
+        offset,
+        rotation,
+        index
+      ),
+      leaderIndex     = 1,
+    }
   end
 
   return function(listData)
