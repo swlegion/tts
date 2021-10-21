@@ -231,25 +231,58 @@ function _mainMenu()
 end
 
 function _autoTint()
-  local tints = ({
-    Red  = {
-      0xFE737C,
-      0xF5D3B3,
-      0xF4A460,
-      0xD2691E,
-      0xDAA520,
-      0x8B4513,
-    },
-    Blue = {
-      0x0C2C8C,
-      0x36E19C,
-      0xA46C8C,
-      0xBCD0D6,
-      0x29335D,
-      0x4875F1,
+  local colorMap
+  if __state.color == "Red" then
+    colorMap = {
+      {245, 34, 45},
+      {255, 169, 64},
+      {255, 236, 61},
+      {130, 0, 20},
+      {135, 56, 0},
+      {135, 104, 0},
     }
-  })[__state.color]
-  -- TODO: Finish implementing.
+  else
+    colorMap = {
+      {64, 169, 255},
+      {54, 207, 201},
+      {146, 84, 222},
+      {0, 58, 140},
+      {0, 71, 79},
+      {34, 7, 94},
+    }
+  end
+  for i, color in pairs(colorMap) do
+    colorMap[i] = {
+      color[1] / 255,
+      color[2] / 255,
+      color[3] / 255,
+    }
+  end
+  local rankCount = {}
+  for _, obj in pairs(getObjectFromGUID(__state.guids.cardZone).getObjects()) do
+    if obj.getVar("isAMini") == true then
+      local unitData = obj.getTable("unitData")
+      local rankType = unitData.commandType
+      local colorIndex = rankCount[rankType]
+      if colorIndex == nil then
+        colorIndex = 0
+      end
+      colorIndex = colorIndex + 1
+      if colorIndex > #colorMap then
+        colorIndex = 1
+      end
+      rankCount[rankType] = colorIndex
+      local miniGUIDs = obj.getTable("miniGUIDs")
+      for _, miniGuid in pairs(miniGUIDs) do
+        local miniObj = getObjectFromGUID(miniGuid)
+        miniObj.setColorTint(colorMap[colorIndex])
+      end
+      local unitIDTokenObject = getObjectFromGUID(obj.getVar("unitIDTokenGUID"))
+      if unitIDTokenObject then
+        unitIDTokenObject.setColorTint(colorMap[colorIndex])
+      end
+    end
+  end
 end
 
 function _chooseFaction()
