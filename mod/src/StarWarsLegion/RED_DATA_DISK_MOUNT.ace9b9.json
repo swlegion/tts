@@ -44,7 +44,7 @@
       "TypeIndex": 0,
       "CastShadows": false
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./RED_DATA_DISK_MOUNT.ace9b9.lua",
     "LuaScriptState": "",
     "XmlUI": "",
     "AttachedSnapPoints": [

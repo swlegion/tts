@@ -15,6 +15,7 @@ function onSave()
 end
 
 function _onLoadShared(state)
+  self.interactable = false
   __state = JSON.decode(state)
   _mainMenu()
 end
