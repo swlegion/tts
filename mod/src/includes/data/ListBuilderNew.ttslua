@@ -17,6 +17,12 @@ end
 function _onLoadShared(state)
   self.interactable = false
   __state = JSON.decode(state)
+  for _, guid in ipairs(__state.guids.options) do
+    getObjectFromGUID(guid).interactable = false
+  end
+  for _, guid in ipairs(__state.guids.buttons) do
+    getObjectFromGUID(guid).interactable = false
+  end
   _mainMenu()
 end
 

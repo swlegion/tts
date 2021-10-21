@@ -44,7 +44,7 @@
       "TypeIndex": 0,
       "CastShadows": true
     },
-    "LuaScript": "#include ./Red_List_Builder_Option_2.5e6794.lua",
+    "LuaScript": "",
     "LuaScriptState": "",
     "XmlUI": ""
   },

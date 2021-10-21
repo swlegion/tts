@@ -45,7 +45,7 @@
       "CastShadows": false
     },
     "LuaScript": "#include ./BLUE_LIST_BUILDER.60e426.lua",
-    "LuaScriptState": "",
+    "LuaScriptState": "#include ./BLUE_LIST_BUILDER.60e426.state.json",
     "XmlUI": "#include ./BLUE_LIST_BUILDER.60e426.xml"
   },
   "StatesPaths": {}

@@ -1,5 +1,8 @@
-require('!/common/Math')
-require('!/ListBuilder')
+require('!/data/ListBuilderNew')
+
+function onLoad(state)
+  _onLoadShared(state)
+end
 
 function onload()
     onLoadShared(
