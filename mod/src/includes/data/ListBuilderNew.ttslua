@@ -332,10 +332,17 @@ function _generateListData()
 end
 
 function _saveArmy()
-  -- FIXME: Remove the previous disk, if any.
   local globals = Global.getTable("listBuilder")
   local listData = _generateListData()
+  local diskZone = getObjectFromGUID(__state.guids.diskZone)
   local diskMount = getObjectFromGUID(__state.guids.mount)
+
+  for _, maybeDisk in ipairs(diskZone.getObjects()) do
+    if maybeDisk ~= diskMount then
+      destroyObject(maybeDisk)
+    end
+  end
+
   local position = translatePos(
     diskMount.getPosition(),
     diskMount.getRotation(),
@@ -348,7 +355,9 @@ function _saveArmy()
     rotation     = self.getRotation(),
     scale        = {1, 1, 1},
     snap_to_grid = false,
+    smooth       = false,
   })
+  dataDisk.setPosition(position)
   dataDisk.setLock(false)
   dataDisk.setName(
     string.format(
@@ -437,4 +446,35 @@ function toggleListImporterUI()
     newStatus = false
   end
   self.UI.setAttribute('listImporterUI', 'active', newStatus)
+end
+
+function _calculatePoints()
+  local zone = getObjectFromGUID(__state.guids.cardZone)
+  local total = 0
+  for _, card in pairs(zone.getObjects()) do
+    local points = card.getVar("ptCost")
+    if points then
+      total = total + points
+    end
+  end
+  __state.points = total
+
+  -- TODO: Make the counter persist.
+  local counter = getObjectFromGUID(__state.guids.counter)
+  counter.setValue(total)
+end
+
+-- TODO: This is terrible performance wise.
+function onObjectDestroyed()
+  _calculatePoints()
+end
+
+-- TODO: This is terrible performance wise.
+function onObjectLeaveScriptingZone()
+  _calculatePoints()
+end
+
+-- TODO: This is terrible performance wise.
+function onObjectEnterScriptingZone()
+  _calculatePoints()
 end
