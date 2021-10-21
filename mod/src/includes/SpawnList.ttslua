@@ -280,7 +280,7 @@ local function initListSpawner(params)
       faction = "Imperia;"
     end
     local rankAndRemap = unitInfo.rank
-    if unitInfo == "Special Forces" then
+    if rankAndRemap:lower() == "special forces" then
       rankAndRemap = "specialForces"
     end
     local commandType = 
