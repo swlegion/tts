@@ -132,6 +132,16 @@ function _clearZone()
   zonex.clearExcept(getObjectFromGUID(__state.guids.cardZone), "Table")
   zonex.clearExcept(getObjectFromGUID(__state.guids.handZone), "Table")
   zonex.clearExcept(getObjectFromGUID(__state.guids.battleZone), "Table")
+
+  local data = Global.getTable("commandTokenTrayData")[color:lower()]
+  for _, obj in ipairs(getObjectFromGUID(data.trayZoneGUID).getObjects()) do
+    if obj.getVar("isAToken") == true then
+      destroyObject(obj)
+    end
+  end
+  for _, obj in ipairs(getObjectFromGUID(data.stack).getObjects()) do
+    destroyObject(obj.takeObject())
+  end
 end
 
 function _spawnTemplates()
