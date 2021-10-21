@@ -43,6 +43,10 @@ function _onLoadShared(state)
 end
 
 function _updateInput()
+  local rotation = self.getRotation()
+  if self.getPosition().z < 0 then
+    rotation.y = rotation.y + 180
+  end
   self.clearInputs()
   self.createInput({
     input_function = "_scenarioChanged",
@@ -51,7 +55,7 @@ function _updateInput()
     alignment      = 3,
     color          = {204, 204, 204, 0.9},
     position       = {x = 0, y = 0, z = -3},
-    rotation       = {x = 0, y = self.getRotation().y + 180, z = 0},
+    rotation       = rotation,
     width          = 1900,
     height         = 350,
     font_size      = 323,
