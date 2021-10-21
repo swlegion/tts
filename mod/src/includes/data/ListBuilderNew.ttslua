@@ -353,7 +353,7 @@ end
 
 function _saveAndLoadArmy()
   _saveArmy()
-  _loadArmy()
+  Wait.time(_loadArmy, 0.5)
 end
 
 function _generateListData()
