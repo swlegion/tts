@@ -151,15 +151,16 @@ local function initListSpawner(params)
     local newIndex = index
     local totalZOffset = initialZOffset(upgradeCount)
     if index > basesPerRow then
-      totalZOffset = totalZOffset - (paddedBase * zOffset)
+      local zFromCard = zOffset
+      if adjustedPos.z > 0 then
+        zFromCard = -zOffset
+      end
+      totalZOffset = totalZOffset - (paddedBase * zFromCard)
       newIndex = index - basesPerRow
     end
     local baseOffset = base + (padding / 3 * xOffset)
     local totalXOffset = (baseOffset * (newIndex - 1))
     local xDir = xOffset * -1
-    --if adjustedPos.z < 0 then
-    --  totalZOffset = totalZOffset * -1
-    --end
   
     return simpleTranslatePos(
       position,
