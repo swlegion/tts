@@ -443,6 +443,6 @@ local function initListSpawner(params)
         #listData.units
       )
     end
-    mount.call("setScenario", {name = listData.scenario})
+    mount.call("setScenario", {name = scenario})
   end
 end
