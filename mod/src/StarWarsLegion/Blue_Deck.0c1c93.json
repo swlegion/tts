@@ -45,7 +45,7 @@
       "CastShadows": true
     },
     "LuaScript": "#include ./Blue_Deck.0c1c93.lua",
-    "LuaScriptState": "",
+    "LuaScriptState": "#include ./Blue_Deck.0c1c93.state.json",
     "XmlUI": "",
     "Tags": ["Table"],
     "AttachedSnapPoints": [
