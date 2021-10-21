@@ -68,6 +68,9 @@ end
 
 function setScenario(params)
   local name = params.name
+  if not name then
+    return
+  end
   __state.scenario = stringx.titleCase(name)
   _updateInput()
 end
