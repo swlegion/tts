@@ -47,6 +47,7 @@
     "LuaScript": "#include ./Blue_Deck.0c1c93.lua",
     "LuaScriptState": "",
     "XmlUI": "",
+    "Tags": ["Table"],
     "AttachedSnapPoints": [
       {
         "Position": {

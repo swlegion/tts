@@ -32,10 +32,10 @@ end
 -- UI --------------------------------------------------------------------------
 
 function clearAllButtons()
-  for _, o in pairs(listBuilderOptions) do
+  for _, o in ipairs(listBuilderOptions) do
     o.clearButtons()
   end
-  for _, o in pairs(listBuilderButtons) do
+  for _, o in ipairs(listBuilderButtons) do
     o.clearButtons()
     o.setColorTint({0, 0, 0})
   end
@@ -476,7 +476,6 @@ function spawnTemplates()
       templateObjs[i][1].setScale({1,1,1})
 
       templateObjs[i][1].setVar("colorSide", colorZone)
-      templateObjs[i][1].setVar("listBuilderObj", self)
       templateObjs[i][1].setVar("templateIndex", i)
       templateObjs[i][1].setVar("deckBuilderObj", deckBuilderObj)
       templateObjs[i][1].setName("")

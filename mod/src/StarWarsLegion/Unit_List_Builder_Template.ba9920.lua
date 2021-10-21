@@ -2,8 +2,15 @@ require('!/Deck')
 require('!/common/Math')
 
 -- model template
-function onload()
+function onLoad(state)
   if self.getName() ~= "Unit List Builder Template" then
+    if state then
+      local data = JSON.decode(state)
+      _G.colorSide       = data.colorSide
+      _G.deckBuilderObj  = getObjectFromGUID(data.deckBuilderGuid)
+      _G.templateIndex   = data.templateIndex
+      _G.selectedFaction = data.selectedFaction
+    end
     setUp()
   end
 
@@ -11,12 +18,25 @@ function onload()
   _G.Deck = Deck:create()
 end
 
+function onSave()
+  if self.getName() ~= "Unit List Builder Template" then
+    return JSON.encode({
+      colorSide       = _G.colorSide,
+      deckBuilderGuid = _G.deckBuilderObj.getGUID(),
+      templateIndex   = _G.templateIndex,
+      selectedFaction = _G.selectedFaction,
+    })
+  end
+end
+
 function setUp()
     gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
 
     battlefieldTint = gameData.getTable("battlefieldTint")
     templateMenu = Global.getTable("templateMenu")
-    selectedArmyFaction = Global.getVar(colorSide.."SelectedArmyFaction")
+    selectedArmyFaction = 
+      _G.selectedFaction or 
+      Global.getVar(colorSide.."SelectedArmyFaction")
     listBuilder = Global.getTable("listBuilder")
     unitIDTokenBag = getObjectFromGUID(Global.getVar("unitIDTokenBagGUID"))
     unitCard = nil

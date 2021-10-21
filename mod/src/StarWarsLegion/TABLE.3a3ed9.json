@@ -43,7 +43,8 @@
     },
     "LuaScript": "#include ./TABLE.3a3ed9.lua",
     "LuaScriptState": "",
-    "XmlUI": ""
+    "XmlUI": "",
+    "Tags": ["Table"]
   },
   "StatesPaths": {}
 }
