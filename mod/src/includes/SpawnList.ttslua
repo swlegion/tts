@@ -204,7 +204,7 @@ local function initListSpawner(params)
           miniGUIDsScript = miniGUIDsScript .. "miniGUIDs["..n.."] = '" .. objEntry.obj.getGUID() .. "'\n"
         end
         selectedMiniScript = selectedMiniScript .. miniGUIDsScript .. 
-          "cardGUID = \"" .. pMiniTable.unitCardObj.getGUID() .. 
+          "cardGUID = \"" .. pMiniTable.unitCardGUID .. 
           "\"\n unitName = \""..pMiniTable.name:lower() .. 
           "\"\n commandName = \""..pMiniTable.commandName .. 
           "\"\n commandType = \""..pMiniTable.commandType .. 
@@ -298,6 +298,7 @@ local function initListSpawner(params)
     miniData.commandType = commandType
     miniData.selectedSpeed = unitInfo.speed
     miniData.height = unitInfo.height
+
     initializeMini(miniData)
 
     local commandTray = getObjectFromGUID(
@@ -361,13 +362,13 @@ local function initListSpawner(params)
 
     local miniData = {
       name            = name,
-      colorSide       = color,
+      colorSide       = color:lower(),
       upgrades        = {},
       miniObjs        = {},
       -- Intentionally omitted. We use the name assigned from the spawned model.
       displayName     = nil,
       unitID          = index,
-      unitCardObj     = unitCard,
+      unitCardGUID    = unitCard.getGUID(),
       unitIDTokenGUID = unitId.getGUID(),
       leaderIndex     = 1,
       upgrades        = upgrades,
