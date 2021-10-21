@@ -443,7 +443,6 @@ local function initListSpawner(params)
         #listData.units
       )
     end
-    -- TODO: Remove this giant hack and replace it with a select/text box.
-    Global.setVar(color:lower() .. "SelectedScenario", listData.scenario)
+    mount.call("setScenario", {name = listData.scenario})
   end
 end

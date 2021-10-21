@@ -1,0 +1,97 @@
+require('!/common/Stringx')
+require('!/common/Zonex')
+
+local __state = {}
+
+function onSave()
+  return JSON.encode(__state)
+end
+
+function _onLoadShared(state)
+  self.interactable = false
+  __state = JSON.decode(state)
+
+  self.createButton({
+    click_function = "_defineBattlefield",
+    function_owner = self,
+    label          = "Battle Deck",
+    tooltip        = "Define Battlefield",
+    position       = {-0.5, 0.3, -1.95},
+    scale          = {0.5, 0.5, 0.5},
+    width          = 2500,
+    height         = 600,
+    font_size      = 300,
+    color          = {0.7573, 0.7573, 0.7573, 0.01},
+    font_color     = {0, 0, 0, 100},
+  })
+
+  getObjectFromGUID(__state.guids.button).createButton({
+    click_function = "_defineBattlefield",
+    function_owner = self,
+    label          = "",
+    tooltip        = "Define Battlefield",
+    position       = {0, 0.65, 0},
+    width          = 1400,
+    height         = 1400,
+    font_size      = 1100,
+    color          = {1, 1, 1, 0.01},
+    font_color     = {1, 1, 1, 100},
+    alignment      = 3,           
+  })
+
+  _updateInput()
+end
+
+function _updateInput()
+  self.clearInputs()
+  self.createInput({
+    input_function = "_scenarioChanged",
+    function_owner = self,
+    label          = "Scenario",
+    alignment      = 3,
+    color          = {204, 204, 204, 0.9},
+    position       = {x = 0, y = 0, z = -3},
+    rotation       = {x = 0, y = self.getRotation().y + 180, z = 0},
+    width          = 1900,
+    height         = 350,
+    font_size      = 323,
+    validation     = 4,
+    value          = __state.scenario,
+    readonly       = true,
+    tooltip        = "Battlefield Deck Type",
+  })
+end
+
+function getScenario()
+  return __state.scenario
+end
+
+function setScenario(params)
+  local name = params.name
+  __state.scenario = stringx.titleCase(name)
+  _updateInput()
+end
+
+function _scenarioChanged(_, _, input, editing)
+  if input and not editing then
+    __state.scenario = stringx.titleCase(input)
+    _updateInput()
+  end
+end
+
+function _defineBattlefield()
+  getObjectFromGUID(__state.guids.button).AssetBundle.playTriggerEffect()
+  local deck = zonex.firstWhereNot(getObjectFromGUID(__state.guids.zone))
+  if deck then
+    local game = getObjectFromGUID(Global.getTable("gameController").objGUID)
+    game.call("defineBattlefieldMenu", {
+      deck     = deck,
+      scenario = __state.scenario,
+    })
+  else
+    broadcastToAll(
+      "No Battlefield Deck. Insert Battlefield Deck to Define Battlefield",
+      {1,1,1}
+    )
+  end
+end

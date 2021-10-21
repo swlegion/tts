@@ -12,4 +12,13 @@ local zonex = {
       end
     end
   end,
+
+  firstWhereNot = function(zone, tag)
+    for _, o in ipairs(zone.getObjects()) do
+      if not o.hasTag(tag) then
+        return o
+      end
+    end
+    return nil
+  end,
 }

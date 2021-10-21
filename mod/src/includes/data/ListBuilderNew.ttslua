@@ -342,7 +342,7 @@ function _createArmy(faction)
       tint      = {0, 0.913, 1},
     },
     {
-      title     = stringx.titleCase(__state.scenario) .. " Battle Deck",
+      title     = stringx.titleCase(_getSelectedScenario()) .. " Battle Deck",
       tooltip   = "Change battle deck",
       secondary = "→",
       callback  = _changeBattleDeck,
@@ -359,7 +359,7 @@ end
 function _generateListData()
   local deckBuilder = getObjectFromGUID(__state.guids.deckBuilder)
   local battleDeck = deckBuilder.getTable("battlefieldCardSelection")
-  battleDeck.scenario = __state.scenario
+  battleDeck.scenario = _getSelectedScenario()
   local listData = {
     author          = "SWLegion TTS Mod",
     points          = __state.points,
@@ -419,7 +419,7 @@ function _saveArmy()
       "%s Army: %d Points (%s)",
       stringx.titleCase(__state.faction),
       __state.points,
-      stringx.titleCase(__state.scenario)
+      stringx.titleCase(_getSelectedScenario())
     )
   )
   dataDisk.script_state = JSON.encode(listData)
@@ -432,16 +432,19 @@ function _resetArmy()
   _spawnTemplates()
 end
 
+function _getSelectedScenario()
+  return getObjectFromGUID(__state.guids.battleDeck).call("getScenario")
+end
+
 function _setSelectedScenario(name)
-  getObjectFromGUID(__state.guids.deckBuilder).call("switchBattleDeck", {
+  getObjectFromGUID(__state.guids.battleDeck).call("setScenario", {
     name = name,
   })
-  __state.scenario = name
   _createArmy(__state.faction)
 end
 
 function _changeBattleDeck()
-  local current = __state.scenario
+  local current = _getSelectedScenario()
   local scenarios = _deck:getBattleCardScenarios()
   local index = 0
   for i, name in ipairs(scenarios) do
@@ -474,6 +477,7 @@ function _loadArmy()
 end
 
 function _loadArmyFromJson(data)
+  _setSelectedScenario(data.battlefieldDeck.scenario)
   local spawn = initListSpawner({
     deck        = _deck,
     shelf       = _shelf,
