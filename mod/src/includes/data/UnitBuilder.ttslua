@@ -66,7 +66,7 @@ function _clearUnit()
   if __state.guids.unit then
     getObjectFromGUID(__state.guids.deckBuilder).call(
       "removeCommander",
-      __state.unit:upper()
+      __state.unit.name:upper()
     )
     destroyObject(getObjectFromGUID(__state.guids.unit))
   end
@@ -240,6 +240,7 @@ function _listUnits(rank)
   _clearUpgrades()
   _setBackButton("X", "Go back and select a rank", _listRanks)
   _paginationHelper(_deck:getUnitsByFactionAndRank(__state.faction, rank), {
+    key         = rank,
     maxItems    = 6,
     currentPage = _page.units or 1,
     renderItem  = function(item, index, callback)
@@ -437,7 +438,7 @@ function _drawUpgradeSlot(name, slotIndex)
   local offsets = tablex.shallow(_upgradeOffsets[slotIndex])
   local allowed = _deck:getUpgradesByType(name, __state.unit)
   _paginationHelper(allowed, {
-    key         = tostring(slotIndex),
+    key         = name .. "_" .. tostring(slotIndex) .. "_",
     maxItems    = 5,
     currentPage = _page.upgrades[slotIndex] or 1,
     renderItem  = function(item, index, callback)
@@ -526,7 +527,7 @@ local _upgradeCardOffsets = {
   {q = -114, c = 4.5792248252297},
 }
 
-function _spawnUpgradeCard(upgrade, points, slotIndex, isRequired)
+function _spawnUpgradeCard(upgrade, slotIndex, isRequired)
   local card = _deck:spawnUpgradeCard(upgrade.name)
   
   local position = self.getPosition()
@@ -564,4 +565,14 @@ function _spawnUpgradeCard(upgrade, points, slotIndex, isRequired)
       tooltip        = "Remove",
     })
   end
+
+  return card
+end
+
+function _removeUpgrade(slotIndex)
+  destroyObject(getObjectFromGUID(__state.guids.upgrades[slotIndex]))
+
+  __state.upgrades[slotIndex] = nil
+  __state.guids.upgrades[slotIndex] = nil
+  _drawUpgradeUI()
 end
