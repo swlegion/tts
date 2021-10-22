@@ -63,6 +63,10 @@ end
 function _clearUnit()
   _clearUpgrades()
   if __state.guids.unit then
+    getObjectFromGUID(__state.guids.deckBuilder).call(
+      "removeCommander",
+      __state.unit:upper()
+    )
     destroyObject(getObjectFromGUID(__state.guids.unit))
   end
   __state.unit = nil
@@ -330,8 +334,16 @@ function _listUpgrades(unit)
     font_color     = {1, 1, 1},
   })
 
+  _clearUnit()
   __state.unit = name
   __state.guids.unit = card.getGUID()
+
+  if unit.rank == "Commander" or unit.rank == "Operative" then
+    getObjectFromGUID(__state.guids.deckBuilder).call(
+      "addCommander",
+      name:upper()
+    )
+  end
 
   _drawUpgradeUI()
 end
