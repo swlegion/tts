@@ -5,6 +5,7 @@ require('!/Deck')
 local __state = {
   faction  = nil,
   unit     = nil,
+  slots    = {},
   upgrades = {},
   guids    = {
     unit        = nil,
@@ -70,6 +71,7 @@ function _clearUnit()
     destroyObject(getObjectFromGUID(__state.guids.unit))
   end
   __state.unit = nil
+  __state.slots = {}
   __state.guids.unit = nil
 end
 
@@ -178,16 +180,14 @@ end
 --
 -- Maybe even something like a MenuBuilder class instead?
 function _paginationHelper(list, config)
-  -- Reset helper callbacks.  
-  _G.goNext = nil
-  _G.goPrev = nil
+  local key = config.key or ""
 
   -- Simple case: No pagination required.
   if not config.maxItems or config.maxItems > #list then
     for i, item in ipairs(list) do
-      local callback = "subMenu" .. i
+      local callback = "subMenu" .. key .. i
       _G[callback] = function()
-        config.itemPressed(item)
+        config.itemPressed(item, i)
       end
       config.renderItem(item, i, callback)
     end
@@ -213,22 +213,25 @@ function _paginationHelper(list, config)
     table.insert(slice, list[i])
   end
   _paginationHelper(slice, {
+    key         = key,
     renderItem  = config.renderItem,
     itemPressed = config.itemPressed,
   })
 
   -- Now (conditionally) render previous and next buttons.
   if showNext then
-    _G._goNext = function()
+    local goNext = "_goNext" .. key
+    _G[goNext] = function()
       config.pageChange(config.currentPage + 1)
     end
-    config.renderNext("_goNext")
+    config.renderNext(goNext)
   end
   if showPrev then
-    _G._goPrev = function()
+    local goPrev = "_goPrev" .. key
+    _G[goPrev] = function()
       config.pageChange(config.currentPage - 1)
     end
-    config.renderPrev("_goPrev")
+    config.renderPrev(goPrev)
   end
 end
 
@@ -335,7 +338,7 @@ function _listUpgrades(unit)
   })
 
   _clearUnit()
-  __state.unit = name
+  __state.unit = unit
   __state.guids.unit = card.getGUID()
 
   if unit.rank == "Commander" or unit.rank == "Operative" then
@@ -345,9 +348,220 @@ function _listUpgrades(unit)
     )
   end
 
+  local slots = {}
+  for name, amount in pairs(unit.upgrades) do
+    for _ = 1, amount do
+      table.insert(slots, name)
+    end
+  end
+  __state.slots = slots
+
+  _page.upgrades = {}
   _drawUpgradeUI()
 end
 
 function _drawUpgradeUI()
   _clearUI()
+
+  -- TODO: Auto-spawn required upgrades.
+  -- TODO: Compute synethetic slots (additional upgrade slots granted by stuff).
+  local slots = tablex.shallow(__state.slots)
+  for i, name in ipairs(slots) do
+    _drawUpgradeSlot(name, i)
+  end
+end
+
+local _upgradeOffsets = {
+  {
+    x = -1.87,
+    y = 0.28,
+    z = 2.13,
+  },
+  {
+    x = 1.87,
+    y = 0.28,
+    z = -0.58,
+  },
+  {
+    x = 0,
+    y = 0.28,
+    z = -0.58,
+  },
+  {
+    x = -1.87,
+    y = 0.28,
+    z = -0.58
+  },
+  {
+    x = 1.87,
+    y = 0.28,
+    z = -3.31,
+  },
+  {
+    x = 0,
+    y = 0.28,
+    z = -3.31,
+  },
+  {
+    x = 0,
+    y = 0.28,
+    z = -3.31,
+  },
+  {
+    x = -1.87,
+    y = 0.28,
+    z = -3.31,
+  },
+}
+
+function _correctStringLength2(input)
+  local size = 160
+  if string.len(input) > 12 then
+    size = 160 - (string.len(input) - 12) * 7.2
+  end
+  if size < 70 then
+    size = 70
+  end
+  return size
+end
+
+function _drawUpgradeSlot(name, slotIndex)
+  if __state.upgrades[slotIndex] then
+    if not __state.guids.upgrades[slotIndex] then
+      local card = _spawnUpgradeCard(__state.upgrades[slotIndex], slotIndex)
+      __state.guids.upgrades[slotIndex] = card.getGUID()
+    end
+    return
+  end
+
+  local offsets = tablex.shallow(_upgradeOffsets[slotIndex])
+  local allowed = _deck:getUpgradesByType(name, __state.unit)
+  _paginationHelper(allowed, {
+    key         = tostring(slotIndex),
+    maxItems    = 5,
+    currentPage = _page.upgrades[slotIndex] or 1,
+    renderItem  = function(item, index, callback)
+      local position = tablex.shallow(offsets)
+      position.z = position.z - 0.35 * (index - 1)
+      self.createButton({
+        click_function = callback,
+        function_owner = self,
+        label          = item.name,
+        tooltip        = item.name,
+        position       = position,
+        rotation       = {0, 180, 0},
+        width          = 1340,
+        height         = 380,
+        font_size      = _correctStringLength2(item.name),
+        color          = {0.1764, 0.1764, 0.1764, 0.01},
+        font_color     = {0, 0, 0, 100},
+        scale          = {0.5, 0.5, 0.5},
+      })
+    end,
+    renderPrev  = function(callback)
+      local position = tablex.shallow(offsets)
+      position.z = position.z - 0.35 * 5
+      position.x = position.x + 0.3
+      self.createButton({
+        click_function = callback,
+        function_owner = self,
+        label          = "◄    ",
+        position       = position,
+        width          = 700,
+        height         = 380,
+        font_size      = 160,
+        alignment      = 3,
+        rotation       = {0, 180, 0},
+        color          = {0, 0, 0, 0},
+        font_color     = {0, 0, 0, 100},
+        scale          = {0.5, 0.5, 0.5},
+      })
+    end,
+    renderNext  = function(callback)
+      local position = tablex.shallow(offsets)
+      position.z = position.z - 0.35 * 5
+      position.x = position.x - 0.3
+      self.createButton({
+        click_function = callback,
+        function_owner = self,
+        label          = "    ►",
+        position       = position,
+        width          = 700,
+        height         = 380,
+        font_size      = 160,
+        alignment      = 3,
+        rotation       = {0, 180, 0},
+        color          = {0, 0, 0, 0},
+        font_color     = {0, 0, 0, 100},
+        scale          = {0.5, 0.5, 0.5},
+      })
+    end,
+    itemPressed = function(upgrade)
+      __state.upgrades[slotIndex] = upgrade
+      _drawUpgradeUI()
+    end,
+    pageChange  = function(newPage)
+      _page.upgrades[slotIndex] = newPage
+      _drawUpgradeUI()
+    end,
+  })
+end
+
+local _upgradeCardOffsets = {
+  -- q = horziontal offset?
+  -- c = vertical offset?
+  -- top right
+  {q = 146.451578117502, c = 2.2437691503361},
+  -- center left
+  {q = -37.790038154384, c = 2.3663051367058},
+  -- center middle
+  {q = -90, c = 1.45},
+  -- center right
+  {q = -142.209961845616, c = 2.3663051367058},
+  -- bottom left
+  {q = -65.897765498839, c = 4.5792248252297},
+  -- bottom middle
+  {q = -90, c = 4.18},
+  -- bottom right
+  {q = -114, c = 4.5792248252297},
+}
+
+function _spawnUpgradeCard(upgrade, points, slotIndex, isRequired)
+  local card = _deck:spawnUpgradeCard(upgrade.name)
+  
+  local position = self.getPosition()
+  local rotation = self.getRotation()
+  local offset = _upgradeCardOffsets[slotIndex]
+
+  local a = offset.c * math.cos(math.rad(offset.q + rotation.y))
+  local b = offset.c * math.sin(math.rad(offset.q + rotation.y))
+  position.x = position.x - a
+  position.z = position.z + b
+  position.y = position.y + 0.35
+  rotation.y = 180
+
+  card.interactable = false
+  card.setPosition(position)
+  card.setRotation(rotation)
+  card.setVar("ptCost", upgrade.points or 0)
+  card.setScale({0.83, 0.83, 0.83})
+
+  if not isRequired then
+    local callback = "destroyUpgrade" .. slotIndex
+    _G[callback] = function()
+      _removeUpgrade(slotIndex)
+    end
+    card.createButton({
+      click_function = callback,
+      function_owner = self,
+      label          = "X",
+      position       = {-0.95, 0.5, -1.4},
+      width          = 140,
+      height         = 180,
+      font_size      = 100,
+      color          = {1, 0, 0},
+      font_color     = {1, 1, 1},
+      tooltip        = "Remove",
+    })
+  end
 end
