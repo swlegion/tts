@@ -1,0 +1,341 @@
+require('!/common/Math')
+require('!/common/Tablex')
+require('!/Deck')
+
+local __state = {
+  faction  = nil,
+  unit     = nil,
+  upgrades = {},
+  guids    = {
+    unit        = nil,
+    upgrades    = {},
+    deckBuilder = nil,
+  },
+}
+
+local _deck = Deck:create()
+local _page = {}
+
+function onSave()
+  return JSON.encode(__state)
+end
+
+function _onLoadShared(state)
+  self.interactable = false
+  if state ~= "" then
+    __state = JSON.decode(state)
+  end
+  if __state.faction then
+    if __state.unit then
+      _listUpgrades(__state.unit)
+    else
+      _addOrCopy()
+    end
+  end
+end
+
+function _rotateAsExpected(z)
+  if z == nil then
+    z = 0
+  end
+  local rotation = self.getRotation()
+  rotation.z = z
+  self.setRotation(rotation)
+  if z == 0 then
+    self.setColorTint({1, 1, 1})
+  else
+    self.setColorTint({0.137212425, 0.188192815, 0.211719871})
+  end
+end
+
+function initializeWithFactionAndDeckBuilder(data)
+  __state.faction = data.faction
+  __state.guids.deckBuilder = data.deckBuilderGUID
+  if __state.faction then
+    _addOrCopy()
+  end
+end
+
+function _clearUI()
+  self.clearButtons()
+end
+
+function _clearUnit()
+  _clearUpgrades()
+  if __state.guids.unit then
+    destroyObject(getObjectFromGUID(__state.guids.unit))
+  end
+  __state.unit = nil
+  __state.guids.unit = nil
+end
+
+function _clearUpgrades()
+  tablex.forEachObjectByGUID(__state.guids.upgrades, destroyObject)
+  __state.upgrades = {}
+  __state.guids.upgrades = {}
+end
+
+-- TODO: Make a better/generic version of this and put in common.
+function _correctStringLength(measuredString)
+  if string.len(measuredString) > 21 then
+    local returnLength = 80 - ((string.len(measuredString) - 22) * 5)
+    return returnLength
+  else
+    return 80
+  end
+end
+
+function _addOrCopy()
+  _clearUnit()
+  _clearUpgrades()
+  _clearUI()
+  _rotateAsExpected(180)
+  self.createButton({
+    click_function = "_listRanks",
+    function_owner = self,
+    label          = "Add Unit",
+    tooltip        = "Pick a Unit and Upgrades to Spawn",
+    position       = {0, -0.2, 1},
+    rotation       = {180, 0, 0},
+    scale          = {0.5, 0.5, 0.5},
+    width          = 5100,
+    height         = 1000,
+    font_size      = 350,
+    color          = {0, 0, 0, 1},
+    font_color     = {0.2969, 0.979, 1, 1},
+  })
+  self.createButton({
+    click_function = "_listRanks",
+    function_owner = self,
+    label          = "Clone Previous",
+    tooltip        = "Clone a previous Unit (i.e. to the \"left\")",
+    position       = {0, -0.2, -0.5},
+    rotation       = {180, 0, 0},
+    scale          = {0.5, 0.5, 0.5},
+    width          = 5100,
+    height         = 1000,
+    font_size      = 350,
+    color          = {0, 0, 0, 1},
+    font_color     = {0.2969, 0.979, 1, 1},
+  })
+end
+
+function _setBackButton(label, tooltip, callback)
+  _G._goBack = callback
+  self.createButton({
+    click_function = "_goBack",
+    function_owner = self,
+    label          = label,
+    tooltip        = tooltip,
+    position       = {2.12, 0.28, 2.13},
+    rotation       = {0, 180, 0},
+    width          = 270,
+    height         = 190,
+    font_size      = 80,
+    color          = {0.1764, 0.1764, 0.1764, 0.01},
+    font_color     = {0, 0, 0, 100},
+  })
+end
+
+function _listRanks()
+  _clearUI()
+  _clearUnit()
+  _rotateAsExpected()
+  _setBackButton("X", "Clear Unit", _addOrCopy)
+  for i, rank in ipairs({
+    "Commander",
+    "Operative",
+    "Corps",
+    "Special Forces",
+    "Support",
+    "Heavy",
+  }) do
+    local callback = "_listUnits_" .. i
+    _G[callback] = function()
+      _listUnits(rank)
+    end
+    self.createButton({
+      click_function = callback,
+      function_owner = self,
+      label          = rank,
+      position       = {0.93, 0.28, 2.48 - i * 0.35},
+      rotation       = {0, 180, 0},
+      width          = 1010,
+      height         = 190,
+      font_size      = _correctStringLength(rank),
+      color          = {0.1764, 0.1764, 0.1764, 0.01},
+      font_color     = {0, 0, 0, 100},
+      tooltip        = "Pick from " .. rank .. " units",
+    })
+  end
+end
+
+-- TODO: Make this more generic and host in "common".
+--
+-- Maybe even something like a MenuBuilder class instead?
+function _paginationHelper(list, config)
+  -- Reset helper callbacks.  
+  _G.goNext = nil
+  _G.goPrev = nil
+
+  -- Simple case: No pagination required.
+  if not config.maxItems or config.maxItems > #list then
+    for i, item in ipairs(list) do
+      local callback = "subMenu" .. i
+      _G[callback] = function()
+        config.itemPressed(item)
+      end
+      config.renderItem(item, i, callback)
+    end
+    return
+  end
+
+  -- Complex case: Pagination required.
+  local startAt  = 1 + (config.currentPage - 1) * config.maxItems
+  local endAt    = startAt + config.maxItems - 1
+  local showNext = false
+  local showPrev = false
+  if startAt > 1 then
+    showPrev = true
+  end
+  if endAt < #list then
+    showNext = true
+  end
+
+  -- Create a slice of the list to represent the current page.
+  -- TODO: Make this a tablex.slice function.
+  local slice = {}
+  for i = startAt, endAt, 1 do
+    table.insert(slice, list[i])
+  end
+  _paginationHelper(slice, {
+    renderItem  = config.renderItem,
+    itemPressed = config.itemPressed,
+  })
+
+  -- Now (conditionally) render previous and next buttons.
+  if showNext then
+    _G._goNext = function()
+      config.pageChange(config.currentPage + 1)
+    end
+    config.renderNext("_goNext")
+  end
+  if showPrev then
+    _G._goPrev = function()
+      config.pageChange(config.currentPage - 1)
+    end
+    config.renderPrev("_goPrev")
+  end
+end
+
+function _listUnits(rank)
+  _clearUI()
+  _clearUpgrades()
+  _setBackButton("X", "Go back and select a rank", _listRanks)
+  _paginationHelper(_deck:getUnitsByFactionAndRank(__state.faction, rank), {
+    maxItems    = 6,
+    currentPage = _page.units or 1,
+    renderItem  = function(item, index, callback)
+      local name = item.displayName or item.name
+      self.createButton({
+        click_function = callback,
+        function_owner = self,
+        label          = name,
+        tooltip        = "Pick " .. name,
+        position       = {0.93, 0.28, 2.48 - index * 0.35},
+        width          = 1010,
+        height         = 190,
+        font_size      = _correctStringLength(name),
+        rotation       = {0, 180, 0},
+        color          = {0.1764, 0.1764, 0.1764, 0.01},
+        font_color     = {0, 0, 0, 100},
+        alignment      = 3,
+      })
+    end,
+    renderNext  = function(callback)
+      self.createButton({
+        click_function = callback,
+        function_owner = self,
+        label          = "►",
+        tooltip        = "View next page of unit cards",
+        position       = {-0.30, 0.28, 2.48 - 6 * 0.35},
+        rotation       = {0, 180, 0},
+        width          = 270,
+        height         = 190,
+        font_size      = 80,
+        color          = {1, 0, 0},
+        font_color     = {1, 1, 1},
+        alignment      = 3,
+      })
+    end,
+    renderPrev  = function(callback)
+      self.createButton({
+        click_function = callback,
+        function_owner = self,
+        label          = "◄",
+        tooltip        = "View next page of unit cards",
+        position       = {2.13, 0.28, 2.48 - 6 * 0.35},
+        rotation       = {0, 180, 0},
+        width          = 270,
+        height         = 190,
+        font_size      = 80,
+        color          = {1, 0, 0},
+        font_color     = {1, 1, 1},
+      })
+    end,
+    pageChange  = function(newPage)
+      _page.units = newPage
+      _listUnits(rank)
+    end,
+    itemPressed = function(unitName)
+      _page.units = 1
+      _listUpgrades(unitName)
+    end,
+  })
+end
+
+function _listUpgrades(unit)
+  local name = unit.name
+  if unit.title then
+    name = name .. " " .. unit.title
+  end
+
+  local card = _deck:spawnUnitCard(__state.faction, name)
+  local position = self.getPosition()
+  local rotation = self.getRotation()
+  
+  position = translatePos(
+    position,
+    rotation,
+    1.5620819440734,
+    52.543226290399 + 90
+  )
+  position.y = self.getPosition().y + 0.35
+
+  card.interactable = false
+  card.setPosition(position)
+  card.setRotation({0, rotation.y + 180, 0})
+  card.setScale({0.83, 1, 0.83})
+  card.setVar("ptCost", unit.points or 0)
+  card.createButton({
+    click_function = "_listRanks",
+    function_owner = self,
+    label          = "X",
+    tooltip        = "Remove unit",
+    position       = {-0.7, 0.5, -1.4},
+    width          = 140,
+    height         = 180,
+    font_size      = 100,
+    color          = {1, 0, 0},
+    font_color     = {1, 1, 1},
+  })
+
+  __state.unit = name
+  __state.guids.unit = card.getGUID()
+
+  _drawUpgradeUI()
+end
+
+function _drawUpgradeUI()
+  _clearUI()
+end

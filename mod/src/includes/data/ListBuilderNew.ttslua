@@ -197,15 +197,12 @@ function _spawnTemplates()
       rotation = rotation,
       scale    = {1, 1, 1},
     })
-    -- TODO: Triggers the script running. Remove after refactored.
-    unitBuilder.setName("")
-    unitBuilder.interactable = false
-    unitBuilder.script_state = JSON.encode({
-      colorSide       = __state.color:lower(),
-      templateIndex   = i,
-      deckBuilderGuid = deckBuilder.getGUID(),
-      selectedFaction = __state.faction,
-    })
+    Wait.frames(function()
+      unitBuilder.call("initializeWithFactionAndDeckBuilder", {
+        faction         = __state.faction,
+        deckBuilderGUID = __state.guids.deckBuilder,
+      })
+    end)
     position = unitBuilder.getPosition()
     unitBuilder.setPosition({position.x, 1, position.z})
     table.insert(__state.guids.unitBuilders, unitBuilder.getGUID())
