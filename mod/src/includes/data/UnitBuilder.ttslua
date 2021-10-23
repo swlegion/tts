@@ -52,6 +52,7 @@ end
 function initializeWithFactionAndDeckBuilder(data)
   __state.faction = data.faction
   __state.guids.deckBuilder = data.deckBuilderGUID
+  __state.guids.listBuilder = data.listBuilderGUID
   if __state.faction then
     _addOrCopy()
   end
@@ -111,7 +112,7 @@ function _addOrCopy()
     font_color     = {0.2969, 0.979, 1, 1},
   })
   self.createButton({
-    click_function = "_listRanks",
+    click_function = "_clonePrevious",
     function_owner = self,
     label          = "Clone Previous",
     tooltip        = "Clone a previous Unit (i.e. to the \"left\")",
@@ -141,6 +142,27 @@ function _setBackButton(label, tooltip, callback)
     color          = {0.1764, 0.1764, 0.1764, 0.01},
     font_color     = {0, 0, 0, 100},
   })
+end
+
+function _clonePrevious()
+  local state = getObjectFromGUID(__state.guids.listBuilder).call(
+    "getStateOfPrevious",
+    self.getGUID()
+  )
+  _initializeFrom(
+    state.faction,
+    state.name,
+    state.upgrades
+  )
+end
+
+function _initializeFrom(faction, name, upgrades)
+  _clearUI()
+  _rotateAsExpected()
+  __state.faction = faction
+  __state.unit = _deck:getUnitByFactionAndName(faction, name)
+  _listUpgrades(__state.unit)
+  _drawUpgradeUI(upgrades)
 end
 
 function _listRanks()
@@ -190,6 +212,11 @@ function _paginationHelper(list, config)
         config.itemPressed(item, i)
       end
       config.renderItem(item, i, callback)
+      if config.autoSelect and config.autoSelect(item) then
+        Wait.frames(function()
+          config.itemPressed(item, i)
+        end)
+      end
     end
     return
   end
@@ -213,7 +240,8 @@ function _paginationHelper(list, config)
     table.insert(slice, list[i])
   end
   _paginationHelper(slice, {
-    key         = key,
+    key         = config.key,
+    autoSelect  = config.autoSelect,
     renderItem  = config.renderItem,
     itemPressed = config.itemPressed,
   })
@@ -361,14 +389,21 @@ function _listUpgrades(unit)
   _drawUpgradeUI()
 end
 
-function _drawUpgradeUI()
+function _drawUpgradeUI(startingUpgrades)
   _clearUI()
 
-  -- TODO: Auto-spawn required upgrades.
   -- TODO: Compute synethetic slots (additional upgrade slots granted by stuff).
   local slots = tablex.shallow(__state.slots)
+
+  if not startingUpgrades then
+    startingUpgrades = tablex.shallow(__state.unit.required or {})
+  end
+  if #startingUpgrades > 0 then
+    _preSelectUpgrades(slots, startingUpgrades)
+  end
+
   for i, name in ipairs(slots) do
-    _drawUpgradeSlot(name, i)
+    _drawUpgradeSlot(name, i, startingUpgrades)
   end
 end
 
@@ -426,10 +461,39 @@ function _correctStringLength2(input)
   return size
 end
 
+function _preSelectUpgrades(slots, upgrades)
+  local match = {}
+  for _, upgrade in ipairs(upgrades) do
+    match[upgrade:upper()] = 1
+  end
+  for index, slot in ipairs(slots) do
+    local allowed = _deck:getUpgradesByType(slot, __state.unit)
+    for _, upgrade in ipairs(allowed) do
+      local name = upgrade.name:upper()
+      if match[name] then
+        match[name] = nil
+        __state.upgrades[index] = upgrade
+        break
+      end
+    end
+  end
+end
+
 function _drawUpgradeSlot(name, slotIndex)
   if __state.upgrades[slotIndex] then
     if not __state.guids.upgrades[slotIndex] then
-      local card = _spawnUpgradeCard(__state.upgrades[slotIndex], slotIndex)
+      local isRequired = false
+      for _, required in ipairs(__state.unit.required or {}) do
+        if name:upper() == required:upper() then
+          isRequired = true
+          break
+        end
+      end
+      local card = _spawnUpgradeCard(
+        __state.upgrades[slotIndex],
+        slotIndex,
+        isRequired
+      )
       __state.guids.upgrades[slotIndex] = card.getGUID()
     end
     return
@@ -594,6 +658,7 @@ function getListText()
   end
   return {
     name     = name,
+    faction  = __state.faction,
     rank     = __state.unit.rank,
     upgrades = upgrades,
   }

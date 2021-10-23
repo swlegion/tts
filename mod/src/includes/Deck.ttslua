@@ -360,6 +360,21 @@ function Deck:getUnitsByFactionAndRank(faction, rank)
   return result
 end
 
+function Deck:getUnitByFactionAndName(faction, name)
+  -- TODO: Remove remapping.
+  local remap = {
+    ["imperial"]   = "Empire",
+  }
+  if remap[faction] ~= nil then
+    faction = remap[faction]
+  end
+  local units = self:_getSchema().units[faction:upper()]
+  if not units then
+    return nil
+  end
+  return units[name:upper()]
+end
+
 function Deck:getUpgradesByType(type, filterForUnit)
   -- Makes the cost of this less unbearable since it's called many times.
   if self._cache.upgrades[type] then

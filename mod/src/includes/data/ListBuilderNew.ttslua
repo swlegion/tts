@@ -201,11 +201,25 @@ function _spawnTemplates()
       unitBuilder.call("initializeWithFactionAndDeckBuilder", {
         faction         = __state.faction,
         deckBuilderGUID = __state.guids.deckBuilder,
+        listBuilderGUID = self.getGUID(),
       })
     end)
     position = unitBuilder.getPosition()
     unitBuilder.setPosition({position.x, 1, position.z})
     table.insert(__state.guids.unitBuilders, unitBuilder.getGUID())
+  end
+end
+
+function getStateOfPrevious(unitBuilderGUID)
+  for i, guid in ipairs(__state.guids.unitBuilders) do
+    if guid == unitBuilderGUID then
+      if i == 1 then
+        return nil
+      end
+      return getObjectFromGUID(
+        __state.guids.unitBuilders[i - 1]
+      ).call("getListText")
+    end
   end
 end
 
