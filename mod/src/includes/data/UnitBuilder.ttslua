@@ -576,3 +576,25 @@ function _removeUpgrade(slotIndex)
   __state.guids.upgrades[slotIndex] = nil
   _drawUpgradeUI()
 end
+
+-- TODO: Rename this to something more intelligent (it's used for JSON).
+function getListText()
+  if not __state.unit then
+    return nil
+  end
+  local upgrades = {}
+  tablex.forEach(__state.upgrades, function(item)
+    if item ~= nil then
+      table.insert(upgrades, item.name)
+    end
+  end)
+  local name = __state.unit.name
+  if __state.unit.title then
+    name = name .. " " .. __state.unit.title
+  end
+  return {
+    name     = name,
+    rank     = __state.unit.rank,
+    upgrades = upgrades,
+  }
+end
