@@ -18,4 +18,16 @@ local tablex = {
       return nil
     end
   end,
+
+  forEach = function(input, callback)
+    for k, v in pairs(input) do
+      callback(v, k)
+    end
+  end,
+
+  forEachObjectByGUID = function(input, callback)
+    for k, v in pairs(input) do
+      callback(getObjectFromGUID(v), k)
+    end
+  end,
 }

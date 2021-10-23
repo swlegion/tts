@@ -46,7 +46,9 @@
 
           (Since last <i>Beta</i>)
 
-          - Fix: Re-selecting a unit with the in-game list builder no longer causes "unknown error".
+          - Feat: In-game list building improvements, including "Clone Previous".
+
+          - Fix: Allow of the list builder "unknown error" issues are resolved.
           
           (Since last <i>Stable</i>)
 
