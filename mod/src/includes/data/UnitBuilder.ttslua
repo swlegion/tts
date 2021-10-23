@@ -439,11 +439,6 @@ local _upgradeOffsets = {
     z = -3.31,
   },
   {
-    x = 0,
-    y = 0.28,
-    z = -3.31,
-  },
-  {
     x = -1.87,
     y = 0.28,
     z = -3.31,
@@ -480,17 +475,18 @@ function _preSelectUpgrades(slots, upgrades)
 end
 
 function _drawUpgradeSlot(name, slotIndex)
-  if __state.upgrades[slotIndex] then
+  local upgrade = __state.upgrades[slotIndex]
+  if upgrade then
     if not __state.guids.upgrades[slotIndex] then
       local isRequired = false
       for _, required in ipairs(__state.unit.required or {}) do
-        if name:upper() == required:upper() then
+        if upgrade.name:upper() == required:upper() then
           isRequired = true
           break
         end
       end
       local card = _spawnUpgradeCard(
-        __state.upgrades[slotIndex],
+        upgrade,
         slotIndex,
         isRequired
       )
