@@ -98,7 +98,7 @@ export async function compileSaveFile(
       await api.saveAndPlay(json);
       console.info(`Sent reload command!`);
     } catch (e) {
-      console.warn(`Could not reload. Is TTS currently running?`);
+      console.warn(`Could not reload. Is TTS currently running?`, e);
     }
   }
 }
