@@ -437,7 +437,7 @@ function moveUnit()
     local modelTemplateA = getObjectFromGUID(templateInfo.modelTemplateAGUID)
 
     templateA = spawnObject({
-        type = "Custom_Model",
+        type = "Custom_AssetBundle",
         position = {basePos.x - b, basePos.y, basePos.z - a},
         rotation = {0, baseRot.y + 180, 0},
         --make the first bit a tiny bit shorter to stop zfighting at the joint
@@ -445,9 +445,8 @@ function moveUnit()
     })
     templateA.setCustomObject({
         type = 0,
-        mesh = templateInfo.moveTemplate[unitData.selectedSpeed].mesh,
-        diffuse = templateInfo.moveTemplate[unitData.selectedSpeed].diffuse,
-        collider = templateInfo.moveTemplate[unitData.selectedSpeed].longCollider,
+        assetbundle = templateInfo.moveTemplate[unitData.selectedSpeed].longBundle,
+        assetbundle_secondary = templateInfo.moveTemplate[unitData.selectedSpeed].sharedBundle,
         material = 1,
     })
 
@@ -464,17 +463,16 @@ function moveUnit()
     local modelTemplateB = getObjectFromGUID(templateInfo.modelTemplateBGUID)
 
     templateB = spawnObject({
-        type = "Custom_Model",
+        type = "Custom_AssetBundle",
         position = {basePos.x - b, basePos.y, basePos.z - a},
         rotation = {0, baseRot.y, 0},
         scale = {1,1,1}
     })
     templateB.setCustomObject({
         type = 0,
-        mesh = templateInfo.moveTemplate[unitData.selectedSpeed].mesh,
-        diffuse = templateInfo.moveTemplate[unitData.selectedSpeed].diffuse,
-        collider = templateInfo.moveTemplate[unitData.selectedSpeed].shortCollider,
-        material = 1,
+        assetbundle = templateInfo.moveTemplate[unitData.selectedSpeed].shortBundle,
+        assetbundle_secondary = templateInfo.moveTemplate[unitData.selectedSpeed].sharedBundle,
+        material = 1
     })
 
     templateB.mass = 0.0
