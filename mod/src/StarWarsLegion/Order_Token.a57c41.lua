@@ -1,6 +1,8 @@
 require('!/common/Math')
 require('!/RangeRulers')
 require('!/data/MovementLinks')
+require('!/Cohesion')
+
 
 -- Model Token
 
@@ -315,7 +317,7 @@ function resetButtons()
         })
 
         self.createButton({
-            click_function = "spawnCohesionRuler",
+            click_function = "toggleCohesionRuler",
             function_owner = self,
             label = "COHESION", position = {1.6, 0.2, -1.2}, width = 850, height = 350, font_size = 150, color = {0, 0, 0, 1}, font_color = {0.4709, 0.9759, 0.9162, 1},
             tooltip = "Spawn Cohesion Rulers"
@@ -336,9 +338,9 @@ function resetButtons()
     end
 end
 
-function spawnCohesionRuler()
+function toggleCohesionRuler()
     if not rulerOn then
-        selectedUnitObj.call("spawnCohesionRuler")
+        selectedUnitObj.call("spawnCohesionRuler", selectedUnitObj)
         rulerOn = true
     else
         selectedUnitObj.call("clearCohesionRuler")
@@ -401,6 +403,7 @@ function initMove()
     moveUnit()
 end
 
+
 function moveUnit()
     stopAttack()
     resetButtons()
@@ -413,6 +416,7 @@ function moveUnit()
         color = {0.7, 0.03, 0.03},
         font_color = {1, 1, 1}
     })
+    lockUnitsExcept(selectedUnitObj, "MoveInProgress")
 
     ------------------------------------------- PLACEMENT MATH -------------------------------------------
     basePos = selectedUnitObj.getPosition()
@@ -709,7 +713,7 @@ function stopUnit()
     clearTemplates()
     resetButtons()
     unhighlightEnemies()
-
+    unlockAllUnits("MoveInProgress")
 end
 
 ------------------------------------------------- Clear templates------------------------------------------------------------
@@ -1156,4 +1160,49 @@ function getDistance(originObj, targetObj)
   targetPos:set(nil, 0, nil)
   
   return Vector.distance(originPos, targetPos)
+end
+
+
+function allUnitLeaders()
+   local unitLeaders = nil
+   unitLeaders = {}
+   local leaderCount = 1
+   local allUnits = nil
+   local allUnits = battlefieldZone.getObjects()
+
+   if allUnits ~= nil then
+      for i, unit in pairs(allUnits) do
+         local miniData = unit.getTable("unitData")
+         local isAMini = unit.getVar("isAMini")
+         if miniData and miniData.commandType then
+            if isAMini == true then
+               unitLeaders[leaderCount] = unit
+               leaderCount = leaderCount + 1
+            end
+         end
+      end
+   end
+   return unitLeaders
+end
+
+function lockUnitsExcept(exceptionUnit, lockName)
+   local unitLeaders = allUnitLeaders()
+
+   if unitLeaders ~= nil then
+      for i, unit in pairs(unitLeaders) do
+         if unit ~= exceptionUnit then
+            unit.call("tryAddLock", lockName)
+         end
+      end
+   end
+end
+
+function unlockAllUnits(lockName)
+   local unitLeaders = allUnitLeaders()
+
+   if unitLeaders ~= nil then
+      for i, unit in pairs(unitLeaders) do
+         unit.call("tryRemoveLock", lockName)
+      end
+   end
 end

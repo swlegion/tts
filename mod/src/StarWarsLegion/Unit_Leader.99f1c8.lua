@@ -106,8 +106,11 @@ function updateLockBtnColor()
 end
 
 function toggleLockButton()
-    toggleLock("unitLockButton")
-    updateLockBtnColor()
+   if not isLocked() then
+      toggleLock("UnitLockButton")
+   else
+      removeAllLocks()
+   end
 end
 
 function evaluateLocks()
@@ -119,6 +122,7 @@ function evaluateLocks()
             obj.locked = newValue
         end
    end
+   updateLockBtnColor()
 end
 
 function isLocked()
@@ -133,20 +137,23 @@ function isLocked()
 end
 
 function tryAddLock(lockName)
-   local hasLock = locks[lockName] ~= nil
-   if not hasLock then
-      locks[lockName] = true
-   end
+   locks[lockName] = true
    evaluateLocks()
 end  
 
 function tryRemoveLock(lockName)
-   local hasLock = locks[lockName] ~= nil
-   if not hasLock then
-      locks[lockName] = false
-   end
+   locks[lockName] = false
    evaluateLocks()
 end  
+
+function removeAllLocks(lockName)
+   if locks ~= nil then
+      for key, value in pairs(locks) do
+         locks[key] = false
+      end
+   end
+   evaluateLocks()
+end
 
 function toggleLock(lockName)
    local hasLock = locks[lockName] ~= nil
@@ -249,7 +256,7 @@ function dropCoroutine()
         coroutine.yield(0)
     end
     if moveState == true then
-        spawnCohesionRuler(this)
+        spawnCohesionRuler(self)
     end
     return 1
 end
