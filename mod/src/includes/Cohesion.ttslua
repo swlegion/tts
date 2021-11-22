@@ -1,0 +1,61 @@
+require('!/data/CohesionLinks')
+
+function showCohesionOnHoveredModel(hoverObject)
+   if hoverObject then
+      if hoverObject.interactable then
+         if selectedUnitObj == hoverObject then
+            clearCohesionRuler()
+            selectedUnitObj = nil
+            return
+         end
+      end
+   end
+   clearCohesionRuler()
+   spawnCohesionRuler(hoverObject)
+end
+
+function spawnCohesionRuler(cohesionSourceObject)
+    if not cohesionSourceObject then
+        return
+    end
+    if cohesionRuler ~= nil then
+        clearCohesionRuler()
+    end
+
+    local newUnitData = cohesionSourceObject.getTable("unitData")
+    if not newUnitData then 
+      return 
+    end
+
+    local cohesionBundlesTable = getCohesionLinks()
+    local baseSize = newUnitData.baseSize
+    local cohesionBundleToSpawn = cohesionBundlesTable[baseSize]
+
+    if cohesionBundleToSpawn == nil then return end
+
+    local basePos = cohesionSourceObject.getPosition()
+    local baseRot = cohesionSourceObject.getRotation()
+
+    cohesionRuler = spawnObject({
+        type="Custom_AssetBundle",
+        position = {basePos.x, basePos.y + 20, basePos.z},
+        rotation = {0, baseRot.y, 0},
+        scale = {0,0,0} -- 0 scale will hide TTS default box and won't impact projector
+    })
+
+    cohesionRuler.setCustomObject({
+        type = 0,
+        assetbundle = cohesionBundleToSpawn
+    })
+
+    cohesionRuler.setLock(true)
+    cohesionRuler.use_gravity = false
+    cohesionRuler.setName("Cohesion Ruler")
+end
+
+function clearCohesionRuler()
+    if cohesionRuler ~= nil then
+        cohesionRuler.destruct()
+        cohesionRuler = nil
+    end
+end

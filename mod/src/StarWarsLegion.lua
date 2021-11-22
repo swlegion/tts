@@ -5,6 +5,7 @@ require('!/data/ListBuilder')
 require('!/generated/cards')
 require('!/UI')
 require('!/RangeRulers')
+require('!/Cohesion')
 
 function onsave()
   local chessClocksActive = UI.getAttribute("floatingChessClockUI", "active") == "true"
@@ -140,6 +141,9 @@ function onload(saveData)
     templateInfo.moveTemplate[1].shortCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854760268/38CA5CF242EFC8AC89552BB5AB04C2F82E26869F/"
     templateInfo.moveTemplate[1].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432101766462/B034D388FDC9B4D10326CE8690D8C19360109A45/"
     templateInfo.moveTemplate[1].colorTint = {1,1,1}
+    templateInfo.moveTemplate[1].shortBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778007615968/4EE8D2332DCB6F4837551255CE5B1F240937BBE5/"
+    templateInfo.moveTemplate[1].longBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778007615925/BD39E83D32444FFF4EBAA728F6DA116F43E6CB23/"
+    templateInfo.moveTemplate[1].sharedBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009533333/AD7C02CEE53FB4B2EA823B3DFE570674F8998019/"
 
 
     templateInfo.moveTemplate[2] = {}
@@ -148,13 +152,19 @@ function onload(saveData)
     templateInfo.moveTemplate[2].shortCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854760528/0F20A46474850AA384B713829775CEDA580618A9/"
     templateInfo.moveTemplate[2].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432101765834/D3232FDBBFA0D8AE962DB5505E1AE4A52D08DEBA/"
     templateInfo.moveTemplate[2].colorTint = {0.5,0.5,0.5}
+    templateInfo.moveTemplate[2].shortBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009510155/77119B471FE3C51B06443F8ABE1C1B522431DF9B/"
+    templateInfo.moveTemplate[2].longBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009510102/15B368A8D753AB35E1D60F7A377AE273EBEC0145/"
+    templateInfo.moveTemplate[2].sharedBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009533401/0FBA682D7D5AA7DA1A7EFC18B33C71EB1C0898E4/"
 
     templateInfo.moveTemplate[3] = {}
     templateInfo.moveTemplate[3].mesh = "http://cloud-3.steamusercontent.com/ugc/785234780854760704/CE714393A691700C653EAD87BF876BA9194CDE9C/"
     templateInfo.moveTemplate[3].diffuse = "http://cloud-3.steamusercontent.com/ugc/785234780854771943/3C734C233CD0ECF47797501CBFBE21E0AB8A84F0/"
     templateInfo.moveTemplate[3].shortCollider = "http://cloud-3.steamusercontent.com/ugc/785234780854760896/35D512103AAFBC7856FA2FF4ACF14C342688A40D/"
-    templateInfo.moveTemplate[3].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432101765410/5E770EDD217B25DDF7725EB1A0DAC189955D1708/" 
+    templateInfo.moveTemplate[3].longCollider = "http://cloud-3.steamusercontent.com/ugc/4099956432101765410/5E770EDD217B25DDF7725EB1A0DAC189955D1708/"
     templateInfo.moveTemplate[3].colorTint = {1,0.2,0.2}
+    templateInfo.moveTemplate[3].shortBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009510243/26BA9DD7881AF63E1A19EB6BF9802630D792F836/"
+    templateInfo.moveTemplate[3].longBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009510200/6723334F35444B547AA1382AE80F12E3FE9B72B1/"
+    templateInfo.moveTemplate[3].sharedBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009533447/E5D1D5169F0DB6025808BEE8C9647B3E7057BDB9/"
 
     --This is actually diameter... just saying
     templateInfo.baseRadius = {
@@ -525,6 +535,7 @@ end
 -- addHotkey is preferred over onScriptingButton[Up|Down] due to customizability by players
 function initHotkeys()
   initRangebandHotkeys()
+  initCohesionHotkeys()
   initTokenHotkeys()
   initChessClockHotkeys()
 end
@@ -539,6 +550,17 @@ function initRangebandHotkeys()
   )
 end
 -- END Rangeband Hotkeys --
+
+-- Cohesion Hotkeys --
+function initCohesionHotkeys()
+   addHotkey(
+      "Show Cohesion On Hovered Model",
+      function (playerColor, hoverObject, cursorPosition)
+         showCohesionOnHoveredModel(hoverObject)
+      end
+   )
+end
+-- END Cohesion Hotkeys --
 
 -- Token Hotkeys --
 function initTokenHotkeys()

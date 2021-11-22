@@ -1,4 +1,4 @@
-﻿require('!/data/CohesionLinks')
+﻿require('!/Cohesion')
 
 -- Model mini
 function onload()
@@ -13,6 +13,7 @@ function setUp()
 
     moveState = false
     silhouetteState = false
+    locks = {}
     lockState = false
 
     lockBtnGreen = {0.2, 0.9, 0.05, 0.7}
@@ -76,7 +77,7 @@ function addLockButton()
     local templateInfo = Global.getTable("templateInfo")
     local buttonOffset = calculateButtonZOffset(templateInfo.baseRadius[unitData.baseSize])
     lockBtnData = {
-        click_function = "toggleLocks",
+        click_function = "toggleLockButton",
         function_owner = self,
         label = "LCK",
         tooltip = "Toggle Physics Lock on this unit",
@@ -91,7 +92,7 @@ function addLockButton()
 end
 
 function updateLockBtnColor()
-    if lockState == true then
+    if isLocked() then
         self.editButton({
             index = 0,
             color = lockBtnRed
@@ -104,38 +105,70 @@ function updateLockBtnColor()
     end
 end
 
-function toggleLocks()
-    local newValue
-    if lockState == true then
-        newValue = false
-    else
-        newValue = true
-    end
+function toggleLockButton()
+   if not isLocked() then
+      toggleLock("UnitLockButton")
+   else
+      removeAllLocks()
+   end
+end
 
-    for k, guid in pairs(miniGUIDs) do
+function evaluateLocks()
+   local newValue = isLocked()
+   
+   for k, guid in pairs(miniGUIDs) do
         local obj = getObjectFromGUID(guid)
-
         if obj ~= nil then
             obj.locked = newValue
         end
-    end
-
-    lockState = newValue
-    updateLockBtnColor()
+   end
+   updateLockBtnColor()
 end
 
-function setLocks(boolValue)
-    for k, guid in pairs(miniGUIDs) do
-        local obj = getObjectFromGUID(guid)
-
-        if obj ~= nil then
-            obj.locked = boolValue
-        end
-    end    
-    lockState = boolValue
-    updateLockBtnColor()
+function isLocked()
+   if locks ~= nil then
+      for i, value in pairs(locks) do
+         if value == true then
+            return true
+         end
+      end
+   end
+   return false
 end
-  
+
+function tryAddLock(lockName)
+   locks[lockName] = true
+   evaluateLocks()
+end  
+
+function tryRemoveLock(lockName)
+   locks[lockName] = false
+   evaluateLocks()
+end  
+
+function removeAllLocks(lockName)
+   if locks ~= nil then
+      for key, value in pairs(locks) do
+         locks[key] = false
+      end
+   end
+   evaluateLocks()
+end
+
+function toggleLock(lockName)
+   local hasLock = locks[lockName] ~= nil
+   if hasLock then
+      local currentValue = locks[lockName]
+      if currentValue == true then
+         locks[lockName] = false
+      else
+         locks[lockName] = true
+      end
+   else
+      locks[lockName] = true
+   end
+   evaluateLocks()
+end
 
 function toggleSilhouettes()
   if silhouetteState then
@@ -223,45 +256,9 @@ function dropCoroutine()
         coroutine.yield(0)
     end
     if moveState == true then
-        spawnCohesionRuler()
+        spawnCohesionRuler(self)
     end
     return 1
 end
 
-function spawnCohesionRuler()
-    if cohesionRuler ~= nil then
-        clearCohesionRuler()
-    end
 
-    local cohesionBundlesTable = getCohesionLinks()
-    local baseSize = unitData.baseSize
-    local cohesionBundleToSpawn = cohesionBundlesTable[baseSize]
-
-    if cohesionBundleToSpawn == nil then return end
-
-    local basePos = self.getPosition()
-    local baseRot = self.getRotation()
-
-    cohesionRuler = spawnObject({
-        type="Custom_AssetBundle",
-        position = {basePos.x, basePos.y + 20, basePos.z},
-        rotation = {0, baseRot.y, 0},
-        scale = {0,0,0} -- 0 scale will hide TTS default box and won't impact projector
-    })
-
-    cohesionRuler.setCustomObject({
-        type = 0,
-        assetbundle = cohesionBundleToSpawn
-    })
-
-    cohesionRuler.setLock(true)
-    cohesionRuler.use_gravity = false
-    cohesionRuler.setName("Cohesion Ruler")
-end
-
-function clearCohesionRuler()
-    if cohesionRuler ~= nil then
-        cohesionRuler.destruct()
-        cohesionRuler = nil
-    end
-end
