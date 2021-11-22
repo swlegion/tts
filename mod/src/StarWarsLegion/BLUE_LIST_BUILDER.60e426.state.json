@@ -1,0 +1,19 @@
+{
+  "color": "Blue",
+  "guids": {
+    "options": ["58f562", "bcaa6a", "d01adc", "887737"],
+    "buttons": ["e5ab6a", "16651c", "5fd41f", "e1e76b"],
+    "back": "002439",
+    "mount": "87a622",
+    "counter": "55da62",
+    "battleDeck": "0c1c93",
+    "cardZone": "818608",
+    "handZone": "3f03a2",
+    "diskZone": "cd7b3b",
+    "battleZone": "4541f9",
+    "deckBuilder": null,
+    "unitBuilders": []
+  },
+  "points": 0,
+  "faction": null
+}

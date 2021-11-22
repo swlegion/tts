@@ -45,7 +45,7 @@
       "CastShadows": false
     },
     "LuaScript": "#include ./RED_LIST_BUILDER.8708be.lua",
-    "LuaScriptState": "",
+    "LuaScriptState": "#include ./RED_LIST_BUILDER.8708be.state.json",
     "XmlUI": "#include ./RED_LIST_BUILDER.8708be.xml"
   },
   "StatesPaths": {}

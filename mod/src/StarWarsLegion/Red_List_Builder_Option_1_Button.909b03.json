@@ -1,24 +1,24 @@
 {
   "Object": {
-    "GUID": "3a3ed9",
+    "GUID": "909b03",
     "Name": "Custom_Assetbundle",
     "Transform": {
-      "posX": 8,
-      "posY": 0.8,
-      "posZ": 0,
-      "rotX": 0,
-      "rotY": 0,
-      "rotZ": 0,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1
+      "posX": -35.3501778,
+      "posY": 1.16639137,
+      "posZ": -23.6260567,
+      "rotX": 0.00257555163,
+      "rotY": 179.997391,
+      "rotZ": -0.0000333256467,
+      "scaleX": 0.22,
+      "scaleY": 0.250000417,
+      "scaleZ": 0.22
     },
-    "Nickname": "TABLE",
+    "Nickname": "Red List Builder Option 1 Button",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 1,
-      "g": 1,
+      "r": 0,
+      "g": 0.913,
       "b": 1
     },
     "LayoutGroupSortIndex": 0,
@@ -35,16 +35,15 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomAssetbundle": {
-      "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1744555589998518180/70BD19FBE4D4D8B319F6A4A2ACCE401C25D94656/",
+      "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/267231170580138054/83B9C07DD90D4FA8F3DE016617A6BF0BC935D9FF/",
       "AssetbundleSecondaryURL": "",
       "MaterialIndex": 0,
       "TypeIndex": 0,
       "LoopingEffectIndex": 0
     },
-    "LuaScript": "#include ./TABLE.3a3ed9.lua",
+    "LuaScript": "",
     "LuaScriptState": "",
-    "XmlUI": "",
-    "Tags": ["Table"]
+    "XmlUI": ""
   },
   "StatesPaths": {}
 }

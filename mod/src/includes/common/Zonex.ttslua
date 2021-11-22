@@ -1,0 +1,24 @@
+local zonex = {
+  clear = function(zone)
+    for _, o in ipairs(zone.getObjects()) do
+      destroyObject(o)
+    end
+  end,
+
+  clearExcept = function(zone, tag)
+    for _, o in ipairs(zone.getObjects()) do
+      if not o.hasTag(tag) then
+        destroyObject(o)
+      end
+    end
+  end,
+
+  firstWhereNot = function(zone, tag)
+    for _, o in ipairs(zone.getObjects()) do
+      if not o.hasTag(tag) then
+        return o
+      end
+    end
+    return nil
+  end,
+}

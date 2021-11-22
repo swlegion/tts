@@ -6,6 +6,10 @@ scripted = true
 -- Bomb Cart Token
 -- It acts both as a miniature *and* a command token (for itself).
 function onLoad()
+  if self.getName() ~= "Bomb Cart" then
+    return
+  end
+
   -- Medium base and movement states.
   moveState = false
   baseSize = "medium"
@@ -128,7 +132,7 @@ function spawnMoveTemplate()
   ]]
 
   local aStart = templateInfo.aStart[baseSize][selectedSpeed]
-  local bStart = templateInfo.bStart[baseSize][selectedSpeed]
+  local bStart = templateInfo.aStart[baseSize][selectedSpeed]
 
   local q = math.rad(baseRot.y)
   local a = aStart * math.cos(q)

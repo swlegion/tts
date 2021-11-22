@@ -159,6 +159,13 @@ export default async function buildDeckSchemaLua(
   });
   lua.push('  },');
 
+  const { objects } = json;
+  lua.push('  objects = {');
+  if (objects) {
+    lua.push(...formatData(objects, 4));
+  }
+  lua.push('  },');
+
   lua.push('}');
   lua.push('');
 

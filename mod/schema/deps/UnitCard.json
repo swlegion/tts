@@ -40,7 +40,10 @@
     },
 
     "type": {
-      "$ref": "./UnitTypes.json"
+      "anyOf": [
+        { "$ref": "./UnitTypes.json" },
+        { "type": "string", "minLength": 1 }
+      ]
     },
 
     "heavyWeaponTeam": {
@@ -75,6 +78,14 @@
       "minimum": 0
     },
 
+    "height": {
+      "description": "The approximate height of the model, in inches. The default, which is intended for small-base (trooper) minis, is 2.",
+      "type": "number",
+      "minimum": 1,
+      "default": 2,
+      "maximum": 10
+    },
+
     "upgrades": {
       "additionalProperties": {
         "type": "number",
@@ -82,7 +93,10 @@
       },
 
       "propertyNames": {
-        "$ref": "./Upgrades.json"
+        "anyOf": [
+          { "$ref": "./Upgrades.json" },
+          { "type": "string", "minLength": 1 }
+        ]
       },
 
       "type": "object"
@@ -103,6 +117,10 @@
       "items": {
         "type": "string"
       }
+    },
+
+    "additionalObjects": {
+      "$ref": "./AdditionalObjects.json"
     }
   },
 

@@ -916,7 +916,7 @@ function attackMenu(attackTargetObj)
     --
     -- it's possible we can use the actual collider height of the mini in the
     -- future in order to tune this.
-    local buttonHeight = 2
+    local buttonHeight = attackTargetObj.getVar("height") or 2
 
 
     _G["addIon"..self.getGUID()] = function() addIon(attackTargetObj) end
@@ -1045,7 +1045,7 @@ function getAngle(originObj, angleTargetObj)
 end
 
 function createAttackButton(leaderObj)
-    local buttonHeight = 2
+    local buttonHeight = leaderObj.getVar("height") or 2
 
     _G["attackMenu"..leaderObj.getGUID()] = function() attackMenu(leaderObj) end
 
@@ -1087,7 +1087,7 @@ function createRangeButton(leaderObj)
         finalRange = ">4"
     end
 
-    local buttonHeight = 2
+    local buttonHeight = leaderObj.getVar("height") or 2
     local data = {click_function = "dud", function_owner = self, label = finalRange, position = {0, buttonHeight, 0}, rotation = {0, 180, 0}, scale = {0.5, 0.5, 0.5}, width = 900, height = 700, font_size = 500, color = {1, 1, 0, 1}, font_color = {0, 0, 0, 1}}
 
     leaderObj.createButton(data)

@@ -1,0 +1,556 @@
+require('!/common/Math')
+require('!/common/Stringx')
+require('!/common/Zonex')
+require('!/Deck')
+require('!/Shelf')
+require('!/SpawnList')
+
+local __state = {}
+
+local _deck = Deck:create()
+local _shelf = Shelf:create()
+
+function onSave()
+  return JSON.encode(__state)
+end
+
+function _onLoadShared(state)
+  self.interactable = false
+  __state = JSON.decode(state)
+  _disableVisualElements()
+  _mainMenu()
+end
+
+function _disableVisualElements()
+  for _, guid in ipairs(__state.guids.options) do
+    getObjectFromGUID(guid).interactable = false
+  end
+  for _, guid in ipairs(__state.guids.buttons) do
+    getObjectFromGUID(guid).interactable = false
+  end
+  getObjectFromGUID(__state.guids.mount).interactable = false
+end
+
+local ui = {
+  clear = function()
+    for _, guid in ipairs(__state.guids.options) do
+      local object = getObjectFromGUID(guid)
+      object.clearButtons()
+    end
+    for _, guid in ipairs(__state.guids.buttons) do
+      local button = getObjectFromGUID(guid)
+      button.clearButtons()
+      button.setColorTint({0, 0, 0})
+    end
+    local back = getObjectFromGUID(__state.guids.back)
+    back.clearButtons()
+    back.setColorTint({0, 0, 0})
+  end,
+
+  back = function(tooltip, callback)
+    local button = getObjectFromGUID(__state.guids.back)
+    local callName = "_onButtonClicked_Back"
+    _G[callName] = function()
+      button.AssetBundle.playTriggerEffect(0)
+      callback()
+    end
+    button.createButton({
+      click_function    = callName,
+      function_owner    = self,
+      label             = "BACK",
+      position          = {0, 0.65, 0},
+      scale             = {1, 1, 0.7},
+      width             = 1500,
+      height            = 2000,
+      font_size         = 400,
+      color             = {0.7573, 0.7573, 0.7573, 0.01},
+      font_color        = {0, 0, 0, 100},
+      tooltip           = tooltip,
+    })
+    button.setColorTint({1, 0, 0})
+  end,
+
+  draw = function(buttons)
+    for i, config in ipairs(buttons) do
+      local callback = "_onButtonClicked_" .. i
+      local button
+      if i > 4 then
+        -- Emulate a button by drawing a rectangle.
+        --
+        -- Sorry, this is a huge hack until we have XML-UI list building
+        -- or a new table design that can account for more option buttons.
+        button = getObjectFromGUID(__state.guids.buttons[4])
+        button.createButton({
+          click_function = callback,
+          function_owner = self,
+          label          = config.title,
+          tooltip        = config.tooltip,
+          position       = {-0.3, 0.3, i},
+          scale          = {0.5, 0.5, 0.5},
+          width          = 4200,
+          height         = 600,
+          font_size      = 400,
+          font_color     = {0, 0, 0, 100},
+        })
+      else
+        local option = getObjectFromGUID(__state.guids.options[i])
+        button = getObjectFromGUID(__state.guids.buttons[i])
+        option.createButton({
+          click_function = callback,
+          function_owner = self,
+          label          = config.title,
+          tooltip        = config.tooltip,
+          position       = {-0.35, 0.3, 0},
+          scale          = {0.5, 0.5, 0.5},
+          width          = 4200,
+          height         = 600,
+          font_size      = 400,
+          font_color     = {0, 0, 0, 100},
+          color          = {0.7573, 0.7573, 0.7573, 0.01},
+        })
+        button.createButton({
+          click_function = callback,
+          function_owner = self,
+          label          = config.secondary or "",
+          tooltip        = config.tooltip,
+          position       = {0, 0.65, 0},
+          width          = 1400,
+          height         = 1400,
+          font_size      = 1100,
+          color          = {1, 1, 1, 0.01},
+          font_color     = {0, 0, 0, 100},
+          alignment      = 3,
+        })
+        button.setColorTint(config.tint)
+      end
+      
+      _G[callback] = function()
+        button.AssetBundle.playTriggerEffect(0)
+        config.callback()
+      end
+    end
+  end,
+}
+
+function _clearZone()
+  if __state.guids.deckBuilder then
+    local o = getObjectFromGUID(__state.guids.deckBuilder)
+    if o then
+      destroyObject(o)
+    end
+    __state.guids.deckBuilder = nil
+  end
+  __state.guids.unitBuilders = {}
+  zonex.clearExcept(getObjectFromGUID(__state.guids.cardZone), "Table")
+  zonex.clearExcept(getObjectFromGUID(__state.guids.handZone), "Table")
+  zonex.clearExcept(getObjectFromGUID(__state.guids.battleZone), "Table")
+
+  local data = Global.getTable("commandTokenTrayData")[__state.color:lower()]
+  for _, obj in ipairs(getObjectFromGUID(data.trayZoneGUID).getObjects()) do
+    if obj.getVar("isAToken") == true then
+      destroyObject(obj)
+    end
+  end
+  for _, obj in ipairs(getObjectFromGUID(data.stack).getObjects()) do
+    destroyObject(obj.takeObject())
+  end
+end
+
+function _spawnTemplates()
+  local globals = Global.getTable("listBuilder")
+  local deckBuilder = spawnObject({
+    type       = "Custom_Model",
+    position   = globals.deckBuilderPos[__state.color:lower()],
+    rotation   = self.getRotation(),
+  })
+  deckBuilder.setCustomObject({
+    mesh       = globals.deckBuilderMesh,
+    diffuse    = globals.deckBuilderDiffuse,
+    type       = 1,
+    material   = 3,
+  })
+  deckBuilder.setLuaScript(
+    string.format(
+      [[
+        selectedFaction  = "%s"
+        selectedScenario = "%s"
+        %s
+      ]],
+      __state.faction,
+      "Standard",
+      getObjectFromGUID(globals.deckBuilderGUID).getLuaScript()
+    )
+  )
+  __state.guids.deckBuilder = deckBuilder.getGUID()
+
+  local unitTemplate = getObjectFromGUID(globals.modelTemplateGUID)
+  for i = 1, 20, 1 do
+    local position = globals[__state.color:lower() .. "TemplatePos"][i]
+    local rotation
+    if __state.color == "Red" then
+      rotation = {0, 0, 180}
+    else
+      rotation = {0, 180, 180}
+    end
+    local unitBuilder = unitTemplate.clone({
+      position = position,
+      rotation = rotation,
+      scale    = {1, 1, 1},
+    })
+    Wait.frames(function()
+      unitBuilder.call("initializeWithFactionAndDeckBuilder", {
+        faction         = __state.faction,
+        deckBuilderGUID = __state.guids.deckBuilder,
+        listBuilderGUID = self.getGUID(),
+      })
+    end)
+    position = unitBuilder.getPosition()
+    unitBuilder.setPosition({position.x, 1, position.z})
+    table.insert(__state.guids.unitBuilders, unitBuilder.getGUID())
+  end
+end
+
+function getStateOfPrevious(unitBuilderGUID)
+  for i, guid in ipairs(__state.guids.unitBuilders) do
+    if guid == unitBuilderGUID then
+      if i == 1 then
+        return nil
+      end
+      return getObjectFromGUID(
+        __state.guids.unitBuilders[i - 1]
+      ).call("getListText")
+    end
+  end
+end
+
+function _mainMenu()
+  ui.clear()
+  ui.draw({
+    {
+      title    = "Create Army",
+      tooltip  = "Create an army",
+      callback = _chooseFaction,
+      tint     = {0, 0.913, 1},
+    },
+    {
+      title    = "Load Army",
+      tootlip  = "Load an army from JSON or Data Disk",
+      callback = _loadArmy,
+      tint     = {0, 0.913, 1},
+    },
+    {
+      title    = "Clear Side",
+      tooltip  = "Clears the units and cards on your side of the table",
+      callback = _clearZone,
+      tint     = {0, 0.913, 1},
+    },
+    {
+      title    = "Auto Tint",
+      tooltip  = "Apply automatic base tining to yet-to-be-deployment units",
+      callback = _autoTint,
+      tint     = {0, 0.913, 1},
+    }
+  })
+end
+
+function _autoTint()
+  local colorMap
+  if __state.color == "Red" then
+    colorMap = {
+      {245, 34, 45},
+      {255, 169, 64},
+      {255, 236, 61},
+      {130, 0, 20},
+      {135, 56, 0},
+      {135, 104, 0},
+    }
+  else
+    colorMap = {
+      {64, 169, 255},
+      {54, 207, 201},
+      {146, 84, 222},
+      {0, 58, 140},
+      {0, 71, 79},
+      {34, 7, 94},
+    }
+  end
+  for i, color in pairs(colorMap) do
+    colorMap[i] = {
+      color[1] / 255,
+      color[2] / 255,
+      color[3] / 255,
+    }
+  end
+  local rankCount = {}
+  for _, obj in pairs(getObjectFromGUID(__state.guids.cardZone).getObjects()) do
+    if obj.getVar("isAMini") == true then
+      local unitData = obj.getTable("unitData")
+      local rankType = unitData.commandType
+      local colorIndex = rankCount[rankType]
+      if colorIndex == nil then
+        colorIndex = 0
+      end
+      colorIndex = colorIndex + 1
+      if colorIndex > #colorMap then
+        colorIndex = 1
+      end
+      rankCount[rankType] = colorIndex
+      local miniGUIDs = obj.getTable("miniGUIDs")
+      for _, miniGuid in pairs(miniGUIDs) do
+        local miniObj = getObjectFromGUID(miniGuid)
+        miniObj.setColorTint(colorMap[colorIndex])
+      end
+      local unitIDTokenObject = getObjectFromGUID(obj.getVar("unitIDTokenGUID"))
+      if unitIDTokenObject then
+        unitIDTokenObject.setColorTint(colorMap[colorIndex])
+      end
+    end
+  end
+end
+
+function _chooseFaction()
+  _clearZone()
+  ui.clear()
+  ui.back("Go back to the main menu", _mainMenu)
+  local buttons = {}
+  for _, faction in ipairs(_deck:getFactions()) do
+    local title = stringx.titleCase(faction)
+    table.insert(buttons, {
+      title    = title,
+      tooltip  = "Create a " .. title .. " army",
+      callback = function()
+        _createArmy(title)
+        _clearZone()
+        _spawnTemplates()
+      end,
+      tint     = {0, 0.913, 1},
+    })
+  end
+  ui.draw(buttons)
+end
+
+function _createArmy(faction)
+  __state.faction = faction
+  ui.clear()
+  ui.back("Go back to faction selection", _chooseFaction)
+  ui.draw({
+    {
+      title     = "Spawn Army",
+      tooltip   = "Finish creating and spawn your army",
+      callback  = _saveAndLoadArmy,
+      tint      = {1, 0, 0},
+    },
+    {
+      title     = "Save Army",
+      tooltip   = "Save army to a data disk",
+      callback  = _saveArmy,
+      tint      = {0, 0.913, 1},
+    },
+    {
+      title     = "Reset Army",
+      tooltip   = "Reset army creation",
+      callback  = _resetArmy,
+      tint      = {0, 0.913, 1},
+    },
+    {
+      title     = stringx.titleCase(_getSelectedScenario()) .. " Battle Deck",
+      tooltip   = "Change battle deck",
+      secondary = "→",
+      callback  = _changeBattleDeck,
+      tint      = {0, 0.913, 1},
+    }
+  })
+end
+
+function _saveAndLoadArmy()
+  _saveArmy()
+  Wait.time(_loadArmy, 0.5)
+end
+
+function _generateListData()
+  local deckBuilder = getObjectFromGUID(__state.guids.deckBuilder)
+  local battleDeck = deckBuilder.getTable("battlefieldCardSelection")
+  battleDeck.scenario = _getSelectedScenario()
+  local listData = {
+    author          = "SWLegion TTS Mod",
+    points          = __state.points,
+    armyFaction     = __state.faction,
+    units           = {},
+    commandCards    = deckBuilder.getTable("commandCardSelection"),
+    contingencies   = deckBuilder.getTable("contingencyCardSelection"),
+    battlefieldDeck = battleDeck,
+  }
+  for _, guid in ipairs(__state.guids.unitBuilders) do
+    local unitBuilder = getObjectFromGUID(guid)
+    local text = unitBuilder.call("getListText")
+    if text then
+      local upgrades = {}
+      for _, entry in ipairs(text.upgrades) do
+        table.insert(upgrades, entry)
+      end
+      table.insert(listData.units, {
+        name     = text.name,
+        upgrades = upgrades,
+      })
+    end
+  end
+  return listData
+end
+
+function _saveArmy()
+  local globals = Global.getTable("listBuilder")
+  local listData = _generateListData()
+  local diskZone = getObjectFromGUID(__state.guids.diskZone)
+  local diskMount = getObjectFromGUID(__state.guids.mount)
+
+  for _, maybeDisk in ipairs(diskZone.getObjects()) do
+    if maybeDisk ~= diskMount then
+      destroyObject(maybeDisk)
+    end
+  end
+
+  local position = translatePos(
+    diskMount.getPosition(),
+    diskMount.getRotation(),
+    0.03,
+    90
+  )
+  position.y = position.y + 1
+  local dataDisk = getObjectFromGUID(globals.dataDisk.guid).clone({
+    position     = position,
+    rotation     = self.getRotation(),
+    scale        = {1, 1, 1},
+    snap_to_grid = false,
+    smooth       = false,
+  })
+  dataDisk.setPosition(position)
+  dataDisk.setLock(false)
+  dataDisk.setName(
+    string.format(
+      "%s Army: %d Points (%s)",
+      stringx.titleCase(__state.faction),
+      __state.points,
+      stringx.titleCase(_getSelectedScenario())
+    )
+  )
+  dataDisk.script_state = JSON.encode(listData)
+  _clearZone()
+  _mainMenu()
+end
+
+function _resetArmy()
+  _clearZone()
+  _spawnTemplates()
+end
+
+function _getSelectedScenario()
+  return getObjectFromGUID(__state.guids.battleDeck).call("getScenario")
+end
+
+function _setSelectedScenario(name)
+  _createArmy(__state.faction)
+  getObjectFromGUID(__state.guids.battleDeck).call("setScenario", {
+    name = name,
+  })
+  local deckBuilder = getObjectFromGUID(__state.guids.deckBuilder)
+  if deckBuilder then
+    deckBuilder.call("switchBattleDeck", {
+      name = name,
+    })
+  end
+end
+
+function _changeBattleDeck()
+  local current = _getSelectedScenario()
+  local scenarios = _deck:getBattleCardScenarios()
+  local index = 0
+  for i, name in ipairs(scenarios) do
+    if name:lower() == current:lower() then
+      index = i
+      break
+    end
+  end
+  index = index + 1
+  if index > #scenarios then
+    index = 1
+  end
+  current = scenarios[index]
+  _setSelectedScenario(current)
+end
+
+function _loadArmy()
+  local mount = getObjectFromGUID(__state.guids.mount)
+  local zone = getObjectFromGUID(__state.guids.diskZone)
+  for _, object in ipairs(zone.getObjects()) do
+    if object ~= mount then
+      _loadArmyFromJson(JSON.decode(object.script_state))
+      _mainMenu()
+      return
+    end
+  end
+  broadcastToAll(
+    "No data disk inserted for " .. stringx.titleCase(__state.color)
+  )
+end
+
+function _loadArmyFromJson(data)
+  _clearZone()
+  _setSelectedScenario(data.battlefieldDeck.scenario)
+  local spawn = initListSpawner({
+    deck        = _deck,
+    shelf       = _shelf,
+    globals     = Global.getTable("listBuilder"),
+    color       = __state.color,
+    mount       = getObjectFromGUID(__state.guids.battleDeck),
+    orientation = self.getRotation(),
+    unitTokens  = getObjectFromGUID(Global.getVar("unitIDTokenBagGUID")),
+  })
+  spawn(data)
+end
+
+-- TODO: Rename to _importFromText.
+function importFromText(_, text)
+  _loadArmyFromJson(JSON.decode(text))
+  _mainMenu()
+end
+
+-- TODO: Rename to _toggleListImporterUI
+function toggleListImporterUI()
+  local uiStatus = self.UI.getAttribute('listImporterUI', 'active')
+  local newStatus = true
+  if uiStatus == 'True' then
+    newStatus = false
+  end
+  self.UI.setAttribute('listImporterUI', 'active', newStatus)
+end
+
+function _calculatePoints()
+  local zone = getObjectFromGUID(__state.guids.cardZone)
+  local total = 0
+  for _, card in pairs(zone.getObjects()) do
+    local points = card.getVar("ptCost")
+    if points then
+      total = total + points
+    end
+  end
+  __state.points = total
+
+  -- TODO: Make the counter persist.
+  local counter = getObjectFromGUID(__state.guids.counter)
+  counter.setValue(total)
+end
+
+-- TODO: This is terrible performance wise.
+function onObjectDestroyed()
+  _calculatePoints()
+end
+
+-- TODO: This is terrible performance wise.
+function onObjectLeaveScriptingZone()
+  _calculatePoints()
+end
+
+-- TODO: This is terrible performance wise.
+function onObjectEnterScriptingZone()
+  _calculatePoints()
+end

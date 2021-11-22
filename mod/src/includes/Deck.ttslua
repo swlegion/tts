@@ -360,6 +360,21 @@ function Deck:getUnitsByFactionAndRank(faction, rank)
   return result
 end
 
+function Deck:getUnitByFactionAndName(faction, name)
+  -- TODO: Remove remapping.
+  local remap = {
+    ["imperial"]   = "Empire",
+  }
+  if remap[faction] ~= nil then
+    faction = remap[faction]
+  end
+  local units = self:_getSchema().units[faction:upper()]
+  if not units then
+    return nil
+  end
+  return units[name:upper()]
+end
+
 function Deck:getUpgradesByType(type, filterForUnit)
   -- Makes the cost of this less unbearable since it's called many times.
   if self._cache.upgrades[type] then
@@ -570,4 +585,26 @@ function Deck:getBattleCardScenarios()
     end
   end
   return result
+end
+
+function Deck:getBattleCardObjects(name, card_type, scenario_name)
+  if not scenario_name then
+    scenario_name = 'standard'
+  end
+  local scenario = self:_getSchema().battlefield[scenario_name]
+  if not scenario then
+    print("Could not find cards for scenario: " .. scenario_name)
+    return {}
+  end
+  local cards = scenario[card_type]
+  if not cards then
+    print("Could not find cards for type: " .. card_type)
+    return {}
+  end
+  for cardName, card in pairs(cards) do
+    if cardName:upper() == name:upper() then
+      return card.additionalObjects or {}
+    end
+  end
+  return {}
 end

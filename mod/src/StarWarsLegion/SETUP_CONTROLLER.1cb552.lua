@@ -1,19 +1,21 @@
 require('!/Deck')
+require('!/Shelf')
 
 function onload(save_state)
     _G.Deck = Deck:create()
+    _G.Shelf = Shelf:create()
     self.interactable = false
 
     -- intialize
     setUpCards = Global.getTable("setUpCards")
     setUpData = Global.getTable("setUpData")
-    conditionsCartridge = getObjectFromGUID(setUpData.conditionsCartridgeGUID)
-    objectiveCartridge = getObjectFromGUID(setUpData.objectiveCartridgeGUID)
     battlefieldZone = getObjectFromGUID(Global.getVar("battlefieldZoneGUID"))
     gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
     battlefieldTint = gameData.getTable("battlefieldTint")
 
-    -- token stacks
+    -- token scripts
+    _G.scriptRange1Token = nil
+    _G.scriptBombCart = nil
     getTokenScripts()
 
     -- buttonObjs
@@ -70,22 +72,13 @@ function changeScenario(params)
 end
 
 function getTokenScripts()
-    local conditionTokens = getObjectFromGUID("4d25eb")
-    local objectiveTokens = getObjectFromGUID("094239")
-
-    conditionTokens.takeObject({
-      callback_function = function(token)
-        conditionTokenScript = token.getLuaScript()
-        destroyObject(token)
-      end
-    })
-    
-    objectiveTokens.takeObject({
-      callback_function = function(token)
-        objectiveTokenScript = token.getLuaScript()
-        destroyObject(token)
-      end
-    })
+  getObjectFromGUID("4d25eb").takeObject({
+    callback_function = function(token)
+      _G.scriptRange1Token = token.getLuaScript()
+      destroyObject(token)
+    end
+  })
+  _G.scriptBombCart = getObjectFromGUID("b497e1").getLuaScript()
 end
 
 function objectiveMenu()
@@ -154,80 +147,33 @@ function getObjectFromZone(selectedZone)
 end
 
 
-function spawnObjs(selection,selectedCartridgeObj)
-
-    -- clone cartridge
-    local selectedCartridgeObjClone = selectedCartridgeObj.clone({
-        position     = {0,-10,0}
-    })
-
-    -- get guid
-    local selectedCartridgeTable = selectedCartridgeObj.getObjects()
-    selectedGUID = nil
-
-    for i, entry in pairs(selectedCartridgeTable) do
-        if entry.name:upper() == selection:upper() then
-            selectedGUID = entry.guid
-            break
-        end
-    end
-
-    if selectedGUID then
-      selectedCartridgeObjClone.takeObject({
-          position       = {0,-10,3},
-          callback       = "spawnObjsFromCartridge",
-          callback_owner = self,
-          smooth         = false,
-          guid           = selectedGUID
-      })
-    end
-
-    -- delete clone
-    destroyObject(selectedCartridgeObjClone)
-
-end
-
-function spawnObjsFromCartridge(cartridgeObj)
-    Wait.frames(function()
-      local cartridgeObjs = cartridgeObj.getObjects()
-
-      for i, loadedObj in pairs(cartridgeObjs) do
-          takenObj = cartridgeObj.takeObject({
-              position       = {-10+(i*0.5),-10,0},
-              callback       = "placeObjectDelay",
-              callback_owner = self,
-              smooth         = false
-          })
-      end
-
-      destroyObject(cartridgeObj)
-    end)
-end
-
-function placeObjectDelay(passedObj)
-  Wait.frames(function()
-    placeObject(passedObj)
-  end)
-end
-
-function placeObject(paObj)
-    spawnPos = paObj.getTable("position")
-    paObj.setPosition(spawnPos)
-
-    spawnRot = paObj.getTable("rotation")
-    paObj.setRotation(spawnRot)
-
-    if paObj.getName() == "Deployment Boundary" then
-        paObj.setLuaScript("function onload() self.interactable = false end")
-    elseif paObj.getName() == "Condition Token" then
-        paObj.setLuaScript(conditionTokenScript)
-    elseif paObj.getName() == "Objective Token" then
-        paObj.setLuaScript(objectiveTokenScript)
-    elseif paObj.getVar("scripted") ~= true then
-        paObj.setLuaScript("")
-    end
-
-    paObj.reload()
+function spawnObjs(cardType, selectedBattleCardName)
+  local objects = Deck:getBattleCardObjects(
+    selectedBattleCardName,
+    cardType,
+    _G.selectedScenario
+  )
+  if #objects == 0 then
+    return
+  end
+  local position = ({
+    objective  = {49, 1, 16},
+    deployment = {49, 1, 12},
+    condition  = {49, 1, 08}, 
+  })[cardType:lower()]
+  Shelf:spawnAdditionalObjects({
+    name     = selectedBattleCardName .. "'s Objects",
+    position = position,
+    objects  = objects,
+    -- TODO: Make this global somehow instead.
+    -- Right now if you spawn scripted tokens from the list builder this is
+    -- skipped, i.e. the setup controller is the only way to get scripting
+    -- behavior.
+    scripts  = {
+      ["toggle-range-1"] = _G.scriptRange1Token,
+      ["bomb-cart"]      = _G.scriptBombCart,
+    }
+  })
 end
 
 function spawnDeploymentBoundary(matrix)
@@ -302,7 +248,7 @@ function clearDeploymentBoundary()
 end
 
 function activateobjective(name)
-  spawnObjs(name, objectiveCartridge)
+  spawnObjs("objective", name)
   objectiveMenu()
 end
 
@@ -356,7 +302,7 @@ function deactivateDeploymentMenu()
 end
 
 function activateconditions(name)
-  spawnObjs(name, conditionsCartridge)
+  spawnObjs("condition", name)
   objectiveMenu()
 end
 

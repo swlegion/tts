@@ -22,12 +22,6 @@
   "files.insertFinalNewline": true,
 
   // Linting.
-  "eslint.options": {
-    // https://github.com/microsoft/vscode/issues/87791#issuecomment-569433183
-    "parserOptions": {
-      "project": ["${workspaceFolder}/tsconfig.json"]
-    }
-  },
   "eslint.validate": ["javascript", "json", "typescript"],
   "eslint.lintTask.enable": true,
   "editor.tabSize": 2,

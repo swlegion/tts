@@ -1,0 +1,42 @@
+{
+  "Object": {
+    "GUID": "b497e1",
+    "Name": "BlockSquare",
+    "Transform": {
+      "posX": 58.17631,
+      "posY": 1.06647265,
+      "posZ": -0.951033056,
+      "rotX": -0.0015930651,
+      "rotY": 359.985962,
+      "rotZ": -0.0000114085315,
+      "scaleX": 0.250000417,
+      "scaleY": 0.250000417,
+      "scaleZ": 0.250000417
+    },
+    "Nickname": "Bomb Cart Script",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.113668017,
+      "g": 0.160729825,
+      "b": 0.0979881957
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "LuaScript": "#include ./Bomb_Cart_Script.b497e1.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

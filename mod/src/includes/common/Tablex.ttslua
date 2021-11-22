@@ -1,0 +1,33 @@
+local tablex = {
+  isArray = function(input)
+    return #input > 0 and next(input, #input) == nil
+  end,
+
+  shallow = function(input)
+    if input then
+      if #input > 0 and next(input, #input) == nil then
+        return {table.unpack(input)}
+      else
+        local copy = {}
+        for k, v in pairs(input) do
+          copy[k] = v
+        end
+        return copy
+      end
+    else
+      return nil
+    end
+  end,
+
+  forEach = function(input, callback)
+    for k, v in pairs(input) do
+      callback(v, k)
+    end
+  end,
+
+  forEachObjectByGUID = function(input, callback)
+    for k, v in pairs(input) do
+      callback(getObjectFromGUID(v), k)
+    end
+  end,
+}

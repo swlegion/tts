@@ -45,8 +45,9 @@
       "CastShadows": true
     },
     "LuaScript": "#include ./Red_Deck.eb2d78.lua",
-    "LuaScriptState": "",
+    "LuaScriptState": "#include ./Red_Deck.eb2d78.state.json",
     "XmlUI": "",
+    "Tags": ["Table"],
     "AttachedSnapPoints": [
       {
         "Position": {

@@ -141,6 +141,10 @@
           "$ref": "#/definitions/Restriction"
         }
       }
+    },
+
+    "additionalObjects": {
+      "$ref": "./AdditionalObjects.json"
     }
   },
 

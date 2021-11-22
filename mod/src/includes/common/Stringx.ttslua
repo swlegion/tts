@@ -1,0 +1,7 @@
+local stringx = {
+  titleCase = function(string)
+    return string:gsub("(%a)([%w_']*)", function(first, rest)
+      return first:upper()..rest:lower()
+    end)
+  end,
+}

@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://schema.swlegion.dev/deps/GenericObject.json",
+
+  "title": "Generic object resource",
+  "description": "Possible object subtypes.",
+
+  "definitions": {
+    "Card": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "image": {
+          "$ref": "./Image.json"
+        },
+
+        "back": {
+          "$ref": "./Image.json"
+        }
+      },
+      "required": ["image"]
+    },
+
+    "Deck": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "back": {
+          "$ref": "./Image.json"
+        },
+
+        "cards": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+
+              "image": {
+                "$ref": "./Image.json"
+              }
+            },
+            "required": ["name", "image"]
+          }
+        },
+
+        "multiples": {
+          "type": "number",
+          "minimum": 2
+        }
+      }
+    },
+
+    "Model": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "model": {
+          "$ref": "./Mini.json"
+        },
+
+        "type": {
+          "enum": ["custom", "terrain"]
+        },
+
+        "scripted": {
+          "enum": ["bomb-cart"]
+        }
+      },
+
+      "required": ["model", "type"]
+    },
+
+    "Token": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "token": {
+          "$ref": "./Mini.json"
+        },
+
+        "target": {
+          "enum": ["unit", "mini", "table", "terrain"]
+        },
+
+        "stacks": {
+          "description": "By default tokens are assumed to stack. May set to \"false\" to prevent that.",
+          "enum": [false]
+        },
+
+        "infinite": {
+          "description": "By default tokens are spawned as a 1-off. May set to \"true\" to spawn a token generator instead.",
+          "enum": [true]
+        },
+
+        "scripted": {
+          "enum": ["toggle-range-1"]
+        }
+      },
+
+      "required": ["token", "target"]
+    }
+  },
+
+  "oneOf": [
+    { "$ref": "#/definitions/Card" },
+    { "$ref": "#/definitions/Deck" },
+    { "$ref": "#/definitions/Model" },
+    { "$ref": "#/definitions/Token" }
+  ]
+}

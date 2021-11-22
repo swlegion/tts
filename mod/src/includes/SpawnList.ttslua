@@ -1,0 +1,448 @@
+require('!/common/Tablex')
+
+local function initListSpawner(params)
+  local deck = params.deck
+  local shelf = params.shelf
+  local globals = params.globals
+  local color = params.color
+  local mount = params.mount
+  local orientation = params.orientation
+  local unitTokens = params.unitTokens
+
+  local function dealCommandCard(name, contingency)
+    local card = deck:spawnCommandCard(name, contingency)
+    if contingency then
+      card.highlightOn({0, 1, 1})
+    end
+    local hand = globals.handPos[color:lower()]
+    card.setRotation(hand.rot)
+    card.setPosition(hand.pos)
+  end
+
+  local function drawBattlefieldCard(height, name, type, scenario)
+    local card = deck:spawnBattleCard(type, name, scenario)
+    local position = mount.getPosition()
+    position.y = position.y + 0.23 + (height * 0.1)
+    card.setPosition(position)
+    local rotation = mount.getRotation()
+    rotation.z = 180
+    card.setRotation(rotation)
+  end
+
+  local function buildBattlefieldDeck(
+    scenario,
+    objectives,
+    deployments,
+    conditions
+  )
+    local i = 0
+    for _, card in ipairs(objectives) do
+      drawBattlefieldCard(i, card, "objective", scenario)
+      i = i + 1
+    end
+    for _, card in ipairs(deployments) do
+      drawBattlefieldCard(i, card, "deployment", scenario)
+      i = i + 1
+    end
+    for _, card in ipairs(conditions) do
+      drawBattlefieldCard(i, card, "condition", scenario)
+      i = i + 1
+    end
+  end
+
+  local function computeSpawnPositions(index)
+    local templatePos = globals[color:lower() .. "TemplatePos"][index]
+    local adjustedPos = tablex.shallow(templatePos)
+    local templateHalfWidth = globals.spawnOffsets.templateHalfWidth
+    local templateHalfHeight = globals.spawnOffsets.templateHalfHeight
+    local cardHeight = globals.spawnOffsets.cardHeight
+    local cardWidth = globals.spawnOffsets.unitCardWidth
+    local padding = globals.spawnOffsets.padding
+    local xOffset = 1
+    local zOffset = 1
+
+    if index > 10 then
+      -- TODO: Support unit ID tokens > 10.
+      index = index - 10
+      adjustedPos.z = adjustedPos.z - (templateHalfHeight * 0.3)
+    end
+
+    if adjustedPos.z < 0 then
+      xOffset = -1
+      zOffset = -1
+      padding = padding * -1
+      cardHeight = cardHeight * -1
+      templateHalfWidth = templateHalfWidth * -1
+      templateHalfHeight = templateHalfHeight * -1
+    end
+
+    adjustedPos.x = adjustedPos.x + templateHalfWidth - padding
+    adjustedPos.z = adjustedPos.z - templateHalfHeight + cardHeight
+
+    return {
+      adjustedPos = adjustedPos,
+      xOffset     = xOffset,
+      zOffset     = zOffset,
+    }
+  end
+
+  local function computeUpgradePositions(index)
+    local cardHeight = globals.spawnOffsets.cardHeight
+    local cardWidth = globals.spawnOffsets.unitCardWidth
+    local upgradeCardWidth = globals.spawnOffsets.upgradeCardWidth
+    local padding = globals.spawnOffsets.padding
+
+    local xOffset = 0
+    if (index == 1 or index == 4 or index == 7) then
+      xOffset = cardWidth - upgradeCardWidth / 2 + padding
+    elseif (index == 2 or index == 5) then
+      xOffset = -cardWidth / 2 + upgradeCardWidth / 2
+    elseif (index == 3 or index == 6) then
+      xOffset = upgradeCardWidth / 2 + padding / 2
+    end
+
+    local zOffset = 0
+    if index > 1 then
+      zOffset = cardHeight + padding
+    end
+    if index >= 5 then
+      zOffset = zOffset * 2
+    end
+
+    return {
+      xOffset     = xOffset,
+      zOffset     = zOffset,
+    }
+  end
+
+  local function initialZOffset(upgradeCount)
+    local cardHeight = globals.spawnOffsets.cardHeight
+    local padding = globals.spawnOffsets.padding
+    local initialZOffset = cardHeight + padding
+    if upgradeCount > 1 and upgradeCount < 5 then
+      initialZOffset = initialZOffset + (cardHeight + padding)
+    elseif upgradeCount > 4 then
+      initialZOffset = initialZOffset + (cardHeight + padding) * 2
+    end
+    return initialZOffset
+  end
+
+  local function computeMiniPositions(
+    adjustedPos,
+    index,
+    base,
+    xOffset,
+    zOffset,
+    upgradeCount
+  )
+    local templateHalfWidth = globals.spawnOffsets.templateHalfWidth
+    local unitCardWidth = globals.spawnOffsets.unitCardWidth
+    local padding = globals.spawnOffsets.padding
+
+    local baseRadius = base * 0.5
+    local initialXOffset = unitCardWidth * 0.5 - baseRadius 
+    local position = {
+      x = adjustedPos.x + initialXOffset * xOffset,
+      y = adjustedPos.y,
+      z = adjustedPos.z,
+    }
+    local paddedBase = (base + padding) * 1.5
+    local basesPerRow = math.abs(math.floor(templateHalfWidth * 2.0 / paddedBase))
+    local newIndex = index
+    local totalZOffset = initialZOffset(upgradeCount)
+    if index > basesPerRow then
+      local zFromCard = zOffset
+      if adjustedPos.z > 0 then
+        zFromCard = -zOffset
+      end
+      totalZOffset = totalZOffset - (paddedBase * zFromCard)
+      newIndex = index - basesPerRow
+    end
+    local baseOffset = base + (padding / 3 * xOffset)
+    local totalXOffset = (baseOffset * (newIndex - 1))
+    local xDir = xOffset * -1
+  
+    return simpleTranslatePos(
+      position,
+      totalXOffset * xDir,
+      totalZOffset * zOffset
+    )
+  end
+
+  local function getGlobalTint()
+    return getObjectFromGUID(Global.getVar("gameDataGUID")).getTable("battlefieldTint")
+  end
+
+  function initializeMini(pMiniTable)
+    local strColor = pMiniTable.colorSide
+    strColor = strColor:gsub("^%l", string.upper)
+    
+    -- detect leader units
+    local leaderInt = pMiniTable.leaderIndex
+    
+    for i, objEntry in pairs(pMiniTable.miniObjs) do
+      -- init mini script
+      local selectedMiniScript = ""
+  
+      -- SET NAME
+      local displayName = pMiniTable.displayName or objEntry.name
+      objEntry.obj.setName(strColor.. " "..displayName)
+      selectedMiniScript = selectedMiniScript .. "colorSide = '"..pMiniTable.colorSide.."'\nminiName = \""..objEntry.name.."\"\n"
+  
+      if i == leaderInt then
+        -- DESCRIPTION
+        local description = ""
+  
+        for p, upgradeName in pairs(pMiniTable.upgrades) do
+          description = description .. upgradeName .. "\n"
+        end
+        objEntry.obj.setDescription(description)
+  
+        -- miniGUIDs
+  
+        local miniGUIDsScript = "miniGUIDs = {}\n"
+        for n, objEntry in pairs(pMiniTable.miniObjs) do
+          miniGUIDsScript = miniGUIDsScript .. "miniGUIDs["..n.."] = '" .. objEntry.obj.getGUID() .. "'\n"
+        end
+        selectedMiniScript = selectedMiniScript .. miniGUIDsScript .. 
+          "cardGUID = \"" .. pMiniTable.unitCardGUID .. 
+          "\"\n unitName = \""..pMiniTable.name:lower() .. 
+          "\"\n commandName = \""..pMiniTable.commandName .. 
+          "\"\n commandType = \""..pMiniTable.commandType .. 
+          "\"\n selectedSpeed = "..pMiniTable.selectedSpeed .. 
+          "\n baseSize = \""..pMiniTable.baseSize .. 
+          "\"\n unitID = " .. pMiniTable.unitID .. 
+          "\n height = " .. pMiniTable.height ..
+          "\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID .. 
+          "\"\n" .. globals.modelMiniScript
+      else
+        objEntry.obj.use_snap_points = false
+      end
+  
+      -- SET SCRIPT
+      objEntry.obj.setLuaScript(selectedMiniScript)
+    end
+  end
+
+  function initializeCommandToken(cData)
+    local tokenObj = spawnObject({
+      type           = "Custom_Model",
+      rotation       = cData.rot,
+      position       = cData.pos,
+    })
+    tokenObj.setCustomObject({
+      mesh = "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
+      collider = "http://cloud-3.steamusercontent.com/ugc/785234780866339915/85F7E717B9EFBE0396126CA673DF17EAFEC7D451/",
+      diffuse = Global.getTable("commandTokenData")[color:lower()][cData.commandType],
+      type = 0,
+      material = 3
+    })
+    tokenObj.setName(cData.name)
+    -- Set the objects script.
+    -- Note this is used instead of "setTable()" because onLoad/onSave is buggy with stuff that stacks.
+    local luaScript = string.format(
+      "_G.unitData = {" ..
+      "  baseSize      = [[%s]],\n" ..
+      "  colorSide     = [[%s]],\n" ..
+      "  commandType   = [[%s]],\n" ..
+      "  fixedArc      = %s,\n" ..
+      "  fixedMove     = %s,\n" ..
+      "  selectedSpeed = %s,\n" ..
+      "  strafeMove    = %s,\n" ..
+      "}\n\n",
+      cData.baseSize,
+      color:lower(),
+      cData.commandType,
+      tostring(cData.baseSize:lower() ~= "small"),
+      tostring(cData.baseSize:lower() ~= "small"),
+      tostring(cData.selectedSpeed),
+      tostring(cData.baseSize:lower() ~= "small")
+    )
+    tokenObj.setLuaScript(luaScript .. globals.tokenScript)
+  end
+
+  local function initializeMiniAndCommandToken(
+    index,
+    unitInfo,
+    faction,
+    miniData
+  )
+    -- TODO: Remove mapping.
+    if faction == "Empire" then
+      faction = "Imperial"
+    end
+    -- TODO: Support homebrew factions better than this
+    if not ({
+      imperial   = 1,
+      rebel      = 1,
+      separatist = 1,
+      republic   = 1,
+    })[faction:lower()] then
+      faction = "Imperia;"
+    end
+    local rankAndRemap = unitInfo.rank
+    if rankAndRemap:lower() == "special forces" then
+      rankAndRemap = "specialForces"
+    end
+    local commandType = 
+      faction:lower() ..
+      rankAndRemap:lower():gsub("^%l", string.upper)
+    local commandName =
+      color:gsub("^%l", string.upper) ..
+      " " ..
+      faction:gsub("^%l", string.upper) ..
+      " " ..
+      unitInfo.rank:gsub("^%l", string.upper) ..
+      " Command Token"
+    miniData.baseSize = unitInfo.size
+    miniData.commandName = commandName
+    miniData.commandType = commandType
+    miniData.selectedSpeed = unitInfo.speed
+    miniData.height = unitInfo.height
+
+    initializeMini(miniData)
+
+    local commandTray = getObjectFromGUID(
+      Global.getTable("commandTokenTrayData")[color:lower()][commandType]
+    )
+    local position = commandTray.getPosition()
+    position.y = position.y + 0.5 + (0.2 * index)
+    local rotation = self.getRotation()
+    rotation.y = rotation.y + 180
+    initializeCommandToken({
+      name          = commandName,
+      commandType   = commandType,
+      pos           = position,
+      rot           = rotation,
+      baseSize      = unitInfo.size,
+      selectedSpeed = unitInfo.speed,
+    })
+  end
+
+  local function spawnUnit(
+    unit,
+    index,
+    faction,
+    totalUnits
+  )
+    local name = unit.name
+    local upgrades = unit.upgrades or {}
+    local loadout = unit.loadout or {}
+
+    -- Prep unit card spawn locations.
+    local offsets = computeSpawnPositions(index)
+    local rotation = self.getRotation()
+    local unitCard = deck:spawnUnitCard(faction, name)
+    unitCard.setPosition(offsets.adjustedPos)
+    unitCard.setRotation({0, rotation.y + 180, 0})
+
+    -- Spawn upgrade cards.
+    for i, upgrade in ipairs(upgrades) do
+      local uOffsets = computeUpgradePositions(i)
+      local upgradeCard = deck:spawnUpgradeCard(upgrade)
+      upgradeCard.setPosition(
+        simpleTranslatePos(
+          offsets.adjustedPos,
+          uOffsets.xOffset * offsets.xOffset * -1,
+          uOffsets.zOffset * offsets.zOffset
+        )
+      )
+      upgradeCard.setRotation({0, rotation.y + 180, 0})
+    end
+
+    -- Spawn unit ID token.
+    local unitId = unitTokens.takeObject({
+      position = offsets.adjustedPos,
+      rotation = {0, rotation.y + 180, 0},
+      smooth   = false,
+    })
+    local unitIdState = math.fmod(index, 10)
+    if unitIdState > 1 then
+      unitId.setState(unitIdState)
+    end
+
+    local miniData = {
+      name            = name,
+      colorSide       = color:lower(),
+      upgrades        = {},
+      miniObjs        = {},
+      -- Intentionally omitted. We use the name assigned from the spawned model.
+      displayName     = nil,
+      unitID          = index,
+      unitCardGUID    = unitCard.getGUID(),
+      unitIDTokenGUID = unitId.getGUID(),
+      leaderIndex     = 1,
+      upgrades        = upgrades,
+    }
+
+    -- Spawn loadout and addon cards.
+    local additional = {
+      position = offsets.adjustedPos,
+      rotation  = rotation,
+    }
+    if #loadout > 0 then
+      additional.callback = function(spawnedBag)
+        for _, upgrade in ipairs(loadout) do
+          local upgradeCard = deck:spawnUpgradeCard(upgrade)
+          spawnedBag.putObject(upgradeCard)
+        end
+      end
+    end
+    local result = shelf:spawnUnitModels({
+      faction    = faction,
+      name       = name,
+      upgrades   = upgrades,
+      additional = additional,
+      callback   = function(model, index, base)
+        local position = computeMiniPositions(
+          offsets.adjustedPos,
+          index,
+          base,
+          offsets.xOffset,
+          offsets.zOffset,
+          #upgrades
+        )
+        model.setPosition(position)
+        model.setRotation({rotation.x, rotation.y + 180, rotation.z})
+        model.setColorTint(getGlobalTint())
+        table.insert(miniData.miniObjs, {
+          obj    = model,
+          name   = model.getName(),
+          leader = index == miniData.leaderIndex,
+        })
+      end,
+    })
+
+    initializeMiniAndCommandToken(
+      index,
+      result,
+      faction,
+      miniData
+    )
+  end
+
+  return function(listData)
+    for _, c in ipairs(listData.commandCards) do
+      dealCommandCard(c, false)
+    end
+    for _, c in ipairs(listData.contingencies) do
+      dealCommandCard(c, true)
+    end
+    local scenario = listData.battlefieldDeck.scenario or "standard"
+    buildBattlefieldDeck(
+      scenario,
+      listData.battlefieldDeck.objective,
+      listData.battlefieldDeck.deployment,
+      listData.battlefieldDeck.condition or listData.battlefieldDeck.conditions
+    )
+    for i, unit in ipairs(listData.units) do
+      spawnUnit(
+        unit,
+        i,
+        listData.armyFaction,
+        #listData.units
+      )
+    end
+    mount.call("setScenario", {name = scenario})
+  end
+end
