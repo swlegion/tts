@@ -47,6 +47,7 @@
           (Since last <i>Beta</i>)
 
           - Fix: Blue player upgrade cards are no longer previewed upside down.
+          - Fix: Offensive/Defensive stance now selectable using the in-game builder.
           
           (Since last <i>Stable</i>)
           - Feat: Camera starts facing <b>BLUE</b> player now (not <b>RED</b>).

@@ -377,8 +377,12 @@ end
 
 function Deck:getUpgradesByType(type, filterForUnit)
   -- Makes the cost of this less unbearable since it's called many times.
-  if self._cache.upgrades[type] then
-    return self._cache.upgrades[type]
+  local cacheKey = type:upper()
+  if filterForUnit then
+    cacheKey = cacheKey .. "_" .. filterForUnit.name:upper()
+  end
+  if self._cache.upgrades[cacheKey] then
+    return self._cache.upgrades[cacheKey]
   end
   local result = {}
   for _, upgrade in pairs(self:_getSchema().upgrades) do
@@ -388,7 +392,7 @@ function Deck:getUpgradesByType(type, filterForUnit)
       end
     end
   end
-  self._cache.upgrades[type] = result
+  self._cache.upgrades[cacheKey] = result
   return result
 end
 
@@ -450,6 +454,15 @@ function Deck:_isUpgradeValidFor(upgrade, unit)
           if string.find(unit.type:upper(), unitType:upper()) then
             passedNonUnit = passedNonUnit + 1
             break
+          end
+        end
+      end
+
+      if restrictions.include.slot then
+        for _, slotType in ipairs(restrictions.include.slot) do
+          nonUnitChecks = nonUnitChecks + 1
+          if unit.upgrades[slotType] then
+            passedNonUnit = passedNonUnit + 1
           end
         end
       end
