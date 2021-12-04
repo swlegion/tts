@@ -1495,6 +1495,7 @@
             "Training": 2,
             "Comms": 1,
             "Gear": 1,
+            "Armament": 1,
             "Grenades": 1
           },
           "minis": [
@@ -2944,7 +2945,7 @@
           "name": "E-11D Grenade Launcher Config",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140554/DA69AFF0F6A0845BC7F7908386CB946A8D7DD65A/"
         },
-        "points": 10,
+        "points": 0,
         "restrictions": {
           "include": {
             "unit": ["Imperial Death Troopers"]
