@@ -46,14 +46,17 @@
 
           (Since last <i>Beta</i>)
 
-          - Feat: In-game list building improvements, including "Clone Previous".
+          - Feat: Camera starts facing <b>BLUE</b> player now (not <b>RED</b>).
+          - Feat: Added cohesion hotkey.
+          - Feat: Support auto-Locking on moves.
 
-          - Fix: Allow of the list builder "unknown error" issues are resolved.
+          - Fix: Replaced movement tool colliders.
           
           (Since last <i>Stable</i>)
 
           - Feat: Battle cards now specify objects and zones programatically.
           - Feat: Added full support for Skirmish battlefield decks.
+          - Feat: In-game list building improvements, including "Clone Previous".
 
           - Fix: Various pilots that were not selectable w/ list-builder are now.
           - Fix: Medium base size and various movement tool oddities.
