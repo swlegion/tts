@@ -901,7 +901,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701730/72AE7649145939BD1B754C71CEA6AC3F9A6C11E5/",
           "size": "small",
           "type": "Trooper",
-          "points": 175,
+          "points": 190,
           "speed": 1,
           "upgrades": {
             "Force": 3
@@ -951,7 +951,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701690/7C845644D274DFEBCE8EDA7F932905A4FBC27A11/",
           "size": "small",
           "type": "Trooper",
-          "points": 80,
+          "points": 75,
           "speed": 2,
           "upgrades": {
             "Command": 2,
@@ -989,7 +989,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701664/ABD12EEF236402EDF420F7849146DDEB367FC290/",
           "size": "small",
           "type": "Trooper",
-          "points": 200,
+          "points": 190,
           "speed": 1,
           "upgrades": {
             "Force": 3,
@@ -1044,7 +1044,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701598/3832DC52B0D1BDBD5B71C222DD19A4C8AEF8B334/",
           "size": "small",
           "type": "Trooper",
-          "points": 90,
+          "points": 75,
           "speed": 2,
           "upgrades": {
             "Command": 2,
@@ -1165,7 +1165,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701498/836304CFE19193261F594363CFD8860F22FCD5F1/",
           "size": "small",
           "type": "Trooper",
-          "points": 125,
+          "points": 120,
           "speed": 3,
           "upgrades": {
             "Training": 2,
@@ -1239,7 +1239,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701427/7CD88B79A5D83D978F1FC76D438F87DD3991485A/",
           "size": "small",
           "type": "Trooper",
-          "points": 155,
+          "points": 175,
           "speed": 1,
           "upgrades": {
             "Force": 2,
@@ -1464,7 +1464,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701217/89E8CC46981E8C634A4E3D6C4F6EAF343B27C1E2/",
           "size": "small",
           "type": "Trooper",
-          "points": 75,
+          "points": 69,
           "speed": 2,
           "upgrades": {
             "Heavy Weapon": 1,
@@ -1492,7 +1492,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701181/DD8B2B7C2D3C3AC66F7D90F738B04BB309A31B46/",
           "size": "small",
           "type": "Trooper",
-          "points": 68,
+          "points": 72,
           "speed": 2,
           "upgrades": {
             "Heavy Weapon": 1,
@@ -1585,7 +1585,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701072/16EF027E626FA31293F4E88556AF9633F091180D/",
           "size": "medium",
           "type": "Repulsor Vehicle",
-          "points": 75,
+          "points": 70,
           "speed": 3,
           "upgrades": {
             "Comms": 1
@@ -1624,7 +1624,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701014/E1E943B567134E6A946C714BD07233CDC881A7AF/",
           "size": "large",
           "type": "Creature Trooper",
-          "points": 75,
+          "points": 70,
           "speed": 1,
           "upgrades": {
             "Training": 1,
@@ -1645,7 +1645,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700975/F5BACD8B7607BCB5FAA1576B7FA4151FA0A5CA59/",
           "size": "huge",
           "type": "Ground Vehicle",
-          "points": 160,
+          "points": 155,
           "speed": 2,
           "upgrades": {
             "Pilot": 1,
@@ -1665,7 +1665,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700946/705F2EF05FABA96D1386B8E41C56AD31E7901820/",
           "size": "long",
           "type": "Ground Vehicle",
-          "points": 145,
+          "points": 140,
           "speed": 1,
           "upgrades": {
             "Pilot": 1,
@@ -1684,7 +1684,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700907/2DD3325FA71C1F920CC957F8B7393893AE282073/",
           "size": "laat",
           "type": "Repulsor Vehicle",
-          "points": 120,
+          "points": 105,
           "speed": 2,
           "height": 7,
           "upgrades": {
@@ -2983,7 +2983,7 @@
           "name": "J-19 Bo-Rifle Staff",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143309/544D8E7915CDDF661A0F75AD56BD3C4AF023108F/"
         },
-        "points": 25,
+        "points": 15,
         "restrictions": {
           "include": {
             "unit": ["Agent Kallus"]
@@ -3557,7 +3557,7 @@
       {
         "name": "88 Twin Light Blaster Cannon",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137716/C3D031A467025443C0F4B4490623F5D84A3D15A2/",
-        "points": 20,
+        "points": 10,
         "restrictions": {
           "include": {
             "unit": ["AT-ST"]
@@ -3607,7 +3607,7 @@
       {
         "name": "AT-ST Mortar Launcher",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138347/BC6154F6C5F0552679C8C9402DBA5AF2851378AF/",
-        "points": 10,
+        "points": 5,
         "restrictions": {
           "include": {
             "unit": ["AT-ST"]
@@ -3637,7 +3637,7 @@
       {
         "name": "DW-3 Concussion Grenade Launcher",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140401/EB45423FD61A806271D849371554698856203F35/",
-        "points": 15,
+        "points": 8,
         "restrictions": {
           "include": {
             "unit": ["AT-ST"]
@@ -3956,7 +3956,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242465584/D38BBF10F76882CFF4189AB478E9F0691A22298F/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/766101851242466181/BEF69EF45F1CCEF50CDF7B5CC6E1FE6BDC556310/"
         },
-        "points": 22,
+        "points": 20,
         "restrictions": {
           "include": {
             "unit": ["Stormtroopers"]
@@ -4027,7 +4027,7 @@
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/"
         },
         "leader": true,
-        "points": 22,
+        "points": 15,
         "restrictions": {
           "include": {
             "unit": ["Imperial Death Troopers"]
@@ -4041,7 +4041,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1618437692581074585/1C74BEB92DC42D3585BFC1185A77DE14EC3249CA/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1618438238123043414/B7E9660E470DC070545782406C29F1E1356A5685/"
         },
-        "points": 38,
+        "points": 25,
         "restrictions": {
           "include": {
             "faction": ["Empire"],
@@ -4145,7 +4145,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541912278/DC9D78CD5742236F9F272AC1F8AA1D59D07CF5A9/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/"
         },
-        "points": 25,
+        "points": 21,
         "restrictions": {
           "include": {
             "unit": ["Imperial Royal Guards"]
@@ -4191,7 +4191,7 @@
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1618438238123043414/B7E9660E470DC070545782406C29F1E1356A5685/"
         },
         "leader": true,
-        "points": 38,
+        "points": 29,
         "restrictions": {
           "include": {
             "faction": ["Empire"],
@@ -4207,7 +4207,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711981/5D8FB39102FEE64DF1802AA71B66666B4E03717F/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541712102/C37F3281C89F697024FF1F343B06FB5AC828EA10/"
         },
-        "points": 20,
+        "points": 16,
         "restrictions": {
           "include": {
             "unit": ["Stormtroopers"]
@@ -4334,7 +4334,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242660925/33331F4DA2AE832C568A49BD24B65D4C1462AF27/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/766101851242654975/755ABA199B9C3BEEA1F33AF58FD05D378A67C97F/"
         },
-        "points": 26,
+        "points": 24,
         "restrictions": {
           "include": {
             "unit": ["Stormtroopers"]
@@ -4405,7 +4405,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242554815/68F112DE9EC465DA003ECBD26DE129ADD34CD558/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
         },
-        "points": 24,
+        "points": 22,
         "restrictions": {
           "include": {
             "unit": ["Stormtroopers"]
@@ -4419,7 +4419,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1618438238123000906/C64EAD02CA22F8BFB59320925DAD7D89BA1E7AD6/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1618438238123043414/B7E9660E470DC070545782406C29F1E1356A5685/"
         },
-        "points": 29,
+        "points": 27,
         "restrictions": {
           "include": {
             "unit": ["Imperial Special Forces"]
@@ -4433,7 +4433,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702687816/8C17AF1D2344B7E8B1C8D34A0F2228E9ADC2FFAA/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359682702687407/D5B685EA41E9C664F2D16381474B5F08DF9CFAE5/"
         },
-        "points": 35,
+        "points": 32,
         "restrictions": {
           "include": {
             "unit": ["Shoretroopers"]
@@ -4447,7 +4447,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541802160/69A03779E6B67F6F547C2FBD70ACDFC39281387D/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541802252/037749C730FACCA3361B041BCB3C68E7E19DCDF8/"
         },
-        "points": 20,
+        "points": 18,
         "restrictions": {
           "include": {
             "unit": ["Snowtroopers"]
@@ -4978,7 +4978,7 @@
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173464650963/1A63FC0E22280AA3B95488A298270874B7B6CDD2/"
         },
         "leader": true,
-        "points": 12,
+        "points": 10,
         "restrictions": {
           "include": {
             "unit": ["Stormtroopers"]
@@ -4992,7 +4992,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173464686810/87075FBAEFB7A45C107FEDD41E26ACF148C2592D/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
         },
-        "points": 12,
+        "points": 9,
         "restrictions": {
           "include": {
             "unit": ["Stormtroopers"]
@@ -5108,7 +5108,7 @@
       {
         "name": "Governor Pryce",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141682/37B77C2BC41659850CE2C282DAA59A3341D94107/",
-        "points": 10,
+        "points": 5,
         "restrictions": {
           "include": {
             "faction": ["Empire"]
