@@ -5501,7 +5501,11 @@
           "name": "Hostage Exchange",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566152166/E56E902183803EC15BFA3E84548C9F85B3EF5DC2/",
           "type": "horizontal",
-          "additionalObjects": ["Hostage Deck"]
+          "additionalObjects": [
+            "Hostage Deck",
+            "Objective Token",
+            "Objective Token"
+          ]
         },
         {
           "name": "Intercept The Transmissions",
@@ -5716,7 +5720,15 @@
           "name": "Supply Drop",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151068/9801B093E60171C3AC7E5F4D447ADF27D7E9DC1F/",
           "type": "horizontal",
-          "additionalObjects": ["Supply Deck"]
+          "additionalObjects": [
+            "Supply Deck",
+            "Condition Token",
+            "Condition Token",
+            "Condition Token",
+            "Condition Token",
+            "Condition Token",
+            "Condition Token"
+          ]
         },
         {
           "name": "War Weary",
