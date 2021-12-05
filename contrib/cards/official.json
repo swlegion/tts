@@ -2298,7 +2298,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790037/C20F500DE55700AA568EA5BDA7794A1B0210E605/",
           "size": "small",
           "type": "Trooper",
-          "points": 170,
+          "points": 155,
           "speed": 2,
           "upgrades": {
             "Command": 2,
@@ -2335,7 +2335,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789992/5D0BFCF9DA9A3200D9D0A2CDE98E25782B8F4C10/",
           "size": "small",
           "type": "Trooper",
-          "points": 200,
+          "points": 195,
           "speed": 2,
           "upgrades": {
             "Force": 3,
@@ -2506,7 +2506,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789783/BF082412A93DED3289764E39E3D81ACF204DA989/",
           "size": "small",
           "type": "Trooper",
-          "points": 125,
+          "points": 120,
           "speed": 2,
           "upgrades": {
             "Training": 1,
@@ -2588,7 +2588,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789698/9ADC7290CCCD4AA6F24BA74F9C098A4E3A61B063/",
           "size": "small",
           "type": "Droid Trooper",
-          "points": 36,
+          "points": 38,
           "speed": 2,
           "upgrades": {
             "Heavy Weapon": 1,
@@ -2768,7 +2768,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789475/1521CBD0935E6FB62CE544D89AC89E2F19F21D6B/",
           "size": "medium",
           "type": "Ground Vehicle",
-          "points": 80,
+          "points": 75,
           "speed": 1,
           "upgrades": {
             "Comms": 1
@@ -2789,7 +2789,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789443/7BE1E58EECCFE75EA2705CD1345E6C0602711AB7/",
           "size": "medium",
           "type": "Repulsor Vehicle",
-          "points": 73,
+          "points": 75,
           "speed": 3,
           "upgrades": {
             "Comms": 1
@@ -2831,7 +2831,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789411/3550FADAC84804AB14EE338E46C5FEFC339C08B6/",
           "size": "epic",
           "type": "Repulsor Vehicle",
-          "points": 170,
+          "points": 175,
           "speed": 1,
           "upgrades": {
             "Pilot": 1,
@@ -2925,7 +2925,7 @@
       {
         "name": "DT-57 \"Annihilator\"",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140274/F89F5BDDA3BA705867313D846B3C1331FC31AD61/",
-        "points": 12,
+        "points": 8,
         "restrictions": {
           "include": {
             "unit": ["General Grievous"]
@@ -3343,7 +3343,7 @@
       {
         "name": "Anger",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138122/92F8FD5EE7BBB3DDA644C0C12DEC40619DACB2D2/",
-        "points": 5,
+        "points": 3,
         "restrictions": {
           "include": {
             "alignment": ["Dark"]
@@ -3461,7 +3461,7 @@
       {
         "name": "Emergency Stims",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140811/F8A07014225764F951B635DF595113FADDAB51BB/",
-        "points": 10
+        "points": 8
       },
       {
         "name": "Environmental Gear",
@@ -3550,7 +3550,7 @@
       {
         "name": "Smoke Grenades",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145447/2AA2EEE378C8854B97998CC8A2C527875161F18F/",
-        "points": 2
+        "points": 3
       }
     ],
     "Hardpoint": [
@@ -3797,7 +3797,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849585631/7FF051E2079AB28A4FB77CCC739BCEB42F4CCFAA/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/"
         },
-        "points": 30,
+        "points": 32,
         "restrictions": {
           "include": {
             "unit": ["B2 Super Battle Droids"]
@@ -4072,7 +4072,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780871782781/4DCE4780DE1CCDFB2996C28200A26C3B0696DD5A/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780871782881/ADC1DBC3987C84AF486F9CD0E19A0455F4C33291/"
         },
-        "points": 18,
+        "points": 16,
         "restrictions": {
           "include": {
             "unit": ["B1 Battle Droids"]
@@ -4086,7 +4086,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/766102422959434489/60F05B7FC8544DFC640CB33DA55F19EB5F2CB55A/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102422959428835/10D3F8862BDECE8C0D7A874CC000F25CD6232168/"
         },
-        "points": 20,
+        "points": 18,
         "restrictions": {
           "include": {
             "unit": ["B1 Battle Droids"]
@@ -4100,7 +4100,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780871782500/34D317CFE0BE32E4FFFB84567822CDF7AC4D4C98/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780871782620/9A9EA2B54691F42EA6D34762D33D523A836201B2/"
         },
-        "points": 20,
+        "points": 18,
         "restrictions": {
           "include": {
             "unit": ["B1 Battle Droids"]
@@ -4348,7 +4348,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785008444/482C29486FD00312B2C7848D26A82793BCDF7D7F/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764784997566/39300970854603B1F1539C46D70CC21280E278FF/"
         },
-        "points": 22,
+        "points": 16,
         "restrictions": {
           "include": {
             "unit": ["B1 Battle Droids"]
@@ -4565,7 +4565,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869167318/DBC7863706A08B96020D3BFBE7A0C2C5689B7B08/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
         },
-        "points": 5,
+        "points": 4,
         "restrictions": {
           "include": {
             "unit": ["B1 Battle Droids"]
@@ -4579,7 +4579,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173467517125/1BEF7A7795DF3F6DB91B84C1C82D8FBB24BF574B/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173467517405/DC3A7F38CF3839B7C5F2FCCE85745041094ADA81/"
         },
-        "points": 7,
+        "points": 6,
         "restrictions": {
           "include": {
             "unit": ["B1 Battle Droids"]
@@ -4735,7 +4735,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785018348/F0B0C50757F4043A6C9B8746A73F8EC4342CA7DA/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764785012711/4DF65424F7D5400F0DC8A4DE7A028B373143CE6E/"
         },
-        "points": 9,
+        "points": 8,
         "restrictions": {
           "include": {
             "unit": ["B1 Battle Droids"]
@@ -5021,7 +5021,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364034959851/4D7F0531A10AEA9421878B1535604FDF1EBAE8D1/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364034974176/209AEB14BF56D899CB9220BDB0BAB98CE2BA90D4/"
         },
-        "points": 8,
+        "points": 6,
         "restrictions": {
           "include": {
             "type": ["Droid Trooper"]
@@ -5314,7 +5314,7 @@
       {
         "name": "Duck And Cover",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140354/46D43C9B55C4EDB047E4B6B49F2DD0C3CB31C302/",
-        "points": 4
+        "points": 2
       },
       {
         "name": "Endurance",
