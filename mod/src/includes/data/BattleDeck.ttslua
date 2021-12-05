@@ -90,6 +90,7 @@ function _defineBattlefield()
   getObjectFromGUID(__state.guids.button).AssetBundle.playTriggerEffect(0)
   local deck = zonex.firstWhereNot(getObjectFromGUID(__state.guids.zone))
   if deck then
+    print("--- SO FAR ---")
     local game = getObjectFromGUID(Global.getTable("gameController").objGUID)
     game.call("defineBattlefieldMenu", {
       deck     = deck,
