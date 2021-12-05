@@ -92,7 +92,7 @@
         {
           "name": "Han Solo",
           "title": "Unorthodox General",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603832/92268B52B65228468DA0E1193EF01C808E899EF6/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028299008/F99C465CC6C73855A993B00184FD601B4E810F59/",
           "size": "small",
           "type": "Trooper",
           "points": 100,
@@ -898,7 +898,7 @@
         {
           "name": "Darth Vader",
           "title": "Dark Lord Of The Sith",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701730/72AE7649145939BD1B754C71CEA6AC3F9A6C11E5/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298907/73DBC3CC95299DFD1BB13F25C811C77F7C7189C0/",
           "size": "small",
           "type": "Trooper",
           "points": 190,
@@ -915,7 +915,7 @@
           "commands": [
             {
               "name": "Implacable",
-              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036469/5FD54CD860AE427BDF4E5FD49DD805E8724DFF31/",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028299041/D4DC7516D17A04AC587D5F44D0CBDDFE2E3D22D5/",
               "pip": 1
             },
             {
@@ -940,7 +940,7 @@
             },
             {
               "name": "Darkness Descends",
-              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033838/AEF61989CB08EA36B8311851E1833708DEEE2059/",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028299075/8769A8FB8FEE6D5838591075F94D679A88D46EAE/",
               "pip": 3
             }
           ]
@@ -1236,7 +1236,7 @@
         {
           "name": "Darth Vader",
           "title": "The Emperor's Apprentice",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701427/7CD88B79A5D83D978F1FC76D438F87DD3991485A/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298844/F7434FFD1E2C0C0EF4F0AA4F5C6B5EA727CFEDFF/",
           "size": "small",
           "type": "Trooper",
           "points": 175,
@@ -1254,7 +1254,7 @@
           "commands": [
             {
               "name": "Implacable",
-              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036469/5FD54CD860AE427BDF4E5FD49DD805E8724DFF31/",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028299041/D4DC7516D17A04AC587D5F44D0CBDDFE2E3D22D5/",
               "pip": 1
             },
             {
@@ -1279,7 +1279,7 @@
             },
             {
               "name": "Darkness Descends",
-              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033838/AEF61989CB08EA36B8311851E1833708DEEE2059/",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028299075/8769A8FB8FEE6D5838591075F94D679A88D46EAE/",
               "pip": 3
             }
           ]
@@ -1404,7 +1404,7 @@
       "Special Forces": [
         {
           "name": "Scout Troopers",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701305/172560D0D3A8FF9D0E646DE1F70272CD90CBE46F/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298945/EF8212952111B1407837754BAEF96F238B718830/",
           "size": "small",
           "type": "Trooper",
           "points": 48,
@@ -1440,7 +1440,7 @@
           "title": "Strike Team",
           "displayName": "Scout Troopers (Strike Team)",
           "heavyWeaponTeam": true,
-          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701268/B5118D8147938CC0B6A146A8BFDD7A8B33593A89/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298978/6AA5675FD5D416DCEEA4198FBE2A75146860C780/",
           "size": "small",
           "type": "Trooper",
           "points": 20,
@@ -1767,7 +1767,7 @@
             },
             {
               "name": "Take That, Clankers!",
-              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034598/FAD8628CEF4BC9782992174756FD109E5AD8E949/",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298677/D4379214870C631017E66075B5457409AB19A77D/",
               "pip": 2
             },
             {
@@ -1804,7 +1804,7 @@
             },
             {
               "name": "You Underestimate My Power",
-              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034404/7EE41514855E6FB133C999DD59A58EBE610744C2/",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028299110/717B2B1BCADD299F347748ABBE239E89A0B6EE08/",
               "pip": 2
             },
             {
@@ -3549,7 +3549,7 @@
       },
       {
         "name": "Smoke Grenades",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145447/2AA2EEE378C8854B97998CC8A2C527875161F18F/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298677/D4379214870C631017E66075B5457409AB19A77D/",
         "points": 3
       }
     ],
@@ -3923,7 +3923,7 @@
       },
       {
         "name": "DC-15X ARC Trooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139774/54F51273D6C53BD9C7384ECB6D4A32B76CB55B7D/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298710/80CA04A1D29D91F52B2F0169038D6A64B39C7687/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457800878/34EC84D7ECD99E073417866A9BEC4288E00F5359/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
@@ -5254,7 +5254,7 @@
       },
       {
         "name": "Wedge Antilles",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146615/85EE25E78E1BFDC281590A4481DB013D55D78945/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298597/12022AA00835B271627DB885D5B1756773A23B75/",
         "points": 5,
         "restrictions": {
           "include": {
@@ -5720,7 +5720,7 @@
         },
         {
           "name": "War Weary",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865566151021/538B9C41BCD1FAAB09DAEB42E269D64E0AF334F8/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298787/A02438F159B74E38AAC0F8906EDB3EB356438228/",
           "type": "horizontal"
         }
       ]
