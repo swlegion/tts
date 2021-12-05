@@ -16,5 +16,6 @@
     "lib": ["ES2020"]
   },
 
+  "include": ["contrib", "mod", "src", "tool"],
   "exclude": ["node_modules"]
 }

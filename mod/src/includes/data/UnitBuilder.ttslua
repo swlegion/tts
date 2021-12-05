@@ -599,7 +599,7 @@ function _spawnUpgradeCard(upgrade, slotIndex, isRequired)
   position.x = position.x - a
   position.z = position.z + b
   position.y = position.y + 0.35
-  rotation.y = 180
+  rotation.y = rotation.y + 180
 
   card.interactable = false
   card.setPosition(position)

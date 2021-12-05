@@ -420,8 +420,8 @@ function createMatrixFromDeck(battleDeckInserted, battleDeckScenario)
   end
 
   return cardMatrixSelected.objective, 
-          cardMatrixSelected.deployment,
-          cardMatrixSelected.conditions
+         cardMatrixSelected.deployment,
+         cardMatrixSelected.conditions
 end
 
 function revealBattleCards(insertedDeck, battleDeckScenario)

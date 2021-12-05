@@ -45,14 +45,21 @@
           <b>CHANGELOG</b>
 
           (Since last <i>Beta</i>)
+          
+          - Feat: Applied various point and errata changes (best effort).
 
+          - Fix: Lists with an Empire unit now spawn as expected (no errors).
+          - Fix: Multiple issues with defining the battlefield and tokens.
+          - Fix: ID10 now spawns properly from online list builders.
+          - Fix: Blue player upgrade cards are no longer previewed upside down.
+          - Fix: Offensive/Defensive stance now selectable using the in-game builder.
+          - Fix: B2-HA Trooper spawns the right model.
+          - Fix: Spawned unit-specific tokens have ranges and are in bags only.
+          
+          (Since last <i>Stable</i>)
           - Feat: Camera starts facing <b>BLUE</b> player now (not <b>RED</b>).
           - Feat: Added cohesion hotkey.
           - Feat: Support auto-Locking on moves.
-
-          - Fix: Replaced movement tool colliders.
-          
-          (Since last <i>Stable</i>)
 
           - Feat: Battle cards now specify objects and zones programatically.
           - Feat: Added full support for Skirmish battlefield decks.
@@ -60,6 +67,7 @@
 
           - Fix: Various pilots that were not selectable w/ list-builder are now.
           - Fix: Medium base size and various movement tool oddities.
+          - Fix: Replaced movement tool colliders.
         </Text>
       </VerticalLayout>
     </VerticalScrollView>

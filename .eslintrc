@@ -1,9 +1,8 @@
 {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "extraFileExtensions": [".json"],
-    "sourceType": "module",
-    "project": "./tsconfig.json"
+    "extraFileExtensions": ["json"],
+    "sourceType": "module"
   },
   "env": {
     "node": true
