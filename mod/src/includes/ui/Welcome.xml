@@ -45,6 +45,8 @@
           <b>CHANGELOG</b>
 
           (Since last <i>Beta</i>)
+          
+          - Feat: Applied various point and errata changes (best effort).
 
           - Fix: Lists with an Empire unit now spawn as expected (no errors).
           - Fix: ID10 now spawns properly from online list builders.
