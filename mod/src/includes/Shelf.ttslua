@@ -131,6 +131,8 @@ function Shelf:spawnUnitModels(params)
         rotation = additional.rotation,
         callback = additional.callback,
         objects  = additionalObjects,
+        -- TODO: Make this global somehow instead.
+        scripts  = params.scripts,
       })
     end
   end
@@ -197,11 +199,9 @@ function Shelf:_spawnComplimentaryObject(name, container, scripts)
     if spawn.scripted then
       local luaScript = scripts[spawn.scripted]
       object.setLuaScript(luaScript)
-      object.reload()
-      container.putObject(object)
-    else
-      container.putObject(object)
+      object = object.reload()
     end
+    container.putObject(object)
   end
 end
 

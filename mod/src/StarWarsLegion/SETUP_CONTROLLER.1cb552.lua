@@ -166,9 +166,6 @@ function spawnObjs(cardType, selectedBattleCardName)
     position = position,
     objects  = objects,
     -- TODO: Make this global somehow instead.
-    -- Right now if you spawn scripted tokens from the list builder this is
-    -- skipped, i.e. the setup controller is the only way to get scripting
-    -- behavior.
     scripts  = {
       ["toggle-range-1"] = _G.scriptRange1Token,
       ["bomb-cart"]      = _G.scriptBombCart,

@@ -333,7 +333,11 @@
               "pip": 3
             }
           ],
-          "additionalObjects": ["Proton Charge Token", "Graffiti Token"]
+          "additionalObjects": [
+            "Proton Charge Token",
+            "Proton Charge Token",
+            "Graffiti Token"
+          ]
         },
         {
           "name": "Luke Skywalker",

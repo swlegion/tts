@@ -9,6 +9,7 @@ local __state = {}
 
 local _deck = Deck:create()
 local _shelf = Shelf:create()
+local _scriptRange1Token = nil
 
 function onSave()
   return JSON.encode(__state)
@@ -17,8 +18,18 @@ end
 function _onLoadShared(state)
   self.interactable = false
   __state = JSON.decode(state)
+  _loadScripts()
   _disableVisualElements()
   _mainMenu()
+end
+
+function _loadScripts()
+  getObjectFromGUID("4d25eb").takeObject({
+    callback_function = function(token)
+      _scriptRange1Token = token.getLuaScript()
+      destroyObject(token)
+    end
+  })
 end
 
 function _disableVisualElements()
@@ -504,6 +515,10 @@ function _loadArmyFromJson(data)
     mount       = getObjectFromGUID(__state.guids.battleDeck),
     orientation = self.getRotation(),
     unitTokens  = getObjectFromGUID(Global.getVar("unitIDTokenBagGUID")),
+    -- TODO: Make this global somehow instead.
+    scripts     = {
+      ["toggle-range-1"] = _scriptRange1Token,
+    }
   })
   spawn(data)
 end

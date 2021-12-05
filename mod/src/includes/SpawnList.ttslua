@@ -8,6 +8,7 @@ local function initListSpawner(params)
   local mount = params.mount
   local orientation = params.orientation
   local unitTokens = params.unitTokens
+  local scripts = params.scripts or {}
 
   local function dealCommandCard(name, contingency)
     local card = deck:spawnCommandCard(name, contingency)
@@ -393,6 +394,7 @@ local function initListSpawner(params)
       name       = name,
       upgrades   = upgrades,
       additional = additional,
+      scripts    = scripts,
       callback   = function(model, index, base)
         local position = computeMiniPositions(
           offsets.adjustedPos,
