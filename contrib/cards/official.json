@@ -396,7 +396,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604120/5C6ED7C27799E640540BC177E7804442CB47C304/",
           "size": "small",
           "type": "Droid Trooper",
-          "points": 45,
+          "points": 55,
           "speed": 1,
           "upgrades": {
             "Counterpart": 1,
@@ -1745,7 +1745,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790598/868FE96BEB709EE3A25D7973FF259B8BF7824475/",
           "size": "small",
           "type": "Clone Trooper",
-          "points": 90,
+          "points": 100,
           "speed": 2,
           "upgrades": {
             "Command": 1,
@@ -1783,7 +1783,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790573/1BDDD3F5C3D43558F79F35F1A4B9327F4729D62B/",
           "size": "small",
           "type": "Trooper",
-          "points": 160,
+          "points": 155,
           "speed": 2,
           "upgrades": {
             "Force": 2,
@@ -1923,7 +1923,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790410/0D5BE2D0E5632005D6BC47413845604898AF0004/",
           "size": "small",
           "type": "Droid Trooper",
-          "points": 45,
+          "points": 55,
           "speed": 1,
           "upgrades": {
             "Counterpart": 1,
@@ -2197,7 +2197,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790101/7D591836DB5F16ED19FE2A28B55784950E1759CB/",
           "size": "large",
           "type": "Ground Vehicle",
-          "points": 65,
+          "points": 60,
           "speed": 2,
           "upgrades": {
             "Hardpoint": 1,
@@ -2256,7 +2256,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700907/2DD3325FA71C1F920CC957F8B7393893AE282073/",
           "size": "laat",
           "type": "Repulsor Vehicle",
-          "points": 120,
+          "points": 105,
           "speed": 2,
           "height": 7,
           "upgrades": {
@@ -3224,7 +3224,7 @@
       {
         "name": "BARC Ion Gunner",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138642/F8CB0F569FC79E3AC19F9F55EF8A5752120B7208/",
-        "points": 22,
+        "points": 24,
         "restrictions": {
           "include": {
             "unit": ["BARC Speeder"]
@@ -3244,7 +3244,7 @@
       {
         "name": "BARC Twin Laser Gunner",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138722/946FBD11C5776F89102F92D94087A9DA81FABA87/",
-        "points": 18,
+        "points": 16,
         "restrictions": {
           "include": {
             "unit": ["BARC Speeder"]
@@ -3577,7 +3577,7 @@
       {
         "name": "AT-RT Flamethrower",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138235/D77C3DD9FF4F48FB8FC2AE426B349148800ADE46/",
-        "points": 20,
+        "points": 15,
         "restrictions": {
           "include": {
             "unit": ["AT-RT"]
@@ -3914,7 +3914,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873393393/915E79CA7D72B0DA950656C69F104A7BB586C0E0/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/"
         },
-        "points": 27,
+        "points": 26,
         "restrictions": {
           "include": {
             "unit": ["Phase I Clone Troopers"]
@@ -4012,7 +4012,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785625549/5461468E09D086E4CF7E835AE69D6F4226690518/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764785620873/E3B1226B0836CF579F16C490896D5E2DE95C31F5/"
         },
-        "points": 23,
+        "points": 22,
         "restrictions": {
           "include": {
             "unit": ["Phase I Clone Troopers"]
@@ -4115,7 +4115,7 @@
           "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
         },
         "leader": true,
-        "points": 40,
+        "points": 42,
         "restrictions": {
           "include": {
             "faction": ["Republic"],
@@ -4160,7 +4160,7 @@
           "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
         },
         "leader": true,
-        "points": 36,
+        "points": 40,
         "restrictions": {
           "include": {
             "faction": ["Republic"],
@@ -4751,7 +4751,7 @@
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764785647603/8F9ADBD1429C1AF247858C877548E15E5996F4A9/"
         },
         "leader": true,
-        "points": 14,
+        "points": 12,
         "restrictions": {
           "include": {
             "unit": ["Phase I Clone Troopers"]
@@ -4765,7 +4765,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785643001/070425BBB2F0D33E71693679EEB72FEF790FE2F6/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/"
         },
-        "points": 14,
+        "points": 11,
         "restrictions": {
           "include": {
             "unit": ["Phase I Clone Troopers"]
