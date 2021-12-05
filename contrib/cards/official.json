@@ -59,7 +59,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788535425/1ADD2DCEEA5D23013C2331604493EFF62AC46DB3/",
           "size": "small",
           "type": "Trooper",
-          "points": 90,
+          "points": 80,
           "speed": 2,
           "upgrades": {
             "Command": 2,
@@ -151,7 +151,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603895/5D4275A9C4F93D4170453A9375C308ABCFE318A1/",
           "size": "small",
           "type": "Trooper",
-          "points": 100,
+          "points": 90,
           "speed": 2,
           "upgrades": {
             "Command": 1,
@@ -575,7 +575,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604288/CC2622742539F3AD9EEA9AB88676DF7C0282FFB0/",
           "size": "small",
           "type": "Trooper",
-          "points": 50,
+          "points": 48,
           "speed": 2,
           "upgrades": {
             "Heavy Weapon": 1,
@@ -660,7 +660,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604432/47C2CB26F7C98A3F449136D78165F64BE7D0A846/",
           "size": "small",
           "type": "Trooper",
-          "points": 58,
+          "points": 56,
           "speed": 2,
           "upgrades": {
             "Heavy Weapon": 1,
@@ -796,7 +796,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604624/D975E5460BB0A6B86E0AD105445ECBAEBBB2BEA0/",
           "size": "huge",
           "type": "Emplacement Trooper",
-          "points": 70,
+          "points": 65,
           "speed": 0,
           "upgrades": {
             "Comms": 1,
@@ -3214,7 +3214,7 @@
       {
         "name": "A-300 Rifle Gunner",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137900/130B3AB5DF25F69BC91D8C568EF147AD6DC9C240/",
-        "points": 9,
+        "points": 1,
         "restrictions": {
           "include": {
             "unit": ["X-34 Landspeeder"]
@@ -3284,7 +3284,7 @@
       {
         "name": "Refurbished \"Gonk\" Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144996/C187B41FE3AE53493F4A9AA23B0F74B795F9B2C3/",
-        "points": 10,
+        "points": 14,
         "restrictions": {
           "include": {
             "unit": ["A-A5 Speeder Truck", "X-34 Landspeeder"]
@@ -3304,7 +3304,7 @@
       {
         "name": "Unorthodox Tactician",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146269/6A9E51CC6804D7D1D193F6087734A6B2A4087994/",
-        "points": 10,
+        "points": 16,
         "restrictions": {
           "include": {
             "unit": ["A-A5 Speeder Truck"]
@@ -3567,7 +3567,7 @@
       {
         "name": "AG-2G Quad Laser",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138060/2F0A343971984B412473C58FD82F4922B7399B1A/",
-        "points": 36,
+        "points": 28,
         "restrictions": {
           "include": {
             "unit": ["A-A5 Speeder Truck"]
@@ -3844,7 +3844,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670338/28625FDF1F56EF08F0DB236C4ECFF67A54083B2B/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/"
         },
-        "points": 22,
+        "points": 19,
         "restrictions": {
           "include": {
             "unit": ["Fleet Troopers"]
@@ -4248,7 +4248,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670338/28625FDF1F56EF08F0DB236C4ECFF67A54083B2B/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/"
         },
-        "points": 18,
+        "points": 17,
         "restrictions": {
           "include": {
             "unit": ["Rebel Troopers"]
@@ -4263,7 +4263,7 @@
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/993513208355174858/CCC2B3862F1FEB611B03317594F6F0E761750C70/"
         },
         "leader": true,
-        "points": 22,
+        "points": 20,
         "restrictions": {
           "include": {
             "unit": ["Rebel Pathfinders"]
@@ -4291,7 +4291,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173465/8193FD1F0862270CD23BA9243679840BE6324DC6/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541173570/3C100E92F0DEDEF117D3A0392D3271951BC90DD0/"
         },
-        "points": 26,
+        "points": 23,
         "restrictions": {
           "include": {
             "unit": ["Rebel Commandos"]
@@ -4362,7 +4362,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173464725382/9DADA91B7A5BE8DEEC1BDE838B3140A350D661A4/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173464726852/2ABBCC6938695708489FB87C27C6B7481A1D294A/"
         },
-        "points": 17,
+        "points": 15,
         "restrictions": {
           "include": {
             "unit": ["Rebel Troopers"]
@@ -4893,7 +4893,7 @@
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173464683373/FE0A29CF1A46E7F97FEAE0C9FD665AB192A8D9A8/"
         },
         "leader": true,
-        "points": 11,
+        "points": 9,
         "restrictions": {
           "include": {
             "unit": ["Rebel Troopers"]
@@ -4907,7 +4907,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173464719285/839B79B3594F31585EB38763EDF43AD32E46F37F/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173464692456/FD09533718942CE5B08526B2CD1A00D5D38CB734/"
         },
-        "points": 12,
+        "points": 8,
         "restrictions": {
           "include": {
             "unit": ["Rebel Troopers"]
@@ -5203,7 +5203,7 @@
       {
         "name": "Reckless Driver",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144930/910352F2AA646B8E97628B4DF56C364805ABD906/",
-        "points": 6,
+        "points": 12,
         "restrictions": {
           "include": {
             "unit": ["A-A5 Speeder Truck"]
@@ -5255,7 +5255,7 @@
       {
         "name": "Wedge Antilles",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146615/85EE25E78E1BFDC281590A4481DB013D55D78945/",
-        "points": 1,
+        "points": 5,
         "restrictions": {
           "include": {
             "faction": ["Rebel"],
