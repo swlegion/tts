@@ -140,7 +140,7 @@ local function initListSpawner(params)
     local padding = globals.spawnOffsets.padding
 
     local baseRadius = base * 0.5
-    local initialXOffset = unitCardWidth * 0.5 - baseRadius 
+    local initialXOffset = unitCardWidth * 0.5 - baseRadius
     local position = {
       x = adjustedPos.x + initialXOffset * xOffset,
       y = adjustedPos.y,
@@ -161,7 +161,7 @@ local function initListSpawner(params)
     local baseOffset = base + (padding / 3 * xOffset)
     local totalXOffset = (baseOffset * (newIndex - 1))
     local xDir = xOffset * -1
-  
+
     return simpleTranslatePos(
       position,
       totalXOffset * xDir,
@@ -176,49 +176,49 @@ local function initListSpawner(params)
   function initializeMini(pMiniTable)
     local strColor = pMiniTable.colorSide
     strColor = strColor:gsub("^%l", string.upper)
-    
+
     -- detect leader units
     local leaderInt = pMiniTable.leaderIndex
-    
+
     for i, objEntry in pairs(pMiniTable.miniObjs) do
       -- init mini script
       local selectedMiniScript = ""
-  
+
       -- SET NAME
       local displayName = pMiniTable.displayName or objEntry.name
       objEntry.obj.setName(strColor.. " "..displayName)
       selectedMiniScript = selectedMiniScript .. "colorSide = '"..pMiniTable.colorSide.."'\nminiName = \""..objEntry.name.."\"\n"
-  
+
       if i == leaderInt then
         -- DESCRIPTION
         local description = ""
-  
+
         for p, upgradeName in pairs(pMiniTable.upgrades) do
           description = description .. upgradeName .. "\n"
         end
         objEntry.obj.setDescription(description)
-  
+
         -- miniGUIDs
-  
+
         local miniGUIDsScript = "miniGUIDs = {}\n"
         for n, objEntry in pairs(pMiniTable.miniObjs) do
           miniGUIDsScript = miniGUIDsScript .. "miniGUIDs["..n.."] = '" .. objEntry.obj.getGUID() .. "'\n"
         end
-        selectedMiniScript = selectedMiniScript .. miniGUIDsScript .. 
-          "cardGUID = \"" .. pMiniTable.unitCardGUID .. 
-          "\"\n unitName = \""..pMiniTable.name:lower() .. 
-          "\"\n commandName = \""..pMiniTable.commandName .. 
-          "\"\n commandType = \""..pMiniTable.commandType .. 
-          "\"\n selectedSpeed = "..pMiniTable.selectedSpeed .. 
-          "\n baseSize = \""..pMiniTable.baseSize .. 
-          "\"\n unitID = " .. pMiniTable.unitID .. 
+        selectedMiniScript = selectedMiniScript .. miniGUIDsScript ..
+          "cardGUID = \"" .. pMiniTable.unitCardGUID ..
+          "\"\n unitName = \""..pMiniTable.name:lower() ..
+          "\"\n commandName = \""..pMiniTable.commandName ..
+          "\"\n commandType = \""..pMiniTable.commandType ..
+          "\"\n selectedSpeed = "..pMiniTable.selectedSpeed ..
+          "\n baseSize = \""..pMiniTable.baseSize ..
+          "\"\n unitID = " .. pMiniTable.unitID ..
           "\n height = " .. pMiniTable.height ..
-          "\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID .. 
+          "\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID ..
           "\"\n" .. globals.modelMiniScript
       else
         objEntry.obj.use_snap_points = false
       end
-  
+
       -- SET SCRIPT
       objEntry.obj.setLuaScript(selectedMiniScript)
     end
@@ -278,13 +278,13 @@ local function initListSpawner(params)
       separatist = 1,
       republic   = 1,
     })[faction:lower()] then
-      faction = "Imperia;"
+      faction = "Imperial"
     end
     local rankAndRemap = unitInfo.rank
     if rankAndRemap:lower() == "special forces" then
       rankAndRemap = "specialForces"
     end
-    local commandType = 
+    local commandType =
       faction:lower() ..
       rankAndRemap:lower():gsub("^%l", string.upper)
     local commandName =
