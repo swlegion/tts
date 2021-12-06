@@ -443,9 +443,8 @@ function moveUnit()
     templateA = spawnObject({
         type = "Custom_AssetBundle",
         position = {basePos.x - b, basePos.y, basePos.z - a},
-        rotation = {0, baseRot.y + 180, 0},
-        --make the first bit a tiny bit shorter to stop zfighting at the joint
-        scale = {1,0.95,1}
+        rotation = {0, baseRot.y + 180, 0},        
+        scale = {1,1,1}
     })
     templateA.setCustomObject({
         type = 0,
@@ -460,7 +459,7 @@ function moveUnit()
 
     templateA.setLuaScript(templateLuaScriptA)
     templateA.sticky = false
-    templateA.setName("Movement Template")
+    templateA.setName("Movement Template (A)")
     templateA.setColorTint(templateInfo.moveTemplate[unitData.selectedSpeed].colorTint)
 
     --templateB = getObjectFromGUID(unitData.templateBGUID)
@@ -470,7 +469,8 @@ function moveUnit()
         type = "Custom_AssetBundle",
         position = {basePos.x - b, basePos.y, basePos.z - a},
         rotation = {0, baseRot.y, 0},
-        scale = {1,1,1}
+        --make the second bit a tiny bit taller to stop zfighting at the joint
+        scale = {1,1.1,1}
     })
     templateB.setCustomObject({
         type = 0,
@@ -485,7 +485,7 @@ function moveUnit()
 
     templateB.setLuaScript(templateLuaScriptB)
     templateB.sticky = false
-    templateB.setName("Movement Template")
+    templateB.setName("Movement Template (B)")
     templateB.setColorTint(templateInfo.moveTemplate[unitData.selectedSpeed].colorTint)
 
     -- SET VALUES
@@ -495,6 +495,9 @@ function moveUnit()
     templateA.setVar("templateB", templateB)
 
     local fixedMove = unitData.baseSize ~= "small"
+    if fixedMove == true then
+      print("Locking move tool for fixed moved");
+    end
     templateA.setLock(fixedMove)
 
     templateB.setTable("basePos", basePos)
