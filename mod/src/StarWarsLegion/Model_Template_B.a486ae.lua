@@ -15,8 +15,6 @@ function onload(save_state)
         -- DEFAULT VALUES
         pickedUp = false
         templatePos = self.getPosition()
-        --self.setName("Movement Template Speed "..unitInfo.selectedSpeed)
-
     end
 
 
@@ -25,8 +23,6 @@ function onload(save_state)
     self.angular_drag = 1000
     self.setVelocity({0,0,0})
     self.setAngularVelocity({0,0,0})
-
-    --self.setName("Movement Template")
 
 end
 
@@ -73,19 +69,13 @@ function positionTemplate()
         local mouseY = Player[clickPlayerColor].getPointerPosition().y
         local lastY = templateRot.y
 
-
-
-
         local a = objPos.x-mouseX
         local b = objPos.z-mouseZ
 
         local q = math.deg(math.atan2(a, b))
 
 
-
         q = math.deg(math.atan2(a, b))
-
-
 
         self.setPosition({x = objPos.x, y = mouseY, z = objPos.z })
         templateA.setTable("templatePos", self.getPosition())
@@ -120,7 +110,6 @@ function positionTemplate()
                 self.setRotation({0,lastY,0})
             end
         end
-
 
         self.setVelocity({0,0,0})
         self.setAngularVelocity({0,0,0})
