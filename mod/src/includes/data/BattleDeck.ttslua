@@ -87,7 +87,6 @@ function _scenarioChanged(_, _, input, editing)
 end
 
 function _defineBattlefield()
-  print(JSON.encode_pretty(__state))
   getObjectFromGUID(__state.guids.button).AssetBundle.playTriggerEffect(0)
   local deck = zonex.firstWhereNot(getObjectFromGUID(__state.guids.zone), "Table")
   if deck then
