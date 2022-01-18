@@ -544,7 +544,8 @@ function Deck:getBattleCardType(name, scenario)
   if not scenario then
     scenario = 'standard'
   end
-  for type, cards in pairs(self:_getSchema().battlefield[scenario:lower()]) do
+  scenario = scenario:lower()
+  for type, cards in pairs(self:_getSchema().battlefield[scenario]) do
     if cards[name:upper()] then
       return type
     end
@@ -556,10 +557,12 @@ function Deck:getBattleCardNamesByType(name, scenario)
   if not scenario then
     scenario = 'standard'
   end
+  scenario = scenario:lower()
   if name:lower() == "conditions" then
     name = "condition"
   end
-  local cards = self:_getSchema().battlefield[scenario][name:lower()]
+  name = name:lower()
+  local cards = self:_getSchema().battlefield[scenario][name]
   if not cards then
     return {}
   end
@@ -574,6 +577,7 @@ function Deck:getDeploymentBoundary(name, scenario_name)
   if not scenario_name then
     scenario_name = 'standard'
   end
+  scenario_name = scenario_name:lower()
   local scenario = self:_getSchema().battlefield[scenario_name]
   if not scenario then
     print("Could not find cards for scenario: " .. scenario_name)
@@ -605,6 +609,7 @@ function Deck:getBattleCardObjects(name, card_type, scenario_name)
   if not scenario_name then
     scenario_name = 'standard'
   end
+  scenario_name = scenario_name:lower()
   local scenario = self:_getSchema().battlefield[scenario_name]
   if not scenario then
     print("Could not find cards for scenario: " .. scenario_name)

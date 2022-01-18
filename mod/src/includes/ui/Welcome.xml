@@ -46,7 +46,7 @@
 
           (Since last <i>Beta</i>)
           
-          - Fix: New semi-transparent range rulers and a speed-1 movement fix.
+          - Fix: Various bugs around defining battlefield/battle cards fixed.
 
           (Since last <i>Stable</i>)
           - Feat: Camera starts facing <b>BLUE</b> player now (not <b>RED</b>).
@@ -58,6 +58,7 @@
           - Feat: Added full support for Skirmish battlefield decks.
           - Feat: In-game list building improvements, including "Clone Previous".
 
+          - Fix: New semi-transparent range rulers and a speed-1 movement fix.
           - Fix: Various pilots that were not selectable w/ list-builder are now.
           - Fix: Medium base size and various movement tool oddities.
           - Fix: Replaced movement tool colliders.
