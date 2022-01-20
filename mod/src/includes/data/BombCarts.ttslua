@@ -141,16 +141,15 @@ function spawnMoveTemplate()
   local bEx = bStart * math.sin(q)
 
   templateA = spawnObject({
-      type = "Custom_Model",
+      type = "Custom_AssetBundle",
       position = {basePos.x - b, basePos.y, basePos.z - a},
       rotation = {0, baseRot.y + 180, 0},
       scale = {1,1,1}
   })
   templateA.setCustomObject({
       type = 0,
-      mesh = templateInfo.moveTemplate[selectedSpeed].mesh,
-      diffuse = templateInfo.moveTemplate[selectedSpeed].diffuse,
-      collider = templateInfo.moveTemplate[selectedSpeed].longCollider,
+      assetbundle = templateInfo.moveTemplate[2].longBundle,
+      assetbundle_secondary = templateInfo.moveTemplate[2].sharedBundle,
       material = 1,
   })
 
@@ -167,16 +166,15 @@ function spawnMoveTemplate()
   local modelTemplateB = getObjectFromGUID(templateInfo.modelTemplateBGUID)
 
   templateB = spawnObject({
-      type = "Custom_Model",
+      type = "Custom_AssetBundle",
       position = {basePos.x - bEx, basePos.y, basePos.z - aEx},
       rotation = {0, baseRot.y, 0},
       scale = {1,1,1}
   })
   templateB.setCustomObject({
       type = 0,
-      mesh = templateInfo.moveTemplate[selectedSpeed].mesh,
-      diffuse = templateInfo.moveTemplate[selectedSpeed].diffuse,
-      collider = templateInfo.moveTemplate[selectedSpeed].shortCollider,
+      assetbundle = templateInfo.moveTemplate[2].shortBundle,
+      assetbundle_secondary = templateInfo.moveTemplate[2].sharedBundle,
       material = 1,
   })
 

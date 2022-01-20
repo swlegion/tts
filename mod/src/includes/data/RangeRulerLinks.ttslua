@@ -15,7 +15,7 @@ function getRangeRulerLinks()
         -- 100mm oblong
         rangeRulers.long = "http://cloud-3.steamusercontent.com/ugc/1848161512056393212/C1D52E052A6F31D212B4E91A3961A29FFCC47DBA/"
         -- bomb cart
-        rangeRulers.bombCart = "http://cloud-3.steamusercontent.com/ugc/1848161512056397491/096A61BB3344D7986D7A791EE3FD1553A11EC240/"
+        rangeRulers.bombCart = "http://cloud-3.steamusercontent.com/ugc/1838032857803650871/DB525612CDAF46A18A49B82C57A744E9A1F09D79/"
         -- smoke token
         rangeRulers.smokeToken = "http://cloud-3.steamusercontent.com/ugc/1848161512056387710/E5CB0DCCC147802B3E276B5922237171E0D53185/"
         -- charge, objective, condition
