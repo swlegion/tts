@@ -12,7 +12,7 @@ function _onLoadShared(state)
   __state = JSON.decode(state)
 
   self.createButton({
-    click_function = "_defineBattlefield",
+    click_function = "defineBattlefield",
     function_owner = self,
     label          = "Battle Deck",
     tooltip        = "Define Battlefield",
@@ -26,7 +26,7 @@ function _onLoadShared(state)
   })
 
   getObjectFromGUID(__state.guids.button).createButton({
-    click_function = "_defineBattlefield",
+    click_function = "defineBattlefield",
     function_owner = self,
     label          = "",
     tooltip        = "Define Battlefield",
@@ -86,7 +86,7 @@ function _scenarioChanged(_, _, input, editing)
   end
 end
 
-function _defineBattlefield()
+function defineBattlefield()
   getObjectFromGUID(__state.guids.button).AssetBundle.playTriggerEffect(0)
   local deck = zonex.firstWhereNot(getObjectFromGUID(__state.guids.zone), "Table")
   if deck then

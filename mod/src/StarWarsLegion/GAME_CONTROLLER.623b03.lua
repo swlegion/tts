@@ -90,7 +90,7 @@ function mainMenu()
 end
 
 function defineBattlefieldMenuBlue()
-    blueDeckMount.call("checkDeck")
+    blueDeckMount.call("defineBattlefield")
 end
 
 function enterTintData(obj, dataString, tintTable)

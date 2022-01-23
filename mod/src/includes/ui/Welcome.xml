@@ -46,7 +46,8 @@
 
           (Since last <i>Beta</i>)
           
-          - Fix: Various bugs around defining battlefield/battle cards fixed.
+          - Fix: Various bugs around the Payload objective.
+          - Fix: "Blue Player Define Battlefield" works again.
 
           (Since last <i>Stable</i>)
           - Feat: Camera starts facing <b>BLUE</b> player now (not <b>RED</b>).
