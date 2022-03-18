@@ -15,6 +15,7 @@ function onload(save_state)
 
     -- token scripts
     _G.scriptRange1Token = nil
+    _G.scriptRange2Token = nil
     _G.scriptBombCart = nil
     getTokenScripts()
 
@@ -76,6 +77,12 @@ function getTokenScripts()
     callback_function = function(token)
       _G.scriptRange1Token = token.getLuaScript()
       destroyObject(token)
+    end
+  })
+  getObjectFromGUID("b912ed").takeObject({
+    callback_function = function(grafToken)
+      _G.scriptRange2Token = grafToken.getLuaScript()
+      destroyObject(grafToken)
     end
   })
   _G.scriptBombCart = getObjectFromGUID("b497e1").getLuaScript()
@@ -168,6 +175,7 @@ function spawnObjs(cardType, selectedBattleCardName)
     -- TODO: Make this global somehow instead.
     scripts  = {
       ["toggle-range-1"] = _G.scriptRange1Token,
+      ["toggle-range-2"] = _G.scriptRange2Token,
       ["bomb-cart"]      = _G.scriptBombCart,
     }
   })

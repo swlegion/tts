@@ -5943,7 +5943,8 @@
         "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717874061240/B449ED876CF0B2455BBCEE1E22CDEFFC12EDCBF8/"
       },
       "target": "terrain",
-      "stacks": false
+      "stacks": false,
+      "scripted": "toggle-range-2"
     },
     "Hostage Deck": {
       "cards": [

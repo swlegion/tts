@@ -167,6 +167,7 @@ function Shelf:spawnAdditionalObjects(params)
   })
 end
 
+-- TODO extend this to allow passing State 
 function Shelf:_spawnComplimentaryObject(name, container, scripts)
   if not self._cache.objects then
     local cache = {}
@@ -201,6 +202,12 @@ function Shelf:_spawnComplimentaryObject(name, container, scripts)
       object.setLuaScript(luaScript)
       object = object.reload()
     end
+    -- apply state
+    --if spawn.state then
+      --if state != -1 then
+      --   object.setState(state)
+      --end
+    --end
     container.putObject(object)
   end
 end
