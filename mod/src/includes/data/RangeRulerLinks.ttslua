@@ -19,8 +19,8 @@ function getRangeRulerLinks()
         -- smoke token
         rangeRulers.smokeToken = "http://cloud-3.steamusercontent.com/ugc/1848161512056387710/E5CB0DCCC147802B3E276B5922237171E0D53185/"
         -- charge, objective, condition
-        rangeRulers.token = "http://cloud-3.steamusercontent.com/ugc/1848161512056413074/6E1A058F50E7941F98A9D21AD19A9986F2B7A846/"
+        rangeRulers.token = "http://cloud-3.steamusercontent.com/ugc/1841415725493967222/CCEB0E06A39A2CB77FF9BCFEF8992F17B6E81C09/"
         -- graffiti token, same as objective but range 2
-        rangeRulers.tokenRangeTwo = "http://cloud-3.steamusercontent.com/ugc/1848161512056413124/DD92A224F3D756CC65EDBA8BD45D1D1A8AAE1E6C/"
+        rangeRulers.tokenRangeTwo = "http://cloud-3.steamusercontent.com/ugc/1841415725493967724/6AB27B28FEAA00EDDBBA9FCCB6BDED249836596A/"
     return rangeRulers
 end

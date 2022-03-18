@@ -14,7 +14,7 @@
       "scaleZ": 1
     },
     "Nickname": "Objective Token",
-    "Description": "",
+    "Description": "Vaporator",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 1,
@@ -38,7 +38,7 @@
       "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542328104/A2054CFEB171834D4A800251FA8117BDAC0A1D37/",
       "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542328216/085CC3C91285C2FA1862638422F55542F8F284AF/",
       "NormalURL": "",
-      "ColliderURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
       "Convex": true,
       "MaterialIndex": 3,
       "TypeIndex": 0,

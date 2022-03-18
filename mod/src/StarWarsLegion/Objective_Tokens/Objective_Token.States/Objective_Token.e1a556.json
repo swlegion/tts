@@ -14,7 +14,7 @@
       "scaleZ": 1
     },
     "Nickname": "Objective Token",
-    "Description": "",
+    "Description": "Crate",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 1,
@@ -38,7 +38,7 @@
       "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542327734/BE7C0C7FFDCF9E81F113787A4E794BA23124BDD2/",
       "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542327868/C2222945F183D3DA1B90A9083D7B86924AB61EE2/",
       "NormalURL": "",
-      "ColliderURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
       "Convex": true,
       "MaterialIndex": 3,
       "TypeIndex": 0,
