@@ -14,7 +14,7 @@
       "scaleZ": 1
     },
     "Nickname": "Objective Token",
-    "Description": "",
+    "Description": "Radar Dish",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 1,
@@ -38,7 +38,7 @@
       "MeshURL": "http://cloud-3.steamusercontent.com/ugc/785234540542328331/64570067AA8288EDF0FDF8A34CE269BB5BE52455/",
       "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785234540542328448/15B23EE1DD12A06D06465BD824EC9FA5365DB542/",
       "NormalURL": "",
-      "ColliderURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
       "Convex": true,
       "MaterialIndex": 3,
       "TypeIndex": 0,
