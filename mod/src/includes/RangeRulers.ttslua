@@ -1,18 +1,20 @@
 require('!/data/RangeRulerLinks')
 
 function showRangeOnHoveredModel(hoverObject)
+  clearRangeRulers()
   if hoverObject then
     if hoverObject.interactable then
-      unitData = {}
       if selectedUnitObj == hoverObject then
-        clearRangeRulers()
         selectedUnitObj = nil
         return
+      else
+        spawnRangeRuler(hoverObject)
+        selectedUnitObj = hoverObject
       end
     end
+  else
+    selectedUnitObj = nil
   end
-  clearRangeRulers()
-  spawnRangeRuler(hoverObject)
 end
 
 -- Refactor this to work with the refactored spawnRangeRuler()
@@ -36,12 +38,26 @@ function spawnRangeRuler(rangeSourceObject, projectorBundleOverride)
   if projectorBundleOverride ~= nil then
     rulerBundleToSpawn = projectorBundleOverride
   else
-    local newUnitData = rangeSourceObject.getTable("unitData")
-    if not newUnitData then 
-      return 
+    -- Get unit data from leader if leader hovered
+    local unitData = rangeSourceObject.getTable("unitData")
+
+    -- If leader not hovered, get leader GUID from mini data to get unit data
+    if not unitData then
+      local miniData = rangeSourceObject.getTable("miniData")
+      if not miniData then
+        return
+      end
+      unitLeader = getObjectFromGUID(miniData.leaderGUID)
+      if not unitLeader then
+        return 
+      end
+      unitData = unitLeader.getTable("unitData")
+      if not unitData then
+        return 
+      end
     end
 
-    local baseSize = newUnitData.baseSize
+    local baseSize = unitData.baseSize
     local rulerBundleTable = getRangeRulerLinks()
     rulerBundleToSpawn = rulerBundleTable[baseSize] 
   end

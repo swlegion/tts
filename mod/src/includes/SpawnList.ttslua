@@ -181,6 +181,8 @@ local function initListSpawner(params)
     -- detect leader units
     local leaderInt = pMiniTable.leaderIndex
 
+    local leaderGUID = pMiniTable.miniObjs[leaderInt].obj.getGUID()
+
     for i, objEntry in pairs(pMiniTable.miniObjs) do
       -- init mini script
       local selectedMiniScript = ""
@@ -218,6 +220,7 @@ local function initListSpawner(params)
           "\"\n" .. globals.modelMiniScript
       else
         objEntry.obj.use_snap_points = false
+        objEntry.obj.setTable("miniData", {leaderGUID = leaderGUID})
       end
 
       -- SET SCRIPT
