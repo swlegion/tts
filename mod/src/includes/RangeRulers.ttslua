@@ -43,11 +43,7 @@ function spawnRangeRuler(rangeSourceObject, projectorBundleOverride)
 
     -- If leader not hovered, get leader GUID from mini data to get unit data
     if not unitData then
-      local miniData = rangeSourceObject.getTable("miniData")
-      if not miniData then
-        return
-      end
-      unitLeader = getObjectFromGUID(miniData.leaderGUID)
+      local unitLeader = getObjectFromGUID(rangeSourceObject.getVar("leaderGUID"))
       if not unitLeader then
         return 
       end

@@ -190,7 +190,7 @@ local function initListSpawner(params)
       -- SET NAME
       local displayName = pMiniTable.displayName or objEntry.name
       objEntry.obj.setName(strColor.. " "..displayName)
-      selectedMiniScript = selectedMiniScript .. "colorSide = '"..pMiniTable.colorSide.."'\nminiName = \""..objEntry.name.."\"\n"
+      selectedMiniScript = selectedMiniScript .. "colorSide = '"..pMiniTable.colorSide.."'\nminiName = \""..objEntry.name.."\"\nleaderGUID = \"" .. leaderGUID .. "\"\n"
 
       if i == leaderInt then
         -- DESCRIPTION
@@ -220,7 +220,6 @@ local function initListSpawner(params)
           "\"\n" .. globals.modelMiniScript
       else
         objEntry.obj.use_snap_points = false
-        objEntry.obj.setTable("miniData", {leaderGUID = leaderGUID})
       end
 
       -- SET SCRIPT
