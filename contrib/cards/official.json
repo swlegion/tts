@@ -887,7 +887,7 @@
           },
           "minis": [
             {
-               "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420351433/152D4F1611EDE811BBB9F4E4A54329DCB2D56079/"
+               "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112441763313/6120F6AA7FCE072D48348E12B65C4B5A34B8E9A3/"
             }
           ]
         }
@@ -3187,13 +3187,11 @@
                "Comms": 1
             },
             "minis": [
-               { 
-                  "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541266463/014ECD21C93F864E1C1DFD104A365DFC555EBAF8/",
-                  "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541267239/D9891291A896CC024383C024B20C5ACF87EC8A18/"
+               {
+                  "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112441734945/D9E3C971EBB78ACC4D00906FE2C75E738EBFC02B/"
                },
                {
-                  "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541266463/014ECD21C93F864E1C1DFD104A365DFC555EBAF8/",
-                  "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541267239/D9891291A896CC024383C024B20C5ACF87EC8A18/"
+                  "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112441735001/788177F684D01EC0ACCCBF40F6205372281B6833/"
                }
             ]
          }
@@ -3214,7 +3212,7 @@
             },
             "minis": [
                {
-                  "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420351087/3B92873D71A5C0A98E6F53CDBED9B411878228A7/"
+                  "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112441763385/D4CD2ABCABB50B3F71AD37BF307F6F15383E0D24/"
                }
             ]
          }
