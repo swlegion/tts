@@ -148,7 +148,7 @@ local function initListSpawner(params)
       z = adjustedPos.z,
     }
     local paddedBase = (base + padding) * 1.5
-    local basesPerRow = math.abs(math.floor(templateHalfWidth * 2.0 / paddedBase))
+    local basesPerRow = math.max(1, math.abs(math.floor(templateHalfWidth * 2.0 / paddedBase)))
     local newIndex = index
     local totalZOffset = initialZOffset(upgradeCount)
     if index > basesPerRow then
