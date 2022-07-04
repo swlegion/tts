@@ -3062,17 +3062,17 @@
                },
                {
                   "name": "Duel of the Fates",
-                  "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036127/CF8D8E07205CB523EA3D2EE71AD61D9FB96B17BB/",
+                  "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036827/1967B20CCD59FE2EAECDC15FA5750928F75963E0/",
                   "pip": 1
                },
                {
                   "name": "The Phantom Menace",
-                  "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035766/83D508C088FC9B893BDA1C497410726302D84452/",
+                  "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034564/5DB3351093F7A089A9C59B40BECBA70140095F9B/",
                   "pip": 2
                },
                {
                   "name": "At Last",
-                  "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035023/A55A52AA8780EEFEB9B8DB24FE4294A844B3678E/",
+                  "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034186/C08B05E1C969B6ADBB158DE85C499CD938FBC8B5/",
                   "pip": 3
                }
             ]
@@ -4978,6 +4978,7 @@
          "mini": {
             "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420351362/DA7859939BB8D400B298960EAB1D74B896EFAF4A/"
          },
+         "leader": true,
          "points": 35,
          "restrictions": {
             "include": {
@@ -5606,6 +5607,7 @@
          "mini": {
             "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143763/E93BA6716A05CA95AE2EA3B7C0DFD8AF145D5C22/"
          },
+         "leader": true,
          "points": 18,
          "restrictions": {
             "include": {
@@ -5633,6 +5635,7 @@
          "mini": {
             "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420351237/706DEA645FEE2EC9787F05F4FF2926632E2C4894/"
          },
+         "leader": true,
          "points": 16,
          "restrictions": {
             "include": {
