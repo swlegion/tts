@@ -278,6 +278,7 @@ local function initListSpawner(params)
       rebel      = 1,
       separatist = 1,
       republic   = 1,
+      shadowcollective = 1,
     })[faction:lower()] then
       faction = "Imperial"
     end

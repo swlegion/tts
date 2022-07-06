@@ -484,7 +484,7 @@ function Deck:_isUpgradeValidFor(upgrade, unit)
           if unitAlignment == "LIGHT" then
             return unit.faction:upper() == "REBEL" or unit.faction:upper() == "REPUBLIC"
           elseif unitAlignment == "DARK" then
-            return unit.faction:upper() == "EMPIRE" or unit.faction:upper() == "SEPARATIST"
+            return unit.faction:upper() == "EMPIRE" or unit.faction:upper() == "SEPARATIST" or unit.faction:upper() == "SHADOWCOLLECTIVE"
           end
         end
       end

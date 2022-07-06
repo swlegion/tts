@@ -400,6 +400,13 @@ function onload(saveData)
     commandTokenData.red.republicSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181605997/96BF8F41D8B4EA9E441FD1F5F6890DCF7337AAFF/"
     commandTokenData.red.republicHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181604927/AF5A4C46BC7FD06425DFE9481A8086DBE865404B/"
 
+    commandTokenData.red.shadowcollectiveCommander = "http://cloud-3.steamusercontent.com/ugc/1856061112422440548/1A0E402A295550F940588A97EF946FD326EC5229/"
+    commandTokenData.red.shadowcollectiveOperative = "http://cloud-3.steamusercontent.com/ugc/1856061112422440693/1CFD79EF8B8817D18A7F3849407084767052D5A7/"
+    commandTokenData.red.shadowcollectiveCorps = "http://cloud-3.steamusercontent.com/ugc/1856061112422440599/36E169D393C702BB1579B46E84C142D5C3DFCCB2/"
+    commandTokenData.red.shadowcollectiveSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1856061112422440731/C495B15A488DA05675CAAC55FE5B23AA5CA4473F/"
+    commandTokenData.red.shadowcollectiveSupport = "http://cloud-3.steamusercontent.com/ugc/1856061112422440777/A42960E2117A5C155C20C98E2385C8325206906B/"
+    commandTokenData.red.shadowcollectiveHeavy = "http://cloud-3.steamusercontent.com/ugc/1856061112422440651/50E7A74A18D237B66362BA5BE12E3219FED55FF7/"
+
     commandTokenData.blue = {}
     commandTokenData.blue.imperialCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181467231/3D469F73AB4AEE0A8D4DAC26EE98A82C144C2312/"
     commandTokenData.blue.imperialOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181470653/D06C37C9664EEE89FA4B4A5A4588C4576CC9C72E/"
@@ -429,6 +436,13 @@ function onload(saveData)
     commandTokenData.blue.republicSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181475330/17110C087B25CEE6E0ADDBA8F4E4D34A6594D3C7/"
     commandTokenData.blue.republicHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181472795/79E2E21BD525AC36BA389C77A0227E12E624707B/"
 
+    commandTokenData.blue.shadowcollectiveCommander = "http://cloud-3.steamusercontent.com/ugc/1856061112422440157/1D014DEA71FDEFAE0230A09DAC383A7558983ABF/"
+    commandTokenData.blue.shadowcollectiveOperative = "http://cloud-3.steamusercontent.com/ugc/1856061112422440362/BEE23D08126F88FF445DB47C3639E4E2E1B3C2A0/"
+    commandTokenData.blue.shadowcollectiveCorps = "http://cloud-3.steamusercontent.com/ugc/1856061112422440235/CA277E7D315182CAB0CF1C92384860012D9ED1EA/"
+    commandTokenData.blue.shadowcollectiveSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1856061112422440443/02FF552DE7B9C6EAB6432B3BED254FCDCED09756/"
+    commandTokenData.blue.shadowcollectiveSupport = "http://cloud-3.steamusercontent.com/ugc/1856061112422440497/3ACEF5EA33F7540A6A37885F3BCBDF862391A661/"
+    commandTokenData.blue.shadowcollectiveHeavy = "http://cloud-3.steamusercontent.com/ugc/1856061112422440313/2394BEAFFF809A9161472A900619B2D6175C39F3/"
+
     commandTokenTrayData = {}
     commandTokenTrayData.red = {}
     commandTokenTrayData.red.trayZoneGUID = "a74687"
@@ -456,6 +470,12 @@ function onload(saveData)
     commandTokenTrayData.red.separatistSpecialforces = "abb909"
     commandTokenTrayData.red.separatistSupport = "ce9be9"
     commandTokenTrayData.red.separatistHeavy = "f68963"
+    commandTokenTrayData.red.shadowcollectiveCommander = "071592"
+    commandTokenTrayData.red.shadowcollectiveOperative = "369fa9"
+    commandTokenTrayData.red.shadowcollectiveCorps = "af4c28"
+    commandTokenTrayData.red.shadowcollectiveSpecialforces = "abb909"
+    commandTokenTrayData.red.shadowcollectiveSupport = "ce9be9"
+    commandTokenTrayData.red.shadowcollectiveHeavy = "f68963"
     commandTokenTrayData.red.stack = "e2202d"
 
     commandTokenTrayData.blue = {}
@@ -484,6 +504,12 @@ function onload(saveData)
     commandTokenTrayData.blue.separatistSpecialforces = "3832c6"
     commandTokenTrayData.blue.separatistSupport = "d2c857"
     commandTokenTrayData.blue.separatistHeavy = "6d221d"
+    commandTokenTrayData.blue.shadowcollectiveCommander = "57ab78"
+    commandTokenTrayData.blue.shadowcollectiveOperative = "b30914"
+    commandTokenTrayData.blue.shadowcollectiveCorps = "e5e8df"
+    commandTokenTrayData.blue.shadowcollectiveSpecialforces = "3832c6"
+    commandTokenTrayData.blue.shadowcollectiveSupport = "d2c857"
+    commandTokenTrayData.blue.shadowcollectiveHeavy = "6d221d"
     commandTokenTrayData.blue.stack = "c9f9d0"
 
     -- standby tokens

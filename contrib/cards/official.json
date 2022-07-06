@@ -887,7 +887,7 @@
           },
           "minis": [
             {
-              "bundle": "http://cloud-3.steamusercontent.com/ugc/1803107668954610246/3C643CD6824D7380C1DE15EADAA53243607E8019/"
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112441763313/6120F6AA7FCE072D48348E12B65C4B5A34B8E9A3/"
             }
           ]
         }
@@ -1162,13 +1162,14 @@
         {
           "name": "Boba Fett",
           "title": "Infamous Bounty Hunter",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701498/836304CFE19193261F594363CFD8860F22FCD5F1/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867906/44A3AE63815B46C40C081924D1DE38B5ED3B3B99/",
           "size": "small",
           "type": "Trooper",
           "points": 120,
           "speed": 3,
           "upgrades": {
             "Training": 2,
+            "Comms": 1,
             "Gear": 2
           },
           "minis": [
@@ -1199,10 +1200,10 @@
         {
           "name": "Bossk",
           "title": "Trandoshan Terror",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701468/4D83FEB79E36D5DD9A5DFB06CB479EBD35CCE130/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867948/20A2EB617A2E756580A6A127046FFC24E28F1157/",
           "size": "small",
           "type": "Trooper",
-          "points": 115,
+          "points": 105,
           "speed": 2,
           "upgrades": {
             "Training": 2,
@@ -1232,6 +1233,51 @@
             }
           ],
           "additionalObjects": ["Proton Charge Token", "Victory Token"]
+        },
+        {
+          "name": "Cad Bane",
+          "title": "Needs No Introduction",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867666/27A6A224821A974D619C9FE94A1C60AD39F60410/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 105,
+          "speed": 2,
+          "upgrades": {
+            "Training": 2,
+            "Comms": 1,
+            "Gear": 1,
+            "Armament": 1,
+            "Grenades": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1003681674396400482/F8900CFC9EF2309C9F54AE33AE5444B2B09DB1CD/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1003681674396400696/907F4310FEA7A7CD89EE64A1AF3A8CC77897CCAC/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "I'm Your Worst Nightmare",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036560/158F834A8FF94206F4F0149EF862D264E3B27804/",
+              "pip": 1
+            },
+            {
+              "name": "I'm In Control",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035284/D2D4B7D2CE80F63F0D2706764B9B4DB838B23F43/",
+              "pip": 2
+            },
+            {
+              "name": "I Make The Rules Now",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033609/804F443E3F33E8EB6622F46604963CE17A9D49EE/",
+              "pip": 3
+            }
+          ],
+          "additionalObjects": [
+            "Bane Token: Blank",
+            "Bane Token: Bomb",
+            "Bane Token: Bane",
+            "Victory Token"
+          ]
         },
         {
           "name": "Darth Vader",
@@ -2503,13 +2549,13 @@
         {
           "name": "Cad Bane",
           "title": "Needs No Introduction",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789783/BF082412A93DED3289764E39E3D81ACF204DA989/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867666/27A6A224821A974D619C9FE94A1C60AD39F60410/",
           "size": "small",
           "type": "Trooper",
-          "points": 120,
+          "points": 105,
           "speed": 2,
           "upgrades": {
-            "Training": 1,
+            "Training": 2,
             "Comms": 1,
             "Gear": 1,
             "Armament": 1,
@@ -2544,6 +2590,43 @@
             "Bane Token: Bane",
             "Victory Token"
           ]
+        },
+        {
+          "name": "Bossk",
+          "title": "Trandoshan Terror",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867948/20A2EB617A2E756580A6A127046FFC24E28F1157/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 105,
+          "speed": 2,
+          "upgrades": {
+            "Training": 2,
+            "Gear": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/948474323838791181/6B9D77B77DF8FD7AFA19342AD687F0E15A2E21B7/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/948474323838791276/ABFCDD8C71D484E6B6050080BB80B79D0DE93178/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Merciless Munitions",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036341/7FF893D01D2692E537EB6B157DCAB16421438FC4/",
+              "pip": 1
+            },
+            {
+              "name": "Reptilian Rampage",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034734/F11C62C109C1CA7EE490169555DBAE37E4A9B53C/",
+              "pip": 2
+            },
+            {
+              "name": "Lying In Wait",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033363/C8D04CF3CEE5DE82C69BAB90B7C61DFA842AE591/",
+              "pip": 3
+            }
+          ],
+          "additionalObjects": ["Proton Charge Token", "Victory Token"]
         },
         {
           "name": "Maul",
@@ -2865,6 +2948,274 @@
           ]
         }
       ]
+    },
+    "ShadowCollective": {
+      "Commander": [
+        {
+          "name": "Gar Saxon",
+          "title": "Militant Commando",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868157/2B2B2A00440F285FF504B91185998FC1F9A842F5/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 105,
+          "speed": 2,
+          "upgrades": {
+            "Training": 2,
+            "Comms": 1,
+            "Gear": 2,
+            "Armament": 2
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143862/CF491C11176E40BD786A89E1D0C20D3316448188/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Marked for Elimination",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876685/D3ED3CC8A88D1F2A95E509F2D8D8E0B9B1E324A4/",
+              "pip": 1
+            },
+            {
+              "name": "Fight Another Day",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876554/70144F2711BF5050032AF53983EFD7097A815AB7/",
+              "pip": 2
+            },
+            {
+              "name": "Victory or Death!",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876867/B888FA6460B95A5FD755E599833A3DC2D441B5F5/",
+              "pip": 3
+            }
+          ]
+        },
+        {
+          "name": "Black Sun Vigo",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869531/DBF6D99CAD8725BBC9465C8C2788BB125D3997A6/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 50,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Gear": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143763/E93BA6716A05CA95AE2EA3B7C0DFD8AF145D5C22/"
+            }
+          ]
+        },
+        {
+          "name": "Pyke Syndicate Capo",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868012/4A5177B05203B2F76439237143D83ED67C43DAA9/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 45,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Gear": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420351237/706DEA645FEE2EC9787F05F4FF2926632E2C4894/"
+            }
+          ]
+        }
+      ],
+      "Operative": [
+        {
+          "name": "Maul",
+          "title": "A Rival",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868421/49BFF5E95CB42CD632E5CB9FA0C887BC50314CD6/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 170,
+          "speed": 2,
+          "upgrades": {
+            "Force": 2,
+            "Command": 1,
+            "Training": 1,
+            "Armament": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143811/960C7F3172EF9B62BBE13E650CC62A895EC8C33F/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Witch Magick",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876925/36A3A5FD30C472A823A487D84B7C358AF99EC1C2/",
+              "pip": 1
+            },
+            {
+              "name": "His Eminence",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876608/513C47E38F9513066C97A2CA4449351DD9DFF20D/",
+              "pip": 2
+            },
+            {
+              "name": "Seize What Power We Can",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876813/C547DF964CE720D134D78C469FB73D47DDE9A7B0/",
+              "pip": 3
+            },
+            {
+              "name": "Duel of the Fates",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036827/1967B20CCD59FE2EAECDC15FA5750928F75963E0/",
+              "pip": 1
+            },
+            {
+              "name": "The Phantom Menace",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034564/5DB3351093F7A089A9C59B40BECBA70140095F9B/",
+              "pip": 2
+            },
+            {
+              "name": "At Last",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034186/C08B05E1C969B6ADBB158DE85C499CD938FBC8B5/",
+              "pip": 3
+            }
+          ]
+        }
+      ],
+      "Corps": [
+        {
+          "name": "Pyke Syndicate Foot Soldiers",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868670/B5F556896A00CC4788A8A071C97476E5AB544C71/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 40,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143960/0C10D5D24C9E151FF751FC18AD82C24B8A0638F6/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420144048/289DC8DFD7C48CE342A4217838A7712BA166618F/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420144090/91B8441C6788DB3EB6185231B91E536C322417FA/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420142976/96875A590E8D125DFEF7B47949D66EED5CC90BB1/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
+            }
+          ]
+        },
+        {
+          "name": "Black Sun Enforcers",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867866/DEE290E2C3AB43F0C44735172DFD26002BEF468D/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 48,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Gear": 1,
+            "Grenades": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143593/5149CBF5D02AD630B3DB8424998F608DE664DACF/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143724/48B5A35E10B4977E255D889A8FCAEA8C980A11A9/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143328/3D6F3C2E8DFB78B9B748FFC8F339B9C568D7408E/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143724/48B5A35E10B4977E255D889A8FCAEA8C980A11A9/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143328/3D6F3C2E8DFB78B9B748FFC8F339B9C568D7408E/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143724/48B5A35E10B4977E255D889A8FCAEA8C980A11A9/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143328/3D6F3C2E8DFB78B9B748FFC8F339B9C568D7408E/"
+            }
+          ]
+        }
+      ],
+      "Special Forces": [
+        {
+          "name": "Mandalorian Super Commandos",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868324/181FD051CF589A96ADCC0FCB37B41A401BA8D6A8/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 75,
+          "speed": 3,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Comms": 1,
+            "Gear": 1,
+            "Armament": 1,
+            "Grenades": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143408/F4A88228E11334545EACA86B36E6B2008E76B0D3/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351150/1DBD7C5F4F961063003BF06120675733FC7D147D/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143500/4BDEA7F5B523FC06641B3D71D1E112DC14BD7F81/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351306/EFEFDB9E92944062769E8F0E5049027695F29A98/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143285/F206D67AFF9379B68AD0795767DA378CE80D44AE/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351306/EFEFDB9E92944062769E8F0E5049027695F29A98/"
+            }
+          ]
+        }
+      ],
+      "Support": [
+        {
+          "name": "Swoop Bike Riders",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418948999/222EC37F180DE2339C9F2A3C2B713B64B84E282C/",
+          "size": "large",
+          "type": "Repulsor Vehicle",
+          "points": 75,
+          "speed": 3,
+          "upgrades": {
+            "Comms": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112441734945/D9E3C971EBB78ACC4D00906FE2C75E738EBFC02B/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112441735001/788177F684D01EC0ACCCBF40F6205372281B6833/"
+            }
+          ]
+        }
+      ],
+      "Heavy": [
+        {
+          "name": "A-A5 Speeder Truck",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867601/682A15135D7E55E424D7B26BECC6E676ADAE01EB/",
+          "size": "long",
+          "type": "Repulsor Vehicle",
+          "points": 75,
+          "speed": 1,
+          "upgrades": {
+            "Crew": 2,
+            "Pilot": 1,
+            "Hardpoint": 1,
+            "Comms": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112441763385/D4CD2ABCABB50B3F71AD37BF307F6F15383E0D24/"
+            }
+          ]
+        }
+      ]
     }
   },
 
@@ -3069,6 +3420,56 @@
             "unit": ["BX-Series Droid Commandos"]
           }
         }
+      },
+      {
+        "name": "Saxon's Z-3X Jetpack Rockets",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868950/6FF2ED19A5AF3DDB0B20A1CC70775823D0C25DFB/",
+        "points": 6,
+        "restrictions": {
+          "include": {
+            "unit": ["Gar Saxon"]
+          }
+        }
+      },
+      {
+        "name": "Saxon's Galar-90 Rifle",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868898/8A5057542AE7DB2E45E127DF0510423EA839BD4B/",
+        "points": 6,
+        "restrictions": {
+          "include": {
+            "unit": ["Gar Saxon"]
+          }
+        }
+      },
+      {
+        "name": "Saxon's ZX Flame Projector",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868841/07EFB6B5703BB6979CD5569E8CBB619AAE9EE68D/",
+        "points": 6,
+        "restrictions": {
+          "include": {
+            "unit": ["Gar Saxon"]
+          }
+        }
+      },
+      {
+        "name": "The Darksaber (Maul)",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868072/6318F3683F1BAB3C5503116F4FFD42994980C329/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Maul"]
+          }
+        }
+      },
+      {
+        "name": "Super Commando Jetpack Rockets",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869197/CA87526A2FF3014B51B50A251256128036C456B8/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Mandalorian Super Commandos"]
+          }
+        }
       }
     ],
     "Command": [
@@ -3105,6 +3506,16 @@
       {
         "name": "Vigilance",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146515/D0D3C15D0DC26175A41EB79729AA4680E3E24954/",
+        "points": 5
+      },
+      {
+        "name": "Lead by Example",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868276/768CFB5A47D1E938A608DD99AE45B6A6051C9E08/",
+        "points": 8
+      },
+      {
+        "name": "Underworld Connections",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869490/825263D96998C42E66FC1414CD4942C3BE676C33/",
         "points": 5
       }
     ],
@@ -3178,6 +3589,11 @@
             "type": ["Vehicle"]
           }
         }
+      },
+      {
+        "name": "Emergency Transponder",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869398/CCAF4D60ADF57B292F573608566B7863134D9E0A/",
+        "points": 4
       }
     ],
     "Counterpart": [
@@ -3512,6 +3928,31 @@
         "name": "Targeting Scopes",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145981/32BA3AE81620BAF925DD2C0AEF04C207A350691B/",
         "points": 4
+      },
+      {
+        "name": "Saxon's Combat Shield",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869001/DB608296AFAC9362F7134DABAC6468F3A6147B89/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Gar Saxon"]
+          }
+        }
+      },
+      {
+        "name": "Super Commando Combat Shields",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869253/B3156081A7C9FD8C32A205074E9275D69E55AF40/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Mandalorian Super Commandos"]
+          }
+        }
+      },
+      {
+        "name": "Prepared Supplies",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869351/DE9290CC7840AD39A4EFFE0B0CD6D5E99A651C52/",
+        "points": 5
       }
     ],
     "Generator": [
@@ -3550,6 +3991,11 @@
       {
         "name": "Smoke Grenades",
         "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298677/D4379214870C631017E66075B5457409AB19A77D/",
+        "points": 3
+      },
+      {
+        "name": "Sonic Imploders",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869141/C4E525D13AE8D5DCDF9101E91C21038B866ACDD7/",
         "points": 3
       }
     ],
@@ -4524,6 +4970,118 @@
             "unit": ["Phase II Clone Troopers"]
           }
         }
+      },
+      {
+        "name": "Rook Kast",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868786/3A9F4271A4AB786FD93CFEFCBF41BC18B930BB0F/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420351362/DA7859939BB8D400B298960EAB1D74B896EFAF4A/"
+        },
+        "leader": true,
+        "points": 35,
+        "restrictions": {
+          "include": {
+            "unit": ["Mandalorian Super Commandos"]
+          }
+        }
+      },
+      {
+        "name": "Mandalorian Super Commando",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869300/DE8184C6612CB3692648B62D2B0A00DB66227658/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143500/4BDEA7F5B523FC06641B3D71D1E112DC14BD7F81/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351306/EFEFDB9E92944062769E8F0E5049027695F29A98/"
+        },
+        "points": 24,
+        "restrictions": {
+          "include": {
+            "unit": ["Mandalorian Super Commandos"]
+          }
+        }
+      },
+      {
+        "name": "Super Commando Gunslinger",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868228/FC69830397335680A33E25E45AE19D006FA27D54/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143366/41AB7DFFD2FCF20E2BCC3F899F728863C30F6343/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351306/EFEFDB9E92944062769E8F0E5049027695F29A98/"
+        },
+        "points": 30,
+        "restrictions": {
+          "include": {
+            "unit": ["Mandalorian Super Commandos"]
+          }
+        }
+      },
+      {
+        "name": "Super Commando Marksman",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868369/DC8B8AEF385F79F612BA4D7E4ABC786BE3F54E3A/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143451/3DFD9C8BD5D504D3A2F7934678D1A0A7C2285863/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351150/1DBD7C5F4F961063003BF06120675733FC7D147D/"
+        },
+        "points": 30,
+        "restrictions": {
+          "include": {
+            "unit": ["Mandalorian Super Commandos"]
+          }
+        }
+      },
+      {
+        "name": "Electro-Whip Soldier",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868613/D7093F36FCB71E5551D1FC1A93EF501BDE89E9C6/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143914/4EB59134A236A950D463B8563ED9E2BA2B85235A/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
+        },
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Pyke Syndicate Foot Soldiers"]
+          }
+        }
+      },
+      {
+        "name": "P13-M Disruptor Soldier",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868532/C68FB885715CDCFC65D52035ED7D020A77B6D63B/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420144006/442099A21B1950C2DC070922ABADF65CBEBFF61F/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
+        },
+        "points": 24,
+        "restrictions": {
+          "include": {
+            "unit": ["Pyke Syndicate Foot Soldiers"]
+          }
+        }
+      },
+      {
+        "name": "Mag-Det Enforcer",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867767/CA0A4DC9D0EC4E7D77E7A2F881E4B9C589E47D49/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143649/BBBA0D26FB46EAD96421C4B77FE779B5F0F848AA/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143328/3D6F3C2E8DFB78B9B748FFC8F339B9C568D7408E/"
+        },
+        "points": 14,
+        "restrictions": {
+          "include": {
+            "unit": ["Black Sun Enforcers"]
+          }
+        }
+      },
+      {
+        "name": "Scatter Gun Enforcer",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869073/87B7CB8609CEF373FD8294E16F972F3B753FC473/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143685/C75388115AFCF42ACC79E2C16FEF36755C975AA0/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143328/3D6F3C2E8DFB78B9B748FFC8F339B9C568D7408E/"
+        },
+        "points": 28,
+        "restrictions": {
+          "include": {
+            "unit": ["Black Sun Enforcers"]
+          }
+        }
       }
     ],
     "Ordnance": [
@@ -5027,6 +5585,62 @@
             "type": ["Droid Trooper"]
           }
         }
+      },
+      {
+        "name": "Black Sun Enforcer",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867712/6051FD1EF409CBB0A7757160F09AC78B72BEC3A4/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143724/48B5A35E10B4977E255D889A8FCAEA8C980A11A9/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143328/3D6F3C2E8DFB78B9B748FFC8F339B9C568D7408E/"
+        },
+        "points": 11,
+        "restrictions": {
+          "include": {
+            "unit": ["Black Sun Enforcers"]
+          }
+        }
+      },
+      {
+        "name": "Black Sun Vigo",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867819/727372941AE48218A0802978D1BDDF4F31C913C2/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143763/E93BA6716A05CA95AE2EA3B7C0DFD8AF145D5C22/"
+        },
+        "leader": true,
+        "points": 18,
+        "restrictions": {
+          "include": {
+            "unit": ["Black Sun Enforcers"]
+          }
+        }
+      },
+      {
+        "name": "Pyke Syndicate Foot Soldier",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868575/B028852AE9F715AD7187417FFE4FF2C0080B4CFB/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420144048/289DC8DFD7C48CE342A4217838A7712BA166618F/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
+        },
+        "points": 9,
+        "restrictions": {
+          "include": {
+            "unit": ["Pyke Syndicate Foot Soldiers"]
+          }
+        }
+      },
+      {
+        "name": "Pyke Syndicate Capo",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868470/E65DC0B54E38107176D824D62358DD8C7C58E626/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420351237/706DEA645FEE2EC9787F05F4FF2926632E2C4894/"
+        },
+        "leader": true,
+        "points": 16,
+        "restrictions": {
+          "include": {
+            "unit": ["Pyke Syndicate Foot Soldiers"]
+          }
+        }
       }
     ],
     "Pilot": [
@@ -5262,6 +5876,26 @@
             "type": ["Repulsor Vehicle"]
           }
         }
+      },
+      {
+        "name": "Frenzied Gunner",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868113/EE013C9F47F1AF5892B7E5925B21FBE257F543C1/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["A-A5 Speeder Truck"]
+          }
+        }
+      },
+      {
+        "name": "Raiding Party Leader",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868737/F0450E81A685273C219EDD3A9748DC9C1DB72CF0/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["A-A5 Speeder Truck"]
+          }
+        }
       }
     ],
     "Programming": [
@@ -5365,6 +5999,11 @@
         "name": "Tenacity",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146012/69F96BBBF484ABB6A9CAD2637064D4C199BC6BE8/",
         "points": 4
+      },
+      {
+        "name": "Up Close and Personal",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869444/1E439AB8897062691976E3BE15D17C0C4A0380AA/",
+        "points": 5
       }
     ]
   },
@@ -5377,13 +6016,28 @@
         "pip": 1
       },
       {
+        "name": "Ploy",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876724/E501DA3A7FFF7E1FF23619021C675C1074A2B32D/",
+        "pip": 1
+      },
+      {
         "name": "Push",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034819/0E3D77E869D24AD638EB438F92577F44368487D3/",
         "pip": 2
       },
       {
+        "name": "Aggression",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876447/C6682AF02659DF16F123CBC996B76AFEE220997D/",
+        "pip": 2
+      },
+      {
         "name": "Assault",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034224/40364C1DDCF973A233C4A8F7AD43734067014C06/",
+        "pip": 3
+      },
+      {
+        "name": "Discretion",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876505/D29A1F76745E04544109A595E4BC32B117A29DE2/",
         "pip": 3
       },
       {
