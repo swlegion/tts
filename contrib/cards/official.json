@@ -4672,8 +4672,8 @@
             "unit": ["Imperial Special Forces"],
             "rank": ["Corps"]
           },
-          "exclude":{
-            "unit":["Stormtroopers Heavy Response Unit"]
+          "exclude": {
+            "unit": ["Stormtroopers Heavy Response Unit"]
           }
         }
       },
