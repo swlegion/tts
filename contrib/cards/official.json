@@ -1365,6 +1365,31 @@
           ]
         },
         {
+          "name": "Stormtroopers Heavy Response",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698223/1BD4D728D5117B486BAA7D5328F3C76A3B8F0FA2/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 30,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 2
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711094/1DF94C3CDF022814179AFBA6D7521E6196760949/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711529/FF076CE02269A8505CB8EFC06749196FFD446391/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711653/C170DF086178164DC66188071D15E9EB36C9A742/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
+            }
+          ]
+        },
+        {
           "name": "Snowtroopers",
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701374/B2FE5819A3004E4C9A64FC3841FBCAE6F3465D2F/",
           "size": "small",
@@ -6053,13 +6078,28 @@
         "pip": 1
       },
       {
+        "name": "Unrelenting Fire",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829697844/63DC5C10FFD9C03B1B0CDFF959B183A7928077E8/",
+        "pip": 1
+      },
+      {
         "name": "Pinned Down",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034888/B7C8BF24B26A8D360EDBDB07B16C773435EE2C3F/",
         "pip": 2
       },
       {
+        "name": "Overwhelming Barrage",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829697906/26225818D229B0AF8E18A645A881F06432B3A01C/",
+        "pip": 2
+      },
+      {
         "name": "Coordinated Fire",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034006/219E07F84100937144A74AC94987C024792986B1/",
+        "pip": 3
+      },
+      {
+        "name": "Debark for Ground Assault",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829697969/706FF3D1495A06DA4492F0B7BA97860D95865DCC/",
         "pip": 3
       }
     ],
@@ -6070,13 +6110,28 @@
         "pip": 1
       },
       {
+        "name": "Delaying Tactics",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698280/87911921E8F10119D80FBCFDD6BA88CB2C36311D/",
+        "pip": 1
+      },
+      {
         "name": "Turning The Tide",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034438/544487939B8A8BFB04860134ACC616A1EE285039/",
         "pip": 2
       },
       {
+        "name": "Courage of the Rebellion",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698334/CC8011A3F8D4D38BBFF3CDCEC6A77433CADCE35A/",
+        "pip": 2
+      },
+      {
         "name": "Covering Fire",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033931/E4C7CE80C1179B43969BE76C60CC2744101E051E/",
+        "pip": 3
+      },
+      {
+        "name": "Hold at Any Cost",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698390/D777D47EB102ACDED71C5A83DBAAB6184996A322/",
         "pip": 3
       }
     ],
@@ -6102,6 +6157,16 @@
         "pip": 2
       },
       {
+        "name": "Lead from the Front",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698030/5DB0C686E86FE09A6E8EF205E9AB916AB108A48F/",
+        "pip": 2
+      },
+      {
+        "name": "Tactical Planning",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698090/78A189E79CEA28E941123939A2D05CCC4ACBB60D/",
+        "pip": 2
+      },
+      {
         "name": "AttacK Of the Clones",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034137/F1FFFF3A77BAAE6DB629082F50AC6B5AE9DEB6A7/",
         "pip": 3
@@ -6109,6 +6174,11 @@
       {
         "name": "YHWARGGHHHHHHHHHH!",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032878/3AE933EA5F364FC236D8502BA96FF1FC6AA9FA27/",
+        "pip": 3
+      },
+      {
+        "name": "Leaders of the 501st",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698160/030C5ABAF50AC7844D11681DAFC790EA9E288F04/",
         "pip": 3
       }
     ],
@@ -6119,13 +6189,28 @@
         "pip": 1
       },
       {
+        "name": "AI Coordination",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829697711/DBD4849B903B75E3E5E02E07AB61C692D9D797C0/",
+        "pip": 1
+      },
+      {
         "name": "Orbital Strike",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034923/43292A8BF63ECE8696FC48EE6273F006BF454A78/",
         "pip": 2
       },
       {
+        "name": "Unrelenting Assault",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829697779/ABEFB937679074F78251F46E60B39B9B15A20F40/",
+        "pip": 2
+      },
+      {
         "name": "Roger, Roger!",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033233/90EE522128D2F8D84425C25F4FC06F2A5A9B09B2/",
+        "pip": 3
+      },
+      {
+        "name": "Unstoppable Advance",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829703906/6DB4D38F2C1BBD7CC47FB6D721E48155F7D37B27/",
         "pip": 3
       }
     ]
