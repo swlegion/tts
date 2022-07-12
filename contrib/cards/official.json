@@ -1365,7 +1365,7 @@
           ]
         },
         {
-          "name": "Stormtroopers Heavy Response",
+          "name": "Stormtroopers Heavy Response Unit",
           "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698223/1BD4D728D5117B486BAA7D5328F3C76A3B8F0FA2/",
           "size": "small",
           "type": "Trooper",
@@ -4430,7 +4430,7 @@
         "points": 20,
         "restrictions": {
           "include": {
-            "unit": ["Stormtroopers"]
+            "unit": ["Stormtroopers", "Stormtroopers Heavy Response Unit"]
           }
         }
       },
@@ -4518,6 +4518,9 @@
             "faction": ["Empire"],
             "unit": ["Imperial Special Forces"],
             "rank": ["Corps"]
+          },
+          "exclude": {
+            "type": ["StormTroopers Heavy Response Unit"]
           }
         }
       },
@@ -4668,6 +4671,9 @@
             "faction": ["Empire"],
             "unit": ["Imperial Special Forces"],
             "rank": ["Corps"]
+          },
+          "exclude":{
+            "unit":["Stormtroopers Heavy Response Unit"]
           }
         }
       },
@@ -4681,7 +4687,7 @@
         "points": 16,
         "restrictions": {
           "include": {
-            "unit": ["Stormtroopers"]
+            "unit": ["Stormtroopers", "Stormtroopers Heavy Response Unit"]
           }
         }
       },
@@ -4808,7 +4814,7 @@
         "points": 24,
         "restrictions": {
           "include": {
-            "unit": ["Stormtroopers"]
+            "unit": ["Stormtroopers", "Stormtroopers Heavy Response Unit"]
           }
         }
       },
@@ -4879,7 +4885,7 @@
         "points": 22,
         "restrictions": {
           "include": {
-            "unit": ["Stormtroopers"]
+            "unit": ["Stormtroopers", "Stormtroopers Heavy Response Unit"]
           }
         }
       },
