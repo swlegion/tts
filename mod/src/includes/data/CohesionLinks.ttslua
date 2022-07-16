@@ -4,5 +4,7 @@ function getCohesionLinks()
         cohesions.small = "http://cloud-3.steamusercontent.com/ugc/1738944060881635176/420BC26BF0522ABA564D5B578C7D7CEDFD13B656/"
         --50 mm
         cohesions.medium = "http://cloud-3.steamusercontent.com/ugc/1738944060881635638/6C9473C0A8930E947C9D1BA3D42E5BC92185029F/"
+        --70 mm
+        cohesions.large = "http://cloud-3.steamusercontent.com/ugc/1904476875950847602/5B814A93B274F2476BC109CDEB7D8B8025D659EA/"
     return cohesions
 end
