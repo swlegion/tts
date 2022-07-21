@@ -85,6 +85,7 @@ function onload(saveData)
     templateInfo.aStart.laat =      {3.720472441, 4.704724409, 5.688976378}
     templateInfo.aStart.long =		{4.803149606, 5.787401575, 6.771653543}
     templateInfo.aStart.epic =		{4.311023622, 5.295275591, 6.279527559}
+    templateInfo.aStart.snail = {5.295275591, 6.279527559, 7.263779528}
 
     templateInfo.templateMesh = {"http://cloud-3.steamusercontent.com/ugc/874120727305531585/FD6D4B079FC24EE1CE4F034B1C1E0F6B665D45E6/", "http://cloud-3.steamusercontent.com/ugc/874120727305502854/B063611E236ACAD8060A08A63EDB0EE9D91919AA/","http://cloud-3.steamusercontent.com/ugc/874120727305373581/A5E705982C2AE4B89756EF5A5BAC10DEDA9881B4/"}
     templateInfo.templateBallCollider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/"
@@ -170,6 +171,8 @@ function onload(saveData)
       long = 3.93701,
       -- AAT, Saber Tank
       epic = 5.867,
+      -- Snail
+      snail = 3.93701
     }
 
     templateInfo.cohesionRadius = {
@@ -181,11 +184,15 @@ function onload(saveData)
       large = 7.133865,
       -- These are obviously incorrect, but currently cohesion does not matter for any of these units.
       -- Landspeeder, AT-ST
-      huge = 8.905515,
+      huge = 8.622047244,
+      -- LAAT
+      laat = 9.803149606,
       -- Occupier Tank
-      long = 8.905515,
+      long = 13.0511811,
        -- AAT, Saber Tank
-      epic = 8.905515
+      epic = 11.57480315,
+      -- Snail
+      snail = 14.52755906
     }
 
     templateInfo.attackLineMesh = "http://cloud-3.steamusercontent.com/ugc/785234780861452902/76204298AA245698319FD2EA590160AFFE1B488C/"

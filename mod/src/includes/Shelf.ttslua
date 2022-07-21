@@ -9,9 +9,10 @@ function Shelf:create()
       medium   = { "http://cloud-3.steamusercontent.com/ugc/1009315641457670521/DAD6653F422046BD6BC4360FE18C96927D5F4C44/", 1.9685},
       large    = { "http://cloud-3.steamusercontent.com/ugc/1009315641457670155/6727179496A9F397E953AAA3268C6CC6444598DF/", 2.75591},
       huge     = { "http://cloud-3.steamusercontent.com/ugc/1009315641457669798/3B337900892D839BDBC3EBF2A5CC9EC87DDBFED1/", 3.93701},
-      laat     = { "", 4.72440 },
+      laat     = { "http://cloud-3.steamusercontent.com/ugc/1924743543116123549/A96493C7DF407D0E68F17FDF360AEEFA07BFAEB9/", 4.72440 },
       epic     = { "http://cloud-3.steamusercontent.com/ugc/1009315641457669292/A7F6F75580BF1DFAA23E621875A761FB8B9EF2BC/", 5.90551},
       long     = { "http://cloud-3.steamusercontent.com/ugc/963116666702885485/70F17B3327115A379D06F81C6F47F76470D7B826/", 6.88976},
+      snail    = { "http://cloud-3.steamusercontent.com/ugc/1924743543116106403/74B762E5395F42575CE13125BC944ACDF823246B/", 7.87402}
     },
     _unknown   = {
       -- TODO: Add stand-ins.

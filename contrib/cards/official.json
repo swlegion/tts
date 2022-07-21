@@ -2932,7 +2932,7 @@
           "name": "NR-N99 Persuader-Class Tank Droid",
           "displayName": "Persuader Tank",
           "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189694/7B7C520E6E95958DDD99114AA3CC6B28147D7284/",
-          "size": "long",
+          "size": "snail",
           "type": "Ground Vehicle",
           "points": 145,
           "speed": 1,
@@ -2943,7 +2943,7 @@
           },
           "minis": [
             {
-              "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849538645161099/FE0C603D3A19A9A60CEA106E7E6F6879B6521EC8/"
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1924743543116068132/37BCE99DCF06BEFA1119FEA911188695F9C48079/"
             }
           ]
         }
@@ -3178,19 +3178,19 @@
         {
           "name": "Swoop Bike Riders",
           "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418948999/222EC37F180DE2339C9F2A3C2B713B64B84E282C/",
-          "size": "large",
+          "size": "medium",
           "type": "Repulsor Vehicle",
-          "points": 75,
+          "points": 70,
           "speed": 3,
           "upgrades": {
             "Comms": 1
           },
           "minis": [
             {
-              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112441734945/D9E3C971EBB78ACC4D00906FE2C75E738EBFC02B/"
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1924743543116067434/0A068914BDD35AE6F63D7E29EBC7E0B5F712DA1F/"
             },
             {
-              "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112441735001/788177F684D01EC0ACCCBF40F6205372281B6833/"
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1924743543116067490/87719312BE33C493B97B0915DB8C89FDC57D3F38/"
             }
           ]
         }

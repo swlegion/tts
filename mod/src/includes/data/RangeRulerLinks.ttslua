@@ -14,6 +14,8 @@ function getRangeRulerLinks()
         rangeRulers.epic = "http://cloud-3.steamusercontent.com/ugc/1848161512056393312/B4A26CDF7294AFCBB84D9836593037610519BE2B/"
         -- 100mm oblong
         rangeRulers.long = "http://cloud-3.steamusercontent.com/ugc/1848161512056393212/C1D52E052A6F31D212B4E91A3961A29FFCC47DBA/"
+        -- 100mm x 200mm oblong
+        rangeRulers.snail = "http://cloud-3.steamusercontent.com/ugc/1924743543116064892/2CA7A947D7D82EC9D50C21AC1F67C6A1CCFD152D/"
         -- bomb cart
         rangeRulers.bombCart = "http://cloud-3.steamusercontent.com/ugc/1838032857803650871/DB525612CDAF46A18A49B82C57A744E9A1F09D79/"
         -- smoke token

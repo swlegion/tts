@@ -42,12 +42,19 @@ function getMovementLinks()
             "http://cloud-3.steamusercontent.com/ugc/1687149777004205214/5C61176C31C6785328C6C1E5D2C9C87CA803858A/",
             "http://cloud-3.steamusercontent.com/ugc/1687149777004205245/ACAA917CA1F56999CCCDDC60266DB3D78C131866/"
         }
-        --100mm oblong
+        --100mm x 175mm oblong (gav, aa5)
         movements.long = 
         {
             "http://cloud-3.steamusercontent.com/ugc/1687149777004205310/A960CABCFD4E95BF5174136D4C1FB456C67C5477/",
             "http://cloud-3.steamusercontent.com/ugc/1687149777004205355/D4CACF1FDABB078937B0ABD3D6CF73EB3A3E6C82/",
             "http://cloud-3.steamusercontent.com/ugc/1687149777004205405/5AB008BF976CF4FE3BDDB8939D5BD0A5324D617B/"
+        }
+        --100mm x 200mm oblong (snail)
+        movements.snail = 
+        {
+            "http://cloud-3.steamusercontent.com/ugc/1924743543116064734/122782FB31D01159AF6C8D9026C56C7D8A43FBD0/",
+            "http://cloud-3.steamusercontent.com/ugc/1924743543116064779/7F5AA0014CA66891FABEDA407BCB7043DEAF85ED/",
+            "http://cloud-3.steamusercontent.com/ugc/1924743543116064825/1198CC05646024F0A4BDD3048C9237BA78350274/"
         }
     return movements
 end
