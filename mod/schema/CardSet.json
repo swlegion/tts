@@ -10,7 +10,7 @@
 
   "properties": {
     "units": {
-      "$ref": "./deps/UnitCardSet.json"
+      "type": "string"
     },
 
     "upgrades": {
