@@ -1,0 +1,173 @@
+{
+  "Commander": [
+    {
+      "name": "Gar Saxon",
+      "title": "Militant Commando",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868157/2B2B2A00440F285FF504B91185998FC1F9A842F5/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 105,
+      "speed": 2,
+      "upgrades": {
+        "Training": 2,
+        "Comms": 1,
+        "Gear": 2,
+        "Armament": 2
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143862/CF491C11176E40BD786A89E1D0C20D3316448188/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Marked for Elimination",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876685/D3ED3CC8A88D1F2A95E509F2D8D8E0B9B1E324A4/",
+          "pip": 1
+        },
+        {
+          "name": "Fight Another Day",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876554/70144F2711BF5050032AF53983EFD7097A815AB7/",
+          "pip": 2
+        },
+        {
+          "name": "Victory or Death!",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876867/B888FA6460B95A5FD755E599833A3DC2D441B5F5/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+       "content": "contrib/cards/ShadowCollective/BlackSunVigo.json"
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/PykeSyndicateCapo.json"
+    }
+  ],
+  "Operative": [
+    {
+      "name": "Maul",
+      "title": "A Rival",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868421/49BFF5E95CB42CD632E5CB9FA0C887BC50314CD6/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 170,
+      "speed": 2,
+      "upgrades": {
+        "Force": 2,
+        "Command": 1,
+        "Training": 1,
+        "Armament": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143811/960C7F3172EF9B62BBE13E650CC62A895EC8C33F/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Witch Magick",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876925/36A3A5FD30C472A823A487D84B7C358AF99EC1C2/",
+          "pip": 1
+        },
+        {
+          "name": "His Eminence",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876608/513C47E38F9513066C97A2CA4449351DD9DFF20D/",
+          "pip": 2
+        },
+        {
+          "name": "Seize What Power We Can",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876813/C547DF964CE720D134D78C469FB73D47DDE9A7B0/",
+          "pip": 3
+        },
+        {
+          "name": "Duel of the Fates",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036827/1967B20CCD59FE2EAECDC15FA5750928F75963E0/",
+          "pip": 1
+        },
+        {
+          "name": "The Phantom Menace",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034564/5DB3351093F7A089A9C59B40BECBA70140095F9B/",
+          "pip": 2
+        },
+        {
+          "name": "At Last",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034186/C08B05E1C969B6ADBB158DE85C499CD938FBC8B5/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/CadBane.json"
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/Bossk.json"
+    }
+  ],
+  "Corps": [
+    {
+      "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiers.json"
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/BlackSunEnforcers.json"
+    }
+  ],
+  "Special Forces": [
+    {
+      "name": "Mandalorian Super Commandos",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868324/181FD051CF589A96ADCC0FCB37B41A401BA8D6A8/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 75,
+      "speed": 3,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Training": 1,
+        "Comms": 1,
+        "Gear": 1,
+        "Armament": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143408/F4A88228E11334545EACA86B36E6B2008E76B0D3/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351150/1DBD7C5F4F961063003BF06120675733FC7D147D/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143500/4BDEA7F5B523FC06641B3D71D1E112DC14BD7F81/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351306/EFEFDB9E92944062769E8F0E5049027695F29A98/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143285/F206D67AFF9379B68AD0795767DA378CE80D44AE/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351306/EFEFDB9E92944062769E8F0E5049027695F29A98/"
+        }
+      ]
+    }
+  ],
+  "Support": [
+    {
+      "content":"contrib/cards/ShadowCollective/SwoopBikeRiders.json"
+    }
+  ],
+  "Heavy": [
+    {
+      "name": "A-A5 Speeder Truck",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867601/682A15135D7E55E424D7B26BECC6E676ADAE01EB/",
+      "size": "long",
+      "type": "Repulsor Vehicle",
+      "points": 75,
+      "speed": 1,
+      "upgrades": {
+        "Crew": 2,
+        "Pilot": 1,
+        "Hardpoint": 1,
+        "Comms": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112441763385/D4CD2ABCABB50B3F71AD37BF307F6F15383E0D24/"
+        }
+      ]
+    }
+  ]
+}

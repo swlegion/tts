@@ -1,0 +1,549 @@
+{
+    "Commander": [
+        {
+          "name": "General Grievous",
+          "title": "Sinister Cyborg",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790037/C20F500DE55700AA568EA5BDA7794A1B0210E605/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 155,
+          "speed": 2,
+          "upgrades": {
+            "Command": 2,
+            "Training": 1,
+            "Armament": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869167436/AAA2C61A17BB43F2673AF16D30BD0478B9AAAD2A/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869167571/EF86CBDA5F361282AD077D61FA81ABF0FEE061A0/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Trained In Your Jedi Arts",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035917/02823FB99DD83199FB8D24F9257F684A251C91D2/",
+              "pip": 1
+            },
+            {
+              "name": "Supreme Commander",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034666/71DDFA4CA889DE1EDAC999866F6B0C887FF2D49F/",
+              "pip": 2
+            },
+            {
+              "name": "Crush Them!",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033887/5DDF0AA77123DE906D2FA6A681B83BB73A48AAF5/",
+              "pip": 3
+            }
+          ]
+        },
+        {
+          "name": "Count Dooku",
+          "title": "Darth Tyranus",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789992/5D0BFCF9DA9A3200D9D0A2CDE98E25782B8F4C10/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 195,
+          "speed": 2,
+          "upgrades": {
+            "Force": 3,
+            "Command": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849586543/25BD09F275C593DB6C794359A9C50F3188F4D804/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/775105953849586640/B0512CC73C982F94EB5FEAE1661CF4438DAD8879/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Fear, Surprise, Intimidation",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036674/940E3CA38FB4BDD50EE7E6775E0C0A9D42C75C4A/",
+              "pip": 1
+            },
+            {
+              "name": "Double The Fall",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035517/E8A15E29EA9390DE382A583AE416BC4DDDDA6A90/",
+              "pip": 2
+            },
+            {
+              "name": "You Disappoint Me",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032838/8524059D85CFD5ED5238782110CAE2F821271706/",
+              "pip": 3
+            }
+          ]
+        },
+        {
+          "name": "T-Series Tactical Droid",
+          "title": "Programmed For Strategy",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789948/57BDB938C53DD5571B6FBC0F15225221BEDDF3F7/",
+          "size": "small",
+          "type": "Droid Trooper",
+          "points": 55,
+          "speed": 2,
+          "upgrades": {
+            "Command": 1,
+            "Comms": 1,
+            "Gear": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1022821664192681738/6062182D66F6F043E4DCF98FCD592CBD7ECDFF18/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1022821664192681931/11AB7637C0B8C60CB2E4BDC90F006B887A69DAF0/"
+            }
+          ]
+        },
+        {
+          "name": "Super Tactical Droid",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789910/D7965608F5D3FF1B7FD8D14BF740C098F8AB5B7D/",
+          "size": "small",
+          "type": "Droid Trooper",
+          "points": 95,
+          "speed": 2,
+          "upgrades": {
+            "Command": 2,
+            "Comms": 1,
+            "Gear": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366706441730/D50A1B8823BE590384D2A2D904A321B3337276AD/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1619598366706441991/04B29BB48A98AF8D79FC1414548496BAD49CCB28/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "They Too Will Suffer",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036005/BCB6B4D75C375323E4CA020BB1AA01497BEE11ED/",
+              "pip": 1
+            },
+            {
+              "name": "Preservation Protocols",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034846/6DFE5FBF65026639A194D1A915193AD147736713/",
+              "pip": 2
+            },
+            {
+              "name": "Do Not Underestimate Our Means",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033761/20CD9F48F76B1F86610762FF16699A70F687827B/",
+              "pip": 3
+            }
+          ]
+        },
+        {
+          "name": "Super Tactical Droid",
+          "title": "Kalani",
+          "displayName": "Kalani",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789867/EB6D7E54CBA8E867A4146B0CE70ADA1769D1EB86/",
+          "size": "small",
+          "type": "Droid Trooper",
+          "points": 100,
+          "speed": 2,
+          "upgrades": {
+            "Command": 3,
+            "Comms": 1,
+            "Gear": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366706441824/97EB6FA096B824294EE48FE762380CCBE866F3E2/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1619598366706441991/04B29BB48A98AF8D79FC1414548496BAD49CCB28/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "They Too Will Suffer",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036005/BCB6B4D75C375323E4CA020BB1AA01497BEE11ED/",
+              "pip": 1
+            },
+            {
+              "name": "Preservation Protocols",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034846/6DFE5FBF65026639A194D1A915193AD147736713/",
+              "pip": 2
+            },
+            {
+              "name": "Do Not Underestimate Our Means",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033761/20CD9F48F76B1F86610762FF16699A70F687827B/",
+              "pip": 3
+            }
+          ]
+        },
+        {
+          "name": "Super Tactical Droid",
+          "title": "Kraken",
+          "displayName": "Kraken",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789829/C51EEBAA4150DA48EC395D6C275415592D430E54/",
+          "size": "small",
+          "type": "Droid Trooper",
+          "points": 100,
+          "speed": 2,
+          "upgrades": {
+            "Command": 2,
+            "Training": 1,
+            "Comms": 1,
+            "Gear": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366706113202/449F19DA94D42DAD0F0B4D0B77A8E9AD45C320E5/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1619598366706441991/04B29BB48A98AF8D79FC1414548496BAD49CCB28/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "They Too Will Suffer",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036005/BCB6B4D75C375323E4CA020BB1AA01497BEE11ED/",
+              "pip": 1
+            },
+            {
+              "name": "Preservation Protocols",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034846/6DFE5FBF65026639A194D1A915193AD147736713/",
+              "pip": 2
+            },
+            {
+              "name": "Do Not Underestimate Our Means",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033761/20CD9F48F76B1F86610762FF16699A70F687827B/",
+              "pip": 3
+            }
+          ]
+        },
+        {
+          "content": "contrib/cards/ShadowCollective/PykeSyndicateCapo.json"
+        },
+        {
+          "content": "contrib/cards/ShadowCollective/BlackSunVigo.json"
+        }
+      ],
+      "Operative": [
+        {
+          "content":"contrib/cards/ShadowCollective/CadBane.json"
+        },
+        {
+          "content": "contrib/cards/ShadowCollective/Bossk.json"
+        },
+        {
+          "name": "Maul",
+          "title": "Impatient Apprentice",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789734/ABF8B8F5555C2DF64258B4DD432B479059AFF4D9/",
+          "size": "small",
+          "type": "Trooper",
+          "points": 160,
+          "speed": 2,
+          "upgrades": {
+            "Force": 2,
+            "Training": 2
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1647717402898544477/AC748B04B4363679177B27F514758C308A2A7E49/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1647717402898544863/C61437A96B0AB9BC3C226475A87C9BB248D2CA2A/"
+            }
+          ],
+          "commands": [
+            {
+              "name": "Duel Of The Fates",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036827/1967B20CCD59FE2EAECDC15FA5750928F75963E0/",
+              "pip": 1
+            },
+            {
+              "name": "The Phantom Menace",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034564/5DB3351093F7A089A9C59B40BECBA70140095F9B/",
+              "pip": 2
+            },
+            {
+              "name": "At Last",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034186/C08B05E1C969B6ADBB158DE85C499CD938FBC8B5/",
+              "pip": 3
+            }
+          ]
+        }
+      ],
+      "Corps": [
+        {
+          "name": "B1 Battle Droids",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789698/9ADC7290CCCD4AA6F24BA74F9C098A4E3A61B063/",
+          "size": "small",
+          "type": "Droid Trooper",
+          "points": 38,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Comms": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869166347/AA861F86A0B74CF335533E425A6CBACB99395A09/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869166529/263C2AB95B1743539EC2CBDE40B0A14B1F5E5693/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869167061/48F42C02EDD970E6DE8E59B8601EF3E7F11C1742/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869167061/48F42C02EDD970E6DE8E59B8601EF3E7F11C1742/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869167318/DBC7863706A08B96020D3BFBE7A0C2C5689B7B08/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869166660/36AF6887F11FC70FF6AB75D0434EA79952C9E882/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869167194/9ADFFD9AD608CBE3E9F6F61AB416E699A4156109/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
+            }
+          ]
+        },
+        {
+          "name": "B2 Super Battle Droids",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789641/943F65C66737E7EB971F1F71FDE9D3E056F7BEC4/",
+          "size": "small",
+          "type": "Droid Trooper",
+          "points": 45,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Personnel": 1,
+            "Comms": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849586118/94F967F21EA7E390A200C4BDA5581D07DBB37AC2/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849586430/E5941CF7A3631E6D4A28832AE489A4340C96B0B9/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849586226/9326AD8D3EC80CC53F4BF2D156014978DCD715D9/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/"
+            }
+          ]
+        },
+        {
+          "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiers.json"
+        },
+        {
+          "content": "contrib/cards/ShadowCollective/BlackSunEnforcers.json"
+        }
+      ],
+      "Special Forces": [
+        {
+          "name": "BX-Series Droid Commandos",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789610/FE6991E3F921A3C5ACD09400FD9CED611AC8E7D0/",
+          "size": "small",
+          "type": "Droid Trooper",
+          "points": 68,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Comms": 1,
+            "Armament": 1,
+            "Grenades": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457847081/F7D4E8D3EC85BAEEB5C1B5B913B7F484CC28FC10/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457845802/AE70766EAA85C875B023FB980A5A5CEEFB98B1D9/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457846188/D7F348E890430AA319DDDFA513D99DC2783ECF91/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457846574/F169D9E2E45B73D1E21B17E32D3B4B4D9AACB196/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
+            }
+          ]
+        },
+        {
+          "name": "BX-Series Droid Commandos",
+          "title": "Strike Team",
+          "displayName": "BX-Series Commandos (Strike Team)",
+          "heavyWeaponTeam": true,
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789579/00BF878D8FCAFAA8F7D9B4B5F0749C63E4EA6F08/",
+          "size": "small",
+          "type": "Droid Trooper",
+          "points": 20,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 1,
+            "Comms": 1,
+            "Armament": 1,
+            "Grenades": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457847081/F7D4E8D3EC85BAEEB5C1B5B913B7F484CC28FC10/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
+            }
+          ]
+        },
+        {
+          "name": "DRK-1 Sith Probe Droids",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789552/446270D5F6DD23C36A7B268F2026A5B9DCFFC8BF/",
+          "size": "small",
+          "type": "Droid Trooper",
+          "points": 35,
+          "speed": 2,
+          "upgrades": {
+            "Comms": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1693877203566022298/DF3FC1CF550C49A2C2340F5291798615E1978116/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1693877203566022493/549FA81DA79A87D9134AF78B2D39417113C1C71C/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1693877203566022298/DF3FC1CF550C49A2C2340F5291798615E1978116/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1693877203566022493/549FA81DA79A87D9134AF78B2D39417113C1C71C/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1693877203566022298/DF3FC1CF550C49A2C2340F5291798615E1978116/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1693877203566022493/549FA81DA79A87D9134AF78B2D39417113C1C71C/"
+            }
+          ]
+        },
+        {
+          "name": "IG-100 MagnaGuard",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789521/5E40422D83C71854A725DB0231D790BAA359574E/",
+          "size": "small",
+          "type": "Droid Trooper",
+          "points": 72,
+          "speed": 2,
+          "upgrades": {
+            "Heavy Weapon": 1,
+            "Training": 2,
+            "Comms": 1,
+            "Grenades": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386731/FA50237A0BF717ED06EA3020D5F4089D452ADCD6/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386470/4D5227051DEEED77303985CE6D34CDBFB27FD472/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386513/AC53B9F503C0B353AE7AA797072F7EBA15A1214C/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
+            }
+          ]
+        }
+      ],
+      "Support": [
+        {
+          "name": "Droidekas",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789475/1521CBD0935E6FB62CE544D89AC89E2F19F21D6B/",
+          "size": "medium",
+          "type": "Ground Vehicle",
+          "points": 75,
+          "speed": 1,
+          "upgrades": {
+            "Comms": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1686023445067168845/FBADA8EDE2ED248CA7F50C1DB3BFF46215E0360B/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1686023445067146631/305531F34B6598A008F5925D828457DF1A8195F6/"
+            },
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1686023445067146269/A9189AC12193D3BD24624F7A5137C4E69FADDBBF/",
+              "secondary": "http://cloud-3.steamusercontent.com/ugc/1686023445067146631/305531F34B6598A008F5925D828457DF1A8195F6/"
+            }
+          ]
+        },
+        {
+          "name": "STAP Riders",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789443/7BE1E58EECCFE75EA2705CD1345E6C0602711AB7/",
+          "size": "medium",
+          "type": "Repulsor Vehicle",
+          "points": 75,
+          "speed": 3,
+          "upgrades": {
+            "Comms": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1003681674396285422/B2205A5D8B8CC1718D0C9B507BC3E33BCA815567/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1003681674396285744/5725FD4B443FFC2C6ADD751A4094D4B65944C098/"
+            },
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/1003681674396285422/B2205A5D8B8CC1718D0C9B507BC3E33BCA815567/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/1003681674396285948/9C496D83F828E242C3C7CC18613FA83AD57BCF93/"
+            }
+          ]
+        },
+        {
+          "name": "DSD1 Dwarf Spider Droid",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189625/4E13A18FC19BA72238A142EE1D475C2EB16CE20A/",
+          "size": "large",
+          "type": "Ground Vehicle",
+          "points": 55,
+          "speed": 2,
+          "upgrades": {
+            "Programming": 1,
+            "Hardpoint": 1,
+            "Comms": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849538645161033/A69093521055BB5CA008D3DDE5F6EBEB990D0AF2/"
+            }
+          ]
+        }
+      ],
+      "Heavy": [
+        {
+          "name": "AAT Trade Federation Battle Tank",
+          "displayName": "AAT Battle Tank",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789411/3550FADAC84804AB14EE338E46C5FEFC339C08B6/",
+          "size": "epic",
+          "type": "Repulsor Vehicle",
+          "points": 175,
+          "speed": 1,
+          "upgrades": {
+            "Pilot": 1,
+            "Ordnance": 2,
+            "Comms": 1
+          },
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785235151813166538/2F32058DDD51C131547B66A3927041BDACDD9E72/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785235151813166725/2751E83472B0B6BD0559F5E77FAA3D62A0E17BB1/"
+            }
+          ]
+        },
+        {
+          "name": "NR-N99 Persuader-Class Tank Droid",
+          "displayName": "Persuader Tank",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189694/7B7C520E6E95958DDD99114AA3CC6B28147D7284/",
+          "size": "snail",
+          "type": "Ground Vehicle",
+          "points": 145,
+          "speed": 1,
+          "upgrades": {
+            "Programming": 1,
+            "Ordnance": 1,
+            "Comms": 1
+          },
+          "minis": [
+            {
+              "bundle": "http://cloud-3.steamusercontent.com/ugc/1924743543116068132/37BCE99DCF06BEFA1119FEA911188695F9C48079/"
+            }
+          ]
+        }
+      ]
+}

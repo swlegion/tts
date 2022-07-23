@@ -1,0 +1,902 @@
+{
+  "Commander": [
+    {
+      "name": "Luke Skywalker",
+      "title": "Hero Of The Rebellion",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788425590/4AB2CCCFC2F45B3ACB9927166F6014A2903D7DCE/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 160,
+      "speed": 2,
+      "upgrades": {
+        "Force": 2,
+        "Gear": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540537100371/0B15B2810ABEBE5429E4A24852D96BAC2DC28BF7/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540537079134/11A17263AD81DC9D4271B7C6BD809B69141DCB61/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Son Of Skywalker",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036127/CF8D8E07205CB523EA3D2EE71AD61D9FB96B17BB/",
+          "pip": 1
+        },
+        {
+          "name": "You Serve Your Master Well",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035766/83D508C088FC9B893BDA1C497410726302D84452/",
+          "pip": 1
+        },
+        {
+          "name": "My Ally Is The Force",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035023/A55A52AA8780EEFEB9B8DB24FE4294A844B3678E/",
+          "pip": 2
+        },
+        {
+          "name": "Full Of Surprises",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035386/B9B2E0999D5AA4C072B3C45FBD2185A0D7F6A9F5/",
+          "pip": 2
+        },
+        {
+          "name": "Return Of The Jedi",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033269/7606E86C0B998BBB4DAADE6F01B300A7931B697C/",
+          "pip": 3
+        },
+        {
+          "name": "I Am A Jedi",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033560/7EFDE383C076E6F171E6B868D1F5C7EE66A466CE/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "Leia Organa",
+      "title": "Fearless And Inventive",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788535425/1ADD2DCEEA5D23013C2331604493EFF62AC46DB3/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 80,
+      "speed": 2,
+      "upgrades": {
+        "Command": 2,
+        "Gear": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540537137572/2AC01B05AF1576F49C3156EDB614E2C1804C2A42/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540537137853/F8E5FE7B221E9115B36E22C14E5707B7CFA6CFC3/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Coordinated Bombardment",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036952/79DBBA37340FFEA238E71B07D6969F19AD1B8BD1/",
+          "pip": 1
+        },
+        {
+          "name": "No Time For Sorrows",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034953/BDC08D664C3DC9DFE785E312F2F0517921B3C799/",
+          "pip": 2
+        },
+        {
+          "name": "Somebody Has To Save Our Skins",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032996/852C2F232B15634E443A2317ED2D2316BA7496C4/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "Han Solo",
+      "title": "Unorthodox General",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028299008/F99C465CC6C73855A993B00184FD601B4E810F59/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 100,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Training": 1,
+        "Gear": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540669649/C440F429AB1182944D329D0C16C3402DB731CA87/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540669835/B4E395AA781518EAC4FBFFCB27BAA646201F411C/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Sorry About The Mess",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036094/C7F82426F9CDB6835C1DC91F0584AADE44F207EE/",
+          "pip": 1
+        },
+        {
+          "name": "Reckless Diversion",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034768/6CA17689021162EFE850A3CEA62AA3BD5B84B4A5/",
+          "pip": 2
+        },
+        {
+          "name": "Change Of Plans",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034095/F1EFCCA49BBF25049B679261404156EE2B259936/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "Rebel Officer",
+      "title": "Resolute Commander",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603864/8B88E031F49A36B1504A1D48202C4731C4025EB5/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 45,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Gear": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862726770/62FECAB3FED284E098751CC3BBC70C4CFF828A58/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862727097/DE589901F66E4079D82BA2C819672F622A5D7240/"
+        }
+      ]
+    },
+    {
+      "name": "Jyn Erso",
+      "title": "Stardust",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603895/5D4275A9C4F93D4170453A9375C308ABCFE318A1/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 90,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Training": 1,
+        "Gear": 1,
+        "Armament": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305475778/55B558E631655D0430BAF76E71C93899AAECA7A1/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/951848302305475871/06400240648CC39F933BE504C74DA9BEF4D006C4/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Rebellious",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036244/9C57ADB262F7193BE9B7C07B645915C58498EEDA/",
+          "pip": 1
+        },
+        {
+          "name": "Trust Goes Both Ways",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034481/2822AD43412B26BC38EF8F091201BA501D4FDBD0/",
+          "pip": 2
+        },
+        {
+          "name": "Complete The Mission",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034061/6FF1A4A6372B891E6F06022118ECF635BC40C2F2/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "Cassian Andor",
+      "title": "Capable Intelligence Agent",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603937/418000BFD236B11C08F5EA8AF670673AC63199D2/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 90,
+      "speed": 2,
+      "upgrades": {
+        "Training": 2,
+        "Gear": 1,
+        "Armament": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/773996263556990389/C38E9CAD7E5BA5496E1A211CA799E9ACBAC51D00/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/770611701143191344/5CAA4F0CE9A3FBE89A81560221ADCDDB5A801CC3/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Crack Shot",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036864/47CCB05A1DB54F77FADE1652F981DAB2BD39FEE1/",
+          "pip": 1
+        },
+        {
+          "name": "Last Stand",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035098/CD888287DB06A86CEF0E5CA443F2E227C8A0D3E9/",
+          "pip": 2
+        },
+        {
+          "name": "Volunteer Mission",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032942/4047B661BAEEEFC2CA4DD45010D3029D9FB74C63/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "Lando Calrissian",
+      "title": "Smooth Operator",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603976/14129DC0580196A6C188A7D5B037937BE3906C83/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 105,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Training": 1,
+        "Gear": 1,
+        "Flaw": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1666859827674318376/E0A03ACDC6D2F607B8CC0C406AE196A9DB5347B7/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1666859827674318640/6674121C184DF4BBD67EAB0DAA75F6B41A93669A/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Idiot's Array",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036507/059AB65ED149A6399024F171211A0D3ECD21F083/",
+          "pip": 1
+        },
+        {
+          "name": "Ace Up His Sleeve",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035738/83A01C2C466036B1BF2EF3A47F21CB11017522BD/",
+          "pip": 2
+        },
+        {
+          "name": "All In",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034326/44C2D4E2EE50B69C41DDDEA5963FC50152F9AE57/",
+          "pip": 3
+        }
+      ],
+      "required": ["I've Altered The Deal"]
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/PykeSyndicateCapo.json"
+    }
+  ],
+  "Operative": [
+    {
+      "name": "Chewbacca",
+      "title": "Walking Carpet",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789163592/3EE305AD57A0D00B7B413FF0F6F418D5FA544968/",
+      "size": "small",
+      "type": "Wookiee Trooper",
+      "points": 90,
+      "speed": 2,
+      "upgrades": {
+        "Training": 2,
+        "Gear": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540669973/90DD9EA44756CCF9B2473302DC644F3AEEED07B4/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670117/5AA04499FC8CC467864F9F335601E6335C03326D/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Common Cause",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036994/19D8F067B325C88C9A9A3DE2D4CCAD9A7BAB5957/",
+          "pip": 1
+        },
+        {
+          "name": "Brains And Brawn",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035622/3BC5E96C0730225BC27EB0CE2BDB471E5CE66F4A/",
+          "pip": 2
+        },
+        {
+          "name": "Notorious Scoundrels",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033300/4FA05D084E4DECE8DD8EED42E141C413F57201F2/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "Sabine Wren",
+      "title": "Explosive Artist",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604048/BE5C0706F024117D9DBCF3468D89A4DEA1C10BFE/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 125,
+      "speed": 3,
+      "upgrades": {
+        "Training": 1,
+        "Gear": 2,
+        "Armament": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/948474323838790939/3E9EB4AAF653CD476FF3D90EA82072EDC2D4AC66/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/948474323838791034/38CDAF985C2DC983942183E1DFD3ACBC33D8E40E/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Explosions!",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036773/60EF5E470AE0865CA28E50C31CDEDCD9266E0562/",
+          "pip": 1
+        },
+        {
+          "name": "Symbol Of Rebellion",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034630/5AD8C9A6E0D6ADC0C1BA7E53AE4BDB9653DADA60/",
+          "pip": 2
+        },
+        {
+          "name": "Legacy Of Mandalore",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033440/0011AF8A615526AED73E7A61D4E6C78B209F75E9/",
+          "pip": 3
+        }
+      ],
+      "additionalObjects": [
+        "Proton Charge Token",
+        "Proton Charge Token",
+        "Graffiti Token"
+      ]
+    },
+    {
+      "name": "Luke Skywalker",
+      "title": "Jedi Knight",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604076/98BCE6298F7E4D5086CB79D9592FC0151E7A447A/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 195,
+      "speed": 2,
+      "upgrades": {
+        "Force": 3,
+        "Training": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/777357228030156264/12F93F60CC26F1FDC2B577D4014787B7CAFBF9A1/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/777357228030156398/F811CAE962A0BFE369544C0A96C251F5BF198B3A/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Son Of Skywalker",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036127/CF8D8E07205CB523EA3D2EE71AD61D9FB96B17BB/",
+          "pip": 1
+        },
+        {
+          "name": "You Serve Your Master Well",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035766/83D508C088FC9B893BDA1C497410726302D84452/",
+          "pip": 1
+        },
+        {
+          "name": "My Ally Is The Force",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035023/A55A52AA8780EEFEB9B8DB24FE4294A844B3678E/",
+          "pip": 2
+        },
+        {
+          "name": "Full Of Surprises",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035386/B9B2E0999D5AA4C072B3C45FBD2185A0D7F6A9F5/",
+          "pip": 2
+        },
+        {
+          "name": "Return Of The Jedi",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033269/7606E86C0B998BBB4DAADE6F01B300A7931B697C/",
+          "pip": 3
+        },
+        {
+          "name": "I Am A Jedi",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033560/7EFDE383C076E6F171E6B868D1F5C7EE66A466CE/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "R2-D2",
+      "title": "Hero Of A Thousand Devices",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604120/5C6ED7C27799E640540BC177E7804442CB47C304/",
+      "size": "small",
+      "type": "Droid Trooper",
+      "points": 55,
+      "speed": 1,
+      "upgrades": {
+        "Counterpart": 1,
+        "Comms": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456806966/EFBA4A71BFE748A2868C14B82DA3A7B0D559874A/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/777357228032306302/F5CA6FC54A8625E261F123D73792DE36D74E1686/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Blast Off!",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037063/A7AE3401CB3A51A58A8682BBCD8D6F6C104804AF/",
+          "pip": 1
+        },
+        {
+          "name": "Impromptu Immolation",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035209/4C4829AE9D1B01B14F2D4FDE2C6D3935D8055954/",
+          "pip": 2
+        },
+        {
+          "name": "Smoke Screen",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033033/7FC32081CE8646476E7B0C475F452AA629BA7713/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "K-2SO",
+      "title": "Sardonic Security Droid",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788629460/11D489A9283627C5CE93F29C04BEB61BA3F166D5/",
+      "size": "small",
+      "type": "Droid Trooper",
+      "points": 70,
+      "speed": 2,
+      "upgrades": {
+        "Comms": 1,
+        "Armament": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/773996263557000439/C9EA2A27264C73E42C016FE26E665CBB75F8E7DE/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/770611701143471855/26BE70BB475D8B61122C8954CCA2EC79C1ED4C25/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Sacrifice",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033075/A24FA101CA9A3071E18DB79779F8285B8F87B906/",
+          "pip": 3
+        }
+      ]
+    }
+  ],
+  "Corps": [
+    {
+      "name": "Rebel Troopers",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604151/FDE5B897188B36FF0336D103A45C20E91E25FED0/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 40,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Personnel": 1,
+        "Gear": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862746147/3F3A21962C4AC0DA0445024688BF580A144D3825/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670236/6257E7A3CE86803490A8A0FAC7F81C281D700F52/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862752262/41BD6AB8B17AB7449226A3D80EF186EB8ABA3952/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862764799/98CBD8B4DD0C08CFA01A8E6C8B5A70A137804EAB/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862755846/CD522BCA5D6E918E13A3FF593D7212FF4B0E79CA/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/"
+        }
+      ]
+    },
+    {
+      "name": "Fleet Troopers",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604199/71EA4817F31B75D4845B95F3AF76D61069D66E9A/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 40,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Personnel": 1,
+        "Gear": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670464/96FB3825C890968C09B07A2E0E227886D2CC768C/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670556/9B759F6F1A8B7C11AE5F2908208CBA9EF99ECE2C/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670667/CB316B23D59F28C5EF22E94A43280D49DFFDD6AC/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540671182/A605D9D0DB356DC71473F5C9DF27DE1CADB4F320/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540671278/9B94D359A61113F72EEB0435D70A1291431D737A/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670978/0642E99CB4E8CABA1AA10389F2387A1C70D9322D/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/"
+        }
+      ]
+    },
+    {
+      "name": "Rebel Veterans",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604242/EA62216368A51479BDBB4264DE172879EB43B6A1/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 48,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Personnel": 1,
+        "Training": 1,
+        "Gear": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/788608699499192015/F194EFE217778158ED30DFD40EFC1F70BEC01772/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/788608699499192232/D15615AF2A0F4F4887E9BD3DFFA141C8ACCCEC78/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/788608699499192402/4D1858AA566FEEE91774E40B10C233AAD8C381D5/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/788608699499192498/BF583EA43B457E816CDE323C172B2F4558B7A8BD/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/"
+        }
+      ]
+    },
+    {
+      "name": "Mark II Medium Blaster Trooper",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789216718/13B8F9971804EE108E554C9B348A29611CFE2495/",
+      "size": "medium",
+      "type": "Emplacement Trooper",
+      "points": 38,
+      "speed": 1,
+      "upgrades": {
+        "Comms": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702688462/6B35D0B4E18CB7D0081825BEDC6E6C4AE45AA329/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359682702688570/1827E8E24FE65F309AF936EF35D07CC2149CD95E/"
+        }
+      ]
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiers.json"
+    }
+  ],
+  "Special Forces": [
+    {
+      "name": "Rebel Commandos",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604288/CC2622742539F3AD9EEA9AB88676DF7C0282FFB0/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 48,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Training": 1,
+        "Comms": 1,
+        "Gear": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173156/D637683F992DD0C4488252BE266EEEA1F26006B0/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541172655/B10522A40482843AF69A3F321BD091B0ECF52C6B/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541172497/B3E1593143504101920CC6419BE7C2EAEF52993F/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541188141/6E23E29BB42963B94A0B7DFE01C4C49D776D9657/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173253/155BAA01BA51A8EB524DD434A3C512D8C0B3A04B/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541172655/B10522A40482843AF69A3F321BD091B0ECF52C6B/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173354/3483C6FB73C66481BC6CCC398BAB8E796F7EC076/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541188141/6E23E29BB42963B94A0B7DFE01C4C49D776D9657/"
+        }
+      ]
+    },
+    {
+      "name": "Rebel Commandos",
+      "displayName": "Rebel Commandos (Strike Team)",
+      "title": "Strike Team",
+      "heavyWeaponTeam": true,
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 20,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Training": 1,
+        "Comms": 1,
+        "Gear": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173156/D637683F992DD0C4488252BE266EEEA1F26006B0/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541172655/B10522A40482843AF69A3F321BD091B0ECF52C6B/"
+        }
+      ]
+    },
+    {
+      "name": "Wookiee Warriors",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1619598366708170837/8CD09FD64849E8D2607D2C03FABD5B2DA092EE4E/",
+      "size": "small",
+      "type": "Wookiee Trooper",
+      "points": 69,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Training": 2,
+        "Gear": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173937/5179F4315AD6B0839454E1934E794A7F006C7813/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541174467/18352D89A219B89F6C869D89B9EDE22822F7F950/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541174158/677BF72C323CFF2314C174393AFA361C398C5519/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541174034/90C4A124BB82CCE0B5E38E13860ED49BB9A4973B/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541174304/9053CDD2798CEA905F8486498D0104B6ACA2F078/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541174467/18352D89A219B89F6C869D89B9EDE22822F7F950/"
+        }
+      ]
+    },
+    {
+      "name": "Rebel Pathfinders",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604432/47C2CB26F7C98A3F449136D78165F64BE7D0A846/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 56,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Training": 1,
+        "Comms": 1,
+        "Gear": 1,
+        "Armament": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305475193/3C613417B99B185BBAEC7A4C66AAE10E8FD6F8D5/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/951848302305475310/FF2A55C2559DA2CA2108EE6D7E5605774EF1B04D/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305475558/EE0863D9DE3C9D35C486B7273E1D555BB1F09566/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/951848302305475310/FF2A55C2559DA2CA2108EE6D7E5605774EF1B04D/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305475456/26BF332D69FD5B08D677EBDB91948820E03690DB/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/951848302305475310/FF2A55C2559DA2CA2108EE6D7E5605774EF1B04D/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305475667/B5CC42E1CAB9059DEE4B1237222CF0FE3BB6B838/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/951848302305475310/FF2A55C2559DA2CA2108EE6D7E5605774EF1B04D/"
+        }
+      ]
+    },
+    {
+      "name": "Mandalorian Resistance",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604461/D49CF324CDE3C648E683FCCD762B76F94E843065/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 72,
+      "speed": 3,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Training": 1,
+        "Comms": 1,
+        "Gear": 1,
+        "Armament": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696350886421665/441B37D17213CA1B82174A8988ED23AA2D59336E/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696350886421832/BBE3592A7496E444E116271913178A8ED41F5323/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357880094/FFFBDA79DE3B6192926EFCDFC257708C2A360562/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696350886396178/07FB37CA0A11552BEF96C3DCA10AF232C65AF7B6/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696350886396372/35E5047903DC30F882B40719809ECF90DBC65A5A/"
+        }
+      ]
+    },
+    {
+      "name": "Mandalorian Resistance",
+      "title": "Clan Wren",
+      "displayName": "Clan Wren",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604497/C4CEBD761320F416E03203426388067B95104C90/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 34,
+      "speed": 3,
+      "upgrades": {
+        "Heavy Weapon": 2,
+        "Training": 1,
+        "Comms": 1,
+        "Gear": 1,
+        "Armament": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357880886/06542D3BD6F03DC43D9E675680F86F2964B210F9/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/"
+        }
+      ],
+      "required": ["Ursa Wren", "Tristan Wren"]
+    },
+    {
+      "name": "Wookiee Warriors",
+      "title": "Kashyyyk Resistance",
+      "displayName": "Wookiee Warriors (Resistance)",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604546/F387DBCD02315CB56A87FF52D99CE3C1E6E548F2/",
+      "size": "small",
+      "type": "Wookiee Trooper",
+      "points": 72,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Training": 1,
+        "Gear": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708043779/0D96CE1619F4B27F583257A366431E3BAD428F19/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708043883/1EA1B3C21A50C20D4D168AB91ECFE1C01A4F7DF5/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708043883/1EA1B3C21A50C20D4D168AB91ECFE1C01A4F7DF5/"
+        }
+      ]
+    }
+  ],
+  "Support": [
+    {
+      "name": "AT-RT",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604581/361864DD585CE7DE99234C08416E9C4C1AA84A50/",
+      "size": "large",
+      "type": "Ground Vehicle",
+      "points": 55,
+      "speed": 2,
+      "upgrades": {
+        "Hardpoint": 1,
+        "Comms": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541266463/014ECD21C93F864E1C1DFD104A365DFC555EBAF8/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541267239/D9891291A896CC024383C024B20C5ACF87EC8A18/"
+        }
+      ]
+    },
+    {
+      "name": "1.4 FD Laser Cannon Team",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604624/D975E5460BB0A6B86E0AD105445ECBAEBBB2BEA0/",
+      "size": "huge",
+      "type": "Emplacement Trooper",
+      "points": 65,
+      "speed": 0,
+      "upgrades": {
+        "Comms": 1,
+        "Generator": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541267781/BE163E2112B28E8C7C5E536B037D3115103F9642/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541269701/797EACA86E0FB799D16DC8FE907A70C4B976C5EE/"
+        }
+      ]
+    },
+    {
+      "name": "Tauntaun Riders",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604655/CC7501F41054D1F68139C8ABCFAEE0CAA855475C/",
+      "size": "medium",
+      "type": "Creature Trooper",
+      "points": 95,
+      "speed": 3,
+      "upgrades": {
+        "Training": 1,
+        "Comms": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/788608699499191489/E91DEB380842511B21284A125A505B6C71D18474/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/788608699499191676/8E19A176FF0B3D2923F8F3D6DEA80D389F77CB27/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/788608699499191881/3DBB7DF0943F0D25484DE34581411825BA566F8A/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/788608699499191676/8E19A176FF0B3D2923F8F3D6DEA80D389F77CB27/"
+        }
+      ]
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/SwoopBikeRiders.json"
+    }
+  ],
+  "Heavy": [
+    {
+      "name": "T-47 Airspeeder",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604696/AD5CE170F4BBAC2DA1F5AF0F3AE4C7381EDC70AD/",
+      "size": "huge",
+      "type": "Repulsor Vehicle",
+      "points": 130,
+      "speed": 3,
+      "upgrades": {
+        "Pilot": 1,
+        "Hardpoint": 1,
+        "Comms": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1686023073179090715/187094FD9EBAFB6FF44A65F2D411D68154C0FAC7/"
+        }
+      ]
+    },
+    {
+      "name": "X-34 Landspeeder",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604738/6DAAAD8E05BFAF02E405EB1A28FA6EC17771D678/",
+      "size": "huge",
+      "type": "Repulsor Vehicle",
+      "points": 60,
+      "speed": 2,
+      "upgrades": {
+        "Pilot": 1,
+        "Crew": 2,
+        "Hardpoint": 1,
+        "Comms": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594267188/9FA2B8A42C94B6E3683F1B753CEBA14FC3258592/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594267308/582E5F56A65FE6CD486BCBABB510CAE4B4DF6C8C/"
+        }
+      ]
+    },
+    {
+      "name": "A-A5 Speeder Truck",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788629495/7CC8A26CAE70713A18D1A9C2A9DB7B59BC0839F9/",
+      "size": "long",
+      "type": "Repulsor Vehicle",
+      "points": 75,
+      "speed": 1,
+      "height": 4,
+      "upgrades": {
+        "Pilot": 1,
+        "Crew": 2,
+        "Hardpoint": 1,
+        "Comms": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112441763313/6120F6AA7FCE072D48348E12B65C4B5A34B8E9A3/"
+        }
+      ]
+    }
+  ]
+}

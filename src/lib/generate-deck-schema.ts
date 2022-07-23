@@ -1,3 +1,4 @@
+import os from 'os';
 import fs from 'fs-extra';
 import path from 'path';
 
@@ -48,33 +49,50 @@ export default async function buildDeckSchemaLua(
 ): Promise<void> {
   const json = await fs.readJson(inJson);
   const lua: string[] = [
-    '-- AUTO GENERATED (`npm run generate`). DO NOT MODIFY BY HAND.',
+    '-- AUTO GENERATED (`npm run generate`). DO NOT MODIFY BY HAND. Booyah',
     'GENERATED_CARDS_SCHEMA = {',
   ];
 
-  const units = json['units'];
-  lua.push('  units = {');
-  Object.entries(units).forEach((factionAndRanks) => {
-    const [faction, ranks] = factionAndRanks;
-    lua.push(`    [${encodeKey(faction)}] = {`);
-    Object.entries(ranks as { [key: string]: unknown }).forEach(
-      (rankAndUnits) => {
-        const [rank, units] = rankAndUnits;
-        (units as { [key: string]: unknown }[]).forEach((unit) => {
-          unit = { ...unit, rank, faction };
-          let { name } = unit;
-          if (unit.title) {
-            name = `${name} ${unit.title}`;
-          }
-          lua.push(`      [${encodeKey(name as string)}] = {`);
-          lua.push(...formatData(unit, 8));
-          lua.push('      },');
-        });
-      },
-    );
-    lua.push('    },');
-  });
+   const units = json['units'];
+   const pathBase: string = "contrib/cards";
+   lua.push('  units = {');
 
+   var unitsArray = Object.entries<Array<string>>(units);
+   var count = unitsArray.length;
+   for (let a = 0; a < count; a++) {
+      var faction = unitsArray[a][0];
+      lua.push(`    [${encodeKey(faction)}] = {`);
+
+      var unitContent: string[] = unitsArray[a][1];
+      for (var key in unitContent)
+      {
+         var unitContentPath : string = path.join(pathBase, unitContent[key]);
+         let rawUnitJson = fs.readFileSync(unitContentPath, 'utf-8');
+         let unitJson = JSON.parse(rawUnitJson as string);
+         for (var rank in unitJson)
+         {
+            const units = unitJson[rank];
+            (units as { [key: string]: unknown }[]).forEach((unit) => {
+               unit = { ...unit, rank, faction };
+               if (unit.content != null) {
+                  var unitEmbedContentPath = unit.content as string;
+                  let rawUnitEmbedContent = fs.readFileSync(unitEmbedContentPath, 'utf-8');
+                  unit = JSON.parse(rawUnitEmbedContent as string);
+                  unit = { ...unit, rank, faction };
+               }
+               let { name } = unit;
+               if (unit.title) {
+                  name = `${name} ${unit.title}`;
+               }
+               lua.push(`      [${encodeKey(name as string)}] = {`);
+               lua.push(...formatData(unit, 8));
+               lua.push('      },');
+            });
+            lua.push('    },');
+         }
+      }
+      
+   }
   lua.push('  },');
 
   const allUpgradesSorted: { [key: string]: unknown }[] = [];
