@@ -59,17 +59,17 @@ export default async function buildDeckSchemaLua(
   const unitsArray = Object.entries<string>(units);
   const count = unitsArray.length;
   for (let a = 0; a < count; a++) {
-    let faction = unitsArray[a][0];
+    const faction = unitsArray[a][0];
     lua.push(`    [${encodeKey(faction)}] = {`);
 
-    let unitContentPath: string = path.join(pathBase, unitsArray[a][1]);
+    const unitContentPath: string = path.join(pathBase, unitsArray[a][1]);
     const rawUnitJson = fs.readFileSync(unitContentPath, 'utf-8');
     const unitJson = JSON.parse(rawUnitJson as string);
-    for (let rank in unitJson) {
+    for (const rank in unitJson) {
       const units = unitJson[rank];
       (units as { [key: string]: unknown }[]).forEach((unit) => {
         if (unit.content != null) {
-          let unitEmbedContentPath = unit.content as string;
+          const unitEmbedContentPath = unit.content as string;
           const rawUnitEmbedContent = fs.readFileSync(
             unitEmbedContentPath,
             'utf-8',
