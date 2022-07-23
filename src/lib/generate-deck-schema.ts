@@ -73,13 +73,13 @@ export default async function buildDeckSchemaLua(
          {
             const units = unitJson[rank];
             (units as { [key: string]: unknown }[]).forEach((unit) => {
-               unit = { ...unit, rank, faction };
-               if (unit.content != null) {
+               if (unit.content != null)
+               {
                   var unitEmbedContentPath = unit.content as string;
                   let rawUnitEmbedContent = fs.readFileSync(unitEmbedContentPath, 'utf-8');
-                  unit = JSON.parse(rawUnitEmbedContent as string);
-                  unit = { ...unit, rank, faction };
+                  unit = JSON.parse(rawUnitEmbedContent as string);                 
                }
+               unit = { ...unit, rank, faction };
                let { name } = unit;
                if (unit.title) {
                   name = `${name} ${unit.title}`;
@@ -91,7 +91,6 @@ export default async function buildDeckSchemaLua(
             lua.push('    },');
          }
       }
-      
    }
   lua.push('  },');
 

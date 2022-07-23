@@ -400,6 +400,31 @@
       ]
     },
     {
+      "name": "Stormtroopers Heavy Response Unit",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698223/1BD4D728D5117B486BAA7D5328F3C76A3B8F0FA2/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 30,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 2
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711094/1DF94C3CDF022814179AFBA6D7521E6196760949/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711529/FF076CE02269A8505CB8EFC06749196FFD446391/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711653/C170DF086178164DC66188071D15E9EB36C9A742/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
+        }
+      ]
+    },
+    {
       "name": "Snowtroopers",
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701374/B2FE5819A3004E4C9A64FC3841FBCAE6F3465D2F/",
       "size": "small",
