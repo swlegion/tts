@@ -10,7 +10,7 @@
 
   "properties": {
     "units": {
-      "type": "string"
+      "type": "object"
     },
 
     "upgrades": {
