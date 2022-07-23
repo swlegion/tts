@@ -1,10 +1,10 @@
 {
   "units": {
-    "Rebel": { "content": "Rebel/RebelUnits.json" },
-    "Empire": { "content": "Empire/EmpireUnits.json" },
-    "Republic": { "content": "Republic/RepublicUnits.json"},
-    "Separatist": { "content": "Separtist/SepartistUnits.json" },
-    "ShadowCollective": { "content": "ShadowCollective/ShadowCollectiveUnits.json" }
+    "Rebel": "Rebel/RebelUnits.json",
+    "Empire": "Empire/EmpireUnits.json" ,
+    "Republic": "Republic/RepublicUnits.json",
+    "Separatist": "Separtist/SepartistUnits.json" ,
+    "ShadowCollective": "ShadowCollective/ShadowCollectiveUnits.json" 
   },
 
   "upgrades": {
@@ -2984,6 +2984,7 @@
       }
     ]
   },
+
   "battlefield": {
     "standard": {
       "objective": [
@@ -3353,6 +3354,7 @@
     "scenario": {},
     "community": {}
   },
+  
   "objects": {
     "Aim Token": {
       "token": {
