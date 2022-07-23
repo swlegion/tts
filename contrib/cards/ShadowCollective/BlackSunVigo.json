@@ -1,32 +1,17 @@
 {
-  "name": "Pyke Syndicate Foot Soldiers",
-  "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868670/B5F556896A00CC4788A8A071C97476E5AB544C71/",
+  "name": "Black Sun Vigo",
+  "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869531/DBF6D99CAD8725BBC9465C8C2788BB125D3997A6/",
   "size": "small",
   "type": "Trooper",
-  "points": 40,
+  "points": 50,
   "speed": 2,
   "upgrades": {
-    "Heavy Weapon": 1,
-    "Personnel": 1,
-    "Gear": 1,
-    "Grenades": 1
+    "Command": 1,
+    "Gear": 1
   },
   "minis": [
     {
-      "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143960/0C10D5D24C9E151FF751FC18AD82C24B8A0638F6/",
-      "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
-    },
-    {
-      "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420144048/289DC8DFD7C48CE342A4217838A7712BA166618F/",
-      "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
-    },
-    {
-      "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420144090/91B8441C6788DB3EB6185231B91E536C322417FA/",
-      "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
-    },
-    {
-      "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420142976/96875A590E8D125DFEF7B47949D66EED5CC90BB1/",
-      "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
+      "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143763/E93BA6716A05CA95AE2EA3B7C0DFD8AF145D5C22/"
     }
   ]
 }
