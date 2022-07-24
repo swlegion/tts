@@ -1435,10 +1435,10 @@
         {
           "name": "Pre Vizsla",
           "title": "Defender of Tradition",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1638738556640671157/50ED9FE9885FBF3530E3BF5D7E2ECA85E331972F/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1903351232712275380/1B5ACB94E1A338737F185125EF01122F2C5B1876/",
           "size": "small",
           "type": "Mandalorian Trooper",
-          "points": 165,
+          "points": 130,
           "speed": 3,
           "upgrades": {
             "Command": 1,
@@ -1456,17 +1456,17 @@
           "commands": [
             {
               "name": "Blade Launcher",
-              "image": "http://cloud-3.steamusercontent.com/ugc/1638738556640671650/36CC81AF419D113B28FC5AB7CF6B3210085DFB45/",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1903351232712282949/A20535A70AA97F8DD34047DA3BCB0BD85E2D5E42/",
               "pip": 1
             },
             {
               "name": "Warlord of Mandalore",
-              "image": "http://cloud-3.steamusercontent.com/ugc/1638738556640672041/2F91858F91AB3648DDEF429A5C1C584D129634C1/",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1903351232712284694/1DCAD7E41731CC07EF23D89A32AD5AE7F8817279/",
               "pip": 2
             },
             {
               "name": "Rise of the Death Watch",
-              "image": "http://cloud-3.steamusercontent.com/ugc/1638738556640672498/BED2FE1183721CCB1A1B623A6C4DED69383DA739/",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1903351232712285702/AA1327BDAAD46ECB22ED2FBE59C3C1A1C38A4A64/",
               "pip": 3
             }
           ]
@@ -1587,10 +1587,10 @@
         {
           "name": "Bo-Katan Kryze",
           "title": "Death Watch Lieutenant",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1638738556640560685/8771A2D7895F003917A4CD9D170E7D5FBAA81D65/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1903351232712303043/CC95752D040FE0AD1CD18E4E2ED89BC7355C87CD/",
           "size": "small",
           "type": "Mandalorian Trooper",
-          "points": 120,
+          "points": 110,
           "speed": 3,
           "upgrades": {
             "Training": 2,
@@ -1611,12 +1611,12 @@
             },
             {
               "name": "Fierce and Deadly",
-              "image": "http://cloud-3.steamusercontent.com/ugc/1638738556640561707/6E91E487B7F9AD4225A336081B4AB58F4AAB3CD2/",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1903351232712304453/573DDE64426290F6C49DDB56EE2614D88A0095C4/",
               "pip": 2
             },
             {
-              "name": "Memorable and Funny Quote",
-              "image": "http://cloud-3.steamusercontent.com/ugc/1638738556640562097/E3FFDCB0E1AC2EB8E690C90C0599AA093788759C/",
+              "name": "Take 'em out!",
+              "image": "http://cloud-3.steamusercontent.com/ugc/1903351232712305806/309155452F3CCF60AFF42FF23B9E0F8F68FD3520/",
               "pip": 3
             }
           ]
@@ -1923,10 +1923,10 @@
         },
         {
           "name": "Death Watch Fireteam",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1638738640736281138/4153C964147552CEAC2E3E23A51ED5358BC5C424/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1903351232712289183/74DB88A22A9EC985322CF65EB445B2C4E8C820A6/",
           "size": "small",
           "type": "Mandalorian Trooper",
-          "points": 54,
+          "points": 75,
           "speed": 3,
           "upgrades": {
             "Heavy Weapon": 1,
@@ -1954,10 +1954,10 @@
         {
           "name": "Nite Owls",
           "title": "Bo-Katan's Elite",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1638738640736216918/59B584E476FCEAE304E4E3152B4BF12843AE9214/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1903351232712287876/873721FD3A352B910EF923A0D48687BEE046722B/",
           "size": "small",
           "type": "Mandalorian Trooper",
-          "points": 60,
+          "points": 90,
           "speed": 3,
           "upgrades": {
             "Training": 1,
