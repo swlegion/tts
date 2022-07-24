@@ -181,6 +181,8 @@ local function initListSpawner(params)
     -- detect leader units
     local leaderInt = pMiniTable.leaderIndex
 
+    local leaderGUID = pMiniTable.miniObjs[leaderInt].obj.getGUID()
+
     for i, objEntry in pairs(pMiniTable.miniObjs) do
       -- init mini script
       local selectedMiniScript = ""
@@ -189,6 +191,9 @@ local function initListSpawner(params)
       local displayName = pMiniTable.displayName or objEntry.name
       objEntry.obj.setName(strColor.. " "..displayName)
       selectedMiniScript = selectedMiniScript .. "colorSide = '"..pMiniTable.colorSide.."'\nminiName = \""..objEntry.name.."\"\n"
+
+      -- SET LEADER GUID
+      selectedMiniScript = selectedMiniScript .. "leaderGUID = \"" .. leaderGUID .. "\"\n"
 
       if i == leaderInt then
         -- DESCRIPTION
