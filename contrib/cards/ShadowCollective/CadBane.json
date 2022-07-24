@@ -1,0 +1,45 @@
+{
+  "name": "Cad Bane",
+  "title": "Needs No Introduction",
+  "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867666/27A6A224821A974D619C9FE94A1C60AD39F60410/",
+  "size": "small",
+  "type": "Trooper",
+  "points": 105,
+  "speed": 2,
+  "upgrades": {
+    "Training": 2,
+    "Comms": 1,
+    "Gear": 1,
+    "Armament": 1,
+    "Grenades": 1
+  },
+  "minis": [
+    {
+      "mesh": "http://cloud-3.steamusercontent.com/ugc/1003681674396400482/F8900CFC9EF2309C9F54AE33AE5444B2B09DB1CD/",
+      "diffuse": "http://cloud-3.steamusercontent.com/ugc/1003681674396400696/907F4310FEA7A7CD89EE64A1AF3A8CC77897CCAC/"
+    }
+  ],
+  "commands": [
+    {
+      "name": "I'm Your Worst Nightmare",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036560/158F834A8FF94206F4F0149EF862D264E3B27804/",
+      "pip": 1
+    },
+    {
+      "name": "I'm In Control",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035284/D2D4B7D2CE80F63F0D2706764B9B4DB838B23F43/",
+      "pip": 2
+    },
+    {
+      "name": "I Make The Rules Now",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033609/804F443E3F33E8EB6622F46604963CE17A9D49EE/",
+      "pip": 3
+    }
+  ],
+  "additionalObjects": [
+    "Bane Token: Blank",
+    "Bane Token: Bomb",
+    "Bane Token: Bane",
+    "Victory Token"
+  ]
+}

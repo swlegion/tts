@@ -14,6 +14,12 @@
   "additionalProperties": false,
 
   "properties": {
+
+    "content":{
+      "description": "Path to JSON file with Unit content",
+      "type": "string"
+    },
+
     "name": {
       "type": "string",
       "minLength": 1

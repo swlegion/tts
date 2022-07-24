@@ -148,7 +148,7 @@ local function initListSpawner(params)
       z = adjustedPos.z,
     }
     local paddedBase = (base + padding) * 1.5
-    local basesPerRow = math.abs(math.floor(templateHalfWidth * 2.0 / paddedBase))
+    local basesPerRow = math.max(1, math.abs(math.floor(templateHalfWidth * 2.0 / paddedBase)))
     local newIndex = index
     local totalZOffset = initialZOffset(upgradeCount)
     if index > basesPerRow then
@@ -181,6 +181,8 @@ local function initListSpawner(params)
     -- detect leader units
     local leaderInt = pMiniTable.leaderIndex
 
+    local leaderGUID = pMiniTable.miniObjs[leaderInt].obj.getGUID()
+
     for i, objEntry in pairs(pMiniTable.miniObjs) do
       -- init mini script
       local selectedMiniScript = ""
@@ -189,6 +191,9 @@ local function initListSpawner(params)
       local displayName = pMiniTable.displayName or objEntry.name
       objEntry.obj.setName(strColor.. " "..displayName)
       selectedMiniScript = selectedMiniScript .. "colorSide = '"..pMiniTable.colorSide.."'\nminiName = \""..objEntry.name.."\"\n"
+
+      -- SET LEADER GUID
+      selectedMiniScript = selectedMiniScript .. "leaderGUID = \"" .. leaderGUID .. "\"\n"
 
       if i == leaderInt then
         -- DESCRIPTION
@@ -358,9 +363,11 @@ local function initListSpawner(params)
       rotation = {0, rotation.y + 180, 0},
       smooth   = false,
     })
-    local unitIdState = math.fmod(index, 10)
+
+    local unitIdState = ((index - 1) % 10) + 1
+
     if unitIdState > 1 then
-      unitId.setState(unitIdState)
+      unitId = unitId.setState(unitIdState)
     end
 
     local miniData = {
