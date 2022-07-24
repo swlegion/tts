@@ -1,0 +1,17 @@
+{
+  "name": "Black Sun Vigo",
+  "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869531/DBF6D99CAD8725BBC9465C8C2788BB125D3997A6/",
+  "size": "small",
+  "type": "Trooper",
+  "points": 50,
+  "speed": 2,
+  "upgrades": {
+    "Command": 1,
+    "Gear": 1
+  },
+  "minis": [
+    {
+      "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143763/E93BA6716A05CA95AE2EA3B7C0DFD8AF145D5C22/"
+    }
+  ]
+}

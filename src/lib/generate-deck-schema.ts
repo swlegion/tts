@@ -53,28 +53,41 @@ export default async function buildDeckSchemaLua(
   ];
 
   const units = json['units'];
+  const pathBase = 'contrib/cards';
   lua.push('  units = {');
-  Object.entries(units).forEach((factionAndRanks) => {
-    const [faction, ranks] = factionAndRanks;
-    lua.push(`    [${encodeKey(faction)}] = {`);
-    Object.entries(ranks as { [key: string]: unknown }).forEach(
-      (rankAndUnits) => {
-        const [rank, units] = rankAndUnits;
-        (units as { [key: string]: unknown }[]).forEach((unit) => {
-          unit = { ...unit, rank, faction };
-          let { name } = unit;
-          if (unit.title) {
-            name = `${name} ${unit.title}`;
-          }
-          lua.push(`      [${encodeKey(name as string)}] = {`);
-          lua.push(...formatData(unit, 8));
-          lua.push('      },');
-        });
-      },
-    );
-    lua.push('    },');
-  });
 
+  const unitsArray = Object.entries<string>(units);
+  const count = unitsArray.length;
+  for (let a = 0; a < count; a++) {
+    const faction = unitsArray[a][0];
+    lua.push(`    [${encodeKey(faction)}] = {`);
+
+    const unitContentPath: string = path.join(pathBase, unitsArray[a][1]);
+    const rawUnitJson = fs.readFileSync(unitContentPath, 'utf-8');
+    const unitJson = JSON.parse(rawUnitJson as string);
+    for (const rank in unitJson) {
+      const units = unitJson[rank];
+      (units as { [key: string]: unknown }[]).forEach((unit) => {
+        if (unit.content != null) {
+          const unitEmbedContentPath = unit.content as string;
+          const rawUnitEmbedContent = fs.readFileSync(
+            unitEmbedContentPath,
+            'utf-8',
+          );
+          unit = JSON.parse(rawUnitEmbedContent as string);
+        }
+        unit = { ...unit, rank, faction };
+        let { name } = unit;
+        if (unit.title) {
+          name = `${name} ${unit.title}`;
+        }
+        lua.push(`      [${encodeKey(name as string)}] = {`);
+        lua.push(...formatData(unit, 8));
+        lua.push('      },');
+      });
+    }
+    lua.push('    },');
+  }
   lua.push('  },');
 
   const allUpgradesSorted: { [key: string]: unknown }[] = [];

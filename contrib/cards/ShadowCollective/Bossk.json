@@ -1,0 +1,37 @@
+{
+  "name": "Bossk",
+  "title": "Trandoshan Terror",
+  "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867948/20A2EB617A2E756580A6A127046FFC24E28F1157/",
+  "size": "small",
+  "type": "Trooper",
+  "points": 105,
+  "speed": 2,
+  "upgrades": {
+    "Training": 2,
+    "Gear": 1
+  },
+  "minis": [
+    {
+      "mesh": "http://cloud-3.steamusercontent.com/ugc/948474323838791181/6B9D77B77DF8FD7AFA19342AD687F0E15A2E21B7/",
+      "diffuse": "http://cloud-3.steamusercontent.com/ugc/948474323838791276/ABFCDD8C71D484E6B6050080BB80B79D0DE93178/"
+    }
+  ],
+  "commands": [
+    {
+      "name": "Merciless Munitions",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036341/7FF893D01D2692E537EB6B157DCAB16421438FC4/",
+      "pip": 1
+    },
+    {
+      "name": "Reptilian Rampage",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034734/F11C62C109C1CA7EE490169555DBAE37E4A9B53C/",
+      "pip": 2
+    },
+    {
+      "name": "Lying In Wait",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033363/C8D04CF3CEE5DE82C69BAB90B7C61DFA842AE591/",
+      "pip": 3
+    }
+  ],
+  "additionalObjects": ["Proton Charge Token", "Victory Token"]
+}
