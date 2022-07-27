@@ -36,7 +36,7 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v7.0.0-beta</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v8.0.0-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
           
@@ -45,30 +45,16 @@
           <b>CHANGELOG</b>
 
           (Since last <i>Beta</i>)
-          
-          - Fix: Range ruler sizes and some token descriptions.
 
           (Since last <i>Stable</i>)
-          - Feat: Camera starts facing <b>BLUE</b> player now (not <b>RED</b>).
-          - Feat: Added cohesion hotkey.
-          - Feat: Support auto-Locking on moves.
+          - Feat: Shadow Collective Units added.
+          - Feat: BattleForces Command Cards and Units added.
+          - Feat: Added support for spawning Custom Boards at 3x3 and 6x4.
 
-          - Feat: Applied various point and errata changes (best effort).
-          - Feat: Battle cards now specify objects and zones programatically.
-          - Feat: Added full support for Skirmish battlefield decks.
-          - Feat: In-game list building improvements, including "Clone Previous".
-
-          - Fix: New semi-transparent range rulers and a speed-1 movement fix.
-          - Fix: Various pilots that were not selectable w/ list-builder are now.
-          - Fix: Medium base size and various movement tool oddities.
-          - Fix: Replaced movement tool colliders.
-          - Fix: Lists with an Empire unit now spawn as expected (no errors).
-          - Fix: Multiple issues with defining the battlefield and tokens.
-          - Fix: ID10 now spawns properly from online list builders.
-          - Fix: Blue player upgrade cards are no longer previewed upside down.
-          - Fix: Offensive/Defensive stance now selectable using the in-game builder.
-          - Fix: B2-HA Trooper spawns the right model.
-          - Fix: Spawned unit-specific tokens have ranges and are in bags only.
+          - Fix: Snail Tank is now on the correct size base.
+          - Fix: Large Base Unit Spawning placement.
+          - Fix: Range Rulers can be spawned from any Mini.
+          - Fix: UnitID Token numbers spawn and tint consistently.
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
