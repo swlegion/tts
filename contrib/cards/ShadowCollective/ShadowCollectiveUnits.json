@@ -38,10 +38,10 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/BlackSunVigo.json"
+      "content": "contrib/cards/ShadowCollective/BlackSunVigoUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateCapo.json"
+      "content": "contrib/cards/ShadowCollective/PykeSyndicateCapoUnit.json"
     }
   ],
   "Operative": [
@@ -98,18 +98,18 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/CadBane.json"
+      "content": "contrib/cards/ShadowCollective/CadBaneUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/Bossk.json"
+      "content": "contrib/cards/ShadowCollective/BosskUnit.json"
     }
   ],
   "Corps": [
     {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiers.json"
+      "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiersUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/BlackSunEnforcers.json"
+      "content": "contrib/cards/ShadowCollective/BlackSunEnforcersUnit.json"
     }
   ],
   "Special Forces": [
@@ -146,7 +146,7 @@
   ],
   "Support": [
     {
-      "content": "contrib/cards/ShadowCollective/SwoopBikeRiders.json"
+      "content": "contrib/cards/ShadowCollective/SwoopBikeRidersUnit.json"
     }
   ],
   "Heavy": [
