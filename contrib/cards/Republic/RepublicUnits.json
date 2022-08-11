@@ -358,6 +358,9 @@
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1028455893321728189/3FB4241F32F35813B6A934FCD3030D3F3D5B7090/"
         }
       ]
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiers.json"
     }
   ],
   "Special Forces": [
@@ -472,9 +475,6 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708043883/1EA1B3C21A50C20D4D168AB91ECFE1C01A4F7DF5/"
         }
       ]
-    },
-    {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiers.json"
     }
   ],
   "Support": [
