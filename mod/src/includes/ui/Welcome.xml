@@ -45,8 +45,7 @@
           <b>CHANGELOG</b>
 
           (Since last <i>Beta</i>)
-
-          (Since last <i>Stable</i>)
+          <!--(Since last <i>Stable</i>)-->
           - Fix: Pykes moved to Corps Rank for GAR.
           - Fix: Pykes models are more reasonable size.
           - Fix: Echo restrictions corrected.
