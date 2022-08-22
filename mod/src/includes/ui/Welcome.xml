@@ -47,14 +47,12 @@
           (Since last <i>Beta</i>)
 
           (Since last <i>Stable</i>)
-          - Feat: Shadow Collective Units added.
-          - Feat: BattleForces Command Cards and Units added.
-          - Feat: Added support for spawning Custom Boards at 3x3 and 6x4.
-
-          - Fix: Snail Tank is now on the correct size base.
-          - Fix: Large Base Unit Spawning placement.
-          - Fix: Range Rulers can be spawned from any Mini.
-          - Fix: UnitID Token numbers spawn and tint consistently.
+          - Fix: Pykes moved to Corps Rank for GAR.
+          - Fix: Pykes models are more reasonable size.
+          - Fix: Echo restrictions corrected.
+          - Fix: Darkened BattleForce Command and Unit Cards.
+          - Fix: Material Tinting for SC Maul.
+          - Fix: Material Tinting for BSE Unit Leader.
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
