@@ -858,6 +858,7 @@
       "type": "Droid Trooper",
       "points": 95,
       "speed": 1,
+      "tokens": 2,
       "upgrades": {
         "Heavy Weapon": 2,
         "Personnel": 1,
