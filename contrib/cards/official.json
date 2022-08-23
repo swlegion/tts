@@ -1090,7 +1090,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139032/FD73A6FDED667993F98B7FBD7A1B3A408065B07F/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357841451/50164A1C84E6D119BC45BDD31C8209ED7D9A0F29/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696515357841757/1DC29C81D9DFCB2FB7D8A3B2EA2F2ABD3F416396/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080713966/46952E774C97E45A1E936D35B3FC7C9392F5950F/"
         },
         "points": 28,
         "restrictions": {
@@ -1515,7 +1515,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144436/3D8E7C0C4D7A837EEE925B65E044F1EF8B3388C4/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321578281/CBFA560559FE81326342AD0B65D2349447F882EB/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1028455893321728189/3FB4241F32F35813B6A934FCD3030D3F3D5B7090/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
         },
         "points": 20,
         "restrictions": {
@@ -1699,7 +1699,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146078/510B97CE7AEF65B5AC75FE3D94C769AB2CD070CD/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696350886429750/5D62ADB1200B1AD16A0349AF87E757F40E720115/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696350886427771/60D6CA1D97D822A2222E4FAF614931265B7B0AF2/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080686656/A6DDF6C03FED22656FD7714348E27ECF8144218E/"
         },
         "points": 38,
         "restrictions": {
@@ -1713,7 +1713,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146355/375DF871CB9930A2C15C7A310420AC1541AB8830/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357881561/B365369415AE0FB6A96E69817D76D9BAD1366038/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080696961/0E039C55249C023EF22B04536617ACB67DB5AABA/"
         },
         "leader": true,
         "points": 38,
@@ -1756,7 +1756,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146709/F3874CF8FD491DEF02AA37F322C61B51463D2ECD/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321579074/D5F10426146B81D46F02B027B9C4CC875FA6DA00/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1028455893321728189/3FB4241F32F35813B6A934FCD3030D3F3D5B7090/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
         },
         "points": 27,
         "restrictions": {
@@ -1957,7 +1957,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139272/747D9B51470E308061A8A4A21FBA5B28B2CEC1BB/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035126931/4EAB6085C2D2D6C176B3C9847E2F1F228CEFE7BB/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035127510/89D5E03C721391A7CBC7930180396F3B14E5273F/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080662099/EB7BD333EDF05BC6586516E0F3E6FD9AE270F11E/"
         },
         "leader": true,
         "points": 20,
@@ -1971,8 +1971,8 @@
         "name": "Clone Comms Technician",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139301/BA6F9C1E1B03C96908FD244F7F17188E070E5CF0/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035131182/F5BA58F09282727EFB8E38BA478970E44B983EED/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035131690/ED66D23D4467396F6858928E9FEE1DABB4F9B446/"
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281396590/F88D24438DE4A59DD0CDE3C0779FF9B35B7E42C4/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
         },
         "points": 12,
         "restrictions": {
@@ -1985,8 +1985,8 @@
         "name": "Clone Engineer",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139332/EFBC734554388F0628F88FF6AA3C3E8AA078141C/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035133539/7AD5C8B323760EFE19570C8F8D0DDA994973F03B/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035133984/DF3D2C9C54EBD45F87B48DCE203019FDD5FAECD2/"
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281395509/5B7CE64AA6E972FE9A7F08B202EF082B8EA5C0E0/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
         },
         "points": 18,
         "restrictions": {
@@ -1999,8 +1999,8 @@
         "name": "Clone Medic",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139361/BD135C31EA1FAE5CED684E0BAEA59F27C40A42B1/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035135224/49D60D4EE5794A206AF8F604A68F58979CFEBC42/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035135810/BD84B4C5CAA84DDA6302739AD749CD29B1C39669/"
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281399144/E1A292B1D9C5B721F4BD6C870F1DAC5BDDAF9650/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
         },
         "points": 20,
         "restrictions": {
@@ -2143,7 +2143,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144398/18C969B5FB9B6031557CF11FE2397E6AD8955624/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321406830/59DC907FEFEF65FBAF245A3B31A4251026FC93AA/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1028455893321728189/3FB4241F32F35813B6A934FCD3030D3F3D5B7090/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
         },
         "points": 13,
         "restrictions": {
@@ -2157,7 +2157,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144469/375C3AB7DF614E63735F3A1FBF98F4FCD9E1507E/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035005605/95FAACF9FF4F9B6AB1921E3FD8C896DC631069BF/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035006060/711173DA172C4BC50686BBBC9C0D8BA1764D3175/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081520233/F4D0CE258F3C44457C38B967D6E5224570A800DA/"
         },
         "points": 12,
         "restrictions": {
@@ -2356,7 +2356,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146138/2F28A64E405A9426CB3248FB8D9D4F9B7FFA2E4B/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1022821664192681738/6062182D66F6F043E4DCF98FCD592CBD7ECDFF18/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1022821664192681931/11AB7637C0B8C60CB2E4BDC90F006B887A69DAF0/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081515538/DFE6A5BB3F95EDBAEFDDA95E5B873D8B636CB499/"
         },
         "leader": true,
         "points": 18,
@@ -2371,7 +2371,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146561/848DFAE83E6BF72D5D657ACB7B07CAFFABDCEA68/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364034959851/4D7F0531A10AEA9421878B1535604FDF1EBAE8D1/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364034974176/209AEB14BF56D899CB9220BDB0BAB98CE2BA90D4/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081523130/EF8D89A1578C399AC03F1795C512B234EFE1B8C2/"
         },
         "points": 6,
         "restrictions": {
