@@ -383,7 +383,7 @@
     {
       "name": "IG-88",
       "title": "Notorious Assassin Droid",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867948/20A2EB617A2E756580A6A127046FFC24E28F1157/",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527656/131943FCDA732152E47C83B06C416F36E8D92B19/",
       "size": "small",
       "type": "Droid Trooper",
       "points": 110,
@@ -395,8 +395,7 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/948474323838791181/6B9D77B77DF8FD7AFA19342AD687F0E15A2E21B7/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/948474323838791276/ABFCDD8C71D484E6B6050080BB80B79D0DE93178/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728519554838320/3D09E095493D4303EF2959D728F857267DDEF2FC/"
         }
       ],
       "additionalObjects": ["Victory Token"]
@@ -854,7 +853,7 @@
     },
     {
       "name": "Imperial Dark Troopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700975/F5BACD8B7607BCB5FAA1576B7FA4151FA0A5CA59/",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527712/71B0994D310D9DE9D711739E7C309FD3C93C4336/",
       "size": "small",
       "type": "Droid Trooper",
       "points": 95,
@@ -862,12 +861,20 @@
       "upgrades": {
         "Heavy Weapon": 2,
         "Personnel": 1,
-        "Protocols": 1
+        "Programming": 1
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/999141806429351360/24C098E7B3D1708CDCFB9AEA4B2C445EF2DBAEE0/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752434998239690716/C6578DAF9012605B1F44A907D1C28646E34A73CF/"
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305474570/777B8146B150032E3D733D17110BE5887D1AB991/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305474824/49EFFD221EF1EBD3F3365B6B73B9A4A5C6E6A075/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305474956/BB78111128E91BB2DB22F2990AFB438B9EA5FC0E/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/"
         }
       ]
     }

@@ -258,6 +258,16 @@
             "unit": ["Mandalorian Super Commandos"]
           }
         }
+      },
+      {
+        "name": "Din's Amban Rifle",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527123/B78DE61B41F9665BD772F28F218BBAA87D37F1A4/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
+          }
+        }
       }
     ],
     "Command": [
@@ -410,6 +420,19 @@
         "restrictions": {
           "include": {
             "unit": ["Iden Versio"]
+          }
+        }
+      },
+      {
+        "name": "Grogu",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505080628898/0AD977B53010124C73F966F87EC1E3CBB0F18255/",
+        "points": 17,
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728519554838272/18757ECBB829B90FC82434C8E7127A19CC7EE15A/"
+        },
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
           }
         }
       }
@@ -741,6 +764,26 @@
         "name": "Prepared Supplies",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869351/DE9290CC7840AD39A4EFFE0B0CD6D5E99A651C52/",
         "points": 5
+      },
+      {
+        "name": "Din's Flame Projector",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554809568/375A928C88C8020291925E40BA19F40C92E9DE1F/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
+          }
+        }
+      },
+      {
+        "name": "The Mando's Jetpack",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554809657/3764760A87911D68177CFFC7A20496C62F595F6A/",
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
+          }
+        }
       }
     ],
     "Generator": [
@@ -2438,10 +2481,10 @@
       },
       {
         "name": "Boil",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144749/756F13AF16D25AED9D6AC864E92D17F0C28FF4DD/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554830118/848C17C6AF01EE3F4F9D9068CEB2573EFAA86A24/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862726770/62FECAB3FED284E098751CC3BBC70C4CFF828A58/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862727097/DE589901F66E4079D82BA2C819672F622A5D7240/"
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1911232618851891928/ED9CBE2565F8E3F500CC6EF4C6677CF8E7161EB8/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1931498942571392139/6DA6C0216BF212E8E636F3D63AE1FF0FE3C33987/"
         },
         "leader": true,
         "points": 15,
@@ -2454,10 +2497,10 @@
       },
       {
         "name": "Waxer",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144749/756F13AF16D25AED9D6AC864E92D17F0C28FF4DD/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554830210/E9BB75496CABD12DEE959D8733E9F19A87AFC87E/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862726770/62FECAB3FED284E098751CC3BBC70C4CFF828A58/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862727097/DE589901F66E4079D82BA2C819672F622A5D7240/"
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321577529/3034903B0501BE08E398BCC7F0D735B308DA9377/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1931498942569352826/2FA98E1EB47F345406DC410F1DBBE50F4A8EC359/"
         },
         "leader": true,
         "points": 15,
@@ -2752,6 +2795,17 @@
         "restrictions": {
           "include": {
             "type": ["Vehicle"]
+          }
+        }
+      },
+      {
+        "name": "Nanny Programming",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527805/6FBD0F57EA4E387AB50CB6336F964AF0D7F3629E/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["IG-11"],
+            "faction": ["Rebel"]
           }
         }
       }

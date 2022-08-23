@@ -1,7 +1,7 @@
 {
   "name": "Din Djarin",
   "title": "The Mandalorian",
-  "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867948/20A2EB617A2E756580A6A127046FFC24E28F1157/",
+  "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527447/B7A57C2B3327EF48CFB4C9329C7B1042553F03F5/",
   "size": "small",
   "type": "Trooper",
   "points": 105,
@@ -10,18 +10,18 @@
     "Training": 2,
     "Comms": 1,
     "Gear": 2,
-    "Armament": 1
+    "Armament": 1,
+    "Counterpart": 1
   },
   "minis": [
     {
-      "mesh": "http://cloud-3.steamusercontent.com/ugc/948474323838791181/6B9D77B77DF8FD7AFA19342AD687F0E15A2E21B7/",
-      "diffuse": "http://cloud-3.steamusercontent.com/ugc/948474323838791276/ABFCDD8C71D484E6B6050080BB80B79D0DE93178/"
+      "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728519554838224/65D2C0280026A313878AE7D5F38E17A4717584DD/"
     }
   ],
   "commands": [
     {
       "name": "Whistling Birds",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033363/C8D04CF3CEE5DE82C69BAB90B7C61DFA842AE591/",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527503/2DF990D405E73D3E4A0F7A7E7AD1F52C6E71296F/",
       "pip": 3
     }
   ],
