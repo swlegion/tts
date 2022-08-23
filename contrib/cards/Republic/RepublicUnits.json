@@ -215,6 +215,26 @@
     },
     {
       "content": "contrib/cards/ShadowCollective/PykeSyndicateCapo.json"
+    },
+    {
+      "name": "Clone Commander Cody",
+      "title": "Leader of the 212th",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790598/868FE96BEB709EE3A25D7973FF259B8BF7824475/",
+      "size": "small",
+      "type": "Clone Trooper",
+      "points": 105,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Training": 1,
+        "Gear": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456806720/869654FC3B0590BFFF2E1845C3CFA9169838EBF9/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/776232727456806858/52327997163A5113DF9E11B85F9DA8B6B970012C/"
+        }
+      ]
     }
   ],
   "Operative": [

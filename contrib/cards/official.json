@@ -2435,6 +2435,38 @@
             "unit": ["Pyke Syndicate Foot Soldiers"]
           }
         }
+      },
+      {
+        "name": "Boil",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144749/756F13AF16D25AED9D6AC864E92D17F0C28FF4DD/",
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862726770/62FECAB3FED284E098751CC3BBC70C4CFF828A58/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862727097/DE589901F66E4079D82BA2C819672F622A5D7240/"
+        },
+        "leader": true,
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "type": ["Clone Trooper"],
+            "rank": ["Corps"]
+          }
+        }
+      },
+      {
+        "name": "Waxer",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144749/756F13AF16D25AED9D6AC864E92D17F0C28FF4DD/",
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862726770/62FECAB3FED284E098751CC3BBC70C4CFF828A58/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862727097/DE589901F66E4079D82BA2C819672F622A5D7240/"
+        },
+        "leader": true,
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "type": ["Clone Trooper"],
+            "rank": ["Corps"]
+          }
+        }
       }
     ],
     "Pilot": [

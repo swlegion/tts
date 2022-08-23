@@ -1,0 +1,21 @@
+{
+  "name": "IG-11",
+  "title": "Nurse and Protect",
+  "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867948/20A2EB617A2E756580A6A127046FFC24E28F1157/",
+  "size": "small",
+  "type": "Trooper",
+  "points": 105,
+  "speed": 2,
+  "upgrades": {
+    "Training": 1,
+    "Comms": 1,
+    "Gear": 1,
+    "Protocols": 1
+  },
+  "minis": [
+    {
+      "mesh": "http://cloud-3.steamusercontent.com/ugc/948474323838791181/6B9D77B77DF8FD7AFA19342AD687F0E15A2E21B7/",
+      "diffuse": "http://cloud-3.steamusercontent.com/ugc/948474323838791276/ABFCDD8C71D484E6B6050080BB80B79D0DE93178/"
+    }
+  ]
+}
