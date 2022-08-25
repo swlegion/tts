@@ -503,6 +503,9 @@
         }
       ],
       "additionalObjects": ["Victory Token"]
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/Din.json"
     }
   ],
   "Corps": [
