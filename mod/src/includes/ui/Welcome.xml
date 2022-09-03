@@ -36,22 +36,20 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v8.0.1-beta</b>.
-
-          This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
-          
-          To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.
+          Welcome to Star Wars: Legion for TTS, <b>v6.1.0</b>.
 
           <b>CHANGELOG</b>
 
-          (Since last <i>Beta</i>)
-          <!--(Since last <i>Stable</i>)-->
-          - Fix: Pykes moved to Corps Rank for GAR.
-          - Fix: Pykes models are more reasonable size.
+          (Since v6.0.1)
+
+          - Feat: Shadow Collective Units added.
+          - Feat: BattleForces Command Cards and Units added.
+          - Feat: Added support for spawning Custom Boards at 3x3 and 6x4.
+          - Fix: Snail Tank is now on the correct size base.
+          - Fix: Large Base Unit Spawning placement.
+          - Fix: Range Rulers can be spawned from any Mini.
+          - Fix: UnitID Token numbers spawn and tint consistently.
           - Fix: Echo restrictions corrected.
-          - Fix: Darkened BattleForce Command and Unit Cards.
-          - Fix: Material Tinting for SC Maul.
-          - Fix: Material Tinting for BSE Unit Leader.
           - Fix: Army List Faction "Overflow" Buttons are bigger.
         </Text>
       </VerticalLayout>
