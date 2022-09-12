@@ -460,7 +460,7 @@
       "size": "small",
       "type": "Trooper",
       "points": 120,
-      "speed": 3,
+      "speed": 2,
       "upgrades": {
         "Training": 2,
         "Gear": 2

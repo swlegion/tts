@@ -336,10 +336,10 @@
       "size": "small",
       "type": "Trooper",
       "points": 175,
-      "speed": 1,
+      "speed": 2,
       "upgrades": {
         "Force": 2,
-        "Training": 1
+        "Training": 2
       },
       "minis": [
         {
