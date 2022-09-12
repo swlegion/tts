@@ -36,7 +36,7 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v8.0.2-beta</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v8.0.3-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
           
@@ -46,14 +46,11 @@
 
           (Since last <i>Beta</i>)
           <!--(Since last <i>Stable</i>)-->
-          - Feat: Added Preview Models
-            - Boba Fett (The Old and Wise)
-            - Mando and Grogu
-            - IG88 and IG11
-            - Darktroopers
-            - Cody
-            - Waxer and Boil
-          - Fix: Homebrew model Textures updated to support Projectors
+          - Fix: Maul base tints correctly
+          - Fix: Tinting on Super Commandos improved
+          - Fix: IG88 base tints correctly
+          - Fix: Card art for Take That Clankers 
+          - Fix: New AA5 model 
 
         </Text>
       </VerticalLayout>
