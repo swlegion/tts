@@ -268,6 +268,16 @@
             "unit": ["Din Djarin"]
           }
         }
+      },
+      {
+        "name": "Beskar Spear",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906626/DF09FB811E1E1B773A2681089D13ADD21A9A488B/",
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
+          }
+        }
       }
     ],
     "Command": [
@@ -767,7 +777,7 @@
       },
       {
         "name": "Din's Flame Projector",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554809568/375A928C88C8020291925E40BA19F40C92E9DE1F/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906580/1EC967CC4F871D07D3F419B4CF574394D289DBB6/",
         "points": 8,
         "restrictions": {
           "include": {
