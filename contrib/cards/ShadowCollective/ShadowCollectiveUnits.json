@@ -7,7 +7,7 @@
       "size": "small",
       "type": "Trooper",
       "points": 105,
-      "speed": 2,
+      "speed": 3,
       "upgrades": {
         "Training": 2,
         "Comms": 1,
