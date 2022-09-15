@@ -16,5 +16,12 @@
     {
       "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728519554838170/7EDDCC155FD485AB58D07C8350728C0C558D9628/"
     }
+  ],
+  "commands": [
+    {
+      "name": "The Hand Thing",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906539/BD2C2A9E435DD031F961B4DB6BFA6C492D84A740/",
+      "pip": 2
+    }
   ]
 }
