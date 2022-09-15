@@ -36,7 +36,7 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v8.0.1-beta</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v8.0.5-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
           
@@ -46,13 +46,8 @@
 
           (Since last <i>Beta</i>)
           <!--(Since last <i>Stable</i>)-->
-          - Fix: Pykes moved to Corps Rank for GAR.
-          - Fix: Pykes models are more reasonable size.
-          - Fix: Echo restrictions corrected.
-          - Fix: Darkened BattleForce Command and Unit Cards.
-          - Fix: Material Tinting for SC Maul.
-          - Fix: Material Tinting for BSE Unit Leader.
-          - Fix: Army List Faction "Overflow" Buttons are bigger.
+          - Fix: Set Gar Saxon default to Speed 3
+
         </Text>
       </VerticalLayout>
     </VerticalScrollView>

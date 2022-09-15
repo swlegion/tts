@@ -291,14 +291,29 @@
       ],
       "commands": [
         {
+          "name": "A Simple Man",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527247/05CDA2737D98FB18CACE99E65CE51E5AB24ABA0B/",
+          "pip": 1
+        },
+        {
           "name": "Whipcord Launcher",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035802/A1AA027AE84C3CF96C2E671C6BFA78E2C94E2741/",
           "pip": 1
         },
         {
+          "name": "Making His Way in the Galaxy",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527294/F0CD781F4680C3BBBDA58B1CECE1A3FF3B6821FE/",
+          "pip": 2
+        },
+        {
           "name": "ZX Flame Projector",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034359/7CC1427FEA79D22D3128A5650F8A93159661A656/",
           "pip": 2
+        },
+        {
+          "name": "Rule with Respect",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527380/9CF23D52011D3B943E8DE565D19E91EC579F5784/",
+          "pip": 3
         },
         {
           "name": "Z-6 Jetpack Rocket",
@@ -321,10 +336,10 @@
       "size": "small",
       "type": "Trooper",
       "points": 175,
-      "speed": 1,
+      "speed": 2,
       "upgrades": {
         "Force": 2,
-        "Training": 1
+        "Training": 2
       },
       "minis": [
         {
@@ -364,6 +379,32 @@
           "pip": 3
         }
       ]
+    },
+    {
+      "name": "IG-88",
+      "title": "Notorious Assassin Droid",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527656/131943FCDA732152E47C83B06C416F36E8D92B19/",
+      "size": "small",
+      "type": "Droid Trooper",
+      "points": 110,
+      "speed": 2,
+      "upgrades": {
+        "Training": 1,
+        "Comms": 1,
+        "Gear": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1789640371719058670/9E6B82A0BF8367F2C6D369BD3464DA5E9D0C7917/"
+        }
+      ],
+      "additionalObjects": ["Victory Token"]
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/Din.json"
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/IG11.json"
     }
   ],
   "Corps": [
@@ -807,6 +848,34 @@
       "minis": [
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1747939379132611640/1EEBEB993635A56525283FAFA0D62D347FB3121C/"
+        }
+      ]
+    },
+    {
+      "name": "Imperial Dark Troopers",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527712/71B0994D310D9DE9D711739E7C309FD3C93C4336/",
+      "size": "small",
+      "type": "Droid Trooper",
+      "points": 95,
+      "speed": 1,
+      "tokens": 2,
+      "upgrades": {
+        "Heavy Weapon": 2,
+        "Personnel": 1,
+        "Programming": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1785135125810942830/666860D7C34C83C500C62BDDE115F30C59A42C74/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1785135125810912826/C8DC9A4C090BD07BA1E4BBB18FDA219041A653E5/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1785135125810942938/E77EC5970DA310A2E1D96F796E98D82813AE0891/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1785135125810912826/C8DC9A4C090BD07BA1E4BBB18FDA219041A653E5/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1785135125810943021/4B5888D461F54C2C281B108233D1F1D8D8C2A679/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1785135125810912826/C8DC9A4C090BD07BA1E4BBB18FDA219041A653E5/"
         }
       ]
     }

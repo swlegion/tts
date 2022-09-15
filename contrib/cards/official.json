@@ -258,6 +258,26 @@
             "unit": ["Mandalorian Super Commandos"]
           }
         }
+      },
+      {
+        "name": "Din's Amban Rifle",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527123/B78DE61B41F9665BD772F28F218BBAA87D37F1A4/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
+          }
+        }
+      },
+      {
+        "name": "Beskar Spear",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906626/DF09FB811E1E1B773A2681089D13ADD21A9A488B/",
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
+          }
+        }
       }
     ],
     "Command": [
@@ -410,6 +430,19 @@
         "restrictions": {
           "include": {
             "unit": ["Iden Versio"]
+          }
+        }
+      },
+      {
+        "name": "Grogu",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527550/67B9752CF162B34F3D406C7D244974C01F7BFA4C/",
+        "points": 17,
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1785135165610974498/47B1C8B92A0E945388F7773EAB2F73B0A81E761E/"
+        },
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
           }
         }
       }
@@ -741,6 +774,26 @@
         "name": "Prepared Supplies",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869351/DE9290CC7840AD39A4EFFE0B0CD6D5E99A651C52/",
         "points": 5
+      },
+      {
+        "name": "Din's Flame Projector",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906580/1EC967CC4F871D07D3F419B4CF574394D289DBB6/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
+          }
+        }
+      },
+      {
+        "name": "The Mando's Jetpack",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554809657/3764760A87911D68177CFFC7A20496C62F595F6A/",
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
+          }
+        }
       }
     ],
     "Generator": [
@@ -1769,7 +1822,7 @@
         "name": "Rook Kast",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868786/3A9F4271A4AB786FD93CFEFCBF41BC18B930BB0F/",
         "mini": {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420351362/DA7859939BB8D400B298960EAB1D74B896EFAF4A/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1789640371719006177/3A456EB29012BFBE4322E020CBC08CF6F915BBF3/"
         },
         "leader": true,
         "points": 35,
@@ -1784,7 +1837,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869300/DE8184C6612CB3692648B62D2B0A00DB66227658/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143500/4BDEA7F5B523FC06641B3D71D1E112DC14BD7F81/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351306/EFEFDB9E92944062769E8F0E5049027695F29A98/"
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200823/B886D3157AA2F2528F4E5F76F26DF44A41496615/"
         },
         "points": 24,
         "restrictions": {
@@ -1798,7 +1851,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868228/FC69830397335680A33E25E45AE19D006FA27D54/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143366/41AB7DFFD2FCF20E2BCC3F899F728863C30F6343/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351306/EFEFDB9E92944062769E8F0E5049027695F29A98/"
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200823/B886D3157AA2F2528F4E5F76F26DF44A41496615/"
         },
         "points": 30,
         "restrictions": {
@@ -1812,7 +1865,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868369/DC8B8AEF385F79F612BA4D7E4ABC786BE3F54E3A/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143451/3DFD9C8BD5D504D3A2F7934678D1A0A7C2285863/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351150/1DBD7C5F4F961063003BF06120675733FC7D147D/"
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200769/60353F40BAE6D92D6F6ED24E2883EB9CC2EA74C4/"
         },
         "points": 30,
         "restrictions": {
@@ -2435,6 +2488,38 @@
             "unit": ["Pyke Syndicate Foot Soldiers"]
           }
         }
+      },
+      {
+        "name": "Boil",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554830118/848C17C6AF01EE3F4F9D9068CEB2573EFAA86A24/",
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1911232618851891928/ED9CBE2565F8E3F500CC6EF4C6677CF8E7161EB8/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1931498942571392139/6DA6C0216BF212E8E636F3D63AE1FF0FE3C33987/"
+        },
+        "leader": true,
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "type": ["Clone Trooper"],
+            "rank": ["Corps"]
+          }
+        }
+      },
+      {
+        "name": "Waxer",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554830210/E9BB75496CABD12DEE959D8733E9F19A87AFC87E/",
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321577529/3034903B0501BE08E398BCC7F0D735B308DA9377/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1931498942569352826/2FA98E1EB47F345406DC410F1DBBE50F4A8EC359/"
+        },
+        "leader": true,
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "type": ["Clone Trooper"],
+            "rank": ["Corps"]
+          }
+        }
       }
     ],
     "Pilot": [
@@ -2720,6 +2805,17 @@
         "restrictions": {
           "include": {
             "type": ["Vehicle"]
+          }
+        }
+      },
+      {
+        "name": "Nanny Programming",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527805/6FBD0F57EA4E387AB50CB6336F964AF0D7F3629E/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["IG-11"],
+            "faction": ["Rebel"]
           }
         }
       }

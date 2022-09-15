@@ -7,7 +7,7 @@
       "size": "small",
       "type": "Trooper",
       "points": 105,
-      "speed": 2,
+      "speed": 3,
       "upgrades": {
         "Training": 2,
         "Comms": 1,
@@ -61,7 +61,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728387706846394/29AD91AA9050926A7D381620F757E7438BBD951E/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1789640371719014130/7A59CCE5B8A8C87DD3952C15819FAA8921708A75/"
         }
       ],
       "commands": [
@@ -131,15 +131,15 @@
       "minis": [
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143408/F4A88228E11334545EACA86B36E6B2008E76B0D3/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351150/1DBD7C5F4F961063003BF06120675733FC7D147D/"
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200769/60353F40BAE6D92D6F6ED24E2883EB9CC2EA74C4/"
         },
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143500/4BDEA7F5B523FC06641B3D71D1E112DC14BD7F81/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351306/EFEFDB9E92944062769E8F0E5049027695F29A98/"
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200823/B886D3157AA2F2528F4E5F76F26DF44A41496615/"
         },
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143285/F206D67AFF9379B68AD0795767DA378CE80D44AE/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351306/EFEFDB9E92944062769E8F0E5049027695F29A98/"
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200823/B886D3157AA2F2528F4E5F76F26DF44A41496615/"
         }
       ]
     }
@@ -165,7 +165,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112441763385/D4CD2ABCABB50B3F71AD37BF307F6F15383E0D24/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1802024425338475527/29D3660FA84E5B9F804B840C18E68F5631EE6462/"
         }
       ]
     }

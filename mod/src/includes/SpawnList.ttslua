@@ -316,14 +316,22 @@ local function initListSpawner(params)
     position.y = position.y + 0.5 + (0.2 * index)
     local rotation = self.getRotation()
     rotation.y = rotation.y + 180
-    initializeCommandToken({
-      name          = commandName,
-      commandType   = commandType,
-      pos           = position,
-      rot           = rotation,
-      baseSize      = unitInfo.size,
-      selectedSpeed = unitInfo.speed,
-    })
+
+    local tokensToSpawn = 1
+    print(unitInfo.tokens)
+    if unitInfo.tokens then
+      tokensToSpawn = unitInfo.tokens
+    end
+    for i = tokensToSpawn, 1, -1 do
+      initializeCommandToken({
+        name          = commandName,
+        commandType   = commandType,
+        pos           = position,
+        rot           = rotation,
+        baseSize      = unitInfo.size,
+        selectedSpeed = unitInfo.speed,
+      })
+    end
   end
 
   local function spawnUnit(

@@ -127,6 +127,12 @@
 
     "additionalObjects": {
       "$ref": "./AdditionalObjects.json"
+    }, 
+
+    "tokens": {
+      "type": "number",
+      "minimum": 1,
+      "description": "Optional number of Command Tokens to spawn with this Unit."
     }
   },
 

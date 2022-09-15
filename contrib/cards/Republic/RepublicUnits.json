@@ -65,7 +65,7 @@
         },
         {
           "name": "Take That, Clankers!",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298677/D4379214870C631017E66075B5457409AB19A77D/",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034598/FAD8628CEF4BC9782992174756FD109E5AD8E949/",
           "pip": 2
         },
         {
@@ -215,6 +215,26 @@
     },
     {
       "content": "contrib/cards/ShadowCollective/PykeSyndicateCapo.json"
+    },
+    {
+      "name": "Clone Commander Cody",
+      "title": "Leader of the 212th",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554830167/CB5BD832D003FF4C5961CBA3E67D7D975C20E11E/",
+      "size": "small",
+      "type": "Clone Trooper",
+      "points": 105,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Training": 1,
+        "Gear": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1931498942568777590/0BA60DFCDA7322FE873E450157E4186CD1E095AD/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1931498942568777830/0B9A3EA22942328754AB85811EF3E367EE244F2D/"
+        }
+      ]
     }
   ],
   "Operative": [

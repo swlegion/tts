@@ -143,6 +143,7 @@ function Shelf:spawnUnitModels(params)
     size   = card.size,
     height = card.height or 2,
     models = result,
+    tokens = card.tokens
   }
 end
 
