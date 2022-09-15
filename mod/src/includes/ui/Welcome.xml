@@ -36,27 +36,14 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v7.1.0</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v7.1.1</b>.
 
           To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.
 
           <b>CHANGELOG</b>
           <!--(Since last <i>Beta</i>)-->
           (Since last <i>Stable</i>)
-          - Feat: Added Shadow Collective Faction and Units
-          - Feat: Added Preview Content Units
-            - Din Djarin
-            - Boba Fett The Old and Wise
-            - IG-88
-            - IG-11
-            - Imperial DarkTroopers
-          - Feat: Added BattleForce Cards and Units
-          - Feat: Added options for different Custom Board Sizes
-          - Fix: Take that Clankers card art fixed
-          - Fix: Updated AA5 Model
-          - Fix: Updated lots of Textures to work with Projectors
-          - Fix: Range Rulers can be spawned from any Mini via hotkey
-          - Fix: Improved Spawn placement of Units
+          - Fix: Add 'The Hand Thing' CC to IG11
 
         </Text>
       </VerticalLayout>
