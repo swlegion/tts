@@ -398,6 +398,23 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1789640371719058670/9E6B82A0BF8367F2C6D369BD3464DA5E9D0C7917/"
         }
       ],
+      "commands": [
+        {
+          "name": "Focused on the Kill",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1883093542256527598/80232945F2FFF7AD739F762446430D62F099D65A/",
+          "pip": 1
+        },
+        {
+          "name": "A Machine Made For Killing",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1883093542256527660/AD18F5D38A427F0CAAEC5F3016FBD31050134B7A/",
+          "pip": 2
+        },
+        {
+          "name": "Independent Programming",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1883093542256527538/49D0CD2A0FB411B1377ADB299395E3A3356B492F/",
+          "pip": 2
+        }
+      ],
       "additionalObjects": ["Victory Token"]
     },
     {

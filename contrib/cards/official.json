@@ -2818,6 +2818,16 @@
             "faction": ["Rebel"]
           }
         }
+      },
+      {
+        "name": "\"Bounty\" Programming",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1883093542262844219/53CD038C2ED3712A10B665C0E7B58A981A8201C8/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["IG-11"]
+          }
+        }
       }
     ],
     "Training": [
