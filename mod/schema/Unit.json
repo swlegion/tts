@@ -7,7 +7,16 @@
 
   "definitions": {
     "Bases": {
-      "enum": [ "small", "medium", "large", "huge", "laat", "epic", "long", "snail" ]
+      "enum": [
+        "small",
+        "medium",
+        "large",
+        "huge",
+        "laat",
+        "epic",
+        "long",
+        "snail"
+      ]
     }
   },
 
@@ -49,7 +58,7 @@
 
     "heavyWeaponTeam": {
       "description": "Reqyure a \"Heavy Weapon\" upgrade attached to this unit and make it the unit leader.",
-      "enum": [ true ]
+      "enum": [true]
     },
 
     "minis": {
@@ -130,5 +139,5 @@
 
   "additionalProperties": false,
   "type": "object",
-  "required": [ "name", "image", "size", "type", "points", "speed", "upgrades" ]
+  "required": ["name", "image", "size", "type", "points", "speed", "upgrades"]
 }
