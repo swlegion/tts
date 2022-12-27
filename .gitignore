@@ -1,3 +1,4 @@
 dist/
 mod/src/includes/generated/
 node_modules/
+.vs/

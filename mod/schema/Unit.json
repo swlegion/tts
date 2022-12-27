@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://schema.swlegion.dev/deps/UnitCard.json",
+  "$id": "https://schema.swlegion.dev/deps/Unit.json",
 
   "title": "Unit Card",
   "description": "Definition of a unit card.",
@@ -20,14 +20,7 @@
     }
   },
 
-  "additionalProperties": false,
-
   "properties": {
-    "content": {
-      "description": "Path to JSON file with Unit content",
-      "type": "string"
-    },
-
     "name": {
       "type": "string",
       "minLength": 1
@@ -56,7 +49,10 @@
     "type": {
       "anyOf": [
         { "$ref": "./UnitTypes.json" },
-        { "type": "string", "minLength": 1 }
+        {
+          "type": "string",
+          "minLength": 1
+        }
       ]
     },
 
@@ -109,7 +105,10 @@
       "propertyNames": {
         "anyOf": [
           { "$ref": "./Upgrades.json" },
-          { "type": "string", "minLength": 1 }
+          {
+            "type": "string",
+            "minLength": 1
+          }
         ]
       },
 
@@ -135,13 +134,10 @@
 
     "additionalObjects": {
       "$ref": "./AdditionalObjects.json"
-    },
-
-    "tokens": {
-      "type": "number",
-      "minimum": 1,
-      "description": "Optional number of Command Tokens to spawn with this Unit."
     }
   },
-  "type": "object"
+
+  "additionalProperties": false,
+  "type": "object",
+  "required": ["name", "image", "size", "type", "points", "speed", "upgrades"]
 }
