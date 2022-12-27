@@ -274,6 +274,8 @@ function _autoTint()
       {130, 0, 20},
       {135, 56, 0},
       {135, 104, 0},
+      {121, 0, 0},
+      {123, 46, 0}
     }
   else
     colorMap = {
@@ -283,6 +285,8 @@ function _autoTint()
       {0, 58, 140},
       {0, 71, 79},
       {34, 7, 94},
+      {0, 84, 121},
+      {0, 14, 64}
     }
   end
   for i, color in pairs(colorMap) do
