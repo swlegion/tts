@@ -263,10 +263,10 @@
       "required": ["Developing Sympathies"]
     },
     {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateCapo.json"
+      "content": "contrib/cards/ShadowCollective/PykeSyndicateCapoUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/BlackSunVigo.json"
+      "content": "contrib/cards/ShadowCollective/BlackSunVigoUnit.json"
     }
   ],
   "Operative": [
@@ -324,10 +324,10 @@
       "additionalObjects": ["Victory Token"]
     },
     {
-      "content": "contrib/cards/ShadowCollective/Bossk.json"
+      "content": "contrib/cards/ShadowCollective/BosskUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/CadBane.json"
+      "content": "contrib/cards/ShadowCollective/CadBaneUnit.json"
     },
     {
       "name": "Darth Vader",
@@ -418,10 +418,10 @@
       "additionalObjects": ["Victory Token"]
     },
     {
-      "content": "contrib/cards/ShadowCollective/Din.json"
+      "content": "contrib/cards/ShadowCollective/DinUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/IG11.json"
+      "content": "contrib/cards/ShadowCollective/IG11Unit.json"
     }
   ],
   "Corps": [
@@ -565,10 +565,10 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiers.json"
+      "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiersUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/BlackSunEnforcers.json"
+      "content": "contrib/cards/ShadowCollective/BlackSunEnforcersUnit.json"
     }
   ],
   "Special Forces": [

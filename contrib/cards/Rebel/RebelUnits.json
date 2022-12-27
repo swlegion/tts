@@ -258,7 +258,7 @@
       "required": ["I've Altered The Deal"]
     },
     {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateCapo.json"
+      "content": "contrib/cards/ShadowCollective/PykeSyndicateCapoUnit.json"
     }
   ],
   "Operative": [
@@ -505,10 +505,10 @@
       "additionalObjects": ["Victory Token"]
     },
     {
-      "content": "contrib/cards/ShadowCollective/Din.json"
+      "content": "contrib/cards/ShadowCollective/DinUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/IG11.json"
+      "content": "contrib/cards/ShadowCollective/IG11Unit.json"
     }
   ],
   "Corps": [
@@ -627,7 +627,7 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiers.json"
+      "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiersUnit.json"
     }
   ],
   "Special Forces": [
@@ -893,7 +893,7 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/SwoopBikeRiders.json"
+      "content": "contrib/cards/ShadowCollective/SwoopBikeRidersUnit.json"
     }
   ],
   "Heavy": [
