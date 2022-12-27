@@ -1,0 +1,37 @@
+{
+  "name": "IG-11",
+  "title": "Nurse and Protect",
+  "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527602/11FA913C55EA6AA321D9D842F96D12967115F6A8/",
+  "size": "small",
+  "type": "Trooper",
+  "points": 105,
+  "speed": 2,
+  "upgrades": {
+    "Training": 1,
+    "Comms": 1,
+    "Gear": 1,
+    "Programming": 1
+  },
+  "minis": [
+    {
+      "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728519554838170/7EDDCC155FD485AB58D07C8350728C0C558D9628/"
+    }
+  ],
+  "commands": [
+    {
+      "name": "Mechanical Carnage",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1883093542256527453/2DBE72FC350AFFE8974D26BC3E61FEE8FB2EA515/",
+      "pip": 1
+    },
+    {
+      "name": "The Hand Thing",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906539/BD2C2A9E435DD031F961B4DB6BFA6C492D84A740/",
+      "pip": 2
+    },
+    {
+      "name": "Anti-Capture Protocols",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1883093542256527714/E9DBCECA0A1B988D8DA4D0C2170EC87A69A5A725/",
+      "pip": 3
+    }
+  ]
+}

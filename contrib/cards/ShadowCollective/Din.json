@@ -1,0 +1,44 @@
+{
+  "name": "Din Djarin",
+  "title": "The Mandalorian",
+  "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527447/B7A57C2B3327EF48CFB4C9329C7B1042553F03F5/",
+  "size": "small",
+  "type": "Trooper",
+  "points": 105,
+  "speed": 2,
+  "upgrades": {
+    "Training": 2,
+    "Comms": 1,
+    "Gear": 2,
+    "Armament": 1,
+    "Counterpart": 1
+  },
+  "minis": [
+    {
+      "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728519554838224/65D2C0280026A313878AE7D5F38E17A4717584DD/"
+    }
+  ],
+  "commands": [
+    {
+      "name": "This is the Way",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906494/CCFF32308246D32A4B0B7DDB6BDD756469FEC5D5/",
+      "pip": 1
+    },
+    {
+      "name": "I Like Those Odds",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906446/8277E4B1E2EE9595FC547A69FD12C911152FFD4A/",
+      "pip": 2
+    },
+    {
+      "name": "The Hand Thing",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906539/BD2C2A9E435DD031F961B4DB6BFA6C492D84A740/",
+      "pip": 2
+    },
+    {
+      "name": "Whistling Birds",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527503/2DF990D405E73D3E4A0F7A7E7AD1F52C6E71296F/",
+      "pip": 3
+    }
+  ],
+  "additionalObjects": ["Victory Token"]
+}

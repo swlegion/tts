@@ -7,145 +7,135 @@
 
   "definitions": {
     "Bases": {
-      "enum": [ "small", "medium", "large", "huge", "laat", "epic", "long", "snail" ]
+      "enum": ["small", "medium", "large", "huge", "laat", "epic", "long", "snail"]
     }
   },
 
-  "oneOf": [
-    {
-      "properties": {
-        "name": {
-          "type": "string",
-          "minLength": 1
-        },
+  "additionalProperties": false,
 
-        "title": {
-          "type": "string",
-          "minLength": 1
-        },
+  "properties": {
 
-        "displayName": {
-          "description": "Optional. If provided, is used instead of name or title for list building purposes.",
-          "type": "string",
-          "minLength": 1
-        },
-
-        "image": {
-          "$ref": "./Image.json"
-        },
-
-        "size": {
-          "description": "Size of the base.",
-          "$ref": "#/definitions/Bases"
-        },
-
-        "type": {
-          "anyOf": [
-            { "$ref": "./UnitTypes.json" },
-            {
-              "type": "string",
-              "minLength": 1
-            }
-          ]
-        },
-
-        "heavyWeaponTeam": {
-          "description": "Reqyure a \"Heavy Weapon\" upgrade attached to this unit and make it the unit leader.",
-          "enum": [ true ]
-        },
-
-        "minis": {
-          "oneOf": [
-            {
-              "description": "Number of placeholder minis to spawn",
-              "type": "number",
-              "minimum": 1
-            },
-            {
-              "type": "array",
-              "minItems": 1,
-              "items": {
-                "$ref": "./Mini.json"
-              }
-            }
-          ]
-        },
-
-        "points": {
-          "type": "number",
-          "minimum": 0
-        },
-
-        "speed": {
-          "type": "number",
-          "minimum": 0
-        },
-
-        "height": {
-          "description": "The approximate height of the model, in inches. The default, which is intended for small-base (trooper) minis, is 2.",
-          "type": "number",
-          "minimum": 1,
-          "default": 2,
-          "maximum": 10
-        },
-
-        "upgrades": {
-          "additionalProperties": {
-            "type": "number",
-            "minimum": 1
-          },
-
-          "propertyNames": {
-            "anyOf": [
-              { "$ref": "./Upgrades.json" },
-              {
-                "type": "string",
-                "minLength": 1
-              }
-            ]
-          },
-
-          "type": "object"
-        },
-
-        "commands": {
-          "type": "array",
-          "minItems": 1,
-          "items": {
-            "$ref": "./CommandCard.json"
-          }
-        },
-
-        "required": {
-          "type": "array",
-          "description": "Required upgrades or flaw cards, by name.",
-          "minItems": 1,
-          "items": {
-            "type": "string"
-          }
-        },
-
-        "additionalObjects": {
-          "$ref": "./AdditionalObjects.json"
-        }
-      },
-
-      "additionalProperties": false,
-      "type": "object",
-      "required": [ "name", "image", "size", "type", "points", "speed", "upgrades" ]
+    "content":{
+      "description": "Path to JSON file with Unit content",
+      "type": "string"
     },
-    {
-      "properties": {
-        "content": {
-          "description": "Path to JSON file with Unit content",
-          "type": "string",
-          "pattern": ".*Unit\\.json"
+
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "displayName": {
+      "description": "Optional. If provided, is used instead of name or title for list building purposes.",
+      "type": "string",
+      "minLength": 1
+    },
+
+    "image": {
+      "$ref": "./Image.json"
+    },
+
+    "size": {
+      "description": "Size of the base.",
+      "$ref": "#/definitions/Bases"
+    },
+
+    "type": {
+      "anyOf": [
+        { "$ref": "./UnitTypes.json" },
+        { "type": "string", "minLength": 1 }
+      ]
+    },
+
+    "heavyWeaponTeam": {
+      "description": "Reqyure a \"Heavy Weapon\" upgrade attached to this unit and make it the unit leader.",
+      "enum": [true]
+    },
+
+    "minis": {
+      "oneOf": [
+        {
+          "description": "Number of placeholder minis to spawn",
+          "type": "number",
+          "minimum": 1
+        },
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "./Mini.json"
+          }
         }
+      ]
+    },
+
+    "points": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "speed": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "height": {
+      "description": "The approximate height of the model, in inches. The default, which is intended for small-base (trooper) minis, is 2.",
+      "type": "number",
+      "minimum": 1,
+      "default": 2,
+      "maximum": 10
+    },
+
+    "upgrades": {
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 1
       },
 
-      "additionalProperties": false,
-      "type": "object",
-      "required": [ "content" ]
+      "propertyNames": {
+        "anyOf": [
+          { "$ref": "./Upgrades.json" },
+          { "type": "string", "minLength": 1 }
+        ]
+      },
+
+      "type": "object"
+    },
+
+    "commands": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "./CommandCard.json"
+      }
+    },
+
+    "required": {
+      "type": "array",
+      "description": "Required upgrades or flaw cards, by name.",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "additionalObjects": {
+      "$ref": "./AdditionalObjects.json"
+    }, 
+
+    "tokens": {
+      "type": "number",
+      "minimum": 1,
+      "description": "Optional number of Command Tokens to spawn with this Unit."
     }
-  ]
+  },
+
+  "type": "object",
+  "required": ["name", "image", "size", "type", "points", "speed", "upgrades"]
 }

@@ -235,7 +235,7 @@
       "minis": [
         {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1666859827674318376/E0A03ACDC6D2F607B8CC0C406AE196A9DB5347B7/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1666859827674318640/6674121C184DF4BBD67EAB0DAA75F6B41A93669A/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081432885/15D54848A44C4B5DEDA6F93AC8A2AE066D251EDC/"
         }
       ],
       "commands": [
@@ -314,7 +314,7 @@
       "minis": [
         {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/948474323838790939/3E9EB4AAF653CD476FF3D90EA82072EDC2D4AC66/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/948474323838791034/38CDAF985C2DC983942183E1DFD3ACBC33D8E40E/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081436886/5CCA6776FB57C8AB5E9D8E9AE9EE30D74FCCAB52/"
         }
       ],
       "commands": [
@@ -452,6 +452,63 @@
           "pip": 3
         }
       ]
+    },
+    {
+      "name": "Boba Fett",
+      "title": "Daimyo of Mos Espa",
+      "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527186/1416818938F90DBF7DCBFFA42860CB72E287EB71/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 120,
+      "speed": 2,
+      "upgrades": {
+        "Training": 2,
+        "Gear": 2
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728519554838398/33764317D1BE774E1F978082C1A97681C1183C01/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "A Simple Man",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527247/05CDA2737D98FB18CACE99E65CE51E5AB24ABA0B/",
+          "pip": 1
+        },
+        {
+          "name": "Whipcord Launcher",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035802/A1AA027AE84C3CF96C2E671C6BFA78E2C94E2741/",
+          "pip": 1
+        },
+        {
+          "name": "Making His Way in the Galaxy",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527294/F0CD781F4680C3BBBDA58B1CECE1A3FF3B6821FE/",
+          "pip": 2
+        },
+        {
+          "name": "ZX Flame Projector",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034359/7CC1427FEA79D22D3128A5650F8A93159661A656/",
+          "pip": 2
+        },
+        {
+          "name": "Rule with Respect",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527380/9CF23D52011D3B943E8DE565D19E91EC579F5784/",
+          "pip": 3
+        },
+        {
+          "name": "Z-6 Jetpack Rocket",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032805/D4AEE724FC17B87F391BB7B24A3C8D44B40B704B/",
+          "pip": 3
+        }
+      ],
+      "additionalObjects": ["Victory Token"]
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/Din.json"
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/IG11.json"
     }
   ],
   "Corps": [
@@ -711,15 +768,15 @@
       "minis": [
         {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696350886421665/441B37D17213CA1B82174A8988ED23AA2D59336E/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696350886421832/BBE3592A7496E444E116271913178A8ED41F5323/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080668141/FEE2EBE5145920FEAA887D30C41A14975D440BEF/"
         },
         {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357880094/FFFBDA79DE3B6192926EFCDFC257708C2A360562/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080696961/0E039C55249C023EF22B04536617ACB67DB5AABA/"
         },
         {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696350886396178/07FB37CA0A11552BEF96C3DCA10AF232C65AF7B6/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696350886396372/35E5047903DC30F882B40719809ECF90DBC65A5A/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080729530/A131CA7EF04CB3CE3C0AD9003AF53DFFB9C23E46/"
         }
       ]
     },
@@ -743,7 +800,7 @@
       "minis": [
         {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357880886/06542D3BD6F03DC43D9E675680F86F2964B210F9/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080696961/0E039C55249C023EF22B04536617ACB67DB5AABA/"
         }
       ],
       "required": ["Ursa Wren", "Tristan Wren"]
@@ -894,7 +951,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112441763313/6120F6AA7FCE072D48348E12B65C4B5A34B8E9A3/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1802024425338475441/730DE7AD6E1A55EA9F9264DADC1DDC0AC2CCA565/"
         }
       ]
     }

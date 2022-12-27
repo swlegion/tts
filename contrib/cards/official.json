@@ -258,6 +258,26 @@
             "unit": ["Mandalorian Super Commandos"]
           }
         }
+      },
+      {
+        "name": "Din's Amban Rifle",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527123/B78DE61B41F9665BD772F28F218BBAA87D37F1A4/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
+          }
+        }
+      },
+      {
+        "name": "Beskar Spear",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906626/DF09FB811E1E1B773A2681089D13ADD21A9A488B/",
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
+          }
+        }
       }
     ],
     "Command": [
@@ -410,6 +430,19 @@
         "restrictions": {
           "include": {
             "unit": ["Iden Versio"]
+          }
+        }
+      },
+      {
+        "name": "Grogu",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527550/67B9752CF162B34F3D406C7D244974C01F7BFA4C/",
+        "points": 17,
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1785135165610974498/47B1C8B92A0E945388F7773EAB2F73B0A81E761E/"
+        },
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
           }
         }
       }
@@ -741,6 +774,36 @@
         "name": "Prepared Supplies",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869351/DE9290CC7840AD39A4EFFE0B0CD6D5E99A651C52/",
         "points": 5
+      },
+      {
+        "name": "Din's Flame Projector",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906580/1EC967CC4F871D07D3F419B4CF574394D289DBB6/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
+          }
+        }
+      },
+      {
+        "name": "The Mando's Jetpack",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554809657/3764760A87911D68177CFFC7A20496C62F595F6A/",
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Din Djarin"]
+          }
+        }
+      },
+      {
+        "name": "Boba's Flame Projector",
+        "image": "http://cloud-3.steamusercontent.com/ugc/5070522239150798336/0990097AEA89A53AEBCB2E6B284C942F94E6D29D/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Boba Fett"]
+          }
+        }
       }
     ],
     "Generator": [
@@ -1090,7 +1153,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139032/FD73A6FDED667993F98B7FBD7A1B3A408065B07F/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357841451/50164A1C84E6D119BC45BDD31C8209ED7D9A0F29/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696515357841757/1DC29C81D9DFCB2FB7D8A3B2EA2F2ABD3F416396/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080713966/46952E774C97E45A1E936D35B3FC7C9392F5950F/"
         },
         "points": 28,
         "restrictions": {
@@ -1357,7 +1420,7 @@
           "include": {
             "faction": ["Republic"],
             "unit": ["ARC Troopers"],
-            "type": ["Corps"]
+            "rank": ["Corps"]
           }
         }
       },
@@ -1515,7 +1578,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144436/3D8E7C0C4D7A837EEE925B65E044F1EF8B3388C4/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321578281/CBFA560559FE81326342AD0B65D2349447F882EB/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1028455893321728189/3FB4241F32F35813B6A934FCD3030D3F3D5B7090/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
         },
         "points": 20,
         "restrictions": {
@@ -1699,7 +1762,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146078/510B97CE7AEF65B5AC75FE3D94C769AB2CD070CD/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696350886429750/5D62ADB1200B1AD16A0349AF87E757F40E720115/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696350886427771/60D6CA1D97D822A2222E4FAF614931265B7B0AF2/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080686656/A6DDF6C03FED22656FD7714348E27ECF8144218E/"
         },
         "points": 38,
         "restrictions": {
@@ -1713,7 +1776,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146355/375DF871CB9930A2C15C7A310420AC1541AB8830/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357881561/B365369415AE0FB6A96E69817D76D9BAD1366038/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1021696515357880292/78883B5B08CCDC0B7BC4EF36D45DAB06E9057FEB/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080696961/0E039C55249C023EF22B04536617ACB67DB5AABA/"
         },
         "leader": true,
         "points": 38,
@@ -1756,7 +1819,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146709/F3874CF8FD491DEF02AA37F322C61B51463D2ECD/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321579074/D5F10426146B81D46F02B027B9C4CC875FA6DA00/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1028455893321728189/3FB4241F32F35813B6A934FCD3030D3F3D5B7090/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
         },
         "points": 27,
         "restrictions": {
@@ -1769,7 +1832,7 @@
         "name": "Rook Kast",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868786/3A9F4271A4AB786FD93CFEFCBF41BC18B930BB0F/",
         "mini": {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420351362/DA7859939BB8D400B298960EAB1D74B896EFAF4A/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1789640371719006177/3A456EB29012BFBE4322E020CBC08CF6F915BBF3/"
         },
         "leader": true,
         "points": 35,
@@ -1784,7 +1847,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869300/DE8184C6612CB3692648B62D2B0A00DB66227658/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143500/4BDEA7F5B523FC06641B3D71D1E112DC14BD7F81/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351306/EFEFDB9E92944062769E8F0E5049027695F29A98/"
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200823/B886D3157AA2F2528F4E5F76F26DF44A41496615/"
         },
         "points": 24,
         "restrictions": {
@@ -1798,7 +1861,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868228/FC69830397335680A33E25E45AE19D006FA27D54/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143366/41AB7DFFD2FCF20E2BCC3F899F728863C30F6343/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351306/EFEFDB9E92944062769E8F0E5049027695F29A98/"
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200823/B886D3157AA2F2528F4E5F76F26DF44A41496615/"
         },
         "points": 30,
         "restrictions": {
@@ -1812,7 +1875,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868369/DC8B8AEF385F79F612BA4D7E4ABC786BE3F54E3A/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143451/3DFD9C8BD5D504D3A2F7934678D1A0A7C2285863/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420351150/1DBD7C5F4F961063003BF06120675733FC7D147D/"
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200769/60353F40BAE6D92D6F6ED24E2883EB9CC2EA74C4/"
         },
         "points": 30,
         "restrictions": {
@@ -1825,7 +1888,7 @@
         "name": "Electro-Whip Soldier",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868613/D7093F36FCB71E5551D1FC1A93EF501BDE89E9C6/",
         "mini": {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143914/4EB59134A236A950D463B8563ED9E2BA2B85235A/",
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728387706845513/BB3CD9624D6F43250D0406D099819E497A1A70BE/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
         },
         "points": 10,
@@ -1839,7 +1902,7 @@
         "name": "P13-M Disruptor Soldier",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868532/C68FB885715CDCFC65D52035ED7D020A77B6D63B/",
         "mini": {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420144006/442099A21B1950C2DC070922ABADF65CBEBFF61F/",
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728387706845607/4B1530CF96F9DB8F172B02676F1D8B347CFD862A/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
         },
         "points": 24,
@@ -1957,7 +2020,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139272/747D9B51470E308061A8A4A21FBA5B28B2CEC1BB/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035126931/4EAB6085C2D2D6C176B3C9847E2F1F228CEFE7BB/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035127510/89D5E03C721391A7CBC7930180396F3B14E5273F/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080662099/EB7BD333EDF05BC6586516E0F3E6FD9AE270F11E/"
         },
         "leader": true,
         "points": 20,
@@ -1971,8 +2034,8 @@
         "name": "Clone Comms Technician",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139301/BA6F9C1E1B03C96908FD244F7F17188E070E5CF0/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035131182/F5BA58F09282727EFB8E38BA478970E44B983EED/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035131690/ED66D23D4467396F6858928E9FEE1DABB4F9B446/"
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281396590/F88D24438DE4A59DD0CDE3C0779FF9B35B7E42C4/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
         },
         "points": 12,
         "restrictions": {
@@ -1985,8 +2048,8 @@
         "name": "Clone Engineer",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139332/EFBC734554388F0628F88FF6AA3C3E8AA078141C/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035133539/7AD5C8B323760EFE19570C8F8D0DDA994973F03B/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035133984/DF3D2C9C54EBD45F87B48DCE203019FDD5FAECD2/"
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281395509/5B7CE64AA6E972FE9A7F08B202EF082B8EA5C0E0/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
         },
         "points": 18,
         "restrictions": {
@@ -1999,8 +2062,8 @@
         "name": "Clone Medic",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139361/BD135C31EA1FAE5CED684E0BAEA59F27C40A42B1/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035135224/49D60D4EE5794A206AF8F604A68F58979CFEBC42/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035135810/BD84B4C5CAA84DDA6302739AD749CD29B1C39669/"
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281399144/E1A292B1D9C5B721F4BD6C870F1DAC5BDDAF9650/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
         },
         "points": 20,
         "restrictions": {
@@ -2143,7 +2206,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144398/18C969B5FB9B6031557CF11FE2397E6AD8955624/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321406830/59DC907FEFEF65FBAF245A3B31A4251026FC93AA/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1028455893321728189/3FB4241F32F35813B6A934FCD3030D3F3D5B7090/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
         },
         "points": 13,
         "restrictions": {
@@ -2157,7 +2220,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144469/375C3AB7DF614E63735F3A1FBF98F4FCD9E1507E/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035005605/95FAACF9FF4F9B6AB1921E3FD8C896DC631069BF/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364035006060/711173DA172C4BC50686BBBC9C0D8BA1764D3175/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081520233/F4D0CE258F3C44457C38B967D6E5224570A800DA/"
         },
         "points": 12,
         "restrictions": {
@@ -2356,7 +2419,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146138/2F28A64E405A9426CB3248FB8D9D4F9B7FFA2E4B/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1022821664192681738/6062182D66F6F043E4DCF98FCD592CBD7ECDFF18/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1022821664192681931/11AB7637C0B8C60CB2E4BDC90F006B887A69DAF0/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081515538/DFE6A5BB3F95EDBAEFDDA95E5B873D8B636CB499/"
         },
         "leader": true,
         "points": 18,
@@ -2371,7 +2434,7 @@
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146561/848DFAE83E6BF72D5D657ACB7B07CAFFABDCEA68/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364034959851/4D7F0531A10AEA9421878B1535604FDF1EBAE8D1/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1683750364034974176/209AEB14BF56D899CB9220BDB0BAB98CE2BA90D4/"
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081523130/EF8D89A1578C399AC03F1795C512B234EFE1B8C2/"
         },
         "points": 6,
         "restrictions": {
@@ -2412,7 +2475,7 @@
         "name": "Pyke Syndicate Foot Soldier",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868575/B028852AE9F715AD7187417FFE4FF2C0080B4CFB/",
         "mini": {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420144048/289DC8DFD7C48CE342A4217838A7712BA166618F/",
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728387706845389/0D7DFE0C5BF5CDD527A619B75A25A2177D417BD0/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
         },
         "points": 9,
@@ -2433,6 +2496,38 @@
         "restrictions": {
           "include": {
             "unit": ["Pyke Syndicate Foot Soldiers"]
+          }
+        }
+      },
+      {
+        "name": "Boil",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554830118/848C17C6AF01EE3F4F9D9068CEB2573EFAA86A24/",
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1911232618851891928/ED9CBE2565F8E3F500CC6EF4C6677CF8E7161EB8/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1931498942571392139/6DA6C0216BF212E8E636F3D63AE1FF0FE3C33987/"
+        },
+        "leader": true,
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "type": ["Clone Trooper"],
+            "rank": ["Corps"]
+          }
+        }
+      },
+      {
+        "name": "Waxer",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554830210/E9BB75496CABD12DEE959D8733E9F19A87AFC87E/",
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321577529/3034903B0501BE08E398BCC7F0D735B308DA9377/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1931498942569352826/2FA98E1EB47F345406DC410F1DBBE50F4A8EC359/"
+        },
+        "leader": true,
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "type": ["Clone Trooper"],
+            "rank": ["Corps"]
           }
         }
       }
@@ -2722,6 +2817,27 @@
             "type": ["Vehicle"]
           }
         }
+      },
+      {
+        "name": "Nanny Programming",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527805/6FBD0F57EA4E387AB50CB6336F964AF0D7F3629E/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["IG-11"],
+            "faction": ["Rebel"]
+          }
+        }
+      },
+      {
+        "name": "\"Bounty\" Programming",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1883093542262844219/53CD038C2ED3712A10B665C0E7B58A981A8201C8/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["IG-11"]
+          }
+        }
       }
     ],
     "Training": [
@@ -2848,7 +2964,7 @@
       },
       {
         "name": "Unrelenting Fire",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829697844/63DC5C10FFD9C03B1B0CDFF959B183A7928077E8/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116225738/BC86D926356A70D37F3C8025090CFE8A359C6D14/",
         "pip": 1
       },
       {
@@ -2858,7 +2974,7 @@
       },
       {
         "name": "Overwhelming Barrage",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829697906/26225818D229B0AF8E18A645A881F06432B3A01C/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116225781/7E28B342C430FDEF0F55464D1296A15A23386746/",
         "pip": 2
       },
       {
@@ -2868,7 +2984,7 @@
       },
       {
         "name": "Debark for Ground Assault",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829697969/706FF3D1495A06DA4492F0B7BA97860D95865DCC/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116225828/2A7E49D5C7362A598408AB0F4029C82E75051350/",
         "pip": 3
       }
     ],
@@ -2880,7 +2996,7 @@
       },
       {
         "name": "Delaying Tactics",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698280/87911921E8F10119D80FBCFDD6BA88CB2C36311D/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116226072/4287B8D970D4E6CFFD007F84B6502348A4DA354B/",
         "pip": 1
       },
       {
@@ -2890,7 +3006,7 @@
       },
       {
         "name": "Courage of the Rebellion",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698334/CC8011A3F8D4D38BBFF3CDCEC6A77433CADCE35A/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116226115/B2181F3E75B0CCE11E55473FB11DF3F8E955368C/",
         "pip": 2
       },
       {
@@ -2900,7 +3016,7 @@
       },
       {
         "name": "Hold at Any Cost",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698390/D777D47EB102ACDED71C5A83DBAAB6184996A322/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116226159/13B563009D18A4B353A209872CF4E2931AE282BA/",
         "pip": 3
       }
     ],
@@ -2922,12 +3038,12 @@
       },
       {
         "name": "Lead from the Front",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698030/5DB0C686E86FE09A6E8EF205E9AB916AB108A48F/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116225872/2843CF371635A1ED3CDA7C060C41DE5EFE17DDBA/",
         "pip": 2
       },
       {
         "name": "Tactical Planning",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698090/78A189E79CEA28E941123939A2D05CCC4ACBB60D/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116225921/83188FDE7A66520E82F601AAB3BFE707F3D5711E/",
         "pip": 2
       },
       {
@@ -2947,7 +3063,7 @@
       },
       {
         "name": "Leaders of the 501st",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829698160/030C5ABAF50AC7844D11681DAFC790EA9E288F04/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116225980/E08D180A3E435C17D86BB975BED1C2ED3056FB5F/",
         "pip": 3
       }
     ],
@@ -2959,7 +3075,7 @@
       },
       {
         "name": "AI Coordination",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829697711/DBD4849B903B75E3E5E02E07AB61C692D9D797C0/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116225551/07EF32E9863F388D901222A5EA9418AB5E88AA5E/",
         "pip": 1
       },
       {
@@ -2969,7 +3085,7 @@
       },
       {
         "name": "Unrelenting Assault",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829697779/ABEFB937679074F78251F46E60B39B9B15A20F40/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116225627/66471D75B7566E23EC69F1C531AF8F8651AAEEA5/",
         "pip": 2
       },
       {
@@ -2979,7 +3095,7 @@
       },
       {
         "name": "Unstoppable Advance",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1856062994829703906/6DB4D38F2C1BBD7CC47FB6D721E48155F7D37B27/",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116225687/B5F68783FEE26F30B0262C0679D0743E5E413AE0/",
         "pip": 3
       }
     ]
