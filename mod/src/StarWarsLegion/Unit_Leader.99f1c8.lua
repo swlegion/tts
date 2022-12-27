@@ -214,16 +214,17 @@ function showSilhouette()
 end
 
 function spawnSilhouette(pos, rot)
+  local globals = Global.getTable("templateInfo")
+  local scale = globals.baseRadius[unitData.baseSize]
+  local height = globals.silhouetteHeight[unitData.silhouetteType]
   local silhouetteData = {
-    mesh = "http://cloud-3.steamusercontent.com/ugc/1002556771691273590/F435C238FB9E1E49963B2AA00E09DF9C711DA4A0/",
-    diffuse = "http://cloud-3.steamusercontent.com/ugc/1003681898505462981/13937CB26573918BDCBDE2A13CCDEF3C966172D7/",
-    collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/"
+    bundle = "http://cloud-3.steamusercontent.com/ugc/5070522239154544754/C4483D20C2106C16598F7A17EDA319727009B273/"
   }
   local silhouette = spawnObject({
-    type = "Custom_Model",
+    type = "Custom_AssetBundle",
     position = pos,
     rotation = rot,
-    scale = {1,1,1}
+    scale = {scale,height,scale}
   })
   silhouette.setCustomObject({
       mesh = silhouetteData.mesh,
