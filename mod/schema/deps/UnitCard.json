@@ -135,7 +135,5 @@
       "description": "Optional number of Command Tokens to spawn with this Unit."
     }
   },
-
-  "type": "object",
-  "required": ["name", "image", "size", "type", "points", "speed", "upgrades"]
+  "type": "object"
 }
