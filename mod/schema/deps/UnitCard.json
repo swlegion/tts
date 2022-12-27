@@ -7,15 +7,23 @@
 
   "definitions": {
     "Bases": {
-      "enum": ["small", "medium", "large", "huge", "laat", "epic", "long", "snail"]
+      "enum": [
+        "small",
+        "medium",
+        "large",
+        "huge",
+        "laat",
+        "epic",
+        "long",
+        "snail"
+      ]
     }
   },
 
   "additionalProperties": false,
 
   "properties": {
-
-    "content":{
+    "content": {
       "description": "Path to JSON file with Unit content",
       "type": "string"
     },
@@ -127,7 +135,7 @@
 
     "additionalObjects": {
       "$ref": "./AdditionalObjects.json"
-    }, 
+    },
 
     "tokens": {
       "type": "number",
