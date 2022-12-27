@@ -794,6 +794,16 @@
             "unit": ["Din Djarin"]
           }
         }
+      },
+      {
+        "name": "Boba's Flame Projector",
+        "image": "http://cloud-3.steamusercontent.com/ugc/5070522239150798336/0990097AEA89A53AEBCB2E6B284C942F94E6D29D/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Boba Fett"]
+          }
+        }
       }
     ],
     "Generator": [
