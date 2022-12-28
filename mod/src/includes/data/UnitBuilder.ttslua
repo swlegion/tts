@@ -652,12 +652,16 @@ function getListText()
   if __state.unit.title then
     name = name .. " " .. __state.unit.title
   end
+  local silhData = {}
+  for k, v in pairs(__state.unit.silhouette) do
+    table.insert(silhData, __state.unit.silhouette[k])
+  end
   return {
     name     = name,
     faction  = __state.faction,
     rank     = __state.unit.rank,
     upgrades = upgrades,
     type = __state.unit.type,
-    silhData = __state.unit.silhData
+    silhData = silhData
   }
 end

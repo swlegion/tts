@@ -206,12 +206,18 @@ local function initListSpawner(params)
 
         -- miniGUIDs
 
+        local silhHeight = 0
+        local silhOffset = 0
+
         local silhType = "custom"
         if string.find(pMiniTable.type, "Trooper") then
           silhType = "notched"
           if pMiniTable.baseSize == small then
             silhType = "small"
           end
+        else
+          silhHeight = pMiniTable.silhData[1]
+          silhOffset = pMiniTable.silhData[2]
         end
 
         local miniGUIDsScript = "miniGUIDs = {}\n"
@@ -222,6 +228,8 @@ local function initListSpawner(params)
           "cardGUID = \"" .. pMiniTable.unitCardGUID ..
           "\"\n unitName = \""..pMiniTable.name:lower() ..
           "\"\n silhType = \"".. silhType ..
+          "\"\n silhHeight = \"".. silhHeight ..
+          "\"\n silhOffset = \"".. silhOffset ..
           "\"\n commandName = \""..pMiniTable.commandName ..
           "\"\n commandType = \""..pMiniTable.commandType ..
           "\"\n selectedSpeed = "..pMiniTable.selectedSpeed ..

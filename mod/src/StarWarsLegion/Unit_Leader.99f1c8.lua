@@ -216,8 +216,8 @@ function spawnSilhouette(pos, rot)
   local globals = Global.getTable("templateInfo")
   local scale = globals.baseRadius[unitData.baseSize]
   local height = 1.0
-  if unitData.silhType == "custom" then
-    height = unitData.silhouette["height"]
+  if silhType == "custom" then
+    height = silhHeight
     --TODO: Handle Y offset here along rot.up
   else    
     if unitData.baseSize == "small" then
