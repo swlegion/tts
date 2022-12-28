@@ -509,6 +509,10 @@
         "Crew": 1,
         "Comms": 1
       },
+      "silhouette":{
+        "height": 1.25,
+        "offset": 0.3
+      },
       "minis": [
         {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873394399/018F8CC63E0D90F58AADA6328DF1709D4D1DF796/",
@@ -526,6 +530,10 @@
       "upgrades": {
         "Hardpoint": 1,
         "Comms": 1
+      },
+      "silhouette":{
+        "height": 4.25,
+        "offset": 0.0
       },
       "minis": [
         {
@@ -545,6 +553,10 @@
       "upgrades": {
         "Crew": 1,
         "Comms": 1
+      },
+      "silhouette":{
+        "height": 3.5,
+        "offset": 3.0
       },
       "minis": [
         {
@@ -571,6 +583,10 @@
         "Ordnance": 1,
         "Comms": 1
       },
+      "silhouette":{
+        "height": 3.25,
+        "offset": 0.3
+      },
       "minis": [
         {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873392482/BC01571E47E96306C31FABABE3EA971814E00C96/",
@@ -591,6 +607,10 @@
         "Ordnance": 1,
         "Comms": 1
       },
+      "silhouette":{
+        "height": 4.15,
+        "offset": 2.0
+      },
       "minis": [
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1747939379132611640/1EEBEB993635A56525283FAFA0D62D347FB3121C/"
@@ -608,6 +628,10 @@
         "Pilot": 1,
         "Hardpoint": 1,
         "Comms": 1
+      },
+      "silhouette":{
+        "height": 1.6,
+        "offset": 0.5
       },
       "minis": [
         {

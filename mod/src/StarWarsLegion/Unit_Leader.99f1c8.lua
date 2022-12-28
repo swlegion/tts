@@ -44,9 +44,7 @@ function resetUnitButtons()
 
     addLockButton()
     self.createButton(data)
-    if unitData.baseSize == "small" then
-      addSilhouetteButton()
-    end
+    addSilhouetteButton()
 end
 
 function calculateButtonZOffset(baseDiameter)
@@ -56,12 +54,13 @@ end
 function addSilhouetteButton()
   local gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
   local btnTint = gameData.getTable("battlefieldTint")
+  local buttonOffset = calculateButtonZOffset(templateInfo.baseRadius[unitData.baseSize])
   btnData = {
     click_function = "toggleSilhouettes",
     function_owner = self,
     label = "SIL",
     tooltip = "Toggle silhouettes on this unit",
-    position = {-0.225,0.25,0.6},
+    position = {-0.225,0.25, buttonOffset},
     width = 230,
     height = 180,
     font_size = 100,
@@ -216,7 +215,17 @@ end
 function spawnSilhouette(pos, rot)
   local globals = Global.getTable("templateInfo")
   local scale = globals.baseRadius[unitData.baseSize]
-  local height = globals.silhouetteHeight[unitData.silhouetteType]
+  local height = 1.0
+  if unitData.silhType == "custom" then
+    height = unitData.silhouette["height"]
+    --TODO: Handle Y offset here along rot.up
+  else    
+    if unitData.baseSize == "small" then
+      height = globals.silhouetteHeight["small"]
+    else
+      height = globals.silhouetteHeight["notched"]
+    end
+  end
   local silhouetteData = {
     bundle = "http://cloud-3.steamusercontent.com/ugc/5070522239154544754/C4483D20C2106C16598F7A17EDA319727009B273/"
   }
@@ -227,9 +236,7 @@ function spawnSilhouette(pos, rot)
     scale = {scale,height,scale}
   })
   silhouette.setCustomObject({
-      mesh = silhouetteData.mesh,
-      collider = silhouetteData.collider,
-      type = 1,
+      assetbundle = silhouetteData.bundle,
       material = 3
   })
   silhouette.setColorTint({121/255,194/255,205/255,100/255})

@@ -657,5 +657,7 @@ function getListText()
     faction  = __state.faction,
     rank     = __state.unit.rank,
     upgrades = upgrades,
+    type = __state.unit.type,
+    silhData = __state.unit.silhData
   }
 end

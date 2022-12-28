@@ -163,6 +163,10 @@
         "Hardpoint": 1,
         "Comms": 1
       },
+      "silhouette":{
+        "height": 5.0,
+        "offset": 0.2
+      },
       "minis": [
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1802024425338475527/29D3660FA84E5B9F804B840C18E68F5631EE6462/"

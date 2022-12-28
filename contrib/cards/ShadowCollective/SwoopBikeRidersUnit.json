@@ -8,6 +8,10 @@
   "upgrades": {
     "Comms": 1
   },
+  "silhouette":{
+    "height": 1.6,
+    "offset": 0.85
+  },
   "minis": [
     {
       "bundle": "http://cloud-3.steamusercontent.com/ugc/1924743543116067434/0A068914BDD35AE6F63D7E29EBC7E0B5F712DA1F/"

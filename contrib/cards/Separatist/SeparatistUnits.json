@@ -453,6 +453,10 @@
       "upgrades": {
         "Comms": 1
       },
+      "silhouette":{
+        "height": 1.5,
+        "offset": 0.0
+      },
       "minis": [
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1686023445067168845/FBADA8EDE2ED248CA7F50C1DB3BFF46215E0360B/",
@@ -473,6 +477,10 @@
       "speed": 3,
       "upgrades": {
         "Comms": 1
+      },
+      "silhouette":{
+        "height": 2.5,
+        "offset": 1.0
       },
       "minis": [
         {
@@ -497,6 +505,10 @@
         "Hardpoint": 1,
         "Comms": 1
       },
+      "silhouette":{
+        "height": 2.5,
+        "offset": 0.0
+      },
       "minis": [
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849538645161033/A69093521055BB5CA008D3DDE5F6EBEB990D0AF2/"
@@ -518,6 +530,10 @@
         "Ordnance": 2,
         "Comms": 1
       },
+      "silhouette":{
+        "height": 4.5,
+        "offset": 0.5
+      },
       "minis": [
         {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785235151813166538/2F32058DDD51C131547B66A3927041BDACDD9E72/",
@@ -537,6 +553,10 @@
         "Programming": 1,
         "Ordnance": 1,
         "Comms": 1
+      },
+      "silhouette":{
+        "height": 4.0,
+        "offset": 0.0
       },
       "minis": [
         {

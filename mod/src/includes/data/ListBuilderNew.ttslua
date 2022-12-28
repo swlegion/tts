@@ -406,6 +406,8 @@ function _generateListData()
       table.insert(listData.units, {
         name     = text.name,
         upgrades = upgrades,
+        type = text.type,
+        silhData = text.silhouette
       })
     end
   end

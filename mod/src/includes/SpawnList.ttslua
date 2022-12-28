@@ -206,6 +206,14 @@ local function initListSpawner(params)
 
         -- miniGUIDs
 
+        local silhType = "custom"
+        if string.find(pMiniTable.type, "Trooper") then
+          silhType = "notched"
+          if pMiniTable.baseSize == small then
+            silhType = "small"
+          end
+        end
+
         local miniGUIDsScript = "miniGUIDs = {}\n"
         for n, objEntry in pairs(pMiniTable.miniObjs) do
           miniGUIDsScript = miniGUIDsScript .. "miniGUIDs["..n.."] = '" .. objEntry.obj.getGUID() .. "'\n"
@@ -213,6 +221,7 @@ local function initListSpawner(params)
         selectedMiniScript = selectedMiniScript .. miniGUIDsScript ..
           "cardGUID = \"" .. pMiniTable.unitCardGUID ..
           "\"\n unitName = \""..pMiniTable.name:lower() ..
+          "\"\n silhType = \"".. silhType ..
           "\"\n commandName = \""..pMiniTable.commandName ..
           "\"\n commandType = \""..pMiniTable.commandType ..
           "\"\n selectedSpeed = "..pMiniTable.selectedSpeed ..
@@ -306,6 +315,8 @@ local function initListSpawner(params)
     miniData.commandType = commandType
     miniData.selectedSpeed = unitInfo.speed
     miniData.height = unitInfo.height
+    miniData.silhData = miniData.silhData or {}
+    miniData.type = miniData.type
 
     initializeMini(miniData)
 
@@ -318,7 +329,6 @@ local function initListSpawner(params)
     rotation.y = rotation.y + 180
 
     local tokensToSpawn = 1
-    print(unitInfo.tokens)
     if unitInfo.tokens then
       tokensToSpawn = unitInfo.tokens
     end
@@ -343,6 +353,8 @@ local function initListSpawner(params)
     local name = unit.name
     local upgrades = unit.upgrades or {}
     local loadout = unit.loadout or {}
+    local type = unit.type
+    local silhData = unit.silhData or {}
 
     -- Prep unit card spawn locations.
     local offsets = computeSpawnPositions(index)
@@ -390,6 +402,8 @@ local function initListSpawner(params)
       unitIDTokenGUID = unitId.getGUID(),
       leaderIndex     = 1,
       upgrades        = upgrades,
+      type            = type,
+      silhData        = silhData
     }
 
     -- Spawn loadout and addon cards.
