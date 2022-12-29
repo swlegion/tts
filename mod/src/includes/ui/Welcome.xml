@@ -36,15 +36,16 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v7.1.3</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v8.1.0-beta</b>.
 
-          <!--This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.-->
+          This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
 
-          <!--To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.-->
+          To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.
 
           <b>CHANGELOG</b>
-          <!--(Since last <i>Beta</i>)-->
-          (Since last <i>Stable</i>)
+          (Since last <i>Beta</i>)
+          <!--(Since last <i>Stable</i>)-->
+          - Fix: New Silhouettes
           - Fix: Boba Fett Subtitle for JSON Importing
           - Fix: Add Boba's Flame Projector
           - Fix: Add 2 more Color Auto Tints for Unit Bases
@@ -52,26 +53,6 @@
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
-    <VerticalLayout id="welcomeTab2" active="false">
-      <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-        <b>Unit Sizes</b>:
-
-        Small Base Troopers: 1
-        1.4 FD Laser Cannon: 1
-        E-Web Heavy Blaster: 1
-        Droidekas: 1
-        Tauntuan Riders 1.25
-        BARC Speeder 1.25
-        AT-RT: 1.5
-        X-34 Landspeeder: 1.5
-        74-Z Speeder Bikes, STAPs: 1.5
-        TX-225 GAVw Occupier: 1.5
-        TX-130 Saber-Class Fighter Tank 1.5
-        AAT Trade Federation Battle Tank: 2
-        T-47 Airspeeder: 4
-        AT-ST: 5
-      </Text>
-    </VerticalLayout>
     <VerticalLayout id="welcomeTab3" active="false">
       <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
         URL to a "cards.json" compatible file.
@@ -94,9 +75,6 @@
     <HorizontalLayout height="30">
       <Button onClick="showWelcomeTab1">
         <Text fontSize="10" fontStyle="bold">What's New</Text>
-      </Button>
-      <Button onClick="showWelcomeTab2">
-        <Text fontSize="10">Unit Sizes</Text>
       </Button>
       <Button onClick="showWelcomeTab3">
         <Text fontSize="10">Experimental Side Load</Text>
