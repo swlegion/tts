@@ -510,8 +510,9 @@
         "Comms": 1
       },
       "silhouette":{
-        "height": 1.25,
-        "offset": 0.3
+        "height": 1.092,
+        "offset": 0.492
+
       },
       "minis": [
         {
@@ -532,7 +533,7 @@
         "Comms": 1
       },
       "silhouette":{
-        "height": 4.25,
+        "height": 2.576,
         "offset": 0.0
       },
       "minis": [
@@ -584,8 +585,8 @@
         "Comms": 1
       },
       "silhouette":{
-        "height": 3.25,
-        "offset": 0.3
+        "height": 2.1,
+        "offset": 0.496
       },
       "minis": [
         {
@@ -608,8 +609,8 @@
         "Comms": 1
       },
       "silhouette":{
-        "height": 4.15,
-        "offset": 2.0
+        "height": 4.68,
+        "offset": 1.78
       },
       "minis": [
         {

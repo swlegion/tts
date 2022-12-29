@@ -653,8 +653,10 @@ function getListText()
     name = name .. " " .. __state.unit.title
   end
   local silhData = {}
-  for k, v in pairs(__state.unit.silhouette) do
-    table.insert(silhData, __state.unit.silhouette[k])
+  if __state.unit.silhouette ~= nil then
+    for k, v in pairs(__state.unit.silhouette) do
+      table.insert(silhData, __state.unit.silhouette[k])
+    end
   end
   return {
     name     = name,

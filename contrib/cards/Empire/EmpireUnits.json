@@ -761,8 +761,8 @@
         "Comms": 1
       },
       "silhouette":{
-        "height": 1.85,
-        "offset": 0.75
+        "height": 0.852,
+        "offset": 0.709
       },
       "minis": [
         {
@@ -827,7 +827,7 @@
         "Comms": 1
       },
       "silhouette":{
-        "height": 7.5,
+        "height": 8.84,
         "offset": 0.0
       },
       "minis": [
@@ -851,7 +851,7 @@
         "Comms": 1
       },
       "silhouette":{
-        "height": 2.25,
+        "height": 2.0,
         "offset": 0.0
       },
       "minis": [
@@ -875,8 +875,8 @@
         "Comms": 1
       },
       "silhouette":{
-        "height": 4.15,
-        "offset": 2.0
+        "height": 4.68,
+        "offset": 1.78
       },
       "minis": [
         {
