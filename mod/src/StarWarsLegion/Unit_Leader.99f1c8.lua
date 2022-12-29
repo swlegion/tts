@@ -204,27 +204,31 @@ function showSilhouette()
     if obj then
       local pos = obj.getPosition()
       local rot = obj.getRotation()
-      local newSilhouette = spawnSilhouette(pos, rot)
-
-      obj.addAttachment(newSilhouette)
+      local newSilhouette = spawnSilhouette(obj, pos, rot)
     end
   end
   silhouetteState = true
 end
 
-function spawnSilhouette(pos, rot)
+function spawnSilhouette(obj, pos, rot)
   local globals = Global.getTable("templateInfo")
   local scale = globals.baseRadius[unitData.baseSize]
   local height = 1.0
+  local offset = 0.0
   if silhType == "custom" then
     height = silhHeight
-    --TODO: Handle Y offset here along rot.up
+    offset = silhOffset
   else    
     if unitData.baseSize == "small" then
       height = globals.silhouetteHeight["small"]
     else
       height = globals.silhouetteHeight["notched"]
     end
+  end
+  if obj ~= nil then
+    local objUp = obj.getTransformUp()
+    local offsetVector = Vector.new(objUp.x * offset, objUp.y * offset, objUp.z * offset)
+    pos = { pos.x + offsetVector.x, pos.y + offsetVector.y, pos.z + offsetVector.z }
   end
   local silhouetteData = {
     bundle = "http://cloud-3.steamusercontent.com/ugc/5070522239154544754/C4483D20C2106C16598F7A17EDA319727009B273/"
@@ -240,7 +244,9 @@ function spawnSilhouette(pos, rot)
       material = 3
   })
   silhouette.setColorTint({121/255,194/255,205/255,100/255})
-
+  if obj ~= nil then
+    obj.addAttachment(silhouette)
+  end
   return silhouette
 end
 
