@@ -263,6 +263,43 @@
       "required": ["Developing Sympathies"]
     },
     {
+      "name": "Moff Gideon",
+      "title": "Long Live the Empire",
+      "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907351/8433669F28D81BC5196DD4D7DEBE0782C64B8F01/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 100,
+      "speed": 2,
+      "upgrades": {
+        "Command": 2,
+        "Training": 1,
+        "Gear": 1,
+        "Armament": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/5070522239197162593/F42F2D876D0B0BBD8E701D0F813A631E2E0D9E76/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Die at My Hand",
+          "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907196/DBA2F1E68937EB87615A812B218D74E50E58A95E/",
+          "pip": 1
+        },
+        {
+          "name": "You Have Something I Want",
+          "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907249/AC9853C05AC9350387E7CAE817F8F02A24A6BA5B/",
+          "pip": 2
+        },
+        {
+          "name": "Moment of Consideration",
+          "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907304/D7B68B2CEE53508DB6B8C0AE66373EE4573ACE8B/",
+          "pip": 3
+        }
+      ]
+    },
+    {
       "content": "contrib/cards/ShadowCollective/PykeSyndicateCapoUnit.json"
     },
     {

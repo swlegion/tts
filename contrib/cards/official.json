@@ -278,6 +278,16 @@
             "unit": ["Din Djarin"]
           }
         }
+      },
+      {
+        "name": "The Darksaber (Gideon)",
+        "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907419/B788217F88978AE7E9BBC49CB78931ED2C84E0FB/",
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Moff Gideon"]
+          }
+        }
       }
     ],
     "Command": [
