@@ -36,7 +36,7 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v8.1.0-beta</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v8.1.1-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
 
@@ -45,10 +45,10 @@
           <b>CHANGELOG</b>
           (Since last <i>Beta</i>)
           <!--(Since last <i>Stable</i>)-->
-          - Fix: New Silhouettes
-          - Fix: Boba Fett Subtitle for JSON Importing
-          - Fix: Add Boba's Flame Projector
-          - Fix: Add 2 more Color Auto Tints for Unit Bases
+          - Fix: Silhouettes work with JSON importing
+          - Fix: Rebel Boba no longer spawns bounty token
+          - Feat: Add Moff Gideon
+          - Feat: Add Dark Trooper Upgrades
 
         </Text>
       </VerticalLayout>

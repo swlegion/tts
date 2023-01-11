@@ -244,10 +244,10 @@ local function initListSpawner(params)
           "\"\n silhType = \"".. silhType ..
           "\"\n silhHeight = \"".. silhHeight ..
           "\"\n silhOffset = \"".. silhOffset ..
-          "\"\n commandName = \""..pMiniTable.commandName ..
-          "\"\n commandType = \""..pMiniTable.commandType ..
-          "\"\n selectedSpeed = "..pMiniTable.selectedSpeed ..
-          "\n baseSize = \""..pMiniTable.baseSize ..
+          "\"\n commandName = \"".. pMiniTable.commandName ..
+          "\"\n commandType = \"".. pMiniTable.commandType ..
+          "\"\n selectedSpeed = ".. pMiniTable.selectedSpeed ..
+          "\n baseSize = \"".. pMiniTable.baseSize ..
           "\"\n unitID = " .. pMiniTable.unitID ..
           "\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID ..
           "\"\n" .. globals.modelMiniScript
@@ -371,11 +371,36 @@ local function initListSpawner(params)
     faction,
     totalUnits
   )
+    --Min JSON Payload
     local name = unit.name
     local upgrades = unit.upgrades or {}
     local loadout = unit.loadout or {}
-    local type = unit.type
+
+    --if we spawn via JSON we don't have
+    --enough data to parse silhs anymore...
+    --we need type and any custom values
+    --so load everything off the deck if needed
+    local completeUnitData
+
+    local type = unit.type    
     local silhData = unit.silhData or {}
+
+    if unit.silhData == nil then
+      silhData = {}
+      completeUnitData = deck:getUnitByFactionAndName(faction, name)
+      if completeUnitData.silhouette ~= nil then
+        for k, v in pairs(completeUnitData.silhouette) do
+          table.insert(silhData, completeUnitData.silhouette[k])
+        end
+      end
+    end
+
+    if unit.type == nil then
+      if completeUnitData == nil then
+        completeUnitData = deck:getUnitByFactionAndName(faction, name)
+      end
+      type = completeUnitData.type
+    end
 
     -- Prep unit card spawn locations.
     local offsets = computeSpawnPositions(index)
