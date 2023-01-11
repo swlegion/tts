@@ -1949,6 +1949,48 @@
             "unit": ["Black Sun Enforcers"]
           }
         }
+      },
+      {
+        "name": "XS-IV Assault Cannon",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2004698291313161848/274FD9DA145A86F77F5F76459CB5A4486634809F/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2004698291313160948/23CA698C8F2AF1C08D2DED3564B138E72E2ABCBF/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2004698291313176203/E77892ADB668EA0CB548F6ED71BE44CA3FB730E7/"
+        },
+        "points": 48,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Dark Troopers"]
+          }
+        }
+      },
+      {
+        "name": "SM-9 Frag Launcher",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2004698291313161941/15469090E692070F2CF4C9DB77BFF86C785D7170/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2004698291313161010/1873BCD554A553BC2FF25A2BE16116EDEBFDCEF4/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2004698291313176203/E77892ADB668EA0CB548F6ED71BE44CA3FB730E7/"
+        },
+        "points": 40,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Dark Troopers"]
+          }
+        }
+      },
+      {
+        "name": "Mertalizer",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2004698291313161801/E99B9E5D5C85437D03F94FAB91EFDFC94942A8FD/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2004698291313161066/7BD340C7AAB594CDA1644D900F606FEC8A0165A1/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2004698291313176203/E77892ADB668EA0CB548F6ED71BE44CA3FB730E7/"
+        },
+        "points": 36,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Dark Troopers"]
+          }
+        }
       }
     ],
     "Ordnance": [
@@ -2540,6 +2582,20 @@
             "rank": ["Corps"]
           }
         }
+      },
+      {
+        "name": "Imperial Dark Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2004698291313161746/1247297ABF21E0A03C9611713FA91D8D0882BF73/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1785135125810942938/E77EC5970DA310A2E1D96F796E98D82813AE0891/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2004698291313176203/E77892ADB668EA0CB548F6ED71BE44CA3FB730E7/"
+        },
+        "points": 32,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Dark Troopers"]
+          }
+        }
       }
     ],
     "Pilot": [
@@ -2846,6 +2902,16 @@
         "restrictions": {
           "include": {
             "unit": ["IG-11"]
+          }
+        }
+      },
+      {
+        "name": "Programmed Loyalty",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2004698291313161889/3CCEE804F4975D6583244F6AF9BA4EB3FB78B945/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Dark Troopers"]
           }
         }
       }
