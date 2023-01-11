@@ -263,6 +263,43 @@
       "required": ["Developing Sympathies"]
     },
     {
+      "name": "Moff Gideon",
+      "title": "Long Live the Empire",
+      "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907351/8433669F28D81BC5196DD4D7DEBE0782C64B8F01/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 100,
+      "speed": 2,
+      "upgrades": {
+        "Command": 2,
+        "Training": 1,
+        "Gear": 1,
+        "Armament": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/5070522239197162593/F42F2D876D0B0BBD8E701D0F813A631E2E0D9E76/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Die at My Hand",
+          "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907196/DBA2F1E68937EB87615A812B218D74E50E58A95E/",
+          "pip": 1
+        },
+        {
+          "name": "You Have Something I Want",
+          "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907249/AC9853C05AC9350387E7CAE817F8F02A24A6BA5B/",
+          "pip": 2
+        },
+        {
+          "name": "Moment of Consideration",
+          "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907304/D7B68B2CEE53508DB6B8C0AE66373EE4573ACE8B/",
+          "pip": 3
+        }
+      ]
+    },
+    {
       "content": "contrib/cards/ShadowCollective/PykeSyndicateCapoUnit.json"
     },
     {
@@ -900,15 +937,15 @@
       "minis": [
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1785135125810942830/666860D7C34C83C500C62BDDE115F30C59A42C74/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1785135125810912826/C8DC9A4C090BD07BA1E4BBB18FDA219041A653E5/"
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2004698291313176203/E77892ADB668EA0CB548F6ED71BE44CA3FB730E7/"
         },
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1785135125810942938/E77EC5970DA310A2E1D96F796E98D82813AE0891/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1785135125810912826/C8DC9A4C090BD07BA1E4BBB18FDA219041A653E5/"
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2004698291313176203/E77892ADB668EA0CB548F6ED71BE44CA3FB730E7/"
         },
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1785135125810943021/4B5888D461F54C2C281B108233D1F1D8D8C2A679/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1785135125810912826/C8DC9A4C090BD07BA1E4BBB18FDA219041A653E5/"
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2004698291313176203/E77892ADB668EA0CB548F6ED71BE44CA3FB730E7/"
         }
       ]
     }

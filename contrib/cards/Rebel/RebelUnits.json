@@ -501,8 +501,7 @@
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032805/D4AEE724FC17B87F391BB7B24A3C8D44B40B704B/",
           "pip": 3
         }
-      ],
-      "additionalObjects": ["Victory Token"]
+      ]
     },
     {
       "content": "contrib/cards/ShadowCollective/DinUnit.json"
