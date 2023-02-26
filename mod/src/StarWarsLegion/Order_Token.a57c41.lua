@@ -673,6 +673,7 @@ end
 
 function moveStart()
     local endPos = initPos
+    endPos.y = initPos.y + 2
     selectedUnitObj.setPositionSmooth(endPos, false, false)
     selectedUnitObj.setRotationSmooth(initRot, false, false)
     Wait.frames(function()
