@@ -36,8 +36,6 @@ function setTemplateVariables()
     unitData.buttonColor = templateInfo.buttonColor[unitData.selectedSpeed]
     unitData.fontColor = templateInfo.fontColor[unitData.selectedSpeed]
 end
-
-
 ------------------------------------------------- MATH FIND PROXIMITY------------------------------------------------------------
 function findProximity(targetObj, object)
     local objectPos = object.getPosition()
