@@ -1153,7 +1153,6 @@ function endActivation()
 end
 
 function resetActivation()
-    selectedUnitObj.call("printMovement")
     stopUnit()
     stopAttack()
     standby()
