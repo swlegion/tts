@@ -15,6 +15,8 @@ function setUp()
     silhouetteState = false
     locks = {}
     lockState = false
+    startPosition = nil
+    startRotation = nil
 
     lockBtnGreen = {0.2, 0.9, 0.05, 0.7}
     lockBtnRed = {0.9, 0.1, 0.05, 0.7}
@@ -261,4 +263,29 @@ function dropCoroutine()
     return 1
 end
 
+
+function setStartPos()
+  startPosition = self.getPosition()
+  startRotation = self.getRotation()
+end
+
+function printMovement()
+  if startPosition == self.getPosition() and startRotation == self.getRotation() then
+    return
+  end
+  if startPosition ~= nil then
+    print(colorSide .. " " .. unitName .. " Moved From")
+    print("Position " .. coordToString(startPosition) .. " to " .. coordToString(self.getPosition()))
+    print("Rotation " .. coordToString(startRotation) .. " to " .. coordToString(self.getRotation()))
+  end
+end
+
+function coordToString(coord, rotation)
+  return "(X:" .. round(coord[1], 2) .. ", Y:" .. round(coord[2], 2) .. ", Z:" .. round(coord[3], 2) .. ")"
+end
+
+function round(num, numDecimalPlaces)
+  local mult = 10^(numDecimalPlaces or 0)
+  return math.floor(num * mult + 0.5) / mult
+end
 
