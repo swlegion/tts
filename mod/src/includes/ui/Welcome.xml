@@ -36,16 +36,18 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v7.1.5</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v7.2</b>.
 
-          <!--This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.-->
+          This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
 
-          <!--To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.-->
+          To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.
 
           <b>CHANGELOG</b>
-          <!--(Since last <i>Beta</i>)-->
-          (Since last <i>Stable</i>)
-          - Feat: Added Dark Trooper Upgrades
+          (Since last <i>Beta</i>)
+          <!--(Since last <i>Stable</i>)-->
+          - Feat: Added Cody CCs
+          - Feat: Added Ventress
+          - Feat: Start and End Position of Unit Leader prints to console
 
         </Text>
       </VerticalLayout>

@@ -2786,7 +2786,7 @@
         "restrictions": {
           "include": {
             "faction": ["Rebel"],
-            "type": ["Repuslor Vehicle"]
+            "type": ["Repulsor Vehicle"]
           }
         }
       },

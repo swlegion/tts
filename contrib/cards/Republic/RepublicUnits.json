@@ -234,6 +234,23 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1931498942568777590/0BA60DFCDA7322FE873E450157E4186CD1E095AD/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1931498942568777830/0B9A3EA22942328754AB85811EF3E367EE244F2D/"
         }
+      ],
+      "commands": [
+        {
+          "name": "Bring it Down!",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022718494181413653/02DAE10AF010ABE97C2A2EF535CA0072C334CEE0/",
+          "pip": 1
+        },
+        {
+          "name": "Have I Ever Let you Down?",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022718494181413715/2F415FFA15FAE4262D1364A5CB46F0D7BDDC166C/",
+          "pip": 2
+        },
+        {
+          "name": "Combined Arms",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022718494181413785/93BB691509DA089CF951ACDA474E0E06C3BB0E07/",
+          "pip": 3
+        }
       ]
     }
   ],
