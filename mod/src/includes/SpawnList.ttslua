@@ -318,7 +318,6 @@ local function initListSpawner(params)
     rotation.y = rotation.y + 180
 
     local tokensToSpawn = 1
-    print(unitInfo.tokens)
     if unitInfo.tokens then
       tokensToSpawn = unitInfo.tokens
     end
