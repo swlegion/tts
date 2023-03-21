@@ -797,7 +797,7 @@
       "upgrades": {
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 0.852,
         "offset": 0.709
       },
@@ -863,7 +863,7 @@
         "Hardpoint": 3,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 8.84,
         "offset": 0.0
       },
@@ -887,7 +887,7 @@
         "Hardpoint": 1,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 2.0,
         "offset": 0.0
       },
@@ -911,7 +911,7 @@
         "Ordnance": 1,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 4.68,
         "offset": 1.78
       },

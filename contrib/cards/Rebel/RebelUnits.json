@@ -844,7 +844,7 @@
         "Hardpoint": 1,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 2.576,
         "offset": 0.0
       },
@@ -912,7 +912,7 @@
         "Hardpoint": 1,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 1.139,
         "offset": 3.494
       },
@@ -935,7 +935,7 @@
         "Hardpoint": 1,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 1.174,
         "offset": 0.726
       },
@@ -960,7 +960,7 @@
         "Hardpoint": 1,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 3.256,
         "offset": 0.335
       },

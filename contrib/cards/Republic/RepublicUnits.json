@@ -526,10 +526,9 @@
         "Crew": 1,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 1.092,
         "offset": 0.492
-
       },
       "minis": [
         {
@@ -549,7 +548,7 @@
         "Hardpoint": 1,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 2.576,
         "offset": 0.0
       },
@@ -572,7 +571,7 @@
         "Crew": 1,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 3.5,
         "offset": 3.0
       },
@@ -601,7 +600,7 @@
         "Ordnance": 1,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 2.1,
         "offset": 0.496
       },
@@ -625,7 +624,7 @@
         "Ordnance": 1,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 4.68,
         "offset": 1.78
       },
@@ -647,7 +646,7 @@
         "Hardpoint": 1,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 1.6,
         "offset": 0.5
       },

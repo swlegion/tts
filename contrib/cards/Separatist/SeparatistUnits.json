@@ -493,7 +493,7 @@
       "upgrades": {
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 1.85,
         "offset": 0.0
       },
@@ -518,7 +518,7 @@
       "upgrades": {
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 1.651,
         "offset": 0.595
       },
@@ -545,7 +545,7 @@
         "Hardpoint": 1,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 1.756,
         "offset": 0.0
       },
@@ -570,7 +570,7 @@
         "Ordnance": 2,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 3.286,
         "offset": 0.736
       },
@@ -594,7 +594,7 @@
         "Ordnance": 1,
         "Comms": 1
       },
-      "silhouette":{
+      "silhouette": {
         "height": 3.323,
         "offset": 0.0
       },
