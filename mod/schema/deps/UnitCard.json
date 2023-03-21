@@ -144,12 +144,11 @@
     },
 
     "silhouette": {
-      "type": "array",
+      "type": "object",
       "description": "Optional.  Height and Offset values for a Custom Silhouette.",
-      "minItems": 2,
-      "maxItems": 2,
-      "items": {
-        "type": "number"
+      "properties": {
+        "height": { "type" : "number" },
+        "offset": { "type" : "number" }
       }
     }
   },
