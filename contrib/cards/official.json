@@ -212,7 +212,7 @@
       {
         "name": "Saxon's Z-3X Jetpack Rockets",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868950/6FF2ED19A5AF3DDB0B20A1CC70775823D0C25DFB/",
-        "points": 6,
+        "points": 10,
         "restrictions": {
           "include": {
             "unit": ["Gar Saxon"]
@@ -222,7 +222,7 @@
       {
         "name": "Saxon's Galar-90 Rifle",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868898/8A5057542AE7DB2E45E127DF0510423EA839BD4B/",
-        "points": 6,
+        "points": 15,
         "restrictions": {
           "include": {
             "unit": ["Gar Saxon"]
@@ -232,7 +232,7 @@
       {
         "name": "Saxon's ZX Flame Projector",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868841/07EFB6B5703BB6979CD5569E8CBB619AAE9EE68D/",
-        "points": 6,
+        "points": 5,
         "restrictions": {
           "include": {
             "unit": ["Gar Saxon"]
@@ -324,7 +324,7 @@
       {
         "name": "Vigilance",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146515/D0D3C15D0DC26175A41EB79729AA4680E3E24954/",
-        "points": 5
+        "points": 12
       },
       {
         "name": "Lead by Example",
@@ -491,7 +491,7 @@
       {
         "name": "BARC Twin Laser Gunner",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138722/946FBD11C5776F89102F92D94087A9DA81FABA87/",
-        "points": 16,
+        "points": 18,
         "restrictions": {
           "include": {
             "unit": ["BARC Speeder"]
@@ -605,7 +605,7 @@
       {
         "name": "Burst Of Speed",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226275/92131009B53AF7A0AFE4094D2F4D9AD1C8C94B6D/",
-        "points": 3
+        "points": 10
       },
       {
         "name": "Fear",
@@ -718,7 +718,7 @@
       {
         "name": "Grappling Hooks",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141742/DA7EFC4BC5B4AC25BDB4AE6C3A084A9B10F66A8D/",
-        "points": 1
+        "points": 2
       },
       {
         "name": "JT-12 Jetpacks",
@@ -733,7 +733,7 @@
       {
         "name": "Personal Combat Shield",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144199/E3196D206A593BDF4C30F00F1A8B5F558BF0B217/",
-        "points": 10,
+        "points": 5,
         "restrictions": {
           "include": {
             "unit": ["Sabine Wren"]
@@ -934,7 +934,7 @@
       {
         "name": "DLT-19 Rifle Pintle",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140009/5BBDBCA0A1A79D898C63B099429F778FD978C993/",
-        "points": 14,
+        "points": 18,
         "restrictions": {
           "include": {
             "unit": ["TX-225 GAVw Occupier Combat Assault Tank"]
@@ -964,7 +964,7 @@
       {
         "name": "M-45 Ion Blaster",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143589/43CF60EDBFDD86484D1C481F19B6D14581F25410/",
-        "points": 5,
+        "points": 31,
         "restrictions": {
           "include": {
             "unit": ["X-34 Landspeeder"]
@@ -1014,7 +1014,7 @@
       {
         "name": "Nose-Mounted Ion Blaster",
         "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081188843/0C53E6C54EAB645F0D743DD9F017DADA78247BEF/",
-        "points": 10,
+        "points": 25,
         "restrictions": {
           "include": {
             "unit": ["DSD1 Dwarf Spider Droid"]
@@ -1221,7 +1221,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873393393/915E79CA7D72B0DA950656C69F104A7BB586C0E0/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/"
         },
-        "points": 26,
+        "points": 24,
         "restrictions": {
           "include": {
             "unit": ["Phase I Clone Troopers"]
@@ -1277,7 +1277,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/770610077943650040/CDB9EFD9CB36DE0EB5AB78B22F2B334BDB1E6DFE/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/770610077942938053/6187B2D6848EC35010DE6C3EEBB5DF6125D02D45/"
         },
-        "points": 34,
+        "points": 30,
         "restrictions": {
           "include": {
             "unit": ["Imperial Death Troopers"]
@@ -1319,7 +1319,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785625549/5461468E09D086E4CF7E835AE69D6F4226690518/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764785620873/E3B1226B0836CF579F16C490896D5E2DE95C31F5/"
         },
-        "points": 22,
+        "points": 20,
         "restrictions": {
           "include": {
             "unit": ["Phase I Clone Troopers"]
@@ -1547,7 +1547,7 @@
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708042667/2DABB5788E51006EDB3FCB03400ACD4CE07755F3/"
         },
-        "points": 27,
+        "points": 26,
         "restrictions": {
           "include": {
             "unit": ["Wookiee Warriors"]
@@ -1590,7 +1590,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321578281/CBFA560559FE81326342AD0B65D2349447F882EB/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
         },
-        "points": 20,
+        "points": 18,
         "restrictions": {
           "include": {
             "unit": ["Phase II Clone Troopers"]
@@ -1619,7 +1619,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386787/E93D6E65A61C9262B5934C5A419736B45B50D75B/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
         },
-        "points": 28,
+        "points": 34,
         "restrictions": {
           "include": {
             "unit": ["IG-100 MagnaGuard"]
@@ -1817,7 +1817,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873393876/DEDAF52B0D07E0F2A2BCB54DE9A56E4FA437A3E4/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/"
         },
-        "points": 23,
+        "points": 22,
         "restrictions": {
           "include": {
             "unit": ["Phase I Clone Troopers"]
@@ -2075,7 +2075,7 @@
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080662099/EB7BD333EDF05BC6586516E0F3E6FD9AE270F11E/"
         },
         "leader": true,
-        "points": 20,
+        "points": 18,
         "restrictions": {
           "include": {
             "type": ["Clone Trooper"]
@@ -2089,7 +2089,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281396590/F88D24438DE4A59DD0CDE3C0779FF9B35B7E42C4/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
         },
-        "points": 12,
+        "points": 11,
         "restrictions": {
           "include": {
             "type": ["Clone Trooper"]
@@ -2103,7 +2103,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281395509/5B7CE64AA6E972FE9A7F08B202EF082B8EA5C0E0/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
         },
-        "points": 18,
+        "points": 14,
         "restrictions": {
           "include": {
             "type": ["Clone Trooper"]
@@ -2117,7 +2117,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281399144/E1A292B1D9C5B721F4BD6C870F1DAC5BDDAF9650/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
         },
-        "points": 20,
+        "points": 15,
         "restrictions": {
           "include": {
             "type": ["Clone Trooper"]
@@ -2316,7 +2316,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594474909/F8F049D7F88171ADBA83AF3EAF819495053C2873/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594268734/CF3C536F7B068020A99C5E3EE11CA9C54438E250/"
         },
-        "points": 10,
+        "points": 9,
         "restrictions": {
           "include": {
             "faction": ["Rebel"]
@@ -2516,7 +2516,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143763/E93BA6716A05CA95AE2EA3B7C0DFD8AF145D5C22/"
         },
         "leader": true,
-        "points": 18,
+        "points": 20,
         "restrictions": {
           "include": {
             "unit": ["Black Sun Enforcers"]
@@ -2544,7 +2544,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420351237/706DEA645FEE2EC9787F05F4FF2926632E2C4894/"
         },
         "leader": true,
-        "points": 16,
+        "points": 18,
         "restrictions": {
           "include": {
             "unit": ["Pyke Syndicate Foot Soldiers"]
@@ -2622,7 +2622,7 @@
       {
         "name": "Baron Rudor",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138757/0E1640674CF5C8E3653FCBF2F4D80A5114A39721/",
-        "points": 12,
+        "points": 8,
         "restrictions": {
           "include": {
             "faction": ["Empire"],
@@ -2666,7 +2666,7 @@
       {
         "name": "General Weiss",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141576/6F1DDB015ACC524050345200BB4AB1253B0A2831/",
-        "points": 1,
+        "points": 5,
         "restrictions": {
           "include": {
             "faction": ["Empire"],
@@ -2954,7 +2954,7 @@
       {
         "name": "Offensive Push",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143751/9080C15E59832CCE8A15D97665832E6573554A2E/",
-        "points": 4
+        "points": 6
       },
       {
         "name": "Overwatch",
@@ -2979,17 +2979,17 @@
       {
         "name": "Situational Awareness",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145416/5965B627A7C6C0584CED87D7D08CF0C86F9C5418/",
-        "points": 2
+        "points": 4
       },
       {
         "name": "Tenacity",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146012/69F96BBBF484ABB6A9CAD2637064D4C199BC6BE8/",
-        "points": 4
+        "points": 6
       },
       {
         "name": "Up Close and Personal",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869444/1E439AB8897062691976E3BE15D17C0C4A0380AA/",
-        "points": 5
+        "points": 8
       }
     ]
   },
