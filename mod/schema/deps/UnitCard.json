@@ -141,6 +141,15 @@
       "type": "number",
       "minimum": 1,
       "description": "Optional number of Command Tokens to spawn with this Unit."
+    },
+
+    "silhouette": {
+      "type": "object",
+      "description": "Optional.  Height and Offset values for a Custom Silhouette.",
+      "properties": {
+        "height": { "type" : "number" },
+        "offset": { "type" : "number" }
+      }
     }
   },
   "type": "object"

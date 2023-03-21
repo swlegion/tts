@@ -206,19 +206,49 @@ local function initListSpawner(params)
 
         -- miniGUIDs
 
+        local silhHeight = 0
+        local silhOffset = 0
+
+        -- TODO: Handle JSON Import because the miniTable isn't fully populated 
+        local silhType = "custom"
+        if pMiniTable.type then
+          if string.find(pMiniTable.type, "Trooper") then
+              silhType = "notched"
+            if pMiniTable.baseSize == small then
+              silhType = "small"
+            end
+          else
+            silhHeight = pMiniTable.silhData[1]
+            silhOffset = pMiniTable.silhData[2]
+          end
+        else
+          silhHeight = pMiniTable.silhData[1]
+          silhOffset = pMiniTable.silhData[2]
+        end
+
         local miniGUIDsScript = "miniGUIDs = {}\n"
         for n, objEntry in pairs(pMiniTable.miniObjs) do
           miniGUIDsScript = miniGUIDsScript .. "miniGUIDs["..n.."] = '" .. objEntry.obj.getGUID() .. "'\n"
         end
+
+        local miniName = ""
+        if pMiniTable.name then
+          if pMiniTable.name ~= nil then
+            miniName = pMiniTable.name:lower()
+          end
+        end
+
         selectedMiniScript = selectedMiniScript .. miniGUIDsScript ..
           "cardGUID = \"" .. pMiniTable.unitCardGUID ..
-          "\"\n unitName = \""..pMiniTable.name:lower() ..
-          "\"\n commandName = \""..pMiniTable.commandName ..
-          "\"\n commandType = \""..pMiniTable.commandType ..
-          "\"\n selectedSpeed = "..pMiniTable.selectedSpeed ..
-          "\n baseSize = \""..pMiniTable.baseSize ..
+          "\"\n unitName = \"".. miniName ..
+          "\"\n silhType = \"".. silhType ..
+          "\"\n silhHeight = \"".. silhHeight ..
+          "\"\n silhOffset = \"".. silhOffset ..
+          "\"\n commandName = \"".. pMiniTable.commandName ..
+          "\"\n commandType = \"".. pMiniTable.commandType ..
+          "\"\n selectedSpeed = ".. pMiniTable.selectedSpeed ..
+          "\n baseSize = \"".. pMiniTable.baseSize ..
           "\"\n unitID = " .. pMiniTable.unitID ..
-          "\n height = " .. pMiniTable.height ..
           "\n unitIDTokenGUID = \"".. pMiniTable.unitIDTokenGUID ..
           "\"\n" .. globals.modelMiniScript
       else
@@ -301,11 +331,13 @@ local function initListSpawner(params)
       " " ..
       unitInfo.rank:gsub("^%l", string.upper) ..
       " Command Token"
+    miniData.name = unitInfo.name
     miniData.baseSize = unitInfo.size
     miniData.commandName = commandName
     miniData.commandType = commandType
     miniData.selectedSpeed = unitInfo.speed
-    miniData.height = unitInfo.height
+    miniData.silhData = miniData.silhData or {}
+    miniData.type = miniData.type
 
     initializeMini(miniData)
 
@@ -339,9 +371,36 @@ local function initListSpawner(params)
     faction,
     totalUnits
   )
+    --Min JSON Payload
     local name = unit.name
     local upgrades = unit.upgrades or {}
     local loadout = unit.loadout or {}
+
+    --if we spawn via JSON we don't have
+    --enough data to parse silhs anymore...
+    --we need type and any custom values
+    --so load everything off the deck if needed
+    local completeUnitData
+
+    local type = unit.type    
+    local silhData = unit.silhData or {}
+
+    if unit.silhData == nil then
+      silhData = {}
+      completeUnitData = deck:getUnitByFactionAndName(faction, name)
+      if completeUnitData.silhouette ~= nil then
+        for k, v in pairs(completeUnitData.silhouette) do
+          table.insert(silhData, completeUnitData.silhouette[k])
+        end
+      end
+    end
+
+    if unit.type == nil then
+      if completeUnitData == nil then
+        completeUnitData = deck:getUnitByFactionAndName(faction, name)
+      end
+      type = completeUnitData.type
+    end
 
     -- Prep unit card spawn locations.
     local offsets = computeSpawnPositions(index)
@@ -389,6 +448,8 @@ local function initListSpawner(params)
       unitIDTokenGUID = unitId.getGUID(),
       leaderIndex     = 1,
       upgrades        = upgrades,
+      type            = type,
+      silhData        = silhData
     }
 
     -- Spawn loadout and addon cards.

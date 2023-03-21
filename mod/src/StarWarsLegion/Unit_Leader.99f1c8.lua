@@ -46,9 +46,7 @@ function resetUnitButtons()
 
     addLockButton()
     self.createButton(data)
-    if unitData.baseSize == "small" then
-      addSilhouetteButton()
-    end
+    addSilhouetteButton()
 end
 
 function calculateButtonZOffset(baseDiameter)
@@ -58,12 +56,13 @@ end
 function addSilhouetteButton()
   local gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
   local btnTint = gameData.getTable("battlefieldTint")
+  local buttonOffset = calculateButtonZOffset(templateInfo.baseRadius[unitData.baseSize])
   btnData = {
     click_function = "toggleSilhouettes",
     function_owner = self,
     label = "SIL",
     tooltip = "Toggle silhouettes on this unit",
-    position = {-0.225,0.25,0.6},
+    position = {-0.225,0.25, buttonOffset},
     width = 230,
     height = 180,
     font_size = 100,
@@ -207,34 +206,57 @@ function showSilhouette()
     if obj then
       local pos = obj.getPosition()
       local rot = obj.getRotation()
-      local newSilhouette = spawnSilhouette(pos, rot)
-
-      obj.addAttachment(newSilhouette)
+      local newSilhouette = spawnSilhouette(obj, pos, rot)
     end
   end
   silhouetteState = true
 end
 
-function spawnSilhouette(pos, rot)
-  local silhouetteData = {
-    mesh = "http://cloud-3.steamusercontent.com/ugc/1002556771691273590/F435C238FB9E1E49963B2AA00E09DF9C711DA4A0/",
-    diffuse = "http://cloud-3.steamusercontent.com/ugc/1003681898505462981/13937CB26573918BDCBDE2A13CCDEF3C966172D7/",
-    collider = "http://cloud-3.steamusercontent.com/ugc/785234540537095586/C31C1C750AB535B6816C9216B20609C554578249/"
-  }
+function spawnSilhouette(obj, pos, rot)
+  local globals = Global.getTable("templateInfo")
+  local scale = globals.baseRadius[unitData.baseSize]
+  local height = 1.0
+  local offset = 0.0
+  local silhouetteData = "http://cloud-3.steamusercontent.com/ugc/5063766435505471684/D97103C9FFB76016DDF9CE66A7622BDB3E810160/"
+  if silhType == "custom" then
+    height = silhHeight
+    offset = silhOffset
+    if unitData.baseSize == "snail" then
+      silhouetteData = "http://cloud-3.steamusercontent.com/ugc/5063766435505471854/AE2D411CFBF4D88321CAD0D75961CBF0512D62E4/"
+      scale = 1.0
+    end
+    if unitData.baseSize == "long" then
+      silhouetteData = "http://cloud-3.steamusercontent.com/ugc/5063766435505471800/DF511A83E913EBA164F74E20BA239AE286458D91/"
+      scale = 1.0
+    end
+  else    
+    if unitData.baseSize == "small" then
+      height = globals.silhouetteHeight["small"]
+    else
+      height = globals.silhouetteHeight["notched"]
+    end
+  end
+  if obj ~= nil then
+    local objUp = obj.getTransformUp()
+    local offsetVector = Vector.new(objUp.x * offset, objUp.y * offset, objUp.z * offset)
+    pos = { pos.x + offsetVector.x, pos.y + offsetVector.y, pos.z + offsetVector.z }
+  end
+  
+
   local silhouette = spawnObject({
-    type = "Custom_Model",
+    type = "Custom_AssetBundle",
     position = pos,
     rotation = rot,
-    scale = {1,1,1}
+    scale = {scale,height,scale}
   })
   silhouette.setCustomObject({
-      mesh = silhouetteData.mesh,
-      collider = silhouetteData.collider,
-      type = 1,
+      assetbundle = silhouetteData,
       material = 3
   })
   silhouette.setColorTint({121/255,194/255,205/255,100/255})
-
+  if obj ~= nil then
+    obj.addAttachment(silhouette)
+  end
   return silhouette
 end
 

@@ -175,6 +175,12 @@ function onload(saveData)
       snail = 3.93701
     }
 
+    templateInfo.silhouetteHeight = {
+      small = 1.65,
+      notched = 2.707,
+      custom = 1.0
+    }
+
     templateInfo.cohesionRadius = {
       -- Troopers
       small = 4.494485,

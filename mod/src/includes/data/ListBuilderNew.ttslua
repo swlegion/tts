@@ -403,9 +403,15 @@ function _generateListData()
       for _, entry in ipairs(text.upgrades) do
         table.insert(upgrades, entry)
       end
+      local silhData = {}
+      for _, entry in ipairs(text.silhData) do
+        table.insert(silhData, entry)
+      end
       table.insert(listData.units, {
         name     = text.name,
         upgrades = upgrades,
+        type = text.type,
+        silhData = silhData
       })
     end
   end
