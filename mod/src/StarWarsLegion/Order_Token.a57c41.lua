@@ -198,6 +198,8 @@ function activate()
     getSelectedUnitObjVariables()
     setTemplateVariables()
 
+    selectedUnitObj.call("setStartPos")
+
     highlightUnit(selectedUnitObj.getTable("miniGUIDs"),{0,1,0})
     highlightCard(getObjectFromGUID(selectedUnitObj.getVar("cardGUID")))
 
@@ -351,7 +353,6 @@ end
 
 ------------------------------------------------- NEXTUNIT ------------------------------------------------------------
 function nextUnit()
-
     local out = false
     local originalUnitNumber = selectedUnitNumber
     while out == false do
@@ -375,6 +376,7 @@ function nextUnit()
                 stopAttack()
                 selectedUnitObj = eligibleUnits[selectedUnitNumber]
 
+                selectedUnitObj.call("setStartPos")
                 highlightUnit(selectedUnitObj.getTable("miniGUIDs"),{0,1,0})
                 highlightCard(getObjectFromGUID(selectedUnitObj.getVar("cardGUID")))
                 getSelectedUnitObjVariables()
@@ -400,6 +402,7 @@ end
 function initMove()
     initPos = selectedUnitObj.getPosition()
     initRot = selectedUnitObj.getRotation()
+    selectedUnitObj.call("setStartPos")
     moveUnit()
 end
 
@@ -711,7 +714,8 @@ end
 ------------------------------------------------- stop UNIT ------------------------------------------------------------
 function stopUnit()
     -- destroy templates
-
+    selectedUnitObj.call("printMovement")
+    selectedUnitObj.call("setStartPos")
     self.clearButtons()
     clearTemplates()
     resetButtons()
@@ -1143,7 +1147,6 @@ end
 ------------------------------------------------- end UNIT ------------------------------------------------------------
 
 function endActivation()
-
     resetActivation()
     self.flip()
 end
