@@ -253,7 +253,7 @@ function spawnSilhouette(obj, pos, rot)
       assetbundle = silhouetteData,
       material = 3
   })
-  silhouette.setColorTint({121/255,194/255,205/255,100/255})
+  silhouette.setColorTint({0.47,0.76,0.8,0.3})
   if obj ~= nil then
     obj.addAttachment(silhouette)
   end

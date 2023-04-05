@@ -508,6 +508,46 @@
     },
     {
       "content": "contrib/cards/ShadowCollective/IG11Unit.json"
+    },
+    {
+      "name": "Ahsoka Tano",
+      "title": "Fulcrum",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2022720184107019845/E7B0CE153BABCB9FF1DB91EF0B3F216B15253A29/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 165,
+      "speed": 2,
+      "upgrades": {
+        "Force": 2,
+        "Training": 2
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2022720297663233236/517A8997FB85780B040DD3017147753F438137CC/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "I am no Jedi",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022720184107019557/E39B3953F55DCF6394CA819E25825E74B8618184/",
+          "pip": 1
+        },
+        {
+          "name": "Swift Protector",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022720184107019696/F82E451FABCD16AB411E88409AFC81201DB9D43A/",
+          "pip": 2
+        },
+        {
+          "name": "Family Reunion",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022720184107019640/F5F69B23E0B7E1734BE3B7AE3A8DE6738680EA87/",
+          "pip": 2
+        },
+        {
+          "name": "A New Beginning",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022720184107019782/0D03CDC28357CD7FDB854B0BA2FDD346402F041A/",
+          "pip": 3
+        }
+      ]
     }
   ],
   "Corps": [

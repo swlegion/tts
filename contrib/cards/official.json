@@ -1260,8 +1260,8 @@
         "name": "DLT-19 Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140049/9DA8A6B2DF19484212DC2516D345CE713F9D0F5E/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242465584/D38BBF10F76882CFF4189AB478E9F0691A22298F/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766101851242466181/BEF69EF45F1CCEF50CDF7B5CC6E1FE6BDC556310/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141001/FF62545FC3DEF499BA8A0C04F07917C6CAA9E30D/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
         },
         "points": 20,
         "restrictions": {
@@ -1517,8 +1517,8 @@
         "name": "HH-12 Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142253/2A3E6F8AB8FB506642A35A69516EB1F38E82F2D0/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711981/5D8FB39102FEE64DF1802AA71B66666B4E03717F/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541712102/C37F3281C89F697024FF1F343B06FB5AC828EA10/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141088/7342269A721DF49D0C38F1469E8463093734EF66/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
         },
         "points": 16,
         "restrictions": {
@@ -1644,8 +1644,8 @@
         "name": "RT-97C Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145178/E34FCDD3060A28ED28C91966A004D3CB7DD6C62F/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242660925/33331F4DA2AE832C568A49BD24B65D4C1462AF27/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766101851242654975/755ABA199B9C3BEEA1F33AF58FD05D378A67C97F/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141221/5D4DAEED517F52EE2ECBC631301C97422F519AB9/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
         },
         "points": 24,
         "restrictions": {
@@ -1715,8 +1715,8 @@
         "name": "T-21 Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145912/C6F9E9EDA22CB6B40D955AE391F14227D648AF3B/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242554815/68F112DE9EC465DA003ECBD26DE129ADD34CD558/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141339/1EB723D5FCF6655CFFF7EF700EE7108274E1A6C7/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
         },
         "points": 22,
         "restrictions": {
@@ -2413,8 +2413,8 @@
         "name": "Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145641/67887DD2E968766C0268BB4629E1EEA9CF54DFDC/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711777/1E415A2A18F2269B0C63E1C2901E5192DCCFE8CB/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650140825/D8AE1D1F27B97F359916236DA163DA7EC4B517C1/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
         },
         "points": 8,
         "restrictions": {
@@ -2441,8 +2441,8 @@
         "name": "Stormtrooper Captain",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145556/326ED56BBF68B291DF37555D6155DD013F1E646A/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242555871/B1A38B82950DD8864591296C730D82E0D66BC985/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173464650963/1A63FC0E22280AA3B95488A298270874B7B6CDD2/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650140913/ADEED3994E6F70777B939A89B18FF520765DCDC4/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
         },
         "leader": true,
         "points": 10,
@@ -2456,8 +2456,8 @@
         "name": "Stormtrooper Specialist",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145600/9F5038BBE19D0970091F9C1946001A4E825C22A1/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173464686810/87075FBAEFB7A45C107FEDD41E26ACF148C2592D/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141284/6D59924E68B2B1640C0AC479B8DE95F434056650/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
         },
         "points": 9,
         "restrictions": {
