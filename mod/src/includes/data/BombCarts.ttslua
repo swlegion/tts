@@ -19,6 +19,8 @@ function onLoad()
   templateInfo = Global.getTable("templateInfo")
   clearRangeRulers()
   hideUI()
+
+  silhouetteState = false
 end
 
 function hideUI()
@@ -35,6 +37,17 @@ function hideUI()
       font_size = 200, color = {0, 0, 0, 0.8},
       font_color = {0.1212, 0.8127, 0, 1},
       tooltip = "Move the cart or show range rulers."
+  })
+  self.createButton({
+      click_function = "toggleSilhouette",
+      function_owner = self,
+      label = "SIL",
+      position = {-0.75, 0.1, 1.5},
+      scale = {0.5, 0.5, 0.5},
+      width = 325, height = 300,
+      font_size = 200, color = {0, 0, 0, 0.8},
+      font_color = {0.1212, 0.8127, 0, 1},
+      tooltip = "Toggle Silhouette"
   })
 end
 
@@ -254,4 +267,54 @@ function spawnBombRuler()
     local rangeRulerTable = getRangeRulerLinks()
     local bombCartRulerBundle = rangeRulerTable.bombCart
     spawnRangeRuler(self, bombCartRulerBundle)
+end
+
+function toggleSilhouette()
+  if silhouetteState then
+    clearSilhouette()
+  else
+    showSilhouette()
+  end
+end
+
+function clearSilhouette()
+  silhouetteState = false
+  local silToDestroy = self.removeAttachments()[1]
+  silToDestroy.destruct()
+end
+
+function showSilhouette()
+  silhouetteState = true
+  local pos = self.getPosition()
+  local rot = self.getRotation()
+  spawnSilhouette(self, pos, rot)
+end
+
+function spawnSilhouette(obj, pos, rot)
+  local globals = Global.getTable("templateInfo")
+  local scale = globals.baseRadius["medium"]
+  local height = 1.111
+  local offset = 0.0 
+  local silhouetteData = "http://cloud-3.steamusercontent.com/ugc/5063766435505471684/D97103C9FFB76016DDF9CE66A7622BDB3E810160/"
+  if obj ~= nil then
+    local objUp = obj.getTransformUp()
+    local offsetVector = Vector.new(objUp.x * offset, objUp.y * offset, objUp.z * offset)
+    pos = { pos.x + offsetVector.x, pos.y + offsetVector.y, pos.z + offsetVector.z }
+  end
+
+  local silhouette = spawnObject({
+    type = "Custom_AssetBundle",
+    position = pos,
+    rotation = rot,
+    scale = {scale,height,scale}
+  })
+  silhouette.setCustomObject({
+      assetbundle = silhouetteData,
+      material = 3
+  })
+  silhouette.setColorTint({0.47,0.76,0.8,0.3})
+  if obj ~= nil then
+    obj.addAttachment(silhouette)
+  end
+  return silhouette
 end
