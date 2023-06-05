@@ -43,7 +43,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790598/868FE96BEB709EE3A25D7973FF259B8BF7824475/",
       "size": "small",
       "type": "Clone Trooper",
-      "points": 100,
+      "points": 95,
       "speed": 2,
       "upgrades": {
         "Command": 1,
@@ -297,7 +297,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790377/AC7989ED45A958942F1EF716B575174C5BEB92E1/",
       "size": "small",
       "type": "Trooper",
-      "points": 90,
+      "points": 85,
       "speed": 2,
       "upgrades": {
         "Command": 1,
@@ -406,7 +406,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790227/9326CC2191C991FF9CB0EB06A4EA17A2A17078BC/",
       "size": "small",
       "type": "Clone Trooper",
-      "points": 72,
+      "points": 66,
       "speed": 2,
       "upgrades": {
         "Heavy Weapon": 1,
@@ -592,7 +592,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790069/CFA0E667E3B9FEB5F80A3F7A68CAADE7FCF5F340/",
       "size": "epic",
       "type": "Repulsor Vehicle",
-      "points": 170,
+      "points": 160,
       "speed": 2,
       "upgrades": {
         "Pilot": 1,
@@ -616,7 +616,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700907/2DD3325FA71C1F920CC957F8B7393893AE282073/",
       "size": "laat",
       "type": "Repulsor Vehicle",
-      "points": 105,
+      "points": 100,
       "speed": 2,
       "height": 7,
       "upgrades": {

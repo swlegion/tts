@@ -6,7 +6,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788425590/4AB2CCCFC2F45B3ACB9927166F6014A2903D7DCE/",
       "size": "small",
       "type": "Trooper",
-      "points": 160,
+      "points": 150,
       "speed": 2,
       "upgrades": {
         "Force": 2,
@@ -57,7 +57,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788535425/1ADD2DCEEA5D23013C2331604493EFF62AC46DB3/",
       "size": "small",
       "type": "Trooper",
-      "points": 80,
+      "points": 75,
       "speed": 2,
       "upgrades": {
         "Command": 2,
@@ -229,7 +229,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603976/14129DC0580196A6C188A7D5B037937BE3906C83/",
       "size": "small",
       "type": "Trooper",
-      "points": 105,
+      "points": 95,
       "speed": 2,
       "upgrades": {
         "Command": 1,
@@ -833,7 +833,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604461/D49CF324CDE3C648E683FCCD762B76F94E843065/",
       "size": "small",
       "type": "Trooper",
-      "points": 72,
+      "points": 68,
       "speed": 3,
       "upgrades": {
         "Heavy Weapon": 1,
@@ -865,7 +865,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604497/C4CEBD761320F416E03203426388067B95104C90/",
       "size": "small",
       "type": "Trooper",
-      "points": 34,
+      "points": 30,
       "speed": 3,
       "upgrades": {
         "Heavy Weapon": 2,
@@ -957,7 +957,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604655/CC7501F41054D1F68139C8ABCFAEE0CAA855475C/",
       "size": "medium",
       "type": "Creature Trooper",
-      "points": 95,
+      "points": 90,
       "speed": 3,
       "upgrades": {
         "Training": 1,
