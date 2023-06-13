@@ -1991,6 +1991,20 @@
             "unit": ["Imperial Dark Troopers"]
           }
         }
+      },
+      {
+        "name": "Axe Ewok",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866621745/E6F7651F238AEA622ACDF61F7F04868A05FF4878/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128895/152E8A0BE0A0FB98FAD48338552C6282DD8954B7/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Ewok Skirmishers", "Ewok Slingers"]
+          }
+        }
       }
     ],
     "Ordnance": [
@@ -2596,6 +2610,20 @@
             "unit": ["Imperial Dark Troopers"]
           }
         }
+      },
+      {
+        "name": "Ewok Trapper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866621848/AABE07DBD74C5C3520EB3E5DA77744D764C09515/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128844/558E1277513B0AF48911A68B5FAAB981BC0A56A1/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Ewok Skirmishers", "Ewok Slingers"]
+          }
+        }
       }
     ],
     "Pilot": [
@@ -2990,6 +3018,46 @@
         "name": "Up Close and Personal",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869444/1E439AB8897062691976E3BE15D17C0C4A0380AA/",
         "points": 8
+      },
+      {
+        "name": "Herbal Medicine",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562515/AA30CC1B876E89EF97F2C0BDA05F5E17411D0B13/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Logray"]
+          }
+        }
+      },
+      {
+        "name": "Onward to Victory",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562747/ABEA46EB90A5161E77598003BCBD0EB5A48C2250/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Logray"]
+          }
+        }
+      },
+      {
+        "name": "Secret Ingredients",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562047/CB4CF0706A201A80F6B3F5B11AFA1859F5D705A5/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Logray"]
+          }
+        }
+      },
+      {
+        "name": "Call to Arms",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562443/1ED7D2D33E17712DB46173EE2F91A149A0412D4C/",
+        "points": 5
+      },
+      {
+        "name": "Forest Dwellers",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562596/986DAEFC7C6C8E6BBBAB88010DEBAD2DECE17946/",
+        "points": 3
       }
     ]
   },
@@ -3076,6 +3144,16 @@
         "pip": 1
       },
       {
+        "name": "Log Traps",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866561877/7DA15C0E3C8B41052DA340049F4A606461C059DC/",
+        "pip": 1
+      },
+      {
+        "name": "Arboreal Assault",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562364/A44620A9FA95C5DE36A57435EDD2A0E9C1BEB18E/",
+        "pip": 1
+      },
+      {
         "name": "Turning The Tide",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034438/544487939B8A8BFB04860134ACC616A1EE285039/",
         "pip": 2
@@ -3086,6 +3164,11 @@
         "pip": 2
       },
       {
+        "name": "Hiding in Plain Sight",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562828/642D6593D255FBFBFE683B4CBA7A73303A254DFE/",
+        "pip": 2
+      },
+      {
         "name": "Covering Fire",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033931/E4C7CE80C1179B43969BE76C60CC2744101E051E/",
         "pip": 3
@@ -3093,6 +3176,11 @@
       {
         "name": "Hold at Any Cost",
         "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116226159/13B563009D18A4B353A209872CF4E2931AE282BA/",
+        "pip": 3
+      },
+      {
+        "name": "For the Tribe",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866561984/9CD2F9B809D231CE871F130AEA717D1CD4B9A81D/",
         "pip": 3
       }
     ],

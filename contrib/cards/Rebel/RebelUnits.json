@@ -298,6 +298,40 @@
           "pip": 3
         }
       ]
+    },
+    {
+      "name": "Logray",
+      "title": "Superstitious Shaman",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562278/020C6D8AA24648A687F71982FF2BDA10563C7E2D/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 45,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Training": 3
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129309/3D6C219F243BDE984C42BB3444B01DB09B522CBB/"
+        }
+      ]
+    },
+    {
+      "name": "C-3P0",
+      "title": "Golden God",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562667/81CD336814DCD74397F529EA03A934DE9C9C01A0/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 40,
+      "speed": 2,
+      "upgrades": {},
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456807069/DE7E32B39455DB5111769436FD0C5BFDA3841268/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/777357228032306506/D60CB8A1159723917EF1831D4042318A67458A7A/"
+        }
+      ]
     }
   ],
   "Operative": [
@@ -706,6 +740,45 @@
     },
     {
       "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiersUnit.json"
+    },
+    {
+      "name": "Ewok Skirmishers",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562897/2351495BC76191CBBB38BE21D2E509C1B75C9472/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 40,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Personnel": 1,
+        "Training": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128972/9388116F0C7BE70B991CC7715943BF9FF08D3890/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129131/D612F1B1EBDA3172B69BEE40159CE5D999045A62/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129196/6EED0C8AAF8F50751EE4206471D1273B6C0F4B5A/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129252/FC0A6247B6AB21A99919659C1F9069186C6D82ED/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128356/9E8C70962F9D5BF853BD9310F2BB1E1A3F80DB5D/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128445/EBB56734DB6527B3566C317F6F4F0E84471D6776/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        }
+      ]
     }
   ],
   "Special Forces": [
@@ -909,6 +982,45 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708043883/1EA1B3C21A50C20D4D168AB91ECFE1C01A4F7DF5/"
         }
       ]
+    },
+    {
+      "name": "Ewok Slingers",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562205/D61E53490E27ED8A1B6B17FAA2BF92BA78BC5CE0/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 35,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Personnel": 1,
+        "Training": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128972/9388116F0C7BE70B991CC7715943BF9FF08D3890/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128506/B24F2402EDC36C64688B7F492B382D972ABA30F1/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128565/24D88975D67E46B5FA9294EB6DCC146912D61F2F/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128627/19AC5B05F3A355226EE783B9F239B3B285EA077A/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128715/CB52DA6C0FC1DF3511C2A2D62CB2B3A13A9D4F8F/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128778/1D5BCB551375F1A7988C434F0B52E18434BB4747/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        }
+      ]
     }
   ],
   "Support": [
@@ -1046,6 +1158,26 @@
       "minis": [
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1802024425338475441/730DE7AD6E1A55EA9F9264DADC1DDC0AC2CCA565/"
+        }
+      ]
+    },
+    {
+      "name": "Chewbacca",
+      "title": "Let the Wookiee Win",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562133/67C1B02BDD4C9E5EE21028E6D109910C2B905345/",
+      "size": "huge",
+      "type": "Ground Vehicle",
+      "points": 190,
+      "speed": 2,
+      "upgrades": {},
+      "silhouette": {
+        "height": 8.84,
+        "offset": 0.0
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/999141806429351360/24C098E7B3D1708CDCFB9AEA4B2C445EF2DBAEE0/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752434998239690716/C6578DAF9012605B1F44A907D1C28646E34A73CF/"
         }
       ]
     }
