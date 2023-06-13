@@ -6,7 +6,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790037/C20F500DE55700AA568EA5BDA7794A1B0210E605/",
       "size": "small",
       "type": "Trooper",
-      "points": 155,
+      "points": 150,
       "speed": 2,
       "upgrades": {
         "Command": 2,
@@ -43,7 +43,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789992/5D0BFCF9DA9A3200D9D0A2CDE98E25782B8F4C10/",
       "size": "small",
       "type": "Trooper",
-      "points": 195,
+      "points": 185,
       "speed": 2,
       "upgrades": {
         "Force": 3,
@@ -103,7 +103,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789910/D7965608F5D3FF1B7FD8D14BF740C098F8AB5B7D/",
       "size": "small",
       "type": "Droid Trooper",
-      "points": 95,
+      "points": 90,
       "speed": 2,
       "upgrades": {
         "Command": 2,
@@ -376,7 +376,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789610/FE6991E3F921A3C5ACD09400FD9CED611AC8E7D0/",
       "size": "small",
       "type": "Droid Trooper",
-      "points": 68,
+      "points": 64,
       "speed": 2,
       "upgrades": {
         "Heavy Weapon": 1,
@@ -488,7 +488,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789475/1521CBD0935E6FB62CE544D89AC89E2F19F21D6B/",
       "size": "medium",
       "type": "Ground Vehicle",
-      "points": 75,
+      "points": 70,
       "speed": 1,
       "upgrades": {
         "Comms": 1

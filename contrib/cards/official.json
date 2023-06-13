@@ -44,7 +44,7 @@
           "name": "A280-CFE Pistol Config",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137975/9505EB828E9F8B8F746E484527E05FC515D34891/"
         },
-        "points": 10,
+        "points": 0,
         "restrictions": {
           "include": {
             "unit": ["Cassian Andor"]
@@ -54,7 +54,7 @@
       {
         "name": "CR-24 Flame Rifle",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139676/532C48256940506F24A3F86DF0841C96CE9A20E3/",
-        "points": 15,
+        "points": 10,
         "restrictions": {
           "include": {
             "unit": ["Dewback Rider"]
@@ -64,7 +64,7 @@
       {
         "name": "DT-57 \"Annihilator\"",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140274/F89F5BDDA3BA705867313D846B3C1331FC31AD61/",
-        "points": 8,
+        "points": 0,
         "restrictions": {
           "include": {
             "unit": ["General Grievous"]
@@ -74,7 +74,7 @@
       {
         "name": "Deflector Shields",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139844/502DCA18D664C848F5992832178ECCB8968C9358/",
-        "points": 18,
+        "points": 10,
         "restrictions": {
           "include": {
             "unit": ["BX-Series Droid Commandos"]
@@ -122,7 +122,7 @@
           "name": "J-19 Bo-Rifle Staff",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143309/544D8E7915CDDF661A0F75AD56BD3C4AF023108F/"
         },
-        "points": 15,
+        "points": 5,
         "restrictions": {
           "include": {
             "unit": ["Agent Kallus"]
@@ -132,7 +132,7 @@
       {
         "name": "Jetpack Rockets",
         "image": "http://cloud-3.steamusercontent.com/ugc/1616220044491093901/42DF534EFBABAB01D0A173C7A8F67D8B0970B3DE/",
-        "points": 8,
+        "points": 5,
         "restrictions": {
           "include": {
             "unit": ["Mandalorian Resistance"]
@@ -162,7 +162,7 @@
       {
         "name": "RT-97C Blaster Rifle",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145098/F1FA0599FBE1CF545924E0DF1295FBCEDC4C1E31/",
-        "points": 10,
+        "points": 5,
         "restrictions": {
           "include": {
             "unit": ["Dewback Rider"]
@@ -521,7 +521,7 @@
       {
         "name": "Gnasp Gunner",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226311/08FF7D85F3D4B6D5C65D70ADE3EE76524D2E0BB6/",
-        "points": 25,
+        "points": 15,
         "restrictions": {
           "include": {
             "unit": ["Raddaugh Gnasp Fluttercraft"]
@@ -541,7 +541,7 @@
       {
         "name": "RPS-6 Rocket Gunner",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145068/CA32A4BCA29FE15FAADEFDDB1B22F7E107DC2826/",
-        "points": 31,
+        "points": 21,
         "restrictions": {
           "include": {
             "unit": ["X-34 Landspeeder"]
@@ -625,7 +625,7 @@
       {
         "name": "Force Choke",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141299/B617CD9EC6D6C01C720989C66E7153E60E47126D/",
-        "points": 5,
+        "points": 10,
         "restrictions": {
           "include": {
             "alignment": ["Dark"]
@@ -964,7 +964,7 @@
       {
         "name": "M-45 Ion Blaster",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143589/43CF60EDBFDD86484D1C481F19B6D14581F25410/",
-        "points": 31,
+        "points": 25,
         "restrictions": {
           "include": {
             "unit": ["X-34 Landspeeder"]
@@ -974,7 +974,7 @@
       {
         "name": "Mark II Medium Blaster",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143619/E3949CD69ED911AF724373F0EE17CD656AD19556/",
-        "points": 26,
+        "points": 21,
         "restrictions": {
           "include": {
             "unit": ["X-34 Landspeeder"]
@@ -1034,7 +1034,7 @@
       {
         "name": "Twin Beam Cannons",
         "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189108/F040A172FA29BC024E24EBA875B27A7CE4F48FFC/",
-        "points": 40,
+        "points": 25,
         "restrictions": {
           "include": {
             "unit": ["Infantry Support Platform"]
@@ -1044,7 +1044,7 @@
       {
         "name": "Twin Blaster Cannons",
         "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189035/E0FE1C4A1C9FDB662B092EEE87DDF1679EE4F144/",
-        "points": 40,
+        "points": 25,
         "restrictions": {
           "include": {
             "unit": ["Infantry Support Platform"]
@@ -1054,7 +1054,7 @@
       {
         "name": "Twin Missile Pods",
         "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081188964/A368F5EF82821FCC38D6FABC316A1C035C38ECCA/",
-        "points": 40,
+        "points": 25,
         "restrictions": {
           "include": {
             "unit": ["Infantry Support Platform"]
@@ -1064,7 +1064,7 @@
       {
         "name": "TX-130 Beam Cannon Turret",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146181/3EFE8D5F3AC5E50248734F4ABF50A175FE76460D/",
-        "points": 30,
+        "points": 15,
         "restrictions": {
           "include": {
             "unit": ["TX-130 Saber-Class Fighter Tank"]
@@ -1165,7 +1165,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357841451/50164A1C84E6D119BC45BDD31C8209ED7D9A0F29/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080713966/46952E774C97E45A1E936D35B3FC7C9392F5950F/"
         },
-        "points": 28,
+        "points": 24,
         "restrictions": {
           "include": {
             "unit": ["Mandalorian Resistance"]
@@ -1774,7 +1774,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696350886429750/5D62ADB1200B1AD16A0349AF87E757F40E720115/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080686656/A6DDF6C03FED22656FD7714348E27ECF8144218E/"
         },
-        "points": 38,
+        "points": 34,
         "restrictions": {
           "include": {
             "unit": ["Mandalorian Resistance"]
@@ -1789,7 +1789,7 @@
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080696961/0E039C55249C023EF22B04536617ACB67DB5AABA/"
         },
         "leader": true,
-        "points": 38,
+        "points": 34,
         "restrictions": {
           "include": {
             "unit": ["Mandalorian Resistance"]
@@ -1873,7 +1873,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143366/41AB7DFFD2FCF20E2BCC3F899F728863C30F6343/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200823/B886D3157AA2F2528F4E5F76F26DF44A41496615/"
         },
-        "points": 30,
+        "points": 38,
         "restrictions": {
           "include": {
             "unit": ["Mandalorian Super Commandos"]
@@ -1887,7 +1887,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143451/3DFD9C8BD5D504D3A2F7934678D1A0A7C2285863/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200769/60353F40BAE6D92D6F6ED24E2883EB9CC2EA74C4/"
         },
-        "points": 30,
+        "points": 28,
         "restrictions": {
           "include": {
             "unit": ["Mandalorian Super Commandos"]
@@ -1929,7 +1929,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143649/BBBA0D26FB46EAD96421C4B77FE779B5F0F848AA/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143328/3D6F3C2E8DFB78B9B748FFC8F339B9C568D7408E/"
         },
-        "points": 14,
+        "points": 16,
         "restrictions": {
           "include": {
             "unit": ["Black Sun Enforcers"]
@@ -1957,7 +1957,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2004698291313160948/23CA698C8F2AF1C08D2DED3564B138E72E2ABCBF/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2004698291313176203/E77892ADB668EA0CB548F6ED71BE44CA3FB730E7/"
         },
-        "points": 48,
+        "points": 45,
         "restrictions": {
           "include": {
             "unit": ["Imperial Dark Troopers"]
@@ -1971,7 +1971,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2004698291313161010/1873BCD554A553BC2FF25A2BE16116EDEBFDCEF4/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2004698291313176203/E77892ADB668EA0CB548F6ED71BE44CA3FB730E7/"
         },
-        "points": 40,
+        "points": 45,
         "restrictions": {
           "include": {
             "unit": ["Imperial Dark Troopers"]
