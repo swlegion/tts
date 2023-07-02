@@ -56,6 +56,15 @@
       ]
     },
 
+    "silhouette": {
+      "type": "object",
+      "description": "Optional.  Height and Offset values for a Custom Silhouette.",
+      "properties": {
+        "height": { "type" : "number" },
+        "offset": { "type" : "number" }
+      }
+    },
+
     "heavyWeaponTeam": {
       "description": "Reqyure a \"Heavy Weapon\" upgrade attached to this unit and make it the unit leader.",
       "enum": [true]

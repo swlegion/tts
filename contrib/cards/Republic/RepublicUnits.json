@@ -43,7 +43,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790598/868FE96BEB709EE3A25D7973FF259B8BF7824475/",
       "size": "small",
       "type": "Clone Trooper",
-      "points": 100,
+      "points": 95,
       "speed": 2,
       "upgrades": {
         "Command": 1,
@@ -119,7 +119,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790538/EBB9911B9EB9C0F817370266A8ACB8357BEB3919/",
       "size": "small",
       "type": "Clone Trooper",
-      "points": 55,
+      "points": 60,
       "speed": 2,
       "upgrades": {
         "Command": 1,
@@ -234,6 +234,23 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1931498942568777590/0BA60DFCDA7322FE873E450157E4186CD1E095AD/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1931498942568777830/0B9A3EA22942328754AB85811EF3E367EE244F2D/"
         }
+      ],
+      "commands": [
+        {
+          "name": "Bring it Down!",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022718494181413653/02DAE10AF010ABE97C2A2EF535CA0072C334CEE0/",
+          "pip": 1
+        },
+        {
+          "name": "Have I Ever Let you Down?",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022718494181413715/2F415FFA15FAE4262D1364A5CB46F0D7BDDC166C/",
+          "pip": 2
+        },
+        {
+          "name": "Combined Arms",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022718494181413785/93BB691509DA089CF951ACDA474E0E06C3BB0E07/",
+          "pip": 3
+        }
       ]
     }
   ],
@@ -280,7 +297,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790377/AC7989ED45A958942F1EF716B575174C5BEB92E1/",
       "size": "small",
       "type": "Trooper",
-      "points": 90,
+      "points": 85,
       "speed": 2,
       "upgrades": {
         "Command": 1,
@@ -351,7 +368,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790299/B84917597F10DE241D7909430E91B5FC03248144/",
       "size": "small",
       "type": "Clone Trooper",
-      "points": 62,
+      "points": 60,
       "speed": 2,
       "upgrades": {
         "Heavy Weapon": 1,
@@ -389,7 +406,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790227/9326CC2191C991FF9CB0EB06A4EA17A2A17078BC/",
       "size": "small",
       "type": "Clone Trooper",
-      "points": 78,
+      "points": 66,
       "speed": 2,
       "upgrades": {
         "Heavy Weapon": 1,
@@ -425,7 +442,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790261/AD41C53AE8A6F57645BE2A51DAD8E9FF4FB9224D/",
       "size": "small",
       "type": "Clone Trooper",
-      "points": 27,
+      "points": 24,
       "speed": 2,
       "upgrades": {
         "Heavy Weapon": 1,
@@ -503,11 +520,15 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790145/DD6B7ACA36B88E28B4326E7AA96536230B87F01E/",
       "size": "large",
       "type": "Repulsor Vehicle",
-      "points": 60,
+      "points": 55,
       "speed": 3,
       "upgrades": {
         "Crew": 1,
         "Comms": 1
+      },
+      "silhouette": {
+        "height": 1.092,
+        "offset": 0.492
       },
       "minis": [
         {
@@ -526,6 +547,10 @@
       "upgrades": {
         "Hardpoint": 1,
         "Comms": 1
+      },
+      "silhouette": {
+        "height": 2.576,
+        "offset": 0.0
       },
       "minis": [
         {
@@ -546,6 +571,10 @@
         "Crew": 1,
         "Comms": 1
       },
+      "silhouette": {
+        "height": 3.5,
+        "offset": 3.0
+      },
       "minis": [
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598523372505515/1191E8089B37C0CC4BBE8283EF6B7F9C5A74A13C/"
@@ -563,13 +592,17 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790069/CFA0E667E3B9FEB5F80A3F7A68CAADE7FCF5F340/",
       "size": "epic",
       "type": "Repulsor Vehicle",
-      "points": 170,
+      "points": 160,
       "speed": 2,
       "upgrades": {
         "Pilot": 1,
         "Hardpoint": 1,
         "Ordnance": 1,
         "Comms": 1
+      },
+      "silhouette": {
+        "height": 2.1,
+        "offset": 0.496
       },
       "minis": [
         {
@@ -583,13 +616,17 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700907/2DD3325FA71C1F920CC957F8B7393893AE282073/",
       "size": "laat",
       "type": "Repulsor Vehicle",
-      "points": 105,
+      "points": 100,
       "speed": 2,
       "height": 7,
       "upgrades": {
         "Pilot": 1,
         "Ordnance": 1,
         "Comms": 1
+      },
+      "silhouette": {
+        "height": 4.68,
+        "offset": 1.78
       },
       "minis": [
         {
@@ -608,6 +645,10 @@
         "Pilot": 1,
         "Hardpoint": 1,
         "Comms": 1
+      },
+      "silhouette": {
+        "height": 1.6,
+        "offset": 0.5
       },
       "minis": [
         {

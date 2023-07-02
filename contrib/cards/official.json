@@ -44,7 +44,7 @@
           "name": "A280-CFE Pistol Config",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137975/9505EB828E9F8B8F746E484527E05FC515D34891/"
         },
-        "points": 10,
+        "points": 0,
         "restrictions": {
           "include": {
             "unit": ["Cassian Andor"]
@@ -54,7 +54,7 @@
       {
         "name": "CR-24 Flame Rifle",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139676/532C48256940506F24A3F86DF0841C96CE9A20E3/",
-        "points": 15,
+        "points": 10,
         "restrictions": {
           "include": {
             "unit": ["Dewback Rider"]
@@ -64,7 +64,7 @@
       {
         "name": "DT-57 \"Annihilator\"",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140274/F89F5BDDA3BA705867313D846B3C1331FC31AD61/",
-        "points": 8,
+        "points": 0,
         "restrictions": {
           "include": {
             "unit": ["General Grievous"]
@@ -74,7 +74,7 @@
       {
         "name": "Deflector Shields",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139844/502DCA18D664C848F5992832178ECCB8968C9358/",
-        "points": 18,
+        "points": 10,
         "restrictions": {
           "include": {
             "unit": ["BX-Series Droid Commandos"]
@@ -122,7 +122,7 @@
           "name": "J-19 Bo-Rifle Staff",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143309/544D8E7915CDDF661A0F75AD56BD3C4AF023108F/"
         },
-        "points": 15,
+        "points": 5,
         "restrictions": {
           "include": {
             "unit": ["Agent Kallus"]
@@ -132,7 +132,7 @@
       {
         "name": "Jetpack Rockets",
         "image": "http://cloud-3.steamusercontent.com/ugc/1616220044491093901/42DF534EFBABAB01D0A173C7A8F67D8B0970B3DE/",
-        "points": 8,
+        "points": 5,
         "restrictions": {
           "include": {
             "unit": ["Mandalorian Resistance"]
@@ -162,7 +162,7 @@
       {
         "name": "RT-97C Blaster Rifle",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145098/F1FA0599FBE1CF545924E0DF1295FBCEDC4C1E31/",
-        "points": 10,
+        "points": 5,
         "restrictions": {
           "include": {
             "unit": ["Dewback Rider"]
@@ -212,7 +212,7 @@
       {
         "name": "Saxon's Z-3X Jetpack Rockets",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868950/6FF2ED19A5AF3DDB0B20A1CC70775823D0C25DFB/",
-        "points": 6,
+        "points": 10,
         "restrictions": {
           "include": {
             "unit": ["Gar Saxon"]
@@ -222,7 +222,7 @@
       {
         "name": "Saxon's Galar-90 Rifle",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868898/8A5057542AE7DB2E45E127DF0510423EA839BD4B/",
-        "points": 6,
+        "points": 15,
         "restrictions": {
           "include": {
             "unit": ["Gar Saxon"]
@@ -232,7 +232,7 @@
       {
         "name": "Saxon's ZX Flame Projector",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868841/07EFB6B5703BB6979CD5569E8CBB619AAE9EE68D/",
-        "points": 6,
+        "points": 5,
         "restrictions": {
           "include": {
             "unit": ["Gar Saxon"]
@@ -324,7 +324,7 @@
       {
         "name": "Vigilance",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146515/D0D3C15D0DC26175A41EB79729AA4680E3E24954/",
-        "points": 5
+        "points": 12
       },
       {
         "name": "Lead by Example",
@@ -491,7 +491,7 @@
       {
         "name": "BARC Twin Laser Gunner",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138722/946FBD11C5776F89102F92D94087A9DA81FABA87/",
-        "points": 16,
+        "points": 18,
         "restrictions": {
           "include": {
             "unit": ["BARC Speeder"]
@@ -521,7 +521,7 @@
       {
         "name": "Gnasp Gunner",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226311/08FF7D85F3D4B6D5C65D70ADE3EE76524D2E0BB6/",
-        "points": 25,
+        "points": 15,
         "restrictions": {
           "include": {
             "unit": ["Raddaugh Gnasp Fluttercraft"]
@@ -541,7 +541,7 @@
       {
         "name": "RPS-6 Rocket Gunner",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145068/CA32A4BCA29FE15FAADEFDDB1B22F7E107DC2826/",
-        "points": 31,
+        "points": 21,
         "restrictions": {
           "include": {
             "unit": ["X-34 Landspeeder"]
@@ -605,7 +605,7 @@
       {
         "name": "Burst Of Speed",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226275/92131009B53AF7A0AFE4094D2F4D9AD1C8C94B6D/",
-        "points": 3
+        "points": 10
       },
       {
         "name": "Fear",
@@ -625,7 +625,7 @@
       {
         "name": "Force Choke",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141299/B617CD9EC6D6C01C720989C66E7153E60E47126D/",
-        "points": 5,
+        "points": 10,
         "restrictions": {
           "include": {
             "alignment": ["Dark"]
@@ -718,7 +718,7 @@
       {
         "name": "Grappling Hooks",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141742/DA7EFC4BC5B4AC25BDB4AE6C3A084A9B10F66A8D/",
-        "points": 1
+        "points": 2
       },
       {
         "name": "JT-12 Jetpacks",
@@ -733,7 +733,7 @@
       {
         "name": "Personal Combat Shield",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144199/E3196D206A593BDF4C30F00F1A8B5F558BF0B217/",
-        "points": 10,
+        "points": 5,
         "restrictions": {
           "include": {
             "unit": ["Sabine Wren"]
@@ -934,7 +934,7 @@
       {
         "name": "DLT-19 Rifle Pintle",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140009/5BBDBCA0A1A79D898C63B099429F778FD978C993/",
-        "points": 14,
+        "points": 18,
         "restrictions": {
           "include": {
             "unit": ["TX-225 GAVw Occupier Combat Assault Tank"]
@@ -964,7 +964,7 @@
       {
         "name": "M-45 Ion Blaster",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143589/43CF60EDBFDD86484D1C481F19B6D14581F25410/",
-        "points": 5,
+        "points": 25,
         "restrictions": {
           "include": {
             "unit": ["X-34 Landspeeder"]
@@ -974,7 +974,7 @@
       {
         "name": "Mark II Medium Blaster",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143619/E3949CD69ED911AF724373F0EE17CD656AD19556/",
-        "points": 26,
+        "points": 21,
         "restrictions": {
           "include": {
             "unit": ["X-34 Landspeeder"]
@@ -1014,7 +1014,7 @@
       {
         "name": "Nose-Mounted Ion Blaster",
         "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081188843/0C53E6C54EAB645F0D743DD9F017DADA78247BEF/",
-        "points": 10,
+        "points": 25,
         "restrictions": {
           "include": {
             "unit": ["DSD1 Dwarf Spider Droid"]
@@ -1034,7 +1034,7 @@
       {
         "name": "Twin Beam Cannons",
         "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189108/F040A172FA29BC024E24EBA875B27A7CE4F48FFC/",
-        "points": 40,
+        "points": 25,
         "restrictions": {
           "include": {
             "unit": ["Infantry Support Platform"]
@@ -1044,7 +1044,7 @@
       {
         "name": "Twin Blaster Cannons",
         "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189035/E0FE1C4A1C9FDB662B092EEE87DDF1679EE4F144/",
-        "points": 40,
+        "points": 25,
         "restrictions": {
           "include": {
             "unit": ["Infantry Support Platform"]
@@ -1054,7 +1054,7 @@
       {
         "name": "Twin Missile Pods",
         "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081188964/A368F5EF82821FCC38D6FABC316A1C035C38ECCA/",
-        "points": 40,
+        "points": 25,
         "restrictions": {
           "include": {
             "unit": ["Infantry Support Platform"]
@@ -1064,7 +1064,7 @@
       {
         "name": "TX-130 Beam Cannon Turret",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146181/3EFE8D5F3AC5E50248734F4ABF50A175FE76460D/",
-        "points": 30,
+        "points": 15,
         "restrictions": {
           "include": {
             "unit": ["TX-130 Saber-Class Fighter Tank"]
@@ -1165,7 +1165,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357841451/50164A1C84E6D119BC45BDD31C8209ED7D9A0F29/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080713966/46952E774C97E45A1E936D35B3FC7C9392F5950F/"
         },
-        "points": 28,
+        "points": 24,
         "restrictions": {
           "include": {
             "unit": ["Mandalorian Resistance"]
@@ -1221,7 +1221,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873393393/915E79CA7D72B0DA950656C69F104A7BB586C0E0/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/"
         },
-        "points": 26,
+        "points": 24,
         "restrictions": {
           "include": {
             "unit": ["Phase I Clone Troopers"]
@@ -1260,8 +1260,8 @@
         "name": "DLT-19 Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140049/9DA8A6B2DF19484212DC2516D345CE713F9D0F5E/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242465584/D38BBF10F76882CFF4189AB478E9F0691A22298F/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766101851242466181/BEF69EF45F1CCEF50CDF7B5CC6E1FE6BDC556310/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141001/FF62545FC3DEF499BA8A0C04F07917C6CAA9E30D/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
         },
         "points": 20,
         "restrictions": {
@@ -1277,7 +1277,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/770610077943650040/CDB9EFD9CB36DE0EB5AB78B22F2B334BDB1E6DFE/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/770610077942938053/6187B2D6848EC35010DE6C3EEBB5DF6125D02D45/"
         },
-        "points": 34,
+        "points": 30,
         "restrictions": {
           "include": {
             "unit": ["Imperial Death Troopers"]
@@ -1319,7 +1319,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785625549/5461468E09D086E4CF7E835AE69D6F4226690518/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764785620873/E3B1226B0836CF579F16C490896D5E2DE95C31F5/"
         },
-        "points": 22,
+        "points": 20,
         "restrictions": {
           "include": {
             "unit": ["Phase I Clone Troopers"]
@@ -1517,8 +1517,8 @@
         "name": "HH-12 Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142253/2A3E6F8AB8FB506642A35A69516EB1F38E82F2D0/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711981/5D8FB39102FEE64DF1802AA71B66666B4E03717F/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541712102/C37F3281C89F697024FF1F343B06FB5AC828EA10/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141088/7342269A721DF49D0C38F1469E8463093734EF66/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
         },
         "points": 16,
         "restrictions": {
@@ -1547,7 +1547,7 @@
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708042667/2DABB5788E51006EDB3FCB03400ACD4CE07755F3/"
         },
-        "points": 27,
+        "points": 26,
         "restrictions": {
           "include": {
             "unit": ["Wookiee Warriors"]
@@ -1590,7 +1590,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321578281/CBFA560559FE81326342AD0B65D2349447F882EB/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
         },
-        "points": 20,
+        "points": 18,
         "restrictions": {
           "include": {
             "unit": ["Phase II Clone Troopers"]
@@ -1619,7 +1619,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386787/E93D6E65A61C9262B5934C5A419736B45B50D75B/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
         },
-        "points": 28,
+        "points": 34,
         "restrictions": {
           "include": {
             "unit": ["IG-100 MagnaGuard"]
@@ -1644,8 +1644,8 @@
         "name": "RT-97C Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145178/E34FCDD3060A28ED28C91966A004D3CB7DD6C62F/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242660925/33331F4DA2AE832C568A49BD24B65D4C1462AF27/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766101851242654975/755ABA199B9C3BEEA1F33AF58FD05D378A67C97F/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141221/5D4DAEED517F52EE2ECBC631301C97422F519AB9/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
         },
         "points": 24,
         "restrictions": {
@@ -1715,8 +1715,8 @@
         "name": "T-21 Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145912/C6F9E9EDA22CB6B40D955AE391F14227D648AF3B/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242554815/68F112DE9EC465DA003ECBD26DE129ADD34CD558/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141339/1EB723D5FCF6655CFFF7EF700EE7108274E1A6C7/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
         },
         "points": 22,
         "restrictions": {
@@ -1774,7 +1774,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696350886429750/5D62ADB1200B1AD16A0349AF87E757F40E720115/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080686656/A6DDF6C03FED22656FD7714348E27ECF8144218E/"
         },
-        "points": 38,
+        "points": 34,
         "restrictions": {
           "include": {
             "unit": ["Mandalorian Resistance"]
@@ -1789,7 +1789,7 @@
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080696961/0E039C55249C023EF22B04536617ACB67DB5AABA/"
         },
         "leader": true,
-        "points": 38,
+        "points": 34,
         "restrictions": {
           "include": {
             "unit": ["Mandalorian Resistance"]
@@ -1817,7 +1817,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785236717873393876/DEDAF52B0D07E0F2A2BCB54DE9A56E4FA437A3E4/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785236717873393180/6359B491483DCD9B2641BA134DC4B92DE10E9D92/"
         },
-        "points": 23,
+        "points": 22,
         "restrictions": {
           "include": {
             "unit": ["Phase I Clone Troopers"]
@@ -1873,7 +1873,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143366/41AB7DFFD2FCF20E2BCC3F899F728863C30F6343/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200823/B886D3157AA2F2528F4E5F76F26DF44A41496615/"
         },
-        "points": 30,
+        "points": 38,
         "restrictions": {
           "include": {
             "unit": ["Mandalorian Super Commandos"]
@@ -1887,7 +1887,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143451/3DFD9C8BD5D504D3A2F7934678D1A0A7C2285863/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200769/60353F40BAE6D92D6F6ED24E2883EB9CC2EA74C4/"
         },
-        "points": 30,
+        "points": 28,
         "restrictions": {
           "include": {
             "unit": ["Mandalorian Super Commandos"]
@@ -1929,7 +1929,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143649/BBBA0D26FB46EAD96421C4B77FE779B5F0F848AA/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143328/3D6F3C2E8DFB78B9B748FFC8F339B9C568D7408E/"
         },
-        "points": 14,
+        "points": 16,
         "restrictions": {
           "include": {
             "unit": ["Black Sun Enforcers"]
@@ -1957,7 +1957,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2004698291313160948/23CA698C8F2AF1C08D2DED3564B138E72E2ABCBF/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2004698291313176203/E77892ADB668EA0CB548F6ED71BE44CA3FB730E7/"
         },
-        "points": 48,
+        "points": 45,
         "restrictions": {
           "include": {
             "unit": ["Imperial Dark Troopers"]
@@ -1971,7 +1971,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2004698291313161010/1873BCD554A553BC2FF25A2BE16116EDEBFDCEF4/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2004698291313176203/E77892ADB668EA0CB548F6ED71BE44CA3FB730E7/"
         },
-        "points": 40,
+        "points": 45,
         "restrictions": {
           "include": {
             "unit": ["Imperial Dark Troopers"]
@@ -1989,6 +1989,20 @@
         "restrictions": {
           "include": {
             "unit": ["Imperial Dark Troopers"]
+          }
+        }
+      },
+      {
+        "name": "Axe Ewok",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866621745/E6F7651F238AEA622ACDF61F7F04868A05FF4878/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128895/152E8A0BE0A0FB98FAD48338552C6282DD8954B7/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Ewok Skirmishers", "Ewok Slingers"]
           }
         }
       }
@@ -2075,7 +2089,7 @@
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080662099/EB7BD333EDF05BC6586516E0F3E6FD9AE270F11E/"
         },
         "leader": true,
-        "points": 20,
+        "points": 18,
         "restrictions": {
           "include": {
             "type": ["Clone Trooper"]
@@ -2089,7 +2103,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281396590/F88D24438DE4A59DD0CDE3C0779FF9B35B7E42C4/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
         },
-        "points": 12,
+        "points": 11,
         "restrictions": {
           "include": {
             "type": ["Clone Trooper"]
@@ -2103,7 +2117,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281395509/5B7CE64AA6E972FE9A7F08B202EF082B8EA5C0E0/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
         },
-        "points": 18,
+        "points": 14,
         "restrictions": {
           "include": {
             "type": ["Clone Trooper"]
@@ -2117,7 +2131,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281399144/E1A292B1D9C5B721F4BD6C870F1DAC5BDDAF9650/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
         },
-        "points": 20,
+        "points": 15,
         "restrictions": {
           "include": {
             "type": ["Clone Trooper"]
@@ -2316,7 +2330,7 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594474909/F8F049D7F88171ADBA83AF3EAF819495053C2873/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594268734/CF3C536F7B068020A99C5E3EE11CA9C54438E250/"
         },
-        "points": 10,
+        "points": 9,
         "restrictions": {
           "include": {
             "faction": ["Rebel"]
@@ -2413,8 +2427,8 @@
         "name": "Stormtrooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145641/67887DD2E968766C0268BB4629E1EEA9CF54DFDC/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541711777/1E415A2A18F2269B0C63E1C2901E5192DCCFE8CB/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650140825/D8AE1D1F27B97F359916236DA163DA7EC4B517C1/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
         },
         "points": 8,
         "restrictions": {
@@ -2441,8 +2455,8 @@
         "name": "Stormtrooper Captain",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145556/326ED56BBF68B291DF37555D6155DD013F1E646A/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/766101851242555871/B1A38B82950DD8864591296C730D82E0D66BC985/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173464650963/1A63FC0E22280AA3B95488A298270874B7B6CDD2/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650140913/ADEED3994E6F70777B939A89B18FF520765DCDC4/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
         },
         "leader": true,
         "points": 10,
@@ -2456,8 +2470,8 @@
         "name": "Stormtrooper Specialist",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145600/9F5038BBE19D0970091F9C1946001A4E825C22A1/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173464686810/87075FBAEFB7A45C107FEDD41E26ACF148C2592D/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541711313/BBEF6E9A46755A4159DC6222AF0F8302792585D0/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141284/6D59924E68B2B1640C0AC479B8DE95F434056650/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
         },
         "points": 9,
         "restrictions": {
@@ -2516,7 +2530,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143763/E93BA6716A05CA95AE2EA3B7C0DFD8AF145D5C22/"
         },
         "leader": true,
-        "points": 18,
+        "points": 20,
         "restrictions": {
           "include": {
             "unit": ["Black Sun Enforcers"]
@@ -2544,7 +2558,7 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420351237/706DEA645FEE2EC9787F05F4FF2926632E2C4894/"
         },
         "leader": true,
-        "points": 16,
+        "points": 18,
         "restrictions": {
           "include": {
             "unit": ["Pyke Syndicate Foot Soldiers"]
@@ -2596,6 +2610,20 @@
             "unit": ["Imperial Dark Troopers"]
           }
         }
+      },
+      {
+        "name": "Ewok Trapper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866621848/AABE07DBD74C5C3520EB3E5DA77744D764C09515/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128844/558E1277513B0AF48911A68B5FAAB981BC0A56A1/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Ewok Skirmishers", "Ewok Slingers"]
+          }
+        }
       }
     ],
     "Pilot": [
@@ -2622,7 +2650,7 @@
       {
         "name": "Baron Rudor",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138757/0E1640674CF5C8E3653FCBF2F4D80A5114A39721/",
-        "points": 12,
+        "points": 8,
         "restrictions": {
           "include": {
             "faction": ["Empire"],
@@ -2666,7 +2694,7 @@
       {
         "name": "General Weiss",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141576/6F1DDB015ACC524050345200BB4AB1253B0A2831/",
-        "points": 1,
+        "points": 5,
         "restrictions": {
           "include": {
             "faction": ["Empire"],
@@ -2786,7 +2814,7 @@
         "restrictions": {
           "include": {
             "faction": ["Rebel"],
-            "type": ["Repuslor Vehicle"]
+            "type": ["Repulsor Vehicle"]
           }
         }
       },
@@ -2954,7 +2982,7 @@
       {
         "name": "Offensive Push",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143751/9080C15E59832CCE8A15D97665832E6573554A2E/",
-        "points": 4
+        "points": 6
       },
       {
         "name": "Overwatch",
@@ -2979,17 +3007,57 @@
       {
         "name": "Situational Awareness",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145416/5965B627A7C6C0584CED87D7D08CF0C86F9C5418/",
-        "points": 2
+        "points": 4
       },
       {
         "name": "Tenacity",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146012/69F96BBBF484ABB6A9CAD2637064D4C199BC6BE8/",
-        "points": 4
+        "points": 6
       },
       {
         "name": "Up Close and Personal",
         "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418869444/1E439AB8897062691976E3BE15D17C0C4A0380AA/",
+        "points": 8
+      },
+      {
+        "name": "Herbal Medicine",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562515/AA30CC1B876E89EF97F2C0BDA05F5E17411D0B13/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Logray"]
+          }
+        }
+      },
+      {
+        "name": "Onward to Victory",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562747/ABEA46EB90A5161E77598003BCBD0EB5A48C2250/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Logray"]
+          }
+        }
+      },
+      {
+        "name": "Secret Ingredients",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562047/CB4CF0706A201A80F6B3F5B11AFA1859F5D705A5/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Logray"]
+          }
+        }
+      },
+      {
+        "name": "Call to Arms",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562443/1ED7D2D33E17712DB46173EE2F91A149A0412D4C/",
         "points": 5
+      },
+      {
+        "name": "Forest Dwellers",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562596/986DAEFC7C6C8E6BBBAB88010DEBAD2DECE17946/",
+        "points": 3
       }
     ]
   },
@@ -3076,6 +3144,16 @@
         "pip": 1
       },
       {
+        "name": "Log Traps",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866561877/7DA15C0E3C8B41052DA340049F4A606461C059DC/",
+        "pip": 1
+      },
+      {
+        "name": "Arboreal Assault",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562364/A44620A9FA95C5DE36A57435EDD2A0E9C1BEB18E/",
+        "pip": 1
+      },
+      {
         "name": "Turning The Tide",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034438/544487939B8A8BFB04860134ACC616A1EE285039/",
         "pip": 2
@@ -3086,6 +3164,11 @@
         "pip": 2
       },
       {
+        "name": "Hiding in Plain Sight",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562828/642D6593D255FBFBFE683B4CBA7A73303A254DFE/",
+        "pip": 2
+      },
+      {
         "name": "Covering Fire",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033931/E4C7CE80C1179B43969BE76C60CC2744101E051E/",
         "pip": 3
@@ -3093,6 +3176,11 @@
       {
         "name": "Hold at Any Cost",
         "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116226159/13B563009D18A4B353A209872CF4E2931AE282BA/",
+        "pip": 3
+      },
+      {
+        "name": "For the Tribe",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866561984/9CD2F9B809D231CE871F130AEA717D1CD4B9A81D/",
         "pip": 3
       }
     ],

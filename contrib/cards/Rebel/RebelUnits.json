@@ -6,7 +6,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788425590/4AB2CCCFC2F45B3ACB9927166F6014A2903D7DCE/",
       "size": "small",
       "type": "Trooper",
-      "points": 160,
+      "points": 150,
       "speed": 2,
       "upgrades": {
         "Force": 2,
@@ -57,7 +57,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788535425/1ADD2DCEEA5D23013C2331604493EFF62AC46DB3/",
       "size": "small",
       "type": "Trooper",
-      "points": 80,
+      "points": 75,
       "speed": 2,
       "upgrades": {
         "Command": 2,
@@ -78,6 +78,11 @@
         {
           "name": "No Time For Sorrows",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034953/BDC08D664C3DC9DFE785E312F2F0517921B3C799/",
+          "pip": 2
+        },
+        {
+          "name": "A Beautiful Friendsdhip",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2023850162090082691/D81307AA7C4530A264B8CBAA2012FCA9134EA9B4/",
           "pip": 2
         },
         {
@@ -224,7 +229,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603976/14129DC0580196A6C188A7D5B037937BE3906C83/",
       "size": "small",
       "type": "Trooper",
-      "points": 105,
+      "points": 95,
       "speed": 2,
       "upgrades": {
         "Command": 1,
@@ -259,6 +264,74 @@
     },
     {
       "content": "contrib/cards/ShadowCollective/PykeSyndicateCapoUnit.json"
+    },
+    {
+      "name": "Wicket",
+      "title": "Hero of Bright Tree",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2023850162090072588/124E43DA7CDDA8C6B71D1B21264234AE348E6322/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 70,
+      "speed": 2,
+      "upgrades": {
+        "Training": 3
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2023850162090106066/B6E661CAB8049A1B1CE975B53BB57B337E2C5DEE/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Close Call",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2023850162090072698/DB62A74D030AF926BE96A38707D5976A0E5451FD/",
+          "pip": 1
+        },
+        {
+          "name": "Sneaky Scouting",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2023850162090072649/9C830E648CE79DBDE57C0292868EDAC9960B06EF/",
+          "pip": 2
+        },
+        {
+          "name": "Courageous Counterattack",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2023850162090072748/58E123D32E79B1BD0D04F45AB81B7CAF2EC39E92/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "Logray",
+      "title": "Superstitious Shaman",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562278/020C6D8AA24648A687F71982FF2BDA10563C7E2D/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 45,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Training": 3
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129309/3D6C219F243BDE984C42BB3444B01DB09B522CBB/"
+        }
+      ]
+    },
+    {
+      "name": "C-3P0",
+      "title": "Golden God",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562667/81CD336814DCD74397F529EA03A934DE9C9C01A0/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 40,
+      "speed": 2,
+      "upgrades": {},
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456807069/DE7E32B39455DB5111769436FD0C5BFDA3841268/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/777357228032306506/D60CB8A1159723917EF1831D4042318A67458A7A/"
+        }
+      ]
     }
   ],
   "Operative": [
@@ -508,6 +581,46 @@
     },
     {
       "content": "contrib/cards/ShadowCollective/IG11Unit.json"
+    },
+    {
+      "name": "Ahsoka Tano",
+      "title": "Fulcrum",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2022720184107019845/E7B0CE153BABCB9FF1DB91EF0B3F216B15253A29/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 165,
+      "speed": 2,
+      "upgrades": {
+        "Force": 2,
+        "Training": 2
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2023850162084443471/517A8997FB85780B040DD3017147753F438137CC/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "I am no Jedi",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022720184107019557/E39B3953F55DCF6394CA819E25825E74B8618184/",
+          "pip": 1
+        },
+        {
+          "name": "Swift Protector",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022720184107019696/F82E451FABCD16AB411E88409AFC81201DB9D43A/",
+          "pip": 2
+        },
+        {
+          "name": "Family Reunion",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022720184107019640/F5F69B23E0B7E1734BE3B7AE3A8DE6738680EA87/",
+          "pip": 2
+        },
+        {
+          "name": "A New Beginning",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022720184107019782/0D03CDC28357CD7FDB854B0BA2FDD346402F041A/",
+          "pip": 3
+        }
+      ]
     }
   ],
   "Corps": [
@@ -627,6 +740,45 @@
     },
     {
       "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiersUnit.json"
+    },
+    {
+      "name": "Ewok Skirmishers",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562897/2351495BC76191CBBB38BE21D2E509C1B75C9472/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 40,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Personnel": 1,
+        "Training": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128972/9388116F0C7BE70B991CC7715943BF9FF08D3890/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129131/D612F1B1EBDA3172B69BEE40159CE5D999045A62/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129196/6EED0C8AAF8F50751EE4206471D1273B6C0F4B5A/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129252/FC0A6247B6AB21A99919659C1F9069186C6D82ED/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128356/9E8C70962F9D5BF853BD9310F2BB1E1A3F80DB5D/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128445/EBB56734DB6527B3566C317F6F4F0E84471D6776/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        }
+      ]
     }
   ],
   "Special Forces": [
@@ -754,7 +906,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604461/D49CF324CDE3C648E683FCCD762B76F94E843065/",
       "size": "small",
       "type": "Trooper",
-      "points": 72,
+      "points": 68,
       "speed": 3,
       "upgrades": {
         "Heavy Weapon": 1,
@@ -786,7 +938,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604497/C4CEBD761320F416E03203426388067B95104C90/",
       "size": "small",
       "type": "Trooper",
-      "points": 34,
+      "points": 30,
       "speed": 3,
       "upgrades": {
         "Heavy Weapon": 2,
@@ -830,6 +982,45 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708043883/1EA1B3C21A50C20D4D168AB91ECFE1C01A4F7DF5/"
         }
       ]
+    },
+    {
+      "name": "Ewok Slingers",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562205/D61E53490E27ED8A1B6B17FAA2BF92BA78BC5CE0/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 35,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Personnel": 1,
+        "Training": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128972/9388116F0C7BE70B991CC7715943BF9FF08D3890/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128506/B24F2402EDC36C64688B7F492B382D972ABA30F1/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128565/24D88975D67E46B5FA9294EB6DCC146912D61F2F/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128627/19AC5B05F3A355226EE783B9F239B3B285EA077A/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128715/CB52DA6C0FC1DF3511C2A2D62CB2B3A13A9D4F8F/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128778/1D5BCB551375F1A7988C434F0B52E18434BB4747/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+        }
+      ]
     }
   ],
   "Support": [
@@ -844,6 +1035,10 @@
         "Hardpoint": 1,
         "Comms": 1
       },
+      "silhouette": {
+        "height": 2.576,
+        "offset": 0.0
+      },
       "minis": [
         {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541266463/014ECD21C93F864E1C1DFD104A365DFC555EBAF8/",
@@ -857,7 +1052,7 @@
       "size": "huge",
       "type": "Emplacement Trooper",
       "points": 65,
-      "speed": 0,
+      "speed": 1,
       "upgrades": {
         "Comms": 1,
         "Generator": 1
@@ -874,7 +1069,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604655/CC7501F41054D1F68139C8ABCFAEE0CAA855475C/",
       "size": "medium",
       "type": "Creature Trooper",
-      "points": 95,
+      "points": 90,
       "speed": 3,
       "upgrades": {
         "Training": 1,
@@ -908,6 +1103,10 @@
         "Hardpoint": 1,
         "Comms": 1
       },
+      "silhouette": {
+        "height": 1.139,
+        "offset": 3.494
+      },
       "minis": [
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1686023073179090715/187094FD9EBAFB6FF44A65F2D411D68154C0FAC7/"
@@ -926,6 +1125,10 @@
         "Crew": 2,
         "Hardpoint": 1,
         "Comms": 1
+      },
+      "silhouette": {
+        "height": 1.174,
+        "offset": 0.726
       },
       "minis": [
         {
@@ -948,9 +1151,33 @@
         "Hardpoint": 1,
         "Comms": 1
       },
+      "silhouette": {
+        "height": 3.256,
+        "offset": 0.335
+      },
       "minis": [
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1802024425338475441/730DE7AD6E1A55EA9F9264DADC1DDC0AC2CCA565/"
+        }
+      ]
+    },
+    {
+      "name": "Chewbacca",
+      "title": "Let the Wookiee Win",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562133/67C1B02BDD4C9E5EE21028E6D109910C2B905345/",
+      "size": "huge",
+      "type": "Ground Vehicle",
+      "points": 190,
+      "speed": 2,
+      "upgrades": {},
+      "silhouette": {
+        "height": 8.84,
+        "offset": 0.0
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/999141806429351360/24C098E7B3D1708CDCFB9AEA4B2C445EF2DBAEE0/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752434998239690716/C6578DAF9012605B1F44A907D1C28646E34A73CF/"
         }
       ]
     }

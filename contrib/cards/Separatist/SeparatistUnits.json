@@ -6,7 +6,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790037/C20F500DE55700AA568EA5BDA7794A1B0210E605/",
       "size": "small",
       "type": "Trooper",
-      "points": 155,
+      "points": 150,
       "speed": 2,
       "upgrades": {
         "Command": 2,
@@ -43,7 +43,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789992/5D0BFCF9DA9A3200D9D0A2CDE98E25782B8F4C10/",
       "size": "small",
       "type": "Trooper",
-      "points": 195,
+      "points": 185,
       "speed": 2,
       "upgrades": {
         "Force": 3,
@@ -69,6 +69,11 @@
         {
           "name": "You Disappoint Me",
           "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032838/8524059D85CFD5ED5238782110CAE2F821271706/",
+          "pip": 3
+        },
+        {
+          "name": "The Sith Will Rule",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022718494201423946/9260CA54A68EF00EBC4EA615D3598D7EA8521A0F/",
           "pip": 3
         }
       ]
@@ -98,7 +103,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789910/D7965608F5D3FF1B7FD8D14BF740C098F8AB5B7D/",
       "size": "small",
       "type": "Droid Trooper",
-      "points": 95,
+      "points": 90,
       "speed": 2,
       "upgrades": {
         "Command": 2,
@@ -254,6 +259,41 @@
           "pip": 3
         }
       ]
+    },
+    {
+      "name": "Asajj Ventress",
+      "title": "Separatist Assassin",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2022718494181434667/C588D389B20D907F8CBE90A9BECFE2FE532E439B/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 150,
+      "speed": 2,
+      "upgrades": {
+        "Force": 2,
+        "Training": 2
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2022718494181455957/4BB3E42AA412A7ED2ED6F26BFDFA25414F127B71/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "The Jedi Shall Fall",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022718494181413453/2F0BCBD3DCACECCA22EAFA0875D419828842CB90/",
+          "pip": 1
+        },
+        {
+          "name": "I am Fear",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022718494181413531/0E6FEAE5D1DE3D211CFF1FF239CB10508C26C306/",
+          "pip": 2
+        },
+        {
+          "name": "Yes, My Master",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2022718494181413590/EC03211BE3965586929B450AAEDB1DEB41220F0B/",
+          "pip": 3
+        }
+      ]
     }
   ],
   "Corps": [
@@ -336,7 +376,7 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789610/FE6991E3F921A3C5ACD09400FD9CED611AC8E7D0/",
       "size": "small",
       "type": "Droid Trooper",
-      "points": 68,
+      "points": 64,
       "speed": 2,
       "upgrades": {
         "Heavy Weapon": 1,
@@ -448,10 +488,14 @@
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789475/1521CBD0935E6FB62CE544D89AC89E2F19F21D6B/",
       "size": "medium",
       "type": "Ground Vehicle",
-      "points": 75,
+      "points": 70,
       "speed": 1,
       "upgrades": {
         "Comms": 1
+      },
+      "silhouette": {
+        "height": 1.85,
+        "offset": 0.0
       },
       "minis": [
         {
@@ -473,6 +517,10 @@
       "speed": 3,
       "upgrades": {
         "Comms": 1
+      },
+      "silhouette": {
+        "height": 1.651,
+        "offset": 0.595
       },
       "minis": [
         {
@@ -497,6 +545,10 @@
         "Hardpoint": 1,
         "Comms": 1
       },
+      "silhouette": {
+        "height": 1.756,
+        "offset": 0.0
+      },
       "minis": [
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849538645161033/A69093521055BB5CA008D3DDE5F6EBEB990D0AF2/"
@@ -518,6 +570,10 @@
         "Ordnance": 2,
         "Comms": 1
       },
+      "silhouette": {
+        "height": 3.286,
+        "offset": 0.736
+      },
       "minis": [
         {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785235151813166538/2F32058DDD51C131547B66A3927041BDACDD9E72/",
@@ -537,6 +593,10 @@
         "Programming": 1,
         "Ordnance": 1,
         "Comms": 1
+      },
+      "silhouette": {
+        "height": 3.323,
+        "offset": 0.0
       },
       "minis": [
         {
