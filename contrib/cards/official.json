@@ -3058,6 +3058,16 @@
         "name": "Forest Dwellers",
         "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562596/986DAEFC7C6C8E6BBBAB88010DEBAD2DECE17946/",
         "points": 3
+      },
+      {
+        "name": "Insatiable Curiosity",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2005838139147443657/789DD16EEFF928B7DDA85D8C6D658E6D52926627/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Ewok Skirmishers", "Ewok Slingers"]
+          }
+        }
       }
     ]
   },

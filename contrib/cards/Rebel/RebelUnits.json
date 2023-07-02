@@ -1179,6 +1179,23 @@
           "mesh": "http://cloud-3.steamusercontent.com/ugc/999141806429351360/24C098E7B3D1708CDCFB9AEA4B2C445EF2DBAEE0/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752434998239690716/C6578DAF9012605B1F44A907D1C28646E34A73CF/"
         }
+      ],
+      "commands": [
+        {
+          "name": "Common Cause",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036994/19D8F067B325C88C9A9A3DE2D4CCAD9A7BAB5957/",
+          "pip": 1
+        },
+        {
+          "name": "Brains And Brawn",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035622/3BC5E96C0730225BC27EB0CE2BDB471E5CE66F4A/",
+          "pip": 2
+        },
+        {
+          "name": "Notorious Scoundrels",
+          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033300/4FA05D084E4DECE8DD8EED42E141C413F57201F2/",
+          "pip": 3
+        }
       ]
     }
   ]
