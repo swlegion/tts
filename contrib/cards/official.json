@@ -3140,6 +3140,21 @@
         "name": "Debark for Ground Assault",
         "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116225828/2A7E49D5C7362A598408AB0F4029C82E75051350/",
         "pip": 3
+      },
+      {
+        "name": "Drive Them Out",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2006966757275789378/4C512427821179A8EC5E7E21A477A38C50BFC51E/",
+        "pip": 1
+      },
+      {
+        "name": "We Need Reinforcements",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2006966757275789040/DA3D4FDD8E8A833A7FCF11AE6DF7B4BE1FB3E5BF/",
+        "pip": 2
+      },
+      {
+        "name": "Constantly Alert",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2006966757275789429/43DA580D63DA18258B4D014812D4E97F18D4AB04/",
+        "pip": 3
       }
     ],
     "Rebel": [

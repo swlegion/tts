@@ -948,6 +948,42 @@
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2004698291313176203/E77892ADB668EA0CB548F6ED71BE44CA3FB730E7/"
         }
       ]
+    },
+    {
+      "name": "Major Marquand",
+      "title": "Tempest Scout 2",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2006966757275789225/6D28D128A16B13C82C351A2BF2D09B0895C81E3F/",
+      "size": "huge",
+      "type": "Ground Vehicle",
+      "points": 190,
+      "speed": 2,
+      "silhouette": {
+        "height": 8.84,
+        "offset": 0.0
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/999141806429351360/24C098E7B3D1708CDCFB9AEA4B2C445EF2DBAEE0/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752434998239690716/C6578DAF9012605B1F44A907D1C28646E34A73CF/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Gunner, Infantry!",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2006966757275788986/6F19E80835B69C29771A79F47C96208B467349CB/",
+          "pip": 1
+        },
+        {
+          "name": "Squadron, on me",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2006966757275789277/79372FC8381EA61922E0623B2F02AD69D9FA26C1/",
+          "pip": 2
+        },
+        {
+          "name": "Armored Cavalry",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2006966757275789327/DE04AD7119FD769423EAD9496BC197BE4190AECC/",
+          "pip": 3
+        }
+      ]
     }
   ]
 }
