@@ -957,6 +957,7 @@
       "type": "Ground Vehicle",
       "points": 190,
       "speed": 2,
+      "upgrades": {},
       "silhouette": {
         "height": 8.84,
         "offset": 0.0
