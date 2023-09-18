@@ -459,6 +459,71 @@
     },
     {
       "content": "contrib/cards/ShadowCollective/IG11Unit.json"
+    },
+    {
+      "name": "Fifth Brother",
+      "title": "The Kill is Mine",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174552333/68E9B4569ABDB27E40706B4271708695BA4BE16F/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 105,
+      "speed": 2,
+      "upgrades": {
+        "Force": 1,
+        "Training": 2
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770174720883/27A48880934C3B35AE42D5E62C73EA3A0ECA240B/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "You Would Question Me?",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174551893/BAA06C5EE28685252AF55E955DB6FC0754D77EA6/",
+          "pip": 2
+        },
+        {
+          "name": "I Care Not for your Struggles",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174551978/A42684D4F5C0B3EADFED5062E43AF3299999EB23/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "Seventh Sister",
+      "title": "Compelled to Inflict Pain",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174552593/8D3A9E091FD25223A4A113671E62A0C811C341B7/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 110,
+      "speed": 2,
+      "upgrades": {
+        "Force": 1,
+        "Training": 2
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770174720951/C4FC16B1ACE927ECF9F59C726DC59B8C6561FED8/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Come and Prove It",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174552966/6950B93171AF6A52B7DF49EB2F09478B7DB42D26/",
+          "pip": 1
+        },
+        {
+          "name": "Unexpected, but not Unwelcome",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174553026/B2B79F911A1A201A793B812B0A8B4881D3FAB80C/",
+          "pip": 2
+        },
+        {
+          "name": "You Hide Your Fear Well",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174553089/B5C28400319F6E7F0C2B17D94B7859C277DF09B5/",
+          "pip": 3
+        }
+      ]
     }
   ],
   "Corps": [

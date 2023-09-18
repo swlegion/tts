@@ -36,18 +36,24 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v7.3.0</b>.
-          <!--Welcome to Star Wars: Legion for TTS, <b>v7.5.4-beta</b>.
+          <!--Welcome to Star Wars: Legion for TTS, <b>v7.3.0</b>.-->
+          Welcome to Star Wars: Legion for TTS, <b>v7.6.0-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
 
-          To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.-->
+          To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.
 
           <b>CHANGELOG</b>
-          <!--(Since last <i>Beta</i>)-->
-          (Since last <i>Stable</i>)
-          - Add: Tempest CC
-          - Add: Marquand
+          (Since last <i>Beta</i>)
+          <!--(Since last <i>Stable</i>)-->
+          - Add: Brother
+          - Add: Sister
+          - Add: Bug Warriors
+          - Add: Poggle
+          - Add: Sun 
+          - Add: Battleforce Snail
+          - Add: Battleforce Magnas
+          - Add: Battleforce Flutter
 
         </Text>
       </VerticalLayout>

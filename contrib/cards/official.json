@@ -2005,6 +2005,36 @@
             "unit": ["Ewok Skirmishers", "Ewok Slingers"]
           }
         }
+      },
+      {
+        "name": "Force Pike Warrior",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174552121/CA4B8F51C796DBCC8CF02C1BAED477EEFCA9FE0A/",
+        "flip": {
+          "name": "Force Pike Warrior",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174552121/CA4B8F51C796DBCC8CF02C1BAED477EEFCA9FE0A/"
+        },
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770177195807/C1E3DCF8DC0772F56B22E42E89DECC9F30110E8D/"
+        },
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Geonosian Warriors"]
+          }
+        }
+      },
+      {
+        "name": "Sonic Cannon Warrior",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174552203/03C83AACA87DB9432EADA6FFC5AF16BE6F524AA6/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770177195589/5E52A1E47746FF179ED6327F681D51D92C47D1D5/"
+        },
+        "points": 25,
+        "restrictions": {
+          "include": {
+            "unit": ["Geonosian Warriors"]
+          }
+        }
       }
     ],
     "Ordnance": [
@@ -2624,6 +2654,20 @@
             "unit": ["Ewok Skirmishers", "Ewok Slingers"]
           }
         }
+      },
+      {
+        "name": "Geonosian Warrior",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174552042/8F31F3873ED370C376A85285CF67F7F31C51C382/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770177201933/E0DBF0D812FFF4F7F3A77CF1E4EAB84F78B8C49E/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
+        },
+        "points": 11,
+        "restrictions": {
+          "include": {
+            "unit": ["Geonosian Warriors"]
+          }
+        }
       }
     ],
     "Pilot": [
@@ -3066,6 +3110,16 @@
         "restrictions": {
           "include": {
             "unit": ["Ewok Skirmishers", "Ewok Slingers"]
+          }
+        }
+      },
+      {
+        "name": "Inquisitorious Training",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174552754/44E70742288844F3A765B81AC89DD37EEF071D2E/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Fifth Brother", "Seventh Sister"]
           }
         }
       }
