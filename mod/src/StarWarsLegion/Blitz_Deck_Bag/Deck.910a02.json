@@ -1,0 +1,75 @@
+{
+  "Object": {
+    "GUID": "910a02",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 56.7657051,
+      "posY": 3.03356552,
+      "posZ": 32.27801,
+      "rotX": 0.6039614,
+      "rotY": 179.933289,
+      "rotZ": 174.588135,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Blitz Deployment Deck",
+    "Description": "Deployments for 'Blitz' 800 pt Standard play on 3x3 mat",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.85,
+      "g": 0.85,
+      "b": 0.85
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      40000,
+      40001,
+      40002,
+      40003,
+      40004,
+      40005,
+      40006,
+      40007
+    ],
+    "CustomDeck": {
+      "400": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2094796397703263867/76FC34504B1EA90E3606683782426E6375C4B146/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/2094796397703224098/22B26F4F70F866332E937A67BA393D9420305984/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Advanced_Positions.fc9a49.40000.json",
+    "Battle_Lines.fc9a50.40001.json",
+    "Danger_Close.fc9a51.40002.json",
+    "Disarray.fc9a52.40003.json",
+    "Hemmed_In.fc9a53.40004.json",
+    "Long_March.fc9a54.40005.json",
+    "Major_Offensive.fc9a55.40006.json",
+    "Roll_Out.fc9a56.40007.json"
+  ]
+}

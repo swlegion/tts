@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "fc9a54",
+    "Name": "Card",
+    "Transform": {
+      "posX": -20.7210255,
+      "posY": 1.16138685,
+      "posZ": 9.880953,
+      "rotX": 0.00151372235,
+      "rotY": 180.000076,
+      "rotZ": 0.00214156718,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Long March",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.85,
+      "g": 0.85,
+      "b": 0.85
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 40005,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "400": {
+        "face": "http://cloud-3.steamusercontent.com/ugc/2094796397703263867/76FC34504B1EA90E3606683782426E6375C4B146/",
+        "back": "http://cloud-3.steamusercontent.com/ugc/2094796397703224098/22B26F4F70F866332E937A67BA393D9420305984/",
+        "width": 4,
+        "height": 2,
+        "number": 8,
+        "back_is_hidden": true,
+        "unique_back": false
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

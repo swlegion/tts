@@ -1,0 +1,49 @@
+{
+    "Object": {
+      "GUID": "169190",
+      "Name": "Infinite_Bag",
+      "Transform": {
+        "posX": 57.9915848,
+        "posY": 0.932037055,
+        "posZ": 28.7111084,
+        "rotX": 0.00000191276376,
+        "rotY": 0.0131976325,
+        "rotZ": -0.00000446581225,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Blitz Card Decks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9558885,
+        "g": 0.352555166,
+        "b": 0.13
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": -1,
+      "MeshIndex": -1,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": []
+    },
+    "StatesPaths": {},
+    "ContainedObjectPaths": [
+      "Deck.910a02.json"
+    ]
+  }
+  
