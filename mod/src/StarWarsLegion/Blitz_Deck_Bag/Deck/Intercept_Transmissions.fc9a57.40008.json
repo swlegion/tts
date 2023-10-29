@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "fc9a54",
+    "GUID": "fc9a57",
     "Name": "Card",
     "Transform": {
-      "posX": -20.7210255,
-      "posY": 1.16138685,
-      "posZ": 9.880953,
-      "rotX": 0.00151372235,
-      "rotY": 180.000076,
-      "rotZ": 0.00214156718,
+      "posX": -20.4938641,
+      "posY": 1.17818141,
+      "posZ": 9.24147,
+      "rotX": 0.00618644245,
+      "rotY": 180.000092,
+      "rotZ": 0.006837118,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
     },
-    "Nickname": "Long March",
+    "Nickname": "Intercept Transmissions",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -34,7 +34,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 40005,
+    "CardID": 40008,
     "SidewaysCard": true,
     "CustomDeck": {
       "400": {

@@ -17,9 +17,9 @@
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.713235259,
-      "g": 0.713235259,
-      "b": 0.713235259
+      "r": 0.85,
+      "g": 0.85,
+      "b": 0.85
     },
     "LayoutGroupSortIndex": 0,
     "Locked": false,
@@ -35,13 +35,13 @@
     "HideWhenFaceDown": true,
     "Hands": true,
     "CardID": 40002,
-    "SidewaysCard": false,
+    "SidewaysCard": true,
     "CustomDeck": {
       "400": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2094796397704791774/81F844F292C2C9A5AEFA12A57B1A7114B71F27EF/",
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2094796397712656419/55C167E006A80CEF767799E1637EAAE88D92F89D/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/2094796397703224098/22B26F4F70F866332E937A67BA393D9420305984/",
-        "NumWidth": 4,
-        "NumHeight": 2,
+        "NumWidth": 3,
+        "NumHeight": 3,
         "BackIsHidden": true,
         "UniqueBack": false,
         "Type": 0
