@@ -36,16 +36,24 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          <!--Welcome to Star Wars: Legion for TTS, <b>v7.3.0</b>.-->
-          Welcome to Star Wars: Legion for TTS, <b>v7.7.1-beta</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v7.4.0</b>.
+          <!--Welcome to Star Wars: Legion for TTS, <b>v7.7.1-beta</b>.-->
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
 
           To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.
 
           <b>CHANGELOG</b>
-          (Since last <i>Beta</i>)
-          <!--(Since last <i>Stable</i>)-->
+          <!--(Since last <i>Beta</i>)-->
+          (Since last <i>Stable</i>)
+          - Add: Blitz! Deck
+          - Add: Brother
+          - Add: Sister
+          - Add: Poggle
+          - Add: Sun
+          - Add: Bug Warriors
+          - Add: Battleforce Droids
+          - Add: Battleforce Flutter
           - Fix: Lots of Assets re-hosted
 
         </Text>
