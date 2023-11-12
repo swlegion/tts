@@ -1162,8 +1162,7 @@
         "name": "Beskad Duelist",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139032/FD73A6FDED667993F98B7FBD7A1B3A408065B07F/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357841451/50164A1C84E6D119BC45BDD31C8209ED7D9A0F29/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080713966/46952E774C97E45A1E936D35B3FC7C9392F5950F/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809252570/7F009B812ED06B7E45CFCE48142293A4B9C77991/"
         },
         "points": 24,
         "restrictions": {
@@ -1771,8 +1770,7 @@
         "name": "Tristan Wren",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146078/510B97CE7AEF65B5AC75FE3D94C769AB2CD070CD/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696350886429750/5D62ADB1200B1AD16A0349AF87E757F40E720115/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080686656/A6DDF6C03FED22656FD7714348E27ECF8144218E/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185988/83F7A4664576B192905C6393A6D9A5DAA776E01A/"
         },
         "points": 34,
         "restrictions": {
@@ -1785,8 +1783,7 @@
         "name": "Ursa Wren",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146355/375DF871CB9930A2C15C7A310420AC1541AB8830/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357881561/B365369415AE0FB6A96E69817D76D9BAD1366038/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080696961/0E039C55249C023EF22B04536617ACB67DB5AABA/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186071/A6DB57CF6BA2EEDAB6EB8A719DB8D0702708C759/"
         },
         "leader": true,
         "points": 34,
@@ -2115,8 +2112,7 @@
         "name": "Clone Commander",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139272/747D9B51470E308061A8A4A21FBA5B28B2CEC1BB/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035126931/4EAB6085C2D2D6C176B3C9847E2F1F228CEFE7BB/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080662099/EB7BD333EDF05BC6586516E0F3E6FD9AE270F11E/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186354/387C36C2BB545E6CC882A05C0D81F5BE164166B7/"
         },
         "leader": true,
         "points": 18,
@@ -2130,8 +2126,7 @@
         "name": "Clone Comms Technician",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139301/BA6F9C1E1B03C96908FD244F7F17188E070E5CF0/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281396590/F88D24438DE4A59DD0CDE3C0779FF9B35B7E42C4/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809184812/3A020CF4B5983E1AF55F65A3F8F7BDCBAAEAAACC/"
         },
         "points": 11,
         "restrictions": {
@@ -2144,8 +2139,7 @@
         "name": "Clone Engineer",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139332/EFBC734554388F0628F88FF6AA3C3E8AA078141C/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281395509/5B7CE64AA6E972FE9A7F08B202EF082B8EA5C0E0/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809184624/F2826DD52329584D1C3B3795B0E55948EA96B467/"
         },
         "points": 14,
         "restrictions": {
@@ -2158,8 +2152,7 @@
         "name": "Clone Medic",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139361/BD135C31EA1FAE5CED684E0BAEA59F27C40A42B1/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1922492377281399144/E1A292B1D9C5B721F4BD6C870F1DAC5BDDAF9650/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394076966566/23CCE6759A686ED5D9FF27EC556F585D580227DD/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809184711/BC2EE95F62E043F83A352F825B6A041AC6D59959/"
         },
         "points": 15,
         "restrictions": {
@@ -2301,8 +2294,7 @@
         "name": "Phase II Clone Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144398/18C969B5FB9B6031557CF11FE2397E6AD8955624/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321406830/59DC907FEFEF65FBAF245A3B31A4251026FC93AA/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185239/E9AEC00E99E612EA66D5DBB89070F16D8D8ACF7E/"
         },
         "points": 13,
         "restrictions": {
@@ -2315,8 +2307,7 @@
         "name": "PK-Series Worker Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144469/375C3AB7DF614E63735F3A1FBF98F4FCD9E1507E/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035005605/95FAACF9FF4F9B6AB1921E3FD8C896DC631069BF/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081520233/F4D0CE258F3C44457C38B967D6E5224570A800DA/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185654/E58BE2AB7BC859E1A896FF9B9909B6976E69CF4B/"
         },
         "points": 12,
         "restrictions": {
@@ -2514,8 +2505,7 @@
         "name": "T-Series Tactical Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146138/2F28A64E405A9426CB3248FB8D9D4F9B7FFA2E4B/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1022821664192681738/6062182D66F6F043E4DCF98FCD592CBD7ECDFF18/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081515538/DFE6A5BB3F95EDBAEFDDA95E5B873D8B636CB499/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185719/FF120BC2FA5DC8258021E2849C2B81591CCA36B9/"
         },
         "leader": true,
         "points": 18,
@@ -2529,8 +2519,7 @@
         "name": "Viper Recon Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146561/848DFAE83E6BF72D5D657ACB7B07CAFFABDCEA68/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364034959851/4D7F0531A10AEA9421878B1535604FDF1EBAE8D1/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081523130/EF8D89A1578C399AC03F1795C512B234EFE1B8C2/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185784/C7B137C19E24986DBE1E9A2712676AB320E4B2A9/"
         },
         "points": 6,
         "restrictions": {
@@ -2599,8 +2588,7 @@
         "name": "Boil",
         "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554830118/848C17C6AF01EE3F4F9D9068CEB2573EFAA86A24/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1911232618851891928/ED9CBE2565F8E3F500CC6EF4C6677CF8E7161EB8/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1931498942571392139/6DA6C0216BF212E8E636F3D63AE1FF0FE3C33987/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446813135454/32F343B3295B563DF3041AF5F433E151F88C66B6/"
         },
         "leader": true,
         "points": 15,
@@ -2615,8 +2603,7 @@
         "name": "Waxer",
         "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554830210/E9BB75496CABD12DEE959D8733E9F19A87AFC87E/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321577529/3034903B0501BE08E398BCC7F0D735B308DA9377/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1931498942569352826/2FA98E1EB47F345406DC410F1DBBE50F4A8EC359/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446813135349/81275DD398B659088A018A09394B7FD6E5C3B279/"
         },
         "leader": true,
         "points": 15,

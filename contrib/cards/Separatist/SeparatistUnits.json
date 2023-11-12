@@ -93,8 +93,7 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1022821664192681738/6062182D66F6F043E4DCF98FCD592CBD7ECDFF18/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081515538/DFE6A5BB3F95EDBAEFDDA95E5B873D8B636CB499/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185719/FF120BC2FA5DC8258021E2849C2B81591CCA36B9/"
         }
       ]
     },
@@ -275,7 +274,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1752483394081627753/475498FA739FBCC1E569FCA2B11D7573C844F514/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185590/81774E94925CD5B15B7CE0DC52DEC465D9774024/"
         }
       ],
       "commands": [
@@ -533,16 +532,13 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1693877203566022298/DF3FC1CF550C49A2C2340F5291798615E1978116/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081526364/AD1B7C2D57479AD3217655F674FC9027BAB11C1E/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185513/A794F69FD4F7FF6093A8E4564633AF49C95DE79D/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1693877203566022298/DF3FC1CF550C49A2C2340F5291798615E1978116/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081526364/AD1B7C2D57479AD3217655F674FC9027BAB11C1E/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185513/A794F69FD4F7FF6093A8E4564633AF49C95DE79D/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1693877203566022298/DF3FC1CF550C49A2C2340F5291798615E1978116/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081526364/AD1B7C2D57479AD3217655F674FC9027BAB11C1E/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185513/A794F69FD4F7FF6093A8E4564633AF49C95DE79D/"
         }
       ]
     },

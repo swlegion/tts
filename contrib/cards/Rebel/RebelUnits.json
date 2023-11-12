@@ -239,8 +239,7 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1666859827674318376/E0A03ACDC6D2F607B8CC0C406AE196A9DB5347B7/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081432885/15D54848A44C4B5DEDA6F93AC8A2AE066D251EDC/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186518/DCA8031C62A867134FAA814D4976978058C01369/"
         }
       ],
       "commands": [
@@ -386,8 +385,7 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/948474323838790939/3E9EB4AAF653CD476FF3D90EA82072EDC2D4AC66/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394081436886/5CCA6776FB57C8AB5E9D8E9AE9EE30D74FCCAB52/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186599/4B154E18EF2C0ADE6C347FC4B15AD856D00546DF/"
         }
       ],
       "commands": [
@@ -918,16 +916,13 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696350886421665/441B37D17213CA1B82174A8988ED23AA2D59336E/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080668141/FEE2EBE5145920FEAA887D30C41A14975D440BEF/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186437/C255A6920C6B62ADD6B948311053BAAE4803BE29/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357880094/FFFBDA79DE3B6192926EFCDFC257708C2A360562/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080696961/0E039C55249C023EF22B04536617ACB67DB5AABA/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186272/7872209AB5CBE104129F9AFC58267EB8F6CF80D1/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696350886396178/07FB37CA0A11552BEF96C3DCA10AF232C65AF7B6/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080729530/A131CA7EF04CB3CE3C0AD9003AF53DFFB9C23E46/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186179/35024924D8BC8A727F508557AF7B714D2E3D22FF/"
         }
       ]
     },
@@ -950,8 +945,7 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1021696515357880886/06542D3BD6F03DC43D9E675680F86F2964B210F9/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080696961/0E039C55249C023EF22B04536617ACB67DB5AABA/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185852/7940F0BEFCFE905039054DA1CA3BBF3C0CB2C7A9/"
         }
       ],
       "required": ["Ursa Wren", "Tristan Wren"]

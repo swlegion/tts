@@ -128,8 +128,7 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1683750364035126931/4EAB6085C2D2D6C176B3C9847E2F1F228CEFE7BB/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394080662099/EB7BD333EDF05BC6586516E0F3E6FD9AE270F11E/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186354/387C36C2BB545E6CC882A05C0D81F5BE164166B7/"
         }
       ]
     },
@@ -231,8 +230,7 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1931498942568777590/0BA60DFCDA7322FE873E450157E4186CD1E095AD/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1931498942568777830/0B9A3EA22942328754AB85811EF3E367EE244F2D/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446813135529/6A6C874DBCA77E800A77C20FD36C2F223661CD10/"
         }
       ],
       "commands": [
@@ -379,20 +377,16 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321070793/294DC7F7A6BE9E31AB2823745854EF8C31D3281A/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185423/28C3EB1A6E5F3141AF4A89EF12647AEC246550C0/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321407636/9315381415E55B835F091392658CBFDED02249F3/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809184972/91084BECB21EB6FC076C1FF1F64E8B042A6778DA/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321577529/3034903B0501BE08E398BCC7F0D735B308DA9377/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185063/EE15A42B2226FB99AE31D50BA284E44B6BDB7CFC/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321405998/BF99DA12AC60F2548F73F5D0D001419BFBFA5CB1/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185152/33C3D8FE9D7967E2DD889A8FBBFCE0C46F4BBCF3/"
         }
       ]
     },
