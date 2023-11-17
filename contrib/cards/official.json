@@ -1586,8 +1586,7 @@
         "name": "Phase II Mortar Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144436/3D8E7C0C4D7A837EEE925B65E044F1EF8B3388C4/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321578281/CBFA560559FE81326342AD0B65D2349447F882EB/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185328/4A6DA42CDB70EF979D5B8B675CEFA5459FA60D4E/"
         },
         "points": 18,
         "restrictions": {
@@ -1825,8 +1824,7 @@
         "name": "Z-6 Phase II Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146709/F3874CF8FD491DEF02AA37F322C61B51463D2ECD/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/1028455893321579074/D5F10426146B81D46F02B027B9C4CC875FA6DA00/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/1752483394077056521/94B90E51CE999887ED54B32DC62A90965843ED82/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809184879/281AC62444FBFA3F17E2DF0031FF5F23E398EAC5/"
         },
         "points": 27,
         "restrictions": {
