@@ -36,17 +36,17 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          <!--Welcome to Star Wars: Legion for TTS, <b>v7.4.1</b>.-->
-          Welcome to Star Wars: Legion for TTS, <b>v7.7.3-beta</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v7.8.0</b>.
+          <!--Welcome to Star Wars: Legion for TTS, <b>v7.8.0-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
 
-          To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.
+          To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.-->
 
           <b>CHANGELOG</b>
-          (Since last <i>Beta</i>)
-          <!--(Since last <i>Stable</i>)-->
-          - Fix: Some More Asset rehost
+          <!--(Since last <i>Beta</i>)-->
+          (Since last <i>Stable</i>)
+          - Add: Masking for 6x3 Maps to make 3x3 Maps
         </Text>
       </VerticalLayout>
     </VerticalScrollView>

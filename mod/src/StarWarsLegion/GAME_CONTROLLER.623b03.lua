@@ -1,6 +1,8 @@
 require('!/Analytics')
 require('!/Deck')
 
+existingMasks = {}
+
 function onload(save_state)
     _G.Deck = Deck:create()
 
@@ -68,7 +70,7 @@ end
 
 function homeScreen()
     screen.createButton({click_function = "dud", function_owner = self, label = "", position = {0.9, 0.25, 0}, rotation = {0, -90, 90}, scale = {0.5, 0.5, 0.5}, width = 0, height = 0, font_size = 100, font_color = {0.8867, 0.7804, 0, 1}, alignment = 1})
-    printToScreen("STAR WARS LEGION TTS MOD\n by Tieren\n\nSelect an option below to start", 80, 3)
+    printToScreen("STAR WARS LEGION TTS MOD\n by SWL Dev Foundation\n\nThe home of BLITZ!\nSelect an option below to start", 80, 3)
 end
 
 
@@ -77,7 +79,7 @@ end
 function mainMenu()
     timerScreen = false
 
-    printToScreen("STAR WARS LEGION TTS MOD\n by SWL Dev Foundation\n\nSelect an option below to start", 80, 3)
+    printToScreen("STAR WARS LEGION TTS MOD\n by SWL Dev Foundation\n\nThe home of BLITZ!\nSelect an option below to start", 80, 3)
 
     clearAllButtons()
     local menuEntries = {}
@@ -264,6 +266,9 @@ function mapMenu()
     menuEntries[5] = {functionName = "customMapMenu", label = "Custom Maps", tooltip = "Create a Custom Map", buttonTint = {0,0.913,1}}
     menuEntries[6] = {functionName = "clearZones", label = "Clear Map", tooltip = "Clears everything from current Battlefield area", buttonTint = {0,0.913,1}}
     menuEntries[7] = {functionName = "saveConditions", label = "Save Battlefield Tokens", tooltip = "Saves Objects from the Objective/Deployment/Conditions", buttonTint = {0,0.913,1}}
+    menuEntries[8] = {functionName = "toggleMaskMid", label = "Toggle Masks : Mid", tooltip = "Toggles Masking Objects for the middle of the Battlefield", buttonTint = {0,0.913,1}}
+    menuEntries[9] = {functionName = "toggleMaskLeft", label = "Toggle Masks : Left", tooltip = "Toggles Masking Objects for the left of the Battlefield", buttonTint = {0,0.913,1}}
+    menuEntries[10] = {functionName = "toggleMaskRight", label = "Toggle Masks : Right", tooltip = "Toggles Masking Objects for the right of the Battlefield", buttonTint = {0,0.913,1}}
     createMenu(menuEntries, 1)
 end
 
@@ -1008,4 +1013,80 @@ end
 function enableExperimentalFeatures()
     ga_event("Global", "enableExperimentalFeatures")
     Global.UI.show("legionDisplay")
+end
+
+function getExistingMaskLength()
+    local length = 0
+    if existingMasks != nil then
+        for i, obj in pairs(existingMasks) do
+            length = length + 1
+        end
+    end
+    return length
+end
+
+function toggleMaskMid()   
+    local length = getExistingMaskLength() 
+    if length > 0 then
+        clearMasks()
+    else
+        placeMask(35,9)
+        placeMask(-19,9)
+        placeMask(35,-9)
+        placeMask(-19,-9)
+    end
+end
+
+function toggleMaskRight()
+    local length = getExistingMaskLength() 
+    if length > 0 then
+        clearMasks()
+    else
+        placeMask(35,9)
+        placeMask(17,9)
+        placeMask(35,-9)
+        placeMask(17,-9)
+    end
+end
+
+function toggleMaskLeft()
+    local length = getExistingMaskLength() 
+    if length > 0 then
+        clearMasks()
+    else
+        placeMask(-1,9)
+        placeMask(-19,9)
+        placeMask(-1,-9)
+        placeMask(-19,-9)
+    end
+end
+
+function clearMasks()
+    if existingMasks != nil then
+        for i, obj in pairs(existingMasks) do
+            if obj != nil then
+                destroyObject(obj)
+            end
+        end
+        existingMasks = {}
+    end
+end
+
+function placeMask(x, z)
+    local projector = spawnObject({
+        type        = "Custom_AssetBundle",
+        position    = {
+          x,
+          75,
+          z,
+        },
+        scale       = {0, 0, 0},
+      })
+      local asset = "http://cloud-3.steamusercontent.com/ugc/2264809616949875099/DB2BBB502F11E04185A603B8A4FD0F2391B905C6/"
+      projector.setName("Masking Boundary")
+      projector.setLock(true)
+      projector.setCustomObject({
+        assetbundle = asset,
+      })  
+    table.insert(existingMasks, projector)
 end
