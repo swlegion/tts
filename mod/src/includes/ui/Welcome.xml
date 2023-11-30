@@ -36,7 +36,7 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v7.8.0</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v7.8.1</b>.
           <!--Welcome to Star Wars: Legion for TTS, <b>v7.8.0-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
@@ -46,7 +46,7 @@
           <b>CHANGELOG</b>
           <!--(Since last <i>Beta</i>)-->
           (Since last <i>Stable</i>)
-          - Add: Masking for 6x3 Maps to make 3x3 Maps
+          - Fix: Flip for Bug Upgrade
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
