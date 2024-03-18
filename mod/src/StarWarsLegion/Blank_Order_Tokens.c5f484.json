@@ -37,24 +37,24 @@
     "MaterialIndex": -1,
     "MeshIndex": -1,
     "CustomMesh": {
-      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
-      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1018319581181448988/633BA46270F197BFA8445A9AD35008EF4844F3E6/",
-      "NormalURL": "",
-      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
-      "Convex": true,
-      "MaterialIndex": 3,
-      "TypeIndex": 7,
-      "CustomShader": {
-        "SpecularColor": {
-          "r": 1,
-          "g": 1,
-          "b": 1
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/2425823802350268462/8309FBD193E09BFF8FE6F51A531DC5ECD0836F09/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 7,
+        "CustomShader": {
+            "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+            },
+            "SpecularIntensity": 0,
+            "SpecularSharpness": 2,
+            "FresnelStrength": 0
         },
-        "SpecularIntensity": 0,
-        "SpecularSharpness": 2,
-        "FresnelStrength": 0
-      },
-      "CastShadows": false
+        "CastShadows": false
     },
     "LuaScript": "",
     "LuaScriptState": "",

@@ -385,76 +385,92 @@ function onload(saveData)
     commandTokenData.collider = "http://cloud-3.steamusercontent.com/ugc/785234780866339915/85F7E717B9EFBE0396126CA673DF17EAFEC7D451/"
 
     commandTokenData.red = {}
-    commandTokenData.red.imperialCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181599643/538FA3C32413306DE7F650F9A0B1B19BB68FDE59/ "
-    commandTokenData.red.imperialOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181602271/BAA5A49CC32D2F30D5F3519D3B8A11C0B91E4938/"
-    commandTokenData.red.imperialCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181601340/9C023439BD650520C6260EE49AE23C619AD3A3E2/"
-    commandTokenData.red.imperialSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181602934/38C669F790A0932DFB092B5A6DDC10F3017CB9AA/"
-    commandTokenData.red.imperialSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181603317/6299EEDC4EAC45EB5C6CE9DD1451C49012C42A56/"
-    commandTokenData.red.imperialHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181601845/B2E886C7B7639C491D0B7A5F369E9DACDE31A8FF/"
 
-    commandTokenData.red.rebelCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181606961/B11A9AB1E8860F6E1EA263150C5608580522773C/"
-    commandTokenData.red.rebelOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181607788/309F540CF290A636E47BCEC08509BF049EA2C96C/"
-    commandTokenData.red.rebelCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181607230/299FF1E61697FFCBB40A74AAC189D11B4EAFBA3B/"
-    commandTokenData.red.rebelSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181608049/93F9E0FA9F969438FC7F0A2508739CBE55119089/"
-    commandTokenData.red.rebelSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181608299/117B4BBD9BFCA743B24FA873529080F60D127376/"
-    commandTokenData.red.rebelHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181607465/424CED4049BE2724595B4D8DCA61034090D2F163/"
+    commandTokenData.red.com = "http://cloud-3.steamusercontent.com/ugc/2425823802350223302/3D52D57D51D5F04872B4BF989A0A8B5DE507636C/"
+    commandTokenData.red.op = "http://cloud-3.steamusercontent.com/ugc/2425823802350223750/C3C09D828436CE827D7B788509A5264430CDCCBD/"
+    commandTokenData.red.corps = "http://cloud-3.steamusercontent.com/ugc/2425823802350223459/C482A32B2B1DF9A6CB62F01DC0138023D122E813/"
+    commandTokenData.red.sf = "http://cloud-3.steamusercontent.com/ugc/2425823802350223881/5F93AC468782FF6B253528788AD43883D873D534/"
+    commandTokenData.red.sup = "http://cloud-3.steamusercontent.com/ugc/2425823802350224054/3AC5129B9CFE85C357635FAA5A19395CE93BC5D4/"
+    commandTokenData.red.heavy = "http://cloud-3.steamusercontent.com/ugc/2425823802350223589/13B60C1680CB40EA02470BFCF77C30DDE55B08CE/"
 
-    commandTokenData.red.separatistCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181506935/F326233CD49B1CB2CE69DEFE791B37BD56B7BD25/"
-    commandTokenData.red.separatistOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181507250/B6874C9325A8638EF87FC5C6BA68CF2629A84E45/"
-    commandTokenData.red.separatistCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181507051/6C46619634312333ECE65818274D508912E18C39/"
-    commandTokenData.red.separatistSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181507369/C0070810C0D058539BEDDE5B6893E6EAAB2798AD/"
-    commandTokenData.red.separatistSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181507457/78724FE17CEC857896F886FBF5A4F6698502AB3C/"
-    commandTokenData.red.separatistHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181507153/50D4D88CB44EF0FDFFF369E81DF08D91EB79A12B/"
+    commandTokenData.red.imperialCommander = commandTokenData.red.com
+    commandTokenData.red.imperialOperative = commandTokenData.red.op
+    commandTokenData.red.imperialCorps = commandTokenData.red.corps
+    commandTokenData.red.imperialSpecialforces = commandTokenData.red.sf
+    commandTokenData.red.imperialSupport = commandTokenData.red.sup
+    commandTokenData.red.imperialHeavy = commandTokenData.red.heavy
 
-    commandTokenData.red.republicCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181604329/E2F9C9A96EDD4E6D53505D87F32A69626C7B6A02/"
-    commandTokenData.red.republicOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181605292/782B85305B4C7BB6D03306E02D33F8D051CDEF47/"
-    commandTokenData.red.republicCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181604631/288BB3DB047861724810E08E7512B005E1E7046A/"
-    commandTokenData.red.republicSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181605649/09E2E50C8CE87041E630B29183D4D3F3E17801BC/"
-    commandTokenData.red.republicSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181605997/96BF8F41D8B4EA9E441FD1F5F6890DCF7337AAFF/"
-    commandTokenData.red.republicHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181604927/AF5A4C46BC7FD06425DFE9481A8086DBE865404B/"
+    commandTokenData.red.rebelCommander = commandTokenData.red.com
+    commandTokenData.red.rebelOperative = commandTokenData.red.op
+    commandTokenData.red.rebelCorps = commandTokenData.red.corps
+    commandTokenData.red.rebelSpecialforces = commandTokenData.red.sf
+    commandTokenData.red.rebelSupport = commandTokenData.red.sup
+    commandTokenData.red.rebelHeavy = commandTokenData.red.heavy
 
-    commandTokenData.red.shadowcollectiveCommander = "http://cloud-3.steamusercontent.com/ugc/1856061112422440548/1A0E402A295550F940588A97EF946FD326EC5229/"
-    commandTokenData.red.shadowcollectiveOperative = "http://cloud-3.steamusercontent.com/ugc/1856061112422440693/1CFD79EF8B8817D18A7F3849407084767052D5A7/"
-    commandTokenData.red.shadowcollectiveCorps = "http://cloud-3.steamusercontent.com/ugc/1856061112422440599/36E169D393C702BB1579B46E84C142D5C3DFCCB2/"
-    commandTokenData.red.shadowcollectiveSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1856061112422440731/C495B15A488DA05675CAAC55FE5B23AA5CA4473F/"
-    commandTokenData.red.shadowcollectiveSupport = "http://cloud-3.steamusercontent.com/ugc/1856061112422440777/A42960E2117A5C155C20C98E2385C8325206906B/"
-    commandTokenData.red.shadowcollectiveHeavy = "http://cloud-3.steamusercontent.com/ugc/1856061112422440651/50E7A74A18D237B66362BA5BE12E3219FED55FF7/"
+    commandTokenData.red.separatistCommander = commandTokenData.red.com
+    commandTokenData.red.separatistOperative = commandTokenData.red.op
+    commandTokenData.red.separatistCorps = commandTokenData.red.corps
+    commandTokenData.red.separatistSpecialforces = commandTokenData.red.sf
+    commandTokenData.red.separatistSupport = commandTokenData.red.sup
+    commandTokenData.red.separatistHeavy = commandTokenData.red.heavy
+
+    commandTokenData.red.republicCommander = commandTokenData.red.com
+    commandTokenData.red.republicOperative = commandTokenData.red.op
+    commandTokenData.red.republicCorps = commandTokenData.red.corps
+    commandTokenData.red.republicSpecialforces = commandTokenData.red.sf
+    commandTokenData.red.republicSupport = commandTokenData.red.sup
+    commandTokenData.red.republicHeavy = commandTokenData.red.heavy
+
+    commandTokenData.red.shadowcollectiveCommander = commandTokenData.red.com
+    commandTokenData.red.shadowcollectiveOperative = commandTokenData.red.op
+    commandTokenData.red.shadowcollectiveCorps = commandTokenData.red.corps
+    commandTokenData.red.shadowcollectiveSpecialforces = commandTokenData.red.sf
+    commandTokenData.red.shadowcollectiveSupport = commandTokenData.red.sup
+    commandTokenData.red.shadowcollectiveHeavy = commandTokenData.red.heavy
 
     commandTokenData.blue = {}
-    commandTokenData.blue.imperialCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181467231/3D469F73AB4AEE0A8D4DAC26EE98A82C144C2312/"
-    commandTokenData.blue.imperialOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181470653/D06C37C9664EEE89FA4B4A5A4588C4576CC9C72E/"
-    commandTokenData.blue.imperialCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181469578/56191D081421C02B875AC944DCEFE2063F1D7FC1/"
-    commandTokenData.blue.imperialSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181471412/21A6DB99FF4692AC1EA2C2A1E9EAEA867F32150E/"
-    commandTokenData.blue.imperialSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181471773/10D6943934FD8A2FB6DC1F2F5ED766C8AF4B05CB/"
-    commandTokenData.blue.imperialHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181469895/150FB46A62076AE9617AF4E24421060702896E17/"
 
-    commandTokenData.blue.rebelCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181476307/3A7B81D4F46F476F3D74834F4B61448EDE37FDC6/"
-    commandTokenData.blue.rebelOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181480853/E2992559CBCB8D9712DB3B69F6C2BEF780A194AA/"
-    commandTokenData.blue.rebelCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181477778/29C9963DB9D2CFE5565EDF4F2B687A5648F8F8DE/"
-    commandTokenData.blue.rebelSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181481428/CA5B75597BF564B305A8638F732B802BE4CB3DA0/"
-    commandTokenData.blue.rebelSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181481946/5898BF5462D11B8D49D6735D959379AC8B527DCF/"
-    commandTokenData.blue.rebelHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181479826/6106C3F552B8A4286B6FE02FB319593D9245E658/"
+    commandTokenData.blue.com = "http://cloud-3.steamusercontent.com/ugc/2425823802350222557/F54CD13B525EB1CBFB2952383CAEE124119D7C9F/"
+    commandTokenData.blue.op = "http://cloud-3.steamusercontent.com/ugc/2425823802350222987/04E37D5634E5E00C70765CDAA5FBFBA5A3EF06E5/"
+    commandTokenData.blue.corps = "http://cloud-3.steamusercontent.com/ugc/2425823802350222752/3A3519FB659AE4BCF8D84D4F33100C8162FDF0E4/"
+    commandTokenData.blue.sf = "http://cloud-3.steamusercontent.com/ugc/2425823802350223089/89F5AA847DA71F3148E4A97B41489FC2B2DBB945/"
+    commandTokenData.blue.sup = "http://cloud-3.steamusercontent.com/ugc/2425823802350223170/D9DE41DE504F73766E11F5DAD3B4DF005ED59ACC/"
+    commandTokenData.blue.heavy = "http://cloud-3.steamusercontent.com/ugc/2425823802350222879/D84AE73FA68A8B02A8FBFE13FC6C3683964B124E/"
 
-    commandTokenData.blue.separatistCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181449743/EAF70993553414449641A211913A77AD021B18C9/"
-    commandTokenData.blue.separatistOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181450993/AFE85A02D6C48DDBC4846FA571E2E1B7AACD968A/"
-    commandTokenData.blue.separatistCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181450408/539DA5CD945A8D06F4D94862CD785F5FEE304CCB/"
-    commandTokenData.blue.separatistSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181466311/BBAE13B86F470FB0098906CE82C217ECED36F22E/"
-    commandTokenData.blue.separatistSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181466661/6827A183859436F4BAB606B62EC27FB1F02DDAB2/"
-    commandTokenData.blue.separatistHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181450723/2D5159B73DF62A6E9910A376D47DC0A7EB702338/"
+    commandTokenData.blue.imperialCommander = commandTokenData.blue.com
+    commandTokenData.blue.imperialOperative = commandTokenData.blue.op
+    commandTokenData.blue.imperialCorps = commandTokenData.blue.corps
+    commandTokenData.blue.imperialSpecialforces = commandTokenData.blue.sf
+    commandTokenData.blue.imperialSupport = commandTokenData.blue.sup
+    commandTokenData.blue.imperialHeavy = commandTokenData.blue.heavy
 
-    commandTokenData.blue.republicCommander = "http://cloud-3.steamusercontent.com/ugc/1018319581181472136/4A0FA517DC4F0D56E9D2532283931EE40C779EC0/"
-    commandTokenData.blue.republicOperative = "http://cloud-3.steamusercontent.com/ugc/1018319581181474496/EB70DAE07E3E9D9BAC1D8D245D6318668C06D17D/"
-    commandTokenData.blue.republicCorps = "http://cloud-3.steamusercontent.com/ugc/1018319581181472463/64892947D4142261C8A9F729533D5A075EA383D1/"
-    commandTokenData.blue.republicSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1018319581181474915/D48FDC9815EEDBE6306F310E78ED1C9ADFF69D57/"
-    commandTokenData.blue.republicSupport = "http://cloud-3.steamusercontent.com/ugc/1018319581181475330/17110C087B25CEE6E0ADDBA8F4E4D34A6594D3C7/"
-    commandTokenData.blue.republicHeavy = "http://cloud-3.steamusercontent.com/ugc/1018319581181472795/79E2E21BD525AC36BA389C77A0227E12E624707B/"
+    commandTokenData.blue.rebelCommander = commandTokenData.blue.com
+    commandTokenData.blue.rebelOperative = commandTokenData.blue.op
+    commandTokenData.blue.rebelCorps = commandTokenData.blue.corps
+    commandTokenData.blue.rebelSpecialforces = commandTokenData.blue.sf
+    commandTokenData.blue.rebelSupport = commandTokenData.blue.sup
+    commandTokenData.blue.rebelHeavy = commandTokenData.blue.heavy
 
-    commandTokenData.blue.shadowcollectiveCommander = "http://cloud-3.steamusercontent.com/ugc/1856061112422440157/1D014DEA71FDEFAE0230A09DAC383A7558983ABF/"
-    commandTokenData.blue.shadowcollectiveOperative = "http://cloud-3.steamusercontent.com/ugc/1856061112422440362/BEE23D08126F88FF445DB47C3639E4E2E1B3C2A0/"
-    commandTokenData.blue.shadowcollectiveCorps = "http://cloud-3.steamusercontent.com/ugc/1856061112422440235/CA277E7D315182CAB0CF1C92384860012D9ED1EA/"
-    commandTokenData.blue.shadowcollectiveSpecialforces = "http://cloud-3.steamusercontent.com/ugc/1856061112422440443/02FF552DE7B9C6EAB6432B3BED254FCDCED09756/"
-    commandTokenData.blue.shadowcollectiveSupport = "http://cloud-3.steamusercontent.com/ugc/1856061112422440497/3ACEF5EA33F7540A6A37885F3BCBDF862391A661/"
-    commandTokenData.blue.shadowcollectiveHeavy = "http://cloud-3.steamusercontent.com/ugc/1856061112422440313/2394BEAFFF809A9161472A900619B2D6175C39F3/"
+    commandTokenData.blue.separatistCommander = commandTokenData.blue.com
+    commandTokenData.blue.separatistOperative = commandTokenData.blue.op
+    commandTokenData.blue.separatistCorps = commandTokenData.blue.corps
+    commandTokenData.blue.separatistSpecialforces = commandTokenData.blue.sf
+    commandTokenData.blue.separatistSupport = commandTokenData.blue.sup
+    commandTokenData.blue.separatistHeavy = commandTokenData.blue.heavy
+
+    commandTokenData.blue.republicCommander = commandTokenData.blue.com
+    commandTokenData.blue.republicOperative = commandTokenData.blue.op
+    commandTokenData.blue.republicCorps = commandTokenData.blue.corps
+    commandTokenData.blue.republicSpecialforces = commandTokenData.blue.sf
+    commandTokenData.blue.republicSupport = commandTokenData.blue.sup
+    commandTokenData.blue.republicHeavy = commandTokenData.blue.heavy
+
+    commandTokenData.blue.shadowcollectiveCommander = commandTokenData.blue.com
+    commandTokenData.blue.shadowcollectiveOperative = commandTokenData.blue.op
+    commandTokenData.blue.shadowcollectiveCorps = commandTokenData.blue.corps
+    commandTokenData.blue.shadowcollectiveSpecialforces = commandTokenData.blue.sf
+    commandTokenData.blue.shadowcollectiveSupport = commandTokenData.blue.sup
+    commandTokenData.blue.shadowcollectiveHeavy = commandTokenData.blue.heavy
 
     commandTokenTrayData = {}
     commandTokenTrayData.red = {}

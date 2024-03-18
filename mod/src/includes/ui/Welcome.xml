@@ -36,17 +36,17 @@
     <VerticalScrollView id="welcomeTab1" active="true" color="40404080">
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-          Welcome to Star Wars: Legion for TTS, <b>v7.8.1</b>.
-          <!--Welcome to Star Wars: Legion for TTS, <b>v7.8.0-beta</b>.
+          <!--Welcome to Star Wars: Legion for TTS, <b>v7.8.2</b>.-->
+          Welcome to Star Wars: Legion for TTS, <b>v7.8.2-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
 
-          To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.-->
+          To access the stable version of the mod visit <i>https://go.swlegion.dev/mod</i>.
 
           <b>CHANGELOG</b>
-          <!--(Since last <i>Beta</i>)-->
-          (Since last <i>Stable</i>)
-          - Fix: Flip for Bug Upgrade
+          (Since last <i>Beta</i>)
+          <!--(Since last <i>Stable</i>)-->
+          - Fix: Order Tokens replaced with factionless versions
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
