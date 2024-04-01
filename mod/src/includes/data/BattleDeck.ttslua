@@ -64,6 +64,7 @@ function _updateInput()
     readonly       = true,
     tooltip        = "Battlefield Deck Type",
   })
+  _G.selectedScenario = __state.scenario
 end
 
 function getScenario()

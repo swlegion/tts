@@ -83,9 +83,8 @@ function mainMenu()
 
     clearAllButtons()
     local menuEntries = {}
-    menuEntries[1] = {functionName = "learningGameMenu", label = "Learning Game", tooltip = "Play a Learning Game", buttonTint = {0,0.913,1}}
-    menuEntries[2] = {functionName = "mapMenu", label = "Maps", tooltip = "Map Menu", buttonTint = {0,0.913,1}}
-    menuEntries[3] = {functionName = "gameOptionsMenu", label = "Set Up", tooltip = "Set Up options menu", buttonTint = {0,0.913,1}}
+    menuEntries[1] = {functionName = "mapMenu", label = "Maps", tooltip = "Map Menu", buttonTint = {0,0.913,1}}
+    menuEntries[2] = {functionName = "gameOptionsMenu", label = "Set Up", tooltip = "Set Up options menu", buttonTint = {0,0.913,1}}
 
     createMenu(menuEntries, 1)
 
@@ -154,14 +153,6 @@ function removeLockedRulers()
     end
 end
 
-function learningGameMenu()
-  ga_view("game_controller/learning_game")
-  printToScreen("The Learning Game has been removed as part\nof this mod due to size constraints.\n\nSubscribe to\nhttps://go.swlegion.dev/map-archive\nfor cartridge access.", 80, 3)
-
-  clearAllButtons()
-  changeBackButton("mainMenu", "Go back to Main Menu")
-end
-
 function standbyTokens()
     local allObjs = getAllObjects()
     for i, obj in pairs(allObjs) do
@@ -195,6 +186,7 @@ function defineBattlefieldMenu(params)
       return
     end
     _G.selectedScenario = selectedScenario
+    print(selectedScenario)
     ga_view("game_controller/define_battlefield")
     clearAllButtons()
     changeBackButton("reset", "Go back to Main Menu")
