@@ -288,6 +288,20 @@
             "unit": ["Moff Gideon"]
           }
         }
+      },
+      {
+        "name": "DC-17m ICWS Config",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2495630600682578404/0907EFC6D9B860E036D95C2204113FA2E80D7483/",
+        "flip": {
+          "name": "DC-17m ICWS Config",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2495630600682578229/D1B8B22989B7B303FFEE57833D39F8476DEED678/"
+        },
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "unit": ["Clone Commandos"]
+          }
+        }
       }
     ],
     "Command": [
@@ -680,6 +694,11 @@
       }
     ],
     "Gear": [
+      {
+        "name": "Katarn Pattern Armor",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2495630600682578301/92CA9E448779AF91300B53D1D77FC3D385141C28/",
+        "points": 0
+      },
       {
         "name": "Ascension Cables",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138190/DBFD3BC31AD275E480FFAAB10F2C97A25EC53F7C/",
@@ -1083,6 +1102,34 @@
       }
     ],
     "Heavy Weapon": [
+      {
+        "name": "T-21A Range Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2495630600682578710/13027CE8B24DC2CB5822CE42A7AA586D5379CB56/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2495630600682669896/C2F5892D64B3B5CE33A83A3F874C1A66594F6412/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2495630600682582649/F03C73249983DDC1178314FD61C7D53DA27840EE/"
+        },
+        "points": 28,
+        "restrictions": {
+          "include": {
+            "unit": ["Range Troopers"]
+          }
+        }
+      },
+      {
+        "name": "DLT-20A Range Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2495630600682578524/371C5FC0CE0B3AF9BB38051C9C1FC353113C493F/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2495630600682669844/3306C99E1B2A23502CA35EEB63FC842EA7FB4E3A/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2495630600682582649/F03C73249983DDC1178314FD61C7D53DA27840EE/"
+        },
+        "points": 25,
+        "restrictions": {
+          "include": {
+            "unit": ["Range Troopers"]
+          }
+        }
+      },
       {
         "name": "B2-ACM Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138530/E4F2F46CD0EFCCBEEFAC5F8CB2BA4E1D43B5BB88/",
@@ -2051,19 +2098,19 @@
     ],
     "Personnel": [
       {
-        "name": "2-1B Medical Droid",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137676/C282622A211B384895C61D5EE0811E4E627FBDBF/",
+        "name": "Range Trooper",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2495630600682578626/9EF5E8D52EF570E3EC76FCEEA8034A877760E02E/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594268997/6248E4CAF3E978154106E7095E6984DCE6677CCA/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594282950/7A9A3E5518394273A507A64CCF7425A2E7EFC29B/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2495630600682582649/F03C73249983DDC1178314FD61C7D53DA27840EE/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2495630600682582649/F03C73249983DDC1178314FD61C7D53DA27840EE/"
         },
-        "points": 18,
+        "points": 15,
         "restrictions": {
           "include": {
-            "faction": ["Rebel"]
+            "faction": ["Range Troopers"]
           }
         }
-      },
+      },      
       {
         "name": "B1 Battle Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138406/B83A83613C2F77D3BD237309689D70C47BD34350/",

@@ -37,7 +37,7 @@
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
           <!--Welcome to Star Wars: Legion for TTS, <b>v7.8.2</b>.-->
-          Welcome to Star Wars: Legion for TTS, <b>v7.8.3-beta</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v7.8.4-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
 
@@ -46,10 +46,8 @@
           <b>CHANGELOG</b>
           (Since last <i>Beta</i>)
           <!--(Since last <i>Stable</i>)-->
-          - Fix: Updated Rules Links
-          - Fix: Remove the Learning Game Menu
-          - Fix: Blitz Card Art Atlas
-          - Fix: Skirm Battle Deck
+          - Add: Range Troopers
+          - Add: Commandos
         </Text>
       </VerticalLayout>
     </VerticalScrollView>

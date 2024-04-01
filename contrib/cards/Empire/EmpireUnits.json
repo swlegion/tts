@@ -912,6 +912,38 @@
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359682702689114/727755B3BE824994C869F1C869D8B5A07A3CD284/"
         }
       ]
+    },
+    {
+      "name": "Range Troopers",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2495630600682578473/BF07355370D1E0303B59E0FA2F7439FC22D58941//",
+      "size": "small",
+      "type": "Trooper",
+      "points": 60,
+      "speed": 1,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Personnel": 1,
+        "Comms": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2495630600682669687/1A75297DAE22B6DFE46AF5B69EDC87652B23957F/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2495630600682582649/F03C73249983DDC1178314FD61C7D53DA27840EE/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2495630600682669758/7E6C79BDA776AD0618FF66FCD961C59DD6B0F4F1/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2495630600682582649/F03C73249983DDC1178314FD61C7D53DA27840EE/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2495630600682669758/7E6C79BDA776AD0618FF66FCD961C59DD6B0F4F1/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2495630600682582649/F03C73249983DDC1178314FD61C7D53DA27840EE/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2495630600682669758/7E6C79BDA776AD0618FF66FCD961C59DD6B0F4F1/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2495630600682582649/F03C73249983DDC1178314FD61C7D53DA27840EE/"
+        }
+      ]
     }
   ],
   "Heavy": [
