@@ -631,6 +631,39 @@
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2495630600682582714/3AFE8876506FE4B261417033A0E804BA9146FECE/"
         }
       ]
+    },
+    {
+      "name": "Clone Commandos Delta Squad",
+      "image": "http://cloud-3.steamusercontent.com/ugc/2474241114696699067/AD85E44AA7E3AA30A65E888C28B3E89CBD3C757F/",
+      "size": "small",
+      "type": "Clone Trooper",
+      "points": 100,
+      "speed": 2,
+      "upgrades": {
+        "Training": 2,
+        "Gear": 1,
+        "Comms": 1,
+        "Armament": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2474241114696859651/A77E973493F46183AC97F68C1A191EC0E74F6A65/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2474241114696882381/265198067C41DF8333A609EDCE831A547A68F28F/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2474241114696859554/12CFFC76B71288B5426C2E57CC8A91F515B075F2/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2474241114696882580/BE0E56B70A5D6B576BA4AAB83FDB1DB2BD835887/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2474241114696859485/0340EC3130B99413F05F2CB2544E9FDE79A3871D/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2474241114696882497/A846281F67580B208A2BBBDADE7C601230486E20/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2474241114696859319/2846289D99E3CA2DC68F2BB8FC69ECF1ABE2072E/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/2474241114696882664/1B6168DA14AFA3A40CC823399CC4072FD1B7E958/"
+        }
+      ]
     }
   ],
   "Heavy": [
@@ -649,8 +682,8 @@
         "Comms": 1
       },
       "silhouette": {
-        "height": 2.1,
-        "offset": 0.496
+        "height": 2.596,
+        "offset": 0.0
       },
       "minis": [
         {
@@ -695,8 +728,8 @@
         "Comms": 1
       },
       "silhouette": {
-        "height": 1.6,
-        "offset": 0.5
+        "height": 1.1,
+        "offset": 0.0
       },
       "minis": [
         {

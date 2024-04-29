@@ -47,15 +47,15 @@
       40008
     ],
     "CustomDeck": {
-      "400": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2495630600679058646/B6D7F3A8EEC6718A3FB4D42BFA0CF014A5071FC2/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/2094796397703224098/22B26F4F70F866332E937A67BA393D9420305984/",
-        "NumWidth": 3,
-        "NumHeight": 3,
-        "BackIsHidden": true,
-        "UniqueBack": false,
-        "Type": 0
-      }
+        "400": {
+            "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2474241114696950904/62368A453BBB259F91254BBDC7EAD51AB41D75F4/",
+            "BackURL": "http://cloud-3.steamusercontent.com/ugc/2094796397703224098/22B26F4F70F866332E937A67BA393D9420305984/",
+            "NumWidth": 3,
+            "NumHeight": 3,
+            "BackIsHidden": true,
+            "UniqueBack": false,
+            "Type": 0
+        }
     },
     "LuaScript": "",
     "LuaScriptState": "",
@@ -63,15 +63,15 @@
     "ContainedObjects": []
   },
   "StatesPaths": {},
-  "ContainedObjectPaths": [
-    "Roll_Out.fc9a56.40007.json",
-    "The_Long_March.fc9a54.40005.json",
-    "Hemmed_In.fc9a53.40004.json",
-    "Disarray.fc9a52.40003.json",
-    "Major_Offensive.fc9a55.40006.json",
-    "Danger_Close.fc9a51.40002.json",
-    "Battle_Lines.fc9a50.40001.json",
-    "Advanced_Positions.fc9a49.40000.json",
-    "Intercept_Transmissions.fc9a57.40008.json"
-  ]
+    "ContainedObjectPaths": [
+        "Advanced_Positions.fc9a49.40000.json",
+        "Battle_Lines.fc9a50.40001.json",
+        "Danger_Close.fc9a51.40002.json",
+        "Disarray.fc9a52.40003.json",
+        "Hemmed_In.fc9a53.40004.json",
+        "The_Long_March.fc9a54.40005.json",
+        "Major_Offensive.fc9a55.40006.json",
+        "Roll_Out.fc9a56.40007.json",
+        "Intercept_Transmissions.fc9a57.40008.json"
+    ]
 }
