@@ -469,6 +469,20 @@
             "unit": ["Din Djarin"]
           }
         }
+      },
+      {
+        "name": "Omega",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005432/91DF6117D3E30AF7A239A8DBA62256C84754C8C5/",
+        "points": 10,
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2475370743175243961/93E8549BC0F1F88228D651FAE226459945DC6651/"
+        },
+        "restrictions": {
+          "include": {
+            "faction": ["Rebel"],
+            "unit": ["The Bad Batch"]
+          }
+        }
       }
     ],
     "Crew": [
@@ -2077,6 +2091,70 @@
             "unit": ["Geonosian Warriors"]
           }
         }
+      },
+      {
+        "name": "Hunter",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005230/53DDE7626A5573411C2116565252DBB566D42E57/",
+        "leader": true,
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "unit": ["The Bad Batch"]
+          }
+        }
+      },
+      {
+        "name": "Echo (The Bad Batch)",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005176/8F6AB3A73A2E006D0D8BD2840C192BC10D91E14A/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2475370743175243825/0B07462AB1D02ACB64262C1E875E9DC5E3719850/"
+        },
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "unit": ["The Bad Batch"]
+          }
+        }
+      },
+      {
+        "name": "Tech",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005546/E5F647B0415410E8715ED04BF37452E949115B9C/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2475370743175244098/67CBDAB9CA48B24940FC743CEB778A526C990993/"
+        },
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "unit": ["The Bad Batch"]
+          }
+        }
+      },
+      {
+        "name": "Wrecker",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005604/3FB4414E24AD04E6ACB6A1845E4E9484E0F62018/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2475370743175244156/4986205CB2289E6CF72269D9A17E6B2D405968DA/"
+        },
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "unit": ["The Bad Batch"]
+          }
+        }
+      },
+      {
+        "name": "Crosshair",
+        "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005095/75BB087312B198ADA7A069E7E861D44654529734/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2475370743175244300/863B36B154CA2A32E4C36B9CFBC47984846ECE3C/"
+        },
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "faction": ["Republic"],
+            "unit": ["The Bad Batch"]
+          }
+        }
       }
     ],
     "Ordnance": [
@@ -2107,7 +2185,7 @@
         "points": 15,
         "restrictions": {
           "include": {
-            "faction": ["Range Troopers"]
+            "unit": ["Range Troopers"]
           }
         }
       },      
