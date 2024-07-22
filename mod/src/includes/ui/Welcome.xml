@@ -47,6 +47,8 @@
           (Since last <i>Beta</i>)
           <!--(Since last <i>Stable</i>)-->
           - Add: POI Tokens
+          - Add: New Battledeck
+          - Fix: Change Cohesion Projector to Half-Range
           - Fix: Increase Battlefield Trigger Zone
         </Text>
       </VerticalLayout>
