@@ -5,6 +5,7 @@ require('!/RangeRulers')
 -- Token keys in RangeRulers Table
 -- smokeToken = 18.8mm diameter (range 1)
 -- token = 25.1mm diameter (range 1)
+-- poi = 50.8mm diameter (range 0.5 aka 3in)
 
 function onLoad()
   rangeOn = false

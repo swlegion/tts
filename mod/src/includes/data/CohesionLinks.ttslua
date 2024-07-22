@@ -1,10 +1,10 @@
 function getCohesionLinks()
     local cohesions = {}
         --27 mm
-        cohesions.small = "http://cloud-3.steamusercontent.com/ugc/1738944060881635176/420BC26BF0522ABA564D5B578C7D7CEDFD13B656/"
+        cohesions.small = "https://steamusercontent-a.akamaihd.net/ugc/2482129948496305632/EBBE2560D4336E6C96317EDDA787E225CF0E5B48/"
         --50 mm
-        cohesions.medium = "http://cloud-3.steamusercontent.com/ugc/1738944060881635638/6C9473C0A8930E947C9D1BA3D42E5BC92185029F/"
+        cohesions.medium = "https://steamusercontent-a.akamaihd.net/ugc/2482129948496305877/719896A3F975D8C914D47DC22507816A512C4839/"
         --70 mm
-        cohesions.large = "http://cloud-3.steamusercontent.com/ugc/1904476875950847602/5B814A93B274F2476BC109CDEB7D8B8025D659EA/"
+        cohesions.large = "https://steamusercontent-a.akamaihd.net/ugc/2482129948496305957/A977453A781738EA5AF2935A4562670012881080/"
     return cohesions
 end

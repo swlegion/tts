@@ -178,7 +178,8 @@ function onload(saveData)
     templateInfo.silhouetteHeight = {
       small = 1.65,
       notched = 2.707,
-      custom = 1.0
+      custom = 1.0,
+      poi = 3.0
     }
 
     templateInfo.cohesionRadius = {
@@ -215,6 +216,7 @@ function onload(saveData)
     ionBagGUID = "799a75"
     woundBagGUID = "276535"
     observationBagGUID = "aac68d"
+    poiBagGUID = "094230"
 
     whiteD8BagGUID = "014405"
     blackD8BagGUID = "79ead4"

@@ -16,6 +16,7 @@ function onload(save_state)
     -- token scripts
     _G.scriptRange1Token = nil
     _G.scriptBombCart = nil
+    _G.scriptPOIToken = nil
     getTokenScripts()
 
     -- buttonObjs
@@ -79,6 +80,12 @@ function getTokenScripts()
     end
   })
   _G.scriptBombCart = getObjectFromGUID("b497e1").getLuaScript()
+  getObjectFromGUID("094230").takeObject({
+    callback_function = function(poi)
+      _G.scriptPOIToken = poi.getLuaScript()
+      destroyObject(poi)
+      end
+  })
 end
 
 function objectiveMenu()
@@ -169,6 +176,7 @@ function spawnObjs(cardType, selectedBattleCardName)
     scripts  = {
       ["toggle-range-1"] = _G.scriptRange1Token,
       ["bomb-cart"]      = _G.scriptBombCart,
+      ["poi-token"]      = _G.scriptPOIToken
     }
   })
 end
@@ -291,6 +299,7 @@ function activatedeployment(name)
       spawnDeploymentBoundary(zone)
     end
     deactivateDeploymentMenu()
+    spawnObjs("deployment", name)
 end
 
 function deactivateDeploymentMenu()

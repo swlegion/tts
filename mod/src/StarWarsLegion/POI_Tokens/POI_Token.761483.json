@@ -1,0 +1,48 @@
+{
+  "Object": {
+    "GUID": "761483",
+    "Name": "Custom_AssetBundle",
+    "Transform": {
+      "posX": 57.3673363,
+      "posY": 1.14261746,
+      "posZ": 10.8900785,
+      "rotX": 0,
+      "rotY": 0,
+      "rotZ": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "POI Token",
+    "Description": "Token",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomAssetBundle": {
+      "AssetBundleURL": "https://steamusercontent-a.akamaihd.net/ugc/2482129948495931625/A14C0E047A0C7C8D12B96B34A16D2DAAA3A5E9E3/",
+      "material": 3,
+      "type": 0,
+      "LoopingEffectIndex": 0
+    },
+    "LuaScript": "#include ./POI_Token.761483.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "States": {}
+  }
+}

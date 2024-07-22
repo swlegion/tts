@@ -194,6 +194,11 @@ function Shelf:_spawnComplimentaryObject(name, container, scripts)
         container.putObject(card)
       end
     end
+  elseif spawn.card then
+    local back = spawn.card.back
+    local card = self:_spawnCard(spawn.card.image)
+    card.setName(spawn.name)
+    container.putObject(card)
   else
     print("Unsupported object definition: \"" .. name .. "\" (" .. container.getName() .. ")")
   end

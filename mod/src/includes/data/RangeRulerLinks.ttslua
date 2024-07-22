@@ -24,5 +24,7 @@ function getRangeRulerLinks()
         rangeRulers.token = "http://cloud-3.steamusercontent.com/ugc/1841415725493967222/CCEB0E06A39A2CB77FF9BCFEF8992F17B6E81C09/"
         -- graffiti token, same as objective but range 2
         rangeRulers.tokenRangeTwo = "http://cloud-3.steamusercontent.com/ugc/1841415725493967724/6AB27B28FEAA00EDDBBA9FCCB6BDED249836596A/"
+        -- poi token (2" token w/ 3" range)
+        rangeRulers.poi = "https://steamusercontent-a.akamaihd.net/ugc/2482129948495938224/AE12E3C12026D934AFE5A96D511D39D385411CEA/"
     return rangeRulers
 end

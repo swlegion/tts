@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "094230",
+    "Name": "Custom_Assetbundle_Infinite_Bag",
+    "Transform": {
+      "posX": 60.97,
+      "posY": 0.94,
+      "posZ": 12.27,
+      "rotX": -3.17663819e-7,
+      "rotY": 90.00001,
+      "rotZ": -0.00160390185,
+      "scaleX": 1.5,
+      "scaleY": 1.5,
+      "scaleZ": 1.5
+    },
+    "Nickname": "POI Tokens",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "CustomAssetBundle": {
+      "AssetBundleURL": "https://steamusercontent-a.akamaihd.net/ugc/2482129948495931625/A14C0E047A0C7C8D12B96B34A16D2DAAA3A5E9E3/",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 3,
+      "TypeIndex": 7,
+      "LoopingEffectIndex": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "POI_Token.761483.json"
+  ]
+}
