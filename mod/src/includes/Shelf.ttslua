@@ -91,7 +91,7 @@ function Shelf:spawnUnitModels(params)
           callback(model, #result, size)
         end
         break
-      end
+      end     
     end
   end
   for _, config in pairs(minis) do
@@ -116,6 +116,16 @@ function Shelf:spawnUnitModels(params)
         table.insert(result, model)
         if callback ~= nil then
           callback(model, #result, size)
+        end
+      end
+      if upgrade.minis ~= nil then
+        for _, mini in ipairs(upgrade.minis) do
+          local model = self:_spawnModel(card.size, mini)
+          model.setName(upgrade.name)
+          table.insert(result, model)
+          if callback != nil then
+            callback(model, #result, size)
+          end
         end
       end
     end

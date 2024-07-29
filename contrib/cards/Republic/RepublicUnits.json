@@ -3,10 +3,10 @@
     {
       "name": "Obi-Wan Kenobi",
       "title": "Civilized Warrior",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790629/61D2CCB8A106E855E621557601F65B34FB2AEFC1/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862915/90FD71812614F00A05D66B384E92C67B6C4E7358/",
       "size": "small",
       "type": "Trooper",
-      "points": 170,
+      "points": 150,
       "speed": 2,
       "upgrades": {
         "Force": 2,
@@ -60,7 +60,7 @@
       "commands": [
         {
           "name": "Call Me Captain",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037031/128A58AE6DE52C3BFB59C0B621C1562EC5760564/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384868441/FB66196615FD2CFF191D1552B61924A8BFB23428/",
           "pip": 1
         },
         {
@@ -78,15 +78,14 @@
     {
       "name": "Anakin Skywalker",
       "title": "The Chosen One",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790573/1BDDD3F5C3D43558F79F35F1A4B9327F4729D62B/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384861047/D0BF783091611724C1324B3847037C1C1237F461/",
       "size": "small",
       "type": "Trooper",
       "points": 155,
       "speed": 2,
       "upgrades": {
         "Force": 2,
-        "Training": 2,
-        "Flaw": 1
+        "Training": 2
       },
       "minis": [
         {
@@ -97,21 +96,20 @@
       "commands": [
         {
           "name": "This Is Where The Fun Begins",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035947/5377294A33E87301DC4D54ED1A1C1DE218E1C882/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384887696/8B9FE3223AA89990AC33B6326946F049921EC4D7/",
           "pip": 1
         },
         {
           "name": "You Underestimate My Power",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028299110/717B2B1BCADD299F347748ABBE239E89A0B6EE08/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384888230/CD4880CE0C47B29696AC5AE71F165D9FF6A38266/",
           "pip": 2
         },
         {
-          "name": "Hero Of The Clone Wars",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033655/AA08CE1F53847CE3CCA7233A1060886F8EBE500F/",
+          "name": "General Skywalker",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384885900/A971093410E02605CF759557DEC0B5CBD3127D79/",
           "pip": 3
         }
-      ],
-      "required": ["Not A Story The Jedi Would Tell"]
+      ]
     },
     {
       "name": "Clone Commander",
@@ -135,10 +133,10 @@
     {
       "name": "Yoda",
       "title": "Grand Master Of The Jedi Order",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790511/A6CDD26B405EFC7CC306D96BB04AA24E5BED2794/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384864374/1D5F4392DBB420ABB167CE9498C5D07CE85CE31C/",
       "size": "small",
       "type": "Trooper",
-      "points": 200,
+      "points": 180,
       "speed": 1,
       "upgrades": {
         "Force": 3,
@@ -207,7 +205,7 @@
       "commands": [
         {
           "name": "Size Matters Sometimes",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034701/1CC8DEA4C8584B532EAA67A7BA8E4FEA81EEAD85/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384887168/E234AAEC15D5B30E804CCD761723D30DAD4AC337/",
           "pip": 2
         }
       ]
@@ -256,7 +254,7 @@
     {
       "name": "R2-D2",
       "title": "Independent Astromech",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790410/0D5BE2D0E5632005D6BC47413845604898AF0004/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863170/5912B6F9374EF1314963756E42A9520F4E3D0FB3/",
       "size": "small",
       "type": "Droid Trooper",
       "points": 55,
@@ -292,10 +290,10 @@
     {
       "name": "Padme Amidala",
       "title": "Spirited Senator",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790377/AC7989ED45A958942F1EF716B575174C5BEB92E1/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862963/54D8AE67C1EA8D9E05E8F2CC074E73443D26023F/",
       "size": "small",
       "type": "Trooper",
-      "points": 85,
+      "points": 60,
       "speed": 2,
       "upgrades": {
         "Command": 1,
@@ -322,7 +320,7 @@
         },
         {
           "name": "Diplomatic Cover",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033800/D0BF00F6C508E2765F47868E4399E798D8811426/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384885457/E3264D1834CA6EDDF6031B43255A47E33989D5F2/",
           "pip": 3
         }
       ]
@@ -354,15 +352,17 @@
   ],
   "Corps": [
     {
-      "name": "Phase I Clone Troopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790336/C2B0C8EB973E7D6657E288E5AFE9C3F00809461A/",
+      "name": "Clone Trooper Infantry",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384861815/5F00E6C2F6F1B235D9D3B4E8A11E3D9B74EFEED0/",
       "size": "small",
       "type": "Clone Trooper",
-      "points": 52,
+      "points": 56,
       "speed": 2,
       "upgrades": {
+        "Squad Leader": 1,
         "Heavy Weapon": 1,
         "Personnel": 1,
+        "Training": 1,
         "Gear": 1,
         "Grenades": 1
       },
@@ -386,47 +386,19 @@
       ]
     },
     {
-      "name": "Phase II Clone Troopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790299/B84917597F10DE241D7909430E91B5FC03248144/",
-      "size": "small",
-      "type": "Clone Trooper",
-      "points": 60,
-      "speed": 2,
-      "upgrades": {
-        "Heavy Weapon": 1,
-        "Personnel": 1,
-        "Training": 1,
-        "Gear": 1,
-        "Grenades": 1
-      },
-      "minis": [
-        {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185423/28C3EB1A6E5F3141AF4A89EF12647AEC246550C0/"
-        },
-        {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809184972/91084BECB21EB6FC076C1FF1F64E8B042A6778DA/"
-        },
-        {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185063/EE15A42B2226FB99AE31D50BA284E44B6BDB7CFC/"
-        },
-        {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185152/33C3D8FE9D7967E2DD889A8FBBFCE0C46F4BBCF3/"
-        }
-      ]
-    },
-    {
       "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiersUnit.json"
     }
   ],
   "Special Forces": [
     {
       "name": "Arc Troopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790227/9326CC2191C991FF9CB0EB06A4EA17A2A17078BC/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384861176/4AB3CC68BD898A328A2FB935E6F120934123D54E/",
       "size": "small",
       "type": "Clone Trooper",
-      "points": 66,
+      "points": 58,
       "speed": 2,
       "upgrades": {
+        "Squad Leader": 1,
         "Heavy Weapon": 1,
         "Training": 1,
         "Comms": 1,
@@ -457,7 +429,7 @@
       "title": "Strike Team",
       "displayName": "Arc Troopers (Strike Team)",
       "heavyWeaponTeam": true,
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790261/AD41C53AE8A6F57645BE2A51DAD8E9FF4FB9224D/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384861099/0BF691267928341734741CDF04AAE59A41E5E20B/",
       "size": "small",
       "type": "Clone Trooper",
       "points": 24,
@@ -557,7 +529,7 @@
     },
     {
       "name": "AT-RT",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790101/7D591836DB5F16ED19FE2A28B55784950E1759CB/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384861217/5A25D4C32DFA78CC0FA0D45A19350BB8F971A467/",
       "size": "large",
       "type": "Ground Vehicle",
       "points": 60,
@@ -605,7 +577,7 @@
       "name": "Raddaugh Gnasp Fluttercraft",
       "title": "Attack Craft",
       "displayName": "Attack Craft",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174552275/F6013334AFE1F0E4C9A73CDD187AD6D01C6FA906/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863253/19EFFAD3DCCEF1FA1CCBE08AE62F90E4EF63F414/",
       "size": "huge",
       "type": "Repulsor Vehicle",
       "points": 57,
@@ -694,15 +666,15 @@
     {
       "name": "TX-130 Saber-Class Fighter Tank",
       "displayName": "Saber Tank",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790069/CFA0E667E3B9FEB5F80A3F7A68CAADE7FCF5F340/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863579/ABC4E8CCA9A2C837A86FF23215B5AE4885E2A9DF/",
       "size": "epic",
       "type": "Repulsor Vehicle",
-      "points": 160,
+      "points": 155,
       "speed": 2,
       "upgrades": {
         "Pilot": 1,
         "Hardpoint": 1,
-        "Ordnance": 1,
+        "Ordnance": 2,
         "Comms": 1
       },
       "silhouette": {
@@ -718,7 +690,7 @@
     },
     {
       "name": "LAAT/LE Patrol Transport",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700907/2DD3325FA71C1F920CC957F8B7393893AE282073/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862727/5EB0BB290C80AE07B16848984044B13E3C405E05/",
       "size": "laat",
       "type": "Repulsor Vehicle",
       "points": 100,

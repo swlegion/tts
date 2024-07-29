@@ -147,20 +147,21 @@ local function initListSpawner(params)
       y = adjustedPos.y,
       z = adjustedPos.z,
     }
-    local paddedBase = (base + padding) * 1.5
+    local paddedBase = (base + padding)
     local basesPerRow = math.max(1, math.abs(math.floor(templateHalfWidth * 2.0 / paddedBase)))
-    local newIndex = index
+    local whole, part = math.modf(index/(basesPerRow + 1));
+    local zIndex = whole
     local totalZOffset = initialZOffset(upgradeCount)
     if index > basesPerRow then
-      local zFromCard = zOffset
+      local zFromCard = zOffset * zIndex
       if adjustedPos.z > 0 then
-        zFromCard = -zOffset
+        zFromCard = -zOffset * zIndex
       end
-      totalZOffset = totalZOffset - (paddedBase * zFromCard)
-      newIndex = index - basesPerRow
+      totalZOffset = totalZOffset - (paddedBase * zFromCard)     
     end
-    local baseOffset = base + (padding / 3 * xOffset)
-    local totalXOffset = (baseOffset * (newIndex - 1))
+    local newIndex = (index - (basesPerRow * zIndex) - 1)
+    local baseOffset = paddedBase * xOffset
+    local totalXOffset = (baseOffset * newIndex)
     local xDir = xOffset * -1
 
     return simpleTranslatePos(

@@ -35,7 +35,7 @@
         },
         {
           "name": "Fear And Dead Men",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035422/9DEA08C9F8E50304092AC36C943F9F91B5D602E8/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384885751/FEED7C91A363ECAC94BCD7395AB4CA196889147B/",
           "pip": 2
         },
         {
@@ -45,7 +45,7 @@
         },
         {
           "name": "Darkness Descends",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028299075/8769A8FB8FEE6D5838591075F94D679A88D46EAE/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384868611/E02306C20DA2B9C1C2D5A987429939564A935200/",
           "pip": 3
         }
       ]
@@ -53,15 +53,13 @@
     {
       "name": "General Veers",
       "title": "Master Tactician",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701690/7C845644D274DFEBCE8EDA7F932905A4FBC27A11/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862383/B5EA5EAF81F9D730B20E0EED4BFFDCE93CCDAE45/",
       "size": "small",
       "type": "Trooper",
-      "points": 70,
+      "points": 75,
       "speed": 2,
       "upgrades": {
         "Command": 2,
-        "Grenades": 1,
-        "Training": 1,
         "Gear": 1
       },
       "minis": [
@@ -127,10 +125,10 @@
     {
       "name": "Imperial Officer",
       "title": "Ruthless Commander",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701634/8D2A4BA88A49B4F29CAD29560D2FB864F3497733/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862580/646BACE767C276F5BE4D3CE1DBD707B174491EAE/",
       "size": "small",
       "type": "Trooper",
-      "points": 50,
+      "points": 55,
       "speed": 2,
       "upgrades": {
         "Command": 1,
@@ -146,10 +144,10 @@
     {
       "name": "Director Orson Krennic",
       "title": "Architect Of Terror",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701598/3832DC52B0D1BDBD5B71C222DD19A4C8AEF8B334/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384861964/1F16DA425DE63290D76463CDDDE253E5B201EA64/",
       "size": "small",
       "type": "Trooper",
-      "points": 75,
+      "points": 65,
       "speed": 2,
       "upgrades": {
         "Command": 2,
@@ -174,7 +172,7 @@
         },
         {
           "name": "Annihilation Looms",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034255/8D45E8D86D763AB24E9EBF32787CDE824CBB03D9/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384868277/1F59C545DAC623A8CC344AA96E40981F9A656079/",
           "pip": 3
         }
       ]
@@ -293,7 +291,7 @@
         },
         {
           "name": "Moment of Consideration",
-          "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907304/D7B68B2CEE53508DB6B8C0AE66373EE4573ACE8B/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384886856/80255CC3DC05C1CD68DB15DDDA530F15BB82EA99/",
           "pip": 3
         }
       ]
@@ -401,7 +399,7 @@
         },
         {
           "name": "Fear And Dead Men",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035422/9DEA08C9F8E50304092AC36C943F9F91B5D602E8/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384885751/FEED7C91A363ECAC94BCD7395AB4CA196889147B/",
           "pip": 2
         },
         {
@@ -411,7 +409,7 @@
         },
         {
           "name": "Darkness Descends",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028299075/8769A8FB8FEE6D5838591075F94D679A88D46EAE/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384868611/E02306C20DA2B9C1C2D5A987429939564A935200/",
           "pip": 3
         }
       ]
@@ -484,7 +482,7 @@
         },
         {
           "name": "I Care Not for your Struggles",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174551978/A42684D4F5C0B3EADFED5062E43AF3299999EB23/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384886367/EE0BEDD35252436DE848457522D8D875B7DD4828/",
           "pip": 3
         }
       ]
@@ -528,10 +526,10 @@
   "Corps": [
     {
       "name": "Stormtroopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701400/02C7B04C990D9753DBD492D8D3AA7B380E131E9B/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863867/71125D3CB8BC663C340433AED88CA794951DCA34/",
       "size": "small",
       "type": "Trooper",
-      "points": 44,
+      "points": 42,
       "speed": 2,
       "upgrades": {
         "Heavy Weapon": 1,
@@ -559,11 +557,42 @@
       ]
     },
     {
-      "name": "Stormtroopers Heavy Response Unit",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1760364156116226025/A3A694545A641C1F811AD3CA0BB60B82FEDA78AD/",
+      "name": "Riot Control Squad",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863541/0D08A36869D07A28874A58854BDCF6D87225306D/",
       "size": "small",
       "type": "Trooper",
-      "points": 40,
+      "points": 50,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 2,
+        "Gear": 1,
+        "Training": 1
+      },
+      "minis": [
+        {
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2491137781649821645/5FF305DCBED87DDE0DC92AB430557E501D5CDFC2/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2491137781649821736/A6557A52AB579A320023B7028C55A38815DC566E/"
+        },
+        {
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2491137781649821412/A274C8B3E646E0EBFB81D282570C5A1C6D263F2B/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2491137781649821736/A6557A52AB579A320023B7028C55A38815DC566E/"
+        },
+        {
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2491137781649821497/585AF58548561265B23B01A56577DE0732464636/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2491137781649821736/A6557A52AB579A320023B7028C55A38815DC566E/"
+        },
+        {
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2491137781649821557/0B4EFC2CDDBC7BB72768141562946583278CAAD6/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2491137781649821736/A6557A52AB579A320023B7028C55A38815DC566E/"
+        }
+      ]
+    },
+    {
+      "name": "Stormtroopers Heavy Response Unit",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863789/6869DCFFBE7B47365197E220FB76E24E70D13808/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 36,
       "speed": 2,
       "upgrades": {
         "Heavy Weapon": 2
@@ -585,10 +614,10 @@
     },
     {
       "name": "Snowtroopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701374/B2FE5819A3004E4C9A64FC3841FBCAE6F3465D2F/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863754/2B0DF1A43014AABAE680518777D8D9B72CA26DF1/",
       "size": "small",
       "type": "Trooper",
-      "points": 44,
+      "points": 42,
       "speed": 1,
       "upgrades": {
         "Heavy Weapon": 1,
@@ -617,11 +646,11 @@
     },
     {
       "name": "Shoretroopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701337/62D4CDC12A785A32680980C485F009500F93762F/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863691/D8CE49A682DADD9B1E57E3EA64BFA5F86F1AD883/",
       "size": "small",
       "type": "Trooper",
       "points": 52,
-      "speed": 2,
+      "speed": 1,
       "upgrades": {
         "Heavy Weapon": 1,
         "Personnel": 1,
@@ -711,7 +740,7 @@
       "title": "Strike Team",
       "displayName": "Scout Troopers (Strike Team)",
       "heavyWeaponTeam": true,
-      "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298978/6AA5675FD5D416DCEEA4198FBE2A75146860C780/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863628/C90F310AB2FFFFB744B68B2A0D3B0C657FA8ABA4/",
       "size": "small",
       "type": "Trooper",
       "points": 20,
@@ -878,10 +907,10 @@
     },
     {
       "name": "E-Web Heavy Blaster Team",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701046/AC13001548D72E76B4DEC2D904EB44454C152806/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862029/A422AB31270839D44F459E78D02C18165E459E4C/",
       "size": "large",
       "type": "Emplacement Trooper",
-      "points": 50,
+      "points": 60,
       "speed": 1,
       "upgrades": {
         "Comms": 1,
@@ -949,10 +978,10 @@
   "Heavy": [
     {
       "name": "AT-ST",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700975/F5BACD8B7607BCB5FAA1576B7FA4151FA0A5CA59/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384861327/6E2988CCCF7820F765C1D5486D95F8EFB77ABED1/",
       "size": "huge",
       "type": "Ground Vehicle",
-      "points": 155,
+      "points": 145,
       "speed": 2,
       "upgrades": {
         "Pilot": 1,
@@ -973,10 +1002,10 @@
     {
       "name": "TX-225 GAVw Occupier Combat Assault Tank",
       "displayName": "Occupier Tank",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700946/705F2EF05FABA96D1386B8E41C56AD31E7901820/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384864284/91145F71FC94DCE7BE3239F7B57430D050C04CBF/",
       "size": "long",
       "type": "Ground Vehicle",
-      "points": 140,
+      "points": 125,
       "speed": 1,
       "upgrades": {
         "Pilot": 1,
@@ -996,10 +1025,10 @@
     },
     {
       "name": "LAAT/LE Patrol Transport",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788700907/2DD3325FA71C1F920CC957F8B7393893AE282073/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862671/52E7A6A14E5822A396F273D924D083F6F3A86286/",
       "size": "laat",
       "type": "Repulsor Vehicle",
-      "points": 105,
+      "points": 100,
       "speed": 2,
       "height": 7,
       "upgrades": {
@@ -1019,7 +1048,7 @@
     },
     {
       "name": "Imperial Dark Troopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527712/71B0994D310D9DE9D711739E7C309FD3C93C4336/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862505/D3093456F093CB155707B1BA64512664F2A4B7DB/",
       "size": "small",
       "type": "Droid Trooper",
       "points": 95,
@@ -1048,10 +1077,10 @@
     {
       "name": "Major Marquand",
       "title": "Tempest Scout 2",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2006966757275789225/6D28D128A16B13C82C351A2BF2D09B0895C81E3F/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862876/6C4E872F77BD526E8B352B041ADE53ED5504AC2B/",
       "size": "huge",
       "type": "Ground Vehicle",
-      "points": 190,
+      "points": 180,
       "speed": 2,
       "upgrades": {},
       "silhouette": {
@@ -1067,17 +1096,17 @@
       "commands": [
         {
           "name": "Gunner, Infantry!",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2006966757275788986/6F19E80835B69C29771A79F47C96208B467349CB/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384886041/1D8783572AB6844253E1B746C543511E9B721587/",
           "pip": 1
         },
         {
           "name": "Squadron, on me",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2006966757275789277/79372FC8381EA61922E0623B2F02AD69D9FA26C1/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384887260/11CDA1204949826F29A70E5544BF0ED0C5E2A153/",
           "pip": 2
         },
         {
           "name": "Armored Cavalry",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2006966757275789327/DE04AD7119FD769423EAD9496BC197BE4190AECC/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384868355/7ED8143E1A691DCF1E37E84E4E19F9231B891DB5/",
           "pip": 3
         }
       ]

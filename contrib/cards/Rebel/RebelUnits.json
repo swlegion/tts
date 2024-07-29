@@ -3,13 +3,15 @@
     {
       "name": "Luke Skywalker",
       "title": "Hero Of The Rebellion",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788425590/4AB2CCCFC2F45B3ACB9927166F6014A2903D7DCE/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862838/DB9F4B7D404060C77F61A5317A71E7203AB1CC02/",
       "size": "small",
       "type": "Trooper",
-      "points": 150,
+      "points": 120,
       "speed": 2,
       "upgrades": {
-        "Force": 2,
+        "Command": 1,
+        "Force": 1,
+        "Training": 1,
         "Gear": 1
       },
       "minis": [
@@ -54,13 +56,14 @@
     {
       "name": "Leia Organa",
       "title": "Fearless And Inventive",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788535425/1ADD2DCEEA5D23013C2331604493EFF62AC46DB3/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862782/FAC47493209B1AACD84C4615FD772419D0084A92/",
       "size": "small",
       "type": "Trooper",
       "points": 75,
       "speed": 2,
       "upgrades": {
         "Command": 2,
+        "Training": 1,
         "Gear": 1
       },
       "minis": [
@@ -119,7 +122,7 @@
         },
         {
           "name": "Reckless Diversion",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034768/6CA17689021162EFE850A3CEA62AA3BD5B84B4A5/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384887081/AC30D2023D9B849EF6E6EFF834271F5862F5189F/",
           "pip": 2
         },
         {
@@ -132,10 +135,10 @@
     {
       "name": "Rebel Officer",
       "title": "Resolute Commander",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603864/8B88E031F49A36B1504A1D48202C4731C4025EB5/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863340/260721B8F3E1D9501B665F44F02869C34B561AF6/",
       "size": "small",
       "type": "Trooper",
-      "points": 45,
+      "points": 50,
       "speed": 2,
       "upgrades": {
         "Command": 1,
@@ -465,7 +468,7 @@
     {
       "name": "R2-D2",
       "title": "Hero Of A Thousand Devices",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604120/5C6ED7C27799E640540BC177E7804442CB47C304/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863210/CC236C516A4590747888E3A71ABA6C543905BD5F/",
       "size": "small",
       "type": "Droid Trooper",
       "points": 55,
@@ -600,12 +603,12 @@
       "commands": [
         {
           "name": "I am no Jedi",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2022720184107019557/E39B3953F55DCF6394CA819E25825E74B8618184/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384886277/49B86A9831C48A7BCFB81406E930810046A4DFA0/",
           "pip": 1
         },
         {
           "name": "Swift Protector",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2022720184107019696/F82E451FABCD16AB411E88409AFC81201DB9D43A/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384887431/0C4CEEE37F50E23C00735F501DB569C5364D8C38/FD",
           "pip": 2
         },
         {
@@ -615,7 +618,7 @@
         },
         {
           "name": "A New Beginning",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2022720184107019782/0D03CDC28357CD7FDB854B0BA2FDD346402F041A/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384868187/6AF87B3E28E3057B3096E369E644F62A529B8D7B/",
           "pip": 3
         }
       ]
@@ -648,7 +651,7 @@
   "Corps": [
     {
       "name": "Rebel Troopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604151/FDE5B897188B36FF0336D103A45C20E91E25FED0/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863457/C2BAB28D85FAABCF7DE0E4A861D955D0FDACDC44/",
       "size": "small",
       "type": "Trooper",
       "points": 40,
@@ -680,7 +683,7 @@
     },
     {
       "name": "Fleet Troopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604199/71EA4817F31B75D4845B95F3AF76D61069D66E9A/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862248/8783D7378FCC5551DE3C0591BF1AF701A4AE6DA2/",
       "size": "small",
       "type": "Trooper",
       "points": 40,
@@ -712,11 +715,11 @@
     },
     {
       "name": "Rebel Veterans",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604242/EA62216368A51479BDBB4264DE172879EB43B6A1/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863497/768F4478CF6CA7A20ADCB509EF72E32F979AAD1E/",
       "size": "small",
       "type": "Trooper",
       "points": 48,
-      "speed": 2,
+      "speed": 1,
       "upgrades": {
         "Heavy Weapon": 1,
         "Personnel": 1,
@@ -765,14 +768,14 @@
     },
     {
       "name": "Ewok Skirmishers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562897/2351495BC76191CBBB38BE21D2E509C1B75C9472/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862086/27B800F6CAF027A08E432141CFD58BA7125AB70D/",
       "size": "small",
       "type": "Trooper",
       "points": 40,
       "speed": 2,
       "upgrades": {
         "Heavy Weapon": 1,
-        "Personnel": 1,
+        "Personnel": 2,
         "Training": 1
       },
       "minis": [
@@ -806,7 +809,7 @@
   "Special Forces": [
     {
       "name": "Rebel Commandos",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604288/CC2622742539F3AD9EEA9AB88676DF7C0282FFB0/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863292/FBBD466660EE478A3378933C25C312B0C83A29A8/",
       "size": "small",
       "type": "Trooper",
       "points": 48,
@@ -842,7 +845,7 @@
       "displayName": "Rebel Commandos (Strike Team)",
       "title": "Strike Team",
       "heavyWeaponTeam": true,
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604341/067A0D46910D7553E937C32F507F0CCE6587B214/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863292/FBBD466660EE478A3378933C25C312B0C83A29A8/",
       "size": "small",
       "type": "Trooper",
       "points": 20,
@@ -1003,14 +1006,14 @@
     },
     {
       "name": "Ewok Slingers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562205/D61E53490E27ED8A1B6B17FAA2BF92BA78BC5CE0/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862175/FF930EBF1633866A1A1C678E3BC80ECFF4862585/",
       "size": "small",
       "type": "Trooper",
       "points": 35,
       "speed": 2,
       "upgrades": {
         "Heavy Weapon": 1,
-        "Personnel": 1,
+        "Personnel": 2,
         "Training": 1
       },
       "minis": [
@@ -1039,15 +1042,57 @@
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
         }
       ]
+    },
+    {
+      "name": "Rebel Sleeper Cell",
+      "title": "Ready to Strike",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863407/9D7544B1F6C17EA85AB6CD788F3AC4EA0D7666A6/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 70,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Personnel": 1,
+        "Gear": 1,
+        "Comms": 1,
+        "Training": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862746147/3F3A21962C4AC0DA0445024688BF580A144D3825/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670236/6257E7A3CE86803490A8A0FAC7F81C281D700F52/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862752262/41BD6AB8B17AB7449226A3D80EF186EB8ABA3952/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862764799/98CBD8B4DD0C08CFA01A8E6C8B5A70A137804EAB/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862755846/CD522BCA5D6E918E13A3FF593D7212FF4B0E79CA/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862755846/CD522BCA5D6E918E13A3FF593D7212FF4B0E79CA/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/"
+        },
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862755846/CD522BCA5D6E918E13A3FF593D7212FF4B0E79CA/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/"
+        }
+      ]
     }
   ],
   "Support": [
     {
       "name": "AT-RT",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604581/361864DD585CE7DE99234C08416E9C4C1AA84A50/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384861274/DAADEA991C8E593DBD605DCEC47239E77B7EDA03/",
       "size": "large",
       "type": "Ground Vehicle",
-      "points": 55,
+      "points": 50,
       "speed": 2,
       "upgrades": {
         "Hardpoint": 1,
@@ -1066,7 +1111,7 @@
     },
     {
       "name": "1.4 FD Laser Cannon Team",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604624/D975E5460BB0A6B86E0AD105445ECBAEBBB2BEA0/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384860760/0CD3995BF13C110BDD23F7AFEC3DEDAB82B9DFE2/",
       "size": "huge",
       "type": "Emplacement Trooper",
       "points": 65,
@@ -1111,7 +1156,7 @@
   "Heavy": [
     {
       "name": "T-47 Airspeeder",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604696/AD5CE170F4BBAC2DA1F5AF0F3AE4C7381EDC70AD/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384864184/ABA3C210ACE5381401ED17E7CF0A7A4BBD2469E8/",
       "size": "huge",
       "type": "Repulsor Vehicle",
       "points": 130,
@@ -1133,7 +1178,7 @@
     },
     {
       "name": "X-34 Landspeeder",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604738/6DAAAD8E05BFAF02E405EB1A28FA6EC17771D678/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384864334/A77701CB2D8E525FA48D2B35D06B79F996170BEA/",
       "size": "huge",
       "type": "Repulsor Vehicle",
       "points": 60,
@@ -1157,10 +1202,10 @@
     },
     {
       "name": "A-A5 Speeder Truck",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788629495/7CC8A26CAE70713A18D1A9C2A9DB7B59BC0839F9/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384860853/CB2AE07AEBA91192C8D8F029211F7216F122F4B6/",
       "size": "long",
       "type": "Repulsor Vehicle",
-      "points": 75,
+      "points": 65,
       "speed": 1,
       "height": 4,
       "upgrades": {
@@ -1182,10 +1227,10 @@
     {
       "name": "Chewbacca",
       "title": "Let the Wookiee Win",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562133/67C1B02BDD4C9E5EE21028E6D109910C2B905345/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384861745/F4DF33E03B759FEDC7E169026FDC282A93A01880/",
       "size": "huge",
       "type": "Ground Vehicle",
-      "points": 190,
+      "points": 180,
       "speed": 2,
       "upgrades": {},
       "silhouette": {

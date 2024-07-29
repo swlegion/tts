@@ -2,6 +2,7 @@ require('!/Analytics')
 require('!/Deck')
 
 existingMasks = {}
+existingPoiGuide = nil
 
 function onload(save_state)
     _G.Deck = Deck:create()
@@ -259,8 +260,7 @@ function mapMenu()
     menuEntries[6] = {functionName = "clearZones", label = "Clear Map", tooltip = "Clears everything from current Battlefield area", buttonTint = {0,0.913,1}}
     menuEntries[7] = {functionName = "saveConditions", label = "Save Battlefield Tokens", tooltip = "Saves Objects from the Objective/Deployment/Conditions", buttonTint = {0,0.913,1}}
     menuEntries[8] = {functionName = "toggleMaskMid", label = "Toggle Masks : Mid", tooltip = "Toggles Masking Objects for the middle of the Battlefield", buttonTint = {0,0.913,1}}
-    menuEntries[9] = {functionName = "toggleMaskLeft", label = "Toggle Masks : Left", tooltip = "Toggles Masking Objects for the left of the Battlefield", buttonTint = {0,0.913,1}}
-    menuEntries[10] = {functionName = "toggleMaskRight", label = "Toggle Masks : Right", tooltip = "Toggles Masking Objects for the right of the Battlefield", buttonTint = {0,0.913,1}}
+    menuEntries[9] = {functionName = "togglePoiGuide", label = "Toggle Poi Guide", tooltip = "Toggles Poi Layout Projector to help with Map Creation", buttonTint = {0,0.913,1}}
     createMenu(menuEntries, 1)
 end
 
@@ -1081,4 +1081,25 @@ function placeMask(x, z)
         assetbundle = asset,
       })  
     table.insert(existingMasks, projector)
+end
+
+function togglePoiGuide()   
+    local length = getExistingMaskLength() 
+    if existingPoiGuide ~= nil then
+        destroyObject(existingPoiGuide)
+        existingPoiGuide = nil
+    else
+        local projector = spawnObject({
+            type = "Custom_AssetBundle",
+            position = { 8, 30, 0 },
+            scale = {0,0,0}
+        })
+        local asset = "https://steamusercontent-a.akamaihd.net/ugc/2491137781649901469/35992792768FE398E61633C99C02D069A54F65B1/"
+        projector.setName("Poi Guide")
+        projector.setLock(true)
+        projector.setCustomObject({
+            assetbundle = asset
+        })
+        existingPoiGuide = projector
+    end
 end

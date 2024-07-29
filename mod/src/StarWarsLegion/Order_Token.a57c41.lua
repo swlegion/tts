@@ -242,9 +242,9 @@ function resetButtons()
         self.createButton({
             click_function = "aim",
             function_owner = self,
-            label = "AIM      ",
-            position = {-1.7, 0.2, -0.4},
-            width = 750,
+            label = "A",
+            position = {-2, 0.2, -0.4},
+            width = 370,
             height = 350,
             font_size = 150,
             color = {0, 0, 0, 1},
@@ -269,9 +269,9 @@ function resetButtons()
         self.createButton({
             click_function = "dodge",
             function_owner = self,
-            label = "DODGE ",
-            position = {-1.7, 0.2, 0.4},
-            width = 750,
+            label = "D",
+            position = {-1.1, 0.2, -0.4},
+            width = 370,
             height = 350,
             font_size = 150,
             color = {0, 0, 0, 1},
@@ -282,14 +282,40 @@ function resetButtons()
         self.createButton({
             click_function = "overwatch",
             function_owner = self,
-            label = "STANDBY",
+            label = "ST",
+            position = {-2, 0.2, 0.4},
+            width = 370,
+            height = 350,
+            font_size = 150,
+            color = {0, 0, 0, 1},
+            font_color = {0.65, 0.65, 0.65, 1},
+            tooltip = "Take a Standby token"
+        })
+
+        self.createButton({
+            click_function = "surge",
+            function_owner = self,
+            label = "SU",
+            position = {-1.1, 0.2, 0.4},
+            width = 370,
+            height = 350,
+            font_size = 150,
+            color = {0, 0, 0, 1},
+            font_color = {0, 0.8705, 0.0941, 1},
+            tooltip = "Take a Surge token"
+        })
+
+        self.createButton({
+            click_function = "initDeploy",
+            function_owner = self,
+            label = "DEPLOY",
             position = {-1.6, 0.2, 1.2},
             width = 850,
             height = 350,
             font_size = 150,
             color = {0, 0, 0, 1},
             font_color = {0, 0.8705, 0.0941, 1},
-            tooltip = "Take an Standby token"
+            tooltip = "Start a Deploy Move"
         })
 
         self.createButton({
@@ -403,11 +429,23 @@ function initMove()
     initPos = selectedUnitObj.getPosition()
     initRot = selectedUnitObj.getRotation()
     selectedUnitObj.call("setStartPos")
-    moveUnit()
+    moveUnit(false)
+end
+
+function initDeploy()
+    initPos = selectedUnitObj.getPosition()
+    initRot = selectedUnitObj.getRotation()
+    selectedUnitObj.call("setStartPos")   
+    moveUnit(true)
 end
 
 
-function moveUnit()
+function moveUnit(isDeploy)
+    local startOffset = 0.0
+    if isDeploy and isDeploy == true then
+        local baseSize = unitData.baseSize
+        startOffset = templateInfo.deployMod[baseSize]
+    end
     stopAttack()
     resetButtons()
     clearTemplates()
@@ -423,7 +461,7 @@ function moveUnit()
 
     ------------------------------------------- PLACEMENT MATH -------------------------------------------
     basePos = selectedUnitObj.getPosition()
-    basePos.y = basePos.y+0.05
+    basePos.y = basePos.y + 0.05
     baseRot = selectedUnitObj.getRotation()
 
     if moveDirection == "backward" then
@@ -436,8 +474,8 @@ function moveUnit()
     end
 
     local q = math.rad(baseRot.y)
-    local a = unitData.aStart * math.cos(q)
-    local b = unitData.aStart * math.sin(q)
+    local a = (unitData.aStart + startOffset) * math.cos(q)
+    local b = (unitData.aStart + startOffset) * math.sin(q)
 
     ------------------------------------------- SPAWN TEMPLATES -------------------------------------------
 
@@ -465,7 +503,6 @@ function moveUnit()
     templateA.setName("Movement Template (A)")
     templateA.setColorTint(templateInfo.moveTemplate[unitData.selectedSpeed].colorTint)
 
-    --templateB = getObjectFromGUID(unitData.templateBGUID)
     local modelTemplateB = getObjectFromGUID(templateInfo.modelTemplateBGUID)
 
     templateB = spawnObject({
@@ -497,9 +534,11 @@ function moveUnit()
     templateA.setTable("baseRot", baseRot)
     templateA.setVar("templateB", templateB)
 
-    local fixedMove = unitData.baseSize ~= "small"
-    if fixedMove == true then
-      print("Locking move tool for fixed moved");
+    local fixedMove = false
+    if isDeploy then
+        fixedMove = true
+    else
+        fixedMove = unitData.baseSize ~= "small"
     end
     templateA.setLock(fixedMove)
 
@@ -508,29 +547,32 @@ function moveUnit()
     templateB.setVar("templateA", templateA)
     templateB.setLock(false)
 
+    templateA.setVar("isDeploy", isDeploy)
+
     local maxMoveBundles = getMovementLinks()
     local baseSizeMoveBundles = maxMoveBundles[unitData.baseSize]
     local maxMoveTemplateBundleToSpawn = baseSizeMoveBundles[unitData.selectedSpeed]
 
-    --max movement ring projector
-    if maxMoveTemplateBundleToSpawn ~= nil then
-        maxMoveTemplate = spawnObject({
-            type = "Custom_AssetBundle",
-            position = {basePos.x, basePos.y + 20, basePos.z},
-            rotation = {0, basePos.y, 0},
-            scale = {0,0,0} -- 0 scale will hide TTS default box and won't impact projector
-        })
+    if isDeploy == false then
+        --max movement ring projector
+        if maxMoveTemplateBundleToSpawn ~= nil then
+            maxMoveTemplate = spawnObject({
+                type = "Custom_AssetBundle",
+                position = {basePos.x, basePos.y + 20, basePos.z},
+                rotation = {0, basePos.y, 0},
+                scale = {0,0,0} -- 0 scale will hide TTS default box and won't impact projector
+            })
 
-        maxMoveTemplate.setCustomObject({
-            type = 0,
-            assetbundle = maxMoveTemplateBundleToSpawn
-        })
+            maxMoveTemplate.setCustomObject({
+                type = 0,
+                assetbundle = maxMoveTemplateBundleToSpawn
+            })
 
-        maxMoveTemplate.setLock(true)
-        maxMoveTemplate.use_gravity = false
-        maxMoveTemplate.setName("Maximum Move")
+            maxMoveTemplate.setLock(true)
+            maxMoveTemplate.use_gravity = false
+            maxMoveTemplate.setName("Maximum Move")
+        end
     end
-
     ------------------------------------------- SPAWN BUTTON -------------------------------------------
 
 
@@ -648,7 +690,8 @@ function moveFull()
     if templateB then
         local startPos = templateB.getPosition()
         local startRot = templateB.getRotation()
-        local endPos = translatePos(startPos, startRot, unitData.aStart, 0)
+        local endOffset = unitData.baseSize == "small" and templateInfo.deployMod.small or 0.0
+        local endPos = translatePos(startPos, startRot, unitData.aStart + endOffset, 0)
         endPos.y = endPos.y + 2
 
         local endRot = startRot
@@ -833,6 +876,26 @@ function overwatch()
     local tokenRotation = {0, baseRot.y, 0}
 
     aimBag = getObjectFromGUID(Global.getVar("standbyBagGUID"))
+    aimBag.takeObject({
+        position = tokenPosition,
+        rotation = tokenRotation
+    })
+
+end
+
+------------------------------------------------- surge------------------------------------------------------------
+function surge()
+    basePos = selectedUnitObj.getPosition()
+    baseRot = selectedUnitObj.getRotation()
+
+    local q = math.rad(baseRot.y - 50)
+    local a = 1 * math.cos(q)
+    local b = 1 * math.sin(q)
+
+    local tokenPosition = {basePos.x + b, basePos.y + 1, basePos.z + a}
+    local tokenRotation = {0, baseRot.y, 0}
+
+    aimBag = getObjectFromGUID(Global.getVar("surgeBagGUID"))
     aimBag.takeObject({
         position = tokenPosition,
         rotation = tokenRotation

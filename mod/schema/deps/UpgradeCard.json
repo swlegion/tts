@@ -97,6 +97,15 @@
       ]
     },
 
+    "minis": {
+      "description": "Optional.  If provided, table of Minis will be added to squad when unit is spawned.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "./Mini.json"
+      }
+    },
+
     "leader": {
       "description": "Whether this upgrade becomes the unit leader.",
       "enum": [true]

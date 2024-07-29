@@ -87,6 +87,19 @@ function onload(saveData)
     templateInfo.aStart.epic =		{4.311023622, 5.295275591, 6.279527559}
     templateInfo.aStart.snail = {5.295275591, 6.279527559, 7.263779528}
 
+    --when you deploy we need to extend the position of the tool 1.2mm
+    --to approximate the prongs sitting on the edge not the base
+    templateInfo.deployMod = {}
+    templateInfo.deployMod.small = 0.087
+    -- for notched bases we have to also add the notch
+    templateInfo.deployMod.medium = 0.21
+    templateInfo.deployMod.large = 0.21
+    templateInfo.deployMod.huge = 0.21
+    templateInfo.deployMod.laat = 0.21
+    templateInfo.deployMod.long = 0.21
+    templateInfo.deployMod.epic = 0.21
+    templateInfo.deployMod.snail = 0.21
+
     templateInfo.templateMesh = {"http://cloud-3.steamusercontent.com/ugc/874120727305531585/FD6D4B079FC24EE1CE4F034B1C1E0F6B665D45E6/", "http://cloud-3.steamusercontent.com/ugc/874120727305502854/B063611E236ACAD8060A08A63EDB0EE9D91919AA/","http://cloud-3.steamusercontent.com/ugc/874120727305373581/A5E705982C2AE4B89756EF5A5BAC10DEDA9881B4/"}
     templateInfo.templateBallCollider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/"
 
@@ -101,7 +114,6 @@ function onload(saveData)
 
     modelA = getObjectFromGUID(templateInfo.modelTemplateAGUID)
     modelB = getObjectFromGUID(templateInfo.modelTemplateBGUID)
-
 
     templateInfo.templateNameToData = {}
     templateInfo.templateNameToData.whiteTemplateASnap25mm = {baseSize = "small", selectedSpeed = 1}

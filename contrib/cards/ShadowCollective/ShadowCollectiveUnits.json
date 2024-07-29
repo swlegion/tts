@@ -87,7 +87,7 @@
         },
         {
           "name": "The Phantom Menace",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034564/5DB3351093F7A089A9C59B40BECBA70140095F9B/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384887593/7CF6854E9CAF545BD9AA314581960571E853CA16/",
           "pip": 2
         },
         {
@@ -152,10 +152,10 @@
   "Heavy": [
     {
       "name": "A-A5 Speeder Truck",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867601/682A15135D7E55E424D7B26BECC6E676ADAE01EB/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384860930/7D4FE55FB3521A15089DD0E8826906D9ED7DA671/",
       "size": "long",
       "type": "Repulsor Vehicle",
-      "points": 75,
+      "points": 65,
       "speed": 1,
       "upgrades": {
         "Crew": 2,

@@ -1,59 +1,53 @@
 
+--isDeploy = false
+
 -- TEMPLATE A
 function onload(save_state)
-
     -- info
     if self.getName() ~= "Model Template A" then
         templateInfo = Global.getTable("templateInfo")
 
-        aStart = templateInfo.aStart[unitInfo.baseSize][unitInfo.selectedSpeed]
+        startOffset = 0.0
 
+        if isDeploy then
+            local baseSize = unitInfo.baseSize
+            startOffset = templateInfo.deployMod[baseSize]
+        end
 
+        aStart = templateInfo.aStart[unitInfo.baseSize][unitInfo.selectedSpeed] + startOffset
         --self.setName("Movement Template Speed "..unitInfo.selectedSpeed)
 
         -- DEFAULT VALUES
         pickedUp = false
         stopObject()
-
         enterPos = self.getPosition()
-
-
         --setHigh = true
         templatePos = self.getPosition()
         templateRot = self.getRotation()
 
         templateBRot = {x = 0,y = templateRot.y+180,z=0}
     end
-
     --self.setName("Movement Template")
 end
 
-
 function onPickedUp(player_color)
-
     clickPlayerColor = player_color
     pickedUp = true
 
-
     startLuaCoroutine(self, "turnToCursor")
-
 end
 
 function onDropped(player_color)
     pickedUp = false
     positionTemplate()
     Global.setVar("highestPoint", 0)
-
-
 end
 
 function turnToCursor()
-
     -- math
     originalARotation = self.getRotation().y
     originalBRotation = templateB.getRotation().y
     rotationDifference = originalBRotation - originalARotation
-
 
     while (pickedUp == true) do
         positionTemplate()
@@ -80,8 +74,8 @@ function positionTemplate()
         self.setRotation({x = 0, y = q+180, z = 0})
         templateRot = self.getRotation()
 
-        local a2 = aStart*math.cos(math.atan2(b, a))
-        local b2 = aStart*math.sin(math.atan2(b, a))
+        local a2 = (aStart) * math.cos(math.atan2(b, a))
+        local b2 = (aStart) * math.sin(math.atan2(b, a))
 
         templatePos = {x = basePos.x-a2, y = mouseY, z = basePos.z-b2}
         templateBRot = {x = 0,y = templateRot.y+rotationDifference,z=0}
