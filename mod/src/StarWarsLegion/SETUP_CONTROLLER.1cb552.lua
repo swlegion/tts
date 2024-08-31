@@ -181,6 +181,89 @@ function spawnObjs(cardType, selectedBattleCardName)
   })
 end
 
+local xStart = -25
+local zStart = 15
+local yValue = 20
+
+local deployLinks = {}
+  deployLinks.r = "http://cloud-3.steamusercontent.com/ugc/1738944060882006204/75F636F4133C5F85682ECDEBBECB9F6CD821315F/"
+  deployLinks.rh = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708249497/CC08277B7D876CF1FFCEDD3FC499AC38034B36D8/"
+  deployLinks.rs = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708249497/CC08277B7D876CF1FFCEDD3FC499AC38034B36D8/"
+  deployLinks.rss = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708249497/CC08277B7D876CF1FFCEDD3FC499AC38034B36D8/"
+  deployLinks.rl = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708336160/21601D81F35521B72E015AA6316913521943E73F/"
+  deployLinks.rc = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708336119/D74B484417970BC524ED4624932102C6BF956E91/"
+  deployLinks.rcc = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708336119/D74B484417970BC524ED4624932102C6BF956E91/"
+  deployLinks.b = "http://cloud-3.steamusercontent.com/ugc/1738944060882006162/077B3B0AE278E39363F5BD3AE070B5AE36F025FA/"
+  deployLinks.bh = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708249441/767C99D0983A24618F97511192498FBEED1557F2/"
+  deployLinks.bs = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708249441/767C99D0983A24618F97511192498FBEED1557F2/"
+  deployLinks.bss = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708249441/767C99D0983A24618F97511192498FBEED1557F2/"
+  deployLinks.bl = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708335699/9EF627695432090869A748114A0ED41B262FAE46/"
+  deployLinks.bc = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708335638/DB6B86B4DA42884BDF3D899DD66AF5DBD94263B8/"
+  deployLinks.bcc = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708335638/DB6B86B4DA42884BDF3D899DD66AF5DBD94263B8/"
+
+local deployRotations = {}
+  deployRotations.r = 0 
+  deployRotations.rh = 0
+  deployRotations.rs = 90
+  deployRotations.rss = 90
+  deployRotations.rl = 0
+  deployRotations.rc = 0
+  deployRotations.rcc = 0
+  deployRotations.b = 0
+  deployRotations.bh = 0
+  deployRotations.bs = 90
+  deployRotations.bss = 90
+  deployRotations.bl = 0
+  deployRotations.bc = 0
+  deployRotations.bcc = 0
+
+local deployOffset = {}
+  deployOffset.r = {0, 0, 0}
+  deployOffset.rh = {0, 0, -1.5}
+  deployOffset.rs = {1.5, 0, 0}
+  deployOffset.rss = {-1.5, 0, 0}
+  deployOffset.rl = {0, 0, 0}
+  deployOffset.rc = {1.5, 0, -1.5}
+  deployOffset.rcc = {-1.5, 0, -1.5}
+  deployOffset.b = {0, 0, 0}
+  deployOffset.bh = {0, 0, 1.5}
+  deployOffset.bs = {-1.5, 0, 0}
+  deployOffset.bss = {1.5, 0, 0}
+  deployOffset.bl = {0, 0, 0}
+  deployOffset.bc = {-1.5, 0, 1.5}
+  deployOffset.bcc = {1.5, 0, 1.5}
+
+function AddVectors(vectorA, vectorB)
+  vectorA[1] = vectorA[1] + vectorB[1]
+  vectorA[2] = vectorA[2] + vectorB[2]
+  vectorA[3] = vectorA[3] + vectorB[3]
+  return vectorA  
+end
+
+function spawnBoundaryCell(cell, x, z)
+  local asset = deployLinks[cell]
+  local offset = deployOffset[cell]
+  local pos = {
+    xStart + (6 * (x - 1)),
+    yValue,
+    zStart - (6 * (z - 1)),
+  }
+
+  pos = AddVectors(pos, offset)
+
+  local projector = spawnObject({
+    type        = "Custom_AssetBundle",
+    position    = pos,
+    scale       = {0, 0, 0},
+    rotation    = {0, deployRotations[cell], 0}
+  })
+  projector.setName("Deployment Boundary")
+  projector.setLock(true)
+  projector.setCustomObject({
+    assetbundle = asset,
+  })
+end
+
 function spawnDeploymentBoundary(matrix)
     local function invertMatrix(input)
       -- See https://github.com/swlegion/tts/issues/275.
@@ -200,11 +283,7 @@ function spawnDeploymentBoundary(matrix)
       end
       return output
     end
-    local bAsset = "http://cloud-3.steamusercontent.com/ugc/1738944060882006162/077B3B0AE278E39363F5BD3AE070B5AE36F025FA/"
-    local rAsset = "http://cloud-3.steamusercontent.com/ugc/1738944060882006204/75F636F4133C5F85682ECDEBBECB9F6CD821315F/"
-    local xStart = -25
-    local zStart = 15
-    local yValue = 20
+    
     matrix = invertMatrix(matrix)
     -- matrix is in the format of
     -- { x, x, x, x, x, x, x, x, x, x, x, x }
@@ -219,25 +298,16 @@ function spawnDeploymentBoundary(matrix)
     -- ""  :  ignore
     for z, row in pairs(matrix) do
       for x, cell in pairs(row) do
-        if cell == "r" or cell == "b" then
-          local projector = spawnObject({
-            type        = "Custom_AssetBundle",
-            position    = {
-              xStart + (6 * (x - 1)),
-              yValue,
-              zStart - (6 * (z - 1)),
-            },
-            scale       = {0, 0, 0},
-          })
-          local asset = rAsset
-          if cell == "b" then
-            asset = bAsset
-          end
-          projector.setName("Deployment Boundary")
-          projector.setLock(true)
-          projector.setCustomObject({
-            assetbundle = asset,
-          })
+        if cell == " " then
+          -- skip the blank cells
+        elseif cell == "bl" then
+          spawnBoundaryCell("bs", x, z)
+          spawnBoundaryCell("bcc", x, z)
+        elseif cell == "rl" then
+          spawnBoundaryCell("rs", x, z)
+          spawnBoundaryCell("rcc", x, z)
+        else
+          spawnBoundaryCell(cell, x, z)
         end
       end
     end

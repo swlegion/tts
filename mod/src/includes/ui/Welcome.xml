@@ -37,7 +37,7 @@
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
           <!--Welcome to Star Wars: Legion for TTS, <b>v8.0.0</b>.-->
-          Welcome to Star Wars: Legion for TTS, <b>v8.0.5-beta</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v8.0.7-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
 
@@ -46,12 +46,8 @@
           <b>CHANGELOG</b>
           (Since last <i>Beta</i>)
           <!--(Since last <i>Stable</i>)-->
-          - Fix: Small Base Full-Move end point aligned with tool "Prongs" to match recent ruling
-
-          - PSA: MOVE PROJECTORS ARE NOT YET UPDATED TO MATCH NEW FULL MOVES!!!
-
-          - Add: Unit Token re-arranged and now has Surge button
-          - Add: Unit Token now has Deploy button for Deploy Moves that offsets and locks the Move Tool to accurately Deploy
+          - Fix: Snowtrooper Squad Data
+          - Fix: A couple CC urls
         </Text>
       </VerticalLayout>
     </VerticalScrollView>

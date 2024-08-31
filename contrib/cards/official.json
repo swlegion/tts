@@ -895,6 +895,26 @@
         }
       },
       {
+        "name": "Twin Blaster Cannons",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2491139050708067017/3B8BBCCFB6181F624CFF09DA5C4F762815CA4983/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["LM-432 Crab Droid"]
+          }
+        }
+      },
+      {
+        "name": "Heavy Laser Cannon",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2491139050708063813/02A958048D55355C0A3FECAADB08B690785AE4FF/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["LM-432 Crab Droid"]
+          }
+        }
+      },
+      {
         "name": "AG-2G Quad Laser",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138060/2F0A343971984B412473C58FD82F4922B7399B1A/",
         "points": 28,
@@ -2844,7 +2864,7 @@
       {
         "name": "Rebel Veteran Squad",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144901/B379F1B7C63F853ECAA61149EDEEA7D2AD83D813/",
-        "mini": [
+        "minis": [
           {
             "mesh": "http://cloud-3.steamusercontent.com/ugc/788608699499192232/D15615AF2A0F4F4887E9BD3DFFA141C8ACCCEC78/",
             "diffuse": "http://cloud-3.steamusercontent.com/ugc/788608699499192135/526538CE10AC6856578996BE6B8AB7263D32D5C7/"
@@ -2983,7 +3003,7 @@
       {
         "name": "Snowtrooper Squad",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384858227/A2DD159803E85A5524E3BA6C4ED0BA54FF2BA33E/",
-        "mini": [
+        "minis": [
           {
             "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541801837/D52F333945BF667A37E06611977C36186CEFC7B6/",
             "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541801215/595165C57A67BF2BD505BE6F0DF8F11AD4EA55D2/"
@@ -3937,12 +3957,12 @@
           "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501051767/3260475F48F6C58305E14413669DE2D10455871B/",
           "type": "vertical",
           "zone": [
-            ["r", "r", "r", " ", " ", " ", " ", " ", " ", "r", "r", "r"],
+            ["r", "r", "r", "rs", " ", " ", " ", " ", "rss", "r", "r", "r"],
+            ["rh", "rh", "rh", "rc", " ", " ", " ", " ", "rcc", "rh", "rh", "rh"],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            ["b", "b", "b", " ", " ", " ", " ", " ", " ", "b", "b", "b"]
+            ["bh", "bh", "bh", "bcc", " ", " ", " ", " ", "bc", "bh", "bh", "bh"],
+            ["b", "b", "b", "bss", " ", " ", " ", " ", "bs", "b", "b", "b"]
           ],
           "additionalObjects": [
             "Close the Pocket Map",
@@ -3957,10 +3977,10 @@
           "type": "vertical",
           "zone": [
             [" ", " ", "r", "r", "r", "r", "r", "r", "r", "r", " ", " "],
+            [" ", " ", "rh", "rh", "rh", "rh", "rh", "rh", "rh", "rh", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", "bh", "bh", "bh", "bh", "bh", "bh", "bh", "bh", " ", " "],
             [" ", " ", "b", "b", "b", "b", "b", "b", "b", "b", " ", " "]
           ],
           "additionalObjects": [
@@ -3977,10 +3997,10 @@
           "type": "vertical",
           "zone": [
             ["r", "r", "r", "r", "r", "r", "r", "r", "r", " ", " ", " "],
-            ["r", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            ["r", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", "b"],
-            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", "b"],
+            ["r", "rl", "rh", "rh", "rh", "rh", "rh", "rh", "rh", " ", " ", " "],
+            ["r", "rs", " ", " ", " ", " ", " ", " ", " ", " ", "bc", "bh"],
+            ["rh", "rc", " ", " ", " ", " ", " ", " ", " ", " ", "bs", "b"],
+            [" ", " ", " ", "bh", "bh", "bh", "bh", "bh", "bh", "bh", "bl", "b"],
             [" ", " ", " ", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
           ],
           "additionalObjects": [
@@ -3997,10 +4017,10 @@
           "type": "vertical",
           "zone": [
             [" ", " ", "r", "r", "r", "r", "r", "r", "r", "r", " ", " "],
+            [" ", " ", "rh", "rh", "rh", "rh", "rh", "rh", "rh", "rh", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", "bh", "bh", "bh", "bh", "bh", "bh", "bh", "bh", " ", " "],
             [" ", " ", "b", "b", "b", "b", "b", "b", "b", "b", " ", " "]
           ],
           "additionalObjects": [
@@ -4016,12 +4036,12 @@
           "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501052764/CBD5436D90279F40330A62F85582862E6FA4F0F0/",
           "type": "vertical",
           "zone": [
-            ["r", "r", "r", "r", "r", "r", "r", "r", "r", "r", " ", " "],
+            ["r", "r", "r", "r", "r", "r", "r", "r", "r", " ", " ", " "],
+            ["rh", "rh", "rh", "rh", "rh", "rh", "rh", "rh", "rh", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
+            [" ", " ", " ", "bh", "bh", "bh", "bh", "bh", "bh", "bh", "bh", "bh"],
+            [" ", " ", " ", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
           ],
           "additionalObjects": [
             "Recover the Research Map",
@@ -4038,12 +4058,12 @@
           "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501053065/3A8AE5DD93D1FEEEE72DB9E9936F918CFFDCF7CC/",
           "type": "vertical",
           "zone": [
-            ["r", "r", "r", "r", "r", "r", "r", "r", "r", "r", " ", " "],
+            ["r", "r", "r", "r", "r", "r", "r", "r", "r", " ", " ", " "],
+            ["rh", "rh", "rh", "rh", "rh", "rh", "rh", "rh", "rh", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
+            [" ", " ", " ", "bh", "bh", "bh", "bh", "bh", "bh", "bh", "bh", "bh"],
+            [" ", " ", " ", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
           ],
           "additionalObjects": [
             "Shifting Priorities Map",

@@ -631,6 +631,29 @@
       ]
     },
     {
+      "name": "LM-432 Crab Droid",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/2491139050708063278/ED3246E4E67C5213E1DDDA3064AFAB7213BDD737/",
+      "size": "medium",
+      "type": "Ground Vehicle",
+      "points": 70,
+      "speed": 1,
+      "upgrades": {
+        "Comms": 1,
+        "Programming": 1,
+        "Hardpoint": 1
+      },
+      "silhouette": {
+        "height": 1.453,
+        "offset": 0.0
+      },
+      "minis": [
+        {
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2491139050708070860/182C259E1AD62DCEEA34E2F87EE1A4D50908E956/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2491139050708070994/E763691AC8C24925DA2CA117DE90A54BAC836230/"
+        }
+      ]
+    },
+    {
       "name": "STAP Riders",
       "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788789443/7BE1E58EECCFE75EA2705CD1345E6C0602711AB7/",
       "size": "medium",
