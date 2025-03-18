@@ -772,6 +772,36 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1924743543116068132/37BCE99DCF06BEFA1119FEA911188695F9C48079/"
         }
       ]
+    },
+    {
+      "name": "Aqua Droids",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/1794100632571587/D3308B09BB6167322BFFB83C1A7E420C431D2396/",
+      "size": "medium",
+      "type": "Ground Vehicle",
+      "points": 65,
+      "speed": 1,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Comms": 1
+      },
+      "silhouette": {
+        "height": 1.85,
+        "offset": 0.0
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428277771257521/99A8ACEC9864DE29C7CE97006E86248BB2A89554/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428277771257705/0333921D3F7C247633D1ACF1E5D02817AD5033C5/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428277771264084/F6A007092091B31717175CB063F1E48538CF1AB5/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428277771264195/557F35AB163FBF0C51672567101157A8750C1DAD/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428277771241462/FFE8D6B9DE310FE7BC3B01C8128264DB9A8B1DFE/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428277771241663/4DEF50D36EB484BB1BBD9FD6092708DEF89A28EA/"
+        }
+      ]
     }
   ]
 }

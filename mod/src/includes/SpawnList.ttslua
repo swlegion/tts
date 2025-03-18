@@ -163,6 +163,9 @@ local function initListSpawner(params)
     local baseOffset = paddedBase * xOffset
     local totalXOffset = (baseOffset * newIndex)
     local xDir = xOffset * -1
+    if adjustedPos.z < 0 then
+      xDir = xDir * -1
+    end
 
     return simpleTranslatePos(
       position,

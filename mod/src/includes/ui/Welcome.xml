@@ -37,7 +37,7 @@
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
           <!--Welcome to Star Wars: Legion for TTS, <b>v8.0.0</b>.-->
-          Welcome to Star Wars: Legion for TTS, <b>v8.0.7-beta</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v8.0.9-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
 
@@ -46,8 +46,7 @@
           <b>CHANGELOG</b>
           (Since last <i>Beta</i>)
           <!--(Since last <i>Stable</i>)-->
-          - Fix: Snowtrooper Squad Data
-          - Fix: A couple CC urls
+          - Add: Aqua Droids
         </Text>
       </VerticalLayout>
     </VerticalScrollView>

@@ -1127,6 +1127,20 @@
     ],
     "Heavy Weapon": [
       {
+        "name": "Heavy Aqua Droid",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/1794100632571533/28837AF9D4578A64FDDBF1A1FBCF01B1B500C263/",
+        "mini": {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428277771267782/F0A018E16296CA10D0E02E7F41DE82CE5E989B23/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428277771267882/F4CCED2C7C26C390BC2CA20D1BA1DAA27340FE57/"
+        },
+        "points": 28,
+        "restrictions": {
+          "include": {
+            "unit": ["Aqua Droids"]
+          }
+        }
+      },
+      {
         "name": "T-21A Range Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/2495630600682578710/13027CE8B24DC2CB5822CE42A7AA586D5379CB56/",
         "mini": {
