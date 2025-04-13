@@ -633,7 +633,7 @@
     {
       "name": "LM-432 Crab Droid",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/2491139050708063278/ED3246E4E67C5213E1DDDA3064AFAB7213BDD737/",
-      "size": "medium",
+      "size": "large",
       "type": "Ground Vehicle",
       "points": 70,
       "speed": 1,
@@ -648,8 +648,7 @@
       },
       "minis": [
         {
-          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2491139050708070860/182C259E1AD62DCEEA34E2F87EE1A4D50908E956/",
-          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2491139050708070994/E763691AC8C24925DA2CA117DE90A54BAC836230/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16432158164944196/4594ADE002844CEEB6FB9A75E17AA802FCAE89FF/"
         }
       ]
     },
