@@ -4884,32 +4884,38 @@
     },
     "Breakthrough Map": {
       "card": {
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501051192/5A19D255E47E80FF3CCE0EBFA095CB8677C4188D/"
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501051192/5A19D255E47E80FF3CCE0EBFA095CB8677C4188D/",
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501051192/5A19D255E47E80FF3CCE0EBFA095CB8677C4188D/"
       }
     },
     "Bunker Assault Map": {
       "card": {
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501051483/82F1D1EAA55C5794FD0301E5FADB5EEA3DAEFE49/"
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501051483/82F1D1EAA55C5794FD0301E5FADB5EEA3DAEFE49/",
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501051483/82F1D1EAA55C5794FD0301E5FADB5EEA3DAEFE49/"
       }
     },
     "Close the Pocket Map": {
       "card": {
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501051694/8B05A05A5B24115F84B0A13F6FD392BB5C00E527/"
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501051694/8B05A05A5B24115F84B0A13F6FD392BB5C00E527/",
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501051694/8B05A05A5B24115F84B0A13F6FD392BB5C00E527/"
       }
     },
     "Intercept Signals": {
       "card": {
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501052240/E4DFCE250EAB2459C05A7C73ED2C47B78DB5D467/"
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501052240/E4DFCE250EAB2459C05A7C73ED2C47B78DB5D467/",
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501052240/E4DFCE250EAB2459C05A7C73ED2C47B78DB5D467/"
       }
     },
     "Recover the Research Map": {
       "card": {
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501052886/30E5BFA96EBC5AFA4197AE40882EC3B576420F51/"
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501052886/30E5BFA96EBC5AFA4197AE40882EC3B576420F51/",
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501052886/30E5BFA96EBC5AFA4197AE40882EC3B576420F51/"
       }
     },
     "Shifting Priorities Map": {
       "card": {
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501052974/0D4D7ECABE727D484B8ECDF44DBA664BBF7E609D/"
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501052974/0D4D7ECABE727D484B8ECDF44DBA664BBF7E609D/",
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501052974/0D4D7ECABE727D484B8ECDF44DBA664BBF7E609D/"
       }
     }
   }
