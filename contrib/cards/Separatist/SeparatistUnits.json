@@ -636,7 +636,7 @@
       "size": "large",
       "type": "Ground Vehicle",
       "points": 70,
-      "speed": 1,
+      "speed": 2,
       "upgrades": {
         "Comms": 1,
         "Programming": 1,
