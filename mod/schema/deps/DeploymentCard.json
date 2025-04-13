@@ -11,13 +11,13 @@
       "items": {
         "type": "array",
         "items": {
-          "enum": ["r", "b", " "]
+          "enum": ["r", "b", " ", "rh", "bh", "rs", "rss", "rc", "rcc", "bs", "bss", "bc", "bcc", "rl", "bl"]
         }
       }
     }
   },
 
-  "additionalProperties": false,
+  "additionalProperties": true,
 
   "properties": {
     "name": {

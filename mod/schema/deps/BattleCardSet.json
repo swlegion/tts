@@ -36,6 +36,6 @@
   },
 
   "propertyNames": {
-    "enum": ["skirmish", "standard", "scenario", "community"]
+    "enum": ["skirmish", "standard", "scenario", "community", "blitz"]
   }
 }
