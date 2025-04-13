@@ -1,0 +1,3 @@
+rangeKey = "token"
+
+require('!/TokenWithRangeRuler')
