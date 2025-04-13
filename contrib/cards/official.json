@@ -2355,6 +2355,7 @@
           "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16431529702463571/B00835A48B6CBFE337E04F4A3CABF005E196D0E1/"
         },
         "points": 22,
+        "leader": true,
         "restrictions": {
           "include": {
             "faction": ["Republic"]
@@ -2368,6 +2369,7 @@
           "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16432616714054298/93B766A9FA311E199C2FCAF5BA29137B4FA12A9F/"
         },
         "points": 35,
+        "leader": true,
         "restrictions": {
           "include": {
             "faction": ["Republic"]

@@ -46,9 +46,12 @@
           <b>CHANGELOG</b>
           (Since last <i>Beta</i>)
           <!--(Since last <i>Stable</i>)-->
-          - Add: Aqua Droids
-          - Fix: A Beautiful Friendship typo
-          - Fix: Nanny Programming typo
+          - Fix: Crab Base Size
+          - Fix: Update Crab Art
+          - Add: Arfs and their Upgrades
+          - Fix: Update Sleepers Art
+          - Add: Ahsoka
+          - Fix: Staps Art
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
