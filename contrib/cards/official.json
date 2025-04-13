@@ -2349,10 +2349,10 @@
     "Squad Leader": [
       {
         "name": "Jedi Guardian",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/59215140638617630/9AB204944DB662D2D15FC2FA5E50F02138AD1FD6/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59215140638617532/E1A83CBDECDB7CE133F98F942F9F938AD43247BA/",
         "mini": {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16426912929621400/CC4D94EDC24D933D7333F5A35308606846A9B550/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16426912929621469/4B200440B54994D37A5B3667E04769CD92DE4F32/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16431529702463553/1F85438056E5881BFC4E8FD27E89EACF2CA8C893/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16431529702463571/B00835A48B6CBFE337E04F4A3CABF005E196D0E1/"
         },
         "points": 22,
         "restrictions": {
@@ -2365,7 +2365,7 @@
         "name": "Ahsoka Tano, Jedi Padawan",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831255/8A122988056B15729D1EBAB3F459B8AF5AA13113/",
         "mini": {
-          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16421205170086026/6C1F65CEED297892B5C922DF11E8EB481E2DDB00/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16432616714054298/93B766A9FA311E199C2FCAF5BA29137B4FA12A9F/"
         },
         "points": 35,
         "restrictions": {

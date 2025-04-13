@@ -15,7 +15,7 @@
       },
       "minis": [
         {
-          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16421205170086026/6C1F65CEED297892B5C922DF11E8EB481E2DDB00/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16433335599854666/7D5FBD7E60477189142C905E42679993F4CA9CAD/"
         }
       ],
       "commands": [
@@ -523,7 +523,7 @@
       "upgrades": {
         "Squad Leader": 1,
         "Heavy Weapon": 1,
-        "Personel": 1,
+        "Personnel": 1,
         "Training": 1,
         "Comms": 1,
         "Grenades": 1
