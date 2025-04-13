@@ -2349,12 +2349,13 @@
     "Squad Leader": [
       {
         "name": "Jedi Guardian",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/59215140638617532/E1A83CBDECDB7CE133F98F942F9F938AD43247BA/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59215140638617630/9AB204944DB662D2D15FC2FA5E50F02138AD1FD6/",
         "mini": {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16431529702463553/1F85438056E5881BFC4E8FD27E89EACF2CA8C893/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16431529702463571/B00835A48B6CBFE337E04F4A3CABF005E196D0E1/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16426912929621400/CC4D94EDC24D933D7333F5A35308606846A9B550/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16426912929621469/4B200440B54994D37A5B3667E04769CD92DE4F32/"
         },
         "points": 22,
+        "leader": true,
         "restrictions": {
           "include": {
             "faction": ["Republic"]
@@ -2368,6 +2369,7 @@
           "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16432616714054298/93B766A9FA311E199C2FCAF5BA29137B4FA12A9F/"
         },
         "points": 35,
+        "leader": true,
         "restrictions": {
           "include": {
             "faction": ["Republic"]
@@ -4639,7 +4641,7 @@
     "Complete the Mission Token": {
       "token": {
         "mesh": "http://cloud-3.steamusercontent.com/ugc/786359883314441337/A0DD41660FEC7E450F2EDF38191AF3C26E826C49/",
-        "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/19810316416944869/8A16EA4D1EFB030161A08406602F9D4F31CA52C8/"
+        "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/59217531460146495/B6325E11EB42C5840441BFE640F913BD3C57A832/"
       },
       "target": "table",
       "stacks": false,
