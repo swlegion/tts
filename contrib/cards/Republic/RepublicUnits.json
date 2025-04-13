@@ -1,6 +1,42 @@
 {
   "Commander": [
     {
+      "name": "Ahsoka Tano",
+      "title": "Padawan Commander",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831840/7BAA676E59D56B62D2E11FB77DD5B0E5BC387437/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 110,
+      "speed": 3,
+      "upgrades": {
+        "Force": 1,
+        "Command": 1,
+        "Training": 1
+      },
+      "minis": [
+        {
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16421205170086026/6C1F65CEED297892B5C922DF11E8EB481E2DDB00/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "You Are Beaten",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831475/BAB718B98F827E294BA50680227A363E3256DC7A/",
+          "pip": 1
+        },
+        {
+          "name": "Revenge Is Not the Jedi Way",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831631/87162AF3AA810544D40A745E1F98085A92ACA105/",
+          "pip": 2
+        },
+        {
+          "name": "I Go Where I'm Needed",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831728/03A628654EBBA66A64E040E128BB03A2650A8E90/",
+          "pip": 3
+        }
+      ]
+    },
+    {
       "name": "Obi-Wan Kenobi",
       "title": "Civilized Warrior",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862915/90FD71812614F00A05D66B384E92C67B6C4E7358/",

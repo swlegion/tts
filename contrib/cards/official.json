@@ -2360,6 +2360,19 @@
             "faction": ["Republic"]
           }
         }
+      }, 
+      {
+        "name": "Ahsoka Tano, Jedi Padawan",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831255/8A122988056B15729D1EBAB3F459B8AF5AA13113/",
+        "mini": {
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16421205170086026/6C1F65CEED297892B5C922DF11E8EB481E2DDB00/"
+        },
+        "points": 35,
+        "restrictions": {
+          "include": {
+            "faction": ["Republic"]
+          }
+        }
       } 
     ],
     "Ordnance": [
