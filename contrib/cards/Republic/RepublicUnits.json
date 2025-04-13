@@ -15,7 +15,7 @@
       },
       "minis": [
         {
-          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16421205170086026/6C1F65CEED297892B5C922DF11E8EB481E2DDB00/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16433335599854666/7D5FBD7E60477189142C905E42679993F4CA9CAD/"
         }
       ],
       "commands": [
@@ -523,7 +523,7 @@
       "upgrades": {
         "Squad Leader": 1,
         "Heavy Weapon": 1,
-        "Personel": 1,
+        "Personnel": 1,
         "Training": 1,
         "Comms": 1,
         "Grenades": 1
@@ -697,7 +697,8 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2495630600682669589/FE6E365D8DFE4186F7AE93CBEF854B84881DFA18/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2495630600682582714/3AFE8876506FE4B261417033A0E804BA9146FECE/"
         }
-      ]
+      ],
+      "additionalObjects": ["Complete the Mission Token"]
     },
     {
       "name": "Clone Commandos Delta Squad",
@@ -730,7 +731,8 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2474241114696859319/2846289D99E3CA2DC68F2BB8FC69ECF1ABE2072E/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2474241114696882664/1B6168DA14AFA3A40CC823399CC4072FD1B7E958/"
         }
-      ]
+      ],
+      "additionalObjects": ["Complete the Mission Token"]
     }
   ],
   "Heavy": [
