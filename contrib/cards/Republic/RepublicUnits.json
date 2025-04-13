@@ -476,6 +476,41 @@
         }
       ]
     },
+
+    {
+      "name": "ARF Troopers",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59215140638617511/EF41D3B9F89F86EC4E803863C17D1549052C8B55/",
+      "size": "small",
+      "type": "Clone Trooper",
+      "points": 66,
+      "speed": 2,
+      "upgrades": {
+        "Squad Leader": 1,
+        "Heavy Weapon": 1,
+        "Personel": 1,
+        "Training": 1,
+        "Comms": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933614/80D6829DB63FAE3328D00AC36F00E5FD71251E69/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933714/D3FE0C2DEFBE1E78A71A55516DF87199D66DE2AC/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149649053/B24484CFED06020454EE95B663DB3ECE17871D26/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149646949/50B6AA8C2CC5283537DBA2291F9801E7CD5FE77C/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149643329/8D273B40809BF89188238DE6FC5C207756AA22EF/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149643405/9A3D0A513A31513523E59855980DFCE0A8F0F6E0/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932871/EE8DF333D45ED841E9C31625FB4A9385C16B2F49/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933386/736E0CCF2ADE31D6A9F6BE172B20AEB5420B815E/"
+        }
+      ]
+    },
     {
       "name": "Wookiee Warriors",
       "title": "Kashyyyk Defenders",
