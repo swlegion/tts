@@ -1,6 +1,42 @@
 {
   "Commander": [
     {
+      "name": "Ahsoka Tano",
+      "title": "Padawan Commander",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831840/7BAA676E59D56B62D2E11FB77DD5B0E5BC387437/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 110,
+      "speed": 3,
+      "upgrades": {
+        "Force": 1,
+        "Command": 1,
+        "Training": 1
+      },
+      "minis": [
+        {
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16421205170086026/6C1F65CEED297892B5C922DF11E8EB481E2DDB00/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "You Are Beaten",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831475/BAB718B98F827E294BA50680227A363E3256DC7A/",
+          "pip": 1
+        },
+        {
+          "name": "Revenge Is Not the Jedi Way",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831631/87162AF3AA810544D40A745E1F98085A92ACA105/",
+          "pip": 2
+        },
+        {
+          "name": "I Go Where I'm Needed",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831728/03A628654EBBA66A64E040E128BB03A2650A8E90/",
+          "pip": 3
+        }
+      ]
+    },
+    {
       "name": "Obi-Wan Kenobi",
       "title": "Civilized Warrior",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862915/90FD71812614F00A05D66B384E92C67B6C4E7358/",
@@ -473,6 +509,41 @@
         {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541174304/9053CDD2798CEA905F8486498D0104B6ACA2F078/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541174467/18352D89A219B89F6C869D89B9EDE22822F7F950/"
+        }
+      ]
+    },
+
+    {
+      "name": "ARF Troopers",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59215140638617511/EF41D3B9F89F86EC4E803863C17D1549052C8B55/",
+      "size": "small",
+      "type": "Clone Trooper",
+      "points": 66,
+      "speed": 2,
+      "upgrades": {
+        "Squad Leader": 1,
+        "Heavy Weapon": 1,
+        "Personel": 1,
+        "Training": 1,
+        "Comms": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933614/80D6829DB63FAE3328D00AC36F00E5FD71251E69/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933714/D3FE0C2DEFBE1E78A71A55516DF87199D66DE2AC/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149649053/B24484CFED06020454EE95B663DB3ECE17871D26/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149646949/50B6AA8C2CC5283537DBA2291F9801E7CD5FE77C/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149643329/8D273B40809BF89188238DE6FC5C207756AA22EF/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149643405/9A3D0A513A31513523E59855980DFCE0A8F0F6E0/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932871/EE8DF333D45ED841E9C31625FB4A9385C16B2F49/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933386/736E0CCF2ADE31D6A9F6BE172B20AEB5420B815E/"
         }
       ]
     },

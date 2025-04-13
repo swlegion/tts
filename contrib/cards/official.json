@@ -1127,6 +1127,20 @@
     ],
     "Heavy Weapon": [
       {
+        "name": "RPS-6 ARF Trooper",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59215140638617630/9AB204944DB662D2D15FC2FA5E50F02138AD1FD6/",
+        "mini": {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149645590/1B9C028584B5A7DCD488AE1E9C57D33A1B93C92E/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149646251/ADB16A6BF3CADD49D0237A4AB51FB4D7AF0AB521/"
+        },
+        "points": 24,
+        "restrictions": {
+          "include": {
+            "unit": ["ARF Troopers"]
+          }
+        }
+      },
+      {
         "name": "Heavy Aqua Droid",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/1794100632571533/28837AF9D4578A64FDDBF1A1FBCF01B1B500C263/",
         "mini": {
@@ -2321,8 +2335,8 @@
         "name": "Rebel Marksman",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384857748/82E25C06DC390DFD0AD8148F6BD899CF86E07AE9/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173464888456/63604C016242E6F545F139BC46515E0A894EC6B2/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173464889098/17A7BE90F158B80F88518F92EA4D211F16E14003/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680570051/845658287FF6EADD0F2B31B94ABC4899A09475EE/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680570231/D122EECC159E02264D024421EB7767BEA8E70F21/"
         },
         "points": 28,
         "restrictions": {
@@ -2331,6 +2345,35 @@
           }
         }
       }
+    ],
+    "Squad Leader": [
+      {
+        "name": "Jedi Guardian",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59215140638617630/9AB204944DB662D2D15FC2FA5E50F02138AD1FD6/",
+        "mini": {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16426912929621400/CC4D94EDC24D933D7333F5A35308606846A9B550/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16426912929621469/4B200440B54994D37A5B3667E04769CD92DE4F32/"
+        },
+        "points": 22,
+        "restrictions": {
+          "include": {
+            "faction": ["Republic"]
+          }
+        }
+      }, 
+      {
+        "name": "Ahsoka Tano, Jedi Padawan",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831255/8A122988056B15729D1EBAB3F459B8AF5AA13113/",
+        "mini": {
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16421205170086026/6C1F65CEED297892B5C922DF11E8EB481E2DDB00/"
+        },
+        "points": 35,
+        "restrictions": {
+          "include": {
+            "faction": ["Republic"]
+          }
+        }
+      } 
     ],
     "Ordnance": [
       {
@@ -2350,6 +2393,26 @@
       }
     ],
     "Personnel": [
+      {
+        "name": "ARF Trooper Duo",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59215140639032161/5D3AFD658FC9FC30314A98DF8C5F0A7910B4ADF2/",
+        "minis": [
+          {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932608/94AB8C15D97E81FF8040E81BC91F79A7105FF4B4/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932637/F5D29AC3162A9D47B5440E5A3E3399FC12A594BE/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932871/EE8DF333D45ED841E9C31625FB4A9385C16B2F49/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933386/736E0CCF2ADE31D6A9F6BE172B20AEB5420B815E/"
+        }
+      ],
+        "points": 26,
+        "restrictions": {
+          "include": {
+            "unit": ["ARF Troopers"]
+          }
+        }
+      },
       {
         "name": "2-1B Medical Droid",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137676/C282622A211B384895C61D5EE0811E4E627FBDBF/",
@@ -2733,8 +2796,8 @@
         "name": "Astromech",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384854817/828A0E540142CA963290F81E9D440D44AE7A840E/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594492173/DDA1CC3AEEC3D5ADB3B04F35125EE8A6FB7EB93A/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594267919/F44B2C3C810757626C7A4A61DAA7F2BC2BEECFC6/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680571476/57CF310CEE5CCDFE2F0769BE7BAF97A6A4104035/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680571745/E93CBD4D8EBD90588639BCA658F36E208A58E465/"
         },
         "points": 9,
         "restrictions": {
