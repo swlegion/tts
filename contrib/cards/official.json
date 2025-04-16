@@ -421,7 +421,7 @@
     "Counterpart": [
       {
         "name": "C-3PO",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505080628828/F6A01DB4DFDB1A518FC4E373D72237AB1B31300B/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134141499/36DA30FD99788C7127DCADE11325FDBC09B16747/",
         "points": 15,
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456807069/DE7E32B39455DB5111769436FD0C5BFDA3841268/",
@@ -2235,7 +2235,7 @@
       },
       {
         "name": "Hunter (The Bad Batch)",
-        "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005230/53DDE7626A5573411C2116565252DBB566D42E57/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134145162/59CF94272440AA250AFA7883ADC169BA9F1EDBEF/",
         "leader": true,
         "points": 0,
         "restrictions": {
@@ -2259,7 +2259,7 @@
       },
       {
         "name": "Tech",
-        "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005546/E5F647B0415410E8715ED04BF37452E949115B9C/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134145194/EA026AF5A84A9F1E34CCC601A39DF61B36D664CA/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2475370743175244098/67CBDAB9CA48B24940FC743CEB778A526C990993/"
         },
@@ -2272,7 +2272,7 @@
       },
       {
         "name": "Wrecker",
-        "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005604/3FB4414E24AD04E6ACB6A1845E4E9484E0F62018/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134145231/9FC3E238C50C89E5B4036AC1275370BAEF3B3944/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2475370743175244156/4986205CB2289E6CF72269D9A17E6B2D405968DA/"
         },
@@ -2285,7 +2285,7 @@
       },
       {
         "name": "Crosshair",
-        "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005095/75BB087312B198ADA7A069E7E861D44654529734/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134145124/0F6E5EBD2C22692BF7E757F46293934D4552CA6A/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2475370743175244300/863B36B154CA2A32E4C36B9CFBC47984846ECE3C/"
         },
