@@ -486,7 +486,7 @@
     },
     {
       "name": "Wookiee Warriors",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1619598366708171464/0A12FC8F203E5376156D3C2A207E33E1F5ACB0B6/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135341447/B0773809842EFD82EFA442C9E918729C2DE3AA1F/",
       "size": "small",
       "type": "Wookiee Trooper",
       "points": 69,
@@ -516,7 +516,7 @@
       "name": "Wookiee Warriors",
       "title": "Kashyyyk Defenders",
       "displayName": "Wookiee Warriors (Defenders)",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790192/E7C7082C239E04E3DF76FDFF909EE360D9C25012/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135341419/3EC4467936F4470CD7F7E5BA2E4BE0CD069869AF/",
       "size": "small",
       "type": "Wookiee Trooper",
       "points": 72,
@@ -543,7 +543,7 @@
   "Support": [
     {
       "name": "BARC Speeder",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790145/DD6B7ACA36B88E28B4326E7AA96536230B87F01E/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135357592/ED3AA636CBB456AA395C1694D27B84A296DD406B/",
       "size": "large",
       "type": "Repulsor Vehicle",
       "points": 55,
@@ -587,7 +587,7 @@
     {
       "name": "Raddaugh Gnasp Fluttercraft",
       "displayName": "Fluttercraft",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189347/2BD4025EABD6F2A919AC40FC4E6D3C8AC4292E86/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135343126/F85A20B8CBAFDED99A98E49A5606034C27863FE8/",
       "size": "huge",
       "type": "Repulsor Vehicle",
       "points": 55,
@@ -634,13 +634,14 @@
     },
     {
       "name": "Clone Commandos",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2495630600682578127/F11181FFD31692CE4180BD0B207040E3684EC947/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135343637/2D368BCB50598F733E54128E5B1BF53CB49F853F/",
       "size": "small",
       "type": "Clone Trooper",
       "points": 75,
       "speed": 2,
       "upgrades": {
         "Training": 1,
+        "Gear": 1,
         "Comms": 1,
         "Armament": 1,
         "Grenades": 1
@@ -667,7 +668,7 @@
     },
     {
       "name": "Clone Commandos Delta Squad",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2474241114696699067/AD85E44AA7E3AA30A65E888C28B3E89CBD3C757F/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135343678/F395BC8F8B88F888355FCFAFA870875613499CD1/",
       "size": "small",
       "type": "Clone Trooper",
       "points": 100,
@@ -751,7 +752,7 @@
     },
     {
       "name": "Infantry Support Platform",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189285/5E0D18805F9C4BF8A978A9F1F20CFAE73575D02F/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135344629/540E23C816C00B4B7E086B626329F13633403C9E/",
       "size": "huge",
       "type": "Repulsor Vehicle",
       "points": 65,

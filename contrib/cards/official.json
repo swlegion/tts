@@ -281,10 +281,10 @@
       },
       {
         "name": "DC-17m ICWS Config",
-        "image": "http://cloud-3.steamusercontent.com/ugc/2495630600682578404/0907EFC6D9B860E036D95C2204113FA2E80D7483/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135385953/007D0426E485963714BCBE0B74B2B8AE5B7F1869/",
         "flip": {
           "name": "DC-17m ICWS Config",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2495630600682578229/D1B8B22989B7B303FFEE57833D39F8476DEED678/"
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135386003/EB0729A53546B70CB9054BAF5306E3F5368FC9DF/"
         },
         "points": 0,
         "restrictions": {
@@ -528,7 +528,7 @@
       },
       {
         "name": "Gnasp Bombardier",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189228/8CCDEE09F1FB60741F7EA11A32F4B2601A5772AF/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135343165/A3E8D964A08B453B9E015137A07E33D8387D1A64/",
         "points": 20,
         "restrictions": {
           "include": {
@@ -538,7 +538,7 @@
       },
       {
         "name": "Gnasp Gunner",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226311/08FF7D85F3D4B6D5C65D70ADE3EE76524D2E0BB6/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135343200/DEFBD83A9EBBA99252AC71556D2B37557BF9B36B/",
         "points": 15,
         "restrictions": {
           "include": {
@@ -700,7 +700,7 @@
     "Gear": [
       {
         "name": "Katarn Pattern Armor",
-        "image": "http://cloud-3.steamusercontent.com/ugc/2495630600682578301/92CA9E448779AF91300B53D1D77FC3D385141C28/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135343697/9294A833C65D6D3721327C68A057F71D8D920AD7/",
         "points": 0
       },
       {
@@ -936,7 +936,7 @@
       },
       {
         "name": "AT-RT Laser Cannon",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138277/BF6E7C05171B0D9397AA521903AAB5B47B97CB7B/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135342360/B838498FCDCDCAF1A3E7A36878EE646157FBBE8F/",
         "points": 10,
         "restrictions": {
           "include": {
@@ -1076,7 +1076,7 @@
       },
       {
         "name": "Twin Beam Cannons",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189108/F040A172FA29BC024E24EBA875B27A7CE4F48FFC/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135344651/FF1F346F4BC8D5A517747C10951F216DBF84A034/",
         "points": 25,
         "restrictions": {
           "include": {
@@ -1106,7 +1106,7 @@
       },
       {
         "name": "TX-130 Beam Cannon Turret",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146181/3EFE8D5F3AC5E50248734F4ABF50A175FE76460D/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135344116/6FA72AE219A115A5BA50033ECAF85464EE12FCA8/",
         "points": 15,
         "restrictions": {
           "include": {
@@ -1213,11 +1213,11 @@
       {
         "name": "Battle Shield Wookiee (Offensive)",
         "displayName": "Shield Wookiee (Offensive)",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138999/81A76F415A7B73A3AEF6B5EEF5DF6F0ABC9C9CF5/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135374023/1CF15E13216F27CF98B3FBC1C6419CF00FA4AB09/",
         "flip": {
           "name": "Battle Shield Wookiee (Defensive)",
           "displayName": "Shield Wookiee (Defensive)",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138967/E5E495CD6EEFD77393CD99C35CF651BBEDC1210A/"
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135373983/5011312D227028FE696507AD0AE78EACDB2FD951/"
         },
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386933/DCD62751F06157E85CE575C8BB1CCF86379BB7DE/"
@@ -1286,7 +1286,7 @@
       },
       {
         "name": "Bowcaster Wookiee",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139088/9E0C04EE7D22BAE7023E8C8DB51A30B8877E0EEA/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135341310/D12F81BD3CDBC4B90FFAE066EEDE9578F4522410/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541174665/9E1AA98159F76E271185345E9D347D7453C05D4B/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541174034/90C4A124BB82CCE0B5E38E13860ED49BB9A4973B/"
@@ -1638,7 +1638,7 @@
       },
       {
         "name": "Long Gun Wookiee",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568226123/FC3395575F2DA5995F599877AEF70D14F53400D5/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135341370/B7A9BFBB4B61953A1DD894FF2F63729FCBBAC92B/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708042667/2DABB5788E51006EDB3FCB03400ACD4CE07755F3/"
         },
