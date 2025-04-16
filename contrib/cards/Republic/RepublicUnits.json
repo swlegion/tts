@@ -39,7 +39,7 @@
     {
       "name": "Obi-Wan Kenobi",
       "title": "Civilized Warrior",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862915/90FD71812614F00A05D66B384E92C67B6C4E7358/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134023515/2C9320594DD79CF3D7FC98C13487A00A2AE28598/",
       "size": "small",
       "type": "Trooper",
       "points": 150,
@@ -58,17 +58,17 @@
       "commands": [
         {
           "name": "Hello There!",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036592/C0182450268D43C5589930D988CF04ECC4A1C248/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134023412/5FD1AF7B0198FBD887EA7A072F53A8EFE47BA5AD/",
           "pip": 1
         },
         {
           "name": "Knowledge And Defense",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035139/48E071EA2C88883329D050F338F8947FD2515F6D/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134023462/0B7E151462188D5E5706415F406F0B51892CE553/",
           "pip": 2
         },
         {
           "name": "General Kenobi",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033710/C8724AA758E97BCBEDA8C66CECDA298AB74EFB05/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134023367/DBEE15E658282BE84E693970FF184CBF515C7DEA/",
           "pip": 3
         }
       ]
@@ -76,7 +76,7 @@
     {
       "name": "Clone Captain Rex",
       "title": "Honorable Soldier",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790598/868FE96BEB709EE3A25D7973FF259B8BF7824475/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134020880/7C51F849FFBA45101F85ED56C60A39BC9DCFEA9E/",
       "size": "small",
       "type": "Clone Trooper",
       "points": 95,
@@ -96,17 +96,17 @@
       "commands": [
         {
           "name": "Call Me Captain",
-          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384868441/FB66196615FD2CFF191D1552B61924A8BFB23428/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134020825/C9D873D723AFC9AFB05A20B57D3335CB5DACC0C1/",
           "pip": 1
         },
         {
           "name": "Take That, Clankers!",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034598/FAD8628CEF4BC9782992174756FD109E5AD8E949/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134020928/838D3C418B11344945B861E1E17B2259AB7DC9A3/",
           "pip": 2
         },
         {
           "name": "We're Not Programmed",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032907/37CBE4B02058855DF6EB5B305AEC12DA796E8FDD/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134020977/7375B857CECD3EC04F3DDA22799E789FAF4ABC13/",
           "pip": 3
         }
       ]
@@ -150,7 +150,7 @@
     {
       "name": "Clone Commander",
       "title": "Trained For Leadership",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790538/EBB9911B9EB9C0F817370266A8ACB8357BEB3919/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134030932/097AEAB205D99962C4D1BF4136A36D73029A43B2/",
       "size": "small",
       "type": "Clone Trooper",
       "points": 60,
@@ -169,7 +169,7 @@
     {
       "name": "Yoda",
       "title": "Grand Master Of The Jedi Order",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384864374/1D5F4392DBB420ABB167CE9498C5D07CE85CE31C/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134036684/529CFF85876C6F4710D6E97CBBB99E15323584D4/",
       "size": "small",
       "type": "Trooper",
       "points": 180,
@@ -186,17 +186,17 @@
       "commands": [
         {
           "name": "Size Matters Not",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036164/6444F2658805AE43ED73CF592F8D9340262E8851/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134037394/0B7834ECF0331C805C27F603B00D6C743B854388/",
           "pip": 1
         },
         {
           "name": "There Is No Try",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034526/8811897A231A24247FA9120971D4994A45BAE4CD/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134037407/66DFAF805CB1864A8A71CD35B3DCA41F9B213ECA/",
           "pip": 2
         },
         {
           "name": "Luminous Beings Are We",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033410/83F24DB765D234502B457983834BF25FB5FAB05A/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134037376/DDC7E052702169D9E14A51F886535CF5BD2007C1/",
           "pip": 3
         }
       ]
@@ -204,7 +204,7 @@
     {
       "name": "Wookiee Chieftain",
       "title": "Clan Leader",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790478/85E9C624082CA5731008121F45ABFA06CC4583DB/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134052113/10120AB84E10E0EBDFEF30603F2B1EE9FA8382A7/",
       "size": "small",
       "type": "Wookiee Trooper",
       "points": 100,
@@ -223,7 +223,7 @@
     {
       "name": "Chewbacca",
       "title": "Hero Of Kashyyyk",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788790442/8E99C974FA5AF735BADBABA2CEA6400399908E50/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134028001/43E55FD3A97B6A7800A94B65EA47507F7033CA65/",
       "size": "small",
       "type": "Wookiee Trooper",
       "points": 90,
@@ -252,7 +252,7 @@
     {
       "name": "Clone Commander Cody",
       "title": "Leader of the 212th",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1745728519554830167/CB5BD832D003FF4C5961CBA3E67D7D975C20E11E/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134025861/02F5F0A5209FE1F7F3315632CBDA187666A0258A/",
       "size": "small",
       "type": "Clone Trooper",
       "points": 105,
@@ -270,17 +270,17 @@
       "commands": [
         {
           "name": "Bring it Down!",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2022718494181413653/02DAE10AF010ABE97C2A2EF535CA0072C334CEE0/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134025758/112F3DFC81DC78543EDFE2947CF3F3F007471510/",
           "pip": 1
         },
         {
           "name": "Have I Ever Let you Down?",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2022718494181413715/2F415FFA15FAE4262D1364A5CB46F0D7BDDC166C/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134026057/C02C788C4E22D659C4C1FC71FA93C5CED64C4B87/",
           "pip": 2
         },
         {
           "name": "Combined Arms",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2022718494181413785/93BB691509DA089CF951ACDA474E0E06C3BB0E07/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134025951/456F450F410FB505809E7069B4E5ED4E9CAD8FD9/",
           "pip": 3
         }
       ]
