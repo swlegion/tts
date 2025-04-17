@@ -353,6 +353,43 @@
       "additionalObjects": ["Victory Token"]
     },
     {
+      "name": "IG-11",
+      "title": "Nurse and Protect",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137008859/81A3C1FCE76085D59EE6AC6B2D28D6114E0CFBA2/",
+      "size": "small",
+      "type": "Droid Trooper",
+      "points": 110,
+      "speed": 2,
+      "upgrades": {
+        "Training": 1,
+        "Comms": 1,
+        "Gear": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1789640371719058670/9E6B82A0BF8367F2C6D369BD3464DA5E9D0C7917/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Mechanical Carnage",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137016841/F2528C4F77766BC90F225B6BBB4D3A42BB0EB0C4/",
+          "pip": 1
+        },
+        {
+          "name": "A Machine Made For Killing",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137016998/E6071BE8EDF0A20E6032D047B35D5EF5FC8B7182/",
+          "pip": 2
+        },
+        {
+          "name": "Anti-Capture Protocols",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137016902/C3B4710D3F5ACD27D67CB51B0C6B4E6B229B9BD9/",
+          "pip": 3
+        }
+      ],
+      "additionalObjects": ["Victory Token"]
+    },
+    {
       "content": "contrib/cards/ShadowCollective/DinUnit.json"
     },
     {
@@ -497,8 +534,8 @@
       ]
     },
     {
-      "name": "Riot Control Squad",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863541/0D08A36869D07A28874A58854BDCF6D87225306D/",
+      "name": "Stormtrooper Riot Squad",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139658813/F6DC48260186CC0283711F9A6E216341F1631319/",
       "size": "small",
       "type": "Trooper",
       "points": 50,
@@ -619,7 +656,7 @@
     },
     {
       "name": "DF-90 Mortar Trooper",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789216756/D8C157D8B31711EC7076FFF7C39347BC20B0E76A/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139662551/E8496B01C9619FBA2E5EEEBEF285ABEEF95ECF00/",
       "size": "medium",
       "type": "Emplacement Trooper",
       "points": 40,
@@ -644,7 +681,7 @@
   "Special Forces": [
     {
       "name": "Scout Troopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298945/EF8212952111B1407837754BAEF96F238B718830/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139667737/5A74C7A6641FF79D0BEA098600B7338595160681/",
       "size": "small",
       "type": "Trooper",
       "points": 48,
@@ -700,36 +737,8 @@
       ]
     },
     {
-      "name": "Imperial Royal Guards",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701217/89E8CC46981E8C634A4E3D6C4F6EAF343B27C1E2/",
-      "size": "small",
-      "type": "Trooper",
-      "points": 69,
-      "speed": 2,
-      "upgrades": {
-        "Heavy Weapon": 1,
-        "Training": 2,
-        "Gear": 1,
-        "Grenades": 1
-      },
-      "minis": [
-        {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541911959/D583DF28D96DBDF2F1FE9FB6AAB25809774C46EF/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/"
-        },
-        {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541912172/73A36C525BC98DD1F4EC7953943FE5F660B0E9D8/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/"
-        },
-        {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541912365/CB3109223BD5A017AA159066A3B17002B8892047/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/"
-        }
-      ]
-    },
-    {
       "name": "Imperial Death Troopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701181/DD8B2B7C2D3C3AC66F7D90F738B04BB309A31B46/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139667689/20539A9EAB988308E299A3DE18818D7B9FBA63C9/",
       "size": "small",
       "type": "Trooper",
       "points": 72,
@@ -763,7 +772,7 @@
     },
     {
       "name": "Imperial Special Forces",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701129/EDA8288C48AF33A69F22AE18E6CEB1413A0B04F9/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139667628/DC827BC31A0CA433CBACA568292623523896981F/",
       "size": "small",
       "type": "Trooper",
       "points": 68,
@@ -798,7 +807,7 @@
       "name": "Imperial Special Forces",
       "title": "Inferno Squad",
       "displayName": "Inferno Squad",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701097/D1043BFA3767D8E5A294ACA112D0E7E9A6B75627/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139667572/5230C0C79688307883294267607D597037641B36/",
       "size": "small",
       "type": "Trooper",
       "points": 34,
@@ -822,7 +831,7 @@
   "Support": [
     {
       "name": "74-Z Speeder Bikes",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701072/16EF027E626FA31293F4E88556AF9633F091180D/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139672763/037D15DE4ACD0941BA57FEEBDEBE3F346E04F8BC/",
       "size": "medium",
       "type": "Repulsor Vehicle",
       "points": 70,
@@ -865,7 +874,7 @@
     },
     {
       "name": "Dewback Rider",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701014/E1E943B567134E6A946C714BD07233CDC881A7AF/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139672717/75700C648595B7642273964A59B5CDFFBD650014/",
       "size": "large",
       "type": "Creature Trooper",
       "points": 70,
@@ -884,7 +893,7 @@
     },
     {
       "name": "Range Troopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2495630600682578473/BF07355370D1E0303B59E0FA2F7439FC22D58941//",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139672651/467BD8F23216F7AE5274DC84837483AE40571B02/",
       "size": "small",
       "type": "Trooper",
       "points": 60,
