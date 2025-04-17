@@ -353,43 +353,6 @@
       "additionalObjects": ["Victory Token"]
     },
     {
-      "name": "IG-11",
-      "title": "Nurse and Protect",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137008859/81A3C1FCE76085D59EE6AC6B2D28D6114E0CFBA2/",
-      "size": "small",
-      "type": "Droid Trooper",
-      "points": 110,
-      "speed": 2,
-      "upgrades": {
-        "Training": 1,
-        "Comms": 1,
-        "Gear": 1
-      },
-      "minis": [
-        {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1789640371719058670/9E6B82A0BF8367F2C6D369BD3464DA5E9D0C7917/"
-        }
-      ],
-      "commands": [
-        {
-          "name": "Mechanical Carnage",
-          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137016841/F2528C4F77766BC90F225B6BBB4D3A42BB0EB0C4/",
-          "pip": 1
-        },
-        {
-          "name": "A Machine Made For Killing",
-          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137016998/E6071BE8EDF0A20E6032D047B35D5EF5FC8B7182/",
-          "pip": 2
-        },
-        {
-          "name": "Anti-Capture Protocols",
-          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137016902/C3B4710D3F5ACD27D67CB51B0C6B4E6B229B9BD9/",
-          "pip": 3
-        }
-      ],
-      "additionalObjects": ["Victory Token"]
-    },
-    {
       "content": "contrib/cards/ShadowCollective/DinUnit.json"
     },
     {
