@@ -1346,7 +1346,7 @@
       },
       {
         "name": "DLT-19 Stormtrooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140049/9DA8A6B2DF19484212DC2516D345CE713F9D0F5E/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097118/D6AB525C9958181EA70DE91A813AEB1CC758D896/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141001/FF62545FC3DEF499BA8A0C04F07917C6CAA9E30D/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
@@ -1551,7 +1551,7 @@
       },
       {
         "name": "Flametrooper",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384856563/6A7AE5C7F2EF0D2D36392003251F456F8F432239/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097285/FCD736B27C338F603E13D0B1FA8FA3E10D1CE1FA/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541801931/BDE907EBE0BFC0DC4180C76AFEA3F8667013FF3B/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541802054/044AD0961CD1485A61AC3B6CB3669FD8AA5A0FEB/"
@@ -1585,7 +1585,7 @@
       },
       {
         "name": "HH-12 Stormtrooper",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384856773/E0A74297AEB51D3DFF351126F84C0B626A16D090/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097369/5299C4869B939C8673F1B0BD1A28398C4287BFF9/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141088/7342269A721DF49D0C38F1469E8463093734EF66/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
@@ -1710,7 +1710,7 @@
       },
       {
         "name": "RT-97C Stormtrooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145178/E34FCDD3060A28ED28C91966A004D3CB7DD6C62F/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097529/6BD2F13FA6AB3A56E258254420005E9EB38C7C0B/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141221/5D4DAEED517F52EE2ECBC631301C97422F519AB9/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
@@ -1813,7 +1813,7 @@
       },
       {
         "name": "T-21 Stormtrooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145912/C6F9E9EDA22CB6B40D955AE391F14227D648AF3B/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140098050/4A82E8EF8A7B04EFF91757E70C88282919912093/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141339/1EB723D5FCF6655CFFF7EF700EE7108274E1A6C7/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
@@ -1855,7 +1855,7 @@
       },
       {
         "name": "T-7 Ion Snowtrooper",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384858483/D7093B50A0312E7F2A8B3A4C8C0F423B9CEBEEF0/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097979/9F3CCF24FCF1D8F02F5B9CEEF9B8B4B157295F2F/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541802160/69A03779E6B67F6F547C2FBD70ACDFC39281387D/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541802252/037749C730FACCA3361B041BCB3C68E7E19DCDF8/"
@@ -2274,7 +2274,7 @@
       },
       {
         "name": "Stormtrooper Marksman",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384858363/F0205B68198DAF7822B30F8A8CE687367431E3EA/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140177027/4884AC61C97A4ACD22A03F85D95CA468DE75886E/",
         "mini": {
           "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2491137781649838294/7197479F9D7ADF9DB1287E740A469A0E5C28F2ED/",
           "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2491137781649821736/A6557A52AB579A320023B7028C55A38815DC566E/"
@@ -2288,7 +2288,7 @@
       },
       {
         "name": "KX-Series Security Droids",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384856910/4D9E28D75F17823F2BFB0656F2661D73514F0BDD/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140176950/CCE38141C12BFD65899FE18BF929C8BF0E2E1C57/",
         "minis": [
           {
             "mesh": "http://cloud-3.steamusercontent.com/ugc/773996263557000439/C9EA2A27264C73E42C016FE26E665CBB75F8E7DE/",
@@ -2657,7 +2657,7 @@
       },
       {
         "name": "FX-9 Medical Droid",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141540/B2FECAE0481CC646596F372DA153E0216EE90A2A/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097235/1B7C3623EF5EA7A2F7AB4123AF617CA73B851E05/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594268065/7B4874981CECB7BB80D5BC54F60F1939B9A9DAB1/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594268174/00246DE6DCE285206330C43B8049B19FFDF5BB41/"
@@ -2685,7 +2685,7 @@
       },
       {
         "name": "Imperial Comms Technician",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142962/ABB4FE6D2C8D0A65384BC0CB85B2A05CB5CA9A15/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097427/A759E82138BD75F9641E42316D314BCA9D70CF33/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594268417/62CC1D5BCBD1EE294C72781B03AB972B3ED5AD12/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594268526/CA2596C0B2D7DF68D794B2A7880F34B5459F1206/"
@@ -2699,7 +2699,7 @@
       },
       {
         "name": "Imperial Officer",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143040/BC1F5D5F046DE97E7D046534D9810655A049FDC4/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097483/145E74D65EDF1283F5CD01FA06655B2974624922/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541565898/F06AB6731446249164D34ACA208E4FAE70C6FE00/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541566011/A7A84EBF79DA5E1D5BCE71E863FC16EC40937F6F/"
@@ -3041,7 +3041,7 @@
       
       {
         "name": "Stormtrooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145641/67887DD2E968766C0268BB4629E1EEA9CF54DFDC/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097931/DB288D0B28104E95465A3ED5D12C65D527876F54/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650140825/D8AE1D1F27B97F359916236DA163DA7EC4B517C1/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
@@ -3055,7 +3055,7 @@
       },
       {
         "name": "Stormtrooper Squad",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384858433/8834A0455083F03C9C17B4A3B6CE67BD349EBF90/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097883/0F0DF0E194F55384AE82D7F9A1CEA4EC7597CF42/",
         "minis": [
           {
             "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141545/30BEFE4E87E379AA361AFF5FD24A8F5D3F0BA4C0/",
@@ -3087,7 +3087,7 @@
       },
       {
         "name": "Snowtrooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145489/3D4F0A2826C4DE7A61CB0CC895D2E3495DE91DAB/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097669/E2D49A07E0E56FD07EC247313240A3D7C6ABE50D/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541801717/EDEA1301FC55A6970D5FBCF0A9F10456E4C2EE40/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541801215/595165C57A67BF2BD505BE6F0DF8F11AD4EA55D2/"
@@ -3101,7 +3101,7 @@
       },
       {
         "name": "Snowtrooper Squad",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384858227/A2DD159803E85A5524E3BA6C4ED0BA54FF2BA33E/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097587/A54CEC5E18DF9FB2F3C6A5B01DD6D2043D4BE27B/",
         "minis": [
           {
             "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541801837/D52F333945BF667A37E06611977C36186CEFC7B6/",
@@ -3133,7 +3133,7 @@
       },
       {
         "name": "Stormtrooper Captain",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145556/326ED56BBF68B291DF37555D6155DD013F1E646A/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097752/7B066902F66EB65B14B17D9170987270B5C9B0BA/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650140913/ADEED3994E6F70777B939A89B18FF520765DCDC4/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
@@ -3148,7 +3148,7 @@
       },
       {
         "name": "Stormtrooper Specialist",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145600/9F5038BBE19D0970091F9C1946001A4E825C22A1/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097824/D6788FE32981247191B9A68F92DA96DAFDC3B47E/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141284/6D59924E68B2B1640C0AC479B8DE95F434056650/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
