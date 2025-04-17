@@ -481,6 +481,10 @@
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457802621/01F605D855048F823A0ECA6C46D2A62B56C04124/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
+        },
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457799750/AE83DC038BA8AAF48678D07E1F9734D4A9944C1D/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
         }
       ]
     },
@@ -537,6 +541,40 @@
         },
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366708043883/1EA1B3C21A50C20D4D168AB91ECFE1C01A4F7DF5/"
+        }
+      ]
+    },
+    {
+      "name": "ARF Troopers",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10803117186606544/094414A06373C4EDD33EB57774F7090EEF175D9E/",
+      "size": "small",
+      "type": "Clone Trooper",
+      "points": 58,
+      "speed": 2,
+      "upgrades": {
+        "Squad Leader": 1,
+        "Heavy Weapon": 1,
+        "Training": 1,
+        "Comms": 1,
+        "Gear": 2,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933614/80D6829DB63FAE3328D00AC36F00E5FD71251E69/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933714/D3FE0C2DEFBE1E78A71A55516DF87199D66DE2AC/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149643329/8D273B40809BF89188238DE6FC5C207756AA22EF/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149643405/9A3D0A513A31513523E59855980DFCE0A8F0F6E0/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932871/EE8DF333D45ED841E9C31625FB4A9385C16B2F49/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933386/736E0CCF2ADE31D6A9F6BE172B20AEB5420B815E/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149649053/B24484CFED06020454EE95B663DB3ECE17871D26/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149646949/50B6AA8C2CC5283537DBA2291F9801E7CD5FE77C/"
         }
       ]
     }
