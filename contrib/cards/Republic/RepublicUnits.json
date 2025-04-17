@@ -486,6 +486,7 @@
     },
     {
       "name": "Wookiee Warriors",
+      "title": "Noble Fighters",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135341447/B0773809842EFD82EFA442C9E918729C2DE3AA1F/",
       "size": "small",
       "type": "Wookiee Trooper",
@@ -703,7 +704,7 @@
   ],
   "Heavy": [
     {
-      "name": "TX-130 Saber-Class Fighter Tank",
+      "name": "Saber-Class Tank",
       "displayName": "Saber Tank",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863579/ABC4E8CCA9A2C837A86FF23215B5AE4885E2A9DF/",
       "size": "epic",
