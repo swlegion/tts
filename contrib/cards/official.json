@@ -498,7 +498,7 @@
       },
       {
         "name": "BARC RPS-6 Gunner",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138675/9DB09C4307B16C289B8E4518D40177CF6122CE20/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140038100/7C11EBB315EC571301B50C93DFD2004930FB5A91/",
         "points": 21,
         "restrictions": {
           "include": {
@@ -508,7 +508,7 @@
       },
       {
         "name": "BARC Twin Laser Gunner",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138722/946FBD11C5776F89102F92D94087A9DA81FABA87/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140038185/13E6A7A923E183A77BFC9704B86D6A36BD5921AD/",
         "points": 18,
         "restrictions": {
           "include": {
@@ -742,16 +742,6 @@
         "name": "Grappling Hooks",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141742/DA7EFC4BC5B4AC25BDB4AE6C3A084A9B10F66A8D/",
         "points": 2
-      },
-      {
-        "name": "JT-12 Jetpacks",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143399/3D728D8253711B25C2DE4E1177D8B08A115A2746/",
-        "points": 10,
-        "restrictions": {
-          "include": {
-            "unit": ["Clone Captain Rex", "ARC Troopers"]
-          }
-        }
       },
       {
         "name": "Personal Combat Shield",
@@ -1110,7 +1100,7 @@
         "points": 15,
         "restrictions": {
           "include": {
-            "unit": ["TX-130 Saber-Class Fighter Tank"]
+            "unit": ["Saber-Class Tank"]
           }
         }
       },
@@ -1120,7 +1110,7 @@
         "points": 14,
         "restrictions": {
           "include": {
-            "unit": ["TX-130 Saber-Class Fighter Tank"]
+            "unit": ["Saber-Class Tank"]
           }
         }
       }
@@ -1556,21 +1546,6 @@
         "restrictions": {
           "include": {
             "unit": ["Imperial Royal Guards"]
-          }
-        }
-      },
-      {
-        "name": "Fives",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384856467/9C8FFFD42DF5BCF0EE31E9CA9DABFE1B68235EE6/",
-        "mini": {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457802221/506D704E232C1BFD85F063A24EBF24C5914C2C40/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
-        },
-        "leader": true,
-        "points": 40,
-        "restrictions": {
-          "include": {
-            "type": ["Clone Trooper"]
           }
         }
       },
@@ -2307,7 +2282,7 @@
         "points": 30,
         "restrictions": {
           "include": {
-            "unit": ["Riot Control Squad"]
+            "unit": ["Stormtrooper Riot Squad"]
           }
         }
       },
@@ -2327,7 +2302,7 @@
         "points": 30,
         "restrictions": {
           "include": {
-            "unit": ["Riot Control Squad"]
+            "unit": ["Stromtrooper Riot Squad"]
           }
         }
       },
@@ -2349,7 +2324,7 @@
     "Squad Leader": [
       {
         "name": "Jedi Guardian",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/59215140638617630/9AB204944DB662D2D15FC2FA5E50F02138AD1FD6/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10803117186606641/15A4615ADD75A243A356670FC9AC6CAF270796F3/",
         "mini": {
           "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16426912929621400/CC4D94EDC24D933D7333F5A35308606846A9B550/",
           "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16426912929621469/4B200440B54994D37A5B3667E04769CD92DE4F32/"
@@ -2375,7 +2350,94 @@
             "faction": ["Republic"]
           }
         }
-      } 
+      },
+      {
+        "name": "Clone Medic",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855671/3D1C3D57159E59D347D6CC09FAC4718A4F1A7225/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809184711/BC2EE95F62E043F83A352F825B6A041AC6D59959/"
+        },
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "type": ["Clone Trooper"]
+          }
+        }
+      },
+      {
+        "name": "Boil",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855244/C0B4D4133262EB7AAA1DD3133545D5D4257ACE29/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446813135454/32F343B3295B563DF3041AF5F433E151F88C66B6/"
+        },
+        "leader": true,
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "type": ["Clone Trooper"],
+            "rank": ["Corps"]
+          }
+        }
+      },
+      {
+        "name": "Clone Captain",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855290/1D4BC397E7FC6FD99DFE4A8B2B3799AB2CDDBC3D/",
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785646423/F890985F1B31042E0BC10996930089A3A22BE5C5/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764785647603/8F9ADBD1429C1AF247858C877548E15E5996F4A9/"
+        },
+        "leader": true,
+        "points": 22,
+        "restrictions": {
+          "include": {
+            "unit": ["Clone Trooper Infantry"]
+          }
+        }
+      },
+      {
+        "name": "Clone Commander",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855406/77E62A8F0A3DA3E38BB66B8DFC270F600086A2BD/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186354/387C36C2BB545E6CC882A05C0D81F5BE164166B7/"
+        },
+        "leader": true,
+        "points": 18,
+        "restrictions": {
+          "include": {
+            "type": ["Clone Trooper"]
+          }
+        }
+      },
+      {
+        "name": "Fives",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384856467/9C8FFFD42DF5BCF0EE31E9CA9DABFE1B68235EE6/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457802221/506D704E232C1BFD85F063A24EBF24C5914C2C40/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
+        },
+        "leader": true,
+        "points": 40,
+        "restrictions": {
+          "include": {
+            "type": ["Clone Trooper"]
+          }
+        }
+      },
+      {
+        "name": "Waxer",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384858645/C13E3786197044E433A4CB9852C603CD7B4FC206/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446813135349/81275DD398B659088A018A09394B7FD6E5C3B279/"
+        },
+        "leader": true,
+        "points": 20,
+        "restrictions": {
+          "include": {
+            "type": ["Clone Trooper"],
+            "rank": ["Corps"]
+          }
+        }
+      }
     ],
     "Ordnance": [
       {
@@ -2554,20 +2616,6 @@
         }
       },
       {
-        "name": "Clone Commander",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855406/77E62A8F0A3DA3E38BB66B8DFC270F600086A2BD/",
-        "mini": {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186354/387C36C2BB545E6CC882A05C0D81F5BE164166B7/"
-        },
-        "leader": true,
-        "points": 18,
-        "restrictions": {
-          "include": {
-            "type": ["Clone Trooper"]
-          }
-        }
-      },
-      {
         "name": "Clone Comms Technician",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855468/B256FB44C0E0DF5D2B60342F59729EA6EEBB6083/",
         "mini": {
@@ -2587,19 +2635,6 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809184624/F2826DD52329584D1C3B3795B0E55948EA96B467/"
         },
         "points": 14,
-        "restrictions": {
-          "include": {
-            "type": ["Clone Trooper"]
-          }
-        }
-      },
-      {
-        "name": "Clone Medic",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855671/3D1C3D57159E59D347D6CC09FAC4718A4F1A7225/",
-        "mini": {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809184711/BC2EE95F62E043F83A352F825B6A041AC6D59959/"
-        },
-        "points": 15,
         "restrictions": {
           "include": {
             "type": ["Clone Trooper"]
@@ -2691,21 +2726,6 @@
           }
         },
         "leader": true
-      },
-      {
-        "name": "Clone Captain",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855290/1D4BC397E7FC6FD99DFE4A8B2B3799AB2CDDBC3D/",
-        "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785646423/F890985F1B31042E0BC10996930089A3A22BE5C5/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764785647603/8F9ADBD1429C1AF247858C877548E15E5996F4A9/"
-        },
-        "leader": true,
-        "points": 22,
-        "restrictions": {
-          "include": {
-            "unit": ["Clone Trooper Infantry"]
-          }
-        }
       },
       {
         "name": "Clone Specialist",
@@ -3224,36 +3244,6 @@
         }
       },
       {
-        "name": "Boil",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855244/C0B4D4133262EB7AAA1DD3133545D5D4257ACE29/",
-        "mini": {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446813135454/32F343B3295B563DF3041AF5F433E151F88C66B6/"
-        },
-        "leader": true,
-        "points": 15,
-        "restrictions": {
-          "include": {
-            "type": ["Clone Trooper"],
-            "rank": ["Corps"]
-          }
-        }
-      },
-      {
-        "name": "Waxer",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384858645/C13E3786197044E433A4CB9852C603CD7B4FC206/",
-        "mini": {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446813135349/81275DD398B659088A018A09394B7FD6E5C3B279/"
-        },
-        "leader": true,
-        "points": 20,
-        "restrictions": {
-          "include": {
-            "type": ["Clone Trooper"],
-            "rank": ["Corps"]
-          }
-        }
-      },
-      {
         "name": "Imperial Dark Trooper",
         "image": "http://cloud-3.steamusercontent.com/ugc/2004698291313161746/1247297ABF21E0A03C9611713FA91D8D0882BF73/",
         "mini": {
@@ -3313,7 +3303,7 @@
         "points": 5,
         "restrictions": {
           "include": {
-            "unit": ["TX-130 Saber-Class Fighter Tank"]
+            "unit": ["Saber-Class Tank"]
           }
         }
       },
@@ -3463,7 +3453,7 @@
         "points": 9,
         "restrictions": {
           "include": {
-            "unit": ["TX-130 Saber-Class Fighter Tank"]
+            "unit": ["Saber-Class Tank"]
           }
         }
       },
@@ -3515,7 +3505,7 @@
         "points": 7,
         "restrictions": {
           "include": {
-            "unit": ["TX-130 Saber-Class Fighter Tank"]
+            "unit": ["Saber-Class Tank"]
           }
         }
       },
