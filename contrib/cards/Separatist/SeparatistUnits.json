@@ -41,6 +41,7 @@
       "name": "Count Dooku",
       "title": "Darth Tyranus",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081131432037/24F46472FEFFC678779BC1CA2FF6B4460E2E039D/",
+      "size": "small",
       "type": "Trooper",
       "points": 165,
       "speed": 2,
@@ -701,7 +702,7 @@
   ],
   "Heavy": [
     {
-      "name": "AAT Battle TanK",
+      "name": "AAT Battle Tank",
       "displayName": "AAT Battle Tank",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081131430642/9FCE0FB0F62A9381DF3CE2F786DBC749CB2A8FFF/",
       "size": "epic",
