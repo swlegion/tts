@@ -1,7 +1,7 @@
 {
   "name": "Din Djarin",
   "title": "The Mandalorian",
-  "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527447/B7A57C2B3327EF48CFB4C9329C7B1042553F03F5/",
+  "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137007934/A7B3E612E6E4A9392C36548BB7B507AFF0D3841D/",
   "size": "small",
   "type": "Trooper",
   "points": 105,
@@ -21,22 +21,22 @@
   "commands": [
     {
       "name": "This is the Way",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906494/CCFF32308246D32A4B0B7DDB6BDD756469FEC5D5/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137015239/C47AEAA769E49330AF8A9A18B9E6FBBBC14D411B/",
       "pip": 1
     },
     {
       "name": "I Like Those Odds",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906446/8277E4B1E2EE9595FC547A69FD12C911152FFD4A/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137015412/584A22A4135D4349D3D2A2D269F97FAC5F14558C/",
       "pip": 2
     },
     {
       "name": "The Hand Thing",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906539/BD2C2A9E435DD031F961B4DB6BFA6C492D84A740/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139777564/741083A5DC7A0B07FE1EFAC37B113604CA918C7F/",
       "pip": 2
     },
     {
       "name": "Whistling Birds",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527503/2DF990D405E73D3E4A0F7A7E7AD1F52C6E71296F/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137015298/D63392C36661D3EB8E0376A51A461AA761D5827F/",
       "pip": 3
     }
   ],
