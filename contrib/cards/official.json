@@ -73,10 +73,10 @@
       },
       {
         "name": "E-11D Focused Fire Config",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140522/E9CFA877ABF3D3AA46EFE9D8D1EB77CF50DCA211/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140103278/AC9A32D518E9E70AF6ABBA41F7E10DF58DADFF20/",
         "flip": {
           "name": "E-11D Grenade Launcher Config",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140554/DA69AFF0F6A0845BC7F7908386CB946A8D7DD65A/"
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140103366/FB39C5636706702276566978A5EDD34907C1D8DB/"
         },
         "points": 0,
         "restrictions": {
@@ -1360,7 +1360,7 @@
       },
       {
         "name": "DLT-19D Trooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140076/8927F1FC730F5790C314E6E3B25BF903587BC4E3/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140102975/2A200DF9EF1BF00105CC7BA834090DB6E0C4EA12/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/770610077943650040/CDB9EFD9CB36DE0EB5AB78B22F2B334BDB1E6DFE/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/770610077942938053/6187B2D6848EC35010DE6C3EEBB5DF6125D02D45/"
@@ -1374,7 +1374,7 @@
       },
       {
         "name": "DLT-19X Sniper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140107/A9D503B1ABC7EF7286FBFAA193EE3351651AE68D/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140103101/607C9BEDEB2C3780F1AE58D72DEE649F941A7CAD/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/770610077943667377/92306C3BFB675310563691C3C582BF5B9FC9ACD4/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/770610077943667167/66F3188269E49FE5DAD649E771D799F2593263FF/"
@@ -1416,7 +1416,7 @@
       },
       {
         "name": "DT-F16",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140318/4B2F2E13CF6E386B13FA96D61FAFBC6058D92599/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140103189/0A3AA902AA4ADB644B1D83840A96AB041EDE5849/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/993513208355174615/DD0DA9DFDBCA621CF297C9A9EB2356279A733158/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/951848302305474695/F076E77D0278B10EAE330BC9073B05BC9A3BCD57/"
@@ -1431,7 +1431,7 @@
       },
       {
         "name": "Del Meeko",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139874/02F137C9987C446562434B6D358B1711E416A002/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140102888/C41E1C0AEAE95F66AE9D450E0EA233B169E5C9EC/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1618437692581074585/1C74BEB92DC42D3585BFC1185A77DE14EC3249CA/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1618438238123043414/B7E9660E470DC070545782406C29F1E1356A5685/"
@@ -1565,7 +1565,7 @@
       },
       {
         "name": "Gideon Hask",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141632/01D01A2179E9AC81ED7BDF348D67E98A015EE52C/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140103438/D7D66F0CFEFC2658BF2FDB33899D5888448353F0/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1618437692581075349/6265F81E1BAA090FFA813270A8E3126CF8AD6CC5/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1618438238123043414/B7E9660E470DC070545782406C29F1E1356A5685/"
@@ -1798,7 +1798,7 @@
       },
       {
         "name": "Sonic Charge Saboteur",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384858296/236C14968CC9DE8888C449541E373A447992E159/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140103507/922568C5FAACC25FCE80574BE5459CB511022824/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/950714557093539716/6A0D63306F505A074395AFA61EB990280DB8995D/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/950714557093539899/FF7A535E91BF79D4C3E0D55E874C1ACEB6FBF434/"
@@ -1827,7 +1827,7 @@
       },
       {
         "name": "T-21 Special Forces Trooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145856/2210B593FFE9EA0A6E9B31FF4861C890DE3CD7CF/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140103559/F3FC1C02320B5F60D4A041140E0637BD0C0EE86A/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1618438238123000906/C64EAD02CA22F8BFB59320925DAD7D89BA1E7AD6/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1618438238123043414/B7E9660E470DC070545782406C29F1E1356A5685/"
