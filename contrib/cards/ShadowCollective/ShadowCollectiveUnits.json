@@ -3,7 +3,7 @@
     {
       "name": "Gar Saxon",
       "title": "Militant Commando",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868157/2B2B2A00440F285FF504B91185998FC1F9A842F5/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139719525/A5642D0B10D7426AD751D9428A0C249D5F4BAF2F/",
       "size": "small",
       "type": "Trooper",
       "points": 100,
@@ -22,17 +22,17 @@
       "commands": [
         {
           "name": "Marked for Elimination",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876685/D3ED3CC8A88D1F2A95E509F2D8D8E0B9B1E324A4/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139734189/BFD230D0FDCC337658C60B4254D6718684F4EF21/",
           "pip": 1
         },
         {
           "name": "Fight Another Day",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876554/70144F2711BF5050032AF53983EFD7097A815AB7/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139727495/1DCDC03996549F05C8D84E79CCAAC22F9F22CA17/",
           "pip": 2
         },
         {
           "name": "Victory or Death!",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876867/B888FA6460B95A5FD755E599833A3DC2D441B5F5/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139734267/BE465B62B232B7E2F2992497221C565D00B19CCF/",
           "pip": 3
         }
       ]
@@ -48,7 +48,7 @@
     {
       "name": "Maul",
       "title": "A Rival",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868421/49BFF5E95CB42CD632E5CB9FA0C887BC50314CD6/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139718510/46475D968DFF923C51695A46BB5A652D2194E600/",
       "size": "small",
       "type": "Trooper",
       "points": 170,
@@ -67,32 +67,32 @@
       "commands": [
         {
           "name": "Witch Magick",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876925/36A3A5FD30C472A823A487D84B7C358AF99EC1C2/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139732571/7409767511212BC5F60C749EED79FBE45BED8DF2/",
           "pip": 1
         },
         {
           "name": "His Eminence",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876608/513C47E38F9513066C97A2CA4449351DD9DFF20D/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139727459/C8F9934D8CB1396F2F88743AE2F39A8EFADA20F8/",
           "pip": 2
         },
         {
           "name": "Seize What Power We Can",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418876813/C547DF964CE720D134D78C469FB73D47DDE9A7B0/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139729567/6F123B5506E6F0DC1F04907A2C5285AF180DFD97/",
           "pip": 3
         },
         {
           "name": "Duel of the Fates",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036827/1967B20CCD59FE2EAECDC15FA5750928F75963E0/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139727558/BA0C0A83F63DD13EC3A4CC073071CA2DB1BEA27E/",
           "pip": 1
         },
         {
           "name": "The Phantom Menace",
-          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384887593/7CF6854E9CAF545BD9AA314581960571E853CA16/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139729626/683EBFF15A3FBAC43A1DE8EF508DE05ACFEBE1D1/",
           "pip": 2
         },
         {
           "name": "At Last",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034186/C08B05E1C969B6ADBB158DE85C499CD938FBC8B5/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139727404/5C2C80FCCF13A12AB56614E633960DAC3648BCC3/",
           "pip": 3
         }
       ]
@@ -115,7 +115,7 @@
   "Special Forces": [
     {
       "name": "Mandalorian Super Commandos",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868324/181FD051CF589A96ADCC0FCB37B41A401BA8D6A8/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139720568/C0F87A2E12C8AE493654F7F4E9F71E16D3FA8BEB/",
       "size": "small",
       "type": "Trooper",
       "points": 70,
@@ -152,7 +152,7 @@
   "Heavy": [
     {
       "name": "A-A5 Speeder Truck",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384860930/7D4FE55FB3521A15089DD0E8826906D9ED7DA671/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139723206/223C60DDB2052576AE1CF777BE23675AA0FF8F2E/",
       "size": "long",
       "type": "Repulsor Vehicle",
       "points": 65,
