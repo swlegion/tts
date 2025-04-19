@@ -3,7 +3,7 @@
     {
       "name": "Luke Skywalker",
       "title": "Hero Of The Rebellion",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862838/DB9F4B7D404060C77F61A5317A71E7203AB1CC02/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133196942/E1A8548A9C0688D979CAD83F32F130B0115D9C50/",
       "size": "small",
       "type": "Trooper",
       "points": 120,
@@ -23,32 +23,32 @@
       "commands": [
         {
           "name": "Son Of Skywalker",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036127/CF8D8E07205CB523EA3D2EE71AD61D9FB96B17BB/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133712958/CF63D0FDA40318CE886E6DA309CEB291857776E4/",
           "pip": 1
         },
         {
           "name": "You Serve Your Master Well",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035766/83D508C088FC9B893BDA1C497410726302D84452/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133714680/FD14E558D7D2B7EF32BD992FFC1C89141CD1F192/",
           "pip": 1
         },
         {
           "name": "My Ally Is The Force",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035023/A55A52AA8780EEFEB9B8DB24FE4294A844B3678E/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711308/CECAE0B5B62858582522F7FBED6463FE5834A64E/",
           "pip": 2
         },
         {
           "name": "Full Of Surprises",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035386/B9B2E0999D5AA4C072B3C45FBD2185A0D7F6A9F5/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133709999/FA890B2A2EA1528C8BCF2A80AEB3B97A97BB9E15/",
           "pip": 2
         },
         {
           "name": "Return Of The Jedi",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033269/7606E86C0B998BBB4DAADE6F01B300A7931B697C/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711996/90C4CB28C0554DEC3797882252E6C5D3CCAC65A1/",
           "pip": 3
         },
         {
           "name": "I Am A Jedi",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033560/7EFDE383C076E6F171E6B868D1F5C7EE66A466CE/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133710140/F162DE57287EB8C43F845BF34550B6666929E36A/",
           "pip": 3
         }
       ]
@@ -56,7 +56,7 @@
     {
       "name": "Leia Organa",
       "title": "Fearless And Inventive",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862782/FAC47493209B1AACD84C4615FD772419D0084A92/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133196907/3603F95E0847EC7E202162FF2BA8E587A3B8E8D8/",
       "size": "small",
       "type": "Trooper",
       "points": 75,
@@ -75,22 +75,22 @@
       "commands": [
         {
           "name": "Coordinated Bombardment",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036952/79DBBA37340FFEA238E71B07D6969F19AD1B8BD1/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133709038/5F4C655FAD4092BA114E76531B141C09D17A413C/",
           "pip": 1
         },
         {
           "name": "No Time For Sorrows",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034953/BDC08D664C3DC9DFE785E312F2F0517921B3C799/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711809/CE6019479334BF3204C4BD05DF6615B7ABA02B44/",
           "pip": 2
         },
         {
           "name": "A Beautiful Friendship",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2023850162090082691/D81307AA7C4530A264B8CBAA2012FCA9134EA9B4/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133708647/EA50E83AC0C23B932428034601250A9C698E8F87/",
           "pip": 2
         },
         {
           "name": "Somebody Has To Save Our Skins",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032996/852C2F232B15634E443A2317ED2D2316BA7496C4/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133712915/7EFEAD84C8B64A86D130C765225552D91AEAF814/",
           "pip": 3
         }
       ]
@@ -98,7 +98,7 @@
     {
       "name": "Han Solo",
       "title": "Unorthodox General",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028299008/F99C465CC6C73855A993B00184FD601B4E810F59/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133196276/8433A2CEDE2DA7DE9EFEE663DCD27875BA7CA3F6/",
       "size": "small",
       "type": "Trooper",
       "points": 100,
@@ -117,17 +117,17 @@
       "commands": [
         {
           "name": "Sorry About The Mess",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036094/C7F82426F9CDB6835C1DC91F0584AADE44F207EE/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133713891/5010BC7FF52D6539147756EF04579FD860630D4E/",
           "pip": 1
         },
         {
           "name": "Reckless Diversion",
-          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384887081/AC30D2023D9B849EF6E6EFF834271F5862F5189F/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711955/8E5E53B03E9248B3BB6CCBC1942C831C02ACFF67/",
           "pip": 2
         },
         {
           "name": "Change Of Plans",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034095/F1EFCCA49BBF25049B679261404156EE2B259936/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133708965/8DA6716707434EDAF86655364C9557E3408B9B5E/",
           "pip": 3
         }
       ]
@@ -151,19 +151,128 @@
         }
       ]
     },
+
     {
-      "name": "Jyn Erso",
-      "title": "Stardust",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603895/5D4275A9C4F93D4170453A9375C308ABCFE318A1/",
+      "name": "Lando Calrissian",
+      "title": "Canny General",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133196874/E2254E94528D352BF5AEE9E92D4532EE44E46C7F/",
       "size": "small",
       "type": "Trooper",
-      "points": 90,
+      "points": 105,
       "speed": 2,
       "upgrades": {
         "Command": 1,
         "Training": 1,
-        "Gear": 1,
-        "Armament": 1
+        "Gear": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186518/DCA8031C62A867134FAA814D4976978058C01369/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Corellian Spike",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133709076/0B6C95F039C36F8709EAA7D83441D537E9F10FA9/",
+          "pip": 1
+        },
+        {
+          "name": "Ace Up His Sleeve",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133708717/1DF313D87604E77DA0B404B8C8388364671B5070/",
+          "pip": 2
+        },
+        {
+          "name": "Idiot's Array",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711194/7A82389E04650FF63B89965A425182594B7A7463/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/PykeSyndicateCapoUnit.json"
+    },
+    {
+      "name": "Wicket",
+      "title": "Hero of Bright Tree",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133208061/787C79B49789528F2EF54F1668B0BF28EBD6635C/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 70,
+      "speed": 2,
+      "upgrades": {
+        "Training": 3
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2023850162090106066/B6E661CAB8049A1B1CE975B53BB57B337E2C5DEE/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Close Call",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133753263/3C95DC036CEC1999E18A0AB104AEC6EB7FCE3CA6/",
+          "pip": 1
+        },
+        {
+          "name": "Sneaky Scouting",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133752539/377B718FE350EAE5B002F2AC0B72DCB94A98CF08/",
+          "pip": 2
+        },
+        {
+          "name": "Courageous Counterattack",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133755677/82DB9DB79E1CB8732C43EDD3B117B69EE6DCA6B8/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "Logray",
+      "title": "Superstitious Shaman",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133207972/4E2F553BC1FBA06D841591067D3D5E2AED2BF4E5/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 45,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Training": 3
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129309/3D6C219F243BDE984C42BB3444B01DB09B522CBB/"
+        }
+      ]
+    },
+    {
+      "name": "C-3P0",
+      "title": "Golden God",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133206077/3E485B54786039A916672ED9387F5C2AC4415B97/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 40,
+      "speed": 2,
+      "upgrades": {},
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456807069/DE7E32B39455DB5111769436FD0C5BFDA3841268/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/777357228032306506/D60CB8A1159723917EF1831D4042318A67458A7A/"
+        }
+      ]
+    }
+  ],
+  "Operative": [
+    {
+      "name": "Jyn Erso",
+      "title": "Stardust",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133196300/612F0E84DA6E44E3F325FA031FC6537A314B769F/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 75,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Training": 1,
+        "Gear": 1
       },
       "minis": [
         {
@@ -173,18 +282,18 @@
       ],
       "commands": [
         {
-          "name": "Rebellious",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036244/9C57ADB262F7193BE9B7C07B645915C58498EEDA/",
+          "name": "I Rebel",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133710266/ABE39C99F45579E1052C8F63229350F85EBE02D4/",
           "pip": 1
         },
         {
           "name": "Trust Goes Both Ways",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034481/2822AD43412B26BC38EF8F091201BA501D4FDBD0/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133714087/00E3558ED7687A4BA73636EA8290E647CE946A5B/",
           "pip": 2
         },
         {
-          "name": "Complete The Mission",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034061/6FF1A4A6372B891E6F06022118ECF635BC40C2F2/",
+          "name": "Rebellions Are Built on Hope",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711911/08855BFCF5653BBBEC5E09846AA302C7665BAD94/",
           "pip": 3
         }
       ]
@@ -192,7 +301,7 @@
     {
       "name": "Cassian Andor",
       "title": "Capable Intelligence Agent",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603937/418000BFD236B11C08F5EA8AF670673AC63199D2/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133196164/8178848A6C088BDD3F7D1C3B2A2C52CD55A8ED64/",
       "size": "small",
       "type": "Trooper",
       "points": 90,
@@ -211,132 +320,21 @@
       "commands": [
         {
           "name": "Crack Shot",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036864/47CCB05A1DB54F77FADE1652F981DAB2BD39FEE1/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133709477/9F40BE3B7E4964FC3D3A6FE5D617D08E584F391B/",
           "pip": 1
         },
         {
           "name": "Last Stand",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035098/CD888287DB06A86CEF0E5CA443F2E227C8A0D3E9/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711249/CCC78CABDD6AA13C1CE1421B63F76E18225B8359/",
           "pip": 2
         },
         {
           "name": "Volunteer Mission",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032942/4047B661BAEEEFC2CA4DD45010D3029D9FB74C63/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133714589/039C85DD6F50BC392B1F1D3D542770E877B25A3C/",
           "pip": 3
         }
       ]
     },
-    {
-      "name": "Lando Calrissian",
-      "title": "Smooth Operator",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788603976/14129DC0580196A6C188A7D5B037937BE3906C83/",
-      "size": "small",
-      "type": "Trooper",
-      "points": 95,
-      "speed": 2,
-      "upgrades": {
-        "Command": 1,
-        "Training": 1,
-        "Gear": 1,
-        "Flaw": 1
-      },
-      "minis": [
-        {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186518/DCA8031C62A867134FAA814D4976978058C01369/"
-        }
-      ],
-      "commands": [
-        {
-          "name": "Idiot's Array",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036507/059AB65ED149A6399024F171211A0D3ECD21F083/",
-          "pip": 1
-        },
-        {
-          "name": "Ace Up His Sleeve",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035738/83A01C2C466036B1BF2EF3A47F21CB11017522BD/",
-          "pip": 2
-        },
-        {
-          "name": "All In",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034326/44C2D4E2EE50B69C41DDDEA5963FC50152F9AE57/",
-          "pip": 3
-        }
-      ],
-      "required": ["I've Altered The Deal"]
-    },
-    {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateCapoUnit.json"
-    },
-    {
-      "name": "Wicket",
-      "title": "Hero of Bright Tree",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2023850162090072588/124E43DA7CDDA8C6B71D1B21264234AE348E6322/",
-      "size": "small",
-      "type": "Trooper",
-      "points": 70,
-      "speed": 2,
-      "upgrades": {
-        "Training": 3
-      },
-      "minis": [
-        {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2023850162090106066/B6E661CAB8049A1B1CE975B53BB57B337E2C5DEE/"
-        }
-      ],
-      "commands": [
-        {
-          "name": "Close Call",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2023850162090072698/DB62A74D030AF926BE96A38707D5976A0E5451FD/",
-          "pip": 1
-        },
-        {
-          "name": "Sneaky Scouting",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2023850162090072649/9C830E648CE79DBDE57C0292868EDAC9960B06EF/",
-          "pip": 2
-        },
-        {
-          "name": "Courageous Counterattack",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2023850162090072748/58E123D32E79B1BD0D04F45AB81B7CAF2EC39E92/",
-          "pip": 3
-        }
-      ]
-    },
-    {
-      "name": "Logray",
-      "title": "Superstitious Shaman",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562278/020C6D8AA24648A687F71982FF2BDA10563C7E2D/",
-      "size": "small",
-      "type": "Trooper",
-      "points": 45,
-      "speed": 2,
-      "upgrades": {
-        "Command": 1,
-        "Training": 3
-      },
-      "minis": [
-        {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129309/3D6C219F243BDE984C42BB3444B01DB09B522CBB/"
-        }
-      ]
-    },
-    {
-      "name": "C-3P0",
-      "title": "Golden God",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2008089545866562667/81CD336814DCD74397F529EA03A934DE9C9C01A0/",
-      "size": "small",
-      "type": "Trooper",
-      "points": 40,
-      "speed": 2,
-      "upgrades": {},
-      "minis": [
-        {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456807069/DE7E32B39455DB5111769436FD0C5BFDA3841268/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/777357228032306506/D60CB8A1159723917EF1831D4042318A67458A7A/"
-        }
-      ]
-    }
-  ],
-  "Operative": [
     {
       "name": "Chewbacca",
       "title": "Walking Carpet",
@@ -358,17 +356,17 @@
       "commands": [
         {
           "name": "Common Cause",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036994/19D8F067B325C88C9A9A3DE2D4CCAD9A7BAB5957/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133708994/B3C343B1AB15D93C121AFBA7DBA5AF00A30519E5/",
           "pip": 1
         },
         {
           "name": "Brains And Brawn",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035622/3BC5E96C0730225BC27EB0CE2BDB471E5CE66F4A/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133708752/39258ED34508F7BBCDB7FB38DC6E533D0F76A2AE/",
           "pip": 2
         },
         {
           "name": "Notorious Scoundrels",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033300/4FA05D084E4DECE8DD8EED42E141C413F57201F2/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711853/8E3AAF9ACF4DB73F5DA153B39F022E00F50CE865/",
           "pip": 3
         }
       ]
@@ -394,17 +392,17 @@
       "commands": [
         {
           "name": "Explosions!",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036773/60EF5E470AE0865CA28E50C31CDEDCD9266E0562/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133709550/FD7BD543D5672320D01B8CB84960B07D13BFF009/",
           "pip": 1
         },
         {
           "name": "Symbol Of Rebellion",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034630/5AD8C9A6E0D6ADC0C1BA7E53AE4BDB9653DADA60/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133714045/1B46D54400840D3F7B1C5DC9E65757945FD482C9/",
           "pip": 2
         },
         {
           "name": "Legacy Of Mandalore",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033440/0011AF8A615526AED73E7A61D4E6C78B209F75E9/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711283/D9F6D219F5B6DA873D7D366B31BC6EC667478368/",
           "pip": 3
         }
       ],
@@ -435,32 +433,32 @@
       "commands": [
         {
           "name": "Son Of Skywalker",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036127/CF8D8E07205CB523EA3D2EE71AD61D9FB96B17BB/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133712958/CF63D0FDA40318CE886E6DA309CEB291857776E4/",
           "pip": 1
         },
         {
           "name": "You Serve Your Master Well",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035766/83D508C088FC9B893BDA1C497410726302D84452/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133714680/FD14E558D7D2B7EF32BD992FFC1C89141CD1F192/",
           "pip": 1
         },
         {
           "name": "My Ally Is The Force",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035023/A55A52AA8780EEFEB9B8DB24FE4294A844B3678E/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711308/CECAE0B5B62858582522F7FBED6463FE5834A64E/",
           "pip": 2
         },
         {
           "name": "Full Of Surprises",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035386/B9B2E0999D5AA4C072B3C45FBD2185A0D7F6A9F5/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133709999/FA890B2A2EA1528C8BCF2A80AEB3B97A97BB9E15/",
           "pip": 2
         },
         {
           "name": "Return Of The Jedi",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033269/7606E86C0B998BBB4DAADE6F01B300A7931B697C/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711996/90C4CB28C0554DEC3797882252E6C5D3CCAC65A1/",
           "pip": 3
         },
         {
           "name": "I Am A Jedi",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033560/7EFDE383C076E6F171E6B868D1F5C7EE66A466CE/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133710140/F162DE57287EB8C43F845BF34550B6666929E36A/",
           "pip": 3
         }
       ]
@@ -486,17 +484,17 @@
       "commands": [
         {
           "name": "Blast Off!",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037063/A7AE3401CB3A51A58A8682BBCD8D6F6C104804AF/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133708728/EE34AF6EF6C63A6BC2C2E8985D9BCBA9809CACA6/",
           "pip": 1
         },
         {
           "name": "Impromptu Immolation",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035209/4C4829AE9D1B01B14F2D4FDE2C6D3935D8055954/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711126/58749B0F102DF1389C70E66298838B28B9B6795E/",
           "pip": 2
         },
         {
           "name": "Smoke Screen",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033033/7FC32081CE8646476E7B0C475F452AA629BA7713/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133712867/BD1886FA3B75683BB1B3D6C95971DFE1BBB5DD30/",
           "pip": 3
         }
       ]
@@ -522,7 +520,7 @@
       "commands": [
         {
           "name": "Sacrifice",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033075/A24FA101CA9A3071E18DB79779F8285B8F87B906/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133712817/9454157523A2CCA90773E8795DC9FBD317AB3059/",
           "pip": 3
         }
       ]
@@ -547,17 +545,17 @@
       "commands": [
         {
           "name": "A Simple Man",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527247/05CDA2737D98FB18CACE99E65CE51E5AB24ABA0B/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133796666/FF13777E67A0A5315AB1DFE941DE403FEC542DA3/",
           "pip": 1
         },
         {
           "name": "Whipcord Launcher",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035802/A1AA027AE84C3CF96C2E671C6BFA78E2C94E2741/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133795508/C3589C8AFAB04E0FD8A92A983532CFCDF6FA1B89/",
           "pip": 1
         },
         {
           "name": "Making His Way in the Galaxy",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527294/F0CD781F4680C3BBBDA58B1CECE1A3FF3B6821FE/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133800518/86AF77B41A2B4EE0C0ED5C2100EEA0E97FAE08A8/",
           "pip": 2
         },
         {
@@ -567,12 +565,12 @@
         },
         {
           "name": "Rule with Respect",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527380/9CF23D52011D3B943E8DE565D19E91EC579F5784/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133795310/09B0E60A61663E865F43404BD844454C358D8B41/",
           "pip": 3
         },
         {
           "name": "Z-6 Jetpack Rocket",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032805/D4AEE724FC17B87F391BB7B24A3C8D44B40B704B/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133796142/01926BBF8B27E512F920012E557A61E05267633A/",
           "pip": 3
         }
       ]
@@ -603,22 +601,22 @@
       "commands": [
         {
           "name": "I am no Jedi",
-          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384886277/49B86A9831C48A7BCFB81406E930810046A4DFA0/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133710197/7F9F965E20829475FF9BA4912847B9C623A46ACF/",
           "pip": 1
         },
         {
           "name": "Swift Protector",
-          "image": "https://steamusercontent-a.akamaihd.net/ugc/2022720184107019696/F82E451FABCD16AB411E88409AFC81201DB9D43A/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133713979/17BE69E23BB277BB589B016EAF7779DE55999582/",
           "pip": 2
         },
         {
           "name": "Family Reunion",
-          "image": "https://steamusercontent-a.akamaihd.net/ugc/2022720184107019640/F5F69B23E0B7E1734BE3B7AE3A8DE6738680EA87/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133709585/EB651566F03586E293E563D69EFA56BF515E5251/",
           "pip": 2
         },
         {
           "name": "A New Beginning",
-          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384868187/6AF87B3E28E3057B3096E369E644F62A529B8D7B/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133708687/2329C2477E6CB92E3434AC63CC2857D15ED189D0/",
           "pip": 3
         }
       ]
@@ -642,7 +640,7 @@
       "commands": [
         {
           "name": "We Do What We Do",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005491/7273C60F103AD3520287BCD56D2DC53B26498A35/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133795415/0235923ED3C127B003714A0C009AE79215524F73/",
           "pip": 3
         }
       ]
@@ -651,7 +649,7 @@
   "Corps": [
     {
       "name": "Rebel Troopers",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863457/C2BAB28D85FAABCF7DE0E4A861D955D0FDACDC44/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133198369/1E028B2F335F3E9FC0AABE4C0362F03AFB144C4E/",
       "size": "small",
       "type": "Trooper",
       "points": 40,
@@ -683,7 +681,7 @@
     },
     {
       "name": "Fleet Troopers",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862248/8783D7378FCC5551DE3C0591BF1AF701A4AE6DA2/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133196242/48ACAF50F0BCD3D831101C13ECAF0BF0FBA9DC03/",
       "size": "small",
       "type": "Trooper",
       "points": 40,
@@ -715,7 +713,7 @@
     },
     {
       "name": "Rebel Veterans",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863497/768F4478CF6CA7A20ADCB509EF72E32F979AAD1E/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133198409/983DC405DCEE4973DB7FA2C3906BCF678F2B011D/",
       "size": "small",
       "type": "Trooper",
       "points": 48,
@@ -748,7 +746,7 @@
     },
     {
       "name": "Mark II Medium Blaster Trooper",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789216718/13B8F9971804EE108E554C9B348A29611CFE2495/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133197490/1B64AC039E75E3028CFF048F4DCAD95975C34A5D/",
       "size": "medium",
       "type": "Emplacement Trooper",
       "points": 38,
@@ -768,7 +766,7 @@
     },
     {
       "name": "Ewok Skirmishers",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862086/27B800F6CAF027A08E432141CFD58BA7125AB70D/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133206135/9932914CEED1068F058672A166F0F7A67E5C68D5/",
       "size": "small",
       "type": "Trooper",
       "points": 40,
@@ -809,7 +807,7 @@
   "Special Forces": [
     {
       "name": "Rebel Commandos",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863292/FBBD466660EE478A3378933C25C312B0C83A29A8/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133198280/BA9DB93D2D168B835C95075E8B1C52C79E044286/",
       "size": "small",
       "type": "Trooper",
       "points": 48,
@@ -845,7 +843,7 @@
       "displayName": "Rebel Commandos (Strike Team)",
       "title": "Strike Team",
       "heavyWeaponTeam": true,
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863292/FBBD466660EE478A3378933C25C312B0C83A29A8/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133197589/A51BFFE52ED2FAE9DACE45BF774C7F5FE12CBC07/",
       "size": "small",
       "type": "Trooper",
       "points": 20,
@@ -866,7 +864,8 @@
     },
     {
       "name": "Wookiee Warriors",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1619598366708170837/8CD09FD64849E8D2607D2C03FABD5B2DA092EE4E/",
+      "title": "Freedom Fighters",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133195004/B68B0EBD3193888339421B0AFE8A9F9803EFC027/",
       "size": "small",
       "type": "Wookiee Trooper",
       "points": 69,
@@ -928,7 +927,7 @@
     },
     {
       "name": "Mandalorian Resistance",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604461/D49CF324CDE3C648E683FCCD762B76F94E843065/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133197470/8F69CF0D59AA51A8D0EFB406C7B3594937BB8D3D/",
       "size": "small",
       "type": "Trooper",
       "points": 68,
@@ -957,7 +956,7 @@
       "name": "Mandalorian Resistance",
       "title": "Clan Wren",
       "displayName": "Clan Wren",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604497/C4CEBD761320F416E03203426388067B95104C90/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133197439/A9AEEBFD286112DACCAB9944794C5521EE60BB8E/",
       "size": "small",
       "type": "Trooper",
       "points": 30,
@@ -981,7 +980,7 @@
       "name": "Wookiee Warriors",
       "title": "Kashyyyk Resistance",
       "displayName": "Wookiee Warriors (Resistance)",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604546/F387DBCD02315CB56A87FF52D99CE3C1E6E548F2/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133195051/93FB6360319FCFB5CABA147A27FB34D2A843FAC2/",
       "size": "small",
       "type": "Wookiee Trooper",
       "points": 72,
@@ -1006,7 +1005,7 @@
     },
     {
       "name": "Ewok Slingers",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862175/FF930EBF1633866A1A1C678E3BC80ECFF4862585/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133206165/0E347DAEAF6A94808CAAC5869754E639B33F669F/",
       "size": "small",
       "type": "Trooper",
       "points": 35,
@@ -1046,7 +1045,7 @@
     {
       "name": "Rebel Sleeper Cell",
       "title": "Ready to Strike",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863407/9D7544B1F6C17EA85AB6CD788F3AC4EA0D7666A6/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133198319/3751EC4355C0216944AC0333339EEBB78ADD38D1/",
       "size": "small",
       "type": "Trooper",
       "points": 70,
@@ -1089,7 +1088,7 @@
   "Support": [
     {
       "name": "AT-RT",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384861274/DAADEA991C8E593DBD605DCEC47239E77B7EDA03/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133195638/6804A989329D472D728452290CD8EFE41A02F9A2/",
       "size": "large",
       "type": "Ground Vehicle",
       "points": 50,
@@ -1111,7 +1110,7 @@
     },
     {
       "name": "1.4 FD Laser Cannon Team",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384860760/0CD3995BF13C110BDD23F7AFEC3DEDAB82B9DFE2/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133195524/B46674A1014A295A986942391D7C9DB1B92D8629/",
       "size": "huge",
       "type": "Emplacement Trooper",
       "points": 65,
@@ -1129,10 +1128,10 @@
     },
     {
       "name": "Tauntaun Riders",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604655/CC7501F41054D1F68139C8ABCFAEE0CAA855475C/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133194939/65297606E28367C04BF4BB4DE3474EAB723F4416/",
       "size": "medium",
       "type": "Creature Trooper",
-      "points": 90,
+      "points": 95,
       "speed": 3,
       "upgrades": {
         "Training": 1,
@@ -1156,10 +1155,10 @@
   "Heavy": [
     {
       "name": "T-47 Airspeeder",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384864184/ABA3C210ACE5381401ED17E7CF0A7A4BBD2469E8/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133194839/3B6BF81A2960A253A671CEDBF09F3C22AD52277C/",
       "size": "huge",
       "type": "Repulsor Vehicle",
-      "points": 130,
+      "points": 125,
       "speed": 3,
       "upgrades": {
         "Pilot": 1,
@@ -1167,8 +1166,8 @@
         "Comms": 1
       },
       "silhouette": {
-        "height": 1.139,
-        "offset": 3.494
+        "height": 4.633,
+        "offset": 0
       },
       "minis": [
         {
@@ -1178,10 +1177,10 @@
     },
     {
       "name": "X-34 Landspeeder",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384864334/A77701CB2D8E525FA48D2B35D06B79F996170BEA/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133195095/8AA9C62E3102445090A15FD71C48234EA2F1D03F/",
       "size": "huge",
       "type": "Repulsor Vehicle",
-      "points": 60,
+      "points": 55,
       "speed": 2,
       "upgrades": {
         "Pilot": 1,
@@ -1190,8 +1189,8 @@
         "Comms": 1
       },
       "silhouette": {
-        "height": 1.174,
-        "offset": 0.726
+        "height": 1.900,
+        "offset": 0
       },
       "minis": [
         {
@@ -1202,7 +1201,7 @@
     },
     {
       "name": "A-A5 Speeder Truck",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384860853/CB2AE07AEBA91192C8D8F029211F7216F122F4B6/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133195560/90F1524F640B97B178EE17A8D5C3D73EDA51E80F/",
       "size": "long",
       "type": "Repulsor Vehicle",
       "points": 65,
@@ -1227,7 +1226,7 @@
     {
       "name": "Chewbacca",
       "title": "Let the Wookiee Win",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384861745/F4DF33E03B759FEDC7E169026FDC282A93A01880/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133206109/0DCD00886E51BDA8114E68212DAB8591AFF28DE6/",
       "size": "huge",
       "type": "Ground Vehicle",
       "points": 180,
@@ -1246,17 +1245,17 @@
       "commands": [
         {
           "name": "Common Cause",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036994/19D8F067B325C88C9A9A3DE2D4CCAD9A7BAB5957/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133708994/B3C343B1AB15D93C121AFBA7DBA5AF00A30519E5/",
           "pip": 1
         },
         {
           "name": "Brains And Brawn",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035622/3BC5E96C0730225BC27EB0CE2BDB471E5CE66F4A/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133708752/39258ED34508F7BBCDB7FB38DC6E533D0F76A2AE/",
           "pip": 2
         },
         {
           "name": "Notorious Scoundrels",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033300/4FA05D084E4DECE8DD8EED42E141C413F57201F2/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711853/8E3AAF9ACF4DB73F5DA153B39F022E00F50CE865/",
           "pip": 3
         }
       ]

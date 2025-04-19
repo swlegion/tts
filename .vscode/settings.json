@@ -11,10 +11,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.fixAll.eslint": true,
-    "source.fixAll.tslint": true,
-    "source.organizeImports": true
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.tslint": "explicit",
+    "source.organizeImports": "explicit"
   },
   "editor.formatOnSave": true,
   "prettier.ignorePath": ".gitignore",
