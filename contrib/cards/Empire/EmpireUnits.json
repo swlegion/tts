@@ -372,7 +372,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770174720883/27A48880934C3B35AE42D5E62C73EA3A0ECA240B/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2456221571853672166/B86F663B609267644D837B4F18C59614C6785229/"
         }
       ],
       "commands": [
@@ -402,7 +402,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770174720951/C4FC16B1ACE927ECF9F59C726DC59B8C6561FED8/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2446090001278329724/E8E229E0E3FB6230D9F5A1823C71032A0FC9F2D0/"
         }
       ],
       "commands": [
@@ -479,8 +479,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141156/BF26D516EA8F33C72822FF9AB369FF7CA444C403/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2478747809413608082/BD8A164AAD4C70AE2F8CB8165F3D2DC9FD94C778/"
         },
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141545/30BEFE4E87E379AA361AFF5FD24A8F5D3F0BA4C0/",
