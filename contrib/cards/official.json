@@ -38,11 +38,11 @@
         }
       },
       {
-        "name": "A280-CFE Sniper Config",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137831/63A163395CE6017A0EB530C2B68DA6539467AFA9/",
+        "name": "A280, Rifle Config",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140081159/19C93D73F4F86E9D7531E2CD784F5492772ED28F/",
         "flip": {
-          "name": "A280-CFE Pistol Config",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137975/9505EB828E9F8B8F746E484527E05FC515D34891/"
+          "name": "A280, Pistol Config",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140081077/A5B040BCD34352C6E5375640DE539E526067DBFE/"
         },
         "points": 0,
         "restrictions": {
@@ -131,7 +131,7 @@
       },
       {
         "name": "Jyn's SE-14 Blaster",
-        "image": "http://cloud-3.steamusercontent.com/ugc/4112341331066557077/E3E2DE71CD4C1BEB7C071189AEFEFC5EEC75A6F3/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140086376/D2D709BDACCC6415CBC5786450D1BFDFBDF34ED9/",
         "points": 10,
         "restrictions": {
           "include": {
@@ -181,7 +181,7 @@
       },
       {
         "name": "The Darksaber",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146048/4D9FDAC4679C5636DCBD4244667ADF7BDCC2E8EA/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140090412/816EE4F5B469EC8334D0E84042E5C008FC67B04B/",
         "points": 15,
         "restrictions": {
           "include": {
@@ -926,7 +926,7 @@
       },
       {
         "name": "AT-RT Flamethrower",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384854877/AC134FFAE75590E8367AEDC6C2C7AE4483A76D22/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140081769/07D4C1667BDEE090F39484775AEE7210086485B3/",
         "points": 15,
         "restrictions": {
           "include": {
@@ -936,7 +936,7 @@
       },
       {
         "name": "AT-RT Laser Cannon",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138277/BF6E7C05171B0D9397AA521903AAB5B47B97CB7B/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140081788/A032FAAFF3DB96A0423D0691209C65FFCC272D32/",
         "points": 10,
         "restrictions": {
           "include": {
@@ -946,7 +946,7 @@
       },
       {
         "name": "AT-RT Rotary Blaster",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138320/7C66EABCF4FF73DC6630F387C726068EA548FD9A/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140081805/40CE85B06069C7ABA4D93C271976B49CD2ED57C1/",
         "points": 20,
         "restrictions": {
           "include": {
@@ -966,7 +966,7 @@
       },
       {
         "name": "AX-108 \"Ground Buzzer\"",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138379/A525E05DAFAAB7129F8D2A9626E33C169B28C462/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140081842/2473F73E42DEF62BE49EA8789193A8AEDEECB097/",
         "points": 10,
         "restrictions": {
           "include": {
@@ -996,8 +996,8 @@
       },
       {
         "name": "Heavy Laser Retrofit",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568141789/1466FB973611960CE6C870F27FE8D1735671048B/",
-        "points": 16,
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140085434/9779C6885402FF554F2CB4DEEDADEE725DE3C1A7/",
+        "points": 12,
         "restrictions": {
           "include": {
             "unit": ["A-A5 Speeder Truck"]
@@ -1006,7 +1006,7 @@
       },
       {
         "name": "M-45 Ion Blaster",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384857032/171B4114B7C311F10B6A0359B584825A41FFF443/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140086470/7B7DF79267F695621DFF1C1D68859F71CBE521C5/",
         "points": 28,
         "restrictions": {
           "include": {
@@ -1016,7 +1016,7 @@
       },
       {
         "name": "Mark II Medium Blaster",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143619/E3949CD69ED911AF724373F0EE17CD656AD19556/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140086552/D1D6D09E2363DE1AD638A6516E6272CACB2B7A23/",
         "points": 21,
         "restrictions": {
           "include": {
@@ -1026,7 +1026,7 @@
       },
       {
         "name": "MO/DK Power Harpoon",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568143652/AB3D07BAC21F77DB7AFA6572CC962B972A19E6FE/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140086620/85D8AFAE73115CB7E7F35C5167E442B97CD1B01E/",
         "points": 0,
         "restrictions": {
           "include": {
@@ -1213,7 +1213,7 @@
       {
         "name": "Battle Shield Wookiee (Offensive)",
         "displayName": "Shield Wookiee (Offensive)",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138999/81A76F415A7B73A3AEF6B5EEF5DF6F0ABC9C9CF5/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140084858/2608BF39F19557F71C8FF8D04314A0387DB7586C/",
         "flip": {
           "name": "Battle Shield Wookiee (Defensive)",
           "displayName": "Shield Wookiee (Defensive)",
@@ -3432,7 +3432,7 @@
         "points": 9,
         "restrictions": {
           "include": {
-            "unit": ["AAT Trade Federation Battle Tank"]
+            "unit": ["AAT Battle Tank"]
           }
         }
       },
@@ -3442,7 +3442,7 @@
         "points": 7,
         "restrictions": {
           "include": {
-            "unit": ["AAT Trade Federation Battle Tank"]
+            "unit": ["AAT Battle Tank"]
           }
         }
       },
@@ -3505,7 +3505,7 @@
         "points": 5,
         "restrictions": {
           "include": {
-            "unit": ["AAT Trade Federation Battle Tank"]
+            "unit": ["AAT Battle Tank"]
           }
         }
       },
