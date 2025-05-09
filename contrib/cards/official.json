@@ -121,7 +121,7 @@
       },
       {
         "name": "Jetpack Rockets",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1616220044491093901/42DF534EFBABAB01D0A173C7A8F67D8B0970B3DE/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140085567/31DBF8DD50EC6DAC02522908B9E8D0D3B2A37925/",
         "points": 5,
         "restrictions": {
           "include": {
@@ -271,7 +271,7 @@
       },
       {
         "name": "The Darksaber (Gideon)",
-        "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907419/B788217F88978AE7E9BBC49CB78931ED2C84E0FB/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16625983135926386325/491ADB4AF793015C774CBB05E327DFBB53A59E7B/",
         "points": 15,
         "restrictions": {
           "include": {
@@ -461,7 +461,7 @@
         }
       },
       {
-        "name": "Omega",
+        "name": "Omega Mascot of the 99th",
         "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005432/91DF6117D3E30AF7A239A8DBA62256C84754C8C5/",
         "points": 10,
         "mini": {
@@ -478,7 +478,7 @@
     "Crew": [
       {
         "name": "A-300 Rifle Gunner",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137900/130B3AB5DF25F69BC91D8C568EF147AD6DC9C240/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140081194/2DC1EEA962453DA3D345451038A56B1A9E6219E7/",
         "points": 1,
         "restrictions": {
           "include": {
@@ -558,7 +558,7 @@
       },
       {
         "name": "RPS-6 Rocket Gunner",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145068/CA32A4BCA29FE15FAADEFDDB1B22F7E107DC2826/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140089557/0F4A5F58A50BD239C6C28FD362B36112B2E3BA40/",
         "points": 21,
         "restrictions": {
           "include": {
@@ -710,7 +710,7 @@
       },
       {
         "name": "Electro Grappling Line",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140704/D0663049B1110A92D0816F1764BCA3676068E458/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140085250/238DDAD4ECD0F3A7307D08D40ABBA0A0529375F3/",
         "points": 5,
         "restrictions": {
           "include": {
@@ -744,8 +744,8 @@
         "points": 2
       },
       {
-        "name": "Personal Combat Shield",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144199/E3196D206A593BDF4C30F00F1A8B5F558BF0B217/",
+        "name": "Sabine's Combat Shield",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140089761/CCEBC0B6763DAA8C50AFA2DDA8E17AACD0A0F147/",
         "points": 5,
         "restrictions": {
           "include": {
@@ -790,6 +790,16 @@
         "restrictions": {
           "include": {
             "unit": ["Mandalorian Super Commandos"]
+          }
+        }
+      },
+      {
+        "name": "Mandalorian Combat Shields",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140086515/C2224F26DF942CEFA38BE94C5BF16355539139DA/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Mandalorian Resistance"]
           }
         }
       },
@@ -970,7 +980,7 @@
         "points": 18,
         "restrictions": {
           "include": {
-            "unit": ["TX-225 GAVw Occupier Combat Assault Tank"]
+            "unit": ["TX-225 GAVw Occupier Tank"]
           }
         }
       },
@@ -1060,7 +1070,7 @@
         "points": 14,
         "restrictions": {
           "include": {
-            "unit": ["TX-225 GAVw Occupier Combat Assault Tank"]
+            "unit": ["TX-225 GAVw Occupier Tank"]
           }
         }
       },
@@ -1075,8 +1085,8 @@
         }
       },
       {
-        "name": "Twin Blaster Cannons",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189035/E0FE1C4A1C9FDB662B092EEE87DDF1679EE4F144/",
+        "name": "Twin Blaster Cannons (ISP)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14131708632610337124/66E8516A5E6EB1D1F90B8A835EB006A7EAB7F075/",
         "points": 25,
         "restrictions": {
           "include": {
@@ -1086,7 +1096,7 @@
       },
       {
         "name": "Twin Missile Pods",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081188964/A368F5EF82821FCC38D6FABC316A1C035C38ECCA/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13940347858969613016/FC2F44AA892930B09D58A1259D9DABAC7CAB9488/",
         "points": 25,
         "restrictions": {
           "include": {
@@ -1095,7 +1105,7 @@
         }
       },
       {
-        "name": "TX-130 Beam Cannon Turret",
+        "name": "Beam Turret",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135344116/6FA72AE219A115A5BA50033ECAF85464EE12FCA8/",
         "points": 15,
         "restrictions": {
@@ -1105,8 +1115,8 @@
         }
       },
       {
-        "name": "TX-130 Twin Laser Turret",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146220/1F78C6C75AB52F056FE726EA0C64563B914307B4/",
+        "name": "Twin Laser Turret",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17399295105221231233/E6CA41DE7BAF2D58F8D86953FD25B3D431CFB80E/",
         "points": 14,
         "restrictions": {
           "include": {
@@ -1318,12 +1328,12 @@
       },
       {
         "name": "DC-15X ARC Trooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298710/80CA04A1D29D91F52B2F0169038D6A64B39C7687/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9724672671096889082/B22903B590FA5B6D2AAEC2988AA0F9826C9D1EB2/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457800878/34EC84D7ECD99E073417866A9BEC4288E00F5359/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
         },
-        "points": 31,
+        "points": 37,
         "restrictions": {
           "include": {
             "unit": ["ARC Troopers"]
@@ -1332,12 +1342,12 @@
       },
       {
         "name": "DH-447 Sniper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139931/A4A301E1A5E58D34874BCE52DB7ED8D1B9E0552C/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140084953/59EB5B5BADDFEACF7BA997C247F16A54080A6E31/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862776611/B8222AA4A3B680E969DC106C8A281D11845994EB/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862776974/21649563BC0CB84E12C0B249C720919F528596D3/"
         },
-        "points": 28,
+        "points": 38,
         "restrictions": {
           "include": {
             "unit": ["Rebel Commandos"]
@@ -1388,7 +1398,7 @@
       },
       {
         "name": "DLT-20A Trooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140151/B259FD4422C504D8262FA548753B745260EC501F/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140084961/0EDA0871D597B44A55DBF3A3147E3A13D20691B2/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173464888456/63604C016242E6F545F139BC46515E0A894EC6B2/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173464889098/17A7BE90F158B80F88518F92EA4D211F16E14003/"
@@ -1840,8 +1850,8 @@
         }
       },
       {
-        "name": "T-21B Trooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145946/0F8C1C415DE21D5FC85AC008D2FA7E612B830CC0/",
+        "name": "T-21B Shoretrooper",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15356402076507157215/7BFF6CA98FAB03189CEA985CA8A892BDF7207BEC/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702687816/8C17AF1D2344B7E8B1C8D34A0F2228E9ADC2FFAA/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359682702687407/D5B685EA41E9C664F2D16381474B5F08DF9CFAE5/"
@@ -1966,7 +1976,7 @@
       },
       {
         "name": "Super Commando Marksman",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868369/DC8B8AEF385F79F612BA4D7E4ABC786BE3F54E3A/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15709592670795104171/ACE59DD60752ACF052681409AEBE159D7C400AFE/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143451/3DFD9C8BD5D504D3A2F7934678D1A0A7C2285863/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200769/60353F40BAE6D92D6F6ED24E2883EB9CC2EA74C4/"
@@ -2270,13 +2280,13 @@
         "points": 30,
         "restrictions": {
           "include": {
-            "unit": ["Stromtrooper Riot Squad"]
+            "unit": ["Stormtrooper Riot Squad"]
           }
         }
       },
       {
         "name": "Rebel Marksman",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384857748/82E25C06DC390DFD0AD8148F6BD899CF86E07AE9/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140087495/6457AE581E595160FCFCADFED8B8B6F19F25A68E/",
         "mini": {
           "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680570051/845658287FF6EADD0F2B31B94ABC4899A09475EE/",
           "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680570231/D122EECC159E02264D024421EB7767BEA8E70F21/"
@@ -2304,7 +2314,7 @@
             "faction": ["Republic"]
           }
         }
-      }, 
+      },
       {
         "name": "Ahsoka Tano, Jedi Padawan",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831255/8A122988056B15729D1EBAB3F459B8AF5AA13113/",
@@ -2321,11 +2331,11 @@
       },
       {
         "name": "Clone Medic",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855671/3D1C3D57159E59D347D6CC09FAC4718A4F1A7225/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9547979006347114303/D43781CC9968425F51916493FAA615ACDE207B6B/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809184711/BC2EE95F62E043F83A352F825B6A041AC6D59959/"
         },
-        "points": 15,
+        "points": 20,
         "restrictions": {
           "include": {
             "type": ["Clone Trooper"]
@@ -2364,7 +2374,7 @@
       },
       {
         "name": "Clone Commander",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855406/77E62A8F0A3DA3E38BB66B8DFC270F600086A2BD/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16325670012605150200/01E77403F827CE48BBD0262024C39AEF2465B64A/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186354/387C36C2BB545E6CC882A05C0D81F5BE164166B7/"
         },
@@ -2430,14 +2440,14 @@
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59215140639032161/5D3AFD658FC9FC30314A98DF8C5F0A7910B4ADF2/",
         "minis": [
           {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932608/94AB8C15D97E81FF8040E81BC91F79A7105FF4B4/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932637/F5D29AC3162A9D47B5440E5A3E3399FC12A594BE/"
-        },
-        {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932871/EE8DF333D45ED841E9C31625FB4A9385C16B2F49/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933386/736E0CCF2ADE31D6A9F6BE172B20AEB5420B815E/"
-        }
-      ],
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932608/94AB8C15D97E81FF8040E81BC91F79A7105FF4B4/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932637/F5D29AC3162A9D47B5440E5A3E3399FC12A594BE/"
+          },
+          {
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932871/EE8DF333D45ED841E9C31625FB4A9385C16B2F49/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933386/736E0CCF2ADE31D6A9F6BE172B20AEB5420B815E/"
+          }
+        ],
         "points": 26,
         "restrictions": {
           "include": {
@@ -2472,7 +2482,7 @@
             "unit": ["Range Troopers"]
           }
         }
-      },      
+      },
       {
         "name": "B1 Battle Droid",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081139926619/12E85E2D56E590D6D718B15BDE100799D6F9D077/",
@@ -2769,8 +2779,8 @@
         }
       },
       {
-        "name": "R4 Astromech Droid",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144617/020BAAE68FB4F811DEC372640141F5B79CF9A722/",
+        "name": "R4 Astromech",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14559987992750624971/2375A1517931DC8EED5B089C148489744B81A868/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594492173/DDA1CC3AEEC3D5ADB3B04F35125EE8A6FB7EB93A/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594267919/F44B2C3C810757626C7A4A61DAA7F2BC2BEECFC6/"
@@ -2962,7 +2972,7 @@
       },
       {
         "name": "Shoretrooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145345/C754AAE309BBD831F38F95B2308F1910A1035845/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13031343564930773334/77BF73703B9A90783AF7E3EDFF92D9E4D0BEC1B4/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702688256/B266465186713632AE14D6B4B473AB4E94814685/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359682702687694/C12AAE8B7F487BE4C1545E253AB3C026E0426AA1/"
@@ -3006,7 +3016,7 @@
           }
         }
       },
-      
+
       {
         "name": "Stormtrooper",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140097931/DB288D0B28104E95465A3ED5D12C65D527876F54/",
@@ -3299,7 +3309,7 @@
       },
       {
         "name": "Aayla Secura",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138016/6FD454904B9ADCC463C52F3DCB9BD7899D570D93/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13270315361837467006/57E535080404547F3055847340DF881544FE2E62/",
         "points": 5,
         "restrictions": {
           "include": {
@@ -3331,12 +3341,12 @@
       },
       {
         "name": "Clone Shock Trooper Pilot",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855749/C581402EB727286D5CD23A4ADFD4EB9CC2CC3A45/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10111085862146477057/252EF202515CC108E593111B56718C2CD813870E/",
         "points": 4,
         "restrictions": {
           "include": {
             "faction": ["Republic"],
-            "unit": ["LAAT/LE Patrol Transport"]
+            "rank": ["Heavy"]
           }
         }
       },
@@ -3374,7 +3384,7 @@
       },
       {
         "name": "Hound & Grizzer",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142527/7C8F0D3C99BA6BD83BB046156C618173065907E3/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13575491821704896451/EDE4AFDD9E9AEC222C4B8F7C91F124B3F32B8A73/",
         "points": 8,
         "restrictions": {
           "include": {
@@ -3449,7 +3459,7 @@
       },
       {
         "name": "Plo Koon",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144509/262D350CAB98488C834D83AF4970CF00FA93BF95/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12076372952085384369/7AAAC90F9DEA02181CD279217BEE86A4F4846ACF/",
         "points": 9,
         "restrictions": {
           "include": {
@@ -3469,7 +3479,7 @@
       },
       {
         "name": "Ryder Azadi",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145202/427A7BFD7FB915C79DDAE3C9ACC6935915A2F972/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140089640/792212C26B25488AA9E9CED4F8772D8549162630/",
         "points": 5,
         "restrictions": {
           "include": {
@@ -3501,11 +3511,12 @@
       },
       {
         "name": "Veteran Clone Pilot",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146406/11D4D175DDBD3965C61D8B20386D069FF2179B67/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14161188831430230944/D58989E46F93F8F783C9305E8056941DD27C449E/",
         "points": 7,
         "restrictions": {
           "include": {
-            "unit": ["Saber-Class Tank"]
+            "faction": ["Republic"],
+            "rank": ["Heavy"]
           }
         }
       },
@@ -3712,12 +3723,22 @@
       {
         "name": "Call to Arms",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140099258/36B8495C43AD6C6CA175204A01096A05D647F70C/",
-        "points": 5
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Ewok Slingers", "Ewok Skirmishers"]
+          }
+        }
       },
       {
         "name": "Forest Dwellers",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140100329/4F2A45ECABD3B325A456366332FF93683D6AA296/",
-        "points": 3
+        "points": 3,
+        "restrictions": {
+          "include": {
+            "unit": ["Ewok Slingers", "Ewok Skirmishers", "Wicket", "Logray"]
+          }
+        }
       },
       {
         "name": "Insatiable Curiosity",
@@ -3731,7 +3752,7 @@
       },
       {
         "name": "Inquisitorius Training",
-        "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174552754/44E70742288844F3A765B81AC89DD37EEF071D2E/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16029402244249243117/D61B7E9D4163D96847488E7EA80B3C6A60672238/",
         "points": 5,
         "restrictions": {
           "include": {
@@ -3783,7 +3804,7 @@
     "Empire": [
       {
         "name": "Covert Observation",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036909/D7F23F07B22A1DB0ED2F094C1AC8170E7C27929E/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11077054665663790039/843089A1DD7F8F54FE9CE60752F15FFC586B1DB2/",
         "pip": 1
       },
       {
@@ -3793,7 +3814,7 @@
       },
       {
         "name": "Pinned Down",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034888/B7C8BF24B26A8D360EDBDB07B16C773435EE2C3F/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13986899663843994273/C86535A24E53CB437CF5E6DFB02A6FCF21E1EC63/",
         "pip": 2
       },
       {
@@ -3803,7 +3824,7 @@
       },
       {
         "name": "Coordinated Fire",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034006/219E07F84100937144A74AC94987C024792986B1/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11160049064172830842/F5BA2BA3243EE715B976CFF0CF6645D9B34563D3/",
         "pip": 3
       },
       {
@@ -3891,6 +3912,11 @@
         "pip": 1
       },
       {
+        "name": "Defiance",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14615871148955326200/5C4A46932D48C89AC97B650847429D97701993D7/",
+        "pip": 1
+      },
+      {
         "name": "Air Support",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134030778/90E5CEF9833FED1C5F926FB8878BDBCD5B5099F6/",
         "pip": 2
@@ -3911,13 +3937,23 @@
         "pip": 2
       },
       {
-        "name": "AttacK Of the Clones",
+        "name": "Get In Position",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17056187462617014571/3898DDC0BF25F87D73C3F40CDA7AA52DDB6CD765/",
+        "pip": 2
+      },
+      {
+        "name": "Attack Of the Clones",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134033797/3AA33B36A7B9EAAC8444A6CAC176F2130EE30E6C/",
         "pip": 3
       },
       {
         "name": "YHWARGGHHHHHHHHHH!",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032878/3AE933EA5F364FC236D8502BA96FF1FC6AA9FA27/",
+        "pip": 3
+      },
+      {
+        "name": "Daring Defense",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12871643868680759199/5CC33092968E7DE16416344B01D7BC76211DB23E/",
         "pip": 3
       },
       {
@@ -4014,10 +4050,7 @@
           "name": "Recon Mission",
           "image": "https://steamusercontent-a.akamaihd.net/ugc/18385343105541227063/7F990BB73C8675734EB02873157F392EA265DC20/",
           "type": "vertical",
-          "additionalObjects": [
-            "Objective Token",
-            "Objective Token"
-          ]
+          "additionalObjects": ["Objective Token", "Objective Token"]
         }
       ],
       "deployment": [
@@ -4027,10 +4060,36 @@
           "type": "vertical",
           "zone": [
             ["r", "r", "r", "rs", " ", " ", " ", " ", "rss", "r", "r", "r"],
-            ["rh", "rh", "rh", "rc", " ", " ", " ", " ", "rcc", "rh", "rh", "rh"],
+            [
+              "rh",
+              "rh",
+              "rh",
+              "rc",
+              " ",
+              " ",
+              " ",
+              " ",
+              "rcc",
+              "rh",
+              "rh",
+              "rh"
+            ],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            ["bh", "bh", "bh", "bcc", " ", " ", " ", " ", "bc", "bh", "bh", "bh"],
+            [
+              "bh",
+              "bh",
+              "bh",
+              "bcc",
+              " ",
+              " ",
+              " ",
+              " ",
+              "bc",
+              "bh",
+              "bh",
+              "bh"
+            ],
             ["b", "b", "b", "bss", " ", " ", " ", " ", "bs", "b", "b", "b"]
           ],
           "additionalObjects": [
@@ -4046,10 +4105,36 @@
           "type": "vertical",
           "zone": [
             [" ", " ", "r", "r", "r", "r", "r", "r", "r", "r", " ", " "],
-            [" ", " ", "rh", "rh", "rh", "rh", "rh", "rh", "rh", "rh", " ", " "],
+            [
+              " ",
+              " ",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              " ",
+              " "
+            ],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", "bh", "bh", "bh", "bh", "bh", "bh", "bh", "bh", " ", " "],
+            [
+              " ",
+              " ",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              " ",
+              " "
+            ],
             [" ", " ", "b", "b", "b", "b", "b", "b", "b", "b", " ", " "]
           ],
           "additionalObjects": [
@@ -4066,10 +4151,36 @@
           "type": "vertical",
           "zone": [
             ["r", "r", "r", "r", "r", "r", "r", "r", "r", " ", " ", " "],
-            ["r", "rl", "rh", "rh", "rh", "rh", "rh", "rh", "rh", " ", " ", " "],
+            [
+              "r",
+              "rl",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              " ",
+              " ",
+              " "
+            ],
             ["r", "rs", " ", " ", " ", " ", " ", " ", " ", " ", "bc", "bh"],
             ["rh", "rc", " ", " ", " ", " ", " ", " ", " ", " ", "bs", "b"],
-            [" ", " ", " ", "bh", "bh", "bh", "bh", "bh", "bh", "bh", "bl", "b"],
+            [
+              " ",
+              " ",
+              " ",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bl",
+              "b"
+            ],
             [" ", " ", " ", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
           ],
           "additionalObjects": [
@@ -4086,10 +4197,36 @@
           "type": "vertical",
           "zone": [
             [" ", " ", "r", "r", "r", "r", "r", "r", "r", "r", " ", " "],
-            [" ", " ", "rh", "rh", "rh", "rh", "rh", "rh", "rh", "rh", " ", " "],
+            [
+              " ",
+              " ",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              " ",
+              " "
+            ],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", "bh", "bh", "bh", "bh", "bh", "bh", "bh", "bh", " ", " "],
+            [
+              " ",
+              " ",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              " ",
+              " "
+            ],
             [" ", " ", "b", "b", "b", "b", "b", "b", "b", "b", " ", " "]
           ],
           "additionalObjects": [
@@ -4106,10 +4243,36 @@
           "type": "vertical",
           "zone": [
             ["r", "r", "r", "r", "r", "r", "r", "r", "r", " ", " ", " "],
-            ["rh", "rh", "rh", "rh", "rh", "rh", "rh", "rh", "rh", " ", " ", " "],
+            [
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              " ",
+              " ",
+              " "
+            ],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", "bh", "bh", "bh", "bh", "bh", "bh", "bh", "bh", "bh"],
+            [
+              " ",
+              " ",
+              " ",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh"
+            ],
             [" ", " ", " ", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
           ],
           "additionalObjects": [
@@ -4128,10 +4291,36 @@
           "type": "vertical",
           "zone": [
             ["r", "r", "r", "r", "r", "r", "r", "r", "r", " ", " ", " "],
-            ["rh", "rh", "rh", "rh", "rh", "rh", "rh", "rh", "rh", " ", " ", " "],
+            [
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              " ",
+              " ",
+              " "
+            ],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", "bh", "bh", "bh", "bh", "bh", "bh", "bh", "bh", "bh"],
+            [
+              " ",
+              " ",
+              " ",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh"
+            ],
             [" ", " ", " ", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
           ],
           "additionalObjects": [
@@ -4149,57 +4338,41 @@
           "name": "Advanced Intel",
           "image": "https://steamusercontent-a.akamaihd.net/ugc/13272907091260444770/243391B61F192F53AA7CF0360D3F846C7A7A0A97/",
           "type": "vertical",
-          "additionalObjects": [
-            "Condition Token"
-          ]
+          "additionalObjects": ["Condition Token"]
         },
         {
           "name": "Fortified Position",
           "image": "https://steamusercontent-a.akamaihd.net/ugc/16927846453234643948/97D5A7F0E4C9D3DAB14C3754AC3A484C15CE3567/",
           "type": "vertical",
-          "additionalObjects": [
-            "Barricade",
-            "Barricade",
-            "Barricade"
-          ]
+          "additionalObjects": ["Barricade", "Barricade", "Barricade"]
         },
         {
           "name": "Cunning Deployment",
           "image": "https://steamusercontent-a.akamaihd.net/ugc/14925552919945327142/06659E9120D6246C6048165ECDE9F5F5AEA7A5EB/",
           "type": "vertical",
-          "additionalObjects": [
-            "Dodge Token",
-            "Dodge Token",
-            "Dodge Token"
-          ]
+          "additionalObjects": ["Dodge Token", "Dodge Token", "Dodge Token"]
         },
         {
           "name": "Garrison",
           "image": "https://steamusercontent-a.akamaihd.net/ugc/11060842461995269445/3EC4678860C9AD82F7912D3FC3A56A519BCA3CEE/",
           "type": "vertical",
-          "additionalObjects": [
-            "Condition Token"
-          ]
+          "additionalObjects": ["Condition Token"]
         },
         {
           "name": "Ordnance",
           "image": "https://steamusercontent-a.akamaihd.net/ugc/12637307440348267234/446B8F97B7C1EF2452E5B4DD6AF36FC1BAAD7FA2/",
           "type": "vertical",
-          "additionalObjects": [
-            "Objective Token"
-          ]
+          "additionalObjects": ["Objective Token"]
         },
         {
           "name": "Strafing Run",
           "image": "https://steamusercontent-a.akamaihd.net/ugc/16276132125547808705/8A61415CDD0F2E20417F6D8371858B206FA0A775/",
           "type": "vertical",
-          "additionalObjects": [
-            "Objective Token"
-          ]
+          "additionalObjects": ["Objective Token"]
         }
       ]
     },
-    "blitz":{
+    "blitz": {
       "objective": [
         {
           "name": "Bombing Run",
@@ -4230,14 +4403,14 @@
           ]
         },
         {
-            "name": "Intercept The Transmissions",
-            "image": "http://cloud-3.steamusercontent.com/ugc/2094796397712554781/B6AD631AEEC48E4473426C34888E1A1B79A011C6/",
-            "type": "horizontal",
-            "additionalObjects": [
-                "Objective Token",
-                "Objective Token",
-                "Objective Token"
-            ]
+          "name": "Intercept The Transmissions",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2094796397712554781/B6AD631AEEC48E4473426C34888E1A1B79A011C6/",
+          "type": "horizontal",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
         },
         {
           "name": "Key Positions",
@@ -4281,108 +4454,108 @@
       ],
       "deployment": [
         {
-            "name": "Advanced Positions",
-            "image": "http://cloud-3.steamusercontent.com/ugc/2094796397702918693/AE8363351402BC55707F1DD2A589650E19B0263B/",
-            "type": "horizontal",
-            "zone": [
-                [ " ", " ", " ", "r", "r", "r", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", "r", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", "r", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", "b", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", "b", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", "b", "b", "b", " ", " ", " " ]
-            ]
+          "name": "Advanced Positions",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2094796397702918693/AE8363351402BC55707F1DD2A589650E19B0263B/",
+          "type": "horizontal",
+          "zone": [
+            [" ", " ", " ", "r", "r", "r", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", "r", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", "r", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", "b", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", "b", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", "b", "b", "b", " ", " ", " "]
+          ]
         },
         {
-            "name": "Battle Lines",
-            "image": "http://cloud-3.steamusercontent.com/ugc/2094796397702918815/139CE233ACEFA51872404741852721F076C47B0F/",
-            "type": "horizontal",
-            "zone": [
-                [ " ", " ", " ", "r", "r", "r", "r", "r", "r", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", "b", "b", "b", "b", "b", "b", " ", " ", " " ]
-            ]
+          "name": "Battle Lines",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2094796397702918815/139CE233ACEFA51872404741852721F076C47B0F/",
+          "type": "horizontal",
+          "zone": [
+            [" ", " ", " ", "r", "r", "r", "r", "r", "r", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", "b", "b", "b", "b", "b", "b", " ", " ", " "]
+          ]
         },
         {
-            "name": "Danger Close",
-            "image": "http://cloud-3.steamusercontent.com/ugc/2094796397702918918/BA6FDAF4E07773CCD202073C9C5451C39955AF77/",
-            "type": "horizontal",
-            "zone": [
-                [ " ", " ", " ", "r", " ", " ", "b", "b", "b", " ", " ", " " ],
-                [ " ", " ", " ", "r", " ", " ", " ", " ", "b", " ", " ", " " ],
-                [ " ", " ", " ", "r", " ", " ", " ", " ", "b", " ", " ", " " ],
-                [ " ", " ", " ", "r", " ", " ", " ", " ", "b", " ", " ", " " ],
-                [ " ", " ", " ", "r", " ", " ", " ", " ", "b", " ", " ", " " ],
-                [ " ", " ", " ", "r", "r", "r", " ", " ", "b", " ", " ", " " ]
-            ]
+          "name": "Danger Close",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2094796397702918918/BA6FDAF4E07773CCD202073C9C5451C39955AF77/",
+          "type": "horizontal",
+          "zone": [
+            [" ", " ", " ", "r", " ", " ", "b", "b", "b", " ", " ", " "],
+            [" ", " ", " ", "r", " ", " ", " ", " ", "b", " ", " ", " "],
+            [" ", " ", " ", "r", " ", " ", " ", " ", "b", " ", " ", " "],
+            [" ", " ", " ", "r", " ", " ", " ", " ", "b", " ", " ", " "],
+            [" ", " ", " ", "r", " ", " ", " ", " ", "b", " ", " ", " "],
+            [" ", " ", " ", "r", "r", "r", " ", " ", "b", " ", " ", " "]
+          ]
         },
         {
-            "name": "Disarray",
-            "image": "http://cloud-3.steamusercontent.com/ugc/2094796397702919022/BDC2741D424E582027A471BA7D46CA3640ADC274/",
-            "type": "horizontal",
-            "zone": [
-                [ " ", " ", " ", "r", " ", " ", " ", "b", "b", " ", " ", " " ],
-                [ " ", " ", " ", "r", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", "r", " ", " ", " " ],
-                [ " ", " ", " ", "b", "b", " ", " ", " ", "r", " ", " ", " " ]
-            ]
+          "name": "Disarray",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2094796397702919022/BDC2741D424E582027A471BA7D46CA3640ADC274/",
+          "type": "horizontal",
+          "zone": [
+            [" ", " ", " ", "r", " ", " ", " ", "b", "b", " ", " ", " "],
+            [" ", " ", " ", "r", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", "r", " ", " ", " "],
+            [" ", " ", " ", "b", "b", " ", " ", " ", "r", " ", " ", " "]
+          ]
         },
         {
-            "name": "Hemmed In",
-            "image": "http://cloud-3.steamusercontent.com/ugc/2094796397702919191/28C57E7D8E553AB4F725F17C93CEBDAC806D9C78/",
-            "type": "horizontal",
-            "zone": [
-                [ " ", " ", " ", "r", "r", " ", " ", "r", "r", " ", " ", " " ],
-                [ " ", " ", " ", "r", " ", " ", " ", " ", "r", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", "b", "b", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", "b", "b", " ", " ", " ", " ", " " ]
-            ]
+          "name": "Hemmed In",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2094796397702919191/28C57E7D8E553AB4F725F17C93CEBDAC806D9C78/",
+          "type": "horizontal",
+          "zone": [
+            [" ", " ", " ", "r", "r", " ", " ", "r", "r", " ", " ", " "],
+            [" ", " ", " ", "r", " ", " ", " ", " ", "r", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", "b", "b", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", "b", "b", " ", " ", " ", " ", " "]
+          ]
         },
         {
-            "name": "The Long March",
-            "image": "http://cloud-3.steamusercontent.com/ugc/2474241114697108468/BAA15960E591B3B68E1E121A374C9C379BD9D4AF/",
-            "type": "horizontal",
-            "zone": [
-                [ " ", " ", " ", " ", " ", " ", " ", "b", "b", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", "b", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", "b", " ", " ", " " ],
-                [ " ", " ", " ", "r", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", "r", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", "r", "r", " ", " ", " ", " ", " ", " ", " " ]
-            ]
+          "name": "The Long March",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2474241114697108468/BAA15960E591B3B68E1E121A374C9C379BD9D4AF/",
+          "type": "horizontal",
+          "zone": [
+            [" ", " ", " ", " ", " ", " ", " ", "b", "b", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", "b", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", "b", " ", " ", " "],
+            [" ", " ", " ", "r", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", "r", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", "r", "r", " ", " ", " ", " ", " ", " ", " "]
+          ]
         },
         {
-            "name": "Major Offensive",
-            "image": "http://cloud-3.steamusercontent.com/ugc/2094796397702919381/AD7188D6FC9D337BC83F23CC482EB374F5021115/",
-            "type": "horizontal",
-            "zone": [
-                [ " ", " ", " ", "r", "r", "r", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", "r", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", "b", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", "b", "b", "b", " ", " ", " " ]
-            ]
+          "name": "Major Offensive",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2094796397702919381/AD7188D6FC9D337BC83F23CC482EB374F5021115/",
+          "type": "horizontal",
+          "zone": [
+            [" ", " ", " ", "r", "r", "r", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", "r", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", "b", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", "b", "b", "b", " ", " ", " "]
+          ]
         },
         {
-            "name": "Roll Out",
-            "image": "http://cloud-3.steamusercontent.com/ugc/2094796397702919479/0B6DF3A3F6CD3339F39F655CF770E9C783F48440/",
-            "type": "horizontal",
-            "zone": [
-                [ " ", " ", " ", "r", "r", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", "r", "r", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", "b", "b", " ", " ", " " ],
-                [ " ", " ", " ", " ", " ", " ", " ", "b", "b", " ", " ", " " ]
-            ]
+          "name": "Roll Out",
+          "image": "http://cloud-3.steamusercontent.com/ugc/2094796397702919479/0B6DF3A3F6CD3339F39F655CF770E9C783F48440/",
+          "type": "horizontal",
+          "zone": [
+            [" ", " ", " ", "r", "r", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", "r", "r", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", "b", "b", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", "b", "b", " ", " ", " "]
+          ]
         }
       ],
       "condition": [
