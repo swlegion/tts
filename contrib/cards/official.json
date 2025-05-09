@@ -3783,7 +3783,7 @@
     "Empire": [
       {
         "name": "Covert Observation",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036909/D7F23F07B22A1DB0ED2F094C1AC8170E7C27929E/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11077054665663790039/843089A1DD7F8F54FE9CE60752F15FFC586B1DB2/",
         "pip": 1
       },
       {
@@ -3793,7 +3793,7 @@
       },
       {
         "name": "Pinned Down",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034888/B7C8BF24B26A8D360EDBDB07B16C773435EE2C3F/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13986899663843994273/C86535A24E53CB437CF5E6DFB02A6FCF21E1EC63/",
         "pip": 2
       },
       {
@@ -3803,7 +3803,7 @@
       },
       {
         "name": "Coordinated Fire",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034006/219E07F84100937144A74AC94987C024792986B1/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11160049064172830842/F5BA2BA3243EE715B976CFF0CF6645D9B34563D3/",
         "pip": 3
       },
       {
@@ -3891,6 +3891,11 @@
         "pip": 1
       },
       {
+        "name": "Defiance",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14615871148955326200/5C4A46932D48C89AC97B650847429D97701993D7/",
+        "pip": 1
+      },
+      {
         "name": "Air Support",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134030778/90E5CEF9833FED1C5F926FB8878BDBCD5B5099F6/",
         "pip": 2
@@ -3911,13 +3916,23 @@
         "pip": 2
       },
       {
-        "name": "AttacK Of the Clones",
+        "name": "Get In Position",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17056187462617014571/3898DDC0BF25F87D73C3F40CDA7AA52DDB6CD765/",
+        "pip": 2
+      },
+      {
+        "name": "Attack Of the Clones",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134033797/3AA33B36A7B9EAAC8444A6CAC176F2130EE30E6C/",
         "pip": 3
       },
       {
         "name": "YHWARGGHHHHHHHHHH!",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032878/3AE933EA5F364FC236D8502BA96FF1FC6AA9FA27/",
+        "pip": 3
+      },
+      {
+        "name": "Daring Defense",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12871643868680759199/5CC33092968E7DE16416344B01D7BC76211DB23E/",
         "pip": 3
       },
       {
