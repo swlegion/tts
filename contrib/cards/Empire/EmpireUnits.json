@@ -799,8 +799,8 @@
         "Comms": 1
       },
       "silhouette": {
-        "height": 0.852,
-        "offset": 0.709
+        "height": 1.561,
+        "offset": 0
       },
       "minis": [
         {
@@ -908,7 +908,7 @@
       ]
     },
     {
-      "name": "TX-225 GAVw Occupier Combat Assault Tank",
+      "name": "TX-225 GAVw Occupier Tank",
       "displayName": "Occupier Tank",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384864284/91145F71FC94DCE7BE3239F7B57430D050C04CBF/",
       "size": "long",
@@ -945,8 +945,8 @@
         "Comms": 1
       },
       "silhouette": {
-        "height": 4.68,
-        "offset": 1.78
+        "height": 6.36,
+        "offset": 0
       },
       "minis": [
         {
