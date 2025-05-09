@@ -37,7 +37,7 @@
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
           <!--Welcome to Star Wars: Legion for TTS, <b>v8.0.0</b>.-->
-          Welcome to Star Wars: Legion for TTS, <b>v8.0.9-beta</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v8.0.10-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
 
@@ -46,13 +46,8 @@
           <b>CHANGELOG</b>
           (Since last <i>Beta</i>)
           <!--(Since last <i>Stable</i>)-->
-          - Fix: Crab Base Size
-          - Fix: Update Crab Art
-          - Add: Arfs and their Upgrades
-          - Fix: Update Sleepers Art
-          - Add: Ahsoka
-          - Fix: Staps Art
-          - Fix: Add Commando Token
+          - Add: New Card Format
+          - Fix: json Discrepancies
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
