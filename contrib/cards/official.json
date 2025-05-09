@@ -1095,7 +1095,7 @@
         }
       },
       {
-        "name": "TX-130 Beam Cannon Turret",
+        "name": "Beam Turret",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135344116/6FA72AE219A115A5BA50033ECAF85464EE12FCA8/",
         "points": 15,
         "restrictions": {
@@ -1105,8 +1105,8 @@
         }
       },
       {
-        "name": "TX-130 Twin Laser Turret",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146220/1F78C6C75AB52F056FE726EA0C64563B914307B4/",
+        "name": "Twin Laser Turret",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17399295105221231233/E6CA41DE7BAF2D58F8D86953FD25B3D431CFB80E/",
         "points": 14,
         "restrictions": {
           "include": {
@@ -1840,7 +1840,7 @@
         }
       },
       {
-        "name": "T-21B Trooper",
+        "name": "T-21B Shoretrooper",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/15356402076507157215/7BFF6CA98FAB03189CEA985CA8A892BDF7207BEC/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702687816/8C17AF1D2344B7E8B1C8D34A0F2228E9ADC2FFAA/",
@@ -2769,7 +2769,7 @@
         }
       },
       {
-        "name": "R4 Astromech Droid",
+        "name": "R4 Astromech",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/14559987992750624971/2375A1517931DC8EED5B089C148489744B81A868/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594492173/DDA1CC3AEEC3D5ADB3B04F35125EE8A6FB7EB93A/",
