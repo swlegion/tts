@@ -461,7 +461,7 @@
         }
       },
       {
-        "name": "Omega",
+        "name": "Omega Mascot of the 99th",
         "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005432/91DF6117D3E30AF7A239A8DBA62256C84754C8C5/",
         "points": 10,
         "mini": {
@@ -980,7 +980,7 @@
         "points": 18,
         "restrictions": {
           "include": {
-            "unit": ["TX-225 GAVw Occupier Combat Assault Tank"]
+            "unit": ["TX-225 GAVw Occupier Tank"]
           }
         }
       },
@@ -1070,7 +1070,7 @@
         "points": 14,
         "restrictions": {
           "include": {
-            "unit": ["TX-225 GAVw Occupier Combat Assault Tank"]
+            "unit": ["TX-225 GAVw Occupier Tank"]
           }
         }
       },
