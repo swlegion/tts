@@ -271,7 +271,7 @@
       },
       {
         "name": "The Darksaber (Gideon)",
-        "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907419/B788217F88978AE7E9BBC49CB78931ED2C84E0FB/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16625983135926386325/491ADB4AF793015C774CBB05E327DFBB53A59E7B/",
         "points": 15,
         "restrictions": {
           "include": {
@@ -1841,7 +1841,7 @@
       },
       {
         "name": "T-21B Trooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145946/0F8C1C415DE21D5FC85AC008D2FA7E612B830CC0/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15356402076507157215/7BFF6CA98FAB03189CEA985CA8A892BDF7207BEC/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702687816/8C17AF1D2344B7E8B1C8D34A0F2228E9ADC2FFAA/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359682702687407/D5B685EA41E9C664F2D16381474B5F08DF9CFAE5/"
@@ -2270,7 +2270,7 @@
         "points": 30,
         "restrictions": {
           "include": {
-            "unit": ["Stromtrooper Riot Squad"]
+            "unit": ["Stormtrooper Riot Squad"]
           }
         }
       },
@@ -2770,7 +2770,7 @@
       },
       {
         "name": "R4 Astromech Droid",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144617/020BAAE68FB4F811DEC372640141F5B79CF9A722/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14559987992750624971/2375A1517931DC8EED5B089C148489744B81A868/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/949599512594492173/DDA1CC3AEEC3D5ADB3B04F35125EE8A6FB7EB93A/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/949599512594267919/F44B2C3C810757626C7A4A61DAA7F2BC2BEECFC6/"
@@ -2962,7 +2962,7 @@
       },
       {
         "name": "Shoretrooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145345/C754AAE309BBD831F38F95B2308F1910A1035845/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13031343564930773334/77BF73703B9A90783AF7E3EDFF92D9E4D0BEC1B4/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702688256/B266465186713632AE14D6B4B473AB4E94814685/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359682702687694/C12AAE8B7F487BE4C1545E253AB3C026E0426AA1/"
@@ -3712,12 +3712,22 @@
       {
         "name": "Call to Arms",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140099258/36B8495C43AD6C6CA175204A01096A05D647F70C/",
-        "points": 5
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Ewok Slingers", "Ewok Skirmishers"]
+          }
+        }
       },
       {
         "name": "Forest Dwellers",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140100329/4F2A45ECABD3B325A456366332FF93683D6AA296/",
-        "points": 3
+        "points": 3,
+        "restrictions": {
+          "include": {
+            "unit": ["Ewok Slingers", "Ewok Skirmishers", "Wicket", "Logray"]
+          }
+        }
       },
       {
         "name": "Insatiable Curiosity",
@@ -3731,7 +3741,7 @@
       },
       {
         "name": "Inquisitorius Training",
-        "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174552754/44E70742288844F3A765B81AC89DD37EEF071D2E/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16029402244249243117/D61B7E9D4163D96847488E7EA80B3C6A60672238/",
         "points": 5,
         "restrictions": {
           "include": {
