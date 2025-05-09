@@ -528,7 +528,7 @@
     {
       "name": "Boba Fett",
       "title": "Daimyo of Mos Espa",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527186/1416818938F90DBF7DCBFFA42860CB72E287EB71/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/16579174465147196746/9D5131128D833819B159E467C76A731BA5E896EF/",
       "size": "small",
       "type": "Trooper",
       "points": 120,
@@ -624,12 +624,13 @@
     {
       "name": "The Bad Batch",
       "title": "Clone Force 99",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005395/E630FCD5B4B4D783D7E1E27AEDE4A78B27E9BE14/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/12250968622432378580/92A3A64FE3A5BA176A4DF5D2BB6F66B8D47B840B/",
       "size": "small",
       "type": "Trooper",
       "points": 140,
       "speed": 2,
       "upgrades": {
+        "Counterpart": 1,
         "Heavy Weapon": 4
       },
       "minis": [
