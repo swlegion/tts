@@ -794,6 +794,16 @@
         }
       },
       {
+        "name": "Mandalorian Combat Shields",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140086515/C2224F26DF942CEFA38BE94C5BF16355539139DA/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Mandalorian Resistance"]
+          }
+        }
+      },
+      {
         "name": "Prepared Supplies",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/15123875138493055282/186AF8D3483E44991F4BF5405DE6A84C4BF9664B/",
         "points": 5
