@@ -1,7 +1,7 @@
 {
   "name": "Cad Bane",
   "title": "Needs No Introduction",
-  "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867666/27A6A224821A974D619C9FE94A1C60AD39F60410/",
+  "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137007196/49655B5A32FFAB3CE31BFCCFEA9811CD4A51B748/",
   "size": "small",
   "type": "Trooper",
   "points": 105,
@@ -22,17 +22,17 @@
   "commands": [
     {
       "name": "I'm Your Worst Nightmare",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036560/158F834A8FF94206F4F0149EF862D264E3B27804/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137014543/33FE8591FAFD29F8BEAF13D64851772A7FD794FE/",
       "pip": 1
     },
     {
       "name": "I'm In Control",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035284/D2D4B7D2CE80F63F0D2706764B9B4DB838B23F43/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137014579/D2FC7AF724D1C7527CCDDABF18517E9CB99DF061/",
       "pip": 2
     },
     {
       "name": "I Make The Rules Now",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384886468/8FB6900E28C31907ECD233F979EF30CFB30DA452/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137014560/4B6E8AF4CB10FFE7EC529D204390FC45291FC962/",
       "pip": 3
     }
   ],
