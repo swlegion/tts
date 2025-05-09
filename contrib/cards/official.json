@@ -478,7 +478,7 @@
     "Crew": [
       {
         "name": "A-300 Rifle Gunner",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137900/130B3AB5DF25F69BC91D8C568EF147AD6DC9C240/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140081194/2DC1EEA962453DA3D345451038A56B1A9E6219E7/",
         "points": 1,
         "restrictions": {
           "include": {
@@ -558,7 +558,7 @@
       },
       {
         "name": "RPS-6 Rocket Gunner",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145068/CA32A4BCA29FE15FAADEFDDB1B22F7E107DC2826/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140089557/0F4A5F58A50BD239C6C28FD362B36112B2E3BA40/",
         "points": 21,
         "restrictions": {
           "include": {
@@ -1332,12 +1332,12 @@
       },
       {
         "name": "DH-447 Sniper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568139931/A4A301E1A5E58D34874BCE52DB7ED8D1B9E0552C/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140084953/59EB5B5BADDFEACF7BA997C247F16A54080A6E31/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780862776611/B8222AA4A3B680E969DC106C8A281D11845994EB/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862776974/21649563BC0CB84E12C0B249C720919F528596D3/"
         },
-        "points": 28,
+        "points": 38,
         "restrictions": {
           "include": {
             "unit": ["Rebel Commandos"]
@@ -1388,7 +1388,7 @@
       },
       {
         "name": "DLT-20A Trooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140151/B259FD4422C504D8262FA548753B745260EC501F/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140084961/0EDA0871D597B44A55DBF3A3147E3A13D20691B2/",
         "mini": {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/766102173464888456/63604C016242E6F545F139BC46515E0A894EC6B2/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/766102173464889098/17A7BE90F158B80F88518F92EA4D211F16E14003/"
@@ -2276,7 +2276,7 @@
       },
       {
         "name": "Rebel Marksman",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384857748/82E25C06DC390DFD0AD8148F6BD899CF86E07AE9/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140087495/6457AE581E595160FCFCADFED8B8B6F19F25A68E/",
         "mini": {
           "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680570051/845658287FF6EADD0F2B31B94ABC4899A09475EE/",
           "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680570231/D122EECC159E02264D024421EB7767BEA8E70F21/"
@@ -3469,7 +3469,7 @@
       },
       {
         "name": "Ryder Azadi",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568145202/427A7BFD7FB915C79DDAE3C9ACC6935915A2F972/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140089640/792212C26B25488AA9E9CED4F8772D8549162630/",
         "points": 5,
         "restrictions": {
           "include": {
