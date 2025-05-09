@@ -1,7 +1,7 @@
 {
   "name": "Bossk",
   "title": "Trandoshan Terror",
-  "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867948/20A2EB617A2E756580A6A127046FFC24E28F1157/",
+  "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137006564/2C7F90FF127392A78F71B82EF4E69C35973824AD/",
   "size": "small",
   "type": "Trooper",
   "points": 105,
@@ -19,17 +19,17 @@
   "commands": [
     {
       "name": "Merciless Munitions",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036341/7FF893D01D2692E537EB6B157DCAB16421438FC4/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137013809/1D7FCC2F2A12F6B09B07345330F840800A846F7C/",
       "pip": 1
     },
     {
       "name": "Reptilian Rampage",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034734/F11C62C109C1CA7EE490169555DBAE37E4A9B53C/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137013972/29F197704D74AF20E8954F2BE8AC5C9203F9A2E6/",
       "pip": 2
     },
     {
       "name": "Lying In Wait",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033363/C8D04CF3CEE5DE82C69BAB90B7C61DFA842AE591/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137013903/60F4AC014F68998F8A3587BA0A5389301A0BAA7C/",
       "pip": 3
     }
   ],

@@ -3,7 +3,7 @@
     {
       "name": "Darth Vader",
       "title": "Dark Lord Of The Sith",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298907/73DBC3CC95299DFD1BB13F25C811C77F7C7189C0/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135444419/726425B7C209349209399BDDB87B34BE0B4447AA/",
       "size": "small",
       "type": "Trooper",
       "points": 190,
@@ -20,17 +20,17 @@
       "commands": [
         {
           "name": "Implacable",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028299041/D4DC7516D17A04AC587D5F44D0CBDDFE2E3D22D5/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135444439/06F119390473A1CAA7F4785636130B4D857A61A8/",
           "pip": 1
         },
         {
           "name": "Vader's Might",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035874/D411BF35A17D45663A7AE6DB04C4368F69B447EA/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135444550/33DB2D103378C35509E7FEE23A0ACD2BFEE8195E/",
           "pip": 1
         },
         {
           "name": "New Ways To Motivate Them",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034988/4F888B0F1849EDDA47FA8B635075B011F56B967A/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135444510/952B5595A8E35BF7E2A0B51933DEC0A855D8EBAB/",
           "pip": 2
         },
         {
@@ -40,7 +40,7 @@
         },
         {
           "name": "Master Of Evil",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033333/3BEA0BC9F2038200FFF56CDD8DA3C67808EB84E6/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135444481/AF8E308CE2EE310C787E53AA0BAC97471DC05621/",
           "pip": 3
         },
         {
@@ -71,73 +71,18 @@
       "commands": [
         {
           "name": "Maximum Firepower",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036422/34C5A93E3C69A143EB6E537C1D984010996FDDF2/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135449935/27D7D687763686F54338BA5A2848E1B1A65C62A7/",
           "pip": 1
         },
         {
           "name": "Evasive Maneuvers",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035477/69CEA53CB3D4B9ADDD22B28CA9BC9DDBADB3C706/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135449823/16F99AFAA1AD6647F0B47ED9FBF3EEDF2A034BFE/",
           "pip": 2
         },
         {
           "name": "Imperial Discipline",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033490/3EB2A5666B5D911D173242DD948521DFC169FE22/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135449883/86FF6A857D6EBD4365D06547285401B3E3D4B79F/",
           "pip": 3
-        }
-      ]
-    },
-    {
-      "name": "Emperor Palpatine",
-      "title": "Ruler Of The Galactic Empire",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701664/ABD12EEF236402EDF420F7849146DDEB367FC290/",
-      "size": "small",
-      "type": "Trooper",
-      "points": 190,
-      "speed": 1,
-      "upgrades": {
-        "Force": 3,
-        "Command": 1
-      },
-      "minis": [
-        {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541565714/71E1936EB657F4BC1074EB740BC9AA0531A130AC/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541565804/0EB3EBFD318678DBE5B7C83B39A31DC8AB3376B6/"
-        }
-      ],
-      "commands": [
-        {
-          "name": "And Now You Will Die",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037110/8E3A2FB239539785945D116F85B21B481603690C/",
-          "pip": 1
-        },
-        {
-          "name": "Give In To Your Anger",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035342/543139C6B87DC74DAA2C0A37E4519EF525E73E8E/",
-          "pip": 2
-        },
-        {
-          "name": "An Entire Legion",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034291/4E6BD80297A517DC6C92B4874ED945A0171CADC2/",
-          "pip": 3
-        }
-      ]
-    },
-    {
-      "name": "Imperial Officer",
-      "title": "Ruthless Commander",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384862580/646BACE767C276F5BE4D3CE1DBD707B174491EAE/",
-      "size": "small",
-      "type": "Trooper",
-      "points": 55,
-      "speed": 2,
-      "upgrades": {
-        "Command": 1,
-        "Gear": 1
-      },
-      "minis": [
-        {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541565898/F06AB6731446249164D34ACA208E4FAE70C6FE00/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541566011/A7A84EBF79DA5E1D5BCE71E863FC16EC40937F6F/"
         }
       ]
     },
@@ -162,7 +107,7 @@
       "commands": [
         {
           "name": "Voracious Ambition",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035835/61A0DCFF63E278C4BFE5FA84970D6C8A820647F4/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135450643/8B21E1AC56AE75D2204878EA62E65325AE365494/",
           "pip": 1
         },
         {
@@ -180,7 +125,7 @@
     {
       "name": "Iden Versio",
       "title": "Inferno Squad Leader",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701556/6A3390D19B067EAACDF1CADD825D11BBE048DCEA/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135447992/97B7DD726FEB2C4811A53FE5B68FB430713FB9FD/",
       "size": "small",
       "type": "Trooper",
       "points": 100,
@@ -200,69 +145,30 @@
       "commands": [
         {
           "name": "Pulse Scan",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036274/DF63072DBC71647215D98AC674EA8979DA3C2137/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135447957/DFC97CD26266A0F75601991E627A9A7D88D2DC26/",
           "pip": 1
         },
         {
           "name": "Concussive Blast",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035579/49CC24C1F86F0BE2CD8324868E3EEFC1AE328E0C/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135447851/69B1F705930944BD26685CDCB3F7A52127D9BF25/",
           "pip": 2
         },
         {
           "name": "Incapacitate",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035176/6E9CFBF7487DDE5D4940E64762EB72A7D68CE7A2/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135447917/9D2822AF6299DF22D89273129D1E7870430429DF/",
           "pip": 2
         },
         {
           "name": "Tactical Strike",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032968/40A2C000893514EFDE161EBBF950160618A947DA/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135447971/CD83916F6A11CD5CE3D75CCACA9FA01C248FDF18/",
           "pip": 3
         }
       ]
     },
     {
-      "name": "Agent Kallus",
-      "title": "Hunter Of Spectres",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701522/0198EDBE386830FA71A43C6887FD82E0CC28D241/",
-      "size": "small",
-      "type": "Trooper",
-      "points": 90,
-      "speed": 2,
-      "upgrades": {
-        "Command": 1,
-        "Training": 1,
-        "Gear": 1,
-        "Armament": 1,
-        "Flaw": 1
-      },
-      "minis": [
-        {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185920/1B6637756A8044A1D173F7AD5C1BFD813EC66CCA/"
-        }
-      ],
-      "commands": [
-        {
-          "name": "Face Me!",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036719/80DA17B10B9444036EB57237E434E28C2B8D9D7F/",
-          "pip": 1
-        },
-        {
-          "name": "ISB Investigation",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035240/AF545C5C697618B4891784AE68F39CBE906F3FB6/",
-          "pip": 2
-        },
-        {
-          "name": "Ruthless Tactics",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033151/86AA97C5A365099681E54FA21C2B9D6F08519AB7/",
-          "pip": 3
-        }
-      ],
-      "required": ["Developing Sympathies"]
-    },
-    {
       "name": "Moff Gideon",
       "title": "Long Live the Empire",
-      "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907351/8433669F28D81BC5196DD4D7DEBE0782C64B8F01/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135445399/8AB358A896676499DDA9B176E90E39AEA6C36DB1/",
       "size": "small",
       "type": "Trooper",
       "points": 100,
@@ -275,18 +181,18 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/5070522239197162593/F42F2D876D0B0BBD8E701D0F813A631E2E0D9E76/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2446089105227025807/2E7D8F479762060CAF447A2E5A6C27891C314EA2/"
         }
       ],
       "commands": [
         {
           "name": "Die at My Hand",
-          "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907196/DBA2F1E68937EB87615A812B218D74E50E58A95E/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135445379/2E1BA2F22E9816B73C934205D77DDAB726F93D44/",
           "pip": 1
         },
         {
           "name": "You Have Something I Want",
-          "image": "http://cloud-3.steamusercontent.com/ugc/5070522239196907249/AC9853C05AC9350387E7CAE817F8F02A24A6BA5B/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135445472/1CCEC5B09B861DA2530A4F9C5548480F5B9CC7B8/",
           "pip": 2
         },
         {
@@ -307,7 +213,7 @@
     {
       "name": "Boba Fett",
       "title": "Infamous Bounty Hunter",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418867906/44A3AE63815B46C40C081924D1DE38B5ED3B3B99/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137005787/86FC806D7DFDD74A0AB92D0E1B2D4842E84DB677/",
       "size": "small",
       "type": "Trooper",
       "points": 130,
@@ -326,32 +232,27 @@
       "commands": [
         {
           "name": "A Simple Man",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527247/05CDA2737D98FB18CACE99E65CE51E5AB24ABA0B/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137003571/5A5FB50BC907A26126D8D458A0A4A3283DFFFEC0/",
           "pip": 1
         },
         {
           "name": "Whipcord Launcher",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035802/A1AA027AE84C3CF96C2E671C6BFA78E2C94E2741/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137003429/DD564B5EA75537F3EBD45048833E5810DF5B33F5/",
           "pip": 1
         },
         {
           "name": "Making His Way in the Galaxy",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527294/F0CD781F4680C3BBBDA58B1CECE1A3FF3B6821FE/",
-          "pip": 2
-        },
-        {
-          "name": "ZX Flame Projector",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034359/7CC1427FEA79D22D3128A5650F8A93159661A656/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137003517/D14FF44B1B27BEA7A9058101AD2C8B1FB8FAA445/",
           "pip": 2
         },
         {
           "name": "Rule with Respect",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527380/9CF23D52011D3B943E8DE565D19E91EC579F5784/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137003465/FB8C27572F44CAC6D4D6222AE11DA7A1EE7E201F/",
           "pip": 3
         },
         {
           "name": "Z-6 Jetpack Rocket",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032805/D4AEE724FC17B87F391BB7B24A3C8D44B40B704B/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137003593/EDE3AF9DE7EE272F32C187643DFE4A565B205FD6/",
           "pip": 3
         }
       ],
@@ -366,7 +267,7 @@
     {
       "name": "Darth Vader",
       "title": "The Emperor's Apprentice",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298844/F7434FFD1E2C0C0EF4F0AA4F5C6B5EA727CFEDFF/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135453126/1C9CAD022704D64F0B9139865DBEB8BCA11EBFA4/",
       "size": "small",
       "type": "Trooper",
       "points": 175,
@@ -384,17 +285,17 @@
       "commands": [
         {
           "name": "Implacable",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028299041/D4DC7516D17A04AC587D5F44D0CBDDFE2E3D22D5/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135444439/06F119390473A1CAA7F4785636130B4D857A61A8/",
           "pip": 1
         },
         {
           "name": "Vader's Might",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035874/D411BF35A17D45663A7AE6DB04C4368F69B447EA/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135444550/33DB2D103378C35509E7FEE23A0ACD2BFEE8195E/",
           "pip": 1
         },
         {
           "name": "New Ways To Motivate Them",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034988/4F888B0F1849EDDA47FA8B635075B011F56B967A/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135444510/952B5595A8E35BF7E2A0B51933DEC0A855D8EBAB/",
           "pip": 2
         },
         {
@@ -404,7 +305,7 @@
         },
         {
           "name": "Master Of Evil",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564033333/3BEA0BC9F2038200FFF56CDD8DA3C67808EB84E6/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135444481/AF8E308CE2EE310C787E53AA0BAC97471DC05621/",
           "pip": 3
         },
         {
@@ -417,7 +318,7 @@
     {
       "name": "IG-88",
       "title": "Notorious Assassin Droid",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527656/131943FCDA732152E47C83B06C416F36E8D92B19/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137009352/1C2EF08C41D85E6F3B214B380DA174D2AADE6BDB/",
       "size": "small",
       "type": "Droid Trooper",
       "points": 110,
@@ -435,17 +336,17 @@
       "commands": [
         {
           "name": "Focused on the Kill",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1883093542256527598/80232945F2FFF7AD739F762446430D62F099D65A/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137026321/D9785EEF3FE2835319A9F3A2FB632A6E68D34371/",
           "pip": 1
         },
         {
           "name": "A Machine Made For Killing",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1883093542256527660/AD18F5D38A427F0CAAEC5F3016FBD31050134B7A/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137016998/E6071BE8EDF0A20E6032D047B35D5EF5FC8B7182/",
           "pip": 2
         },
         {
           "name": "Independent Programming",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1883093542256527538/49D0CD2A0FB411B1377ADB299395E3A3356B492F/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137017800/F888E446D9C374E57E091347F651D30A7CEEC81F/",
           "pip": 2
         }
       ],
@@ -460,7 +361,7 @@
     {
       "name": "Fifth Brother",
       "title": "The Kill is Mine",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174552333/68E9B4569ABDB27E40706B4271708695BA4BE16F/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137011062/2CD518FAF98E506E8D2316B4A21294FAE1D2DAF8/",
       "size": "small",
       "type": "Trooper",
       "points": 105,
@@ -471,18 +372,18 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770174720883/27A48880934C3B35AE42D5E62C73EA3A0ECA240B/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2456221571853672166/B86F663B609267644D837B4F18C59614C6785229/"
         }
       ],
       "commands": [
         {
           "name": "You Would Question Me?",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174551893/BAA06C5EE28685252AF55E955DB6FC0754D77EA6/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137018940/87231143078D7F264017F3EF0B7C221098555811/",
           "pip": 2
         },
         {
           "name": "I Care Not for your Struggles",
-          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384886367/EE0BEDD35252436DE848457522D8D875B7DD4828/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137018989/07882CCD7D056DFFB777074A53C21811352E6844/",
           "pip": 3
         }
       ]
@@ -490,7 +391,7 @@
     {
       "name": "Seventh Sister",
       "title": "Compelled to Inflict Pain",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174552593/8D3A9E091FD25223A4A113671E62A0C811C341B7/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137011773/5377A3D119B96061C7EFAF2F8469BD5E889F3F13/",
       "size": "small",
       "type": "Trooper",
       "points": 110,
@@ -501,26 +402,65 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770174720951/C4FC16B1ACE927ECF9F59C726DC59B8C6561FED8/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2446090001278329724/E8E229E0E3FB6230D9F5A1823C71032A0FC9F2D0/"
         }
       ],
       "commands": [
         {
           "name": "Come and Prove It",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174552966/6950B93171AF6A52B7DF49EB2F09478B7DB42D26/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137019689/3B73F5638839DF849BC5921412BCC4ABCC35DAEC/",
           "pip": 1
         },
         {
           "name": "Unexpected, but not Unwelcome",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174553026/B2B79F911A1A201A793B812B0A8B4881D3FAB80C/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137019893/59EB748713DD2A67E92CCFE9D3243D15C3670FBC/",
           "pip": 2
         },
         {
           "name": "You Hide Your Fear Well",
-          "image": "http://cloud-3.steamusercontent.com/ugc/2058763770174553089/B5C28400319F6E7F0C2B17D94B7859C277DF09B5/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137019788/90EA4637127092D742B503FE3E5DF0F9E96473A0/",
           "pip": 3
         }
       ]
+    },
+    {
+      "name": "Agent Kallus",
+      "title": "Hunter Of Spectres",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135448854/CC65D752275214DB6D5791534DDEFF4784D6259E/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 90,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Training": 1,
+        "Gear": 1,
+        "Armament": 1,
+        "Flaw": 1
+      },
+      "minis": [
+        {
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2446089105227059084/0EB4EE32683338BC754DA5EC1F613ABA71048E90/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Face Me!",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135448798/AACA6ECCF1997BBEB2F5A054C4EC8B0D47C2D0C7/",
+          "pip": 1
+        },
+        {
+          "name": "ISB Investigation",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135448812/E8D9B9BDEB69B87FADD3E294851E7AFD6868EB42/",
+          "pip": 2
+        },
+        {
+          "name": "Ruthless Tactics",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135448839/F78FAA7976B9225D466E754C622758F60EE30D5F/",
+          "pip": 3
+        }
+      ],
+      "additionalObjects": ["Victory Token"]
     }
   ],
   "Corps": [
@@ -539,26 +479,22 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141156/BF26D516EA8F33C72822FF9AB369FF7CA444C403/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2478747809413608082/BD8A164AAD4C70AE2F8CB8165F3D2DC9FD94C778/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141545/30BEFE4E87E379AA361AFF5FD24A8F5D3F0BA4C0/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2478747809407737751/27A207BFDA271D2EA267D400CBDF551B11EE093C/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141624/1366A6A4D84D9FE597EEA2736AFC187F392418DA/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2478747809407737751/27A207BFDA271D2EA267D400CBDF551B11EE093C/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2017090166650141692/8E06789B4D2003055108ED85D76E875729254757/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/2017090166650141746/A8FD77EB51C50C64CD924BDAEEDB70D8839E0EF3/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2478747809407737751/27A207BFDA271D2EA267D400CBDF551B11EE093C/"
         }
       ]
     },
     {
-      "name": "Riot Control Squad",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863541/0D08A36869D07A28874A58854BDCF6D87225306D/",
+      "name": "Stormtrooper Riot Squad",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139658813/F6DC48260186CC0283711F9A6E216341F1631319/",
       "size": "small",
       "type": "Trooper",
       "points": 50,
@@ -679,7 +615,7 @@
     },
     {
       "name": "DF-90 Mortar Trooper",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789216756/D8C157D8B31711EC7076FFF7C39347BC20B0E76A/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139662551/E8496B01C9619FBA2E5EEEBEF285ABEEF95ECF00/",
       "size": "medium",
       "type": "Emplacement Trooper",
       "points": 40,
@@ -704,7 +640,7 @@
   "Special Forces": [
     {
       "name": "Scout Troopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298945/EF8212952111B1407837754BAEF96F238B718830/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139667737/5A74C7A6641FF79D0BEA098600B7338595160681/",
       "size": "small",
       "type": "Trooper",
       "points": 48,
@@ -760,36 +696,8 @@
       ]
     },
     {
-      "name": "Imperial Royal Guards",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701217/89E8CC46981E8C634A4E3D6C4F6EAF343B27C1E2/",
-      "size": "small",
-      "type": "Trooper",
-      "points": 69,
-      "speed": 2,
-      "upgrades": {
-        "Heavy Weapon": 1,
-        "Training": 2,
-        "Gear": 1,
-        "Grenades": 1
-      },
-      "minis": [
-        {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541911959/D583DF28D96DBDF2F1FE9FB6AAB25809774C46EF/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/"
-        },
-        {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541912172/73A36C525BC98DD1F4EC7953943FE5F660B0E9D8/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/"
-        },
-        {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541912365/CB3109223BD5A017AA159066A3B17002B8892047/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541912060/182C0DD6D66EC8DEF075135B872DE26364010E27/"
-        }
-      ]
-    },
-    {
       "name": "Imperial Death Troopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701181/DD8B2B7C2D3C3AC66F7D90F738B04BB309A31B46/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139667689/20539A9EAB988308E299A3DE18818D7B9FBA63C9/",
       "size": "small",
       "type": "Trooper",
       "points": 72,
@@ -823,7 +731,7 @@
     },
     {
       "name": "Imperial Special Forces",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701129/EDA8288C48AF33A69F22AE18E6CEB1413A0B04F9/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139667628/DC827BC31A0CA433CBACA568292623523896981F/",
       "size": "small",
       "type": "Trooper",
       "points": 68,
@@ -858,7 +766,7 @@
       "name": "Imperial Special Forces",
       "title": "Inferno Squad",
       "displayName": "Inferno Squad",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701097/D1043BFA3767D8E5A294ACA112D0E7E9A6B75627/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139667572/5230C0C79688307883294267607D597037641B36/",
       "size": "small",
       "type": "Trooper",
       "points": 34,
@@ -882,7 +790,7 @@
   "Support": [
     {
       "name": "74-Z Speeder Bikes",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701072/16EF027E626FA31293F4E88556AF9633F091180D/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139672763/037D15DE4ACD0941BA57FEEBDEBE3F346E04F8BC/",
       "size": "medium",
       "type": "Repulsor Vehicle",
       "points": 70,
@@ -925,7 +833,7 @@
     },
     {
       "name": "Dewback Rider",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788701014/E1E943B567134E6A946C714BD07233CDC881A7AF/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139672717/75700C648595B7642273964A59B5CDFFBD650014/",
       "size": "large",
       "type": "Creature Trooper",
       "points": 70,
@@ -944,7 +852,7 @@
     },
     {
       "name": "Range Troopers",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2495630600682578473/BF07355370D1E0303B59E0FA2F7439FC22D58941//",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139672651/467BD8F23216F7AE5274DC84837483AE40571B02/",
       "size": "small",
       "type": "Trooper",
       "points": 60,
