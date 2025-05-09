@@ -710,7 +710,7 @@
       },
       {
         "name": "Electro Grappling Line",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568140704/D0663049B1110A92D0816F1764BCA3676068E458/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140085250/238DDAD4ECD0F3A7307D08D40ABBA0A0529375F3/",
         "points": 5,
         "restrictions": {
           "include": {
@@ -744,8 +744,8 @@
         "points": 2
       },
       {
-        "name": "Personal Combat Shield",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144199/E3196D206A593BDF4C30F00F1A8B5F558BF0B217/",
+        "name": "Sabine's Combat Shield",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140089761/CCEBC0B6763DAA8C50AFA2DDA8E17AACD0A0F147/",
         "points": 5,
         "restrictions": {
           "include": {
@@ -1966,7 +1966,7 @@
       },
       {
         "name": "Super Commando Marksman",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1856061112418868369/DC8B8AEF385F79F612BA4D7E4ABC786BE3F54E3A/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15709592670795104171/ACE59DD60752ACF052681409AEBE159D7C400AFE/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1856061112420143451/3DFD9C8BD5D504D3A2F7934678D1A0A7C2285863/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1789640371717200769/60353F40BAE6D92D6F6ED24E2883EB9CC2EA74C4/"
