@@ -1075,8 +1075,8 @@
         }
       },
       {
-        "name": "Twin Blaster Cannons",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081189035/E0FE1C4A1C9FDB662B092EEE87DDF1679EE4F144/",
+        "name": "Twin Blaster Cannons (ISP)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14131708632610337124/66E8516A5E6EB1D1F90B8A835EB006A7EAB7F075/",
         "points": 25,
         "restrictions": {
           "include": {
@@ -1086,7 +1086,7 @@
       },
       {
         "name": "Twin Missile Pods",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1616219505081188964/A368F5EF82821FCC38D6FABC316A1C035C38ECCA/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13940347858969613016/FC2F44AA892930B09D58A1259D9DABAC7CAB9488/",
         "points": 25,
         "restrictions": {
           "include": {
@@ -1318,12 +1318,12 @@
       },
       {
         "name": "DC-15X ARC Trooper",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1860546411028298710/80CA04A1D29D91F52B2F0169038D6A64B39C7687/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9724672671096889082/B22903B590FA5B6D2AAEC2988AA0F9826C9D1EB2/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457800878/34EC84D7ECD99E073417866A9BEC4288E00F5359/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
         },
-        "points": 31,
+        "points": 37,
         "restrictions": {
           "include": {
             "unit": ["ARC Troopers"]
@@ -2321,11 +2321,11 @@
       },
       {
         "name": "Clone Medic",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855671/3D1C3D57159E59D347D6CC09FAC4718A4F1A7225/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9547979006347114303/D43781CC9968425F51916493FAA615ACDE207B6B/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809184711/BC2EE95F62E043F83A352F825B6A041AC6D59959/"
         },
-        "points": 15,
+        "points": 20,
         "restrictions": {
           "include": {
             "type": ["Clone Trooper"]
@@ -2364,7 +2364,7 @@
       },
       {
         "name": "Clone Commander",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855406/77E62A8F0A3DA3E38BB66B8DFC270F600086A2BD/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16325670012605150200/01E77403F827CE48BBD0262024C39AEF2465B64A/",
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186354/387C36C2BB545E6CC882A05C0D81F5BE164166B7/"
         },
@@ -3299,7 +3299,7 @@
       },
       {
         "name": "Aayla Secura",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568138016/6FD454904B9ADCC463C52F3DCB9BD7899D570D93/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13270315361837467006/57E535080404547F3055847340DF881544FE2E62/",
         "points": 5,
         "restrictions": {
           "include": {
@@ -3331,12 +3331,12 @@
       },
       {
         "name": "Clone Shock Trooper Pilot",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384855749/C581402EB727286D5CD23A4ADFD4EB9CC2CC3A45/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10111085862146477057/252EF202515CC108E593111B56718C2CD813870E/",
         "points": 4,
         "restrictions": {
           "include": {
             "faction": ["Republic"],
-            "unit": ["LAAT/LE Patrol Transport"]
+            "rank": ["Heavy"]
           }
         }
       },
@@ -3374,7 +3374,7 @@
       },
       {
         "name": "Hound & Grizzer",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568142527/7C8F0D3C99BA6BD83BB046156C618173065907E3/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13575491821704896451/EDE4AFDD9E9AEC222C4B8F7C91F124B3F32B8A73/",
         "points": 8,
         "restrictions": {
           "include": {
@@ -3449,7 +3449,7 @@
       },
       {
         "name": "Plo Koon",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144509/262D350CAB98488C834D83AF4970CF00FA93BF95/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12076372952085384369/7AAAC90F9DEA02181CD279217BEE86A4F4846ACF/",
         "points": 9,
         "restrictions": {
           "include": {
@@ -3501,11 +3501,12 @@
       },
       {
         "name": "Veteran Clone Pilot",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568146406/11D4D175DDBD3965C61D8B20386D069FF2179B67/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14161188831430230944/D58989E46F93F8F783C9305E8056941DD27C449E/",
         "points": 7,
         "restrictions": {
           "include": {
-            "unit": ["Saber-Class Tank"]
+            "faction": ["Republic"],
+            "rank": ["Heavy"]
           }
         }
       },
