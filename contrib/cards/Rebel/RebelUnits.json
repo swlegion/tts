@@ -338,7 +338,7 @@
     {
       "name": "Chewbacca",
       "title": "Walking Carpet",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969789163592/3EE305AD57A0D00B7B413FF0F6F418D5FA544968/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133196213/4E3D98C13521875895DBA499660FAD9C03401E19/",
       "size": "small",
       "type": "Wookiee Trooper",
       "points": 90,
@@ -374,7 +374,7 @@
     {
       "name": "Sabine Wren",
       "title": "Explosive Artist",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604048/BE5C0706F024117D9DBCF3468D89A4DEA1C10BFE/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133198454/7B0CE6DEA21E5969ACFD78775BB716526A2F5E19/",
       "size": "small",
       "type": "Trooper",
       "points": 125,
@@ -415,7 +415,7 @@
     {
       "name": "Luke Skywalker",
       "title": "Jedi Knight",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788604076/98BCE6298F7E4D5086CB79D9592FC0151E7A447A/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133196988/42DDFCCED093080587DEC624C04303D85BF5C365/",
       "size": "small",
       "type": "Trooper",
       "points": 195,
@@ -502,7 +502,7 @@
     {
       "name": "K-2SO",
       "title": "Sardonic Security Droid",
-      "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788629460/11D489A9283627C5CE93F29C04BEB61BA3F166D5/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133196811/24F4099145C9D7E19B87DF774BF443DA448248D1/",
       "size": "small",
       "type": "Droid Trooper",
       "points": 70,
@@ -584,7 +584,7 @@
     {
       "name": "Ahsoka Tano",
       "title": "Fulcrum",
-      "image": "http://cloud-3.steamusercontent.com/ugc/2022720184107019845/E7B0CE153BABCB9FF1DB91EF0B3F216B15253A29/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133195586/1A1B3A8C98F61A54D40DD8920D859B78C1B08F2E/",
       "size": "small",
       "type": "Trooper",
       "points": 165,
@@ -1189,7 +1189,7 @@
         "Comms": 1
       },
       "silhouette": {
-        "height": 1.900,
+        "height": 1.9,
         "offset": 0
       },
       "minis": [
