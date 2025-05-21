@@ -289,7 +289,7 @@
         "points": 0,
         "restrictions": {
           "include": {
-            "unit": ["Clone Commandos"]
+            "unit": ["Clone Commandos", "Clone Commandos Delta Squad"]
           }
         }
       }
