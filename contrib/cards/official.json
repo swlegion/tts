@@ -326,6 +326,11 @@
         "points": 5
       },
       {
+        "name": "Trusted Agent",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17954061666704112600/9401A70D88A98BA9FC5B5D8E56B0FA7F3B95961B/",
+        "points": 5
+      },
+      {
         "name": "Vigilance",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10166497509018197631/139646D733278E6B4FDD81AC4AC6D4A9CEE967C0/",
         "points": 12
@@ -416,6 +421,11 @@
         "name": "Emergency Transponder",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/9908400255536413440/38A6CDC80C3D7D0A2F9A9903EC1E0651380D8526/",
         "points": 4
+      },
+      {
+        "name": "Spotter Uplink",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14924322567155862762/F2A27A192FD49D879842AF20650351B03ACB0AFB/",
+        "points": 3
       }
     ],
     "Counterpart": [
@@ -527,6 +537,11 @@
         }
       },
       {
+        "name": "Door Gunners",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10380945357802391916/5D21C9620D0382828965E9FA8E1534BF067A4E7A/",
+        "points": 12
+      },
+      {
         "name": "Gnasp Bombardier",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135343165/A3E8D964A08B453B9E015137A07E33D8387D1A64/",
         "points": 20,
@@ -626,6 +641,11 @@
         "points": 10
       },
       {
+        "name": "Clairvoyance",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17229509976995559718/02821314DBA25F4938A6E51ED6F1BF2F79993A49/",
+        "points": 10
+      },
+      {
         "name": "Fear",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/9673306764281530635/A29BF04A277C5491400B32B97D8FEA512722A7B3/",
         "points": 3,
@@ -695,6 +715,21 @@
         "name": "Saber Throw",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/14367574201845804889/D5DB44897C38C9633AC5168A038FFEA4F7119A0E/",
         "points": 5
+      },
+      {
+        "name": "Terror",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9638503798572904032/DD40B411FE4834EA82A7355EAF3EE268084977FA/",
+        "points": 6,
+        "restrictions": {
+          "include": {
+            "alignment": ["Dark"]
+          }
+        }
+      },
+      {
+        "name": "Tranquility",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13728641352656300834/760A9CB4F241747DDB209C777746D41774518994/",
+        "points": 10
       }
     ],
     "Gear": [
@@ -737,6 +772,11 @@
         "name": "Environmental Gear",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/16652798721637422056/91F7C8F27389BFDA9D9136B527122F23530B8501/",
         "points": 2
+      },
+      {
+        "name": "Extra Supplies",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15887924979159088662/7496D40446701B499092859A5230230BD24B51C4/",
+        "points": 5
       },
       {
         "name": "Grappling Hooks",
@@ -3636,6 +3676,11 @@
         "points": 2
       },
       {
+        "name": "Dug In",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/18249790041400631546/5B8E5A40CBC42DE4BE8A26F1576E8F8AD4690C12/",
+        "points": 6
+      },
+      {
         "name": "Endurance",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/9415595468930295182/7ACC3ED6894ECD1FDED41AC058BF318868605636/",
         "points": 6
@@ -3649,6 +3694,22 @@
         "name": "Into The Fray",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/14109187506581343144/00287D0E98E6349774A91B470804179CCBFE529E/",
         "points": 4
+      },
+      {
+        "name": "Imperial March",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14337942722120063044/BA09967A3C8A7F4E5A38815E4C7812EB00DA3B3D/",
+        "points": 6,
+        "restrictions": {
+          "include": {
+            "rank": ["Corps"],
+            "faction": ["Empire"]
+          }
+        }
+      },
+      {
+        "name": "Mission Objective",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17334019965207943741/029ACD82FDA36426721B25B435731D78D4470689/",
+        "points": 6
       },
       {
         "name": "Offensive Push",
@@ -3672,6 +3733,34 @@
         "restrictions": {
           "include": {
             "rank": ["Commander", "Operative"]
+          }
+        }
+      },
+      {
+        "name": "Strike and Fade",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12387238698929923109/8DC11627ECA9A969FEBA8E2741FA455AA20FF62C/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": [
+              "STAP Riders",
+              "Swoop Bike Riders",
+              "X-34 Landspeeder",
+              "T-47 Airspeeder",
+              "74-Z Speeder Bikes",
+              "Raddaugh Gnasp Fluttercraft",
+              "BARC Speeder"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Strike Team Leader",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11456350745801770677/274AAA3D006877A45E7B114490584831707AB694/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "rank": ["Operative"]
           }
         }
       },
