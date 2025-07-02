@@ -289,6 +289,42 @@
   "Operative": [
     {
       "name": "R2-D2",
+      "title": "Independent Astromech",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134141698/FAE960D0D49F0061E6FA7755E67185322CF307F0/",
+      "size": "small",
+      "type": "Droid Trooper",
+      "points": 55,
+      "speed": 1,
+      "upgrades": {
+        "Counterpart": 1,
+        "Comms": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456806966/EFBA4A71BFE748A2868C14B82DA3A7B0D559874A/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/777357228032306302/F5CA6FC54A8625E261F123D73792DE36D74E1686/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Blast Off!",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134141577/8D591F13DCEA99113D64D58B6E2D68ED52A08EE7/",
+          "pip": 1
+        },
+        {
+          "name": "Impromptu Immolation",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134141630/9373A105353B80AC756D358EBF8F21D63295D45C/",
+          "pip": 2
+        },
+        {
+          "name": "Smoke Screen",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134141746/0599A5682160DFB2D79CCA9577530E15478AAEBD/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "R2-D2",
       "title": "Hero of a Thousand Devices (GAR)",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134141698/FAE960D0D49F0061E6FA7755E67185322CF307F0/",
       "size": "small",
