@@ -444,6 +444,34 @@
         }
       },
       {
+        "name": "C-3PO Human Cyborg Relations",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134141499/36DA30FD99788C7127DCADE11325FDBC09B16747/",
+        "points": 15,
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456807069/DE7E32B39455DB5111769436FD0C5BFDA3841268/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/777357228032306506/D60CB8A1159723917EF1831D4042318A67458A7A/"
+        },
+        "restrictions": {
+          "include": {
+            "unit": ["R2-D2"]
+          }
+        }
+      },
+      {
+        "name": "C-3PO Human Cyborg Relations (GAR)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11238494832346367985/1AAEB9F5359ADB9FA1C75D43A7F7FA087D5CD961/",
+        "points": 15,
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456807069/DE7E32B39455DB5111769436FD0C5BFDA3841268/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/777357228032306506/D60CB8A1159723917EF1831D4042318A67458A7A/"
+        },
+        "restrictions": {
+          "include": {
+            "unit": ["R2-D2"]
+          }
+        }
+      },
+      {
         "name": "Iden's ID10 Seeker Droid",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135447894/8F1310249DB7B03175CFEEE485B966D2E228C623/",
         "points": 15,
@@ -459,7 +487,7 @@
       },
       {
         "name": "Grogu",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1904476875947527550/67B9752CF162B34F3D406C7D244974C01F7BFA4C/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10193011638909819730/8D53047BE6DF276528CA0FD2BB8283DF4AAD1377/",
         "points": 17,
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1785135165610974498/47B1C8B92A0E945388F7773EAB2F73B0A81E761E/"
@@ -472,7 +500,7 @@
       },
       {
         "name": "Omega Mascot of the 99th",
-        "image": "http://cloud-3.steamusercontent.com/ugc/2475370743175005432/91DF6117D3E30AF7A239A8DBA62256C84754C8C5/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13052279450458785925/C7B345E1DDA2DA424D48B784B9211314F16BA062/",
         "points": 10,
         "mini": {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2475370743175243961/93E8549BC0F1F88228D651FAE226459945DC6651/"
@@ -850,7 +878,7 @@
       },
       {
         "name": "Din's Flame Projector",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1787388827710906580/1EC967CC4F871D07D3F419B4CF574394D289DBB6/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13750229648005754282/BBA7B66BB64E77DD6485518A99475DE0DC684BE8/",
         "points": 5,
         "restrictions": {
           "include": {
