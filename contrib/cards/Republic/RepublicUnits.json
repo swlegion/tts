@@ -481,10 +481,6 @@
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457802621/01F605D855048F823A0ECA6C46D2A62B56C04124/",
           "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
-        },
-        {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457799750/AE83DC038BA8AAF48678D07E1F9734D4A9944C1D/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
         }
       ]
     },
@@ -546,7 +542,7 @@
     },
     {
       "name": "ARF Troopers",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/10803117186606544/094414A06373C4EDD33EB57774F7090EEF175D9E/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/12272409584211361084/EF41D3B9F89F86EC4E803863C17D1549052C8B55/",
       "size": "small",
       "type": "Clone Trooper",
       "points": 58,
@@ -554,6 +550,7 @@
       "upgrades": {
         "Squad Leader": 1,
         "Heavy Weapon": 1,
+        "Personnel": 1,
         "Training": 1,
         "Comms": 1,
         "Gear": 2,

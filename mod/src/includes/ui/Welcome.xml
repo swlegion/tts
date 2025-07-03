@@ -37,7 +37,7 @@
       <VerticalLayout padding="5">
         <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
           <!--Welcome to Star Wars: Legion for TTS, <b>v8.0.0</b>.-->
-          Welcome to Star Wars: Legion for TTS, <b>v8.0.10-beta</b>.
+          Welcome to Star Wars: Legion for TTS, <b>v8.0.11-beta</b>.
 
           This is a <b>beta release</b>, and is <textcolor color="#f03333"><b>not suitable for tournament play</b></textcolor>.
 
@@ -46,7 +46,7 @@
           <b>CHANGELOG</b>
           (Since last <i>Beta</i>)
           <!--(Since last <i>Stable</i>)-->
-          - Add: New Card Format
+          - Add: New Upgrade Cards
           - Fix: json Discrepancies
         </Text>
       </VerticalLayout>
