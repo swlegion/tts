@@ -3770,15 +3770,7 @@
         "points": 5,
         "restrictions": {
           "include": {
-            "unit": [
-              "STAP Riders",
-              "Swoop Bike Riders",
-              "X-34 Landspeeder",
-              "T-47 Airspeeder",
-              "74-Z Speeder Bikes",
-              "Raddaugh Gnasp Fluttercraft",
-              "BARC Speeder"
-            ]
+            "type": ["Repulsor Vehicle"]
           }
         }
       },
