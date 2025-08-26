@@ -10,6 +10,36 @@
   "upgrades": {
     "Armament": [
       {
+        "name": "Heavy Blaster Pistol",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16148048905111619924/4146F9FBD1CE36B93A82B0403DB3E956510A7271/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
+      {
+        "name": "Stun Baton",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11788115204668483271/6494041D37500BD80CE8CB640CC058D4CDB7C5DD/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
+      {
+        "name": "Z-6 Riot Baton",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11921155978538693026/3426025D9984B223902084BA7DA742C27DEC0D63/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
+      {
         "name": "A-180 Rifle Config",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137807/208481F3DC8BE18ED10D2A17F12F35869213235C/",
         "flip": {
@@ -630,6 +660,48 @@
         }
       }
     ],
+    "Doctrine": [
+      {
+        "name": "Academy Trained",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16850031235199219220/E0AF83714D0C21470AEADEAE922B744A4809F51E/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer"]
+          }
+        }
+      },
+      {
+        "name": "Defend in Depth",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9547305841950911718/8C9ED29234DB39BFA21F6DAFDAC4A20333FADF20/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
+      {
+        "name": "Platoon Commander",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17549371703531105166/44CA0864E78F8F5FD1D0917AE70DD377D3589ED6/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Agent"]
+          }
+        }
+      },
+      {
+        "name": "Tip of the Spear",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17600634879211462904/B23606C9DBE5F481F8658C6DFD51D89F78FE4915/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      }
+    ],
     "Flaw": [
       {
         "name": "Developing Sympathies",
@@ -761,6 +833,36 @@
       }
     ],
     "Gear": [
+      {
+        "name": "Combat Armor (Empire)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9459937079559114318/45AE4B9ECEF86C715B206E46191FCEA63F42C5AD/",
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
+      {
+        "name": "Command and Control Uplink",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15196731974512810043/1569FC7D3A5E5F3EE46158972C1106C75978397C/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
+      {
+        "name": "Seeker Droid",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13020895085647234538/2CB16D45585A8A87F577DA64528555B3754295AA/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
       {
         "name": "Katarn Pattern Armor",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135343697/9294A833C65D6D3721327C68A057F71D8D920AD7/",
