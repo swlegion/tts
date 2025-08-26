@@ -46,7 +46,9 @@
           <b>CHANGELOG</b>
           (Since last <i>Beta</i>)
           <!--(Since last <i>Stable</i>)-->
-          - Fix: json Discrepancies
+          - Add: Rebel Officer and Agent
+          - Add: Empire Officer and Agent
+          - Fix: Updated Clairvoyance and Annihilation Looms Cards 
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
