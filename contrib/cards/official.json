@@ -707,7 +707,7 @@
         "points": 10,
         "restrictions": {
           "include": {
-            "unit": ["Rebel Officer", "Rebel Agent"]
+            "unit": ["Rebel Officer"]
           }
         }
       },
