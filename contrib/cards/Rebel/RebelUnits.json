@@ -192,6 +192,36 @@
       "content": "contrib/cards/ShadowCollective/PykeSyndicateCapoUnit.json"
     },
     {
+      "name": "Rebel Officer",
+      "title": "Fighting for Freedom",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/9534714757713439013/F1243488529E029C17CAC7745960E27861F6F13E/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 55,
+      "speed": 2,
+      "upgrades": {
+        "Doctrine": 1,
+        "Command": 1,
+        "Training": 2,
+        "Gear": 1,
+        "Armament": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/14532786737705927841/CFA38D52A0507FE16F18C09807CFFE2796E3C3DF/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9545206998925681034/383407768DA711E924DC4459C3774A5A385D0F0A/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Diversionary Tactics",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/18133143929006199770/1914187C13F4DEC189139B79B77BD0AC5AFE4A74/",
+          "pip": 3
+        }
+      ]
+    },
+    {
       "name": "Wicket",
       "title": "Hero of Bright Tree",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133208061/787C79B49789528F2EF54F1668B0BF28EBD6635C/",
@@ -261,6 +291,36 @@
     }
   ],
   "Operative": [
+    {
+      "name": "Rebel Agent",
+      "title": "Defenders of Democracy",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/17901394001843296498/2C1A012DA041E493D5A44E556560CAD26EC271CA/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 50,
+      "speed": 2,
+      "upgrades": {
+        "Doctrine": 1,
+        "Command": 1,
+        "Training": 2,
+        "Gear": 1,
+        "Armament": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11575970146791239281/402B385AB044BE03EE4B9E4FDC5DB87F3023B1A6/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/11658925934967461702/567DB4603169F3DC7DD187903B6E4A0D18902E5F/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Battlefield Reconnaissance",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/17610023314497310693/7E034D283AA09AB843E8A205F44634451A91BFDB/",
+          "pip": 1
+        }
+      ]
+    },
     {
       "name": "Jyn Erso",
       "title": "Stardust",

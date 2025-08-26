@@ -10,7 +10,37 @@
   "upgrades": {
     "Armament": [
       {
-        "name": "Heavy Blaster Pistol",
+        "name": "Heavy Blaster Pistol (Rebel)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16982319690732285379/8FA680F434D4EF30BB0DCDB8835BABFB8C90B16F/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer", "Rebel Agent"]
+          }
+        }
+      },
+      {
+        "name": "Repeating Blaster",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13484211657005252288/0AFB1BBC7DA74BA6713EDCA6869C28E2522C7128/",
+        "points": 25,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer", "Rebel Agent"]
+          }
+        }
+      },
+      {
+        "name": "Vibro Axe",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12824619755788191989/83D29D8C052D145897BAEF171074D066C4CB143A/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer", "Rebel Agent"]
+          }
+        }
+      },
+      {
+        "name": "Heavy Blaster Pistol (Empire)",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/16148048905111619924/4146F9FBD1CE36B93A82B0403DB3E956510A7271/",
         "points": 5,
         "restrictions": {
@@ -662,6 +692,46 @@
     ],
     "Doctrine": [
       {
+        "name": "Frontline Commander",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13795280766311941821/E1F25E09B07E96AF40A5AB1EBC6D353477D17818/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer"]
+          }
+        }
+      },
+      {
+        "name": "Proven Tactician",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12310742349592853996/C01E26E40190FD57EC4DAD2AA97246928ACD3AB9/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer", "Rebel Agent"]
+          }
+        }
+      },
+      {
+        "name": "Unseen Saboteur",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9486677778211309065/4926AB5ED5359DDFF98DF725743208B24BF3D425/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer", "Rebel Agent"]
+          }
+        }
+      },
+      {
+        "name": "Reluctant Hero",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14517747575335986516/9CFE4F6BACFB4FE6AE4E98760A78A28A4CCA3DA3/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
+      {
         "name": "Academy Trained",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/16850031235199219220/E0AF83714D0C21470AEADEAE922B744A4809F51E/",
         "points": 10,
@@ -833,6 +903,16 @@
       }
     ],
     "Gear": [
+      {
+        "name": "Combat Armor (Rebel)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15266337223503378500/082B5B18AF7333C2AB7633999E1817CDD0AD0E49/",
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer", "Rebel Agent"]
+          }
+        }
+      },
       {
         "name": "Combat Armor (Empire)",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/9459937079559114318/45AE4B9ECEF86C715B206E46191FCEA63F42C5AD/",
