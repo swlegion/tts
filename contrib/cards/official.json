@@ -1123,6 +1123,16 @@
         "points": 3
       },
       {
+        "name": "Thermal Detonator",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10343160233994321230/2CBA8174A989A97FB336EF0B04A7A2C36A8967F7/",
+        "points": 3,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer", "Rebel Agent"]
+          }
+        }
+      },
+      {
         "name": "Smoke Grenades",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/15223973175401373403/AB9C869FE463738878D0DFE6EF14529452DD08DD/",
         "points": 3
@@ -3046,10 +3056,10 @@
         "name": "Astromech",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140081721/9FBE2EBFF8A54C66DAC860A08E68AF4D108A09A2/",
         "mini": {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680571476/57CF310CEE5CCDFE2F0769BE7BAF97A6A4104035/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680571745/E93CBD4D8EBD90588639BCA658F36E208A58E465/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16305759943865684242/77B93C06FD78FD56DFEF6334B61B0259F73B67DF/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/13443645039465980995/BC7642774F1435BAD9CAD6928034EF614890B14D/"
         },
-        "points": 9,
+        "points": 8,
         "restrictions": {
           "include": {
             "unit": ["Rebel Sleeper Cell"]

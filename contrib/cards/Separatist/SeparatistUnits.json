@@ -255,6 +255,9 @@
   ],
   "Operative": [
     {
+      "content": "contrib/cards/ShadowCollective/HondoUnit.json"
+    },
+    {
       "content": "contrib/cards/ShadowCollective/CadBaneUnit.json"
     },
     {
