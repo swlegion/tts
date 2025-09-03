@@ -15,7 +15,7 @@
       },
       "minis": [
         {
-          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16433335599854666/7D5FBD7E60477189142C905E42679993F4CA9CAD/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/14648332786386280089/CFF5EDB1D4A6A8136BEC1997DEBF668DB0166B48/"
         }
       ],
       "commands": [
@@ -288,6 +288,9 @@
   ],
   "Operative": [
     {
+      "content": "contrib/cards/ShadowCollective/HondoUnit.json"
+    },
+    {
       "name": "R2-D2",
       "title": "Independent Astromech",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134141698/FAE960D0D49F0061E6FA7755E67185322CF307F0/",
@@ -387,6 +390,37 @@
     }
   ],
   "Corps": [
+    {
+      "name": "Clone Trooper Marksmen",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/14447938350418538967/D4358B28BAF031BE35A7E1F294C15D19DB302D17/",
+      "size": "small",
+      "type": "Clone Trooper",
+      "points": 0,
+      "speed": 1,
+      "upgrades": {
+        "Squad Leader": 1,
+        "Heavy Weapon": 1,
+        "Personnel": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/13193075928061848324/3233B16E02CD7F231DCA46994144B3329B4CCDA4/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/13540579092842774851/38BDB9393BCA4F2020C2EEC798A131D1806E058D/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15225529675747905291/99FAF0DF1F4C90B3BE029846EF98D28ED4AC4DE7/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14173133310269661753/77DC4409C0694CEE7BD5968DBC36B6AD9F582A90/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15225529675747905291/99FAF0DF1F4C90B3BE029846EF98D28ED4AC4DE7/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14173133310269661753/77DC4409C0694CEE7BD5968DBC36B6AD9F582A90/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15225529675747905291/99FAF0DF1F4C90B3BE029846EF98D28ED4AC4DE7/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14173133310269661753/77DC4409C0694CEE7BD5968DBC36B6AD9F582A90/"
+        }
+      ]
+    },
     {
       "name": "Clone Trooper Infantry",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384861815/5F00E6C2F6F1B235D9D3B4E8A11E3D9B74EFEED0/",

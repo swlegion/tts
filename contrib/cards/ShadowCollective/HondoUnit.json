@@ -1,0 +1,28 @@
+{
+  "name": "Hondo Ohnaka",
+  "title": "Trustworthy Compatriot",
+  "image": "https://steamusercontent-a.akamaihd.net/ugc/11303218801782060179/24A9B03FADFBACFB1283FAE3BB743A90E2DB7F91/",
+  "size": "small",
+  "type": "Trooper",
+  "points": 0,
+  "speed": 2,
+  "upgrades": {},
+  "minis": [
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16434519431923646/5AEEA2D1B06052E879D309B86B7D3388751620FC/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16434519431923694/54163B43F70990A5F23ADA6E23325096BC44591A/"
+    }
+  ],
+  "commands": [
+    {
+      "name": "That's Just Good Business",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/11899817943595892771/3EC77AC5781990E25FB15EC62A1DB07CD0517BC7/",
+      "pip": 2
+    },
+    {
+      "name": "Stories, So Many of Them True",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/11045892650401981088/A9812A2D54E14D442F6F3F3F3688A6B48ACA5965/",
+      "pip": 3
+    }
+  ]
+}

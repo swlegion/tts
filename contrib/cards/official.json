@@ -10,6 +10,66 @@
   "upgrades": {
     "Armament": [
       {
+        "name": "Heavy Blaster Pistol (Rebel)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16982319690732285379/8FA680F434D4EF30BB0DCDB8835BABFB8C90B16F/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer", "Rebel Agent"]
+          }
+        }
+      },
+      {
+        "name": "Repeating Blaster",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13484211657005252288/0AFB1BBC7DA74BA6713EDCA6869C28E2522C7128/",
+        "points": 25,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer", "Rebel Agent"]
+          }
+        }
+      },
+      {
+        "name": "Vibro Axe",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12824619755788191989/83D29D8C052D145897BAEF171074D066C4CB143A/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer", "Rebel Agent"]
+          }
+        }
+      },
+      {
+        "name": "Heavy Blaster Pistol (Empire)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16148048905111619924/4146F9FBD1CE36B93A82B0403DB3E956510A7271/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
+      {
+        "name": "Stun Baton",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11788115204668483271/6494041D37500BD80CE8CB640CC058D4CDB7C5DD/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
+      {
+        "name": "Z-6 Riot Baton",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11921155978538693026/3426025D9984B223902084BA7DA742C27DEC0D63/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
+      {
         "name": "A-180 Rifle Config",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568137807/208481F3DC8BE18ED10D2A17F12F35869213235C/",
         "flip": {
@@ -620,12 +680,94 @@
         }
       },
       {
-        "name": "Unstable R5 Astromech",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385148637860/93B0991DD63C226FA855DA5D2320F2372792BD7C/",
+        "name": "Unstable Astromech",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140090490/9587E43834D0812EFD6F19F1D387911709687C2C/",
         "points": 6,
         "restrictions": {
           "include": {
             "unit": ["A-A5 Speeder Truck", "X-34 Landspeeder"]
+          }
+        }
+      }
+    ],
+    "Doctrine": [
+      {
+        "name": "Frontline Commander",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13795280766311941821/E1F25E09B07E96AF40A5AB1EBC6D353477D17818/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer"]
+          }
+        }
+      },
+      {
+        "name": "Proven Tactician",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12310742349592853996/C01E26E40190FD57EC4DAD2AA97246928ACD3AB9/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer"]
+          }
+        }
+      },
+      {
+        "name": "Unseen Saboteur",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9486677778211309065/4926AB5ED5359DDFF98DF725743208B24BF3D425/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer", "Rebel Agent"]
+          }
+        }
+      },
+      {
+        "name": "Reluctant Hero",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14517747575335986516/9CFE4F6BACFB4FE6AE4E98760A78A28A4CCA3DA3/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
+      {
+        "name": "Academy Trained",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16850031235199219220/E0AF83714D0C21470AEADEAE922B744A4809F51E/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer"]
+          }
+        }
+      },
+      {
+        "name": "Defend in Depth",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9547305841950911718/8C9ED29234DB39BFA21F6DAFDAC4A20333FADF20/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
+      {
+        "name": "Platoon Commander",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17549371703531105166/44CA0864E78F8F5FD1D0917AE70DD377D3589ED6/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Agent"]
+          }
+        }
+      },
+      {
+        "name": "Tip of the Spear",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17600634879211462904/B23606C9DBE5F481F8658C6DFD51D89F78FE4915/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
           }
         }
       }
@@ -670,7 +812,7 @@
       },
       {
         "name": "Clairvoyance",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/17229509976995559718/02821314DBA25F4938A6E51ED6F1BF2F79993A49/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17762213452364786547/6DD557A53CAF65B23939E5AA33F8C54D04F6CF59/",
         "points": 10
       },
       {
@@ -761,6 +903,46 @@
       }
     ],
     "Gear": [
+      {
+        "name": "Combat Armor (Rebel)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15266337223503378500/082B5B18AF7333C2AB7633999E1817CDD0AD0E49/",
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer", "Rebel Agent"]
+          }
+        }
+      },
+      {
+        "name": "Combat Armor (Empire)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9459937079559114318/45AE4B9ECEF86C715B206E46191FCEA63F42C5AD/",
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
+      {
+        "name": "Command and Control Uplink",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15196731974512810043/1569FC7D3A5E5F3EE46158972C1106C75978397C/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
+      {
+        "name": "Seeker Droid",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13020895085647234538/2CB16D45585A8A87F577DA64528555B3754295AA/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Officer", "Imperial Agent"]
+          }
+        }
+      },
       {
         "name": "Katarn Pattern Armor",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135343697/9294A833C65D6D3721327C68A057F71D8D920AD7/",
@@ -939,6 +1121,16 @@
         "name": "Impact Grenades",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/13262048397259590169/3F4068C180970A83C3676C515AADEDC561B243CA/",
         "points": 3
+      },
+      {
+        "name": "Thermal Detonator",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10343160233994321230/2CBA8174A989A97FB336EF0B04A7A2C36A8967F7/",
+        "points": 3,
+        "restrictions": {
+          "include": {
+            "unit": ["Rebel Officer", "Rebel Agent"]
+          }
+        }
       },
       {
         "name": "Smoke Grenades",
@@ -2387,7 +2579,7 @@
         "name": "Ahsoka Tano, Jedi Padawan",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831255/8A122988056B15729D1EBAB3F459B8AF5AA13113/",
         "mini": {
-          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16432616714054298/93B766A9FA311E199C2FCAF5BA29137B4FA12A9F/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/15416532958990284151/F41C3DBAFCDCA9717ED5F6A53E6E46F1BFABA467/"
         },
         "points": 35,
         "leader": true,
@@ -2864,10 +3056,10 @@
         "name": "Astromech",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140081721/9FBE2EBFF8A54C66DAC860A08E68AF4D108A09A2/",
         "mini": {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680571476/57CF310CEE5CCDFE2F0769BE7BAF97A6A4104035/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680571745/E93CBD4D8EBD90588639BCA658F36E208A58E465/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16305759943865684242/77B93C06FD78FD56DFEF6334B61B0259F73B67DF/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/13443645039465980995/BC7642774F1435BAD9CAD6928034EF614890B14D/"
         },
-        "points": 9,
+        "points": 8,
         "restrictions": {
           "include": {
             "unit": ["Rebel Sleeper Cell"]

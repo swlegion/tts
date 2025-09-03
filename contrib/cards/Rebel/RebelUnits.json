@@ -192,6 +192,36 @@
       "content": "contrib/cards/ShadowCollective/PykeSyndicateCapoUnit.json"
     },
     {
+      "name": "Rebel Officer",
+      "title": "Fighting for Freedom",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/9534714757713439013/F1243488529E029C17CAC7745960E27861F6F13E/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 55,
+      "speed": 2,
+      "upgrades": {
+        "Doctrine": 1,
+        "Command": 1,
+        "Training": 2,
+        "Gear": 1,
+        "Armament": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/14532786737705927841/CFA38D52A0507FE16F18C09807CFFE2796E3C3DF/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9545206998925681034/383407768DA711E924DC4459C3774A5A385D0F0A/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Diversionary Tactics",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/18133143929006199770/1914187C13F4DEC189139B79B77BD0AC5AFE4A74/",
+          "pip": 3
+        }
+      ]
+    },
+    {
       "name": "Wicket",
       "title": "Hero of Bright Tree",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133208061/787C79B49789528F2EF54F1668B0BF28EBD6635C/",
@@ -261,6 +291,39 @@
     }
   ],
   "Operative": [
+    {
+      "content": "contrib/cards/ShadowCollective/HondoUnit.json"
+    },
+    {
+      "name": "Rebel Agent",
+      "title": "Defender of Democracy",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/17901394001843296498/2C1A012DA041E493D5A44E556560CAD26EC271CA/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 50,
+      "speed": 2,
+      "upgrades": {
+        "Doctrine": 1,
+        "Command": 1,
+        "Training": 2,
+        "Gear": 1,
+        "Armament": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11575970146791239281/402B385AB044BE03EE4B9E4FDC5DB87F3023B1A6/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/11658925934967461702/567DB4603169F3DC7DD187903B6E4A0D18902E5F/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Battlefield Reconnaissance",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/17610023314497310693/7E034D283AA09AB843E8A205F44634451A91BFDB/",
+          "pip": 1
+        }
+      ]
+    },
     {
       "name": "Jyn Erso",
       "title": "Stardust",
@@ -1060,28 +1123,28 @@
       },
       "minis": [
         {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508033889679621098/DAC14B407CC47E5C2B4A3AFCF87A704907C3940A/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508033889679614622/B379336947ACE47BF9FBEECA30A93F6ABCD3842B/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508034524426693110/298DB95F2976955B8F6F573092DDD58EE64D8929/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508034524426689107/11D80202A0B20334EF381056AA0D5E320E316AEB/"
         },
         {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680567004/0BB417962A0ABE0E6381B767782F6BBA6AE62CE8/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680567174/19D7BF881EDCD2F7FB8718CD79E678CFF56495FF/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508034524426691083/3A4A92976C0E183084670C949342C3605851B7B2/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508034524426687911/D8960459FB54665F49506D70747200150A005AC1/"
         },
         {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680568477/ECEA13C55B0C37AED1B8066D2158BE7F9A84FB32/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680568730/452F1CC25775CDE1D107BC6C457E22740182F594/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508034524426692020/75025C2A870B96B13C0BF07C0DB21708E48F6230/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508034524426688532/77AEC9D8964D379DE204131C35E462725F0F5658/"
         },
         {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680572703/37BA3BE34A5FEBE80DB7A4EB6FB3BBFD87CCE22D/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680573104/5EFBE526BA06E0026124917566EC020AACDBB9EB/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16421205180316201/22AC4786A01D7059C34D386642C5E715070419C3/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16421205180287492/3ADE56B8AFAB4EFC41F7B2B6A0EAA374013D3587/"
         },
         {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680574338/C9C5456700D989BA3389499336AC8C5DA7586755/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680574595/595808E8FBD39F09F2754FE48F97A4A493BD3A37/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16421205180314068/AFD77ADB3C8BDE9AB9822B8E9EE18A0FF1B4C511/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16421205180314093/AD845D549461EAAB7AD5A874AF653D3ACAF004A4/"
         },
         {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680574338/C9C5456700D989BA3389499336AC8C5DA7586755/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680574595/595808E8FBD39F09F2754FE48F97A4A493BD3A37/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16421205180313792/D8ABDF90C18ACAF0610604889C91BCA5ED828978/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16421205180302457/F03D8E6C9A5B1B5CBC243E606B28B506815A0A11/"
         }
       ]
     }

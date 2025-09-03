@@ -117,7 +117,7 @@
         },
         {
           "name": "Annihilation Looms",
-          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384868277/1F59C545DAC623A8CC344AA96E40981F9A656079/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/16041114741939938540/BB2491CC411004550C9A17D7C4C190026AF19762/",
           "pip": 3
         }
       ]
@@ -161,6 +161,35 @@
         {
           "name": "Tactical Strike",
           "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135447971/CD83916F6A11CD5CE3D75CCACA9FA01C248FDF18/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "Imperial Officer",
+      "title": "Ruthless Efficiency",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/17537317690168629880/DDB983BDC91892BF513E60F6E31DAB9722FFF3FE/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 55,
+      "speed": 2,
+      "upgrades": {
+        "Doctrine": 1,
+        "Command": 1,
+        "Training": 2,
+        "Gear": 2,
+        "Armament": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/9257569817723757016/B8D39ECD7995719A0BB73D3DE39472D101885DA6/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/10413123384350936167/E045F4434E1C3A61BEB72539CC8EAFAA8DE40508/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Inexorable Advance",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/17039733842643527609/F3DBB27512668F724D24DF82CD62B95ED1EC5ED6/",
           "pip": 3
         }
       ]
@@ -359,6 +388,9 @@
       "content": "contrib/cards/ShadowCollective/IG11Unit.json"
     },
     {
+      "content": "contrib/cards/ShadowCollective/HondoUnit.json"
+    },
+    {
       "name": "Fifth Brother",
       "title": "The Kill is Mine",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137011062/2CD518FAF98E506E8D2316B4A21294FAE1D2DAF8/",
@@ -435,8 +467,7 @@
         "Command": 1,
         "Training": 1,
         "Gear": 1,
-        "Armament": 1,
-        "Flaw": 1
+        "Armament": 1
       },
       "minis": [
         {
@@ -461,6 +492,35 @@
         }
       ],
       "additionalObjects": ["Victory Token"]
+    },
+    {
+      "name": "Imperial Agent",
+      "title": "Bringing Order to the Galaxy",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/13492166910691723591/E3CDE702A7F1E30A79283FFA838BB1A31EF31D16/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 50,
+      "speed": 2,
+      "upgrades": {
+        "Doctrine": 1,
+        "Command": 1,
+        "Training": 1,
+        "Gear": 2,
+        "Armament": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16805106366415465221/B0828CB62B84F98AFF93E4DFFAC0E2C1A587463F/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16306182787987835381/C638DAA5F9BB96D7AF31B969FD55AF092887BFD5/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Fearsome Oration",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/16905580104918855966/FA90C1C5E8D14EF2ECDAA7A4D92C2E82F2A4AA8E/",
+          "pip": 1
+        }
+      ]
     }
   ],
   "Corps": [
