@@ -10,6 +10,36 @@
   "upgrades": {
     "Armament": [
       {
+        "name": "Twin Lightsabers",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10644823733316041135/289BDD492BB3E295276192F60944E251986DAAAF/",
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight Genral", "Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "Lightsaber",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9358476422022162198/D59B90B25355B223E8D91DF23E233DFCB591B3F7/",
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight Genral", "Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "Double-Bladed Lightsaber",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10386689818644119201/B5A0C4C02D76641FFCF96A105E27DFE48C9DEDA9/",
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight Genral", "Jedi Knight"]
+          }
+        }
+      },
+      {
         "name": "Heavy Blaster Pistol (Rebel)",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/16982319690732285379/8FA680F434D4EF30BB0DCDB8835BABFB8C90B16F/",
         "points": 5,
@@ -692,6 +722,46 @@
     ],
     "Doctrine": [
       {
+        "name": "Jedi Negotiator",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12404142936298962239/F91DB0372D9BC3F6375019DCBAC806AFCFD88530/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General, Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "Jedi Guardian (Doctrine)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15780679593757483600/E5FCF725258967339166A41BB3EFCAFF5A8FA911/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General, Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "Jedi Consular",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14045064181052874010/F764E634FEE5F97CA8990AE773485CD7A5B25F91/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General, Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "General of the Republic",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10716212871886551955/9B6A910846F658641A40BA8503F6F5E5726515AE/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General"]
+          }
+        }
+      },
+      {
         "name": "Frontline Commander",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/13795280766311941821/E1F25E09B07E96AF40A5AB1EBC6D353477D17818/",
         "points": 8,
@@ -727,7 +797,7 @@
         "points": 10,
         "restrictions": {
           "include": {
-            "unit": ["Imperial Officer", "Imperial Agent"]
+            "unit": ["Rebel Agent"]
           }
         }
       },
@@ -3876,6 +3946,46 @@
       }
     ],
     "Training": [
+      {
+        "name": "Jedi Training, Force Adept",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12390960585643083301/04DD725AE236156E74D8235599206979F3670D57/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General", "Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "Jedi Training, Master Duelist",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12298679851052031233/62AED632F56B111FDA191A3C05D73471B9F0F26E/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General", "Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "Jedi Training, Peacekeeping Mission",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13804491818651130043/F6BA846589F1234072E07F5027CD221358C8A442/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General", "Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "Jedi Training, Tactical Acumen",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10646964347794251662/A94EDAF7E7A862EC466E05FD8B880947F4328BE3/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General", "Jedi Knight"]
+          }
+        }
+      },
       {
         "name": "Defensive Stance",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10394379497446642242/A484E8DE817DC612497E99A36F6D33FBA8E423C9/",

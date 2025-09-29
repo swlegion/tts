@@ -37,6 +37,39 @@
       ]
     },
     {
+      "name": "Jedi Knight General",
+      "title": "Strong in the Force",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/17573268685217659564/1D78FC391600DE4FB4C6B7E50E00399381BB88E8/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 105,
+      "speed": 2,
+      "upgrades": {
+        "Doctrine": 1,
+        "Force": 2,
+        "Training": 2,
+        "Armament": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/10013236912178423151/18EF29F89A1AFF7E898C17C7F7D405F6774E2A37/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/12589500648456490254/D2C54A66A8B160C316D9222BB761E51815647C5F/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Flow of the Force",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/9281539007720586085/E0A11D6F4C8A6458380766B66E24926903ABBF6C/",
+          "pip": 1
+        },
+        {
+          "name": "Affirmative, General!",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/15910942741782339794/4F88B55A21C2318076041AFDBD9A0807529354DA/",
+          "pip": 3
+        }
+      ]
+    },
+    {
       "name": "Obi-Wan Kenobi",
       "title": "Civilized Warrior",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134023515/2C9320594DD79CF3D7FC98C13487A00A2AE28598/",
@@ -289,6 +322,39 @@
   "Operative": [
     {
       "content": "contrib/cards/ShadowCollective/HondoUnit.json"
+    },
+    {
+      "name": "Jedi Knight",
+      "title": "Keeper of the Peace",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/13594361265103809816/D89855FDE478BF889E57C33B14C702991FAB2A45/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 85,
+      "speed": 2,
+      "upgrades": {
+        "Doctrine": 1,
+        "Force": 1,
+        "Training": 1,
+        "Armament": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11875656913922456764/948090B2BD5F6F9B8CF8A16046753B7857864B9C/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/10365740551311497850/717AA0896231B5D74FA8F3658D9808255A7582FB/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Flow of the Force",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/9281539007720586085/E0A11D6F4C8A6458380766B66E24926903ABBF6C/",
+          "pip": 1
+        },
+        {
+          "name": "Affirmative, General!",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/15910942741782339794/4F88B55A21C2318076041AFDBD9A0807529354DA/",
+          "pip": 3
+        }
+      ]
     },
     {
       "name": "R2-D2",
