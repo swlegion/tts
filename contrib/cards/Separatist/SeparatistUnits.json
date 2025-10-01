@@ -1,6 +1,78 @@
 {
   "Commander": [
     {
+      "name": "Super Tactical Command Droid",
+      "title": "Command and Control Droid",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/14913642294365138668/20D5A2E42D4F40B1AA078295E3C9D05E96C4A1DD/",
+      "size": "small",
+      "type": "Droid Trooper",
+      "points": 70,
+      "speed": 2,
+      "upgrades": {
+        "Doctrine": 1,
+        "Programming": 3,
+        "Command": 1,
+        "Comms": 1,
+        "Gear": 1,
+        "Armament": 1
+      },
+      "minis": [
+        {
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/9826632787716855012/EBFE814256333329565E640DE92AC136B165F653/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/14675285453736133299/F95DE1BD8359082CEB6AD7C08F5DA20FFB61B96E/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Exterminate",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/12180033164087110437/982C12C4EB2EFA379C2556F5F750C49F13B116DD/",
+          "pip": 1
+        },
+        {
+          "name": "Tactical Download",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/13923683369233854591/0AB95C6BA2530BD2AD75FC9EE48AEFE8FEB4871F/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "General Grievous",
+      "title": "Wheelbike Warlord",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/14797403978689987926/064DA0169CEEAE3EF0AFA49AE394936BBCDFDCDB/",
+      "size": "large",
+      "type": "Ground Vehicle",
+      "points": 0,
+      "speed": 2,
+      "upgrades": {},
+      "silhouette": {
+        "height": 2.55,
+        "offset": 0
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/13779753180075814778/9E0AB77126EDB32A8A14FE5474CEB5940DAD97E5/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/12602549734108871507/9CA056FCF4E993A3B14767225C990F8EDF8E59E2/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Trained In Your Jedi Arts",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081131526384/C4406A3487D2E58D1AF4962B9A306EC5882596CC/",
+          "pip": 1
+        },
+        {
+          "name": "Supreme Commander",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081131525863/124C8C8CAA960D6680FD429BD85DA760AFD9040A/",
+          "pip": 2
+        },
+        {
+          "name": "Crush Them!",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081131524786/7D9A98904E7D5F80F9590AAA5EDF107F2B95623A/",
+          "pip": 3
+        }
+      ]
+    },
+    {
       "name": "General Grievous",
       "title": "Sinister Cyborg",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081131432388/26B30B4276062FA8693A0D3E566671DAD9DF5DD2/",
@@ -94,42 +166,6 @@
       "minis": [
         {
           "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185719/FF120BC2FA5DC8258021E2849C2B81591CCA36B9/"
-        }
-      ]
-    },
-    {
-      "name": "Super Tactical Droid",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384864140/4D45D9C35BD4227637CADD23C1E750583320D68F/",
-      "size": "small",
-      "type": "Droid Trooper",
-      "points": 75,
-      "speed": 2,
-      "upgrades": {
-        "Command": 2,
-        "Comms": 1,
-        "Gear": 1
-      },
-      "minis": [
-        {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366706441730/D50A1B8823BE590384D2A2D904A321B3337276AD/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1619598366706441991/04B29BB48A98AF8D79FC1414548496BAD49CCB28/"
-        }
-      ],
-      "commands": [
-        {
-          "name": "They Too Will Suffer",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036005/BCB6B4D75C375323E4CA020BB1AA01497BEE11ED/",
-          "pip": 1
-        },
-        {
-          "name": "Preservation Protocols",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034846/6DFE5FBF65026639A194D1A915193AD147736713/",
-          "pip": 2
-        },
-        {
-          "name": "Do Not Underestimate Our Means",
-          "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384885557/BB41754355D4B8C5C9E444C1F3A5D41096109F5E/",
-          "pip": 3
         }
       ]
     },
@@ -254,6 +290,40 @@
     }
   ],
   "Operative": [
+    {
+      "name": "Super Tactical Command Droid",
+      "title": "Auxiliary Command Droid",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10135443330772450249/A16B4DBBA547E54B4E1769F8C886B6F51003ED1B/",
+      "size": "small",
+      "type": "Droid Trooper",
+      "points": 60,
+      "speed": 2,
+      "upgrades": {
+        "Doctrine": 1,
+        "Programming": 2,
+        "Comms": 1,
+        "Gear": 1,
+        "Armament": 2
+      },
+      "minis": [
+        {
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/9960461562812233876/E163C0DD7381775DB076F41C494FE2000BD8E711/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/16263987500525849565/FE5611F336BCDA8B45C33AE56588990CECB61A77/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Exterminate",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/12180033164087110437/982C12C4EB2EFA379C2556F5F750C49F13B116DD/",
+          "pip": 1
+        },
+        {
+          "name": "Tactical Download",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/13923683369233854591/0AB95C6BA2530BD2AD75FC9EE48AEFE8FEB4871F/",
+          "pip": 3
+        }
+      ]
+    },
     {
       "content": "contrib/cards/ShadowCollective/HondoUnit.json"
     },

@@ -4,9 +4,13 @@
   "image": "https://steamusercontent-a.akamaihd.net/ugc/11303218801782060179/24A9B03FADFBACFB1283FAE3BB743A90E2DB7F91/",
   "size": "small",
   "type": "Trooper",
-  "points": 0,
+  "points": 85,
   "speed": 2,
-  "upgrades": {},
+  "upgrades": {
+    "Comms": 1,
+    "Gear": 1,
+    "Grenades": 2
+  },
   "minis": [
     {
       "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16434519431923646/5AEEA2D1B06052E879D309B86B7D3388751620FC/",

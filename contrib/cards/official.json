@@ -10,6 +10,26 @@
   "upgrades": {
     "Armament": [
       {
+        "name": "Heavy Arm Cannon",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9491942057538415219/C158C02B7135405F2EC1E5B21BC2FB09876E21F8/",
+        "points": 20,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Electrostaff",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/18437389315593431740/A0F53051C57B1167C6C2A631755BD8D4F0AFCB9B/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
         "name": "Twin Lightsabers",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10644823733316041135/289BDD492BB3E295276192F60944E251986DAAAF/",
         "points": 0,
@@ -722,6 +742,26 @@
     ],
     "Doctrine": [
       {
+        "name": "Tyrannical Taskmaster",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11179625379357754651/6A6C0FBE6E379AADAD32AB5E1EEDD59125FDBDC0/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Seek and Destroy",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17580473790403836506/B4B9F6EF1F0D342A2D3A36ACD74406D4ADDC29EC/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
         "name": "Jedi Negotiator",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/12404142936298962239/F91DB0372D9BC3F6375019DCBAC806AFCFD88530/",
         "points": 5,
@@ -973,6 +1013,26 @@
       }
     ],
     "Gear": [
+      {
+        "name": "Mobility Upgrade",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14801533200544358775/281DF96809B1A4DD8B0CC08C1654B7EC8C85DAF3/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Expanded Databanks",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13958223172222009397/28473616CB558D08D6E9AF0C063B186BE3E10D3A/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
       {
         "name": "Combat Armor (Rebel)",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/15266337223503378500/082B5B18AF7333C2AB7633999E1817CDD0AD0E49/",
@@ -3883,6 +3943,76 @@
       }
     ],
     "Programming": [
+      {
+        "name": "Targeting Relay",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11634664574744568665/B578CB9BF748B7349BAF07EF4B1841C5E1D445D4/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Strategic Programming",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11094092177132530342/D0F8105E9FF6D04728309489EE9558CC86D8EDC2/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Sliced Comms",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17858708550552855236/316113FEFD98D8C4826D93B02D2D09D3B9C11CC0/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Overclock",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12143743451364645580/C6563F5B44D5AC8DB193565DEF597852029875F8/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Optimized Task Flow",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14129452596280621348/B010A4D814CAE8B8F8A33F4E9AB9422D65A86E55/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Limiter Override",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13512858426535330136/8290169A628B42E5E66C46F8969F4961E7AF3C1A/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Enhanced Combat Subroutines",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15110625432095673145/ED7ACBEB4F3A180E7FAF5BF603F9B49FFC3F9B04/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
       {
         "name": "Attack Protocols",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10231463032862954270/5569EEFD92CA844450DCFDF7BC652B4DDC055DD5/",
