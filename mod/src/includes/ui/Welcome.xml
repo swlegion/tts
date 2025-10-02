@@ -46,11 +46,9 @@
           <b>CHANGELOG</b>
           (Since last <i>Beta</i>)
           <!--(Since last <i>Stable</i>)-->
-          - Add: Rebel Officer and Agent
-          - Add: Empire Officer and Agent
-          - Add: Revealed Marksmen Cards 
-          - Add: Revealed Hondo Cards 
-          - Fix: Updated Clairvoyance and Annihilation Looms Cards 
+          - Add: Jedi Knight General and Jedi Knight
+          - Add: Super Tactical Command Droids
+          - Add: Revealed General Grievous, Wheelbike Warlord Card  
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
