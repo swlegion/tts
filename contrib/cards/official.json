@@ -767,7 +767,7 @@
         "points": 5,
         "restrictions": {
           "include": {
-            "unit": ["Jedi Knight General, Jedi Knight"]
+            "unit": ["Jedi Knight General", "Jedi Knight"]
           }
         }
       },
@@ -777,7 +777,7 @@
         "points": 10,
         "restrictions": {
           "include": {
-            "unit": ["Jedi Knight General, Jedi Knight"]
+            "unit": ["Jedi Knight General", "Jedi Knight"]
           }
         }
       },
@@ -787,7 +787,7 @@
         "points": 8,
         "restrictions": {
           "include": {
-            "unit": ["Jedi Knight General, Jedi Knight"]
+            "unit": ["Jedi Knight General", "Jedi Knight"]
           }
         }
       },
@@ -1720,8 +1720,8 @@
         "name": "DC-15X ARC Trooper",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/9724672671096889082/B22903B590FA5B6D2AAEC2988AA0F9826C9D1EB2/",
         "mini": {
-          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/12649283830647198201/0FE3379EB82E44D7137E7F05DB25DFE312CCB15A/",
-          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/12608161051134530699/21F422DF7C30503B757B65CB988E47071D4CA434/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/12649283830647198201/0FE3379EB82E44D7137E7F05DB25DFE312CCB15A/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/12608161051134530699/21F422DF7C30503B757B65CB988E47071D4CA434/"
         },
         "points": 37,
         "restrictions": {
