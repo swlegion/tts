@@ -1520,8 +1520,8 @@
         "name": "RPS-6 ARF Trooper",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/12717002306739299639/3A8542FCC457C05E120FB9E59AD8BA4D1551DFE6/",
         "mini": {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149645590/1B9C028584B5A7DCD488AE1E9C57D33A1B93C92E/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149646251/ADB16A6BF3CADD49D0237A4AB51FB4D7AF0AB521/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/18331124358283445848/2990EA694AB3CAD4DE7B96F0D060A76E1274A22E/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15002029139098242363/D4C51BFAB720064048B328F9379048D0A651F951/"
         },
         "points": 24,
         "restrictions": {
@@ -1720,8 +1720,8 @@
         "name": "DC-15X ARC Trooper",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/9724672671096889082/B22903B590FA5B6D2AAEC2988AA0F9826C9D1EB2/",
         "mini": {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457800878/34EC84D7ECD99E073417866A9BEC4288E00F5359/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/12649283830647198201/0FE3379EB82E44D7137E7F05DB25DFE312CCB15A/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/12608161051134530699/21F422DF7C30503B757B65CB988E47071D4CA434/"
         },
         "points": 37,
         "restrictions": {
@@ -2591,8 +2591,8 @@
         "name": "Rebel Marksman",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140087495/6457AE581E595160FCFCADFED8B8B6F19F25A68E/",
         "mini": {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680570051/845658287FF6EADD0F2B31B94ABC4899A09475EE/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680570231/D122EECC159E02264D024421EB7767BEA8E70F21/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/14917315826433699939/D2E4947C6515F43CE0A46297F5BEDE9E79BE1580/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/12051855690087531381/898E4ACA597BDB2F53DFD6DB96937EDB87E983F3/"
         },
         "points": 28,
         "restrictions": {
@@ -2831,12 +2831,12 @@
         "image": "https://steamusercontent-a.akamaihd.net/ugc/16167615007606416168/E2F191BF04EE9A6AD8B59DFCC57739F95C3A5A12/",
         "minis": [
           {
-            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932608/94AB8C15D97E81FF8040E81BC91F79A7105FF4B4/",
-            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932637/F5D29AC3162A9D47B5440E5A3E3399FC12A594BE/"
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15046496907723985678/0514FC22E31D8910E01718468BEFFCB9BA3194C6/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/12877259894682446248/93094B312D6F2496D2E48F7FE517C5F0DD491681/"
           },
           {
-            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932871/EE8DF333D45ED841E9C31625FB4A9385C16B2F49/",
-            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933386/736E0CCF2ADE31D6A9F6BE172B20AEB5420B815E/"
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/9734857441935358829/6150A3CA473416F71D7EB7051646D2023F14020E/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9280725738904038875/E1587121F1A6BCD633A23FC945AC345D14F5B434/"
           }
         ],
         "points": 26,
