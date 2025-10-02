@@ -18,8 +18,8 @@
       },
       "minis": [
         {
-          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/9826632787716855012/EBFE814256333329565E640DE92AC136B165F653/",
-          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/14675285453736133299/F95DE1BD8359082CEB6AD7C08F5DA20FFB61B96E/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/9826632787716855012/EBFE814256333329565E640DE92AC136B165F653/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14675285453736133299/F95DE1BD8359082CEB6AD7C08F5DA20FFB61B96E/"
         }
       ],
       "commands": [
@@ -307,8 +307,8 @@
       },
       "minis": [
         {
-          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/9960461562812233876/E163C0DD7381775DB076F41C494FE2000BD8E711/",
-          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/16263987500525849565/FE5611F336BCDA8B45C33AE56588990CECB61A77/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/9960461562812233876/E163C0DD7381775DB076F41C494FE2000BD8E711/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16263987500525849565/FE5611F336BCDA8B45C33AE56588990CECB61A77/"
         }
       ],
       "commands": [
