@@ -37,6 +37,39 @@
       ]
     },
     {
+      "name": "Jedi Knight General",
+      "title": "Strong in the Force",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/17573268685217659564/1D78FC391600DE4FB4C6B7E50E00399381BB88E8/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 105,
+      "speed": 2,
+      "upgrades": {
+        "Doctrine": 1,
+        "Force": 2,
+        "Training": 2,
+        "Armament": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/10013236912178423151/18EF29F89A1AFF7E898C17C7F7D405F6774E2A37/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/12589500648456490254/D2C54A66A8B160C316D9222BB761E51815647C5F/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Flow of the Force",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/9281539007720586085/E0A11D6F4C8A6458380766B66E24926903ABBF6C/",
+          "pip": 1
+        },
+        {
+          "name": "Affirmative, General!",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/15910942741782339794/4F88B55A21C2318076041AFDBD9A0807529354DA/",
+          "pip": 3
+        }
+      ]
+    },
+    {
       "name": "Obi-Wan Kenobi",
       "title": "Civilized Warrior",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134023515/2C9320594DD79CF3D7FC98C13487A00A2AE28598/",
@@ -289,6 +322,39 @@
   "Operative": [
     {
       "content": "contrib/cards/ShadowCollective/HondoUnit.json"
+    },
+    {
+      "name": "Jedi Knight",
+      "title": "Keeper of the Peace",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/13594361265103809816/D89855FDE478BF889E57C33B14C702991FAB2A45/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 85,
+      "speed": 2,
+      "upgrades": {
+        "Doctrine": 1,
+        "Force": 1,
+        "Training": 1,
+        "Armament": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11875656913922456764/948090B2BD5F6F9B8CF8A16046753B7857864B9C/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/10365740551311497850/717AA0896231B5D74FA8F3658D9808255A7582FB/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Flow of the Force",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/9281539007720586085/E0A11D6F4C8A6458380766B66E24926903ABBF6C/",
+          "pip": 1
+        },
+        {
+          "name": "Affirmative, General!",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/15910942741782339794/4F88B55A21C2318076041AFDBD9A0807529354DA/",
+          "pip": 3
+        }
+      ]
     },
     {
       "name": "R2-D2",
@@ -579,7 +645,7 @@
       "image": "https://steamusercontent-a.akamaihd.net/ugc/12272409584211361084/EF41D3B9F89F86EC4E803863C17D1549052C8B55/",
       "size": "small",
       "type": "Clone Trooper",
-      "points": 58,
+      "points": 66,
       "speed": 2,
       "upgrades": {
         "Squad Leader": 1,
@@ -592,20 +658,20 @@
       },
       "minis": [
         {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933614/80D6829DB63FAE3328D00AC36F00E5FD71251E69/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933714/D3FE0C2DEFBE1E78A71A55516DF87199D66DE2AC/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11010593854332199522/F876E74444BE756B806632690B04F7B389FD310F/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/13661933857853159646/F0B021C46B1669AB551ADF884C72C8C026F4932E/"
         },
         {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149643329/8D273B40809BF89188238DE6FC5C207756AA22EF/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149643405/9A3D0A513A31513523E59855980DFCE0A8F0F6E0/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/14325353878568726923/D6904EFEC47726BD7F7CDDDEB29AA2819824C353/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16320981232537010874/022655B660D9A1BD496737F04D5206E88D0C5DEE/"
         },
         {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932871/EE8DF333D45ED841E9C31625FB4A9385C16B2F49/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933386/736E0CCF2ADE31D6A9F6BE172B20AEB5420B815E/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16812228720032114978/52EB26347F9F3D423073A3F995E82EC4C2A391DF/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15864998472855432930/BFD3DD03B73B9E1F33EEFD264B1ED24DE25EFE99/"
         },
         {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149649053/B24484CFED06020454EE95B663DB3ECE17871D26/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149646949/50B6AA8C2CC5283537DBA2291F9801E7CD5FE77C/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16621095233207207086/E5E3D1FE8B65C3F4244B31850EC0AA654DFB551A/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16878666503580557369/B40D13895E52917BE6CE9AA85CDD755EFB0A0D4A/"
         }
       ]
     }

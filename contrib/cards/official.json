@@ -10,6 +10,56 @@
   "upgrades": {
     "Armament": [
       {
+        "name": "Heavy Arm Cannon",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9491942057538415219/C158C02B7135405F2EC1E5B21BC2FB09876E21F8/",
+        "points": 20,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Electrostaff",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/18437389315593431740/A0F53051C57B1167C6C2A631755BD8D4F0AFCB9B/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Twin Lightsabers",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10644823733316041135/289BDD492BB3E295276192F60944E251986DAAAF/",
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight Genral", "Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "Lightsaber",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9358476422022162198/D59B90B25355B223E8D91DF23E233DFCB591B3F7/",
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight Genral", "Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "Double-Bladed Lightsaber",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10386689818644119201/B5A0C4C02D76641FFCF96A105E27DFE48C9DEDA9/",
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight Genral", "Jedi Knight"]
+          }
+        }
+      },
+      {
         "name": "Heavy Blaster Pistol (Rebel)",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/16982319690732285379/8FA680F434D4EF30BB0DCDB8835BABFB8C90B16F/",
         "points": 5,
@@ -692,6 +742,66 @@
     ],
     "Doctrine": [
       {
+        "name": "Tyrannical Taskmaster",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11179625379357754651/6A6C0FBE6E379AADAD32AB5E1EEDD59125FDBDC0/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Seek and Destroy",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17580473790403836506/B4B9F6EF1F0D342A2D3A36ACD74406D4ADDC29EC/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Jedi Negotiator",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12404142936298962239/F91DB0372D9BC3F6375019DCBAC806AFCFD88530/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General", "Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "Jedi Guardian (Doctrine)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15780679593757483600/E5FCF725258967339166A41BB3EFCAFF5A8FA911/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General", "Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "Jedi Consular",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14045064181052874010/F764E634FEE5F97CA8990AE773485CD7A5B25F91/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General", "Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "General of the Republic",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10716212871886551955/9B6A910846F658641A40BA8503F6F5E5726515AE/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General"]
+          }
+        }
+      },
+      {
         "name": "Frontline Commander",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/13795280766311941821/E1F25E09B07E96AF40A5AB1EBC6D353477D17818/",
         "points": 8,
@@ -727,7 +837,7 @@
         "points": 10,
         "restrictions": {
           "include": {
-            "unit": ["Imperial Officer", "Imperial Agent"]
+            "unit": ["Rebel Agent"]
           }
         }
       },
@@ -903,6 +1013,26 @@
       }
     ],
     "Gear": [
+      {
+        "name": "Mobility Upgrade",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14801533200544358775/281DF96809B1A4DD8B0CC08C1654B7EC8C85DAF3/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Expanded Databanks",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13958223172222009397/28473616CB558D08D6E9AF0C063B186BE3E10D3A/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
       {
         "name": "Combat Armor (Rebel)",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/15266337223503378500/082B5B18AF7333C2AB7633999E1817CDD0AD0E49/",
@@ -1390,8 +1520,8 @@
         "name": "RPS-6 ARF Trooper",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/12717002306739299639/3A8542FCC457C05E120FB9E59AD8BA4D1551DFE6/",
         "mini": {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149645590/1B9C028584B5A7DCD488AE1E9C57D33A1B93C92E/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149646251/ADB16A6BF3CADD49D0237A4AB51FB4D7AF0AB521/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/18331124358283445848/2990EA694AB3CAD4DE7B96F0D060A76E1274A22E/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15002029139098242363/D4C51BFAB720064048B328F9379048D0A651F951/"
         },
         "points": 24,
         "restrictions": {
@@ -2034,38 +2164,7 @@
           }
         }
       },
-      {
-        "name": "Fleet Trooper Squad",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384856618/9DED8502636167A62F6D2AEEE5AE8B004D61F3CF/",
-        "minis": [
-          {
-            "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670667/CB316B23D59F28C5EF22E94A43280D49DFFDD6AC/",
-            "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/"
-          },
-          {
-            "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540671182/A605D9D0DB356DC71473F5C9DF27DE1CADB4F320/",
-            "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540671278/9B94D359A61113F72EEB0435D70A1291431D737A/"
-          },
-          {
-            "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670978/0642E99CB4E8CABA1AA10389F2387A1C70D9322D/",
-            "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/"
-          },
-          {
-            "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540671182/A605D9D0DB356DC71473F5C9DF27DE1CADB4F320/",
-            "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540671278/9B94D359A61113F72EEB0435D70A1291431D737A/"
-          },
-          {
-            "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670978/0642E99CB4E8CABA1AA10389F2387A1C70D9322D/",
-            "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/"
-          }
-        ],
-        "points": 45,
-        "restrictions": {
-          "include": {
-            "unit": ["Fleet Troopers"]
-          }
-        }
-      },
+
       {
         "name": "Sonic Charge Saboteur",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385140103507/922568C5FAACC25FCE80574BE5459CB511022824/",
@@ -2361,62 +2460,6 @@
         }
       },
       {
-        "name": "Ewok Skirmisher Squad",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384856338/3857B7DC883DF754409E8F4262459CC574DE5630/",
-        "minis": [
-          {
-            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129196/6EED0C8AAF8F50751EE4206471D1273B6C0F4B5A/",
-            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
-          },
-          {
-            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129252/FC0A6247B6AB21A99919659C1F9069186C6D82ED/",
-            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
-          },
-          {
-            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128356/9E8C70962F9D5BF853BD9310F2BB1E1A3F80DB5D/",
-            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
-          },
-          {
-            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128445/EBB56734DB6527B3566C317F6F4F0E84471D6776/",
-            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
-          }
-        ],
-        "points": 28,
-        "restrictions": {
-          "include": {
-            "unit": ["Ewok Skirmishers"]
-          }
-        }
-      },
-      {
-        "name": "Ewok Slinger Squad",
-        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384856396/086DF1555A9EC9B78C10A72F1154F9954670E9FA/",
-        "minis": [
-          {
-            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128565/24D88975D67E46B5FA9294EB6DCC146912D61F2F/",
-            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
-          },
-          {
-            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128627/19AC5B05F3A355226EE783B9F239B3B285EA077A/",
-            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
-          },
-          {
-            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128715/CB52DA6C0FC1DF3511C2A2D62CB2B3A13A9D4F8F/",
-            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
-          },
-          {
-            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128778/1D5BCB551375F1A7988C434F0B52E18434BB4747/",
-            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
-          }
-        ],
-        "points": 23,
-        "restrictions": {
-          "include": {
-            "unit": ["Ewok Slingers"]
-          }
-        }
-      },
-      {
         "name": "Force Pike Warrior",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081139984742/4CBAEA0926D770481377C8C3556D0F4F55D403F4/",
         "flip": {
@@ -2548,8 +2591,8 @@
         "name": "Rebel Marksman",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140087495/6457AE581E595160FCFCADFED8B8B6F19F25A68E/",
         "mini": {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680570051/845658287FF6EADD0F2B31B94ABC4899A09475EE/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/2508033889680570231/D122EECC159E02264D024421EB7767BEA8E70F21/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/14917315826433699939/D2E4947C6515F43CE0A46297F5BEDE9E79BE1580/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/12051855690087531381/898E4ACA597BDB2F53DFD6DB96937EDB87E983F3/"
         },
         "points": 28,
         "restrictions": {
@@ -2696,16 +2739,104 @@
     ],
     "Personnel": [
       {
+        "name": "Fleet Trooper Squad",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384856618/9DED8502636167A62F6D2AEEE5AE8B004D61F3CF/",
+        "minis": [
+          {
+            "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670667/CB316B23D59F28C5EF22E94A43280D49DFFDD6AC/",
+            "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/"
+          },
+          {
+            "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540671182/A605D9D0DB356DC71473F5C9DF27DE1CADB4F320/",
+            "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540671278/9B94D359A61113F72EEB0435D70A1291431D737A/"
+          },
+          {
+            "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670978/0642E99CB4E8CABA1AA10389F2387A1C70D9322D/",
+            "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/"
+          },
+          {
+            "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540671182/A605D9D0DB356DC71473F5C9DF27DE1CADB4F320/",
+            "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540671278/9B94D359A61113F72EEB0435D70A1291431D737A/"
+          },
+          {
+            "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670978/0642E99CB4E8CABA1AA10389F2387A1C70D9322D/",
+            "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540540670760/47DF3E87B3F71E8EA42A89ECFE96E4FB3990D7ED/"
+          }
+        ],
+        "points": 45,
+        "restrictions": {
+          "include": {
+            "unit": ["Fleet Troopers"]
+          }
+        }
+      },
+      {
+        "name": "Ewok Skirmisher Squad",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384856338/3857B7DC883DF754409E8F4262459CC574DE5630/",
+        "minis": [
+          {
+            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129196/6EED0C8AAF8F50751EE4206471D1273B6C0F4B5A/",
+            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+          },
+          {
+            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129252/FC0A6247B6AB21A99919659C1F9069186C6D82ED/",
+            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+          },
+          {
+            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128356/9E8C70962F9D5BF853BD9310F2BB1E1A3F80DB5D/",
+            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+          },
+          {
+            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128445/EBB56734DB6527B3566C317F6F4F0E84471D6776/",
+            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+          }
+        ],
+        "points": 28,
+        "restrictions": {
+          "include": {
+            "unit": ["Ewok Skirmishers"]
+          }
+        }
+      },
+      {
+        "name": "Ewok Slinger Squad",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384856396/086DF1555A9EC9B78C10A72F1154F9954670E9FA/",
+        "minis": [
+          {
+            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128565/24D88975D67E46B5FA9294EB6DCC146912D61F2F/",
+            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+          },
+          {
+            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128627/19AC5B05F3A355226EE783B9F239B3B285EA077A/",
+            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+          },
+          {
+            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128715/CB52DA6C0FC1DF3511C2A2D62CB2B3A13A9D4F8F/",
+            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+          },
+          {
+            "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867128778/1D5BCB551375F1A7988C434F0B52E18434BB4747/",
+            "secondary": "http://cloud-3.steamusercontent.com/ugc/2008089545867129049/686925E47D218727E1C79A25E0F44FC80FAEE43F/"
+          }
+        ],
+        "points": 23,
+        "restrictions": {
+          "include": {
+            "unit": ["Ewok Slingers"]
+          }
+        }
+      },
+      {
         "name": "ARF Trooper Duo",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/16167615007606416168/E2F191BF04EE9A6AD8B59DFCC57739F95C3A5A12/",
         "minis": [
           {
-            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932608/94AB8C15D97E81FF8040E81BC91F79A7105FF4B4/",
-            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932637/F5D29AC3162A9D47B5440E5A3E3399FC12A594BE/"
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15046496907723985678/0514FC22E31D8910E01718468BEFFCB9BA3194C6/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/12877259894682446248/93094B312D6F2496D2E48F7FE517C5F0DD491681/"
           },
           {
-            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932871/EE8DF333D45ED841E9C31625FB4A9385C16B2F49/",
-            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933386/736E0CCF2ADE31D6A9F6BE172B20AEB5420B815E/"
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/9734857441935358829/6150A3CA473416F71D7EB7051646D2023F14020E/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9280725738904038875/E1587121F1A6BCD633A23FC945AC345D14F5B434/"
           }
         ],
         "points": 26,
@@ -3814,6 +3945,76 @@
     ],
     "Programming": [
       {
+        "name": "Targeting Relay",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11634664574744568665/B578CB9BF748B7349BAF07EF4B1841C5E1D445D4/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Strategic Programming",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11094092177132530342/D0F8105E9FF6D04728309489EE9558CC86D8EDC2/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Sliced Comms",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17858708550552855236/316113FEFD98D8C4826D93B02D2D09D3B9C11CC0/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Overclock",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12143743451364645580/C6563F5B44D5AC8DB193565DEF597852029875F8/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Optimized Task Flow",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14129452596280621348/B010A4D814CAE8B8F8A33F4E9AB9422D65A86E55/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Limiter Override",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13512858426535330136/8290169A628B42E5E66C46F8969F4961E7AF3C1A/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
+        "name": "Enhanced Combat Subroutines",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15110625432095673145/ED7ACBEB4F3A180E7FAF5BF603F9B49FFC3F9B04/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Super Tactical Command Droid"]
+          }
+        }
+      },
+      {
         "name": "Attack Protocols",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10231463032862954270/5569EEFD92CA844450DCFDF7BC652B4DDC055DD5/",
         "points": 8,
@@ -3876,6 +4077,46 @@
       }
     ],
     "Training": [
+      {
+        "name": "Jedi Training, Force Adept",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12390960585643083301/04DD725AE236156E74D8235599206979F3670D57/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General", "Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "Jedi Training, Master Duelist",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12298679851052031233/62AED632F56B111FDA191A3C05D73471B9F0F26E/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General", "Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "Jedi Training, Peacekeeping Mission",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13804491818651130043/F6BA846589F1234072E07F5027CD221358C8A442/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General", "Jedi Knight"]
+          }
+        }
+      },
+      {
+        "name": "Jedi Training, Tactical Acumen",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10646964347794251662/A94EDAF7E7A862EC466E05FD8B880947F4328BE3/",
+        "points": 8,
+        "restrictions": {
+          "include": {
+            "unit": ["Jedi Knight General", "Jedi Knight"]
+          }
+        }
+      },
       {
         "name": "Defensive Stance",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10394379497446642242/A484E8DE817DC612497E99A36F6D33FBA8E423C9/",
