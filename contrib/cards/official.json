@@ -1720,8 +1720,8 @@
         "name": "DC-15X ARC Trooper",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/9724672671096889082/B22903B590FA5B6D2AAEC2988AA0F9826C9D1EB2/",
         "mini": {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/12649283830647198201/0FE3379EB82E44D7137E7F05DB25DFE312CCB15A/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/12608161051134530699/21F422DF7C30503B757B65CB988E47071D4CA434/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457800878/34EC84D7ECD99E073417866A9BEC4288E00F5359/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
         },
         "points": 37,
         "restrictions": {

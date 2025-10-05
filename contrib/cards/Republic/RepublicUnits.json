@@ -543,20 +543,20 @@
       },
       "minis": [
         {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16638618191061941309/AA4BAB82719089D2ED185D2B9878134431449B4C/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14616179958026023486/0795824C5860BF9B30587006A3E8B65CD5F86D9A/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457802621/01F605D855048F823A0ECA6C46D2A62B56C04124/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
         },
         {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/17741113530528489265/FF714F282FEF98F43C0014D7687F8CA35BFA6795/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/17753952634766948527/27C281C3A741CF91B8F9CB67FA5A09F6A5C6C66E/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457799750/AE83DC038BA8AAF48678D07E1F9734D4A9944C1D/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
         },
         {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/14327074313476565242/0F0F6F55B348F07FF12951F8ED4F3381183ACCCB/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16417212141664926511/D58EBE40C6E27AB45473015D0A9A2A9A12E524E3/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457800134/88E2FEC812AD5E7B7570836120992252AC758BF8/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
         },
         {
-          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/9248693516984289580/838ACCC0AB60F8AB0B38010BB82DDAFA3640E33B/",
-          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14946799488228226616/C9FC081C9766DAF56800535680B5E834348C4067/"
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457800538/06BBAAAAC7FB68DAA9351F12008475068A96BFFB/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
         }
       ]
     },
