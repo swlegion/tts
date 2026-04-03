@@ -675,6 +675,16 @@
         }
       },
       {
+        "name": "Black Sun Crew",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13580814712079812423/759CBAED43A1DFA12E7876B92C53EA8CD536F4DE/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["WLO-5 Speeder Tank"]
+          }
+        }
+      },
+      {
         "name": "Door Gunners",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10380945357802391916/5D21C9620D0382828965E9FA8E1534BF067A4E7A/",
         "points": 12
@@ -696,6 +706,16 @@
         "restrictions": {
           "include": {
             "unit": ["Raddaugh Gnasp Fluttercraft"]
+          }
+        }
+      },
+      {
+        "name": "Pyke Syndicate Crew",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13352335398418306228/C01292CB459585462D5A41DD3CE0D743C74C115A/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["WLO-5 Speeder Tank"]
           }
         }
       },
@@ -736,6 +756,16 @@
         "restrictions": {
           "include": {
             "unit": ["A-A5 Speeder Truck", "X-34 Landspeeder"]
+          }
+        }
+      },
+      {
+        "name": "Weequay Crew",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11962013218940355603/44A620E6F9A81692F86F2F331672632D95E0425C/",
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "unit": ["WLO-5 Speeder Tank"]
           }
         }
       }
@@ -3753,6 +3783,16 @@
         }
       },
       {
+        "name": "Gang Boss",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14505275334722387359/9A721686833EB9E13254ABE90BDBB19E4192853F/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["WLO-5 Speeder Truck", "AA5 Speeder Truck"]
+          }
+        }
+      },
+      {
         "name": "General Weiss",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385148691201/0F949459DDCA1EAFC03EC7145C7402A636C9C4BE/",
         "points": 5,
@@ -3859,6 +3899,16 @@
         }
       },
       {
+        "name": "Pirate Captain",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14002409862158051174/46C30FAB65D4F9F6A8C725359F1D65795575973B/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["WLO-5 Speeder Tank"]
+          }
+        }
+      },
+      {
         "name": "Reckless Driver",
         "image": "http://cloud-3.steamusercontent.com/ugc/1680393865568144930/910352F2AA646B8E97628B4DF56C364805ABD906/",
         "points": 12,
@@ -3928,7 +3978,7 @@
         "points": 5,
         "restrictions": {
           "include": {
-            "unit": ["A-A5 Speeder Truck"]
+            "unit": ["A-A5 Speeder Truck", "WLO-5 Speeder Tank"]
           }
         }
       },
@@ -3938,7 +3988,7 @@
         "points": 10,
         "restrictions": {
           "include": {
-            "unit": ["A-A5 Speeder Truck"]
+            "unit": ["A-A5 Speeder Truck", "WLO-5 Speeder Tank"]
           }
         }
       }

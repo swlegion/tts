@@ -907,6 +907,9 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598523372574861/CCF68AF1C35F52A714AB0344FCB170F5BAA1672A/"
         }
       ]
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/WLO5SpeederTankUnit.json"
     }
   ]
 }
