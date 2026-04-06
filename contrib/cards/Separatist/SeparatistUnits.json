@@ -38,12 +38,17 @@
     {
       "name": "General Grievous",
       "title": "Wheel Bike Warlord",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/14797403978689987926/064DA0169CEEAE3EF0AFA49AE394936BBCDFDCDB/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10719584612465428796/38DFBFBDFC11B138DD5FC2DE9F0B6BA67E4450C6/",
       "size": "large",
       "type": "Ground Vehicle",
-      "points": 0,
+      "points": 150,
       "speed": 2,
-      "upgrades": {},
+      "upgrades": {
+        "Command": 1,
+        "Training": 1,
+        "Gear": 1,
+        "Grenades": 1
+      },
       "silhouette": {
         "height": 2.57,
         "offset": 0
@@ -68,6 +73,21 @@
         {
           "name": "Crush Them!",
           "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081131524786/7D9A98904E7D5F80F9590AAA5EDF107F2B95623A/",
+          "pip": 3
+        },
+        {
+          "name": "I'll Do it Myself!",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/15891905199014084776/E70951C31E286BCF03E7D6BB08ED6DA6C96D9701/",
+          "pip": 1
+        },
+        {
+          "name": "Pincer Attack",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/13331811042949504722/5032E1A16107F4D2C8DA6FE2C3AA707D5EB55EDD/",
+          "pip": 2
+        },
+        {
+          "name": "Full Throttle",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/17267278540148426820/E310561126BE74D0A9CB502C551C8DF2D76E7B1A/",
           "pip": 3
         }
       ]
@@ -105,6 +125,21 @@
         {
           "name": "Crush Them!",
           "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081131524786/7D9A98904E7D5F80F9590AAA5EDF107F2B95623A/",
+          "pip": 3
+        },
+        {
+          "name": "I'll Do it Myself!",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/15891905199014084776/E70951C31E286BCF03E7D6BB08ED6DA6C96D9701/",
+          "pip": 1
+        },
+        {
+          "name": "Pincer Attack",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/13331811042949504722/5032E1A16107F4D2C8DA6FE2C3AA707D5EB55EDD/",
+          "pip": 2
+        },
+        {
+          "name": "Full Throttle",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/17267278540148426820/E310561126BE74D0A9CB502C551C8DF2D76E7B1A/",
           "pip": 3
         }
       ]
@@ -504,6 +539,9 @@
       "content": "contrib/cards/ShadowCollective/BlackSunEnforcersUnit.json"
     },
     {
+      "content": "contrib/cards/ShadowCollective/WeequayPiratesUnit.json"
+    },
+    {
       "name": "Geonosian Warriors",
       "title": "Soldiers of the Hive",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081131432412/D396E8DD6EEDD4AD239A43CCE45BBC28B720DD77/",
@@ -675,6 +713,34 @@
           "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
         }
       ]
+    },
+    {
+      "name": "TSMEU-6 Wheel Bikes",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/15288499232659659250/25E204B8F8CE71424524AEC8158D526F0FCA5347/",
+      "size": "large",
+      "type": "Ground Vehicle",
+      "points": 90,
+      "speed": 2,
+      "upgrades": {
+        "Pilot": 1,
+        "Training": 1,
+        "Comms": 1,
+        "Gear": 1
+      },
+      "silhouette": {
+        "height": 2.91,
+        "offset": 0.0
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/10144700341503599438/88D1E2DC8FFF46535836C0B531A2565289E67BB6/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/17563221817980340918/4801D5FAE716911B413B5F0C790F000B63E0104C/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15728085712538195211/C8E5D2D006905324C7541C35765C4FF43D3D06B6/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/17607413312287217729/FD59E769888166ADDE570190F4B5866F31E59409/"
+        }
+      ]
     }
   ],
   "Support": [
@@ -721,7 +787,8 @@
       },
       "minis": [
         {
-          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16432158164944196/4594ADE002844CEEB6FB9A75E17AA802FCAE89FF/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/16432158164944196/4594ADE002844CEEB6FB9A75E17AA802FCAE89FF/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2491139050708070994/E763691AC8C24925DA2CA117DE90A54BAC836230/"
         }
       ]
     },
@@ -777,7 +844,7 @@
     {
       "name": "AAT Battle Tank",
       "displayName": "AAT Battle Tank",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081131430642/9FCE0FB0F62A9381DF3CE2F786DBC749CB2A8FFF/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/15356261010346172115/9FCE0FB0F62A9381DF3CE2F786DBC749CB2A8FFF/",
       "size": "epic",
       "type": "Repulsor Vehicle",
       "points": 165,
@@ -874,6 +941,9 @@
           "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428277771241663/4DEF50D36EB484BB1BBD9FD6092708DEF89A28EA/"
         }
       ]
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/WLO5SpeederTankUnit.json"
     }
   ]
 }

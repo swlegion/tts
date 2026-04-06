@@ -110,6 +110,9 @@
     },
     {
       "content": "contrib/cards/ShadowCollective/BlackSunEnforcersUnit.json"
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/WeequayPiratesUnit.json"
     }
   ],
   "Special Forces": [
@@ -172,6 +175,9 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1802024425338475527/29D3660FA84E5B9F804B840C18E68F5631EE6462/"
         }
       ]
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/WLO5SpeederTankUnit.json"
     }
   ]
 }

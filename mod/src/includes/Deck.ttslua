@@ -7,14 +7,14 @@ function Deck:create()
       command     = "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
       contignency = "http://cloud-3.steamusercontent.com/ugc/1753560235958347056/F845CB170FEF761DC7025AA3EEAE731F018C0E73/",
       horizontal  = {
-        objective   = "http://cloud-3.steamusercontent.com/ugc/786360308354563159/BDB495B60FFED8707BD013502C2F03D3F047B63E/",
-        condition   = "http://cloud-3.steamusercontent.com/ugc/786360308354563381/FF7DF081311A20CC396CAC9391D85EB1FBCA44E1/",
-        deployment  = "http://cloud-3.steamusercontent.com/ugc/786360308354562872/AF68672CC3B5A0A27A37FA0C02FD87F2210FAB86/",
+        objective   = "https://steamusercontent-a.akamaihd.net/ugc/10061127123107977322/847E7AAD563EF0AFD5926BE05266DC82E5FD04FC/",
+        condition   = "https://steamusercontent-a.akamaihd.net/ugc/13818252657402930588/FB0312AED90098252D2E53426F99F2072279EE64/",
+        deployment  = "https://steamusercontent-a.akamaihd.net/ugc/9428670987266773291/C115F2EAE00FD59B7A9D7CEB9906CB91B872DFBE/",
       },
       vertical    = {
-        objective   = "http://cloud-3.steamusercontent.com/ugc/4112341331071278905/7391A9D8F237C6D5361EE068AB9083F51FAEE83E/",
-        condition   = "http://cloud-3.steamusercontent.com/ugc/4112341331071279002/608E86CFE4BAF5BA63E5AAE86ECBA1526E6EB26C/",
-        deployment  = "http://cloud-3.steamusercontent.com/ugc/4112341331071278944/D0E9A51135A2AEEF1CB100554DA46B0704ECCB28/",
+        objective   = "https://steamusercontent-a.akamaihd.net/ugc/10061127123107977322/847E7AAD563EF0AFD5926BE05266DC82E5FD04FC/",
+        condition   = "https://steamusercontent-a.akamaihd.net/ugc/13818252657402930588/FB0312AED90098252D2E53426F99F2072279EE64/",
+        deployment  = "https://steamusercontent-a.akamaihd.net/ugc/9428670987266773291/C115F2EAE00FD59B7A9D7CEB9906CB91B872DFBE/"
       },
     },
     _unknown = {

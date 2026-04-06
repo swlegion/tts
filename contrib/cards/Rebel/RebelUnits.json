@@ -54,6 +54,59 @@
       ]
     },
     {
+      "name": "Luke Skywalker",
+      "title": "Commander Skywalker",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/14055439616909991431/49C4E67617260BEB9BA30A7186B2F0A6E7E1F1B0/",
+      "size": "medium",
+      "type": "Creature Trooper",
+      "points": 110,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Force": 1,
+        "Training": 1,
+        "Comms": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/17466138295659250864/64486F9383C23FBFA17327847189F8F798E0BFB8/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14381694965898057201/52C1277D712E3B1E4F54C16E4F74CB76639BECB1/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Son Of Skywalker",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133712958/CF63D0FDA40318CE886E6DA309CEB291857776E4/",
+          "pip": 1
+        },
+        {
+          "name": "On Patrol",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10927164661502635503/8DB9E1079B4D67CAA8E7C19A6B1BB2EAE4AAB2F9/",
+          "pip": 2
+        },
+        {
+          "name": "My Ally Is The Force",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711308/CECAE0B5B62858582522F7FBED6463FE5834A64E/",
+          "pip": 2
+        },
+        {
+          "name": "Full Of Surprises",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133709999/FA890B2A2EA1528C8BCF2A80AEB3B97A97BB9E15/",
+          "pip": 2
+        },
+        {
+          "name": "Return Of The Jedi",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711996/90C4CB28C0554DEC3797882252E6C5D3CCAC65A1/",
+          "pip": 3
+        },
+        {
+          "name": "Not Out of it Yet",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/17986576672810143634/656B6E1AB636857E500DC13A8C94F7FB26C78F84/",
+          "pip": 3
+        }
+      ]
+    },
+    {
       "name": "Leia Organa",
       "title": "Fearless And Inventive",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133196907/3603F95E0847EC7E202162FF2BA8E587A3B8E8D8/",
@@ -227,14 +280,17 @@
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133208061/787C79B49789528F2EF54F1668B0BF28EBD6635C/",
       "size": "small",
       "type": "Trooper",
-      "points": 70,
+      "points": 75,
       "speed": 2,
       "upgrades": {
-        "Training": 3
+        "Command": 1,
+        "Training": 1,
+        "Gear": 1
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2023850162090106066/B6E661CAB8049A1B1CE975B53BB57B337E2C5DEE/"
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/951848302305475778/55B558E631655D0430BAF76E71C93899AAECA7A1/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/951848302305475871/06400240648CC39F933BE504C74DA9BEF4D006C4/"
         }
       ],
       "commands": [
@@ -261,15 +317,17 @@
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133207972/4E2F553BC1FBA06D841591067D3D5E2AED2BF4E5/",
       "size": "small",
       "type": "Trooper",
-      "points": 45,
+      "points": 90,
       "speed": 2,
       "upgrades": {
-        "Command": 1,
-        "Training": 3
+        "Training": 2,
+        "Gear": 1,
+        "Armament": 1
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2008089545867129309/3D6C219F243BDE984C42BB3444B01DB09B522CBB/"
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/773996263556990389/C38E9CAD7E5BA5496E1A211CA799E9ACBAC51D00/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/770611701143191344/5CAA4F0CE9A3FBE89A81560221ADCDDB5A801CC3/"
         }
       ]
     },
@@ -293,6 +351,34 @@
   "Operative": [
     {
       "content": "contrib/cards/ShadowCollective/HondoUnit.json"
+    },
+    {
+      "name": "Han Solo",
+      "title": "Reluctant Hero",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/15311985354658964881/F8E81D8263D5350BE0AB94FF7A83706B7B5734A8/",
+      "size": "medium",
+      "type": "Creature Trooper",
+      "points": 90,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Training": 1,
+        "Gear": 1,
+        "Comms": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/13940285596618766501/847E2E5B577E5F3AAE1D473FE9A10BCE468A3094/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/11319334885600705090/2ACE36DD1F4FAE8ED21CC59A54D3DB6D780C885D/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "See You in Hell",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10773409737362779349/F1880C8286BA798323F594FA7DF7ABDB85A0A3DD/",
+          "pip": 1
+        }
+      ]
     },
     {
       "name": "Rebel Agent",
@@ -829,6 +915,9 @@
       "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiersUnit.json"
     },
     {
+      "content": "contrib/cards/ShadowCollective/WeequayPiratesUnit.json"
+    },
+    {
       "name": "Ewok Skirmishers",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133206135/9932914CEED1068F058672A166F0F7A67E5C68D5/",
       "size": "small",
@@ -1323,6 +1412,9 @@
           "pip": 3
         }
       ]
+    },
+    {
+      "content": "contrib/cards/ShadowCollective/WLO5SpeederTankUnit.json"
     }
   ]
 }

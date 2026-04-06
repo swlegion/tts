@@ -675,6 +675,16 @@
         }
       },
       {
+        "name": "Black Sun Crew",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13580814712079812423/759CBAED43A1DFA12E7876B92C53EA8CD536F4DE/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["WLO-5 Speeder Tank"]
+          }
+        }
+      },
+      {
         "name": "Door Gunners",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10380945357802391916/5D21C9620D0382828965E9FA8E1534BF067A4E7A/",
         "points": 12
@@ -696,6 +706,16 @@
         "restrictions": {
           "include": {
             "unit": ["Raddaugh Gnasp Fluttercraft"]
+          }
+        }
+      },
+      {
+        "name": "Pyke Syndicate Crew",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13352335398418306228/C01292CB459585462D5A41DD3CE0D743C74C115A/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["WLO-5 Speeder Tank"]
           }
         }
       },
@@ -736,6 +756,16 @@
         "restrictions": {
           "include": {
             "unit": ["A-A5 Speeder Truck", "X-34 Landspeeder"]
+          }
+        }
+      },
+      {
+        "name": "Weequay Crew",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11962013218940355603/44A620E6F9A81692F86F2F331672632D95E0425C/",
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "unit": ["WLO-5 Speeder Tank"]
           }
         }
       }
@@ -1189,6 +1219,16 @@
         "points": 5
       },
       {
+        "name": "Turbo-Charge",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16761979492775816091/37108458441EBB0A6D7090B98BA9B0C3DC2AD80B/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["General Grievous", "TSMEU-6 Wheel Bikes"]
+          }
+        }
+      },
+      {
         "name": "Din's Flame Projector",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/13750229648005754282/BBA7B66BB64E77DD6485518A99475DE0DC684BE8/",
         "points": 5,
@@ -1517,6 +1557,87 @@
     ],
     "Heavy Weapon": [
       {
+        "name": "Long Rifle Pirate",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12069676993247554413/429E3382BCE4E5FB5A38F8E4E43DAE97DD7C3587/",
+        "mini": {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/13407742837548351880/9642E26DE11D4BCC37AF18D7DAFB67E3635A3C65/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15244879389526567538/5FBC4A69F53811F7BB2B1AD495CFEC1F0EB643E0/"
+        },
+        "points": 20,
+        "restrictions": {
+          "include": {
+            "unit": ["Weequay Pirates"]
+          }
+        }
+      },
+      {
+        "name": "Electrostaff Pirate",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10005657645978308453/F2B28DC87052D87780B32EEA43883DF069CDD23A/",
+        "mini": {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16132237456890768608/44919D8C156835F39D911E99F6FE864C08C3E425/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9435972990529503531/027081EFAAAAA333CB323E2267AECA0A668B0C8A/"
+        },
+        "points": 15,
+        "restrictions": {
+          "include": {
+            "unit": ["Weequay Pirates"]
+          }
+        }
+      },
+      {
+        "name": "Agent Kallus",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11243613263901997875/0DD9BAD82731CF9B82AA13471D5EC164B8583545/",
+        "mini": {
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2446089105227059084/0EB4EE32683338BC754DA5EC1F613ABA71048E90/"
+        },
+        "leader": true,
+        "points": 28,
+        "restrictions": {
+          "include": {
+            "faction": ["Empire"],
+            "rank": ["Corps", "Special Forces"]
+          }
+        }
+      },
+      {
+        "name": "Cassian Andor",
+        "displayName": "Cassian Andor (Sniper Config)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9591158490068968132/FEEFE73E35F1BFA0C632F973EA56454D377007FC/",
+        "flip": {
+          "name": "Cassian Andor",
+          "displayName": "Cassian Andor (Black Ops)",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/11525894432535452100/E903693ACFB3CFA2C08225AC65BBF46C06F293F6/"
+        },
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/773996263556990389/C38E9CAD7E5BA5496E1A211CA799E9ACBAC51D00/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/770611701143191344/5CAA4F0CE9A3FBE89A81560221ADCDDB5A801CC3/"
+        },
+        "leader": true,
+        "points": 25,
+        "restrictions": {
+          "include": {
+            "faction": ["Rebel"],
+            "rank": ["Corps"]
+          }
+        }
+      },
+      {
+        "name": "Kraken",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15597539132515958482/63F091887EF5669192CD96A978FDAA0A1B9BD50D/",
+        "mini": {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366706113202/449F19DA94D42DAD0F0B4D0B77A8E9AD45C320E5/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/1619598366706441991/04B29BB48A98AF8D79FC1414548496BAD49CCB28/"
+        },
+        "leader": true,
+        "points": 30,
+        "restrictions": {
+          "include": {
+            "faction": ["Separatist"],
+            "rank": ["Corps"]
+          }
+        }
+      },
+      {
         "name": "RPS-6 ARF Trooper",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/12717002306739299639/3A8542FCC457C05E120FB9E59AD8BA4D1551DFE6/",
         "mini": {
@@ -1637,8 +1758,8 @@
         "name": "MPL-57 Barrage Trooper",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384857286/60AC7BEDA003F95429F6312717EBAB9488C51852/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540540670338/28625FDF1F56EF08F0DB236C4ECFF67A54083B2B/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780862750426/2563904D7561144EE85EBCD3E07D68F48D8DD034/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/785234540540671382/63267B140C2A619525B99FD943DF2421F75B9130/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/785234540540671503/D8BCEE815B07EA7074085CF1F43AF8041DEC8981/"
         },
         "points": 22,
         "restrictions": {
@@ -2057,12 +2178,13 @@
         "name": "Mortar Clone Trooper",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384857192/CF4DF5C1BB0C410B79E2F7EE0B658D2C9F4B8DE3/",
         "mini": {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185328/4A6DA42CDB70EF979D5B8B675CEFA5459FA60D4E/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/17111559006544179444/7D68555838D7B0D758FED0E3791ED418B90A6DD7/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9727272902330348247/0B0C390FEF4295D2877C3FD619D77C165F71537B/"
         },
         "points": 20,
         "restrictions": {
           "include": {
-            "unit": ["Clone Trooper Infantry"]
+            "unit": ["Clone Trooper Infantry", "Clone Trooper Marksmen"]
           }
         }
       },
@@ -2098,13 +2220,13 @@
         "name": "RPS-6 Clone Trooper",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384857930/2CEB66226D92B8B803D3654A7F59977A0D0B6BA2/",
         "mini": {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/767228764785603568/BB31C6873BD81E6B5B6F6D41B907DA95421063F0/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/767228764785565294/2AA6ABC62F52DCD30C56D5DED210C35E7B4FD526/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/10674439379183912978/1891910DC13EACBBDD75B96F220C5826CFF127FA/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/13318126355031753710/BA185DB103CF16D1BFAC9209F348A43498AAFE04/"
         },
         "points": 21,
         "restrictions": {
           "include": {
-            "unit": ["Clone Trooper Infantry"]
+            "unit": ["Clone Trooper Infantry", "Clone Trooper Marksmen"]
           }
         }
       },
@@ -2604,6 +2726,22 @@
     ],
     "Squad Leader": [
       {
+        "name": "Clone Captain Rex",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17837568269244781354/A462DDBE46166711CD3E69DD3F6F6947D25AEF3F/",
+        "mini": {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/776232727456806720/869654FC3B0590BFFF2E1845C3CFA9169838EBF9/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/776232727456806858/52327997163A5113DF9E11B85F9DA8B6B970012C/"
+        },
+        "points": 38,
+        "leader": true,
+        "restrictions": {
+          "include": {
+            "faction": ["Republic"],
+            "rank": ["Corps"]
+          }
+        }
+      },
+      {
         "name": "Jedi Guardian",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/11522429422550427771/2AE47A46390BAC96C6EAE879130F4F01D738E37D/",
         "mini": {
@@ -2738,6 +2876,91 @@
       }
     ],
     "Personnel": [
+      {
+        "name": "Weequay Pirate Squad",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17099305818157449093/AB25320EE6C23F1CFA10608400AA0881A83EFCB4/",
+        "minis": [
+          {
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/13445091018596770169/04299452D8946357EA16CD9DDE32B787C6DBBEDA/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/12521217169728315650/79F32E9C7B535418920B0C335F8B5FC3F9AE0726/"
+          },
+          {
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16223639926626886253/6DAD82EB229219B62298B7B4C22F6586ED23E9BB/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9341836019986456990/3940A22021782AC05911D4DCD13463623411B60F/"
+          },
+          {
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/10420975901939976395/93572C150848711C2D7919BB5E0A66DD51E33DEC/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15879012411449849405/6339E5B40A0F222280349C23BCB3E79CC5136B43/"
+          }
+        ],
+        "points": 30,
+        "restrictions": {
+          "include": {
+            "unit": ["Weequay Pirates"]
+          }
+        }
+      },
+      {
+        "name": "Weequay Captain",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/9436415482602380066/C3B7D0EBC2A34FC536B903E13C4958D0F9C699AA/",
+        "mini": {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15406802960249254940/269FFE5E1C0ACBA9B2607E7B3DEDF4B54A9A8904/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9648645391611954855/C5E2F7BAA5F0573B72DEA0FF33C57550394E46DA/"
+        },
+        "points": 18,
+        "leader": true,
+        "restrictions": {
+          "include": {
+            "unit": ["Weequay Pirates"]
+          }
+        }
+      },
+      {
+        "name": "Clone Marksman",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16972794900197879773/6B1534C765EB2036E2D189C0F8F49AA5F3BDF920/",
+        "mini": {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15225529675747905291/99FAF0DF1F4C90B3BE029846EF98D28ED4AC4DE7/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14173133310269661753/77DC4409C0694CEE7BD5968DBC36B6AD9F582A90/"
+        },
+        "points": 14,
+        "restrictions": {
+          "include": {
+            "unit": ["Clone Trooper Marksmen"]
+          }
+        }
+      },
+      {
+        "name": "Clone Trooper Marksmen Squad",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/18125099481279293755/B6F721DB564585BE62A893E382B128E12CD6592C/",
+        "minis": [
+          {
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15225529675747905291/99FAF0DF1F4C90B3BE029846EF98D28ED4AC4DE7/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14173133310269661753/77DC4409C0694CEE7BD5968DBC36B6AD9F582A90/"
+          },
+          {
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15225529675747905291/99FAF0DF1F4C90B3BE029846EF98D28ED4AC4DE7/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14173133310269661753/77DC4409C0694CEE7BD5968DBC36B6AD9F582A90/"
+          },
+          {
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15225529675747905291/99FAF0DF1F4C90B3BE029846EF98D28ED4AC4DE7/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14173133310269661753/77DC4409C0694CEE7BD5968DBC36B6AD9F582A90/"
+          },
+          {
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15225529675747905291/99FAF0DF1F4C90B3BE029846EF98D28ED4AC4DE7/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14173133310269661753/77DC4409C0694CEE7BD5968DBC36B6AD9F582A90/"
+          },
+          {
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15225529675747905291/99FAF0DF1F4C90B3BE029846EF98D28ED4AC4DE7/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14173133310269661753/77DC4409C0694CEE7BD5968DBC36B6AD9F582A90/"
+          }
+        ],
+        "points": 53,
+        "restrictions": {
+          "include": {
+            "unit": ["Clone Trooper Marksmen"]
+          }
+        }
+      },
       {
         "name": "Fleet Trooper Squad",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384856618/9DED8502636167A62F6D2AEEE5AE8B004D61F3CF/",
@@ -3753,6 +3976,16 @@
         }
       },
       {
+        "name": "Gang Boss",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14505275334722387359/9A721686833EB9E13254ABE90BDBB19E4192853F/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["WLO-5 Speeder Truck", "AA5 Speeder Truck"]
+          }
+        }
+      },
+      {
         "name": "General Weiss",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385148691201/0F949459DDCA1EAFC03EC7145C7402A636C9C4BE/",
         "points": 5,
@@ -3828,6 +4061,16 @@
         }
       },
       {
+        "name": "IG-100 MagnaGuard Pilot",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13932498646258125528/C8DBD74A2D1CC4D0A5722DD77352314CB70ED9C3/",
+        "points": 10,
+        "restrictions": {
+          "include": {
+            "unit": ["TSMEU-6 Wheel Bikes"]
+          }
+        }
+      },
+      {
         "name": "OOM-Series Droid Pilot",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081140015474/EBD6D1C9D3C7DBCB66C1C5976D7F6B2A7303655D/",
         "points": 7,
@@ -3855,6 +4098,16 @@
         "restrictions": {
           "include": {
             "unit": ["Saber-Class Tank"]
+          }
+        }
+      },
+      {
+        "name": "Pirate Captain",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14002409862158051174/46C30FAB65D4F9F6A8C725359F1D65795575973B/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["WLO-5 Speeder Tank"]
           }
         }
       },
@@ -3928,7 +4181,7 @@
         "points": 5,
         "restrictions": {
           "include": {
-            "unit": ["A-A5 Speeder Truck"]
+            "unit": ["A-A5 Speeder Truck", "WLO-5 Speeder Tank"]
           }
         }
       },
@@ -3938,7 +4191,7 @@
         "points": 10,
         "restrictions": {
           "include": {
-            "unit": ["A-A5 Speeder Truck"]
+            "unit": ["A-A5 Speeder Truck", "WLO-5 Speeder Tank"]
           }
         }
       }
@@ -4077,6 +4330,26 @@
       }
     ],
     "Training": [
+      {
+        "name": "Security Detail",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12222061891853555901/CD168A0212E4D0E6D145E0802870606F91B35F68/",
+        "points": 5,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Death Troopers"]
+          }
+        }
+      },
+      {
+        "name": "Logistical Prowess",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11474714211228603788/9066E07B5E314B6AC9B8D46367F9A980AD3257A9/",
+        "points": 0,
+        "restrictions": {
+          "include": {
+            "unit": ["General Tagge"]
+          }
+        }
+      },
       {
         "name": "Jedi Training, Force Adept",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/12390960585643083301/04DD725AE236156E74D8235599206979F3670D57/",
@@ -4309,7 +4582,7 @@
     "Generic": [
       {
         "name": "Ambush",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037146/9E4C2F5453A9016854F388BB078666B71AC794B6/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/11854788151162080590/F8156890B5410050033E6A67015DB0E0DCE7FA95/",
         "pip": 1
       },
       {
@@ -4319,7 +4592,7 @@
       },
       {
         "name": "Push",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034819/0E3D77E869D24AD638EB438F92577F44368487D3/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17909236182554732778/41F641B354B5819E8B6D231B7D2593E29DF87BE7/",
         "pip": 2
       },
       {
@@ -4329,7 +4602,7 @@
       },
       {
         "name": "Assault",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564034224/40364C1DDCF973A233C4A8F7AD43734067014C06/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17765277411252241548/FA0AA2F53A229D6F470578728A59AE31FF626C3A/",
         "pip": 3
       },
       {
@@ -4339,7 +4612,7 @@
       },
       {
         "name": "Standing Orders",
-        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564032760/662157DB1D462926F585301B5D6003D6B8172F14/",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15678505752415930382/55DE6AD796E3FE3FDDE5B2D11CAC8087389D5C71/",
         "pip": 4
       }
     ],
@@ -4357,6 +4630,11 @@
       {
         "name": "Pinned Down",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/13986899663843994273/C86535A24E53CB437CF5E6DFB02A6FCF21E1EC63/",
+        "pip": 2
+      },
+      {
+        "name": "The Empire Does Not Tolerate Failure",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13148519556397561204/A85B3068F61D78D4E11CF222AA32EF0BEA1B997B/",
         "pip": 2
       },
       {
@@ -4459,6 +4737,11 @@
         "pip": 1
       },
       {
+        "name": "Sneak Attack",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17800273845434794252/84425184A9FA3237F85342B84FD168824FBF90C8/",
+        "pip": 1
+      },
+      {
         "name": "Air Support",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134030778/90E5CEF9833FED1C5F926FB8878BDBCD5B5099F6/",
         "pip": 2
@@ -4484,6 +4767,11 @@
         "pip": 2
       },
       {
+        "name": "Recon Division",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17814277548406010305/67FBF2832F88C0A2B3923023FA53418900EC7C92/",
+        "pip": 2
+      },
+      {
         "name": "Attack Of the Clones",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385134033797/3AA33B36A7B9EAAC8444A6CAC176F2130EE30E6C/",
         "pip": 3
@@ -4496,6 +4784,11 @@
       {
         "name": "Daring Defense",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/12871643868680759199/5CC33092968E7DE16416344B01D7BC76211DB23E/",
+        "pip": 3
+      },
+      {
+        "name": "Flexible Strategy",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15462092410085872515/FF4DD4B2D64809CF0A86A3288A8D500DD7E30240/",
         "pip": 3
       },
       {
@@ -4593,6 +4886,47 @@
           "image": "https://steamusercontent-a.akamaihd.net/ugc/18385343105541227063/7F990BB73C8675734EB02873157F392EA265DC20/",
           "type": "vertical",
           "additionalObjects": ["Objective Token", "Objective Token"]
+        },
+        {
+          "name": "Supply Run",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/9519163714205143198/44DD261B633320C5FE3A406F76B56FD73EDC2E76/",
+          "type": "vertical",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
+        },
+        {
+          "name": "Align the Relay",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/14491977904273934664/881FE4169E463AB25699171975636C18E2957251/",
+          "type": "vertical",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
+        },
+        {
+          "name": "Failed Negotiations",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/15810516017228580607/C88C46C8188C2175C572E511FCBF7DA0C3A3C38D/",
+          "type": "vertical",
+          "additionalObjects": ["Objective Token", "Objective Token"]
+        },
+        {
+          "name": "Retrieve the Data",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/12099398395755541092/779E148B5ECFEE495D3C1652FB31A10482C694B7/",
+          "type": "vertical",
+          "additionalObjects": [
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token",
+            "Objective Token"
+          ]
         }
       ],
       "deployment": [
@@ -4635,10 +4969,10 @@
             ["b", "b", "b", "bss", " ", " ", " ", " ", "bs", "b", "b", "b"]
           ],
           "additionalObjects": [
-            "Close the Pocket Map",
             "POI Token",
             "POI Token",
-            "POI Token"
+            "POI Token",
+            "Close the Pocket Map"
           ]
         },
         {
@@ -4680,11 +5014,11 @@
             [" ", " ", "b", "b", "b", "b", "b", "b", "b", "b", " ", " "]
           ],
           "additionalObjects": [
-            "Bunker Assault Map",
             "POI Token",
             "POI Token",
             "POI Token",
-            "POI Token"
+            "POI Token",
+            "Bunker Assault Map"
           ]
         },
         {
@@ -4726,11 +5060,11 @@
             [" ", " ", " ", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
           ],
           "additionalObjects": [
-            "Breakthrough Map",
             "POI Token",
             "POI Token",
             "POI Token",
-            "POI Token"
+            "POI Token",
+            "Breakthrough Map"
           ]
         },
         {
@@ -4772,11 +5106,11 @@
             [" ", " ", "b", "b", "b", "b", "b", "b", "b", "b", " ", " "]
           ],
           "additionalObjects": [
-            "Intercept Signals Map",
             "POI Token",
             "POI Token",
             "POI Token",
-            "POI Token"
+            "POI Token",
+            "Intercept Signals Map"
           ]
         },
         {
@@ -4818,13 +5152,13 @@
             [" ", " ", " ", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
           ],
           "additionalObjects": [
-            "Recover the Research Map",
             "POI Token",
             "POI Token",
             "POI Token",
             "POI Token",
             "POI Token",
-            "POI Token"
+            "POI Token",
+            "Recover the Research Map"
           ]
         },
         {
@@ -4866,12 +5200,146 @@
             [" ", " ", " ", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
           ],
           "additionalObjects": [
-            "Shifting Priorities Map",
             "POI Token",
             "POI Token",
             "POI Token",
             "POI Token",
-            "POI Token"
+            "POI Token",
+            "Shifting Priorities Map"
+          ]
+        },
+        {
+          "name": "Outflank",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/13495770785016686863/572E6718AF1D92854622E20A2C7BBF8E8EAF4793/",
+          "type": "vertical",
+          "zone": [
+            [" ", " ", " ", "r", "r", "r", "r", "r", "r", " ", " ", "r"],
+            [" ", " ", " ", "rh", "rh", "rh", "rh", "rh", "rh", " ", " ", "r"],
+            ["b", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", "r"],
+            ["b", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", "r"],
+            ["b", " ", " ", "bh", "bh", "bh", "bh", "bh", "bh", " ", " ", " "],
+            ["b", " ", " ", "b", "b", "b", "b", "b", "b", " ", " ", " "]
+          ],
+          "additionalObjects": [
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "Outflank Map"
+          ]
+        },
+        {
+          "name": "Cauldron",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/15627037991188349167/2271D8A45AA921E7FCB81C124DC41F2C46D247ED/",
+          "type": "vertical",
+          "zone": [
+            ["r", "r", "r", "r", "r", "r", "r", "r", "r", "r", "r", "r"],
+            [
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh"
+            ],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh"
+            ],
+            ["b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
+          ],
+          "additionalObjects": [
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "Cauldron Map"
+          ]
+        },
+        {
+          "name": "Contact, Contact!",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/12700346236472029468/7D62CD68C323798CA715971917CF33F42E3B118B/",
+          "type": "vertical",
+          "zone": [
+            [" ", " ", " ", " ", " ", " ", "r", "r", "r", "r", "r", "r"],
+            [" ", " ", " ", " ", " ", " ", "rh", "rh", "rh", "r", "r", "rh"],
+            [" ", "b", "b", " ", " ", " ", " ", " ", " ", "r", "r", " "],
+            [" ", "b", "b", " ", " ", " ", " ", " ", " ", "r", "r", " "],
+            ["bh", "b", "b", "bh", "bh", "bh", " ", " ", " ", " ", " ", " "],
+            ["b", "b", "b", "b", "b", "b", " ", " ", " ", " ", " ", " "]
+          ],
+          "additionalObjects": [
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "Contact, Contact! Map"
+          ]
+        },
+        {
+          "name": "Payload",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/16906983444643756097/831C0FCBF977904A6E0D99980AA93894BCC64917/",
+          "type": "vertical",
+          "zone": [
+            ["r", "r", "r", "r", "r", "r", "r", "r", "r", "r", "r", "r"],
+            [
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh",
+              "rh"
+            ],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh",
+              "bh"
+            ],
+            ["b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
+          ],
+          "additionalObjects": [
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "Payload Map"
           ]
         }
       ],
@@ -4911,6 +5379,46 @@
           "image": "https://steamusercontent-a.akamaihd.net/ugc/16276132125547808705/8A61415CDD0F2E20417F6D8371858B206FA0A775/",
           "type": "vertical",
           "additionalObjects": ["Objective Token"]
+        },
+        {
+          "name": "Black Ops",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/17788491822893443475/FCEB325A1C045662381E47E751482700521D2219/",
+          "type": "vertical"
+        },
+        {
+          "name": "Command Override",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/12943860816298787957/AC216DBF0F8880EC568FCAA34B5AC347187723A8/",
+          "type": "vertical"
+        },
+        {
+          "name": "Coordinated Strike",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/16289701377728989133/61345ED59F6A20461A2BD1526AC38D12E2E4BBB3/",
+          "type": "vertical"
+        },
+        {
+          "name": "No Time to Lose",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/11496058962921126665/041D2E72354726A4E39C6A2CCA2DA6C0E66946B2/",
+          "type": "vertical"
+        },
+        {
+          "name": "Armored Assault",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10425618194745828599/81AA48C3F07BB313B7A3CA7E76F88F0CC2167E9F/",
+          "type": "vertical"
+        },
+        {
+          "name": "Extreme Discipline",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/9721205986412257000/CC9C2007345D883D9D1287E44D74CAE089114D29/",
+          "type": "vertical"
+        },
+        {
+          "name": "Rapid Deployment",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/14859786331088523291/F2ECDE4D7BB7F3260A049D627C9801BB32093B0B/",
+          "type": "vertical"
+        },
+        {
+          "name": "Scrambled Orders",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/12845531429756028876/8BAA1BF01969CACC268BDC0847D316A2E96DFD48/",
+          "type": "vertical"
         }
       ]
     },
@@ -5177,105 +5685,107 @@
     "skirmish": {
       "objective": [
         {
-          "name": "Breach",
-          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279492/85477A894623DDA23BC182995DAF396671A0C007/",
-          "type": "vertical"
-        },
-        {
-          "name": "Control",
-          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279456/10F29ECE1579A06D7DC564A6480F2BE27CC6EF04/",
-          "type": "vertical",
-          "additionalObjects": ["Objective Token"]
-        },
-        {
-          "name": "Elimination",
-          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279416/6160501F308751CB9266FF991FF62E1409058C4B/",
-          "type": "vertical"
-        },
-        {
-          "name": "Pivotal Positions",
-          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279382/6E006F31C9D5200AAA94392D94C2AE78EE4D73C7/",
+          "name": "Surface Scan",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/16343945853969639984/24ABD9DF34B74E343BD4F79D9461385D76C0CD88/",
           "type": "vertical",
           "additionalObjects": [
             "Objective Token",
             "Objective Token",
+            "Objective Token",
             "Objective Token"
           ]
+        },
+        {
+          "name": "Recon Mission",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/18385343105541227063/7F990BB73C8675734EB02873157F392EA265DC20/",
+          "type": "vertical",
+          "additionalObjects": ["Objective Token", "Objective Token"]
+        },
+        {
+          "name": "Bring Them to Heel",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/16790576095549234351/278EA3877E97AD155ADA4602D42DF023B7CEB78B/",
+          "type": "vertical"
         }
       ],
       "deployment": [
         {
-          "name": "Battle Lines",
-          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279345/8A96884057E13BF488E89177C2B9CCB0ADDDFFE0/",
+          "name": "Close the Pocket",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/17314598212129638590/62EB33594611850FEBF0567D57ABA8CFB8077091/",
           "type": "vertical",
           "zone": [
-            [" ", " ", " ", "r", "r", "r", "r", "r", "r", " ", " ", " "],
+            [" ", " ", " ", "r", "rs", " ", " ", "rss", "r", " ", " ", " "],
+            [" ", " ", " ", "rh", "rc", " ", " ", "rcc", "rh", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", "b", "b", "b", "b", "b", "b", " ", " ", " "]
+            [" ", " ", " ", "bh", "bcc", " ", " ", "bc", "bh", " ", " ", " "],
+            [" ", " ", " ", "b", "bss", " ", " ", "bs", "b", " ", " ", " "]
+          ],
+          "additionalObjects": [
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "Close the Pocket Map (Recon)"
           ]
         },
         {
-          "name": "Faceoff",
-          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279307/F41700690107CC7398BD5B95CDED30B041538517/",
-          "type": "vertical",
-          "zone": []
-        },
-        {
-          "name": "Flanking Positions",
-          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279273/0D6B1CF6762E532AA4C0D039C2CC96F0E25A419F/",
+          "name": "Bunker Assault",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/16995954044322736468/0D0086DE04A57350DF77F62FDEC94F5148B7C4D5/",
           "type": "vertical",
           "zone": [
-            [" ", " ", " ", "r", "r", "r", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", "r", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", "r", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", "b", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", " ", "b", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", "b", "b", "b", " ", " ", " "]
+            [" ", " ", " ", " ", "r", "r", "r", "r", " ", " ", " ", " "],
+            [" ", " ", " ", " ", "rh", "rh", "rh", "rh", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", "bh", "bh", "bh", "bh", " ", " ", " ", " "],
+            [" ", " ", " ", " ", "b", "b", "b", "b", " ", " ", " ", " "]
+          ],
+          "additionalObjects": [
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "Bunker Assault Map (Recon)"
           ]
         },
         {
-          "name": "Meeting Engagement",
-          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279232/4F4C1C54E5DCE9FD1E9C46BB75379AEF60E2DAFC/",
+          "name": "Intercept Signals",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/13661793580985225615/BB706B264CE5C71456271DE54E765EC27EA6F786/",
           "type": "vertical",
           "zone": [
-            [" ", " ", " ", "r", "r", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", "r", "r", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", "r", "r", "r", "r", " ", " ", " ", " "],
+            [" ", " ", " ", " ", "rh", "rh", "rh", "rh", " ", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
             [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", "b", "b", " ", " ", " "],
-            [" ", " ", " ", " ", " ", " ", " ", "b", "b", " ", " ", " "]
+            [" ", " ", " ", " ", "bh", "bh", "bh", "bh", " ", " ", " ", " "],
+            [" ", " ", " ", " ", "b", "b", "b", "b", " ", " ", " ", " "]
+          ],
+          "additionalObjects": [
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "POI Token",
+            "Intercept Signals Map (Recon)"
           ]
         }
       ],
       "condition": [
         {
-          "name": "War Weary",
-          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279193/052C3637BE4F31FAA691235E186CC73B1CE928F7/",
-          "type": "vertical"
-        },
-        {
-          "name": "Improvised Defenses",
-          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279155/3F72099B06947F23231D8B2228D25C63E01FED92/",
+          "name": "Advanced Intel",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/13272907091260444770/243391B61F192F53AA7CF0360D3F846C7A7A0A97/",
           "type": "vertical",
-          "additionalObjects": [
-            "Barricade",
-            "Barricade",
-            "Barricade",
-            "Barricade"
-          ]
+          "additionalObjects": ["Condition Token"]
         },
         {
-          "name": "Dawn",
-          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279122/1952ADAEF00EAAF039C3D0C160AABF3BD4F7B0E1/",
-          "type": "vertical"
+          "name": "Fortified Position",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/16927846453234643948/97D5A7F0E4C9D3DAB14C3754AC3A484C15CE3567/",
+          "type": "vertical",
+          "additionalObjects": ["Barricade", "Barricade", "Barricade"]
         },
         {
-          "name": "Clear Conditions",
-          "image": "http://cloud-3.steamusercontent.com/ugc/4112341331071279082/F2116A3FBAB46DAD85EE43AB1CBF9497C567B2A8/",
-          "type": "vertical"
+          "name": "Cunning Deployment",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/14925552919945327142/06659E9120D6246C6048165ECDE9F5F5AEA7A5EB/",
+          "type": "vertical",
+          "additionalObjects": ["Dodge Token", "Dodge Token", "Dodge Token"]
         }
       ]
     },
@@ -5590,37 +6100,79 @@
     "Breakthrough Map": {
       "card": {
         "image": "https://steamusercontent-a.akamaihd.net/ugc/16613435332891317382/334404D722726ECE56866DBBF444836E8AC2F3A3/",
-        "back": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501051192/5A19D255E47E80FF3CCE0EBFA095CB8677C4188D/"
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/16613435332891317382/334404D722726ECE56866DBBF444836E8AC2F3A3/"
       }
     },
     "Bunker Assault Map": {
       "card": {
         "image": "https://steamusercontent-a.akamaihd.net/ugc/12304553798171400164/69AB4EB2BA8A39D91996852580DCA1AB783913C4/",
-        "back": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501051483/82F1D1EAA55C5794FD0301E5FADB5EEA3DAEFE49/"
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/12304553798171400164/69AB4EB2BA8A39D91996852580DCA1AB783913C4/"
       }
     },
     "Close the Pocket Map": {
       "card": {
         "image": "https://steamusercontent-a.akamaihd.net/ugc/14769093936620373412/BC975CBADAEBD9AA231D83443BE9EDB59FF4308A/",
-        "back": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501051694/8B05A05A5B24115F84B0A13F6FD392BB5C00E527/"
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/14769093936620373412/BC975CBADAEBD9AA231D83443BE9EDB59FF4308A/"
       }
     },
-    "Intercept Signals": {
+    "Intercept Signals Map": {
       "card": {
         "image": "https://steamusercontent-a.akamaihd.net/ugc/12020228019721678387/E635199A7837BC89D679A0D848FB4EA7D7677239/",
-        "back": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501052240/E4DFCE250EAB2459C05A7C73ED2C47B78DB5D467/"
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/12020228019721678387/E635199A7837BC89D679A0D848FB4EA7D7677239/"
       }
     },
     "Recover the Research Map": {
       "card": {
         "image": "https://steamusercontent-a.akamaihd.net/ugc/15862931608322641380/4C8D35B94855B94A233EBF9D01FB0D1A0EEE3B32/",
-        "back": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501052886/30E5BFA96EBC5AFA4197AE40882EC3B576420F51/"
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/15862931608322641380/4C8D35B94855B94A233EBF9D01FB0D1A0EEE3B32/"
       }
     },
     "Shifting Priorities Map": {
       "card": {
         "image": "https://steamusercontent-a.akamaihd.net/ugc/12429316638634710380/005746FFEA77696118B237B650C7628F9089B946/",
-        "back": "https://steamusercontent-a.akamaihd.net/ugc/2482129948501052974/0D4D7ECABE727D484B8ECDF44DBA664BBF7E609D/"
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/12429316638634710380/005746FFEA77696118B237B650C7628F9089B946/"
+      }
+    },
+    "Outflank Map": {
+      "card": {
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15283876349976838373/93B3D53B8AB0DCF7FE15F606E81FD962A738B455/",
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/15283876349976838373/93B3D53B8AB0DCF7FE15F606E81FD962A738B455/"
+      }
+    },
+    "Cauldron Map": {
+      "card": {
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/16251599508539301812/3439E5658197D7006038C5BFDB48CE8F7DFC6DAD/",
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/16251599508539301812/3439E5658197D7006038C5BFDB48CE8F7DFC6DAD/"
+      }
+    },
+    "Contact, Contact! Map": {
+      "card": {
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15184660976021577609/475B87420012E83B5AE2865DC1E4620E93ADDECE/",
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/15184660976021577609/475B87420012E83B5AE2865DC1E4620E93ADDECE/"
+      }
+    },
+    "Payload Map": {
+      "card": {
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12399717920746649417/C9AC372588552230C9F0C00A5ADB0D468672E726/",
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/12399717920746649417/C9AC372588552230C9F0C00A5ADB0D468672E726/"
+      }
+    },
+    "Bunker Assault Map (Recon)": {
+      "card": {
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/15532220751502518416/FA34BE3822D18F2C6D04F8987569B0D4F6A1F9D3/",
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/15532220751502518416/FA34BE3822D18F2C6D04F8987569B0D4F6A1F9D3/"
+      }
+    },
+    "Close the Pocket Map (Recon)": {
+      "card": {
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/17088281433024932061/E9983676D51E1EE76B7152BD13CF83C794F02C81/",
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/17088281433024932061/E9983676D51E1EE76B7152BD13CF83C794F02C81/"
+      }
+    },
+    "Intercept Signals Map (Recon)": {
+      "card": {
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13979927353592007130/EA574041CFDFF4712CEC9A8E18F5A8DDE7A18216/",
+        "back": "https://steamusercontent-a.akamaihd.net/ugc/13979927353592007130/EA574041CFDFF4712CEC9A8E18F5A8DDE7A18216/"
       }
     }
   }
