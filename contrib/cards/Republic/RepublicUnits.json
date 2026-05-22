@@ -1,6 +1,56 @@
 {
   "Commander": [
     {
+      "name": "Ki-Adi-Mundi",
+      "title": "Jedi Council",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/11929402197203734988/9CF2A7578A3EB20BA278864950D163A26901C4F5/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 0,
+      "speed": 2,
+      "upgrades": {},
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/12461470789103203864/DACD5524454E91F35C586DDEABAD420ED4E1FF46/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/17297173129004280551/384F67D13FCA3EBA539BD8D3818F5A0E5A8F2A0B/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Force of Will",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/18170241117176866803/0C12349B15161AD068F2BFD1AB13681EB31255FD/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "Mace Windu",
+      "title": "Jedi Council",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/12731488793753419264/4F069455F4652D7D87B92F26C1EB7C0888C7D48E/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 165,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Force": 3,
+        "Training": 2
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/12925628276853873664/6E5E101942F74FC183F7154481D3EB5CFEAAAD65/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/18287494378041429592/02BB80E1E8A06309E2424A0AD83A7A68E9A42FD6/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "This Party's Over",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/11977462417526561880/68CB1C0EABB464F67AF434BE84666B6FF126E6CD/",
+          "pip": 1
+        }
+      ]
+    },
+    {
       "name": "Ahsoka Tano",
       "title": "Padawan Commander",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831840/7BAA676E59D56B62D2E11FB77DD5B0E5BC387437/",
@@ -21,7 +71,7 @@
       "commands": [
         {
           "name": "You Are Beaten",
-          "image": "https://steamusercontent-a.akamaihd.net/ugc/59217531459831475/BAB718B98F827E294BA50680227A363E3256DC7A/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/14515441792303199216/BAB718B98F827E294BA50680227A363E3256DC7A/",
           "pip": 1
         },
         {
@@ -280,7 +330,7 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateCapoUnit.json"
+      "content": "contrib/cards/Mercenary/PykeSyndicateCapoUnit.json"
     },
     {
       "name": "Clone Commander Cody",
@@ -321,7 +371,53 @@
   ],
   "Operative": [
     {
-      "content": "contrib/cards/ShadowCollective/HondoUnit.json"
+      "content": "contrib/cards/Mercenary/HondoUnit.json"
+    },
+    {
+      "name": "Shaak Ti",
+      "title": "Jedi Council",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/17555033359148455110/D2F1B99C8AB43C8B73071DAED15D378AC38F65C5/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 0,
+      "speed": 2,
+      "upgrades": {},
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/18026057114183857483/0D959FB4A356818AA1FA6D8034166916BB6EA84B/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9607653251760381402/E7F70FBA0C514FFA35DB2213F1F958835192D473/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Unity Wins Wars",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/17101391156956704931/3299D62F86B634A6850085F40EA1DD60DC3BDEDE/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "Plo Koon",
+      "title": "Jedi Council",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/11338358295243396609/72E584709E6C16445AFBDB6820E58449092839EF/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 0,
+      "speed": 2,
+      "upgrades": {},
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/10428072234539757120/3154697B7EB8A5076E1CB4C312068560C7B3DE19/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16082411658181568841/AC55908D9B799DAEE652A7505DD8E06857464614/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "I Don't Believe in Chance",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/15864173543972429126/27FCE434351A715B9DDDC4B033C3DE79B0260000/",
+          "pip": 2
+        }
+      ]
     },
     {
       "name": "Jedi Knight",
@@ -522,7 +618,10 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiersUnit.json"
+      "content": "contrib/cards/Mercenary/PykeSyndicateFootSoldiersUnit.json"
+    },
+    {
+      "content": "contrib/cards/Mercenary/WeequayPiratesUnit.json"
     }
   ],
   "Special Forces": [
@@ -561,26 +660,36 @@
       ]
     },
     {
-      "name": "Arc Troopers",
-      "title": "Strike Team",
-      "displayName": "Arc Troopers (Strike Team)",
-      "heavyWeaponTeam": true,
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384861099/0BF691267928341734741CDF04AAE59A41E5E20B/",
+      "name": "ARF Troopers",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/59215140638617511/EF41D3B9F89F86EC4E803863C17D1549052C8B55/",
       "size": "small",
       "type": "Clone Trooper",
-      "points": 24,
+      "points": 66,
       "speed": 2,
       "upgrades": {
+        "Squad Leader": 1,
         "Heavy Weapon": 1,
+        "Personel": 1,
         "Training": 1,
         "Comms": 1,
-        "Gear": 2,
         "Grenades": 1
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457802621/01F605D855048F823A0ECA6C46D2A62B56C04124/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933614/80D6829DB63FAE3328D00AC36F00E5FD71251E69/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933714/D3FE0C2DEFBE1E78A71A55516DF87199D66DE2AC/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149649053/B24484CFED06020454EE95B663DB3ECE17871D26/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149646949/50B6AA8C2CC5283537DBA2291F9801E7CD5FE77C/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149643329/8D273B40809BF89188238DE6FC5C207756AA22EF/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149643405/9A3D0A513A31513523E59855980DFCE0A8F0F6E0/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16428815149932871/EE8DF333D45ED841E9C31625FB4A9385C16B2F49/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16428815149933386/736E0CCF2ADE31D6A9F6BE172B20AEB5420B815E/"
         }
       ]
     },
@@ -678,6 +787,30 @@
   ],
   "Support": [
     {
+      "name": "Arc Troopers",
+      "title": "Strike Team",
+      "displayName": "Arc Troopers (Strike Team)",
+      "heavyWeaponTeam": true,
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/11640734367175082150/31600D0C168D48D5E353E7E0A6D60C4935531D62/",
+      "size": "small",
+      "type": "Clone Trooper",
+      "points": 23,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Training": 1,
+        "Comms": 1,
+        "Gear": 2,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457802621/01F605D855048F823A0ECA6C46D2A62B56C04124/",
+          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995200348530664/5E248091F8CC37B1023257338D4947E4ADFE48AB/"
+        }
+      ]
+    },
+    {
       "name": "BARC Speeder",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135357592/ED3AA636CBB456AA395C1694D27B84A296DD406B/",
       "size": "large",
@@ -743,7 +876,7 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/SwoopBikeRidersUnit.json"
+      "content": "contrib/cards/Mercenary/SwoopBikeRidersUnit.json"
     },
     {
       "name": "Raddaugh Gnasp Fluttercraft",
@@ -889,7 +1022,7 @@
     {
       "name": "Infantry Support Platform",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385135344629/540E23C816C00B4B7E086B626329F13633403C9E/",
-      "size": "huge",
+      "size": "laat",
       "type": "Repulsor Vehicle",
       "points": 65,
       "speed": 3,
@@ -899,14 +1032,17 @@
         "Comms": 1
       },
       "silhouette": {
-        "height": 1.55,
+        "height": 2.25,
         "offset": 0.0
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598523372574861/CCF68AF1C35F52A714AB0344FCB170F5BAA1672A/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/14282592344641491251/15FE05F31AF626C6839758EB55F1CE175915ABB7/"
         }
       ]
+    },
+    {
+      "content": "contrib/cards/Mercenary/WLO5SpeederTankUnit.json"
     }
   ]
 }

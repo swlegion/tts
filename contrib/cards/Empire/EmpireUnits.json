@@ -112,12 +112,111 @@
         },
         {
           "name": "Deploy The Garrison",
-          "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564035541/3076FCDDC51B733A5970AD91FE0698F9A1888084/",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/12892698832465049230/B1371A5A16B4A487680730048ABA1D8AD5711C43/",
           "pip": 2
         },
         {
           "name": "Annihilation Looms",
           "image": "https://steamusercontent-a.akamaihd.net/ugc/16041114741939938540/BB2491CC411004550C9A17D7C4C190026AF19762/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "Grand Admiral Thrawn",
+      "title": "Imperial High Command",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/9436299354256705736/3DCE14B424BBB4F76939DA580884B08F5597866A/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 110,
+      "speed": 2,
+      "upgrades": {
+        "Command": 3,
+        "Training": 1,
+        "Gear": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16882569187315189060/9CC8F02A05022AC6AE93534E6C95F72197C296C3/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/17874999880093691776/296F0B6569A22FA39F40E4A61D207900C1CCE512/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Architects of Their Own Destruction",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/12184173414394445819/F6446EC3BC802836DC5A6E7C19A5BD77F30B7278/",
+          "pip": 1
+        },
+        {
+          "name": "We Must Wait and Watch",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/13718292354738588716/0DB30394AA3AA3D13D9FA23F2B7DC17CF34116F0/",
+          "pip": 2
+        },
+        {
+          "name": "I Want You to Know Failure",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/15617948462890110491/4C39E34E102D2071D0EEAA0AC7F4F8953E108265/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "Grand Moff Tarkin",
+      "title": "Imperial High Command",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/12830085949468452139/30B1D3C7B93F18C834C172A25D605C01DAFD9A31/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 95,
+      "speed": 2,
+      "upgrades": {
+        "Command": 3
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16733402417968018171/CDE38AF3BCF6C2601F389A7AEB03B7399E440D9B/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/10086133497934154614/77993863423B7453DB85E31D4CA9B7F13DCD4626/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Moment of Triumph",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/13309803368671609766/C5893E5966D2FE573DD589E9B5E94EBD01E20707/",
+          "pip": 1
+        },
+        {
+          "name": "Fear Will Keep Them in Line",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10284086872796146114/8FC131D739DFBCA729DC1B5F31DD440B65EEB4C6/",
+          "pip": 3
+        }
+      ]
+    },
+    {
+      "name": "General Tagge",
+      "title": "Imperial High Command",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/18037706666284034311/7683A6889CF63CFFAC109DF58DDD103AA7ADFAF8/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 85,
+      "speed": 2,
+      "upgrades": {
+        "Command": 3,
+        "Training": 1,
+        "Gear": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11491712071340896017/8364014C41D2C85817AA0641F36F066504E46226/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/10067944761455784205/EA5A44F1A042F71C0D397173A893E5316CA42463/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "I Have Graphs AND the Command",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/16492485163580443866/035B19E6BD2FC184EDE9E2782054E52EABFE973C/",
+          "pip": 1
+        },
+        {
+          "name": "Canny Adversary",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/15603846312607201943/6B2F2EC17A80B2F190532E33057F16931B8D4F19/",
           "pip": 3
         }
       ]
@@ -232,10 +331,10 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateCapoUnit.json"
+      "content": "contrib/cards/Mercenary/PykeSyndicateCapoUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/BlackSunVigoUnit.json"
+      "content": "contrib/cards/Mercenary/BlackSunVigoUnit.json"
     }
   ],
   "Operative": [
@@ -288,10 +387,10 @@
       "additionalObjects": ["Victory Token"]
     },
     {
-      "content": "contrib/cards/ShadowCollective/BosskUnit.json"
+      "content": "contrib/cards/Mercenary/BosskUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/CadBaneUnit.json"
+      "content": "contrib/cards/Mercenary/CadBaneUnit.json"
     },
     {
       "name": "Darth Vader",
@@ -382,13 +481,13 @@
       "additionalObjects": ["Victory Token"]
     },
     {
-      "content": "contrib/cards/ShadowCollective/DinUnit.json"
+      "content": "contrib/cards/Mercenary/DinUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/IG11Unit.json"
+      "content": "contrib/cards/Mercenary/IG11Unit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/HondoUnit.json"
+      "content": "contrib/cards/Mercenary/HondoUnit.json"
     },
     {
       "name": "Fifth Brother",
@@ -675,7 +774,7 @@
     },
     {
       "name": "DF-90 Mortar Trooper",
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139662551/E8496B01C9619FBA2E5EEEBEF285ABEEF95ECF00/",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/16783716143455086871/5D15ECEA1884F21248D89506357639418A5FBF3B/",
       "size": "medium",
       "type": "Emplacement Trooper",
       "points": 40,
@@ -691,10 +790,13 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiersUnit.json"
+      "content": "contrib/cards/Mercenary/PykeSyndicateFootSoldiersUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/BlackSunEnforcersUnit.json"
+      "content": "contrib/cards/Mercenary/BlackSunEnforcersUnit.json"
+    },
+    {
+      "content": "contrib/cards/Mercenary/WeequayPiratesUnit.json"
     }
   ],
   "Special Forces": [
@@ -727,30 +829,6 @@
         },
         {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541911689/42647324CBDBF25155498DF1FFDDDC2EC04FB5EC/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/950714557093539603/6584D58DCD3135C901F302599C304E2D7044AD4B/"
-        }
-      ]
-    },
-    {
-      "name": "Scout Troopers",
-      "title": "Strike Team",
-      "displayName": "Scout Troopers (Strike Team)",
-      "heavyWeaponTeam": true,
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863628/C90F310AB2FFFFB744B68B2A0D3B0C657FA8ABA4/",
-      "size": "small",
-      "type": "Trooper",
-      "points": 20,
-      "speed": 2,
-      "upgrades": {
-        "Heavy Weapon": 1,
-        "Training": 1,
-        "Comms": 1,
-        "Gear": 1,
-        "Grenades": 1
-      },
-      "minis": [
-        {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541911155/36E8C01A67E5E7A4188FC619261E0BAB0DF438C1/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/950714557093539603/6584D58DCD3135C901F302599C304E2D7044AD4B/"
         }
       ]
@@ -845,6 +923,21 @@
         }
       ],
       "required": ["Gideon Hask", "Del Meeko"]
+    },
+    {
+      "name": "Imperial Probe Droid",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/17742743731740446795/0CCBB41ECD7F6A3AB0477DD280E75F07DDF26BE1/",
+      "size": "small",
+      "type": "Droid Trooper",
+      "points": 35,
+      "speed": 1,
+      "upgrades": {},
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/14972533488140369423/D390682F502B9999AE930DA6A78817DDE5D97027/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15762532285823663057/2254B8B0FBA723C3F840CDB6DB639404B0DA9DB1/"
+        }
+      ]
     }
   ],
   "Support": [
@@ -907,6 +1000,30 @@
         {
           "mesh": "http://cloud-3.steamusercontent.com/ugc/786359682702688959/0FCB94B52F0C2DF6E3F296AB6980CEC158E3E496/",
           "diffuse": "http://cloud-3.steamusercontent.com/ugc/786359682702689114/727755B3BE824994C869F1C869D8B5A07A3CD284/"
+        }
+      ]
+    },
+    {
+      "name": "Scout Troopers",
+      "title": "Strike Team",
+      "displayName": "Scout Troopers (Strike Team)",
+      "heavyWeaponTeam": true,
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/11473212592953545707/1E52D2488DA72C302214A5A1B55D64D36BFFE757/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 22,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Training": 1,
+        "Comms": 1,
+        "Gear": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541911155/36E8C01A67E5E7A4188FC619261E0BAB0DF438C1/",
+          "diffuse": "http://cloud-3.steamusercontent.com/ugc/950714557093539603/6584D58DCD3135C901F302599C304E2D7044AD4B/"
         }
       ]
     },
@@ -1078,6 +1195,9 @@
           "pip": 3
         }
       ]
+    },
+    {
+      "content": "contrib/cards/Mercenary/WLO5SpeederTankUnit.json"
     }
   ]
 }

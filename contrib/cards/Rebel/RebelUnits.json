@@ -54,6 +54,59 @@
       ]
     },
     {
+      "name": "Luke Skywalker",
+      "title": "Commander Skywalker",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/14055439616909991431/49C4E67617260BEB9BA30A7186B2F0A6E7E1F1B0/",
+      "size": "medium",
+      "type": "Creature Trooper",
+      "points": 110,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Force": 1,
+        "Training": 1,
+        "Comms": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/17466138295659250864/64486F9383C23FBFA17327847189F8F798E0BFB8/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14381694965898057201/52C1277D712E3B1E4F54C16E4F74CB76639BECB1/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Son Of Skywalker",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133712958/CF63D0FDA40318CE886E6DA309CEB291857776E4/",
+          "pip": 1
+        },
+        {
+          "name": "On Patrol",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10927164661502635503/8DB9E1079B4D67CAA8E7C19A6B1BB2EAE4AAB2F9/",
+          "pip": 2
+        },
+        {
+          "name": "My Ally Is The Force",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711308/CECAE0B5B62858582522F7FBED6463FE5834A64E/",
+          "pip": 2
+        },
+        {
+          "name": "Full Of Surprises",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133709999/FA890B2A2EA1528C8BCF2A80AEB3B97A97BB9E15/",
+          "pip": 2
+        },
+        {
+          "name": "Return Of The Jedi",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133711996/90C4CB28C0554DEC3797882252E6C5D3CCAC65A1/",
+          "pip": 3
+        },
+        {
+          "name": "Not Out of it Yet",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/17986576672810143634/656B6E1AB636857E500DC13A8C94F7FB26C78F84/",
+          "pip": 3
+        }
+      ]
+    },
+    {
       "name": "Leia Organa",
       "title": "Fearless And Inventive",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133196907/3603F95E0847EC7E202162FF2BA8E587A3B8E8D8/",
@@ -189,7 +242,7 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateCapoUnit.json"
+      "content": "contrib/cards/Mercenary/PykeSyndicateCapoUnit.json"
     },
     {
       "name": "Rebel Officer",
@@ -227,7 +280,7 @@
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133208061/787C79B49789528F2EF54F1668B0BF28EBD6635C/",
       "size": "small",
       "type": "Trooper",
-      "points": 70,
+      "points": 64,
       "speed": 2,
       "upgrades": {
         "Training": 3
@@ -292,7 +345,35 @@
   ],
   "Operative": [
     {
-      "content": "contrib/cards/ShadowCollective/HondoUnit.json"
+      "content": "contrib/cards/Mercenary/HondoUnit.json"
+    },
+    {
+      "name": "Han Solo",
+      "title": "Reluctant Hero",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/15311985354658964881/F8E81D8263D5350BE0AB94FF7A83706B7B5734A8/",
+      "size": "medium",
+      "type": "Creature Trooper",
+      "points": 90,
+      "speed": 2,
+      "upgrades": {
+        "Command": 1,
+        "Training": 1,
+        "Gear": 1,
+        "Comms": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/13940285596618766501/847E2E5B577E5F3AAE1D473FE9A10BCE468A3094/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/11319334885600705090/2ACE36DD1F4FAE8ED21CC59A54D3DB6D780C885D/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "See You in Hell",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10773409737362779349/F1880C8286BA798323F594FA7DF7ABDB85A0A3DD/",
+          "pip": 1
+        }
+      ]
     },
     {
       "name": "Rebel Agent",
@@ -449,7 +530,8 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809186599/4B154E18EF2C0ADE6C347FC4B15AD856D00546DF/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/14052244614810856390/56285EFFD6CBC4799ADAA95830EB2F10E4120F69/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15565584712668003223/F742EEF3DC4CAE87C9E9D5974891C2A445C48649/"
         }
       ],
       "commands": [
@@ -639,10 +721,10 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/DinUnit.json"
+      "content": "contrib/cards/Mercenary/DinUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/IG11Unit.json"
+      "content": "contrib/cards/Mercenary/IG11Unit.json"
     },
     {
       "name": "Ahsoka Tano",
@@ -826,7 +908,10 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiersUnit.json"
+      "content": "contrib/cards/Mercenary/PykeSyndicateFootSoldiersUnit.json"
+    },
+    {
+      "content": "contrib/cards/Mercenary/WeequayPiratesUnit.json"
     },
     {
       "name": "Ewok Skirmishers",
@@ -874,7 +959,7 @@
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133198280/BA9DB93D2D168B835C95075E8B1C52C79E044286/",
       "size": "small",
       "type": "Trooper",
-      "points": 48,
+      "points": 42,
       "speed": 2,
       "upgrades": {
         "Heavy Weapon": 1,
@@ -885,44 +970,20 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173156/D637683F992DD0C4488252BE266EEEA1F26006B0/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541172655/B10522A40482843AF69A3F321BD091B0ECF52C6B/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/17504878929475056902/7D83CFA0BD23993580F90863A33AD5743E8FC778/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9547146995441004401/223F75C5260F31457426962BDE853215FD2E4696/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541172497/B3E1593143504101920CC6419BE7C2EAEF52993F/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541188141/6E23E29BB42963B94A0B7DFE01C4C49D776D9657/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11486357574412562426/7547BC81C08E0B15022770FF6FBF33FA66D1DB43/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9789374328584101623/2B3AABFCECA29D3EBA6B87F1D33C1913A3FB3FAE//"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173253/155BAA01BA51A8EB524DD434A3C512D8C0B3A04B/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541172655/B10522A40482843AF69A3F321BD091B0ECF52C6B/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/17377233370710228946/0A4A965CB67E1E6B4B2A58A0E949D588D41AAD6B/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14988427562404509763/03DF88DCE5809143B7DEA0C3ADD9F756DA86B23E/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173354/3483C6FB73C66481BC6CCC398BAB8E796F7EC076/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541188141/6E23E29BB42963B94A0B7DFE01C4C49D776D9657/"
-        }
-      ]
-    },
-    {
-      "name": "Rebel Commandos",
-      "displayName": "Rebel Commandos (Strike Team)",
-      "title": "Strike Team",
-      "heavyWeaponTeam": true,
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133197589/A51BFFE52ED2FAE9DACE45BF774C7F5FE12CBC07/",
-      "size": "small",
-      "type": "Trooper",
-      "points": 20,
-      "speed": 2,
-      "upgrades": {
-        "Heavy Weapon": 1,
-        "Training": 1,
-        "Comms": 1,
-        "Gear": 1,
-        "Grenades": 1
-      },
-      "minis": [
-        {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540541173156/D637683F992DD0C4488252BE266EEEA1F26006B0/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540541172655/B10522A40482843AF69A3F321BD091B0ECF52C6B/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16097408999552065934/9F18078D897B967B552FCE7B9D7F198FC50B58E4/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9566804180720822422/B4A75666546AF78CC290D4030754377548983638/"
         }
       ]
     },
@@ -1191,6 +1252,30 @@
       ]
     },
     {
+      "name": "Rebel Commandos",
+      "displayName": "Rebel Commandos (Strike Team)",
+      "title": "Strike Team",
+      "heavyWeaponTeam": true,
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/15391478724315537430/D37281FE62D2FB944EF610EB01C66232CA9BB8EA/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 20,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Training": 1,
+        "Comms": 1,
+        "Gear": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16453620303646761666/4D8DBD4999B75F314799A70F47115CAA5BE658E2/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/17012966922360507699/78F075440D9D93CD87119353FA24E886EEBBAB3A/"
+        }
+      ]
+    },
+    {
       "name": "Tauntaun Riders",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133194939/65297606E28367C04BF4BB4DE3474EAB723F4416/",
       "size": "medium",
@@ -1213,7 +1298,7 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/SwoopBikeRidersUnit.json"
+      "content": "contrib/cards/Mercenary/SwoopBikeRidersUnit.json"
     }
   ],
   "Heavy": [
@@ -1323,6 +1408,9 @@
           "pip": 3
         }
       ]
+    },
+    {
+      "content": "contrib/cards/Mercenary/WLO5SpeederTankUnit.json"
     }
   ]
 }

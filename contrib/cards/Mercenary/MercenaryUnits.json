@@ -38,10 +38,10 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/BlackSunVigoUnit.json"
+      "content": "contrib/cards/Mercenary/BlackSunVigoUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateCapoUnit.json"
+      "content": "contrib/cards/Mercenary/PykeSyndicateCapoUnit.json"
     }
   ],
   "Operative": [
@@ -98,18 +98,47 @@
       ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/CadBaneUnit.json"
+      "name": "Savage Opress",
+      "title": "Maul's Enforcer",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10520678764152114554/0350C3463ADCAF50D1936AC3893348C12F0A5A62/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 0,
+      "speed": 2,
+      "upgrades": {},
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11082776058831308047/3A974FCF53960CCBBC537A4134AD12242D4DDF89/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/17875535680143582051/1C009264C71FD35359145238DFA2CBD5D1872CD4/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "We Shall Start With Revenge",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/10750064270635517385/492A552BB4056A4CBF9CD01FB5195521104C9F9E/",
+          "pip": 1
+        }
+      ]
     },
     {
-      "content": "contrib/cards/ShadowCollective/BosskUnit.json"
+      "content": "contrib/cards/Mercenary/CadBaneUnit.json"
+    },
+    {
+      "content": "contrib/cards/Mercenary/BosskUnit.json"
+    },
+    {
+      "content": "contrib/cards/Mercenary/HondoUnit.json"
     }
   ],
   "Corps": [
     {
-      "content": "contrib/cards/ShadowCollective/PykeSyndicateFootSoldiersUnit.json"
+      "content": "contrib/cards/Mercenary/PykeSyndicateFootSoldiersUnit.json"
     },
     {
-      "content": "contrib/cards/ShadowCollective/BlackSunEnforcersUnit.json"
+      "content": "contrib/cards/Mercenary/BlackSunEnforcersUnit.json"
+    },
+    {
+      "content": "contrib/cards/Mercenary/WeequayPiratesUnit.json"
     }
   ],
   "Special Forces": [
@@ -146,7 +175,7 @@
   ],
   "Support": [
     {
-      "content": "contrib/cards/ShadowCollective/SwoopBikeRidersUnit.json"
+      "content": "contrib/cards/Mercenary/SwoopBikeRidersUnit.json"
     }
   ],
   "Heavy": [
@@ -172,6 +201,9 @@
           "bundle": "http://cloud-3.steamusercontent.com/ugc/1802024425338475527/29D3660FA84E5B9F804B840C18E68F5631EE6462/"
         }
       ]
+    },
+    {
+      "content": "contrib/cards/Mercenary/WLO5SpeederTankUnit.json"
     }
   ]
 }
