@@ -1,0 +1,3 @@
+UnityPy>=1.10
+Pillow>=10.0
+requests>=2.31

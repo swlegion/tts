@@ -1,0 +1,98 @@
+Proposals for the maintainers, before we spend the time
+=======================================================
+
+Iron Squadron, 12 August 2026.
+
+Everything below is work we are offering to do, not work we have done. We would
+rather hear "no thanks" now than hand you a pull request you never asked for.
+Each item says what is missing today, what it would cost us, and what it changes
+for players.
+
+Context, in one line: we rebuilt the mod's custom-shader bundles so they carry a
+Metal SubShader alongside the DirectX one, which fixes the magenta Projectors on
+macOS. Working through that, we ran into two gaps that have nothing to do with
+macOS. They affect Windows players exactly the same way.
+
+
+1. COHESION IS MISSING ON 35 UNITS
+
+getCohesionLinks() ships three bundles: 27 mm, 50 mm and 70 mm.
+spawnCohesionRuler ends with
+
+    if cohesionBundleToSpawn == nil then return end
+
+so on any other base the cohesion ruler simply does not appear. Counting the
+size field across contrib/cards:
+
+    huge   (100 mm)          16 units    T-47 Airspeeder, AT-ST
+    epic   (150 mm)          12 units    AT-AP, LAAT/i Gunship
+    long   (100 mm oblong)    3 units    A-A5 Speeder Truck, Occupier Tank
+    laat   (120 mm)           2 units    LAAT/LE Patrol Transport
+    snail  (100x200 oblong)   2 units    Persuader-Class Tank Droid
+
+What we would build. Cohesion is the base outline offset outwards by range 0.5,
+whatever the base's shape. That is not our interpretation, it is what the
+existing bundles measure: their radii are 3.531, 3.984 and 4.378 inches for 27,
+50 and 70 mm bases, i.e. the base radius plus 3.000 inches in all three cases.
+
+The three missing round sizes are nearly free: BB_CohesionProjector.shader is
+procedural, driven by _BaseSize, so each one is a material and a prefab, with no
+new art.
+
+The two oblong sizes need a shader that offsets a stadium rather than a circle,
+and that maths already exists in this repo: BB_OblongRangeProjector.shader takes
+a _BaseCenterPointGap. A cohesion variant is a merge of two shaders you already
+own.
+
+Cost to you: none. We build, we test on both platforms, you review.
+
+
+2. THE RANGE TEMPLATE COULD CARRY THE COHESION RING
+
+Same measurement, shown where players already look. A thin white ring at range
+0.5 from the base edge, added to BB_RangeProjector and its oblong variant, on the
+eight unit-leader sizes. Not on tokens: an objective or a POI is not a unit, so
+cohesion means nothing there.
+
+This one is a genuine change to something that already works, so it is the item
+we most want your opinion on before touching it.
+
+
+3. THE QUESTION UNDERNEATH BOTH: OPT-IN OR FOR EVERYONE?
+
+We also maintain a small Lua layer that adds behaviours the vanilla mod does not
+have: cohesion that follows a model while it is being dragged, range and cohesion
+toggles that are deterministic instead of respawning, a maximum-move template
+anchored where the move started. It sits behind a single table-wide button, off
+by default, and it leaves the original mod strictly untouched when off.
+
+Rendering, however, no longer goes through that layer: it is in the bundles now.
+So an enriched range template would be seen by everyone, in both button states.
+Keeping it optional means publishing a second set of range bundles for the button
+to select, which roughly doubles what we produce.
+
+Three ways to go, and it is your call:
+
+1. For everyone. Simplest, and hard to argue against for item 1, since the
+   vanilla mod shows nothing at all on those 35 units today.
+2. Behind the button. Nothing imposed, players compare and decide. More work on
+   our side, and we are fine with that.
+3. Item 1 for everyone, item 2 behind the button. Our own preference: the missing
+   cohesion is a gap to fill, the enriched range template is a taste question.
+
+
+SEPARATELY, TWO UPSTREAM BUGS WE ALREADY CARRY A FIX FOR
+
+Neither is macOS-specific and neither needs a decision from you. Say the word and
+we will send them as their own small pull request.
+
+- clearSilhouette() dereferences removeAttachments()[1] without checking it.
+  silhouetteState survives a save reload while the physical attachments do not,
+  so loading a game saved with silhouettes up and clicking SIL crashes the
+  object's script.
+- The SIL and LCK buttons land on top of the model on long and snail bases:
+  calculateButtonZOffset uses a single per-size radius with no axis handling.
+
+
+Contact: Iron Squadron, French Star Wars Legion association,
+https://iron-squadron.fr
