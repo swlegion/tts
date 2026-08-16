@@ -53,6 +53,34 @@ function calculateButtonZOffset(baseDiameter)
    return ((baseDiameter * 0.5) + 0.1)
 end
 
+-- Oblong bases (long, snail) are longer than they are wide, so a Z offset
+-- derived from baseRadius puts the SIL and LCK buttons inside the model. The
+-- real depth can only be read from the mesh, which is not loaded yet when the
+-- buttons are created, so re-place them once it is in. Round bases are left
+-- alone, their radius is already correct.
+function scheduleOblongButtonFix()
+  if oblongButtonFixScheduled then return end
+  if not (unitData and (unitData.baseSize == "long" or unitData.baseSize == "snail")) then
+    return
+  end
+  oblongButtonFixScheduled = true
+  Wait.time(function()
+    if self == nil then return end
+    local okB, bounds = pcall(function() return self.getBoundsNormalized() end)
+    local okS, scale = pcall(function() return self.getScale() end)
+    if not (okB and okS and bounds and scale and scale.z ~= 0) then return end
+    local half = (bounds.size.z / scale.z) * 0.5 + 0.15
+    for _, btn in ipairs(self.getButtons() or {}) do
+      if (btn.label == "SIL" or btn.label == "LCK") and (btn.position.z or 0) < half then
+        self.editButton({
+          index = btn.index,
+          position = {btn.position.x, btn.position.y, half},
+        })
+      end
+    end
+  end, 3)
+end
+
 function addSilhouetteButton()
   local gameData = getObjectFromGUID(Global.getVar("gameDataGUID"))
   local btnTint = gameData.getTable("battlefieldTint")
@@ -70,6 +98,7 @@ function addSilhouetteButton()
     font_color= {1, 1, 1, 100}
   }
   self.createButton(btnData)
+  scheduleOblongButtonFix()
 end
 
 function addLockButton()
@@ -90,6 +119,7 @@ function addLockButton()
         font_color= {1, 1, 1, 100}
     }
     self.createButton(lockBtnData)
+    scheduleOblongButtonFix()
 end
 
 function updateLockBtnColor()
@@ -188,8 +218,14 @@ function clearSilhouette()
 
     -- Guard against players who delete their minis!
     if obj then
+      -- silhouetteState is saved with the game, but the silhouette objects
+      -- themselves are not: loading a save made with silhouettes up leaves the
+      -- state true with nothing attached, and removeAttachments() returns an
+      -- empty list. Destructing that nil crashed the script.
       local silToDestroy = obj.removeAttachments()[1]
-      silToDestroy.destruct()
+      if silToDestroy then
+        silToDestroy.destruct()
+      end
     end
   end
   silhouetteState = false
@@ -217,16 +253,16 @@ function spawnSilhouette(obj, pos, rot)
   local scale = globals.baseRadius[unitData.baseSize]
   local height = 1.0
   local offset = 0.0
-  local silhouetteData = "http://cloud-3.steamusercontent.com/ugc/5063766435505471684/D97103C9FFB76016DDF9CE66A7622BDB3E810160/"
+  local silhouetteData = "https://steamusercontent-a.akamaihd.net/ugc/5063766435505471684/D97103C9FFB76016DDF9CE66A7622BDB3E810160/"
   if silhType == "custom" then
     height = silhHeight
     offset = silhOffset
     if unitData.baseSize == "snail" then
-      silhouetteData = "http://cloud-3.steamusercontent.com/ugc/5063766435505471854/AE2D411CFBF4D88321CAD0D75961CBF0512D62E4/"
+      silhouetteData = "https://steamusercontent-a.akamaihd.net/ugc/5063766435505471854/AE2D411CFBF4D88321CAD0D75961CBF0512D62E4/"
       scale = 1.0
     end
     if unitData.baseSize == "long" then
-      silhouetteData = "http://cloud-3.steamusercontent.com/ugc/5063766435505471800/DF511A83E913EBA164F74E20BA239AE286458D91/"
+      silhouetteData = "https://steamusercontent-a.akamaihd.net/ugc/5063766435505471800/DF511A83E913EBA164F74E20BA239AE286458D91/"
       scale = 1.0
     end
   else    

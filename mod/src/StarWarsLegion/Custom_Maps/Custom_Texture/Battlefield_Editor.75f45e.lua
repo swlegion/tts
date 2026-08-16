@@ -9,9 +9,9 @@ scripted = true
 position = {x = -25.4028015136719, y = 1.44191324710846, z = -14.9005193710327}
 rotation = {x = -0.00167207431513816, y = 180.008102416992, z = -1.47594300869969E-05}
 
-board_6x3 = "http://cloud-3.steamusercontent.com/ugc/785234780859015647/B98B08E01F9F286630AE190B71A63A3BDD6F3E42/"
-board_3x3 = "http://cloud-3.steamusercontent.com/ugc/1861690318337394165/88B0AA7DAF539875A19C1A86867E9922F01FBE07/"
-board_6x4 = "http://cloud-3.steamusercontent.com/ugc/1861690318337395348/1A2942C470A2BF34712B4FFBAA535F4091D8BD7A/"
+board_6x3 = "https://steamusercontent-a.akamaihd.net/ugc/785234780859015647/B98B08E01F9F286630AE190B71A63A3BDD6F3E42/"
+board_3x3 = "https://steamusercontent-a.akamaihd.net/ugc/1861690318337394165/88B0AA7DAF539875A19C1A86867E9922F01FBE07/"
+board_6x4 = "https://steamusercontent-a.akamaihd.net/ugc/1861690318337395348/1A2942C470A2BF34712B4FFBAA535F4091D8BD7A/"
 
 scripted = true
 function onload(save_state)

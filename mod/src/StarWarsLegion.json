@@ -304,19 +304,23 @@
     "CustomUIAssets": [
       {
         "Name": "PalpatinePoster",
-        "URL": "http://cloud-3.steamusercontent.com/ugc/966480765117276391/DDA8500A1694EF1EAA32998DCAB2D53098FBE040/"
+        "URL": "https://steamusercontent-a.akamaihd.net/ugc/966480765117276391/DDA8500A1694EF1EAA32998DCAB2D53098FBE040/"
       },
       {
         "Name": "navyPoster",
-        "URL": "http://cloud-3.steamusercontent.com/ugc/966480765117276646/EAB073D513A94F6947D9004F4FB98D7D9B22E416/"
+        "URL": "https://steamusercontent-a.akamaihd.net/ugc/966480765117276646/EAB073D513A94F6947D9004F4FB98D7D9B22E416/"
       },
       {
         "Name": "ObiWanPoster",
-        "URL": "http://cloud-3.steamusercontent.com/ugc/966480765118137024/1AB7F81D20820D74D9B1BFE48F5865D152956296/"
+        "URL": "https://steamusercontent-a.akamaihd.net/ugc/966480765118137024/1AB7F81D20820D74D9B1BFE48F5865D152956296/"
       },
       {
         "Name": "rangeRuler",
-        "URL": "http://cloud-3.steamusercontent.com/ugc/966480765118137238/1157F7217EB80F31A92427567B377F857576DAE9/"
+        "URL": "https://steamusercontent-a.akamaihd.net/ugc/966480765118137238/1157F7217EB80F31A92427567B377F857576DAE9/"
+      },
+      {
+        "Name": "isqLogo",
+        "URL": "https://raw.githubusercontent.com/ironsquadronfr-hub/tts/isq-qol/mod/data/isq-overlay-assets/iron_squadron_logo_v2.png"
       }
     ],
     "ObjectStates": []
@@ -496,6 +500,21 @@
     "TABLE.3a3ed9.json",
     "Saved_Map.38fcd0.json",
     "Blitz_Deck_Bag.169190.json",
-    "POI_Tokens.094230.json"
+    "POI_Tokens.094230.json",
+    "RULES_PANEL.e0d001.json",
+    "Rules_Panel_Option_1.e0d002.json",
+    "Rules_Panel_Option_2.e0d003.json",
+    "Rules_Panel_Option_3.e0d004.json",
+    "Rules_Panel_Option_4.e0d005.json",
+    "Rules_Panel_Option_5.e0d006.json",
+    "Rules_Panel_Option_1_Button.e0d007.json",
+    "Rules_Panel_Option_2_Button.e0d008.json",
+    "Rules_Panel_Option_3_Button.e0d009.json",
+    "Rules_Panel_Option_4_Button.e0d00a.json",
+    "Rules_Panel_Option_5_Button.e0d00b.json",
+    "Rules_Panel_Back_Button.e0d00c.json",
+    "Rules_Page_Box_1.e0d00d.json",
+    "Rules_Page_Box_2.e0d00e.json",
+    "Rules_Page_Box_3.e0d00f.json"
   ]
 }

@@ -1,6 +1,16 @@
 require('!/data/RangeRulerLinks')
+require('!/IsqBridge')
 
 function showRangeOnHoveredModel(hoverObject)
+  -- When a player has turned the Iron Squadron overlays on for the table, draw
+  -- the range with the Projector renderer instead. When they are off, which is
+  -- the default, everything below runs unchanged.
+  if isqOverlaysOn() then
+    if hoverObject and hoverObject.interactable then
+      isqToggleRange({figGUID = hoverObject.getGUID(), forceFigMode = true})
+    end
+    return
+  end
   clearRangeRulers()
   if hoverObject then
     if hoverObject.interactable then

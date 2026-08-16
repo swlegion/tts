@@ -1,0 +1,45 @@
+{
+  "name": "Din Djarin (CotW)",
+  "title": "The Mandalorian",
+  "image": "https://steamusercontent-a.akamaihd.net/ugc/17999008970653144013/974BFCA93CF29E8323F15FC014F5EFACAA7E7BC4/",
+  "size": "small",
+  "type": "Mandalorian Trooper",
+  "points": 105,
+  "speed": 2,
+  "upgrades": {
+    "Training": 2,
+    "Comms": 1,
+    "Gear": 2,
+    "Armament": 1,
+    "Counterpart": 1
+  },
+  "minis": [
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11171456481638483071/8745A1E4AECFAB922EE992D2CC27B429D3B4D06E/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16033126237930839319/15AF5623DA277BB6C7BD19389E34185916C36B6C/"
+    }
+  ],
+  "commands": [
+    {
+      "name": "This is the Way",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137015239/C47AEAA769E49330AF8A9A18B9E6FBBBC14D411B/",
+      "pip": 1
+    },
+    {
+      "name": "I Like Those Odds",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137015412/584A22A4135D4349D3D2A2D269F97FAC5F14558C/",
+      "pip": 2
+    },
+    {
+      "name": "The Hand Thing",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139777564/741083A5DC7A0B07FE1EFAC37B113604CA918C7F/",
+      "pip": 2
+    },
+    {
+      "name": "Whistling Birds",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385137015298/D63392C36661D3EB8E0376A51A461AA761D5827F/",
+      "pip": 3
+    }
+  ],
+  "additionalObjects": ["Victory Token"]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Clan Kryze Veterans",
+  "image": "https://steamusercontent-a.akamaihd.net/ugc/15028666060695630005/E0C4223ECED9E328B41B8FF57FF5778D76CEDBE2/",
+  "size": "small",
+  "type": " Mandalorian Trooper",
+  "points": 120,
+  "speed": 3,
+  "upgrades": {
+    "Heavy Weapon": 1,
+    "Personnel": 1,
+    "Training": 1,
+    "Gear": 1,
+    "Grenades": 1
+  },
+  "minis": [
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/14299440675831444174/2D2305BA345FA03A460D2627BC7F014D6142B16E/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/12568210608347252595/9C80A95D6CA76C64CCE029F528E23D2881E015BC/"
+    },
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/17203461973821612600/44F0D0DC7529875D478C676B102DCDBA06C7CD68/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/11713682800087411715/1119AC7566124DC8188B431D9BD71B0F5999F5CA/"
+    },
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11378829872206577401/650689787DEA41FC0B4075D01B6CF5818765EA77/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/11646318231487808153/8A650B5E7AAA5F0B9F747CFF5DB37D0CD61B3075/"
+    },
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/10853205535533573710/FC2AE17A3CEF5FE89F6C124785D0EAE4342B7CF1/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/10926183976234855350/1477A04943CBA3D5E108CD3A6CBAA82247E7309A/"
+    },
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/9530546952548123015/557D7167D61C1ECE971DCF691B3FD8DE9981630B/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15250285021657928480/ED6C0C88E4A67EFA8DAE76D24301E30EBF1B79ED/"
+    }
+  ]
+}

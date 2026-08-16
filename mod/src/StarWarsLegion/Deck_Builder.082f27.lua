@@ -33,28 +33,27 @@ function onload(save_state)
     resetCommandCards()
 
     -- Default selections. Can be changed by the user!
-    battlefieldCardSelection = {
-      objective = {
-        "Key Positions",
-        "Breakthrough",
-        "Intercept The Transmissions",
-        "Recover The Supplies",
-      },
-      deployment = {
-        "Battle Lines",
-        "The Long March",
-        "Disarray",
-        "Major Offensive",
-      },
-      conditions = {
-        "Clear Conditions",
-        "Limited Visibility",
-        "Rapid Reinforcements",
-        "Hostile Environment",
-      },
-    }
+    battlefieldCardSelection = defaultBattlefieldSelection(selectedScenario)
 
     resetButtons()
+end
+
+-- The deck builder used to start with twelve cards already selected, written
+-- out by hand, one list per scenario. Every one of them had drifted: none of
+-- the twelve names under "standard" exists in the standard scenario, and none
+-- of the twelve under "skirmish" exists in skirmish. Cards the scenario does
+-- not have still spawn - as an unrecognized card each - so a freshly opened
+-- deck builder produced twelve of those on top of whatever was actually
+-- picked.
+--
+-- Nothing is selected to begin with now, which is what blitz already did and
+-- what the player expects: pick nine cards, get nine cards.
+function defaultBattlefieldSelection(_scenario)
+  return {
+    objective  = {},
+    deployment = {},
+    conditions = {},
+  }
 end
 
 
@@ -90,9 +89,25 @@ function removeCommander(selectedCommander)
     resetButtons()
 end
 
+-- The eleven choice rows are printed on the model, so the buttons cannot be
+-- spaced any other way and a longer list has to be paged rather than squeezed.
+CHOICE_ROWS = 11
+
+-- Half-width pager buttons on the last row. The rows are printed on the model,
+-- so they cannot be measured from the script - but the highlight drawn on a
+-- selected row can: it is a button of width 2040 and it renders exactly two
+-- local units wide, which fixes the scale at 1020 per unit.
+--
+-- A row is therefore 2.0 across and an exact half would be 1020 wide at an
+-- offset of 0.5. The pair leaves a gutter of 0.4 between them instead, which
+-- costs each button half the gutter on its inner edge and moves its centre out
+-- by a quarter of it, so the outer edges still line up with the row.
+PAGER_WIDTH = 816
+PAGER_OFFSET = 0.6
+
 function nilChoices()
     selectionEntry = {}
-    for i=1,11,1 do
+    for i=1,CHOICE_ROWS,1 do
         selectionEntry[i] = {}
         selectionEntry[i].entryName = ""
         selectionEntry[i].clickFunction = "dud"
@@ -154,22 +169,43 @@ end
 
 function resetChoicesButtons()
 
-    for i=1,11,1 do
-        local choiceData = {
-            click_function = selectionEntry[i].clickFunction,
-            function_owner = self,
-            label = selectionEntry[i].entryName,
-            position = {-1.45, 0.28, 2.394-(i*0.354)},
-            rotation = {0, 180, 0},
-            scale = {0.5, 0.5, 0.5},
-            width = 2040,
-            height = 410,
-            font_size = selectionEntry[i].fontSize,
-            color = selectionEntry[i].color,
-            font_color = selectionEntry[i].fontColor,
-            tooltip = ""
-        }
-        self.createButton(choiceData)
+    for i=1,CHOICE_ROWS,1 do
+        if selectionEntry[i].pager then
+            -- The last row is printed as two halves on the model, so the pager
+            -- gets one button in each rather than one straddling both.
+            for _, half in ipairs(selectionEntry[i].pager) do
+                self.createButton({
+                    click_function = half.clickFunction,
+                    function_owner = self,
+                    label = half.entryName,
+                    position = {-1.45 + half.offset, 0.28, 2.394-(i*0.354)},
+                    rotation = {0, 180, 0},
+                    scale = {0.5, 0.5, 0.5},
+                    width = PAGER_WIDTH,
+                    height = 410,
+                    font_size = 160,
+                    color = {1, 0.647, 0, 0.5},
+                    font_color = {0, 0, 0, 2},
+                    tooltip = ""
+                })
+            end
+        else
+            local choiceData = {
+                click_function = selectionEntry[i].clickFunction,
+                function_owner = self,
+                label = selectionEntry[i].entryName,
+                position = {-1.45, 0.28, 2.394-(i*0.354)},
+                rotation = {0, 180, 0},
+                scale = {0.5, 0.5, 0.5},
+                width = 2040,
+                height = 410,
+                font_size = selectionEntry[i].fontSize,
+                color = selectionEntry[i].color,
+                font_color = selectionEntry[i].fontColor,
+                tooltip = ""
+            }
+            self.createButton(choiceData)
+        end
     end
 end
 
@@ -239,13 +275,30 @@ function conditionsSubMenu()
     battlefieldCardSubMenu("conditions")
 end
 
-function battlefieldCardSubMenu(selectedType)
+-- The list is longer than the panel for the standard conditions - fourteen
+-- cards for eleven rows - and every entry past the eleventh used to index past
+-- the end of selectionEntry, so opening that submenu errored out and drew
+-- nothing at all. The last row becomes a pager when the list does not fit.
+function battlefieldCardSubMenu(selectedType, page)
+  local entries = Deck:getBattleCardNamesByType(selectedType, selectedScenario)
   nilChoices()
 
+  local perPage = CHOICE_ROWS
+  local pages = 1
+  if #entries > CHOICE_ROWS then
+    perPage = CHOICE_ROWS - 1
+    pages = math.ceil(#entries / perPage)
+  end
+  page = page or 1
+  if page > pages then
+    page = 1
+  end
+
   j = 1
-  for i, entry in ipairs(Deck:getBattleCardNamesByType(selectedType, selectedScenario)) do
-    _G["choiceSubMenu"..i] = function() 
-      toggleBattlefieldCard(selectedType, entry)
+  for i = (page - 1) * perPage + 1, math.min(page * perPage, #entries) do
+    local entry = entries[i]
+    _G["choiceSubMenu"..j] = function()
+      toggleBattlefieldCard(selectedType, entry, page)
     end
     acolor = {0.1764,0.1764,0.1764,0.01}
     afontColor = {0,0,0,100}
@@ -261,8 +314,23 @@ function battlefieldCardSubMenu(selectedType)
       end
     end
 
-    setChoiceAttributes(j, entry, "choiceSubMenu"..i, acolor, afontColor)
+    setChoiceAttributes(j, entry, "choiceSubMenu"..j, acolor, afontColor)
     j = j + 1
+  end
+
+  if pages > 1 then
+    local previousPage = (page - 2) % pages + 1
+    local nextPage = page % pages + 1
+    _G.choicePagePrev = function()
+      battlefieldCardSubMenu(selectedType, previousPage)
+    end
+    _G.choicePageNext = function()
+      battlefieldCardSubMenu(selectedType, nextPage)
+    end
+    selectionEntry[CHOICE_ROWS].pager = {
+      { entryName = "< PREV", clickFunction = "choicePagePrev", offset =  PAGER_OFFSET },
+      { entryName = "NEXT >", clickFunction = "choicePageNext", offset = -PAGER_OFFSET },
+    }
   end
 
   updateButtons()
@@ -300,7 +368,7 @@ function selectCommandCard(isContingencies, selectedCard, subMenuIndex)
     commandCardSubMenu(subMenuIndex)
 end
 
-function toggleBattlefieldCard(battlefieldCardType, selectedBattlefieldCard)
+function toggleBattlefieldCard(battlefieldCardType, selectedBattlefieldCard, page)
     noCardFound = true
     for i, entry in pairs (battlefieldCardSelection[battlefieldCardType]) do
         if entry ==  selectedBattlefieldCard then
@@ -315,7 +383,7 @@ function toggleBattlefieldCard(battlefieldCardType, selectedBattlefieldCard)
         table.insert(battlefieldCardSelection[battlefieldCardType], selectedBattlefieldCard)
     end
 
-    battlefieldCardSubMenu(battlefieldCardType)
+    battlefieldCardSubMenu(battlefieldCardType, page)
 end
 
 function dud()
@@ -335,56 +403,7 @@ function switchBattleDeck(params)
     return
   end
   _G.selectedScenario = params.name
-  -- TODO: Make configurable as defaults.
-  if params.name:lower() == 'standard' then
-    battlefieldCardSelection = {
-      objective = {
-        "Key Positions",
-        "Breakthrough",
-        "Intercept The Transmissions",
-        "Recover The Supplies",
-      },
-      deployment = {
-        "Battle Lines",
-        "The Long March",
-        "Disarray",
-        "Major Offensive",
-      },
-      conditions = {
-        "Clear Conditions",
-        "Limited Visibility",
-        "Rapid Reinforcements",
-        "Hostile Environment",
-      },
-    }
-  elseif params.name:lower() == 'skirmish' then
-    battlefieldCardSelection = {
-      objective  = {
-        "Breach",
-        "Control",
-        "Elimination",
-        "Pivotal Positions",
-      },
-      deployment = {
-        "Battle Lines",
-        "Faceoff",
-        "Flanking Positions",
-        "Meeting Engagement",
-      },
-      conditions = {
-        "War Weary",
-        "Improvised Defenses",
-        "Dawn",
-        "Clear Conditions",
-      },
-    }
-  else
-    battlefieldCardSelection = {
-      objective  = {},
-      deployment = {},
-      conditions = {},
-    }
-  end
+  battlefieldCardSelection = defaultBattlefieldSelection(params.name)
   resetButtons()
   updateButtons()
 end

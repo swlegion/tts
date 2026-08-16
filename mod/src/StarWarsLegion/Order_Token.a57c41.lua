@@ -367,6 +367,24 @@ function resetButtons()
 end
 
 function toggleCohesionRuler()
+    -- Iron Squadron overlays (see !/IsqOverlays): route this button to the
+    -- Projector renderer when they are on. Off by default, in which case
+    -- everything below runs unchanged.
+    if isqOverlaysOn() then
+        if not selectedUnitObj then return end
+        -- Clear before toggling on: the hover hotkey writes to the same key as
+        -- this unit, so without the clear the first click here would turn that
+        -- overlay off while we set rulerOn = true, leaving the button inverted
+        -- from then on.
+        isqClearCohesion({figGUID = selectedUnitObj.getGUID()})
+        if rulerOn then
+            rulerOn = false
+        else
+            isqToggleCohesion({figGUID = selectedUnitObj.getGUID()})
+            rulerOn = true
+        end
+        return
+    end
     if not rulerOn then
         selectedUnitObj.call("spawnCohesionRuler", selectedUnitObj)
         rulerOn = true
@@ -553,13 +571,23 @@ function moveUnit(isDeploy)
     local baseSizeMoveBundles = maxMoveBundles[unitData.baseSize]
     local maxMoveTemplateBundleToSpawn = baseSizeMoveBundles[unitData.selectedSpeed]
 
-    if isDeploy == false then
+    -- changeSpeed1/2/3 rappellent moveUnit() sans argument apres avoir detruit
+    -- les gabarits, donc isDeploy vaut nil et non false. Avec une egalite
+    -- stricte, le cercle de mouvement disparaissait des qu'on changeait de
+    -- vitesse et ne revenait jamais.
+    if isDeploy ~= true then
         --max movement ring projector
         if maxMoveTemplateBundleToSpawn ~= nil then
             maxMoveTemplate = spawnObject({
                 type = "Custom_AssetBundle",
                 position = {basePos.x, basePos.y + 20, basePos.z},
-                rotation = {0, basePos.y, 0},
+                -- Le lacet se prend sur baseRot.y, l'orientation de l'unite.
+                -- Il valait basePos.y, c'est-a-dire sa HAUTEUR au-dessus de la
+                -- table : le projecteur etait donc toujours pose a ~1 degre dans
+                -- le repere du monde, sans jamais suivre le vehicule. Invisible
+                -- tant que l'empreinte est un disque, faux des qu'elle ne l'est
+                -- plus.
+                rotation = {0, baseRot.y, 0},
                 scale = {0,0,0} -- 0 scale will hide TTS default box and won't impact projector
             })
 
@@ -769,6 +797,10 @@ end
 ------------------------------------------------- Clear templates------------------------------------------------------------
 function clearTemplates()
     clearMovementTemplates()
+    -- Iron Squadron overlays (see !/IsqOverlays): clearRangeRulers only wipes
+    -- the vanilla ruler, so ours has to be cleared alongside it. No-op when the
+    -- overlays are off, which is the default.
+    isqOrderClearRange()
     clearRangeRulers()
     clearCohesionRulers()
 end
@@ -781,7 +813,10 @@ function clearMovementTemplates()
         destroyObject(templateB)
     end
     if maxMoveTemplate ~= nil then
-        destroyObject(maxMoveTemplate)
+        -- pcall : l'objet peut avoir deja disparu (Clear Map, standbyTokens),
+        -- auquel cas destroyObject leve et le reste du nettoyage sautait.
+        pcall(destroyObject, maxMoveTemplate)
+        maxMoveTemplate = nil
     end
 end
 
@@ -919,11 +954,39 @@ function attack()
     attackMode()
 end
 
+-- Iron Squadron overlays (see !/IsqOverlays): draw and clear this token's range
+-- with the Projector renderer when they are on. Both are no-ops when they are
+-- off, which is the default, so the vanilla calls around them are untouched.
+--
+-- These two only ever call into the module. The vanilla spawnRangeRuler and
+-- clearRangeRulers are deliberately NOT overridden on this object: doing so
+-- crashed Tabletop Simulator on macOS whenever a figure hotkey spawned a range
+-- bundle, so only their callers are adapted.
+function isqOrderSpawnRange()
+    if not selectedUnitObj then return end
+    if not isqOverlaysOn() then return end
+    -- Clear before triggering: the module toggles by GUID and the hover hotkey
+    -- writes to this same unit, so without the clear a click meant to draw
+    -- could erase instead.
+    isqClearRange({figGUID = selectedUnitObj.getGUID()})
+    isqRangeTrigger({figGUID = selectedUnitObj.getGUID()})
+end
+
+function isqOrderClearRange()
+    if not selectedUnitObj then return end
+    if not isqOverlaysOn() then return end
+    isqClearRange({figGUID = selectedUnitObj.getGUID()})
+end
+
 function targetingMode()
     if not enemyHighlighted then
         exitAttackMode()
         highlightEnemies()
-        spawnRangeRuler(selectedUnitObj)
+        if isqOverlaysOn() then
+            isqOrderSpawnRange()
+        else
+            spawnRangeRuler(selectedUnitObj)
+        end
         enemyHighlighted = true
         resetRangeButtons()
     else
@@ -935,7 +998,11 @@ function attackMode()
     if not attackModeOn then
         exitTargetingMode()
         highlightEnemies()
-        spawnRangeRuler(selectedUnitObj)
+        if isqOverlaysOn() then
+            isqOrderSpawnRange()
+        else
+            spawnRangeRuler(selectedUnitObj)
+        end
         attackModeOn = true
         resetTargetingButtons()
     else
@@ -946,6 +1013,7 @@ end
 function exitTargetingMode()
     enemyHighlighted = false
     attackModeOn = false
+    isqOrderClearRange()
     clearRangeRulers()
     unhighlightEnemies()
     clearAttackLine()
@@ -954,6 +1022,7 @@ end
 function exitAttackMode()
     enemyHighlighted = false
     attackModeOn = false
+    isqOrderClearRange()
     clearRangeRulers()
     unhighlightEnemies()
 end
@@ -1078,7 +1147,7 @@ function spawnAttackLine(aOriginObj,aTargetObj)
         attackLineObj.setCustomObject({
             type = 0,
             mesh = templateInfo.attackLineMesh,
-            collider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
+            collider = "https://steamusercontent-a.akamaihd.net/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/",
             material = 1,
         })
         attackLineObj.setLock(true)
@@ -1150,7 +1219,17 @@ function createRangeButton(leaderObj)
         end
     end
 
-    lowestDistance = lowestDistance - templateInfo.baseRadius[enemyBaseSize]/2 - templateInfo.baseRadius[enemyBaseSize]/2
+    -- getDistance mesure de centre a centre, alors qu'en jeu une portee se
+    -- mesure de bord de socle a bord de socle. Il faut donc retrancher le rayon
+    -- de l'unite qui mesure PUIS celui de la cible. C'est celui de la cible qui
+    -- etait retranche deux fois : la bande affichee etait fausse des que les
+    -- deux socles differaient, de rayon(cible) - rayon(mesureur), soit jusqu'a
+    -- 2,4 pouces entre un trooper et un AAT, sur des bandes de 6.
+    -- (templateInfo.baseRadius contient des diametres, d'ou les moities.)
+    local ownBaseSize = selectedUnitObj.getVar("baseSize") or unitData.baseSize
+    lowestDistance = lowestDistance
+        - templateInfo.baseRadius[ownBaseSize]/2
+        - templateInfo.baseRadius[enemyBaseSize]/2
 
     finalRange = math.ceil(lowestDistance/6)
     if finalRange > 4 then

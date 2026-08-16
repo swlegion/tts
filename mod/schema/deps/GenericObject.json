@@ -9,16 +9,27 @@
     "Card": {
       "type": "object",
       "additionalProperties": false,
-      "properties": {
-        "image": {
-          "$ref": "./Image.json"
-        },
 
-        "back": {
-          "$ref": "./Image.json"
+      "properties": {
+        "card": {
+          "type": "object",
+          "additionalProperties": false,
+
+          "properties": {
+            "image": {
+              "$ref": "./Image.json"
+            },
+
+            "back": {
+              "$ref": "./Image.json"
+            }
+          },
+
+          "required": ["image"]
         }
       },
-      "required": ["image"]
+
+      "required": ["card"]
     },
 
     "Deck": {

@@ -1,0 +1,21 @@
+{
+  "name": "Axe Woves",
+  "title": "Cunning Warrior",
+  "image": "https://steamusercontent-a.akamaihd.net/ugc/16345726255822961019/587D496E7CCA8D0DFA66BB24E055E5A456E48709/",
+  "size": "small",
+  "type": "Mandalorian Trooper",
+  "points": 90,
+  "speed": 3,
+  "upgrades": {
+    "Comms": 1,
+    "Training": 2,
+    "Gear": 2,
+    "Grenades": 1
+  },
+  "minis": [
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15456045015424850337/D269ECEBFECBDEA3B3F4B405B2BEC8C06551AD98/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16254551774572830806/9905BFCFE2D213CC3DB5E2EAA9465441644165EF/"
+    }
+  ]
+}

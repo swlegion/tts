@@ -1,0 +1,44 @@
+-- Bridge to the optional Iron Squadron overlay module (see !/IsqOverlays).
+--
+-- The module itself lives in Global. The files that need to reach it are
+-- included both by Global and by object scripts (Unit Leader, Order Token,
+-- POI tokens, objective and condition tokens, bomb carts), and a Global
+-- function is not visible from an object script, so every call has to go
+-- through Global.call there. These helpers pick the right path for the scope
+-- they end up in, and report the module as off when it is not installed at
+-- all, which keeps the mod working with this file present and IsqOverlays
+-- absent.
+
+-- True only when a player has turned the overlays on for the table.
+function isqOverlaysOn()
+  if gGetMode then
+    return gGetMode() ~= 'windows'
+  end
+  local ok, mode = pcall(function() return Global.call('gGetMode') end)
+  return ok and mode ~= nil and mode ~= 'windows'
+end
+
+function isqToggleRange(params)
+  if gToggleRange then return gToggleRange(params) end
+  return Global.call('gToggleRange', params)
+end
+
+function isqClearRange(params)
+  if gClearRange then return gClearRange(params) end
+  return Global.call('gClearRange', params)
+end
+
+function isqRangeTrigger(params)
+  if gRangeTrigger then return gRangeTrigger(params) end
+  return Global.call('gRangeTrigger', params)
+end
+
+function isqToggleCohesion(params)
+  if gToggleCohesion then return gToggleCohesion(params) end
+  return Global.call('gToggleCohesion', params)
+end
+
+function isqClearCohesion(params)
+  if gClearCohesion then return gClearCohesion(params) end
+  return Global.call('gClearCohesion', params)
+end

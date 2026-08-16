@@ -5,14 +5,14 @@ function Shelf:create()
   local meta = {
     -- TODO: Have the schema be configurable.
     _colliders = {
-      small    = { "http://cloud-3.steamusercontent.com/ugc/1009315641457429932/1534D6C1AA4F3D5BDA469241B8F0319BE560E7ED/", 1.06299},
-      medium   = { "http://cloud-3.steamusercontent.com/ugc/1009315641457670521/DAD6653F422046BD6BC4360FE18C96927D5F4C44/", 1.9685},
-      large    = { "http://cloud-3.steamusercontent.com/ugc/1009315641457670155/6727179496A9F397E953AAA3268C6CC6444598DF/", 2.75591},
-      huge     = { "http://cloud-3.steamusercontent.com/ugc/1009315641457669798/3B337900892D839BDBC3EBF2A5CC9EC87DDBFED1/", 3.93701},
-      laat     = { "http://cloud-3.steamusercontent.com/ugc/1924743543116123549/A96493C7DF407D0E68F17FDF360AEEFA07BFAEB9/", 4.72440 },
-      epic     = { "http://cloud-3.steamusercontent.com/ugc/1009315641457669292/A7F6F75580BF1DFAA23E621875A761FB8B9EF2BC/", 5.90551},
-      long     = { "http://cloud-3.steamusercontent.com/ugc/963116666702885485/70F17B3327115A379D06F81C6F47F76470D7B826/", 6.88976},
-      snail    = { "http://cloud-3.steamusercontent.com/ugc/1924743543116106403/74B762E5395F42575CE13125BC944ACDF823246B/", 7.87402}
+      small    = { "https://steamusercontent-a.akamaihd.net/ugc/1009315641457429932/1534D6C1AA4F3D5BDA469241B8F0319BE560E7ED/", 1.06299},
+      medium   = { "https://steamusercontent-a.akamaihd.net/ugc/1009315641457670521/DAD6653F422046BD6BC4360FE18C96927D5F4C44/", 1.9685},
+      large    = { "https://steamusercontent-a.akamaihd.net/ugc/1009315641457670155/6727179496A9F397E953AAA3268C6CC6444598DF/", 2.75591},
+      huge     = { "https://steamusercontent-a.akamaihd.net/ugc/1009315641457669798/3B337900892D839BDBC3EBF2A5CC9EC87DDBFED1/", 3.93701},
+      laat     = { "https://steamusercontent-a.akamaihd.net/ugc/1924743543116123549/A96493C7DF407D0E68F17FDF360AEEFA07BFAEB9/", 4.72440 },
+      epic     = { "https://steamusercontent-a.akamaihd.net/ugc/1009315641457669292/A7F6F75580BF1DFAA23E621875A761FB8B9EF2BC/", 5.90551},
+      long     = { "https://steamusercontent-a.akamaihd.net/ugc/963116666702885485/70F17B3327115A379D06F81C6F47F76470D7B826/", 6.88976},
+      snail    = { "https://steamusercontent-a.akamaihd.net/ugc/1924743543116106403/74B762E5395F42575CE13125BC944ACDF823246B/", 7.87402}
     },
     _unknown   = {
       -- TODO: Add stand-ins.
@@ -74,62 +74,97 @@ function Shelf:spawnUnitModels(params)
     return {}
   end
   local result = {}
-  for _, upgradeName in ipairs(upgrades) do
+local skip = {}
+-- 1. find leader / heavy weapon candidate
+local leaderUpgrade = nil
+local heavyWeaponUpgrade = nil
+local spawnedLeaderUpgrade = nil
+
+for _, upgradeName in ipairs(upgrades) do
     local upgrade = self:_fetchUpgradeByName(upgradeName)
-    -- TODO: Handle missing upgrade more gracefully.
+
     if upgrade ~= nil then
-      if additional and upgrade.additionalObjects then
-        for _, name in ipairs(upgrade.additionalObjects) do
-          table.insert(additionalObjects, name)
+        if upgrade.additionalObjects then
+            for _, name in ipairs(upgrade.additionalObjects) do
+                table.insert(additionalObjects, name)
+            end
         end
-      end
-      if upgrade.mini ~= nil and (upgrade.leader == true or card.heavyWeaponTeam == true) then
-        local model = self:_spawnModel(card.size, upgrade.mini)
-        model.setName(upgrade.name .. " (Unit Leader)")
-        table.insert(result, model)
-        if callback ~= nil then
-          callback(model, #result, size)
+
+        if upgrade.mini ~= nil then
+            if upgrade.leader == true and leaderUpgrade == nil then
+                leaderUpgrade = upgrade
+            end
+
+            if card.heavyWeaponTeam == true and heavyWeaponUpgrade == nil then
+                heavyWeaponUpgrade = upgrade
+            end
         end
-        break
-      end     
     end
-  end
-  for _, config in pairs(minis) do
+end
+
+-- 2. spawn leader FIRST
+local leaderCandidate = leaderUpgrade or heavyWeaponUpgrade
+
+if leaderCandidate ~= nil then
+    spawnedLeaderUpgrade = leaderCandidate
+    skip[leaderCandidate.name] = true
+
+    local model = self:_spawnModel(card.size, leaderCandidate.mini)
+    model.setName(leaderCandidate.name .. " (Unit Leader)")
+    table.insert(result, model)
+
+    if callback ~= nil then
+        callback(model, #result, size)
+    end
+end
+
+-- 3. spawn base minis
+for _, config in ipairs(minis) do
     local model = self:_spawnModel(card.size, config)
     table.insert(result, model)
+
     if #result == 1 then
-      model.setName(name .. " (Unit Leader)")
+        model.setName(name .. " (Unit Leader)")
     else
-      model.setName(name)
+        model.setName(name)
     end
+
     if callback ~= nil then
-      callback(model, #result, size)
+        callback(model, #result, size)
     end
-  end
-  for _, upgradeName in ipairs(upgrades) do
+end
+
+-- 4. spawn remaining upgrades (excluding leader)
+for _, upgradeName in ipairs(upgrades) do
     local upgrade = self:_fetchUpgradeByName(upgradeName)
-    -- TODO: Handle missing upgrade more gracefully.
-    if upgrade ~= nil then
-      if upgrade.mini ~= nil and upgrade.leader ~= true and card.heavyWeaponTeam ~= true then
-        local model = self:_spawnModel(card.size, upgrade.mini)
-        model.setName(upgrade.name)
-        table.insert(result, model)
-        if callback ~= nil then
-          callback(model, #result, size)
+
+    if upgrade ~= nil and not skip[upgrade.name] then
+
+        if upgrade.mini ~= nil and upgrade ~= spawnedLeaderUpgrade then
+            local model = self:_spawnModel(card.size, upgrade.mini)
+            model.setName(upgrade.name)
+            table.insert(result, model)
+            skip[upgrade.name] = true
+
+            if callback ~= nil then
+                callback(model, #result, size)
+            end
         end
-      end
-      if upgrade.minis ~= nil then
-        for _, mini in ipairs(upgrade.minis) do
-          local model = self:_spawnModel(card.size, mini)
-          model.setName(upgrade.name)
-          table.insert(result, model)
-          if callback != nil then
-            callback(model, #result, size)
-          end
+
+        if upgrade.minis ~= nil then
+            for _, mini in ipairs(upgrade.minis) do
+                local model = self:_spawnModel(card.size, mini)
+                model.setName(upgrade.name)
+                table.insert(result, model)
+                skip[upgrade.name] = true
+
+                if callback ~= nil then
+                    callback(model, #result, size)
+                end
+            end
         end
-      end
     end
-  end
+end
   if additional and additional.position then
     for _, name in ipairs(card.additionalObjects or {}) do
       table.insert(additionalObjects, name)
@@ -205,9 +240,14 @@ function Shelf:_spawnComplimentaryObject(name, container, scripts)
       end
     end
   elseif spawn.card then
-    local back = spawn.card.back
-    local card = self:_spawnCard(spawn.card.image)
-    card.setName(spawn.name)
+    -- The back was read and then dropped, so _spawnCard fell back to reusing the
+    -- front for both faces. It goes unnoticed while every map card in
+    -- official.json repeats its front as its back, but it makes the "back" field
+    -- impossible to use - a second objective face, say.
+    local card = self:_spawnCard(spawn.card.image, spawn.card.back)
+    -- spawn is the definition table, which has no name of its own; the name is
+    -- the key it was stored under, and it is this function's parameter.
+    card.setName(name)
     container.putObject(card)
   else
     print("Unsupported object definition: \"" .. name .. "\" (" .. container.getName() .. ")")
@@ -254,7 +294,7 @@ end
 
 function Shelf:_spawnDudModel(name, description)
   local model = self:_spawnModel("small", {
-    bundle = "http://cloud-3.steamusercontent.com/ugc/1616219505081638790/1BF43B61B14CFD7C588AF6C59972B092674D6C8F/",
+    bundle = "https://steamusercontent-a.akamaihd.net/ugc/1616219505081638790/1BF43B61B14CFD7C588AF6C59972B092674D6C8F/",
   })
   model.setName(name)
   model.setDescription(description)

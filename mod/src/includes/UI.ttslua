@@ -1,5 +1,13 @@
-function initUI()
+-- The welcome dialog is declared closed in the XML and opened from here. An
+-- undo reloads the whole mod, so a dialog the XML declares open pops straight
+-- back into the middle of a game every single time a player rewinds.
+function initUI(showWelcome)
   UI.setValue("welcomeDialogTitle", "Star Wars Legion for TTS " .. VERSION)
+  if showWelcome then
+    Wait.frames(function()
+      UI.show("welcomeDialog")
+    end)
+  end
 end
 
 function _toggleDialog(name)
@@ -14,25 +22,38 @@ function toggleWelcomeDialog()
   _toggleDialog("welcomeDialog")
 end
 
-function toggleChessClockUI()
-  if UI.getAttribute("floatingChessClockUI", "active") == "true" then
-    UI.hide("floatingChessClockUI")
-    getObjectFromGUID(clockGUIDs.blue).setScale({0, 0, 0})
-    getObjectFromGUID(clockGUIDs.red).setScale({0, 0, 0})
-  else
+-- Puts the chess clocks in a known state. Restoring a saved game has to say
+-- what it wants rather than flip whatever is on screen at that moment.
+function setChessClockUI(visible)
+  local scale = visible and 0.7 or 0
+  if visible then
     UI.show("floatingChessClockUI")
-    getObjectFromGUID(clockGUIDs.blue).setScale({0.7, 0.7, 0.7})
-    getObjectFromGUID(clockGUIDs.red).setScale({0.7, 0.7, 0.7})
+  else
+    UI.hide("floatingChessClockUI")
   end
+  getObjectFromGUID(clockGUIDs.blue).setScale({scale, scale, scale})
+  getObjectFromGUID(clockGUIDs.red).setScale({scale, scale, scale})
 end
 
-local sideLoadUrl = "https://raw.githubusercontent.com/swlegion/tts/main/contrib/cards/homebrew.json"
+function toggleChessClockUI()
+  setChessClockUI(UI.getAttribute("floatingChessClockUI", "active") ~= "true")
+end
+
+-- No default: the field starts empty and the player supplies the file. This used
+-- to point at contrib/cards/homebrew.json, whose card images and models were
+-- uploaded to individual contributors' Steam cloud and are almost all gone, so
+-- one click filled the army builder with units that spawn as nothing at all.
+local sideLoadUrl = ""
 
 function sideLoadUrlChanged(_player, newValue)
   sideLoadUrl = newValue
 end
 
 function experimentalSideLoad()
+  if sideLoadUrl == "" then
+    broadcastToAll("Side load: paste the URL of a cards file first.", {0.9, 0.4, 0.4})
+    return
+  end
   WebRequest.get(sideLoadUrl, function(data)
     local json = JSON.decode(data.text)
     if json.units then

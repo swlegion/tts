@@ -39,6 +39,18 @@ function onDestroy()
 end
 
 function toggleRangeRuler()
+  -- Iron Squadron overlays (see !/IsqOverlays): route this token's R button to
+  -- the Projector renderer when they are on, unchanged otherwise.
+  if isqOverlaysOn() then
+    isqClearRange({figGUID = self.getGUID()})
+    if rangeOn then
+      rangeOn = false
+    else
+      isqRangeTrigger({figGUID = self.getGUID()})
+      rangeOn = true
+    end
+    return
+  end
   clearRangeRuler()
   rangeOn = not rangeOn
   if rangeOn then
@@ -90,8 +102,11 @@ function addSilhouetteButton()
   -- Removes all attachments and destroys the first one
   -- The silhouette should be the only attachment, so this should be safe to do
   function clearSilhouette()
+    -- May be empty: silhouetteState is saved, the silhouette objects are not.
     local silToDestroy = self.removeAttachments()[1]
-    silToDestroy.destruct()
+    if silToDestroy then
+      silToDestroy.destruct()
+    end
     silhouetteState = false
   end
   
@@ -110,7 +125,7 @@ function addSilhouetteButton()
     local scale = 2.0
     local height = 3.0
     local offset = 0.0
-    local silhouetteData = "http://cloud-3.steamusercontent.com/ugc/5063766435505471684/D97103C9FFB76016DDF9CE66A7622BDB3E810160/"
+    local silhouetteData = "https://steamusercontent-a.akamaihd.net/ugc/5063766435505471684/D97103C9FFB76016DDF9CE66A7622BDB3E810160/"
     if obj ~= nil then
       local objUp = obj.getTransformUp()
       local offsetVector = Vector.new(objUp.x * offset, objUp.y * offset, objUp.z * offset)

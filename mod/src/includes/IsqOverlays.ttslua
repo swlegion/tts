@@ -1,0 +1,628 @@
+-- Iron Squadron overlay module (optional, table-wide toggle).
+--
+-- Adds a second renderer for the range, cohesion and max-move overlays, built
+-- on real Unity Projectors instead of the mod's original bundles. It is OFF by
+-- default and changes nothing until a player turns it on with the Iron Squadron
+-- button in the bottom-right floating menu.
+--
+-- Why it exists: the original overlay bundles ship shaders with no Metal
+-- variant, so on macOS they render magenta. This module renders the same
+-- information with Projectors, which work on every platform. It also fixes two
+-- long-standing behaviours: cohesion now follows a figure while it is dragged,
+-- and max-move stays anchored where the move started.
+--
+-- Load order matters: this file must be required AFTER !/RangeRulers and
+-- !/Cohesion, because it captures their original functions before shadowing
+-- them (see the aliases just below).
+--
+-- Naming note: the internal mac* prefix is historical, from when this was a
+-- macOS-only fallback. The module is platform-agnostic.
+
+
+-- Capture the ORIGINAL Global functions loaded by !/RangeRulers and
+-- !/Cohesion BEFORE we overwrite them below. We also capture the inner
+-- spawn/clear pair because the toggle wrapper resolves them by NAME at
+-- call time  -  without aliasing those too, the original toggle would route
+-- back into our Mac versions, defeating Windows mode entirely.
+spawnRangeRulerOriginalGlobal     = spawnRangeRuler
+clearRangeRulersOriginalGlobal    = clearRangeRulers
+spawnCohesionRulerOriginalGlobal  = spawnCohesionRuler
+clearCohesionRulerOriginalGlobal  = clearCohesionRuler
+
+activeOverlays = activeOverlays or {}
+
+-- ============================================
+-- RENDERER: one real Unity Projector per active overlay.
+--
+-- Replaces the flat-decal renderer. A Projector drapes over table relief and
+-- tracks its figure natively, so the ground raycasts, the hand-built
+-- ring/rect/stadium geometry, the per-entry geometry cache, the coalesced
+-- redraw signature and the PNG preload all went away with it.
+--
+-- What this layer still owns, and the vanilla mod does not:
+--   * cohesion stays visible and FOLLOWS the figure during a drag;
+--   * toggles are deterministic (see gRangeTrigger / gCohesionTrigger);
+--   * MaxMove is anchored where the move STARTED and never follows.
+-- Spec: the Iron Squadron overlay spec (kept internal, ask us for it).
+-- ============================================
+
+-- Resolve baseSize for a fig. The mod stores it as a script-local Var on the
+-- fig itself (set at spawn from the unit's container). unitData.baseSize is
+-- only populated on the Unit Leader, not on minis/vehicles, so getVar is the
+-- canonical read with unitData as a fallback.
+local function macGetBaseSize(fig)
+    if not fig then return nil end
+    local ok, bs = pcall(function() return fig.getVar("baseSize") end)
+    if ok and bs then return bs end
+    local data = fig.getTable("unitData")
+    if data and data.baseSize then return data.baseSize end
+    return nil
+end
+
+-- A token has no baseSize of its own. When the hover hotkey asks for the full
+-- fig-leader bands on a token, size them with the closest equivalent
+-- footprint. The token's own R button keeps its single-ring bundle.
+local TOKEN_TO_BASESIZE = {
+    smokeToken    = "small",
+    token         = "small",
+    tokenRangeTwo = "small",
+    poi           = "medium",
+    bombCart      = "medium",
+}
+
+-- The Iron Squadron range rulers. Same Projector, same geometry, same colours
+-- as the mod's, with one thing added: the range 0.5 band, white, from the base
+-- edge out to 3in, with range 1's orange starting at 3in instead of at the
+-- base. Built from the mod's own prefabs (see make_isq_range_prefabs.py), so
+-- they are bi-platform like everything else we rebuild.
+--
+-- These are NEW assets: they have no Steam UGC entry, so they cannot be served
+-- from the TTS cache like the 143 repaired bundles. They are served from the
+-- fork instead. That separation is the point: the repaired bundles sit under
+-- the mod's own URLs, so anything added to them would show in the mod's
+-- original mode too, and the toggle would stop meaning anything for Range.
+--
+-- Base URL for this module's assets. The files themselves are committed under
+-- mod/data/isq-overlay-assets, so this only needs to be repointed at whichever
+-- repository ships the mod. Keep it in sync with the isqLogo entry in
+-- CustomUIAssets (mod/src/StarWarsLegion.json).
+local ISQ_ASSETS = "https://raw.githubusercontent.com/ironsquadronfr-hub/tts/isq-qol/mod/data/isq-overlay-assets/"
+
+-- Only the hover hotkey reaches this table (forceFigMode). A token's own R
+-- button keeps the mod's single-ring bundle, deliberately.
+local ISQ_RANGE_BUNDLES = {
+    small  = ISQ_ASSETS .. "projector_27mm_isq_v6.unity3d",
+    medium = ISQ_ASSETS .. "projector_50mm_isq_v6.unity3d",
+    large  = ISQ_ASSETS .. "projector_70mm_isq_v6.unity3d",
+    huge   = ISQ_ASSETS .. "projector_100mm_isq_v6.unity3d",
+    laat   = ISQ_ASSETS .. "projector_120mm_isq_v6.unity3d",
+    epic   = ISQ_ASSETS .. "projector_150mm_isq_v6.unity3d",
+    long   = ISQ_ASSETS .. "projector_100mm_oblong_isq_v6.unity3d",
+    snail  = ISQ_ASSETS .. "projector_200mm_oblong_isq_v6.unity3d",
+}
+
+-- Cohesion rings for the base sizes the mod has none for. getCohesionLinks()
+-- only knows small (27mm), medium (50mm) and large (70mm); on anything else
+-- vanilla spawnCohesionRuler returns without drawing. These fill the gap.
+--
+-- Nothing was invented: BB_CohesionProjector draws its ring at the projector's
+-- outer edge and reads nothing else, so the whole geometry is one number,
+-- ortho = half the base + 3in, which is what the mod's own three carry
+-- (27mm -> 3.531496 = 0.53150 + 3, and so on). 3in is range 1/2, the distance
+-- cohesion is measured at -- the same one the white band marks on the rulers.
+--
+-- long and snail go through BB_OblongCohesionProjector, written for them: the
+-- mod's cohesion shader computes its gradient with Circle() and can only draw
+-- a disc. Their base geometry is not invented either -- it is read back out of
+-- the oblong RANGE materials, the only place in the project where those
+-- dimensions are written down.
+local ISQ_COHESION_BUNDLES = {
+    huge  = ISQ_ASSETS .. "halfcohesion_100mm_isq_v2.unity3d",
+    laat  = ISQ_ASSETS .. "halfcohesion_120mm_isq_v2.unity3d",
+    epic  = ISQ_ASSETS .. "halfcohesion_150mm_isq_v2.unity3d",
+    long  = ISQ_ASSETS .. "halfcohesion_long_isq_v3.unity3d",
+    snail = ISQ_ASSETS .. "halfcohesion_snail_isq_v3.unity3d",
+}
+
+-- Range 1/2 rings for the tokens whose own R button should show range 1/2
+-- rather than the range 1 the mod gives them. Keyed by the object's name,
+-- because rangeKey cannot separate them: "token" is shared by Objective,
+-- Condition, Cad Bane, Proton Charge and Complete the Mission alike.
+--
+-- The mod already had exactly this object, and it is not a range ruler: the
+-- POI's 3in ring is BB_CohesionProjector with its orthographic size at 4,
+-- one inch of base radius plus three. Ours is the same build at the token's
+-- own base, and it keeps the ring's current amber so only the SIZE changes.
+--
+-- The hover hotkey is untouched: it still draws the fig-leader bands.
+-- Objective and Condition share the base and the colour, so one ring serves
+-- both. Condition is what the game calls the Advantage token (Martin, 14 Aug).
+local ISQ_TOKEN_RINGS = {
+    ["Objective Token"] = ISQ_ASSETS .. "token05_27mm_isq_v1.unity3d",
+    ["Condition Token"] = ISQ_ASSETS .. "token05_27mm_isq_v1.unity3d",
+}
+
+-- Per family: the name TTS gives the spawned object, whether it tracks its
+-- figure, and the pitch the vanilla spawn uses.
+--
+-- The names are deliberately the vanilla ones. standbyTokens (Global) and
+-- removeLockedRulers (GAME_CONTROLLER) sweep by name, so our Projectors
+-- inherit the mod's own cleanup; the decal renderer had no objects at all and
+-- was invisible to both.
+local PROJECTOR_SPEC = {
+    range      = {name = "Range Ruler",         follows = true,  pitch = 90},
+    cohesion   = {name = "Cohesion Ruler",      follows = true,  pitch = 0},
+    maxmove    = {name = "Maximum Move",        follows = false, pitch = 0},
+}
+
+-- Vanilla injects this into its Range ruler so it tracks the figure. Reusing
+-- it for cohesion is what makes cohesion follow during a drag. Guarded
+-- against a destroyed target, which the vanilla one is not.
+local function macFollowScript(targetGUID)
+    return "targetGUID = '" .. targetGUID .. "'\n"
+        .. "function onFixedUpdate()\n"
+        .. "  local t = getObjectFromGUID(targetGUID)\n"
+        .. "  if t == nil then return end\n"
+        .. "  local p = t.getPosition()\n"
+        .. "  self.setPosition({p.x, p.y + 20, p.z})\n"
+        .. "  self.setRotation({0, t.getRotation().y, 0})\n"
+        .. "end"
+end
+
+local function macIsLive(obj)
+    if obj == nil then return false end
+    local ok, dead = pcall(function() return obj.isDestroyed() end)
+    return ok and not dead
+end
+
+-- Which bundle this overlay shows. MaxMove carries its own in params:
+-- getMovementLinks lives in the Order Token's scope, not reachable from
+-- Global.
+local function macResolveBundle(kind, fig, params)
+    params = params or {}
+    if params.bundle then return params.bundle end
+
+    if kind == "cohesion" then
+        local bs = macGetBaseSize(fig)
+        if not bs then return nil end
+        -- Ours first, for the base sizes the mod has no ring for at all.
+        if ISQ_COHESION_BUNDLES[bs] then return ISQ_COHESION_BUNDLES[bs] end
+        if not getCohesionLinks then return nil end
+        local links = getCohesionLinks()
+        return links and links[bs] or nil
+    end
+
+    if kind == "range" then
+        if not getRangeRulerLinks then return nil end
+        local links = getRangeRulerLinks()
+        if not links then return nil end
+
+        local key = params.rangeKey
+        if not key and fig then
+            local ok, v = pcall(function() return fig.getVar("rangeKey") end)
+            if ok then key = v end
+        end
+        -- Token R button: its own single-ring bundle. Hover hotkey
+        -- (forceFigMode): the full fig-leader bands instead.
+        if key and not params.forceFigMode then
+            local ok, nm = pcall(function() return fig.getName() end)
+            if ok and nm and ISQ_TOKEN_RINGS[nm] then return ISQ_TOKEN_RINGS[nm] end
+            if links[key] then return links[key] end
+        end
+        local bs = macGetBaseSize(fig) or (key and TOKEN_TO_BASESIZE[key])
+        if not bs then return nil end
+        -- Iron Squadron rulers first: same geometry as the mod's, plus the
+        -- white range 0.5 band. Fall back to the mod's own bundle if a base
+        -- size ever appears that we have no ruler for.
+        return ISQ_RANGE_BUNDLES[bs] or links[bs]
+    end
+
+    return nil
+end
+
+local function macSpawnProjector(kind, fig, params)
+    local spec = PROJECTOR_SPEC[kind]
+    if not spec then return nil end
+    local bundle = macResolveBundle(kind, fig, params)
+    if not bundle then return nil end
+    params = params or {}
+
+    local pos, yaw
+    if kind == "maxmove" then
+        -- Anchored: position and yaw captured when the move STARTED, so the
+        -- template stays where it was while the figure slides away from it.
+        local a = params.anchorPos
+        if not a then return nil end
+        pos = {a.x, a.y + 20, a.z}
+        yaw = params.anchorRot or 0
+    else
+        if not fig then return nil end
+        local p = fig.getPosition()
+        pos = {p.x, p.y + 20, p.z}
+        yaw = fig.getRotation().y
+    end
+    if not pos then return nil end
+
+    local obj = spawnObject({
+        type     = "Custom_AssetBundle",
+        position = pos,
+        rotation = {spec.pitch, yaw, 0},
+        -- Scale 0 hides the TTS placeholder box without touching the
+        -- Projector itself, exactly as the vanilla spawns do.
+        scale    = {0, 0, 0},
+    })
+    obj.setCustomObject({type = 0, assetbundle = bundle})
+    obj.setLock(true)
+    obj.use_gravity = false
+    obj.setName(spec.name)
+    if spec.follows and fig then
+        obj.setLuaScript(macFollowScript(fig.getGUID()))
+    end
+    return obj
+end
+
+-- Destroy the Projector an entry owns, then forget the entry. EVERY removal
+-- must go through here: dropping the entry alone leaks the object.
+function macRemove(key)
+    local entry = activeOverlays[key]
+    if entry == nil then return end
+    if macIsLive(entry.obj) then
+        pcall(function() entry.obj.destruct() end)
+    end
+    activeOverlays[key] = nil
+end
+
+function macRemoveAllOfType(kind)
+    local keys = {}
+    for key, entry in pairs(activeOverlays) do
+        if entry.type == kind then keys[#keys + 1] = key end
+    end
+    for _, key in ipairs(keys) do macRemove(key) end
+end
+
+-- Reconcile the scene with the registry: give a Projector to every entry that
+-- has never had one, and drop entries that lost theirs.
+function macRedrawNow()
+    local stale = {}
+    for key, entry in pairs(activeOverlays) do
+        if not entry.fig or type(entry.fig.getPosition) ~= "function" then
+            stale[#stale + 1] = key
+        elseif entry.objGUID == nil then
+            local ok, obj = pcall(macSpawnProjector, entry.type, entry.fig, entry.params)
+            if ok and obj then
+                entry.obj     = obj
+                entry.objGUID = obj.getGUID()
+            else
+                stale[#stale + 1] = key
+            end
+        elseif not macIsLive(entry.obj) then
+            -- The Projector is gone and we did not remove it, so a sweeper
+            -- did: standbyTokens, removeLockedRulers or Clear Map. Those are
+            -- explicit "wipe the table" commands, so treat it as the overlay
+            -- having been switched off rather than respawn behind them.
+            stale[#stale + 1] = key
+        end
+    end
+    for _, k in ipairs(stale) do macRemove(k) end
+end
+
+-- Deferred by one frame so a single click touching several entries
+-- reconciles once.
+function macRedrawAll()
+    if macRedrawPending then return end
+    macRedrawPending = true
+    Wait.frames(function()
+        macRedrawPending = false
+        pcall(macRedrawNow)
+    end, 1)
+end
+
+function gSpawnCohesion(params)
+    local fig = getObjectFromGUID(params.figGUID)
+    if not fig then return end
+    -- macRemove first: re-spawning over a live entry would orphan its
+    -- Projector, which nothing would ever destroy.
+    local key = fig.getGUID() .. ":cohesion"
+    macRemove(key)
+    activeOverlays[key] = {
+        type = "cohesion", fig = fig, params = params or {}
+    }
+    macRedrawAll()
+end
+
+function gClearCohesion(params)
+    local fig = getObjectFromGUID(params.figGUID)
+    if not fig then return end
+    -- Vanilla fig scripts clear cohesion from onPickedUp. Design choice
+    -- (11 aug): our cohesion stays visible and FOLLOWS the fig during the
+    -- drag, like Range does, so clears on a held fig are ignored (the
+    -- vanilla onPickedUp clear is the only caller in that state).
+    if fig.held_by_color then return end
+    macRemove(fig.getGUID() .. ":cohesion")
+end
+
+function gToggleCohesion(params)
+    local fig = getObjectFromGUID(params.figGUID)
+    if not fig then return end
+    local key = fig.getGUID() .. ":cohesion"
+    if activeOverlays[key] then
+        gClearCohesion(params)
+    else
+        gSpawnCohesion(params)
+    end
+end
+
+function gSpawnRange(params)
+    local fig = getObjectFromGUID(params.figGUID)
+    if not fig then return end
+    local key = fig.getGUID() .. ":range"
+    macRemove(key)
+    activeOverlays[key] = {
+        type = "range", fig = fig, params = params or {}
+    }
+    macRedrawAll()
+end
+
+function gClearRange(params)
+    local fig = getObjectFromGUID(params.figGUID)
+    if not fig then return end
+    macRemove(fig.getGUID() .. ":range")
+    -- Windows mode: also destroy the vanilla bundle this fig owns. It was
+    -- spawned in the Global scope by gRangeTrigger, so the token's own
+    -- exitTargetingMode/clearRangeRulers cannot reach it.
+    if macWinRangeGUID == params.figGUID then
+        pcall(clearRangeRulersOriginalGlobal)
+        macWinRangeGUID = nil
+    end
+end
+
+function gToggleRange(params)
+    local fig = getObjectFromGUID(params.figGUID)
+    if not fig then return end
+    local key = fig.getGUID() .. ":range"
+    if activeOverlays[key] then
+        gClearRange(params)
+    else
+        gSpawnRange(params)
+    end
+end
+
+function gSpawnMaxMove(params)
+    local fig = getObjectFromGUID(params.figGUID)
+    if not fig then return end
+    -- Capture the spawn-time position and yaw. MaxMove is anchored to where
+    -- the move STARTED: it must not follow the fig as it slides toward the
+    -- destination. A Projector tracks its target by default, so this one is
+    -- deliberately spawned with no follow script (see PROJECTOR_SPEC).
+    local p = (params and params.params) or params or {}
+    p.anchorPos = fig.getPosition()
+    p.anchorRot = fig.getRotation().y
+    local key = fig.getGUID() .. ":maxmove"
+    macRemove(key)
+    activeOverlays[key] = {
+        type = "maxmove", fig = fig, params = p
+    }
+    macRedrawAll()
+end
+
+function gClearMaxMove(params)
+    local fig = getObjectFromGUID(params.figGUID)
+    if not fig then return end
+    macRemove(fig.getGUID() .. ":maxmove")
+end
+
+-- Note: no onObjectPickUp/onObjectDrop handlers (the vanilla Global defines
+-- none either). Cohesion, like Range, stays visible during a drag and follows
+-- because its Projector carries the tracking script; the vanilla onPickedUp
+-- clear is neutralized in gClearCohesion while the fig is held.
+
+function onObjectDestroy(obj)
+    if not obj or not obj.getGUID then return end
+    local guid = obj.getGUID()
+    local prefix = guid .. ":"
+    local plen = #prefix
+    local doomed = {}
+    for key, entry in pairs(activeOverlays) do
+        -- The destroyed object is either the figure an overlay belongs to,
+        -- or the overlay's own Projector (a sweeper, or a player deleting it
+        -- by hand).
+        if key:sub(1, plen) == prefix or entry.objGUID == guid then
+            doomed[#doomed + 1] = key
+        end
+    end
+    for _, key in ipairs(doomed) do macRemove(key) end
+end
+
+-- ============================================
+-- TABLE-WIDE OVERLAY TOGGLE (Range + Cohesion + MaxMove)
+-- One switch for the whole table: "windows" (the mod's original Projectors)
+-- or "mac" (the Iron Squadron overlays). Per-seat modes were dropped on
+-- purpose: any rendered overlay is visible to every player (TTS engine
+-- limitation), so one player triggering an original Projector shows it to
+-- the whole table anyway. The switch is the Iron Squadron button in the
+-- bottom-right menu: default grey = off (originals, untouched), green = on.
+-- ============================================
+
+overlayMode = overlayMode or "windows"  -- "windows" | "mac", table-wide
+
+function gGetMode(_) return overlayMode end
+
+function gCohesionTrigger(params)
+    if not params or not params.figGUID then return end
+    local fig = getObjectFromGUID(params.figGUID)
+    if not fig then return end
+    if overlayMode ~= "windows" then
+        gToggleCohesion({figGUID = params.figGUID})
+        return
+    end
+    -- Windows mode: the vanilla Projector lives in the FIG scope (every fig
+    -- requires !/Cohesion), so read and clear it there. Vanilla
+    -- spawnCohesionRuler RESPAWNS instead of toggling, so without this a
+    -- second click just redrew the ruler and it could never be turned off.
+    -- pcall guards objects that carry no such function (e.g. a hovered
+    -- non-fig object), which fall back to the Mac renderer.
+    local ok, isOn = pcall(function() return fig.getVar("cohesionRuler") ~= nil end)
+    if not ok then
+        gToggleCohesion({figGUID = params.figGUID})
+        return
+    end
+    if isOn then
+        pcall(function() fig.call("clearCohesionRulerOriginal", fig) end)
+    elseif not pcall(function() fig.call("spawnCohesionRulerOriginal", fig) end) then
+        gToggleCohesion({figGUID = params.figGUID})
+    end
+end
+
+-- Which fig currently owns the vanilla (Windows-mode) Range bundle, so a
+-- second trigger on the same fig turns it off like vanilla
+-- showRangeOnHoveredModel does.
+macWinRangeGUID = macWinRangeGUID or nil
+
+function gRangeTrigger(params)
+    if not params or not params.figGUID then return end
+    local fig = getObjectFromGUID(params.figGUID)
+    if not fig then return end
+    if overlayMode ~= "windows" then
+        -- Forward the WHOLE params table. Rebuilding it with figGUID alone
+        -- dropped forceFigMode, which the hover hotkey sets and
+        -- macResolveBundle reads: the fig-leader bands documented for a
+        -- hovered token never rendered, its own single ring did instead.
+        -- showRangeOnHoveredModel already forwards it, so the same gesture
+        -- gave two different results depending on which path it took.
+        gToggleRange(params)
+        return
+    end
+    -- The vanilla bundle Range lives in the GLOBAL scope: !/RangeRulers is
+    -- required by Global, while figs only require !/Cohesion. Calling
+    -- fig.call("spawnRangeRulerOriginal", fig) therefore ALWAYS raised
+    -- "no such function"; the pcall swallowed it and we fell through to the
+    -- Mac renderer, so Windows mode silently drew Mac overlays instead of
+    -- the original Projector. Route through the Global aliases captured at
+    -- the top of this block instead.
+    local wasOn = (macWinRangeGUID == params.figGUID)
+    pcall(clearRangeRulersOriginalGlobal)
+    macWinRangeGUID = nil
+    if not wasOn then
+        if pcall(function() spawnRangeRulerOriginalGlobal(fig) end) then
+            macWinRangeGUID = params.figGUID
+        else
+            gToggleRange(params)
+        end
+    end
+end
+
+function macModeToggle(_, _, _)
+    overlayMode = (overlayMode == "mac") and "windows" or "mac"
+    -- Wipe both renderers' overlays so stale visuals don't linger after the
+    -- toggle; each player just re-triggers their hotkey.
+    macRemoveAllOfType("cohesion")
+    macRemoveAllOfType("range")
+    macRemoveAllOfType("maxmove")
+    for _, obj in ipairs(getAllObjects()) do
+        if obj.getVar and obj.getVar("cohesionRuler") then
+            pcall(function() obj.call("clearCohesionRulerOriginal", obj) end)
+        end
+        if obj.getVar and obj.getVar("rangeRuler") then
+            pcall(function() obj.call("clearRangeRulersOriginal", obj) end)
+        end
+    end
+    -- The Windows-mode Range bundle is spawned from the Global scope, which
+    -- getAllObjects() above does not cover.
+    pcall(clearRangeRulersOriginalGlobal)
+    macWinRangeGUID = nil
+    broadcastToAll(
+        (overlayMode == "mac") and "Iron Squadron overlays ON for the whole table."
+                                or "Iron Squadron overlays OFF: the mod's original overlays are back.",
+        (overlayMode == "mac") and {0.55, 0.9, 0.6} or {0.9, 0.75, 0.55})
+    macDeferRefresh()
+end
+
+local function macFindNodeById(tree, id)
+    for _, node in ipairs(tree) do
+        if node.attributes and node.attributes.id == id then return node, tree end
+        if node.children then
+            local found, parent = macFindNodeById(node.children, id)
+            if found then return found, parent end
+        end
+    end
+    return nil, nil
+end
+
+-- UI: single Iron Squadron toggle button in the bottom-right
+-- legionFloatingMenu.
+function macRefreshModeUI()
+    local tree = UI.getXmlTable() or {}
+    -- Drop the legacy mode-picker panel if this save still carries one.
+    for i = #tree, 1, -1 do
+        if tree[i].attributes and tree[i].attributes.id == "macModePanel" then
+            table.remove(tree, i)
+        end
+    end
+    local menu = macFindNodeById(tree, "legionFloatingMenu")
+    if menu and menu.children then
+        local isMac = (overlayMode == "mac")
+        local attrs = {
+            id = "macModeMenuButton",
+            onClick = "macModeToggle",
+            tooltip = isMac
+                and "Iron Squadron overlays: ON for the whole table. Click to go back to the mod's original overlays."
+                or  "Iron Squadron overlays: OFF, the mod's original overlays are in use. Click to turn them on for the whole table.",
+        }
+        -- OFF keeps the sibling buttons' default light-grey look (Welcome,
+        -- Chess Clocks); ON switches to green.
+        if isMac then attrs.color = "#1e7a3a" end
+        local button = {
+            tag = "Button",
+            attributes = attrs,
+            children = {{
+                -- White PNG sprite (CustomUIAssets "isqLogo"), tinted per
+                -- state: dark on the grey button, white on green. The shape
+                -- lives in the alpha channel, which is what makes the tint
+                -- work.
+                tag = "Image",
+                attributes = {
+                    image = "isqLogo",
+                    color = isMac and "#FFFFFF" or "#2b2b2b",
+                    preserveAspect = "true",
+                    raycastTarget = "false",
+                },
+            }},
+        }
+        local placed = false
+        for i, c in ipairs(menu.children) do
+            if c.attributes and c.attributes.id == "macModeMenuButton" then
+                menu.children[i] = button
+                placed = true
+                break
+            end
+        end
+        if not placed then
+            for i, c in ipairs(menu.children) do
+                if c.attributes and c.attributes.interactable == "false" then
+                    menu.children[i] = button
+                    placed = true
+                    break
+                end
+            end
+        end
+    end
+    UI.setXmlTable(tree)
+end
+
+-- Defer one frame: TTS throws a UTF-8 byte-buffer encoding error if we
+-- rebuild the UI XML synchronously inside a click handler. pcall guards
+-- against any residual race.
+function macDeferRefresh()
+    Wait.frames(function() pcall(macRefreshModeUI) end, 1)
+end
+
+-- Initial UI build, deferred + pcalled like the rest.
+Wait.time(function() pcall(macRefreshModeUI) end, 2)
+
+-- Note: we deliberately do NOT override the global spawnRangeRuler /
+-- clearRangeRulers / showRangeOnHoveredModel chain at the Lua scope where
+-- the vanilla mod defines it. Overriding spawnRangeRuler from a token
+-- script reproducibly SIGSEGV'd TTS on Mac in May 2026 (Mono GC stack
+-- corruption). Mac routing happens via the g* functions called from our
+-- own hotkey/button wrappers; the originals stay reachable for
+-- Windows-mode players via spawnRangeRulerOriginalGlobal aliases above.

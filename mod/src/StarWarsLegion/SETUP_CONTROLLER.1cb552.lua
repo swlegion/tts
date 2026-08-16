@@ -186,14 +186,14 @@ local zStart = 15
 local yValue = 20
 
 local deployLinks = {}
-  deployLinks.r = "http://cloud-3.steamusercontent.com/ugc/1738944060882006204/75F636F4133C5F85682ECDEBBECB9F6CD821315F/"
+  deployLinks.r = "https://steamusercontent-a.akamaihd.net/ugc/1738944060882006204/75F636F4133C5F85682ECDEBBECB9F6CD821315F/"
   deployLinks.rh = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708249497/CC08277B7D876CF1FFCEDD3FC499AC38034B36D8/"
   deployLinks.rs = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708249497/CC08277B7D876CF1FFCEDD3FC499AC38034B36D8/"
   deployLinks.rss = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708249497/CC08277B7D876CF1FFCEDD3FC499AC38034B36D8/"
   deployLinks.rl = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708336160/21601D81F35521B72E015AA6316913521943E73F/"
   deployLinks.rc = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708336119/D74B484417970BC524ED4624932102C6BF956E91/"
   deployLinks.rcc = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708336119/D74B484417970BC524ED4624932102C6BF956E91/"
-  deployLinks.b = "http://cloud-3.steamusercontent.com/ugc/1738944060882006162/077B3B0AE278E39363F5BD3AE070B5AE36F025FA/"
+  deployLinks.b = "https://steamusercontent-a.akamaihd.net/ugc/1738944060882006162/077B3B0AE278E39363F5BD3AE070B5AE36F025FA/"
   deployLinks.bh = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708249441/767C99D0983A24618F97511192498FBEED1557F2/"
   deployLinks.bs = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708249441/767C99D0983A24618F97511192498FBEED1557F2/"
   deployLinks.bss = "https://steamusercontent-a.akamaihd.net/ugc/2491139050708249441/767C99D0983A24618F97511192498FBEED1557F2/"

@@ -1,0 +1,24 @@
+{
+  "name": "WLO-5 Speeder Tank",
+  "image": "https://steamusercontent-a.akamaihd.net/ugc/12892745162360850606/8F7C7F70F1604DCA9BB39BE0F0EE859149D3A3F8/",
+  "size": "snail",
+  "type": "Repulsor Vehicle",
+  "points": 100,
+  "speed": 1,
+  "upgrades": {
+    "Crew": 1,
+    "Pilot": 1,
+    "Comms": 1
+  },
+  "silhouette": {
+    "height": 2.44,
+    "offset": 0
+  },
+  "minis": [
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/18162736975687770648/643CAEA98913694A90A7BC6B9ED78668C9F46386/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14670109106110705253/18525D8840EEFDB2DC159B4988BD6A734BC2418E/",
+      "collider": "https://steamusercontent-a.akamaihd.net/ugc/10402477424751392481/9585E316040CEA861ABF6A551F35C2473BEC0C52/"
+    }
+  ]
+}
