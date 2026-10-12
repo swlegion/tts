@@ -1,0 +1,29 @@
+{
+  "name": "Mandalorian Hunter",
+  "image": "https://steamusercontent-a.akamaihd.net/ugc/16482391229605712474/1E8E364C380F3A62E224C2A987FD8B8814EC0AD4/",
+  "size": "small",
+  "type": "Mandalorian Trooper",
+  "points": 75,
+  "speed": 3,
+  "upgrades": {
+    "doctrine": 1,
+    "training": 1,
+    "gear": 2,
+    "armament": 1,
+    "grenades": 1,
+    "clan": 1
+  },
+  "minis": [
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15025643569729148138/3234A1971769FAC0F38D47E88358E8888C2B1324/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/13510151128195010361/35405F252DE00026D4411B239D9C8E7B15B8B3D5/"
+    }
+  ],
+  "commands": [
+    {
+      "name": "No Escape",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/12293898180518678174/EA155EC69305F27FA59A9485631DED43C319D04A/",
+      "pip": 1
+    }
+  ]
+}

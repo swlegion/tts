@@ -524,7 +524,7 @@ end
 function _loadArmyFromJson(data)
   _clearZone()
   if data.armyFaction == "" then
-    data.armyFaction = "shadowcollective"
+    data.armyFaction = "mercenary"
   end
   _setSelectedScenario(data.battlefieldDeck.scenario)
   local spawn = initListSpawner({
