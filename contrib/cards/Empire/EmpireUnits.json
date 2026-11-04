@@ -630,6 +630,42 @@
   ],
   "Corps": [
     {
+      "name": "Imperial Mudtroopers",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/14647495812619597503/848ED6FC230CD20DF9C5D3B6A90D53CBB5032C15/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 46,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Personnel": 1,
+        "Gear": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/10328958386219141560/FE83F270B44EFAE9E6A731915AD7CE45588B4D53/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16404270342923902388/79B7BB822F88012345A8236373CECA7233A280BF/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16236222909293983713/5AE6327CE22B0480CFA277514EBACB9724683AFC/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/17847120841554445136/3FFAE2E607CF841DA3DE145CC72EBF545B33B025/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16414348953339957660/01FD8210B0D1CDC13097E81ADB33E491F4FF0FFD/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15981428224423940190/6C9A88EE4D2CC7932B3536EB490BB2132DF3DD6A/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11507634706657566064/6116259DCA8F6B2918A73B795F6F910B1ADCD21E/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/11257429462161240011/C3AE0A20FD568DF8CE39A9590DC5F17940297890/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15721706065538855146/D88AEECF73341FAE55B8471697D4AF0A82B34393/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9244442474878889957/842BB77280C3EEDE006638FDBFF88F32739E1F9E/"
+        }
+      ]
+    },
+    {
       "name": "Stormtroopers",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863867/71125D3CB8BC663C340433AED88CA794951DCA34/",
       "size": "small",
@@ -947,6 +983,38 @@
     }
   ],
   "Support": [
+    {
+      "name": "Wet-Weather Gear Stormtroopers",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/14766011853852915260/C206B6F093BF5F53F7D2629DB636CF8C042AD4B1/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 50,
+      "speed": 1,
+      "upgrades": {
+        "Heavy Weapon": 1,
+        "Training": 1,
+        "Gear": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/10490967861482504247/99135FA14651BB1662B67709BACDE0AE165C1220/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/10930348417496620008/52BC41F6DB8133CDD8150886FF9B30F07FB2497E/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/10759503887622120654/CF5880D36C51998F0D832766C670675616A29786/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/10378916103604539938/EF53967B3E4C432E1E3303649C071E30052C837C/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/17229992664397516281/FE2A197C4030D07A6C2EAEBCE3BD3A7B2A7590CF/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/17100611068731533760/5AE6384BDC37EE9A0934038E05936C0EEDA4AF8F/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/10680987371361047005/E5811AAC5FACF23FB85B21F4EF9513CC1D6D9596/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/17686146657853511904/2CCBCE24EA0693DA1D061BAAD2EB7C2E987BC8F4/"
+        }
+      ]
+    },
     {
       "name": "74-Z Speeder Bikes",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139672763/037D15DE4ACD0941BA57FEEBDEBE3F346E04F8BC/",
