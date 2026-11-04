@@ -1,0 +1,32 @@
+{
+  "name": "Black Sun Enforcers",
+  "image": "https://steamusercontent-a.akamaihd.net/ugc/10804385139718139/222491782E56EAECE8B93E78E946F308211DC049/",
+  "size": "small",
+  "type": "Trooper",
+  "points": 50,
+  "speed": 2,
+  "upgrades": {
+    "Heavy Weapon": 1,
+    "Personnel": 1,
+    "Gear": 1,
+    "Grenades": 1
+  },
+  "minis": [
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15119947962689322389/8EC382E90223BC184162C54AFF3EDAE1436DA2AA/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/18136160122757222499/97D7733312EE4677B4694F72C21A61FD8365690E/"
+    },
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11857728936195634014/66FB83A411E5A561A9A5927C0FDEB396DAF6AE20/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16452722805588228328/EDA05A0B40EFFA898015BE31588B19E6BB72B4A2/"
+    },
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/13538216675182514309/80D3D2926D6723131723E027151D80E807BA1FF4/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15549057142882936018/8E3A2116FFD18C5122767F9038D43FF549248278/"
+    },
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16839420302039891942/3031489A090A438C10C4B37690E4E5B507DD4913/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/13883212304201737617/9B792D3CE9B23D2354F80B2B159F4FD13728A98F/"
+    }
+  ]
+}

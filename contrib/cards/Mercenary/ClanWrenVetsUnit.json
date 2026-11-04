@@ -1,0 +1,33 @@
+{
+  "name": "Clan Wren Veterans",
+  "image": "https://steamusercontent-a.akamaihd.net/ugc/13308342004360745662/4556769CAC0F067D0712A404D111D3E78D64FE7A/",
+  "size": "small",
+  "type": "Mandalorian Trooper",
+  "points": 92,
+  "speed": 3,
+  "upgrades": {
+    "Heavy Weapon": 1,
+    "Personnel": 1,
+    "Training": 1,
+    "Gear": 1,
+    "Grenades": 1
+  },
+  "minis": [
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15989385864327504767/4BCB5D601E1F184B1DBC5919E01AA98985585588/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9468060488758747816/1DD684677521C98DCB53663E6400873E46A8AB4E/"
+    },
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15826571884437915831/0E2023F16E81A8C3CB6153288F319076EEB7D200/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/12793935204290030150/E3322F39F0EF939173BC2BB919007BE7B76B04F0/"
+    },
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15419926292291688161/E0D7D925C5903032D18654A835A5DD6404E230CF/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14577777155914900259/B182CF41BA2DEA73E76DEEC7CCAD4D5527403B6C/"
+    },
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/14272907736058598410/0DA081CC1DF0B5D76EAE256AD85A744C5A47EE18/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/10081449305107697638/99108F9759587907FA88CB1628CC0753240F9630/"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Ursa Wren",
+  "title": "Leader of Clan Wren",
+  "image": "https://steamusercontent-a.akamaihd.net/ugc/15541800150474083255/06BEF7F311B124999464A4C334DF027B9879A751/",
+  "size": "small",
+  "type": "Mandalorian Trooper",
+  "points": 75,
+  "speed": 3,
+  "upgrades": {
+    "Command": 1,
+    "Training": 2,
+    "Gear": 2,
+    "Grenades": 1
+  },
+  "minis": [
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/18327442408986749290/6275D7DEAFA256108CAD50E5AC126044CAB54B59/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/11456646202545531015/D264416FCAF7BAA9D149DEFDA377702864B30FD2/"
+    }
+  ],
+  "commands": [
+    {
+      "name": "No One Threatens Our Family",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/16887588030016336571/4DC42BDC4F1F20E20286E8CC09CCAF64C20BA82D/",
+      "pip": 1
+    },
+    {
+      "name": "We Protect Our Own",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/13713850364867903837/25BB8D48341907AFC579BFD3C1609DB0F6203AD3/",
+      "pip": 3
+    }
+  ]
+}
