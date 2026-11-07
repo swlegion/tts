@@ -1954,6 +1954,104 @@
     ],
     "Heavy Weapon": [
       {
+        "name": "RT-97C Stormtrooper (Wet)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13905886405880747515/67D3C20B969FC8A6DD86E9E7ED43014C423C16B2/",
+        "mini": {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/12596488329106912847/08D9FE380FDF1889292B0E8A80440CDD9F8589F3/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14046631607622245797/B266E1AC5DA3A3E0AA02CD34BE3CBC66F0789F54/"
+        },
+        "points": 20,
+        "restrictions": {
+          "include": {
+            "unit": ["Wet-Weather Gear Stormtroopers"]
+          }
+        }
+      },
+      {
+        "name": "DLT-19 Stormtrooper (Wet)",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/18019665161272636380/D12820B4CAE2C091E0A0359F17E1DBF960FCFE80/",
+        "mini": {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/18220531025659674396/28C9A60C81677EF022D48D32CABDAE5A8ECE526A/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15142266696934039323/E391AD50C56C5A7285B930F2903BBBB987F0F353/"
+        },
+        "points": 18,
+        "restrictions": {
+          "include": {
+            "unit": ["Wet-Weather Gear Stormtroopers"]
+          }
+        }
+      },
+      {
+        "name": "SX-21 Mudtrooper",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14332675558622737881/CE39E2B929492E7E5BC7B3F4C09F2CD121501555/",
+        "mini": {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/14179555026287698570/A3C52E95F64EF0D7133E8841D802C0985DB0F970/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/17286205883414974087/14F0942F0CA30032F942EF9866EC86D133D6D565/"
+        },
+        "points": 18,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Mudtroopers"]
+          }
+        }
+      },
+      {
+        "name": "Z-6 Mudtrooper",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/13249883256721845294/4C81114CC6174EDAB0906492A39E6BD5A1B03A92/",
+        "mini": {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/12018939945301237678/9E8F5979A70ABA375D889D40F5A49EF16EBBEDA8/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/10978183209898496082/13CA3F8C5C2A3FCA76518ECE7CF3B84933A4DF1D/"
+        },
+        "points": 20,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Mudtroopers"]
+          }
+        }
+      },
+      {
+        "name": "Stolen HH-12",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10067104264418262096/6D396F7BAA1D8B4457A2A2063920D9355F0FA170/",
+        "mini": {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15780892341004311832/5C2B966F9D97B92A1CEB7E50A1C4E2B6517B1CF0/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/13240733102641299617/AFE7451483E1E818633529AA0D23FAC16BA29560/"
+        },
+        "points": 20,
+        "restrictions": {
+          "include": {
+            "unit": ["Guerilla Troopers"]
+          }
+        }
+      },
+      {
+        "name": "Stolen RT-97c",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/14337183593482020521/4C5E89A4832E484802017086433CA99EE8BD2341/",
+        "mini": {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15030946982178110670/57E5FB292B2458E3DE8537AB9EE8D41C10F0A527/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/10632814616220962012/C6DC8B757851F6173D9F81EB3EE8D159F1B1321A/"
+        },
+        "points": 24,
+        "restrictions": {
+          "include": {
+            "unit": ["Guerilla Troopers"]
+          }
+        }
+      },
+      {
+        "name": "Stolen DLT-19",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/10689468622717637756/0AC70B0F54C2FB03D89BA64F28D9AA4604C89E52/",
+        "mini": {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/9860533543423043771/8FF4C3E0726A0433F733EE3C504F9D37C007AF2A/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/14704258004789139199/A80B177782275A62F86976698B2EF47AF90267B6/"
+        },
+        "points": 20,
+        "restrictions": {
+          "include": {
+            "unit": ["Guerilla Troopers"]
+          }
+        }
+      },
+      {
         "name": "B2-HA Rocket Droid",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/14481177409828935621/616A668B2DBC6F06F0E395DA8F23AFE94B08B8A5/",
         "mini": {
@@ -3554,6 +3652,34 @@
       }
     ],
     "Personnel": [
+      {
+        "name": "Mudtrooper Squad",
+        "image": "https://steamusercontent-a.akamaihd.net/ugc/12870232024665898974/A50ED552B692781D3C59BCBC21638B73B0FE4B4E/",
+        "minis": [
+          {
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16236222909293983713/5AE6327CE22B0480CFA277514EBACB9724683AFC/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/17847120841554445136/3FFAE2E607CF841DA3DE145CC72EBF545B33B025/"
+          },
+          {
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16414348953339957660/01FD8210B0D1CDC13097E81ADB33E491F4FF0FFD/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15981428224423940190/6C9A88EE4D2CC7932B3536EB490BB2132DF3DD6A/"
+          },
+          {
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11507634706657566064/6116259DCA8F6B2918A73B795F6F910B1ADCD21E/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/11257429462161240011/C3AE0A20FD568DF8CE39A9590DC5F17940297890/"
+          },
+          {
+            "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15721706065538855146/D88AEECF73341FAE55B8471697D4AF0A82B34393/",
+            "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9244442474878889957/842BB77280C3EEDE006638FDBFF88F32739E1F9E/"
+          }
+        ],
+        "points": 32,
+        "restrictions": {
+          "include": {
+            "unit": ["Imperial Mudtroopers"]
+          }
+        }
+      },
       {
         "name": "Han Solo, Reckless Smuggler",
         "image": "https://steamusercontent-a.akamaihd.net/ugc/14172704663240194930/4ED01856C4723892D0296D594FC2593995759A7A/",
