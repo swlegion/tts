@@ -1,6 +1,63 @@
 {
   "Commander": [
     {
+      "name": "Obi-Wan Kenobi",
+      "title": "Mounted Jedi General",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/10736636607530646598/D5C71F67E9C9A98BEB5CCA1092311C5CC1562854/",
+      "size": "large",
+      "type": "Repulsor Vehicle",
+      "points": 140,
+      "speed": 3,
+      "upgrades": {
+        "Force": 2,
+        "Command": 1,
+        "Training": 1,
+        "Comms": 1
+      },
+      "silhouette": {
+        "height": 1.83,
+        "offset": 0
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/13919657420915661495/F689546CFD54A34D3B71DB0E053BCD0138D514C0/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/11042190550271269701/A0995071E0D1990D404E64376A06C9506B5BF94D/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Into the Breach",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/13514604391333567265/068A6D0F659E5AF9C42021A8D74997C1806B3D1D/",
+          "pip": "1"
+        }
+      ]
+    },
+    {
+      "name": "Jedi Knight",
+      "title": "Mounted Jedi General",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/14386508818510274652/0340B2C347083C25DC5ADEC0C18C6B7BC2542E0A/",
+      "size": "large",
+      "type": "Repulsor Vehicle",
+      "points": 110,
+      "speed": 3,
+      "upgrades": {
+        "Force": 2,
+        "Command": 1,
+        "Training": 1,
+        "Comms": 1
+      },
+      "silhouette": {
+        "height": 1.72,
+        "offset": 0
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11644619159366900473/1429988D303B616EBE53CBD4E1B211A0ECAAA3DC/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/11275350625911001464/DAC59186B5C2FD8FD96067648D39967A8EE2995F/"
+        }
+      ]
+    },
+    {
       "name": "Ki-Adi-Mundi",
       "title": "Jedi Council",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/11929402197203734988/9CF2A7578A3EB20BA278864950D163A26901C4F5/",
@@ -385,6 +442,37 @@
     },
     {
       "content": "contrib/cards/Mercenary/MandalorianHunterUnit.json"
+    },
+    {
+      "name": "Anakin Skywalker",
+      "title": "Mounted Jedi General",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/15344324113989907181/56FC637306303ED79AFC70436F1C3A5BC6E330BB/",
+      "size": "large",
+      "type": "Repulsor Vehicle",
+      "points": 110,
+      "speed": 3,
+      "upgrades": {
+        "Force": 2,
+        "Training": 2,
+        "Comms": 1
+      },
+      "silhouette": {
+        "height": 1.72,
+        "offset": 0
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/14593732395530776915/514434DCB7E985A4899888BE037C8DC7C8304EA4/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/13101597363164557036/6D13B7D303DC7603270F15E00D14236FFAE14405/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "I'm Sorry Master, I Didn't Catch That",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/12381841884309099006/44EF3B0C9E11A51E5EC7B08879472BAF976C1EF8/",
+          "pip": "2"
+        }
+      ]
     },
     {
       "name": "Shaak Ti",

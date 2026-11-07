@@ -621,6 +621,42 @@
       ]
     },
     {
+      "name": "Han & Chewie",
+      "title": "Notorious Scoundrels",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/13398538146401700693/CC763C753C0BE205C68D512A92B7A6AF759F8A16/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 120,
+      "speed": 2,
+      "upgrades": {
+        "Personnel": 2,
+        "Training": 2
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/12156068449555787075/72FA088F80EDE7E6E0A21FBAD3EE4D5DDAF2F49D/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/10613978713855715706/A4967FFF05DC65508E6D66F2250565D79291664A/"
+        }
+      ],
+      "commands": [
+        {
+          "name": "Never Tell Me The Odds",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/14182119297452525555/7CB1D3A3EB957159DC03788C7FC9137630B874E6/",
+          "pip": 1
+        },
+        {
+          "name": "Wookiee Life Debt",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/17089604785858949262/21679B4A8248ED35B19FC5D5F5CF284AEAD574F3/",
+          "pip": 2
+        },
+        {
+          "name": "Boring Conversation Anyway",
+          "image": "https://steamusercontent-a.akamaihd.net/ugc/13339571879477937557/49DACBA4791FF8DCEE3DD49049325A1B76608676/",
+          "pip": 3
+        }
+      ]
+    },
+    {
       "name": "R2-D2",
       "title": "Hero Of A Thousand Devices",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/2495640747384863210/CC236C516A4590747888E3A71ABA6C543905BD5F/",
@@ -969,6 +1005,38 @@
     }
   ],
   "Special Forces": [
+    {
+      "name": "Guerilla Troopers",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/17374597901994958382/279A09E365E01AADB899CB75DF8A80DD9FACA092/",
+      "size": "small",
+      "type": "Trooper",
+      "points": 60,
+      "speed": 2,
+      "upgrades": {
+        "Heavy Weapon": 2,
+        "Training": 2,
+        "Gear": 1,
+        "Grenades": 1
+      },
+      "minis": [
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15399080376312778234/013450DF8CF7794D360C726F4DE7E8614C955452/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/13826165337562494343/DBF27ED71FFE75570EA203996570D0C2B9F87538/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/15361880304673045650/08DB69556E76E162AF854E16AB8434CEABD6F433/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/16051529698936060236/829F627F78C6EB2AE74F03CA67F33D50EB569406/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/11397994655930619523/71112A6F65997624E48F0931778E19FA3A5C7534/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/11677688466728645315/8C907098A8426DBD46B2782FFF2E819A87681530/"
+        },
+        {
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/12373582410082808413/AD0040941980E867A116BB9879EF5541CAFE6FB7/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15750861339138193213/6133FD453BFB92CEF8967920A656CB236AEA2FDA/"
+        }
+      ]
+    },
     {
       "name": "Rebel Commandos",
       "image": "https://steamusercontent-a.akamaihd.net/ugc/59218081133198280/BA9DB93D2D168B835C95075E8B1C52C79E044286/",
