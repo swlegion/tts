@@ -1,0 +1,39 @@
+-- A lectern is one of the Custom PDF objects on the console. It only displays.
+-- The rules panel decides what goes on it and does the swapping, so this script
+-- carries nothing but the page jump.
+--
+-- Two things were established in game and shape the whole design:
+--
+-- 1. setCustomObject does not work on a Custom PDF. getCustomObject returns an
+--    empty table on these objects -- Custom PDF is absent from the nine types
+--    the API documents -- so writing pdf_url into it changes nothing and the
+--    reload that follows simply restores the original document. The url has to
+--    be read and written through getJSON instead, which the panel does.
+--
+-- 2. Buttons cannot be placed on the cover. getBoundsNormalized reports a box
+--    of roughly 6.2 x 8.0 units against artwork about half that size, so there
+--    is no reliable anchor. Hence the real plates on the panel, and hence the
+--    page jump living on the right-click menu rather than on the object.
+
+-- The page belongs to the document in front of you rather than to the panel,
+-- so it is driven from the lectern. Book.setPage takes effect immediately, no
+-- reload involved, which is why this one does work in place.
+function rulesLecternGoToPage(playerColor)
+  local book = self.Book
+  if not book then return end
+  Player[playerColor].showInputDialog('Page number', tostring(book.getPage()),
+    function(text)
+      local page = tonumber(text)
+      if not page then return end
+      page = math.floor(page)
+      if not book.setPage(page) then
+        broadcastToColor('This document has no page ' .. page .. '.',
+          playerColor, { 1, 0.5, 0.5 })
+      end
+    end)
+end
+
+function onLoad()
+  self.clearContextMenu()
+  self.addContextMenuItem('Go to page', rulesLecternGoToPage)
+end

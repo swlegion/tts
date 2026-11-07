@@ -109,6 +109,18 @@ function finishInteraction()
 end
 
 function toggleRangeRuler()
+  -- Iron Squadron overlays (see !/IsqOverlays): route this cart's R button to
+  -- the Projector renderer when they are on, unchanged otherwise.
+  if isqOverlaysOn() then
+    isqClearRange({figGUID = self.getGUID()})
+    if isqRangeOn then
+      isqRangeOn = false
+    else
+      isqRangeTrigger({figGUID = self.getGUID()})
+      isqRangeOn = true
+    end
+    return
+  end
   if rangeRuler == nil then
     spawnBombRuler()
   else
@@ -279,8 +291,11 @@ end
 
 function clearSilhouette()
   silhouetteState = false
+  -- May be empty: silhouetteState is saved, the silhouette objects are not.
   local silToDestroy = self.removeAttachments()[1]
-  silToDestroy.destruct()
+  if silToDestroy then
+    silToDestroy.destruct()
+  end
 end
 
 function showSilhouette()
@@ -295,7 +310,7 @@ function spawnSilhouette(obj, pos, rot)
   local scale = globals.baseRadius["medium"]
   local height = 1.111
   local offset = 0.0 
-  local silhouetteData = "http://cloud-3.steamusercontent.com/ugc/5063766435505471684/D97103C9FFB76016DDF9CE66A7622BDB3E810160/"
+  local silhouetteData = "https://steamusercontent-a.akamaihd.net/ugc/5063766435505471684/D97103C9FFB76016DDF9CE66A7622BDB3E810160/"
   if obj ~= nil then
     local objUp = obj.getTransformUp()
     local offsetVector = Vector.new(objUp.x * offset, objUp.y * offset, objUp.z * offset)

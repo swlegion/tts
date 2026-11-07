@@ -5,17 +5,17 @@
     "Transform": {
       "posX": 54.38,
       "posY": 0.9490368,
-      "posZ": -26.23198,
-      "rotX": 0.00000318533284,
+      "posZ": -26.23,
+      "rotX": 3.18533284e-06,
       "rotY": 270.005768,
-      "rotZ": 0.00000352762663,
+      "rotZ": 3.52762663e-06,
       "scaleX": 1.99723673,
       "scaleY": 1,
       "scaleZ": 1.99723673
     },
-    "Nickname": "Spec Ops Rules",
+    "Nickname": "Errata Reference (VO)",
     "Description": "",
-    "GMNotes": "",
+    "GMNotes": "isq-lectern-2",
     "ColorDiffuse": {
       "r": 0.6500202,
       "g": 0.6500202,
@@ -35,12 +35,12 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomPDF": {
-      "PDFUrl": "https://cdn.svc.asmodee.net/production-amgcom/uploads/2023/09/Spec-Ops_v1.1.pdf",
+      "PDFUrl": "https://drive.usercontent.google.com/download?id=1iVSWN3RCYhWjxzQVvSuIFe7gXy6Rt8VI&export=download",
       "PDFPassword": "",
       "PDFPage": 0,
       "PDFPageOffset": 0
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Custom_PDF.068976.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

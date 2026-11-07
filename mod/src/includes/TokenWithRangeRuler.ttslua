@@ -35,6 +35,23 @@ function onDestroy()
 end
 
 function toggleRangeRuler()
+  -- Iron Squadron overlays (see !/IsqOverlays): route this token's R button to
+  -- the Projector renderer when they are on. Off by default, in which case
+  -- everything below runs unchanged.
+  if isqOverlaysOn() then
+    -- Clear before triggering in both branches: the hover hotkey writes to the
+    -- same key as this token, so without the clear the first click would turn
+    -- that overlay off while we set rangeOn = true, leaving the button
+    -- inverted from then on.
+    isqClearRange({figGUID = self.getGUID()})
+    if rangeOn then
+      rangeOn = false
+    else
+      isqRangeTrigger({figGUID = self.getGUID()})
+      rangeOn = true
+    end
+    return
+  end
   clearRangeRuler()
   rangeOn = not rangeOn
   if rangeOn then

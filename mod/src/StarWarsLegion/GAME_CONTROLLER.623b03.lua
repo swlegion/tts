@@ -1074,7 +1074,7 @@ function placeMask(x, z)
         },
         scale       = {0, 0, 0},
       })
-      local asset = "http://cloud-3.steamusercontent.com/ugc/2264809616949875099/DB2BBB502F11E04185A603B8A4FD0F2391B905C6/"
+      local asset = "https://steamusercontent-a.akamaihd.net/ugc/2264809616949875099/DB2BBB502F11E04185A603B8A4FD0F2391B905C6/"
       projector.setName("Masking Boundary")
       projector.setLock(true)
       projector.setCustomObject({

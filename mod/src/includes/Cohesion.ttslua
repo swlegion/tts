@@ -1,6 +1,17 @@
 require('!/data/CohesionLinks')
+require('!/IsqBridge')
 
 function showCohesionOnHoveredModel(hoverObject)
+   -- Iron Squadron overlays (see !/IsqOverlays): when a player has turned them
+   -- on for the table, draw cohesion with the Projector renderer instead, which
+   -- also keeps it visible while the figure is dragged. When they are off,
+   -- which is the default, everything below runs unchanged.
+   if isqOverlaysOn() then
+      if hoverObject and hoverObject.interactable then
+         isqToggleCohesion({figGUID = hoverObject.getGUID()})
+      end
+      return
+   end
    if hoverObject then
       if hoverObject.interactable then
          if selectedUnitObj == hoverObject then

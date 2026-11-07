@@ -1,0 +1,52 @@
+-- The small box under a lectern: click it to jump to a page.
+--
+-- It exists as a real object because a Custom PDF cannot carry a button --
+-- getBoundsNormalized reports a box about twice the size of the visible
+-- artwork, so there is no anchor to place one against. Same cloned asset as
+-- the panel's square buttons, so it reads as part of the same furniture.
+--
+-- A box knows which lectern it belongs to through its own GMNotes, and finds
+-- that lectern by the mark in its GMNotes rather than by GUID: swapping a
+-- document destroys and respawns the lectern, which can change its GUID.
+
+local BOX_MARK = '^isq%-page%-(%d+)$'
+local LECTERN_MARK = 'isq-lectern-'
+
+local function myLectern()
+  local index = string.match(self.getGMNotes() or '', BOX_MARK)
+  if not index then return nil end
+  local wanted = LECTERN_MARK .. index
+  for _, obj in ipairs(getAllObjects()) do
+    if obj.getGMNotes() == wanted then return obj end
+  end
+  return nil
+end
+
+function rulesPageBoxClick(_, playerColor)
+  self.AssetBundle.playTriggerEffect(0)
+  local lectern = myLectern()
+  if not lectern then
+    broadcastToColor('The lectern for this button is missing.', playerColor,
+      { 1, 0.5, 0.5 })
+    return
+  end
+  lectern.call('rulesLecternGoToPage', playerColor)
+end
+
+function onLoad()
+  self.clearButtons()
+  self.createButton({
+    click_function = 'rulesPageBoxClick',
+    function_owner = self,
+    label          = 'PAGE',
+    tooltip        = 'Jump to a page of the document above',
+    position       = { 0, 0.65, 0 },
+    scale          = { 1, 1, 1.4 },
+    width          = 1500,
+    height         = 2000,
+    font_size      = 400,
+    color          = { 0.7573, 0.7573, 0.7573, 0.01 },
+    font_color     = { 0, 0, 0, 100 },
+  })
+  self.setColorTint({ 0.93, 0.94, 0.88 })
+end

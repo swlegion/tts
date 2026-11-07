@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "e0d001",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 55.22,
+      "posY": 0.941459,
+      "posZ": -11.5,
+      "rotX": 0.0,
+      "rotY": 90.0,
+      "rotZ": 0.0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "RULES PANEL",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "LuaScript": "#include ./RULES_PANEL.e0d001.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "CustomMesh": {
+      "MeshURL": "https://steamusercontent-a.akamaihd.net/ugc/786359883314441144/EDAA04D8A056819B65CEDA236559045E235193EC/",
+      "DiffuseURL": "https://steamusercontent-a.akamaihd.net/ugc/785234780862648292/75769189AF6176C1E0A9BEDC028D10922FA36337/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 1,
+      "TypeIndex": 0,
+      "CastShadows": true
+    }
+  },
+  "StatesPaths": {}
+}

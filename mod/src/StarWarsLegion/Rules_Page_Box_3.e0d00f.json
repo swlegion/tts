@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "e0d00f",
+    "Name": "Custom_Assetbundle",
+    "Transform": {
+      "posX": 49.5,
+      "posY": 1.16680646,
+      "posZ": -33.4,
+      "rotX": 0.0,
+      "rotY": 270.0,
+      "rotZ": 0.0,
+      "scaleX": 0.293305963,
+      "scaleY": 0.250000417,
+      "scaleZ": 0.2179451
+    },
+    "Nickname": "Rules Page Box 3",
+    "Description": "",
+    "GMNotes": "isq-page-3",
+    "ColorDiffuse": {
+      "r": 0.93,
+      "g": 0.94,
+      "b": 0.88
+    },
+    "LayoutGroupSortIndex": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "https://steamusercontent-a.akamaihd.net/ugc/267231170580138054/83B9C07DD90D4FA8F3DE016617A6BF0BC935D9FF/",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 0,
+      "TypeIndex": 0,
+      "LoopingEffectIndex": 0
+    },
+    "LuaScript": "#include ./Rules_Page_Box_3.e0d00f.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
