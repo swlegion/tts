@@ -49,8 +49,10 @@ function _disableVisualElements()
   getObjectFromGUID(__state.guids.mount).interactable = false
 end
 
-local ui = {
-  clear = function()
+-- Declared before the table so that the entries below can call each other.
+local ui
+ui = {
+  clearOptions = function()
     for _, guid in ipairs(__state.guids.options) do
       local object = getObjectFromGUID(guid)
       object.clearButtons()
@@ -60,6 +62,10 @@ local ui = {
       button.clearButtons()
       button.setColorTint({0, 0, 0})
     end
+  end,
+
+  clear = function()
+    ui.clearOptions()
     local back = getObjectFromGUID(__state.guids.back)
     back.clearButtons()
     back.setColorTint({0, 0, 0})
@@ -88,60 +94,77 @@ local ui = {
     button.setColorTint({1, 0, 0})
   end,
 
+  -- The panel has four physical option slots. Longer menus are paged over them
+  -- instead of being piled onto the fourth one: every entry past the fourth
+  -- used to be drawn on that same object a fifth of a row apart, so anything
+  -- over four options - five factions is enough, and side loading brings ten -
+  -- came out as one unreadable stack of overlapping labels.
   draw = function(buttons)
-    for i, config in ipairs(buttons) do
+    ui._options = buttons
+    ui._page = 1
+    ui._paint()
+  end,
+
+  _paint = function()
+    local options = ui._options
+    local slots = #__state.guids.options
+    local perPage = slots
+    local pages = 1
+    if #options > slots then
+      -- The last slot turns into the pager, so one fewer entry fits per page.
+      perPage = slots - 1
+      pages = math.ceil(#options / perPage)
+    end
+    local page = ui._page
+    local shown = {}
+    for i = (page - 1) * perPage + 1, math.min(page * perPage, #options) do
+      table.insert(shown, options[i])
+    end
+    if pages > 1 then
+      table.insert(shown, {
+        title    = "MORE (" .. page .. "/" .. pages .. ")",
+        tooltip  = "Show the next page of options",
+        tint     = {1, 0.647, 0},
+        callback = function()
+          ui._page = page % pages + 1
+          ui._paint()
+        end,
+      })
+    end
+
+    ui.clearOptions()
+    for i, config in ipairs(shown) do
       local callback = "_onButtonClicked_" .. i
-      local button
-      if i > 4 then
-        -- Emulate a button by drawing a rectangle.
-        --
-        -- Sorry, this is a huge hack until we have XML-UI list building
-        -- or a new table design that can account for more option buttons.
-        button = getObjectFromGUID(__state.guids.buttons[4])
-        button.createButton({
-          click_function = callback,
-          function_owner = self,
-          label          = config.title,
-          tooltip        = config.tooltip,
-          position       = {-11, 0.3, i},
-          scale          = {3, 3, 3},
-          width          = 4200,
-          height         = 600,
-          font_size      = 400,
-          font_color     = {0, 0, 0, 100},
-        })
-      else
-        local option = getObjectFromGUID(__state.guids.options[i])
-        button = getObjectFromGUID(__state.guids.buttons[i])
-        option.createButton({
-          click_function = callback,
-          function_owner = self,
-          label          = config.title,
-          tooltip        = config.tooltip,
-          position       = {-0.35, 0.3, 0},
-          scale          = {0.5, 0.5, 0.5},
-          width          = 4200,
-          height         = 600,
-          font_size      = 400,
-          font_color     = {0, 0, 0, 100},
-          color          = {0.7573, 0.7573, 0.7573, 0.01},
-        })
-        button.createButton({
-          click_function = callback,
-          function_owner = self,
-          label          = config.secondary or "",
-          tooltip        = config.tooltip,
-          position       = {0, 0.65, 0},
-          width          = 1400,
-          height         = 1400,
-          font_size      = 1100,
-          color          = {1, 1, 1, 0.01},
-          font_color     = {0, 0, 0, 100},
-          alignment      = 3,
-        })
-        button.setColorTint(config.tint)
-      end
-      
+      local option = getObjectFromGUID(__state.guids.options[i])
+      local button = getObjectFromGUID(__state.guids.buttons[i])
+      option.createButton({
+        click_function = callback,
+        function_owner = self,
+        label          = config.title,
+        tooltip        = config.tooltip,
+        position       = {-0.35, 0.3, 0},
+        scale          = {0.5, 0.5, 0.5},
+        width          = 4200,
+        height         = 600,
+        font_size      = 400,
+        font_color     = {0, 0, 0, 100},
+        color          = {0.7573, 0.7573, 0.7573, 0.01},
+      })
+      button.createButton({
+        click_function = callback,
+        function_owner = self,
+        label          = config.secondary or "",
+        tooltip        = config.tooltip,
+        position       = {0, 0.65, 0},
+        width          = 1400,
+        height         = 1400,
+        font_size      = 1100,
+        color          = {1, 1, 1, 0.01},
+        font_color     = {0, 0, 0, 100},
+        alignment      = 3,
+      })
+      button.setColorTint(config.tint)
+
       _G[callback] = function()
         button.AssetBundle.playTriggerEffect(0)
         config.callback()
@@ -335,7 +358,12 @@ function _chooseFaction()
   ui.clear()
   ui.back("Go back to the main menu", _mainMenu)
   local buttons = {}
-  for _, faction in ipairs(_deck:getFactions()) do
+  -- The schema is a keyed table, so the factions come out in no set order. That
+  -- did not show while they all fit on one screen; spread over pages, an
+  -- unsorted list would move a faction from one page to another between loads.
+  local factions = _deck:getFactions()
+  table.sort(factions)
+  for _, faction in ipairs(factions) do
     local title = stringx.titleCase(faction)
     table.insert(buttons, {
       title    = title,
@@ -522,6 +550,10 @@ function _loadArmy()
 end
 
 function _loadArmyFromJson(data)
+  -- Blurring the import field while it is empty or holds invalid text fires
+  -- onEndEdit -> importFromText -> JSON.decode("") -> nil, and everything below
+  -- reads data directly, so the script errored out on a stray click.
+  if not data then return end
   _clearZone()
   if data.armyFaction == "" then
     data.armyFaction = "mercenary"
@@ -545,19 +577,75 @@ function _loadArmyFromJson(data)
 end
 
 -- TODO: Rename to _importFromText.
+-- Importing used to be wired to the field's onEndEdit, which fires whenever the
+-- field is deselected. Clicking anywhere outside it therefore reimported the
+-- list and cleared the zone, with no way to say no.
+--
+-- TTS has no submit event on an InputField, and onEndEdit is reported the same
+-- way whether the player pressed Enter or clicked away, so the two cannot be
+-- told apart there. With lineType MultiLineNewLine, Enter no longer ends the
+-- edit: it inserts a newline, which reaches us here as a single character added
+-- at the end of the text. That is the signal we import on. Pasting adds many
+-- characters at once and is never mistaken for it.
+function listImportFieldChanged(_, text, id)
+  if __listImportSuppress then return end
+  local previous = __listImportText or ''
+  __listImportText = text
+  _refreshListImportButton()
+  if text ~= previous .. '\n' then return end
+
+  -- Enter: take the newline back out of the field, then load.
+  __listImportText = previous
+  __listImportSuppress = true
+  self.UI.setAttribute(id or 'listToImport', 'text', previous)
+  Wait.frames(function() __listImportSuppress = false end, 2)
+  importFromText(nil, previous)
+end
+
 function importFromText(_, text)
-  _loadArmyFromJson(JSON.decode(text))
+  -- Blurring the import field fires onEndEdit even when nothing was typed, and
+  -- JSON.decode either returns nil or raises on invalid text, so decode
+  -- defensively and do nothing at all when there is no list to load.
+  if text == nil or text == '' then return end
+  local ok, data = pcall(function() return JSON.decode(text) end)
+  if not ok or type(data) ~= 'table' then
+    broadcastToAll('List import: that text is not a valid list.', {0.9, 0.4, 0.4})
+    return
+  end
+  _loadArmyFromJson(data)
   _mainMenu()
 end
 
--- TODO: Rename to _toggleListImporterUI
-function toggleListImporterUI()
-  local uiStatus = self.UI.getAttribute('listImporterUI', 'active')
-  local newStatus = true
-  if uiStatus == 'True' then
-    newStatus = false
+-- The button doubles as the importer's open/close toggle and its submit, so its
+-- label has to say which one the next click does.
+-- Tracked here rather than read back from the UI: setAttribute is not applied by
+-- the time the next getAttribute runs, so the panel would report its old state.
+__listImporterOpen = false
+
+function _refreshListImportButton()
+  local text = __listImportText or ''
+  local label = 'Import JSON'
+  if __listImporterOpen and text:match('%S') then
+    label = 'Load JSON'
   end
-  self.UI.setAttribute('listImporterUI', 'active', newStatus)
+  self.UI.setValue('listImportButtonLabel', label)
+end
+
+-- TODO: Rename to _listImportButtonClicked
+-- Closed             -> open the field.
+-- Open, field filled -> load the list (Enter still works too).
+-- Open, field empty  -> close the field.
+function listImportButtonClicked()
+  if __listImporterOpen and not (__listImportText or ''):match('%S') then
+    __listImporterOpen = false
+  elseif __listImporterOpen then
+    importFromText(nil, __listImportText)
+    return
+  else
+    __listImporterOpen = true
+  end
+  self.UI.setAttribute('listImporterUI', 'active', __listImporterOpen)
+  _refreshListImportButton()
 end
 
 function _calculatePoints()

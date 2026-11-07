@@ -4,8 +4,8 @@ Deck.__index = Deck;
 function Deck:create()
   local meta = {
     _backs = {
-      command     = "http://cloud-3.steamusercontent.com/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
-      contignency = "http://cloud-3.steamusercontent.com/ugc/1753560235958347056/F845CB170FEF761DC7025AA3EEAE731F018C0E73/",
+      command     = "https://steamusercontent-a.akamaihd.net/ugc/923676470468121470/B601C237FC093688B758499B99CC87FDFE2FDD0F/",
+      contignency = "https://steamusercontent-a.akamaihd.net/ugc/1753560235958347056/F845CB170FEF761DC7025AA3EEAE731F018C0E73/",
       horizontal  = {
         objective   = "https://steamusercontent-a.akamaihd.net/ugc/10061127123107977322/847E7AAD563EF0AFD5926BE05266DC82E5FD04FC/",
         condition   = "https://steamusercontent-a.akamaihd.net/ugc/13818252657402930588/FB0312AED90098252D2E53426F99F2072279EE64/",
@@ -18,9 +18,9 @@ function Deck:create()
       },
     },
     _unknown = {
-      command     = "http://cloud-3.steamusercontent.com/ugc/1683770885590601027/47E5B7470CAAC79372CB5C607AEF29DF195EB7CE/",
-      unit        = "http://cloud-3.steamusercontent.com/ugc/1683770885590600993/4D9BAC2DD180E2CFF9A591E19EFEBD470CB25855/",
-      upgrade     = "http://cloud-3.steamusercontent.com/ugc/1683770885590601060/FA4DD3B17A42BCD5A81D063CD13E257A0EBD419D/",
+      command     = "https://steamusercontent-a.akamaihd.net/ugc/1683770885590601027/47E5B7470CAAC79372CB5C607AEF29DF195EB7CE/",
+      unit        = "https://steamusercontent-a.akamaihd.net/ugc/1683770885590600993/4D9BAC2DD180E2CFF9A591E19EFEBD470CB25855/",
+      upgrade     = "https://steamusercontent-a.akamaihd.net/ugc/1683770885590601060/FA4DD3B17A42BCD5A81D063CD13E257A0EBD419D/",
     },
     _cache   = {
       upgrades    = {},

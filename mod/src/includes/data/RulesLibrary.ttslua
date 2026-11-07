@@ -1,0 +1,76 @@
+-- The documents the rules lecterns can display.
+--
+-- Every entry is a Google Drive file kept by the Iron Squadron translation
+-- team. The file ids are stable on purpose: new editions are uploaded over the
+-- existing file rather than added beside it, so a link here keeps serving the
+-- current version without anyone editing the mod. Checked on the whole set --
+-- the core rulebook entry below was created in February 2025 and now serves
+-- the 29.05.2026 edition under the same id.
+--
+-- Drive answers these with Content-Type: application/octet-stream rather than
+-- application/pdf. Verified in game that Tabletop Simulator loads them anyway,
+-- including the 59 MB rulebook.
+
+local function drive(id)
+  return 'https://drive.usercontent.google.com/download?id=' .. id .. '&export=download'
+end
+
+-- Ordered, because the picker shows them in this order.
+RULES_LIBRARY = {
+  {
+    key   = 'rulebook',
+    title = 'Core Rulebook',
+    en    = drive('1aiFxrzSRgaZSIV9rE9ZSMehWca0sGy6p'),
+    fr    = drive('110OOXewzDHMNe0noQzYBH87H1wDk2NxU'),
+  },
+  {
+    key   = 'errata',
+    title = 'Errata Reference',
+    en    = drive('1iVSWN3RCYhWjxzQVvSuIFe7gXy6Rt8VI'),
+    fr    = drive('1bxNoWVtTVv-i11NCD72DnKQsCOXbI1r6'),
+  },
+  {
+    key   = 'battleforces',
+    title = 'Battle Forces',
+    en    = drive('1PAm81F1zagmYHFksj7Y7EFF784R-Kq0A'),
+    fr    = drive('1JuYRPszQfjPYamH40aPMoUyfYDnaka3h'),
+  },
+  {
+    key   = 'recon',
+    title = 'Recon',
+    en    = drive('1LmHAX4mLQHQCJv_oV0YOaR_Hjvon3FQv'),
+    fr    = drive('1gDYQ2vs7ZKthhkFb9EPpsMmckuJ0Jm_O'),
+  },
+  {
+    -- English only; the lectern hides its language button on this one.
+    key   = 'toursofduty',
+    title = 'Tours of Duty',
+    en    = drive('1PO8Nxlr5k6lIrA-MdG5pytKiNuj3quU6'),
+  },
+}
+
+-- One flat list of every document in every language it exists in. This is what
+-- a lectern offers when you click it: language is not a separate control, it is
+-- part of the choice, so picking what to read is a single decision and every
+-- lectern can show any of the nine.
+RULES_LIBRARY_CHOICES = {}
+
+-- Looking a choice up by url is what lets a lectern work out its own state
+-- after a reload without storing anything: the url IS the state, and it
+-- already survives saves, reloads and undos as part of the object.
+RULES_LIBRARY_BY_URL = {}
+
+for _, doc in ipairs(RULES_LIBRARY) do
+  for _, language in ipairs({ 'en', 'fr' }) do
+    if doc[language] then
+      local choice = {
+        label    = doc.title .. ' (' .. (language == 'en' and 'VO' or 'VF') .. ')',
+        url      = doc[language],
+        key      = doc.key,
+        language = language,
+      }
+      table.insert(RULES_LIBRARY_CHOICES, choice)
+      RULES_LIBRARY_BY_URL[choice.url] = choice
+    end
+  end
+end

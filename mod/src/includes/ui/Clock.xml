@@ -12,13 +12,13 @@
   outline="#303030"
 >
   <HorizontalLayout color="transparent" preferredHeight="0" spacing="8">
-    <VerticalLayout ignoreLayout="true" width="160" height="40" outlineSize="1 1" outline="#303030" color="black">
+    <VerticalLayout ignoreLayout="true" width="250" height="40" outlineSize="1 1" outline="#303030" color="black">
       <Button 
         id="toggleClockButton"
         onClick="toggleClockButton"
         tooltip="Left click to switch player clock, right click to pause"
         colors="#FFFFFF|#DFDFDF">
-        <Text id="toggleClockText">Chess Clocks Paused</Text>
+        <Text id="toggleClockText" color="#FFFFFF">Chess Clocks Paused</Text>
       </Button>
     </VerticalLayout>
   </HorizontalLayout>

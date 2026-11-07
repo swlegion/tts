@@ -121,6 +121,14 @@ function assign_unit_to_this_token(token, color, alt_click)
   for _, object in ipairs(objects) do
     if object.getGUID() ~= self.getGUID() then
       if object.getVar("unitName") and object.getTable("miniGUIDs") then
+        if not is_own_unit(object, color) then
+          broadcastToColor(
+            "That unit belongs to the other player. An order token can only be assigned to your own units.",
+            color,
+            {r = 1, g = 0, b = 0}
+          )
+          return
+        end
         update_token(
           object.getVar("commandType"),
           object.getVar("commandName"),
@@ -178,6 +186,18 @@ function promote_unit(rank, color)
 
             -- If Unit Leader Mini
             if object.getVar("unitName") and object.getTable("miniGUIDs") then
+                -- Checked before anything is written: the rank change below
+                -- edits the unit itself, and it must not land on someone
+                -- else's.
+                if not is_own_unit(object, color) then
+                    broadcastToColor(
+                        "That unit belongs to the other player. You can only change the rank of your own units.",
+                        color,
+                        {r = 1, g = 0, b = 0}
+                    )
+                    return
+                end
+
                 -- Set up the new Order Token.
                 unit_command_type = object.getVar("commandType")
                 baseSize = object.getVar("baseSize")
@@ -316,6 +336,18 @@ function is_player_permitted(color)
     else
         return false
     end
+end
+
+--[[ Whether this unit leader belongs to the player doing the assigning.
+
+An order token records the command type of the unit it was assigned to, but the
+side of the player who assigned it. getEligibleUnit() then looks for a mini
+matching BOTH, so a token pointed at the other side's unit matches nothing, for
+good: it ends up with no ACT button and every control that needs the unit
+quietly does nothing. Refuse the assignment instead, while there is still
+something to say about it. --]]
+function is_own_unit(unit_leader_mini, color)
+    return unit_leader_mini.getVar("colorSide") == color:lower()
 end
 
 

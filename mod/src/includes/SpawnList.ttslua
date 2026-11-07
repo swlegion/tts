@@ -271,8 +271,8 @@ local function initListSpawner(params)
       position       = cData.pos,
     })
     tokenObj.setCustomObject({
-      mesh = "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
-      collider = "http://cloud-3.steamusercontent.com/ugc/785234780866339915/85F7E717B9EFBE0396126CA673DF17EAFEC7D451/",
+      mesh = "https://steamusercontent-a.akamaihd.net/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/",
+      collider = "https://steamusercontent-a.akamaihd.net/ugc/785234780866339915/85F7E717B9EFBE0396126CA673DF17EAFEC7D451/",
       diffuse = Global.getTable("commandTokenData")[color:lower()][cData.commandType],
       type = 0,
       material = 3

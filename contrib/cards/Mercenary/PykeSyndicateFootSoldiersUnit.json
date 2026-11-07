@@ -13,20 +13,20 @@
   },
   "minis": [
     {
-      "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728387706845548/FD104F41509A53EA1C888862A3C5F0B98F609F1F/",
-      "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
+      "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1745728387706845548/FD104F41509A53EA1C888862A3C5F0B98F609F1F/",
+      "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
     },
     {
-      "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728387706845646/BE0DEED782F96BD44C389DEDEA41EBEA0C7A6D04/",
-      "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
+      "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1745728387706845646/BE0DEED782F96BD44C389DEDEA41EBEA0C7A6D04/",
+      "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
     },
     {
-      "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728387706845697/15B6DCCA8D8D76E1CB78219C58790E40DDD7CE8A/",
-      "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
+      "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1745728387706845697/15B6DCCA8D8D76E1CB78219C58790E40DDD7CE8A/",
+      "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
     },
     {
-      "bundle": "http://cloud-3.steamusercontent.com/ugc/1745728387706845389/0D7DFE0C5BF5CDD527A619B75A25A2177D417BD0/",
-      "secondary": "http://cloud-3.steamusercontent.com/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
+      "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1745728387706845389/0D7DFE0C5BF5CDD527A619B75A25A2177D417BD0/",
+      "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1856061112420143543/CBAC94E0D1731CB8D1034D24F58987E854A8596A/"
     }
   ]
 }

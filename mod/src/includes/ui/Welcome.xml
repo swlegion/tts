@@ -1,7 +1,7 @@
 <!-- Welcome/Help/Changelog Dialog -->
 
-<Panel 
-  active="true"
+<Panel
+  active="false"
   allowDragging="true"
   color="#40404080"
   height="300"
@@ -52,15 +52,18 @@
         </Text>
       </VerticalLayout>
     </VerticalScrollView>
-    <VerticalLayout id="welcomeTab3" active="false">
-      <Text alignment="UpperLeft" color="#ffffff" fontSize="12">
-        URL to a "cards.json" compatible file.
-        This will be additive, and new factions are less supported:
-      </Text>
+    <VerticalLayout id="welcomeTab3" active="false" padding="5 5 5 5" spacing="5" childForceExpandHeight="false">
+      <Text alignment="UpperLeft" color="#ffffff" fontSize="12" preferredHeight="60">Add your own cards - units, upgrades and command cards - from a file in the mod's cards.json format. Paste its URL below, press Load, then Create Army on your LIST BUILDER panel. They are lost when the mod reloads, and the file must host its own images and models.</Text>
       <InputField
-        placeholder="https://go.swlegion.dev/homebrew.json"
-        onValueChanged="sideLoadUrlChanged">https://raw.githubusercontent.com/swlegion/tts/main/contrib/cards/homebrew.json</InputField>
-      <Button onClick="experimentalSideLoad">Load</Button>
+        minHeight="40"
+        preferredHeight="40"
+        placeholder="URL of a cards.json file"
+        onValueChanged="sideLoadUrlChanged"></InputField>
+      <Button minHeight="40" preferredHeight="40" onClick="experimentalSideLoad">Load</Button>
+      <Text alignment="UpperLeft" color="#ffffff" fontSize="12" preferredHeight="16">How to make one - select and copy this link:</Text>
+      <InputField
+        minHeight="40"
+        preferredHeight="40">https://github.com/swlegion/tts/blob/main/contrib/cards/README.md</InputField>
     </VerticalLayout>
   </Panel>
   <Panel 
@@ -76,7 +79,7 @@
         <Text fontSize="10" fontStyle="bold">What's New</Text>
       </Button>
       <Button onClick="showWelcomeTab3">
-        <Text fontSize="10">Experimental Side Load</Text>
+        <Text fontSize="10">Custom Cards Load (beta)</Text>
       </Button>
       <Button interactable="false">
         <Text fontSize="10">-</Text>

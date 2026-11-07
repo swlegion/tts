@@ -134,8 +134,8 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869167436/AAA2C61A17BB43F2673AF16D30BD0478B9AAAD2A/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869167571/EF86CBDA5F361282AD077D61FA81ABF0FEE061A0/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/785234780869167436/AAA2C61A17BB43F2673AF16D30BD0478B9AAAD2A/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/785234780869167571/EF86CBDA5F361282AD077D61FA81ABF0FEE061A0/"
         }
       ],
       "commands": [
@@ -185,8 +185,8 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849586543/25BD09F275C593DB6C794359A9C50F3188F4D804/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/775105953849586640/B0512CC73C982F94EB5FEAE1661CF4438DAD8879/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/775105953849586543/25BD09F275C593DB6C794359A9C50F3188F4D804/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/775105953849586640/B0512CC73C982F94EB5FEAE1661CF4438DAD8879/"
         }
       ],
       "commands": [
@@ -227,7 +227,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185719/FF120BC2FA5DC8258021E2849C2B81591CCA36B9/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2174736446809185719/FF120BC2FA5DC8258021E2849C2B81591CCA36B9/"
         }
       ]
     },
@@ -247,8 +247,8 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366706441824/97EB6FA096B824294EE48FE762380CCBE866F3E2/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1619598366706441991/04B29BB48A98AF8D79FC1414548496BAD49CCB28/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1619598366706441824/97EB6FA096B824294EE48FE762380CCBE866F3E2/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1619598366706441991/04B29BB48A98AF8D79FC1414548496BAD49CCB28/"
         }
       ],
       "commands": [
@@ -286,8 +286,8 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1619598366706113202/449F19DA94D42DAD0F0B4D0B77A8E9AD45C320E5/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1619598366706441991/04B29BB48A98AF8D79FC1414548496BAD49CCB28/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1619598366706113202/449F19DA94D42DAD0F0B4D0B77A8E9AD45C320E5/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1619598366706441991/04B29BB48A98AF8D79FC1414548496BAD49CCB28/"
         }
       ],
       "commands": [
@@ -329,7 +329,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770177195973/1D70D4C8D0C6A06E14A7A875228E3CD49D5E0807/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177195973/1D70D4C8D0C6A06E14A7A875228E3CD49D5E0807/"
         }
       ],
       "commands": [
@@ -438,7 +438,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185590/81774E94925CD5B15B7CE0DC52DEC465D9774024/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2174736446809185590/81774E94925CD5B15B7CE0DC52DEC465D9774024/"
         }
       ],
       "commands": [
@@ -473,7 +473,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2022718494181455957/4BB3E42AA412A7ED2ED6F26BFDFA25414F127B71/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2022718494181455957/4BB3E42AA412A7ED2ED6F26BFDFA25414F127B71/"
         }
       ],
       "commands": [
@@ -509,7 +509,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770177195724/233E75C81DB511291B2B95015510DF1B48B2A8DB/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177195724/233E75C81DB511291B2B95015510DF1B48B2A8DB/"
         }
       ],
       "commands": [
@@ -536,28 +536,28 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869166347/AA861F86A0B74CF335533E425A6CBACB99395A09/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869166529/263C2AB95B1743539EC2CBDE40B0A14B1F5E5693/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/785234780869166347/AA861F86A0B74CF335533E425A6CBACB99395A09/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/785234780869166529/263C2AB95B1743539EC2CBDE40B0A14B1F5E5693/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869167061/48F42C02EDD970E6DE8E59B8601EF3E7F11C1742/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/785234780869167061/48F42C02EDD970E6DE8E59B8601EF3E7F11C1742/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869167061/48F42C02EDD970E6DE8E59B8601EF3E7F11C1742/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/785234780869167061/48F42C02EDD970E6DE8E59B8601EF3E7F11C1742/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869167318/DBC7863706A08B96020D3BFBE7A0C2C5689B7B08/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/785234780869167318/DBC7863706A08B96020D3BFBE7A0C2C5689B7B08/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869166660/36AF6887F11FC70FF6AB75D0434EA79952C9E882/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/785234780869166660/36AF6887F11FC70FF6AB75D0434EA79952C9E882/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785234780869167194/9ADFFD9AD608CBE3E9F6F61AB416E699A4156109/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/785234780869167194/9ADFFD9AD608CBE3E9F6F61AB416E699A4156109/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/785234780869166919/FE5AD3A71430C729735E3FF7023D9E546E12FEF1/"
         }
       ]
     },
@@ -575,16 +575,16 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849586118/94F967F21EA7E390A200C4BDA5581D07DBB37AC2/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/775105953849586118/94F967F21EA7E390A200C4BDA5581D07DBB37AC2/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849586430/E5941CF7A3631E6D4A28832AE489A4340C96B0B9/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/775105953849586430/E5941CF7A3631E6D4A28832AE489A4340C96B0B9/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/"
         },
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/775105953849586226/9326AD8D3EC80CC53F4BF2D156014978DCD715D9/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/775105953849586226/9326AD8D3EC80CC53F4BF2D156014978DCD715D9/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/775105953849585789/91A639AB9F57BE393683DA53212E395886307C52/"
         }
       ]
     },
@@ -611,20 +611,20 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770177202081/37F68E146C49B315AA46E15BE88DDB56AE97646C/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177202081/37F68E146C49B315AA46E15BE88DDB56AE97646C/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770177201554/7AEA5B0A98A298731F6BE51591401BBF095A5797/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177201554/7AEA5B0A98A298731F6BE51591401BBF095A5797/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770177201933/E0DBF0D812FFF4F7F3A77CF1E4EAB84F78B8C49E/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177201933/E0DBF0D812FFF4F7F3A77CF1E4EAB84F78B8C49E/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770177202012/76CB0371503304D5AAF562E5E2F04961CD206090/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177202012/76CB0371503304D5AAF562E5E2F04961CD206090/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
         }
       ]
     },
@@ -639,20 +639,20 @@
       "upgrades": {},
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770177202081/37F68E146C49B315AA46E15BE88DDB56AE97646C/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177202081/37F68E146C49B315AA46E15BE88DDB56AE97646C/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770177201554/7AEA5B0A98A298731F6BE51591401BBF095A5797/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177201554/7AEA5B0A98A298731F6BE51591401BBF095A5797/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770177201933/E0DBF0D812FFF4F7F3A77CF1E4EAB84F78B8C49E/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177201933/E0DBF0D812FFF4F7F3A77CF1E4EAB84F78B8C49E/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2058763770177202012/76CB0371503304D5AAF562E5E2F04961CD206090/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177202012/76CB0371503304D5AAF562E5E2F04961CD206090/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/2058763770177195881/84020A8311904050DC9309FE9109D47BC41FE4AA/"
         }
       ]
     }
@@ -674,20 +674,20 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457847081/F7D4E8D3EC85BAEEB5C1B5B913B7F484CC28FC10/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1009315641457847081/F7D4E8D3EC85BAEEB5C1B5B913B7F484CC28FC10/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457845802/AE70766EAA85C875B023FB980A5A5CEEFB98B1D9/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1009315641457845802/AE70766EAA85C875B023FB980A5A5CEEFB98B1D9/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457846188/D7F348E890430AA319DDDFA513D99DC2783ECF91/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1009315641457846188/D7F348E890430AA319DDDFA513D99DC2783ECF91/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457846574/F169D9E2E45B73D1E21B17E32D3B4B4D9AACB196/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1009315641457846574/F169D9E2E45B73D1E21B17E32D3B4B4D9AACB196/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
         }
       ]
     },
@@ -703,13 +703,13 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185513/A794F69FD4F7FF6093A8E4564633AF49C95DE79D/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2174736446809185513/A794F69FD4F7FF6093A8E4564633AF49C95DE79D/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185513/A794F69FD4F7FF6093A8E4564633AF49C95DE79D/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2174736446809185513/A794F69FD4F7FF6093A8E4564633AF49C95DE79D/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/2174736446809185513/A794F69FD4F7FF6093A8E4564633AF49C95DE79D/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/2174736446809185513/A794F69FD4F7FF6093A8E4564633AF49C95DE79D/"
         }
       ]
     },
@@ -728,16 +728,16 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386731/FA50237A0BF717ED06EA3020D5F4089D452ADCD6/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1621849308236386731/FA50237A0BF717ED06EA3020D5F4089D452ADCD6/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386470/4D5227051DEEED77303985CE6D34CDBFB27FD472/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1621849308236386470/4D5227051DEEED77303985CE6D34CDBFB27FD472/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386513/AC53B9F503C0B353AE7AA797072F7EBA15A1214C/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1621849308236386513/AC53B9F503C0B353AE7AA797072F7EBA15A1214C/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
         }
       ]
     },
@@ -757,20 +757,20 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386731/FA50237A0BF717ED06EA3020D5F4089D452ADCD6/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1621849308236386731/FA50237A0BF717ED06EA3020D5F4089D452ADCD6/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386470/4D5227051DEEED77303985CE6D34CDBFB27FD472/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1621849308236386470/4D5227051DEEED77303985CE6D34CDBFB27FD472/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386513/AC53B9F503C0B353AE7AA797072F7EBA15A1214C/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1621849308236386513/AC53B9F503C0B353AE7AA797072F7EBA15A1214C/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849308236386470/4D5227051DEEED77303985CE6D34CDBFB27FD472/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1621849308236386470/4D5227051DEEED77303985CE6D34CDBFB27FD472/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1621849538641208262/A0E48F7D9C94617C81BAD4D649717BAC7A8B9B64/"
         }
       ]
     },
@@ -823,8 +823,8 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1009315641457847081/F7D4E8D3EC85BAEEB5C1B5B913B7F484CC28FC10/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1009315641457847081/F7D4E8D3EC85BAEEB5C1B5B913B7F484CC28FC10/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/773995528924546789/8774CBBDC3C4F18B11A444CC96EA5FE7F00DB48F/"
         }
       ]
     },
@@ -840,12 +840,12 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1686023445067168845/FBADA8EDE2ED248CA7F50C1DB3BFF46215E0360B/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1686023445067146631/305531F34B6598A008F5925D828457DF1A8195F6/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1686023445067168845/FBADA8EDE2ED248CA7F50C1DB3BFF46215E0360B/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1686023445067146631/305531F34B6598A008F5925D828457DF1A8195F6/"
         },
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1686023445067146269/A9189AC12193D3BD24624F7A5137C4E69FADDBBF/",
-          "secondary": "http://cloud-3.steamusercontent.com/ugc/1686023445067146631/305531F34B6598A008F5925D828457DF1A8195F6/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1686023445067146269/A9189AC12193D3BD24624F7A5137C4E69FADDBBF/",
+          "secondary": "https://steamusercontent-a.akamaihd.net/ugc/1686023445067146631/305531F34B6598A008F5925D828457DF1A8195F6/"
         }
       ]
     },
@@ -915,7 +915,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1621849538645161033/A69093521055BB5CA008D3DDE5F6EBEB990D0AF2/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1621849538645161033/A69093521055BB5CA008D3DDE5F6EBEB990D0AF2/"
         }
       ]
     }
@@ -940,8 +940,8 @@
       },
       "minis": [
         {
-          "mesh": "http://cloud-3.steamusercontent.com/ugc/785235151813166538/2F32058DDD51C131547B66A3927041BDACDD9E72/",
-          "diffuse": "http://cloud-3.steamusercontent.com/ugc/785235151813166725/2751E83472B0B6BD0559F5E77FAA3D62A0E17BB1/"
+          "mesh": "https://steamusercontent-a.akamaihd.net/ugc/785235151813166538/2F32058DDD51C131547B66A3927041BDACDD9E72/",
+          "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/785235151813166725/2751E83472B0B6BD0559F5E77FAA3D62A0E17BB1/"
         }
       ]
     },
@@ -964,7 +964,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1924743543116068132/37BCE99DCF06BEFA1119FEA911188695F9C48079/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1924743543116068132/37BCE99DCF06BEFA1119FEA911188695F9C48079/"
         }
       ]
     },
@@ -988,7 +988,7 @@
       },
       "minis": [
         {
-          "bundle": "http://cloud-3.steamusercontent.com/ugc/1924743543116068132/37BCE99DCF06BEFA1119FEA911188695F9C48079/"
+          "bundle": "https://steamusercontent-a.akamaihd.net/ugc/1924743543116068132/37BCE99DCF06BEFA1119FEA911188695F9C48079/"
         }
       ]
     },

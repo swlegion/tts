@@ -6,11 +6,18 @@ require('!/generated/cards')
 require('!/UI')
 require('!/RangeRulers')
 require('!/Cohesion')
+-- Must stay AFTER !/RangeRulers and !/Cohesion: it captures their original
+-- functions before shadowing them.
+require('!/IsqOverlays')
 
-function onsave()
+-- Must be spelled onSave: unlike onload, TTS has no all-lowercase alias for it,
+-- so an onsave() is never called and the global script saves nothing at all.
+function onSave()
   local chessClocksActive = UI.getAttribute("floatingChessClockUI", "active") == "true"
+  local welcomeDialogActive = UI.getAttribute("welcomeDialog", "active") == "true"
   return JSON.encode({
     clocks = chessClocksActive,
+    welcome = welcomeDialogActive,
   })
 end
 
@@ -18,14 +25,17 @@ function onload(saveData)
     VERSION = "v5.0.0-beta"
     CCID = sha256(tostring(Time.time))
     UUID = sha256(Player.getPlayers()[1].steam_id)
-    initUI()
 
     local loadData = {
       clocks = false,
+      welcome = true,
     }
     if saveData ~= "" then
       loadData = JSON.decode(saveData)
     end
+    -- Saves written before the welcome dialog was remembered have no such key,
+    -- and those players expect to be greeted as they always were.
+    initUI(loadData.welcome ~= false)
 
     initCardsSchema()
     ga_event("Global", "onLoad")
@@ -45,7 +55,7 @@ function onload(saveData)
     clockGUIDs = {}
     clockGUIDs.blue = "4f823a"
     clockGUIDs.red = "6ce1bb"
-    initChessClocks(clockGUIDs, loadData.clocks)
+    initChessClocks(loadData.clocks)
 
     battlefieldTable = "3a3ed9"
 
@@ -58,9 +68,9 @@ function onload(saveData)
         small = {"b35f7f", "4536a9", "c6150a"}, medium = {"46d669", "7c0b7a", "a99aaa"}, large = {"53689b", "93219f", "62d768"}, huge = {"0975c7", "968781", "f80c9d"}
     }
     templateInfo.templateCollider = {
-        "http://cloud-3.steamusercontent.com/ugc/874120727305531901/BA0C6DDDC393B87EEBC53774FD23812CC1F6740A/",
-        "http://cloud-3.steamusercontent.com/ugc/874120727305503775/8D94FFCC0574D5F4F41D85E3D08DDE6214DA33C3/",
-        "http://cloud-3.steamusercontent.com/ugc/874120727305374487/9F2189A39695F8B9D09A3A84EB718CA9486D6AB6/"
+        "https://steamusercontent-a.akamaihd.net/ugc/874120727305531901/BA0C6DDDC393B87EEBC53774FD23812CC1F6740A/",
+        "https://steamusercontent-a.akamaihd.net/ugc/874120727305503775/8D94FFCC0574D5F4F41D85E3D08DDE6214DA33C3/",
+        "https://steamusercontent-a.akamaihd.net/ugc/874120727305374487/9F2189A39695F8B9D09A3A84EB718CA9486D6AB6/"
     }
     for _,objSet in pairs(templateInfo.templateAGUID) do
         for i, objGUID in ipairs(objSet) do
@@ -100,8 +110,8 @@ function onload(saveData)
     templateInfo.deployMod.epic = 0.21
     templateInfo.deployMod.snail = 0.21
 
-    templateInfo.templateMesh = {"http://cloud-3.steamusercontent.com/ugc/874120727305531585/FD6D4B079FC24EE1CE4F034B1C1E0F6B665D45E6/", "http://cloud-3.steamusercontent.com/ugc/874120727305502854/B063611E236ACAD8060A08A63EDB0EE9D91919AA/","http://cloud-3.steamusercontent.com/ugc/874120727305373581/A5E705982C2AE4B89756EF5A5BAC10DEDA9881B4/"}
-    templateInfo.templateBallCollider = "http://cloud-3.steamusercontent.com/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/"
+    templateInfo.templateMesh = {"https://steamusercontent-a.akamaihd.net/ugc/874120727305531585/FD6D4B079FC24EE1CE4F034B1C1E0F6B665D45E6/", "https://steamusercontent-a.akamaihd.net/ugc/874120727305502854/B063611E236ACAD8060A08A63EDB0EE9D91919AA/","https://steamusercontent-a.akamaihd.net/ugc/874120727305373581/A5E705982C2AE4B89756EF5A5BAC10DEDA9881B4/"}
+    templateInfo.templateBallCollider = "https://steamusercontent-a.akamaihd.net/ugc/785234780862865411/C2B5E8CA63651BE485909340212736C0A68C2754/"
 
     templateInfo.tint = {{0.9,0.9,0.9}, {0.1,0.1,0.1},{0.4,0.03,0.03}}
     templateInfo.buttonPosition = {{0,0.02,-1.2},{0,0.02,-1.9},{0,0.02,-2.7}}
@@ -150,21 +160,21 @@ function onload(saveData)
     templateInfo.moveTemplate = {}
     templateInfo.moveTemplate[1] = {}
     templateInfo.moveTemplate[1].colorTint = {1,1,1}
-    templateInfo.moveTemplate[1].shortBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778007615968/4EE8D2332DCB6F4837551255CE5B1F240937BBE5/"
-    templateInfo.moveTemplate[1].longBundle = "http://cloud-3.steamusercontent.com/ugc/1848161512056297932/A762E187E43177F01CD89D1348F51B1E3C1C744D/"
+    templateInfo.moveTemplate[1].shortBundle = "https://steamusercontent-a.akamaihd.net/ugc/1761462778007615968/4EE8D2332DCB6F4837551255CE5B1F240937BBE5/"
+    templateInfo.moveTemplate[1].longBundle = "https://steamusercontent-a.akamaihd.net/ugc/1848161512056297932/A762E187E43177F01CD89D1348F51B1E3C1C744D/"
     templateInfo.moveTemplate[1].sharedBundle = "https://steamusercontent-a.akamaihd.net/ugc/14063680635734530221/FCD291B71472CA8636D00D0B82B1BA02671FF414/"
     templateInfo.moveTemplate[1].sharedBundle = "https://steamusercontent-a.akamaihd.net/ugc/14063680635734530221/FCD291B71472CA8636D00D0B82B1BA02671FF414/"
 
 
     templateInfo.moveTemplate[2] = {}
     templateInfo.moveTemplate[2].colorTint = {0.5,0.5,0.5}
-    templateInfo.moveTemplate[2].shortBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009510155/77119B471FE3C51B06443F8ABE1C1B522431DF9B/"
-    templateInfo.moveTemplate[2].longBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009510102/15B368A8D753AB35E1D60F7A377AE273EBEC0145/"
+    templateInfo.moveTemplate[2].shortBundle = "https://steamusercontent-a.akamaihd.net/ugc/1761462778009510155/77119B471FE3C51B06443F8ABE1C1B522431DF9B/"
+    templateInfo.moveTemplate[2].longBundle = "https://steamusercontent-a.akamaihd.net/ugc/1761462778009510102/15B368A8D753AB35E1D60F7A377AE273EBEC0145/"
     templateInfo.moveTemplate[2].sharedBundle = "https://steamusercontent-a.akamaihd.net/ugc/10737538167305927398/637135B07177CA895B71593EB85563FEFD0567D7/"
     templateInfo.moveTemplate[3] = {}
     templateInfo.moveTemplate[3].colorTint = {1,0.2,0.2}
-    templateInfo.moveTemplate[3].shortBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009510243/26BA9DD7881AF63E1A19EB6BF9802630D792F836/"
-    templateInfo.moveTemplate[3].longBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009510200/6723334F35444B547AA1382AE80F12E3FE9B72B1/"
+    templateInfo.moveTemplate[3].shortBundle = "https://steamusercontent-a.akamaihd.net/ugc/1761462778009510243/26BA9DD7881AF63E1A19EB6BF9802630D792F836/"
+    templateInfo.moveTemplate[3].longBundle = "https://steamusercontent-a.akamaihd.net/ugc/1761462778009510200/6723334F35444B547AA1382AE80F12E3FE9B72B1/"
     templateInfo.moveTemplate[3].sharedBundle = "https://steamusercontent-a.akamaihd.net/ugc/14511655092146905869/6D223BCC7D94DBDD342B6F887F7C777CE47D5585/"
 
     --This is actually diameter... just saying
@@ -214,7 +224,7 @@ function onload(saveData)
       snail = 14.52755906
     }
 
-    templateInfo.attackLineMesh = "http://cloud-3.steamusercontent.com/ugc/785234780861452902/76204298AA245698319FD2EA590160AFFE1B488C/"
+    templateInfo.attackLineMesh = "https://steamusercontent-a.akamaihd.net/ugc/785234780861452902/76204298AA245698319FD2EA590160AFFE1B488C/"
 
     highestPoint = 0
 
@@ -395,17 +405,17 @@ function onload(saveData)
     -- command tokens
     commandTokenData = {}
 
-    commandTokenData.mesh = "http://cloud-3.steamusercontent.com/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/"
-    commandTokenData.collider = "http://cloud-3.steamusercontent.com/ugc/785234780866339915/85F7E717B9EFBE0396126CA673DF17EAFEC7D451/"
+    commandTokenData.mesh = "https://steamusercontent-a.akamaihd.net/ugc/786359883314446513/4DBBAC00ABA5EABE88C2A86C3311C3FB6645FF25/"
+    commandTokenData.collider = "https://steamusercontent-a.akamaihd.net/ugc/785234780866339915/85F7E717B9EFBE0396126CA673DF17EAFEC7D451/"
 
     commandTokenData.red = {}
 
-    commandTokenData.red.com = "http://cloud-3.steamusercontent.com/ugc/2425823802350223302/3D52D57D51D5F04872B4BF989A0A8B5DE507636C/"
-    commandTokenData.red.op = "http://cloud-3.steamusercontent.com/ugc/2425823802350223750/C3C09D828436CE827D7B788509A5264430CDCCBD/"
-    commandTokenData.red.corps = "http://cloud-3.steamusercontent.com/ugc/2425823802350223459/C482A32B2B1DF9A6CB62F01DC0138023D122E813/"
-    commandTokenData.red.sf = "http://cloud-3.steamusercontent.com/ugc/2425823802350223881/5F93AC468782FF6B253528788AD43883D873D534/"
-    commandTokenData.red.sup = "http://cloud-3.steamusercontent.com/ugc/2425823802350224054/3AC5129B9CFE85C357635FAA5A19395CE93BC5D4/"
-    commandTokenData.red.heavy = "http://cloud-3.steamusercontent.com/ugc/2425823802350223589/13B60C1680CB40EA02470BFCF77C30DDE55B08CE/"
+    commandTokenData.red.com = "https://steamusercontent-a.akamaihd.net/ugc/2425823802350223302/3D52D57D51D5F04872B4BF989A0A8B5DE507636C/"
+    commandTokenData.red.op = "https://steamusercontent-a.akamaihd.net/ugc/2425823802350223750/C3C09D828436CE827D7B788509A5264430CDCCBD/"
+    commandTokenData.red.corps = "https://steamusercontent-a.akamaihd.net/ugc/2425823802350223459/C482A32B2B1DF9A6CB62F01DC0138023D122E813/"
+    commandTokenData.red.sf = "https://steamusercontent-a.akamaihd.net/ugc/2425823802350223881/5F93AC468782FF6B253528788AD43883D873D534/"
+    commandTokenData.red.sup = "https://steamusercontent-a.akamaihd.net/ugc/2425823802350224054/3AC5129B9CFE85C357635FAA5A19395CE93BC5D4/"
+    commandTokenData.red.heavy = "https://steamusercontent-a.akamaihd.net/ugc/2425823802350223589/13B60C1680CB40EA02470BFCF77C30DDE55B08CE/"
 
     commandTokenData.red.imperialCommander = commandTokenData.red.com
     commandTokenData.red.imperialOperative = commandTokenData.red.op
@@ -444,12 +454,12 @@ function onload(saveData)
 
     commandTokenData.blue = {}
 
-    commandTokenData.blue.com = "http://cloud-3.steamusercontent.com/ugc/2425823802350222557/F54CD13B525EB1CBFB2952383CAEE124119D7C9F/"
-    commandTokenData.blue.op = "http://cloud-3.steamusercontent.com/ugc/2425823802350222987/04E37D5634E5E00C70765CDAA5FBFBA5A3EF06E5/"
-    commandTokenData.blue.corps = "http://cloud-3.steamusercontent.com/ugc/2425823802350222752/3A3519FB659AE4BCF8D84D4F33100C8162FDF0E4/"
-    commandTokenData.blue.sf = "http://cloud-3.steamusercontent.com/ugc/2425823802350223089/89F5AA847DA71F3148E4A97B41489FC2B2DBB945/"
-    commandTokenData.blue.sup = "http://cloud-3.steamusercontent.com/ugc/2425823802350223170/D9DE41DE504F73766E11F5DAD3B4DF005ED59ACC/"
-    commandTokenData.blue.heavy = "http://cloud-3.steamusercontent.com/ugc/2425823802350222879/D84AE73FA68A8B02A8FBFE13FC6C3683964B124E/"
+    commandTokenData.blue.com = "https://steamusercontent-a.akamaihd.net/ugc/2425823802350222557/F54CD13B525EB1CBFB2952383CAEE124119D7C9F/"
+    commandTokenData.blue.op = "https://steamusercontent-a.akamaihd.net/ugc/2425823802350222987/04E37D5634E5E00C70765CDAA5FBFBA5A3EF06E5/"
+    commandTokenData.blue.corps = "https://steamusercontent-a.akamaihd.net/ugc/2425823802350222752/3A3519FB659AE4BCF8D84D4F33100C8162FDF0E4/"
+    commandTokenData.blue.sf = "https://steamusercontent-a.akamaihd.net/ugc/2425823802350223089/89F5AA847DA71F3148E4A97B41489FC2B2DBB945/"
+    commandTokenData.blue.sup = "https://steamusercontent-a.akamaihd.net/ugc/2425823802350223170/D9DE41DE504F73766E11F5DAD3B4DF005ED59ACC/"
+    commandTokenData.blue.heavy = "https://steamusercontent-a.akamaihd.net/ugc/2425823802350222879/D84AE73FA68A8B02A8FBFE13FC6C3683964B124E/"
 
     commandTokenData.blue.imperialCommander = commandTokenData.blue.com
     commandTokenData.blue.imperialOperative = commandTokenData.blue.op
@@ -573,18 +583,13 @@ end
 
 function dummy() end
 
--- Initialize red and blue clocks at 01:30:00
-function initChessClocks(guids, show)
+-- Shows or hides the clocks according to the saved state of the floating UI.
+-- The times themselves are never touched here: a game starts at 01:30:00
+-- because that is what the two clock objects hold in the mod, and a game that
+-- is loaded back keeps whatever both players had left.
+function initChessClocks(show)
   Wait.frames(function()
-    if show then
-      toggleChessClockUI()
-    else
-      for _, v in pairs(guids) do
-        local obj = getObjectFromGUID(v)
-        obj.setScale({0, 0, 0})
-        obj.Clock.setValue(5400)
-      end
-    end
+    setChessClockUI(show)
   end)
 end
 
@@ -661,19 +666,96 @@ function initChessClockHotkeys()
   }
   addHotkey("Toggle Chess Clocks", toggleChessClocks)
   addHotkey("Pause All Chess Clocks", pauseAllChessClocks)
+  -- A clock that was running when the game was saved would otherwise keep
+  -- counting while the table loads, and the button would still read whatever
+  -- the XML declares instead of what the clocks actually show.
+  pauseRunningClocks()
+  updateClockButton()
+end
+
+-- Spells a clock value the way the clock itself shows it, so a player reading
+-- the chat and a player reading the table see the same thing.
+function formatClockTime(seconds)
+  seconds = math.max(0, math.floor(seconds))
+  return string.format(
+    "%02d:%02d:%02d",
+    math.floor(seconds / 3600),
+    math.floor(seconds % 3600 / 60),
+    seconds % 60
+  )
+end
+
+-- Stops whichever clocks are still running, and says whether it had to stop
+-- any. Silent on purpose: each caller announces the reason in its own words.
+function pauseRunningClocks()
+  local stopped = false
+  for _, clock in pairs(clocks) do
+    if not clock.paused then
+      clock.pauseStart()
+      stopped = true
+    end
+  end
+  return stopped
+end
+
+-- Nobody should lose time while sitting at a table they are no longer at, so
+-- a player leaving their seat stops the clocks. Only the two seats that own a
+-- clock count: a spectator coming and going changes nothing about the game.
+function onPlayerDisconnect(player)
+  if clocks == nil then
+    return
+  end
+  local color = tostring(player.color)
+  if clocks[color] == nil then
+    return
+  end
+  if pauseRunningClocks() then
+    broadcastToAll(color .. " left the table: chess clocks paused.", {1, 1, 1})
+    updateClockButton()
+  end
 end
 
 function updateClockButton()
+  -- The label is white in the XML and stays white: all three backgrounds are
+  -- dark, so the color never has to follow the state.
+  local label, colors
   if clocks.Blue.paused and clocks.Red.paused then
-    UI.setValue("toggleClockText", "Chess Clocks Paused")
-    UI.setAttribute("toggleClockButton", "colors", "#FFFFFF|#DFDFDF")
+    label = "Chess Clocks Paused"
+    colors = "#303030|#454545"
   elseif clocks.Blue.paused then
-    UI.setValue("toggleClockText", "Red Player on Clock")
-    UI.setAttribute("toggleClockButton", "colors", "#DF0000|#DF0000")
+    label = "Red Player on Clock  " .. formatClockTime(clocks.Red.getValue())
+    colors = "#DF0000|#DF0000"
   else
-    UI.setValue("toggleClockText", "Blue Player on Clock")
-    UI.setAttribute("toggleClockButton", "colors", "#0000DF|#0000DF")
+    label = "Blue Player on Clock  " .. formatClockTime(clocks.Blue.getValue())
+    colors = "#0000DF|#0000DF"
   end
+  -- Tabletop Simulator only ever reports whole seconds. Reading once a second
+  -- would slide out of step with it, showing one second twice and then
+  -- skipping the next, so the banner is read often and written only when it
+  -- has something new to say.
+  if label ~= clockButtonLabel then
+    UI.setValue("toggleClockText", label)
+    clockButtonLabel = label
+  end
+  if colors ~= clockButtonColors then
+    UI.setAttribute("toggleClockButton", "colors", colors)
+    clockButtonColors = colors
+  end
+  scheduleClockButtonTick()
+end
+
+-- Keeps the banner counting down in step with the clock it reports. Each tick
+-- books the next one and a paused table books none, so the button costs
+-- nothing while nobody is playing.
+function scheduleClockButtonTick()
+  if clockButtonTick ~= nil then
+    Wait.stop(clockButtonTick)
+    clockButtonTick = nil
+  end
+  if clocks.Blue.paused and clocks.Red.paused then
+    return
+  end
+  clockButtonTick = Wait.time(updateClockButton, 0.25)
 end
 
 function toggleClockButton(player, button)
@@ -713,8 +795,11 @@ function toggleChessClocks(playerColor)
     clocks.Red.pauseStart()
   end
 
+  -- Keyed by player color: the table used to hold a single "diffuse" key, so
+  -- every lookup returned nil and the message always came out white.
   local fontColors = {
-    diffuse = {1,0,0},
+    Red = {0.856, 0.100, 0.094},
+    Blue = {0.118, 0.530, 1.000},
   }
   broadcastToAll ("*** " .. getClockPlayerName() .. " is now on the clock ***", fontColors[getClockPlayerColor()])
   updateClockButton()
@@ -722,9 +807,7 @@ end
 
 -- Calls pauseStart() for each clock that is not already paused
 function pauseAllChessClocks(playerColor)
-  for k, v in pairs(clocks) do
-    if not v.paused then v.pauseStart() end
-  end
+  pauseRunningClocks()
   broadcastToAll('All chess clocks paused')
   updateClockButton()
 end

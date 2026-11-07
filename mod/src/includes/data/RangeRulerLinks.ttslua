@@ -1,29 +1,29 @@
 function getRangeRulerLinks()
     local rangeRulers  = {}
         -- 27mm
-        rangeRulers.small = "http://cloud-3.steamusercontent.com/ugc/1848161512056393064/133FD5E0FD2801C320C6F4D271E9860A9383A2D2/"
+        rangeRulers.small = "https://steamusercontent-a.akamaihd.net/ugc/1848161512056393064/133FD5E0FD2801C320C6F4D271E9860A9383A2D2/"
         -- 50mm
-        rangeRulers.medium = "http://cloud-3.steamusercontent.com/ugc/1848161512056393102/9F0A824003577BA4AE2CE1AE03ADA4DD7796EBC9/"
+        rangeRulers.medium = "https://steamusercontent-a.akamaihd.net/ugc/1848161512056393102/9F0A824003577BA4AE2CE1AE03ADA4DD7796EBC9/"
         -- 70mm
-        rangeRulers.large = "http://cloud-3.steamusercontent.com/ugc/1848161512056393137/2B21FA95AD74281B47EC248CB78D5648099E2735/"
+        rangeRulers.large = "https://steamusercontent-a.akamaihd.net/ugc/1848161512056393137/2B21FA95AD74281B47EC248CB78D5648099E2735/"
         -- 100mm
-        rangeRulers.huge = "http://cloud-3.steamusercontent.com/ugc/1848161512056393174/580A8DFC2CD970253A93C93197EDE29E2A0D98FA/"
+        rangeRulers.huge = "https://steamusercontent-a.akamaihd.net/ugc/1848161512056393174/580A8DFC2CD970253A93C93197EDE29E2A0D98FA/"
         -- 120mm
-        rangeRulers.laat = "http://cloud-3.steamusercontent.com/ugc/1848161512056393255/C32C9978B04C009EAD0EDE3DBCA8A508EF4B7EAE/"
+        rangeRulers.laat = "https://steamusercontent-a.akamaihd.net/ugc/1848161512056393255/C32C9978B04C009EAD0EDE3DBCA8A508EF4B7EAE/"
         -- 150mm
-        rangeRulers.epic = "http://cloud-3.steamusercontent.com/ugc/1848161512056393312/B4A26CDF7294AFCBB84D9836593037610519BE2B/"
+        rangeRulers.epic = "https://steamusercontent-a.akamaihd.net/ugc/1848161512056393312/B4A26CDF7294AFCBB84D9836593037610519BE2B/"
         -- 100mm oblong
-        rangeRulers.long = "http://cloud-3.steamusercontent.com/ugc/1848161512056393212/C1D52E052A6F31D212B4E91A3961A29FFCC47DBA/"
+        rangeRulers.long = "https://steamusercontent-a.akamaihd.net/ugc/1848161512056393212/C1D52E052A6F31D212B4E91A3961A29FFCC47DBA/"
         -- 100mm x 200mm oblong
-        rangeRulers.snail = "http://cloud-3.steamusercontent.com/ugc/2008089545867709463/C4B55BF3BC0F3682F9D024D5C2519BC0166CBADB/"
+        rangeRulers.snail = "https://steamusercontent-a.akamaihd.net/ugc/2008089545867709463/C4B55BF3BC0F3682F9D024D5C2519BC0166CBADB/"
         -- bomb cart
-        rangeRulers.bombCart = "http://cloud-3.steamusercontent.com/ugc/1838032857803650871/DB525612CDAF46A18A49B82C57A744E9A1F09D79/"
+        rangeRulers.bombCart = "https://steamusercontent-a.akamaihd.net/ugc/1838032857803650871/DB525612CDAF46A18A49B82C57A744E9A1F09D79/"
         -- smoke token
-        rangeRulers.smokeToken = "http://cloud-3.steamusercontent.com/ugc/1848161512056387710/E5CB0DCCC147802B3E276B5922237171E0D53185/"
+        rangeRulers.smokeToken = "https://steamusercontent-a.akamaihd.net/ugc/1848161512056387710/E5CB0DCCC147802B3E276B5922237171E0D53185/"
         -- charge, objective, condition
-        rangeRulers.token = "http://cloud-3.steamusercontent.com/ugc/1841415725493967222/CCEB0E06A39A2CB77FF9BCFEF8992F17B6E81C09/"
+        rangeRulers.token = "https://steamusercontent-a.akamaihd.net/ugc/1841415725493967222/CCEB0E06A39A2CB77FF9BCFEF8992F17B6E81C09/"
         -- graffiti token, same as objective but range 2
-        rangeRulers.tokenRangeTwo = "http://cloud-3.steamusercontent.com/ugc/1841415725493967724/6AB27B28FEAA00EDDBBA9FCCB6BDED249836596A/"
+        rangeRulers.tokenRangeTwo = "https://steamusercontent-a.akamaihd.net/ugc/1841415725493967724/6AB27B28FEAA00EDDBBA9FCCB6BDED249836596A/"
         -- poi token (2" token w/ 3" range)
         rangeRulers.poi = "https://steamusercontent-a.akamaihd.net/ugc/2482129948495938224/AE12E3C12026D934AFE5A96D511D39D385411CEA/"
     return rangeRulers
