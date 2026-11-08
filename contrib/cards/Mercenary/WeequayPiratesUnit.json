@@ -1,0 +1,33 @@
+{
+  "name": "Weequay Pirates",
+  "image": "https://steamusercontent-a.akamaihd.net/ugc/11819796991863488676/7F77BE629CF0B253A3DCEECAD2FA148D8627995C/",
+  "size": "small",
+  "type": "Trooper",
+  "points": 40,
+  "speed": 2,
+  "upgrades": {
+    "Heavy Weapon": 1,
+    "Personnel": 2,
+    "Training": 1,
+    "Gear": 1,
+    "Grenades": 1
+  },
+  "minis": [
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16427319945525081840/0BC18D14AA5B5EDE59BB753572CA11BA8DFB093C/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15128098244470197051/122A93D394F779A72D4DFD24D7BEFE3BEF7DBBCB/"
+    },
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/13445091018596770169/04299452D8946357EA16CD9DDE32B787C6DBBEDA/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/12521217169728315650/79F32E9C7B535418920B0C335F8B5FC3F9AE0726/"
+    },
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16223639926626886253/6DAD82EB229219B62298B7B4C22F6586ED23E9BB/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9341836019986456990/3940A22021782AC05911D4DCD13463623411B60F/"
+    },
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/10420975901939976395/93572C150848711C2D7919BB5E0A66DD51E33DEC/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/15879012411449849405/6339E5B40A0F222280349C23BCB3E79CC5136B43/"
+    }
+  ]
+}

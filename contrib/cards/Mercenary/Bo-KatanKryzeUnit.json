@@ -1,0 +1,39 @@
+{
+  "name": "Bo-Katan Kryze",
+  "title": "Savior of Mandalore",
+  "image": "https://steamusercontent-a.akamaihd.net/ugc/14482064907755816459/6CBBE0EC347D94E9473F3B5387EA31A3CC3715F1/",
+  "size": "small",
+  "type": "Mandalorian Trooper",
+  "points": 110,
+  "speed": 3,
+  "upgrades": {
+    "Armament": 1,
+    "Command": 1,
+    "Training": 2,
+    "Gear": 2,
+    "Grenades": 1
+  },
+  "minis": [
+    {
+      "mesh": "https://steamusercontent-a.akamaihd.net/ugc/16894386141573354751/7814FD95A32E41A5A0F2791526D0B11DC74210AB/",
+      "diffuse": "https://steamusercontent-a.akamaihd.net/ugc/9745807212729852797/70C17560AEF1C6D0CF2B87E5893B3C6FD6B30DE1/"
+    }
+  ],
+  "commands": [
+    {
+      "name": "A Higher Purpose",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/13594524007077407926/F578248E3D8E81F90B4EBA1CE6B9D980EAB3B2CD/",
+      "pip": 1
+    },
+    {
+      "name": "Close Formation",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/16481505165334612004/5AB3C227C2FC45CA89B9682BC4ACAC4B5F575101/",
+      "pip": 2
+    },
+    {
+      "name": "Mandalore Will Survive",
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/15014353656360370921/32F4EE07B2C77703C34B81D7AFC70C18CB858A35/",
+      "pip": 3
+    }
+  ]
+}

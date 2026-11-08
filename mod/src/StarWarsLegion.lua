@@ -152,20 +152,20 @@ function onload(saveData)
     templateInfo.moveTemplate[1].colorTint = {1,1,1}
     templateInfo.moveTemplate[1].shortBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778007615968/4EE8D2332DCB6F4837551255CE5B1F240937BBE5/"
     templateInfo.moveTemplate[1].longBundle = "http://cloud-3.steamusercontent.com/ugc/1848161512056297932/A762E187E43177F01CD89D1348F51B1E3C1C744D/"
-    templateInfo.moveTemplate[1].sharedBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009533333/AD7C02CEE53FB4B2EA823B3DFE570674F8998019/"
+    templateInfo.moveTemplate[1].sharedBundle = "https://steamusercontent-a.akamaihd.net/ugc/14063680635734530221/FCD291B71472CA8636D00D0B82B1BA02671FF414/"
+    templateInfo.moveTemplate[1].sharedBundle = "https://steamusercontent-a.akamaihd.net/ugc/14063680635734530221/FCD291B71472CA8636D00D0B82B1BA02671FF414/"
 
 
     templateInfo.moveTemplate[2] = {}
     templateInfo.moveTemplate[2].colorTint = {0.5,0.5,0.5}
     templateInfo.moveTemplate[2].shortBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009510155/77119B471FE3C51B06443F8ABE1C1B522431DF9B/"
     templateInfo.moveTemplate[2].longBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009510102/15B368A8D753AB35E1D60F7A377AE273EBEC0145/"
-    templateInfo.moveTemplate[2].sharedBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009533401/0FBA682D7D5AA7DA1A7EFC18B33C71EB1C0898E4/"
-
+    templateInfo.moveTemplate[2].sharedBundle = "https://steamusercontent-a.akamaihd.net/ugc/10737538167305927398/637135B07177CA895B71593EB85563FEFD0567D7/"
     templateInfo.moveTemplate[3] = {}
     templateInfo.moveTemplate[3].colorTint = {1,0.2,0.2}
     templateInfo.moveTemplate[3].shortBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009510243/26BA9DD7881AF63E1A19EB6BF9802630D792F836/"
     templateInfo.moveTemplate[3].longBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009510200/6723334F35444B547AA1382AE80F12E3FE9B72B1/"
-    templateInfo.moveTemplate[3].sharedBundle = "http://cloud-3.steamusercontent.com/ugc/1761462778009533447/E5D1D5169F0DB6025808BEE8C9647B3E7057BDB9/"
+    templateInfo.moveTemplate[3].sharedBundle = "https://steamusercontent-a.akamaihd.net/ugc/14511655092146905869/6D223BCC7D94DBDD342B6F887F7C777CE47D5585/"
 
     --This is actually diameter... just saying
     templateInfo.baseRadius = {
@@ -435,12 +435,12 @@ function onload(saveData)
     commandTokenData.red.republicSupport = commandTokenData.red.sup
     commandTokenData.red.republicHeavy = commandTokenData.red.heavy
 
-    commandTokenData.red.shadowcollectiveCommander = commandTokenData.red.com
-    commandTokenData.red.shadowcollectiveOperative = commandTokenData.red.op
-    commandTokenData.red.shadowcollectiveCorps = commandTokenData.red.corps
-    commandTokenData.red.shadowcollectiveSpecialforces = commandTokenData.red.sf
-    commandTokenData.red.shadowcollectiveSupport = commandTokenData.red.sup
-    commandTokenData.red.shadowcollectiveHeavy = commandTokenData.red.heavy
+    commandTokenData.red.mercenaryCommander = commandTokenData.red.com
+    commandTokenData.red.mercenaryOperative = commandTokenData.red.op
+    commandTokenData.red.mercenaryCorps = commandTokenData.red.corps
+    commandTokenData.red.mercenarySpecialforces = commandTokenData.red.sf
+    commandTokenData.red.mercenarySupport = commandTokenData.red.sup
+    commandTokenData.red.mercenaryHeavy = commandTokenData.red.heavy
 
     commandTokenData.blue = {}
 
@@ -479,12 +479,12 @@ function onload(saveData)
     commandTokenData.blue.republicSupport = commandTokenData.blue.sup
     commandTokenData.blue.republicHeavy = commandTokenData.blue.heavy
 
-    commandTokenData.blue.shadowcollectiveCommander = commandTokenData.blue.com
-    commandTokenData.blue.shadowcollectiveOperative = commandTokenData.blue.op
-    commandTokenData.blue.shadowcollectiveCorps = commandTokenData.blue.corps
-    commandTokenData.blue.shadowcollectiveSpecialforces = commandTokenData.blue.sf
-    commandTokenData.blue.shadowcollectiveSupport = commandTokenData.blue.sup
-    commandTokenData.blue.shadowcollectiveHeavy = commandTokenData.blue.heavy
+    commandTokenData.blue.mercenaryCommander = commandTokenData.blue.com
+    commandTokenData.blue.mercenaryOperative = commandTokenData.blue.op
+    commandTokenData.blue.mercenaryCorps = commandTokenData.blue.corps
+    commandTokenData.blue.mercenarySpecialforces = commandTokenData.blue.sf
+    commandTokenData.blue.mercenarySupport = commandTokenData.blue.sup
+    commandTokenData.blue.mercenaryHeavy = commandTokenData.blue.heavy
 
     commandTokenTrayData = {}
     commandTokenTrayData.red = {}
@@ -513,12 +513,12 @@ function onload(saveData)
     commandTokenTrayData.red.separatistSpecialforces = "abb909"
     commandTokenTrayData.red.separatistSupport = "ce9be9"
     commandTokenTrayData.red.separatistHeavy = "f68963"
-    commandTokenTrayData.red.shadowcollectiveCommander = "071592"
-    commandTokenTrayData.red.shadowcollectiveOperative = "369fa9"
-    commandTokenTrayData.red.shadowcollectiveCorps = "af4c28"
-    commandTokenTrayData.red.shadowcollectiveSpecialforces = "abb909"
-    commandTokenTrayData.red.shadowcollectiveSupport = "ce9be9"
-    commandTokenTrayData.red.shadowcollectiveHeavy = "f68963"
+    commandTokenTrayData.red.mercenaryCommander = "071592"
+    commandTokenTrayData.red.mercenaryOperative = "369fa9"
+    commandTokenTrayData.red.mercenaryCorps = "af4c28"
+    commandTokenTrayData.red.mercenarySpecialforces = "abb909"
+    commandTokenTrayData.red.mercenarySupport = "ce9be9"
+    commandTokenTrayData.red.mercenaryHeavy = "f68963"
     commandTokenTrayData.red.stack = "e2202d"
 
     commandTokenTrayData.blue = {}
@@ -547,12 +547,12 @@ function onload(saveData)
     commandTokenTrayData.blue.separatistSpecialforces = "3832c6"
     commandTokenTrayData.blue.separatistSupport = "d2c857"
     commandTokenTrayData.blue.separatistHeavy = "6d221d"
-    commandTokenTrayData.blue.shadowcollectiveCommander = "57ab78"
-    commandTokenTrayData.blue.shadowcollectiveOperative = "b30914"
-    commandTokenTrayData.blue.shadowcollectiveCorps = "e5e8df"
-    commandTokenTrayData.blue.shadowcollectiveSpecialforces = "3832c6"
-    commandTokenTrayData.blue.shadowcollectiveSupport = "d2c857"
-    commandTokenTrayData.blue.shadowcollectiveHeavy = "6d221d"
+    commandTokenTrayData.blue.mercenaryCommander = "57ab78"
+    commandTokenTrayData.blue.mercenaryOperative = "b30914"
+    commandTokenTrayData.blue.mercenaryCorps = "e5e8df"
+    commandTokenTrayData.blue.mercenarySpecialforces = "3832c6"
+    commandTokenTrayData.blue.mercenarySupport = "d2c857"
+    commandTokenTrayData.blue.mercenaryHeavy = "6d221d"
     commandTokenTrayData.blue.stack = "c9f9d0"
 
     -- standby tokens
